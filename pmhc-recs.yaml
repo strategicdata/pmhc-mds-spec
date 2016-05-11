@@ -1,0 +1,124 @@
+---
+RecType: HR
+Fields:
+  - RecType
+  - OrgId
+  - BatchNo
+  - RepStart
+  - RepEnd
+  - GenDt
+  - FileType
+  - SpecVer
+Keys:
+  Primary: [ OrgId ]
+---
+RecType: REF
+Fields:
+  - RecType
+  - RefCode
+  - RefType
+  - Active
+Keys:
+  Primary: [ OrgId, Code ]
+Relationships:
+  - Target: HR
+    Degree: many
+    Required: 1
+---
+RecType: PRO
+Fields:
+  - RecType
+  - ProCode
+  - Category
+  - Active
+Keys:
+  Primary: [ OrgId, Code ]
+Relationships:
+  - Target: HR
+    Degree: many
+    Required: 1
+---
+RecType: PER
+Fields:
+  - RecType
+  - OrgId
+  - SubOrgId
+  - PersKey
+  - SLK
+  - DoB
+  - Gender
+  - IndigSt
+  - CoB
+  - MLSH
+  - ProfEng
+Keys:
+  Primary: [ OrgId, PersKey ]
+  Unique: [ PersKey ]
+Relationships:
+  - Target: HR
+    Degree: many
+    Required: 1
+---
+RecType: EPI
+Fields:
+  - RecType
+  - PersKey
+  - RefCode
+  - PerPCode 
+  - EpiStart
+  - EpiEnd
+  - RefSource
+  - LabourSt
+  - EmpPart
+  - IncomeSt
+  - PrevTreat
+  - PrincDx
+  - OtherDx
+  - FoE
+  - EpiOutcome
+  - CompSt
+  - Meds
+Keys:
+  Primary: [ PersKey, RefCode, EpiStart ]
+Relationships:
+  - Target: PER
+    Degree: many
+    Required: 1 
+---
+RecType: SER
+Fields:
+  - RecType
+  - PersKey
+  - RefCode
+  - EpiStart
+  - ProCode
+  - SerDate
+  - SerType
+  - SerPCode
+  - SerMod
+  - Venue
+  - Duration
+  - Copayment
+  - NoShow
+Keys:
+  Primary: [ PersKey, ProCode, SerDate ]
+Relationships:
+  - Target: EPI
+    Degree: many
+    Required: 1
+---
+RecType: COLOC
+Fields:
+  - RecType
+  - PersKey
+  - RefCode
+  - EpiStart
+  - Measure
+  - MeasDate
+  - Score
+Keys:
+  Primary: [ PersKey, Measure, MeasDate ]
+Relationships:
+  - Target: EPI
+    Degree: many
+    Required: 1

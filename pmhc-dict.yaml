@@ -1,0 +1,413 @@
+---
+Definition: A code indicating the type of each record included in a PMHC MDS data file.
+Name: RecType
+Title: Record Type
+Type: Char[8]
+Domain:
+  Set:
+    HR: File Header Record
+    REF: Referrer Record
+    PRO: Provider Record
+    PER: Person Record
+    EPI: Episode Record
+    SER: Service Event Record
+    COLOC: Collection Occasion Record
+---
+Definition: A sequence of characters which uniquely identifies the PMHC organisation.
+Name: OrgId
+Title: Organistation Identifier
+Type: Char[6]
+Domain: The unique code assigned by the Department of Health to the PMHC organisation.
+---
+Title: Batch Number
+Name: BatchNo
+Base: BatchNo
+Type: Char[9]
+Definition: |-
+  Represents the YYYYNNNNN component of the extract file name.
+Domain: |-
+  YYYYNNNNN
+Required: 1
+---
+Title: Report Period Start Date
+Name: RepStart
+Type: Date[8]
+Definition: Report period start date
+Domain:
+  RangeSet:
+    'start_date-end_date': reporting period
+  Notes: Valid date expressed as DDMMYYYY
+Required: 1
+---
+Title: Report Period End Date
+Name: RepEnd
+Type: Date[8]
+Definition: Report period end date
+Domain:
+  RangeSet:
+    'RepStart-end_date': RepStart to reporting period end
+  Notes: Valid date expressed as DDMMYYYY
+Required: 1
+---
+Title: Data File Generation Date
+Name: GenDt
+Type: Date[8]
+Definition: Data file generation date
+Domain:
+  RangeSet:
+    'RepEnd-': After RepEnd
+  Notes: Valid date expressed as DDMMYYYY
+---
+Title: Data File Type
+Name: FileType
+Type: Char[4]
+Definition: Data file type
+Domain:
+  Set:
+    PMHC: Primary Mental Health Care Minimum Data Set
+Required: 1
+---
+Title: PMHC Specification Version Number
+Name: SpecVer
+Type: Char[5]
+Definition: |-
+  The version number of the PMHC specification document used
+Domain:
+  Set:
+    01.00: Version 1.00
+Required: 1
+---
+Definition: A sequence of characters which uniquely identifies a referrer.
+Name: RefCode
+Title: Referrer Code
+Type: Char[20]
+Domain: A unique identifier for a referrer within the PMHC top level organisation.
+---
+Definition: The type of the referrer.
+Name: RefType
+Title: Referrer Type
+Type: Char[1]
+Domain: 
+  Set:
+    0: To be defined
+---
+Definition: A flag to represent whether a referrer or provider is active.
+Name: Active
+Title: Referrer or provider Active
+Type: Char[1]
+Domain:
+  Set:
+    0: Inactive
+    1: Active
+---
+Definition: A sequence of characters which uniquely identifies a provider.
+Name: ProCode
+Title: Provider Code
+Type: Char[20]
+Domain: A unique identifier for a provider within the PMHC top level organisation.
+---
+Definition: The type or category of the provider.
+Name: Category
+Title: Provider category
+Type: Char[1]
+Domain:
+  Set:
+    0: To be defined
+---
+Definition: A sequence of characters which uniquely identifies the PMHC sub organisation.
+Name: SubOrgId
+Title: Sub Organisation Identifier
+Type: Char[6]
+Domain: The unique code assigned by one of the parent organisations.
+---
+Definition: This is a number or code assigned to each individual referred to the 
+  flexible funding pool. The person identifier is unique and stable for each 
+   individual at the level of the PMHC top level organisation.
+Name: PersKey
+Title: Person Key
+Type: Char[20]
+Domain: A unique identifier for an individual within the PMHC top level organisation. Must be stable over time.
+---
+Definition: A key that enables two or more records belonging to the same individual
+  to be brought together.
+MeteorID: 349510
+Name: SLK
+Title: Statistical Linkage Key
+Type: Char[14]
+Domain: System generated non-identifiable alphanumeric code derived from information held by the PMHC organisation.
+
+  • 14 character SLK as defined at http://meteor.aihw.gov.au/content/index.phtml/itemId/349510
+  • a Crockford encoded sha1 hash of a 14 character SLK. This must be 32 characters in length. The Crockford encoding spec is defined at http://www.crockford.com/wrmg/base32.html.
+  • a hex encoded sha1 hash of a 14 character SLK. This must be 40 characters in length.
+
+  SLK values are stored in sha1_hex format.
+---
+Definition: The date on which an individual was born
+MeteorID: 287007
+Name: DoB
+Title: Date of Birth
+Type: Date[8]
+Domain: |-
+  Record the client’s date of birth using DDMMYYYY format.
+  If the date of birth is unknown, the following approaches should be used:
+  • If the age of the person is known, the age should be used to derive the year of birth
+  • If the age of the person is unknown, an estimated age of the person should be used to estimate a year of birth
+  • An actual or estimated year of birth should then be converted into an estimated date of birth using the following convention: 01/01/estimated year of birth.
+  • If the date of birth is totally unknown, use 09099999.
+Missing: 09099999
+---
+Definition: The date of birth estimate flag records whether or not the client's date of birth has been estimated.
+Name: DoBFlag
+Title: Estimated Date of Birth Flag
+Type: Char[1]
+Domain:
+  Set:
+    1: Date of birth is accurate
+    2: Date of birth is an estimate
+    8: Date of birth is a "dummy" date (ie, 09099999)
+    9: Accuracy of stated date of birth is not known
+  Missing: 9
+---
+Definition: The term 'gender' refers to the way in which a person identifies their masculine or feminine characteristics. A person's gender relates to their deeply held internal and individual sense of gender and is not always exclusively male or female. It may or may not correspond to their sex assigned at birth.
+Name: Gender
+Title: Gender
+Type:  Char[1]
+Domain:
+  Set:
+    1: Male
+    2: Female
+    3: Other
+    0: Not stated/Inadequately described
+  Notes: As defined by Australian Bureau of Statistics at http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/1200.0.55.012Main%20Features12016?opendocument&tabname=Summary&prodno=1200.0.55.012&issue=2016&num=&view=
+---
+Definition: Whether a person identifies as being of Aboriginal and/or Torres Strait Islander origin, as represented by a code.
+MeteorID: 291036
+Name: IndigSt
+Title: Aboriginal And Torres Strait Islander Status
+Type: Char[1]
+Domain:
+  Set:
+    1: Aboriginal but not Torres Strait Islander origin
+    2: Torres Strait Islander but not Aboriginal origin
+    3: Both Aboriginal and Torres Strait Islander origin
+    4: Neither Aboriginal or Torres Strait Islander origin
+    9: Not stated/inadequately described
+  Missing: 9
+---
+Definition: The country in which the person was born, as represented by a code.
+MeteorID: 459973
+Name: CoB
+Title: Country Of Birth
+Type: Char[4]
+Domain: Standard Australian Classification of Countries 2011 (SACC 2011) 4-digit code (ABS Catalogue No. 1269.0) [provided in Appendix B] SACC 2011 is a four-digit, three-level hierarchical structure specifying major group, minor group and country. 9999 is used when the information is not known or the client has refused to provide the information.
+---
+Definition: The language reported by a person as the main language spoken by that person in 
+  his/her home (or most recent private residential setting occupied by the person) to communicate 
+  with other residents of the home or setting and regular visitors, as represented by a code.
+MeteorID: 460125
+Name: MLSH
+Title: Main language spoken at home
+Type: Char[4]
+Domain: Australian Standard Classification of Languages 2011 4-digit code (ABS Catalogue No. 1267.0) or 9999 if info is not known or client refuses to supply
+Missing: 9999
+---
+Definition: The self-assessed level of ability to speak English, asked of people whose first language is a language other than English or who speak a language other than English at home.
+MeteorID: 270203
+Name: ProfEng
+Title: Proficiency in spoken English
+Type: Char[1]
+Domain:
+  Set:
+    0: Not applicable (persons under 5 years of age or who speak only English)
+    1: Very well
+    2: Well
+    3: Not well
+    4: Not as all
+    9: Not stated/inadequately described
+---
+Definition: The Australian postcode of the patient
+MeteorID: 429894
+Name: PerPCode
+Title: Person Postcode
+Type: Char[4]
+Domain:
+  RangeSet:
+    0000-9999: Valid Australian Postcode
+  Notes: Full list of Australian Postcodes can be found at the Australia Post website: http://www.auspost.com.au/
+---
+Definition: Episode start date
+Name: EpiStart
+Title: Episode Start Date
+Type: Date[8]
+Domain: For Date fields, data must be recorded in compliance with the standard format used across the National Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with leading zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
+---
+Definition: Episode end date
+Name: EpiEnd
+Title: Episode End Date
+Type: Date[8]
+Domain: For Date fields, data must be recorded in compliance with the standard format used across the National Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with leading zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
+  Notes: This field will be derived from the last service event date if the episode is complete.
+---
+Definition: The source of the referral to the Mental Health System.
+Name: RefSource
+Title: Source of referral to Mental Health System
+Type: Char[2]
+Domain:
+  Set:
+    0: To be defined
+---
+Definition: Labour Force Status is a classification of the relevant population into employed, unemployed or not in the labour force.
+Name: LabourSt
+Title: Labour Force Status
+Type: Char[1]
+Domain:
+  Set:
+    1: Employed
+    2: Unemployed
+    3: Not in the Labour Force
+    9: Not stated/inadequately described
+  Missing: 9
+---
+Definition: Full-time/part-time status
+MeteorID: 269950
+Name: EmpPart
+Title: Employment Participation
+Type: Char[1]
+Domain:
+  Set:
+    1: Full-time
+    2: Part-time
+    7: Not applicable - not in the labour force
+    9: Not stated/inadequately described
+  Missing: 9
+---
+Name: IncomeSt
+Title: Income Status - Ranges? or Low Income?
+Type: Char[1]
+Domain:
+  Set:
+    0: To be defined
+---
+Name: PrevTreat
+Title: Previous Treatment
+Type: Char[1]
+Domain:
+  Set:
+    0: To be defined
+---
+Name: PrincDx
+Title: Princ Diagnosis
+Type: Char[1]
+Domain:
+  Set:
+    0: To be defined
+---
+Name: OtherDx
+Title: Other Diagnosis
+Type: Char[1]
+Domain:
+  Set:
+    0: To be defined
+---
+Name: FoE
+Title: Focus of Episode/Treatment
+Type: Char[1]
+Domain:
+  Set:
+    0: To be defined
+---
+Name: EpiOutcome
+Title: Episode/Patient Outcome
+Type: Char[2]
+Domain: Difference between the entry and exit score.
+---
+Name: CompSt
+Title: Episode Completion Status
+Type: Char[1]
+Domain:
+  Set:
+    0: To be defined
+---
+Name: Meds
+Title: Medication
+Type: Char[1]
+Domain:
+  Set:
+    0: To be defined
+---
+Definition: Service Event date
+Name: SerDate
+Title: Service Event Date
+Type: Date[8]
+Domain: For Date fields, data must be recorded in compliance with the standard format used across the National Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with leading zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
+---
+Name: SerType
+Title: Intervention Type/Service Type
+Type: Char[1]
+Domain:
+  Set:
+    0: To be defined
+---
+Definition: The Australian postcode where the service delivery took place
+MeteorID: 429894
+Name: SerPCode
+Title: Service Delivery Postcode?
+Type: Char[4]
+Domain:
+  RangeSet:
+    0000-9999: Valid Australian Postcode
+  Notes: Full list of Australian Postcodes can be found at the Australia Post website: http://www.auspost.com.au/
+---
+Name: SerMod
+Title: Service Modality
+Type: Char[1]
+Domain:
+  Set:
+    0: To be defined
+---
+Name: Venue
+Title: Venue
+Type: Char[1]
+Domain:
+  Set:
+    1: Home
+    2: Office
+    3: School
+    4: Other
+---
+Name: Duration
+Title: Duration
+Type: Char[1]
+Domain:
+  Set:
+    0: To be defined
+---
+Name: Copayment
+Title: Copayment
+Type: Char[9]
+Domain: Up to 6 digits before the decimal point; up to 2 digits after the decimal point
+---
+Name: NoShow
+Title: No Show
+Type: Char[1]
+Domain:
+  Set:
+    0: No
+    1: Yes
+---
+Name: Measure
+Title: Measure Name
+Type: Char[20]
+Domain: The name of the measure
+---
+Definition: Measure date
+Name: MeasDate
+Title: Measure Date
+Type: Date[8]
+Domain: For Date fields, data must be recorded in compliance with the standard format used across the National Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with leading zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
+---
+Name: Score
+Title: Score
+Type: Char[2]
+Domain: The value of the score at this collection occasion.
+---
