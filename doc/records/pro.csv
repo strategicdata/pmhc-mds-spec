@@ -1,0 +1,16 @@
+Data Element (Field Name),Type [Length],METeOR Identifier,Notes / Values
+Record Type (RecType),Char[8],—,"
+:COLOC: Collection Occasion Record
+:EPI: Episode Record
+:HR: File Header Record
+:PER: Person Record
+:PRO: Provider Record
+:REF: Referrer Record
+:SER: Service Event Record
+"
+Provider Code (ProCode),Char[20],—,
+Provider category (Category),Char[1],—,Value = `0`
+Referrer or provider Active (Active),Char[1],—,"
+:0: Inactive
+:1: Active
+"

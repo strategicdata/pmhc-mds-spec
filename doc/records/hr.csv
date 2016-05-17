@@ -1,0 +1,17 @@
+"Data Element (Field Name)","Type [Length]",Start,"METeOR Identifier","Notes / Values"
+"Record Type (RecType)",Char[8],1,"—","
+:COLOC: Collection Occasion Record
+:EPI: Episode Record
+:HR: File Header Record
+:PER: Person Record
+:PRO: Provider Record
+:REF: Referrer Record
+:SER: Service Event Record
+"
+"Organistation Identifier (OrgId)",Char[6],9,"—",
+"Batch Number (BatchNo)",Char[9],15,"—",
+"Report Period Start Date (RepStart)",Date[8],24,"—","Valid date expressed as DDMMYYYY"
+"Report Period End Date (RepEnd)",Date[8],32,"—","Valid date expressed as DDMMYYYY"
+"Data File Generation Date (GenDt)",Date[8],40,"—","Valid date expressed as DDMMYYYY"
+"Data File Type (FileType)",Char[4],48,"—","Value = `PMHC`"
+"PMHC Specification Version Number (SpecVer)",Char[5],52,"—","Value = `00.01`"

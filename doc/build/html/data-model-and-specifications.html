@@ -1,0 +1,926 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Data model and specifications &mdash; PMHC MDS 00.01 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+    <link rel="top" title="PMHC MDS 00.01 documentation" href="index.html"/>
+        <link rel="prev" title="General PMHC MDS information" href="general-information.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> PMHC MDS
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                00.01
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="general-information.html">General PMHC MDS information</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Data model and specifications</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#data-model-of-the-pmhc-mds-extract">Data model of the PMHC MDS Extract</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#data-integrity">Data integrity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#referrer-data-record">Referrer data record</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#provider-data-record">Provider data record</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#person-data-record">Person data record</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#episode-data-record">Episode data record</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#service-event-data-record">Service event data record</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#collection-occasion-data-record">Collection occasion data record</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">PMHC MDS</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Data model and specifications</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/data-model-and-specifications.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="data-model-and-specifications">
+<h1>Data model and specifications<a class="headerlink" href="#data-model-and-specifications" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="data-model-of-the-pmhc-mds-extract">
+<h2>Data model of the PMHC MDS Extract<a class="headerlink" href="#data-model-of-the-pmhc-mds-extract" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="data-integrity">
+<h3>Data integrity<a class="headerlink" href="#data-integrity" title="Permalink to this headline">¶</a></h3>
+<p>For cases of missing data (that is, unknown, not stated or not
+available):</p>
+<ul class="simple">
+<li>For <strong>Numeric [Num] fields</strong>, the data should be reported as zero,
+using leading zeros when necessary to pad out the field to the
+required length. The principle here is that all numeric fields
+require a valid value.</li>
+<li>For <strong>Text [Char] fields</strong>, the data should be space-filled to the
+required length. For single character fields where a &#8216;missing/not
+stated&#8217; value has been specified for a particular data element (for
+example, &#8216;9&#8217; has been specified for missing data), use the stated
+value for &#8216;missing/not stated&#8217; rather than simply space filling.</li>
+</ul>
+<p>Values in <strong>Date</strong> [<strong>Date</strong>] fields must be recorded in compliance
+with the standard format used across the <em>National health data
+dictionary</em>; specifically, dates must be of fixed 8 column width in the
+format DDMMYYYY, with leading zeros used when necessary to pad out a
+value. For instance, 13 March 2016 would appear as 13032016.</p>
+<p>Values in <strong>Numeric</strong> [<strong>Num</strong>] fields must be zero-filled and
+right-justified. These should consist only of the numerals 0 to 9 and
+the decimal (&#8216;.&#8217;) point if applicable to the data element.</p>
+<p>Note: Fields defined as &#8216;Numeric&#8217; are those that have numeric
+properties—that is, the values, for example, can be added or subtracted
+in a manner that is valid. Where a field uses numeric characters that do
+not have these properties (for example, the use of numbers for <em>Patient
+identifier</em>), the field is defined as &#8216;Character&#8217;.</p>
+<p>Values in <strong>Character</strong> [<strong>Char</strong>] fields must be left justified and
+space-filled. These should consist of any of the printable ASCII
+character set (that is, excluding control codes such as newline, bell
+and linefeed).</p>
+</div>
+<div class="section" id="referrer-data-record">
+<h3>Referrer data record<a class="headerlink" href="#referrer-data-record" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils" id="id4">
+<caption><span class="caption-text">Referrer record layout</span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Data Element (Field Name)</th>
+<th class="head">Type [Length]</th>
+<th class="head">METeOR Identifier</th>
+<th class="head">Notes / Values</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Record Type (RecType)</td>
+<td>Char[8]</td>
+<td>—</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">COLOC:</th><td class="field-body">Collection Occasion Record</td>
+</tr>
+<tr class="field-even field"><th class="field-name">EPI:</th><td class="field-body">Episode Record</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">HR:</th><td class="field-body">File Header Record</td>
+</tr>
+<tr class="field-even field"><th class="field-name">PER:</th><td class="field-body">Person Record</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">PRO:</th><td class="field-body">Provider Record</td>
+</tr>
+<tr class="field-even field"><th class="field-name">REF:</th><td class="field-body">Referrer Record</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">SER:</th><td class="field-body">Service Event Record</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-odd"><td>Referrer Code (RefCode)</td>
+<td>Char[20]</td>
+<td>—</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>Referrer Type (RefType)</td>
+<td>Char[1]</td>
+<td>—</td>
+<td>Value = <cite>0</cite></td>
+</tr>
+<tr class="row-odd"><td>Referrer or provider Active (Active)</td>
+<td>Char[1]</td>
+<td>—</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">0:</th><td class="field-body">Inactive</td>
+</tr>
+<tr class="field-even field"><th class="field-name">1:</th><td class="field-body">Active</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Record length = 30</p>
+<p class="rubric">Notes</p>
+</div>
+<div class="section" id="provider-data-record">
+<h3>Provider data record<a class="headerlink" href="#provider-data-record" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils" id="id5">
+<caption><span class="caption-text">Provider record layout</span><a class="headerlink" href="#id5" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Data Element (Field Name)</th>
+<th class="head">Type [Length]</th>
+<th class="head">METeOR Identifier</th>
+<th class="head">Notes / Values</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Record Type (RecType)</td>
+<td>Char[8]</td>
+<td>—</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">COLOC:</th><td class="field-body">Collection Occasion Record</td>
+</tr>
+<tr class="field-even field"><th class="field-name">EPI:</th><td class="field-body">Episode Record</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">HR:</th><td class="field-body">File Header Record</td>
+</tr>
+<tr class="field-even field"><th class="field-name">PER:</th><td class="field-body">Person Record</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">PRO:</th><td class="field-body">Provider Record</td>
+</tr>
+<tr class="field-even field"><th class="field-name">REF:</th><td class="field-body">Referrer Record</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">SER:</th><td class="field-body">Service Event Record</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-odd"><td>Provider Code (ProCode)</td>
+<td>Char[20]</td>
+<td>—</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>Provider category (Category)</td>
+<td>Char[1]</td>
+<td>—</td>
+<td>Value = <cite>0</cite></td>
+</tr>
+<tr class="row-odd"><td>Referrer or provider Active (Active)</td>
+<td>Char[1]</td>
+<td>—</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">0:</th><td class="field-body">Inactive</td>
+</tr>
+<tr class="field-even field"><th class="field-name">1:</th><td class="field-body">Active</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Record length = 30</p>
+<p class="rubric">Notes</p>
+</div>
+<div class="section" id="person-data-record">
+<h3>Person data record<a class="headerlink" href="#person-data-record" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils" id="id6">
+<caption><span class="caption-text">Person record layout</span><a class="headerlink" href="#id6" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Data Element (Field Name)</th>
+<th class="head">Type [Length]</th>
+<th class="head">METeOR Identifier</th>
+<th class="head">Notes / Values</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Record Type (RecType)</td>
+<td>Char[8]</td>
+<td>—</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">COLOC:</th><td class="field-body">Collection Occasion Record</td>
+</tr>
+<tr class="field-even field"><th class="field-name">EPI:</th><td class="field-body">Episode Record</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">HR:</th><td class="field-body">File Header Record</td>
+</tr>
+<tr class="field-even field"><th class="field-name">PER:</th><td class="field-body">Person Record</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">PRO:</th><td class="field-body">Provider Record</td>
+</tr>
+<tr class="field-even field"><th class="field-name">REF:</th><td class="field-body">Referrer Record</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">SER:</th><td class="field-body">Service Event Record</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-odd"><td>Organistation Identifier (OrgId)</td>
+<td>Char[6]</td>
+<td>—</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>Sub Organisation Identifier (SubOrgId)</td>
+<td>Char[6]</td>
+<td>—</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>Person Key (PersKey)</td>
+<td>Char[20]</td>
+<td>—</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>Statistical Linkage Key (SLK)</td>
+<td>Char[14]</td>
+<td><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/349510">349510</a></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>Date of Birth (DoB)</td>
+<td>Date[8]</td>
+<td><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/287007">287007</a></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>Gender (Gender) <a class="footnote-reference" href="#tn-per1" id="id1">[1]</a></td>
+<td>Char[1]</td>
+<td>—</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">0:</th><td class="field-body">Not stated/Inadequately described</td>
+</tr>
+<tr class="field-even field"><th class="field-name">1:</th><td class="field-body">Male</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">2:</th><td class="field-body">Female</td>
+</tr>
+<tr class="field-even field"><th class="field-name">3:</th><td class="field-body">Other</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-odd"><td>Aboriginal And Torres Strait Islander Status (IndigSt)</td>
+<td>Char[1]</td>
+<td><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/291036">291036</a></td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Aboriginal but not Torres Strait Islander origin</td>
+</tr>
+<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">Torres Strait Islander but not Aboriginal origin</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">Both Aboriginal and Torres Strait Islander origin</td>
+</tr>
+<tr class="field-even field"><th class="field-name">4:</th><td class="field-body">Neither Aboriginal or Torres Strait Islander origin</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Not stated/inadequately described</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-even"><td>Country Of Birth (CoB)</td>
+<td>Char[4]</td>
+<td><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/459973">459973</a></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>Main language spoken at home (MLSH)</td>
+<td>Char[4]</td>
+<td><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/460125">460125</a></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>Proficiency in spoken English (ProfEng)</td>
+<td>Char[1]</td>
+<td><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/270203">270203</a></td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">0:</th><td class="field-body">Not applicable (persons under 5 years of age or who speak only English)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">1:</th><td class="field-body">Very well</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">2:</th><td class="field-body">Well</td>
+</tr>
+<tr class="field-even field"><th class="field-name">3:</th><td class="field-body">Not well</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">4:</th><td class="field-body">Not as all</td>
+</tr>
+<tr class="field-even field"><th class="field-name">9:</th><td class="field-body">Not stated/inadequately described</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Record length = 73</p>
+<p class="rubric">Notes</p>
+<table class="docutils footnote" frame="void" id="tn-per1" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>As defined by Australian Bureau of Statistics at <a class="reference external" href="http://www.abs.gov.au/ausstats/abs&#64;.nsf/Latestproducts/1200.0.55.012Main%20Features12016?opendocument&amp;tabname=Summary&amp;prodno=1200.0.55.012&amp;issue=2016&amp;num=&amp;view=">http://www.abs.gov.au/ausstats/abs&#64;.nsf/Latestproducts/1200.0.55.012Main%20Features12016?opendocument&amp;tabname=Summary&amp;prodno=1200.0.55.012&amp;issue=2016&amp;num=&amp;view=</a></td></tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="episode-data-record">
+<h3>Episode data record<a class="headerlink" href="#episode-data-record" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils" id="id7">
+<caption><span class="caption-text">Episode record layout</span><a class="headerlink" href="#id7" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Data Element (Field Name)</th>
+<th class="head">Type [Length]</th>
+<th class="head">METeOR Identifier</th>
+<th class="head">Notes / Values</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Record Type (RecType)</td>
+<td>Char[8]</td>
+<td>—</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">COLOC:</th><td class="field-body">Collection Occasion Record</td>
+</tr>
+<tr class="field-even field"><th class="field-name">EPI:</th><td class="field-body">Episode Record</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">HR:</th><td class="field-body">File Header Record</td>
+</tr>
+<tr class="field-even field"><th class="field-name">PER:</th><td class="field-body">Person Record</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">PRO:</th><td class="field-body">Provider Record</td>
+</tr>
+<tr class="field-even field"><th class="field-name">REF:</th><td class="field-body">Referrer Record</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">SER:</th><td class="field-body">Service Event Record</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-odd"><td>Person Key (PersKey)</td>
+<td>Char[20]</td>
+<td>—</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>Referrer Code (RefCode)</td>
+<td>Char[20]</td>
+<td>—</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>Person Postcode (PerPCode) <a class="footnote-reference" href="#tn-epi1" id="id2">[2]</a></td>
+<td>Char[4]</td>
+<td><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/429894">429894</a></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>Episode Start Date (EpiStart)</td>
+<td>Date[8]</td>
+<td>—</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>Episode End Date (EpiEnd)</td>
+<td>Date[8]</td>
+<td>—</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>Source of referral to Mental Health System (RefSource)</td>
+<td>Char[2]</td>
+<td>—</td>
+<td>Value = <cite>0</cite></td>
+</tr>
+<tr class="row-odd"><td>Labour Force Status (LabourSt)</td>
+<td>Char[1]</td>
+<td>—</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Employed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">Unemployed</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">Not in the Labour Force</td>
+</tr>
+<tr class="field-even field"><th class="field-name">9:</th><td class="field-body">Not stated/inadequately described</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-even"><td>Employment Participation (EmpPart)</td>
+<td>Char[1]</td>
+<td><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/269950">269950</a></td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Full-time</td>
+</tr>
+<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">Part-time</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">7:</th><td class="field-body">Not applicable - not in the labour force</td>
+</tr>
+<tr class="field-even field"><th class="field-name">9:</th><td class="field-body">Not stated/inadequately described</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-odd"><td>Income Status - Ranges? or Low Income? (IncomeSt)</td>
+<td>Char[1]</td>
+<td>—</td>
+<td>Value = <cite>0</cite></td>
+</tr>
+<tr class="row-even"><td>Previous Treatment (PrevTreat)</td>
+<td>Char[1]</td>
+<td>—</td>
+<td>Value = <cite>0</cite></td>
+</tr>
+<tr class="row-odd"><td>Princ Diagnosis (PrincDx)</td>
+<td>Char[1]</td>
+<td>—</td>
+<td>Value = <cite>0</cite></td>
+</tr>
+<tr class="row-even"><td>Other Diagnosis (OtherDx)</td>
+<td>Char[1]</td>
+<td>—</td>
+<td>Value = <cite>0</cite></td>
+</tr>
+<tr class="row-odd"><td>Focus of Episode/Treatment (FoE)</td>
+<td>Char[1]</td>
+<td>—</td>
+<td>Value = <cite>0</cite></td>
+</tr>
+<tr class="row-even"><td>Episode/Patient Outcome (EpiOutcome)</td>
+<td>Char[2]</td>
+<td>—</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>Episode Completion Status (CompSt)</td>
+<td>Char[1]</td>
+<td>—</td>
+<td>Value = <cite>0</cite></td>
+</tr>
+<tr class="row-even"><td>Medication (Meds)</td>
+<td>Char[1]</td>
+<td>—</td>
+<td>Value = <cite>0</cite></td>
+</tr>
+</tbody>
+</table>
+<p>Record length = 81</p>
+<p class="rubric">Notes</p>
+<table class="docutils footnote" frame="void" id="tn-epi1" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[2]</a></td><td>Full list of Australian Postcodes can be found at the Australia Post website: <a class="reference external" href="http://www.auspost.com.au/">http://www.auspost.com.au/</a></td></tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="service-event-data-record">
+<h3>Service event data record<a class="headerlink" href="#service-event-data-record" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils" id="id8">
+<caption><span class="caption-text">Service event record layout</span><a class="headerlink" href="#id8" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Data Element (Field Name)</th>
+<th class="head">Type [Length]</th>
+<th class="head">METeOR Identifier</th>
+<th class="head">Notes / Values</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Record Type (RecType)</td>
+<td>Char[8]</td>
+<td>—</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">COLOC:</th><td class="field-body">Collection Occasion Record</td>
+</tr>
+<tr class="field-even field"><th class="field-name">EPI:</th><td class="field-body">Episode Record</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">HR:</th><td class="field-body">File Header Record</td>
+</tr>
+<tr class="field-even field"><th class="field-name">PER:</th><td class="field-body">Person Record</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">PRO:</th><td class="field-body">Provider Record</td>
+</tr>
+<tr class="field-even field"><th class="field-name">REF:</th><td class="field-body">Referrer Record</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">SER:</th><td class="field-body">Service Event Record</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-odd"><td>Person Key (PersKey)</td>
+<td>Char[20]</td>
+<td>—</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>Referrer Code (RefCode)</td>
+<td>Char[20]</td>
+<td>—</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>Episode Start Date (EpiStart)</td>
+<td>Date[8]</td>
+<td>—</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>Provider Code (ProCode)</td>
+<td>Char[20]</td>
+<td>—</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>Service Event Date (SerDate)</td>
+<td>Date[8]</td>
+<td>—</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>Intervention Type/Service Type (SerType)</td>
+<td>Char[1]</td>
+<td>—</td>
+<td>Value = <cite>0</cite></td>
+</tr>
+<tr class="row-odd"><td>Service Delivery Postcode? (SerPCode) <a class="footnote-reference" href="#tn-ser1" id="id3">[3]</a></td>
+<td>Char[4]</td>
+<td><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/429894">429894</a></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>Service Modality (SerMod)</td>
+<td>Char[1]</td>
+<td>—</td>
+<td>Value = <cite>0</cite></td>
+</tr>
+<tr class="row-odd"><td>Venue (Venue)</td>
+<td>Char[1]</td>
+<td>—</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Home</td>
+</tr>
+<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">Office</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">School</td>
+</tr>
+<tr class="field-even field"><th class="field-name">4:</th><td class="field-body">Other</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-even"><td>Duration (Duration)</td>
+<td>Char[1]</td>
+<td>—</td>
+<td>Value = <cite>0</cite></td>
+</tr>
+<tr class="row-odd"><td>Copayment (Copayment)</td>
+<td>Char[9]</td>
+<td>—</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>No Show (NoShow)</td>
+<td>Char[1]</td>
+<td>—</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">0:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-even field"><th class="field-name">1:</th><td class="field-body">Yes</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Record length = 102</p>
+<p class="rubric">Notes</p>
+<table class="docutils footnote" frame="void" id="tn-ser1" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id3">[3]</a></td><td>Full list of Australian Postcodes can be found at the Australia Post website: <a class="reference external" href="http://www.auspost.com.au/">http://www.auspost.com.au/</a></td></tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="collection-occasion-data-record">
+<h3>Collection occasion data record<a class="headerlink" href="#collection-occasion-data-record" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils" id="id9">
+<caption><span class="caption-text">Collection occasion record layout</span><a class="headerlink" href="#id9" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Data Element (Field Name)</th>
+<th class="head">Type [Length]</th>
+<th class="head">METeOR Identifier</th>
+<th class="head">Notes / Values</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Record Type (RecType)</td>
+<td>Char[8]</td>
+<td>—</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">COLOC:</th><td class="field-body">Collection Occasion Record</td>
+</tr>
+<tr class="field-even field"><th class="field-name">EPI:</th><td class="field-body">Episode Record</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">HR:</th><td class="field-body">File Header Record</td>
+</tr>
+<tr class="field-even field"><th class="field-name">PER:</th><td class="field-body">Person Record</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">PRO:</th><td class="field-body">Provider Record</td>
+</tr>
+<tr class="field-even field"><th class="field-name">REF:</th><td class="field-body">Referrer Record</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">SER:</th><td class="field-body">Service Event Record</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-odd"><td>Person Key (PersKey)</td>
+<td>Char[20]</td>
+<td>—</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>Referrer Code (RefCode)</td>
+<td>Char[20]</td>
+<td>—</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>Episode Start Date (EpiStart)</td>
+<td>Date[8]</td>
+<td>—</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>Measure Name (Measure)</td>
+<td>Char[20]</td>
+<td>—</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>Measure Date (MeasDate)</td>
+<td>Date[8]</td>
+<td>—</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>Score (Score)</td>
+<td>Char[2]</td>
+<td>—</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>Record length = 86</p>
+<p class="rubric">Notes</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="general-information.html" class="btn btn-neutral" title="General PMHC MDS information" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Australian Government - Department of Health.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'00.01',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

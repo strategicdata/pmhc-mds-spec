@@ -1,0 +1,38 @@
+Data Element (Field Name),Type [Length],METeOR Identifier,Notes / Values
+Record Type (RecType),Char[8],—,"
+:COLOC: Collection Occasion Record
+:EPI: Episode Record
+:HR: File Header Record
+:PER: Person Record
+:PRO: Provider Record
+:REF: Referrer Record
+:SER: Service Event Record
+"
+Organistation Identifier (OrgId),Char[6],—,
+Sub Organisation Identifier (SubOrgId),Char[6],—,
+Person Key (PersKey),Char[20],—,
+Statistical Linkage Key (SLK),Char[14],`349510 <http://meteor.aihw.gov.au/content/index.phtml/itemId/349510>`__,
+Date of Birth (DoB),Date[8],`287007 <http://meteor.aihw.gov.au/content/index.phtml/itemId/287007>`__,
+Gender (Gender) [#tn_per1]_,Char[1],—,"
+:0: Not stated/Inadequately described
+:1: Male
+:2: Female
+:3: Other
+"
+Aboriginal And Torres Strait Islander Status (IndigSt),Char[1],`291036 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291036>`__,"
+:1: Aboriginal but not Torres Strait Islander origin
+:2: Torres Strait Islander but not Aboriginal origin
+:3: Both Aboriginal and Torres Strait Islander origin
+:4: Neither Aboriginal or Torres Strait Islander origin
+:9: Not stated/inadequately described
+"
+Country Of Birth (CoB),Char[4],`459973 <http://meteor.aihw.gov.au/content/index.phtml/itemId/459973>`__,
+Main language spoken at home (MLSH),Char[4],`460125 <http://meteor.aihw.gov.au/content/index.phtml/itemId/460125>`__,
+Proficiency in spoken English (ProfEng),Char[1],`270203 <http://meteor.aihw.gov.au/content/index.phtml/itemId/270203>`__,"
+:0: Not applicable (persons under 5 years of age or who speak only English)
+:1: Very well
+:2: Well
+:3: Not well
+:4: Not as all
+:9: Not stated/inadequately described
+"

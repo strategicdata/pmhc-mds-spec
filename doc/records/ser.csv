@@ -1,0 +1,30 @@
+Data Element (Field Name),Type [Length],METeOR Identifier,Notes / Values
+Record Type (RecType),Char[8],—,"
+:COLOC: Collection Occasion Record
+:EPI: Episode Record
+:HR: File Header Record
+:PER: Person Record
+:PRO: Provider Record
+:REF: Referrer Record
+:SER: Service Event Record
+"
+Person Key (PersKey),Char[20],—,
+Referrer Code (RefCode),Char[20],—,
+Episode Start Date (EpiStart),Date[8],—,
+Provider Code (ProCode),Char[20],—,
+Service Event Date (SerDate),Date[8],—,
+Intervention Type/Service Type (SerType),Char[1],—,Value = `0`
+Service Delivery Postcode? (SerPCode) [#tn_ser1]_,Char[4],`429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__,
+Service Modality (SerMod),Char[1],—,Value = `0`
+Venue (Venue),Char[1],—,"
+:1: Home
+:2: Office
+:3: School
+:4: Other
+"
+Duration (Duration),Char[1],—,Value = `0`
+Copayment (Copayment),Char[9],—,
+No Show (NoShow),Char[1],—,"
+:0: No
+:1: Yes
+"
