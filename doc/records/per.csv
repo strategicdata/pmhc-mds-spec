@@ -1,18 +1,15 @@
 Data Element (Field Name),Type [Length],METeOR Identifier,Notes / Values
-Record Type (RecType),Char[8],—,"
-:COLOC: Collection Occasion Record
-:EPI: Episode Record
-:HR: File Header Record
-:PER: Person Record
-:PRO: Provider Record
-:REF: Referrer Record
-:SER: Service Event Record
-"
 Organistation Identifier (OrgId),Char[6],—,
 Sub Organisation Identifier (SubOrgId),Char[6],—,
 Person Key (PersKey),Char[20],—,
 Statistical Linkage Key (SLK),Char[14],`349510 <http://meteor.aihw.gov.au/content/index.phtml/itemId/349510>`__,
 Date of Birth (DoB),Date[8],`287007 <http://meteor.aihw.gov.au/content/index.phtml/itemId/287007>`__,
+Estimated Date of Birth Flag (DoBFlag),Char[1],—,"
+:1: Date of birth is accurate
+:2: Date of birth is an estimate
+:8: Date of birth is a ""dummy"" date (ie, 09099999)
+:9: Accuracy of stated date of birth is not known
+"
 Gender (Gender) [#tn_per1]_,Char[1],—,"
 :0: Not stated/Inadequately described
 :1: Male

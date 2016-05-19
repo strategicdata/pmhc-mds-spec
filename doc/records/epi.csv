@@ -1,16 +1,7 @@
 Data Element (Field Name),Type [Length],METeOR Identifier,Notes / Values
-Record Type (RecType),Char[8],—,"
-:COLOC: Collection Occasion Record
-:EPI: Episode Record
-:HR: File Header Record
-:PER: Person Record
-:PRO: Provider Record
-:REF: Referrer Record
-:SER: Service Event Record
-"
 Person Key (PersKey),Char[20],—,
 Referrer Code (RefCode),Char[20],—,
-Person Postcode (PerPCode) [#tn_epi1]_,Char[4],`429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__,
+"Area of ususal residence, postcode (PerPCode) [#tn_epi1]_",Char[4],`429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__,
 Episode Start Date (EpiStart),Date[8],—,
 Episode End Date (EpiEnd),Date[8],—,
 Source of referral to Mental Health System (RefSource),Char[2],—,Value = `0`
@@ -30,7 +21,15 @@ Income Status - Ranges? or Low Income? (IncomeSt),Char[1],—,Value = `0`
 Previous Treatment (PrevTreat),Char[1],—,Value = `0`
 Princ Diagnosis (PrincDx),Char[1],—,Value = `0`
 Other Diagnosis (OtherDx),Char[1],—,Value = `0`
-Focus of Episode/Treatment (FoE),Char[1],—,Value = `0`
+Principle Focus of Treatment (FoE),Char[1],—,"
+:0: Psychological intervention
+:1: Clinical care coordination
+:2: Complex care package
+:3: Youth severe
+"
 Episode/Patient Outcome (EpiOutcome),Char[2],—,
 Episode Completion Status (CompSt),Char[1],—,Value = `0`
-Medication (Meds),Char[1],—,Value = `0`
+Suicide Risk Flag (SuicideRisk),Char[1],—,"
+:0: No
+:1: Yes
+"

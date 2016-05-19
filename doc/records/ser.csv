@@ -1,19 +1,20 @@
 Data Element (Field Name),Type [Length],METeOR Identifier,Notes / Values
-Record Type (RecType),Char[8],—,"
-:COLOC: Collection Occasion Record
-:EPI: Episode Record
-:HR: File Header Record
-:PER: Person Record
-:PRO: Provider Record
-:REF: Referrer Record
-:SER: Service Event Record
-"
 Person Key (PersKey),Char[20],—,
 Referrer Code (RefCode),Char[20],—,
 Episode Start Date (EpiStart),Date[8],—,
 Provider Code (ProCode),Char[20],—,
-Service Event Date (SerDate),Date[8],—,
-Intervention Type/Service Type (SerType),Char[1],—,Value = `0`
+Mental Health Service Contact Date (SerDate),Date[8],—,
+Intervention Type/Service Type (SerType),Char[1],—,"
+:0: Structured psychological interventions
+:1: Clinical care coordination
+:2: Assessment
+:3: Other psychological interventions
+:4: Youth or child specific assistance
+:5: Suicide prevention specific assistance
+:6: Cultural specific services
+:7: Non-clinical co-ordination (? - To be resolved)
+:8: Case planning (? - To be resolved)
+"
 Service Delivery Postcode? (SerPCode) [#tn_ser1]_,Char[4],`429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__,
 Service Modality (SerMod),Char[1],—,Value = `0`
 Venue (Venue),Char[1],—,"
@@ -22,9 +23,27 @@ Venue (Venue),Char[1],—,"
 :3: School
 :4: Other
 "
-Duration (Duration),Char[1],—,Value = `0`
+Duration (Duration),Char[1],—,"
+:0: 0-15 mins
+:1: 16-30 mins
+:2: 31-45 mins
+:3: 46-60 mins
+:4: 61-75 mins
+:5: 76-90 mins
+:6: 91-105 mins
+:7: 106-120 mins
+:8: over 120 mins
+"
 Copayment (Copayment),Char[9],—,
+Mental health service contact - patient/client participation indicator (PartIndic),Char[1],`494341 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494341>`__,"
+:1: Yes
+:2: No
+"
 No Show (NoShow),Char[1],—,"
+:0: No
+:1: Yes
+"
+Low Intensity (LowInt),Char[1],—,"
 :0: No
 :1: Yes
 "
