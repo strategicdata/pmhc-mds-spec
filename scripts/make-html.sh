@@ -28,9 +28,11 @@ pushd .
 
 cd doc
 
-docker run -ti -v `pwd`:/mnt/workdir sphinx make html
+docker run -ti -v `pwd`:/mnt/workdir sphinx make html latexpdf
 
 cd build
+
+cp latex/PMHC.pdf html
 
 tar -zcvf html.tgz html
 
