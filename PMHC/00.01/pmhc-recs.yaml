@@ -30,6 +30,7 @@ Fields:
   - RecType
   - ProCode
   - Category
+  - IndigSt
   - Active
 Keys:
   Primary: [ OrgId, Code ]
@@ -46,6 +47,7 @@ Fields:
   - PersKey
   - SLK
   - DoB
+  - DoBFlag
   - Gender
   - IndigSt
   - CoB
@@ -77,7 +79,7 @@ Fields:
   - FoE
   - EpiOutcome
   - CompSt
-  - Meds
+  - SuicideRisk
 Keys:
   Primary: [ PersKey, RefCode, EpiStart ]
 Relationships:
@@ -99,7 +101,9 @@ Fields:
   - Venue
   - Duration
   - Copayment
+  - PartIndic
   - NoShow
+  - LowInt
 Keys:
   Primary: [ PersKey, ProCode, SerDate ]
 Relationships:
