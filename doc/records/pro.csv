@@ -1,0 +1,14 @@
+Data Element (Field Name),Type [Length],METeOR Identifier,Notes / Values
+Provider Code (ProCode),Char[20],—,
+Provider category (Category),Char[1],—,Value = `0`
+Aboriginal And Torres Strait Islander Status (IndigSt),Char[1],`291036 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291036>`__,"
+:1: Aboriginal but not Torres Strait Islander origin
+:2: Torres Strait Islander but not Aboriginal origin
+:3: Both Aboriginal and Torres Strait Islander origin
+:4: Neither Aboriginal or Torres Strait Islander origin
+:9: Not stated/inadequately described
+"
+Referrer or provider Active (Active),Char[1],—,"
+:0: Inactive
+:1: Active
+"

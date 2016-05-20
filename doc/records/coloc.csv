@@ -1,0 +1,7 @@
+Data Element (Field Name),Type [Length],METeOR Identifier,Notes / Values
+Person Key (PersKey),Char[20],—,
+Referrer Code (RefCode),Char[20],—,
+Episode Start Date (EpiStart),Date[8],—,
+Measure Name (Measure),Char[20],—,
+Measure Date (MeasDate),Date[8],—,
+Score (Score),Char[2],—,

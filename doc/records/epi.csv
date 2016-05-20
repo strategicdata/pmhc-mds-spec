@@ -1,0 +1,35 @@
+Data Element (Field Name),Type [Length],METeOR Identifier,Notes / Values
+Person Key (PersKey),Char[20],—,
+Referrer Code (RefCode),Char[20],—,
+"Area of ususal residence, postcode (PerPCode) [#tn_epi1]_",Char[4],`429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__,
+Episode Start Date (EpiStart),Date[8],—,
+Episode End Date (EpiEnd),Date[8],—,
+Source of referral to Mental Health System (RefSource),Char[2],—,Value = `0`
+Labour Force Status (LabourSt),Char[1],—,"
+:1: Employed
+:2: Unemployed
+:3: Not in the Labour Force
+:9: Not stated/inadequately described
+"
+Employment Participation (EmpPart),Char[1],`269950 <http://meteor.aihw.gov.au/content/index.phtml/itemId/269950>`__,"
+:1: Full-time
+:2: Part-time
+:7: Not applicable - not in the labour force
+:9: Not stated/inadequately described
+"
+Income Status - Ranges? or Low Income? (IncomeSt),Char[1],—,Value = `0`
+Previous Treatment (PrevTreat),Char[1],—,Value = `0`
+Princ Diagnosis (PrincDx),Char[1],—,Value = `0`
+Other Diagnosis (OtherDx),Char[1],—,Value = `0`
+Principle Focus of Treatment (FoE),Char[1],—,"
+:0: Psychological intervention
+:1: Clinical care coordination
+:2: Complex care package
+:3: Youth severe
+"
+Episode/Patient Outcome (EpiOutcome),Char[2],—,
+Episode Completion Status (CompSt),Char[1],—,Value = `0`
+Suicide Risk Flag (SuicideRisk),Char[1],—,"
+:0: No
+:1: Yes
+"
