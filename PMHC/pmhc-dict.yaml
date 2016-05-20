@@ -8,7 +8,7 @@ Domain:
     HR: File Header Record
     REF: Referrer Record
     PRO: Provider Record
-    PER: Person Record
+    CLI: Client Record
     EPI: Episode Record
     SER: Service Event Record
     COLOC: Collection Occasion Record
@@ -121,10 +121,10 @@ Type: Char[6]
 Domain: The unique code assigned by one of the parent organisations.
 ---
 Definition: This is a number or code assigned to each individual referred to the 
-  flexible funding pool. The person identifier is unique and stable for each 
+  flexible funding pool. The client identifier is unique and stable for each 
    individual at the level of the PMHC top level organisation.
-Name: PersKey
-Title: Person Key
+Name: CliKey
+Title: Client Key
 Type: Char[20]
 Domain: A unique identifier for an individual within the PMHC top level organisation. Must be stable over time.
 ---
@@ -133,7 +133,7 @@ Definition: A key that enables two or more records belonging to the same individ
 MeteorID: 349510
 Name: SLK
 Title: Statistical Linkage Key
-Type: Char[14]
+Type: Char[40]
 Domain: System generated non-identifiable alphanumeric code derived from information held by the PMHC organisation.
 
   • 14 character SLK as defined at http://meteor.aihw.gov.au/content/index.phtml/itemId/349510
@@ -150,8 +150,8 @@ Type: Date[8]
 Domain: |-
   Record the client’s date of birth using DDMMYYYY format.
   If the date of birth is unknown, the following approaches should be used:
-  • If the age of the person is known, the age should be used to derive the year of birth
-  • If the age of the person is unknown, an estimated age of the person should be used to estimate a year of birth
+  • If the age of the client is known, the age should be used to derive the year of birth
+  • If the age of the client is unknown, an estimated age of the client should be used to estimate a year of birth
   • An actual or estimated year of birth should then be converted into an estimated date of birth using the following convention: 01/01/estimated year of birth.
   • If the date of birth is totally unknown, use 09099999.
 Missing: 09099999
@@ -168,7 +168,7 @@ Domain:
     9: Accuracy of stated date of birth is not known
   Missing: 9
 ---
-Definition: The term 'gender' refers to the way in which a person identifies their masculine or feminine characteristics. A person's gender relates to their deeply held internal and individual sense of gender and is not always exclusively male or female. It may or may not correspond to their sex assigned at birth.
+Definition: The term 'gender' refers to the way in which a client identifies their masculine or feminine characteristics. A client's gender relates to their deeply held internal and individual sense of gender and is not always exclusively male or female. It may or may not correspond to their sex assigned at birth.
 Name: Gender
 Title: Gender
 Type:  Char[1]
@@ -180,7 +180,7 @@ Domain:
     0: Not stated/Inadequately described
   Notes: As defined by Australian Bureau of Statistics at http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/1200.0.55.012Main%20Features12016?opendocument&tabname=Summary&prodno=1200.0.55.012&issue=2016&num=&view=
 ---
-Definition: Whether a person identifies as being of Aboriginal and/or Torres Strait Islander origin, as represented by a code.
+Definition: Whether a client identifies as being of Aboriginal and/or Torres Strait Islander origin, as represented by a code.
 MeteorID: 291036
 Name: IndigSt
 Title: Aboriginal And Torres Strait Islander Status
@@ -194,15 +194,15 @@ Domain:
     9: Not stated/inadequately described
   Missing: 9
 ---
-Definition: The country in which the person was born, as represented by a code.
+Definition: The country in which the client was born, as represented by a code.
 MeteorID: 459973
 Name: CoB
 Title: Country Of Birth
 Type: Char[4]
 Domain: Standard Australian Classification of Countries 2011 (SACC 2011) 4-digit code (ABS Catalogue No. 1269.0) [provided in Appendix B] SACC 2011 is a four-digit, three-level hierarchical structure specifying major group, minor group and country. 9999 is used when the information is not known or the client has refused to provide the information.
 ---
-Definition: The language reported by a person as the main language spoken by that person in 
-  his/her home (or most recent private residential setting occupied by the person) to communicate 
+Definition: The language reported by a client as the main language spoken by that client in 
+  his/her home (or most recent private residential setting occupied by the client) to communicate 
   with other residents of the home or setting and regular visitors, as represented by a code.
 MeteorID: 460125
 Name: MLSH
@@ -225,14 +225,14 @@ Domain:
     4: Not as all
     9: Not stated/inadequately described
 ---
-Definition: The Australian postcode of the patient
+Definition: The Australian postcode of the client
 MeteorID: 429894
-Name: PerPCode
+Name: CliPCode
 Title: Area of ususal residence, postcode
 Type: Char[4]
 Domain:
   RangeSet:
-    0000-9999: Valid Australian Postcode
+    0200-0299,0800-0899,0900-0999,1000-9999: Valid Australian Postcode
   Notes: 'Full list of Australian Postcodes can be found at the Australia Post website: http://www.auspost.com.au/'
 ---
 Definition: Episode start date
@@ -339,8 +339,8 @@ Title: Suicide Risk Flag
 Type: Char[1]
 Domain:
   Set:
-    0: No
     1: Yes
+    2: No
 ---
 Definition: Service Event date
 Name: SerDate
@@ -370,7 +370,7 @@ Title: Service Delivery Postcode?
 Type: Char[4]
 Domain:
   RangeSet:
-    0000-9999: Valid Australian Postcode
+    0200-0299,0800-0899,0900-0999,1000-9999: Valid Australian Postcode
   Notes: 'Full list of Australian Postcodes can be found at the Australia Post website: http://www.auspost.com.au/'
 ---
 Name: SerMod
@@ -415,21 +415,21 @@ Title: No Show
 Type: Char[1]
 Domain:
   Set:
-    0: No
     1: Yes
+    2: No
 ---
 Name: LowInt
 Title: Low Intensity
 Type: Char[1]
 Domain:
   Set:
-    0: No
     1: Yes
+    2: No
 ---
-Definition: An indicator of whether the patient/client has participated in a service contact, as represented by a code.
+Definition: An indicator of whether the client has participated in a service contact, as represented by a code.
 MeteorID: 494341
 Name: PartIndic
-Title: Mental health service contact - patient/client participation indicator
+Title: Mental health service contact - client participation indicator
 Type: Char[1]
 Domain:
   Set:
