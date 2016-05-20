@@ -39,12 +39,12 @@ Relationships:
     Degree: many
     Required: 1
 ---
-RecType: PER
+RecType: CLI
 Fields:
   - RecType
   - OrgId
   - SubOrgId
-  - PersKey
+  - CliKey
   - SLK
   - DoB
   - DoBFlag
@@ -54,8 +54,8 @@ Fields:
   - MLSH
   - ProfEng
 Keys:
-  Primary: [ OrgId, PersKey ]
-  Unique: [ PersKey ]
+  Primary: [ OrgId, CliKey ]
+  Unique: [ CliKey ]
 Relationships:
   - Target: HR
     Degree: many
@@ -64,9 +64,9 @@ Relationships:
 RecType: EPI
 Fields:
   - RecType
-  - PersKey
+  - CliKey
   - RefCode
-  - PerPCode 
+  - CliPCode 
   - EpiStart
   - EpiEnd
   - RefSource
@@ -81,7 +81,7 @@ Fields:
   - CompSt
   - SuicideRisk
 Keys:
-  Primary: [ PersKey, RefCode, EpiStart ]
+  Primary: [ CliKey, RefCode, EpiStart ]
 Relationships:
   - Target: PER
     Degree: many
@@ -90,7 +90,7 @@ Relationships:
 RecType: SER
 Fields:
   - RecType
-  - PersKey
+  - CliKey
   - RefCode
   - EpiStart
   - ProCode
@@ -105,7 +105,7 @@ Fields:
   - NoShow
   - LowInt
 Keys:
-  Primary: [ PersKey, ProCode, SerDate ]
+  Primary: [ CliKey, ProCode, SerDate ]
 Relationships:
   - Target: EPI
     Degree: many
@@ -114,14 +114,14 @@ Relationships:
 RecType: COLOC
 Fields:
   - RecType
-  - PersKey
+  - CliKey
   - RefCode
   - EpiStart
   - Measure
   - MeasDate
   - Score
 Keys:
-  Primary: [ PersKey, Measure, MeasDate ]
+  Primary: [ CliKey, Measure, MeasDate ]
 Relationships:
   - Target: EPI
     Degree: many
