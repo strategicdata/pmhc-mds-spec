@@ -98,12 +98,12 @@ Fields:
   - SerType
   - SerPCode
   - SerMod
+  - SerPart
   - Venue
   - Duration
   - Copayment
   - PartIndic
   - NoShow
-  - LowInt
 Keys:
   Primary: [ CliKey, ProCode, SerDate ]
 Relationships:

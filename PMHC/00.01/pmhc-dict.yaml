@@ -241,6 +241,7 @@ Title: Episode Start Date
 Type: Date[8]
 Domain: |
     For Date fields, data must be recorded in compliance with the standard format used across the National Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with leading zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
+  Note, this field will be derived from the first service event date.
 ---
 Definition: Episode end date
 Name: EpiEnd
@@ -248,7 +249,13 @@ Title: Episode End Date
 Type: Date[8]
 Domain: |
   For Date fields, data must be recorded in compliance with the standard format used across the National Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with leading zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
-  Note, this field will be derived from the last service event date if the episode is complete.
+---
+Definition: The date the referrer made the referral.
+Name: RefDate
+Title: Referral Date
+Type: Date[8]
+Domain: |
+  For Date fields, data must be recorded in compliance with the standard format used across the National Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with leading zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
 ---
 Definition: The source of the referral to the Mental Health System.
 Name: RefSource
@@ -332,7 +339,12 @@ Title: Episode Completion Status
 Type: Char[1]
 Domain:
   Set:
-    0: To be defined
+    1: Treatement complete
+    2: Patient could not be contacted
+    3: Patient refused treatment
+    4: Patient referred elsewhere
+    5: Treatment incomplete but referral closed
+    6: Patient ineligible
 ---
 Name: SuicideRisk
 Title: Suicide Risk Flag
@@ -378,7 +390,11 @@ Title: Service Modality
 Type: Char[1]
 Domain:
   Set:
-    0: To be defined
+    1: Face to Face
+    2: Telephone
+    3: Video
+    4: Web-based
+  Notes: Should 'Web-based' be changed to 'Internet based'? Are any other options necessary?
 ---
 Name: Venue
 Title: Venue
@@ -386,9 +402,12 @@ Type: Char[1]
 Domain:
   Set:
     1: Home
-    2: Office
+    2: Practitioner's Office
     3: School
-    4: Other
+    4: Client's Workplace
+    5: Other
+    6: Not applicable (Service modality is face to face)
+  Notes: Values other than 'Not applicable' only to be specified when Service Modality is 'Face to Face'.
 ---
 Name: Duration
 Title: Duration
@@ -418,13 +437,16 @@ Domain:
     1: Yes
     2: No
 ---
-Name: LowInt
-Title: Low Intensity
+Name: SerPart
+Title: Service Participants
 Type: Char[1]
 Domain:
   Set:
-    1: Yes
-    2: No
+    1: Individual
+    2: Group
+    3: Family / Client Support Network
+  Notes: Are any other options necessary?
+
 ---
 Definition: An indicator of whether the client has participated in a service contact, as represented by a code.
 MeteorID: 494341
