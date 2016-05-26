@@ -1,8 +1,13 @@
+#!/bin/bash
+
+# Exit if anything errors
+set -e
+
 cp -rf PMHC* ../DDict/lib/DDict
 
 pushd .
 
-cd ../DDict/
+cd ../DDict/ 
 
 make install
 
@@ -20,6 +25,7 @@ for f in *.csv; do
   mv $f.t $f
 done
 
+rm ../spec/doc/records/*
 mv *.{csv,rst} ../spec/doc/records/
 
 popd
