@@ -34,7 +34,7 @@ pushd .
 
 cd doc
 
-docker run -ti -v `pwd`:/mnt/workdir sphinx make html latexpdf
+docker run -ti -v `pwd`:/mnt/workdir stratdat/sphinx:production make html latexpdf
 
 cd build
 
