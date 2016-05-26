@@ -79,7 +79,7 @@ Fields:
   - FoE
   - EpiOutcome
   - CompSt
-  - SuicideRisk
+  - SuicideRef
 Keys:
   Primary: [ CliKey, RefCode, EpiStart ]
 Relationships:

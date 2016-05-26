@@ -9,3 +9,4 @@ Table of contents
 
    general-information
    data-model-and-specifications
+   reporting-arrangements

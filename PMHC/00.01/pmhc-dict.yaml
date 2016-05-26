@@ -324,10 +324,10 @@ Title: Principle Focus of Treatment
 Type: Char[1]
 Domain:
   Set:
-    0: Psychological intervention
+    0: Psychological therapy
     1: Clinical care coordination
-    2: Complex care package
-    3: Youth severe
+    2: Complex care package for adults
+    3: Care package for a youth with severe mental illness
 ---
 Name: EpiOutcome
 Title: Episode/Patient Outcome
@@ -346,8 +346,9 @@ Domain:
     5: Treatment incomplete but referral closed
     6: Patient ineligible
 ---
-Name: SuicideRisk
-Title: Suicide Risk Flag
+Definition: Identifies those individuals where a recent history of suicide attempt, or suicide risk, was a factor noted in the referral that underpinned the person's needs for assistance at entry to the episode.
+Name: SuicideRef
+Title: Suicide Referral Flag
 Type: Char[1]
 Domain:
   Set:
@@ -365,14 +366,14 @@ Title: Intervention Type/Service Type
 Type: Char[1]
 Domain:
   Set:
-    0: Structured psychological interventions
-    1: Clinical care coordination
-    2: Assessment
-    3: Other psychological interventions
-    4: Youth or child specific assistance
-    5: Suicide prevention specific assistance
-    6: Cultural specific services
-    7: Non-clinical co-ordination (? - To be resolved)
+    0: Structured psychological intervention
+    1: Other psychological intervention
+    2: Clinical care coordination
+    3: Child or youth specific assistance NEC
+    4: Suicide prevention specific assistance NEC
+    5: Cultural specific services NEC
+    6: Assessment (?)
+    7: Non clinical care coordination (? - To be resolved)
     8: Case planning (? - To be resolved)
 ---
 Definition: The Australian postcode where the service delivery took place
@@ -385,6 +386,7 @@ Domain:
     0200-0299,0800-0899,0900-0999,1000-9999: Valid Australian Postcode
   Notes: 'Full list of Australian Postcodes can be found at the Australia Post website: http://www.auspost.com.au/'
 ---
+Definition: How the service was delivered. 
 Name: SerMod
 Title: Service Modality
 Type: Char[1]
@@ -394,8 +396,9 @@ Domain:
     2: Telephone
     3: Video
     4: Web-based
-  Notes: Should 'Web-based' be changed to 'Internet based'? Are any other options necessary?
+  Notes: If 'Face to Face' is selected, a value other than 'Not applicable' must be selected for Venue. Should 'Web-based' be changed to 'Internet based'? Are any other options necessary?
 ---
+Definition: Where the service was delivered.
 Name: Venue
 Title: Venue
 Type: Char[1]
@@ -424,6 +427,7 @@ Domain:
     7: 106-120 mins
     8: over 120 mins
 ---
+Definition: The co-payment is the amount paid by the client per session, not the fee paid by the project to the provider or the fee paid by the project to the provider plus the client contribution. In many cases, there will not be a co-payment charged and therefore zero should be entered. Where a co-payment is charged it should be minimal and based on an individual's capacity to pay.
 Name: Copayment
 Title: Copayment
 Type: Char[9]
