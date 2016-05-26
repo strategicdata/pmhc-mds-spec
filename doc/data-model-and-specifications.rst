@@ -60,14 +60,14 @@ Provider data record
 
 .. include:: records/pro-notes.rst
 
-Person data record
+Client data record
 ^^^^^^^^^^^^^^^^^^
 
-.. csv-table:: Person record layout
-   :file: records/per.csv
+.. csv-table:: Client record layout
+   :file: records/cli.csv
    :header-rows: 1
 
-.. include:: records/per-notes.rst
+.. include:: records/cli-notes.rst
 
 Episode data record
 ^^^^^^^^^^^^^^^^^^^
