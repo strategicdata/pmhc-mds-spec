@@ -34,12 +34,6 @@ pushd .
 
 cd doc
 
-docker run -ti -v `pwd`:/mnt/workdir stratdat/sphinx:production make html latexpdf
-
-cd build
-
-cp latex/PMHC.pdf html
-
-tar -zcvf html.tgz html
+docker run -ti -v `pwd`:/mnt/workdir stratdat/sphinx:production make $1
 
 popd
