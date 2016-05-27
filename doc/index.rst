@@ -7,6 +7,5 @@ Table of contents
 .. toctree::
    :maxdepth: 2
 
-   general-information
-   data-model-and-specifications
    reporting-arrangements
+   data-model-and-specifications
