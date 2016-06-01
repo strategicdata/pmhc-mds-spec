@@ -1,5 +1,5 @@
 Data Element (Field Name),Type [Length],METeOR Identifier,Notes / Values
-Person Key (PersKey),Char[20],—,
+Client Key (CliKey),Char[20],—,
 Referrer Code (RefCode),Char[20],—,
 Episode Start Date (EpiStart),Date[8],—,
 Measure Name (Measure),Char[20],—,

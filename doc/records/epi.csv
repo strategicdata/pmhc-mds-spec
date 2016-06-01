@@ -1,7 +1,7 @@
 Data Element (Field Name),Type [Length],METeOR Identifier,Notes / Values
-Person Key (PersKey),Char[20],—,
+Client Key (CliKey),Char[20],—,
 Referrer Code (RefCode),Char[20],—,
-"Area of ususal residence, postcode (PerPCode) [#tn_epi1]_",Char[4],`429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__,
+"Area of ususal residence, postcode (CliPCode) [#tn_epi1]_",Char[4],`429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__,
 Episode Start Date (EpiStart),Date[8],—,
 Episode End Date (EpiEnd),Date[8],—,
 Source of referral to Mental Health System (RefSource),Char[2],—,Value = `0`
@@ -22,14 +22,21 @@ Previous Treatment (PrevTreat),Char[1],—,Value = `0`
 Princ Diagnosis (PrincDx),Char[1],—,Value = `0`
 Other Diagnosis (OtherDx),Char[1],—,Value = `0`
 Principle Focus of Treatment (FoE),Char[1],—,"
-:0: Psychological intervention
+:0: Psychological therapy
 :1: Clinical care coordination
-:2: Complex care package
-:3: Youth severe
+:2: Complex care package for adults
+:3: Care package for a youth with severe mental illness
 "
 Episode/Patient Outcome (EpiOutcome),Char[2],—,
-Episode Completion Status (CompSt),Char[1],—,Value = `0`
-Suicide Risk Flag (SuicideRisk),Char[1],—,"
-:0: No
+Episode Completion Status (CompSt),Char[1],—,"
+:1: Treatement complete
+:2: Patient could not be contacted
+:3: Patient refused treatment
+:4: Patient referred elsewhere
+:5: Treatment incomplete but referral closed
+:6: Patient ineligible
+"
+Suicide Referral Flag (SuicideRef),Char[1],—,"
 :1: Yes
+:2: No
 "

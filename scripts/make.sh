@@ -1,8 +1,13 @@
+#!/bin/bash
+
+# Exit if anything errors
+set -e
+
 cp -rf PMHC* ../DDict/lib/DDict
 
 pushd .
 
-cd ../DDict/
+cd ../DDict/ 
 
 make install
 
@@ -20,6 +25,7 @@ for f in *.csv; do
   mv $f.t $f
 done
 
+rm ../spec/doc/records/*
 mv *.{csv,rst} ../spec/doc/records/
 
 popd
@@ -28,12 +34,6 @@ pushd .
 
 cd doc
 
-docker run -ti -v `pwd`:/mnt/workdir sphinx make html latexpdf
-
-cd build
-
-cp latex/PMHC.pdf html
-
-tar -zcvf html.tgz html
+docker run -ti -v `pwd`:/mnt/workdir stratdat/sphinx:production make $1
 
 popd

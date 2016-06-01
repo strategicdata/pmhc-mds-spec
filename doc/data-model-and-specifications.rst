@@ -1,11 +1,8 @@
 Data model and specifications
 =============================
 
-Data model of the PMHC MDS Extract
-----------------------------------
-
 Data integrity
-^^^^^^^^^^^^^^
+---------------
 
 For cases of missing data (that is, unknown, not stated or not
 available):
@@ -42,8 +39,11 @@ space-filled. These should consist of any of the printable ASCII
 character set (that is, excluding control codes such as newline, bell
 and linefeed).
 
-Referrer data record
-^^^^^^^^^^^^^^^^^^^^
+Record formats
+--------------
+
+Referrer
+^^^^^^^^
 
 .. csv-table:: Referrer record layout
    :file: records/ref.csv
@@ -51,8 +51,8 @@ Referrer data record
    
 .. include:: records/ref-notes.rst
 
-Provider data record
-^^^^^^^^^^^^^^^^^^^^
+Provider
+^^^^^^^^
 
 .. csv-table:: Provider record layout
   :file: records/pro.csv
@@ -60,17 +60,17 @@ Provider data record
 
 .. include:: records/pro-notes.rst
 
-Person data record
-^^^^^^^^^^^^^^^^^^
+Client
+^^^^^^
 
-.. csv-table:: Person record layout
-   :file: records/per.csv
+.. csv-table:: Client record layout
+   :file: records/cli.csv
    :header-rows: 1
 
-.. include:: records/per-notes.rst
+.. include:: records/cli-notes.rst
 
-Episode data record
-^^^^^^^^^^^^^^^^^^^
+Episode
+^^^^^^^
 
 .. csv-table:: Episode record layout
    :file: records/epi.csv
@@ -78,8 +78,8 @@ Episode data record
    
 .. include:: records/epi-notes.rst
 
-Service event data record
-^^^^^^^^^^^^^^^^^^^^^^^^^
+Service event
+^^^^^^^^^^^^^
 
 .. csv-table:: Service event record layout
    :file: records/ser.csv
@@ -87,8 +87,8 @@ Service event data record
    
 .. include:: records/ser-notes.rst
 
-Collection occasion data record
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Collection occasion
+^^^^^^^^^^^^^^^^^^^
 
 .. csv-table:: Collection occasion record layout
    :file: records/coloc.csv
