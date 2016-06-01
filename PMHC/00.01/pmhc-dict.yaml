@@ -91,6 +91,14 @@ Domain:
   Set:
     0: To be defined
 ---
+Definition: The entity of the referrer.
+Name: RefEntity
+Title: Referrer Entity
+Type: Char[1]
+Domain: 
+  Set:
+    0: To be defined
+---
 Definition: A flag to represent whether a referrer or provider is active.
 Name: Active
 Title: Referrer or provider Active
@@ -112,7 +120,35 @@ Title: Provider category
 Type: Char[1]
 Domain:
   Set:
-    0: To be defined
+    0: Psychologist (clinical)
+    1: Psychologist (generalist/other)
+    2: Social worker
+    3: Occupational therapist
+    4: Mental health nurse
+    5: Aboriginal and Torres Strait Islander health/mental health worker
+    6: Low intensity mental health worker
+    7: Other
+---
+Definition: A flag to represent whether a provider has done cultural training
+Name: CultFlag
+Title: Cultural training flag
+Type: Char[1]
+Domain:
+  Set:
+    1: Yes
+    2: No
+    9: Missing/Not recorded
+---
+Name: YoB
+Title: Year of Birth
+Type: Char[4]
+Domain: |-
+  Record the providers’s year of birth YYYY format.
+  If the year of birth is unknown, the following approaches should be used:
+  • If the age of the client is known, the age should be used to derive the year of birth
+  • If the age of the client is unknown, an estimated age of the client should be used to estimate a year of birth
+  • If the date of birth is totally unknown, use 9999.
+Missing: 9999
 ---
 Definition: A sequence of characters which uniquely identifies the PMHC sub organisation.
 Name: SubOrgId
@@ -168,7 +204,7 @@ Domain:
     9: Accuracy of stated date of birth is not known
   Missing: 9
 ---
-Definition: The term 'gender' refers to the way in which a client identifies their masculine or feminine characteristics. A client's gender relates to their deeply held internal and individual sense of gender and is not always exclusively male or female. It may or may not correspond to their sex assigned at birth.
+Definition: The term 'gender' refers to the way in which a person identifies their masculine or feminine characteristics. A persons gender relates to their deeply held internal and individual sense of gender and is not always exclusively male or female. It may or may not correspond to their sex assigned at birth.
 Name: Gender
 Title: Gender
 Type:  Char[1]
@@ -180,7 +216,7 @@ Domain:
     0: Not stated/Inadequately described
   Notes: As defined by Australian Bureau of Statistics at http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/1200.0.55.012Main%20Features12016?opendocument&tabname=Summary&prodno=1200.0.55.012&issue=2016&num=&view=
 ---
-Definition: Whether a client identifies as being of Aboriginal and/or Torres Strait Islander origin, as represented by a code.
+Definition: Whether a person identifies as being of Aboriginal and/or Torres Strait Islander origin, as represented by a code.
 MeteorID: 291036
 Name: IndigSt
 Title: Aboriginal And Torres Strait Islander Status
@@ -259,14 +295,6 @@ Type: Date[8]
 Domain: |
   For Date fields, data must be recorded in compliance with the standard format used across the National Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with leading zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
 ---
-Definition: The source of the referral to the Mental Health System.
-Name: RefSource
-Title: Source of referral to Mental Health System
-Type: Char[2]
-Domain:
-  Set:
-    0: To be defined
----
 Definition: Labour Force Status is a classification of the relevant population into employed, unemployed or not in the labour force.
 Name: LabourSt
 Title: Labour Force Status
@@ -299,8 +327,8 @@ Domain:
   Set:
     0: To be defined
 ---
-Name: PrevTreat
-Title: Previous Treatment
+Name: IncomeSce
+Title: Income Source
 Type: Char[1]
 Domain:
   Set:
@@ -320,13 +348,20 @@ Domain:
   Set:
     0: To be defined
 ---
+Name: Medication
+Title: Medication
+Type: Char[1]
+Domain:
+  Set:
+    0: Was this the current four items plus 'Not on medication' with Yes/No/Missing for each item or an ATC Level 3 code?
+---
 Definition: The primary reason for the episode of care
 Name: FoE
 Title: Principle Focus of Treatment
 Type: Char[1]
 Domain:
   Set:
-    0: Psychological therapy
+    0: Psychological intervention
     1: Clinical care coordination
     2: Complex care package for adults
     3: Care package for a youth with severe mental illness
@@ -334,7 +369,7 @@ Domain:
 Name: EpiOutcome
 Title: Episode/Patient Outcome
 Type: Char[2]
-Domain: Difference between the entry and exit score.
+Domain: To be defined
 ---
 Name: CompSt
 Title: Episode Completion Status
@@ -347,6 +382,50 @@ Domain:
     4: Patient referred elsewhere
     5: Treatment incomplete but referral closed
     6: Patient ineligible
+---
+Definition: Is the client a participant in the National Disability Insurance Scheme?
+Name: NDIS
+Title: NDIS participant
+Type: Char[1]
+Domain:
+  Set:
+    1: Yes
+    2: No
+---
+Definition: A person's current relationship status in terms of a couple relationship or, for those not in a couple relationship, the existence of a current or previous registered marriage, as represented by a code.
+MeteorID: 291045
+Name: MaritalSt
+Title: Marital Status
+Type: Char[1]
+Domain:
+  Set:
+    1: Never married
+    2: Widowed
+    3: Divorced
+    4: Separated
+    5: Married (registered and do facto)
+    9: Not stated/inadequately described
+---
+Definition: The type of physical setting in which a person usually resides, as represented by a code.
+MeteorID: 621477
+Name: Accom
+Title: Accomodation
+Type: Char[2]
+Domain:
+  Set:
+    1: Private residence (e.g. private or public rental, owned, purchasing etc)
+    2: Residence within an Aboriginal/Torres Strait Islander community (e.g. rented private residence, temporary shelter)
+    3: Domestic-scale supported living facility (e.g. group homes)
+    4: Supported accommodation facility (e.g. hostels, supported residential services or facilities)
+    5: Boarding house/private hotel
+    6: Independent living unit within a retirement village
+    7: Residential aged care facility (nursing home or aged care hostel)
+    8: Psychiatric/mental health community care facility
+    9: Hospital
+   10: Short term crisis, emergency or transitional accommodation facility (e.g. night shelters, refuges, hostels for the homeless, halfway houses)
+   11: Public place/temporary shelter
+   12: Other
+   99: Not stated/inadequately described
 ---
 Definition: Identifies those individuals where a recent history of suicide attempt, or suicide risk, was a factor noted in the referral that underpinned the person's needs for assistance at entry to the episode.
 Name: SuicideRef
@@ -364,7 +443,7 @@ Type: Date[8]
 Domain: For Date fields, data must be recorded in compliance with the standard format used across the National Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with leading zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
 ---
 Name: SerType
-Title: Intervention Type/Service Type
+Title: Service Type
 Type: Char[1]
 Domain:
   Set:
@@ -373,10 +452,7 @@ Domain:
     2: Clinical care coordination
     3: Child or youth specific assistance NEC
     4: Suicide prevention specific assistance NEC
-    5: Cultural specific services NEC
-    6: Assessment (?)
-    7: Non clinical care coordination (? - To be resolved)
-    8: Case planning (? - To be resolved)
+    5: Cultural specific assistance NEC
 ---
 Definition: The Australian postcode where the service delivery took place
 MeteorID: 429894

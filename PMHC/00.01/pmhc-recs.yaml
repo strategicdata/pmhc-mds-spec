@@ -12,24 +12,14 @@ Fields:
 Keys:
   Primary: [ OrgId ]
 ---
-RecType: REF
-Fields:
-  - RecType
-  - RefCode
-  - RefType
-  - Active
-Keys:
-  Primary: [ OrgId, Code ]
-Relationships:
-  - Target: HR
-    Degree: many
-    Required: 1
----
 RecType: PRO
 Fields:
   - RecType
   - ProCode
   - Category
+  - CultFlag
+  - YoB
+  - Gender
   - IndigSt
   - Active
 Keys:
@@ -69,17 +59,22 @@ Fields:
   - CliPCode 
   - EpiStart
   - EpiEnd
-  - RefSource
   - LabourSt
   - EmpPart
   - IncomeSt
-  - PrevTreat
+  - IncomeSce
+  - Medication
+  - NDIS
+  - MaritalSt
+  - Accom
   - PrincDx
   - OtherDx
   - FoE
   - EpiOutcome
   - CompSt
   - SuicideRef
+  - RefType
+  - RefEntity
 Keys:
   Primary: [ CliKey, RefCode, EpiStart ]
 Relationships:
