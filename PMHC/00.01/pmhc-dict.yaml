@@ -422,10 +422,10 @@ Domain:
     7: Residential aged care facility (nursing home or aged care hostel)
     8: Psychiatric/mental health community care facility
     9: Hospital
-   10: Short term crisis, emergency or transitional accommodation facility (e.g. night shelters, refuges, hostels for the homeless, halfway houses)
-   11: Public place/temporary shelter
-   12: Other
-   99: Not stated/inadequately described
+    10: Short term crisis, emergency or transitional accommodation facility (e.g. night shelters, refuges, hostels for the homeless, halfway houses)
+    11: Public place/temporary shelter
+    12: Other
+    99: Not stated/inadequately described
 ---
 Definition: Identifies those individuals where a recent history of suicide attempt, or suicide risk, was a factor noted in the referral that underpinned the person's needs for assistance at entry to the episode.
 Name: SuicideRef
