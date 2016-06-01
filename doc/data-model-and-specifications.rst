@@ -42,15 +42,6 @@ and linefeed).
 Record formats
 --------------
 
-Referrer
-^^^^^^^^
-
-.. csv-table:: Referrer record layout
-   :file: records/ref.csv
-   :header-rows: 1
-   
-.. include:: records/ref-notes.rst
-
 Provider
 ^^^^^^^^
 
