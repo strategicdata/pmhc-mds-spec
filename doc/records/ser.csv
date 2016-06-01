@@ -1,19 +1,16 @@
 Data Element (Field Name),Type [Length],METeOR Identifier,Notes / Values
 Client Key (CliKey),Char[20],—,
 Referrer Code (RefCode),Char[20],—,
-Episode Start Date (EpiStart),Date[8],—,
+Episode Start Date (EpiStart),Date[8],`614072 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614072>`__,
 Provider Code (ProCode),Char[20],—,
 Mental Health Service Contact Date (SerDate),Date[8],—,
-Intervention Type/Service Type (SerType),Char[1],—,"
+Service Type (SerType),Char[1],—,"
 :0: Structured psychological intervention
 :1: Other psychological intervention
 :2: Clinical care coordination
 :3: Child or youth specific assistance NEC
 :4: Suicide prevention specific assistance NEC
-:5: Cultural specific services NEC
-:6: Assessment (?)
-:7: Non clinical care coordination (? - To be resolved)
-:8: Case planning (? - To be resolved)
+:5: Cultural specific assistance NEC
 "
 Service Delivery Postcode? (SerPCode) [#tn_ser1]_,Char[4],`429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__,
 Service Modality (SerMod) [#tn_ser2]_,Char[1],—,"
