@@ -1,7 +1,0 @@
-Data Element (Field Name),Type [Length],METeOR Identifier,Notes / Values
-Referrer Code (RefCode),Char[20],—,
-Referrer Type (RefType),Char[1],—,Value = `0`
-Referrer or provider Active (Active),Char[1],—,"
-:0: Inactive
-:1: Active
-"

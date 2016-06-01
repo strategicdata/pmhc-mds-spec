@@ -1,6 +1,27 @@
 Data Element (Field Name),Type [Length],METeOR Identifier,Notes / Values
 Provider Code (ProCode),Char[20],—,
-Provider category (Category),Char[1],—,Value = `0`
+Provider category (Category),Char[1],—,"
+:0: Psychologist (clinical)
+:1: Psychologist (generalist/other)
+:2: Social worker
+:3: Occupational therapist
+:4: Mental health nurse
+:5: Aboriginal and Torres Strait Islander health/mental health worker
+:6: Low intensity mental health worker
+:7: Other
+"
+Cultural training flag (CultFlag),Char[1],—,"
+:1: Yes
+:2: No
+:9: Missing/Not recorded
+"
+Year of Birth (YoB),Char[4],—,
+Gender (Gender) [#tn_pro1]_,Char[1],—,"
+:0: Not stated/Inadequately described
+:1: Male
+:2: Female
+:3: Other
+"
 Aboriginal And Torres Strait Islander Status (IndigSt),Char[1],`291036 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291036>`__,"
 :1: Aboriginal but not Torres Strait Islander origin
 :2: Torres Strait Islander but not Aboriginal origin

@@ -1,4 +1,5 @@
-Record length = 31
+Record length = 37
 
 .. rubric:: Notes
 
+.. [#tn_pro1] As defined by Australian Bureau of Statistics at http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/1200.0.55.012Main%20Features12016?opendocument&tabname=Summary&prodno=1200.0.55.012&issue=2016&num=&view=

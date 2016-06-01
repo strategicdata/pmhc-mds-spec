@@ -2,9 +2,8 @@ Data Element (Field Name),Type [Length],METeOR Identifier,Notes / Values
 Client Key (CliKey),Char[20],—,
 Referrer Code (RefCode),Char[20],—,
 "Area of ususal residence, postcode (CliPCode) [#tn_epi1]_",Char[4],`429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__,
-Episode Start Date (EpiStart),Date[8],—,
-Episode End Date (EpiEnd),Date[8],—,
-Source of referral to Mental Health System (RefSource),Char[2],—,Value = `0`
+Episode Start Date (EpiStart),Date[8],`614072 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614072>`__,
+Episode End Date (EpiEnd),Date[8],`614094 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614094>`__,
 Labour Force Status (LabourSt),Char[1],—,"
 :1: Employed
 :2: Unemployed
@@ -18,11 +17,39 @@ Employment Participation (EmpPart),Char[1],`269950 <http://meteor.aihw.gov.au/co
 :9: Not stated/inadequately described
 "
 Income Status - Ranges? or Low Income? (IncomeSt),Char[1],—,Value = `0`
-Previous Treatment (PrevTreat),Char[1],—,Value = `0`
+Income Source (IncomeSce),Char[1],—,Value = `0`
+Medication (Medication),Char[1],—,Value = `0`
+NDIS participant (NDIS),Char[1],—,"
+:1: Yes
+:2: No
+"
+Marital Status (MaritalSt),Char[1],`291045 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291045>`__,"
+:1: Never married
+:2: Widowed
+:3: Divorced
+:4: Separated
+:5: Married (registered and do facto)
+:9: Not stated/inadequately described
+"
+Accomodation (Accom),Char[2],`621477 <http://meteor.aihw.gov.au/content/index.phtml/itemId/621477>`__,"
+:1: Private residence (e.g. private or public rental, owned, purchasing etc)
+:10: Short term crisis, emergency or transitional accommodation facility (e.g. night shelters, refuges, hostels for the homeless, halfway houses)
+:11: Public place/temporary shelter
+:12: Other
+:2: Residence within an Aboriginal/Torres Strait Islander community (e.g. rented private residence, temporary shelter)
+:3: Domestic-scale supported living facility (e.g. group homes)
+:4: Supported accommodation facility (e.g. hostels, supported residential services or facilities)
+:5: Boarding house/private hotel
+:6: Independent living unit within a retirement village
+:7: Residential aged care facility (nursing home or aged care hostel)
+:8: Psychiatric/mental health community care facility
+:9: Hospital
+:99: Not stated/inadequately described
+"
 Princ Diagnosis (PrincDx),Char[1],—,Value = `0`
 Other Diagnosis (OtherDx),Char[1],—,Value = `0`
 Principle Focus of Treatment (FoE),Char[1],—,"
-:0: Psychological therapy
+:0: Psychological intervention
 :1: Clinical care coordination
 :2: Complex care package for adults
 :3: Care package for a youth with severe mental illness
@@ -40,3 +67,5 @@ Suicide Referral Flag (SuicideRef),Char[1],—,"
 :1: Yes
 :2: No
 "
+Referrer Type (RefType),Char[1],—,Value = `0`
+Referrer Entity (RefEntity),Char[1],—,Value = `0`
