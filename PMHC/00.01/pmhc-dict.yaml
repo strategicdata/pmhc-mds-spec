@@ -6,7 +6,6 @@ Type: Char[8]
 Domain:
   Set:
     HR: File Header Record
-    REF: Referrer Record
     PRO: Provider Record
     CLI: Client Record
     EPI: Episode Record
@@ -77,12 +76,6 @@ Domain:
     00.01: Version 0.01
 Required: 1
 ---
-Definition: A sequence of characters which uniquely identifies a referrer.
-Name: RefCode
-Title: Referrer Code
-Type: Char[20]
-Domain: A unique identifier for a referrer within the PMHC top level organisation.
----
 Definition: The type of the referrer.
 Name: RefType
 Title: Referrer Type
@@ -99,7 +92,7 @@ Domain:
   Set:
     0: To be defined
 ---
-Definition: A flag to represent whether a referrer or provider is active.
+Definition: A flag to represent whether a provider is active.
 Name: Active
 Title: Referrer or provider Active
 Type: Char[1]
