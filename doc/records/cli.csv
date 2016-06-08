@@ -24,7 +24,7 @@ Aboriginal And Torres Strait Islander Status (IndigSt),Char[1],`291036 <http://m
 :9: Not stated/inadequately described
 "
 Country Of Birth (CoB),Char[4],`459973 <http://meteor.aihw.gov.au/content/index.phtml/itemId/459973>`__,
-Main language spoken at home (MLSH),Char[4],`460125 <http://meteor.aihw.gov.au/content/index.phtml/itemId/460125>`__,
+Main language other than English spoken at home (MLSH),Char[4],`460125 <http://meteor.aihw.gov.au/content/index.phtml/itemId/460125>`__,
 Proficiency in spoken English (ProfEng),Char[1],`270203 <http://meteor.aihw.gov.au/content/index.phtml/itemId/270203>`__,"
 :0: Not applicable (persons under 5 years of age or who speak only English)
 :1: Very well
