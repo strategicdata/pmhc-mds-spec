@@ -16,8 +16,8 @@ RecType: ORG
 Fields:
   - RecType
   - OrgName
-  - Orgcode
-  - Type
+  - OrgCode
+  - OrgType
   - State
 Keys:
   Primary: [ OrgCode ]
