@@ -1,8 +1,11 @@
 Data Element (Field Name),Type [Length],METeOR Identifier,Notes / Values
-Client Key (CliKey),Char[20],—,
-Episode Start Date (EpiStart),Date[8],`614072 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614072>`__,
-Provider Code (ProCode),Char[20],—,
-Mental Health Service Contact Date (SerDate),Date[8],—,
+Client Key (CliKey),Char[20],—,A unique identifier for an individual within the PMHC top level organisation. Must be stable over time.
+Episode Start Date (EpiStart),Date[8],`614072 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614072>`__,"For Date fields, data must be recorded in compliance with the standard format used across the National 
+Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with 
+leading zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
+"
+Provider Key (ProKey),Char[20],—,A unique identifier for a provider within the PMHC top level organisation.
+Mental Health Service Contact Date (SerDate),Date[8],—,"For Date fields, data must be recorded in compliance with the standard format used across the National Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with leading zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008."
 Service Type (SerType),Char[1],—,"
 :1: Structured psychological intervention
 :2: Other psychological intervention
@@ -11,19 +14,26 @@ Service Type (SerType),Char[1],—,"
 :5: Suicide prevention specific assistance NEC
 :6: Cultural specific assistance NEC
 "
-Service Delivery Postcode (SerPCode) [#tn_ser1]_,Char[4],`429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__,
-Service Modality (SerMod) [#tn_ser2]_,Char[1],—,"
+Service Delivery Postcode (SerPCode),Char[4],`429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__,"Valid Australian Postcode:
+
+- Enter 9999 if the postcode is unknown
+- If Service Modality is not 'Face to Face' enter 9999
+- If Service Modality is 'Face to Face' a valid Australian postcode must be entered
+
+The full list of Australian Postcodes can be found at `Australia Post <http://www.auspost.com.au/>`_.
+"
+Service Modality (SerMod),Char[1],—,"
 :1: Face to Face
 :2: Telephone
 :3: Video
 :4: Internet-based
 "
-Service Participants (SerPart) [#tn_ser3]_,Char[1],—,"
+Service Participants (SerPart) [#tn_ser1]_,Char[1],—,"
 :1: Individual
 :2: Group
 :3: Family / Client Support Network
 "
-Venue (Venue) [#tn_ser4]_,Char[1],—,"
+Venue (Venue),Char[1],—,"
 :1: Home
 :2: Practitioner's Office
 :3: School
@@ -42,7 +52,7 @@ Duration (Duration),Char[1],—,"
 :8: 106-120 mins
 :9: over 120 mins
 "
-Copayment (Copayment),Char[9],—,
+Copayment (Copayment),Char[9],—,Up to 6 digits before the decimal point; up to 2 digits after the decimal point
 Mental health service contact - client participation indicator (PartIndic),Char[1],`494341 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494341>`__,"
 :1: Yes
 :2: No

@@ -80,17 +80,13 @@ Definition: The type of the referrer.
 Name: RefType
 Title: Referrer Type
 Type: Char[1]
-Domain: 
-  Set:
-    0: To be defined
+Domain: To be defined
 ---
 Definition: The entity of the referrer.
 Name: RefEntity
 Title: Referrer Entity
 Type: Char[1]
-Domain: 
-  Set:
-    0: To be defined
+Domain: To be defined
 ---
 Definition: A flag to represent whether a provider is active.
 Name: Active
@@ -138,11 +134,11 @@ Title: Year of Birth
 Type: Char[4]
 Domain: |-
   Record the providers’s year of birth YYYY format.
-Comment: |-
+Comments: |-
   If the year of birth is unknown, the following approaches should be used:
-  • If the age of the client is known, the age should be used to derive the year of birth
-  • If the age of the client is unknown, an estimated age of the client should be used to estimate a year of birth
-  • If the date of birth is totally unknown, use 9999.
+  - If the age of the client is known, the age should be used to derive the year of birth
+  - If the age of the client is unknown, an estimated age of the client should be used to estimate a year of birth
+  - If the date of birth is totally unknown, use 9999.
 Missing: 9999
 ---
 Definition: A sequence of characters which uniquely identifies the PMHC sub organisation.
@@ -165,12 +161,13 @@ MeteorID: 349510
 Name: SLK
 Title: Statistical Linkage Key
 Type: Char[40]
-Domain: System generated non-identifiable alphanumeric code derived from information held by the PMHC organisation.
+Domain: |
+  System generated non-identifiable alphanumeric code derived from information held by the PMHC organisation.
 
-  • 14 character SLK as defined at http://meteor.aihw.gov.au/content/index.phtml/itemId/349510
-  • a Crockford encoded sha1 hash of a 14 character SLK. This must be 32 characters in length. 
-    The Crockford encoding spec is defined at http://www.crockford.com/wrmg/base32.html.
-  • a hex encoded sha1 hash of a 14 character SLK. This must be 40 characters in length.
+  - 14 character `SLK <http://meteor.aihw.gov.au/content/index.phtml/itemId/349510>`_
+  - a Crockford encoded sha1 hash of a 14 character SLK. This must be 32 characters in length. 
+    See the `Crockford encoding specification <http://www.crockford.com/wrmg/base32.html>`_.
+  - a hex encoded sha1 hash of a 14 character SLK. This must be 40 characters in length.
 
   SLK values are stored in sha1_hex format.
 ---
@@ -184,12 +181,12 @@ Domain: |-
 Missing: 09099999
 Comments: |-
   If the date of birth is unknown, the following approaches should be used:
-  •  If the age of the person is known, the age should be used to derive the year of birth
-  •  If the age of the person is unknown, an estimated age of the person should be used to estimate a year of birth
-  •  An actual or estimated year of birth should then be converted into an estimated date of birth using the 
-     following convention: 0101Estimated year of birth.
-  •  If the date of birth is totally unknown, use 09099999.
-  •  If you have estimated the year of birth make sure you record this in the ‘Estimated date of birth flag’
+  - If the age of the person is known, the age should be used to derive the year of birth
+  - If the age of the person is unknown, an estimated age of the person should be used to estimate a year of birth
+  - An actual or estimated year of birth should then be converted into an estimated date of birth using the 
+    following convention: 0101Estimated year of birth.
+  - If the date of birth is totally unknown, use 09099999.
+  - If you have estimated the year of birth make sure you record this in the ‘Estimated date of birth flag’
 ---
 Definition: The date of birth estimate flag records whether or not the client's date of birth has been estimated.
 Name: DoBFlag
@@ -233,9 +230,9 @@ Domain:
   Missing: 9
 Comments: |-
   Code 9 is not to be available as a valid answer to the questions but is intended for use:
-  • Primarily when importing data from other data collections that do not contain mappable data.
-  • Where an answer was refused.
-  • Where the question was not able to be asked prior to completion of assistance because the client was unable 
+  - Primarily when importing data from other data collections that do not contain mappable data.
+  - Where an answer was refused.
+  - Where the question was not able to be asked prior to completion of assistance because the client was unable 
     to communicate or a person who knows the client was not available.
 ---
 Definition: The country in which the client was born, as represented by a code.
@@ -287,14 +284,13 @@ MeteorID: 429894
 Name: CliPCode
 Title: Area of ususal residence, postcode
 Type: Char[4]
-Domain:
-  RangeSet:
-    0200-0299,0800-0899,0900-0999,1000-9999: Valid Australian Postcode
-  Notes: |-
-    'Full list of Australian Postcodes can be found at the Australia Post website: http://www.auspost.com.au/'
-Comments:
-  Enter 9999 if the postcode is unknown or the client has not provided sufficient information to confirm their 
-  current residential address.
+Domain: |
+  Valid Australian Postcode:
+  
+  - Enter 9999 if the postcode is unknown or the client has not provided sufficient information to confirm their 
+    current residential address
+
+  The full list of Australian Postcodes can be found at `Australia Post <http://www.auspost.com.au/>`_.
 ---
 Definition: The date on which the client formally or statistically commences an episode of mental health care, 
   expressed as DDMMYYYY.
@@ -306,7 +302,7 @@ Domain: |
     For Date fields, data must be recorded in compliance with the standard format used across the National 
     Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with 
     leading zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
-  Note: This field will be derived from the first service event date.
+Comments: This field will be derived from the first service event date.
 ---
 Definition: The date on which an episode of mental health care is formally or statistically ended.
 MeteorID: 614094
@@ -344,31 +340,31 @@ Comments: |-
   CODE 1: Employed
           Employed persons are those aged 15 years and over who met one of the following criteria during the 
           reference week:
-          • Worked for one hour or more for pay, profit, commission or payment in kind, in a job or business or 
+          - Worked for one hour or more for pay, profit, commission or payment in kind, in a job or business or 
             on a farm (employees and owner managers of incorporated or unincorporated enterprises).
-          • Worked for one hour or more without pay in a family business or on a farm (contributing family workers).
-          • Were employees who had a job but were not at work and were:
-            • away from work for less than four weeks up to the end of the reference week; or
-            • away from work for more than four weeks up to the end of the reference week and
-            • received pay for some or all of the four week period to the end of the reference week; or
-            • away from work as a standard work or shift arrangement; or
-            • on strike or locked out; or
-            • on workers' compensation and expected to return to their job.
-          • Were owner managers who had a job, business or farm, but were not at work.
+          - Worked for one hour or more without pay in a family business or on a farm (contributing family workers).
+          - Were employees who had a job but were not at work and were:
+            - away from work for less than four weeks up to the end of the reference week; or
+            - away from work for more than four weeks up to the end of the reference week and
+            - received pay for some or all of the four week period to the end of the reference week; or
+            - away from work as a standard work or shift arrangement; or
+            - on strike or locked out; or
+            - on workers' compensation and expected to return to their job.
+          - Were owner managers who had a job, business or farm, but were not at work.
   CODE 2: Unemployed
           Unemployed persons are those aged 15 years and over who were not employed during the reference week, and:
-          • had actively looked for full time or part time work at any time in the four weeks up to the end of 
+          - had actively looked for full time or part time work at any time in the four weeks up to the end of 
             the reference week and were available for work in the reference week; or
-          • were waiting to start a new job within four weeks from the end of the reference week and could have 
+          - were waiting to start a new job within four weeks from the end of the reference week and could have 
             started in the reference week if the job had been available then.
           Actively looked for work includes:
-          • written, telephoned or applied to an employer for work;
-          • had an interview with an employer for work;
-          • answered an advertisement for a job;
-          • checked or registered with a Job Services Australia provider or any other employment agency;
-          • taken steps to purchase or start your own business;
-          • advertised or tendered for work; and
-          • contacted friends or relatives in order to obtain work.
+          - written, telephoned or applied to an employer for work;
+          - had an interview with an employer for work;
+          - answered an advertisement for a job;
+          - checked or registered with a Job Services Australia provider or any other employment agency;
+          - taken steps to purchase or start your own business;
+          - advertised or tendered for work; and
+          - contacted friends or relatives in order to obtain work.
   CODE 3: Not in the labour force
           Persons not in the labour force are those aged 15 years and over who were not in the categories 
           employed or unemployed, as defined, during the reference week. They include people who undertook 
@@ -408,9 +404,7 @@ Comments: |-
 Name: IncomeSt
 Title: Income Status - Ranges? or Low Income?
 Type: Char[1]
-Domain:
-  Set:
-    0: To be defined
+Domain: To be defined
 ---
 Definition: The source from which a person derives the greatest proportion of his/her income, as represented by a code.
 MeteorID: 386449
@@ -446,23 +440,17 @@ Comments: |-
 Name: PrincDx
 Title: Princ Diagnosis
 Type: Char[1]
-Domain:
-  Set:
-    0: To be defined
+Domain: To be defined
 ---
 Name: OtherDx
 Title: Other Diagnosis
 Type: Char[1]
-Domain:
-  Set:
-    0: To be defined
+Domain: To be defined
 ---
 Name: Medication
 Title: Medication
 Type: Char[1]
-Domain:
-  Set:
-    0: Was this the current four items plus 'Not on medication' with Yes/No/Missing for each item or an ATC Level 3 code?
+Domain: Was this the current four items plus 'Not on medication' with Yes/No/Missing for each item or an ATC Level 3 code?
 ---
 Definition: The primary reason for the episode of care
 Name: FoE
@@ -516,7 +504,7 @@ Domain:
     5: Married (registered and do facto)
     9: Not stated/inadequately described
   Missing: 9
-Comments:
+Comments: |
   Refers to the current marital status of a person.
   CODE 2: Widowed
           This code usually refers to registered marriages but when self-reported may also refer to de facto marriages.
@@ -555,7 +543,7 @@ Domain:
     12: Other
     99: Not stated/inadequately described
   Missing: 99
-Comments:
+Comments: |
   ‘Usual’ is defined as where the person usually resides for four or more days per week on average. If it is 
   difficult to determine the person’s ‘usual’ residential setting for the reporting period, the setting the person 
   resided in during the reference week is reported.
@@ -659,15 +647,14 @@ MeteorID: 429894
 Name: SerPCode
 Title: Service Delivery Postcode
 Type: Char[4]
-Domain:
-  RangeSet:
-    0200-0299,0800-0899,0900-0999,1000-9999: Valid Australian Postcode
-  Notes: |-
-    'Full list of Australian Postcodes can be found at the Australia Post website: http://www.auspost.com.au/'
-Comments: |
-  • Enter 9999 if the postcode is unknown.
-  • If Service Modality is not 'Face to Face' enter 9999.
-  • If Service Modality is 'Face to Face' a valid Australian postcode must be entered.
+Domain: |
+  Valid Australian Postcode:
+
+  - Enter 9999 if the postcode is unknown
+  - If Service Modality is not 'Face to Face' enter 9999
+  - If Service Modality is 'Face to Face' a valid Australian postcode must be entered
+
+  The full list of Australian Postcodes can be found at `Australia Post <http://www.auspost.com.au/>`_.
 ---
 Definition: How the service was delivered. 
 Name: SerMod
@@ -680,8 +667,8 @@ Domain:
     3: Video
     4: Internet-based
 Comments: | 
-  • If 'Face to Face' is selected, a value other than 'Not applicable' must be selected for Venue
-  • If 'Face to Face' is selected a valid Australian postcode must be entered for Service Delivery Postcode.
+  - If 'Face to Face' is selected, a value other than 'Not applicable' must be selected for Venue
+  - If 'Face to Face' is selected a valid Australian postcode must be entered for Service Delivery Postcode.
 ---
 Definition: Where the service was delivered.
 Name: Venue
@@ -696,7 +683,7 @@ Domain:
     5: Other
     6: Not applicable (Service modality is face to face)
 Comments: |
-  • Values other than 'Not applicable' only to be specified when Service Modality is 'Face to Face'.
+  - Values other than 'Not applicable' only to be specified when Service Modality is 'Face to Face'.
 ---
 Name: Duration
 Title: Duration

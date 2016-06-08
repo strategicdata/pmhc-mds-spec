@@ -15,7 +15,7 @@ Keys:
 RecType: PRO
 Fields:
   - RecType
-  - ProCode
+  - ProKey
   - Category
   - CultFlag
   - YoB
@@ -85,7 +85,7 @@ Fields:
   - RecType
   - CliKey
   - EpiStart
-  - ProCode
+  - ProKey
   - SerDate
   - SerType
   - SerPCode
@@ -97,7 +97,7 @@ Fields:
   - PartIndic
   - NoShow
 Keys:
-  Primary: [ CliKey, ProCode, SerDate ]
+  Primary: [ CliKey, ProKey, SerDate ]
 Relationships:
   - Target: EPI
     Degree: many

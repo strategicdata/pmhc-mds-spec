@@ -1,5 +1,5 @@
 Data Element (Field Name),Type [Length],METeOR Identifier,Notes / Values
-Provider Code (ProCode),Char[20],—,
+Provider Key (ProKey),Char[20],—,A unique identifier for a provider within the PMHC top level organisation.
 Provider category (Category),Char[1],—,"
 :1: Psychologist (clinical)
 :2: Psychologist (generalist/other)
@@ -15,7 +15,7 @@ Cultural training flag (CultFlag),Char[1],—,"
 :2: No
 :9: Missing/Not recorded
 "
-Year of Birth (YoB),Char[4],—,
+Year of Birth (YoB),Char[4],—,Record the providers’s year of birth YYYY format.
 Gender (Gender) [#tn_pro1]_,Char[1],—,"
 :0: Not stated/Inadequately described
 :1: Male

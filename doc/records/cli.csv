@@ -1,9 +1,16 @@
 Data Element (Field Name),Type [Length],METeOR Identifier,Notes / Values
-Organistation Identifier (OrgId),Char[6],—,
-Sub Organisation Identifier (SubOrgId),Char[6],—,
-Client Key (CliKey),Char[20],—,
-Statistical Linkage Key (SLK),Char[40],`349510 <http://meteor.aihw.gov.au/content/index.phtml/itemId/349510>`__,
-Date of Birth (DoB),Date[8],`287007 <http://meteor.aihw.gov.au/content/index.phtml/itemId/287007>`__,
+Organistation Identifier (OrgId),Char[6],—,The unique code assigned by the Department of Health to the PMHC organisation.
+Client Key (CliKey),Char[20],—,A unique identifier for an individual within the PMHC top level organisation. Must be stable over time.
+Statistical Linkage Key (SLK),Char[40],`349510 <http://meteor.aihw.gov.au/content/index.phtml/itemId/349510>`__,"System generated non-identifiable alphanumeric code derived from information held by the PMHC organisation.
+
+- 14 character `SLK <http://meteor.aihw.gov.au/content/index.phtml/itemId/349510>`_
+- a Crockford encoded sha1 hash of a 14 character SLK. This must be 32 characters in length. 
+  See the `Crockford encoding specification <http://www.crockford.com/wrmg/base32.html>`_.
+- a hex encoded sha1 hash of a 14 character SLK. This must be 40 characters in length.
+
+SLK values are stored in sha1_hex format.
+"
+Date of Birth (DoB),Date[8],`287007 <http://meteor.aihw.gov.au/content/index.phtml/itemId/287007>`__,Record the client’s date of birth using DDMMYYYY format.
 Estimated Date of Birth Flag (DoBFlag),Char[1],—,"
 :1: Date of birth is accurate
 :2: Date of birth is an estimate
@@ -23,8 +30,8 @@ Aboriginal And Torres Strait Islander Status (IndigSt),Char[1],`291036 <http://m
 :4: Neither Aboriginal or Torres Strait Islander origin
 :9: Not stated/inadequately described
 "
-Country Of Birth (CoB),Char[4],`459973 <http://meteor.aihw.gov.au/content/index.phtml/itemId/459973>`__,
-Main language other than English spoken at home (MLSH),Char[4],`460125 <http://meteor.aihw.gov.au/content/index.phtml/itemId/460125>`__,
+Country Of Birth (CoB),Char[4],`459973 <http://meteor.aihw.gov.au/content/index.phtml/itemId/459973>`__,"Standard Australian Classification of Countries 2011 (SACC 2011) 4-digit code (ABS Catalogue No. 1269.0) [provided in Appendix B] SACC 2011 is a four-digit, three-level hierarchical structure specifying major group, minor group and country. 9999 is used when the information is not known or the client has refused to provide the information."
+Main language other than English spoken at home (MLSH),Char[4],`460125 <http://meteor.aihw.gov.au/content/index.phtml/itemId/460125>`__,Australian Standard Classification of Languages 2011 4-digit code (ABS Catalogue No. 1267.0) or 9999 if info is not known or client refuses to supply.
 Proficiency in spoken English (ProfEng),Char[1],`270203 <http://meteor.aihw.gov.au/content/index.phtml/itemId/270203>`__,"
 :0: Not applicable (persons under 5 years of age or who speak only English)
 :1: Very well

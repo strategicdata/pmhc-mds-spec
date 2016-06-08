@@ -1,9 +1,21 @@
 Data Element (Field Name),Type [Length],METeOR Identifier,Notes / Values
-Client Key (CliKey),Char[20],—,
-"Area of ususal residence, postcode (CliPCode) [#tn_epi1]_",Char[4],`429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__,
-Episode Start Date (EpiStart),Date[8],`614072 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614072>`__,
-Episode End Date (EpiEnd),Date[8],`614094 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614094>`__,
-Labour Force Status (LabourSt),Char[1],—,"
+Client Key (CliKey),Char[20],—,A unique identifier for an individual within the PMHC top level organisation. Must be stable over time.
+"Area of ususal residence, postcode (CliPCode)",Char[4],`429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__,"Valid Australian Postcode:
+
+- Enter 9999 if the postcode is unknown or the client has not provided sufficient information to confirm their 
+  current residential address
+
+The full list of Australian Postcodes can be found at `Australia Post <http://www.auspost.com.au/>`_.
+"
+Episode Start Date (EpiStart),Date[8],`614072 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614072>`__,"For Date fields, data must be recorded in compliance with the standard format used across the National 
+Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with 
+leading zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
+"
+Episode End Date (EpiEnd),Date[8],`614094 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614094>`__,"For Date fields, data must be recorded in compliance with the standard format used across the National Health 
+Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with leading 
+zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
+"
+Labour Force Status (LabourSt),Char[1],`621450 <http://meteor.aihw.gov.au/content/index.phtml/itemId/621450>`__,"
 :1: Employed
 :2: Unemployed
 :3: Not in the Labour Force
@@ -15,7 +27,7 @@ Employment Participation (EmpPart),Char[1],`269950 <http://meteor.aihw.gov.au/co
 :7: Not applicable - not in the labour force
 :9: Not stated/inadequately described
 "
-Income Status - Ranges? or Low Income? (IncomeSt),Char[1],—,Value = `0`
+Income Status - Ranges? or Low Income? (IncomeSt),Char[1],—,To be defined
 Source of Cash Income (IncomeSce),Char[1],`386449 <http://meteor.aihw.gov.au/content/index.phtml/itemId/386449>`__,"
 :1: Disability Support Pension
 :2: Other pension or benefit (not superannuation)
@@ -26,7 +38,7 @@ Source of Cash Income (IncomeSce),Char[1],`386449 <http://meteor.aihw.gov.au/con
 :7: Not known
 :9: Not stated/inadequately described
 "
-Medication (Medication),Char[1],—,Value = `0`
+Medication (Medication),Char[1],—,Was this the current four items plus 'Not on medication' with Yes/No/Missing for each item or an ATC Level 3 code?
 NDIS participant (NDIS),Char[1],—,"
 :1: Yes
 :2: No
@@ -41,9 +53,6 @@ Marital Status (MaritalSt),Char[1],`291045 <http://meteor.aihw.gov.au/content/in
 "
 Accomodation (Accom),Char[2],`621477 <http://meteor.aihw.gov.au/content/index.phtml/itemId/621477>`__,"
 :1: Private residence (e.g. private or public rental, owned, purchasing etc)
-:10: Short term crisis, emergency or transitional accommodation facility (e.g. night shelters, refuges, hostels for the homeless, halfway houses)
-:11: Public place/temporary shelter
-:12: Other
 :2: Residence within an Aboriginal/Torres Strait Islander community (e.g. rented private residence, temporary shelter)
 :3: Domestic-scale supported living facility (e.g. group homes)
 :4: Supported accommodation facility (e.g. hostels, supported residential services or facilities)
@@ -52,17 +61,20 @@ Accomodation (Accom),Char[2],`621477 <http://meteor.aihw.gov.au/content/index.ph
 :7: Residential aged care facility (nursing home or aged care hostel)
 :8: Psychiatric/mental health community care facility
 :9: Hospital
+:10: Short term crisis, emergency or transitional accommodation facility (e.g. night shelters, refuges, hostels for the homeless, halfway houses)
+:11: Public place/temporary shelter
+:12: Other
 :99: Not stated/inadequately described
 "
-Princ Diagnosis (PrincDx),Char[1],—,Value = `0`
-Other Diagnosis (OtherDx),Char[1],—,Value = `0`
+Princ Diagnosis (PrincDx),Char[1],—,To be defined
+Other Diagnosis (OtherDx),Char[1],—,To be defined
 Principle Focus of Treatment (FoE),Char[1],—,"
 :1: Psychological intervention
 :2: Clinical care coordination
 :3: Complex care package for adults
 :4: Care package for a youth with severe mental illness
 "
-Episode/Patient Outcome (EpiOutcome),Char[2],—,
+Episode/Patient Outcome (EpiOutcome),Char[2],—,To be defined
 Episode Completion Status (CompSt),Char[1],—,"
 :1: Treatment complete
 :2: Patient could not be contacted
@@ -75,5 +87,5 @@ Suicide Referral Flag (SuicideRef),Char[1],—,"
 :1: Yes
 :2: No
 "
-Referrer Type (RefType),Char[1],—,Value = `0`
-Referrer Entity (RefEntity),Char[1],—,Value = `0`
+Referrer Type (RefType),Char[1],—,To be defined
+Referrer Entity (RefEntity),Char[1],—,To be defined
