@@ -25,6 +25,12 @@ Relationships:
   - Target: HR
     Degree: many
     Required: 1
+  - Target: PRO
+    Degree: one
+    Required: 1
+  - Target: CLI
+    Degree: one
+    Required: 1
 ---
 RecType: PRO
 Fields:
@@ -39,8 +45,11 @@ Fields:
 Keys:
   Primary: [ OrgCode, ProKey ]
 Relationships:
-  - Target: HR
+  - Target: ORG
     Degree: many
+    Required: 1
+  - Target: SER
+    Degree: one
     Required: 1
 ---
 RecType: CLI
@@ -58,10 +67,12 @@ Fields:
   - ProfEng
 Keys:
   Primary: [ OrgCode, CliKey ]
-  Unique: [ CliKey ]
 Relationships:
-  - Target: HR
+  - Target: ORG
     Degree: many
+    Required: 1
+  - Target: EPI
+    Degree: one
     Required: 1
 ---
 RecType: EPI
@@ -91,8 +102,11 @@ Fields:
 Keys:
   Primary: [ EpiKey, CliKey ]
 Relationships:
-  - Target: PER
+  - Target: CLI
     Degree: many
+    Required: 1 
+  - Target: SER
+    Degree: one
     Required: 1 
 ---
 RecType: SER
@@ -100,7 +114,6 @@ Fields:
   - RecType
   - SerKey
   - CliKey
-  - EpiStart
   - ProKey
   - SerDate
   - SerType
@@ -113,9 +126,12 @@ Fields:
   - PartIndic
   - NoShow
 Keys:
-  Primary: [ SerKey, CliKey ]
+  Primary: [ SerKey, EpiKey ]
 Relationships:
   - Target: EPI
+    Degree: many
+    Required: 1
+  - Target: PRO
     Degree: many
     Required: 1
 ---
@@ -123,13 +139,12 @@ RecType: COLOC
 Fields:
   - RecType
   - ColocKey
-  - CliKey
-  - EpiStart
+  - EpiKey
   - Measure
   - MeasDate
   - Score
 Keys:
-  Primary: [ ColocKey, CliKey ]
+  Primary: [ ColocKey, EpiKey ]
 Relationships:
   - Target: EPI
     Degree: many
