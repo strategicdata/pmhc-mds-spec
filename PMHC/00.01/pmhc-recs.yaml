@@ -16,8 +16,8 @@ RecType: ORG
 Fields:
   - RecType
   - OrgName
-  - Orgcode
-  - Type
+  - OrgCode
+  - OrgType
   - State
 Keys:
   Primary: [ OrgCode ]
@@ -55,7 +55,7 @@ Relationships:
 RecType: CLI
 Fields:
   - RecType
-  - OrgId
+  - OrgCode
   - CliKey
   - SLK
   - DoB

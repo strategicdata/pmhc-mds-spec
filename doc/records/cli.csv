@@ -1,5 +1,6 @@
 Data Element (Field Name),Type [Length],METeOR Identifier,Notes / Values
-Organistation Identifier (OrgId),Char[6],—,The unique code assigned by the Department of Health to the PMHC organisation.
+Organistation Code (OrgCode),Char[6],—,"- Where the organisation is a PHN this code will be assigned by the Department of Health.
+- Where the organisation reports to a PHN the PHN will assign a unique code."
 Client Key (CliKey),Char[20],—,A unique identifier for an individual within the PMHC top level organisation. Must be stable over time.
 Statistical Linkage Key (SLK),Char[40],`349510 <http://meteor.aihw.gov.au/content/index.phtml/itemId/349510>`__,"System generated non-identifiable alphanumeric code derived from information held by the PMHC organisation.
 
