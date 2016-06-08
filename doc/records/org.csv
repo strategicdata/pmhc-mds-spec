@@ -1,0 +1,16 @@
+Data Element (Field Name),Type [Length],METeOR Identifier,Notes / Values
+The name of the organisation. (OrgName),Char[100],—,
+Organistation Code (OrgCode),Char[6],—,"- Where the organisation is a PHN this code will be assigned by the Department of Health.
+- Where the organisation reports to a PHN the PHN will assign a unique code."
+Organisation Type (OrgType),Char[1],—,To be defined
+State (State) [#tn_org1]_,Char[1],`613718 <http://meteor.aihw.gov.au/content/index.phtml/itemId/613718>`__,"
+:1: New South Wales
+:2: Victoria
+:3: Queensland
+:4: South Australia
+:5: Western Australia
+:6: Tasmania
+:7: Northern Territory
+:8: Australian Capital Territory
+:9: Other Territories
+"
