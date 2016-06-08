@@ -42,6 +42,15 @@ and linefeed).
 Record formats
 --------------
 
+Organisation
+^^^^^^^^^^^^
+
+.. csv-table:: Organisation record layout
+  :file: records/org.csv
+  :header-rows: 1
+
+.. include:: records/org-notes.rst
+
 Provider
 ^^^^^^^^
 
