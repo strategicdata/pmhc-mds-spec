@@ -108,7 +108,7 @@ Domain: A unique identifier for a collection occasion within the PMHC. Must be u
 Definition: The name of the organisation.
 Name: OrgName
 Title: The name of the organisation.
-Type: Char[80]
+Type: Char[100]
 ---
 Definition: The type of the organisation.
 Name: OrgType
@@ -192,12 +192,12 @@ Title: Year of Birth
 Type: Char[4]
 Domain: |-
   Record the providers’s year of birth YYYY format.
+Missing: 9999
 Comments: |-
   If the year of birth is unknown, the following approaches should be used:
   - If the age of the client is known, the age should be used to derive the year of birth
   - If the age of the client is unknown, an estimated age of the client should be used to estimate a year of birth
   - If the date of birth is totally unknown, use 9999.
-Missing: 9999
 ---
 Definition: This is a number or code assigned to each individual referred to the 
   flexible funding pool. The client identifier is unique and stable for each 
@@ -325,7 +325,7 @@ Domain:
   Missing: 9
 Comments:
   CODE 0: Not applicable (persons under 5 years of age or who speak only English)
-          Not applicable, is to be used for people under 5 year of age and people who speak only English.
+          Not applicable, is to be used for people under 5 years of age and people who speak only English.
 
   CODE 9: Not stated/inadequately described
           Not stated/inadequately described, is not to be used on primary collection forms. It is primarily for use in 
