@@ -1,4 +1,4 @@
-Record length = 66
+Record length = 78
 
 .. rubric:: Notes
 

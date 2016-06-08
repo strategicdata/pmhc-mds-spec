@@ -1,4 +1,5 @@
 Data Element (Field Name),Type [Length],METeOR Identifier,Notes / Values
+Episode Key (EpiKey),Char[20],—,A unique identifier for an episode within the PMHC. Must be unique within an organisation and stable over time.
 Client Key (CliKey),Char[20],—,A unique identifier for an individual within the PMHC top level organisation. Must be stable over time.
 "Area of ususal residence, postcode (CliPCode)",Char[4],`429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__,"Valid Australian Postcode:
 

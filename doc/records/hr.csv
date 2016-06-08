@@ -1,5 +1,6 @@
 Data Element (Field Name),Type [Length],METeOR Identifier,Notes / Values
-Organistation Identifier (OrgId),Char[6],—,The unique code assigned by the Department of Health to the PMHC organisation.
+Organistation Code (OrgCode),Char[6],—,"- Where the organisation is a PHN this code will be assigned by the Department of Health.
+- Where the organisation reports to a PHN the PHN will assign a unique code."
 Batch Number (BatchNo),Char[9],—,YYYYNNNNN
 Report Period Start Date (RepStart),Date[8],—,Valid date expressed as DDMMYYYY
 Report Period End Date (RepEnd),Date[8],—,Valid date expressed as DDMMYYYY
