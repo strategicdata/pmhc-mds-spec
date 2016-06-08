@@ -95,3 +95,6 @@ Collection occasion
    :header-rows: 1
    
 .. include:: records/coloc-notes.rst
+
+.. include:: includes/definitions.rst
+
