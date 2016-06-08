@@ -11,22 +11,24 @@ cd ../DDict/
 
 make install
 
-./scripts/ddict2rst.pl -C PMHC -V 00.01
+./scripts/ddict2rst.pl -C PMHC -V 00.01 --defs
 
-for f in *.csv; do
+for f in _doc/record/*.csv; do
   echo "Processing $f"
   csvcut -C Start $f > $f.t
   mv $f.t $f
 done
 
-for f in *.csv; do
+for f in _doc/record/*.csv; do
   echo "Processing $f"
   csvgrep -c "Data Element (Field Name)" -i -m "(RecType)" $f > $f.t
   mv $f.t $f
 done
 
 rm ../spec/doc/records/*
-mv *.{csv,rst} ../spec/doc/records/
+rm ../spec/doc/includes/definitions.rst
+mv _doc/record/*.{csv,rst} ../spec/doc/records/
+mv _doc/definitions.rst ../spec/doc/includes/
 
 popd
 
