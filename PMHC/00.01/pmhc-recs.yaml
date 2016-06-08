@@ -2,7 +2,7 @@
 RecType: HR
 Fields:
   - RecType
-  - OrgId
+  - OrgCode
   - BatchNo
   - RepStart
   - RepEnd
@@ -10,7 +10,21 @@ Fields:
   - FileType
   - SpecVer
 Keys:
-  Primary: [ OrgId ]
+  Primary: [ OrgCode ]
+---
+RecType: ORG
+Fields:
+  - RecType
+  - OrgName
+  - Orgcode
+  - Type
+  - State
+Keys:
+  Primary: [ OrgCode ]
+Relationships:
+  - Target: HR
+    Degree: many
+    Required: 1
 ---
 RecType: PRO
 Fields:
@@ -23,7 +37,7 @@ Fields:
   - IndigSt
   - Active
 Keys:
-  Primary: [ OrgId, Code ]
+  Primary: [ OrgCode, ProKey ]
 Relationships:
   - Target: HR
     Degree: many
@@ -43,7 +57,7 @@ Fields:
   - MLSH
   - ProfEng
 Keys:
-  Primary: [ OrgId, CliKey ]
+  Primary: [ OrgCode, CliKey ]
   Unique: [ CliKey ]
 Relationships:
   - Target: HR
@@ -53,6 +67,7 @@ Relationships:
 RecType: EPI
 Fields:
   - RecType
+  - EpiKey
   - CliKey
   - CliPCode 
   - EpiStart
@@ -74,7 +89,7 @@ Fields:
   - RefType
   - RefEntity
 Keys:
-  Primary: [ CliKey, EpiStart ]
+  Primary: [ EpiKey, CliKey ]
 Relationships:
   - Target: PER
     Degree: many
@@ -83,6 +98,7 @@ Relationships:
 RecType: SER
 Fields:
   - RecType
+  - SerKey
   - CliKey
   - EpiStart
   - ProKey
@@ -97,7 +113,7 @@ Fields:
   - PartIndic
   - NoShow
 Keys:
-  Primary: [ CliKey, ProKey, SerDate ]
+  Primary: [ SerKey, CliKey ]
 Relationships:
   - Target: EPI
     Degree: many
@@ -106,13 +122,14 @@ Relationships:
 RecType: COLOC
 Fields:
   - RecType
+  - ColocKey
   - CliKey
   - EpiStart
   - Measure
   - MeasDate
   - Score
 Keys:
-  Primary: [ CliKey, Measure, MeasDate ]
+  Primary: [ ColocKey, CliKey ]
 Relationships:
   - Target: EPI
     Degree: many

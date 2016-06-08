@@ -6,6 +6,7 @@ Type: Char[8]
 Domain:
   Set:
     HR: File Header Record
+    ORG: Organisation Record
     PRO: Provider Record
     CLI: Client Record
     EPI: Episode Record
@@ -13,10 +14,12 @@ Domain:
     COLOC: Collection Occasion Record
 ---
 Definition: A sequence of characters which uniquely identifies the PMHC organisation.
-Name: OrgId
-Title: Organistation Identifier
+Name: OrgCode
+Title: Organistation Code
 Type: Char[6]
-Domain: The unique code assigned by the Department of Health to the PMHC organisation.
+Domain: |-
+  - Where the organisation is a PHN this code will be assigned by the Department of Health.
+  - Where the organisation reports to a PHN the PHN will assign a unique code.
 ---
 Title: Batch Number
 Name: BatchNo
@@ -75,6 +78,61 @@ Domain:
   Set:
     00.01: Version 0.01
 Required: 1
+---
+Definition: This is a number or code assigned to each episode in the  
+  flexible funding pool. The Episode Key is unique and stable for each episode at the level of the 
+  organisation.
+Name: EpiKey
+Title: Episode Key
+Type: Char[20]
+Domain: A unique identifier for an episode within the PMHC. Must be unique within an organisation and stable over time.
+---
+Definition: This is a number or code assigned to each service event in the  
+  flexible funding pool. The Service Event Key is unique and stable for each service event at the level of the 
+  organisation.
+Name: SerKey
+Title: Service Event Key
+Type: Char[20]
+Domain: A unique identifier for a service event within the PMHC. Must be unique within an organisation and stable 
+  over time.
+---
+Definition: This is a number or code assigned to each collection occasion in the  
+  flexible funding pool. The Collection Occasion Key is unique and stable for each collection occasion at the 
+  level of the organisation.
+Name: ColocKey
+Title: Collection Occasion Key
+Type: Char[20]
+Domain: A unique identifier for a collection occasion within the PMHC. Must be unique within an organisation and 
+  stable over time.
+---
+Definition: The name of the organisation.
+Name: OrgName
+Title: The name of the organisation.
+Type: Char[80]
+---
+Definition: The type of the organisation.
+Name: OrgType
+Title: Organisation Type
+Type: Char[1]
+Domain: To be defined
+---
+Definition: The state that the organisation operates in.
+MeteorID: 613718
+Name: State
+Title: State
+Type: Char[1]
+Domain: 
+  Set:
+    1: New South Wales
+    2: Victoria
+    3: Queensland
+    4: South Australia
+    5: Western Australia
+    6: Tasmania
+    7: Northern Territory
+    8: Australian Capital Territory
+    9: Other Territories
+  Notes: Name is taken from Australian Statistical Geography Standard (ASGS) July 2011 (http://www.abs.gov.au/ausstats/abs@.nsf/0/871A7FF33DF471FBCA257801000DCD5F?Opendocument). Code is from Meteor with the addition of code for Other Territories.
 ---
 Definition: The type of the referrer.
 Name: RefType
@@ -140,12 +198,6 @@ Comments: |-
   - If the age of the client is unknown, an estimated age of the client should be used to estimate a year of birth
   - If the date of birth is totally unknown, use 9999.
 Missing: 9999
----
-Definition: A sequence of characters which uniquely identifies the PMHC sub organisation.
-Name: SubOrgId
-Title: Sub Organisation Identifier
-Type: Char[6]
-Domain: The unique code assigned by one of the parent organisations.
 ---
 Definition: This is a number or code assigned to each individual referred to the 
   flexible funding pool. The client identifier is unique and stable for each 
