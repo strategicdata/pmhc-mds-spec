@@ -1,6 +1,5 @@
 Data Element (Field Name),Type [Length],METeOR Identifier,Notes / Values
 Client Key (CliKey),Char[20],—,
-Referrer Code (RefCode),Char[20],—,
 Episode Start Date (EpiStart),Date[8],`614072 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614072>`__,
 Measure Name (Measure),Char[20],—,
 Measure Date (MeasDate),Date[8],—,

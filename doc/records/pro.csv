@@ -1,14 +1,14 @@
 Data Element (Field Name),Type [Length],METeOR Identifier,Notes / Values
 Provider Code (ProCode),Char[20],—,
 Provider category (Category),Char[1],—,"
-:0: Psychologist (clinical)
-:1: Psychologist (generalist/other)
-:2: Social worker
-:3: Occupational therapist
-:4: Mental health nurse
-:5: Aboriginal and Torres Strait Islander health/mental health worker
-:6: Low intensity mental health worker
-:7: Other
+:1: Psychologist (clinical)
+:2: Psychologist (generalist/other)
+:3: Social worker
+:4: Occupational therapist
+:5: Mental health nurse
+:6: Aboriginal and Torres Strait Islander health/mental health worker
+:7: Low intensity mental health worker
+:8: Other
 "
 Cultural training flag (CultFlag),Char[1],—,"
 :1: Yes

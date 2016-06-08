@@ -54,7 +54,6 @@ RecType: EPI
 Fields:
   - RecType
   - CliKey
-  - RefCode
   - CliPCode 
   - EpiStart
   - EpiEnd
@@ -75,7 +74,7 @@ Fields:
   - RefType
   - RefEntity
 Keys:
-  Primary: [ CliKey, RefCode, EpiStart ]
+  Primary: [ CliKey, EpiStart ]
 Relationships:
   - Target: PER
     Degree: many
@@ -85,7 +84,6 @@ RecType: SER
 Fields:
   - RecType
   - CliKey
-  - RefCode
   - EpiStart
   - ProCode
   - SerDate
@@ -109,7 +107,6 @@ RecType: COLOC
 Fields:
   - RecType
   - CliKey
-  - RefCode
   - EpiStart
   - Measure
   - MeasDate

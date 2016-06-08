@@ -1,6 +1,5 @@
 Data Element (Field Name),Type [Length],METeOR Identifier,Notes / Values
 Client Key (CliKey),Char[20],—,
-Referrer Code (RefCode),Char[20],—,
 "Area of ususal residence, postcode (CliPCode) [#tn_epi1]_",Char[4],`429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__,
 Episode Start Date (EpiStart),Date[8],`614072 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614072>`__,
 Episode End Date (EpiEnd),Date[8],`614094 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614094>`__,
@@ -17,7 +16,16 @@ Employment Participation (EmpPart),Char[1],`269950 <http://meteor.aihw.gov.au/co
 :9: Not stated/inadequately described
 "
 Income Status - Ranges? or Low Income? (IncomeSt),Char[1],—,Value = `0`
-Income Source (IncomeSce),Char[1],—,Value = `0`
+Source of Cash Income (IncomeSce),Char[1],`386449 <http://meteor.aihw.gov.au/content/index.phtml/itemId/386449>`__,"
+:1: Disability Support Pension
+:2: Other pension or benefit (not superannuation)
+:3: Paid employment
+:4: Compensation payments
+:5: Other (e.g. superannuation, investments etc.)
+:6: Nil income
+:7: Not known
+:9: Not stated/inadequately described
+"
 Medication (Medication),Char[1],—,Value = `0`
 NDIS participant (NDIS),Char[1],—,"
 :1: Yes
@@ -49,14 +57,14 @@ Accomodation (Accom),Char[2],`621477 <http://meteor.aihw.gov.au/content/index.ph
 Princ Diagnosis (PrincDx),Char[1],—,Value = `0`
 Other Diagnosis (OtherDx),Char[1],—,Value = `0`
 Principle Focus of Treatment (FoE),Char[1],—,"
-:0: Psychological intervention
-:1: Clinical care coordination
-:2: Complex care package for adults
-:3: Care package for a youth with severe mental illness
+:1: Psychological intervention
+:2: Clinical care coordination
+:3: Complex care package for adults
+:4: Care package for a youth with severe mental illness
 "
 Episode/Patient Outcome (EpiOutcome),Char[2],—,
 Episode Completion Status (CompSt),Char[1],—,"
-:1: Treatement complete
+:1: Treatment complete
 :2: Patient could not be contacted
 :3: Patient refused treatment
 :4: Patient referred elsewhere
