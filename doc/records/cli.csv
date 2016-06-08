@@ -3,12 +3,10 @@ Organistation Code (OrgCode),Char[6],—,"- Where the organisation is a PHN this
 - Where the organisation reports to a PHN the PHN will assign a unique code."
 Client Key (CliKey),Char[20],—,A unique identifier for an individual within the PMHC top level organisation. Must be stable over time.
 Statistical Linkage Key (SLK),Char[40],`349510 <http://meteor.aihw.gov.au/content/index.phtml/itemId/349510>`__,"System generated non-identifiable alphanumeric code derived from information held by the PMHC organisation.
-
 - 14 character `SLK <http://meteor.aihw.gov.au/content/index.phtml/itemId/349510>`_
-- a Crockford encoded sha1 hash of a 14 character SLK. This must be 32 characters in length. 
+- a Crockford encoded sha1 hash of a 14 character SLK. This must be 32 characters in length.
   See the `Crockford encoding specification <http://www.crockford.com/wrmg/base32.html>`_.
 - a hex encoded sha1 hash of a 14 character SLK. This must be 40 characters in length.
-
 SLK values are stored in sha1_hex format.
 "
 Date of Birth (DoB),Date[8],`287007 <http://meteor.aihw.gov.au/content/index.phtml/itemId/287007>`__,Record the client’s date of birth using DDMMYYYY format.

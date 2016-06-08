@@ -47,10 +47,8 @@ Area of ususal residence, postcode
   The Australian postcode of the client
 :Domain:
   Valid Australian Postcode:
-
-- Enter 9999 if the postcode is unknown or the client has not provided sufficient information to confirm their 
+- Enter 9999 if the postcode is unknown or the client has not provided sufficient information to confirm their
   current residential address
-
 The full list of Australian Postcodes can be found at `Australia Post <http://www.auspost.com.au/>`_.
 
 Batch Number
@@ -165,8 +163,8 @@ Episode End Date
 :Definition:
   The date on which an episode of mental health care is formally or statistically ended.
 :Domain:
-  For Date fields, data must be recorded in compliance with the standard format used across the National Health 
-Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with leading 
+  For Date fields, data must be recorded in compliance with the standard format used across the National Health
+Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with leading
 zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
 
 Episode Key
@@ -187,8 +185,8 @@ Episode Start Date
 :Definition:
   The date on which the client formally or statistically commences an episode of mental health care, expressed as DDMMYYYY.
 :Domain:
-  For Date fields, data must be recorded in compliance with the standard format used across the National 
-Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with 
+  For Date fields, data must be recorded in compliance with the standard format used across the National
+Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with
 leading zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
 
 Estimated Date of Birth Flag
@@ -407,8 +405,8 @@ Referral Date
 :Definition:
   The date the referrer made the referral.
 :Domain:
-  For Date fields, data must be recorded in compliance with the standard format used across the National 
-Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with 
+  For Date fields, data must be recorded in compliance with the standard format used across the National
+Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with
 leading zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
 
 Referrer Entity
@@ -461,11 +459,9 @@ Service Delivery Postcode
   The Australian postcode where the service delivery took place
 :Domain:
   Valid Australian Postcode:
-
 - Enter 9999 if the postcode is unknown
 - If Service Modality is not 'Face to Face' enter 9999
 - If Service Modality is 'Face to Face' a valid Australian postcode must be entered
-
 The full list of Australian Postcodes can be found at `Australia Post <http://www.auspost.com.au/>`_.
 
 Service Event Key
@@ -548,12 +544,10 @@ Statistical Linkage Key
   A key that enables two or more records belonging to the same individual to be brought together.
 :Domain:
   System generated non-identifiable alphanumeric code derived from information held by the PMHC organisation.
-
 - 14 character `SLK <http://meteor.aihw.gov.au/content/index.phtml/itemId/349510>`_
-- a Crockford encoded sha1 hash of a 14 character SLK. This must be 32 characters in length. 
+- a Crockford encoded sha1 hash of a 14 character SLK. This must be 32 characters in length.
   See the `Crockford encoding specification <http://www.crockford.com/wrmg/base32.html>`_.
 - a hex encoded sha1 hash of a 14 character SLK. This must be 40 characters in length.
-
 SLK values are stored in sha1_hex format.
 
 Suicide Referral Flag

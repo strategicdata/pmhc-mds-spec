@@ -12,11 +12,9 @@ Service Type (SerType),Char[1],—,"
 :6: Cultural specific assistance NEC
 "
 Service Delivery Postcode (SerPCode),Char[4],`429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__,"Valid Australian Postcode:
-
 - Enter 9999 if the postcode is unknown
 - If Service Modality is not 'Face to Face' enter 9999
 - If Service Modality is 'Face to Face' a valid Australian postcode must be entered
-
 The full list of Australian Postcodes can be found at `Australia Post <http://www.auspost.com.au/>`_.
 "
 Service Modality (SerMod),Char[1],—,"

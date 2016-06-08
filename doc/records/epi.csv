@@ -2,18 +2,16 @@ Data Element (Field Name),Type [Length],METeOR Identifier,Notes / Values
 Episode Key (EpiKey),Char[20],—,A unique identifier for an episode within the PMHC. Must be unique within an organisation and stable over time.
 Client Key (CliKey),Char[20],—,A unique identifier for an individual within the PMHC top level organisation. Must be stable over time.
 "Area of ususal residence, postcode (CliPCode)",Char[4],`429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__,"Valid Australian Postcode:
-
-- Enter 9999 if the postcode is unknown or the client has not provided sufficient information to confirm their 
+- Enter 9999 if the postcode is unknown or the client has not provided sufficient information to confirm their
   current residential address
-
 The full list of Australian Postcodes can be found at `Australia Post <http://www.auspost.com.au/>`_.
 "
-Episode Start Date (EpiStart),Date[8],`614072 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614072>`__,"For Date fields, data must be recorded in compliance with the standard format used across the National 
-Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with 
+Episode Start Date (EpiStart),Date[8],`614072 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614072>`__,"For Date fields, data must be recorded in compliance with the standard format used across the National
+Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with
 leading zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
 "
-Episode End Date (EpiEnd),Date[8],`614094 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614094>`__,"For Date fields, data must be recorded in compliance with the standard format used across the National Health 
-Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with leading 
+Episode End Date (EpiEnd),Date[8],`614094 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614094>`__,"For Date fields, data must be recorded in compliance with the standard format used across the National Health
+Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with leading
 zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
 "
 Labour Force Status (LabourSt),Char[1],`621450 <http://meteor.aihw.gov.au/content/index.phtml/itemId/621450>`__,"
