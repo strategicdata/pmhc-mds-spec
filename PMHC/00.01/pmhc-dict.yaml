@@ -1,18 +1,4 @@
 ---
-Definition: A code indicating the type of each record included in a PMHC MDS data file.
-Name: RecType
-Title: Record Type
-Type: Char[8]
-Domain:
-  Set:
-    HR: File Header Record
-    ORG: Organisation Record
-    PRO: Provider Record
-    CLI: Client Record
-    EPI: Episode Record
-    SER: Service Event Record
-    COLOC: Collection Occasion Record
----
 Definition: A sequence of characters which uniquely identifies the PMHC organisation.
 Name: OrgCode
 Title: Organistation Code
@@ -21,93 +7,51 @@ Domain: |-
   - Where the organisation is a PHN this code will be assigned by the Department of Health.
   - Where the organisation reports to a PHN the PHN will assign a unique code.
 ---
-Title: Batch Number
-Name: BatchNo
-Base: BatchNo
-Type: Char[9]
-Definition: |-
-  Represents the YYYYNNNNN component of the extract file name.
-Domain: |-
-  YYYYNNNNN
-Required: 1
----
-Title: Report Period Start Date
-Name: RepStart
-Type: Date[8]
-Definition: Report period start date
-Domain:
-  RangeSet:
-    'start_date-end_date': reporting period
-  Notes: Valid date expressed as DDMMYYYY
-Required: 1
----
-Title: Report Period End Date
-Name: RepEnd
-Type: Date[8]
-Definition: Report period end date
-Domain:
-  RangeSet:
-    'RepStart-end_date': RepStart to reporting period end
-  Notes: Valid date expressed as DDMMYYYY
-Required: 1
----
-Title: Data File Generation Date
-Name: GenDt
-Type: Date[8]
-Definition: Data file generation date
-Domain:
-  RangeSet:
-    'RepEnd-': After RepEnd
-  Notes: Valid date expressed as DDMMYYYY
----
-Title: Data File Type
-Name: FileType
-Type: Char[4]
-Definition: Data file type
-Domain:
-  Set:
-    PMHC: Primary Mental Health Care Minimum Data Set
-Required: 1
----
 Title: PMHC Specification Version Number
 Name: SpecVer
 Type: Char[5]
 Definition: |-
-  The version number of the PMHC specification document used
+  The version number of the PMHC specification document used.
 Domain:
   Set:
     00.01: Version 0.01
 Required: 1
 ---
-Definition: This is a number or code assigned to each episode in the
+Name: EpiKey
+Definition: |
+  This is a number or code assigned to each episode in the.
   flexible funding pool. The Episode Key is unique and stable for each episode at the level of the
   organisation.
-Name: EpiKey
 Title: Episode Key
 Type: Char[20]
-Domain: A unique identifier for an episode within the PMHC. Must be unique within an organisation and stable over time.
+Domain: |
+  A unique identifier for an episode within the PMHC. Must be unique within an organisation and stable over time.
 ---
-Definition: This is a number or code assigned to each service event in the
+Name: SerKey
+Definition: |
+  This is a number or code assigned to each service event in the
   flexible funding pool. The Service Event Key is unique and stable for each service event at the level of the
   organisation.
-Name: SerKey
 Title: Service Event Key
 Type: Char[20]
-Domain: A unique identifier for a service event within the PMHC. Must be unique within an organisation and stable
+Domain: |
+  A unique identifier for a service event within the PMHC. Must be unique within an organisation and stable
   over time.
 ---
-Definition: This is a number or code assigned to each collection occasion in the
+Definition: |
+  This is a number or code assigned to each collection occasion in the
   flexible funding pool. The Collection Occasion Key is unique and stable for each collection occasion at the
   level of the organisation.
 Name: ColocKey
 Title: Collection Occasion Key
 Type: Char[20]
-Domain: A unique identifier for a collection occasion within the PMHC. Must be unique within an organisation and
+Domain: |
+  A unique identifier for a collection occasion within the PMHC. Must be unique within an organisation and
   stable over time.
 ---
 Definition: The name of the organisation.
 Name: OrgName
-Title: The name of the organisation.
+Title: Organisation Name
 Type: Char[100]
 ---
 Definition: The type of the organisation.
@@ -132,7 +76,9 @@ Domain:
     7: Northern Territory
     8: Australian Capital Territory
     9: Other Territories
-  Notes: Name is taken from Australian Statistical Geography Standard (ASGS) July 2011 (http://www.abs.gov.au/ausstats/abs@.nsf/0/871A7FF33DF471FBCA257801000DCD5F?Opendocument). Code is from Meteor with the addition of code for Other Territories.
+  Notes: |
+    - Name is taken from Australian `Statistical Geography Standard (ASGS) July 2011 <http://www.abs.gov.au/ausstats/abs@.nsf/0/871A7FF33DF471FBCA257801000DCD5F?Opendocument>`_.
+    - Code is from Meteor with the addition of code for Other Territories.
 ---
 Definition: The type of the referrer.
 Name: RefType
@@ -191,15 +137,17 @@ Name: YoB
 Title: Year of Birth
 Type: Char[4]
 Domain: |-
-  Record the providers’s year of birth YYYY format.
+  Record the providers's year of birth YYYY format.
 Missing: 9999
 Comments: |-
   If the year of birth is unknown, the following approaches should be used:
+
   - If the age of the client is known, the age should be used to derive the year of birth
   - If the age of the client is unknown, an estimated age of the client should be used to estimate a year of birth
   - If the date of birth is totally unknown, use 9999.
 ---
-Definition: This is a number or code assigned to each individual referred to the
+Definition: |
+  This is a number or code assigned to each individual referred to the
   flexible funding pool. The client identifier is unique and stable for each
   individual at the level of the PMHC top level organisation.
 Name: CliKey
@@ -215,10 +163,13 @@ Title: Statistical Linkage Key
 Type: Char[40]
 Domain: |
   System generated non-identifiable alphanumeric code derived from information held by the PMHC organisation.
-  - 14 character `SLK <http://meteor.aihw.gov.au/content/index.phtml/itemId/349510>`_
-  - a Crockford encoded sha1 hash of a 14 character SLK. This must be 32 characters in length.
-    See the `Crockford encoding specification <http://www.crockford.com/wrmg/base32.html>`_.
-  - a hex encoded sha1 hash of a 14 character SLK. This must be 40 characters in length.
+
+  Supported formats:
+    - 14 character `SLK <http://meteor.aihw.gov.au/content/index.phtml/itemId/349510>`_
+    - a `Crockford encoded <http://www.crockford.com/wrmg/base32.html>`_ sha1 hash of a 14 character SLK.
+      This must be 32 characters in length.
+    - a hex encoded sha1 hash of a 14 character SLK. This must be 40 characters in length.
+Comments: |
   SLK values are stored in sha1_hex format.
 ---
 Definition: The date on which an individual was born
@@ -227,16 +178,17 @@ Name: DoB
 Title: Date of Birth
 Type: Date[8]
 Domain: |-
-  Record the client’s date of birth using DDMMYYYY format.
+  Record the client's date of birth using DDMMYYYY format.
 Missing: 09099999
 Comments: |-
   If the date of birth is unknown, the following approaches should be used:
+
   - If the age of the person is known, the age should be used to derive the year of birth
   - If the age of the person is unknown, an estimated age of the person should be used to estimate a year of birth
   - An actual or estimated year of birth should then be converted into an estimated date of birth using the
     following convention: 0101Estimated year of birth.
   - If the date of birth is totally unknown, use 09099999.
-  - If you have estimated the year of birth make sure you record this in the ‘Estimated date of birth flag’
+  - If you have estimated the year of birth make sure you record this in the 'Estimated date of birth flag'
 ---
 Definition: The date of birth estimate flag records whether or not the client's date of birth has been estimated.
 Name: DoBFlag
@@ -250,7 +202,8 @@ Domain:
     9: Accuracy of stated date of birth is not known
   Missing: 9
 ---
-Definition: The term 'gender' refers to the way in which a person identifies their masculine or feminine
+Definition: |
+  The term 'gender' refers to the way in which a person identifies their masculine or feminine
   characteristics. A persons gender relates to their deeply held internal and individual sense of gender and is
   not always exclusively male or female. It may or may not correspond to their sex assigned at birth.
 Name: Gender
@@ -262,7 +215,9 @@ Domain:
     2: Female
     3: Other
     0: Not stated/Inadequately described
-  Notes: As defined by Australian Bureau of Statistics at http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/1200.0.55.012Main%20Features12016?opendocument&tabname=Summary&prodno=1200.0.55.012&issue=2016&num=&view=
+  Notes: |
+    As defined by Australian Bureau of Statistics `1200.0.55.012 - Standard for Sex and Gender Variables, 2016
+    <http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/1200.0.55.012Main%20Features12016?opendocument&tabname=Summary&prodno=1200.0.55.012&issue=2016&num=&view=>`_
 ---
 Definition: Whether a person identifies as being of Aboriginal and/or Torres Strait Islander origin, as
   represented by a code.
@@ -280,6 +235,7 @@ Domain:
   Missing: 9
 Comments: |-
   Code 9 is not to be available as a valid answer to the questions but is intended for use:
+
   - Primarily when importing data from other data collections that do not contain mappable data.
   - Where an answer was refused.
   - Where the question was not able to be asked prior to completion of assistance because the client was unable
@@ -290,23 +246,27 @@ MeteorID: 459973
 Name: CoB
 Title: Country Of Birth
 Type: Char[4]
-Domain: Standard Australian Classification of Countries 2011 (SACC 2011) 4-digit code (ABS Catalogue No. 1269.0)
+Domain: |
+  Standard Australian Classification of Countries 2011 (SACC 2011) 4-digit code (ABS Catalogue No. 1269.0)
   [provided in Appendix B] SACC 2011 is a four-digit, three-level hierarchical structure specifying major group,
   minor group and country. 9999 is used when the information is not known or the client has refused to provide
   the information.
 ---
-Definition: The language reported by a client as the main language other than English spoken by that client in
+Definition: |
+  The language reported by a client as the main language other than English spoken by that client in
   his/her home (or most recent private residential setting occupied by the client) to communicate
   with other residents of the home or setting and regular visitors, as represented by a code.
 MeteorID: 460125
 Name: MLSH
 Title: Main language other than English spoken at home
 Type: Char[4]
-Domain: Australian Standard Classification of Languages 2011 4-digit code (ABS Catalogue No. 1267.0) or 9999 if
+Domain: |
+  Australian Standard Classification of Languages 2011 4-digit code (ABS Catalogue No. 1267.0) or 9999 if
   info is not known or client refuses to supply.
 Missing: 9999
 ---
-Definition: The self-assessed level of ability to speak English, asked of people whose first language is a
+Definition: |
+  The self-assessed level of ability to speak English, asked of people whose first language is a
   language other than English or who speak a language other than English at home.
 MeteorID: 270203
 Name: ProfEng
@@ -321,7 +281,7 @@ Domain:
     4: Not as all
     9: Not stated/inadequately described
   Missing: 9
-Comments:
+Comments: |
   CODE 0: Not applicable (persons under 5 years of age or who speak only English)
           Not applicable, is to be used for people under 5 years of age and people who speak only English.
   CODE 9: Not stated/inadequately described
@@ -333,11 +293,13 @@ MeteorID: 429894
 Name: CliPCode
 Title: Area of ususal residence, postcode
 Type: Char[4]
-Domain: |
-  Valid Australian Postcode:
-  - Enter 9999 if the postcode is unknown or the client has not provided sufficient information to confirm their
-    current residential address
-  The full list of Australian Postcodes can be found at `Australia Post <http://www.auspost.com.au/>`_.
+Domain: |-
+  A valid Australian postcode or 9999 if the postcode is unknown or the client
+  has not provided sufficient information to confirm their current residential
+  address
+
+  The full list of Australian Postcodes can be found at `Australia Post
+  <http://www.auspost.com.au/>`_.
 ---
 Definition: The date on which the client formally or statistically commences an episode of mental health care,
   expressed as DDMMYYYY.
@@ -435,6 +397,7 @@ Comments: |-
   for a definition of 'employed'). Paid employment includes persons who performed some work for wages or
   salary, in cash or in kind, and persons temporarily absent from a paid employment job but who retained a
   formal attachment to that job.
+
   Code 1: Full-time:
           Employed persons are working full-time if they:
           (a) usually work 35 hours or more in a week (in all paid jobs) or
@@ -470,12 +433,15 @@ Domain:
   Missing: 9
 Comments: |-
   This data standard is not applicable to person's aged less than 16 years.
+
   This item refers to the source by which a person derives most (equal to or greater than 50%) of his/her income.
   If the person has multiple sources of income and none are equal to or greater than 50%, the one which contributes
   the largest percentage should be counted.
+
   This item refers to a person’s own main source of income, not that of a partner or of other household members.
   If it is difficult to determine a ‘main source of income’ over the reporting period (i.e. it may vary over time)
   please report the main source of income during the reference week.
+
   Code 7 ‘Not known’ should only be recorded when it has not been possible for the service user or their
   carer/family/advocate to provide the information (i.e. they have been asked but do not know).
 ---
@@ -531,7 +497,8 @@ Domain:
     1: Yes
     2: No
 ---
-Definition: A person's current relationship status in terms of a couple relationship or, for those not in a
+Definition: |
+  A person's current relationship status in terms of a couple relationship or, for those not in a
   couple relationship, the existence of a current or previous registered marriage, as represented by a code.
 MeteorID: 291045
 Name: MaritalSt
@@ -548,6 +515,7 @@ Domain:
   Missing: 9
 Comments: |
   Refers to the current marital status of a person.
+
   CODE 2: Widowed
           This code usually refers to registered marriages but when self-reported may also refer to de facto marriages.
   CODE 4: Separated
@@ -586,6 +554,7 @@ Comments: |
   ‘Usual’ is defined as where the person usually resides for four or more days per week on average. If it is
   difficult to determine the person’s ‘usual’ residential setting for the reporting period, the setting the person
   resided in during the reference week is reported.
+
   CODE 1:  Private residence (e.g. private or public rental, owned, purchasing etc)
            Private residence refers to private residences which include a wide range of dwelling types,
            such as houses, flats, units, caravans, mobile homes, boats etc.
@@ -638,7 +607,8 @@ Comments: |
   CODE 12: Other
            Other includes situations such as a child under a court/guardianship order with no usual address.
 ---
-Definition: Identifies those individuals where a recent history of suicide attempt, or suicide risk, was a
+Definition: |
+  Identifies those individuals where a recent history of suicide attempt, or suicide risk, was a
   factor noted in the referral that underpinned the person's needs for assistance at entry to the episode.
 Name: SuicideRef
 Title: Suicide Referral Flag
@@ -652,7 +622,8 @@ Definition: Service Event date
 Name: SerDate
 Title: Mental Health Service Contact Date
 Type: Date[8]
-Domain: For Date fields, data must be recorded in compliance with the standard format used across the National
+Domain: |
+  For Date fields, data must be recorded in compliance with the standard format used across the National
   Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with
   leading zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
 ---
@@ -673,12 +644,12 @@ MeteorID: 429894
 Name: SerPCode
 Title: Service Delivery Postcode
 Type: Char[4]
-Domain: |
-  Valid Australian Postcode:
-  - Enter 9999 if the postcode is unknown
-  - If Service Modality is not 'Face to Face' enter 9999
-  - If Service Modality is 'Face to Face' a valid Australian postcode must be entered
+Domain: |-
+  A valid Australian postcode or 9999 if the postcode is unknown.
   The full list of Australian Postcodes can be found at `Australia Post <http://www.auspost.com.au/>`_.
+
+    - If Service Modality is not 'Face to Face' enter 9999
+    - If Service Modality is 'Face to Face' a valid Australian postcode must be entered
 ---
 Definition: How the service was delivered.
 Name: SerMod
@@ -690,9 +661,9 @@ Domain:
     2: Telephone
     3: Video
     4: Internet-based
-Comments: |
-  - If 'Face to Face' is selected, a value other than 'Not applicable' must be selected for Venue
-  - If 'Face to Face' is selected a valid Australian postcode must be entered for Service Delivery Postcode.
+  Notes: |
+    - If 'Face to Face' is selected, a value other than 'Not applicable' must be selected for Venue
+    - If 'Face to Face' is selected a valid Australian postcode must be entered for Service Delivery Postcode.
 ---
 Definition: Where the service was delivered.
 Name: Venue
@@ -753,7 +724,8 @@ Domain:
     3: Family / Client Support Network
   Notes: Are any other options necessary?
 ---
-Definition: An indicator of whether the client has participated in a service contact, as represented by a code.
+Definition: |
+  An indicator of whether the client has participated in a service contact, as represented by a code.
 MeteorID: 494341
 Name: PartIndic
 Title: Mental health service contact - client participation indicator
@@ -765,6 +737,7 @@ Domain:
 Comments: |-
   Service contacts are not restricted to in-person communication but can include telephone, video link or
   other forms of direct communication.
+
   CODE 1: Yes
           This code is to be used for service contacts between a specialised mental health service provider
           and the patient/client in whose clinical record the service contact would normally warrant a dated
@@ -783,7 +756,8 @@ Definition: Measure date
 Name: MeasDate
 Title: Measure Date
 Type: Date[8]
-Domain: For Date fields, data must be recorded in compliance with the standard format used across the
+Domain: |
+  For Date fields, data must be recorded in compliance with the standard format used across the
   National Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY,
   with leading zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
 ---
@@ -791,4 +765,3 @@ Name: Score
 Title: Score
 Type: Char[2]
 Domain: The value of the score at this collection occasion.
----

@@ -1,20 +1,6 @@
 ---
-RecType: HR
-Fields:
-  - RecType
-  - OrgCode
-  - BatchNo
-  - RepStart
-  - RepEnd
-  - GenDt
-  - FileType
-  - SpecVer
-Keys:
-  Primary: [ OrgCode ]
----
 RecType: ORG
 Fields:
-  - RecType
   - OrgName
   - OrgCode
   - OrgType
@@ -34,7 +20,6 @@ Relationships:
 ---
 RecType: PRO
 Fields:
-  - RecType
   - ProKey
   - Category
   - CultFlag
@@ -54,7 +39,6 @@ Relationships:
 ---
 RecType: CLI
 Fields:
-  - RecType
   - OrgCode
   - CliKey
   - SLK
@@ -77,7 +61,6 @@ Relationships:
 ---
 RecType: EPI
 Fields:
-  - RecType
   - EpiKey
   - CliKey
   - CliPCode 
@@ -111,7 +94,6 @@ Relationships:
 ---
 RecType: SER
 Fields:
-  - RecType
   - SerKey
   - CliKey
   - ProKey
@@ -137,7 +119,6 @@ Relationships:
 ---
 RecType: COLOC
 Fields:
-  - RecType
   - ColocKey
   - EpiKey
   - Measure
