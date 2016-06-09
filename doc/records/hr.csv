@@ -1,9 +1,0 @@
-Data Element (Field Name),Type [Length],METeOR Identifier,Notes / Values
-Organistation Code (OrgCode),Char[6],—,"- Where the organisation is a PHN this code will be assigned by the Department of Health.
-- Where the organisation reports to a PHN the PHN will assign a unique code."
-Batch Number (BatchNo),Char[9],—,YYYYNNNNN
-Report Period Start Date (RepStart),Date[8],—,Valid date expressed as DDMMYYYY
-Report Period End Date (RepEnd),Date[8],—,Valid date expressed as DDMMYYYY
-Data File Generation Date (GenDt),Date[8],—,Valid date expressed as DDMMYYYY
-Data File Type (FileType),Char[4],—,Value = `PMHC`
-PMHC Specification Version Number (SpecVer),Char[5],—,Value = `00.01`

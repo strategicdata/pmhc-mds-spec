@@ -1,42 +1,77 @@
-Data Element (Field Name),Type [Length],METeOR Identifier,Notes / Values
-Service Event Key (SerKey),Char[20],—,A unique identifier for a service event within the PMHC. Must be unique within an organisation and stable over time.
-Client Key (CliKey),Char[20],—,A unique identifier for an individual within the PMHC top level organisation. Must be stable over time.
-Provider Key (ProKey),Char[20],—,A unique identifier for a provider within the PMHC top level organisation.
-Mental Health Service Contact Date (SerDate),Date[8],—,"For Date fields, data must be recorded in compliance with the standard format used across the National Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with leading zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008."
-Service Type (SerType),Char[1],—,"
+Data Element (Field Name),Type [Length],Notes / Values
+"`Service Event Key`_ (SerKey)
+
+",Char[20],"A unique identifier for a service event within the PMHC. Must be unique within an organisation and stable
+over time.
+
+"
+"`Client Key`_ (CliKey)
+
+",Char[20],"A unique identifier for an individual within the PMHC top level organisation. Must be stable over time.
+"
+"`Provider Key`_ (ProKey)
+
+",Char[20],"A unique identifier for a provider within the PMHC top level organisation.
+"
+"`Mental Health Service Contact Date`_ (SerDate)
+
+",Date[8],"For Date fields, data must be recorded in compliance with the standard format used across the National
+Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with
+leading zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
+
+"
+"`Service Type`_ (SerType)
+
+",Char[1],"
 :1: Structured psychological intervention
 :2: Other psychological intervention
 :3: Clinical care coordination
 :4: Child or youth specific assistance NEC
 :5: Suicide prevention specific assistance NEC
 :6: Cultural specific assistance NEC
+
 "
-Service Delivery Postcode (SerPCode),Char[4],`429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__,"Valid Australian Postcode:
-- Enter 9999 if the postcode is unknown
-- If Service Modality is not 'Face to Face' enter 9999
-- If Service Modality is 'Face to Face' a valid Australian postcode must be entered
+"`Service Delivery Postcode`_ (SerPCode)
+
+
+
+METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__",Char[4],"A valid Australian postcode or 9999 if the postcode is unknown.
 The full list of Australian Postcodes can be found at `Australia Post <http://www.auspost.com.au/>`_.
+
+  - If Service Modality is not 'Face to Face' enter 9999
+  - If Service Modality is 'Face to Face' a valid Australian postcode must be entered
 "
-Service Modality (SerMod),Char[1],—,"
+"`Service Modality`_ (SerMod) [#tn_ser1]_
+
+",Char[1],"
 :1: Face to Face
 :2: Telephone
 :3: Video
 :4: Internet-based
+
 "
-Service Participants (SerPart) [#tn_ser1]_,Char[1],—,"
+"`Service Participants`_ (SerPart) [#tn_ser2]_
+
+",Char[1],"
 :1: Individual
 :2: Group
 :3: Family / Client Support Network
+
 "
-Venue (Venue),Char[1],—,"
+"`Venue`_ (Venue)
+
+",Char[1],"
 :1: Home
 :2: Practitioner's Office
 :3: School
 :4: Client's Workplace
 :5: Other
 :6: Not applicable (Service modality is face to face)
+
 "
-Duration (Duration),Char[1],—,"
+"`Duration`_ (Duration)
+
+",Char[1],"
 :1: 0-15 mins
 :2: 16-30 mins
 :3: 31-45 mins
@@ -46,13 +81,25 @@ Duration (Duration),Char[1],—,"
 :7: 91-105 mins
 :8: 106-120 mins
 :9: over 120 mins
+
 "
-Copayment (Copayment),Char[9],—,Up to 6 digits before the decimal point; up to 2 digits after the decimal point
-Mental health service contact - client participation indicator (PartIndic),Char[1],`494341 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494341>`__,"
+"`Copayment`_ (Copayment)
+
+",Char[9],"Up to 6 digits before the decimal point; up to 2 digits after the decimal point
+"
+"`Mental health service contact - client participation indicator`_ (PartIndic)
+
+
+
+METeOR: `494341 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494341>`__",Char[1],"
 :1: Yes
 :2: No
+
 "
-No Show (NoShow),Char[1],—,"
+"`No Show`_ (NoShow)
+
+",Char[1],"
 :1: Yes
 :2: No
+
 "
