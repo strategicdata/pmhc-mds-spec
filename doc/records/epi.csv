@@ -1,13 +1,10 @@
 Data Element (Field Name),Type [Length],Notes / Values
 "`Episode Key`_ (EpiKey)
 
-",Char[20],"A unique identifier for an episode within the PMHC. Must be unique within an organisation and stable over time.
-
-"
+",Char[20],A unique identifier for an episode within the PMHC. Must be unique within an organisation and stable over time.
 "`Client Key`_ (CliKey)
 
-",Char[20],"A unique identifier for an individual within the PMHC top level organisation. Must be stable over time.
-"
+",Char[20],A unique identifier for an individual within the PMHC top level organisation. Must be stable over time.
 "`Area of ususal residence, postcode`_ (CliPCode)
 
 
@@ -17,97 +14,74 @@ has not provided sufficient information to confirm their current residential
 address
 
 The full list of Australian Postcodes can be found at `Australia Post
-<http://www.auspost.com.au/>`_.
-"
+<http://www.auspost.com.au/>`_."
 "`Episode Start Date`_ (EpiStart)
 
 
 
 METeOR: `614072 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614072>`__",Date[8],"For Date fields, data must be recorded in compliance with the standard format used across the National
 Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with
-leading zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
-
-"
+leading zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008."
 "`Episode End Date`_ (EpiEnd)
 
 
 
 METeOR: `614094 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614094>`__",Date[8],"For Date fields, data must be recorded in compliance with the standard format used across the National Health
 Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with leading
-zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
-
-"
+zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008."
 "`Labour Force Status`_ (LabourSt)
 
 
 
-METeOR: `621450 <http://meteor.aihw.gov.au/content/index.phtml/itemId/621450>`__",Char[1],"
-:1: Employed
+METeOR: `621450 <http://meteor.aihw.gov.au/content/index.phtml/itemId/621450>`__",Char[1],":1: Employed
 :2: Unemployed
 :3: Not in the Labour Force
-:9: Not stated/inadequately described
-
-"
+:9: Not stated/inadequately described"
 "`Employment Participation`_ (EmpPart)
 
 
 
-METeOR: `269950 <http://meteor.aihw.gov.au/content/index.phtml/itemId/269950>`__",Char[1],"
-:1: Full-time
+METeOR: `269950 <http://meteor.aihw.gov.au/content/index.phtml/itemId/269950>`__",Char[1],":1: Full-time
 :2: Part-time
 :7: Not applicable - not in the labour force
-:9: Not stated/inadequately described
-
-"
+:9: Not stated/inadequately described"
 "`Income Status - Ranges? or Low Income?`_ (IncomeSt)
 
-",Char[1],"To be defined
-"
+",Char[1],To be defined
 "`Source of Cash Income`_ (IncomeSce)
 
 
 
-METeOR: `386449 <http://meteor.aihw.gov.au/content/index.phtml/itemId/386449>`__",Char[1],"
-:1: Disability Support Pension
+METeOR: `386449 <http://meteor.aihw.gov.au/content/index.phtml/itemId/386449>`__",Char[1],":1: Disability Support Pension
 :2: Other pension or benefit (not superannuation)
 :3: Paid employment
 :4: Compensation payments
 :5: Other (e.g. superannuation, investments etc.)
 :6: Nil income
 :7: Not known
-:9: Not stated/inadequately described
-
-"
+:9: Not stated/inadequately described"
 "`Medication`_ (Medication)
 
-",Char[1],"Was this the current four items plus 'Not on medication' with Yes/No/Missing for each item or an ATC Level 3 code?
-"
+",Char[1],Was this the current four items plus 'Not on medication' with Yes/No/Missing for each item or an ATC Level 3 code?
 "`NDIS participant`_ (NDIS)
 
-",Char[1],"
-:1: Yes
-:2: No
-
-"
+",Char[1],":1: Yes
+:2: No"
 "`Marital Status`_ (MaritalSt)
 
 
 
-METeOR: `291045 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291045>`__",Char[1],"
-:1: Never married
+METeOR: `291045 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291045>`__",Char[1],":1: Never married
 :2: Widowed
 :3: Divorced
 :4: Separated
 :5: Married (registered and do facto)
-:9: Not stated/inadequately described
-
-"
+:9: Not stated/inadequately described"
 "`Accomodation`_ (Accom)
 
 
 
-METeOR: `621477 <http://meteor.aihw.gov.au/content/index.phtml/itemId/621477>`__",Char[2],"
-:1: Private residence (e.g. private or public rental, owned, purchasing etc)
+METeOR: `621477 <http://meteor.aihw.gov.au/content/index.phtml/itemId/621477>`__",Char[2],":1: Private residence (e.g. private or public rental, owned, purchasing etc)
 :2: Residence within an Aboriginal/Torres Strait Islander community (e.g. rented private residence, temporary shelter)
 :3: Domestic-scale supported living facility (e.g. group homes)
 :4: Supported accommodation facility (e.g. hostels, supported residential services or facilities)
@@ -119,53 +93,37 @@ METeOR: `621477 <http://meteor.aihw.gov.au/content/index.phtml/itemId/621477>`__
 :10: Short term crisis, emergency or transitional accommodation facility (e.g. night shelters, refuges, hostels for the homeless, halfway houses)
 :11: Public place/temporary shelter
 :12: Other
-:99: Not stated/inadequately described
-
-"
+:99: Not stated/inadequately described"
 "`Princ Diagnosis`_ (PrincDx)
 
-",Char[1],"To be defined
-"
+",Char[1],To be defined
 "`Other Diagnosis`_ (OtherDx)
 
-",Char[1],"To be defined
-"
+",Char[1],To be defined
 "`Principle Focus of Treatment`_ (FoE)
 
-",Char[1],"
-:1: Psychological intervention
+",Char[1],":1: Psychological intervention
 :2: Clinical care coordination
 :3: Complex care package for adults
-:4: Care package for a youth with severe mental illness
-
-"
+:4: Care package for a youth with severe mental illness"
 "`Episode/Patient Outcome`_ (EpiOutcome)
 
-",Char[2],"To be defined
-"
+",Char[2],To be defined
 "`Episode Completion Status`_ (CompSt)
 
-",Char[1],"
-:1: Treatment complete
+",Char[1],":1: Treatment complete
 :2: Patient could not be contacted
 :3: Patient refused treatment
 :4: Patient referred elsewhere
 :5: Treatment incomplete but referral closed
-:6: Patient ineligible
-
-"
+:6: Patient ineligible"
 "`Suicide Referral Flag`_ (SuicideRef)
 
-",Char[1],"
-:1: Yes
-:2: No
-
-"
+",Char[1],":1: Yes
+:2: No"
 "`Referrer Type`_ (RefType)
 
-",Char[1],"To be defined
-"
+",Char[1],To be defined
 "`Referrer Entity`_ (RefEntity)
 
-",Char[1],"To be defined
-"
+",Char[1],To be defined

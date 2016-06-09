@@ -1,58 +1,41 @@
 Data Element (Field Name),Type [Length],Notes / Values
 "`Provider Key`_ (ProKey)
 
-",Char[20],"A unique identifier for a provider within the PMHC top level organisation.
-"
+",Char[20],A unique identifier for a provider within the PMHC top level organisation.
 "`Provider category`_ (Category)
 
-",Char[1],"
-:1: Psychologist (clinical)
+",Char[1],":1: Psychologist (clinical)
 :2: Psychologist (generalist/other)
 :3: Social worker
 :4: Occupational therapist
 :5: Mental health nurse
 :6: Aboriginal and Torres Strait Islander health/mental health worker
 :7: Low intensity mental health worker
-:8: Other
-
-"
+:8: Other"
 "`Cultural training flag`_ (CultFlag)
 
-",Char[1],"
-:1: Yes
+",Char[1],":1: Yes
 :2: No
-:9: Missing/Not recorded
-
-"
+:9: Missing/Not recorded"
 "`Year of Birth`_ (YoB)
 
-",Char[4],"Record the providers's year of birth YYYY format.
-"
+",Char[4],Record the providers's year of birth YYYY format.
 "`Gender`_ (Gender) [#tn_pro1]_
 
-",Char[1],"
-:0: Not stated/Inadequately described
+",Char[1],":0: Not stated/Inadequately described
 :1: Male
 :2: Female
-:3: Other
-
-"
+:3: Other"
 "`Aboriginal And Torres Strait Islander Status`_ (IndigSt)
 
 
 
-METeOR: `291036 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291036>`__",Char[1],"
-:1: Aboriginal but not Torres Strait Islander origin
+METeOR: `291036 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291036>`__",Char[1],":1: Aboriginal but not Torres Strait Islander origin
 :2: Torres Strait Islander but not Aboriginal origin
 :3: Both Aboriginal and Torres Strait Islander origin
 :4: Neither Aboriginal or Torres Strait Islander origin
-:9: Not stated/inadequately described
-
-"
+:9: Not stated/inadequately described"
 "`Referrer or provider Active`_ (Active)
 
-",Char[1],"
-:0: Inactive
-:1: Active
-
-"
+",Char[1],":0: Inactive
+:1: Active"

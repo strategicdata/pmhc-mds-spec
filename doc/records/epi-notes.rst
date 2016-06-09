@@ -1,4 +1,2 @@
 
 
-.. rubric:: Notes
-
