@@ -22,6 +22,11 @@ Whether a person identifies as being of Aboriginal and/or Torres Strait Islander
   - Where the question was not able to be asked prior to completion of assistance because the client was unable
     to communicate or a person who knows the client was not available.
 
+:METeOR: `291036 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291036>`__
+
+----------
+
+
 Accomodation
 ^^^^^^^^^^^^
 
@@ -43,34 +48,29 @@ The type of physical setting in which a person usually resides, as represented b
   :99: Not stated/inadequately described
 
 :Notes:
-  ‘Usual’ is defined as where the person usually resides for four or more days per week on average. If it is
-  difficult to determine the person’s ‘usual’ residential setting for the reporting period, the setting the person
+  'Usual' is defined as where the person usually resides for four or more days per week on average. If it is
+  difficult to determine the person's 'usual' residential setting for the reporting period, the setting the person
   resided in during the reference week is reported.
   
-  CODE 1:  Private residence (e.g. private or public rental, owned, purchasing etc)
-  
+  1 - Private residence (e.g. private or public rental, owned, purchasing etc)
    Private residence refers to private residences which include a wide range of dwelling types,
    such as houses, flats, units, caravans, mobile homes, boats etc.
   
-  CODE 2:  Residence within an Aboriginal/Torres Strait Islander community (e.g. rented private residence,
-  temporary shelter)
-  
+  2 - Residence within an Aboriginal/Torres Strait Islander community (e.g. rented private residence, temporary shelter)
     Residence within an Aboriginal/Torres Strait Islander community should be used for service users that
     live in this type of setting, regardless of whether the residence is a private residence or a
     public place/temporary shelter (codes 1 and 11).
   
-  CODE 3:  Domestic-scale supported living facility (e.g. group homes)
-  
+  3 - Domestic-scale supported living facility (e.g. group homes)
     Domestic-scale supported living facility refers to community living settings in which service users
     reside in a facility that provides support in some way by staff or volunteers. This category includes
     group homes, cluster apartments where a support worker lives on site, community residential apartments,
     congregate care arrangements, etc. Domestic-scale supported living settings may or may not have 24 hour
     supervision and care. Independent living units in retirement villages should be coded to 6 and
     community psychiatric facilities should be coded to 8. (Service users receiving service type
-    1.04 ‘Group homes’ should be coded to 3).
+    1.04 'Group homes' should be coded to 3).
   
-  CODE 4:  Supported accommodation facility (e.g. hostels, supported residential services or facilities)
-  
+  4 - Supported accommodation facility (e.g. hostels, supported residential services or facilities)
     Supported accommodation facility refers to settings in which service users reside in an accommodation
     facility which provides board or lodging for a number of people and which has support services provided
     on what is usually a 24 hour basis by rostered care workers. (Service users receiving DS NMDS service
@@ -78,49 +78,44 @@ The type of physical setting in which a person usually resides, as represented b
     people with disability. This code should be used for larger supported accommodation facilities
     (usually 7 or more people) that provide 24 hour supervision or care. Smaller supported accommodation
     facilities (i.e. less than 7 people) which may or may not have 24 hour supervision or care should be
-    coded to 3 ‘Domestic-scale supported living facility’. Aged care hostels should be coded to 7
-    ‘residential aged care facility’.
+    coded to 3 'Domestic-scale supported living facility'. Aged care hostels should be coded to 7
+    'residential aged care facility'.
   
-  CODE 5:  Boarding house/private hotel
-  
+  5 - Boarding house/private hotel
     Refers to residing in a boarding house or in a private hotel.
   
-  CODE 6:  Independent living unit within a retirement village
-  
+  6 - Independent living unit within a retirement village
     Refers to residing in an independent living unit within a retirement village.
-  
-  CODE 7:  Residential aged care facility(nursing home or aged care hostel)
-  
+  7 - Residential aged care facility(nursing home or aged care hostel)
     Residential aged care facility includes permanent residents of Residential aged care services
     (formerly nursing homes and aged care hostels) and Multi-purpose services or Multi-purpose centres,
     who are receiving low level or high level care.
   
-  CODE 8:  Psychiatric/mental health community care facility
-  
+  8 - Psychiatric/mental health community care facility
     Psychiatric/mental health community care facility refers to community care units which provide
     accommodation and non-acute care and support on a temporary basis to people with mental illness
     or psychological disabilities.
   
-  CODE 9:  Hospital
-  
+  9 - Hospital
     Refers to residing in a hospital.
   
-  CODE 10: Short term crisis, emergency or transitional accommodation facility (e.g. night shelters, refuges,
-  
-    hostels for the homeless, halfway houses)
+  10 - Short term crisis, emergency or transitional accommodation facility (e.g. night shelters, refuges, hostels for the homeless, halfway houses)
     Refers to residing in short term crisis accommodation, in emergency accommodation, or in a
     transitional accommodation facility. This includes night shelters, refuges, hostels for the homeless,
     and halfway houses.
   
-  CODE 11: Public place/temporary shelter
-  
+  11 - Public place/temporary shelter
     Public place/temporary shelter includes public places such as streets and parks, as well as
     temporary shelters such as bus shelters or camps and accommodation outside legal tenure arrangements,
     such as squats.
   
-  CODE 12: Other
-  
+  12 - Other
     Other includes situations such as a child under a court/guardianship order with no usual address.
+
+:METeOR: `621477 <http://meteor.aihw.gov.au/content/index.phtml/itemId/621477>`__
+
+----------
+
 
 Area of ususal residence, postcode
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -134,6 +129,11 @@ address
 The full list of Australian Postcodes can be found at `Australia Post
 <http://www.auspost.com.au/>`_.
 
+:METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__
+
+----------
+
+
 Client Key
 ^^^^^^^^^^
 
@@ -142,6 +142,9 @@ flexible funding pool. The client identifier is unique and stable for each
 individual at the level of the PMHC top level organisation.
 
 A unique identifier for an individual within the PMHC top level organisation. Must be stable over time.
+
+----------
+
 
 Collection Occasion Key
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -152,6 +155,9 @@ level of the organisation.
 
 A unique identifier for a collection occasion within the PMHC. Must be unique within an organisation and
 stable over time.
+
+----------
+
 
 Copayment
 ^^^^^^^^^
@@ -166,6 +172,9 @@ Up to 6 digits before the decimal point; up to 2 digits after the decimal point
   there will not be a co-payment charged and therefore zero should be entered. Where a co-payment is charged
   it should be minimal and based on an individual's capacity to pay.
 
+----------
+
+
 Country Of Birth
 ^^^^^^^^^^^^^^^^
 
@@ -176,6 +185,11 @@ Standard Australian Classification of Countries 2011 (SACC 2011) 4-digit code (A
 minor group and country. 9999 is used when the information is not known or the client has refused to provide
 the information.
 
+:METeOR: `459973 <http://meteor.aihw.gov.au/content/index.phtml/itemId/459973>`__
+
+----------
+
+
 Cultural training flag
 ^^^^^^^^^^^^^^^^^^^^^^
 
@@ -185,6 +199,9 @@ A flag to represent whether a provider has done cultural training
   :1: Yes
   :2: No
   :9: Missing/Not recorded
+
+----------
+
 
 Date of Birth
 ^^^^^^^^^^^^^
@@ -203,6 +220,11 @@ Record the client's date of birth using DDMMYYYY format.
   - If the date of birth is totally unknown, use 09099999.
   - If you have estimated the year of birth make sure you record this in the 'Estimated date of birth flag'
 
+:METeOR: `287007 <http://meteor.aihw.gov.au/content/index.phtml/itemId/287007>`__
+
+----------
+
+
 Duration
 ^^^^^^^^
 
@@ -217,6 +239,9 @@ Duration
   :7: 91-105 mins
   :8: 106-120 mins
   :9: over 120 mins
+
+----------
+
 
 Employment Participation
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -235,22 +260,24 @@ Whether a person in paid employment is employed full-time or part-time, as repre
   salary, in cash or in kind, and persons temporarily absent from a paid employment job but who retained a
   formal attachment to that job.
   
-  Code 1: Full-time:
-  
+  1 - Full-time
     Employed persons are working full-time if they:
     (a) usually work 35 hours or more in a week (in all paid jobs) or
     (b) although usually working less than 35 hours a week, actually worked 35 hours or more during
     the reference period.
   
-  Code 2: Part-time:
-  
+  2 - Part-time
     Employed persons are working part-time if they usually work less than 35 hours a week (in all paid jobs)
     and either did so during the reference period, or were not at work in the reference period.
   
-  Code 9: Not stated/ inadequately described:
-  
+  9 - Not stated / inadequately described
     Is not to be used on primary collection forms. It is primarily for use in administrative collections
     when transferring data from data sets where the item has not been collected.
+
+:METeOR: `269950 <http://meteor.aihw.gov.au/content/index.phtml/itemId/269950>`__
+
+----------
+
 
 Episode Completion Status
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -264,6 +291,9 @@ Episode Completion Status
   :5: Treatment incomplete but referral closed
   :6: Patient ineligible
 
+----------
+
+
 Episode End Date
 ^^^^^^^^^^^^^^^^
 
@@ -272,6 +302,11 @@ The date on which an episode of mental health care is formally or statistically 
 For Date fields, data must be recorded in compliance with the standard format used across the National Health
 Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with leading
 zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
+
+:METeOR: `614094 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614094>`__
+
+----------
+
 
 Episode Key
 ^^^^^^^^^^^
@@ -282,11 +317,17 @@ organisation.
 
 A unique identifier for an episode within the PMHC. Must be unique within an organisation and stable over time.
 
+----------
+
+
 Episode/Patient Outcome
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 
 To be defined
+
+----------
+
 
 Episode Start Date
 ^^^^^^^^^^^^^^^^^^
@@ -301,6 +342,11 @@ leading zeros used when necessary to pad out a value. For instance, 13th March 2
 :Notes:
   This field will be derived from the first service event date.
 
+:METeOR: `614072 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614072>`__
+
+----------
+
+
 Estimated Date of Birth Flag
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -311,6 +357,9 @@ The date of birth estimate flag records whether or not the client's date of birt
   :2: Date of birth is an estimate
   :8: Date of birth is a "dummy" date (ie, 09099999)
   :9: Accuracy of stated date of birth is not known
+
+----------
+
 
 Gender
 ^^^^^^
@@ -328,11 +377,17 @@ not always exclusively male or female. It may or may not correspond to their sex
   As defined by Australian Bureau of Statistics `1200.0.55.012 - Standard for Sex and Gender Variables, 2016
   <http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/1200.0.55.012Main%20Features12016?opendocument&tabname=Summary&prodno=1200.0.55.012&issue=2016&num=&view=>`_
 
+----------
+
+
 Income Status - Ranges? or Low Income?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 To be defined
+
+----------
+
 
 Labour Force Status
 ^^^^^^^^^^^^^^^^^^^
@@ -346,32 +401,30 @@ The self-reported status the person currently has in being either in the labour 
   :9: Not stated/inadequately described
 
 :Notes:
-  CODE 1: Employed
+  1 - Employed
+    Employed persons are those aged 15 years and over who met one of the following criteria during the
+    reference week:
   
-  Employed persons are those aged 15 years and over who met one of the following criteria during the
-  reference week:
+    - Worked for one hour or more for pay, profit, commission or payment in kind, in a job or business or
+      son a farm (employees and owner managers of incorporated or unincorporated enterprises).
+    - Worked for one hour or more without pay in a family business or on a farm (contributing family workers).
+    - Were employees who had a job but were not at work and were:
   
-  - Worked for one hour or more for pay, profit, commission or payment in kind, in a job or business or
-    son a farm (employees and owner managers of incorporated or unincorporated enterprises).
-  - Worked for one hour or more without pay in a family business or on a farm (contributing family workers).
-  - Were employees who had a job but were not at work and were:
+      - away from work for less than four weeks up to the end of the reference week; or
+      - away from work for more than four weeks up to the end of the reference week and
+      - received pay for some or all of the four week period to the end of the reference week; or
+      - away from work as a standard work or shift arrangement; or
+      - on strike or locked out; or
+      - on workers' compensation and expected to return to their job.
+    - Were owner managers who had a job, business or farm, but were not at work.
   
-    - away from work for less than four weeks up to the end of the reference week; or
-    - away from work for more than four weeks up to the end of the reference week and
-    - received pay for some or all of the four week period to the end of the reference week; or
-    - away from work as a standard work or shift arrangement; or
-    - on strike or locked out; or
-    - on workers' compensation and expected to return to their job.
-  - Were owner managers who had a job, business or farm, but were not at work.
+  2 - Unemployed
+    Unemployed persons are those aged 15 years and over who were not employed during the reference week, and:
   
-  CODE 2: Unemployed
-  
-  Unemployed persons are those aged 15 years and over who were not employed during the reference week, and:
-  
-  - had actively looked for full time or part time work at any time in the four weeks up to the end of
-    the reference week and were available for work in the reference week; or
-  - were waiting to start a new job within four weeks from the end of the reference week and could have
-    started in the reference week if the job had been available then.
+    - had actively looked for full time or part time work at any time in the four weeks up to the end of
+      the reference week and were available for work in the reference week; or
+    - were waiting to start a new job within four weeks from the end of the reference week and could have
+      started in the reference week if the job had been available then.
   
     Actively looked for work includes:
   
@@ -383,12 +436,16 @@ The self-reported status the person currently has in being either in the labour 
     - advertised or tendered for work; and
     - contacted friends or relatives in order to obtain work.
   
-  CODE 3: Not in the labour force
-  
+  3 - Not in the labour force
     Persons not in the labour force are those aged 15 years and over who were not in the categories
     employed or unemployed, as defined, during the reference week. They include people who undertook
     unpaid household duties or other voluntary work only, were retired, voluntarily inactive and
     those permanently unable to work.
+
+:METeOR: `621450 <http://meteor.aihw.gov.au/content/index.phtml/itemId/621450>`__
+
+----------
+
 
 Main language other than English spoken at home
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -399,6 +456,11 @@ with other residents of the home or setting and regular visitors, as represented
 
 Australian Standard Classification of Languages 2011 4-digit code (ABS Catalogue No. 1267.0) or 9999 if
 info is not known or client refuses to supply.
+
+:METeOR: `460125 <http://meteor.aihw.gov.au/content/index.phtml/itemId/460125>`__
+
+----------
+
 
 Marital Status
 ^^^^^^^^^^^^^^
@@ -417,23 +479,24 @@ couple relationship, the existence of a current or previous registered marriage,
 :Notes:
   Refers to the current marital status of a person.
   
-  CODE 2: Widowed
-  
+  2 - Widowed
     This code usually refers to registered marriages but when self-reported may also refer to de facto marriages.
   
-  CODE 4: Separated
-  
+  4 - Separated
     This code refers to registered marriages but when self-reported may also refer to de facto marriages.
   
-  CODE 5: Married (registered and de facto)
-  
+  5 - Married (registered and de facto)
     Includes people who have been divorced or widowed but have since re-married, and should be
     generally accepted as applicable to all de facto couples, including of the same sex.
   
-  CODE 6: Not stated/inadequately described
-  
+  6 - Not stated/inadequately described
     This code is not for use on primary collection forms. It is primarily for use in administrative
     collections when transferring data from data sets where the item has not been collected.
+
+:METeOR: `291045 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291045>`__
+
+----------
+
 
 Measure Date
 ^^^^^^^^^^^^
@@ -444,17 +507,26 @@ For Date fields, data must be recorded in compliance with the standard format us
 National Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY,
 with leading zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
 
+----------
+
+
 Measure Name
 ^^^^^^^^^^^^
 
 
 The name of the measure
 
+----------
+
+
 Medication
 ^^^^^^^^^^
 
 
 Was this the current four items plus 'Not on medication' with Yes/No/Missing for each item or an ATC Level 3 code?
+
+----------
+
 
 Mental health service contact - client participation indicator
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -469,17 +541,20 @@ An indicator of whether the client has participated in a service contact, as rep
   Service contacts are not restricted to in-person communication but can include telephone, video link or
   other forms of direct communication.
   
-  CODE 1: Yes
-  
+  1 - Yes
     This code is to be used for service contacts between a specialised mental health service provider
     and the patient/client in whose clinical record the service contact would normally warrant a dated
     entry, where the patient/client is participating.
   
-  CODE 2: No
-  
+  2 - No
     This code is to be used for service contacts between a specialised mental health service provider
     and a third party(ies) where the patient/client, in whose clinical record the service contact would
     normally warrant a dated entry, is not participating.
+
+:METeOR: `494341 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494341>`__
+
+----------
+
 
 Mental Health Service Contact Date
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -490,6 +565,9 @@ For Date fields, data must be recorded in compliance with the standard format us
 Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with
 leading zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
 
+----------
+
+
 NDIS participant
 ^^^^^^^^^^^^^^^^
 
@@ -499,6 +577,9 @@ Is the client a participant in the National Disability Insurance Scheme?
   :1: Yes
   :2: No
 
+----------
+
+
 No Show
 ^^^^^^^
 
@@ -507,10 +588,16 @@ No Show
   :1: Yes
   :2: No
 
+----------
+
+
 Organisation Name
 ^^^^^^^^^^^^^^^^^
 
 The name of the organisation.
+
+----------
+
 
 Organisation Type
 ^^^^^^^^^^^^^^^^^
@@ -518,6 +605,9 @@ Organisation Type
 The type of the organisation.
 
 To be defined
+
+----------
+
 
 Organistation Code
 ^^^^^^^^^^^^^^^^^^
@@ -527,11 +617,17 @@ A sequence of characters which uniquely identifies the PMHC organisation.
 - Where the organisation is a PHN this code will be assigned by the Department of Health.
 - Where the organisation reports to a PHN the PHN will assign a unique code.
 
+----------
+
+
 Other Diagnosis
 ^^^^^^^^^^^^^^^
 
 
 To be defined
+
+----------
+
 
 PMHC Specification Version Number
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -542,11 +638,17 @@ The version number of the PMHC specification document used.
   Value = `00.01`
   
 
+----------
+
+
 Princ Diagnosis
 ^^^^^^^^^^^^^^^
 
 
 To be defined
+
+----------
+
 
 Principle Focus of Treatment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -558,6 +660,9 @@ The primary reason for the episode of care
   :2: Clinical care coordination
   :3: Complex care package for adults
   :4: Care package for a youth with severe mental illness
+
+----------
+
 
 Proficiency in spoken English
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -574,11 +679,17 @@ language other than English or who speak a language other than English at home.
   :9: Not stated/inadequately described
 
 :Notes:
-  CODE 0: Not applicable (persons under 5 years of age or who speak only English)
-          Not applicable, is to be used for people under 5 years of age and people who speak only English.
-  CODE 9: Not stated/inadequately described
-          Not stated/inadequately described, is not to be used on primary collection forms. It is primarily for use in
-          administrative collections when transferring data from data sets where the item has not been collected.
+  0 - Not applicable (persons under 5 years of age or who speak only English)
+    Not applicable, is to be used for people under 5 years of age and people who speak only English.
+  
+  9 - Not stated/inadequately described
+    Not stated/inadequately described, is not to be used on primary collection forms. It is primarily for use in
+    administrative collections when transferring data from data sets where the item has not been collected.
+
+:METeOR: `270203 <http://meteor.aihw.gov.au/content/index.phtml/itemId/270203>`__
+
+----------
+
 
 Provider category
 ^^^^^^^^^^^^^^^^^
@@ -595,12 +706,18 @@ The type or category of the provider.
   :7: Low intensity mental health worker
   :8: Other
 
+----------
+
+
 Provider Key
 ^^^^^^^^^^^^
 
 A sequence of characters which uniquely identifies a provider.
 
 A unique identifier for a provider within the PMHC top level organisation.
+
+----------
+
 
 Referral Date
 ^^^^^^^^^^^^^
@@ -611,12 +728,18 @@ For Date fields, data must be recorded in compliance with the standard format us
 Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with
 leading zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
 
+----------
+
+
 Referrer Entity
 ^^^^^^^^^^^^^^^
 
 The entity of the referrer.
 
 To be defined
+
+----------
+
 
 Referrer or provider Active
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -627,6 +750,9 @@ A flag to represent whether a provider is active.
   :0: Inactive
   :1: Active
 
+----------
+
+
 Referrer Type
 ^^^^^^^^^^^^^
 
@@ -634,11 +760,17 @@ The type of the referrer.
 
 To be defined
 
+----------
+
+
 Score
 ^^^^^
 
 
 The value of the score at this collection occasion.
+
+----------
+
 
 Service Delivery Postcode
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -648,8 +780,13 @@ The Australian postcode where the service delivery took place
 A valid Australian postcode or 9999 if the postcode is unknown.
 The full list of Australian Postcodes can be found at `Australia Post <http://www.auspost.com.au/>`_.
 
-  - If Service Modality is not 'Face to Face' enter 9999
-  - If Service Modality is 'Face to Face' a valid Australian postcode must be entered
+- If Service Modality is not 'Face to Face' enter 9999
+- If Service Modality is 'Face to Face' a valid Australian postcode must be entered
+
+:METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__
+
+----------
+
 
 Service Event Key
 ^^^^^^^^^^^^^^^^^
@@ -660,6 +797,9 @@ organisation.
 
 A unique identifier for a service event within the PMHC. Must be unique within an organisation and stable
 over time.
+
+----------
+
 
 Service Modality
 ^^^^^^^^^^^^^^^^
@@ -675,6 +815,9 @@ How the service was delivered.
   - If 'Face to Face' is selected, a value other than 'Not applicable' must be selected for Venue
   - If 'Face to Face' is selected a valid Australian postcode must be entered for Service Delivery Postcode.
 
+----------
+
+
 Service Participants
 ^^^^^^^^^^^^^^^^^^^^
 
@@ -685,6 +828,9 @@ Service Participants
   :3: Family / Client Support Network
 :Notes:
   Are any other options necessary?
+
+----------
+
 
 Service Type
 ^^^^^^^^^^^^
@@ -697,6 +843,9 @@ Service Type
   :4: Child or youth specific assistance NEC
   :5: Suicide prevention specific assistance NEC
   :6: Cultural specific assistance NEC
+
+----------
+
 
 Source of Cash Income
 ^^^^^^^^^^^^^^^^^^^^^
@@ -720,12 +869,17 @@ The source from which a person derives the greatest proportion of his/her income
   If the person has multiple sources of income and none are equal to or greater than 50%, the one which contributes
   the largest percentage should be counted.
   
-  This item refers to a person’s own main source of income, not that of a partner or of other household members.
-  If it is difficult to determine a ‘main source of income’ over the reporting period (i.e. it may vary over time)
+  This item refers to a person's own main source of income, not that of a partner or of other household members.
+  If it is difficult to determine a 'main source of income' over the reporting period (i.e. it may vary over time)
   please report the main source of income during the reference week.
   
-  Code 7 ‘Not known’ should only be recorded when it has not been possible for the service user or their
+  Code 7 'Not known' should only be recorded when it has not been possible for the service user or their
   carer/family/advocate to provide the information (i.e. they have been asked but do not know).
+
+:METeOR: `386449 <http://meteor.aihw.gov.au/content/index.phtml/itemId/386449>`__
+
+----------
+
 
 State
 ^^^^^
@@ -746,6 +900,11 @@ The state that the organisation operates in.
   - Name is taken from Australian `Statistical Geography Standard (ASGS) July 2011 <http://www.abs.gov.au/ausstats/abs@.nsf/0/871A7FF33DF471FBCA257801000DCD5F?Opendocument>`_.
   - Code is from Meteor with the addition of code for Other Territories.
 
+:METeOR: `613718 <http://meteor.aihw.gov.au/content/index.phtml/itemId/613718>`__
+
+----------
+
+
 Statistical Linkage Key
 ^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -762,6 +921,11 @@ Supported formats:
 :Notes:
   SLK values are stored in sha1_hex format.
 
+:METeOR: `349510 <http://meteor.aihw.gov.au/content/index.phtml/itemId/349510>`__
+
+----------
+
+
 Suicide Referral Flag
 ^^^^^^^^^^^^^^^^^^^^^
 
@@ -771,6 +935,9 @@ factor noted in the referral that underpinned the person's needs for assistance 
 :Domain:
   :1: Yes
   :2: No
+
+----------
+
 
 Venue
 ^^^^^
@@ -788,6 +955,9 @@ Where the service was delivered.
 :Notes:
   - Values other than 'Not applicable' only to be specified when Service Modality is 'Face to Face'.
 
+----------
+
+
 Year of Birth
 ^^^^^^^^^^^^^
 
@@ -800,3 +970,6 @@ Record the providers's year of birth YYYY format.
   - If the age of the client is known, the age should be used to derive the year of birth
   - If the age of the client is unknown, an estimated age of the client should be used to estimate a year of birth
   - If the date of birth is totally unknown, use 9999.
+
+----------
+

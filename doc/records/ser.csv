@@ -29,8 +29,8 @@ leading zeros used when necessary to pad out a value. For instance, 13th March 2
 METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__",Char[4],"A valid Australian postcode or 9999 if the postcode is unknown.
 The full list of Australian Postcodes can be found at `Australia Post <http://www.auspost.com.au/>`_.
 
-  - If Service Modality is not 'Face to Face' enter 9999
-  - If Service Modality is 'Face to Face' a valid Australian postcode must be entered"
+- If Service Modality is not 'Face to Face' enter 9999
+- If Service Modality is 'Face to Face' a valid Australian postcode must be entered"
 "`Service Modality`_ (SerMod) [#tn_ser1]_
 
 ",Char[1],":1: Face to Face

@@ -282,11 +282,12 @@ Domain:
     9: Not stated/inadequately described
   Missing: 9
 Comments: |-
-  CODE 0: Not applicable (persons under 5 years of age or who speak only English)
-          Not applicable, is to be used for people under 5 years of age and people who speak only English.
-  CODE 9: Not stated/inadequately described
-          Not stated/inadequately described, is not to be used on primary collection forms. It is primarily for use in
-          administrative collections when transferring data from data sets where the item has not been collected.
+  0 - Not applicable (persons under 5 years of age or who speak only English)
+    Not applicable, is to be used for people under 5 years of age and people who speak only English.
+
+  9 - Not stated/inadequately described
+    Not stated/inadequately described, is not to be used on primary collection forms. It is primarily for use in
+    administrative collections when transferring data from data sets where the item has not been collected.
 ---
 Definition: The Australian postcode of the client
 MeteorID: 429894
@@ -309,9 +310,9 @@ Name: EpiStart
 Title: Episode Start Date
 Type: Date[8]
 Domain: |-
-    For Date fields, data must be recorded in compliance with the standard format used across the National
-    Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with
-    leading zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
+  For Date fields, data must be recorded in compliance with the standard format used across the National
+  Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with
+  leading zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
 Comments: This field will be derived from the first service event date.
 ---
 Definition: The date on which an episode of mental health care is formally or statistically ended.
@@ -347,32 +348,30 @@ Domain:
     9: Not stated/inadequately described
   Missing: 9
 Comments: |-
-  CODE 1: Employed
+  1 - Employed
+    Employed persons are those aged 15 years and over who met one of the following criteria during the
+    reference week:
 
-  Employed persons are those aged 15 years and over who met one of the following criteria during the
-  reference week:
+    - Worked for one hour or more for pay, profit, commission or payment in kind, in a job or business or
+      son a farm (employees and owner managers of incorporated or unincorporated enterprises).
+    - Worked for one hour or more without pay in a family business or on a farm (contributing family workers).
+    - Were employees who had a job but were not at work and were:
 
-  - Worked for one hour or more for pay, profit, commission or payment in kind, in a job or business or
-    son a farm (employees and owner managers of incorporated or unincorporated enterprises).
-  - Worked for one hour or more without pay in a family business or on a farm (contributing family workers).
-  - Were employees who had a job but were not at work and were:
+      - away from work for less than four weeks up to the end of the reference week; or
+      - away from work for more than four weeks up to the end of the reference week and
+      - received pay for some or all of the four week period to the end of the reference week; or
+      - away from work as a standard work or shift arrangement; or
+      - on strike or locked out; or
+      - on workers' compensation and expected to return to their job.
+    - Were owner managers who had a job, business or farm, but were not at work.
 
-    - away from work for less than four weeks up to the end of the reference week; or
-    - away from work for more than four weeks up to the end of the reference week and
-    - received pay for some or all of the four week period to the end of the reference week; or
-    - away from work as a standard work or shift arrangement; or
-    - on strike or locked out; or
-    - on workers' compensation and expected to return to their job.
-  - Were owner managers who had a job, business or farm, but were not at work.
+  2 - Unemployed
+    Unemployed persons are those aged 15 years and over who were not employed during the reference week, and:
 
-  CODE 2: Unemployed
-
-  Unemployed persons are those aged 15 years and over who were not employed during the reference week, and:
-
-  - had actively looked for full time or part time work at any time in the four weeks up to the end of
-    the reference week and were available for work in the reference week; or
-  - were waiting to start a new job within four weeks from the end of the reference week and could have
-    started in the reference week if the job had been available then.
+    - had actively looked for full time or part time work at any time in the four weeks up to the end of
+      the reference week and were available for work in the reference week; or
+    - were waiting to start a new job within four weeks from the end of the reference week and could have
+      started in the reference week if the job had been available then.
   
     Actively looked for work includes:
 
@@ -384,17 +383,16 @@ Comments: |-
     - advertised or tendered for work; and
     - contacted friends or relatives in order to obtain work.
 
-  CODE 3: Not in the labour force
-
+  3 - Not in the labour force
     Persons not in the labour force are those aged 15 years and over who were not in the categories
     employed or unemployed, as defined, during the reference week. They include people who undertook
     unpaid household duties or other voluntary work only, were retired, voluntarily inactive and
     those permanently unable to work.
 ---
-Definition: Whether a person in paid employment is employed full-time or part-time, as represented by a code.
-MeteorID: 269950
 Name: EmpPart
 Title: Employment Participation
+Definition: Whether a person in paid employment is employed full-time or part-time, as represented by a code.
+MeteorID: 269950
 Type: Char[1]
 Domain:
   Set:
@@ -409,20 +407,17 @@ Comments: |-
   salary, in cash or in kind, and persons temporarily absent from a paid employment job but who retained a
   formal attachment to that job.
 
-  Code 1: Full-time:
-
+  1 - Full-time
     Employed persons are working full-time if they:
     (a) usually work 35 hours or more in a week (in all paid jobs) or
     (b) although usually working less than 35 hours a week, actually worked 35 hours or more during
     the reference period.
 
-  Code 2: Part-time:
-
+  2 - Part-time
     Employed persons are working part-time if they usually work less than 35 hours a week (in all paid jobs)
     and either did so during the reference period, or were not at work in the reference period.
 
-  Code 9: Not stated/ inadequately described:
-
+  9 - Not stated / inadequately described
     Is not to be used on primary collection forms. It is primarily for use in administrative collections
     when transferring data from data sets where the item has not been collected.
 ---
@@ -454,11 +449,11 @@ Comments: |-
   If the person has multiple sources of income and none are equal to or greater than 50%, the one which contributes
   the largest percentage should be counted.
 
-  This item refers to a person’s own main source of income, not that of a partner or of other household members.
-  If it is difficult to determine a ‘main source of income’ over the reporting period (i.e. it may vary over time)
+  This item refers to a person's own main source of income, not that of a partner or of other household members.
+  If it is difficult to determine a 'main source of income' over the reporting period (i.e. it may vary over time)
   please report the main source of income during the reference week.
 
-  Code 7 ‘Not known’ should only be recorded when it has not been possible for the service user or their
+  Code 7 'Not known' should only be recorded when it has not been possible for the service user or their
   carer/family/advocate to provide the information (i.e. they have been asked but do not know).
 ---
 Name: PrincDx
@@ -532,21 +527,17 @@ Domain:
 Comments: |-
   Refers to the current marital status of a person.
 
-  CODE 2: Widowed
-
+  2 - Widowed
     This code usually refers to registered marriages but when self-reported may also refer to de facto marriages.
 
-  CODE 4: Separated
-
+  4 - Separated
     This code refers to registered marriages but when self-reported may also refer to de facto marriages.
 
-  CODE 5: Married (registered and de facto)
-
+  5 - Married (registered and de facto)
     Includes people who have been divorced or widowed but have since re-married, and should be
     generally accepted as applicable to all de facto couples, including of the same sex.
 
-  CODE 6: Not stated/inadequately described
-
+  6 - Not stated/inadequately described
     This code is not for use on primary collection forms. It is primarily for use in administrative
     collections when transferring data from data sets where the item has not been collected.
 ---
@@ -574,34 +565,29 @@ Domain:
     99: Not stated/inadequately described
   Missing: 99
 Comments: |-
-  ‘Usual’ is defined as where the person usually resides for four or more days per week on average. If it is
-  difficult to determine the person’s ‘usual’ residential setting for the reporting period, the setting the person
+  'Usual' is defined as where the person usually resides for four or more days per week on average. If it is
+  difficult to determine the person's 'usual' residential setting for the reporting period, the setting the person
   resided in during the reference week is reported.
 
-  CODE 1:  Private residence (e.g. private or public rental, owned, purchasing etc)
-  
+  1 - Private residence (e.g. private or public rental, owned, purchasing etc)
    Private residence refers to private residences which include a wide range of dwelling types,
    such as houses, flats, units, caravans, mobile homes, boats etc.
 
-  CODE 2:  Residence within an Aboriginal/Torres Strait Islander community (e.g. rented private residence,
-  temporary shelter)
-
+  2 - Residence within an Aboriginal/Torres Strait Islander community (e.g. rented private residence, temporary shelter)
     Residence within an Aboriginal/Torres Strait Islander community should be used for service users that
     live in this type of setting, regardless of whether the residence is a private residence or a
     public place/temporary shelter (codes 1 and 11).
 
-  CODE 3:  Domestic-scale supported living facility (e.g. group homes)
-
+  3 - Domestic-scale supported living facility (e.g. group homes)
     Domestic-scale supported living facility refers to community living settings in which service users
     reside in a facility that provides support in some way by staff or volunteers. This category includes
     group homes, cluster apartments where a support worker lives on site, community residential apartments,
     congregate care arrangements, etc. Domestic-scale supported living settings may or may not have 24 hour
     supervision and care. Independent living units in retirement villages should be coded to 6 and
     community psychiatric facilities should be coded to 8. (Service users receiving service type
-    1.04 ‘Group homes’ should be coded to 3).
+    1.04 'Group homes' should be coded to 3).
 
-  CODE 4:  Supported accommodation facility (e.g. hostels, supported residential services or facilities)
-
+  4 - Supported accommodation facility (e.g. hostels, supported residential services or facilities)
     Supported accommodation facility refers to settings in which service users reside in an accommodation
     facility which provides board or lodging for a number of people and which has support services provided
     on what is usually a 24 hour basis by rostered care workers. (Service users receiving DS NMDS service
@@ -609,48 +595,39 @@ Comments: |-
     people with disability. This code should be used for larger supported accommodation facilities
     (usually 7 or more people) that provide 24 hour supervision or care. Smaller supported accommodation
     facilities (i.e. less than 7 people) which may or may not have 24 hour supervision or care should be
-    coded to 3 ‘Domestic-scale supported living facility’. Aged care hostels should be coded to 7
-    ‘residential aged care facility’.
+    coded to 3 'Domestic-scale supported living facility'. Aged care hostels should be coded to 7
+    'residential aged care facility'.
 
-  CODE 5:  Boarding house/private hotel
-
+  5 - Boarding house/private hotel
     Refers to residing in a boarding house or in a private hotel.
 
-  CODE 6:  Independent living unit within a retirement village
-
+  6 - Independent living unit within a retirement village
     Refers to residing in an independent living unit within a retirement village.
 
-  CODE 7:  Residential aged care facility(nursing home or aged care hostel)
-
+  7 - Residential aged care facility(nursing home or aged care hostel)
     Residential aged care facility includes permanent residents of Residential aged care services
     (formerly nursing homes and aged care hostels) and Multi-purpose services or Multi-purpose centres,
     who are receiving low level or high level care.
 
-  CODE 8:  Psychiatric/mental health community care facility
-
+  8 - Psychiatric/mental health community care facility
     Psychiatric/mental health community care facility refers to community care units which provide
     accommodation and non-acute care and support on a temporary basis to people with mental illness
     or psychological disabilities.
 
-  CODE 9:  Hospital
-
+  9 - Hospital
     Refers to residing in a hospital.
 
-  CODE 10: Short term crisis, emergency or transitional accommodation facility (e.g. night shelters, refuges,
-
-    hostels for the homeless, halfway houses)
+  10 - Short term crisis, emergency or transitional accommodation facility (e.g. night shelters, refuges, hostels for the homeless, halfway houses)
     Refers to residing in short term crisis accommodation, in emergency accommodation, or in a
     transitional accommodation facility. This includes night shelters, refuges, hostels for the homeless,
     and halfway houses.
 
-  CODE 11: Public place/temporary shelter
-
+  11 - Public place/temporary shelter
     Public place/temporary shelter includes public places such as streets and parks, as well as
     temporary shelters such as bus shelters or camps and accommodation outside legal tenure arrangements,
     such as squats.
 
-  CODE 12: Other
-
+  12 - Other
     Other includes situations such as a child under a court/guardianship order with no usual address.
 ---
 Definition: |-
@@ -685,17 +662,17 @@ Domain:
     5: Suicide prevention specific assistance NEC
     6: Cultural specific assistance NEC
 ---
-Definition: The Australian postcode where the service delivery took place
-MeteorID: 429894
 Name: SerPCode
 Title: Service Delivery Postcode
+Definition: The Australian postcode where the service delivery took place
+MeteorID: 429894
 Type: Char[4]
 Domain: |-
   A valid Australian postcode or 9999 if the postcode is unknown.
   The full list of Australian Postcodes can be found at `Australia Post <http://www.auspost.com.au/>`_.
 
-    - If Service Modality is not 'Face to Face' enter 9999
-    - If Service Modality is 'Face to Face' a valid Australian postcode must be entered
+  - If Service Modality is not 'Face to Face' enter 9999
+  - If Service Modality is 'Face to Face' a valid Australian postcode must be entered
 ---
 Definition: How the service was delivered.
 Name: SerMod
@@ -784,14 +761,12 @@ Comments: |-
   Service contacts are not restricted to in-person communication but can include telephone, video link or
   other forms of direct communication.
 
-  CODE 1: Yes
-
+  1 - Yes
     This code is to be used for service contacts between a specialised mental health service provider
     and the patient/client in whose clinical record the service contact would normally warrant a dated
     entry, where the patient/client is participating.
 
-  CODE 2: No
-
+  2 - No
     This code is to be used for service contacts between a specialised mental health service provider
     and a third party(ies) where the patient/client, in whose clinical record the service contact would
     normally warrant a dated entry, is not participating.
