@@ -1,11 +1,14 @@
 Definitions
 -----------
 
-
 Aboriginal And Torres Strait Islander Status
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Whether a person identifies as being of Aboriginal and/or Torres Strait Islander origin, as represented by a code.
+
+:Field name: IndigSt
+
+:Data type: Char[1]
 
 :Domain:
   :1: Aboriginal but not Torres Strait Islander origin
@@ -26,11 +29,14 @@ Whether a person identifies as being of Aboriginal and/or Torres Strait Islander
 
 ----------
 
-
 Accomodation
 ^^^^^^^^^^^^
 
 The type of physical setting in which a person usually resides, as represented by a code.
+
+:Field name: Accom
+
+:Data type: Char[2]
 
 :Domain:
   :1: Private residence (e.g. private or public rental, owned, purchasing etc)
@@ -86,6 +92,7 @@ The type of physical setting in which a person usually resides, as represented b
   
   6 - Independent living unit within a retirement village
     Refers to residing in an independent living unit within a retirement village.
+  
   7 - Residential aged care facility(nursing home or aged care hostel)
     Residential aged care facility includes permanent residents of Residential aged care services
     (formerly nursing homes and aged care hostels) and Multi-purpose services or Multi-purpose centres,
@@ -116,23 +123,26 @@ The type of physical setting in which a person usually resides, as represented b
 
 ----------
 
-
 Area of ususal residence, postcode
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The Australian postcode of the client
 
-A valid Australian postcode or 9999 if the postcode is unknown or the client
-has not provided sufficient information to confirm their current residential
-address
+:Field name: CliPCode
 
-The full list of Australian Postcodes can be found at `Australia Post
-<http://www.auspost.com.au/>`_.
+:Data type: Char[4]
+
+:Domain:
+  A valid Australian postcode or 9999 if the postcode is unknown or the client
+  has not provided sufficient information to confirm their current residential
+  address
+  
+  The full list of Australian Postcodes can be found at `Australia Post
+  <http://www.auspost.com.au/>`_.
 
 :METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__
 
 ----------
-
 
 Client Key
 ^^^^^^^^^^
@@ -141,10 +151,14 @@ This is a number or code assigned to each individual referred to the
 flexible funding pool. The client identifier is unique and stable for each
 individual at the level of the PMHC top level organisation.
 
-A unique identifier for an individual within the PMHC top level organisation. Must be stable over time.
+:Field name: CliKey
+
+:Data type: Char[20]
+
+:Domain:
+  A unique identifier for an individual within the PMHC top level organisation. Must be stable over time.
 
 ----------
-
 
 Collection Occasion Key
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -153,18 +167,27 @@ This is a number or code assigned to each collection occasion in the
 flexible funding pool. The Collection Occasion Key is unique and stable for each collection occasion at the
 level of the organisation.
 
-A unique identifier for a collection occasion within the PMHC. Must be unique within an organisation and
-stable over time.
+:Field name: ColocKey
+
+:Data type: Char[20]
+
+:Domain:
+  A unique identifier for a collection occasion within the PMHC. Must be unique within an organisation and
+  stable over time.
 
 ----------
-
 
 Copayment
 ^^^^^^^^^
 
 The co-payment is the amount paid by the client per session.
 
-Up to 6 digits before the decimal point; up to 2 digits after the decimal point
+:Field name: Copayment
+
+:Data type: Char[9]
+
+:Domain:
+  Up to 6 digits before the decimal point; up to 2 digits after the decimal point
 
 :Notes:
   The co-payment is the amount paid by the client per session, not the fee paid by the project to
@@ -174,26 +197,33 @@ Up to 6 digits before the decimal point; up to 2 digits after the decimal point
 
 ----------
 
-
 Country Of Birth
 ^^^^^^^^^^^^^^^^
 
 The country in which the client was born, as represented by a code.
 
-Standard Australian Classification of Countries 2011 (SACC 2011) 4-digit code (ABS Catalogue No. 1269.0)
-[provided in Appendix B] SACC 2011 is a four-digit, three-level hierarchical structure specifying major group,
-minor group and country. 9999 is used when the information is not known or the client has refused to provide
-the information.
+:Field name: CoB
+
+:Data type: Char[4]
+
+:Domain:
+  Standard Australian Classification of Countries 2011 (SACC 2011) 4-digit code (ABS Catalogue No. 1269.0)
+  [provided in Appendix B] SACC 2011 is a four-digit, three-level hierarchical structure specifying major group,
+  minor group and country. 9999 is used when the information is not known or the client has refused to provide
+  the information.
 
 :METeOR: `459973 <http://meteor.aihw.gov.au/content/index.phtml/itemId/459973>`__
 
 ----------
 
-
 Cultural training flag
 ^^^^^^^^^^^^^^^^^^^^^^
 
 A flag to represent whether a provider has done cultural training
+
+:Field name: CultFlag
+
+:Data type: Char[1]
 
 :Domain:
   :1: Yes
@@ -202,13 +232,17 @@ A flag to represent whether a provider has done cultural training
 
 ----------
 
-
 Date of Birth
 ^^^^^^^^^^^^^
 
 The date on which an individual was born
 
-Record the client's date of birth using DDMMYYYY format.
+:Field name: DoB
+
+:Data type: Date[8]
+
+:Domain:
+  Record the client's date of birth using DDMMYYYY format.
 
 :Notes:
   If the date of birth is unknown, the following approaches should be used:
@@ -224,10 +258,13 @@ Record the client's date of birth using DDMMYYYY format.
 
 ----------
 
-
 Duration
 ^^^^^^^^
 
+
+:Field name: Duration
+
+:Data type: Char[1]
 
 :Domain:
   :1: 0-15 mins
@@ -242,11 +279,14 @@ Duration
 
 ----------
 
-
 Employment Participation
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 Whether a person in paid employment is employed full-time or part-time, as represented by a code.
+
+:Field name: EmpPart
+
+:Data type: Char[1]
 
 :Domain:
   :1: Full-time
@@ -278,10 +318,13 @@ Whether a person in paid employment is employed full-time or part-time, as repre
 
 ----------
 
-
 Episode Completion Status
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
+
+:Field name: CompSt
+
+:Data type: Char[1]
 
 :Domain:
   :1: Treatment complete
@@ -293,20 +336,23 @@ Episode Completion Status
 
 ----------
 
-
 Episode End Date
 ^^^^^^^^^^^^^^^^
 
 The date on which an episode of mental health care is formally or statistically ended.
 
-For Date fields, data must be recorded in compliance with the standard format used across the National Health
-Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with leading
-zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
+:Field name: EpiEnd
+
+:Data type: Date[8]
+
+:Domain:
+  For Date fields, data must be recorded in compliance with the standard format used across the National Health
+  Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with leading
+  zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
 
 :METeOR: `614094 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614094>`__
 
 ----------
-
 
 Episode Key
 ^^^^^^^^^^^
@@ -315,19 +361,27 @@ This is a number or code assigned to each episode in the.
 flexible funding pool. The Episode Key is unique and stable for each episode at the level of the
 organisation.
 
-A unique identifier for an episode within the PMHC. Must be unique within an organisation and stable over time.
+:Field name: EpiKey
+
+:Data type: Char[20]
+
+:Domain:
+  A unique identifier for an episode within the PMHC. Must be unique within an organisation and stable over time.
 
 ----------
-
 
 Episode/Patient Outcome
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 
-To be defined
+:Field name: EpiOutcome
+
+:Data type: Char[2]
+
+:Domain:
+  To be defined
 
 ----------
-
 
 Episode Start Date
 ^^^^^^^^^^^^^^^^^^
@@ -335,9 +389,14 @@ Episode Start Date
 The date on which the client formally or statistically commences an episode of mental health care,
 expressed as DDMMYYYY.
 
-For Date fields, data must be recorded in compliance with the standard format used across the National
-Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with
-leading zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
+:Field name: EpiStart
+
+:Data type: Date[8]
+
+:Domain:
+  For Date fields, data must be recorded in compliance with the standard format used across the National
+  Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with
+  leading zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
 
 :Notes:
   This field will be derived from the first service event date.
@@ -346,11 +405,14 @@ leading zeros used when necessary to pad out a value. For instance, 13th March 2
 
 ----------
 
-
 Estimated Date of Birth Flag
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The date of birth estimate flag records whether or not the client's date of birth has been estimated.
+
+:Field name: DoBFlag
+
+:Data type: Char[1]
 
 :Domain:
   :1: Date of birth is accurate
@@ -360,13 +422,16 @@ The date of birth estimate flag records whether or not the client's date of birt
 
 ----------
 
-
 Gender
 ^^^^^^
 
 The term 'gender' refers to the way in which a person identifies their masculine or feminine
 characteristics. A persons gender relates to their deeply held internal and individual sense of gender and is
 not always exclusively male or female. It may or may not correspond to their sex assigned at birth.
+
+:Field name: Gender
+
+:Data type: Char[1]
 
 :Domain:
   :0: Not stated/Inadequately described
@@ -379,20 +444,27 @@ not always exclusively male or female. It may or may not correspond to their sex
 
 ----------
 
-
 Income Status - Ranges? or Low Income?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-To be defined
+:Field name: IncomeSt
+
+:Data type: Char[1]
+
+:Domain:
+  To be defined
 
 ----------
-
 
 Labour Force Status
 ^^^^^^^^^^^^^^^^^^^
 
 The self-reported status the person currently has in being either in the labour force (employed/unemployed) or not in the labour force, as represented by a code.
+
+:Field name: LabourSt
+
+:Data type: Char[1]
 
 :Domain:
   :1: Employed
@@ -446,7 +518,6 @@ The self-reported status the person currently has in being either in the labour 
 
 ----------
 
-
 Main language other than English spoken at home
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -454,19 +525,27 @@ The language reported by a client as the main language other than English spoken
 his/her home (or most recent private residential setting occupied by the client) to communicate
 with other residents of the home or setting and regular visitors, as represented by a code.
 
-Australian Standard Classification of Languages 2011 4-digit code (ABS Catalogue No. 1267.0) or 9999 if
-info is not known or client refuses to supply.
+:Field name: MLSH
+
+:Data type: Char[4]
+
+:Domain:
+  Australian Standard Classification of Languages 2011 4-digit code (ABS Catalogue No. 1267.0) or 9999 if
+  info is not known or client refuses to supply.
 
 :METeOR: `460125 <http://meteor.aihw.gov.au/content/index.phtml/itemId/460125>`__
 
 ----------
-
 
 Marital Status
 ^^^^^^^^^^^^^^
 
 A person's current relationship status in terms of a couple relationship or, for those not in a
 couple relationship, the existence of a current or previous registered marriage, as represented by a code.
+
+:Field name: MaritalSt
+
+:Data type: Char[1]
 
 :Domain:
   :1: Never married
@@ -497,41 +576,56 @@ couple relationship, the existence of a current or previous registered marriage,
 
 ----------
 
-
 Measure Date
 ^^^^^^^^^^^^
 
 Measure date
 
-For Date fields, data must be recorded in compliance with the standard format used across the
-National Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY,
-with leading zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
+:Field name: MeasDate
+
+:Data type: Date[8]
+
+:Domain:
+  For Date fields, data must be recorded in compliance with the standard format used across the
+  National Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY,
+  with leading zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
 
 ----------
-
 
 Measure Name
 ^^^^^^^^^^^^
 
 
-The name of the measure
+:Field name: Measure
+
+:Data type: Char[20]
+
+:Domain:
+  The name of the measure
 
 ----------
-
 
 Medication
 ^^^^^^^^^^
 
 
-Was this the current four items plus 'Not on medication' with Yes/No/Missing for each item or an ATC Level 3 code?
+:Field name: Medication
+
+:Data type: Char[1]
+
+:Domain:
+  Was this the current four items plus 'Not on medication' with Yes/No/Missing for each item or an ATC Level 3 code?
 
 ----------
-
 
 Mental health service contact - client participation indicator
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 An indicator of whether the client has participated in a service contact, as represented by a code.
+
+:Field name: PartIndic
+
+:Data type: Char[1]
 
 :Domain:
   :1: Yes
@@ -555,84 +649,112 @@ An indicator of whether the client has participated in a service contact, as rep
 
 ----------
 
-
 Mental Health Service Contact Date
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Service Event date
 
-For Date fields, data must be recorded in compliance with the standard format used across the National
-Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with
-leading zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
+:Field name: SerDate
+
+:Data type: Date[8]
+
+:Domain:
+  For Date fields, data must be recorded in compliance with the standard format used across the National
+  Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with
+  leading zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
 
 ----------
-
 
 NDIS participant
 ^^^^^^^^^^^^^^^^
 
 Is the client a participant in the National Disability Insurance Scheme?
 
+:Field name: NDIS
+
+:Data type: Char[1]
+
 :Domain:
   :1: Yes
   :2: No
 
 ----------
-
 
 No Show
 ^^^^^^^
 
 
+:Field name: NoShow
+
+:Data type: Char[1]
+
 :Domain:
   :1: Yes
   :2: No
 
 ----------
-
 
 Organisation Name
 ^^^^^^^^^^^^^^^^^
 
 The name of the organisation.
 
-----------
+:Field name: OrgName
 
+:Data type: Char[100]
+
+----------
 
 Organisation Type
 ^^^^^^^^^^^^^^^^^
 
 The type of the organisation.
 
-To be defined
+:Field name: OrgType
+
+:Data type: Char[1]
+
+:Domain:
+  To be defined
 
 ----------
-
 
 Organistation Code
 ^^^^^^^^^^^^^^^^^^
 
 A sequence of characters which uniquely identifies the PMHC organisation.
 
-- Where the organisation is a PHN this code will be assigned by the Department of Health.
-- Where the organisation reports to a PHN the PHN will assign a unique code.
+:Field name: OrgCode
+
+:Data type: Char[6]
+
+:Domain:
+  - Where the organisation is a PHN this code will be assigned by the Department of Health.
+  - Where the organisation reports to a PHN the PHN will assign a unique code.
 
 ----------
-
 
 Other Diagnosis
 ^^^^^^^^^^^^^^^
 
 
-To be defined
+:Field name: OtherDx
+
+:Data type: Char[1]
+
+:Domain:
+  To be defined
 
 ----------
-
 
 PMHC Specification Version Number
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The version number of the PMHC specification document used.
+
+:Field name: SpecVer
+
+:Data type: Char[5]
 
 :Domain:
   Value = `00.01`
@@ -640,20 +762,27 @@ The version number of the PMHC specification document used.
 
 ----------
 
-
 Princ Diagnosis
 ^^^^^^^^^^^^^^^
 
 
-To be defined
+:Field name: PrincDx
+
+:Data type: Char[1]
+
+:Domain:
+  To be defined
 
 ----------
-
 
 Principle Focus of Treatment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The primary reason for the episode of care
+
+:Field name: FoE
+
+:Data type: Char[1]
 
 :Domain:
   :1: Psychological intervention
@@ -663,12 +792,15 @@ The primary reason for the episode of care
 
 ----------
 
-
 Proficiency in spoken English
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The self-assessed level of ability to speak English, asked of people whose first language is a
 language other than English or who speak a language other than English at home.
+
+:Field name: ProfEng
+
+:Data type: Char[1]
 
 :Domain:
   :0: Not applicable (persons under 5 years of age or who speak only English)
@@ -690,11 +822,14 @@ language other than English or who speak a language other than English at home.
 
 ----------
 
-
 Provider category
 ^^^^^^^^^^^^^^^^^
 
 The type or category of the provider.
+
+:Field name: Category
+
+:Data type: Char[1]
 
 :Domain:
   :1: Psychologist (clinical)
@@ -708,43 +843,58 @@ The type or category of the provider.
 
 ----------
 
-
 Provider Key
 ^^^^^^^^^^^^
 
 A sequence of characters which uniquely identifies a provider.
 
-A unique identifier for a provider within the PMHC top level organisation.
+:Field name: ProKey
+
+:Data type: Char[20]
+
+:Domain:
+  A unique identifier for a provider within the PMHC top level organisation.
 
 ----------
-
 
 Referral Date
 ^^^^^^^^^^^^^
 
 The date the referrer made the referral.
 
-For Date fields, data must be recorded in compliance with the standard format used across the National
-Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with
-leading zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
+:Field name: RefDate
+
+:Data type: Date[8]
+
+:Domain:
+  For Date fields, data must be recorded in compliance with the standard format used across the National
+  Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with
+  leading zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
 
 ----------
-
 
 Referrer Entity
 ^^^^^^^^^^^^^^^
 
 The entity of the referrer.
 
-To be defined
+:Field name: RefEntity
+
+:Data type: Char[1]
+
+:Domain:
+  To be defined
 
 ----------
-
 
 Referrer or provider Active
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A flag to represent whether a provider is active.
+
+:Field name: Active
+
+:Data type: Char[1]
 
 :Domain:
   :0: Inactive
@@ -752,41 +902,52 @@ A flag to represent whether a provider is active.
 
 ----------
 
-
 Referrer Type
 ^^^^^^^^^^^^^
 
 The type of the referrer.
 
-To be defined
+:Field name: RefType
+
+:Data type: Char[1]
+
+:Domain:
+  To be defined
 
 ----------
-
 
 Score
 ^^^^^
 
 
-The value of the score at this collection occasion.
+:Field name: Score
+
+:Data type: Char[2]
+
+:Domain:
+  The value of the score at this collection occasion.
 
 ----------
-
 
 Service Delivery Postcode
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The Australian postcode where the service delivery took place
 
-A valid Australian postcode or 9999 if the postcode is unknown.
-The full list of Australian Postcodes can be found at `Australia Post <http://www.auspost.com.au/>`_.
+:Field name: SerPCode
 
-- If Service Modality is not 'Face to Face' enter 9999
-- If Service Modality is 'Face to Face' a valid Australian postcode must be entered
+:Data type: Char[4]
+
+:Domain:
+  A valid Australian postcode or 9999 if the postcode is unknown.
+  The full list of Australian Postcodes can be found at `Australia Post <http://www.auspost.com.au/>`_.
+  
+  - If Service Modality is not 'Face to Face' enter 9999
+  - If Service Modality is 'Face to Face' a valid Australian postcode must be entered
 
 :METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__
 
 ----------
-
 
 Service Event Key
 ^^^^^^^^^^^^^^^^^
@@ -795,16 +956,24 @@ This is a number or code assigned to each service event in the
 flexible funding pool. The Service Event Key is unique and stable for each service event at the level of the
 organisation.
 
-A unique identifier for a service event within the PMHC. Must be unique within an organisation and stable
-over time.
+:Field name: SerKey
+
+:Data type: Char[20]
+
+:Domain:
+  A unique identifier for a service event within the PMHC. Must be unique within an organisation and stable
+  over time.
 
 ----------
-
 
 Service Modality
 ^^^^^^^^^^^^^^^^
 
 How the service was delivered.
+
+:Field name: SerMod
+
+:Data type: Char[1]
 
 :Domain:
   :1: Face to Face
@@ -817,10 +986,13 @@ How the service was delivered.
 
 ----------
 
-
 Service Participants
 ^^^^^^^^^^^^^^^^^^^^
 
+
+:Field name: SerPart
+
+:Data type: Char[1]
 
 :Domain:
   :1: Individual
@@ -831,10 +1003,13 @@ Service Participants
 
 ----------
 
-
 Service Type
 ^^^^^^^^^^^^
 
+
+:Field name: SerType
+
+:Data type: Char[1]
 
 :Domain:
   :1: Structured psychological intervention
@@ -846,11 +1021,14 @@ Service Type
 
 ----------
 
-
 Source of Cash Income
 ^^^^^^^^^^^^^^^^^^^^^
 
 The source from which a person derives the greatest proportion of his/her income, as represented by a code.
+
+:Field name: IncomeSce
+
+:Data type: Char[1]
 
 :Domain:
   :1: Disability Support Pension
@@ -880,11 +1058,14 @@ The source from which a person derives the greatest proportion of his/her income
 
 ----------
 
-
 State
 ^^^^^
 
 The state that the organisation operates in.
+
+:Field name: State
+
+:Data type: Char[1]
 
 :Domain:
   :1: New South Wales
@@ -904,19 +1085,23 @@ The state that the organisation operates in.
 
 ----------
 
-
 Statistical Linkage Key
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 A key that enables two or more records belonging to the same individual to be brought together.
 
-System generated non-identifiable alphanumeric code derived from information held by the PMHC organisation.
+:Field name: SLK
 
-Supported formats:
-  - 14 character `SLK <http://meteor.aihw.gov.au/content/index.phtml/itemId/349510>`_
-  - a `Crockford encoded <http://www.crockford.com/wrmg/base32.html>`_ sha1 hash of a 14 character SLK.
-    This must be 32 characters in length.
-  - a hex encoded sha1 hash of a 14 character SLK. This must be 40 characters in length.
+:Data type: Char[40]
+
+:Domain:
+  System generated non-identifiable alphanumeric code derived from information held by the PMHC organisation.
+  
+  Supported formats:
+    - 14 character `SLK <http://meteor.aihw.gov.au/content/index.phtml/itemId/349510>`_
+    - a `Crockford encoded <http://www.crockford.com/wrmg/base32.html>`_ sha1 hash of a 14 character SLK.
+      This must be 32 characters in length.
+    - a hex encoded sha1 hash of a 14 character SLK. This must be 40 characters in length.
 
 :Notes:
   SLK values are stored in sha1_hex format.
@@ -925,12 +1110,15 @@ Supported formats:
 
 ----------
 
-
 Suicide Referral Flag
 ^^^^^^^^^^^^^^^^^^^^^
 
 Identifies those individuals where a recent history of suicide attempt, or suicide risk, was a
 factor noted in the referral that underpinned the person's needs for assistance at entry to the episode.
+
+:Field name: SuicideRef
+
+:Data type: Char[1]
 
 :Domain:
   :1: Yes
@@ -938,11 +1126,14 @@ factor noted in the referral that underpinned the person's needs for assistance 
 
 ----------
 
-
 Venue
 ^^^^^
 
 Where the service was delivered.
+
+:Field name: Venue
+
+:Data type: Char[1]
 
 :Domain:
   :1: Home
@@ -957,12 +1148,16 @@ Where the service was delivered.
 
 ----------
 
-
 Year of Birth
 ^^^^^^^^^^^^^
 
 
-Record the providers's year of birth YYYY format.
+:Field name: YoB
+
+:Data type: Char[4]
+
+:Domain:
+  Record the providers's year of birth YYYY format.
 
 :Notes:
   If the year of birth is unknown, the following approaches should be used:
