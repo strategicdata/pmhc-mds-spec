@@ -78,7 +78,7 @@ language = None
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
-exclude_patterns = ['records/*', 'includes/*', 'boilerplate/*']
+exclude_patterns = ['records/*', 'includes/*', 'boilerplate/*', 'figures/*']
 
 # The reST default role (used for this markup: `text`) to use for all
 # documents.
@@ -315,7 +315,7 @@ rst_epilog = """
 ..
 """ % dict(current_year=current_year, start_year=start_year, end_year=end_year, previous_year=previous_year)
 
-# numfig = True
+numfig = True
 # numfig_secnum_depth = 1
 
 #html_style = 'default.css'

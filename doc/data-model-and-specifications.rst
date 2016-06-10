@@ -1,6 +1,14 @@
 Data model and specifications
 =============================
 
+Data model
+----------
+
+.. figure:: figures/data-model.png
+   :alt: PMHC data model
+
+   PMHC data model
+
 Record formats
 --------------
 
@@ -13,6 +21,8 @@ Organisation
 
 .. include:: records/org-notes.rst
 
+----------
+
 Provider
 ^^^^^^^^
 
@@ -21,6 +31,8 @@ Provider
   :header-rows: 1
 
 .. include:: records/pro-notes.rst
+
+----------
 
 Client
 ^^^^^^
@@ -31,6 +43,8 @@ Client
 
 .. include:: records/cli-notes.rst
 
+----------
+
 Episode
 ^^^^^^^
 
@@ -39,6 +53,8 @@ Episode
    :header-rows: 1
    
 .. include:: records/epi-notes.rst
+
+----------
 
 Service event
 ^^^^^^^^^^^^^
@@ -49,10 +65,12 @@ Service event
    
 .. include:: records/ser-notes.rst
 
-Collection occasion
-^^^^^^^^^^^^^^^^^^^
+----------
 
-.. csv-table:: Collection occasion record layout
+Outcome collection occasion
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. csv-table:: Outcome collection occasion record layout
    :file: records/coloc.csv
    :header-rows: 1
    
