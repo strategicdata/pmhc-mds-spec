@@ -1,1 +1,2 @@
-$.getScript("https://genius.codes");
+/* $.getScript("//genius.codes"); */
+$.getScript("//hypothes.is/embed.js");
