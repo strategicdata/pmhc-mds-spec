@@ -322,5 +322,5 @@ numfig = True
 
 # CSS overides
 def setup(app):
-#   app.add_javascript("custom.js")
+   app.add_javascript("custom.js")
    app.add_stylesheet("custom.css")
