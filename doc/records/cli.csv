@@ -1,8 +1,7 @@
 Data Element (Field Name),Type [Length],Notes / Values
 "`Organisation Code`_ (OrgCode)
 
-",Char[6],"- Where the organisation is a PHN this code will be assigned by the Department of Health.
-- Where the organisation reports to a PHN the PHN will assign a unique code."
+",Char[6],- A unique code assigned by the PHN.
 "`Client Key`_ (CliKey)
 
 ",Char[20],A unique identifier for an individual within the PMHC top level organisation. Must be stable over time.

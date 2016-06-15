@@ -4,8 +4,7 @@ Data Element (Field Name),Type [Length],Notes / Values
 ",Char[100],
 "`Organisation Code`_ (OrgCode)
 
-",Char[6],"- Where the organisation is a PHN this code will be assigned by the Department of Health.
-- Where the organisation reports to a PHN the PHN will assign a unique code."
+",Char[6],- A unique code assigned by the PHN.
 "`Organisation Type`_ (OrgType)
 
 ",Char[1],To be defined

@@ -216,6 +216,7 @@ The country in which the client was born, as represented by a code.
 :Notes:
   The ABS recommends the following question in order to collect this data:
   In which country was the client born?
+  
   - Australia
   - England
   - New Zealand
@@ -541,6 +542,7 @@ with other residents of the home or setting and regular visitors, as represented
   The ABS recommends the following question in order to collect this data:
   Which language does the client mainly speak at home? (If more that one language, indicate the one 
   that is spoken most often.) 
+  
   - English
   - Mandarin
   - Italian
@@ -732,8 +734,7 @@ A sequence of characters which uniquely identifies the PMHC organisation.
 :Data type: Char[6]
 
 :Domain:
-  - Where the organisation is a PHN this code will be assigned by the Department of Health.
-  - Where the organisation reports to a PHN the PHN will assign a unique code.
+  - A unique code assigned by the PHN.
 
 ----------
 
@@ -840,8 +841,8 @@ A sequence of characters which uniquely identifies a practitioner.
 
 ----------
 
-Princ Diagnosis
-^^^^^^^^^^^^^^^
+Principal Diagnosis
+^^^^^^^^^^^^^^^^^^^
 
 
 :Field name: PrincDx
