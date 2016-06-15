@@ -4,8 +4,7 @@ Name: OrgCode
 Title: Organisation Code
 Type: Char[6]
 Domain: |-
-  - Where the organisation is a PHN this code will be assigned by the Department of Health.
-  - Where the organisation reports to a PHN the PHN will assign a unique code.
+  - A unique code assigned by the PHN.
 ---
 Title: PMHC Specification Version Number
 Name: SpecVer
@@ -488,7 +487,7 @@ Comments: |-
   carer/family/advocate to provide the information (i.e. they have been asked but do not know).
 ---
 Name: PrincDx
-Title: Princ Diagnosis
+Title: Principal Diagnosis
 Type: Char[1]
 Domain: To be defined
 ---
