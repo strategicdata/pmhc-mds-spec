@@ -18,9 +18,9 @@ Relationships:
     Degree: one
     Required: 1
 ---
-RecType: PRO
+RecType: PRA
 Fields:
-  - ProKey
+  - PraKey
   - Category
   - CultFlag
   - YoB
@@ -28,7 +28,7 @@ Fields:
   - IndigSt
   - Active
 Keys:
-  Primary: [ OrgCode, ProKey ]
+  Primary: [ OrgCode, PraKey ]
 Relationships:
   - Target: ORG
     Degree: many
@@ -77,7 +77,6 @@ Fields:
   - PrincDx
   - OtherDx
   - FoE
-  - EpiOutcome
   - CompSt
   - SuicideRef
   - RefType
@@ -96,7 +95,7 @@ RecType: SER
 Fields:
   - SerKey
   - CliKey
-  - ProKey
+  - PraKey
   - SerDate
   - SerType
   - SerPCode

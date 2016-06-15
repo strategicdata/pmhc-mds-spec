@@ -1,7 +1,7 @@
 ---
 Definition: A sequence of characters which uniquely identifies the PMHC organisation.
 Name: OrgCode
-Title: Organistation Code
+Title: Organisation Code
 Type: Char[6]
 Domain: |-
   - Where the organisation is a PHN this code will be assigned by the Department of Health.
@@ -92,24 +92,25 @@ Title: Referrer Entity
 Type: Char[1]
 Domain: To be defined
 ---
-Definition: A flag to represent whether a provider is active.
+Definition: A flag to represent whether a practitioner is active. This is a system field that is 
+  aimed at helping organisations manage practitioner codes. 
 Name: Active
-Title: Referrer or provider Active
+Title: Practitioner Active
 Type: Char[1]
 Domain:
   Set:
     0: Inactive
     1: Active
 ---
-Definition: A sequence of characters which uniquely identifies a provider.
-Name: ProKey
-Title: Provider Key
+Definition: A sequence of characters which uniquely identifies a practitioner.
+Name: PraKey
+Title: Practitioner Key
 Type: Char[20]
-Domain: A unique identifier for a provider within the PMHC top level organisation.
+Domain: A unique identifier for a practitioner within the PMHC top level organisation.
 ---
-Definition: The type or category of the provider.
+Definition: The type or category of the practitioner.
 Name: Category
-Title: Provider category
+Title: Practitioner category
 Type: Char[1]
 Domain:
   Set:
@@ -122,7 +123,7 @@ Domain:
     7: Low intensity mental health worker
     8: Other
 ---
-Definition: A flag to represent whether a provider has done cultural training
+Definition: A flag to represent whether a practitioner has done cultural training.
 Name: CultFlag
 Title: Cultural training flag
 Type: Char[1]
@@ -137,7 +138,7 @@ Name: YoB
 Title: Year of Birth
 Type: Char[4]
 Domain: |-
-  Record the providers's year of birth YYYY format.
+  Record the practitioner's year of birth YYYY format.
 Missing: 9999
 Comments: |-
   If the year of birth is unknown, the following approaches should be used:
@@ -148,7 +149,7 @@ Comments: |-
 ---
 Definition: |-
   This is a number or code assigned to each individual referred to the
-  flexible funding pool. The client identifier is unique and stable for each
+  commissioned organisation. The client identifier is unique and stable for each
   individual at the level of the PMHC top level organisation.
 Name: CliKey
 Title: Client Key
@@ -247,10 +248,24 @@ Name: CoB
 Title: Country Of Birth
 Type: Char[4]
 Domain: |-
-  Standard Australian Classification of Countries 2011 (SACC 2011) 4-digit code (ABS Catalogue No. 1269.0)
-  [provided in Appendix B] SACC 2011 is a four-digit, three-level hierarchical structure specifying major group,
+  `Standard Australian Classification of Countries 2011 (SACC 2011) 4-digit code (ABS Catalogue No. 1269.0) 
+  <http://www.abs.gov.au/ausstats/abs@.nsf/mf/1269.0>`_
+  SACC 2011 is a four-digit, three-level hierarchical structure specifying major group,
   minor group and country. 9999 is used when the information is not known or the client has refused to provide
   the information.
+Comments: |-
+  The ABS recommends the following question in order to collect this data:
+  In which country was the client born?
+  - Australia
+  - England
+  - New Zealand
+  - India
+  - Vietnam
+  - Philippines
+  - South Africa
+  - Scotland
+  - Malaysia
+  - Other - please specify ......................... 
 ---
 Definition: |-
   The language reported by a client as the main language other than English spoken by that client in
@@ -261,9 +276,25 @@ Name: MLSH
 Title: Main language other than English spoken at home
 Type: Char[4]
 Domain: |-
-  Australian Standard Classification of Languages 2011 4-digit code (ABS Catalogue No. 1267.0) or 9999 if
+  `Australian Standard Classification of Languages 2011 4-digit code (ABS Catalogue No. 1267.0)`
+  <http://www.abs.gov.au/ausstats/abs@.nsf/mf/1267.0>`_ or 9999 if
   info is not known or client refuses to supply.
 Missing: 9999
+Comments:
+  The ABS recommends the following question in order to collect this data:
+  Which language does the client mainly speak at home? (If more that one language, indicate the one 
+  that is spoken most often.) 
+  - English
+  - Mandarin
+  - Italian
+  - Arabic
+  - Cantonese
+  - Greek
+  - Vietnamese
+  - Spanish
+  - Hindi
+  - Tagalog
+  - Other - please specify .........................
 ---
 Definition: |-
   The self-assessed level of ability to speak English, asked of people whose first language is a
@@ -473,7 +504,7 @@ Domain: Was this the current four items plus 'Not on medication' with Yes/No/Mis
 ---
 Definition: The primary reason for the episode of care
 Name: FoE
-Title: Principle Focus of Treatment
+Title: Principal Focus of Treatment
 Type: Char[1]
 Domain:
   Set:
@@ -481,11 +512,6 @@ Domain:
     2: Clinical care coordination
     3: Complex care package for adults
     4: Care package for a youth with severe mental illness
----
-Name: EpiOutcome
-Title: Episode/Patient Outcome
-Type: Char[2]
-Domain: To be defined
 ---
 Name: CompSt
 Title: Episode Completion Status
@@ -507,6 +533,7 @@ Domain:
   Set:
     1: Yes
     2: No
+    9: Not stated/inadequately described
 ---
 Definition: |-
   A person's current relationship status in terms of a couple relationship or, for those not in a
@@ -544,7 +571,7 @@ Comments: |-
 Definition: The type of physical setting in which a person usually resides, as represented by a code.
 MeteorID: 621477
 Name: Accom
-Title: Accomodation
+Title: Accommodation
 Type: Char[2]
 Domain:
   Set:
@@ -632,7 +659,8 @@ Comments: |-
 ---
 Definition: |-
   Identifies those individuals where a recent history of suicide attempt, or suicide risk, was a
-  factor noted in the referral that underpinned the person's needs for assistance at entry to the episode.
+  factor noted in the referral that underpinned the person's needs for assistance at entry to the episode, 
+  or was identified at initial assessment.
 Name: SuicideRef
 Title: Suicide Referral Flag
 Type: Char[1]
@@ -641,8 +669,9 @@ Domain:
     1: Yes
     2: No
 ---
-Definition: Service Event date
 Name: SerDate
+Definition: The date of each mental health service contact between a health service provider and patient/client.
+MeteorID: 494356
 Title: Mental Health Service Contact Date
 Type: Date[8]
 Domain: |-
@@ -699,10 +728,11 @@ Domain:
     3: School
     4: Client's Workplace
     5: Other
-    6: Not applicable (Service modality is face to face)
+    6: Not applicable (Service modality is not face to face)
 Comments: |-
   - Values other than 'Not applicable' only to be specified when Service Modality is 'Face to Face'.
 ---
+Definition: The time from the start to finish of a service contact.
 Name: Duration
 Title: Duration
 Type: Char[1]
@@ -725,10 +755,11 @@ Type: Char[9]
 Domain: Up to 6 digits before the decimal point; up to 2 digits after the decimal point
 Comments: |-
   The co-payment is the amount paid by the client per session, not the fee paid by the project to
-  the provider or the fee paid by the project to the provider plus the client contribution. In many cases,
+  the practitioner or the fee paid by the project to the practitioner plus the client contribution. In many cases,
   there will not be a co-payment charged and therefore zero should be entered. Where a co-payment is charged
   it should be minimal and based on an individual's capacity to pay.
 ---
+Definition: Where an appointment was made for a client, but the client failed to attend the appointment.
 Name: NoShow
 Title: No Show
 Type: Char[1]
@@ -736,6 +767,10 @@ Domain:
   Set:
     1: Yes
     2: No
+  Notes:
+    1 - Yes means the client failed to attend the appointment.
+
+    2 - No means the client did attend the appointment.
 ---
 Name: SerPart
 Title: Service Participants
