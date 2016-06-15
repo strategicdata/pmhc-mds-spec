@@ -255,6 +255,7 @@ Domain: |-
 Comments: |-
   The ABS recommends the following question in order to collect this data:
   In which country was the client born?
+
   - Australia
   - England
   - New Zealand
@@ -283,6 +284,7 @@ Comments: |
   The ABS recommends the following question in order to collect this data:
   Which language does the client mainly speak at home? (If more that one language, indicate the one 
   that is spoken most often.) 
+
   - English
   - Mandarin
   - Italian
