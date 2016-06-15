@@ -15,7 +15,7 @@ Record formats
 Organisation
 ^^^^^^^^^^^^
 
-Placeholder...
+| Explanatory text to go here ...
 
 .. csv-table:: Organisation record layout
   :file: records/org.csv
@@ -26,9 +26,9 @@ Placeholder...
 ----------
 
 Practitioner
-^^^^^^^^
+^^^^^^^^^^^^
 
-Placeholder...
+| Explanatory text to go here ...
 
 .. csv-table:: Practitioner record layout
   :file: records/pra.csv
@@ -41,7 +41,7 @@ Placeholder...
 Client
 ^^^^^^
 
-Placeholder...
+| Explanatory text to go here ...
 
 .. csv-table:: Client record layout
    :file: records/cli.csv
@@ -54,7 +54,7 @@ Placeholder...
 Episode
 ^^^^^^^
 
-Placeholder...
+| Explanatory text to go here ...
 
 .. csv-table:: Episode record layout
    :file: records/epi.csv
@@ -67,7 +67,7 @@ Placeholder...
 Service event
 ^^^^^^^^^^^^^
 
-Placeholder...
+| Explanatory text to go here ...
 
 .. csv-table:: Service event record layout
    :file: records/ser.csv
@@ -80,7 +80,7 @@ Placeholder...
 Outcome collection occasion
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Placeholder...
+| Explanatory text to go here ...
 
 .. csv-table:: Outcome collection occasion record layout
    :file: records/coloc.csv

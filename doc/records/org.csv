@@ -2,7 +2,7 @@ Data Element (Field Name),Type [Length],Notes / Values
 "`Organisation Name`_ (OrgName)
 
 ",Char[100],
-"`Organistation Code`_ (OrgCode)
+"`Organisation Code`_ (OrgCode)
 
 ",Char[6],"- Where the organisation is a PHN this code will be assigned by the Department of Health.
 - Where the organisation reports to a PHN the PHN will assign a unique code."

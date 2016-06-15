@@ -1,5 +1,5 @@
 Data Element (Field Name),Type [Length],Notes / Values
-"`Organistation Code`_ (OrgCode)
+"`Organisation Code`_ (OrgCode)
 
 ",Char[6],"- Where the organisation is a PHN this code will be assigned by the Department of Health.
 - Where the organisation reports to a PHN the PHN will assign a unique code."
@@ -47,15 +47,17 @@ METeOR: `291036 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291036>`__
 
 
 
-METeOR: `459973 <http://meteor.aihw.gov.au/content/index.phtml/itemId/459973>`__",Char[4],"Standard Australian Classification of Countries 2011 (SACC 2011) 4-digit code (ABS Catalogue No. 1269.0)
-[provided in Appendix B] SACC 2011 is a four-digit, three-level hierarchical structure specifying major group,
+METeOR: `459973 <http://meteor.aihw.gov.au/content/index.phtml/itemId/459973>`__",Char[4],"`Standard Australian Classification of Countries 2011 (SACC 2011) 4-digit code (ABS Catalogue No. 1269.0) 
+<http://www.abs.gov.au/ausstats/abs@.nsf/mf/1269.0>`_
+SACC 2011 is a four-digit, three-level hierarchical structure specifying major group,
 minor group and country. 9999 is used when the information is not known or the client has refused to provide
 the information."
 "`Main language other than English spoken at home`_ (MLSH)
 
 
 
-METeOR: `460125 <http://meteor.aihw.gov.au/content/index.phtml/itemId/460125>`__",Char[4],"Australian Standard Classification of Languages 2011 4-digit code (ABS Catalogue No. 1267.0) or 9999 if
+METeOR: `460125 <http://meteor.aihw.gov.au/content/index.phtml/itemId/460125>`__",Char[4],"`Australian Standard Classification of Languages 2011 4-digit code (ABS Catalogue No. 1267.0)`
+<http://www.abs.gov.au/ausstats/abs@.nsf/mf/1267.0>`_ or 9999 if
 info is not known or client refuses to supply."
 "`Proficiency in spoken English`_ (ProfEng)
 

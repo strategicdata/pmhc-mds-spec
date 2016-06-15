@@ -66,7 +66,8 @@ METeOR: `386449 <http://meteor.aihw.gov.au/content/index.phtml/itemId/386449>`__
 "`NDIS participant`_ (NDIS)
 
 ",Char[1],":1: Yes
-:2: No"
+:2: No
+:9: Not stated/inadequately described"
 "`Marital Status`_ (MaritalSt)
 
 
@@ -77,7 +78,7 @@ METeOR: `291045 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291045>`__
 :4: Separated
 :5: Married (registered and do facto)
 :9: Not stated/inadequately described"
-"`Accomodation`_ (Accom)
+"`Accommodation`_ (Accom)
 
 
 
@@ -100,15 +101,12 @@ METeOR: `621477 <http://meteor.aihw.gov.au/content/index.phtml/itemId/621477>`__
 "`Other Diagnosis`_ (OtherDx)
 
 ",Char[1],To be defined
-"`Principle Focus of Treatment`_ (FoE)
+"`Principal Focus of Treatment`_ (FoE)
 
 ",Char[1],":1: Psychological intervention
 :2: Clinical care coordination
 :3: Complex care package for adults
 :4: Care package for a youth with severe mental illness"
-"`Episode/Patient Outcome`_ (EpiOutcome)
-
-",Char[2],To be defined
 "`Episode Completion Status`_ (CompSt)
 
 ",Char[1],":1: Treatment complete

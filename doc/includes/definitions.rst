@@ -29,8 +29,8 @@ Whether a person identifies as being of Aboriginal and/or Torres Strait Islander
 
 ----------
 
-Accomodation
-^^^^^^^^^^^^
+Accommodation
+^^^^^^^^^^^^^
 
 The type of physical setting in which a person usually resides, as represented by a code.
 
@@ -148,7 +148,7 @@ Client Key
 ^^^^^^^^^^
 
 This is a number or code assigned to each individual referred to the
-flexible funding pool. The client identifier is unique and stable for each
+commissioned organisation. The client identifier is unique and stable for each
 individual at the level of the PMHC top level organisation.
 
 :Field name: CliKey
@@ -191,7 +191,7 @@ The co-payment is the amount paid by the client per session.
 
 :Notes:
   The co-payment is the amount paid by the client per session, not the fee paid by the project to
-  the provider or the fee paid by the project to the provider plus the client contribution. In many cases,
+  the practitioner or the fee paid by the project to the practitioner plus the client contribution. In many cases,
   there will not be a co-payment charged and therefore zero should be entered. Where a co-payment is charged
   it should be minimal and based on an individual's capacity to pay.
 
@@ -207,10 +207,25 @@ The country in which the client was born, as represented by a code.
 :Data type: Char[4]
 
 :Domain:
-  Standard Australian Classification of Countries 2011 (SACC 2011) 4-digit code (ABS Catalogue No. 1269.0)
-  [provided in Appendix B] SACC 2011 is a four-digit, three-level hierarchical structure specifying major group,
+  `Standard Australian Classification of Countries 2011 (SACC 2011) 4-digit code (ABS Catalogue No. 1269.0) 
+  <http://www.abs.gov.au/ausstats/abs@.nsf/mf/1269.0>`_
+  SACC 2011 is a four-digit, three-level hierarchical structure specifying major group,
   minor group and country. 9999 is used when the information is not known or the client has refused to provide
   the information.
+
+:Notes:
+  The ABS recommends the following question in order to collect this data:
+  In which country was the client born?
+  - Australia
+  - England
+  - New Zealand
+  - India
+  - Vietnam
+  - Philippines
+  - South Africa
+  - Scotland
+  - Malaysia
+  - Other - please specify ......................... 
 
 :METeOR: `459973 <http://meteor.aihw.gov.au/content/index.phtml/itemId/459973>`__
 
@@ -219,7 +234,7 @@ The country in which the client was born, as represented by a code.
 Cultural training flag
 ^^^^^^^^^^^^^^^^^^^^^^
 
-A flag to represent whether a provider has done cultural training
+A flag to represent whether a practitioner has done cultural training.
 
 :Field name: CultFlag
 
@@ -261,6 +276,7 @@ The date on which an individual was born
 Duration
 ^^^^^^^^
 
+The time from the start to finish of a service contact.
 
 :Field name: Duration
 
@@ -367,19 +383,6 @@ organisation.
 
 :Domain:
   A unique identifier for an episode within the PMHC. Must be unique within an organisation and stable over time.
-
-----------
-
-Episode/Patient Outcome
-^^^^^^^^^^^^^^^^^^^^^^^
-
-
-:Field name: EpiOutcome
-
-:Data type: Char[2]
-
-:Domain:
-  To be defined
 
 ----------
 
@@ -530,8 +533,26 @@ with other residents of the home or setting and regular visitors, as represented
 :Data type: Char[4]
 
 :Domain:
-  Australian Standard Classification of Languages 2011 4-digit code (ABS Catalogue No. 1267.0) or 9999 if
+  `Australian Standard Classification of Languages 2011 4-digit code (ABS Catalogue No. 1267.0)`
+  <http://www.abs.gov.au/ausstats/abs@.nsf/mf/1267.0>`_ or 9999 if
   info is not known or client refuses to supply.
+
+:Notes:
+  The ABS recommends the following question in order to collect this data:
+  Which language does the client mainly speak at home? (If more that one language, indicate the one 
+  that is spoken most often.) 
+  - English
+  - Mandarin
+  - Italian
+  - Arabic
+  - Cantonese
+  - Greek
+  - Vietnamese
+  - Spanish
+  - Hindi
+  - Tagalog
+  - Other - please specify .........................
+  
 
 :METeOR: `460125 <http://meteor.aihw.gov.au/content/index.phtml/itemId/460125>`__
 
@@ -652,7 +673,7 @@ An indicator of whether the client has participated in a service contact, as rep
 Mental Health Service Contact Date
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Service Event date
+The date of each mental health service contact between a health service provider and patient/client.
 
 :Field name: SerDate
 
@@ -662,6 +683,8 @@ Service Event date
   For Date fields, data must be recorded in compliance with the standard format used across the National
   Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with
   leading zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
+
+:METeOR: `494356 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494356>`__
 
 ----------
 
@@ -677,12 +700,14 @@ Is the client a participant in the National Disability Insurance Scheme?
 :Domain:
   :1: Yes
   :2: No
+  :9: Not stated/inadequately described
 
 ----------
 
 No Show
 ^^^^^^^
 
+Where an appointment was made for a client, but the client failed to attend the appointment.
 
 :Field name: NoShow
 
@@ -691,6 +716,24 @@ No Show
 :Domain:
   :1: Yes
   :2: No
+:Notes:
+  1 - Yes means the client failed to attend the appointment.
+  2 - No means the client did attend the appointment.
+
+----------
+
+Organisation Code
+^^^^^^^^^^^^^^^^^
+
+A sequence of characters which uniquely identifies the PMHC organisation.
+
+:Field name: OrgCode
+
+:Data type: Char[6]
+
+:Domain:
+  - Where the organisation is a PHN this code will be assigned by the Department of Health.
+  - Where the organisation reports to a PHN the PHN will assign a unique code.
 
 ----------
 
@@ -716,21 +759,6 @@ The type of the organisation.
 
 :Domain:
   To be defined
-
-----------
-
-Organistation Code
-^^^^^^^^^^^^^^^^^^
-
-A sequence of characters which uniquely identifies the PMHC organisation.
-
-:Field name: OrgCode
-
-:Data type: Char[6]
-
-:Domain:
-  - Where the organisation is a PHN this code will be assigned by the Department of Health.
-  - Where the organisation reports to a PHN the PHN will assign a unique code.
 
 ----------
 
@@ -762,6 +790,56 @@ The version number of the PMHC specification document used.
 
 ----------
 
+Practitioner Active
+^^^^^^^^^^^^^^^^^^^
+
+A flag to represent whether a practitioner is active. This is a system field that is aimed at helping organisations manage practitioner codes.
+
+:Field name: Active
+
+:Data type: Char[1]
+
+:Domain:
+  :0: Inactive
+  :1: Active
+
+----------
+
+Practitioner category
+^^^^^^^^^^^^^^^^^^^^^
+
+The type or category of the practitioner.
+
+:Field name: Category
+
+:Data type: Char[1]
+
+:Domain:
+  :1: Psychologist (clinical)
+  :2: Psychologist (generalist/other)
+  :3: Social worker
+  :4: Occupational therapist
+  :5: Mental health nurse
+  :6: Aboriginal and Torres Strait Islander health/mental health worker
+  :7: Low intensity mental health worker
+  :8: Other
+
+----------
+
+Practitioner Key
+^^^^^^^^^^^^^^^^
+
+A sequence of characters which uniquely identifies a practitioner.
+
+:Field name: PraKey
+
+:Data type: Char[20]
+
+:Domain:
+  A unique identifier for a practitioner within the PMHC top level organisation.
+
+----------
+
 Princ Diagnosis
 ^^^^^^^^^^^^^^^
 
@@ -775,7 +853,7 @@ Princ Diagnosis
 
 ----------
 
-Principle Focus of Treatment
+Principal Focus of Treatment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The primary reason for the episode of care
@@ -822,41 +900,6 @@ language other than English or who speak a language other than English at home.
 
 ----------
 
-Provider category
-^^^^^^^^^^^^^^^^^
-
-The type or category of the provider.
-
-:Field name: Category
-
-:Data type: Char[1]
-
-:Domain:
-  :1: Psychologist (clinical)
-  :2: Psychologist (generalist/other)
-  :3: Social worker
-  :4: Occupational therapist
-  :5: Mental health nurse
-  :6: Aboriginal and Torres Strait Islander health/mental health worker
-  :7: Low intensity mental health worker
-  :8: Other
-
-----------
-
-Provider Key
-^^^^^^^^^^^^
-
-A sequence of characters which uniquely identifies a provider.
-
-:Field name: ProKey
-
-:Data type: Char[20]
-
-:Domain:
-  A unique identifier for a provider within the PMHC top level organisation.
-
-----------
-
 Referral Date
 ^^^^^^^^^^^^^
 
@@ -884,21 +927,6 @@ The entity of the referrer.
 
 :Domain:
   To be defined
-
-----------
-
-Referrer or provider Active
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-A flag to represent whether a provider is active.
-
-:Field name: Active
-
-:Data type: Char[1]
-
-:Domain:
-  :0: Inactive
-  :1: Active
 
 ----------
 
@@ -1114,7 +1142,8 @@ Suicide Referral Flag
 ^^^^^^^^^^^^^^^^^^^^^
 
 Identifies those individuals where a recent history of suicide attempt, or suicide risk, was a
-factor noted in the referral that underpinned the person's needs for assistance at entry to the episode.
+factor noted in the referral that underpinned the person's needs for assistance at entry to the episode, 
+or was identified at initial assessment.
 
 :Field name: SuicideRef
 
@@ -1141,7 +1170,7 @@ Where the service was delivered.
   :3: School
   :4: Client's Workplace
   :5: Other
-  :6: Not applicable (Service modality is face to face)
+  :6: Not applicable (Service modality is not face to face)
 
 :Notes:
   - Values other than 'Not applicable' only to be specified when Service Modality is 'Face to Face'.
@@ -1157,7 +1186,7 @@ Year of Birth
 :Data type: Char[4]
 
 :Domain:
-  Record the providers's year of birth YYYY format.
+  Record the practitioner's year of birth YYYY format.
 
 :Notes:
   If the year of birth is unknown, the following approaches should be used:

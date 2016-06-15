@@ -1,8 +1,8 @@
 Data Element (Field Name),Type [Length],Notes / Values
-"`Provider Key`_ (ProKey)
+"`Practitioner Key`_ (PraKey)
 
-",Char[20],A unique identifier for a provider within the PMHC top level organisation.
-"`Provider category`_ (Category)
+",Char[20],A unique identifier for a practitioner within the PMHC top level organisation.
+"`Practitioner category`_ (Category)
 
 ",Char[1],":1: Psychologist (clinical)
 :2: Psychologist (generalist/other)
@@ -19,8 +19,8 @@ Data Element (Field Name),Type [Length],Notes / Values
 :9: Missing/Not recorded"
 "`Year of Birth`_ (YoB)
 
-",Char[4],Record the providers's year of birth YYYY format.
-"`Gender`_ (Gender) [#tn_pro1]_
+",Char[4],Record the practitioner's year of birth YYYY format.
+"`Gender`_ (Gender) [#tn_pra1]_
 
 ",Char[1],":0: Not stated/Inadequately described
 :1: Male
@@ -35,7 +35,7 @@ METeOR: `291036 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291036>`__
 :3: Both Aboriginal and Torres Strait Islander origin
 :4: Neither Aboriginal or Torres Strait Islander origin
 :9: Not stated/inadequately described"
-"`Referrer or provider Active`_ (Active)
+"`Practitioner Active`_ (Active)
 
 ",Char[1],":0: Inactive
 :1: Active"
