@@ -534,7 +534,7 @@ with other residents of the home or setting and regular visitors, as represented
 :Data type: Char[4]
 
 :Domain:
-  `Australian Standard Classification of Languages 2011 4-digit code (ABS Catalogue No. 1267.0)`
+  `Australian Standard Classification of Languages 2011 4-digit code (ABS Catalogue No. 1267.0)
   <http://www.abs.gov.au/ausstats/abs@.nsf/mf/1267.0>`_ or 9999 if
   info is not known or client refuses to supply.
 
