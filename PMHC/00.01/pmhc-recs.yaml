@@ -11,7 +11,7 @@ Relationships:
   - Target: HR
     Degree: many
     Required: 1
-  - Target: PRO
+  - Target: PRA
     Degree: one
     Required: 1
   - Target: CLI
@@ -112,7 +112,7 @@ Relationships:
   - Target: EPI
     Degree: many
     Required: 1
-  - Target: PRO
+  - Target: PRA
     Degree: many
     Required: 1
 ---
