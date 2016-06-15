@@ -36,6 +36,8 @@ pushd .
 
 cd doc
 
+curl -s http://www.gliffy.com/go/publish/image/10751755/L.png > figures/data-model.png
+
 docker run -ti -v `pwd`:/mnt/workdir stratdat/sphinx:production make $1
 
 popd
