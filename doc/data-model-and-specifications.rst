@@ -4,7 +4,7 @@ Data model and specifications
 Data model
 ----------
 
-.. figure:: figures/data-model.png
+.. figure:: figures/data-model.svg
    :alt: PMHC data model
 
    PMHC data model
