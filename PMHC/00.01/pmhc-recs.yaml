@@ -1,135 +1,136 @@
 ---
-RecType: ORG
+RecType: organisation
 Fields:
-  - OrgName
-  - OrgCode
-  - OrgType
-  - State
+  - organisation_name
+  - organisation_code
+  - organisation_type
+  - state
 Keys:
-  Primary: [ OrgCode ]
+  Primary: [ organisation_code ]
 Relationships:
   - Target: HR
     Degree: many
     Required: 1
-  - Target: PRA
+  - Target: practitioner
     Degree: one
     Required: 1
-  - Target: CLI
-    Degree: one
-    Required: 1
----
-RecType: PRA
-Fields:
-  - PraKey
-  - Category
-  - CultFlag
-  - YoB
-  - Gender
-  - IndigSt
-  - Active
-Keys:
-  Primary: [ OrgCode, PraKey ]
-Relationships:
-  - Target: ORG
-    Degree: many
-    Required: 1
-  - Target: SER
+  - Target: client
     Degree: one
     Required: 1
 ---
-RecType: CLI
+RecType: practitioner
 Fields:
-  - OrgCode
-  - CliKey
-  - SLK
-  - DoB
-  - DoBFlag
-  - Gender
-  - IndigSt
-  - CoB
-  - MLSH
-  - ProfEng
+  - practitioner_key
+  - category
+  - cultural_flag
+  - year_of_birth
+  - gender
+  - atsi_status
+  - active
 Keys:
-  Primary: [ OrgCode, CliKey ]
+  Primary: [ organisation_code, practitioner_key ]
 Relationships:
-  - Target: ORG
+  - Target: organisation
     Degree: many
     Required: 1
-  - Target: EPI
+  - Target: service_contact
     Degree: one
     Required: 1
 ---
-RecType: EPI
+RecType: client
 Fields:
-  - EpiKey
-  - CliKey
-  - CliPCode 
-  - EpiStart
-  - EpiEnd
-  - FoT
-  - LabourSt
-  - EmpPart
-  - IncomeSt
-  - IncomeSce
-  - NDIS
-  - MaritalSt
-  - Accom
-  - CompSt
-  - SuicideRef
-  - PrincDx
-  - OtherDx
-  - MedAntipsy
-  - MedAnxi
-  - MedHyp
-  - MedAntidep
-  - MedPsycho
-  - RefType
-  - RefEntity
+  - organisation_code
+  - client_key
+  - slk
+  - date_of_birth
+  - est_date_of_birth
+  - gender
+  - atsi_status
+  - country_of_birth
+  - main_lang_at_home
+  - prof_english
 Keys:
-  Primary: [ EpiKey, CliKey ]
+  Primary: [ organisation_code, client_key ]
 Relationships:
-  - Target: CLI
+  - Target: organisation
     Degree: many
-    Required: 1 
-  - Target: SER
+    Required: 1
+  - Target: episode
     Degree: one
-    Required: 1 
----
-RecType: SER
-Fields:
-  - SerKey
-  - CliKey
-  - PraKey
-  - SerDate
-  - SerType
-  - SerPCode
-  - SerMod
-  - SerPart
-  - Venue
-  - Duration
-  - Copayment
-  - PartIndic
-  - NoShow
-Keys:
-  Primary: [ SerKey, EpiKey ]
-Relationships:
-  - Target: EPI
-    Degree: many
-    Required: 1
-  - Target: PRA
-    Degree: many
     Required: 1
 ---
-RecType: COLOC
+RecType: episode
 Fields:
-  - ColocKey
-  - EpiKey
-  - Measure
-  - MeasDate
-  - Score
+  - episode_key
+  - client_key
+  - client_postcode
+  - episode_start_date
+  - episode_end_date
+  - referral_date
+  - princ_focus_of_treatment
+  - labour_status
+  - employment_participation
+  - income_status
+  - income_source
+  - ndis_participant
+  - marital_status
+  - accommodation
+  - episode_completion_status
+  - suicide_referral_flag
+  - principal_diagnosis
+  - other_diagnosis
+  - medication_antipsychotics
+  - medication_anxiolytics
+  - medication_hypnotics
+  - medication_antidepressants
+  - medication_psychostimulants
+  - referrer_type
+  - referrer_entity
 Keys:
-  Primary: [ ColocKey, EpiKey ]
+  Primary: [ episode_key, client_key ]
 Relationships:
-  - Target: EPI
+  - Target: client
+    Degree: many
+    Required: 1
+  - Target: service_contact
+    Degree: one
+    Required: 1
+---
+RecType: service_contact
+Fields:
+  - service_contact_key
+  - client_key
+  - practitioner_key
+  - service_date
+  - service_type
+  - service_postcode
+  - service_modality
+  - service_participants
+  - venue
+  - duration
+  - copayment
+  - participation_indicator
+  - no_show
+Keys:
+  Primary: [ service_contact_key, episode_key ]
+Relationships:
+  - Target: episode
+    Degree: many
+    Required: 1
+  - Target: practitioner
+    Degree: many
+    Required: 1
+---
+RecType: Outcome Collection Occasion
+Fields:
+  - collection_occasion_key
+  - episode_key
+  - measure
+  - measure_date
+  - score
+Keys:
+  Primary: [ collection_occasion_key, episode_key ]
+Relationships:
+  - Target: episode
     Degree: many
     Required: 1
