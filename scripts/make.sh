@@ -38,6 +38,10 @@ cd doc
 
 curl -s -L http://www.gliffy.com/go/publish/image/10751755/L.png > figures/data-model.png
 
+if [ -f ~/Downloads/data-model.svg ]; then
+  mv ~/Downloads/data-model.svg figures/data-model.svg
+fi
+
 if [ -z $1 ]; then
   ARG1=html
 else
