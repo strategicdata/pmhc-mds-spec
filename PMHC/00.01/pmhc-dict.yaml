@@ -910,8 +910,7 @@ Domain:
 Definition: |-
   Identifies those individuals where a recent history of suicide attempt, or
   suicide risk, was a factor noted in the referral that underpinned the
-  person's needs for assistance at entry to the episode or was identified at
-  initial assessment.
+  person's needs for assistance at entry to the episode.
 ---
 Name: service_date
 Definition: |-
