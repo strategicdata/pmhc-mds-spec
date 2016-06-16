@@ -6,7 +6,7 @@ Aboriginal And Torres Strait Islander Status
 
 Whether a person identifies as being of Aboriginal and/or Torres Strait Islander origin, as represented by a code.
 
-:Field name: IndigSt
+:Field name: atsi_status
 
 :Data type: Char[1]
 
@@ -34,7 +34,7 @@ Accommodation
 
 The type of physical setting in which a person usually resides, as represented by a code.
 
-:Field name: Accom
+:Field name: accommodation
 
 :Data type: Char[2]
 
@@ -128,7 +128,7 @@ Area of usual residence, postcode
 
 The Australian postcode of the client
 
-:Field name: CliPCode
+:Field name: client_postcode
 
 :Data type: Char[4]
 
@@ -157,7 +157,7 @@ This is a number or code assigned to each individual referred to the
 commissioned organisation. The client identifier is unique and stable for each
 individual at the level of the PMHC top level organisation.
 
-:Field name: CliKey
+:Field name: client_key
 
 :Data type: Char[20]
 
@@ -173,7 +173,7 @@ This is a number or code assigned to each collection occasion of outcome measure
 The Collection Occasion Key is unique and stable for each collection occasion at the
 level of the organisation.
 
-:Field name: ColocKey
+:Field name: collection_occasion_key
 
 :Data type: Char[20]
 
@@ -188,7 +188,7 @@ Copayment
 
 The co-payment is the amount paid by the client per session.
 
-:Field name: Copayment
+:Field name: copayment
 
 :Data type: Char[9]
 
@@ -208,7 +208,7 @@ Country Of Birth
 
 The country in which the client was born, as represented by a code.
 
-:Field name: CoB
+:Field name: country_of_birth
 
 :Data type: Char[4]
 
@@ -243,7 +243,7 @@ Cultural training flag
 
 A flag to represent whether a practitioner has completed a recognised training programme in the delivery of culturally safe mental health services to Aboriginal and Torres Strait Islander peoples.
 
-:Field name: CultFlag
+:Field name: cultural_flag
 
 :Data type: Char[1]
 
@@ -262,7 +262,7 @@ Date of Birth
 
 The date on which an individual was born
 
-:Field name: DoB
+:Field name: date_of_birth
 
 :Data type: Date[8]
 
@@ -288,7 +288,7 @@ Duration
 
 The time from the start to finish of a service contact.
 
-:Field name: Duration
+:Field name: duration
 
 :Data type: Char[1]
 
@@ -310,7 +310,7 @@ Employment Participation
 
 Whether a person in paid employment is employed full-time or part-time, as represented by a code.
 
-:Field name: EmpPart
+:Field name: employment_participation
 
 :Data type: Char[1]
 
@@ -348,7 +348,7 @@ Episode Completion Status
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-:Field name: CompSt
+:Field name: episode_completion_status
 
 :Data type: Char[1]
 
@@ -367,7 +367,7 @@ Episode End Date
 
 The date on which an episode of mental health care is formally or statistically ended.
 
-:Field name: EpiEnd
+:Field name: episode_end_date
 
 :Data type: Date[8]
 
@@ -386,7 +386,7 @@ Episode Key
 This is a number or code assigned to each episode.
 The Episode Key is unique and stable for each episode at the level of the organisation.
 
-:Field name: EpiKey
+:Field name: episode_key
 
 :Data type: Char[20]
 
@@ -401,7 +401,7 @@ Episode Start Date
 The date on which the client formally or statistically commences an episode of mental health care,
 expressed as DDMMYYYY.
 
-:Field name: EpiStart
+:Field name: episode_start_date
 
 :Data type: Date[8]
 
@@ -422,7 +422,7 @@ Estimated Date of Birth Flag
 
 The date of birth estimate flag records whether or not the client's date of birth has been estimated.
 
-:Field name: DoBFlag
+:Field name: est_date_of_birth
 
 :Data type: Char[1]
 
@@ -441,7 +441,7 @@ The term 'gender' refers to the way in which a person identifies their masculine
 characteristics. A persons gender relates to their deeply held internal and individual sense of gender and is
 not always exclusively male or female. It may or may not correspond to their sex assigned at birth.
 
-:Field name: Gender
+:Field name: gender
 
 :Data type: Char[1]
 
@@ -460,7 +460,7 @@ Income Status - Ranges? or Low Income?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-:Field name: IncomeSt
+:Field name: income_status
 
 :Data type: Char[1]
 
@@ -475,7 +475,7 @@ Labour Force Status
 The self-reported status the person currently has in being either in the labour force
 (employed/unemployed) or not in the labour force, as represented by a code.
 
-:Field name: LabourSt
+:Field name: labour_status
 
 :Data type: Char[1]
 
@@ -538,7 +538,7 @@ The language reported by a client as the main language other than English spoken
 his/her home (or most recent private residential setting occupied by the client) to communicate
 with other residents of the home or setting and regular visitors, as represented by a code.
 
-:Field name: MLSH
+:Field name: main_lang_at_home
 
 :Data type: Char[4]
 
@@ -575,7 +575,7 @@ Marital Status
 A person's current relationship status in terms of a couple relationship or, for those not in a
 couple relationship, the existence of a current or previous registered marriage, as represented by a code.
 
-:Field name: MaritalSt
+:Field name: marital_status
 
 :Data type: Char[1]
 
@@ -608,12 +608,25 @@ couple relationship, the existence of a current or previous registered marriage,
 
 ----------
 
+Measure
+^^^^^^^
+
+
+:Field name: measure
+
+:Data type: Char[20]
+
+:Domain:
+  The name of the measure
+
+----------
+
 Measure Date
 ^^^^^^^^^^^^
 
 Measure date
 
-:Field name: MeasDate
+:Field name: measure_date
 
 :Data type: Date[8]
 
@@ -624,25 +637,12 @@ Measure date
 
 ----------
 
-Measure Name
-^^^^^^^^^^^^
-
-
-:Field name: Measure
-
-:Data type: Char[20]
-
-:Domain:
-  The name of the measure
-
-----------
-
 Medication - Antidepressants (N06A)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Whether the client is taking prescribed antidepressants for a mental health condition as assessed at intake assessment.
 
-:Field name: MedAntidep
+:Field name: medication_antidepressants
 
 :Data type: Char[1]
 
@@ -658,7 +658,7 @@ Medication - Antipsychotics (N05A)
 
 Whether the client is taking prescribed antipsychotics for a mental health condition as assessed at intake assessment.
 
-:Field name: MedAntipsy
+:Field name: medication_antipsychotics
 
 :Data type: Char[1]
 
@@ -674,7 +674,7 @@ Medication - Anxiolytics (N05B)
 
 Whether the client is taking prescribed anxiolytics for a mental health condition as assessed at intake assessment.
 
-:Field name: MedAnxi
+:Field name: medication_anxiolytics
 
 :Data type: Char[1]
 
@@ -690,7 +690,7 @@ Medication - Hypnotics and sedatives (N05C)
 
 Whether the client is taking prescribed hypnotics and sedatives for a mental health condition as assessed at intake assessment.
 
-:Field name: MedHyp
+:Field name: medication_hypnotics
 
 :Data type: Char[1]
 
@@ -706,7 +706,7 @@ Medication - Psychostimulants and nootropics (N06B)
 
 Whether the client is taking prescribed psychostimulants and nootropics for a mental health condition as assessed at intake assessment.
 
-:Field name: MedPsycho
+:Field name: medication_psychostimulants
 
 :Data type: Char[1]
 
@@ -723,7 +723,7 @@ Mental health service contact - client participation indicator
 An indicator of whether the client participated in the service contact, as
 represented by a code.
 
-:Field name: PartIndic
+:Field name: participation_indicator
 
 :Data type: Char[1]
 
@@ -756,7 +756,7 @@ Mental Health Service Contact Date
 
 The date of each mental health service contact between a health service provider and patient/client.
 
-:Field name: SerDate
+:Field name: service_date
 
 :Data type: Date[8]
 
@@ -774,7 +774,7 @@ NDIS participant
 
 Is the client a participant in the National Disability Insurance Scheme?
 
-:Field name: NDIS
+:Field name: ndis_participant
 
 :Data type: Char[1]
 
@@ -790,7 +790,7 @@ No Show
 
 Where an appointment was made for a client, but the client failed to attend the appointment.
 
-:Field name: NoShow
+:Field name: no_show
 
 :Data type: Char[1]
 
@@ -811,7 +811,7 @@ Organisation Code
 
 A sequence of characters which uniquely identifies the PMHC organisation.
 
-:Field name: OrgCode
+:Field name: organisation_code
 
 :Data type: Char[6]
 
@@ -825,7 +825,7 @@ Organisation Name
 
 The name of the organisation.
 
-:Field name: OrgName
+:Field name: organisation_name
 
 :Data type: Char[100]
 
@@ -836,7 +836,7 @@ Organisation Type
 
 The type of the organisation.
 
-:Field name: OrgType
+:Field name: organisation_type
 
 :Data type: Char[1]
 
@@ -849,7 +849,7 @@ Other Diagnosis
 ^^^^^^^^^^^^^^^
 
 
-:Field name: OtherDx
+:Field name: other_diagnosis
 
 :Data type: Char[1]
 
@@ -879,7 +879,7 @@ Practitioner Active
 A flag to represent whether a practitioner is active. This is a system field that is
 aimed at helping organisations manage practitioner codes.
 
-:Field name: Active
+:Field name: active
 
 :Data type: Char[1]
 
@@ -894,7 +894,7 @@ Practitioner category
 
 The type or category of the practitioner.
 
-:Field name: Category
+:Field name: category
 
 :Data type: Char[1]
 
@@ -915,7 +915,7 @@ Practitioner Key
 
 A sequence of characters which uniquely identifies a practitioner.
 
-:Field name: PraKey
+:Field name: practitioner_key
 
 :Data type: Char[20]
 
@@ -928,7 +928,7 @@ Principal Diagnosis
 ^^^^^^^^^^^^^^^^^^^
 
 
-:Field name: PrincDx
+:Field name: principal_diagnosis
 
 :Data type: Char[1]
 
@@ -944,7 +944,7 @@ The range of activities that best describes the overall services intended
 to be delivered to the client throughout the course of the episode.  For most clients,
 this will equate to the activities that account for most time spent by the service provider.
 
-:Field name: FoT
+:Field name: princ_focus_of_treatment
 
 :Data type: Char[1]
 
@@ -953,50 +953,77 @@ this will equate to the activities that account for most time spent by the servi
   :2: Low intensity psychological intervention
   :3: Clinical care coordination
   :4: Complex care package for adults
-  :5: Care package for a youth with severe mental illness
+  :5: Child and youth-specific mental health services
+  :6: Other
 
 :Notes:
   Describes the main focus of the services to be delivered to the client for the
   current episode of care, selected from a defined list of categories.
   
-  Service providers are required to report on the ‘Principal focus of treatment plan’
-  for all accepted referrals. This requires a judgement to be made about the main focus
-  of the services to be delivered to the client for the current episode of care, made
-  following initial assessment and modifiable at a later stage. It is chosen from a
-  defined list of categories, with the provider required to select the category that
-  best fits the treatment plan designed for the client.
+  Service providers are required to report on the ‘Principal focus of treatment
+  plan’ for all accepted referrals. This requires a judgement to be made about
+  the main focus of the services to be delivered to the client for the current
+  episode of care, made following initial assessment and modifiable at a later
+  stage. It is chosen from a defined list of categories, with the provider
+  required to select the category that best fits the treatment plan designed
+  for the client.
   
-  Principal focus of treatment plan is necessarily a judgement made by the provider
-  at the outset of service delivery but consistent with good practice, should be made
-  on the basis of a treatment plan developed in collaboration with the client.
+  Principal focus of treatment plan is necessarily a judgement made by the
+  provider at the outset of service delivery but consistent with good practice,
+  should be made on the basis of a treatment plan developed in collaboration
+  with the client.
   
   1. Psychological therapy
-     The treatment plan for the client is primarily based around the delivery of psychological
-     therapy by one or more mental health professionals. This category most closely matches
-     the range of services delivered under the previous ATAPS program.
+     The treatment plan for the client is primarily based around the delivery
+     of psychological therapy by one or more mental health professionals. This
+     category most closely matches the range of services delivered under the
+     previous ATAPS program.
   
   2. Low intensity psychological intervention
-     The treatment plan for the client is primarily based around delivery of structured
-     psychological interventions that are aimed at providing a less costly intervention
-     alternative to ‘standard’ psychological therapy.  The essence of low intensity
-     interventions is that they are aimed at relatively low usage of ‘specialist
-     therapist time’  and are targeted at people with, or at risk of, mild mental illness.
+     The treatment plan for the client is primarily based around delivery of
+     time-limited, structured psychological interventions that are aimed at
+     providing a less costly intervention alternative to ‘standard’
+     psychological therapy.  The essence of low intensity interventions is that
+     they utilise nil or relatively little trained mental health professional
+     time’  and are targeted at people with, or at risk of, mild mental illness.
+     Low intensity episodes can be delivered through a range of mechanisms
+     including use of individuals with appropriate competencies but who do not
+     meet the requirements for registration, credentialing or recognition as a
+     mental health professional; delivery of services principally through
+     group-based programs; and delivery of brief forms of treatment by mental
+     health professionals.  based on CBT and/or psychoeducation group-based
+     delivery of brief episodes.
   
   3. Clinical care coordination
-     The treatment plan for the client is primarily based around delivery of a range
-     of services where the overarching aim is to coordinate care for the individual across multiple providers.
+     The treatment plan for the client is primarily based around delivery of
+     a range of services where the overarching aim is to coordinate and better
+     integrate care for the individual across multiple providers. Clinical care
+     coordination and liaison activities account for a significant proportion
+     of service contacts delivered throughout these episode.
   
   4. Complex care package for adults
-     The treatment plan for the client is primarily based around the delivery of
-     an individually tailored ‘package’ of services for an adult client with
-     severe and complex mental illness who is being managed principally within
-     a primary care setting. The overarching requirement is the episode of care
-     aims to bundle a range of services that goes beyond ‘standard’ service delivery.
+     The treatment plan for the client is primarily based around the delivery
+     of an individually tailored ‘package’ of services for an adult client
+     with severe and complex mental illness who is being managed principally
+     within a primary care setting. The overarching requirement is the episode
+     of care aims to bundle a range of services that extend beyond ‘standard’
+     service delivery where this would not otherwise not sufficiently meet
+     clinical needs.
   
-  5. Care package for a youth with severe mental illness
-     The treatment plan for the client is primarily based around the delivery of an
-     individually tailored ‘package’ of services for a young person aged 12-24
-     years who presents with a severe mental illness.
+  5. Child and youth-specific mental health services
+     The treatment plan for the client is primarily based around the delivery
+     of a range of services for children (0-11 years) or
+     youth (aged 12-24 years) who present with a mental illness, or are at
+     risk of mental illness. These episodes are characterised by services that
+     are designed specifically for children and young people, include a broader
+     range of both clinical and non-clinical services and may include a
+     significant component of clinical care coordination and liaison.
+     Child and youth-specific mental health episodes have substantial
+     flexibility in types of services actually delivered.
+  
+  6. Other NEC
+     The treatment plan for the client is primarily based around services
+     that cannot be described by other categories.
 
 ----------
 
@@ -1006,7 +1033,7 @@ Proficiency in spoken English
 The self-assessed level of ability to speak English, asked of people whose first language is a
 language other than English or who speak a language other than English at home.
 
-:Field name: ProfEng
+:Field name: prof_english
 
 :Data type: Char[1]
 
@@ -1035,7 +1062,7 @@ Referral Date
 
 The date the referrer made the referral.
 
-:Field name: RefDate
+:Field name: referral_date
 
 :Data type: Date[8]
 
@@ -1051,7 +1078,7 @@ Referrer Entity
 
 The entity of the referrer.
 
-:Field name: RefEntity
+:Field name: referrer_entity
 
 :Data type: Char[1]
 
@@ -1065,7 +1092,7 @@ Referrer Type
 
 The type of the referrer.
 
-:Field name: RefType
+:Field name: referrer_type
 
 :Data type: Char[1]
 
@@ -1078,7 +1105,7 @@ Score
 ^^^^^
 
 
-:Field name: Score
+:Field name: score
 
 :Data type: Char[2]
 
@@ -1094,7 +1121,7 @@ This is a number or code assigned to each service contact.
 The Service Contact Key is unique and stable for each service contact at the level of the
 organisation.
 
-:Field name: SerKey
+:Field name: service_contact_key
 
 :Data type: Char[20]
 
@@ -1107,9 +1134,9 @@ organisation.
 Service Delivery Postcode
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The Australian postcode where the service delivery took place
+The Australian postcode where the service delivery took place.
 
-:Field name: SerPCode
+:Field name: service_postcode
 
 :Data type: Char[4]
 
@@ -1129,7 +1156,7 @@ Service Modality
 
 How the service was delivered.
 
-:Field name: SerMod
+:Field name: service_modality
 
 :Data type: Char[1]
 
@@ -1148,7 +1175,7 @@ Service Participants
 ^^^^^^^^^^^^^^^^^^^^
 
 
-:Field name: SerPart
+:Field name: service_participants
 
 :Data type: Char[1]
 
@@ -1164,18 +1191,95 @@ Service Participants
 Service Type
 ^^^^^^^^^^^^
 
+The main type of service provided in the service contact, as represented by the service type that accounted for most provider time.
 
-:Field name: SerType
+:Field name: service_type
 
 :Data type: Char[1]
 
 :Domain:
-  :1: Structured psychological intervention
-  :2: Other psychological intervention
-  :3: Clinical care coordination
-  :4: Child or youth specific assistance NEC
-  :5: Suicide prevention specific assistance NEC
-  :6: Cultural specific assistance NEC
+  :1: Assessment
+  :2: Structured psychological intervention
+  :3: Other psychological intervention
+  :4: Clinical care coordination/liaison
+  :5: Clinical nursing services
+  :6: Child or youth specific assistance NEC
+  :7: Suicide prevention specific assistance NEC
+  :8: Cultural specific assistance NEC
+
+:Notes:
+  Describes the main type of service delivered in the contact, selected from a
+  defined list of categories.  Where more than service type was provided select
+  that which accounted for most provider time. Service providers are required
+  to report on Service Type for all Service Contacts.
+  
+  1 - Assessment
+    Determination of a person‘s mental health status and need for mental
+    health services, made by a suitably trained mental health professional,
+    based on the collection and evaluation of data obtained through interview
+    and observation, of a person‘s history and presenting problem(s).
+    Assessment may include consultation with the person‘s family and concludes
+    with formation of problems/issues, documentation of a preliminary
+    diagnosis, and a treatment plan.
+  
+  2 - Structured psychological intervention
+    Those interventions which include a structured interaction between a
+    client and a service provider using a recognised, psychological method,
+    for example, cognitive behavioural techniques, family therapy or psycho
+    education counselling. These are recognised, structured or published
+    techniques for the treatment of mental ill-health. Structured psychological
+    interventions are designed to alleviate psychological distress or
+    emotional disturbance, change maladaptive behaviour and foster mental
+    health. Structured psychological therapies can be delivered on either an
+    individual or group basis, typically in an office or community setting.
+    They may be delivered by trained mental health professionals or other
+    individuals with appropriate competencies but who do not meet the
+    requirements for registration, credentialing or recognition as a mental
+    health professional. Structured Psychological Therapies include but are
+    not limited to:
+  
+    - Psycho-education (including motivational interviewing)
+    - Cognitive-behavioural therapies
+    - Relaxation strategies
+    - Skills training
+    - Interpersonal therapy
+  
+  3 - Other psychological intervention
+     Psychological interventions that do meet criteria for structured
+     psychological intervention.
+  
+  4 - Clinical care coordination/liaison
+     Activities focused on working in partnership and liaison with other
+     health care and service providers and other individuals to coordinate
+     and integrate service delivery to the client with the aim of improving
+     their clinical outcomes. Consultation and liaison may occur with primary
+     health care providers, acute health, emergency services, rehabilitation
+     and support services, family, friends, other support people and carers
+     and other agencies that have some level of responsibility for the
+     client’s treatment and/or well being.
+  
+  5 - Clinical nursing services
+    Services delivered by mental health nurses that cannot be described
+    elsewhere.  Typically, these aim to provide clinical support to clients
+    to effectively manage their symptoms and avoid unnecessary hospitalisation.
+    Clinical nursing services include:
+  
+    - monitoring a client’s mental state;
+    - liaising closely with family and carers as appropriate;
+    - administering and monitoring compliance with medication;
+    - providing information on physical health care, as required and,
+      where appropriate, assist in addressing the physical health inequities
+      of people with mental illness; and
+    - improving links to other health professionals/clinical service providers.
+  
+  6 - Child or youth-specific assistance NEC
+    Explanatory text to be drafted
+  
+  7 - Suicide prevention specific assistance NEC
+    Explanatory text to be drafted
+  
+  8 - Cultural specific assistance NEC
+    Explanatory text to be drafted
 
 ----------
 
@@ -1184,7 +1288,7 @@ Source of Cash Income
 
 The source from which a person derives the greatest proportion of his/her income, as represented by a code.
 
-:Field name: IncomeSce
+:Field name: income_source
 
 :Data type: Char[1]
 
@@ -1221,7 +1325,7 @@ State
 
 The state that the organisation operates in.
 
-:Field name: State
+:Field name: state
 
 :Data type: Char[1]
 
@@ -1248,7 +1352,7 @@ Statistical Linkage Key
 
 A key that enables two or more records belonging to the same individual to be brought together.
 
-:Field name: SLK
+:Field name: slk
 
 :Data type: Char[40]
 
@@ -1276,7 +1380,7 @@ factor noted in the referral that underpinned the person's needs for assistance 
 
 or was identified at initial assessment.
 
-:Field name: SuicideRef
+:Field name: suicide_referral_flag
 
 :Data type: Char[1]
 
@@ -1291,7 +1395,7 @@ Venue
 
 Where the service was delivered.
 
-:Field name: Venue
+:Field name: venue
 
 :Data type: Char[1]
 
@@ -1312,7 +1416,7 @@ Year of Birth
 ^^^^^^^^^^^^^
 
 
-:Field name: YoB
+:Field name: year_of_birth
 
 :Data type: Char[4]
 

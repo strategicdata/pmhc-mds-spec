@@ -9,6 +9,10 @@ Data model
 
    PMHC data model
 
+.. csv-table:: Summary of data items
+  :file: summary-table.csv
+  :header-rows: 1
+
 Record formats
 --------------
 
@@ -18,10 +22,10 @@ Organisation
 | Explanatory text to go here ...
 
 .. csv-table:: Organisation record layout
-  :file: records/org.csv
+  :file: records/organisation.csv
   :header-rows: 1
 
-.. include:: records/org-notes.rst
+.. include:: records/organisation-notes.rst
 
 ----------
 
@@ -31,10 +35,10 @@ Practitioner
 | Explanatory text to go here ...
 
 .. csv-table:: Practitioner record layout
-  :file: records/pra.csv
+  :file: records/practitioner.csv
   :header-rows: 1
 
-.. include:: records/pra-notes.rst
+.. include:: records/practitioner-notes.rst
 
 ----------
 
@@ -44,10 +48,10 @@ Client
 | Explanatory text to go here ...
 
 .. csv-table:: Client record layout
-   :file: records/cli.csv
+   :file: records/client.csv
    :header-rows: 1
 
-.. include:: records/cli-notes.rst
+.. include:: records/client-notes.rst
 
 ----------
 
@@ -57,10 +61,10 @@ Episode
 | Explanatory text to go here ...
 
 .. csv-table:: Episode record layout
-   :file: records/epi.csv
+   :file: records/episode.csv
    :header-rows: 1
    
-.. include:: records/epi-notes.rst
+.. include:: records/episode-notes.rst
 
 ----------
 
@@ -70,10 +74,10 @@ Service event
 | Explanatory text to go here ...
 
 .. csv-table:: Service event record layout
-   :file: records/ser.csv
+   :file: records/service_contact.csv
    :header-rows: 1
    
-.. include:: records/ser-notes.rst
+.. include:: records/service_contact-notes.rst
 
 ----------
 
@@ -83,10 +87,10 @@ Outcome collection occasion
 | Explanatory text to go here ...
 
 .. csv-table:: Outcome collection occasion record layout
-   :file: records/coloc.csv
+   :file: records/outcome_collection_occasion.csv
    :header-rows: 1
    
-.. include:: records/coloc-notes.rst
+.. include:: records/outcome_collection_occasion-notes.rst
 
 -----
 
