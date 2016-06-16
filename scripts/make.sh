@@ -17,13 +17,13 @@ make install
 
 for f in _doc/record/*.csv; do
   echo "Processing $f"
-  csvcut -C Start $f > $f.t
+  docker run -it -v `pwd`:/mnt/workdir stratdat/csvkit csvcut -C Start $f > $f.t
   mv $f.t $f
 done
 
 for f in _doc/record/*.csv; do
   echo "Processing $f"
-  csvgrep -c "Data Element (Field Name)" -i -m "(RecType)" $f > $f.t
+  docker run -it -v `pwd`:/mnt/workdir stratdat/csvkit csvgrep -c "Data Element (Field Name)" -i -m "(RecType)" $f > $f.t
   mv $f.t $f
 done
 
