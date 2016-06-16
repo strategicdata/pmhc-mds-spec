@@ -29,7 +29,7 @@ leading zeros used when necessary to pad out a value. For instance, 13th March 2
 METeOR: `614094 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614094>`__",Date[8],"For Date fields, data must be recorded in compliance with the standard format used across the National Health
 Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with leading
 zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008."
-"`Principal Focus of Treatment`_ (FoE)
+"`Principal Focus of Treatment`_ (FoT)
 
 ",Char[1],":1: Psychological therapy
 :2: Low intensity psychological intervention

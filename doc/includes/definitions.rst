@@ -943,7 +943,7 @@ The range of activities that best describes the overall services intended
 to be delivered to the client throughout the course of the episode.  For most clients,
 this will equate to the activities that account for most time spent by the service provider.
 
-:Field name: FoE
+:Field name: FoT
 
 :Data type: Char[1]
 
@@ -956,7 +956,6 @@ this will equate to the activities that account for most time spent by the servi
 
 :Notes:
   Describes the main focus of the services to be delivered to the client for the
-  
   current episode of care, selected from a defined list of categories.
   
   Service providers are required to report on the ‘Principal focus of treatment plan’
@@ -968,7 +967,6 @@ this will equate to the activities that account for most time spent by the servi
   
   Principal focus of treatment plan is necessarily a judgement made by the provider
   at the outset of service delivery but consistent with good practice, should be made
-  
   on the basis of a treatment plan developed in collaboration with the client.
   
   1. Psychological therapy
