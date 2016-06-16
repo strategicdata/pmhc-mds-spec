@@ -7,7 +7,7 @@ Domain: |-
   - A unique code assigned by the PHN.
 ---
 Title: PMHC Specification Version Number
-Name: specification_version
+Name: SpecVer
 Type: Char[5]
 Definition: |-
   The version number of the PMHC specification document used.
@@ -798,7 +798,7 @@ Domain:
     1: Yes
     2: No
 ---
-Name: SerDate
+Name: service_date
 Definition: The date of each mental health service contact between a health service provider and patient/client.
 MeteorID: 494356
 Title: Mental Health Service Contact Date
@@ -939,8 +939,8 @@ Comments: |-
     whose clinical record the service contact would normally warrant a dated
     entry, is not participating.
 ---
-Name: Measure
-Title: measure
+Name: measure
+Title: Measure
 Type: Char[20]
 Domain: The name of the measure
 ---
@@ -953,7 +953,7 @@ Domain: |-
   National Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY,
   with leading zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
 ---
-Name: Score
-Title: score
+Name: score
+Title: Score
 Type: Char[2]
 Domain: The value of the score at this collection occasion.

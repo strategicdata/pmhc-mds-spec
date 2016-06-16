@@ -121,7 +121,7 @@ Relationships:
     Degree: many
     Required: 1
 ---
-RecType: Outcome Collection Occasion
+RecType: outcome_collection_occasion
 Fields:
   - collection_occasion_key
   - episode_key
