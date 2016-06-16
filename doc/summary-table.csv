@@ -1,0 +1,66 @@
+organisation,practitioner,client,episode,service_contact,outcome_collection_occasion
+"- Organisation Name
+- Organisation Code
+- Organisation Type
+- State
+","- Practitioner Key
+- Practitioner category
+- Cultural training flag
+- Year of Birth
+- Gender
+- Aboriginal And Torres Strait Islander Status
+- Practitioner Active
+","- Organisation Code
+- Client Key
+- Statistical Linkage Key
+- Date of Birth
+- Estimated Date of Birth Flag
+- Gender
+- Aboriginal And Torres Strait Islander Status
+- Country Of Birth
+- Main language other than English spoken at home
+- Proficiency in spoken English
+","- Episode Key
+- Client Key
+- Area of usual residence, postcode
+- Episode Start Date
+- Episode End Date
+- Referral Date
+- Principal Focus of Treatment
+- Labour Force Status
+- Employment Participation
+- Income Status - Ranges? or Low Income?
+- Source of Cash Income
+- NDIS participant
+- Marital Status
+- Accommodation
+- Episode Completion Status
+- Suicide Referral Flag
+- Principal Diagnosis
+- Other Diagnosis
+- Medication - Antipsychotics (N05A)
+- Medication - Anxiolytics (N05B)
+- Medication - Hypnotics and sedatives (N05C)
+- Medication - Antidepressants (N06A)
+- Medication - Psychostimulants and nootropics (N06B)
+- Referrer Type
+- Referrer Entity
+","- Service Contact Key
+- Client Key
+- Practitioner Key
+- Mental Health Service Contact Date
+- Service Type
+- Service Delivery Postcode
+- Service Modality
+- Service Participants
+- Venue
+- Duration
+- Copayment
+- Mental health service contact - client participation indicator
+- No Show
+","- Collection Occasion Key
+- Episode Key
+- Measure
+- Measure Date
+- Score
+"
