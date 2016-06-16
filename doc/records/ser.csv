@@ -1,5 +1,5 @@
 Data Element (Field Name),Type [Length],Notes / Values
-"`Service Event Key`_ (SerKey)
+"`Service Contact Key`_ (SerKey)
 
 ",Char[20],"A unique identifier for a service event within the PMHC. Must be unique within an organisation and stable
 over time."

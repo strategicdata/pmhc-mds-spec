@@ -123,8 +123,8 @@ The type of physical setting in which a person usually resides, as represented b
 
 ----------
 
-Area of ususal residence, postcode
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Area of usual residence, postcode
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The Australian postcode of the client
 
@@ -139,6 +139,12 @@ The Australian postcode of the client
   
   The full list of Australian Postcodes can be found at `Australia Post
   <http://www.auspost.com.au/>`_.
+
+:Notes:
+  When collecting the postcode of a person's usual place of residence, the ABS recommends that 'usual' be 
+  defined as: 'the place where the person has or intends to live for 6 months or more, or the place 
+  that the person regards as their main residence, or where the person has no other residence, the 
+  place they currently reside.' 
 
 :METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__
 
@@ -163,8 +169,8 @@ individual at the level of the PMHC top level organisation.
 Collection Occasion Key
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-This is a number or code assigned to each collection occasion in the
-flexible funding pool. The Collection Occasion Key is unique and stable for each collection occasion at the
+This is a number or code assigned to each collection occasion of outcome measures.
+The Collection Occasion Key is unique and stable for each collection occasion at the
 level of the organisation.
 
 :Field name: ColocKey
@@ -235,7 +241,7 @@ The country in which the client was born, as represented by a code.
 Cultural training flag
 ^^^^^^^^^^^^^^^^^^^^^^
 
-A flag to represent whether a practitioner has done cultural training.
+A flag to represent whether a practitioner has completed a recognised training programme in the delivery of culturally safe mental health services to Aboriginal and Torres Strait Islander peoples.
 
 :Field name: CultFlag
 
@@ -245,6 +251,9 @@ A flag to represent whether a practitioner has done cultural training.
   :1: Yes
   :2: No
   :9: Missing/Not recorded
+
+:Notes:
+  This item is as reported by the practitioner.
 
 ----------
 
@@ -374,9 +383,8 @@ The date on which an episode of mental health care is formally or statistically 
 Episode Key
 ^^^^^^^^^^^
 
-This is a number or code assigned to each episode in the.
-flexible funding pool. The Episode Key is unique and stable for each episode at the level of the
-organisation.
+This is a number or code assigned to each episode.
+The Episode Key is unique and stable for each episode at the level of the organisation.
 
 :Field name: EpiKey
 
@@ -464,7 +472,8 @@ Income Status - Ranges? or Low Income?
 Labour Force Status
 ^^^^^^^^^^^^^^^^^^^
 
-The self-reported status the person currently has in being either in the labour force (employed/unemployed) or not in the labour force, as represented by a code.
+The self-reported status the person currently has in being either in the labour force
+(employed/unemployed) or not in the labour force, as represented by a code.
 
 :Field name: LabourSt
 
@@ -628,16 +637,83 @@ Measure Name
 
 ----------
 
-Medication
-^^^^^^^^^^
+Medication - Antidepressants (N06A)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Whether the client is taking prescribed antidepressants for a mental health condition as assessed at intake assessment.
 
-:Field name: Medication
+:Field name: MedAntidep
 
 :Data type: Char[1]
 
 :Domain:
-  Was this the current four items plus 'Not on medication' with Yes/No/Missing for each item or an ATC Level 3 code?
+  :1: Yes
+  :2: No
+  :9: Unknown
+
+----------
+
+Medication - Antipsychotics (N05A)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Whether the client is taking prescribed antipsychotics for a mental health condition as assessed at intake assessment.
+
+:Field name: MedAntipsy
+
+:Data type: Char[1]
+
+:Domain:
+  :1: Yes
+  :2: No
+  :9: Unknown
+
+----------
+
+Medication - Anxiolytics (N05B)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Whether the client is taking prescribed anxiolytics for a mental health condition as assessed at intake assessment.
+
+:Field name: MedAnxi
+
+:Data type: Char[1]
+
+:Domain:
+  :1: Yes
+  :2: No
+  :9: Unknown
+
+----------
+
+Medication - Hypnotics and sedatives (N05C)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Whether the client is taking prescribed hypnotics and sedatives for a mental health condition as assessed at intake assessment.
+
+:Field name: MedHyp
+
+:Data type: Char[1]
+
+:Domain:
+  :1: Yes
+  :2: No
+  :9: Unknown
+
+----------
+
+Medication - Psychostimulants and nootropics (N06B)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Whether the client is taking prescribed psychostimulants and nootropics for a mental health condition as assessed at intake assessment.
+
+:Field name: MedPsycho
+
+:Data type: Char[1]
+
+:Domain:
+  :1: Yes
+  :2: No
+  :9: Unknown
 
 ----------
 
@@ -857,17 +933,28 @@ Principal Diagnosis
 Principal Focus of Treatment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The primary reason for the episode of care
+The range of activities that best describes the overall services intended to be delivered to the client throughout the course of the episode.  For most clients, this will equate to the activities that account for most time spent by the service provider.
 
 :Field name: FoE
 
 :Data type: Char[1]
 
 :Domain:
-  :1: Psychological intervention
-  :2: Clinical care coordination
-  :3: Complex care package for adults
-  :4: Care package for a youth with severe mental illness
+  :1: Psychological therapy
+  :2: Low intensity psychological intervention
+  :3: Clinical care coordination
+  :4: Complex care package for adults
+  :5: Care package for a youth with severe mental illness
+
+:Notes:
+  Describes the main focus of the services to be delivered to the client for the current episode of care, selected from a defined list of categories.
+  Service providers are required to report on the ‘Principal focus of treatment plan’ for all accepted referrals. This requires a judgement to be made about the main focus of the services to be delivered to the client for the current episode of care, made following initial assessment and modifiable at a later stage. It is chosen from a defined list of categories, with the provider required to select the category that best fits the treatment plan designed for the client.
+  Principal focus of treatment plan is necessarily a judgement made by the provider at the outset of service delivery but consistent with good practice, should be made on the basis of a treatment plan developed in collaboration with the client.
+  1. Psychological therapy The treatment plan for the client is primarily based around the delivery of psychological therapy by one or more mental health professionals. This category most closely matches the range of services delivered under the previous ATAPS program.
+  2. Low intensity psychological intervention The treatment plan for the client is primarily based around delivery of structured psychological interventions that are aimed at providing a less costly intervention alternative to ‘standard’ psychological therapy.  The essence of low intensity interventions is that they are aimed at relatively low usage of ‘specialist therapist time’  and are targeted at people with, or at risk of, mild mental illness.
+  3. Clinical care coordination The treatment plan for the client is primarily based around delivery of a range of services where the overarching aim is to coordinate care for the individual across multiple providers.
+  4. Complex care package for adults The treatment plan for the client is primarily based around the delivery of an individually tailored ‘package’ of services for an adult client with severe and complex mental illness who is being managed principally within a primary care setting. The overarching requirement is the episode of care aims to bundle a range of services that goes beyond ‘standard’ service delivery.
+  5. Care package for a youth with severe mental illness The treatment plan for the client is primarily based around the delivery of an individually tailored ‘package’ of services for a young person aged 12-24 years who presents with a severe mental illness.
 
 ----------
 
@@ -958,6 +1045,23 @@ Score
 
 ----------
 
+Service Contact Key
+^^^^^^^^^^^^^^^^^^^
+
+This is a number or code assigned to each service contact.
+The Service Contact Key is unique and stable for each service contact at the level of the
+organisation.
+
+:Field name: SerKey
+
+:Data type: Char[20]
+
+:Domain:
+  A unique identifier for a service event within the PMHC. Must be unique within an organisation and stable
+  over time.
+
+----------
+
 Service Delivery Postcode
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -975,23 +1079,6 @@ The Australian postcode where the service delivery took place
   - If Service Modality is 'Face to Face' a valid Australian postcode must be entered
 
 :METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__
-
-----------
-
-Service Event Key
-^^^^^^^^^^^^^^^^^
-
-This is a number or code assigned to each service event in the
-flexible funding pool. The Service Event Key is unique and stable for each service event at the level of the
-organisation.
-
-:Field name: SerKey
-
-:Data type: Char[20]
-
-:Domain:
-  A unique identifier for a service event within the PMHC. Must be unique within an organisation and stable
-  over time.
 
 ----------
 
