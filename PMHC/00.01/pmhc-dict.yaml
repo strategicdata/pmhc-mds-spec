@@ -131,7 +131,7 @@ Domain:
     2: No
     9: Missing/Not recorded
   Missing: 9
-Comment:
+Comments: |-
   This item is as reported by the practitioner.
 ---
 Name: YoB
@@ -334,7 +334,7 @@ Domain: |-
 
   The full list of Australian Postcodes can be found at `Australia Post
   <http://www.auspost.com.au/>`_.
-Comments:
+Comments: |-
   When collecting the postcode of a person's usual place of residence, the ABS recommends that 'usual' be 
   defined as: 'the place where the person has or intends to live for 6 months or more, or the place 
   that the person regards as their main residence, or where the person has no other residence, the 
@@ -351,7 +351,8 @@ Domain: |-
   For Date fields, data must be recorded in compliance with the standard format used across the National
   Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with
   leading zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
-Comments: This field will be derived from the first service event date.
+Comments: |-
+  This field will be derived from the first service event date.
 ---
 Definition: The date on which an episode of mental health care is formally or statistically ended.
 MeteorID: 614094
@@ -372,7 +373,8 @@ Domain: |-
   Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with
   leading zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
 ---
-Definition: The self-reported status the person currently has in being either in the labour force
+Definition: |-
+  The self-reported status the person currently has in being either in the labour force
   (employed/unemployed) or not in the labour force, as represented by a code.
 MeteorID: 621450
 Name: LabourSt
