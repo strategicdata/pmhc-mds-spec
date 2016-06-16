@@ -66,19 +66,23 @@ Fields:
   - CliPCode 
   - EpiStart
   - EpiEnd
+  - FoE
   - LabourSt
   - EmpPart
   - IncomeSt
   - IncomeSce
-  - Medication
   - NDIS
   - MaritalSt
   - Accom
-  - PrincDx
-  - OtherDx
-  - FoE
   - CompSt
   - SuicideRef
+  - PrincDx
+  - OtherDx
+  - MedAntipsy
+  - MedAnxi
+  - MedHyp
+  - MedAntidep
+  - MedPsycho
   - RefType
   - RefEntity
 Keys:
