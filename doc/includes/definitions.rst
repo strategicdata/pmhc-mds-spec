@@ -106,10 +106,10 @@ The type of physical setting in which a person usually resides, as represented b
   9 - Hospital
     Refers to residing in a hospital.
   
-  10 - Short term crisis, emergency or transitional accommodation facility (e.g. night shelters, refuges, hostels for the homeless, halfway houses)
-    Refers to residing in short term crisis accommodation, in emergency accommodation, or in a
-    transitional accommodation facility. This includes night shelters, refuges, hostels for the homeless,
-    and halfway houses.
+  10 - Short term crisis, emergency or transitional accommodation facility (e.g. night shelters, refuges,
+    hostels for the homeless, halfway houses) Refers to residing in short term crisis accommodation, in
+    emergency accommodation, or in a transitional accommodation facility. This includes night shelters,
+    refuges, hostels for the homeless, and halfway houses.
   
   11 - Public place/temporary shelter
     Public place/temporary shelter includes public places such as streets and parks, as well as
@@ -141,10 +141,13 @@ The Australian postcode of the client
   <http://www.auspost.com.au/>`_.
 
 :Notes:
-  When collecting the postcode of a person's usual place of residence, the ABS recommends that 'usual' be 
-  defined as: 'the place where the person has or intends to live for 6 months or more, or the place 
-  that the person regards as their main residence, or where the person has no other residence, the 
-  place they currently reside.' 
+  When collecting the postcode of a person's usual place of residence, the ABS recommends that 'usual' be
+  
+  defined as: 'the place where the person has or intends to live for 6 months or more, or the place
+  
+  that the person regards as their main residence, or where the person has no other residence, the
+  
+  place they currently reside.'
 
 :METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__
 
@@ -213,7 +216,7 @@ The country in which the client was born, as represented by a code.
 :Data type: Char[4]
 
 :Domain:
-  `Standard Australian Classification of Countries 2011 (SACC 2011) 4-digit code (ABS Catalogue No. 1269.0) 
+  `Standard Australian Classification of Countries 2011 (SACC 2011) 4-digit code (ABS Catalogue No. 1269.0)
   <http://www.abs.gov.au/ausstats/abs@.nsf/mf/1269.0>`_
   SACC 2011 is a four-digit, three-level hierarchical structure specifying major group,
   minor group and country. 9999 is used when the information is not known or the client has refused to provide
@@ -232,7 +235,7 @@ The country in which the client was born, as represented by a code.
   - South Africa
   - Scotland
   - Malaysia
-  - Other - please specify ......................... 
+  - Other - please specify .........................
 
 :METeOR: `459973 <http://meteor.aihw.gov.au/content/index.phtml/itemId/459973>`__
 
@@ -549,8 +552,9 @@ with other residents of the home or setting and regular visitors, as represented
 
 :Notes:
   The ABS recommends the following question in order to collect this data:
-  Which language does the client mainly speak at home? (If more that one language, indicate the one 
-  that is spoken most often.) 
+  Which language does the client mainly speak at home? (If more that one language, indicate the one
+  
+  that is spoken most often.)
   
   - English
   - Mandarin
@@ -870,7 +874,9 @@ The version number of the PMHC specification document used.
 Practitioner Active
 ^^^^^^^^^^^^^^^^^^^
 
-A flag to represent whether a practitioner is active. This is a system field that is aimed at helping organisations manage practitioner codes.
+A flag to represent whether a practitioner is active. This is a system field that is
+
+aimed at helping organisations manage practitioner codes.
 
 :Field name: Active
 
@@ -933,7 +939,9 @@ Principal Diagnosis
 Principal Focus of Treatment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The range of activities that best describes the overall services intended to be delivered to the client throughout the course of the episode.  For most clients, this will equate to the activities that account for most time spent by the service provider.
+The range of activities that best describes the overall services intended
+to be delivered to the client throughout the course of the episode.  For most clients,
+this will equate to the activities that account for most time spent by the service provider.
 
 :Field name: FoE
 
@@ -947,14 +955,49 @@ The range of activities that best describes the overall services intended to be 
   :5: Care package for a youth with severe mental illness
 
 :Notes:
-  Describes the main focus of the services to be delivered to the client for the current episode of care, selected from a defined list of categories.
-  Service providers are required to report on the ‘Principal focus of treatment plan’ for all accepted referrals. This requires a judgement to be made about the main focus of the services to be delivered to the client for the current episode of care, made following initial assessment and modifiable at a later stage. It is chosen from a defined list of categories, with the provider required to select the category that best fits the treatment plan designed for the client.
-  Principal focus of treatment plan is necessarily a judgement made by the provider at the outset of service delivery but consistent with good practice, should be made on the basis of a treatment plan developed in collaboration with the client.
-  1. Psychological therapy The treatment plan for the client is primarily based around the delivery of psychological therapy by one or more mental health professionals. This category most closely matches the range of services delivered under the previous ATAPS program.
-  2. Low intensity psychological intervention The treatment plan for the client is primarily based around delivery of structured psychological interventions that are aimed at providing a less costly intervention alternative to ‘standard’ psychological therapy.  The essence of low intensity interventions is that they are aimed at relatively low usage of ‘specialist therapist time’  and are targeted at people with, or at risk of, mild mental illness.
-  3. Clinical care coordination The treatment plan for the client is primarily based around delivery of a range of services where the overarching aim is to coordinate care for the individual across multiple providers.
-  4. Complex care package for adults The treatment plan for the client is primarily based around the delivery of an individually tailored ‘package’ of services for an adult client with severe and complex mental illness who is being managed principally within a primary care setting. The overarching requirement is the episode of care aims to bundle a range of services that goes beyond ‘standard’ service delivery.
-  5. Care package for a youth with severe mental illness The treatment plan for the client is primarily based around the delivery of an individually tailored ‘package’ of services for a young person aged 12-24 years who presents with a severe mental illness.
+  Describes the main focus of the services to be delivered to the client for the
+  
+  current episode of care, selected from a defined list of categories.
+  
+  Service providers are required to report on the ‘Principal focus of treatment plan’
+  for all accepted referrals. This requires a judgement to be made about the main focus
+  of the services to be delivered to the client for the current episode of care, made
+  following initial assessment and modifiable at a later stage. It is chosen from a
+  defined list of categories, with the provider required to select the category that
+  best fits the treatment plan designed for the client.
+  
+  Principal focus of treatment plan is necessarily a judgement made by the provider
+  at the outset of service delivery but consistent with good practice, should be made
+  
+  on the basis of a treatment plan developed in collaboration with the client.
+  
+  1. Psychological therapy
+     The treatment plan for the client is primarily based around the delivery of psychological
+     therapy by one or more mental health professionals. This category most closely matches
+     the range of services delivered under the previous ATAPS program.
+  
+  2. Low intensity psychological intervention
+     The treatment plan for the client is primarily based around delivery of structured
+     psychological interventions that are aimed at providing a less costly intervention
+     alternative to ‘standard’ psychological therapy.  The essence of low intensity
+     interventions is that they are aimed at relatively low usage of ‘specialist
+     therapist time’  and are targeted at people with, or at risk of, mild mental illness.
+  
+  3. Clinical care coordination
+     The treatment plan for the client is primarily based around delivery of a range
+     of services where the overarching aim is to coordinate care for the individual across multiple providers.
+  
+  4. Complex care package for adults
+     The treatment plan for the client is primarily based around the delivery of
+     an individually tailored ‘package’ of services for an adult client with
+     severe and complex mental illness who is being managed principally within
+     a primary care setting. The overarching requirement is the episode of care
+     aims to bundle a range of services that goes beyond ‘standard’ service delivery.
+  
+  5. Care package for a youth with severe mental illness
+     The treatment plan for the client is primarily based around the delivery of an
+     individually tailored ‘package’ of services for a young person aged 12-24
+     years who presents with a severe mental illness.
 
 ----------
 
@@ -1230,7 +1273,8 @@ Suicide Referral Flag
 ^^^^^^^^^^^^^^^^^^^^^
 
 Identifies those individuals where a recent history of suicide attempt, or suicide risk, was a
-factor noted in the referral that underpinned the person's needs for assistance at entry to the episode, 
+factor noted in the referral that underpinned the person's needs for assistance at entry to the episode,
+
 or was identified at initial assessment.
 
 :Field name: SuicideRef
