@@ -9,10 +9,6 @@ Data model
 
    PMHC data model
 
-.. csv-table:: Summary of data items
-  :file: summary-table.csv
-  :header-rows: 1
-
 Record formats
 --------------
 

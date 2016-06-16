@@ -9,4 +9,5 @@ Table of contents
 
    reporting-arrangements
    data-model-and-specifications
+   data-item-summary
 
