@@ -142,11 +142,8 @@ The Australian postcode of the client
 
 :Notes:
   When collecting the postcode of a person's usual place of residence, the ABS recommends that 'usual' be
-  
   defined as: 'the place where the person has or intends to live for 6 months or more, or the place
-  
   that the person regards as their main residence, or where the person has no other residence, the
-  
   place they currently reside.'
 
 :METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__
@@ -553,7 +550,6 @@ with other residents of the home or setting and regular visitors, as represented
 :Notes:
   The ABS recommends the following question in order to collect this data:
   Which language does the client mainly speak at home? (If more that one language, indicate the one
-  
   that is spoken most often.)
   
   - English
@@ -798,9 +794,12 @@ Where an appointment was made for a client, but the client failed to attend the 
 :Domain:
   :1: Yes
   :2: No
+
 :Notes:
-  1 - Yes means the client failed to attend the appointment.
-  2 - No means the client did attend the appointment.
+  1 - Yes
+    The client failed to attend the appointment.
+  2 - No
+    The client attended the appointment.
 
 ----------
 
@@ -875,7 +874,6 @@ Practitioner Active
 ^^^^^^^^^^^^^^^^^^^
 
 A flag to represent whether a practitioner is active. This is a system field that is
-
 aimed at helping organisations manage practitioner codes.
 
 :Field name: Active

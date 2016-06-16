@@ -870,10 +870,11 @@ Domain:
   Set:
     1: Yes
     2: No
-  Notes:
-    1 - Yes means the client failed to attend the appointment.
-
-    2 - No means the client did attend the appointment.
+Comments: |-
+  1 - Yes
+    The client failed to attend the appointment.
+  2 - No
+    The client attended the appointment.
 ---
 Name: SerPart
 Title: Service Participants
