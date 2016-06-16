@@ -88,5 +88,7 @@ Outcome collection occasion
    
 .. include:: records/coloc-notes.rst
 
+-----
+
 .. include:: includes/definitions.rst
 
