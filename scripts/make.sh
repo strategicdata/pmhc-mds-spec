@@ -38,6 +38,12 @@ cd doc
 
 curl -s -L http://www.gliffy.com/go/publish/image/10751755/L.png > figures/data-model.png
 
-docker run -ti -v `pwd`:/mnt/workdir stratdat/sphinx:production make $1
+if [ -z $1 ]; then
+  ARG1=html
+else
+  ARG1=$1
+fi
+
+docker run -ti -v `pwd`:/mnt/workdir stratdat/sphinx:production make $ARG1
 
 popd
