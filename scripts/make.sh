@@ -9,6 +9,8 @@ pushd .
 
 cd ../DDict/ 
 
+rm -f _doc/record/*.csv
+
 make install
 
 ./scripts/ddict2rst.pl -C PMHC -V 00.01 --defs
@@ -29,6 +31,7 @@ rm ../spec/doc/records/*
 rm ../spec/doc/includes/definitions.rst
 mv _doc/record/*.{csv,rst} ../spec/doc/records/
 mv _doc/definitions.rst ../spec/doc/includes/
+mv _doc/summary-table.csv ../spec/doc/summary-table.csv
 
 popd
 
