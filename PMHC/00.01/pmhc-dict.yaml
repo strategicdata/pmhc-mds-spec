@@ -87,7 +87,21 @@ Definition: The type of the referrer.
 Name: referrer_type
 Title: Referrer Type
 Type: Char[1]
-Domain: To be defined
+Domain:
+  Set:
+    1: Private Primary Health Care Organisation – for profit
+    2: Private Primary Health Care Organisation – not for profit
+    3: Medicare Local
+    4: Division of General Practice
+    5: Aboriginal Health/Medical Service
+    6: General Practice
+    7: Private Psychiatry service
+    8: Drug and/or Alcohol Service
+    9: Community-managed Community Support Organisation
+    10: State/territory health services
+    11: Other
+Comments:
+  Coding options will be finalised following feedback from PHNs.
 ---
 Definition: The entity of the referrer.
 Name: referrer_entity
