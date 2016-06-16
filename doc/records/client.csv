@@ -4,18 +4,22 @@ Data Element (Field Name),Type [Length],Notes / Values
 ",Char[6],- A unique code assigned by the PHN.
 "`Client Key`_ (client_key)
 
-",Char[20],A unique identifier for an individual within the PMHC top level organisation. Must be stable over time.
+",Char[20],"A unique identifier for an individual within the PMHC top level organisation.
+Must be stable over time."
 "`Statistical Linkage Key`_ (slk)
 
 
 
-METeOR: `349510 <http://meteor.aihw.gov.au/content/index.phtml/itemId/349510>`__",Char[40],"System generated non-identifiable alphanumeric code derived from information held by the PMHC organisation.
+METeOR: `349510 <http://meteor.aihw.gov.au/content/index.phtml/itemId/349510>`__",Char[40],"System generated non-identifiable alphanumeric code derived from information
+held by the PMHC organisation.
 
 Supported formats:
-  - 14 character `SLK <http://meteor.aihw.gov.au/content/index.phtml/itemId/349510>`_
-  - a `Crockford encoded <http://www.crockford.com/wrmg/base32.html>`_ sha1 hash of a 14 character SLK.
-    This must be 32 characters in length.
-  - a hex encoded sha1 hash of a 14 character SLK. This must be 40 characters in length."
+  - 14 character `SLK
+    <http://meteor.aihw.gov.au/content/index.phtml/itemId/349510>`_
+  - a `Crockford encoded <http://www.crockford.com/wrmg/base32.html>`_ sha1
+    hash of a 14 character SLK. This must be 32 characters in length.
+  - a hex encoded sha1 hash of a 14 character SLK. This must be 40 characters
+    in length."
 "`Date of Birth`_ (date_of_birth)
 
 
@@ -46,18 +50,19 @@ METeOR: `291036 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291036>`__
 
 
 
-METeOR: `459973 <http://meteor.aihw.gov.au/content/index.phtml/itemId/459973>`__",Char[4],"`Standard Australian Classification of Countries 2011 (SACC 2011) 4-digit code (ABS Catalogue No. 1269.0)
-<http://www.abs.gov.au/ausstats/abs@.nsf/mf/1269.0>`_
-SACC 2011 is a four-digit, three-level hierarchical structure specifying major group,
-minor group and country. 9999 is used when the information is not known or the client has refused to provide
-the information."
+METeOR: `459973 <http://meteor.aihw.gov.au/content/index.phtml/itemId/459973>`__",Char[4],"`Standard Australian Classification of Countries 2011 (SACC 2011) 4-digit
+code (ABS Catalogue No. 1269.0)
+<http://www.abs.gov.au/ausstats/abs@.nsf/mf/1269.0>`_ SACC 2011 is a
+four-digit, three-level hierarchical structure specifying major group, minor
+group and country. 9999 is used when the information is not known or the
+client has refused to provide the information."
 "`Main language other than English spoken at home`_ (main_lang_at_home)
 
 
 
-METeOR: `460125 <http://meteor.aihw.gov.au/content/index.phtml/itemId/460125>`__",Char[4],"`Australian Standard Classification of Languages 2011 4-digit code (ABS Catalogue No. 1267.0)
-<http://www.abs.gov.au/ausstats/abs@.nsf/mf/1267.0>`_ or 9999 if
-info is not known or client refuses to supply."
+METeOR: `460125 <http://meteor.aihw.gov.au/content/index.phtml/itemId/460125>`__",Char[4],"`Australian Standard Classification of Languages 2011 4-digit code (ABS
+Catalogue No. 1267.0) <http://www.abs.gov.au/ausstats/abs@.nsf/mf/1267.0>`_
+or 9999 if info is not known or client refuses to supply."
 "`Proficiency in spoken English`_ (prof_english)
 
 

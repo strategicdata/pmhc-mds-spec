@@ -1,19 +1,22 @@
 Data Element (Field Name),Type [Length],Notes / Values
 "`Collection Occasion Key`_ (collection_occasion_key)
 
-",Char[20],"A unique identifier for a collection occasion within the PMHC. Must be unique within an organisation and
-stable over time."
+",Char[20],"A unique identifier for a collection occasion within the PMHC. Must be unique
+within an organisation and stable over time."
 "`Episode Key`_ (episode_key)
 
-",Char[20],A unique identifier for an episode within the PMHC. Must be unique within an organisation and stable over time.
+",Char[20],"A unique identifier for an episode within the PMHC. Must be unique within an
+organisation and stable over time."
 "`Measure`_ (measure)
 
 ",Char[20],The name of the measure
 "`Measure Date`_ (measure_date)
 
-",Date[8],"For Date fields, data must be recorded in compliance with the standard format used across the
-National Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY,
-with leading zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008."
+",Date[8],"For Date fields, data must be recorded in compliance with the standard format
+used across the National Health Data Dictionary; specifically, dates must be
+of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
+necessary to pad out a value. For instance, 13th March 2008 would appear as
+13032008."
 "`Score`_ (score)
 
 ",Char[2],The value of the score at this collection occasion.

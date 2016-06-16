@@ -1,10 +1,11 @@
 ---
-Definition: A sequence of characters which uniquely identifies the PMHC organisation.
 Name: organisation_code
 Title: Organisation Code
 Type: Char[6]
 Domain: |-
   - A unique code assigned by the PHN.
+Definition: |-
+  A sequence of characters which uniquely identifies the PMHC organisation.
 ---
 Title: PMHC Specification Version Number
 Name: SpecVer
@@ -17,35 +18,36 @@ Domain:
 Required: 1
 ---
 Definition: |-
-  This is a number or code assigned to each episode.
-  The Episode Key is unique and stable for each episode at the level of the organisation.
+  This is a number or code assigned to each episode. The Episode Key is unique
+  and stable for each episode at the level of the organisation.
 Name: episode_key
 Title: Episode Key
 Type: Char[20]
 Domain: |-
-  A unique identifier for an episode within the PMHC. Must be unique within an organisation and stable over time.
+  A unique identifier for an episode within the PMHC. Must be unique within an
+  organisation and stable over time.
 ---
 Name: service_contact_key
 Definition: |-
-  This is a number or code assigned to each service contact.
-  The Service Contact Key is unique and stable for each service contact at the level of the
+  This is a number or code assigned to each service contact. The Service
+  Contact Key is unique and stable for each service contact at the level of the
   organisation.
 Title: Service Contact Key
 Type: Char[20]
 Domain: |-
-  A unique identifier for a service event within the PMHC. Must be unique within an organisation and stable
-  over time.
+  A unique identifier for a service event within the PMHC. Must be unique
+  within an organisation and stable over time.
 ---
 Definition: |-
-  This is a number or code assigned to each collection occasion of outcome measures.
-  The Collection Occasion Key is unique and stable for each collection occasion at the
-  level of the organisation.
+  This is a number or code assigned to each collection occasion of outcome
+  measures. The Collection Occasion Key is unique and stable for each
+  collection occasion at the level of the organisation.
 Name: collection_occasion_key
 Title: Collection Occasion Key
 Type: Char[20]
 Domain: |-
-  A unique identifier for a collection occasion within the PMHC. Must be unique within an organisation and
-  stable over time.
+  A unique identifier for a collection occasion within the PMHC. Must be unique
+  within an organisation and stable over time.
 ---
 Definition: The name of the organisation.
 Name: organisation_name
@@ -75,7 +77,10 @@ Domain:
     8: Australian Capital Territory
     9: Other Territories
   Notes: |-
-    - Name is taken from Australian `Statistical Geography Standard (ASGS) July 2011 <http://www.abs.gov.au/ausstats/abs@.nsf/0/871A7FF33DF471FBCA257801000DCD5F?Opendocument>`_.
+    - Name is taken from Australian `Statistical Geography Standard (ASGS) July
+      2011
+      <http://www.abs.gov.au/ausstats/abs@.nsf/0/871A7FF33DF471FBCA257801000DCD5
+      F?Opendocument>`_.
     - Code is from Meteor with the addition of code for Other Territories.
 ---
 Definition: The type of the referrer.
@@ -91,8 +96,8 @@ Type: Char[1]
 Domain: To be defined
 ---
 Definition: |-
-  A flag to represent whether a practitioner is active. This is a system field that is
-  aimed at helping organisations manage practitioner codes.
+  A flag to represent whether a practitioner is active. This is a system field
+  that is aimed at helping organisations manage practitioner codes.
 Name: active
 Title: Practitioner Active
 Type: Char[1]
@@ -105,7 +110,8 @@ Definition: A sequence of characters which uniquely identifies a practitioner.
 Name: practitioner_key
 Title: Practitioner Key
 Type: Char[20]
-Domain: A unique identifier for a practitioner within the PMHC top level organisation.
+Domain: |-
+  A unique identifier for a practitioner within the PMHC top level organisation.
 ---
 Definition: The type or category of the practitioner.
 Name: category
@@ -122,7 +128,10 @@ Domain:
     7: Low intensity mental health worker
     8: Other
 ---
-Definition: A flag to represent whether a practitioner has completed a recognised training programme in the delivery of culturally safe mental health services to Aboriginal and Torres Strait Islander peoples.
+Definition: |-
+  A flag to represent whether a practitioner has completed a recognised
+  training programme in the delivery of culturally safe mental health services
+  to Aboriginal and Torres Strait Islander peoples.
 Name: cultural_flag
 Title: Cultural training flag
 Type: Char[1]
@@ -144,8 +153,10 @@ Missing: 9999
 Comments: |-
   If the year of birth is unknown, the following approaches should be used:
 
-  - If the age of the client is known, the age should be used to derive the year of birth
-  - If the age of the client is unknown, an estimated age of the client should be used to estimate a year of birth
+  - If the age of the client is known, the age should be used to derive the
+    year of birth
+  - If the age of the client is unknown, an estimated age of the client should
+    be used to estimate a year of birth
   - If the date of birth is totally unknown, use 9999.
 ---
 Definition: |-
@@ -155,22 +166,28 @@ Definition: |-
 Name: client_key
 Title: Client Key
 Type: Char[20]
-Domain: A unique identifier for an individual within the PMHC top level organisation. Must be stable over time.
+Domain: |-
+  A unique identifier for an individual within the PMHC top level organisation.
+  Must be stable over time.
 ---
-Definition: A key that enables two or more records belonging to the same individual
-  to be brought together.
+Definition: |-
+  A key that enables two or more records belonging to the same individual to be
+  brought together.
 MeteorID: 349510
 Name: slk
 Title: Statistical Linkage Key
 Type: Char[40]
 Domain: |-
-  System generated non-identifiable alphanumeric code derived from information held by the PMHC organisation.
+  System generated non-identifiable alphanumeric code derived from information
+  held by the PMHC organisation.
 
   Supported formats:
-    - 14 character `SLK <http://meteor.aihw.gov.au/content/index.phtml/itemId/349510>`_
-    - a `Crockford encoded <http://www.crockford.com/wrmg/base32.html>`_ sha1 hash of a 14 character SLK.
-      This must be 32 characters in length.
-    - a hex encoded sha1 hash of a 14 character SLK. This must be 40 characters in length.
+    - 14 character `SLK
+      <http://meteor.aihw.gov.au/content/index.phtml/itemId/349510>`_
+    - a `Crockford encoded <http://www.crockford.com/wrmg/base32.html>`_ sha1
+      hash of a 14 character SLK. This must be 32 characters in length.
+    - a hex encoded sha1 hash of a 14 character SLK. This must be 40 characters
+      in length.
 Comments: |-
   SLK values are stored in sha1_hex format.
 ---
@@ -185,14 +202,20 @@ Missing: 09099999
 Comments: |-
   If the date of birth is unknown, the following approaches should be used:
 
-  - If the age of the person is known, the age should be used to derive the year of birth
-  - If the age of the person is unknown, an estimated age of the person should be used to estimate a year of birth
-  - An actual or estimated year of birth should then be converted into an estimated date of birth using the
+  - If the age of the person is known, the age should be used to derive the
+    year of birth
+  - If the age of the person is unknown, an estimated age of the person should
+    be used to estimate a year of birth
+  - An actual or estimated year of birth should then be converted into an
+    estimated date of birth using the
     following convention: 0101Estimated year of birth.
   - If the date of birth is totally unknown, use 09099999.
-  - If you have estimated the year of birth make sure you record this in the 'Estimated date of birth flag'
+  - If you have estimated the year of birth make sure you record this in the
+    'Estimated date of birth flag'
 ---
-Definition: The date of birth estimate flag records whether or not the client's date of birth has been estimated.
+Definition: |-
+  The date of birth estimate flag records whether or not the client's date of
+  birth has been estimated.
 Name: est_date_of_birth
 Title: Estimated Date of Birth Flag
 Type: Char[1]
@@ -205,9 +228,11 @@ Domain:
   Missing: 9
 ---
 Definition: |-
-  The term 'gender' refers to the way in which a person identifies their masculine or feminine
-  characteristics. A persons gender relates to their deeply held internal and individual sense of gender and is
-  not always exclusively male or female. It may or may not correspond to their sex assigned at birth.
+  The term 'gender' refers to the way in which a person identifies their
+  masculine or feminine characteristics. A persons gender relates to their
+  deeply held internal and individual sense of gender and is not always
+  exclusively male or female. It may or may not correspond to their sex
+  assigned at birth.
 Name: gender
 Title: Gender
 Type:  Char[1]
@@ -218,11 +243,15 @@ Domain:
     3: Other
     0: Not stated/Inadequately described
   Notes: |-
-    As defined by Australian Bureau of Statistics `1200.0.55.012 - Standard for Sex and Gender Variables, 2016
-    <http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/1200.0.55.012Main%20Features12016?opendocument&tabname=Summary&prodno=1200.0.55.012&issue=2016&num=&view=>`_
+    As defined by Australian Bureau of Statistics `1200.0.55.012 - Standard for
+    Sex and Gender Variables, 2016
+    <http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/1200.0.55.012Main%20
+    Features12016?opendocument&tabname=Summary&prodno=1200.0.55.012&issue=2016&n
+    um=&view=>`_
 ---
-Definition: Whether a person identifies as being of Aboriginal and/or Torres Strait Islander origin, as
-  represented by a code.
+Definition: |-
+  Whether a person identifies as being of Aboriginal and/or Torres Strait
+  Islander origin, as represented by a code.
 MeteorID: 291036
 Name: atsi_status
 Title: Aboriginal And Torres Strait Islander Status
@@ -236,12 +265,15 @@ Domain:
     9: Not stated/inadequately described
   Missing: 9
 Comments: |-
-  Code 9 is not to be available as a valid answer to the questions but is intended for use:
+  Code 9 is not to be available as a valid answer to the questions but is
+  intended for use:
 
-  - Primarily when importing data from other data collections that do not contain mappable data.
+  - Primarily when importing data from other data collections that do not
+    contain mappable data.
   - Where an answer was refused.
-  - Where the question was not able to be asked prior to completion of assistance because the client was unable
-    to communicate or a person who knows the client was not available.
+  - Where the question was not able to be asked prior to completion of
+    assistance because the client was unable to communicate or a person who
+    knows the client was not available.
 ---
 Definition: The country in which the client was born, as represented by a code.
 MeteorID: 459973
@@ -249,11 +281,12 @@ Name: country_of_birth
 Title: Country Of Birth
 Type: Char[4]
 Domain: |-
-  `Standard Australian Classification of Countries 2011 (SACC 2011) 4-digit code (ABS Catalogue No. 1269.0)
-  <http://www.abs.gov.au/ausstats/abs@.nsf/mf/1269.0>`_
-  SACC 2011 is a four-digit, three-level hierarchical structure specifying major group,
-  minor group and country. 9999 is used when the information is not known or the client has refused to provide
-  the information.
+  `Standard Australian Classification of Countries 2011 (SACC 2011) 4-digit
+  code (ABS Catalogue No. 1269.0)
+  <http://www.abs.gov.au/ausstats/abs@.nsf/mf/1269.0>`_ SACC 2011 is a
+  four-digit, three-level hierarchical structure specifying major group, minor
+  group and country. 9999 is used when the information is not known or the
+  client has refused to provide the information.
 Comments: |-
   The ABS recommends the following question in order to collect this data:
   In which country was the client born?
@@ -270,22 +303,23 @@ Comments: |-
   - Other - please specify .........................
 ---
 Definition: |-
-  The language reported by a client as the main language other than English spoken by that client in
-  his/her home (or most recent private residential setting occupied by the client) to communicate
-  with other residents of the home or setting and regular visitors, as represented by a code.
+  The language reported by a client as the main language other than English
+  spoken by that client in his/her home (or most recent private residential
+  setting occupied by the client) to communicate with other residents of the
+  home or setting and regular visitors, as represented by a code.
 MeteorID: 460125
 Name: main_lang_at_home
 Title: Main language other than English spoken at home
 Type: Char[4]
 Domain: |-
-  `Australian Standard Classification of Languages 2011 4-digit code (ABS Catalogue No. 1267.0)
-  <http://www.abs.gov.au/ausstats/abs@.nsf/mf/1267.0>`_ or 9999 if
-  info is not known or client refuses to supply.
+  `Australian Standard Classification of Languages 2011 4-digit code (ABS
+  Catalogue No. 1267.0) <http://www.abs.gov.au/ausstats/abs@.nsf/mf/1267.0>`_
+  or 9999 if info is not known or client refuses to supply.
 Missing: 9999
 Comments: |
   The ABS recommends the following question in order to collect this data:
-  Which language does the client mainly speak at home? (If more that one language, indicate the one
-  that is spoken most often.)
+  Which language does the client mainly speak at home? (If more that one
+  language, indicate the one that is spoken most often.)
 
   - English
   - Mandarin
@@ -300,8 +334,9 @@ Comments: |
   - Other - please specify .........................
 ---
 Definition: |-
-  The self-assessed level of ability to speak English, asked of people whose first language is a
-  language other than English or who speak a language other than English at home.
+  The self-assessed level of ability to speak English, asked of people whose
+  first language is a language other than English or who speak a language other
+  than English at home.
 MeteorID: 270203
 Name: prof_english
 Title: Proficiency in spoken English
@@ -317,11 +352,13 @@ Domain:
   Missing: 9
 Comments: |-
   0 - Not applicable (persons under 5 years of age or who speak only English)
-    Not applicable, is to be used for people under 5 years of age and people who speak only English.
+    Not applicable, is to be used for people under 5 years of age and people
+    who speak only English.
 
   9 - Not stated/inadequately described
-    Not stated/inadequately described, is not to be used on primary collection forms. It is primarily for use in
-    administrative collections when transferring data from data sets where the item has not been collected.
+    Not stated/inadequately described, is not to be used on primary collection
+    forms. It is primarily for use in administrative collections when
+    transferring data from data sets where the item has not been collected.
 ---
 Definition: The Australian postcode of the client
 MeteorID: 429894
@@ -336,47 +373,57 @@ Domain: |-
   The full list of Australian Postcodes can be found at `Australia Post
   <http://www.auspost.com.au/>`_.
 Comments: |-
-  When collecting the postcode of a person's usual place of residence, the ABS recommends that 'usual' be
-  defined as: 'the place where the person has or intends to live for 6 months or more, or the place
-  that the person regards as their main residence, or where the person has no other residence, the
-  place they currently reside.'
+  When collecting the postcode of a person's usual place of residence, the ABS
+  recommends that 'usual' be defined as: 'the place where the person has or
+  intends to live for 6 months or more, or the place that the person regards as
+  their main residence, or where the person has no other residence, the place
+  they currently reside.'
 ---
 Definition: |-
-  The date on which the client formally or statistically commences an episode of mental health care,
-  expressed as DDMMYYYY.
+  The date on which the client formally or statistically commences an episode
+  of mental health care, expressed as DDMMYYYY.
 MeteorID: 614072
 Name: episode_start_date
 Title: Episode Start Date
 Type: Date[8]
 Domain: |-
-  For Date fields, data must be recorded in compliance with the standard format used across the National
-  Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with
-  leading zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
+  For Date fields, data must be recorded in compliance with the standard format
+  used across the National Health Data Dictionary; specifically, dates must be
+  of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
+  necessary to pad out a value. For instance, 13th March 2008 would appear as
+  13032008.
 Comments: |-
   This field will be derived from the first service event date.
 ---
-Definition: The date on which an episode of mental health care is formally or statistically ended.
+Definition: |-
+  The date on which an episode of mental health care is formally or
+  statistically ended.
 MeteorID: 614094
 Name: episode_end_date
 Title: Episode End Date
 Type: Date[8]
 Domain: |-
-  For Date fields, data must be recorded in compliance with the standard format used across the National Health
-  Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with leading
-  zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
+  For Date fields, data must be recorded in compliance with the standard format
+  used across the National Health Data Dictionary; specifically, dates must be
+  of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
+  necessary to pad out a value. For instance, 13th March 2008 would appear as
+  13032008.
 ---
 Definition: The date the referrer made the referral.
 Name: referral_date
 Title: Referral Date
 Type: Date[8]
 Domain: |-
-  For Date fields, data must be recorded in compliance with the standard format used across the National
-  Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with
-  leading zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
+  For Date fields, data must be recorded in compliance with the standard format
+  used across the National Health Data Dictionary; specifically, dates must be
+  of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
+  necessary to pad out a value. For instance, 13th March 2008 would appear as
+  13032008.
 ---
 Definition: |-
-  The self-reported status the person currently has in being either in the labour force
-  (employed/unemployed) or not in the labour force, as represented by a code.
+  The self-reported status the person currently has in being either in the
+  labour force (employed/unemployed) or not in the labour force, as represented
+  by a code.
 MeteorID: 621450
 Name: labour_status
 Title: Labour Force Status
@@ -390,49 +437,61 @@ Domain:
   Missing: 9
 Comments: |-
   1 - Employed
-    Employed persons are those aged 15 years and over who met one of the following criteria during the
-    reference week:
+    Employed persons are those aged 15 years and over who met one of the
+    following criteria during the reference week:
 
-    - Worked for one hour or more for pay, profit, commission or payment in kind, in a job or business or
-      son a farm (employees and owner managers of incorporated or unincorporated enterprises).
-    - Worked for one hour or more without pay in a family business or on a farm (contributing family workers).
+    - Worked for one hour or more for pay, profit, commission or payment in
+      kind, in a job or business or son a farm (employees and owner managers of
+      incorporated or unincorporated enterprises).
+    - Worked for one hour or more without pay in a family business or on a farm
+      (contributing family workers).
     - Were employees who had a job but were not at work and were:
 
-      - away from work for less than four weeks up to the end of the reference week; or
-      - away from work for more than four weeks up to the end of the reference week and
-      - received pay for some or all of the four week period to the end of the reference week; or
+      - away from work for less than four weeks up to the end of the reference
+        week; or
+      - away from work for more than four weeks up to the end of the reference
+        week and
+      - received pay for some or all of the four week period to the end of the
+        reference week; or
       - away from work as a standard work or shift arrangement; or
       - on strike or locked out; or
       - on workers' compensation and expected to return to their job.
     - Were owner managers who had a job, business or farm, but were not at work.
 
   2 - Unemployed
-    Unemployed persons are those aged 15 years and over who were not employed during the reference week, and:
+    Unemployed persons are those aged 15 years and over who were not employed
+    during the reference week, and:
 
-    - had actively looked for full time or part time work at any time in the four weeks up to the end of
-      the reference week and were available for work in the reference week; or
-    - were waiting to start a new job within four weeks from the end of the reference week and could have
-      started in the reference week if the job had been available then.
+    - had actively looked for full time or part time work at any time in the
+      four weeks up to the end of the reference week and were available for
+      work in the reference week; or
+    - were waiting to start a new job within four weeks from the end of the
+      reference week and could have started in the reference week if the job
+      had been available then.
 
     Actively looked for work includes:
 
     - written, telephoned or applied to an employer for work;
     - had an interview with an employer for work;
     - answered an advertisement for a job;
-    - checked or registered with a Job Services Australia provider or any other employment agency;
+    - checked or registered with a Job Services Australia provider or any other
+      employment agency;
     - taken steps to purchase or start your own business;
     - advertised or tendered for work; and
     - contacted friends or relatives in order to obtain work.
 
   3 - Not in the labour force
-    Persons not in the labour force are those aged 15 years and over who were not in the categories
-    employed or unemployed, as defined, during the reference week. They include people who undertook
-    unpaid household duties or other voluntary work only, were retired, voluntarily inactive and
-    those permanently unable to work.
+    Persons not in the labour force are those aged 15 years and over who were
+    not in the categories employed or unemployed, as defined, during the
+    reference week. They include people who undertook unpaid household duties
+    or other voluntary work only, were retired, voluntarily inactive and those
+    permanently unable to work.
 ---
 Name: employment_participation
 Title: Employment Participation
-Definition: Whether a person in paid employment is employed full-time or part-time, as represented by a code.
+Definition: |-
+  Whether a person in paid employment is employed full-time or part-time, as
+  represented by a code.
 MeteorID: 269950
 Type: Char[1]
 Domain:
@@ -443,31 +502,36 @@ Domain:
     9: Not stated/inadequately described
   Missing: 9
 Comments: |-
-  Applies only to people whose labour force status is employed. (See metadata item Labour Force Status,
-  for a definition of 'employed'). Paid employment includes persons who performed some work for wages or
-  salary, in cash or in kind, and persons temporarily absent from a paid employment job but who retained a
-  formal attachment to that job.
+  Applies only to people whose labour force status is employed. (See metadata
+  item Labour Force Status, for a definition of 'employed'). Paid employment
+  includes persons who performed some work for wages or salary, in cash or in
+  kind, and persons temporarily absent from a paid employment job but who
+  retained a formal attachment to that job.
 
   1 - Full-time
     Employed persons are working full-time if they:
     (a) usually work 35 hours or more in a week (in all paid jobs) or
-    (b) although usually working less than 35 hours a week, actually worked 35 hours or more during
-    the reference period.
+    (b) although usually working less than 35 hours a week, actually worked 35
+    hours or more during the reference period.
 
   2 - Part-time
-    Employed persons are working part-time if they usually work less than 35 hours a week (in all paid jobs)
-    and either did so during the reference period, or were not at work in the reference period.
+    Employed persons are working part-time if they usually work less than 35
+    hours a week (in all paid jobs) and either did so during the reference
+    period, or were not at work in the reference period.
 
   9 - Not stated / inadequately described
-    Is not to be used on primary collection forms. It is primarily for use in administrative collections
-    when transferring data from data sets where the item has not been collected.
+    Is not to be used on primary collection forms. It is primarily for use in
+    administrative collections when transferring data from data sets where the
+    item has not been collected.
 ---
 Name: income_status
 Title: Income Status - Ranges? or Low Income?
 Type: Char[1]
 Domain: To be defined
 ---
-Definition: The source from which a person derives the greatest proportion of his/her income, as represented by a code.
+Definition: |-
+  The source from which a person derives the greatest proportion of his/her
+  income, as represented by a code.
 MeteorID: 386449
 Name: income_source
 Title: Source of Cash Income
@@ -486,16 +550,19 @@ Domain:
 Comments: |-
   This data standard is not applicable to person's aged less than 16 years.
 
-  This item refers to the source by which a person derives most (equal to or greater than 50%) of his/her income.
-  If the person has multiple sources of income and none are equal to or greater than 50%, the one which contributes
+  This item refers to the source by which a person derives most (equal to or
+  greater than 50%) of his/her income. If the person has multiple sources of
+  income and none are equal to or greater than 50%, the one which contributes
   the largest percentage should be counted.
 
-  This item refers to a person's own main source of income, not that of a partner or of other household members.
-  If it is difficult to determine a 'main source of income' over the reporting period (i.e. it may vary over time)
-  please report the main source of income during the reference week.
+  This item refers to a person's own main source of income, not that of a
+  partner or of other household members. If it is difficult to determine a
+  'main source of income' over the reporting period (i.e. it may vary over
+  time) please report the main source of income during the reference week.
 
-  Code 7 'Not known' should only be recorded when it has not been possible for the service user or their
-  carer/family/advocate to provide the information (i.e. they have been asked but do not know).
+  Code 7 'Not known' should only be recorded when it has not been possible for
+  the service user or their carer/family/advocate to provide the information
+  (i.e. they have been asked but do not know).
 ---
 Name: principal_diagnosis
 Title: Principal Diagnosis
@@ -507,7 +574,9 @@ Title: Other Diagnosis
 Type: Char[1]
 Domain: To be defined
 ---
-Definition: Whether the client is taking prescribed antipsychotics for a mental health condition as assessed at intake assessment.
+Definition: |-
+  Whether the client is taking prescribed antipsychotics for a mental health
+  condition as assessed at intake assessment.
 Name: medication_antipsychotics
 Title: Medication - Antipsychotics (N05A)
 Type: Char[1]
@@ -517,7 +586,9 @@ Domain:
     2: No
     9: Unknown
 ---
-Definition: Whether the client is taking prescribed anxiolytics for a mental health condition as assessed at intake assessment.
+Definition: |-
+  Whether the client is taking prescribed anxiolytics for a mental health
+  condition as assessed at intake assessment.
 Name: medication_anxiolytics
 Title: Medication - Anxiolytics (N05B)
 Type: Char[1]
@@ -527,7 +598,9 @@ Domain:
     2: No
     9: Unknown
 ---
-Definition: Whether the client is taking prescribed hypnotics and sedatives for a mental health condition as assessed at intake assessment.
+Definition: |-
+  Whether the client is taking prescribed hypnotics and sedatives for a mental
+  health condition as assessed at intake assessment.
 Name: medication_hypnotics
 Title: Medication - Hypnotics and sedatives (N05C)
 Type: Char[1]
@@ -537,7 +610,9 @@ Domain:
     2: No
     9: Unknown
 ---
-Definition: Whether the client is taking prescribed antidepressants for a mental health condition as assessed at intake assessment.
+Definition: |-
+  Whether the client is taking prescribed antidepressants for a mental health
+  condition as assessed at intake assessment.
 Name: medication_antidepressants
 Title: Medication - Antidepressants (N06A)
 Type: Char[1]
@@ -547,7 +622,9 @@ Domain:
     2: No
     9: Unknown
 ---
-Definition: Whether the client is taking prescribed psychostimulants and nootropics for a mental health condition as assessed at intake assessment.
+Definition: |-
+  Whether the client is taking prescribed psychostimulants and nootropics for a
+  mental health condition as assessed at intake assessment.
 Name: medication_psychostimulants
 Title: Medication - Psychostimulants and nootropics (N06B)
 Type: Char[1]
@@ -558,9 +635,10 @@ Domain:
     9: Unknown
 ---
 Definition: |-
-  The range of activities that best describes the overall services intended
-  to be delivered to the client throughout the course of the episode.  For most clients,
-  this will equate to the activities that account for most time spent by the service provider.
+  The range of activities that best describes the overall services intended to
+  be delivered to the client throughout the course of the episode. For most
+  clients, this will equate to the activities that account for most time spent
+  by the service provider.
 Name: princ_focus_of_treatment
 Title: Principal Focus of Treatment
 Type: Char[1]
@@ -576,8 +654,8 @@ Comments: |-
   Describes the main focus of the services to be delivered to the client for the
   current episode of care, selected from a defined list of categories.
 
-  Service providers are required to report on the ‘Principal focus of treatment
-  plan’ for all accepted referrals. This requires a judgement to be made about
+  Service providers are required to report on the 'Principal focus of treatment
+  plan' for all accepted referrals. This requires a judgement to be made about
   the main focus of the services to be delivered to the client for the current
   episode of care, made following initial assessment and modifiable at a later
   stage. It is chosen from a defined list of categories, with the provider
@@ -589,44 +667,59 @@ Comments: |-
   should be made on the basis of a treatment plan developed in collaboration
   with the client.
 
-  1. Psychological therapy
-     The treatment plan for the client is primarily based around the delivery
-     of psychological therapy by one or more mental health professionals. This
-     category most closely matches the range of services delivered under the
-     previous ATAPS program.
+  1 - Psychological therapy
+    The treatment plan for the client is primarily based around the delivery of
+    psychological therapy by one or more mental health professionals. This
+    category most closely matches the type of services delivered under the
+    previous ATAPS program where up to 12 individual treatment sessions, and 18
+    in exceptional circumstances, could be provided. These sessions could be
+    supplemented by up to 10 group-based sessions.
 
-  2. Low intensity psychological intervention
-     The treatment plan for the client is primarily based around delivery of
-     time-limited, structured psychological interventions that are aimed at
-     providing a less costly intervention alternative to ‘standard’
-     psychological therapy.  The essence of low intensity interventions is that
-     they utilise nil or relatively little trained mental health professional
-     time’  and are targeted at people with, or at risk of, mild mental illness.
-     Low intensity episodes can be delivered through a range of mechanisms
-     including use of individuals with appropriate competencies but who do not
-     meet the requirements for registration, credentialing or recognition as a
-     mental health professional; delivery of services principally through
-     group-based programs; and delivery of brief forms of treatment by mental
-     health professionals.  based on CBT and/or psychoeducation group-based
-     delivery of brief episodes.
+    The concept of 'mental health professionals' has a specific meaning defined
+    invthe various guidance documentation prepared to support PHNs in
+    implementation of reforms. It refers to service providers who do not meet
+    the requirements for registration, credentialing or recognition as a
+    qualified mental health professional and includes:
 
-  3. Clinical care coordination
+     - Psychiatrists
+     - Registered Psychologists
+     - Clinical Psychologists
+     - Mental Health Nurses;
+     - Occupational Therapists;
+     - Social Workers
+     - Aboriginal and Torres Strait Islander health workers.
+
+  2 - Low intensity psychological intervention
+    The treatment plan for the client is primarily based around delivery of
+    time-limited, structured psychological interventions that are aimed at
+    providing a less costly intervention alternative to 'standard'
+    psychological therapy. The essence of low intensity interventions is that
+    they utilise nil or relatively little qualified mental health professional
+    time and are targeted at people with, or at risk of, mild mental illness.
+    Low intensity episodes can be delivered through a range of mechanisms
+    including use of individuals with appropriate competencies but who do not
+    meet the requirements for registration, credentialing or recognition as a
+    mental health professional; delivery of services principally through
+    group-based programs; and delivery of brief or low cost forms of treatment
+    by mental health professionals.
+
+  3 - Clinical care coordination
      The treatment plan for the client is primarily based around delivery of
      a range of services where the overarching aim is to coordinate and better
      integrate care for the individual across multiple providers. Clinical care
      coordination and liaison activities account for a significant proportion
      of service contacts delivered throughout these episode.
 
-  4. Complex care package for adults
+  4 - Complex care package for adults
      The treatment plan for the client is primarily based around the delivery
-     of an individually tailored ‘package’ of services for an adult client
+     of an individually tailored 'package' of services for an adult client
      with severe and complex mental illness who is being managed principally
      within a primary care setting. The overarching requirement is the episode
-     of care aims to bundle a range of services that extend beyond ‘standard’
+     of care aims to bundle a range of services that extend beyond 'standard'
      service delivery where this would not otherwise not sufficiently meet
      clinical needs.
 
-  5. Child and youth-specific mental health services
+  5 - Child and youth-specific mental health services
      The treatment plan for the client is primarily based around the delivery
      of a range of services for children (0-11 years) or
      youth (aged 12-24 years) who present with a mental illness, or are at
@@ -637,7 +730,7 @@ Comments: |-
      Child and youth-specific mental health episodes have substantial
      flexibility in types of services actually delivered.
 
-  6. Other NEC
+  6 - Other NEC
      The treatment plan for the client is primarily based around services
      that cannot be described by other categories.
 ---
@@ -653,7 +746,8 @@ Domain:
     5: Treatment incomplete but referral closed
     6: Patient ineligible
 ---
-Definition: Is the client a participant in the National Disability Insurance Scheme?
+Definition: |-
+  Is the client a participant in the National Disability Insurance Scheme?
 Name: ndis_participant
 Title: NDIS participant
 Type: Char[1]
@@ -664,8 +758,9 @@ Domain:
     9: Not stated/inadequately described
 ---
 Definition: |-
-  A person's current relationship status in terms of a couple relationship or, for those not in a
-  couple relationship, the existence of a current or previous registered marriage, as represented by a code.
+  A person's current relationship status in terms of a couple relationship or,
+  for those not in a couple relationship, the existence of a current or
+  previous registered marriage, as represented by a code.
 MeteorID: 291045
 Name: marital_status
 Title: Marital Status
@@ -683,20 +778,26 @@ Comments: |-
   Refers to the current marital status of a person.
 
   2 - Widowed
-    This code usually refers to registered marriages but when self-reported may also refer to de facto marriages.
+    This code usually refers to registered marriages but when self-reported may
+    also refer to de facto marriages.
 
   4 - Separated
-    This code refers to registered marriages but when self-reported may also refer to de facto marriages.
+    This code refers to registered marriages but when self-reported may also
+    refer to de facto marriages.
 
   5 - Married (registered and de facto)
-    Includes people who have been divorced or widowed but have since re-married, and should be
-    generally accepted as applicable to all de facto couples, including of the same sex.
+    Includes people who have been divorced or widowed but have since
+    re-married, and should be generally accepted as applicable to all de facto
+    couples, including of the same sex.
 
   6 - Not stated/inadequately described
-    This code is not for use on primary collection forms. It is primarily for use in administrative
-    collections when transferring data from data sets where the item has not been collected.
+    This code is not for use on primary collection forms. It is primarily for
+    use in administrative collections when transferring data from data sets
+    where the item has not been collected.
 ---
-Definition: The type of physical setting in which a person usually resides, as represented by a code.
+Definition: |-
+  The type of physical setting in which a person usually resides, as
+  represented by a code.
 MeteorID: 621477
 Name: accommodation
 Title: Accommodation
@@ -704,92 +805,101 @@ Type: Char[2]
 Domain:
   Set:
     1: Private residence (e.g. private or public rental, owned, purchasing etc)
-    2: Residence within an Aboriginal/Torres Strait Islander community (e.g. rented private residence,
-       temporary shelter)
+    2: Residence within an Aboriginal/Torres Strait Islander community (e.g.
+       rented private residence, temporary shelter)
     3: Domestic-scale supported living facility (e.g. group homes)
-    4: Supported accommodation facility (e.g. hostels, supported residential services or facilities)
+    4: Supported accommodation facility (e.g. hostels, supported residential
+       services or facilities)
     5: Boarding house/private hotel
     6: Independent living unit within a retirement village
     7: Residential aged care facility (nursing home or aged care hostel)
     8: Psychiatric/mental health community care facility
     9: Hospital
-    10: Short term crisis, emergency or transitional accommodation facility (e.g. night shelters, refuges,
-        hostels for the homeless, halfway houses)
+    10: Short term crisis, emergency or transitional accommodation facility
+        (e.g. night shelters, refuges, hostels for the homeless, halfway houses)
     11: Public place/temporary shelter
     12: Other
     99: Not stated/inadequately described
   Missing: 99
 Comments: |-
-  'Usual' is defined as where the person usually resides for four or more days per week on average. If it is
-  difficult to determine the person's 'usual' residential setting for the reporting period, the setting the person
-  resided in during the reference week is reported.
+  'Usual' is defined as where the person usually resides for four or more days
+  per week on average. If it is difficult to determine the person's 'usual'
+  residential setting for the reporting period, the setting the person resided
+  in during the reference week is reported.
 
   1 - Private residence (e.g. private or public rental, owned, purchasing etc)
-   Private residence refers to private residences which include a wide range of dwelling types,
-   such as houses, flats, units, caravans, mobile homes, boats etc.
+    Private residence refers to private residences which include a wide range of
+    dwelling types, such as houses, flats, units, caravans, mobile homes, boats
+    etc.
 
   2 - Residence within an Aboriginal/Torres Strait Islander community (e.g. rented private residence, temporary shelter)
-    Residence within an Aboriginal/Torres Strait Islander community should be used for service users that
-    live in this type of setting, regardless of whether the residence is a private residence or a
-    public place/temporary shelter (codes 1 and 11).
+    Residence within an Aboriginal/Torres Strait Islander community should be
+    used for service users that live in this type of setting, regardless of
+    whether the residence is a private residence or a public place/temporary
+    shelter (codes 1 and 11).
 
   3 - Domestic-scale supported living facility (e.g. group homes)
-    Domestic-scale supported living facility refers to community living settings in which service users
-    reside in a facility that provides support in some way by staff or volunteers. This category includes
-    group homes, cluster apartments where a support worker lives on site, community residential apartments,
-    congregate care arrangements, etc. Domestic-scale supported living settings may or may not have 24 hour
-    supervision and care. Independent living units in retirement villages should be coded to 6 and
-    community psychiatric facilities should be coded to 8. (Service users receiving service type
-    1.04 'Group homes' should be coded to 3).
+    Domestic-scale supported living facility refers to community living
+    settings in which service users reside in a facility that provides support
+    in some way by staff or volunteers. This category includes group homes,
+    cluster apartments where a support worker lives on site, community
+    residential apartments, congregate care arrangements, etc. Domestic-scale
+    supported living settings may or may not have 24 hour supervision and care.
+    Independent living units in retirement villages should be coded to 6 and
+    community psychiatric facilities should be coded to 8. (Service users
+    receiving service type 1.04 'Group homes' should be coded to 3).
 
   4 - Supported accommodation facility (e.g. hostels, supported residential services or facilities)
-    Supported accommodation facility refers to settings in which service users reside in an accommodation
-    facility which provides board or lodging for a number of people and which has support services provided
-    on what is usually a 24 hour basis by rostered care workers. (Service users receiving DS NMDS service
-    types 1.01, 1.02 or 1.03 should be coded to 4). Supported accommodation facilities include hostels for
-    people with disability. This code should be used for larger supported accommodation facilities
-    (usually 7 or more people) that provide 24 hour supervision or care. Smaller supported accommodation
-    facilities (i.e. less than 7 people) which may or may not have 24 hour supervision or care should be
-    coded to 3 'Domestic-scale supported living facility'. Aged care hostels should be coded to 7
-    'residential aged care facility'.
+    Supported accommodation facility refers to settings in which service users
+    reside in an accommodation facility which provides board or lodging for a
+    number of people and which has support services provided on what is usually
+    a 24 hour basis by rostered care workers. (Service users receiving DS NMDS
+    service types 1.01, 1.02 or 1.03 should be coded to 4). Supported
+    accommodation facilities include hostels for people with disability. This
+    code should be used for larger supported accommodation facilities (usually
+    7 or more people) that provide 24 hour supervision or care. Smaller
+    supported accommodation facilities (i.e. less than 7 people) which may or
+    may not have 24 hour supervision or care should be coded to 3
+    'Domestic-scale supported living facility'. Aged care hostels should be
+    coded to 7 'residential aged care facility'.
+
 
   5 - Boarding house/private hotel
     Refers to residing in a boarding house or in a private hotel.
 
   6 - Independent living unit within a retirement village
-    Refers to residing in an independent living unit within a retirement village.
+    Refers to residing in an independent living unit within a retirement
+    village.
 
   7 - Residential aged care facility(nursing home or aged care hostel)
-    Residential aged care facility includes permanent residents of Residential aged care services
-    (formerly nursing homes and aged care hostels) and Multi-purpose services or Multi-purpose centres,
-    who are receiving low level or high level care.
+    Residential aged care facility includes permanent residents of Residential
+    aged care services (formerly nursing homes and aged care hostels) and
+    Multi-purpose services or Multi-purpose centres, who are receiving low
+    level or high level care.
 
   8 - Psychiatric/mental health community care facility
-    Psychiatric/mental health community care facility refers to community care units which provide
-    accommodation and non-acute care and support on a temporary basis to people with mental illness
-    or psychological disabilities.
+    Psychiatric/mental health community care facility refers to community care
+    units which provide accommodation and non-acute care and support on a
+    temporary basis to people with mental illness or psychological disabilities.
 
   9 - Hospital
     Refers to residing in a hospital.
 
   10 - Short term crisis, emergency or transitional accommodation facility (e.g. night shelters, refuges,
-    hostels for the homeless, halfway houses) Refers to residing in short term crisis accommodation, in
-    emergency accommodation, or in a transitional accommodation facility. This includes night shelters,
-    refuges, hostels for the homeless, and halfway houses.
+    hostels for the homeless, halfway houses) Refers to residing in short term
+    crisis accommodation, in emergency accommodation, or in a transitional
+    accommodation facility. This includes night shelters, refuges, hostels for
+    the homeless, and halfway houses.
 
   11 - Public place/temporary shelter
-    Public place/temporary shelter includes public places such as streets and parks, as well as
-    temporary shelters such as bus shelters or camps and accommodation outside legal tenure arrangements,
-    such as squats.
+    Public place/temporary shelter includes public places such as streets and
+    parks, as well as temporary shelters such as bus shelters or camps and
+    accommodation outside legal tenure arrangements, such as squats.
 
   12 - Other
-    Other includes situations such as a child under a court/guardianship order with no usual address.
+    Other includes situations such as a child under a court/guardianship order
+    with no usual address.
 ---
-Definition: |-
-  Identifies those individuals where a recent history of suicide attempt, or suicide risk, was a
-  factor noted in the referral that underpinned the person's needs for assistance at entry to the episode,
-
-  or was identified at initial assessment.
 Name: suicide_referral_flag
 Title: Suicide Referral Flag
 Type: Char[1]
@@ -797,16 +907,25 @@ Domain:
   Set:
     1: Yes
     2: No
+Definition: |-
+  Identifies those individuals where a recent history of suicide attempt, or
+  suicide risk, was a factor noted in the referral that underpinned the
+  person's needs for assistance at entry to the episode or was identified at
+  initial assessment.
 ---
 Name: service_date
-Definition: The date of each mental health service contact between a health service provider and patient/client.
+Definition: |-
+  The date of each mental health service contact between a health service
+  provider and patient/client.
 MeteorID: 494356
 Title: Mental Health Service Contact Date
 Type: Date[8]
 Domain: |-
-  For Date fields, data must be recorded in compliance with the standard format used across the National
-  Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with
-  leading zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
+  For Date fields, data must be recorded in compliance with the standard format
+  used across the National Health Data Dictionary; specifically, dates must be
+  of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
+  necessary to pad out a value. For instance, 13th March 2008 would appear as
+  13032008.
 ---
 Definition: The main type of service provided in the service contact, as
   represented by the service type that accounted for most provider time.
@@ -830,11 +949,11 @@ Comments: |-
   to report on Service Type for all Service Contacts.
 
   1 - Assessment
-    Determination of a person‘s mental health status and need for mental
+    Determination of a person's mental health status and need for mental
     health services, made by a suitably trained mental health professional,
     based on the collection and evaluation of data obtained through interview
-    and observation, of a person‘s history and presenting problem(s).
-    Assessment may include consultation with the person‘s family and concludes
+    and observation, of a person's history and presenting problem(s).
+    Assessment may include consultation with the person's family and concludes
     with formation of problems/issues, documentation of a preliminary
     diagnosis, and a treatment plan.
 
@@ -872,7 +991,7 @@ Comments: |-
      health care providers, acute health, emergency services, rehabilitation
      and support services, family, friends, other support people and carers
      and other agencies that have some level of responsibility for the
-     client’s treatment and/or well being.
+     client's treatment and/or well being.
 
   5 - Clinical nursing services
     Services delivered by mental health nurses that cannot be described
@@ -880,7 +999,7 @@ Comments: |-
     to effectively manage their symptoms and avoid unnecessary hospitalisation.
     Clinical nursing services include:
 
-    - monitoring a client’s mental state;
+    - monitoring a client's mental state;
     - liaising closely with family and carers as appropriate;
     - administering and monitoring compliance with medication;
     - providing information on physical health care, as required and,
@@ -903,11 +1022,13 @@ Title: Service Delivery Postcode
 MeteorID: 429894
 Type: Char[4]
 Domain: |-
-  A valid Australian postcode or 9999 if the postcode is unknown.
-  The full list of Australian Postcodes can be found at `Australia Post <http://www.auspost.com.au/>`_.
+  A valid Australian postcode or 9999 if the postcode is unknown. The full list
+  of Australian Postcodes can be found at `Australia Post
+  <http://www.auspost.com.au/>`_.
 
   - If Service Modality is not 'Face to Face' enter 9999
-  - If Service Modality is 'Face to Face' a valid Australian postcode must be entered
+  - If Service Modality is 'Face to Face' a valid Australian postcode must be
+    entered
 ---
 Definition: How the service was delivered.
 Name: service_modality
@@ -920,8 +1041,10 @@ Domain:
     3: Video
     4: Internet-based
   Notes: |-
-    - If 'Face to Face' is selected, a value other than 'Not applicable' must be selected for Venue
-    - If 'Face to Face' is selected a valid Australian postcode must be entered for Service Delivery Postcode.
+    - If 'Face to Face' is selected, a value other than 'Not applicable' must
+      be selected for Venue
+    - If 'Face to Face' is selected a valid Australian
+      postcode must be entered for Service Delivery Postcode.
 ---
 Definition: Where the service was delivered.
 Name: venue
@@ -936,7 +1059,8 @@ Domain:
     5: Other
     6: Not applicable (Service modality is not face to face)
 Comments: |-
-  - Values other than 'Not applicable' only to be specified when Service Modality is 'Face to Face'.
+  - Values other than 'Not applicable' only to be specified when Service
+    Modality is 'Face to Face'.
 ---
 Definition: The time from the start to finish of a service contact.
 Name: duration
@@ -958,14 +1082,19 @@ Definition: The co-payment is the amount paid by the client per session.
 Name: copayment
 Title: Copayment
 Type: Char[9]
-Domain: Up to 6 digits before the decimal point; up to 2 digits after the decimal point
+Domain: |-
+  Up to 6 digits before the decimal point; up to 2 digits after the decimal
+  point
 Comments: |-
-  The co-payment is the amount paid by the client per session, not the fee paid by the project to
-  the practitioner or the fee paid by the project to the practitioner plus the client contribution. In many cases,
-  there will not be a co-payment charged and therefore zero should be entered. Where a co-payment is charged
-  it should be minimal and based on an individual's capacity to pay.
+  The co-payment is the amount paid by the client per session, not the fee paid
+  by the project to the practitioner or the fee paid by the project to the
+  practitioner plus the client contribution. In many cases, there will not be a
+  co-payment charged and therefore zero should be entered. Where a co-payment
+  is charged it should be minimal and based on an individual's capacity to pay.
 ---
-Definition: Where an appointment was made for a client, but the client failed to attend the appointment.
+Definition: |-
+  Where an appointment was made for a client, but the client failed to attend
+  the appointment.
 Name: no_show
 Title: No Show
 Type: Char[1]
@@ -1026,9 +1155,11 @@ Name: measure_date
 Title: Measure Date
 Type: Date[8]
 Domain: |-
-  For Date fields, data must be recorded in compliance with the standard format used across the
-  National Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY,
-  with leading zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008.
+  For Date fields, data must be recorded in compliance with the standard format
+  used across the National Health Data Dictionary; specifically, dates must be
+  of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
+  necessary to pad out a value. For instance, 13th March 2008 would appear as
+  13032008.
 ---
 Name: score
 Title: Score

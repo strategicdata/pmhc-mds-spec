@@ -1,11 +1,12 @@
 Data Element (Field Name),Type [Length],Notes / Values
 "`Service Contact Key`_ (service_contact_key)
 
-",Char[20],"A unique identifier for a service event within the PMHC. Must be unique within an organisation and stable
-over time."
+",Char[20],"A unique identifier for a service event within the PMHC. Must be unique
+within an organisation and stable over time."
 "`Client Key`_ (client_key)
 
-",Char[20],A unique identifier for an individual within the PMHC top level organisation. Must be stable over time.
+",Char[20],"A unique identifier for an individual within the PMHC top level organisation.
+Must be stable over time."
 "`Practitioner Key`_ (practitioner_key)
 
 ",Char[20],A unique identifier for a practitioner within the PMHC top level organisation.
@@ -13,9 +14,11 @@ over time."
 
 
 
-METeOR: `494356 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494356>`__",Date[8],"For Date fields, data must be recorded in compliance with the standard format used across the National
-Health Data Dictionary; specifically, dates must be of fixed 8 column width in the format DDMMYYYY, with
-leading zeros used when necessary to pad out a value. For instance, 13th March 2008 would appear as 13032008."
+METeOR: `494356 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494356>`__",Date[8],"For Date fields, data must be recorded in compliance with the standard format
+used across the National Health Data Dictionary; specifically, dates must be
+of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
+necessary to pad out a value. For instance, 13th March 2008 would appear as
+13032008."
 "`Service Type`_ (service_type)
 
 ",Char[1],":1: Assessment
@@ -30,11 +33,13 @@ leading zeros used when necessary to pad out a value. For instance, 13th March 2
 
 
 
-METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__",Char[4],"A valid Australian postcode or 9999 if the postcode is unknown.
-The full list of Australian Postcodes can be found at `Australia Post <http://www.auspost.com.au/>`_.
+METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__",Char[4],"A valid Australian postcode or 9999 if the postcode is unknown. The full list
+of Australian Postcodes can be found at `Australia Post
+<http://www.auspost.com.au/>`_.
 
 - If Service Modality is not 'Face to Face' enter 9999
-- If Service Modality is 'Face to Face' a valid Australian postcode must be entered"
+- If Service Modality is 'Face to Face' a valid Australian postcode must be
+  entered"
 "`Service Modality`_ (service_modality) [#tn_service_contact1]_
 
 ",Char[1],":1: Face to Face
@@ -67,7 +72,8 @@ The full list of Australian Postcodes can be found at `Australia Post <http://ww
 :9: over 120 mins"
 "`Copayment`_ (copayment)
 
-",Char[9],Up to 6 digits before the decimal point; up to 2 digits after the decimal point
+",Char[9],"Up to 6 digits before the decimal point; up to 2 digits after the decimal
+point"
 "`Mental health service contact - client participation indicator`_ (participation_indicator)
 
 

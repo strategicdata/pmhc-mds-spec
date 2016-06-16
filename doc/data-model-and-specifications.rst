@@ -64,12 +64,12 @@ Episode
 
 ----------
 
-Service event
-^^^^^^^^^^^^^
+Service contact
+^^^^^^^^^^^^^^^
 
 | Explanatory text to go here ...
 
-.. csv-table:: Service event record layout
+.. csv-table:: Service contact record layout
    :file: records/service_contact.csv
    :header-rows: 1
    
