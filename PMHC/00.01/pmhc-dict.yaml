@@ -92,7 +92,6 @@ Domain: To be defined
 ---
 Definition: |-
   A flag to represent whether a practitioner is active. This is a system field that is
-
   aimed at helping organisations manage practitioner codes.
 
 Name: Active
@@ -125,7 +124,6 @@ Domain:
     8: Other
 ---
 Definition: A flag to represent whether a practitioner has completed a recognised training programme in the delivery of culturally safe mental health services to Aboriginal and Torres Strait Islander peoples.
-
 Name: CultFlag
 Title: Cultural training flag
 Type: Char[1]
@@ -271,7 +269,6 @@ Comments: |-
   - Scotland
   - Malaysia
   - Other - please specify .........................
-
 ---
 Definition: |-
   The language reported by a client as the main language other than English spoken by that client in
@@ -289,7 +286,6 @@ Missing: 9999
 Comments: |
   The ABS recommends the following question in order to collect this data:
   Which language does the client mainly speak at home? (If more that one language, indicate the one
-
   that is spoken most often.)
 
   - English
@@ -342,13 +338,9 @@ Domain: |-
   <http://www.auspost.com.au/>`_.
 Comments: |-
   When collecting the postcode of a person's usual place of residence, the ABS recommends that 'usual' be
-
   defined as: 'the place where the person has or intends to live for 6 months or more, or the place
-
   that the person regards as their main residence, or where the person has no other residence, the
-
   place they currently reside.'
-
 ---
 Definition: |-
   The date on which the client formally or statistically commences an episode of mental health care,
@@ -566,12 +558,11 @@ Domain:
     2: No
     9: Unknown
 ---
-Definition: The range of activities that best describes the overall services intended
-
+Definition: |-
+  The range of activities that best describes the overall services intended
   to be delivered to the client throughout the course of the episode.  For most clients,
-
   this will equate to the activities that account for most time spent by the service provider.
-Name: FoE
+Name: FoT
 Title: Principal Focus of Treatment
 Type: Char[1]
 Domain:
@@ -583,7 +574,6 @@ Domain:
     5: Care package for a youth with severe mental illness
 Comments: |-
   Describes the main focus of the services to be delivered to the client for the
-
   current episode of care, selected from a defined list of categories.
 
   Service providers are required to report on the ‘Principal focus of treatment plan’
@@ -595,7 +585,6 @@ Comments: |-
 
   Principal focus of treatment plan is necessarily a judgement made by the provider
   at the outset of service delivery but consistent with good practice, should be made
-
   on the basis of a treatment plan developed in collaboration with the client.
 
   1. Psychological therapy
