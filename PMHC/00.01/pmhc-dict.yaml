@@ -130,7 +130,7 @@ Domain: |-
 ---
 Definition: The type or category of the practitioner.
 Name: practitioner_category
-Title: Practitioner category
+Title: Practitioner Category
 Type: Char[1]
 Domain:
   Set:
@@ -149,7 +149,7 @@ Definition: |-
   training programme in the delivery of culturally safe mental health services
   to Aboriginal and Torres Strait Islander peoples.
 Name: cultural_flag
-Title: Cultural training flag
+Title: Cultural Training Flag
 Type: Char[1]
 Domain:
   Set:
@@ -325,7 +325,7 @@ Definition: |-
   home or setting and regular visitors, as represented by a code.
 MeteorID: 460125
 Name: main_lang_at_home
-Title: Main language other than English spoken at home
+Title: Main Language Other Than English Spoken at Home
 Type: Char[4]
 Domain: |-
   `Australian Standard Classification of Languages 2011 4-digit code (ABS
@@ -355,7 +355,7 @@ Definition: |-
   than English at home.
 MeteorID: 270203
 Name: prof_english
-Title: Proficiency in spoken English
+Title: Proficiency in Spoken English
 Type: Char[1]
 Domain:
   Set:
@@ -379,7 +379,7 @@ Comments: |-
 Definition: The Australian postcode of the client
 MeteorID: 429894
 Name: client_postcode
-Title: Area of usual residence, postcode
+Title: Area of Usual Residence, Postcode
 Type: Char[4]
 Domain: |-
   A valid Australian postcode or 9999 if the postcode is unknown or the client
@@ -767,7 +767,7 @@ Domain:
 Definition: |-
   Is the client a participant in the National Disability Insurance Scheme?
 Name: ndis_participant
-Title: NDIS participant
+Title: NDIS Participant
 Type: Char[1]
 Domain:
   Set:
@@ -1140,7 +1140,7 @@ Definition: |-
   represented by a code.
 MeteorID: 494341
 Name: participation_indicator
-Title: Mental health service contact - client participation indicator
+Title: Service Contact Client Participation Indicator
 Type: Char[1]
 Domain:
   Set:
@@ -1164,7 +1164,7 @@ Comments: |-
 ---
 Definition: The name of the measure.
 Name: measure
-Title: Collection Occasion Measure
+Title: Collection Occasion Measure Name
 Type: Char[20]
 Domain: To be defined.
 ---
