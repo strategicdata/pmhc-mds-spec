@@ -12,7 +12,7 @@ Data model
 Record formats
 --------------
 
-Organisation
+Provider Organisation
 ^^^^^^^^^^^^
 
 | Explanatory text to go here ...
