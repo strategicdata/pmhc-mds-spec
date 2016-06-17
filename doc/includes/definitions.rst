@@ -1191,7 +1191,20 @@ The type of the referrer.
 :Data type: Char[1]
 
 :Domain:
-  To be defined
+  :1: Private Primary Health Care Organisation - for profit
+  :2: Private Primary Health Care Organisation - not for profit
+  :3: Medicare Local
+  :4: Division of General Practice
+  :5: Aboriginal Health/Medical Service
+  :6: General Practice
+  :7: Private Psychiatry service
+  :8: Drug and/or Alcohol Service
+  :9: Community-managed Community Support Organisation
+  :10: State/territory health services
+  :11: Other
+
+:Notes:
+  Coding options will be finalised following feedback from PHNs.
 
 ----------
 
@@ -1486,8 +1499,7 @@ Suicide Referral Flag
 
 Identifies those individuals where a recent history of suicide attempt, or
 suicide risk, was a factor noted in the referral that underpinned the
-person's needs for assistance at entry to the episode or was identified at
-initial assessment.
+person's needs for assistance at entry to the episode.
 
 :Field name: suicide_referral_flag
 

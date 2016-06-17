@@ -89,8 +89,8 @@ Title: Referrer Type
 Type: Char[1]
 Domain:
   Set:
-    1: Private Primary Health Care Organisation – for profit
-    2: Private Primary Health Care Organisation – not for profit
+    1: Private Primary Health Care Organisation - for profit
+    2: Private Primary Health Care Organisation - not for profit
     3: Medicare Local
     4: Division of General Practice
     5: Aboriginal Health/Medical Service
