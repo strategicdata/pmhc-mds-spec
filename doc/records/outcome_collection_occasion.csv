@@ -7,7 +7,7 @@ within an organisation and stable over time."
 
 ",Char[20],"A unique identifier for an episode within the PMHC. Must be unique within an
 organisation and stable over time."
-"`Collection Occasion Measure`_ (measure)
+"`Collection Occasion Measure Name`_ (measure)
 
 ",Char[20],To be defined.
 "`Collection Occasion Measure Date`_ (measure_date)

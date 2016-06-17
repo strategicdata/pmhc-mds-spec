@@ -141,7 +141,7 @@ represented by a code.
 
 ----------
 
-Area of usual residence, postcode
+Area of Usual Residence, Postcode
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The Australian postcode of the client
@@ -203,20 +203,6 @@ collection occasion at the level of the organisation.
 
 ----------
 
-Collection Occasion Measure
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The name of the measure.
-
-:Field name: measure
-
-:Data type: Char[20]
-
-:Domain:
-  To be defined.
-
-----------
-
 Collection Occasion Measure Date
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -232,6 +218,20 @@ The date the measure was given.
   of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
   necessary to pad out a value. For instance, 13th March 2008 would appear as
   13032008.
+
+----------
+
+Collection Occasion Measure Name
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The name of the measure.
+
+:Field name: measure
+
+:Data type: Char[20]
+
+:Domain:
+  To be defined.
 
 ----------
 
@@ -284,7 +284,7 @@ The country in which the client was born, as represented by a code.
 
 ----------
 
-Cultural training flag
+Cultural Training Flag
 ^^^^^^^^^^^^^^^^^^^^^^
 
 A flag to represent whether a practitioner has completed a recognised
@@ -591,7 +591,7 @@ by a code.
 
 ----------
 
-Main language other than English spoken at home
+Main Language Other Than English Spoken at Home
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The language reported by a client as the main language other than English
@@ -759,41 +759,7 @@ mental health condition as assessed at intake assessment.
 
 ----------
 
-Mental health service contact - client participation indicator
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-An indicator of whether the client participated in the service contact, as
-represented by a code.
-
-:Field name: participation_indicator
-
-:Data type: Char[1]
-
-:Domain:
-  :1: Yes
-  :2: No
-
-:Notes:
-  Service contacts are not restricted to in-person communication but can include
-  telephone, video link or other forms of direct communication.
-  
-  1 - Yes
-    This code is to be used for service contacts between a specialised mental
-    health service provider and the patient/client in whose clinical record the
-    service contact would normally warrant a dated entry, where the
-    patient/client is participating.
-  
-  2 - No
-    This code is to be used for service contacts between a specialised mental
-    health service provider and a third party(ies) where the patient/client, in
-    whose clinical record the service contact would normally warrant a dated
-    entry, is not participating.
-
-:METeOR: `494341 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494341>`__
-
-----------
-
-NDIS participant
+NDIS Participant
 ^^^^^^^^^^^^^^^^
 
 Is the client a participant in the National Disability Insurance Scheme?
@@ -854,7 +820,7 @@ practitioner codes.
 
 ----------
 
-Practitioner category
+Practitioner Category
 ^^^^^^^^^^^^^^^^^^^^^
 
 The type or category of the practitioner.
@@ -1033,7 +999,7 @@ by the service provider.
 
 ----------
 
-Proficiency in spoken English
+Proficiency in Spoken English
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The self-assessed level of ability to speak English, asked of people whose
@@ -1191,6 +1157,40 @@ The type of the referrer.
 
 :Domain:
   To be defined
+
+----------
+
+Service Contact Client Participation Indicator
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+An indicator of whether the client participated in the service contact, as
+represented by a code.
+
+:Field name: participation_indicator
+
+:Data type: Char[1]
+
+:Domain:
+  :1: Yes
+  :2: No
+
+:Notes:
+  Service contacts are not restricted to in-person communication but can include
+  telephone, video link or other forms of direct communication.
+  
+  1 - Yes
+    This code is to be used for service contacts between a specialised mental
+    health service provider and the patient/client in whose clinical record the
+    service contact would normally warrant a dated entry, where the
+    patient/client is participating.
+  
+  2 - No
+    This code is to be used for service contacts between a specialised mental
+    health service provider and a third party(ies) where the patient/client, in
+    whose clinical record the service contact would normally warrant a dated
+    entry, is not participating.
+
+:METeOR: `494341 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494341>`__
 
 ----------
 

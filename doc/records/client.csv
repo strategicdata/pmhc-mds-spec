@@ -56,14 +56,14 @@ code (ABS Catalogue No. 1269.0)
 four-digit, three-level hierarchical structure specifying major group, minor
 group and country. 9999 is used when the information is not known or the
 client has refused to provide the information."
-"`Main language other than English spoken at home`_ (main_lang_at_home)
+"`Main Language Other Than English Spoken at Home`_ (main_lang_at_home)
 
 
 
 METeOR: `460125 <http://meteor.aihw.gov.au/content/index.phtml/itemId/460125>`__",Char[4],"`Australian Standard Classification of Languages 2011 4-digit code (ABS
 Catalogue No. 1267.0) <http://www.abs.gov.au/ausstats/abs@.nsf/mf/1267.0>`_
 or 9999 if info is not known or client refuses to supply."
-"`Proficiency in spoken English`_ (prof_english)
+"`Proficiency in Spoken English`_ (prof_english)
 
 
 
