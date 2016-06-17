@@ -158,7 +158,17 @@ METeOR: `621477 <http://meteor.aihw.gov.au/content/index.phtml/itemId/621477>`__
 :9: Unknown"
 "`Referrer Type`_ (referrer_type)
 
-",Char[1],To be defined
+",Char[1],":1: Private Primary Health Care Organisation - for profit
+:2: Private Primary Health Care Organisation - not for profit
+:3: Medicare Local
+:4: Division of General Practice
+:5: Aboriginal Health/Medical Service
+:6: General Practice
+:7: Private Psychiatry service
+:8: Drug and/or Alcohol Service
+:9: Community-managed Community Support Organisation
+:10: State/territory health services
+:11: Other"
 "`Referrer Entity`_ (referrer_entity)
 
 ",Char[1],To be defined
