@@ -1,7 +1,7 @@
-Identifier Management
+Identifier management
 =====================
 
-Managing Provider Organisation Codes
+Managing Provider Organisation codes
 ------------------------------------
 Provider Organisations will be created and managed by Primary Health Networks(PHNs)
 through a user interface. Each PHN must create their own Provider Organisations
@@ -9,7 +9,7 @@ before any data can be uploaded. Each Provider Organisation will need to be
 assigned a unique code. It is the responsibility of the PHN to assign and manage
 these codes.
 
-Managing Practitioner and Client Keys
+Managing Practitioner and Client keys
 -------------------------------------
 Practitioners and Clients will be created and managed by Provider Organisations
 via the upload interface. Each Practitioner and Client needs to be assigned a
@@ -24,7 +24,7 @@ implemented PHNs will need to play a role in coordinating assignment and
 management of these identifiers.
 
 
-Managing Episode, Service Contact and Outcome Collection Occasion Keys
+Managing Episode, Service Contact and Outcome Collection Occasion keys
 ----------------------------------------------------------------------
 Episodes, Service Contacts and Outcome Collection Keys will be created and
 managed by Provider Organisations via the upload interface. Each Episode,
