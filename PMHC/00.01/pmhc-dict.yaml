@@ -60,8 +60,8 @@ Title: Provider Organisation Type
 Type: Char[1]
 Domain:
   Set:
-    1: Private Primary Health Care Organisation – for profit
-    2: Private Primary Health Care Organisation – not for profit
+    1: Private Primary Health Care Organisation - for profit
+    2: Private Primary Health Care Organisation - not for profit
     3: Medicare Local
     4: Division of General Practice
     5: Aboriginal Health/Medical Service
@@ -71,7 +71,7 @@ Domain:
     9: Community-managed Community Support Organisation
     10: State/territory health services
     11: Other
-Comments:
+Comments: |-
   Coding options will be finalised following feedback from PHNs.
 ---
 Definition: The state that the provider organisation operates in.

@@ -10,7 +10,7 @@ Must be stable over time."
 "`Practitioner Key`_ (practitioner_key)
 
 ",Char[20],A unique identifier for a practitioner within the PMHC top level organisation.
-"`Mental Health Service Contact Date`_ (service_date)
+"`Service Contact Date`_ (service_contact_date)
 
 
 
@@ -19,7 +19,7 @@ used across the National Health Data Dictionary; specifically, dates must be
 of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
 necessary to pad out a value. For instance, 13th March 2008 would appear as
 13032008."
-"`Service Type`_ (service_type)
+"`Service Contact Type`_ (service_contact_type)
 
 ",Char[1],":1: Assessment
 :2: Structured psychological intervention
@@ -29,7 +29,7 @@ necessary to pad out a value. For instance, 13th March 2008 would appear as
 :6: Child or youth specific assistance NEC
 :7: Suicide prevention specific assistance NEC
 :8: Cultural specific assistance NEC"
-"`Service Delivery Postcode`_ (service_postcode)
+"`Service Contact Postcode`_ (service_contact_postcode)
 
 
 
@@ -37,29 +37,29 @@ METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__
 of Australian Postcodes can be found at `Australia Post
 <http://www.auspost.com.au/>`_.
 
-- If Service Modality is not 'Face to Face' enter 9999
-- If Service Modality is 'Face to Face' a valid Australian postcode must be
+- If Service Contact Modality is not 'Face to Face' enter 9999
+- If Service Contact Modality is 'Face to Face' a valid Australian postcode must be
   entered"
-"`Service Modality`_ (service_modality) [#tn_service_contact1]_
+"`Service Contact Modality`_ (service_contact_modality) [#tn_service_contact1]_
 
 ",Char[1],":1: Face to Face
 :2: Telephone
 :3: Video
 :4: Internet-based"
-"`Service Participants`_ (service_participants) [#tn_service_contact2]_
+"`Service Contact Participants`_ (service_contact_participants)
 
 ",Char[1],":1: Individual
 :2: Group
 :3: Family / Client Support Network"
-"`Venue`_ (venue)
+"`Service Contact Venue`_ (service_contact_venue)
 
 ",Char[1],":1: Home
 :2: Practitioner's Office
 :3: School
 :4: Client's Workplace
 :5: Other
-:6: Not applicable (Service modality is not face to face)"
-"`Duration`_ (duration)
+:6: Not applicable (Service Contact Modality is not face to face)"
+"`Service Contact Duration`_ (service_contact_duration)
 
 ",Char[1],":1: 0-15 mins
 :2: 16-30 mins
@@ -70,7 +70,7 @@ of Australian Postcodes can be found at `Australia Post
 :7: 91-105 mins
 :8: 106-120 mins
 :9: over 120 mins"
-"`Copayment`_ (copayment)
+"`Service Contact Copayment`_ (service_contact_copayment)
 
 ",Char[9],"Up to 6 digits before the decimal point; up to 2 digits after the decimal
 point"
@@ -80,7 +80,7 @@ point"
 
 METeOR: `494341 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494341>`__",Char[1],":1: Yes
 :2: No"
-"`No Show`_ (no_show)
+"`Service Contact No Show`_ (service_contact_no_show)
 
 ",Char[1],":1: Yes
 :2: No"

@@ -1,19 +1,19 @@
-organisation,practitioner,client,episode,service_contact,outcome_collection_occasion
-"Organisation Name","Practitioner Key","Organisation Code","Episode Key","Service Contact Key","Collection Occasion Key"
-"Organisation Code","Practitioner category","Client Key","Client Key","Client Key","Episode Key"
-"Organisation Type","Cultural training flag","Statistical Linkage Key","Area of usual residence, postcode","Practitioner Key",Measure
-State,"Year of Birth","Date of Birth","Episode Start Date","Mental Health Service Contact Date","Measure Date"
-,Gender,"Estimated Date of Birth Flag","Episode End Date","Service Type",Score
-,"Aboriginal And Torres Strait Islander Status",Gender,"Referral Date","Service Delivery Postcode"
-,"Practitioner Active","Aboriginal And Torres Strait Islander Status","Principal Focus of Treatment","Service Modality"
-,,"Country Of Birth","Labour Force Status","Service Participants"
-,,"Main language other than English spoken at home","Employment Participation",Venue
-,,"Proficiency in spoken English","Income Status - Ranges? or Low Income?",Duration
-,,,"Source of Cash Income",Copayment
-,,,"NDIS participant","Mental health service contact - client participation indicator"
-,,,"Marital Status","No Show"
+"Provider Organisation",Practitioner,Client,Episode,"Service Contact","Outcome Collection Occasion"
+"Provider Organisation Name","Practitioner Key","Provider Organisation Code","Episode Key","Service Contact Key","Collection Occasion Key"
+"Provider Organisation Code","Practitioner category","Client Key","Client Key","Client Key","Episode Key"
+"Provider Organisation Type","Cultural training flag","Statistical Linkage Key","Episode Start Date","Practitioner Key","Collection Occasion Measure"
+"Provider Organisation State","Practitioner Year of Birth","Date of Birth","Episode End Date","Service Contact Date","Collection Occasion Measure Date"
+,Gender,"Estimated Date of Birth Flag","Episode Completion Status","Service Contact Type","Collection Occasion Score"
+,"Aboriginal And Torres Strait Islander Status",Gender,"Referral Date","Service Contact Postcode"
+,"Practitioner Active","Aboriginal And Torres Strait Islander Status","Principal Focus of Treatment Plan","Service Contact Modality"
+,,"Country Of Birth","Area of usual residence, postcode","Service Contact Participants"
+,,"Main language other than English spoken at home","Labour Force Status","Service Contact Venue"
+,,"Proficiency in spoken English","Employment Participation","Service Contact Duration"
+,,,"Income Range","Service Contact Copayment"
+,,,"Source of Cash Income","Mental health service contact - client participation indicator"
+,,,"NDIS participant","Service Contact No Show"
+,,,"Marital Status"
 ,,,Accommodation
-,,,"Episode Completion Status"
 ,,,"Suicide Referral Flag"
 ,,,"Principal Diagnosis"
 ,,,"Other Diagnosis"

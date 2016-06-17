@@ -1,14 +1,24 @@
 Data Element (Field Name),Type [Length],Notes / Values
-"`Organisation Name`_ (organisation_name)
+"`Provider Organisation Name`_ (organisation_name)
 
 ",Char[100],
-"`Organisation Code`_ (organisation_code)
+"`Provider Organisation Code`_ (organisation_code)
 
 ",Char[6],- A unique code assigned by the PHN.
-"`Organisation Type`_ (organisation_type)
+"`Provider Organisation Type`_ (organisation_type)
 
-",Char[1],To be defined
-"`State`_ (state) [#tn_organisation1]_
+",Char[1],":1: Private Primary Health Care Organisation - for profit
+:2: Private Primary Health Care Organisation - not for profit
+:3: Medicare Local
+:4: Division of General Practice
+:5: Aboriginal Health/Medical Service
+:6: General Practice
+:7: Private Psychiatry service
+:8: Drug and/or Alcohol Service
+:9: Community-managed Community Support Organisation
+:10: State/territory health services
+:11: Other"
+"`Provider Organisation State`_ (organisation_state) [#tn_organisation1]_
 
 
 
