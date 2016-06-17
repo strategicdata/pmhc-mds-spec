@@ -1162,14 +1162,15 @@ Comments: |-
     whose clinical record the service contact would normally warrant a dated
     entry, is not participating.
 ---
+Definition: The name of the measure.
 Name: measure
-Title: Measure
+Title: Collection Occasion Measure
 Type: Char[20]
-Domain: The name of the measure
+Domain: To be defined.
 ---
-Definition: Measure date
+Definition: The date the measure was given.
 Name: measure_date
-Title: Measure Date
+Title: Collection Occasion Measure Date
 Type: Date[8]
 Domain: |-
   For Date fields, data must be recorded in compliance with the standard format
@@ -1179,6 +1180,6 @@ Domain: |-
   13032008.
 ---
 Name: score
-Title: Score
+Title: Collection Occasion Score
 Type: Char[2]
 Domain: The value of the score at this collection occasion.
