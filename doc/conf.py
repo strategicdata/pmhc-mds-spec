@@ -56,10 +56,25 @@ author = u'PMHC MDS Working Group'
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 #
+
+def get_version():
+
+   version = 'v1'
+
+   try:
+      version = os.environ["GIT_VERSION"]
+   except KeyError:
+      print "Please set the environment variable GIT_VERSION"
+
+   return version
+
 # The short X.Y version.
-version = '00.01'
+# version = get_version().lstrip('v').rstrip()
+
+version = "Version 1"
+
 # The full version, including alpha/beta/rc tags.
-release = '00.01'
+release = version + " - DRAFT"
 
 current_year = '2016-17'
 
