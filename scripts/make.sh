@@ -51,6 +51,8 @@ else
   ARG1=$1
 fi
 
-docker run -ti -v `pwd`:/mnt/workdir stratdat/sphinx:production make $ARG1
+GIT_VERSION=$(git describe --tags --always)
+
+docker run -ti -e $GIT_VERSION -v `pwd`:/mnt/workdir stratdat/sphinx:production make $ARG1
 
 popd
