@@ -203,25 +203,48 @@ collection occasion at the level of the organisation.
 
 ----------
 
-Copayment
-^^^^^^^^^
+Collection Occasion Measure
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The co-payment is the amount paid by the client per session.
+The name of the measure.
 
-:Field name: copayment
+:Field name: measure
 
-:Data type: Char[9]
+:Data type: Char[20]
 
 :Domain:
-  Up to 6 digits before the decimal point; up to 2 digits after the decimal
-  point
+  To be defined.
 
-:Notes:
-  The co-payment is the amount paid by the client per session, not the fee paid
-  by the project to the practitioner or the fee paid by the project to the
-  practitioner plus the client contribution. In many cases, there will not be a
-  co-payment charged and therefore zero should be entered. Where a co-payment
-  is charged it should be minimal and based on an individual's capacity to pay.
+----------
+
+Collection Occasion Measure Date
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The date the measure was given.
+
+:Field name: measure_date
+
+:Data type: Date[8]
+
+:Domain:
+  For Date fields, data must be recorded in compliance with the standard format
+  used across the National Health Data Dictionary; specifically, dates must be
+  of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
+  necessary to pad out a value. For instance, 13th March 2008 would appear as
+  13032008.
+
+----------
+
+Collection Occasion Score
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+:Field name: score
+
+:Data type: Char[2]
+
+:Domain:
+  The value of the score at this collection occasion.
 
 ----------
 
@@ -309,28 +332,6 @@ The date on which an individual was born
     'Estimated date of birth flag'
 
 :METeOR: `287007 <http://meteor.aihw.gov.au/content/index.phtml/itemId/287007>`__
-
-----------
-
-Duration
-^^^^^^^^
-
-The time from the start to finish of a service contact.
-
-:Field name: duration
-
-:Data type: Char[1]
-
-:Domain:
-  :1: 0-15 mins
-  :2: 16-30 mins
-  :3: 31-45 mins
-  :4: 46-60 mins
-  :5: 61-75 mins
-  :6: 76-90 mins
-  :7: 91-105 mins
-  :8: 106-120 mins
-  :9: over 120 mins
 
 ----------
 
@@ -501,16 +502,19 @@ assigned at birth.
 
 ----------
 
-Income Status - Ranges? or Low Income?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Income Range
+^^^^^^^^^^^^
 
 
-:Field name: income_status
+:Field name: income_range
 
 :Data type: Char[1]
 
 :Domain:
   To be defined
+
+:Notes:
+  Aim is to use this item to identify low income clients. Income threshold to be set pendings ABS advice.
 
 ----------
 
@@ -670,37 +674,6 @@ previous registered marriage, as represented by a code.
 
 ----------
 
-Measure
-^^^^^^^
-
-
-:Field name: measure
-
-:Data type: Char[20]
-
-:Domain:
-  The name of the measure
-
-----------
-
-Measure Date
-^^^^^^^^^^^^
-
-Measure date
-
-:Field name: measure_date
-
-:Data type: Date[8]
-
-:Domain:
-  For Date fields, data must be recorded in compliance with the standard format
-  used across the National Health Data Dictionary; specifically, dates must be
-  of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
-  necessary to pad out a value. For instance, 13th March 2008 would appear as
-  13032008.
-
-----------
-
 Medication - Antidepressants (N06A)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -820,27 +793,6 @@ represented by a code.
 
 ----------
 
-Mental Health Service Contact Date
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The date of each mental health service contact between a health service
-provider and patient/client.
-
-:Field name: service_date
-
-:Data type: Date[8]
-
-:Domain:
-  For Date fields, data must be recorded in compliance with the standard format
-  used across the National Health Data Dictionary; specifically, dates must be
-  of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
-  necessary to pad out a value. For instance, 13th March 2008 would appear as
-  13032008.
-
-:METeOR: `494356 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494356>`__
-
-----------
-
 NDIS participant
 ^^^^^^^^^^^^^^^^
 
@@ -854,67 +806,6 @@ Is the client a participant in the National Disability Insurance Scheme?
   :1: Yes
   :2: No
   :9: Not stated/inadequately described
-
-----------
-
-No Show
-^^^^^^^
-
-Where an appointment was made for a client, but the client failed to attend
-the appointment.
-
-:Field name: no_show
-
-:Data type: Char[1]
-
-:Domain:
-  :1: Yes
-  :2: No
-
-:Notes:
-  1 - Yes
-    The client failed to attend the appointment.
-  2 - No
-    The client attended the appointment.
-
-----------
-
-Organisation Code
-^^^^^^^^^^^^^^^^^
-
-A sequence of characters which uniquely identifies the PMHC organisation.
-
-:Field name: organisation_code
-
-:Data type: Char[6]
-
-:Domain:
-  - A unique code assigned by the PHN.
-
-----------
-
-Organisation Name
-^^^^^^^^^^^^^^^^^
-
-The name of the organisation.
-
-:Field name: organisation_name
-
-:Data type: Char[100]
-
-----------
-
-Organisation Type
-^^^^^^^^^^^^^^^^^
-
-The type of the organisation.
-
-:Field name: organisation_type
-
-:Data type: Char[1]
-
-:Domain:
-  To be defined
 
 ----------
 
@@ -949,10 +840,11 @@ The version number of the PMHC specification document used.
 Practitioner Active
 ^^^^^^^^^^^^^^^^^^^
 
-A flag to represent whether a practitioner is active. This is a system field
-that is aimed at helping organisations manage practitioner codes.
+A flag to represent whether a practitioner is actively delivering services.
+This is a system field that is aimed at helping organisations manage
+practitioner codes.
 
-:Field name: active
+:Field name: practitioner_active
 
 :Data type: Char[1]
 
@@ -967,7 +859,7 @@ Practitioner category
 
 The type or category of the practitioner.
 
-:Field name: category
+:Field name: practitioner_category
 
 :Data type: Char[1]
 
@@ -980,6 +872,9 @@ The type or category of the practitioner.
   :6: Aboriginal and Torres Strait Islander health/mental health worker
   :7: Low intensity mental health worker
   :8: Other
+
+:Notes:
+  Domain and definitions to be finalised following PHN advice.
 
 ----------
 
@@ -997,6 +892,28 @@ A sequence of characters which uniquely identifies a practitioner.
 
 ----------
 
+Practitioner Year of Birth
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+:Field name: practitioner_year_of_birth
+
+:Data type: Char[4]
+
+:Domain:
+  Record the practitioner's year of birth YYYY format.
+
+:Notes:
+  If the year of birth is unknown, the following approaches should be used:
+  
+  - If the age of the client is known, the age should be used to derive the
+    year of birth
+  - If the age of the client is unknown, an estimated age of the client should
+    be used to estimate a year of birth
+  - If the date of birth is totally unknown, use 9999.
+
+----------
+
 Principal Diagnosis
 ^^^^^^^^^^^^^^^^^^^
 
@@ -1010,8 +927,8 @@ Principal Diagnosis
 
 ----------
 
-Principal Focus of Treatment
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Principal Focus of Treatment Plan
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The range of activities that best describes the overall services intended to
 be delivered to the client throughout the course of the episode. For most
@@ -1149,6 +1066,88 @@ than English at home.
 
 ----------
 
+Provider Organisation Code
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A sequence of characters which uniquely identifies the provider organisation.
+
+:Field name: organisation_code
+
+:Data type: Char[6]
+
+:Domain:
+  - A unique code assigned by the PHN.
+
+----------
+
+Provider Organisation Name
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The name of the provider organisation.
+
+:Field name: organisation_name
+
+:Data type: Char[100]
+
+----------
+
+Provider Organisation State
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The state that the provider organisation operates in.
+
+:Field name: organisation_state
+
+:Data type: Char[1]
+
+:Domain:
+  :1: New South Wales
+  :2: Victoria
+  :3: Queensland
+  :4: South Australia
+  :5: Western Australia
+  :6: Tasmania
+  :7: Northern Territory
+  :8: Australian Capital Territory
+  :9: Other Territories
+:Notes:
+  - Name is taken from Australian `Statistical Geography Standard (ASGS) July
+    2011
+    <http://www.abs.gov.au/ausstats/abs@.nsf/0/871A7FF33DF471FBCA257801000DCD5
+    F?Opendocument>`_.
+  - Code is from Meteor with the addition of code for Other Territories.
+
+:METeOR: `613718 <http://meteor.aihw.gov.au/content/index.phtml/itemId/613718>`__
+
+----------
+
+Provider Organisation Type
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The type of the provider organisation.
+
+:Field name: organisation_type
+
+:Data type: Char[1]
+
+:Domain:
+  :1: Private Primary Health Care Organisation - for profit
+  :2: Private Primary Health Care Organisation - not for profit
+  :3: Medicare Local
+  :4: Division of General Practice
+  :5: Aboriginal Health/Medical Service
+  :6: General Practice
+  :7: Private Psychiatry service
+  :8: Drug and/or Alcohol Service
+  :9: Community-managed Community Support Organisation
+  :10: State/territory health services
+  :11: Other
+
+:Notes:
+  Coding options will be finalised following feedback from PHNs.
+
+----------
+
 Referral Date
 ^^^^^^^^^^^^^
 
@@ -1191,33 +1190,72 @@ The type of the referrer.
 :Data type: Char[1]
 
 :Domain:
-  :1: Private Primary Health Care Organisation - for profit
-  :2: Private Primary Health Care Organisation - not for profit
-  :3: Medicare Local
-  :4: Division of General Practice
-  :5: Aboriginal Health/Medical Service
-  :6: General Practice
-  :7: Private Psychiatry service
-  :8: Drug and/or Alcohol Service
-  :9: Community-managed Community Support Organisation
-  :10: State/territory health services
-  :11: Other
-
-:Notes:
-  Coding options will be finalised following feedback from PHNs.
+  To be defined
 
 ----------
 
-Score
-^^^^^
+Service Contact Copayment
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
+The co-payment is the amount paid by the client per session.
 
-:Field name: score
+:Field name: service_contact_copayment
 
-:Data type: Char[2]
+:Data type: Char[9]
 
 :Domain:
-  The value of the score at this collection occasion.
+  Up to 6 digits before the decimal point; up to 2 digits after the decimal
+  point
+
+:Notes:
+  The co-payment is the amount paid by the client per service contact, not the
+  fee paid by the project to the practitioner or the fee paid by the project to the
+  practitioner plus the client contribution. In many cases, there will not be a
+  co-payment charged and therefore zero should be entered. Where a co-payment
+  is charged it should be minimal and based on an individual's capacity to pay.
+
+----------
+
+Service Contact Date
+^^^^^^^^^^^^^^^^^^^^
+
+The date of each mental health service contact between a health service
+provider and patient/client.
+
+:Field name: service_contact_date
+
+:Data type: Date[8]
+
+:Domain:
+  For Date fields, data must be recorded in compliance with the standard format
+  used across the National Health Data Dictionary; specifically, dates must be
+  of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
+  necessary to pad out a value. For instance, 13th March 2008 would appear as
+  13032008.
+
+:METeOR: `494356 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494356>`__
+
+----------
+
+Service Contact Duration
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+The time from the start to finish of a service contact.
+
+:Field name: service_contact_duration
+
+:Data type: Char[1]
+
+:Domain:
+  :1: 0-15 mins
+  :2: 16-30 mins
+  :3: 31-45 mins
+  :4: 46-60 mins
+  :5: 61-75 mins
+  :6: 76-90 mins
+  :7: 91-105 mins
+  :8: 106-120 mins
+  :9: over 120 mins
 
 ----------
 
@@ -1238,34 +1276,12 @@ organisation.
 
 ----------
 
-Service Delivery Postcode
-^^^^^^^^^^^^^^^^^^^^^^^^^
+Service Contact Modality
+^^^^^^^^^^^^^^^^^^^^^^^^
 
-The Australian postcode where the service delivery took place.
+How the service contact was delivered.
 
-:Field name: service_postcode
-
-:Data type: Char[4]
-
-:Domain:
-  A valid Australian postcode or 9999 if the postcode is unknown. The full list
-  of Australian Postcodes can be found at `Australia Post
-  <http://www.auspost.com.au/>`_.
-  
-  - If Service Modality is not 'Face to Face' enter 9999
-  - If Service Modality is 'Face to Face' a valid Australian postcode must be
-    entered
-
-:METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__
-
-----------
-
-Service Modality
-^^^^^^^^^^^^^^^^
-
-How the service was delivered.
-
-:Field name: service_modality
+:Field name: service_contact_modality
 
 :Data type: Char[1]
 
@@ -1276,17 +1292,39 @@ How the service was delivered.
   :4: Internet-based
 :Notes:
   - If 'Face to Face' is selected, a value other than 'Not applicable' must
-    be selected for Venue
+    be selected for Service Contact Venue
   - If 'Face to Face' is selected a valid Australian
-    postcode must be entered for Service Delivery Postcode.
+    postcode must be entered for Service Contact Postcode.
 
 ----------
 
-Service Participants
-^^^^^^^^^^^^^^^^^^^^
+Service Contact No Show
+^^^^^^^^^^^^^^^^^^^^^^^
+
+Where an appointment was made for a client, but the client failed to attend
+the appointment.
+
+:Field name: service_contact_no_show
+
+:Data type: Char[1]
+
+:Domain:
+  :1: Yes
+  :2: No
+
+:Notes:
+  1 - Yes
+    The client failed to attend the appointment.
+  2 - No
+    The client attended the appointment.
+
+----------
+
+Service Contact Participants
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-:Field name: service_participants
+:Field name: service_contact_participants
 
 :Data type: Char[1]
 
@@ -1294,17 +1332,40 @@ Service Participants
   :1: Individual
   :2: Group
   :3: Family / Client Support Network
+
 :Notes:
-  Are any other options necessary?
+  Coding options will be finalised following feedback from PHNs.
 
 ----------
 
-Service Type
-^^^^^^^^^^^^
+Service Contact Postcode
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+The Australian postcode where the service contact took place.
+
+:Field name: service_contact_postcode
+
+:Data type: Char[4]
+
+:Domain:
+  A valid Australian postcode or 9999 if the postcode is unknown. The full list
+  of Australian Postcodes can be found at `Australia Post
+  <http://www.auspost.com.au/>`_.
+  
+  - If Service Contact Modality is not 'Face to Face' enter 9999
+  - If Service Contact Modality is 'Face to Face' a valid Australian postcode must be
+    entered
+
+:METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__
+
+----------
+
+Service Contact Type
+^^^^^^^^^^^^^^^^^^^^
 
 The main type of service provided in the service contact, as represented by the service type that accounted for most provider time.
 
-:Field name: service_type
+:Field name: service_contact_type
 
 :Data type: Char[1]
 
@@ -1394,6 +1455,29 @@ The main type of service provided in the service contact, as represented by the 
 
 ----------
 
+Service Contact Venue
+^^^^^^^^^^^^^^^^^^^^^
+
+Where the service contact was delivered.
+
+:Field name: service_contact_venue
+
+:Data type: Char[1]
+
+:Domain:
+  :1: Home
+  :2: Practitioner's Office
+  :3: School
+  :4: Client's Workplace
+  :5: Other
+  :6: Not applicable (Service Contact Modality is not face to face)
+
+:Notes:
+  - Values other than 'Not applicable' only to be specified when Service
+    Contact Modality is 'Face to Face'.
+
+----------
+
 Source of Cash Income
 ^^^^^^^^^^^^^^^^^^^^^
 
@@ -1432,36 +1516,6 @@ income, as represented by a code.
   (i.e. they have been asked but do not know).
 
 :METeOR: `386449 <http://meteor.aihw.gov.au/content/index.phtml/itemId/386449>`__
-
-----------
-
-State
-^^^^^
-
-The state that the organisation operates in.
-
-:Field name: state
-
-:Data type: Char[1]
-
-:Domain:
-  :1: New South Wales
-  :2: Victoria
-  :3: Queensland
-  :4: South Australia
-  :5: Western Australia
-  :6: Tasmania
-  :7: Northern Territory
-  :8: Australian Capital Territory
-  :9: Other Territories
-:Notes:
-  - Name is taken from Australian `Statistical Geography Standard (ASGS) July
-    2011
-    <http://www.abs.gov.au/ausstats/abs@.nsf/0/871A7FF33DF471FBCA257801000DCD5
-    F?Opendocument>`_.
-  - Code is from Meteor with the addition of code for Other Territories.
-
-:METeOR: `613718 <http://meteor.aihw.gov.au/content/index.phtml/itemId/613718>`__
 
 ----------
 
@@ -1508,51 +1562,6 @@ person's needs for assistance at entry to the episode.
 :Domain:
   :1: Yes
   :2: No
-
-----------
-
-Venue
-^^^^^
-
-Where the service was delivered.
-
-:Field name: venue
-
-:Data type: Char[1]
-
-:Domain:
-  :1: Home
-  :2: Practitioner's Office
-  :3: School
-  :4: Client's Workplace
-  :5: Other
-  :6: Not applicable (Service modality is not face to face)
-
-:Notes:
-  - Values other than 'Not applicable' only to be specified when Service
-    Modality is 'Face to Face'.
-
-----------
-
-Year of Birth
-^^^^^^^^^^^^^
-
-
-:Field name: year_of_birth
-
-:Data type: Char[4]
-
-:Domain:
-  Record the practitioner's year of birth YYYY format.
-
-:Notes:
-  If the year of birth is unknown, the following approaches should be used:
-  
-  - If the age of the client is known, the age should be used to derive the
-    year of birth
-  - If the age of the client is unknown, an estimated age of the client should
-    be used to estimate a year of birth
-  - If the date of birth is totally unknown, use 9999.
 
 ----------
 

@@ -1,5 +1,5 @@
 Data Element (Field Name),Type [Length],Notes / Values
-"`Organisation Code`_ (organisation_code)
+"`Provider Organisation Code`_ (organisation_code)
 
 ",Char[6],- A unique code assigned by the PHN.
 "`Client Key`_ (client_key)
