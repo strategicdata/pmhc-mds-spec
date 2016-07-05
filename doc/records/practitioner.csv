@@ -2,7 +2,7 @@ Data Element (Field Name),Type [Length],Notes / Values
 "`Practitioner Key`_ (practitioner_key)
 
 ",Char[20],A unique identifier for a practitioner within the PMHC top level organisation.
-"`Practitioner category`_ (category)
+"`Practitioner Category`_ (practitioner_category)
 
 ",Char[1],":1: Psychologist (clinical)
 :2: Psychologist (generalist/other)
@@ -12,12 +12,12 @@ Data Element (Field Name),Type [Length],Notes / Values
 :6: Aboriginal and Torres Strait Islander health/mental health worker
 :7: Low intensity mental health worker
 :8: Other"
-"`Cultural training flag`_ (cultural_flag)
+"`Cultural Training Flag`_ (cultural_flag)
 
 ",Char[1],":1: Yes
 :2: No
 :9: Missing/Not recorded"
-"`Year of Birth`_ (year_of_birth)
+"`Practitioner Year of Birth`_ (practitioner_year_of_birth)
 
 ",Char[4],Record the practitioner's year of birth YYYY format.
 "`Gender`_ (gender) [#tn_practitioner1]_
@@ -35,7 +35,7 @@ METeOR: `291036 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291036>`__
 :3: Both Aboriginal and Torres Strait Islander origin
 :4: Neither Aboriginal or Torres Strait Islander origin
 :9: Not stated/inadequately described"
-"`Practitioner Active`_ (active)
+"`Practitioner Active`_ (practitioner_active)
 
 ",Char[1],":0: Inactive
 :1: Active"

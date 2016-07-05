@@ -8,6 +8,7 @@ Table of contents
    :maxdepth: 2
 
    reporting-arrangements
+   identifier-management
    data-model-and-specifications
    data-item-summary
 

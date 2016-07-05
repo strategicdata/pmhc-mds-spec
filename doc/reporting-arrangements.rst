@@ -37,6 +37,11 @@ Organisations should only submit data via one interface, not both.
 Data submitted via the existing ATAPS/MHSRRA MDS will be converted and merged with data submitted
 via the PMHC MDS in order to produce departmental reports.
 
+.. figure:: figures/transitional-reporting.svg
+   :alt: Transitional Reporting Process
+
+   Transitional Reporting Process
+
 Support arrangements
 --------------------
 Once the upload specification has been released, support will be available to PHNs and

@@ -1,11 +1,11 @@
 ---
 Name: organisation_code
-Title: Organisation Code
+Title: Provider Organisation Code
 Type: Char[6]
 Domain: |-
   - A unique code assigned by the PHN.
 Definition: |-
-  A sequence of characters which uniquely identifies the PMHC organisation.
+  A sequence of characters which uniquely identifies the provider organisation.
 ---
 Title: PMHC Specification Version Number
 Name: SpecVer
@@ -49,21 +49,35 @@ Domain: |-
   A unique identifier for a collection occasion within the PMHC. Must be unique
   within an organisation and stable over time.
 ---
-Definition: The name of the organisation.
+Definition: The name of the provider organisation.
 Name: organisation_name
-Title: Organisation Name
+Title: Provider Organisation Name
 Type: Char[100]
 ---
-Definition: The type of the organisation.
+Definition: The type of the provider organisation.
 Name: organisation_type
-Title: Organisation Type
+Title: Provider Organisation Type
 Type: Char[1]
-Domain: To be defined
+Domain:
+  Set:
+    1: Private Primary Health Care Organisation - for profit
+    2: Private Primary Health Care Organisation - not for profit
+    3: Medicare Local
+    4: Division of General Practice
+    5: Aboriginal Health/Medical Service
+    6: General Practice
+    7: Private Psychiatry service
+    8: Drug and/or Alcohol Service
+    9: Community-managed Community Support Organisation
+    10: State/territory health services
+    11: Other
+Comments: |-
+  Coding options will be finalised following feedback from PHNs.
 ---
-Definition: The state that the organisation operates in.
+Definition: The state that the provider organisation operates in.
 MeteorID: 613718
-Name: state
-Title: State
+Name: organisation_state
+Title: Provider Organisation State
 Type: Char[1]
 Domain:
   Set:
@@ -96,9 +110,10 @@ Type: Char[1]
 Domain: To be defined
 ---
 Definition: |-
-  A flag to represent whether a practitioner is active. This is a system field
-  that is aimed at helping organisations manage practitioner codes.
-Name: active
+  A flag to represent whether a practitioner is actively delivering services.
+  This is a system field that is aimed at helping organisations manage
+  practitioner codes.
+Name: practitioner_active
 Title: Practitioner Active
 Type: Char[1]
 Domain:
@@ -114,8 +129,8 @@ Domain: |-
   A unique identifier for a practitioner within the PMHC top level organisation.
 ---
 Definition: The type or category of the practitioner.
-Name: category
-Title: Practitioner category
+Name: practitioner_category
+Title: Practitioner Category
 Type: Char[1]
 Domain:
   Set:
@@ -127,13 +142,14 @@ Domain:
     6: Aboriginal and Torres Strait Islander health/mental health worker
     7: Low intensity mental health worker
     8: Other
+Comments: Domain and definitions to be finalised following PHN advice.
 ---
 Definition: |-
   A flag to represent whether a practitioner has completed a recognised
   training programme in the delivery of culturally safe mental health services
   to Aboriginal and Torres Strait Islander peoples.
 Name: cultural_flag
-Title: Cultural training flag
+Title: Cultural Training Flag
 Type: Char[1]
 Domain:
   Set:
@@ -144,8 +160,8 @@ Domain:
 Comments: |-
   This item is as reported by the practitioner.
 ---
-Name: year_of_birth
-Title: Year of Birth
+Name: practitioner_year_of_birth
+Title: Practitioner Year of Birth
 Type: Char[4]
 Domain: |-
   Record the practitioner's year of birth YYYY format.
@@ -309,7 +325,7 @@ Definition: |-
   home or setting and regular visitors, as represented by a code.
 MeteorID: 460125
 Name: main_lang_at_home
-Title: Main language other than English spoken at home
+Title: Main Language Other Than English Spoken at Home
 Type: Char[4]
 Domain: |-
   `Australian Standard Classification of Languages 2011 4-digit code (ABS
@@ -339,7 +355,7 @@ Definition: |-
   than English at home.
 MeteorID: 270203
 Name: prof_english
-Title: Proficiency in spoken English
+Title: Proficiency in Spoken English
 Type: Char[1]
 Domain:
   Set:
@@ -363,7 +379,7 @@ Comments: |-
 Definition: The Australian postcode of the client
 MeteorID: 429894
 Name: client_postcode
-Title: Area of usual residence, postcode
+Title: Area of Usual Residence, Postcode
 Type: Char[4]
 Domain: |-
   A valid Australian postcode or 9999 if the postcode is unknown or the client
@@ -524,10 +540,12 @@ Comments: |-
     administrative collections when transferring data from data sets where the
     item has not been collected.
 ---
-Name: income_status
-Title: Income Status - Ranges? or Low Income?
+Name: income_range
+Title: Income Range
 Type: Char[1]
 Domain: To be defined
+Comments: Aim is to use this item to identify low income clients. Income
+  threshold to be set pendings ABS advice.
 ---
 Definition: |-
   The source from which a person derives the greatest proportion of his/her
@@ -640,7 +658,7 @@ Definition: |-
   clients, this will equate to the activities that account for most time spent
   by the service provider.
 Name: princ_focus_of_treatment
-Title: Principal Focus of Treatment
+Title: Principal Focus of Treatment Plan
 Type: Char[1]
 Domain:
   Set:
@@ -749,7 +767,7 @@ Domain:
 Definition: |-
   Is the client a participant in the National Disability Insurance Scheme?
 Name: ndis_participant
-Title: NDIS participant
+Title: NDIS Participant
 Type: Char[1]
 Domain:
   Set:
@@ -910,15 +928,14 @@ Domain:
 Definition: |-
   Identifies those individuals where a recent history of suicide attempt, or
   suicide risk, was a factor noted in the referral that underpinned the
-  person's needs for assistance at entry to the episode or was identified at
-  initial assessment.
+  person's needs for assistance at entry to the episode.
 ---
-Name: service_date
+Name: service_contact_date
 Definition: |-
   The date of each mental health service contact between a health service
   provider and patient/client.
 MeteorID: 494356
-Title: Mental Health Service Contact Date
+Title: Service Contact Date
 Type: Date[8]
 Domain: |-
   For Date fields, data must be recorded in compliance with the standard format
@@ -929,8 +946,8 @@ Domain: |-
 ---
 Definition: The main type of service provided in the service contact, as
   represented by the service type that accounted for most provider time.
-Name: service_type
-Title: Service Type
+Name: service_contact_type
+Title: Service Contact Type
 Type: Char[1]
 Domain:
   Set:
@@ -1016,9 +1033,9 @@ Comments: |-
   8 - Cultural specific assistance NEC
     Explanatory text to be drafted
 ---
-Definition: The Australian postcode where the service delivery took place.
-Name: service_postcode
-Title: Service Delivery Postcode
+Definition: The Australian postcode where the service contact took place.
+Name: service_contact_postcode
+Title: Service Contact Postcode
 MeteorID: 429894
 Type: Char[4]
 Domain: |-
@@ -1026,13 +1043,13 @@ Domain: |-
   of Australian Postcodes can be found at `Australia Post
   <http://www.auspost.com.au/>`_.
 
-  - If Service Modality is not 'Face to Face' enter 9999
-  - If Service Modality is 'Face to Face' a valid Australian postcode must be
+  - If Service Contact Modality is not 'Face to Face' enter 9999
+  - If Service Contact Modality is 'Face to Face' a valid Australian postcode must be
     entered
 ---
-Definition: How the service was delivered.
-Name: service_modality
-Title: Service Modality
+Definition: How the service contact was delivered.
+Name: service_contact_modality
+Title: Service Contact Modality
 Type: Char[1]
 Domain:
   Set:
@@ -1042,13 +1059,13 @@ Domain:
     4: Internet-based
   Notes: |-
     - If 'Face to Face' is selected, a value other than 'Not applicable' must
-      be selected for Venue
+      be selected for Service Contact Venue
     - If 'Face to Face' is selected a valid Australian
-      postcode must be entered for Service Delivery Postcode.
+      postcode must be entered for Service Contact Postcode.
 ---
-Definition: Where the service was delivered.
-Name: venue
-Title: Venue
+Definition: Where the service contact was delivered.
+Name: service_contact_venue
+Title: Service Contact Venue
 Type: Char[1]
 Domain:
   Set:
@@ -1057,14 +1074,14 @@ Domain:
     3: School
     4: Client's Workplace
     5: Other
-    6: Not applicable (Service modality is not face to face)
+    6: Not applicable (Service Contact Modality is not face to face)
 Comments: |-
   - Values other than 'Not applicable' only to be specified when Service
-    Modality is 'Face to Face'.
+    Contact Modality is 'Face to Face'.
 ---
 Definition: The time from the start to finish of a service contact.
-Name: duration
-Title: Duration
+Name: service_contact_duration
+Title: Service Contact Duration
 Type: Char[1]
 Domain:
   Set:
@@ -1079,15 +1096,15 @@ Domain:
     9: over 120 mins
 ---
 Definition: The co-payment is the amount paid by the client per session.
-Name: copayment
-Title: Copayment
+Name: service_contact_copayment
+Title: Service Contact Copayment
 Type: Char[9]
 Domain: |-
   Up to 6 digits before the decimal point; up to 2 digits after the decimal
   point
 Comments: |-
-  The co-payment is the amount paid by the client per session, not the fee paid
-  by the project to the practitioner or the fee paid by the project to the
+  The co-payment is the amount paid by the client per service contact, not the
+  fee paid by the project to the practitioner or the fee paid by the project to the
   practitioner plus the client contribution. In many cases, there will not be a
   co-payment charged and therefore zero should be entered. Where a co-payment
   is charged it should be minimal and based on an individual's capacity to pay.
@@ -1095,8 +1112,8 @@ Comments: |-
 Definition: |-
   Where an appointment was made for a client, but the client failed to attend
   the appointment.
-Name: no_show
-Title: No Show
+Name: service_contact_no_show
+Title: Service Contact No Show
 Type: Char[1]
 Domain:
   Set:
@@ -1108,22 +1125,22 @@ Comments: |-
   2 - No
     The client attended the appointment.
 ---
-Name: service_participants
-Title: Service Participants
+Name: service_contact_participants
+Title: Service Contact Participants
 Type: Char[1]
 Domain:
   Set:
     1: Individual
     2: Group
     3: Family / Client Support Network
-  Notes: Are any other options necessary?
+Comments: Coding options will be finalised following feedback from PHNs.
 ---
 Definition: |-
   An indicator of whether the client participated in the service contact, as
   represented by a code.
 MeteorID: 494341
 Name: participation_indicator
-Title: Mental health service contact - client participation indicator
+Title: Service Contact Client Participation Indicator
 Type: Char[1]
 Domain:
   Set:
@@ -1145,14 +1162,15 @@ Comments: |-
     whose clinical record the service contact would normally warrant a dated
     entry, is not participating.
 ---
+Definition: The name of the measure.
 Name: measure
-Title: Measure
+Title: Collection Occasion Measure Name
 Type: Char[20]
-Domain: The name of the measure
+Domain: To be defined.
 ---
-Definition: Measure date
+Definition: The date the measure was given.
 Name: measure_date
-Title: Measure Date
+Title: Collection Occasion Measure Date
 Type: Date[8]
 Domain: |-
   For Date fields, data must be recorded in compliance with the standard format
@@ -1162,6 +1180,6 @@ Domain: |-
   13032008.
 ---
 Name: score
-Title: Score
+Title: Collection Occasion Score
 Type: Char[2]
 Domain: The value of the score at this collection occasion.

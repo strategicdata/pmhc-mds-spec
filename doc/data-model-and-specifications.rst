@@ -12,8 +12,8 @@ Data model
 Record formats
 --------------
 
-Organisation
-^^^^^^^^^^^^
+Provider Organisation
+^^^^^^^^^^^^^^^^^^^^^
 
 | Explanatory text to go here ...
 
@@ -99,7 +99,7 @@ Service contact
 Outcome collection occasion
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-| Explanatory text to go here ...
+Items for Outcome collection occasion are still a work in progress and subject to change.
 
 .. csv-table:: Outcome collection occasion record layout
    :file: records/outcome_collection_occasion.csv

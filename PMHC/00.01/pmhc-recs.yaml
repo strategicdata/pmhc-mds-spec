@@ -4,7 +4,7 @@ Fields:
   - organisation_name
   - organisation_code
   - organisation_type
-  - state
+  - organisation_state
 Keys:
   Primary: [ organisation_code ]
 Relationships:
@@ -21,12 +21,12 @@ Relationships:
 RecType: practitioner
 Fields:
   - practitioner_key
-  - category
+  - practitioner_category
   - cultural_flag
-  - year_of_birth
+  - practitioner_year_of_birth
   - gender
   - atsi_status
-  - active
+  - practitioner_active
 Keys:
   Primary: [ organisation_code, practitioner_key ]
 Relationships:
@@ -63,19 +63,19 @@ RecType: episode
 Fields:
   - episode_key
   - client_key
-  - client_postcode
   - episode_start_date
   - episode_end_date
+  - episode_completion_status
   - referral_date
   - princ_focus_of_treatment
+  - client_postcode
   - labour_status
   - employment_participation
-  - income_status
+  - income_range
   - income_source
   - ndis_participant
   - marital_status
   - accommodation
-  - episode_completion_status
   - suicide_referral_flag
   - principal_diagnosis
   - other_diagnosis
@@ -101,16 +101,16 @@ Fields:
   - service_contact_key
   - client_key
   - practitioner_key
-  - service_date
-  - service_type
-  - service_postcode
-  - service_modality
-  - service_participants
-  - venue
-  - duration
-  - copayment
+  - service_contact_date
+  - service_contact_type
+  - service_contact_postcode
+  - service_contact_modality
+  - service_contact_participants
+  - service_contact_venue
+  - service_contact_duration
+  - service_contact_copayment
   - participation_indicator
-  - no_show
+  - service_contact_no_show
 Keys:
   Primary: [ service_contact_key, episode_key ]
 Relationships:
