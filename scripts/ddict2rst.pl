@@ -5,10 +5,11 @@ use warnings;
 use Getopt::Long;
 use Cpanel::JSON::XS;
 use Path::Tiny;
+use FindBin;
 
 use Data::Dumper;
 
-use lib './lib';
+use lib "$FindBin::Bin/../lib";
 
 use CSVW2RST;
 
@@ -43,6 +44,8 @@ unless (defined($meta_filename)) {
 my $meta = decode_json(path($meta_filename)->slurp);
 
 print Dumper $meta;
+
+__END__
 
 # Generate the RST documentation.
 CSVW2RST->generate(meta => $meta);
