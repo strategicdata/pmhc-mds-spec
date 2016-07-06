@@ -57,6 +57,10 @@ sub generate {
 
         $summary_table->[0][$summary_column] = $rec_type;
         
+        if ( ! path("_doc/record")->exists ) {
+            path("_doc/record")->mkpath;
+        }
+
         my $filename = '_doc/record/' . $rec_type . ".csv";
         open my $fh, ">", $filename or die $filename . ": $!";
 
