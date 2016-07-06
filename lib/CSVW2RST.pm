@@ -1,89 +1,63 @@
 package CSVW2RST;
-use v5.10;
+use v5.24;
 use strict;
 use warnings;
 
 use Carp;
-use Template;
-use File::Slurp;
+use Path::Tiny;
 use URI;
 use Sort::Naturally;
 use Digest::MD5 'md5_base64';
 use Encode 'encode';
 use File::ShareDir qw(module_dir);
-use DDict;
-use DDict::Utils qw(try_to_find_file);
 use YAML::XS qw(LoadFile);
 use Text::CSV_XS;
 
 use Data::Dumper;
 
+# http://www.w3.org/TR/tabular-metadata/#normalization - table titles
+
 use constant METEOR_URL => 'http://meteor.aihw.gov.au/content/index.phtml/itemId/';
 
-# Use our own version sequencing, since we want to track the generator code
-# independent of the DDict module version.
 use version; our $VERSION = qv('1');
 
 sub generate {
-    my ($class, %args) = @_;
-    my $ddict;
-   #my $datadir = module_dir(__PACKAGE__);
-            # source is ./lib/auto/DDict/Document
-    my @concepts;
+    my $class = shift;
+    my $meta  = shift;
 
-    if ($args{ddict}) {
-        $ddict = $args{ddict};
-    } elsif ($args{spec}) {
-        my ($spec, $version) = @args{'spec','version'};
-
-        # Grab the data dictionary.
-        my %args = ( class => "DDict::$spec" );
-        $args{version} = $version if defined $version;
-
-        $ddict = DDict->load(%args) or
-            croak("Unable to load [$class]" .
-                  (defined $version ? " [$version]" : ''));
-
-        # Load the concept data if this is a NOCC data set.  This is an ugly
-        # special case to avoid burdening the core with soon-to-be-deprecated
-        # information that we intend to expunge shortly.
-        if ($spec eq 'NOCC') {
-            my $file = $ddict->try_to_find_file('nocc_concepts.yaml', $version);
-            @concepts = LoadFile($file) if $file;
-        }
-    } else {
-        croak("No ddict or spec given...\n");
-    }
-
-    # Now, render the documentation...
-
-    my $vars = { ddict => $ddict, version => $VERSION,
-                 anchor => \&_string_to_anchor,
-                 meteor => sub { METEOR_URL . $_[0] },
-                 structure_records  => [$ddict->all_records],
-                 definition_records => [sort {
-                     ncmp($a->{Title}, $b->{Title})
-                 } ($ddict->all, @concepts)],
-                 extra_css => $args{'extra_css'},
-                 include_definitions => $args{'include_definitions'}, # NOCC
-               };
-
-    #print Dumper $ddict->all_records;
-    
     my $summary_table;
     my $summary_row    = 0;
     my $summary_column = 0;
-    
-    open my $summary_fh, ">", '_doc/summary-table.csv' or die 'summary-table.csv' . ": $!";
+
+    my $summary_fh;
+    # open $summary_fh, ">", '_doc/summary-table.csv' or die 'summary-table.csv' . ": $!";
 
     my $max_rows = 0;
 
+    say Dumper $meta;
+    say Dumper $meta->{tables};
+
     my $csv = Text::CSV_XS->new ({ binary => 1, auto_diag => 1 });
-    foreach my $record ( $ddict->all_records ) {
+    foreach my $record ( @{$meta->{tables}} ) {
 
-       $summary_table->[0][$summary_column] = $record->rec_type();
+        next unless $record->{'schema:name'};
+        
+        say '=' x length $record->{'schema:name'};
+        say $record->{'schema:name'};
+        say '-' x length $record->{'schema:name'};
+        
+        my $ddmd = $Data::Dumper::Maxdepth;
+        $Data::Dumper::Maxdepth = 3;
+        say Dumper $record;
+        $Data::Dumper::Maxdepth = $ddmd;
+        say "\n";
 
-        my $filename = '_doc/record/' . lc $record->rec_type() . ".csv";
+        my $rec_type = lc $record->{'schema:name'};
+        $rec_type =~ s/\s+/-/g;
+
+        $summary_table->[0][$summary_column] = $rec_type;
+        
+        my $filename = '_doc/record/' . $rec_type . ".csv";
         open my $fh, ">", $filename or die $filename . ": $!";
 
         my $size = 0;
@@ -93,9 +67,41 @@ sub generate {
         $csv->say($fh, [
             'Data Element (Field Name)',
             'Type [Length]',
-            'Start',
             'Notes / Values',
         ]);
+
+        my $row_count = 1;
+
+        foreach my $field ( @{$record->{'tableSchema'}{'columns'}} ) {
+            say $field->{'titles'}[1];
+            say '^' x length $field->{'titles'}[1];
+            say Dumper $field;
+            say "\n";
+        }
+
+    }
+
+    #####
+    return;
+    #####
+        
+    foreach my $record ( $meta->{tables} ) {
+
+#        $summary_table->[0][$summary_column] = $record->rec_type();
+
+        my $filename = '_doc/record/' . lc $record->rec_type() . ".csv";
+        open my $fh, ">", $filename or die $filename . ": $!";
+
+        my $size = 0;
+        my $note_no = 1;
+        my $notes = '';
+
+#        $csv->say($fh, [
+#            'Data Element (Field Name)',
+#            'Type [Length]',
+#            'Start',
+#            'Notes / Values',
+#        ]);
 
         my $row_count = 1;
             
@@ -146,7 +152,6 @@ sub generate {
 
         my $filename_rst = '_doc/record/' . lc $record->rec_type() . "-notes.rst";
         open my $fh_rst, ">", $filename_rst or die $filename_rst . ": $!";
-        print $fh_rst "Record length = $size" if $args{spec} ne 'PMHC';
         print $fh_rst "\n\n";
         if ( $notes ) {
             print $fh_rst ".. rubric:: Notes\n\n$notes";
@@ -162,14 +167,11 @@ sub generate {
         $csv->say($summary_fh, $row);
     }
 
-
-    if ( $args{'include_definitions'} ) {
-        generate_definitions($vars);
-    }
+    generate_definitions();
 }
 
 sub generate_definitions {
-    my $vars = shift;
+    my $vars = shift || die 'need to replace';
 
     my $filename = '_doc/definitions.rst';
     open my $fh, ">", $filename or die $filename . ": $!";
@@ -263,29 +265,6 @@ sub format_domain {
     return $ret_str;
 }
 
-#[%- notes_needs_space = 0 -%]
-#[%- IF NOT source.Domain -%]
-#<!-- Definition fallback -->
-#[%- ELSIF source.Type.search('^Date') -%]
-#<!-- this field deliberately left blank -->
-#[%- ELSIF source.Domain.Set.size == 1 -%]
-#[%-   FOR item IN source.Domain.Set -%]
-#Value = <code>${item.key}</code>
-#[%# representing <span class="justify">${item.value}</span> %]
-#[%- notes_needs_space = 1 -%]
-#[%-   END -%]
-#[%- ELSIF source.Domain.Set -%]
-#[%-   PROCESS keyed_domain domain=source.Domain.Set -%]
-#[%- notes_needs_space = 1 -%]
-#[%- ELSIF source.Domain.RangeSet -%]
-#[%-   PROCESS keyed_domain domain=source.Domain.RangeSet -%]
-#[%- notes_needs_space = 1 -%]
-#[%- ELSIF NOT source.Domain.keys -%]
-#[%     link_meteor_id(source.Domain) %]
-#[%- ELSE -%]
-#<pre>REVISIT: [%- THROW revisit Dumper.dump(source) -%]</pre>
-#[%- END -%]
-
 sub meteor {
     my $meteor_id = shift || return '—';
 
@@ -329,53 +308,3 @@ sub indent {
 
 1; # Magical true value.
 __END__
-
-=head1 NAME
-
-DDict::Document -- HTML DDict specification generation
-
-=head1 VERSION
-
-This documentation is for version 1 of the DDict::Document module.
-
-=head1 SYNOPSIS
-
-    use DDict::Document;
-    my $html = DDict::Document->generate('NOCC', '01.70');
-    print $html
-
-    # or better yet:
-    ddict-doc.pl -C NOCC -V 01.70 -o nocc-01.70.html
-
-=head1 DESCRIPTION
-
-This module automatically generates documentation from the DDict
-specifications, designed for inclusion as an appendix to a larger document.
-It focuses on data structure layout and meaning, including references to
-official online definitions, etc.
-
-=head1 METHODS
-
-=over
-
-=item B<generate> ($ddict)  (class method)
-
-=item B<generate> ($spec, $version = undef)  (class method)
-
-Generate the HTML documentation for a given specification, returning a string
-containing the generated document.
-
-$ddict is a ddict object to generate the specification from.  This must be
-loaded and configured by the caller.  Alternately, the module can load the
-DDict instance for you:
-
-$spec is a string naming the specification to generate from, while $version is
-an optional version number.
-
-=back
-
-=head1 AUTHOR
-
-Daniel Pittman <support@strategicdata.com.au>
-
-=cut

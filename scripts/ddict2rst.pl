@@ -43,11 +43,7 @@ unless (defined($meta_filename)) {
 
 my $meta = decode_json(path($meta_filename)->slurp);
 
-print Dumper $meta;
-
-__END__
-
 # Generate the RST documentation.
-CSVW2RST->generate(meta => $meta);
+CSVW2RST->generate($meta);
 
 exit 0;
