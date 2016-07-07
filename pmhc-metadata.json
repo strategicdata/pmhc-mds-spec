@@ -1,0 +1,1853 @@
+{
+  "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
+  "dc:title": "PMHC MDS Clients",
+  "dc:publisher": {
+    "schema:name": "Strategic Data Pty Ltd",
+    "schema:url": { "@id": "http://www.strategicdata.com.au" }
+  },
+  "dc:modified": { "@value": "2016-06-22", "@type": "xsd:date"},
+  "tables": [{
+    "dc:title": "Provider Organisation",
+    "url": "data/organisation.csv",
+    "schema:name": "organisation",
+    "schema:description": "table/organisations.rst",
+    "tableSchema": {
+      "columns": [{
+        "name": "organisation_key",
+        "titles": [ "organisation_key", "Organisation Key" ],
+        "dc:title": "Provider Organisation Key",
+        "schema:description": "A sequence of characters which uniquely identifies the provider organisation. Assigned by the Primary Health Network.",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "minLength": 2,
+          "maxLength": 50
+          },
+        "required": true
+      },{
+        "name": "organisation_name",
+        "titles": [ "organisation_name", "Name" ],
+        "dc:title" : "Provider Organisation - Name",
+        "schema:description": "The name of the provider organisation.",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "minLength": 2,
+          "maxLength": 100
+          },
+        "required": true
+      },{
+        "name": "organisation_abn",
+        "titles": [ "organisation_abn", "ABN" ],
+        "dc:title" : "Provider Organisation - ABN",
+        "schema:description": "The Australian Business Number of the provider organisation.",
+        "schema:dateCreated": "2016-07-08",
+        "schema:dateModified": "2016-07-08",
+        "datatype": {
+          "base": "string",
+          "minLength": 11,
+          "maxLength": 11
+          }  
+      },{
+         "name": "organisation_type",
+        "titles": [ "organisation_type", "Type" ],
+        "dc:title" : "Provider Organisation - Type",
+        "schema:description": "The type of the provider organisation.",
+        "schema:disambiguatingDescription": "table/organisation/type.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "format": "^(0|1|2|3|4|5|6|7|8|9|10|11)$"
+        },
+        "required": true
+      },{
+        "name": "organisation_state",
+        "titles": [ "organisation_state", "State" ],
+        "dc:title" : "Provider Organisation - State",
+        "schema:description": "The state that the provider organisation operates in.",
+        "schema:disambiguatingDescription": "table/organisation/state.rst",
+        "schema:meteorItem": "613718",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "format": "^(1|2|3|4|5|6|7|8|9)$"
+        },
+        "required": true
+      }],
+      "primaryKey": "organisation_key",
+      "foreignKeys": [{
+        "columnReference": "organisation_state",
+        "reference": {
+          "resource": "table/organisation/state.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "organisation_type",
+        "reference": {
+          "resource": "table/organisation/type.csv",
+          "columnReference": "id"
+        }
+      }]
+    }
+  }, {
+    "dc:title": "Practitioner",
+    "url": "data/practitioner.csv",
+    "schema:name": "practitioner",
+    "schema:description": "table/practitioner.rst",
+    "tableSchema": {
+      "columns": [{
+        "name": "organisation_path",
+        "titles": [ "organisation_path", "Organisation Path" ],
+        "dc:title": "Organisation Path",
+        "schema:description": "A sequence of colon separated Organisation Codes that fully specifies the upload organisation.",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        },
+        "separator": ":",
+        "required": true
+      },{
+        "name": "practitioner_key",
+        "titles": [ "practitioner_key", "Practitioner Key" ],
+        "dc:title": "Practitioner Key",
+        "schema:description": "A unique identifier for a practitioner within the responsible organisation. Assigned by the organisation.",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "minLength": 2,
+          "maxLength": 50
+          },
+        "required": true
+      },{
+         "name": "practitioner_category",
+        "titles": [ "practitioner_category", "Category" ],
+        "dc:title": "Practitioner - Category",
+        "schema:description": "The type or category of the practitioner, as represented by a code.",
+        "schema:disambiguatingDescription": "table/practitioner/category.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "format": "^(1|2|3|4|5|6|7|8)$"
+        },
+        "required": true
+      },{
+        "name": "atsi_cultural_training",
+        "titles": [ "atsi_cultural_training", "Cultural Training Flag" ],
+        "dc:title": "Practitioner - ATSI Cultural Training",
+        "schema:description": "Indicates whether a practitioner has completed a recognised training programme in the delivery of culturally safe services to Aboriginal and Torres Strait Islander peoples.",
+        "schema:disambiguatingDescription": "table/practitioner/atsi-cultural-training.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateModified": "2016-06-08",
+        "datatype": {
+          "base": "string",
+          "format": "^(1|2|3|9)$"
+        },
+        "default": "9"
+      },{
+        "name": "practitioner_year_of_birth",
+        "titles": [ "practitioner_year_of_birth", "Year of Birth" ],
+        "dc:title": "Practitioner - Year of Birth",
+        "schema:description": "The year the practitioner was born.",
+        "schema:disambiguatingDescription": "table/practitioner/year-of-birth.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": "gYear",
+        "required": true
+      },{
+        "name": "practitioner_gender",
+        "titles": [ "practitioner_gender", "Gender" ],
+        "dc:title": "Practitioner - Gender",
+        "schema:description": "The term 'gender' refers to the way in which a person identifies their masculine or feminine characteristics. A persons gender relates to their deeply held internal and individual sense of gender and is not always exclusively male or female. It may or may not correspond to their sex assigned at birth.",
+        "schema:absItem": "http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/1200.0.55.012Main%20Features12016?opendocument&tabname=Summary&prodno=1200.0.55.012&issue=2016&num=&view=",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "format": "^(0|1|2|3)$"
+        },
+        "required": true
+      },{
+        "name": "practitioner_atsi_status",
+        "titles": [ "practitioner_atsi_status", "ATSI Status" ],
+        "dc:title": "Practitioner - Aboriginal and Torres Strait Islander Status",
+        "schema:description": "Whether a person identifies as being of Aboriginal and/or Torres Strait Islander origin, as represented by a code.",
+        "schema:disambiguatingDescription": "type/atsi-status.rst",
+        "schema:meteorItem": "291036",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "format": "^(1|2|3|4|9)$"
+        },
+        "required": true
+      },{
+        "name": "practitioner_active",
+        "titles": [ "practitioner_active", "Active" ],
+        "dc:title": "Practitioner - Active",
+        "schema:description": "A flag to represent whether a practitioner is actively delivering services. This is a system field that is aimed at helping organisations manage practitioner codes.",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "format": "^(0|1)$"
+        },
+        "default": "1"
+      }],
+      "primaryKey": "practitioner_key",
+      "foreignKeys": [{
+        "columnReference": "practitioner_category",
+        "reference": {
+          "resource": "table/practitioner/category.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "atsi_cultural_training",
+        "reference": {
+          "resource": "table/practitioner/atsi-cultural-training.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "practitioner_gender",
+        "reference": {
+          "resource": "type/gender.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "practitioner_atsi_status",
+        "reference": {
+          "resource": "type/atsi-status.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "practitioner_active",
+        "reference": {
+          "resource": "table/practitioner/active.csv",
+          "columnReference": "id"
+        }
+      }]
+    }
+  }, {
+    "dc:title": "Client",
+    "url": "data/client.csv",
+    "schema:name": "client",
+    "schema:description": "table/client.rst",
+    "tableSchema": {
+      "columns": [{
+        "name": "organisation_path",
+        "titles": [ "organisation_path", "Organisation Path" ],
+        "dc:title": "Organisation Path",
+        "schema:description": "A sequence of colon separated Organisation Codes that fully specifies the upload organisation.",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        },
+        "separator": ":",
+        "required": true
+      },{
+         "name": "client_key",
+        "titles": [ "client_key", "Client Key" ],
+        "dc:title": "Client Key",
+        "schema:description": "This is a number or code assigned to each individual referred to the commissioned organisation. The client identifier is unique and stable for each individual at the level of the PMHC top level organisation.",
+        "schema:disambiguatingDescription": "table/client/key.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "minLength": 2,
+          "maxLength": 50
+          },
+        "required": true
+      },{
+        "name": "slk",
+        "titles": [ "slk", "Statistical Linkage Key" ],
+        "dc:title": "Client - Statistical Linkage Key",
+        "schema:description": "A key that enables two or more records belonging to the same individual to be brought together.",
+        "schema:disambiguatingDescription": "table/client/slk.rst",
+        "schema:meteorItem": "349510",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "minLength": 14,
+          "maxLength": 40
+          },
+        "required": true
+      },{
+        "name": "date_of_birth",
+        "titles": [ "date_of_birth", "Date of Birth" ],
+        "dc:title": "Client - Date of Birth",
+        "schema:description": "The date on which an individual was born.",
+        "schema:disambiguatingDescription": "table/client/date-of-birth.rst",
+        "schema:meteorItem": "287007",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "date",
+          "format": "ddMMyyyy"
+        },
+        "required": true
+      },{
+        "name": "est_date_of_birth",
+        "titles": [ "est_date_of_birth", "Estimated Date of Birth Flag" ],
+        "dc:title": "Client - Estimated Date of Birth Flag",
+        "schema:description": "The date of birth estimate flag records whether or not the client's date of birth has been estimated.",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "format": "^(1|2|8|9)$"
+        },
+        "required": true
+      },{
+        "name": "gender",
+        "titles": [ "client_gender", "Gender" ],
+        "dc:title": "Client - Gender",
+        "schema:description": "The term 'gender' refers to the way in which a person identifies their masculine or feminine characteristics. A persons gender relates to their deeply held internal and individual sense of gender and is not always exclusively male or female. It may or may not correspond to their sex assigned at birth.",
+        "schema:absItem": "http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/1200.0.55.012Main%20Features12016?opendocument&tabname=Summary&prodno=1200.0.55.012&issue=2016&num=&view=",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "format": "^(0|1|2|3)$"
+        },
+        "required": true
+      },{
+        "name": "client_atsi_status",
+        "titles": [ "client_atsi_status", "ATSI Status", "Aboriginal and Torres Strait Islander Status" ],
+        "dc:title": "Client - Aboriginal and Torres Strait Islander Status",
+        "schema:description": "Whether a person identifies as being of Aboriginal and/or Torres Strait Islander origin, as represented by a code.",
+        "schema:disambiguatingDescription": "type/atsi-status.rst",
+        "schema:meteorItem": "291036",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "format": "^(1|2|3|4|9)$"
+        },
+        "required": true
+      },{
+        "name": "country_of_birth",
+        "titles": [ "country_of_birth", "Country of Birth" ],
+        "dc:title": "Client - Country of Birth",
+        "schema:description": "The country in which the client was born, as represented by a code.",
+        "schema:disambiguatingDescription": "table/client/country-of-birth.rst",
+        "schema:meteorItem": "459973",
+        "schema:absItem": "http://www.abs.gov.au/ausstats/abs@.nsf/mf/1269.0",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "length": 4,
+          "format": "^[0-9]{4}$"
+        },
+        "required": true
+      },{
+        "name": "main_lang_at_home",
+        "titles": [ "main_lang_at_home", "Main Language Spoken at Home" ],
+        "dc:title": "Client - Main Language Spoken at Home",
+        "schema:description": "The language reported by a client as the main language other than English spoken by that client in his/her home (or most recent private residential setting occupied by the client) to communicate with other residents of the home or setting and regular visitors, as represented by a code.",
+        "schema:disambiguatingDescription": "table/client/main-lang-at-home.rst",
+        "schema:meteorItem": "460125",
+        "schema:absItem": "http://www.abs.gov.au/ausstats/abs@.nsf/mf/1267.0",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "length": 4,
+          "format": "^[0-9]{4}$"
+        },
+        "required": true
+      },{
+        "name": "prof_english",
+        "titles": [ "prog_english", "Proficiency in Spoken English" ],
+        "dc:title": "Client - Proficiency in Spoken English",
+        "schema:description": "The self-assessed level of ability to speak English, asked of people whose first language is a language other than English or who speak a language other than English at home.",
+        "schema:disambiguatingDescription": "table/client/prof-english.rst",
+        "schema:meteorItem": "270203",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "format": "^(0|1|2|3|4|9)$"
+        },
+        "required": true
+      }],
+      "primaryKey": "client_key",
+      "foreignKeys": [{
+        "columnReference": "client_atsi_status",
+        "reference": {
+          "resource": "type/atsi-status.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "est_date_of_birth",
+        "reference": {
+          "resource": "table/client/est-date-of-birth.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "client_gender",
+        "reference": {
+          "resource": "type/gender.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "prof_english",
+        "reference": {
+          "resource": "table/client/prof-english.csv",
+          "columnReference": "id"
+        }
+      }]
+    }
+  }, {
+    "dc:title": "Episode",
+    "url": "data/episode.csv",
+    "schema:name": "episode",
+    "schema:description": "table/episode.rst",
+    "tableSchema": {
+      "columns": [{
+        "name": "organisation_path",
+        "titles": [ "organisation_path", "Organisation Path" ],
+        "dc:title": "Organisation Path",
+        "schema:description": "A sequence of colon separated Organisation Codes that fully specifies the upload organisation.",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        },
+        "separator": ":",
+        "required": true
+      },{
+        "name": "episode_key",
+        "titles": [ "episode_key", "Episode Key" ],
+        "dc:title": "Episode Key",
+        "schema:description": "This is a number or code assigned to each episode. The Episode Key is unique and stable for each episode at the level of the organisation.",
+        "schema:disambiguatingDescription": "table/episode/key.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateModified": "2016-07-08",
+        "datatype": {
+          "base": "string",
+          "minLength": 2,
+          "maxLength": 50
+        },
+        "required": true
+      },{
+         "name": "client_key",
+        "titles": [ "client_key", "Client Key" ],
+        "dc:title": "Client Key",
+        "schema:description": "This is a number or code assigned to each individual referred to the commissioned organisation. The client identifier is unique and stable for each individual at the level of the PMHC top level organisation.",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "minLength": 2,
+          "maxLength": 50
+          },
+        "required": true
+      },{
+        "name": "episode_start_date",
+        "titles": [ "episode_start_date", "Start Date" ],
+        "dc:title": "Episode - Start Date",
+        "schema:description": "The date on which the client formally commences an *Episode of Care*.",
+        "schema:disambiguatingDescription": "table/episode/start-date.rst",
+        "schema:meteorItem": "614072",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "schema:computed": true,
+        "datatype": {
+          "base": "date",
+          "format": "ddMMyyyy"
+        }
+      },{
+        "name": "episode_end_date",
+        "titles": [ "episode_end_date", "End Date" ],
+        "dc:title": "Episode - End Date",
+        "schema:description": "The date on which an *Episode of Care* is formally or administratively ended",
+        "schema:disambiguatingDescription": "table/episode/end-date.rst",
+        "schema:meteorItem": "614094",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "date",
+          "format": "ddMMyyyy"
+        }
+      },{
+        "name": "episode_completion_status",
+        "titles": [ "episode_completion_status", "Completion Status" ],
+        "dc:title": "Episode - Completion Status",
+        "schema:description": "An indication of the completion status of an *Episode of Care*.",
+        "schema:disambiguatingDescription": "table/episode/completion-status.rst",
+        "schema:dateCreated": "2016-07-08",
+        "schema:dateModified": "2016-07-08",
+        "datatype": {
+          "base": "string",
+          "format": "^(1|2|3|4|5)$"
+        }
+      },{
+        "name": "referral_date",
+        "titles": [ "referral_date", "Referral Date" ],
+        "dc:title": "Episode - Referral Date",
+        "schema:description": "The date the referrer made the referral.",
+        "schema:disambiguatingDescription": "table/episode/referral-date.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "date",
+          "format": "ddMMyyyy"
+        }
+      },{
+        "name": "principal_focus",
+        "titles": [ "principal_focus", "Principal Focus of Treatment Plan" ],
+        "dc:title": "Episode - Principal Focus of Treatment Plan",
+        "schema:description": "The range of activities that best describes the overall services intended to be delivered to the client throughout the course of the episode. For most clients, this will equate to the activities that account for most time spent by the service provider.",
+        "schema:disambiguatingDescription": "table/episode/principal-focus.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-07-08",
+        "datatype": {
+          "base": "string",
+          "format": "^(1|2|3|4|5|6)$"
+        },
+        "required": true
+      },{
+        "name": "homelessness",
+        "titles": [ "homelessness", "Homelessness Flag" ],
+        "dc:title": "Episode - Homelessness Flag",
+        "schema:description": "An indication of whether the client has been homeless in the 4 weeks prior to the current service episode.",
+        "schema:disambiguatingDescription": "table/episode/homelessness.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "format": "^(1|2|3)$"
+        },
+        "required": true
+      },{
+        "name": "client_postcode",
+        "titles": [ "client_postcode", "Client Postcode" ],
+        "dc:title": "Episode - Area of usual residence, postcode",
+        "schema:description": "The Australian postcode of the client.",
+        "schema:disambiguatingDescription": "table/episode/client-postcode.rst",
+        "schema:meteorItem": "429894",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "length": 4,
+          "format": "^[0-9]{4}$"
+        },
+        "required": true
+      },{
+        "name": "labour_force_status",
+        "titles": [ "labour_force_status", "Labour Force Status" ],
+        "dc:title": "Episode - Labour Force Status",
+        "schema:description": "The self-reported status the person currently has in being either in the labour force (employed/unemployed) or not in the labour force, as represented by a code.",
+        "schema:disambiguatingDescription": "table/episode/labour-force-status.rst",
+        "schema:meteorItem": "621450",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "format": "^(1|2|3|9)$"
+        },
+        "required": true
+      },{
+        "name": "employment_participation",
+        "titles": [ "employment_participation", "Employment Participation" ],
+        "dc:title": "Episode - Employment Participation",
+        "schema:description": "Whether a person in paid employment is employed full-time or part-time, as represented by a code.",
+        "schema:disambiguatingDescription": "table/episode/employment-participation.rst",
+        "schema:meteorItem": "269950",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "format": "^(1|2|7|9)$"
+        },
+        "required": true
+      },{
+        "name": "income_source",
+        "titles": [ "income_source", "Source of Cash Income" ],
+        "dc:title": "Episode - Source of Cash Income",
+        "schema:description": "The source from which a person derives the greatest proportion of his/her income, as represented by a code.",
+        "schema:disambiguatingDescription": "table/episode/income-source.rst",
+        "schema:meteorItem": "386449",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "format": "^(1|2|3|4|5|6|7|9)$"
+        },
+        "required": true
+      },{
+        "name": "pbs_eligibility_type",
+        "titles": [ "pbs_eligibility_type", "PBS eligibility card type" ],
+        "dc:title": "Episode - PBS eligibility card type",
+        "schema:description": "The type of eligibility card held by the patient or Pharmaceutical Benefits Scheme (PBS) consumer for whom the claim for a PBS benefit is made, as represented by a code.",
+        "schema:disambiguatingDescription": "table/episode/pbs-eligibility-type.rst",
+        "schema:meteorItem": "605149",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateModified": "2016-07-08",
+        "datatype": {
+          "base": "string",
+          "format": "^(1|2|9)$"
+        },
+        "required": true
+      },{
+        "name": "ndis_participant",
+        "titles": [ "ndis_participant", "NDIS Participant" ],
+        "dc:title": "Episode - NDIS Participant",
+        "schema:description": "Is the client a participant in the National Disability Insurance Scheme?, as represented by a code.",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "format": "^(1|2|9)$"
+        },
+        "required": true
+      },{
+        "name": "marital_status",
+        "titles": [ "marital_status", "Marital Status" ],
+        "dc:title": "Episode - Marital Status",
+        "schema:description": "A person's current relationship status in terms of a couple relationship or, for those not in a couple relationship, the existence of a current or previous registered marriage, as represented by a code.",
+        "schema:disambiguatingDescription": "table/episode/marital-status.rst",
+        "schema:meteorItem": "291045",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "format": "^(1|2|3|4|5|6)$"
+        },
+        "required": true
+      },{
+        "name": "suicide_referral_flag",
+        "titles": [ "suicide_referral_flag", "Suicide Referral Flag" ],
+        "dc:title": "Episode - Suicide Referral Flag",
+        "schema:description": "Identifies those individuals where a recent history of suicide attempt, or suicide risk, was a factor noted in the referral that underpinned the person's needs for assistance at entry to the episode, as represented by a code.",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "format": "^(1|2|9)$"
+        },
+        "required": true
+      },{
+        "name": "principal_diagnosis",
+        "titles": [ "principal_diagnosis", "Principal Diagnosis" ],
+        "dc:title": "Episode - Principal Diagnosis",
+        "schema:description": "The Principal Diagnosis is the diagnosis established after study to be chiefly responsible for occasioning the client's care during the current Episode of Care.",
+        "schema:disambiguatingDescription": "table/episode/principal-diagnosis.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateModified": "2016-06-08",
+        "datatype": {
+          "base": "string"
+        },
+        "required": true
+      },{
+        "name": "additional_diagnosis",
+        "titles": [ "additional_diagnosis", "Additional Diagnosis" ],
+        "dc:title": "Episode - Additional Diagnosis",
+        "schema:description": "The main additional condition or complaint co-existing with the Principal Diagnosis or arising during the episode of care.",
+        "schema:disambiguatingDescription": "table/episode/additional-diagnosis.rst",
+        "schema:domain": "See *Episode - Principal Diagnosis*",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateModified": "2016-06-08",
+        "datatype": {
+          "base": "string"
+        },
+        "required": true
+      },{
+        "name": "medication_antipsychotics",
+        "titles": [ "medication_antipsychotics", "Medication Antipsychotics" ],
+        "dc:title": "Medication - Antipsychotics (N05A)",
+        "schema:description": "Whether the client is taking prescribed antipsychotics for a mental health condition as assessed at intake assessment, as represented by a code.",
+        "schema:disambiguatingDescription": "table/episode/medication-antipsychotics.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "format": "^(1|2|9)$"
+        },
+        "default": "9"
+      },{
+        "name": "medication_anxiolytics",
+        "titles": [ "medication_anxiolytics", "Medication Anxiolytics" ],
+        "dc:title": "Medication - Anxiolytics (N05B)",
+        "schema:description": "Whether the client is taking prescribed anxiolytics for a mental health condition as assessed at intake assessment, as represented by a code.",
+        "schema:disambiguatingDescription": "table/episode/medication-anxiolytics.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "format": "^(1|2|9)$"
+        },
+        "default": "9"
+      },{
+        "name": "medication_hypnotics",
+        "titles": [ "medication_hypnotics", "Medication Hypnotics" ],
+        "dc:title": "Medication - Hypnotics and sedatives (N05C)",
+        "schema:description": "Whether the client is taking prescribed hypnotics and sedatives for a mental health condition as assessed at intake assessment, as represented by a code.",
+        "schema:disambiguatingDescription": "table/episode/medication-hypnotics.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "format": "^(1|2|9)$"
+        },
+        "default": "9"
+      },{
+        "name": "medication_antidepressants",
+        "titles": [ "medication_antidepressants", "Medication Antidepressants" ],
+        "dc:title": "Medication - Antidepressants (N06A)",
+        "schema:description": "Whether the client is taking prescribed antidepressants for a mental health condition as assessed at intake assessment, as represented by a code.",
+        "schema:disambiguatingDescription": "table/episode/medication-antidepressants.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "format": "^(1|2|9)$"
+        },
+        "default": "9"
+      },{
+        "name": "medication_psychostimulants",
+        "titles": [ "medication_psychostimulants", "Medication Psychostimulants" ],
+        "dc:title": "Medication - Psychostimulants and nootropics (N06B)",
+        "schema:description": "Whether the client is taking prescribed psychostimulants and nootropics for a mental health condition as assessed at intake assessment, as represented by a code.",
+        "schema:disambiguatingDescription": "table/episode/medication-psychostimulants.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "format": "^(1|2|9)$"
+        },
+        "default": "9"
+      },{
+        "name": "referrer_profession",
+        "titles": [ "referrer_profession", "Referrer Profession" ],
+        "dc:title": "Episode - Referrer Profession",
+        "schema:description": "The profession of the individual making the referral.",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        },
+        "required": true
+      },{
+        "name": "referrer_organisation_type",
+        "titles": [ "referrer_organisation_type", "Referrer Organisation Type" ],
+        "dc:title": "Episode - Referrer Organisation Type",
+        "schema:description": "The type of organisation making the referral.",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        },
+        "required": true
+      }],
+      "primaryKey": "episode_key",
+      "foreignKeys": [{
+        "columnReference": "episode_completion_status",
+        "reference": {
+          "resource": "table/episode/completion-status.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "principal_focus",
+        "reference": {
+          "resource": "table/episode/principal-focus.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "homelessness",
+        "reference": {
+          "resource": "table/episode/homelessness.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "labour_force_status",
+        "reference": {
+          "resource": "table/episode/labour-force-status.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "employment_participation",
+        "reference": {
+          "resource": "table/episode/employment-participation.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "income_source",
+        "reference": {
+          "resource": "table/episode/income-source.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "pbs_eligibility_type",
+        "reference": {
+          "resource": "table/episode/pbs-eligibility-type.csv",
+          "columnReference": "id"
+        }
+      },{
+        "columnReference": "ndis_participant",
+        "reference": {
+          "resource": "table/episode/ndis-participant.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "marital_status",
+        "reference": {
+          "resource": "table/episode/marital-status.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "suicide_referral_flag",
+        "reference": {
+          "resource": "type/boolean-unknown.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "principal_diagnosis",
+        "reference": {
+          "resource": "table/episode/diagnosis.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "additional_diagnosis",
+        "reference": {
+          "resource": "table/episode/diagnosis.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "medication_antipsychotics",
+        "reference": {
+          "resource": "type/boolean-unknown.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "medication_anxiolytics",
+        "reference": {
+          "resource": "type/boolean-unknown.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "medication_hypnotics",
+        "reference": {
+          "resource": "type/boolean-unknown.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "medication_antidepressants",
+        "reference": {
+          "resource": "type/boolean-unknown.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "medication_psychostimulants",
+        "reference": {
+          "resource": "type/boolean-unknown.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "referrer_profession",
+        "reference": {
+          "resource": "table/episode/referrer-profession.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "referrer_organisation_type",
+        "reference": {
+          "resource": "table/episode/referrer-organisation-type.csv",
+          "columnReference": "id"
+        }
+      }]
+    }
+  }, {
+    "dc:title": "Service Contact",
+    "url": "data/service-contact.csv",
+    "schema:name": "service-contact",
+    "schema:description": "table/service-contact.rst",
+    "tableSchema": {
+      "columns": [{
+        "name": "organisation_path",
+        "titles": [ "organisation_path", "Organisation Path" ],
+        "dc:title": "Organisation Path",
+        "schema:description": "A sequence of colon separated Organisation Codes that fully specifies the upload organisation.",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        },
+        "separator": ":",
+        "required": true
+      },{
+        "name": "service_contact_key",
+        "titles": [ "service_contact_key", "Service Contact Key" ],
+        "dc:title": "Service Contact Key",
+        "schema:description": "This is a number or code assigned to each service contact. The Service Contact Key is unique and stable for each service contact at the level of the organisation.",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "minLength": 2,
+          "maxLength": 50
+        },
+        "required": true
+      },{
+        "name": "episode_key",
+        "titles": [ "episode_key", "Episode Key" ],
+        "dc:title": "Episode Key",
+        "schema:description": "This is a number or code assigned to each episode. The Episode Key is unique and stable for each episode at the level of the organisation.",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "minLength": 2,
+          "maxLength": 50
+        },
+        "required": true
+      },{
+        "name": "practitioner_key",
+        "titles": [ "practitioner_key", "Practitioner Key" ],
+        "dc:title": "Practitioner Key",
+        "schema:description": "A unique identifier for a practitioner within the PMHC top level organisation.",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "minLength": 2,
+          "maxLength": 50
+          },
+        "required": true
+      },{
+        "name": "service_contact_date",
+        "titles": [ "service_contact_date", "Date" ],
+        "dc:title": "Service Contact - Date",
+        "schema:description": "The date of each mental health service contact between a health service provider and patient/client.",
+        "schema:disambiguatingDescription": "table/service-contact/date.rst",
+        "schema:meteorItem": "494356",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "date",
+          "format": "ddMMyyyy"
+        },
+        "required": true
+      },{
+        "name": "service_contact_type",
+        "titles": [ "service_contact_type", "Type" ],
+        "dc:title": "Service Contact - Type",
+        "schema:description": "The main type of service provided in the service contact, as represented by the service type that accounted for most provider time.",
+        "schema:disambiguatingDescription": "table/service-contact/type.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "format": "^(1|2|3|4|5|6|7|8)$"
+        },
+        "required": true
+      },{
+        "name": "service_contact_postcode",
+        "titles": [ "service_contact_postcode", "Postcode" ],
+        "dc:title": "Service Contact - Postcode",
+        "schema:description": "The Australian postcode where the service contact took place.",
+        "schema:disambiguatingDescription": "table/service-contact/postcode.rst",
+        "schema:meteorItem": "429894",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "length": 4,
+          "format": "^[0-9]{4}$"
+        }
+      },{
+        "name": "service_contact_modality",
+        "titles": [ "service_contact_modality", "Modality" ],
+        "dc:title": "Service Contact - Modality",
+        "schema:description": "How the service contact was delivered, as represented by a code.",
+        "schema:disambiguatingDescription": "table/service-contact/modality.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "format": "^(1|2|3|4)$"
+        },
+        "required": true
+      },{
+        "name": "service_contact_participants",
+        "titles": [ "service_contact_participants", "Participants" ],
+        "dc:title": "Service Contact - Participants",
+        "schema:disambiguatingDescription": "table/service-contact/participants.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "format": "^(1|2|3)$"
+        },
+        "required": true
+      },{
+        "name": "service_contact_venue",
+        "titles": [ "service_contact_venue", "Venue" ],
+        "dc:title": "Service Contact - Venue",
+        "schema:description": "Where the service contact was delivered, as represented by a code.",
+        "schema:disambiguatingDescription": "table/service-contact/venue.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "format": "^(1|2|3|4|5|6)$"
+        },
+        "required": true
+      },{
+        "name": "service_contact_duration",
+        "titles": [ "service_contact_duration", "Duration" ],
+        "dc:title": "Service Contact - Duration",
+        "schema:description": "The time from the start to finish of a service contact.",
+        "schema:disambiguatingDescription": "table/service-contact/duration.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "format": "^(1|2|3|4|5|6|7|8|9)$"
+        },
+        "required": true
+      },{
+        "name": "service_contact_copayment",
+        "titles": [ "service_contact_copayment", "Copayment" ],
+        "dc:title": "Service Contact - Copayment",
+        "schema:description": "The co-payment is the amount paid by the client per session.",
+        "schema:disambiguatingDescription": "table/service-contact/copayment.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "number",
+          "format": "#####0.##"
+        },
+        "default": "0"
+      },{
+        "name": "service_contact_participation_indicator",
+        "titles": [ "service_contact_participation_indicator", "Participation Indicator" ],
+        "dc:title": "Service Contact - Client Participation Indicator",
+        "schema:description": "An indicator of whether the client participated in the service contact, as represented by a code.",
+        "schema:disambiguatingDescription": "table/service-contact/participation-indicator.rst",
+        "schema:meteorItem": "494341",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "format": "^(1|2)$"
+        },
+        "required": true
+      },{
+        "name": "service_contact_interpreter",
+        "titles": [ "interpreter used", "Interpreter Used" ],
+        "dc:title": "Service Contact - Interpreter Used",
+        "schema:description": "Whether an interpreter service was used during the Service Contact",
+        "schema:disambiguatingDescription": "table/service-contact/interpreter.rst",
+        "schema:dateCreated": "2016-07-08",
+        "schema:dateModified": "2016-07-08",
+        "datatype": {
+          "base": "string",
+          "format": "^(1|2|9)$"
+        },
+        "required": true
+      },{
+        "name": "service_contact_no_show",
+        "titles": [ "service_contact_no_show", "No Show" ],
+        "dc:title": "Service Contact - No Show",
+        "schema:description": "Where an appointment was made for a client, but the client failed to attend the appointment, as represented by a code.",
+        "schema:disambiguatingDescription": "table/service-contact/no-show.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "format": "^(1|2)$"
+        },
+        "required": true
+      },{
+        "name": "service_contact_final",
+        "titles": "service_contact_final",
+        "dc:title": "Service Contact - Final",
+        "schema:description": "An indication of whether the Service Contact is the final for the current Episode of Care",
+        "schema:disambiguatingDescription": "table/service-contact/final.rst",
+        "schema:dateCreated": "2016-07-08",
+        "schema:dateModified": "2016-07-08",
+        "datatype": {
+          "base": "string",
+          "format": "^(1|2|3)$"
+        },
+        "required": true
+      }],
+      "primaryKey": "service_contact_key",
+      "foreignKeys": [{
+        "columnReference": "service_contact_type",
+        "reference": {
+          "resource": "table/service-contact/type.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "service_contact_modality",
+        "reference": {
+          "resource": "table/service-contact/modality.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "service_contact_participants",
+        "reference": {
+          "resource": "table/service-contact/participants.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "service_contact_venue",
+        "reference": {
+          "resource": "table/service-contact/venue.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "service_contact_participation_indicator",
+        "reference": {
+          "resource": "type/boolean.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "service_contact_interpreter",
+        "reference": {
+          "resource": "table/service-contact/interpreter.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "service_contact_no_show",
+        "reference": {
+          "resource": "type/boolean.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "service_contact_final",
+        "reference": {
+          "resource": "table/service-contact/final.csv",
+          "columnReference": "id"
+        }
+      }]
+    }
+  }, {
+    "dc:title": "Outcome Collection Occasion",
+    "url": "data/collection-occasion.csv",
+    "schema:name": "collection-occasion",
+    "schema:description": "table/collection-occasion.rst",
+    "tableSchema": {
+      "columns": [{
+        "name": "organisation_path",
+        "titles": [ "organisation_path", "Organisation Path" ],
+        "dc:title": "Organisation Path",
+        "schema:description": "A sequence of colon separated Organisation Codes that fully specifies the upload organisation.",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        },
+        "separator": ":",
+        "required": true
+      },{
+        "name": "collection_occasion_key",
+        "titles": [ "collection_occasion_key", "Collection Occasion Key" ],
+        "dc:title": "Collection Occasion Key",
+        "schema:description": "This is a number or code assigned to each collection occasion of outcome measures. The Collection Occasion Key is unique and stable for each collection occasion at the level of the organisation.",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "minLength": 2,
+          "maxLength": 50
+        },
+        "required": true
+      },{
+        "name": "episode_key",
+        "titles": [ "episode_key", "Episode Key" ],
+        "dc:title": "Episode Key",
+        "schema:description": "This is a number or code assigned to each episode. The Episode Key is unique and stable for each episode at the level of the organisation.",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "minLength": 2,
+          "maxLength": 50
+        },
+        "required": true
+      },{
+        "name": "measure",
+        "titles": [ "measure", "Measure" ],
+        "dc:title": "Collection Occasion - Measure",
+        "schema:description": "The name of the measure.",
+        "schema:disambiguatingDescription": "table/collection-occasion/measure.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        },
+        "required": true
+      },{
+        "name": "measure_date",
+        "titles": [ "collection_occasion_date", "Date" ],
+        "dc:title": "Collection Occasion - Date",
+        "schema:description": "The date of the collection occasion.",
+        "schema:disambiguatingDescription": "table/collection-occasion/date.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "date",
+          "format": "ddMMyyyy"
+        },
+        "required": true
+      },{
+        "name": "reason_for_collection",
+        "titles": "reason_for_collection",
+        "dc:title": "Collection Occastion - Reason",
+        "schema:description": "The reason for the collection of the outcome measures on the identified Outcome Collection Occasion.",
+        "schema:disambiguatingDescription": "table/collection-occasion/reason.rst",
+        "schema:dateCreated": "2016-07-08",
+        "schema:dateModified": "2016-07-08",
+        "datatype": {
+          "base": "string",
+          "format": "^(1|2|3)$"
+        },
+        "required": true
+      },{
+        "name": "score",
+        "titles": [ "score", "Score" ],
+        "dc:title": "Collection Occasion - Score",
+        "schema:disambiguatingDescription": "table/collection-occasion/score.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer"
+        },
+        "required": true
+      }],
+      "primaryKey": "collection_occasion_key",
+      "foreignKeys": [{
+        "columnReference": "service_contact_type",
+        "reference": {
+          "resource": "table/collection-occasion/reason.csv",
+          "columnReference": "id"
+        }
+      }]
+    }
+  }, {
+    "url": "type/client/est-date-of-birth.csv",
+    "tableSchema": {
+      "columns": [{
+        "name": "id",
+        "titles": [ "id", "ID" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": "string"
+      },{
+        "name": "description",
+        "titles": [ "description", "Description" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        }
+      }],
+      "primaryKey": "id"
+    }
+  }, {
+    "url": "type/gender.csv",
+    "tableSchema": {
+      "columns": [{
+        "name": "id",
+        "titles": [ "id", "ID" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": "string"
+      },{
+        "name": "description",
+        "titles": [ "description", "Description" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        }
+      }],
+      "primaryKey": "id"
+    }
+  }, {
+    "url": "type/atsi-status.csv",
+    "tableSchema": {
+      "columns": [{
+        "name": "id",
+        "titles": [ "id", "ID" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": "string"
+      },{
+        "name": "description",
+        "titles": [ "description", "Description" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        }
+      }],
+      "primaryKey": "id"
+    }
+  }, {
+    "url": "table/client/prof-english.csv",
+    "tableSchema": {
+      "columns": [{
+        "name": "id",
+        "titles": [ "id", "ID" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": "string"
+      },{
+        "name": "description",
+        "titles": [ "description", "Description" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        }
+      }],
+      "primaryKey": "id"
+    }
+  }, {
+    "url": "table/organisation/organisation-type.csv",
+    "tableSchema": {
+      "columns": [{
+        "name": "id",
+        "titles": [ "id", "ID" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": "string"
+      },{
+        "name": "description",
+        "titles": [ "description", "Description" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        }
+      }],
+      "primaryKey": "id"
+    }
+  }, {
+    "url": "table/organisation/organisation-state.csv",
+    "tableSchema": {
+      "columns": [{
+        "name": "id",
+        "titles": [ "id", "ID" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": "string"
+      },{
+        "name": "description",
+        "titles": [ "description", "Description" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        }
+      }],
+      "primaryKey": "id"
+    }
+  }, {
+    "url": "table/episode/completion-status.csv",
+    "tableSchema": {
+      "columns": [{
+        "name": "id",
+        "titles": [ "id", "ID" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": "string"
+      },{
+        "name": "description",
+        "titles": [ "description", "Description" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        }
+      }],
+      "primaryKey": "id"
+    }
+  }, {
+    "url": "table/episode/princ-focus-of-treatment.csv",
+    "tableSchema": {
+      "columns": [{
+        "name": "id",
+        "titles": [ "id", "ID" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": "string"
+      },{
+        "name": "description",
+        "titles": [ "description", "Description" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        }
+      }],
+      "primaryKey": "id"
+    }
+  }, {
+    "url": "table/episode/labour-force-status.csv",
+    "tableSchema": {
+      "columns": [{
+        "name": "id",
+        "titles": [ "id", "ID" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": "string"
+      },{
+        "name": "description",
+        "titles": [ "description", "Description" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        }
+      }],
+      "primaryKey": "id"
+    }
+  }, {
+    "url": "table/episode/employment-participation.csv",
+    "tableSchema": {
+      "columns": [{
+        "name": "id",
+        "titles": [ "id", "ID" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": "string"
+      },{
+        "name": "description",
+        "titles": [ "description", "Description" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        }
+      }],
+      "primaryKey": "id"
+    }
+  }, {
+    "url": "table/episode/income-source.csv",
+    "tableSchema": {
+      "columns": [{
+        "name": "id",
+        "titles": [ "id", "ID" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": "string"
+      },{
+        "name": "description",
+        "titles": [ "description", "Description" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        }
+      }],
+      "primaryKey": "id"
+    }
+  }, {
+    "url": "table/episode/ndis-participant.csv",
+    "tableSchema": {
+      "columns": [{
+        "name": "id",
+        "titles": [ "id", "ID" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": "string"
+      },{
+        "name": "description",
+        "titles": [ "description", "Description" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        }
+      }],
+      "primaryKey": "id"
+    }
+  }, {
+    "url": "table/episode/marital-status.csv",
+    "tableSchema": {
+      "columns": [{
+        "name": "id",
+        "titles": [ "id", "ID" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": "string"
+      },{
+        "name": "description",
+        "titles": [ "description", "Description" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        }
+      }],
+      "primaryKey": "id"
+    }
+  }, {
+    "url": "table/episode/referrer-entity.csv",
+    "tableSchema": {
+      "columns": [{
+        "name": "id",
+        "titles": [ "id", "ID" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": "string"
+      },{
+        "name": "description",
+        "titles": [ "description", "Description" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        }
+      }],
+      "primaryKey": "id"
+    }
+  }, {
+    "url": "table/episode/referrer-type.csv",
+    "tableSchema": {
+      "columns": [{
+        "name": "id",
+        "titles": [ "id", "ID" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": "string"
+      },{
+        "name": "description",
+        "titles": [ "description", "Description" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        }
+      }],
+      "primaryKey": "id"
+    }
+  }, {
+    "url": "type/boolean.csv",
+    "tableSchema": {
+      "columns": [{
+        "name": "id",
+        "titles": [ "id", "ID" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": "string"
+      },{
+        "name": "description",
+        "titles": [ "description", "Description" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        }
+      }],
+      "primaryKey": "id"
+    }
+  }, {
+    "url": "type/boolean-unknown.csv",
+    "tableSchema": {
+      "columns": [{
+        "name": "id",
+        "titles": [ "id", "ID" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": "string"
+      },{
+        "name": "description",
+        "titles": [ "description", "Description" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        }
+      }],
+      "primaryKey": "id"
+    }
+  }, {
+    "url": "table/practitioner/category.csv",
+    "tableSchema": {
+      "columns": [{
+        "name": "id",
+        "titles": [ "id", "ID" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": "string"
+      },{
+        "name": "description",
+        "titles": [ "description", "Description" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        }
+      }],
+      "primaryKey": "id"
+    }
+  }, {
+    "url": "table/practitioner/cultural-training-flag.csv",
+    "tableSchema": {
+      "columns": [{
+        "name": "id",
+        "titles": [ "id", "ID" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": "string"
+      },{
+        "name": "description",
+        "titles": [ "description", "Description" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        }
+      }],
+      "primaryKey": "id"
+    }
+  }, {
+    "url": "table/practitioner/active.csv",
+    "tableSchema": {
+      "columns": [{
+        "name": "id",
+        "titles": [ "id", "ID" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": "string"
+      },{
+        "name": "description",
+        "titles": [ "description", "Description" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        }
+      }],
+      "primaryKey": "id"
+    }
+  }, {
+    "url": "table/service-contacttype.csv",
+    "tableSchema": {
+      "columns": [{
+        "name": "id",
+        "titles": [ "id", "ID" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": "string"
+      },{
+        "name": "description",
+        "titles": [ "description", "Description" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        }
+      }],
+      "primaryKey": "id"
+    }
+  }, {
+    "url": "table/service-contactmodality.csv",
+    "tableSchema": {
+      "columns": [{
+        "name": "id",
+        "titles": [ "id", "ID" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": "string"
+      },{
+        "name": "description",
+        "titles": [ "description", "Description" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        }
+      }],
+      "primaryKey": "id"
+    }
+  }, {
+    "url": "table/service-contactparticipants.csv",
+    "tableSchema": {
+      "columns": [{
+        "name": "id",
+        "titles": [ "id", "ID" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": "string"
+      },{
+        "name": "description",
+        "titles": [ "description", "Description" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        }
+      }],
+      "primaryKey": "id"
+    }
+  }, {
+    "url": "table/service-contactvenue.csv",
+    "tableSchema": {
+      "columns": [{
+        "name": "id",
+        "titles": [ "id", "ID" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": "string"
+      },{
+        "name": "description",
+        "titles": [ "description", "Description" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        }
+      }],
+      "primaryKey": "id"
+    }
+  }, {
+    "url": "table/service-contactduration.csv",
+    "tableSchema": {
+      "columns": [{
+        "name": "id",
+        "titles": [ "id", "ID" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": "string"
+      },{
+        "name": "description",
+        "titles": [ "description", "Description" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        }
+      }],
+      "primaryKey": "id"
+    }
+  }]
+}

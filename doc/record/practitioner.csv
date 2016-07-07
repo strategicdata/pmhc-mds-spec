@@ -1,0 +1,48 @@
+"Data Element (Field Name)","Type [Length]","Format / Values"
+"`Organisation Path`_ (organisation_path)
+
+",string,"A sequence of colon separated Organisation Codes that fully specifies the upload organisation."
+"`Practitioner Key`_ (practitioner_key)
+
+",string,"A unique identifier for a practitioner within the responsible organisation. Assigned by the organisation."
+"`Practitioner - Category`_ (practitioner_category)
+
+",string,":1: Clincal Psychologist
+:2: Generalist/Other Psychologist
+:3: Social Worker
+:4: Occupational Therapist
+:5: Mental Health Nurse
+:6: Aboriginal and Torres Strait Islander Health/Mental Health Worker
+:7: Low Intensity Mental Health Worker
+:8: General Practitioner
+:9: Psychiatrist
+:10: Other Medical
+:11: Other"
+"`Practitioner - ATSI Cultural Training`_ (atsi_cultural_training)
+
+",string,":1: Yes
+:2: No
+:3: Not required
+:9: Missing / Not recorded"
+"`Practitioner - Year of Birth`_ (practitioner_year_of_birth)
+
+",gYear,gYear
+"`Practitioner - Gender`_ (practitioner_gender)
+
+",string,":0: Not stated/Inadequately described
+:1: Male
+:2: Female
+:3: Other"
+"`Practitioner - Aboriginal and Torres Strait Islander Status`_ (practitioner_atsi_status)
+
+
+
+METeOR: `291036 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291036>`__",string,":1: Aboriginal but not Torres Strait Islander origin
+:2: Torres Strait Islander but not Aboriginal origin
+:3: Both Aboriginal and Torres Strait Islander origin
+:4: Neither Aboriginal or Torres Strait Islander origin
+:9: Not stated/inadequately described"
+"`Practitioner - Active`_ (practitioner_active)
+
+",string,":0: Inactive
+:1: Active"

@@ -1,0 +1,242 @@
+"Data Element (Field Name)","Type [Length]","Format / Values"
+"`Organisation Path`_ (organisation_path)
+
+",string,"A sequence of colon separated Organisation Codes that fully specifies the upload organisation."
+"`Episode Key`_ (episode_key)
+
+",string,"This is a number or code assigned to each episode. The Episode Key is unique and stable for each episode at the level of the organisation."
+"`Client Key`_ (client_key)
+
+",string,"This is a number or code assigned to each individual referred to the commissioned organisation. The client identifier is unique and stable for each individual at the level of the PMHC top level organisation."
+"`Episode - Start Date`_ (episode_start_date)
+
+
+
+METeOR: `614072 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614072>`__",date,"The date on which the client formally commences an *Episode of Care*."
+"`Episode - End Date`_ (episode_end_date)
+
+
+
+METeOR: `614094 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614094>`__",date,"The date on which an *Episode of Care* is formally or administratively ended"
+"`Episode - Completion Status`_ (episode_completion_status)
+
+",string,":1: Episode closed - treatment concluded
+:2: Episode closed administratively - client could not be contacted
+:3: Episode closed administratively - client declined further contact
+:4: Episode closed administratively - Client moved out of area
+:5: Episode closed administratively - other reason"
+"`Episode - Referral Date`_ (referral_date)
+
+",date,"The date the referrer made the referral."
+"`Episode - Principal Focus of Treatment Plan`_ (principal_focus)
+
+",string,":1: Psychological therapy
+:2: Low intensity psychological intervention
+:3: Clinical care coordination
+:4: Complex care package for adults
+:5: Child and youth-specific mental health services
+:6: Indigenous-specific mental health services
+:7: Other"
+"`Episode - Homelessness Flag`_ (homelessness)
+
+",string,":1: Sleeping rough or in non-conventional accommodation
+:2: Short-term or emergency accommodation
+:3: Not homeless"
+"`Episode - Area of usual residence, postcode`_ (client_postcode)
+
+
+
+METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__",string[4],"The Australian postcode of the client."
+"`Episode - Labour Force Status`_ (labour_force_status)
+
+
+
+METeOR: `621450 <http://meteor.aihw.gov.au/content/index.phtml/itemId/621450>`__",string,":1: Employed
+:2: Unemployed
+:3: Not in the Labour Force
+:9: Not stated/inadequately described"
+"`Episode - Employment Participation`_ (employment_participation)
+
+
+
+METeOR: `269950 <http://meteor.aihw.gov.au/content/index.phtml/itemId/269950>`__",string,":1: Full-time
+:2: Part-time
+:3: Not applicable - not in the labour force
+:9: Not stated/inadequately described"
+"`Episode - Source of Cash Income`_ (income_source)
+
+
+
+METeOR: `386449 <http://meteor.aihw.gov.au/content/index.phtml/itemId/386449>`__",string,":1: Disability Support Pension
+:2: Other pension or benefit (not superannuation)
+:3: Paid employment
+:4: Compensation payments
+:5: Other (e.g. superannuation, investments etc.)
+:6: Nil income
+:7: Not known
+:9: Not stated/inadequately described"
+"`Episode - PBS eligibility card type`_ (pbs_eligibility_type)
+
+
+
+METeOR: `605149 <http://meteor.aihw.gov.au/content/index.phtml/itemId/605149>`__",string,":BC: Department of Veteranss' Affairs (Repatriation Pharmaceutical Benefits Scheme or 'Orange card')
+:CN: Pharmaceutical Benefits Scheme concessional entitlement (Department of Human Services - DHS)
+:DT: Dependant treatment entitlement (Department of Veterans' Affairs - DVA)
+:EI: Pensioner treatment entitlement (DVA)
+:ET: Pensioner treatment entitlement (DVA)
+:HB: Centresink (Health Benefits)
+:HC: Centrelink (Health Care Card)
+:JI: Pensioner treatment entitlement (DVA)
+:JT: Pensioner treatment entitlement (DVA)
+:KI: Pensioner treatment entitlement (DVA)
+:MC: Medicare (general entitlement) (DHS)
+:OC: Ostomy membership (colostomy/ileostomy)
+:PC: Pensioner concession (Department of Social Services - DSS, DVA)
+:PM: Pensioner treatment entitlement (DVA)
+:PS: Combined Pensioner concession/Senior Health Care (DVA)
+:PT: DVA (Pensioner treatment entitlement card (PTEC) or 'Gold card')
+:PW: Dependant treatment entitlement (DVA)
+:SB: Pensioner health benefits (DSS)/Centrelink (Seniors' benefit)
+:SC: Pharmaceutical benefits concession (DSS)
+:SH: Centrelink (Senior Health Card) or DVA (Senior Health Card)
+:SN: Pharmaceutical Benefit Safety Net (DHS)
+:SP: Service pension benefit (DVA)
+:ST: DVA (Specific treatment entitlement card (STEC) or 'White card')
+:VB: Pensioner health benefits (DVA)"
+"`Episode - NDIS Participant`_ (ndis_participant)
+
+",string,":1: Yes
+:2: No
+:9: Not stated/inadequately described"
+"`Episode - Marital Status`_ (marital_status)
+
+
+
+METeOR: `291045 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291045>`__",string,":1: Never married
+:2: Widowed
+:3: Divorced
+:4: Separated
+:5: Married (registered and de facto)
+:6: Not stated/inadequately described"
+"`Episode - Suicide Referral Flag`_ (suicide_referral_flag)
+
+",string,":1: Yes
+:2: No
+:9: Unknown"
+"`Episode - Principal Diagnosis`_ (principal_diagnosis)
+
+",string,":101: Panic disorder
+:102: Agoraphobia
+:103: Social phobia
+:104: Generalised anxiety disorder
+:105: Obsessive-compulsive disorder
+:106: Post-traumatic stress disorder
+:107: Acute stress disorder
+:108: Other anxiety disorder
+:201: Major depressive disorder
+:201a: PND
+:202: Dysthymia
+:203: Depressive disorder NOS
+:204: Bipolar disorder
+:205: Cyclothymic disorder
+:206: Other affective disorder
+:301: Alcohol harmful use
+:302: Alcohol dependence
+:303: Drug harmful use/abuse
+:304: Drug dependence
+:305: Other substance use disorder
+:401: Schizophrenia
+:402: Schizoaffective disorder
+:403: Brief psychotic disorder
+:404: Other psychotic disorder
+:501: Separation anxiety disorder
+:502: Attention deficit hyperactivity disorder (ADHD)
+:503: Conduct disorder
+:504: Oppositional defiant disorder
+:505: Pervasive developmental disorder
+:506: Other disorder of childhood and adolescence
+:601: Adjustment disorder
+:602: Eating disorder
+:603: Somatoform disorder
+:604: Personality disorder
+:605: Other mental disorder
+:901: Anxiety symptoms
+:902: Depressive symptoms
+:903: Mixed anxiety and depressive symptoms
+:904: Stress related
+:905: Other"
+"`Episode - Additional Diagnosis`_ (additional_diagnosis)
+
+",string,"See *Episode - Principal Diagnosis*"
+"`Medication - Antipsychotics (N05A)`_ (medication_antipsychotics)
+
+",string,":1: Yes
+:2: No
+:9: Unknown"
+"`Medication - Anxiolytics (N05B)`_ (medication_anxiolytics)
+
+",string,":1: Yes
+:2: No
+:9: Unknown"
+"`Medication - Hypnotics and sedatives (N05C)`_ (medication_hypnotics)
+
+",string,":1: Yes
+:2: No
+:9: Unknown"
+"`Medication - Antidepressants (N06A)`_ (medication_antidepressants)
+
+",string,":1: Yes
+:2: No
+:9: Unknown"
+"`Medication - Psychostimulants and nootropics (N06B)`_ (medication_psychostimulants)
+
+",string,":1: Yes
+:2: No
+:9: Unknown"
+"`Episode - Referrer Profession`_ (referrer_profession)
+
+",string,":1: General Practitioner
+:2: Psychiatrist
+:3: Case Manager
+:4: Midwife
+:5: Obstetrician
+:6: Maternal Health Nurse
+:7: Self
+:8: Social Worker
+:9: Clinical Psychologist
+:10: Generalist/Other Psychologist
+:11: Paediatrician
+:12: School psychologist / counsellor
+:13: Deputy principal or Principal
+:14: Director of Early Childhood Services or Equivalent
+:15: Aboriginal Health Worker
+:16: Outreach Worker
+:17: Mental Health Nurse
+:18: Other?"
+"`Episode - Referrer Organisation Type`_ (referrer_organisation_type)
+
+",string,":1: General Practice
+:2: Medical Specialist
+:3: Hospital Ward
+:4: Emergency Department
+:5: Community Health - Government
+:6: Community Health - NFP
+:7: Non Government Organisation
+:8: School - Primary
+:9: School - Secondary
+:10: School - Pre/Kindergarten
+:11: School - Special
+:12: School - Other
+:13: University
+:14: TAFE
+:15: Child and Maternal Health
+:16: Nursing Service
+:17: Family Support Service
+:18: Mental Health Services
+:19: Housing Services
+:20: Help Lines and Referral Services
+:21: ATSI Health Organisation/Aboriginal Controlled Community Health Service
+:22: Acute Mental Health Team
+:23: Centrelink
+:24: Drug and Alcohol Service
+:25: Other?"

@@ -15,26 +15,26 @@ Record formats
 Provider Organisation
 ^^^^^^^^^^^^^^^^^^^^^
 
-| Explanatory text to go here ...
+Provider Organisation data is for administrative use within the PMHC MDS
+system. It is managed by the PHN's via the PMHC MDS administrative interface,
+it cannot be uploaded.
 
-.. csv-table:: Organisation record layout
-  :file: records/organisation.csv
+.. csv-table:: Provider Organisation record layout
+  :file: record/organisation.csv
   :header-rows: 1
-
-.. include:: records/organisation-notes.rst
 
 ----------
 
 Practitioner
 ^^^^^^^^^^^^
 
-| Explanatory text to go here ...
+Practitioner data is intended to provide workforce planning data for use by the
+Department. It is managed by the provider organisations via the PMHC MDS
+administrative interface, it cannot be uploaded.
 
 .. csv-table:: Practitioner record layout
-  :file: records/practitioner.csv
+  :file: record/practitioner.csv
   :header-rows: 1
-
-.. include:: records/practitioner-notes.rst
 
 ----------
 
@@ -44,27 +44,52 @@ Client
 | Explanatory text to go here ...
 
 .. csv-table:: Client record layout
-   :file: records/client.csv
+   :file: record/client.csv
    :header-rows: 1
-
-.. include:: records/client-notes.rst
 
 ----------
 
 Episode
 ^^^^^^^
 
-| Explanatory text to go here ...
+For the purposes of the PMHC MDS, an *Episode of Care* is defined as a more or
+less continuous period of contact between a client and a PHN-commissioned
+provider organisation/clinician that starts at the point of first contact, and
+concludes at discharge. Episodes comprise a series of one or more Service
+Contacts. This structure allows for a logical data collection protocol that
+specifies what data are collected when, and by whom. Different sets of PMHC MDS
+items are collected at various points in the client’s engagement with the
+provider organisation. Some items are only collected once at the episode level,
+while others are collected at each *Service Contact*.
+
+Three business rules apply to how the *Episode of Care* concept is implemented
+across PHN-commissioned services:
+
+- **One episode at a time for each client, defined at the level of the provider
+  organisation / clinician**
+
+  While an individual may have multiple *Episodes of Care* over the course of
+  their illness, they may be considered as being in only one episode at any
+  given point of time for **any particular PHN-commissioned provider
+  organisation/clinician**. The implication is that the care provided by the
+  organisation to an individual client at any point in time is subject to only
+  one set of reporting requirements.
+  
+- **Episodes commence at the point of first contact**
+
+- **Discharge from care concludes the episode**
+
+  Discharge may occur clinically or administratively in instances where contact
+  has been lost with the client. A new episode is deemed to commence if the
+  person re-presents to the organisation.
 
 .. csv-table:: Episode record layout
-   :file: records/episode.csv
+   :file: record/episode.csv
    :header-rows: 1
-   
-.. include:: records/episode-notes.rst
 
 ----------
 
-Service contact
+Service Contact
 ^^^^^^^^^^^^^^^
 
 - Service contacts are defined as the provision of a service by a PHN
@@ -89,25 +114,25 @@ Service contact
   modification.
 
 .. csv-table:: Service contact record layout
-   :file: records/service_contact.csv
+   :file: record/service-contact.csv
    :header-rows: 1
-   
-.. include:: records/service_contact-notes.rst
+
 
 ----------
 
-Outcome collection occasion
+Outcome Collection Occasion
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Items for Outcome collection occasion are still a work in progress and subject to change.
+A Collection Occasion is defined as an occasion during an Episode of Care when
+the required outcome measure is to be collected. At a minimum, collection of
+outcome data is required at both Episode Start and Episode End, but may be more
+frequent if clinically indicated and agreed by the client.
 
 .. csv-table:: Outcome collection occasion record layout
-   :file: records/outcome_collection_occasion.csv
+   :file: record/collection-occasion.csv
    :header-rows: 1
-   
-.. include:: records/outcome_collection_occasion-notes.rst
 
 -----
 
-.. include:: includes/definitions.rst
+.. include:: include/definitions.rst
 

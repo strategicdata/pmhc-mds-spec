@@ -1,0 +1,55 @@
+"Data Element (Field Name)","Type [Length]","Format / Values"
+"`Organisation Path`_ (organisation_path)
+
+",string,"A sequence of colon separated Organisation Codes that fully specifies the upload organisation."
+"`Client Key`_ (client_key)
+
+",string,"This is a number or code assigned to each individual referred to the commissioned organisation. The client identifier is unique and stable for each individual at the level of the PMHC top level organisation."
+"`Client - Statistical Linkage Key`_ (slk)
+
+
+
+METeOR: `349510 <http://meteor.aihw.gov.au/content/index.phtml/itemId/349510>`__",string,"A key that enables two or more records belonging to the same individual to be brought together."
+"`Client - Date of Birth`_ (date_of_birth)
+
+
+
+METeOR: `287007 <http://meteor.aihw.gov.au/content/index.phtml/itemId/287007>`__",date,"The date on which an individual was born."
+"`Client - Estimated Date of Birth Flag`_ (est_date_of_birth)
+
+",string,":1: Date of birth is accurate
+:2: Date of birth is an estimate
+:8: Date of birth is a 'dummy' date (ie, 09099999)
+:9: Accuracy of stated date of birth is not known"
+"`Client - Gender`_ (gender)
+
+",string,"The term 'gender' refers to the way in which a person identifies their masculine or feminine characteristics. A persons gender relates to their deeply held internal and individual sense of gender and is not always exclusively male or female. It may or may not correspond to their sex assigned at birth."
+"`Client - Aboriginal and Torres Strait Islander Status`_ (client_atsi_status)
+
+
+
+METeOR: `291036 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291036>`__",string,":1: Aboriginal but not Torres Strait Islander origin
+:2: Torres Strait Islander but not Aboriginal origin
+:3: Both Aboriginal and Torres Strait Islander origin
+:4: Neither Aboriginal or Torres Strait Islander origin
+:9: Not stated/inadequately described"
+"`Client - Country of Birth`_ (country_of_birth)
+
+
+
+METeOR: `459973 <http://meteor.aihw.gov.au/content/index.phtml/itemId/459973>`__",string[4],"The country in which the client was born, as represented by a code."
+"`Client - Main Language Spoken at Home`_ (main_lang_at_home)
+
+
+
+METeOR: `460125 <http://meteor.aihw.gov.au/content/index.phtml/itemId/460125>`__",string[4],"The language reported by a client as the main language other than English spoken by that client in his/her home (or most recent private residential setting occupied by the client) to communicate with other residents of the home or setting and regular visitors, as represented by a code."
+"`Client - Proficiency in Spoken English`_ (prof_english)
+
+
+
+METeOR: `270203 <http://meteor.aihw.gov.au/content/index.phtml/itemId/270203>`__",string,":0: Not applicable (persons under 5 years of age or who speak only English)
+:1: Very well
+:2: Well
+:3: Not well
+:4: Not at all
+:9: Not stated/inadequately described"

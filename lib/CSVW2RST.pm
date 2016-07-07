@@ -15,7 +15,7 @@ use Text::CSV_XS;
 
 use Data::Dumper;
 
-# http://www.w3.org/TR/tabular-metadata/#normalization - table titles
+#  - table titles
 
 use constant METEOR_URL => 'http://meteor.aihw.gov.au/content/index.phtml/itemId/';
 
@@ -34,34 +34,31 @@ sub generate {
 
     my $max_rows = 0;
 
-    say Dumper $meta;
-    say Dumper $meta->{tables};
-
     my $csv = Text::CSV_XS->new ({ binary => 1, auto_diag => 1 });
+
+    my $definition_records;
+
     foreach my $record ( @{$meta->{tables}} ) {
 
-        next unless $record->{'schema:name'};
+        next unless $record->{'dc:title'};
         
-        say '=' x length $record->{'schema:name'};
-        say $record->{'schema:name'};
-        say '-' x length $record->{'schema:name'};
+        #say '=' x length $record->{'dc:title'};
+        warn $record->{'dc:title'}, "\n";
+        #say '-' x length $record->{'dc:title'};
         
-        my $ddmd = $Data::Dumper::Maxdepth;
-        $Data::Dumper::Maxdepth = 3;
-        say Dumper $record;
-        $Data::Dumper::Maxdepth = $ddmd;
-        say "\n";
+        #my $ddmd = $Data::Dumper::Maxdepth;
+        #$Data::Dumper::Maxdepth = 3;
+        #say Dumper $record;
+        #$Data::Dumper::Maxdepth = $ddmd;
+        #say "\n";
 
-        my $rec_type = lc $record->{'schema:name'};
-        $rec_type =~ s/\s+/-/g;
-
-        $summary_table->[0][$summary_column] = $rec_type;
+        $summary_table->[0][$summary_column] = $record->{'schema:name'};
         
-        if ( ! path("_doc/record")->exists ) {
-            path("_doc/record")->mkpath;
+        if ( ! path("doc/record")->exists ) {
+            path("doc/record")->mkpath;
         }
 
-        my $filename = '_doc/record/' . $rec_type . ".csv";
+        my $filename = 'doc/record/' . $record->{'schema:name'} . ".csv";
         open my $fh, ">", $filename or die $filename . ": $!";
 
         my $size = 0;
@@ -71,158 +68,149 @@ sub generate {
         $csv->say($fh, [
             'Data Element (Field Name)',
             'Type [Length]',
-            'Notes / Values',
+            'Format / Values',
         ]);
 
         my $row_count = 1;
+        
+        my $field_fk;
+        %{$field_fk} = map { ($_->{columnReference}, $_->{reference}) } 
+            @{$record->{tableSchema}{foreignKeys}};
 
         foreach my $field ( @{$record->{'tableSchema'}{'columns'}} ) {
-            say $field->{'titles'}[1];
-            say '^' x length $field->{'titles'}[1];
-            say Dumper $field;
-            say "\n";
-        }
-
-    }
-
-    #####
-    return;
-    #####
-        
-    foreach my $record ( $meta->{tables} ) {
-
-#        $summary_table->[0][$summary_column] = $record->rec_type();
-
-        my $filename = '_doc/record/' . lc $record->rec_type() . ".csv";
-        open my $fh, ">", $filename or die $filename . ": $!";
-
-        my $size = 0;
-        my $note_no = 1;
-        my $notes = '';
-
-#        $csv->say($fh, [
-#            'Data Element (Field Name)',
-#            'Type [Length]',
-#            'Start',
-#            'Notes / Values',
-#        ]);
-
-        my $row_count = 1;
+            warn "\t", $field->{'dc:title'}, "\n";
+            #say '^' x length $field->{'dc:title'};
+            #say Dumper $field;
+            #say "\n";
             
-        foreach my $field ( $record->fields() ) {
+            if ( exists $field_fk->{$field->{name}} ) {
+                $field->{_domain} = $field_fk->{$field->{name}};
+            }
 
-            $summary_table->[$row_count++][$summary_column] = $field->Title();
+            if ( exists $definition_records->{$field->{name}} ) {
+                warn "\t!! - " . $field->{name} . " exists\n";
+            }
+            else {
+                $definition_records->{$field->{name}} = $field;
+            }
+
+            $summary_table->[$row_count++][$summary_column] = $field->{'dc:title'};
             
             if ($row_count > $max_rows ) {
                 $max_rows = $row_count;
             }
 
-            my $note_ref = '';
-            my $domain = $field->Domain();
-            if (ref $domain eq 'HASH') {
-                if ( exists $domain->{Notes} && ! ($field->Type() =~ /^Date/) ) {
-                    
-                    my $note = $domain->{Notes};
-                    $note =~ s/\n/\n  /sg;
-                    $note =~ s/\n\s*$//s;
-                    
-                    $note_ref = '[#tn_' . lc $record->rec_type() . $note_no . ']';
-                    $notes .= '.. ' . "$note_ref\n" . '  ' . $note . "\n";
-                    $note_ref = ' ' . $note_ref . '_';
-                    $note_no++;
-                }
-            }
-
             my $meteor_link = '';
-            if ( $field->MeteorID() ) {
-                $meteor_link = "\n\nMETeOR: " . meteor($field->MeteorID());
+            if ( $field->{'schema:meteorItem'} ) {
+                $meteor_link = "\n\nMETeOR: " . meteor($field->{'schema:meteorItem'});
             }
 
+#            my $note_ref = '';
+#            if (exists $domain eq 'HASH') {
+#                if ( exists $domain->{Notes} && ! ($field->Type() =~ /^Date/) ) {
+#                    
+#                    my $note = $domain->{Notes};
+#                    $note =~ s/\n/\n  /sg;
+#                    $note =~ s/\n\s*$//s;
+#                    
+#                    $note_ref = '[#tn_' . lc $record->rec_type() . $note_no . ']';
+#                    $notes .= '.. ' . "$note_ref\n" . '  ' . $note . "\n";
+#                    $note_ref = ' ' . $note_ref . '_';
+#                    $note_no++;
+#                }
+#            }
+            
             $csv->say($fh, [
-                '`' . $field->Title() . '`_'
-                . ' (' . $field->Name() . ')'
-                . "$note_ref\n\n"
+                '`' . $field->{'dc:title'} . '`_'
+                . ' (' . $field->{'name'} . ')'
+. "\n\n" #                . "$note_ref,
                 . $meteor_link,
-                $field->Encoding() . '[' . $field->Length .']',
-                $size + 1,
-#               $field->Definition() .
+                format_datatype($field),
                 format_domain($field),
             ]);
-
-            $size = $size + $field->Length();
         }
-
-        $summary_column++;
-
-        my $filename_rst = '_doc/record/' . lc $record->rec_type() . "-notes.rst";
-        open my $fh_rst, ">", $filename_rst or die $filename_rst . ": $!";
-        print $fh_rst "\n\n";
-        if ( $notes ) {
-            print $fh_rst ".. rubric:: Notes\n\n$notes";
-        }
-        close $fh or die $filename . ": $!";
-        close $fh_rst or die $filename_rst . ": $!";
-
     }
 
-    #print Dumper $summary_table;
+#    print Dumper $summary_table;
 
-    foreach my $row (@{$summary_table}) {
-        $csv->say($summary_fh, $row);
+#    foreach my $row (@{$summary_table}) {
+#        $csv->say($summary_fh, $row);
+#    }
+
+    generate_definitions($definition_records);
+}
+
+sub format_datatype {
+    my $field    = shift;
+    
+    my $formatted_dt;
+    if ( ref $field->{datatype} eq 'HASH' ) {
+        $formatted_dt = $field->{datatype}{base};
+        if ( exists $field->{datatype}{length} ) {
+            $formatted_dt .= '[' . $field->{datatype}{length} .']';
+        };
     }
-
-    generate_definitions();
+    else {
+        $formatted_dt = $field->{datatype};
+    }
+    
+    return $formatted_dt;
 }
 
 sub generate_definitions {
-    my $vars = shift || die 'need to replace';
+    my $definition_records = shift;
+    my $field_fk = shift;
+    
+    if ( ! path("doc/include")->exists ) {
+        path("doc/include")->mkpath;
+    }
 
-    my $filename = '_doc/definitions.rst';
+    my $filename = 'doc/include/definitions.rst';
     open my $fh, ">", $filename or die $filename . ": $!";
 
     say $fh "Definitions";
     say $fh "-----------\n";
+    
+    warn "\nDefinitions\n";
+    warn "-----------\n";
 
-    foreach my $field ( @{$vars->{definition_records}} ) {
+    foreach my $field_name ( sort keys %{$definition_records} ) {
+        
+        my $field = $definition_records->{$field_name};
 
-        # warn Dumper($field);
-        # warn $field->Name() . "\n";
+        warn $field->{name} . "\n";
 
         #print $fh "\n";
-        say $fh $field->Title();
-        say $fh ('^' x length $field->Title()) . "\n";
+        say $fh $field->{'dc:title'};
+        say $fh ('^' x length $field->{'dc:title'}) . "\n";
 
-        if( $field->Definition() ) {
-            say $fh $field->Definition();
+        if( exists $field->{"schema:description"} ) {
+            say $fh $field->{"schema:description"};
         }
 
         print $fh "\n:Field name: ";
-        say $fh $field->Name();
+        say $fh $field->{'name'};
         
         print $fh "\n:Data type: ";
-        say $fh $field->Encoding() . '[' . $field->Length .']';
+        say $fh format_datatype($field);
 
-        my $domain = $field->Domain();
-        if ( defined $domain ) {
+        my $domain = format_domain($field),;
+        if ( defined $domain 
+             && exists $field->{"schema:description"}
+             && $domain ne $field->{"schema:description"}
+        ) {
             say $fh "\n:Domain:";
-            say $fh indent(format_domain($field));
-
-            if ( ref $domain && exists $domain->{Notes} ) {
-                say $fh ':Notes:';
-                say $fh indent($domain->{Notes});
-            }
+            say $fh indent($domain);
         }
 
-        if ( $field->Comments() ) {
-            say $fh "\n:Notes:" 
-              if (! ref $domain || ! exists $domain->{Notes} );
-            #warn $field->Name() . "\n";
-            say $fh indent($field->Comments());
+        if ( exists $field->{'schema:disambiguatingDescription'} ) {
+            say $fh ':Notes:';
+            say $fh indent(path($field->{'schema:disambiguatingDescription'})->slurp);
         }
 
-        if( $field->MeteorID() ) {
+        if( $field->{'schema:meteorItem'} ) {
             print $fh "\n:METeOR: ";
-            say $fh meteor($field->MeteorID());
+            say $fh meteor($field->{'schema:meteorItem'});
         }
 
         say $fh "\n----------\n";
@@ -232,7 +220,26 @@ sub generate_definitions {
 }
 
 sub format_domain {
+
     my $field = shift;
+    
+    if ( ! ref $field->{datatype} ) {
+        return $field->{datatype};
+    }
+    
+    if (exists $field->{'schema:domain'} ) {
+        return $field->{'schema:domain'};
+    }
+
+    if ( my $rv = format_fk($field) ) {
+        return $rv;
+    }
+    
+    if ( exists $field->{'schema:description'} ){
+        return $field->{'schema:description'};
+    }
+    
+    return '';
 
     my $ret_str = '';
     my $domain = $field->Domain();
@@ -252,14 +259,6 @@ sub format_domain {
             $ret_str = 'Value = `' . (keys %{$domain->{Set}})[0] . "`\n";
         }
 
-        elsif ( ref $set eq 'HASH' ) {
-            my $newline = "";
-            foreach my $key ( sort { ncmp($a, $b) } keys %{$domain->{Set}} ) {
-                my $value = $domain->{Set}{$key};
-                $ret_str .= "$newline:$key: $value";
-                $newline = "\n";
-            }
-        }
     }
     
     if ( ! $ret_str ) {
@@ -267,6 +266,35 @@ sub format_domain {
     }
 
     return $ret_str;
+}
+
+sub format_fk {
+    my $field = shift;
+    
+    my $csv = Text::CSV_XS->new ({ binary => 1, auto_diag => 2 });
+
+    my $rv = undef;
+    my $aoh;
+
+    if ( exists $field->{_domain} ) {
+
+        $rv = '';
+        $aoh = $csv->csv(
+            in      => $field->{_domain}{resource},
+            headers => "auto"
+        );
+        
+        my $newline = "";
+        foreach my $item ( @{$aoh} ) {
+            my $key   = $item->{id};
+            my $value = $item->{description};
+            $rv .= "$newline:$key: $value";
+            $newline = "\n";
+        }
+    }
+    
+    return $rv;
+
 }
 
 sub meteor {

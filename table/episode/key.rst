@@ -1,0 +1,8 @@
+Episode Keys must be genrated by the organisation to be unique at the provider
+organisation level and must persist across time. Creation of episode keys in
+this way allows clients to be merged (where duplicate Client Keys have been
+identified) without having to re-allocate episode identifiers since they can
+never clash.
+
+A recommended approach for the creation of Episode Keys is to compute `random
+UUIDs <https://en.wikipedia.org/wiki/Universally_unique_identifier>`_.
