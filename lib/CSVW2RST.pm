@@ -34,9 +34,6 @@ sub generate {
 
     my $max_rows = 0;
 
-    say Dumper $meta;
-    say Dumper $meta->{tables};
-
     my $csv = Text::CSV_XS->new ({ binary => 1, auto_diag => 1 });
     foreach my $record ( @{$meta->{tables}} ) {
 
