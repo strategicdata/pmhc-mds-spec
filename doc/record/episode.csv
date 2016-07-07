@@ -1,0 +1,107 @@
+"Data Element (Field Name)","Type [Length]","Format / Values"
+"`Organisation Path`_ (organisation_path)",string,
+"`Episode Key`_ (episode_key)",string,
+"`Client Key`_ (client_key)",,
+"`Episode - Start Date`_ (episode_start_date)",date,
+"`Episode - End Date`_ (episode_end_date)",date,
+"`Episode - Completion Status`_ (episode_completion_status)",string,":1: Treatment complete
+:2: Patient could not be contacted
+:3: Patient refused treatment
+:4: Patient referred elsewhere
+:5: Treatment incomplete but referral closed
+:6: Patient ineligible"
+"`Episode - Referral Date`_ (referral_date)",date,
+"`Episode - Principal Focus of Treatment Plan`_ (princ_focus_of_treatment)",string,":1: Psychological therapy
+:2: Low intensity psychological intervention
+:3: Clinical care coordination
+:4: Complex care package for adults
+:5: Child and youth-specific mental health services
+:6: Other"
+"`Episode - Area of usual residence, postcode`_ (client_postcode)",string[4],
+"`Episode - Labour Force Status`_ (labour_force_status)",string,":1: Employed
+:2: Unemployed
+:3: Not in the Labour Force
+:9: Not stated/inadequately described"
+"`Episode - Employment Participation`_ (employment_participation)",string,":1: Full-time
+:2: Part-time
+:3: Not applicable - not in the labour force
+:9: Not stated/inadequately described"
+"`Episode - Source of Cash Income`_ (income_source)",string,":1: Disability Support Pension
+:2: Other pension or benefit (not superannuation)
+:3: Paid employment
+:4: Compensation payments
+:5: Other (e.g. superannuation, investments etc.)
+:6: Nil income
+:7: Not known
+:9: Not stated/inadequately described"
+"`Episode - NDIS Participant`_ (ndis_participant)",string,":1: Yes
+:2: No
+:9: Not stated/inadequately described"
+"`Episode - Marital Status`_ (marital_status)",string,":1: Never married
+:2: Widowed
+:3: Divorced
+:4: Separated
+:5: Married (registered and de facto)
+:6: Not stated/inadequately described"
+"`Episode - Suicide Referral Flag`_ (suicide_referral_flag)",string,":1: Yes
+:2: No"
+"`Episode - Principal Diagnosis`_ (principal_diagnosis)",string,
+"`Episode - Other Diagnosis`_ (other_diagnosis)",string,
+"`Medication - Antipsychotics (N05A)`_ (medication_antipsychotics)",string,":1: Yes
+:2: No
+:9: Unknown"
+"`Medication - Anxiolytics (N05B)`_ (medication_anxiolytics)",string,":1: Yes
+:2: No
+:9: Unknown"
+"`Medication - Hypnotics and sedatives (N05C)`_ (medication_hypnotics)",string,":1: Yes
+:2: No
+:9: Unknown"
+"`Medication - Antidepressants (N06A)`_ (medication_antidepressants)",string,":1: Yes
+:2: No
+:9: Unknown"
+"`Medication - Psychostimulants and nootropics (N06B)`_ (medication_psychostimulants)",string,":1: Yes
+:2: No
+:9: Unknown"
+"`Episode - Referrer Type`_ (referrer_type)",string,":1: General Practitioner
+:2: Psychiatrist
+:3: Case Manager
+:4: Midwife
+:5: Obstetrician
+:6: Maternal Health Nurse
+:7: Self
+:8: Social Worker
+:9: Clinical Psychologist
+:10: Generalist/Other Psychologist
+:11: Paediatrician
+:12: School psychologist / counsellor
+:13: Deputy principal or Principal
+:14: Director of Early Childhood Services or Equivalent
+:15: Aboriginal Health Worker
+:16: Outreach Worker
+:17: Mental Health Nurse
+:18: Other?"
+"`Episode - Referrer Entity`_ (referrer_entity)",string,":1: General Practice
+:2: Medical Specialist
+:3: Hospital Ward
+:4: Emergency Department
+:5: Community Health - Government
+:6: Community Health - NFP
+:7: Non Government Organisation
+:8: School - Primary
+:9: School - Secondary
+:10: School - Pre/Kindergarten
+:11: School - Special
+:12: School - Other
+:13: University
+:14: TAFE
+:15: Child and Maternal Health
+:16: Nursing Service
+:17: Family Support Service
+:18: Mental Health Services
+:19: Housing Services
+:20: Help Lines and Referral Services
+:21: ATSI Health Organisation/Aboriginal Controlled Community Health Service
+:22: Acute Mental Health Team
+:23: Centrelink
+:24: Drug and Alcohol Service
+:25: Other?"

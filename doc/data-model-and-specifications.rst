@@ -18,10 +18,10 @@ Provider Organisation
 | Explanatory text to go here ...
 
 .. csv-table:: Organisation record layout
-  :file: records/organisation.csv
+  :file: record/organisation.csv
   :header-rows: 1
 
-.. include:: records/organisation-notes.rst
+.. include:: record/organisation-notes.rst
 
 ----------
 
@@ -31,10 +31,10 @@ Practitioner
 | Explanatory text to go here ...
 
 .. csv-table:: Practitioner record layout
-  :file: records/practitioner.csv
+  :file: record/practitioner.csv
   :header-rows: 1
 
-.. include:: records/practitioner-notes.rst
+.. include:: record/practitioner-notes.rst
 
 ----------
 
@@ -44,10 +44,10 @@ Client
 | Explanatory text to go here ...
 
 .. csv-table:: Client record layout
-   :file: records/client.csv
+   :file: record/client.csv
    :header-rows: 1
 
-.. include:: records/client-notes.rst
+.. include:: record/client-notes.rst
 
 ----------
 
@@ -57,10 +57,10 @@ Episode
 | Explanatory text to go here ...
 
 .. csv-table:: Episode record layout
-   :file: records/episode.csv
+   :file: record/episode.csv
    :header-rows: 1
    
-.. include:: records/episode-notes.rst
+.. include:: record/episode-notes.rst
 
 ----------
 
@@ -89,10 +89,10 @@ Service contact
   modification.
 
 .. csv-table:: Service contact record layout
-   :file: records/service_contact.csv
+   :file: record/service_contact.csv
    :header-rows: 1
    
-.. include:: records/service_contact-notes.rst
+.. include:: record/service_contact-notes.rst
 
 ----------
 
@@ -102,10 +102,10 @@ Outcome collection occasion
 Items for Outcome collection occasion are still a work in progress and subject to change.
 
 .. csv-table:: Outcome collection occasion record layout
-   :file: records/outcome_collection_occasion.csv
+   :file: record/outcome_collection_occasion.csv
    :header-rows: 1
    
-.. include:: records/outcome_collection_occasion-notes.rst
+.. include:: record/outcome_collection_occasion-notes.rst
 
 -----
 

@@ -1,0 +1,26 @@
+"Data Element (Field Name)","Type [Length]","Format / Values"
+"`Provider Organisation Key`_ (organisation_key)",string,
+"`Provider Organisation - Name`_ (organisation_name)",string,
+"`Provider Organisation - Type`_ (organisation_type)",string,":0: Primary Heath Network
+:1: Private Primary Health Care Organisation - for profit
+:2: Private Primary Health Care Organisation - not for profit
+:3: Medicare Local
+:4: Division of General Practice
+:5: Aboriginal Health/Medical Service
+:6: General Practice
+:7: Private Psychiatry service
+:8: Drug and/or Alcohol Service
+:9: Community-managed Community Support Organisation
+:10: State/Territory Health Services
+:11: Headspace Centre
+:12: Solo Practitioner
+:13: Other"
+"`Provider Organisation - State`_ (organisation_state)",string,":1: New South Wales
+:2: Victoria
+:3: Queensland
+:4: South Australia
+:5: Western Australia
+:6: Tasmania
+:7: Northern Territory
+:8: Australian Capital Territory
+:9: Other Territories"

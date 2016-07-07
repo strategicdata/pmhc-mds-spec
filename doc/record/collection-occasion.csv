@@ -1,0 +1,7 @@
+"Data Element (Field Name)","Type [Length]","Format / Values"
+"`Organisation Path`_ (organisation_path)",string,
+"`Collection Occasion Key`_ (collection_occasion_key)",string,
+"`Episode Key`_ (episode_key)",,
+"`Collection Occasion - Measure`_ (measure)",string,
+"`Collection Occasion - Measure Date`_ (measure_date)",date,
+"`Collection Occasion - Score`_ (score)",integer,
