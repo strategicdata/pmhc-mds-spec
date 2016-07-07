@@ -6,14 +6,5 @@ The ABS recommends the following question in order to collect this data:
 Which language does the client mainly speak at home? (If more that one
 language, indicate the one that is spoken most often.)
 
-- English
-- Mandarin
-- Italian
-- Arabic
-- Cantonese
-- Greek
-- Vietnamese
-- Spanish
-- Hindi
-- Tagalog
-- Other - please specify .........................
+Organisations are encouraged to produce customised lists of the most common
+countries based on their local populations from the above resource.

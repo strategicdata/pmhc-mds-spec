@@ -63,10 +63,37 @@ to report on Service Type for all Service Contacts.
   - improving links to other health professionals/clinical service providers.
 
 6 - Child or youth-specific assistance NEC
-  Explanatory text to be drafted
+  Services delivered to, or on behalf, of a child or young person that cannot
+  be described elsewhere. These can include, for example, working with a
+  child’s teacher to provide advice on assisting the child in their educational
+  environment; working with a young person's employer to assist the young
+  person to their work environment.
+  
+  *Note: This code should only be used for
+  Service Contacts that cannot be described by any other Service Type. It is
+  expected that the majority of Service Contacts delivered to children and
+  young people can be assigned to other categories*
 
 7 - Suicide prevention specific assistance NEC
-  Explanatory text to be drafted
+  Services delivered to, or on behalf, of a client who presents with risk of
+  suicide that cannot be described elsewhere. These can include, for example,
+  working with the person's employers to advise on changes in the workplace;
+  working with a young person's teacher to assist the child in their school
+  environment; or working with relevant community-based groups to assist the
+  client to participate in their activities.
+
+  *Note: This code should only be used for Service Contacts that cannot be
+  described by any other Service Type. It is expected that the majority of
+  Service Contacts delivered to client’s who have a risk of suicide can be
+  assigned to other categories.*
 
 8 - Cultural specific assistance NEC
-  Explanatory text to be drafted
+  Services delivered to, or on behalf, of an Aboriginal or Torres Strait
+  Islander client that cannot be described elsewhere. These can include, for
+  example, working with the client’s community network ... **(more to be
+  added)**
+
+  *Note: This code should only be used for Service Contacts that cannot be
+  described by any other Service Type. It is expected that the majority of
+  Service Contacts delivered to Aboriginal or Torres Strait Islander client’s
+  can be assigned to other categories.*

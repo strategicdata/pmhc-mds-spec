@@ -5,16 +5,5 @@ four-digit, three-level hierarchical structure specifying major group, minor
 group and country. 9999 is used when the information is not known or the
 client has refused to provide the information.
 
-The ABS recommends the following question in order to collect this data:
-In which country was the client born?
-
-- Australia
-- England
-- New Zealand
-- India
-- Vietnam
-- Philippines
-- South Africa
-- Scotland
-- Malaysia
-- Other - please specify .........................
+Organisations are encouraged to produce customised lists of the most common
+languages in use by their local populations from the above resource.
