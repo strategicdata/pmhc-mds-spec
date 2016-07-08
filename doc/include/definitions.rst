@@ -1701,10 +1701,16 @@ Where an appointment was made for a client, but the client failed to attend the 
 Service Contact - Participants
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Classification of the individual(s) the service contact was delivered to, as represented by a code.
 
 :Field name: service_contact_participants
 
 :Data type: string
+
+:Domain:
+  :1: Individual
+  :2: Group
+  :3: Family / Client Support Network
 :Notes:
   Coding options will be finalised following feedback from PHNs.
   
