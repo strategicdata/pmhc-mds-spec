@@ -1682,18 +1682,44 @@ Where an appointment was made for a client, but the client failed to attend the 
 Service Contact - Participants
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Classification of the individual(s) the service contact was delivered to, as represented by a code.
+An indication of whether a Service Contact is provided to one or more clients and participants in the Service Contact.
 
 :Field name: service_contact_participants
 
 :Data type: string
 
 :Domain:
-  :1: Individual
-  :2: Group
+  :1: Individual client
+  :2: Client group
   :3: Family / Client Support Network
+  :4: Other
+  :9: Not stated
 :Notes:
-  Coding options will be finalised following feedback from PHNs.
+  ***Coding categories for this item are under review and to be finalised pending PHN feedback***
+  
+  1	Individual
+  
+    Code applies for Service Contacts delivered individually to a single client
+    without third party participants.
+  
+  2	Client group
+  
+    Code applies for Service Contacts delivered on a group basis to two or more
+    clients.
+  
+  3	Family / Client Support Network
+  
+    Code applies to Service Contacts delivered to the family/social support
+    persons of the client, with or without the participation of the client.
+  
+  4	Other
+  
+    Code applies to Service Contacts delivered to other third parties, with or
+    without the participation of the client.
+  
+  This item interacts with Service Contact - Client Participation Indicator which
+  is used to denote whether the individual client was a participant in the
+  Service Contact.
   
 
 ----------

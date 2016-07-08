@@ -39,9 +39,11 @@ METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__
 :4: Internet-based"
 "`Service Contact - Participants`_ (service_contact_participants)
 
-",string,":1: Individual
-:2: Group
-:3: Family / Client Support Network"
+",string,":1: Individual client
+:2: Client group
+:3: Family / Client Support Network
+:4: Other
+:9: Not stated"
 "`Service Contact - Venue`_ (service_contact_venue)
 
 ",string,":1: Client's Home
