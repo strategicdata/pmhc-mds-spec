@@ -1348,8 +1348,8 @@ The type or category of the practitioner, as represented by a code.
 :Data type: string
 
 :Domain:
-  :1: Clincal Psychologist
-  :2: Generalist Psychologist
+  :1: Clinical Psychologist
+  :2: General Psychologist
   :3: Social Worker
   :4: Occupational Therapist
   :5: Mental Health Nurse

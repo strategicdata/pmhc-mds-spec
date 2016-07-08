@@ -7,8 +7,8 @@
 ",string,"A unique identifier for a practitioner within the responsible organisation. Assigned by the organisation."
 "`Practitioner - Category`_ (practitioner_category)
 
-",string,":1: Clincal Psychologist
-:2: Generalist Psychologist
+",string,":1: Clinical Psychologist
+:2: General Psychologist
 :3: Social Worker
 :4: Occupational Therapist
 :5: Mental Health Nurse
