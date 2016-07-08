@@ -168,27 +168,27 @@ METeOR: `291045 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291045>`__
 "`Episode - Additional Diagnosis`_ (additional_diagnosis)
 
 ",string,"See *Episode - Principal Diagnosis*"
-"`Medication - Antipsychotics (N05A)`_ (medication_antipsychotics)
+"`Episode - Medication - Antipsychotics (N05A)`_ (medication_antipsychotics)
 
 ",string,":1: Yes
 :2: No
 :9: Unknown"
-"`Medication - Anxiolytics (N05B)`_ (medication_anxiolytics)
+"`Episode - Medication - Anxiolytics (N05B)`_ (medication_anxiolytics)
 
 ",string,":1: Yes
 :2: No
 :9: Unknown"
-"`Medication - Hypnotics and sedatives (N05C)`_ (medication_hypnotics)
+"`Episode - Medication - Hypnotics and sedatives (N05C)`_ (medication_hypnotics)
 
 ",string,":1: Yes
 :2: No
 :9: Unknown"
-"`Medication - Antidepressants (N06A)`_ (medication_antidepressants)
+"`Episode - Medication - Antidepressants (N06A)`_ (medication_antidepressants)
 
 ",string,":1: Yes
 :2: No
 :9: Unknown"
-"`Medication - Psychostimulants and nootropics (N06B)`_ (medication_psychostimulants)
+"`Episode - Medication - Psychostimulants and nootropics (N06B)`_ (medication_psychostimulants)
 
 ",string,":1: Yes
 :2: No

@@ -448,7 +448,7 @@ The date on which an *Episode of Care* is formally or administratively ended
   Contact - Final*, and *Episode Completion Status*.
   
   *Service Contact - Final*
-    Collection of data for *Service Contacts* includes a 'Final Service Contact'
+    Collection of data for *Service Contacts* includes a *Service Contact - Final*
     item that requires the service provider to indicate whether further *Service
     Contacts* are planned. Where this item is recorded as ‘no further services
     planned’, the date of the final *Service Contact* should be recorded as the
@@ -620,6 +620,136 @@ A person's current relationship status in terms of a couple relationship or, for
   
 
 :METeOR: `291045 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291045>`__
+
+----------
+
+Episode - Medication - Antidepressants (N06A)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Whether the client is taking prescribed antidepressants for a mental health condition as assessed at intake assessment, as represented by a code.
+
+:Field name: medication_antidepressants
+
+:Data type: string
+
+:Domain:
+  :1: Yes
+  :2: No
+  :9: Unknown
+:Notes:
+  The N06A class of drugs a therapeutic subgroup of the Anatomical Therapeutic
+  Chemical Classification System, a system of alphanumeric codes developed by the
+  World Health Organisation (WHO) for the classification of drugs and other
+  medical products. It covers drugs designed for the depressive disorders.
+  
+  Details of drugs included in the category can be found here:
+  http://www.whocc.no/atc_ddd_index/?code=N06A
+  
+
+----------
+
+Episode - Medication - Antipsychotics (N05A)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Whether the client is taking prescribed antipsychotics for a mental health condition as assessed at intake assessment, as represented by a code.
+
+:Field name: medication_antipsychotics
+
+:Data type: string
+
+:Domain:
+  :1: Yes
+  :2: No
+  :9: Unknown
+:Notes:
+  The N05A class of drugs a therapeutic subgroup of the Anatomical Therapeutic
+  Chemical Classification System, a system of alphanumeric codes developed by the
+  World Health Organisation (WHO) for the classification of drugs and other
+  medical products. It covers drugs designed for the treatment of psychotic
+  disorders.
+  
+  Details of drugs included in the category can be found here:
+  http://www.whocc.no/atc_ddd_index/?code=N05A
+  
+
+----------
+
+Episode - Medication - Anxiolytics (N05B)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Whether the client is taking prescribed anxiolytics for a mental health condition as assessed at intake assessment, as represented by a code.
+
+:Field name: medication_anxiolytics
+
+:Data type: string
+
+:Domain:
+  :1: Yes
+  :2: No
+  :9: Unknown
+:Notes:
+  The N05B class of drugs a therapeutic subgroup of the Anatomical Therapeutic
+  Chemical Classification System, a system of alphanumeric codes developed by the
+  World Health Organisation (WHO) for the classification of drugs and other
+  medical products. It covers drugs designed for the treatment of disorders
+  associated with anxiety and tension.
+  
+  Details of drugs included in the category can be found here:
+  http://www.whocc.no/atc_ddd_index/?code=N05B
+  
+
+----------
+
+Episode - Medication - Hypnotics and sedatives (N05C)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Whether the client is taking prescribed hypnotics and sedatives for a mental health condition as assessed at intake assessment, as represented by a code.
+
+:Field name: medication_hypnotics
+
+:Data type: string
+
+:Domain:
+  :1: Yes
+  :2: No
+  :9: Unknown
+:Notes:
+  The N05C class of drugs a therapeutic subgroup of the Anatomical Therapeutic
+  Chemical Classification System, a system of alphanumeric codes developed by the
+  World Health Organisation (WHO) for the classification of drugs and other
+  medical products. It covers drugs designed to have mainly sedative or hypnotic
+  actions. Hypnotic drugs are used to induce sleep and treat severe insomnia.
+  Sedative drugs are prescribed to reduce excitability or anxiety.
+  
+  Details of drugs included in the category can be found here:
+  http://www.whocc.no/atc_ddd_index/?code=N05C
+  
+
+----------
+
+Episode - Medication - Psychostimulants and nootropics (N06B)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Whether the client is taking prescribed psychostimulants and nootropics for a mental health condition as assessed at intake assessment, as represented by a code.
+
+:Field name: medication_psychostimulants
+
+:Data type: string
+
+:Domain:
+  :1: Yes
+  :2: No
+  :9: Unknown
+:Notes:
+  The N06B class of drugs a therapeutic subgroup of the Anatomical Therapeutic
+  Chemical Classification System, a system of alphanumeric codes developed by the
+  World Health Organisation (WHO) for the classification of drugs and other
+  medical products. It covers drugs designed to attention-deficit hyperactivity
+  disorder (ADHD) and to improve impaired cognitive abilities.
+  
+  Details of drugs included in the category can be found here:
+  http://www.whocc.no/atc_ddd_index/?code=N06B
+  
 
 ----------
 
@@ -1087,136 +1217,6 @@ This is a number or code assigned to each episode. The Episode Key is unique and
   
   A recommended approach for the creation of Episode Keys is to compute `random
   UUIDs <https://en.wikipedia.org/wiki/Universally_unique_identifier>`_.
-  
-
-----------
-
-Medication - Antidepressants (N06A)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Whether the client is taking prescribed antidepressants for a mental health condition as assessed at intake assessment, as represented by a code.
-
-:Field name: medication_antidepressants
-
-:Data type: string
-
-:Domain:
-  :1: Yes
-  :2: No
-  :9: Unknown
-:Notes:
-  The N06A class of drugs a therapeutic subgroup of the Anatomical Therapeutic
-  Chemical Classification System, a system of alphanumeric codes developed by the
-  World Health Organisation (WHO) for the classification of drugs and other
-  medical products. It covers drugs designed for the depressive disorders.
-  
-  Details of drugs included in the category can be found here:
-  http://www.whocc.no/atc_ddd_index/?code=N06A
-  
-
-----------
-
-Medication - Antipsychotics (N05A)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Whether the client is taking prescribed antipsychotics for a mental health condition as assessed at intake assessment, as represented by a code.
-
-:Field name: medication_antipsychotics
-
-:Data type: string
-
-:Domain:
-  :1: Yes
-  :2: No
-  :9: Unknown
-:Notes:
-  The N05A class of drugs a therapeutic subgroup of the Anatomical Therapeutic
-  Chemical Classification System, a system of alphanumeric codes developed by the
-  World Health Organisation (WHO) for the classification of drugs and other
-  medical products. It covers drugs designed for the treatment of psychotic
-  disorders.
-  
-  Details of drugs included in the category can be found here:
-  http://www.whocc.no/atc_ddd_index/?code=N05A
-  
-
-----------
-
-Medication - Anxiolytics (N05B)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Whether the client is taking prescribed anxiolytics for a mental health condition as assessed at intake assessment, as represented by a code.
-
-:Field name: medication_anxiolytics
-
-:Data type: string
-
-:Domain:
-  :1: Yes
-  :2: No
-  :9: Unknown
-:Notes:
-  The N05B class of drugs a therapeutic subgroup of the Anatomical Therapeutic
-  Chemical Classification System, a system of alphanumeric codes developed by the
-  World Health Organisation (WHO) for the classification of drugs and other
-  medical products. It covers drugs designed for the treatment of disorders
-  associated with anxiety and tension.
-  
-  Details of drugs included in the category can be found here:
-  http://www.whocc.no/atc_ddd_index/?code=N05B
-  
-
-----------
-
-Medication - Hypnotics and sedatives (N05C)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Whether the client is taking prescribed hypnotics and sedatives for a mental health condition as assessed at intake assessment, as represented by a code.
-
-:Field name: medication_hypnotics
-
-:Data type: string
-
-:Domain:
-  :1: Yes
-  :2: No
-  :9: Unknown
-:Notes:
-  The N05C class of drugs a therapeutic subgroup of the Anatomical Therapeutic
-  Chemical Classification System, a system of alphanumeric codes developed by the
-  World Health Organisation (WHO) for the classification of drugs and other
-  medical products. It covers drugs designed to have mainly sedative or hypnotic
-  actions. Hypnotic drugs are used to induce sleep and treat severe insomnia.
-  Sedative drugs are prescribed to reduce excitability or anxiety.
-  
-  Details of drugs included in the category can be found here:
-  http://www.whocc.no/atc_ddd_index/?code=N05C
-  
-
-----------
-
-Medication - Psychostimulants and nootropics (N06B)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Whether the client is taking prescribed psychostimulants and nootropics for a mental health condition as assessed at intake assessment, as represented by a code.
-
-:Field name: medication_psychostimulants
-
-:Data type: string
-
-:Domain:
-  :1: Yes
-  :2: No
-  :9: Unknown
-:Notes:
-  The N06B class of drugs a therapeutic subgroup of the Anatomical Therapeutic
-  Chemical Classification System, a system of alphanumeric codes developed by the
-  World Health Organisation (WHO) for the classification of drugs and other
-  medical products. It covers drugs designed to attention-deficit hyperactivity
-  disorder (ADHD) and to improve impaired cognitive abilities.
-  
-  Details of drugs included in the category can be found here:
-  http://www.whocc.no/atc_ddd_index/?code=N06B
   
 
 ----------
