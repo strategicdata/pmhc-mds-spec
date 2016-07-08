@@ -1844,8 +1844,7 @@ The main type of service provided in the service contact, as represented by the 
   8 - Cultural specific assistance NEC
     Services delivered to, or on behalf, of an Aboriginal or Torres Strait
     Islander client that cannot be described elsewhere. These can include, for
-    example, working with the client’s community network ... **(more to be
-    added)**
+    example, ... **(more to be added)**
   
     *Note: This code should only be used for Service Contacts that cannot be
     described by any other Service Type. It is expected that the majority of
