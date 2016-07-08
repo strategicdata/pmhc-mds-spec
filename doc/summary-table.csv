@@ -1,4 +1,4 @@
-organisation,practitioner,client,episode,service-contact,collection-occasion
+"Provider Organisation",Practitioner,Client,Episode,"Service Contact","Outcome Collection Occasion"
 "Provider Organisation Key","Organisation Path","Organisation Path","Organisation Path","Organisation Path","Organisation Path"
 "Provider Organisation - Name","Practitioner Key","Client Key","Episode Key","Service Contact Key","Collection Occasion Key"
 "Provider Organisation - ABN","Practitioner - Category","Client - Statistical Linkage Key","Client Key","Episode Key","Episode Key"
