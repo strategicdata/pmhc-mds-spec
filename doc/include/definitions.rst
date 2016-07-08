@@ -238,8 +238,7 @@ The name of the measure.
 
 :Data type: string
 :Notes:
-  To be defined.
-  
+  Measures will be the Kessler Psychological Distress Scale K5 and K10+ versions as well as the Strengths & Difficulties Questionnaires.
 
 ----------
 
@@ -279,7 +278,9 @@ Collection Occasion - Score
 
 :Data type: integer
 :Notes:
-  The value of the score at this collection occasion.
+  The value of the score at this collection occasion. Individual item scores will
+  be required, final specifications for the individual measures will be released
+  shortly.
   
 
 ----------
