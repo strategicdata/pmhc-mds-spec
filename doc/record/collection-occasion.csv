@@ -14,7 +14,7 @@
 "`Collection Occasion - Date`_ (measure_date)
 
 ",date,"The date of the collection occasion."
-"`Collection Occastion - Reason`_ (reason_for_collection)
+"`Collection Occasion - Reason`_ (reason_for_collection)
 
 ",string,"The reason for the collection of the outcome measures on the identified Outcome Collection Occasion."
 "`Collection Occasion - Score`_ (score)

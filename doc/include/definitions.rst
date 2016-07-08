@@ -243,32 +243,8 @@ The name of the measure.
 
 ----------
 
-Collection Occasion - Score
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-:Field name: score
-
-:Data type: integer
-:Notes:
-  The value of the score at this collection occasion.
-  
-
-----------
-
-Collection Occasion Key
-^^^^^^^^^^^^^^^^^^^^^^^
-
-This is a number or code assigned to each collection occasion of outcome measures. The Collection Occasion Key is unique and stable for each collection occasion at the level of the organisation.
-
-:Field name: collection_occasion_key
-
-:Data type: string
-
-----------
-
-Collection Occastion - Reason
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Collection Occasion - Reason
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The reason for the collection of the outcome measures on the identified Outcome Collection Occasion.
 
@@ -292,6 +268,30 @@ The reason for the collection of the outcome measures on the identified Outcome 
   3 - Episode end
     Refers to the outcome measures collected at the end of an Episode of Care.
   
+
+----------
+
+Collection Occasion - Score
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+:Field name: score
+
+:Data type: integer
+:Notes:
+  The value of the score at this collection occasion.
+  
+
+----------
+
+Collection Occasion Key
+^^^^^^^^^^^^^^^^^^^^^^^
+
+This is a number or code assigned to each collection occasion of outcome measures. The Collection Occasion Key is unique and stable for each collection occasion at the level of the organisation.
+
+:Field name: collection_occasion_key
+
+:Data type: string
 
 ----------
 
@@ -841,7 +841,6 @@ The Principal Diagnosis is the diagnosis established after study to be chiefly r
   :107: Acute stress disorder
   :108: Other anxiety disorder
   :201: Major depressive disorder
-  :201a: PND
   :202: Dysthymia
   :203: Depressive disorder NOS
   :204: Bipolar disorder
@@ -849,8 +848,8 @@ The Principal Diagnosis is the diagnosis established after study to be chiefly r
   :206: Other affective disorder
   :301: Alcohol harmful use
   :302: Alcohol dependence
-  :303: Drug harmful use/abuse
-  :304: Drug dependence
+  :303: Other drug harmful use
+  :304: Other drug dependence
   :305: Other substance use disorder
   :401: Schizophrenia
   :402: Schizoaffective disorder
