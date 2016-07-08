@@ -75,39 +75,17 @@ METeOR: `386449 <http://meteor.aihw.gov.au/content/index.phtml/itemId/386449>`__
 :6: Nil income
 :7: Not known
 :9: Not stated/inadequately described"
-"`Episode - PBS eligibility card type`_ (pbs_eligibility_type)
+"`Episode - PBS eligibility card type`_ (health_care_card)
 
 
 
-METeOR: `605149 <http://meteor.aihw.gov.au/content/index.phtml/itemId/605149>`__",string,":BC: Department of Veteranss' Affairs (Repatriation Pharmaceutical Benefits Scheme or 'Orange card')
-:CN: Pharmaceutical Benefits Scheme concessional entitlement (Department of Human Services - DHS)
-:DT: Dependant treatment entitlement (Department of Veterans' Affairs - DVA)
-:EI: Pensioner treatment entitlement (DVA)
-:ET: Pensioner treatment entitlement (DVA)
-:HB: Centresink (Health Benefits)
-:HC: Centrelink (Health Care Card)
-:JI: Pensioner treatment entitlement (DVA)
-:JT: Pensioner treatment entitlement (DVA)
-:KI: Pensioner treatment entitlement (DVA)
-:MC: Medicare (general entitlement) (DHS)
-:OC: Ostomy membership (colostomy/ileostomy)
-:PC: Pensioner concession (Department of Social Services - DSS, DVA)
-:PM: Pensioner treatment entitlement (DVA)
-:PS: Combined Pensioner concession/Senior Health Care (DVA)
-:PT: DVA (Pensioner treatment entitlement card (PTEC) or 'Gold card')
-:PW: Dependant treatment entitlement (DVA)
-:SB: Pensioner health benefits (DSS)/Centrelink (Seniors' benefit)
-:SC: Pharmaceutical benefits concession (DSS)
-:SH: Centrelink (Senior Health Card) or DVA (Senior Health Card)
-:SN: Pharmaceutical Benefit Safety Net (DHS)
-:SP: Service pension benefit (DVA)
-:ST: DVA (Specific treatment entitlement card (STEC) or 'White card')
-:VB: Pensioner health benefits (DVA)"
+METeOR: `605149 <http://meteor.aihw.gov.au/content/index.phtml/itemId/605149>`__",string,":1: Yes
+:2: No
+:3: Not Known
+:9: Not stated"
 "`Episode - NDIS Participant`_ (ndis_participant)
 
-",string,":1: Yes
-:2: No
-:9: Not stated/inadequately described"
+",string,"Is the client a participant in the National Disability Insurance Scheme?, as represented by a code."
 "`Episode - Marital Status`_ (marital_status)
 
 

@@ -762,60 +762,27 @@ Is the client a participant in the National Disability Insurance Scheme?, as rep
 
 :Data type: string
 
-:Domain:
-  :1: Yes
-  :2: No
-  :9: Not stated/inadequately described
-
 ----------
 
 Episode - PBS eligibility card type
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The type of eligibility card held by the patient or Pharmaceutical Benefits Scheme (PBS) consumer for whom the claim for a PBS benefit is made, as represented by a code.
+An indication of whether the person is a current holder of a Health Care Card that entitles them to arrange of concessions for Government funded health services.
 
-:Field name: pbs_eligibility_type
+:Field name: health_care_card
 
 :Data type: string
 
 :Domain:
-  :BC: Department of Veteranss' Affairs (Repatriation Pharmaceutical Benefits Scheme or 'Orange card')
-  :CN: Pharmaceutical Benefits Scheme concessional entitlement (Department of Human Services - DHS)
-  :DT: Dependant treatment entitlement (Department of Veterans' Affairs - DVA)
-  :EI: Pensioner treatment entitlement (DVA)
-  :ET: Pensioner treatment entitlement (DVA)
-  :HB: Centresink (Health Benefits)
-  :HC: Centrelink (Health Care Card)
-  :JI: Pensioner treatment entitlement (DVA)
-  :JT: Pensioner treatment entitlement (DVA)
-  :KI: Pensioner treatment entitlement (DVA)
-  :MC: Medicare (general entitlement) (DHS)
-  :OC: Ostomy membership (colostomy/ileostomy)
-  :PC: Pensioner concession (Department of Social Services - DSS, DVA)
-  :PM: Pensioner treatment entitlement (DVA)
-  :PS: Combined Pensioner concession/Senior Health Care (DVA)
-  :PT: DVA (Pensioner treatment entitlement card (PTEC) or 'Gold card')
-  :PW: Dependant treatment entitlement (DVA)
-  :SB: Pensioner health benefits (DSS)/Centrelink (Seniors' benefit)
-  :SC: Pharmaceutical benefits concession (DSS)
-  :SH: Centrelink (Senior Health Card) or DVA (Senior Health Card)
-  :SN: Pharmaceutical Benefit Safety Net (DHS)
-  :SP: Service pension benefit (DVA)
-  :ST: DVA (Specific treatment entitlement card (STEC) or 'White card')
-  :VB: Pensioner health benefits (DVA)
+  :1: Yes
+  :2: No
+  :3: Not Known
+  :9: Not stated
 :Notes:
-  Most government-based assistance or benefits schemes typically require the
-  presentation of an eligibility card of some sort at the time of the service
-  being provided, to establish the eligibility of the cardholder in relation to
-  receipt of the service or any associated benefit or subsidy.
+  Further notes to be added...
   
-  For example, a Medicare card must be presented either by on or the behalf of a
-  patient visiting a general practitioner in order for a claim to be made for
-  benefits available under the Medicare Benefits Schedule (MBS).
-  
-  Similarly, benefits available through the Pharmaceutical Benefits Scheme (PBS)
-  can only be claimed upon presentation of a valid Medicare card and/or another
-  applicable concession card.
+  Details on the Australian Government Health Care Card are available at:
+  https://www.humanservices.gov.au/customer/services/centrelink/health-care-card
   
 
 :METeOR: `605149 <http://meteor.aihw.gov.au/content/index.phtml/itemId/605149>`__
