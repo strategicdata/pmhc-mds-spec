@@ -1058,7 +1058,7 @@ The date the referrer made the referral.
 Episode - Referrer Organisation Type
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The type of organisation making the referral.
+Type of organisation in which the referring professional is based.
 
 :Field name: referrer_organisation_type
 
@@ -1066,37 +1066,46 @@ The type of organisation making the referral.
 
 :Domain:
   :1: General Practice
-  :2: Medical Specialist
-  :3: Hospital Ward
-  :4: Emergency Department
-  :5: Community Health - Government
-  :6: Community Health - NFP
-  :7: Non Government Organisation
-  :8: School - Primary
-  :9: School - Secondary
-  :10: School - Pre/Kindergarten
-  :11: School - Special
-  :12: School - Other
-  :13: University
-  :14: TAFE
-  :15: Child and Maternal Health
-  :16: Nursing Service
-  :17: Family Support Service
-  :18: Mental Health Services
-  :19: Housing Services
-  :20: Help Lines and Referral Services
-  :21: ATSI Health Organisation/Aboriginal Controlled Community Health Service
-  :22: Acute Mental Health Team
-  :23: Centrelink
-  :24: Drug and Alcohol Service
-  :25: Other?
+  :2: Medical Specialist Consulting Rooms
+  :3: Private practice
+  :4: Public mental health service
+  :5: Public Hospital
+  :6: Private Hospital
+  :7: Emergency Department
+  :8: Community Health Centre
+  :9: Drug and Alcohol Service
+  :10: Community Support Organisation NFP
+  :11: Indigenous Health Organisation
+  :12: Child and Maternal Health
+  :13: Nursing Service
+  :14: Telephone helpline
+  :15: Digital health service
+  :16: Family Support Service
+  :17: School
+  :18: Tertiary Education institution
+  :19: Housing service
+  :20: Centrelink
+  :21: Other
+  :22: Not applicable
+  :99: Not stated
+:Notes:
+  Medical Specialist Consulting Rooms includes private medical practitioner rooms
+  in public or private hospital or other settings.
+  
+  Public mental health service refers to a state- or territory-funded specialised
+  mental health services (i.e., specialised mental health care delivered in
+  public acute and psychiatric hospital settings, community mental health care
+  services, and s specialised residential mental health care services).
+  
+  Not applicable should only be selected in instances of Self referral.
+  
 
 ----------
 
 Episode - Referrer Profession
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The profession of the individual making the referral.
+Profession of the provider who referred the client.
 
 :Field name: referrer_profession
 
@@ -1121,6 +1130,11 @@ The profession of the individual making the referral.
   :16: Outreach Worker
   :17: Mental Health Nurse
   :18: Other?
+:Notes:
+  New arrangements for some services delivered in primary mental health care
+  allows clients being able to refer themselves for treatment. Therefore, 'Self'
+  is a response option included within 'Referrer profession'.
+  
 
 ----------
 
