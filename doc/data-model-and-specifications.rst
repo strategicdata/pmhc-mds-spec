@@ -128,6 +128,12 @@ the required outcome measure is to be collected. At a minimum, collection of
 outcome data is required at both Episode Start and Episode End, but may be more
 frequent if clinically indicated and agreed by the client.
 
+Measures will be the Kessler Psychological Distress Scale K5 and K10+ versions
+as well as the Strengths & Difficulties Questionnaires.
+
+Individual item scores will be required, final specifications for the
+individual measures will be released shortly.
+
 .. csv-table:: Outcome collection occasion record layout
    :file: record/collection-occasion.csv
    :header-rows: 1
