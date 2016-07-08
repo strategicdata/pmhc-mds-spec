@@ -11,7 +11,7 @@ An *Episode of Care* may be ended in one of two ways:
 Contact - Final*, and *Episode Completion Status*.
 
 *Service Contact - Final*
-  Collection of data for *Service Contacts* includes a 'Final Service Contact'
+  Collection of data for *Service Contacts* includes a *Service Contact - Final*
   item that requires the service provider to indicate whether further *Service
   Contacts* are planned. Where this item is recorded as ‘no further services
   planned’, the date of the final *Service Contact* should be recorded as the
