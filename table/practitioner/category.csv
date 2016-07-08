@@ -1,6 +1,6 @@
 id,description
-1,"Clincal Psychologist"
-2,"Generalist/Other Psychologist"
+1,"Clinical Psychologist"
+2,"General Psychologist"
 3,"Social Worker"
 4,"Occupational Therapist"
 5,"Mental Health Nurse"
@@ -10,3 +10,4 @@ id,description
 9,"Psychiatrist",
 10,"Other Medical"
 11,"Other"
+99,"Not stated"

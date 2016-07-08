@@ -56,9 +56,13 @@ each Service Contact.
 3 - Clinical care coordination
   The treatment plan for the client is primarily based around delivery of a
   range of services where the overarching aim is to coordinate and better
-  integrate care for the individual across multiple providers. Clinical care
-  coordination and liaison activities account for a significant proportion of
-  service contacts delivered throughout these episodes.
+  integrate care for the individual across multiple providers with the aim of
+  improving clinical outcomes. Consultation and liaison may occur with primary
+  health care providers, acute health, emergency services, rehabilitation and
+  support services or other agencies that have some level of responsibility for
+  the client’s clinical outcomes. These clinical care coordination and liaison
+  activities are expected to account for a significant proportion of service
+  contacts delivered throughout these episodes.
 
   Activities focused on working in partnership and liaison with other health
   care and service providers and other individuals to coordinate and integrate

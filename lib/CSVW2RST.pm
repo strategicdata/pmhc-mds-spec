@@ -30,7 +30,11 @@ sub generate {
     my $summary_column = 0;
 
     my $summary_fh;
-    # open $summary_fh, ">", '_doc/summary-table.csv' or die 'summary-table.csv' . ": $!";
+    
+    if ( ! path("doc/")->exists ) {
+        path("doc/")->mkpath;
+    }
+    open $summary_fh, ">", 'doc/summary-table.csv' or die 'summary-table.csv' . ": $!";
 
     my $max_rows = 0;
 
@@ -52,7 +56,7 @@ sub generate {
         #$Data::Dumper::Maxdepth = $ddmd;
         #say "\n";
 
-        $summary_table->[0][$summary_column] = $record->{'schema:name'};
+        $summary_table->[0][$summary_column] = $record->{'dc:title'};
         
         if ( ! path("doc/record")->exists ) {
             path("doc/record")->mkpath;
@@ -105,21 +109,6 @@ sub generate {
                 $meteor_link = "\n\nMETeOR: " . meteor($field->{'schema:meteorItem'});
             }
 
-#            my $note_ref = '';
-#            if (exists $domain eq 'HASH') {
-#                if ( exists $domain->{Notes} && ! ($field->Type() =~ /^Date/) ) {
-#                    
-#                    my $note = $domain->{Notes};
-#                    $note =~ s/\n/\n  /sg;
-#                    $note =~ s/\n\s*$//s;
-#                    
-#                    $note_ref = '[#tn_' . lc $record->rec_type() . $note_no . ']';
-#                    $notes .= '.. ' . "$note_ref\n" . '  ' . $note . "\n";
-#                    $note_ref = ' ' . $note_ref . '_';
-#                    $note_no++;
-#                }
-#            }
-            
             $csv->say($fh, [
                 '`' . $field->{'dc:title'} . '`_'
                 . ' (' . $field->{'name'} . ')'
@@ -129,13 +118,16 @@ sub generate {
                 format_domain($field),
             ]);
         }
+
+        $summary_column++;
+
     }
 
 #    print Dumper $summary_table;
 
-#    foreach my $row (@{$summary_table}) {
-#        $csv->say($summary_fh, $row);
-#    }
+    foreach my $row (@{$summary_table}) {
+        $csv->say($summary_fh, $row);
+    }
 
     generate_definitions($definition_records);
 }
@@ -174,8 +166,13 @@ sub generate_definitions {
     warn "\nDefinitions\n";
     warn "-----------\n";
 
-    foreach my $field_name ( sort keys %{$definition_records} ) {
-        
+    foreach my $field_name ( 
+        sort { 
+            $definition_records->{$a}{'dc:title'}
+            cmp $definition_records->{$b}{'dc:title'} 
+        } keys %{$definition_records} ) 
+    {
+
         my $field = $definition_records->{$field_name};
 
         warn $field->{name} . "\n";
@@ -194,7 +191,7 @@ sub generate_definitions {
         print $fh "\n:Data type: ";
         say $fh format_datatype($field);
 
-        my $domain = format_domain($field),;
+        my $domain = format_domain($field);
         if ( defined $domain 
              && exists $field->{"schema:description"}
              && $domain ne $field->{"schema:description"}
@@ -239,33 +236,7 @@ sub format_domain {
         return $field->{'schema:description'};
     }
     
-    return '';
-
-    my $ret_str = '';
-    my $domain = $field->Domain();
-
-    # print Dumper $field, "\n";
-
-    if (ref $domain eq 'HASH') {
-
-        my $set = exists $domain->{Set} ? $domain->{Set} : 0;
-        if ( $field->Type() =~ m/^Date/ ) {
-            if ( exists $domain->{Notes} ) {
-                $ret_str .= $domain->{Notes};
-            }
-        }
-
-        elsif ( ref $set eq 'HASH' && (scalar keys %{$domain->{Set}}) == 1 ) {
-            $ret_str = 'Value = `' . (keys %{$domain->{Set}})[0] . "`\n";
-        }
-
-    }
-    
-    if ( ! $ret_str ) {
-        $ret_str = $field->Domain() || ''; 
-    }
-
-    return $ret_str;
+    return;
 }
 
 sub format_fk {

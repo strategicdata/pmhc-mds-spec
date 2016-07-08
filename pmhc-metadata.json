@@ -618,11 +618,11 @@
         },
         "required": true
       },{
-        "name": "pbs_eligibility_type",
-        "titles": [ "pbs_eligibility_type", "PBS eligibility card type" ],
-        "dc:title": "Episode - PBS eligibility card type",
-        "schema:description": "The type of eligibility card held by the patient or Pharmaceutical Benefits Scheme (PBS) consumer for whom the claim for a PBS benefit is made, as represented by a code.",
-        "schema:disambiguatingDescription": "table/episode/pbs-eligibility-type.rst",
+        "name": "health_care_card",
+        "titles": [ "health_care_card", "Health Care Card" ],
+        "dc:title": "Episode - Health Care Card",
+        "schema:description": "An indication of whether the person is a current holder of a Health Care Card that entitles them to arrange of concessions for Government funded health services.",
+        "schema:disambiguatingDescription": "table/episode/health-care-card.rst",
         "schema:meteorItem": "605149",
         "schema:dateCreated": "2016-06-22",
         "schema:dateModified": "2016-07-08",
@@ -700,7 +700,7 @@
       },{
         "name": "medication_antipsychotics",
         "titles": [ "medication_antipsychotics", "Medication Antipsychotics" ],
-        "dc:title": "Medication - Antipsychotics (N05A)",
+        "dc:title": "Episode - Medication - Antipsychotics (N05A)",
         "schema:description": "Whether the client is taking prescribed antipsychotics for a mental health condition as assessed at intake assessment, as represented by a code.",
         "schema:disambiguatingDescription": "table/episode/medication-antipsychotics.rst",
         "schema:dateCreated": "2016-06-22",
@@ -714,7 +714,7 @@
       },{
         "name": "medication_anxiolytics",
         "titles": [ "medication_anxiolytics", "Medication Anxiolytics" ],
-        "dc:title": "Medication - Anxiolytics (N05B)",
+        "dc:title": "Episode - Medication - Anxiolytics (N05B)",
         "schema:description": "Whether the client is taking prescribed anxiolytics for a mental health condition as assessed at intake assessment, as represented by a code.",
         "schema:disambiguatingDescription": "table/episode/medication-anxiolytics.rst",
         "schema:dateCreated": "2016-06-22",
@@ -728,7 +728,7 @@
       },{
         "name": "medication_hypnotics",
         "titles": [ "medication_hypnotics", "Medication Hypnotics" ],
-        "dc:title": "Medication - Hypnotics and sedatives (N05C)",
+        "dc:title": "Episode - Medication - Hypnotics and sedatives (N05C)",
         "schema:description": "Whether the client is taking prescribed hypnotics and sedatives for a mental health condition as assessed at intake assessment, as represented by a code.",
         "schema:disambiguatingDescription": "table/episode/medication-hypnotics.rst",
         "schema:dateCreated": "2016-06-22",
@@ -742,7 +742,7 @@
       },{
         "name": "medication_antidepressants",
         "titles": [ "medication_antidepressants", "Medication Antidepressants" ],
-        "dc:title": "Medication - Antidepressants (N06A)",
+        "dc:title": "Episode - Medication - Antidepressants (N06A)",
         "schema:description": "Whether the client is taking prescribed antidepressants for a mental health condition as assessed at intake assessment, as represented by a code.",
         "schema:disambiguatingDescription": "table/episode/medication-antidepressants.rst",
         "schema:dateCreated": "2016-06-22",
@@ -756,7 +756,7 @@
       },{
         "name": "medication_psychostimulants",
         "titles": [ "medication_psychostimulants", "Medication Psychostimulants" ],
-        "dc:title": "Medication - Psychostimulants and nootropics (N06B)",
+        "dc:title": "Episode - Medication - Psychostimulants and nootropics (N06B)",
         "schema:description": "Whether the client is taking prescribed psychostimulants and nootropics for a mental health condition as assessed at intake assessment, as represented by a code.",
         "schema:disambiguatingDescription": "table/episode/medication-psychostimulants.rst",
         "schema:dateCreated": "2016-06-22",
@@ -771,7 +771,8 @@
         "name": "referrer_profession",
         "titles": [ "referrer_profession", "Referrer Profession" ],
         "dc:title": "Episode - Referrer Profession",
-        "schema:description": "The profession of the individual making the referral.",
+        "schema:description": "Profession of the provider who referred the client.",
+        "schema:disambiguatingDescription": "table/episode/referrer-profession.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -783,7 +784,8 @@
         "name": "referrer_organisation_type",
         "titles": [ "referrer_organisation_type", "Referrer Organisation Type" ],
         "dc:title": "Episode - Referrer Organisation Type",
-        "schema:description": "The type of organisation making the referral.",
+        "schema:description": "Type of organisation in which the referring professional is based.",
+        "schema:disambiguatingDescription": "table/episode/referrer-organisation-type.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -830,15 +832,15 @@
           "columnReference": "id"
         }
       }, {
-        "columnReference": "pbs_eligibility_type",
+        "columnReference": "health_care_card",
         "reference": {
-          "resource": "table/episode/pbs-eligibility-type.csv",
+          "resource": "table/episode/health-care-card.csv",
           "columnReference": "id"
         }
       },{
-        "columnReference": "ndis_participant",
+        "columnReference": "health_care_card",
         "reference": {
-          "resource": "table/episode/ndis-participant.csv",
+          "resource": "table/episode/health-care-card.csv",
           "columnReference": "id"
         }
       }, {
@@ -1032,10 +1034,10 @@
         "name": "service_contact_participants",
         "titles": [ "service_contact_participants", "Participants" ],
         "dc:title": "Service Contact - Participants",
+        "schema:description": "An indication of whether a Service Contact is provided to one or more clients and participants in the Service Contact.",
         "schema:disambiguatingDescription": "table/service-contact/participants.rst",
         "schema:dateCreated": "2016-06-22",
-        "schema:dateDeleted": "2016-06-22",
-        "schema:dateModified": "2016-06-22",
+        "schema:dateModified": "2016-06-08",
         "datatype": {
           "base": "string",
           "format": "^(1|2|3)$"
@@ -1267,7 +1269,7 @@
       },{
         "name": "reason_for_collection",
         "titles": "reason_for_collection",
-        "dc:title": "Collection Occastion - Reason",
+        "dc:title": "Collection Occasion - Reason",
         "schema:description": "The reason for the collection of the outcome measures on the identified Outcome Collection Occasion.",
         "schema:disambiguatingDescription": "table/collection-occasion/reason.rst",
         "schema:dateCreated": "2016-07-08",
@@ -1740,7 +1742,7 @@
       "primaryKey": "id"
     }
   }, {
-    "url": "table/service-contacttype.csv",
+    "url": "table/service-contact/type.csv",
     "tableSchema": {
       "columns": [{
         "name": "id",
@@ -1762,7 +1764,7 @@
       "primaryKey": "id"
     }
   }, {
-    "url": "table/service-contactmodality.csv",
+    "url": "table/service-contact/modality.csv",
     "tableSchema": {
       "columns": [{
         "name": "id",
@@ -1784,7 +1786,7 @@
       "primaryKey": "id"
     }
   }, {
-    "url": "table/service-contactparticipants.csv",
+    "url": "table/service-contact/participants.csv",
     "tableSchema": {
       "columns": [{
         "name": "id",
@@ -1806,7 +1808,7 @@
       "primaryKey": "id"
     }
   }, {
-    "url": "table/service-contactvenue.csv",
+    "url": "table/service-contact/venue.csv",
     "tableSchema": {
       "columns": [{
         "name": "id",
@@ -1828,7 +1830,7 @@
       "primaryKey": "id"
     }
   }, {
-    "url": "table/service-contactduration.csv",
+    "url": "table/service-contact/duration.csv",
     "tableSchema": {
       "columns": [{
         "name": "id",
