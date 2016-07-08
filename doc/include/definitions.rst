@@ -1335,7 +1335,7 @@ The type or category of the practitioner, as represented by a code.
 
 :Domain:
   :1: Clincal Psychologist
-  :2: Generalist/Other Psychologist
+  :2: Generalist Psychologist
   :3: Social Worker
   :4: Occupational Therapist
   :5: Mental Health Nurse
@@ -1345,8 +1345,8 @@ The type or category of the practitioner, as represented by a code.
   :9: Psychiatrist
   :10: Other Medical
   :11: Other
+  :99: Not stated
 :Notes:
-  Domain and definitions to be finalised following PHN advice.
   
 
 ----------

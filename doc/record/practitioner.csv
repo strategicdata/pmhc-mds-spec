@@ -8,7 +8,7 @@
 "`Practitioner - Category`_ (practitioner_category)
 
 ",string,":1: Clincal Psychologist
-:2: Generalist/Other Psychologist
+:2: Generalist Psychologist
 :3: Social Worker
 :4: Occupational Therapist
 :5: Mental Health Nurse
@@ -17,7 +17,8 @@
 :8: General Practitioner
 :9: Psychiatrist
 :10: Other Medical
-:11: Other"
+:11: Other
+:99: Not stated"
 "`Practitioner - ATSI Cultural Training`_ (atsi_cultural_training)
 
 ",string,":1: Yes
