@@ -1,82 +1,6 @@
 Definitions
 -----------
 
-Episode - Additional Diagnosis
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The main additional condition or complaint co-existing with the Principal Diagnosis or arising during the episode of care.
-
-:Field name: additional_diagnosis
-
-:Data type: string
-
-:Domain:
-  See *Episode - Principal Diagnosis*
-:Notes:
-  Additional Diagnosis gives information on conditions that are significant in
-  terms of treatment required and resources used during the episode of care.
-  Additional diagnoses should be interpreted as conditions that affect client
-  management in terms of requiring any of the following:
-  
-  -	Commencement, alteration or adjustment of therapeutic treatment
-  -	Diagnostic procedures
-  -	Increased clinical care and/or monitoring
-  
-  Where the client one or more comorbid mental health conditions in addition to
-  the condition coded as the Principal Diagnosis, record the main condition as
-  the Additional Diagnosis. For further notes on the recording of diagnosis codes
-  see Principal Diagnosis
-  
-
-----------
-
-Practitioner - ATSI Cultural Training
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Indicates whether a practitioner has completed a recognised training programme in the delivery of culturally safe services to Aboriginal and Torres Strait Islander peoples.
-
-:Field name: atsi_cultural_training
-
-:Data type: string
-
-:Domain:
-  :1: Yes
-  :2: No
-  :3: Not required
-  :9: Missing / Not recorded
-:Notes:
-  This item is reported by the practitioner and applies to service providers who are either:
-  
-  -	not of Aboriginal or Torres Strait Islander status; or
-  -	are not employed by an Aboriginal Community Controlled Health Service.
-  
-  1	- Yes
-    The practitioner has:
-  
-    - undertaken specific training in the delivery of culturally appropriate
-      mental health /health services for Aboriginal and Torres Strait Islander
-      peoples. As a guide, recognised training programs include those endorsed by
-      the Australian Indigenous Psychologists’ Association (AIPA) or similar
-      organisation; or
-    - undertaken local cultural awareness training in the community in which they
-      are practising, as delivered or endorsed by the elders of that community or
-      the local Aboriginal Community Controlled Health Service.
-  
-  2 - No
-    The practitioner has not met the requirements stated above.
-  
-  3 - Not required
-    This option is reserved only for practitioners who are of Aboriginal and
-    Torres Strait Islander descent, or employed by an Aboriginal Community
-    Controlled Health Service.
-  
-  4 - Missing/Not recorded
-    This is a system code for missing data and not a valid response option for
-    practitioners.
-  
-
-----------
-
 Client - Aboriginal and Torres Strait Islander Status
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -105,61 +29,6 @@ Whether a person identifies as being of Aboriginal and/or Torres Strait Islander
   
 
 :METeOR: `291036 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291036>`__
-
-----------
-
-Client Key
-^^^^^^^^^^
-
-This is a number or code assigned to each individual referred to the commissioned organisation. The client identifier is unique and stable for each individual at the level of the PMHC top level organisation.
-
-:Field name: client_key
-
-:Data type: string
-:Notes:
-  Client keys must be unique across the entire PHN network independent of the
-  treating organisation. It is the responsibility of PHNs and Provider
-  Organisations to co-ordinate to maintain this identifier. Clients should not be
-  assigned multiple keys within the same PHN.
-  
-
-----------
-
-Episode - Area of usual residence, postcode
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The Australian postcode of the client.
-
-:Field name: client_postcode
-
-:Data type: string[4]
-:Notes:
-  A valid Australian postcode or 9999 if the postcode is unknown or the client
-  has not provided sufficient information to confirm their current residential
-  address.
-  
-  The full list of Australian Postcodes can be found at `Australia Post
-  <http://www.auspost.com.au/>`_.
-  
-  When collecting the postcode of a person's usual place of residence, the ABS
-  recommends that 'usual' be defined as: 'the place where the person has or
-  intends to live for 6 months or more, or the place that the person regards as
-  their main residence, or where the person has no other residence, the place
-  they currently reside.'
-  
-
-:METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__
-
-----------
-
-Collection Occasion Key
-^^^^^^^^^^^^^^^^^^^^^^^
-
-This is a number or code assigned to each collection occasion of outcome measures. The Collection Occasion Key is unique and stable for each collection occasion at the level of the organisation.
-
-:Field name: collection_occasion_key
-
-:Data type: string
 
 ----------
 
@@ -214,6 +83,307 @@ The date on which an individual was born.
 
 ----------
 
+Client - Estimated Date of Birth Flag
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The date of birth estimate flag records whether or not the client's date of birth has been estimated.
+
+:Field name: est_date_of_birth
+
+:Data type: string
+
+:Domain:
+  :1: Date of birth is accurate
+  :2: Date of birth is an estimate
+  :8: Date of birth is a 'dummy' date (ie, 09099999)
+  :9: Accuracy of stated date of birth is not known
+
+----------
+
+Client - Gender
+^^^^^^^^^^^^^^^
+
+The term 'gender' refers to the way in which a person identifies their masculine or feminine characteristics. A persons gender relates to their deeply held internal and individual sense of gender and is not always exclusively male or female. It may or may not correspond to their sex assigned at birth.
+
+:Field name: gender
+
+:Data type: string
+
+----------
+
+Client - Main Language Spoken at Home
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The language reported by a client as the main language other than English spoken by that client in his/her home (or most recent private residential setting occupied by the client) to communicate with other residents of the home or setting and regular visitors, as represented by a code.
+
+:Field name: main_lang_at_home
+
+:Data type: string[4]
+:Notes:
+  `Australian Standard Classification of Languages 2011 4-digit code (ABS
+  Catalogue No. 1267.0) <http://www.abs.gov.au/ausstats/abs@.nsf/mf/1267.0>`_
+  or 9999 if info is not known or client refuses to supply.
+  
+  The ABS recommends the following question in order to collect this data:
+  Which language does the client mainly speak at home? (If more that one
+  language, indicate the one that is spoken most often.)
+  
+  Organisations are encouraged to produce customised lists of the most common
+  countries based on their local populations from the above resource.
+  
+
+:METeOR: `460125 <http://meteor.aihw.gov.au/content/index.phtml/itemId/460125>`__
+
+----------
+
+Client - Proficiency in Spoken English
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The self-assessed level of ability to speak English, asked of people whose first language is a language other than English or who speak a language other than English at home.
+
+:Field name: prof_english
+
+:Data type: string
+
+:Domain:
+  :0: Not applicable (persons under 5 years of age or who speak only English)
+  :1: Very well
+  :2: Well
+  :3: Not well
+  :4: Not at all
+  :9: Not stated/inadequately described
+:Notes:
+  0 - Not applicable (persons under 5 years of age or who speak only English)
+    Not applicable, is to be used for people under 5 years of age and people
+    who speak only English.
+  
+  9 - Not stated/inadequately described
+    Not stated/inadequately described, is not to be used on primary collection
+    forms. It is primarily for use in administrative collections when
+    transferring data from data sets where the item has not been collected.
+  
+
+:METeOR: `270203 <http://meteor.aihw.gov.au/content/index.phtml/itemId/270203>`__
+
+----------
+
+Client - Statistical Linkage Key
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A key that enables two or more records belonging to the same individual to be brought together.
+
+:Field name: slk
+
+:Data type: string
+:Notes:
+  System generated non-identifiable alphanumeric code derived from information
+  held by the PMHC organisation.
+  
+  Supported formats:
+    - 14 character `SLK
+      <http://meteor.aihw.gov.au/content/index.phtml/itemId/349510>`_
+    - a `Crockford encoded <http://www.crockford.com/wrmg/base32.html>`_ sha1
+      hash of a 14 character SLK. This must be 32 characters in length.
+    - a hex encoded sha1 hash of a 14 character SLK. This must be 40 characters
+      in length.
+  
+  SLK values are stored in sha1_hex format.
+  
+
+:METeOR: `349510 <http://meteor.aihw.gov.au/content/index.phtml/itemId/349510>`__
+
+----------
+
+Client Key
+^^^^^^^^^^
+
+This is a number or code assigned to each individual referred to the commissioned organisation. The client identifier is unique and stable for each individual at the level of the PMHC top level organisation.
+
+:Field name: client_key
+
+:Data type: string
+:Notes:
+  Client keys must be unique across the entire PHN network independent of the
+  treating organisation. It is the responsibility of PHNs and Provider
+  Organisations to co-ordinate to maintain this identifier. Clients should not be
+  assigned multiple keys within the same PHN.
+  
+
+----------
+
+Collection Occasion - Date
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The date of the collection occasion.
+
+:Field name: measure_date
+
+:Data type: date
+:Notes:
+  For Date fields, data must be recorded in compliance with the standard format
+  used across the National Health Data Dictionary; specifically, dates must be
+  of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
+  necessary to pad out a value. For instance, 13th March 2008 would appear as
+  13032008.
+  
+
+----------
+
+Collection Occasion - Measure
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The name of the measure.
+
+:Field name: measure
+
+:Data type: string
+:Notes:
+  To be defined.
+  
+
+----------
+
+Collection Occasion - Score
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+:Field name: score
+
+:Data type: integer
+:Notes:
+  The value of the score at this collection occasion.
+  
+
+----------
+
+Collection Occasion Key
+^^^^^^^^^^^^^^^^^^^^^^^
+
+This is a number or code assigned to each collection occasion of outcome measures. The Collection Occasion Key is unique and stable for each collection occasion at the level of the organisation.
+
+:Field name: collection_occasion_key
+
+:Data type: string
+
+----------
+
+Collection Occastion - Reason
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The reason for the collection of the outcome measures on the identified Outcome Collection Occasion.
+
+:Field name: reason_for_collection
+
+:Data type: string
+:Notes:
+  1 - Episode start
+    Refers to an outcome measure undertaken at the beginning of an Episode of Care. For the purposes of the PMHC MDS protocol, episodes may start at the point of first Service Contact with a new client who has not been seen previously by the organisation, or a first contact for a new Episode of Care for a client who has received services from the organisation in a previous Episode of Care that has been completed.
+  
+  2 - Review
+    Refers to an outcome measure undertaken during the course of an Episode of
+    Care that post-dates Episode Start and pre-dates Episode End. An outcome
+    measure may be undertaken at Review for a number of reasons including:
+  
+    - in response to critical clinical events or changes in the client’s mental
+      health status;
+    - following a client-requested review; or
+    - other situations where a review may be indicated.
+  
+  3 - Episode end
+    Refers to the outcome measures collected at the end of an Episode of Care.
+  
+
+----------
+
+Episode - Additional Diagnosis
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The main additional condition or complaint co-existing with the Principal Diagnosis or arising during the episode of care.
+
+:Field name: additional_diagnosis
+
+:Data type: string
+
+:Domain:
+  See *Episode - Principal Diagnosis*
+:Notes:
+  Additional Diagnosis gives information on conditions that are significant in
+  terms of treatment required and resources used during the episode of care.
+  Additional diagnoses should be interpreted as conditions that affect client
+  management in terms of requiring any of the following:
+  
+  -	Commencement, alteration or adjustment of therapeutic treatment
+  -	Diagnostic procedures
+  -	Increased clinical care and/or monitoring
+  
+  Where the client one or more comorbid mental health conditions in addition to
+  the condition coded as the Principal Diagnosis, record the main condition as
+  the Additional Diagnosis. For further notes on the recording of diagnosis codes
+  see Principal Diagnosis
+  
+
+----------
+
+Episode - Area of usual residence, postcode
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The Australian postcode of the client.
+
+:Field name: client_postcode
+
+:Data type: string[4]
+:Notes:
+  A valid Australian postcode or 9999 if the postcode is unknown or the client
+  has not provided sufficient information to confirm their current residential
+  address.
+  
+  The full list of Australian Postcodes can be found at `Australia Post
+  <http://www.auspost.com.au/>`_.
+  
+  When collecting the postcode of a person's usual place of residence, the ABS
+  recommends that 'usual' be defined as: 'the place where the person has or
+  intends to live for 6 months or more, or the place that the person regards as
+  their main residence, or where the person has no other residence, the place
+  they currently reside.'
+  
+
+:METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__
+
+----------
+
+Episode - Completion Status
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+An indication of the completion status of an *Episode of Care*.
+
+:Field name: episode_completion_status
+
+:Data type: string
+
+:Domain:
+  :1: Episode closed - treatment concluded
+  :2: Episode closed administratively - client could not be contacted
+  :3: Episode closed administratively - client declined further contact
+  :4: Episode closed administratively - Client moved out of area
+  :5: Episode closed administratively - other reason
+:Notes:
+  *Episode Completion Status* interacts with two other data items in the PMHC MDS -
+  *Service Contact - Final*, and *Episode End Date*.
+  
+  *Service Contact - Final*
+    Collection of data for *Service Contacts* includes a *Service Contact - Final*
+    item that requires the service provider to indicate whether further Service
+    Contacts are planned. Where this item is recorded as 'no further services
+    planned', the *Episode Completion Status* should be recorded as code 1 (Episode
+    closed - treatment concluded)
+  
+  *Episode End Date*
+    where a Final Service Contact is recorded and the *Episode Completion Status*
+    field is recorded as code 1 (Episode closed - treatment concluded), *Episode
+    End Date* should be recorded as the date of the final Service Contact.
+
+----------
+
 Episode - Employment Participation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -253,39 +423,6 @@ Whether a person in paid employment is employed full-time or part-time, as repre
   
 
 :METeOR: `269950 <http://meteor.aihw.gov.au/content/index.phtml/itemId/269950>`__
-
-----------
-
-Episode - Completion Status
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-An indication of the completion status of an *Episode of Care*.
-
-:Field name: episode_completion_status
-
-:Data type: string
-
-:Domain:
-  :1: Episode closed - treatment concluded
-  :2: Episode closed administratively - client could not be contacted
-  :3: Episode closed administratively - client declined further contact
-  :4: Episode closed administratively - Client moved out of area
-  :5: Episode closed administratively - other reason
-:Notes:
-  *Episode Completion Status* interacts with two other data items in the PMHC MDS -
-  *Service Contact - Final*, and *Episode End Date*.
-  
-  *Service Contact - Final*
-    Collection of data for *Service Contacts* includes a *Service Contact - Final*
-    item that requires the service provider to indicate whether further Service
-    Contacts are planned. Where this item is recorded as 'no further services
-    planned', the *Episode Completion Status* should be recorded as code 1 (Episode
-    closed - treatment concluded)
-  
-  *Episode End Date*
-    where a Final Service Contact is recorded and the *Episode Completion Status*
-    field is recorded as code 1 (Episode closed - treatment concluded), *Episode
-    End Date* should be recorded as the date of the final Service Contact.
 
 ----------
 
@@ -332,74 +469,6 @@ The date on which an *Episode of Care* is formally or administratively ended
 
 ----------
 
-Episode Key
-^^^^^^^^^^^
-
-This is a number or code assigned to each episode. The Episode Key is unique and stable for each episode at the level of the organisation.
-
-:Field name: episode_key
-
-:Data type: string
-:Notes:
-  Episode Keys must be genrated by the organisation to be unique at the provider
-  organisation level and must persist across time. Creation of episode keys in
-  this way allows clients to be merged (where duplicate Client Keys have been
-  identified) without having to re-allocate episode identifiers since they can
-  never clash.
-  
-  A recommended approach for the creation of Episode Keys is to compute `random
-  UUIDs <https://en.wikipedia.org/wiki/Universally_unique_identifier>`_.
-  
-
-----------
-
-Episode - Start Date
-^^^^^^^^^^^^^^^^^^^^
-
-The date on which the client formally commences an *Episode of Care*.
-
-:Field name: episode_start_date
-
-:Data type: date
-:Notes:
-  An Episode of Care should be recorded as commencing on the date the first
-  Service Contact with the client is made.
-  
-  This field will be derived from the first service event date.
-  
-
-:METeOR: `614072 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614072>`__
-
-----------
-
-Client - Estimated Date of Birth Flag
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The date of birth estimate flag records whether or not the client's date of birth has been estimated.
-
-:Field name: est_date_of_birth
-
-:Data type: string
-
-:Domain:
-  :1: Date of birth is accurate
-  :2: Date of birth is an estimate
-  :8: Date of birth is a 'dummy' date (ie, 09099999)
-  :9: Accuracy of stated date of birth is not known
-
-----------
-
-Client - Gender
-^^^^^^^^^^^^^^^
-
-The term 'gender' refers to the way in which a person identifies their masculine or feminine characteristics. A persons gender relates to their deeply held internal and individual sense of gender and is not always exclusively male or female. It may or may not correspond to their sex assigned at birth.
-
-:Field name: gender
-
-:Data type: string
-
-----------
-
 Episode - Homelessness Flag
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -438,46 +507,6 @@ An indication of whether the client has been homeless in the 4 weeks prior to th
   - If code 2 but not code 1 applied at any time over the 4 week period, code 2
   - Otherwise Code 3 applies
   
-
-----------
-
-Episode - Source of Cash Income
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The source from which a person derives the greatest proportion of his/her income, as represented by a code.
-
-:Field name: income_source
-
-:Data type: string
-
-:Domain:
-  :1: Disability Support Pension
-  :2: Other pension or benefit (not superannuation)
-  :3: Paid employment
-  :4: Compensation payments
-  :5: Other (e.g. superannuation, investments etc.)
-  :6: Nil income
-  :7: Not known
-  :9: Not stated/inadequately described
-:Notes:
-  This data standard is not applicable to person's aged less than 16 years.
-  
-  This item refers to the source by which a person derives most (equal to or
-  greater than 50%) of his/her income. If the person has multiple sources of
-  income and none are equal to or greater than 50%, the one which contributes
-  the largest percentage should be counted.
-  
-  This item refers to a person's own main source of income, not that of a
-  partner or of other household members. If it is difficult to determine a
-  'main source of income' over the reporting period (i.e. it may vary over
-  time) please report the main source of income during the reference week.
-  
-  Code 7 'Not known' should only be recorded when it has not been possible for
-  the service user or their carer/family/advocate to provide the information
-  (i.e. they have been asked but do not know).
-  
-
-:METeOR: `386449 <http://meteor.aihw.gov.au/content/index.phtml/itemId/386449>`__
 
 ----------
 
@@ -552,31 +581,6 @@ The self-reported status the person currently has in being either in the labour 
 
 ----------
 
-Client - Main Language Spoken at Home
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The language reported by a client as the main language other than English spoken by that client in his/her home (or most recent private residential setting occupied by the client) to communicate with other residents of the home or setting and regular visitors, as represented by a code.
-
-:Field name: main_lang_at_home
-
-:Data type: string[4]
-:Notes:
-  `Australian Standard Classification of Languages 2011 4-digit code (ABS
-  Catalogue No. 1267.0) <http://www.abs.gov.au/ausstats/abs@.nsf/mf/1267.0>`_
-  or 9999 if info is not known or client refuses to supply.
-  
-  The ABS recommends the following question in order to collect this data:
-  Which language does the client mainly speak at home? (If more that one
-  language, indicate the one that is spoken most often.)
-  
-  Organisations are encouraged to produce customised lists of the most common
-  countries based on their local populations from the above resource.
-  
-
-:METeOR: `460125 <http://meteor.aihw.gov.au/content/index.phtml/itemId/460125>`__
-
-----------
-
 Episode - Marital Status
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -619,168 +623,6 @@ A person's current relationship status in terms of a couple relationship or, for
 
 ----------
 
-Collection Occasion - Measure
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The name of the measure.
-
-:Field name: measure
-
-:Data type: string
-:Notes:
-  To be defined.
-  
-
-----------
-
-Collection Occasion - Date
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The date of the collection occasion.
-
-:Field name: measure_date
-
-:Data type: date
-:Notes:
-  For Date fields, data must be recorded in compliance with the standard format
-  used across the National Health Data Dictionary; specifically, dates must be
-  of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
-  necessary to pad out a value. For instance, 13th March 2008 would appear as
-  13032008.
-  
-
-----------
-
-Medication - Antidepressants (N06A)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Whether the client is taking prescribed antidepressants for a mental health condition as assessed at intake assessment, as represented by a code.
-
-:Field name: medication_antidepressants
-
-:Data type: string
-
-:Domain:
-  :1: Yes
-  :2: No
-  :9: Unknown
-:Notes:
-  The N06A class of drugs a therapeutic subgroup of the Anatomical Therapeutic
-  Chemical Classification System, a system of alphanumeric codes developed by the
-  World Health Organisation (WHO) for the classification of drugs and other
-  medical products. It covers drugs designed for the depressive disorders.
-  
-  Details of drugs included in the category can be found here:
-  http://www.whocc.no/atc_ddd_index/?code=N06A
-  
-
-----------
-
-Medication - Antipsychotics (N05A)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Whether the client is taking prescribed antipsychotics for a mental health condition as assessed at intake assessment, as represented by a code.
-
-:Field name: medication_antipsychotics
-
-:Data type: string
-
-:Domain:
-  :1: Yes
-  :2: No
-  :9: Unknown
-:Notes:
-  The N05A class of drugs a therapeutic subgroup of the Anatomical Therapeutic
-  Chemical Classification System, a system of alphanumeric codes developed by the
-  World Health Organisation (WHO) for the classification of drugs and other
-  medical products. It covers drugs designed for the treatment of psychotic
-  disorders.
-  
-  Details of drugs included in the category can be found here:
-  http://www.whocc.no/atc_ddd_index/?code=N05A
-  
-
-----------
-
-Medication - Anxiolytics (N05B)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Whether the client is taking prescribed anxiolytics for a mental health condition as assessed at intake assessment, as represented by a code.
-
-:Field name: medication_anxiolytics
-
-:Data type: string
-
-:Domain:
-  :1: Yes
-  :2: No
-  :9: Unknown
-:Notes:
-  The N05B class of drugs a therapeutic subgroup of the Anatomical Therapeutic
-  Chemical Classification System, a system of alphanumeric codes developed by the
-  World Health Organisation (WHO) for the classification of drugs and other
-  medical products. It covers drugs designed for the treatment of disorders
-  associated with anxiety and tension.
-  
-  Details of drugs included in the category can be found here:
-  http://www.whocc.no/atc_ddd_index/?code=N05B
-  
-
-----------
-
-Medication - Hypnotics and sedatives (N05C)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Whether the client is taking prescribed hypnotics and sedatives for a mental health condition as assessed at intake assessment, as represented by a code.
-
-:Field name: medication_hypnotics
-
-:Data type: string
-
-:Domain:
-  :1: Yes
-  :2: No
-  :9: Unknown
-:Notes:
-  The N05C class of drugs a therapeutic subgroup of the Anatomical Therapeutic
-  Chemical Classification System, a system of alphanumeric codes developed by the
-  World Health Organisation (WHO) for the classification of drugs and other
-  medical products. It covers drugs designed to have mainly sedative or hypnotic
-  actions. Hypnotic drugs are used to induce sleep and treat severe insomnia.
-  Sedative drugs are prescribed to reduce excitability or anxiety.
-  
-  Details of drugs included in the category can be found here:
-  http://www.whocc.no/atc_ddd_index/?code=N05C
-  
-
-----------
-
-Medication - Psychostimulants and nootropics (N06B)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Whether the client is taking prescribed psychostimulants and nootropics for a mental health condition as assessed at intake assessment, as represented by a code.
-
-:Field name: medication_psychostimulants
-
-:Data type: string
-
-:Domain:
-  :1: Yes
-  :2: No
-  :9: Unknown
-:Notes:
-  The N06B class of drugs a therapeutic subgroup of the Anatomical Therapeutic
-  Chemical Classification System, a system of alphanumeric codes developed by the
-  World Health Organisation (WHO) for the classification of drugs and other
-  medical products. It covers drugs designed to attention-deficit hyperactivity
-  disorder (ADHD) and to improve impaired cognitive abilities.
-  
-  Details of drugs included in the category can be found here:
-  http://www.whocc.no/atc_ddd_index/?code=N06B
-  
-
-----------
-
 Episode - NDIS Participant
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -794,111 +636,6 @@ Is the client a participant in the National Disability Insurance Scheme?, as rep
   :1: Yes
   :2: No
   :9: Not stated/inadequately described
-
-----------
-
-Provider Organisation - ABN
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The Australian Business Number of the provider organisation.
-
-:Field name: organisation_abn
-
-:Data type: string
-
-----------
-
-Provider Organisation Key
-^^^^^^^^^^^^^^^^^^^^^^^^^
-
-A sequence of characters which uniquely identifies the provider organisation. Assigned by the Primary Health Network.
-
-:Field name: organisation_key
-
-:Data type: string
-
-----------
-
-Provider Organisation - Name
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The name of the provider organisation.
-
-:Field name: organisation_name
-
-:Data type: string
-
-----------
-
-Organisation Path
-^^^^^^^^^^^^^^^^^
-
-A sequence of colon separated Organisation Codes that fully specifies the upload organisation.
-
-:Field name: organisation_path
-
-:Data type: string
-
-----------
-
-Provider Organisation - State
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The state that the provider organisation operates in.
-
-:Field name: organisation_state
-
-:Data type: string
-
-:Domain:
-  :1: New South Wales
-  :2: Victoria
-  :3: Queensland
-  :4: South Australia
-  :5: Western Australia
-  :6: Tasmania
-  :7: Northern Territory
-  :8: Australian Capital Territory
-  :9: Other Territories
-:Notes:
-  - Name is taken from Australian `Statistical Geography Standard (ASGS) July
-    2011
-    <http://www.abs.gov.au/ausstats/abs@.nsf/0/871A7FF33DF471FBCA257801000DCD5
-    F?Opendocument>`_.
-  - Code is from Meteor with the addition of code for Other Territories.
-  
-
-:METeOR: `613718 <http://meteor.aihw.gov.au/content/index.phtml/itemId/613718>`__
-
-----------
-
-Provider Organisation - Type
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The type of the provider organisation.
-
-:Field name: organisation_type
-
-:Data type: string
-
-:Domain:
-  :0: Primary Heath Network
-  :1: Private Primary Health Care Organisation - for profit
-  :2: Private Primary Health Care Organisation - not for profit
-  :3: Medicare Local
-  :4: Division of General Practice
-  :5: Aboriginal Health/Medical Service
-  :6: General Practice
-  :7: Private Psychiatry service
-  :8: Drug and/or Alcohol Service
-  :9: Community-managed Community Support Organisation
-  :10: State/Territory Health Services
-  :11: Headspace Centre
-  :12: Solo Practitioner
-  :13: Other
-:Notes:
-  Coding options will be finalised following feedback from PHNs.
-  
 
 ----------
 
@@ -952,130 +689,6 @@ The type of eligibility card held by the patient or Pharmaceutical Benefits Sche
   
 
 :METeOR: `605149 <http://meteor.aihw.gov.au/content/index.phtml/itemId/605149>`__
-
-----------
-
-Practitioner - Active
-^^^^^^^^^^^^^^^^^^^^^
-
-A flag to represent whether a practitioner is actively delivering services. This is a system field that is aimed at helping organisations manage practitioner codes.
-
-:Field name: practitioner_active
-
-:Data type: string
-
-:Domain:
-  :0: Inactive
-  :1: Active
-
-----------
-
-Practitioner - Aboriginal and Torres Strait Islander Status
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Whether a person identifies as being of Aboriginal and/or Torres Strait Islander origin, as represented by a code.
-
-:Field name: practitioner_atsi_status
-
-:Data type: string
-
-:Domain:
-  :1: Aboriginal but not Torres Strait Islander origin
-  :2: Torres Strait Islander but not Aboriginal origin
-  :3: Both Aboriginal and Torres Strait Islander origin
-  :4: Neither Aboriginal or Torres Strait Islander origin
-  :9: Not stated/inadequately described
-:Notes:
-  Code 9 is not to be available as a valid answer to the questions but is
-    intended for use:
-  
-    - Primarily when importing data from other data collections that do not
-      contain mappable data.
-    - Where an answer was refused.
-    - Where the question was not able to be asked prior to completion of
-      assistance because the client was unable to communicate or a person who
-      knows the client was not available.
-  
-
-:METeOR: `291036 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291036>`__
-
-----------
-
-Practitioner - Category
-^^^^^^^^^^^^^^^^^^^^^^^
-
-The type or category of the practitioner, as represented by a code.
-
-:Field name: practitioner_category
-
-:Data type: string
-
-:Domain:
-  :1: Clincal Psychologist
-  :2: Generalist/Other Psychologist
-  :3: Social Worker
-  :4: Occupational Therapist
-  :5: Mental Health Nurse
-  :6: Aboriginal and Torres Strait Islander Health/Mental Health Worker
-  :7: Low Intensity Mental Health Worker
-  :8: General Practitioner
-  :9: Psychiatrist
-  :10: Other Medical
-  :11: Other
-:Notes:
-  Domain and definitions to be finalised following PHN advice.
-  
-
-----------
-
-Practitioner - Gender
-^^^^^^^^^^^^^^^^^^^^^
-
-The term 'gender' refers to the way in which a person identifies their masculine or feminine characteristics. A persons gender relates to their deeply held internal and individual sense of gender and is not always exclusively male or female. It may or may not correspond to their sex assigned at birth.
-
-:Field name: practitioner_gender
-
-:Data type: string
-
-:Domain:
-  :0: Not stated/Inadequately described
-  :1: Male
-  :2: Female
-  :3: Other
-
-----------
-
-Practitioner Key
-^^^^^^^^^^^^^^^^
-
-A unique identifier for a practitioner within the responsible organisation. Assigned by the organisation.
-
-:Field name: practitioner_key
-
-:Data type: string
-
-----------
-
-Practitioner - Year of Birth
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The year the practitioner was born.
-
-:Field name: practitioner_year_of_birth
-
-:Data type: gYear
-
-:Domain:
-  gYear
-:Notes:
-  If the year of birth is unknown, the following approaches should be used:
-  
-  - If the age of the practitioner is known, the age should be used to derive the
-    year of birth
-  - If the age of the practitioner is unknown, an estimated age of the practitioner should
-    be used to estimate a year of birth
-  - If the date of birth is totally unknown, use 9999.
-  
 
 ----------
 
@@ -1295,65 +908,6 @@ The range of activities that best describes the overall services intended to be 
 
 ----------
 
-Client - Proficiency in Spoken English
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The self-assessed level of ability to speak English, asked of people whose first language is a language other than English or who speak a language other than English at home.
-
-:Field name: prof_english
-
-:Data type: string
-
-:Domain:
-  :0: Not applicable (persons under 5 years of age or who speak only English)
-  :1: Very well
-  :2: Well
-  :3: Not well
-  :4: Not at all
-  :9: Not stated/inadequately described
-:Notes:
-  0 - Not applicable (persons under 5 years of age or who speak only English)
-    Not applicable, is to be used for people under 5 years of age and people
-    who speak only English.
-  
-  9 - Not stated/inadequately described
-    Not stated/inadequately described, is not to be used on primary collection
-    forms. It is primarily for use in administrative collections when
-    transferring data from data sets where the item has not been collected.
-  
-
-:METeOR: `270203 <http://meteor.aihw.gov.au/content/index.phtml/itemId/270203>`__
-
-----------
-
-Collection Occastion - Reason
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The reason for the collection of the outcome measures on the identified Outcome Collection Occasion.
-
-:Field name: reason_for_collection
-
-:Data type: string
-:Notes:
-  1 - Episode start
-    Refers to an outcome measure undertaken at the beginning of an Episode of Care. For the purposes of the PMHC MDS protocol, episodes may start at the point of first Service Contact with a new client who has not been seen previously by the organisation, or a first contact for a new Episode of Care for a client who has received services from the organisation in a previous Episode of Care that has been completed.
-  
-  2 - Review
-    Refers to an outcome measure undertaken during the course of an Episode of
-    Care that post-dates Episode Start and pre-dates Episode End. An outcome
-    measure may be undertaken at Review for a number of reasons including:
-  
-    - in response to critical clinical events or changes in the client’s mental
-      health status;
-    - following a client-requested review; or
-    - other situations where a review may be indicated.
-  
-  3 - Episode end
-    Refers to the outcome measures collected at the end of an Episode of Care.
-  
-
-----------
-
 Episode - Referral Date
 ^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -1441,16 +995,538 @@ The profession of the individual making the referral.
 
 ----------
 
-Collection Occasion - Score
+Episode - Source of Cash Income
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The source from which a person derives the greatest proportion of his/her income, as represented by a code.
+
+:Field name: income_source
+
+:Data type: string
+
+:Domain:
+  :1: Disability Support Pension
+  :2: Other pension or benefit (not superannuation)
+  :3: Paid employment
+  :4: Compensation payments
+  :5: Other (e.g. superannuation, investments etc.)
+  :6: Nil income
+  :7: Not known
+  :9: Not stated/inadequately described
+:Notes:
+  This data standard is not applicable to person's aged less than 16 years.
+  
+  This item refers to the source by which a person derives most (equal to or
+  greater than 50%) of his/her income. If the person has multiple sources of
+  income and none are equal to or greater than 50%, the one which contributes
+  the largest percentage should be counted.
+  
+  This item refers to a person's own main source of income, not that of a
+  partner or of other household members. If it is difficult to determine a
+  'main source of income' over the reporting period (i.e. it may vary over
+  time) please report the main source of income during the reference week.
+  
+  Code 7 'Not known' should only be recorded when it has not been possible for
+  the service user or their carer/family/advocate to provide the information
+  (i.e. they have been asked but do not know).
+  
+
+:METeOR: `386449 <http://meteor.aihw.gov.au/content/index.phtml/itemId/386449>`__
+
+----------
+
+Episode - Start Date
+^^^^^^^^^^^^^^^^^^^^
+
+The date on which the client formally commences an *Episode of Care*.
+
+:Field name: episode_start_date
+
+:Data type: date
+:Notes:
+  An Episode of Care should be recorded as commencing on the date the first
+  Service Contact with the client is made.
+  
+  This field will be derived from the first service event date.
+  
+
+:METeOR: `614072 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614072>`__
+
+----------
+
+Episode - Suicide Referral Flag
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Identifies those individuals where a recent history of suicide attempt, or suicide risk, was a factor noted in the referral that underpinned the person's needs for assistance at entry to the episode, as represented by a code.
+
+:Field name: suicide_referral_flag
+
+:Data type: string
+
+:Domain:
+  :1: Yes
+  :2: No
+  :9: Unknown
+
+----------
+
+Episode Key
+^^^^^^^^^^^
+
+This is a number or code assigned to each episode. The Episode Key is unique and stable for each episode at the level of the organisation.
+
+:Field name: episode_key
+
+:Data type: string
+:Notes:
+  Episode Keys must be genrated by the organisation to be unique at the provider
+  organisation level and must persist across time. Creation of episode keys in
+  this way allows clients to be merged (where duplicate Client Keys have been
+  identified) without having to re-allocate episode identifiers since they can
+  never clash.
+  
+  A recommended approach for the creation of Episode Keys is to compute `random
+  UUIDs <https://en.wikipedia.org/wiki/Universally_unique_identifier>`_.
+  
+
+----------
+
+Medication - Antidepressants (N06A)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Whether the client is taking prescribed antidepressants for a mental health condition as assessed at intake assessment, as represented by a code.
+
+:Field name: medication_antidepressants
+
+:Data type: string
+
+:Domain:
+  :1: Yes
+  :2: No
+  :9: Unknown
+:Notes:
+  The N06A class of drugs a therapeutic subgroup of the Anatomical Therapeutic
+  Chemical Classification System, a system of alphanumeric codes developed by the
+  World Health Organisation (WHO) for the classification of drugs and other
+  medical products. It covers drugs designed for the depressive disorders.
+  
+  Details of drugs included in the category can be found here:
+  http://www.whocc.no/atc_ddd_index/?code=N06A
+  
+
+----------
+
+Medication - Antipsychotics (N05A)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Whether the client is taking prescribed antipsychotics for a mental health condition as assessed at intake assessment, as represented by a code.
+
+:Field name: medication_antipsychotics
+
+:Data type: string
+
+:Domain:
+  :1: Yes
+  :2: No
+  :9: Unknown
+:Notes:
+  The N05A class of drugs a therapeutic subgroup of the Anatomical Therapeutic
+  Chemical Classification System, a system of alphanumeric codes developed by the
+  World Health Organisation (WHO) for the classification of drugs and other
+  medical products. It covers drugs designed for the treatment of psychotic
+  disorders.
+  
+  Details of drugs included in the category can be found here:
+  http://www.whocc.no/atc_ddd_index/?code=N05A
+  
+
+----------
+
+Medication - Anxiolytics (N05B)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Whether the client is taking prescribed anxiolytics for a mental health condition as assessed at intake assessment, as represented by a code.
+
+:Field name: medication_anxiolytics
+
+:Data type: string
+
+:Domain:
+  :1: Yes
+  :2: No
+  :9: Unknown
+:Notes:
+  The N05B class of drugs a therapeutic subgroup of the Anatomical Therapeutic
+  Chemical Classification System, a system of alphanumeric codes developed by the
+  World Health Organisation (WHO) for the classification of drugs and other
+  medical products. It covers drugs designed for the treatment of disorders
+  associated with anxiety and tension.
+  
+  Details of drugs included in the category can be found here:
+  http://www.whocc.no/atc_ddd_index/?code=N05B
+  
+
+----------
+
+Medication - Hypnotics and sedatives (N05C)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Whether the client is taking prescribed hypnotics and sedatives for a mental health condition as assessed at intake assessment, as represented by a code.
+
+:Field name: medication_hypnotics
+
+:Data type: string
+
+:Domain:
+  :1: Yes
+  :2: No
+  :9: Unknown
+:Notes:
+  The N05C class of drugs a therapeutic subgroup of the Anatomical Therapeutic
+  Chemical Classification System, a system of alphanumeric codes developed by the
+  World Health Organisation (WHO) for the classification of drugs and other
+  medical products. It covers drugs designed to have mainly sedative or hypnotic
+  actions. Hypnotic drugs are used to induce sleep and treat severe insomnia.
+  Sedative drugs are prescribed to reduce excitability or anxiety.
+  
+  Details of drugs included in the category can be found here:
+  http://www.whocc.no/atc_ddd_index/?code=N05C
+  
+
+----------
+
+Medication - Psychostimulants and nootropics (N06B)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Whether the client is taking prescribed psychostimulants and nootropics for a mental health condition as assessed at intake assessment, as represented by a code.
+
+:Field name: medication_psychostimulants
+
+:Data type: string
+
+:Domain:
+  :1: Yes
+  :2: No
+  :9: Unknown
+:Notes:
+  The N06B class of drugs a therapeutic subgroup of the Anatomical Therapeutic
+  Chemical Classification System, a system of alphanumeric codes developed by the
+  World Health Organisation (WHO) for the classification of drugs and other
+  medical products. It covers drugs designed to attention-deficit hyperactivity
+  disorder (ADHD) and to improve impaired cognitive abilities.
+  
+  Details of drugs included in the category can be found here:
+  http://www.whocc.no/atc_ddd_index/?code=N06B
+  
+
+----------
+
+Organisation Path
+^^^^^^^^^^^^^^^^^
+
+A sequence of colon separated Organisation Codes that fully specifies the upload organisation.
+
+:Field name: organisation_path
+
+:Data type: string
+
+----------
+
+Practitioner - ATSI Cultural Training
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Indicates whether a practitioner has completed a recognised training programme in the delivery of culturally safe services to Aboriginal and Torres Strait Islander peoples.
+
+:Field name: atsi_cultural_training
+
+:Data type: string
+
+:Domain:
+  :1: Yes
+  :2: No
+  :3: Not required
+  :9: Missing / Not recorded
+:Notes:
+  This item is reported by the practitioner and applies to service providers who are either:
+  
+  -	not of Aboriginal or Torres Strait Islander status; or
+  -	are not employed by an Aboriginal Community Controlled Health Service.
+  
+  1	- Yes
+    The practitioner has:
+  
+    - undertaken specific training in the delivery of culturally appropriate
+      mental health /health services for Aboriginal and Torres Strait Islander
+      peoples. As a guide, recognised training programs include those endorsed by
+      the Australian Indigenous Psychologists’ Association (AIPA) or similar
+      organisation; or
+    - undertaken local cultural awareness training in the community in which they
+      are practising, as delivered or endorsed by the elders of that community or
+      the local Aboriginal Community Controlled Health Service.
+  
+  2 - No
+    The practitioner has not met the requirements stated above.
+  
+  3 - Not required
+    This option is reserved only for practitioners who are of Aboriginal and
+    Torres Strait Islander descent, or employed by an Aboriginal Community
+    Controlled Health Service.
+  
+  4 - Missing/Not recorded
+    This is a system code for missing data and not a valid response option for
+    practitioners.
+  
+
+----------
+
+Practitioner - Aboriginal and Torres Strait Islander Status
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Whether a person identifies as being of Aboriginal and/or Torres Strait Islander origin, as represented by a code.
+
+:Field name: practitioner_atsi_status
+
+:Data type: string
+
+:Domain:
+  :1: Aboriginal but not Torres Strait Islander origin
+  :2: Torres Strait Islander but not Aboriginal origin
+  :3: Both Aboriginal and Torres Strait Islander origin
+  :4: Neither Aboriginal or Torres Strait Islander origin
+  :9: Not stated/inadequately described
+:Notes:
+  Code 9 is not to be available as a valid answer to the questions but is
+    intended for use:
+  
+    - Primarily when importing data from other data collections that do not
+      contain mappable data.
+    - Where an answer was refused.
+    - Where the question was not able to be asked prior to completion of
+      assistance because the client was unable to communicate or a person who
+      knows the client was not available.
+  
+
+:METeOR: `291036 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291036>`__
+
+----------
+
+Practitioner - Active
+^^^^^^^^^^^^^^^^^^^^^
+
+A flag to represent whether a practitioner is actively delivering services. This is a system field that is aimed at helping organisations manage practitioner codes.
+
+:Field name: practitioner_active
+
+:Data type: string
+
+:Domain:
+  :0: Inactive
+  :1: Active
+
+----------
+
+Practitioner - Category
+^^^^^^^^^^^^^^^^^^^^^^^
+
+The type or category of the practitioner, as represented by a code.
+
+:Field name: practitioner_category
+
+:Data type: string
+
+:Domain:
+  :1: Clincal Psychologist
+  :2: Generalist/Other Psychologist
+  :3: Social Worker
+  :4: Occupational Therapist
+  :5: Mental Health Nurse
+  :6: Aboriginal and Torres Strait Islander Health/Mental Health Worker
+  :7: Low Intensity Mental Health Worker
+  :8: General Practitioner
+  :9: Psychiatrist
+  :10: Other Medical
+  :11: Other
+:Notes:
+  Domain and definitions to be finalised following PHN advice.
+  
+
+----------
+
+Practitioner - Gender
+^^^^^^^^^^^^^^^^^^^^^
+
+The term 'gender' refers to the way in which a person identifies their masculine or feminine characteristics. A persons gender relates to their deeply held internal and individual sense of gender and is not always exclusively male or female. It may or may not correspond to their sex assigned at birth.
+
+:Field name: practitioner_gender
+
+:Data type: string
+
+:Domain:
+  :0: Not stated/Inadequately described
+  :1: Male
+  :2: Female
+  :3: Other
+
+----------
+
+Practitioner - Year of Birth
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The year the practitioner was born.
+
+:Field name: practitioner_year_of_birth
+
+:Data type: gYear
+
+:Domain:
+  gYear
+:Notes:
+  If the year of birth is unknown, the following approaches should be used:
+  
+  - If the age of the practitioner is known, the age should be used to derive the
+    year of birth
+  - If the age of the practitioner is unknown, an estimated age of the practitioner should
+    be used to estimate a year of birth
+  - If the date of birth is totally unknown, use 9999.
+  
+
+----------
+
+Practitioner Key
+^^^^^^^^^^^^^^^^
+
+A unique identifier for a practitioner within the responsible organisation. Assigned by the organisation.
+
+:Field name: practitioner_key
+
+:Data type: string
+
+----------
+
+Provider Organisation - ABN
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+The Australian Business Number of the provider organisation.
 
-:Field name: score
+:Field name: organisation_abn
 
-:Data type: integer
+:Data type: string
+
+----------
+
+Provider Organisation - Name
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The name of the provider organisation.
+
+:Field name: organisation_name
+
+:Data type: string
+
+----------
+
+Provider Organisation - State
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The state that the provider organisation operates in.
+
+:Field name: organisation_state
+
+:Data type: string
+
+:Domain:
+  :1: New South Wales
+  :2: Victoria
+  :3: Queensland
+  :4: South Australia
+  :5: Western Australia
+  :6: Tasmania
+  :7: Northern Territory
+  :8: Australian Capital Territory
+  :9: Other Territories
 :Notes:
-  The value of the score at this collection occasion.
+  - Name is taken from Australian `Statistical Geography Standard (ASGS) July
+    2011
+    <http://www.abs.gov.au/ausstats/abs@.nsf/0/871A7FF33DF471FBCA257801000DCD5
+    F?Opendocument>`_.
+  - Code is from Meteor with the addition of code for Other Territories.
   
+
+:METeOR: `613718 <http://meteor.aihw.gov.au/content/index.phtml/itemId/613718>`__
+
+----------
+
+Provider Organisation - Type
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The type of the provider organisation.
+
+:Field name: organisation_type
+
+:Data type: string
+
+:Domain:
+  :0: Primary Heath Network
+  :1: Private Primary Health Care Organisation - for profit
+  :2: Private Primary Health Care Organisation - not for profit
+  :3: Medicare Local
+  :4: Division of General Practice
+  :5: Aboriginal Health/Medical Service
+  :6: General Practice
+  :7: Private Psychiatry service
+  :8: Drug and/or Alcohol Service
+  :9: Community-managed Community Support Organisation
+  :10: State/Territory Health Services
+  :11: Headspace Centre
+  :12: Solo Practitioner
+  :13: Other
+:Notes:
+  Coding options will be finalised following feedback from PHNs.
+  
+
+----------
+
+Provider Organisation Key
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A sequence of characters which uniquely identifies the provider organisation. Assigned by the Primary Health Network.
+
+:Field name: organisation_key
+
+:Data type: string
+
+----------
+
+Service Contact - Client Participation Indicator
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+An indicator of whether the client participated in the service contact, as represented by a code.
+
+:Field name: service_contact_participation_indicator
+
+:Data type: string
+
+:Domain:
+  :1: Yes
+  :2: No
+:Notes:
+  Service contacts are not restricted to in-person communication but can include
+  telephone, video link or other forms of direct communication.
+  
+  1 - Yes
+    This code is to be used for service contacts between a mental health service
+    provider and the patient/client in whose clinical record the service contact
+    would normally warrant a dated entry, where the patient/client is
+    participating.
+  
+  2 - No
+    This code is to be used for service contacts between a mental health service
+    provider and a third party(ies) where the patient/client, in whose clinical
+    record the service contact would normally warrant a dated entry, is not
+    participating.
+  
+
+:METeOR: `494341 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494341>`__
 
 ----------
 
@@ -1579,17 +1655,6 @@ Whether an interpreter service was used during the Service Contact
 
 ----------
 
-Service Contact Key
-^^^^^^^^^^^^^^^^^^^
-
-This is a number or code assigned to each service contact. The Service Contact Key is unique and stable for each service contact at the level of the organisation.
-
-:Field name: service_contact_key
-
-:Data type: string
-
-----------
-
 Service Contact - Modality
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -1644,39 +1709,6 @@ Service Contact - Participants
 :Notes:
   Coding options will be finalised following feedback from PHNs.
   
-
-----------
-
-Service Contact - Client Participation Indicator
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-An indicator of whether the client participated in the service contact, as represented by a code.
-
-:Field name: service_contact_participation_indicator
-
-:Data type: string
-
-:Domain:
-  :1: Yes
-  :2: No
-:Notes:
-  Service contacts are not restricted to in-person communication but can include
-  telephone, video link or other forms of direct communication.
-  
-  1 - Yes
-    This code is to be used for service contacts between a mental health service
-    provider and the patient/client in whose clinical record the service contact
-    would normally warrant a dated entry, where the patient/client is
-    participating.
-  
-  2 - No
-    This code is to be used for service contacts between a mental health service
-    provider and a third party(ies) where the patient/client, in whose clinical
-    record the service contact would normally warrant a dated entry, is not
-    participating.
-  
-
-:METeOR: `494341 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494341>`__
 
 ----------
 
@@ -1856,46 +1888,14 @@ Where the service contact was delivered, as represented by a code.
 
 ----------
 
-Client - Statistical Linkage Key
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Service Contact Key
+^^^^^^^^^^^^^^^^^^^
 
-A key that enables two or more records belonging to the same individual to be brought together.
+This is a number or code assigned to each service contact. The Service Contact Key is unique and stable for each service contact at the level of the organisation.
 
-:Field name: slk
-
-:Data type: string
-:Notes:
-  System generated non-identifiable alphanumeric code derived from information
-  held by the PMHC organisation.
-  
-  Supported formats:
-    - 14 character `SLK
-      <http://meteor.aihw.gov.au/content/index.phtml/itemId/349510>`_
-    - a `Crockford encoded <http://www.crockford.com/wrmg/base32.html>`_ sha1
-      hash of a 14 character SLK. This must be 32 characters in length.
-    - a hex encoded sha1 hash of a 14 character SLK. This must be 40 characters
-      in length.
-  
-  SLK values are stored in sha1_hex format.
-  
-
-:METeOR: `349510 <http://meteor.aihw.gov.au/content/index.phtml/itemId/349510>`__
-
-----------
-
-Episode - Suicide Referral Flag
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Identifies those individuals where a recent history of suicide attempt, or suicide risk, was a factor noted in the referral that underpinned the person's needs for assistance at entry to the episode, as represented by a code.
-
-:Field name: suicide_referral_flag
+:Field name: service_contact_key
 
 :Data type: string
-
-:Domain:
-  :1: Yes
-  :2: No
-  :9: Unknown
 
 ----------
 
