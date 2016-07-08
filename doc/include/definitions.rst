@@ -1847,9 +1847,9 @@ The main type of service provided in the service contact, as represented by the 
     example, ... **(more to be added)**
   
     *Note: This code should only be used for Service Contacts that cannot be
-    described by any other Service Type. It is expected that the majority of
-    Service Contacts delivered to Aboriginal or Torres Strait Islander client’s
-    can be assigned to other categories.*
+    described by any other Service Type. It is expected that many of Service
+    Contacts delivered to Aboriginal or Torres Strait Islander client's can be
+    assigned to other categories.*
   
 
 ----------
