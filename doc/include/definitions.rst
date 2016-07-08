@@ -469,6 +469,31 @@ The date on which an *Episode of Care* is formally or administratively ended
 
 ----------
 
+Episode - Health Care Card
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+An indication of whether the person is a current holder of a Health Care Card that entitles them to arrange of concessions for Government funded health services.
+
+:Field name: health_care_card
+
+:Data type: string
+
+:Domain:
+  :1: Yes
+  :2: No
+  :3: Not Known
+  :9: Not stated
+:Notes:
+  Further notes to be added...
+  
+  Details on the Australian Government Health Care Card are available at:
+  https://www.humanservices.gov.au/customer/services/centrelink/health-care-card
+  
+
+:METeOR: `605149 <http://meteor.aihw.gov.au/content/index.phtml/itemId/605149>`__
+
+----------
+
 Episode - Homelessness Flag
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -761,31 +786,6 @@ Is the client a participant in the National Disability Insurance Scheme?, as rep
 :Field name: ndis_participant
 
 :Data type: string
-
-----------
-
-Episode - PBS eligibility card type
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-An indication of whether the person is a current holder of a Health Care Card that entitles them to arrange of concessions for Government funded health services.
-
-:Field name: health_care_card
-
-:Data type: string
-
-:Domain:
-  :1: Yes
-  :2: No
-  :3: Not Known
-  :9: Not stated
-:Notes:
-  Further notes to be added...
-  
-  Details on the Australian Government Health Care Card are available at:
-  https://www.humanservices.gov.au/customer/services/centrelink/health-care-card
-  
-
-:METeOR: `605149 <http://meteor.aihw.gov.au/content/index.phtml/itemId/605149>`__
 
 ----------
 
