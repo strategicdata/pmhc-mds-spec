@@ -1065,7 +1065,7 @@ Type of organisation in which the referring professional is based.
   :19: Housing service
   :20: Centrelink
   :21: Other
-  :22: Not applicable
+  :98: N/A - Self referral
   :99: Not stated
 :Notes:
   Medical Specialist Consulting Rooms includes private medical practitioner rooms
@@ -1105,8 +1105,8 @@ Profession of the provider who referred the client.
   :12: Aboriginal Health Worker
   :13: Educational professional
   :14: Early childhood service worker
-  :15: Self referral
-  :16: Other
+  :15: Other
+  :98: N/A - Self referral
   :99: Not stated
 :Notes:
   New arrangements for some services delivered in primary mental health care
