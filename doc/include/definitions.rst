@@ -1093,25 +1093,24 @@ Profession of the provider who referred the client.
 :Domain:
   :1: General Practitioner
   :2: Psychiatrist
-  :3: Case Manager
-  :4: Midwife
-  :5: Obstetrician
-  :6: Maternal Health Nurse
-  :7: Self
-  :8: Social Worker
-  :9: Clinical Psychologist
-  :10: Generalist/Other Psychologist
-  :11: Paediatrician
-  :12: School psychologist / counsellor
-  :13: Deputy principal or Principal
-  :14: Director of Early Childhood Services or Equivalent
-  :15: Aboriginal Health Worker
-  :16: Outreach Worker
-  :17: Mental Health Nurse
-  :18: Other?
+  :3: Obstetrician
+  :4: Paediatrician
+  :5: Other Medical Specialist
+  :6: Midwife
+  :7: Maternal Health Nurse
+  :8: Psychologist
+  :9: Mental Health Nurse
+  :10: Social Worker
+  :11: Occupational therapist
+  :12: Aboriginal Health Worker
+  :13: Educational professional
+  :14: Early childhood service worker
+  :15: Self referral
+  :16: Other
+  :99: Not stated
 :Notes:
   New arrangements for some services delivered in primary mental health care
-  allows clients being able to refer themselves for treatment. Therefore, 'Self'
+  allows clients to refer themselves for treatment. Therefore, 'Self'
   is a response option included within 'Referrer profession'.
   
 
