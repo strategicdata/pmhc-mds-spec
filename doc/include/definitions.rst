@@ -790,6 +790,11 @@ Is the client a participant in the National Disability Insurance Scheme?, as rep
 
 :Data type: string
 
+:Domain:
+  :1: Yes
+  :2: No
+  :9: Not stated/inadequately described
+
 ----------
 
 Episode - Principal Diagnosis
@@ -1881,7 +1886,7 @@ Where the service contact was delivered, as represented by a code.
 
 :Domain:
   :1: Client's Home
-  :2: Service provider's office Office
+  :2: Service provider's office
   :3: GP Practice
   :4: Other medical practice
   :5: Headspace Centre

@@ -85,7 +85,9 @@ METeOR: `605149 <http://meteor.aihw.gov.au/content/index.phtml/itemId/605149>`__
 :9: Not stated"
 "`Episode - NDIS Participant`_ (ndis_participant)
 
-",string,"Is the client a participant in the National Disability Insurance Scheme?, as represented by a code."
+",string,":1: Yes
+:2: No
+:9: Not stated/inadequately described"
 "`Episode - Marital Status`_ (marital_status)
 
 
