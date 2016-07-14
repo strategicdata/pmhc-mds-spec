@@ -844,6 +844,12 @@
           "columnReference": "id"
         }
       }, {
+        "columnReference": "ndis_participant",
+        "reference": {
+          "resource": "table/episode/ndis-participant.csv",
+          "columnReference": "id"
+        }
+      }, {
         "columnReference": "marital_status",
         "reference": {
           "resource": "table/episode/marital-status.csv",
