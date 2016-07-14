@@ -105,9 +105,15 @@ Client - Gender
 
 The term 'gender' refers to the way in which a person identifies their masculine or feminine characteristics. A persons gender relates to their deeply held internal and individual sense of gender and is not always exclusively male or female. It may or may not correspond to their sex assigned at birth.
 
-:Field name: gender
+:Field name: client_gender
 
 :Data type: string
+
+:Domain:
+  :0: Not stated/Inadequately described
+  :1: Male
+  :2: Female
+  :3: Other
 
 ----------
 
@@ -211,10 +217,10 @@ This is a number or code assigned to each individual referred to the commissione
 
 ----------
 
-Collection Occasion - Date
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+Collection Occasion - Measure Date
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The date of the collection occasion.
+The date the measure was given.
 
 :Field name: measure_date
 
@@ -229,21 +235,6 @@ The date of the collection occasion.
 
 ----------
 
-Collection Occasion - Measure
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The name of the measure.
-
-:Field name: measure
-
-:Data type: string
-:Notes:
-  Measures will be the Kessler Psychological Distress Scale K5 and K10+ versions
-  as well as the Strengths & Difficulties Questionnaires.
-  
-
-----------
-
 Collection Occasion - Reason
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -252,6 +243,11 @@ The reason for the collection of the outcome measures on the identified Outcome 
 :Field name: reason_for_collection
 
 :Data type: string
+
+:Domain:
+  :1: Episode start
+  :2: Review
+  :3: Episode end
 :Notes:
   1 - Episode start
     Refers to an outcome measure undertaken at the beginning of an Episode of Care. For the purposes of the PMHC MDS protocol, episodes may start at the point of first Service Contact with a new client who has not been seen previously by the organisation, or a first contact for a new Episode of Care for a client who has received services from the organisation in a previous Episode of Care that has been completed.
@@ -268,21 +264,6 @@ The reason for the collection of the outcome measures on the identified Outcome 
   
   3 - Episode end
     Refers to the outcome measures collected at the end of an Episode of Care.
-  
-
-----------
-
-Collection Occasion - Score
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-:Field name: score
-
-:Data type: integer
-:Notes:
-  The value of the score at this collection occasion. Individual item scores will
-  be required, final specifications for the individual measures will be released
-  shortly.
   
 
 ----------
@@ -1208,6 +1189,188 @@ This is a number or code assigned to each episode. The Episode Key is unique and
   
   A recommended approach for the creation of Episode Keys is to compute `random
   UUIDs <https://en.wikipedia.org/wiki/Universally_unique_identifier>`_.
+  
+
+----------
+
+K10+ - Question 1
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: item1
+
+:Data type: integer
+:Notes:
+  In the past 4 weeks, about how often did you feel tired out for no good reason?
+  
+
+----------
+
+K10+ - Question 10
+^^^^^^^^^^^^^^^^^^
+
+
+:Field name: item10
+
+:Data type: integer
+:Notes:
+  In the past 4 weeks, how often did you feel worthless?
+  
+
+----------
+
+K10+ - Question 11
+^^^^^^^^^^^^^^^^^^
+
+
+:Field name: item11
+
+:Data type: integer
+:Notes:
+  In the past four weeks, how many days were you totally unable to work, study or manage your day to day activities because of these feelings?
+  
+
+----------
+
+K10+ - Question 12
+^^^^^^^^^^^^^^^^^^
+
+
+:Field name: item12
+
+:Data type: integer
+:Notes:
+  Aside from those days, in the past four weeks, how many days were you able to work or study or manage your day to day activities, but had to cut down on what you did because of these feelings?
+  
+
+----------
+
+K10+ - Question 13
+^^^^^^^^^^^^^^^^^^
+
+
+:Field name: item13
+
+:Data type: integer
+:Notes:
+  In the past four weeks, how many times have you seen a doctor or any other health professional about these feelings?
+  
+
+----------
+
+K10+ - Question 14
+^^^^^^^^^^^^^^^^^^
+
+
+:Field name: item14
+
+:Data type: integer
+:Notes:
+  In the past four weeks, how often have physical health problems been the main cause of these feelings?
+  
+
+----------
+
+K10+ - Question 2
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: item2
+
+:Data type: integer
+:Notes:
+  In the past 4 weeks, about how often did you feel nervous?
+  
+
+----------
+
+K10+ - Question 3
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: item3
+
+:Data type: integer
+:Notes:
+  In the past 4 weeks, about how often did you feel so nervous that nothing could calm you down?
+  
+
+----------
+
+K10+ - Question 4
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: item4
+
+:Data type: integer
+:Notes:
+  In the past 4 weeks, how often did you feel hopeless?
+  
+
+----------
+
+K10+ - Question 5
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: item5
+
+:Data type: integer
+:Notes:
+  In the past 4 weeks, how often did you feel restless or fidgety?
+  
+
+----------
+
+K10+ - Question 6
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: item6
+
+:Data type: integer
+:Notes:
+  In the past 4 weeks, how often did you feel so restless you could not sit still?
+  
+
+----------
+
+K10+ - Question 7
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: item7
+
+:Data type: integer
+:Notes:
+  In the past 4 weeks, how often did you feel depressed?
+  
+
+----------
+
+K10+ - Question 8
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: item8
+
+:Data type: integer
+:Notes:
+  In the past 4 weeks, how often did you feel that everything was an effort?
+  
+
+----------
+
+K10+ - Question 9
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: item9
+
+:Data type: integer
+:Notes:
+  In the past 4 weeks, how often did you feel so sad that nothing could cheer you up?
   
 
 ----------
