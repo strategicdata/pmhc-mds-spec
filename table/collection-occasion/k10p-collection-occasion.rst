@@ -1,0 +1,1 @@
+The Kessler 10 plus (K10+) consumer self assessment was designed by Ronald Kessler as a short measure of non-specific psychological distress. It has been adapted for use as part of the NOCC suite of measures by the addition of 4 questions to assess the degree of disability being experienced by the consumer.
