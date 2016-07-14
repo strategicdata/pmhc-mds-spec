@@ -51,7 +51,7 @@
           "base": "string",
           "minLength": 11,
           "maxLength": 11
-          }  
+          }
       },{
          "name": "organisation_type",
         "titles": [ "organisation_type", "Type" ],
@@ -323,7 +323,7 @@
         },
         "required": true
       },{
-        "name": "gender",
+        "name": "client_gender",
         "titles": [ "client_gender", "Gender" ],
         "dc:title": "Client - Gender",
         "schema:description": "The term 'gender' refers to the way in which a person identifies their masculine or feminine characteristics. A persons gender relates to their deeply held internal and individual sense of gender and is not always exclusively male or female. It may or may not correspond to their sex assigned at birth.",
@@ -1198,16 +1198,16 @@
         }
       }]
     }
-  }, {
-    "dc:title": "Outcome Collection Occasion",
-    "url": "data/collection-occasion.csv",
-    "schema:name": "collection-occasion",
-    "schema:description": "table/collection-occasion.rst",
+}, {
+    "dc:title": "K10+ Collection Occasion",
+    "url": "data/k10p.csv",
+    "schema:name": "k10p-collection-occasion",
+    "schema:description": "table/collection-occasion/k10p-collection-occasion.rst",
     "tableSchema": {
       "columns": [{
         "name": "organisation_path",
         "titles": [ "organisation_path", "Organisation Path" ],
-        "dc:title": "Organisation Path",
+        "schema:name": "Organisation Path",
         "schema:description": "A sequence of colon separated Organisation Codes that fully specifies the upload organisation.",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -1220,7 +1220,7 @@
       },{
         "name": "collection_occasion_key",
         "titles": [ "collection_occasion_key", "Collection Occasion Key" ],
-        "dc:title": "Collection Occasion Key",
+        "schema:name": "Collection Occasion Key",
         "schema:description": "This is a number or code assigned to each collection occasion of outcome measures. The Collection Occasion Key is unique and stable for each collection occasion at the level of the organisation.",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -1232,37 +1232,18 @@
         },
         "required": true
       },{
-        "name": "episode_key",
+         "name": "episode_key",
         "titles": [ "episode_key", "Episode Key" ],
-        "dc:title": "Episode Key",
-        "schema:description": "This is a number or code assigned to each episode. The Episode Key is unique and stable for each episode at the level of the organisation.",
+        "schema:name": "Episode Key",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
-        "datatype": {
-          "base": "string",
-          "minLength": 2,
-          "maxLength": 50
-        },
-        "required": true
-      },{
-        "name": "measure",
-        "titles": [ "measure", "Measure" ],
-        "dc:title": "Collection Occasion - Measure",
-        "schema:description": "The name of the measure.",
-        "schema:disambiguatingDescription": "table/collection-occasion/measure.rst",
-        "schema:dateCreated": "2016-06-22",
-        "schema:dateDeleted": "2016-06-22",
-        "schema:dateModified": "2016-06-22",
-        "datatype": {
-          "base": "string"
-        },
         "required": true
       },{
         "name": "measure_date",
-        "titles": [ "collection_occasion_date", "Date" ],
-        "dc:title": "Collection Occasion - Date",
-        "schema:description": "The date of the collection occasion.",
+        "titles": [ "measure_date", "Measure Date" ],
+        "schema:name": "Collection Occasion - Measure Date",
+        "schema:description": "The date the measure was given.",
         "schema:disambiguatingDescription": "table/collection-occasion/date.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -1286,21 +1267,205 @@
         },
         "required": true
       },{
-        "name": "score",
-        "titles": [ "score", "Score" ],
-        "dc:title": "Collection Occasion - Score",
-        "schema:disambiguatingDescription": "table/collection-occasion/score.rst",
+        "name": "item1",
+        "titles": [ "item1", "Question 1" ],
+        "schema:name": "K10+ - Question 1",
+        "schema:disambiguatingDescription": "k10p/item1.txt",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer"
+          "base": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "required": true
+      },{
+        "name": "item2",
+        "titles": [ "item2", "Question 2" ],
+        "schema:name": "K10+ - Question 2",
+        "schema:disambiguatingDescription": "k10p/item2.txt",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "required": true
+      },{
+        "name": "item3",
+        "titles": [ "item3", "Question 3" ],
+        "schema:name": "K10+ - Question 3",
+        "schema:disambiguatingDescription": "k10p/item3.txt",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "required": true
+      },{
+        "name": "item4",
+        "titles": [ "item4", "Question 4" ],
+        "schema:name": "K10+ - Question 4",
+        "schema:disambiguatingDescription": "k10p/item4.txt",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "required": true
+      },{
+        "name": "item5",
+        "titles": [ "item5", "Question 5" ],
+        "schema:name": "K10+ - Question 5",
+        "schema:disambiguatingDescription": "k10p/item5.txt",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "required": true
+      },{
+        "name": "item6",
+        "titles": [ "item6", "Question 6" ],
+        "schema:name": "K10+ - Question 6",
+        "schema:disambiguatingDescription": "k10p/item6.txt",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "required": true
+      },{
+        "name": "item7",
+        "titles": [ "item7", "Question 7" ],
+        "schema:name": "K10+ - Question 7",
+        "schema:disambiguatingDescription": "k10p/item7.txt",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "required": true
+      },{
+        "name": "item8",
+        "titles": [ "item8", "Question 8" ],
+        "schema:name": "K10+ - Question 8",
+        "schema:disambiguatingDescription": "k10p/item8.txt",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "required": true
+      },{
+        "name": "item9",
+        "titles": [ "item9", "Question 9" ],
+        "schema:name": "K10+ - Question 9",
+        "schema:disambiguatingDescription": "k10p/item9.txt",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "required": true
+      },{
+        "name": "item10",
+        "titles": [ "item10", "Question 10" ],
+        "schema:name": "K10+ - Question 10",
+        "schema:disambiguatingDescription": "k10p/item10.txt",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "required": true
+      },{
+        "name": "item11",
+        "titles": [ "item11", "Question 11" ],
+        "schema:name": "K10+ - Question 11",
+        "schema:disambiguatingDescription": "k10p/item11.txt",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 0,
+          "maximum": 28
+        },
+        "required": true
+      },{
+        "name": "item12",
+        "titles": [ "item12", "Question 12" ],
+        "schema:name": "K10+ - Question 12",
+        "schema:disambiguatingDescription": "k10p/item12.txt",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 0,
+          "maximum": 28
+        },
+        "required": true
+      },{
+        "name": "item13",
+        "titles": [ "item13", "Question 13" ],
+        "schema:name": "K10+ - Question 13",
+        "schema:disambiguatingDescription": "k10p/item13.txt",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 0,
+          "maximum": 50
+        },
+        "required": true
+      },{
+        "name": "item14",
+        "titles": [ "item14", "Question 14" ],
+        "schema:name": "K10+ - Question 14",
+        "schema:disambiguatingDescription": "k10p/item14.txt",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 1,
+          "maximum": 5
         },
         "required": true
       }],
       "primaryKey": "collection_occasion_key",
       "foreignKeys": [{
-        "columnReference": "service_contact_type",
+        "columnReference": "reason_for_collection",
         "reference": {
           "resource": "table/collection-occasion/reason.csv",
           "columnReference": "id"
@@ -1308,7 +1473,7 @@
       }]
     }
   }, {
-    "url": "type/client/est-date-of-birth.csv",
+    "url": "table/client/est-date-of-birth.csv",
     "tableSchema": {
       "columns": [{
         "name": "id",
@@ -1396,7 +1561,7 @@
       "primaryKey": "id"
     }
   }, {
-    "url": "table/organisation/organisation-type.csv",
+    "url": "table/organisation/type.csv",
     "tableSchema": {
       "columns": [{
         "name": "id",
@@ -1418,7 +1583,7 @@
       "primaryKey": "id"
     }
   }, {
-    "url": "table/organisation/organisation-state.csv",
+    "url": "table/organisation/state.csv",
     "tableSchema": {
       "columns": [{
         "name": "id",
@@ -1462,7 +1627,7 @@
       "primaryKey": "id"
     }
   }, {
-    "url": "table/episode/princ-focus-of-treatment.csv",
+    "url": "table/episode/principal-focus.csv",
     "tableSchema": {
       "columns": [{
         "name": "id",
@@ -1550,7 +1715,73 @@
       "primaryKey": "id"
     }
   }, {
+    "url": "table/episode/health-care-card.csv",
+    "tableSchema": {
+      "columns": [{
+        "name": "id",
+        "titles": [ "id", "ID" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": "string"
+      },{
+        "name": "description",
+        "titles": [ "description", "Description" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        }
+      }],
+      "primaryKey": "id"
+    }
+  }, {
+    "url": "table/episode/homelessness.csv",
+    "tableSchema": {
+      "columns": [{
+        "name": "id",
+        "titles": [ "id", "ID" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": "string"
+      },{
+        "name": "description",
+        "titles": [ "description", "Description" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        }
+      }],
+      "primaryKey": "id"
+    }
+  }, {
     "url": "table/episode/ndis-participant.csv",
+    "tableSchema": {
+      "columns": [{
+        "name": "id",
+        "titles": [ "id", "ID" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": "string"
+      },{
+        "name": "description",
+        "titles": [ "description", "Description" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        }
+      }],
+      "primaryKey": "id"
+    }
+  }, {
+    "url": "table/episode/diagnosis.csv",
     "tableSchema": {
       "columns": [{
         "name": "id",
@@ -1594,7 +1825,7 @@
       "primaryKey": "id"
     }
   }, {
-    "url": "table/episode/referrer-entity.csv",
+    "url": "table/episode/referrer-profession.csv",
     "tableSchema": {
       "columns": [{
         "name": "id",
@@ -1616,7 +1847,7 @@
       "primaryKey": "id"
     }
   }, {
-    "url": "table/episode/referrer-type.csv",
+    "url": "table/episode/referrer-organisation-type.csv",
     "tableSchema": {
       "columns": [{
         "name": "id",
@@ -1704,7 +1935,7 @@
       "primaryKey": "id"
     }
   }, {
-    "url": "table/practitioner/cultural-training-flag.csv",
+    "url": "table/practitioner/atsi-cultural-training.csv",
     "tableSchema": {
       "columns": [{
         "name": "id",
@@ -1837,6 +2068,72 @@
     }
   }, {
     "url": "table/service-contact/duration.csv",
+    "tableSchema": {
+      "columns": [{
+        "name": "id",
+        "titles": [ "id", "ID" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": "string"
+      },{
+        "name": "description",
+        "titles": [ "description", "Description" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        }
+      }],
+      "primaryKey": "id"
+    }
+  }, {
+    "url": "table/service-contact/final.csv",
+    "tableSchema": {
+      "columns": [{
+        "name": "id",
+        "titles": [ "id", "ID" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": "string"
+      },{
+        "name": "description",
+        "titles": [ "description", "Description" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        }
+      }],
+      "primaryKey": "id"
+    }
+  }, {
+    "url": "table/service-contact/interpreter.csv",
+    "tableSchema": {
+      "columns": [{
+        "name": "id",
+        "titles": [ "id", "ID" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": "string"
+      },{
+        "name": "description",
+        "titles": [ "description", "Description" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        }
+      }],
+      "primaryKey": "id"
+    }
+  }, {
+    "url": "table/collection-occasion/reason.csv",
     "tableSchema": {
       "columns": [{
         "name": "id",
