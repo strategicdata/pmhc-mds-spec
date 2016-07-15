@@ -1249,7 +1249,7 @@
         "required": true
       },{
         "name": "reason_for_collection",
-        "titles": "reason_for_collection",
+        "titles": [ "reason_for_collection", "Reason for Collection" ],
         "dc:title": "Collection Occasion - Reason",
         "schema:description": "The reason for the collection of the outcome measures on the identified Outcome Collection Occasion.",
         "schema:disambiguatingDescription": "table/collection-occasion/reason.rst",
@@ -1447,6 +1447,154 @@
         "titles": [ "item14", "Question 14" ],
         "schema:name": "K10+ - Question 14",
         "schema:disambiguatingDescription": "k10p/item14.txt",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "required": true
+      }],
+      "primaryKey": "collection_occasion_key",
+      "foreignKeys": [{
+        "columnReference": "reason_for_collection",
+        "reference": {
+          "resource": "table/collection-occasion/reason.csv",
+          "columnReference": "id"
+        }
+      }]
+    }
+  }, {
+    "dc:title": "K5 Collection Occasion",
+    "url": "data/k5.csv",
+    "schema:name": "k5-collection-occasion",
+    "schema:description": "table/collection-occasion/k5-collection-occasion.rst",
+    "tableSchema": {
+      "columns": [{
+        "name": "organisation_path",
+        "titles": [ "organisation_path", "Organisation Path" ],
+        "schema:name": "Organisation Path",
+        "schema:description": "A sequence of colon separated Organisation Codes that fully specifies the upload organisation.",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        },
+        "separator": ":",
+        "required": true
+      },{
+        "name": "collection_occasion_key",
+        "titles": [ "collection_occasion_key", "Collection Occasion Key" ],
+        "schema:name": "Collection Occasion Key",
+        "schema:description": "This is a number or code assigned to each collection occasion of outcome measures. The Collection Occasion Key is unique and stable for each collection occasion at the level of the organisation.",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "minLength": 2,
+          "maxLength": 50
+        },
+        "required": true
+      },{
+         "name": "episode_key",
+        "titles": [ "episode_key", "Episode Key" ],
+        "schema:name": "Episode Key",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "required": true
+      },{
+        "name": "measure_date",
+        "titles": [ "measure_date", "Measure Date" ],
+        "schema:name": "Collection Occasion - Measure Date",
+        "schema:description": "The date the measure was given.",
+        "schema:disambiguatingDescription": "table/collection-occasion/date.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "date",
+          "format": "ddMMyyyy"
+        },
+        "required": true
+      },{
+        "name": "reason_for_collection",
+        "titles": "reason_for_collection",
+        "dc:title": "Collection Occasion - Reason",
+        "schema:description": "The reason for the collection of the outcome measures on the identified Outcome Collection Occasion.",
+        "schema:disambiguatingDescription": "table/collection-occasion/reason.rst",
+        "schema:dateCreated": "2016-07-08",
+        "schema:dateModified": "2016-07-08",
+        "datatype": {
+          "base": "string",
+          "format": "^(1|2|3)$"
+        },
+        "required": true
+      },{
+        "name": "item1",
+        "titles": [ "item1", "Question 1" ],
+        "schema:name": "K10+ - Question 1",
+        "schema:disambiguatingDescription": "k10p/item1.txt",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "required": true
+      },{
+        "name": "item2",
+        "titles": [ "item2", "Question 2" ],
+        "schema:name": "K10+ - Question 2",
+        "schema:disambiguatingDescription": "k10p/item2.txt",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "required": true
+      },{
+        "name": "item3",
+        "titles": [ "item3", "Question 3" ],
+        "schema:name": "K10+ - Question 3",
+        "schema:disambiguatingDescription": "k10p/item3.txt",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "required": true
+      },{
+        "name": "item4",
+        "titles": [ "item4", "Question 4" ],
+        "schema:name": "K10+ - Question 4",
+        "schema:disambiguatingDescription": "k10p/item4.txt",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "required": true
+      },{
+        "name": "item5",
+        "titles": [ "item5", "Question 5" ],
+        "schema:name": "K10+ - Question 5",
+        "schema:disambiguatingDescription": "k10p/item5.txt",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
