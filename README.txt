@@ -19,5 +19,3 @@ Issues:
     },
   removes the error.
 - Format of "#####0.##" for copayment isn't being checked.
-- Minimum and Maximum values for K10+, K5 and SDQ Collection Occasions not being checked.
-

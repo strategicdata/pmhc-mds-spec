@@ -1529,7 +1529,7 @@
         "required": true
       },{
         "name": "reason_for_collection",
-        "titles": "reason_for_collection",
+        "titles": [ "reason_for_collection", "Reason for Collection" ],
         "dc:title": "Collection Occasion - Reason",
         "schema:description": "The reason for the collection of the outcome measures on the identified Outcome Collection Occasion.",
         "schema:disambiguatingDescription": "table/collection-occasion/reason.rst",
@@ -1543,8 +1543,8 @@
       },{
         "name": "item1",
         "titles": [ "item1", "Question 1" ],
-        "schema:name": "K10+ - Question 1",
-        "schema:disambiguatingDescription": "k10p/item1.txt",
+        "schema:name": "K5 - Question 1",
+        "schema:disambiguatingDescription": "k5/item1.txt",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1557,8 +1557,8 @@
       },{
         "name": "item2",
         "titles": [ "item2", "Question 2" ],
-        "schema:name": "K10+ - Question 2",
-        "schema:disambiguatingDescription": "k10p/item2.txt",
+        "schema:name": "K5 - Question 2",
+        "schema:disambiguatingDescription": "k5/item2.txt",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1571,8 +1571,8 @@
       },{
         "name": "item3",
         "titles": [ "item3", "Question 3" ],
-        "schema:name": "K10+ - Question 3",
-        "schema:disambiguatingDescription": "k10p/item3.txt",
+        "schema:name": "K5 - Question 3",
+        "schema:disambiguatingDescription": "k5/item3.txt",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1585,8 +1585,8 @@
       },{
         "name": "item4",
         "titles": [ "item4", "Question 4" ],
-        "schema:name": "K10+ - Question 4",
-        "schema:disambiguatingDescription": "k10p/item4.txt",
+        "schema:name": "K5 - Question 4",
+        "schema:disambiguatingDescription": "k5/item4.txt",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1599,8 +1599,8 @@
       },{
         "name": "item5",
         "titles": [ "item5", "Question 5" ],
-        "schema:name": "K10+ - Question 5",
-        "schema:disambiguatingDescription": "k10p/item5.txt",
+        "schema:name": "K5 - Question 5",
+        "schema:disambiguatingDescription": "k5/item5.txt",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1608,6 +1608,588 @@
           "base": "integer",
           "minimum": 1,
           "maximum": 5
+        },
+        "required": true
+      }],
+      "primaryKey": "collection_occasion_key",
+      "foreignKeys": [{
+        "columnReference": "reason_for_collection",
+        "reference": {
+          "resource": "table/collection-occasion/reason.csv",
+          "columnReference": "id"
+        }
+      }]
+    }
+  }, {
+    "dc:title": "SDQ-PC1 Collection Occasion",
+    "url": "data/sdqpc1.csv",
+    "schema:name": "sdqpc1-collection-occasion",
+    "schema:description": "table/collection-occasion/sdqpc1-collection-occasion.rst",
+    "tableSchema": {
+      "columns": [{
+        "name": "organisation_path",
+        "titles": [ "organisation_path", "Organisation Path" ],
+        "dc:title": "Organisation Path",
+        "schema:description": "A sequence of colon separated Organisation Codes that fully specifies the upload organisation.",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        },
+        "separator": ":",
+        "required": true
+      },{
+        "name": "collection_occasion_key",
+        "titles": [ "collection_occasion_key", "Collection Occasion Key" ],
+        "dc:title": "Collection Occasion Key",
+        "schema:description": "This is a number or code assigned to each collection occasion of outcome measures. The Collection Occasion Key is unique and stable for each collection occasion at the level of the organisation.",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "minLength": 2,
+          "maxLength": 50
+        },
+        "required": true
+      },{
+         "name": "episode_key",
+        "titles": [ "episode_key", "Episode Key" ],
+        "dc:title": "Episode Key",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "required": true
+      },{
+        "name": "measure_date",
+        "titles": [ "measure_date", "Measure Date" ],
+        "dc:title": "Collection Occasion - Measure Date",
+        "schema:description": "The date the measure was given.",
+        "schema:disambiguatingDescription": "table/collection-occasion/date.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "date",
+          "format": "ddMMyyyy"
+        },
+        "required": true
+      },{
+        "name": "reason_for_collection",
+        "titles": [ "reason_for_collection", "Reason for Collection" ],
+        "dc:title": "Collection Occasion - Reason",
+        "schema:description": "The reason for the collection of the outcome measures on the identified Outcome Collection Occasion.",
+        "schema:disambiguatingDescription": "table/collection-occasion/reason.rst",
+        "schema:dateCreated": "2016-07-08",
+        "schema:dateModified": "2016-07-08",
+        "datatype": {
+          "base": "string",
+          "format": "^(1|2|3)$"
+        },
+        "required": true
+      },{
+        "name": "item1",
+        "titles": [ "item1", "Question 1" ],
+        "dc:title": "SDQ-PC1 - Question 1",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item1.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "required": true
+      },{
+        "name": "item2",
+        "titles": [ "item2", "Question 2" ],
+        "dc:title": "SDQ-PC1 - Question 2",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item2.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "required": true
+      },{
+        "name": "item3",
+        "titles": [ "item3", "Question 3" ],
+        "dc:title": "SDQ-PC1 - Question 3",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item3.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "required": true
+      },{
+        "name": "item4",
+        "titles": [ "item4", "Question 4" ],
+        "dc:title": "SDQ-PC1 - Question 4",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item4.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "required": true
+      },{
+        "name": "item5",
+        "titles": [ "item5", "Question 5" ],
+        "dc:title": "SDQ-PC1 - Question 5",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item5.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "required": true
+      },{
+        "name": "item6",
+        "titles": [ "item6", "Question 6" ],
+        "dc:title": "SDQ-PC1 - Question 6",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item6.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "required": true
+      },{
+        "name": "item7",
+        "titles": [ "item7", "Question 7" ],
+        "dc:title": "SDQ-PC1 - Question 7",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item7.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "required": true
+      },{
+        "name": "item8",
+        "titles": [ "item8", "Question 8" ],
+        "dc:title": "SDQ-PC1 - Question 8",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item8.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "required": true
+      },{
+        "name": "item9",
+        "titles": [ "item9", "Question 9" ],
+        "dc:title": "SDQ-PC1 - Question 9",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item9.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "required": true
+      },{
+        "name": "item10",
+        "titles": [ "item10", "Question 10" ],
+        "dc:title": "SDQ-PC1 - Question 10",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item10.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "required": true
+      },{
+        "name": "item11",
+        "titles": [ "item11", "Question 11" ],
+        "dc:title": "SDQ-PC1 - Question 11",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item11.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "required": true
+      },{
+        "name": "item12",
+        "titles": [ "item12", "Question 12" ],
+        "dc:title": "SDQ-PC1 - Question 12",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item12.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "required": true
+      },{
+        "name": "item13",
+        "titles": [ "item13", "Question 13" ],
+        "dc:title": "SDQ-PC1 - Question 13",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item13.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "required": true
+      },{
+        "name": "item14",
+        "titles": [ "item14", "Question 14" ],
+        "dc:title": "SDQ-PC1 - Question 14",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item14.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "required": true
+      },{
+        "name": "item15",
+        "titles": [ "item15", "Question 15" ],
+        "dc:title": "SDQ-PC1 - Question 15",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item15.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "required": true
+      },{
+        "name": "item16",
+        "titles": [ "item16", "Question 16" ],
+        "dc:title": "SDQ-PC1 - Question 16",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item16.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "required": true
+      },{
+        "name": "item17",
+        "titles": [ "item17", "Question 17" ],
+        "dc:title": "SDQ-PC1 - Question 17",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item17.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "required": true
+      },{
+        "name": "item18",
+        "titles": [ "item18", "Question 18" ],
+        "dc:title": "SDQ-PC1 - Question 18",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item18.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "required": true
+      },{
+        "name": "item19",
+        "titles": [ "item19", "Question 19" ],
+        "dc:title": "SDQ-PC1 - Question 19",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item19.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "required": true
+      },{
+        "name": "item20",
+        "titles": [ "item20", "Question 20" ],
+        "dc:title": "SDQ-PC1 - Question 20",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item20.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "required": true
+      },{
+        "name": "item21",
+        "titles": [ "item21", "Question 21" ],
+        "dc:title": "SDQ-PC1 - Question 21",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item21.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "required": true
+      },{
+        "name": "item22",
+        "titles": [ "item22", "Question 22" ],
+        "dc:title": "SDQ-PC1 - Question 22",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item22.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "required": true
+      },{
+        "name": "item23",
+        "titles": [ "item23", "Question 23" ],
+        "dc:title": "SDQ-PC1 - Question 23",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item23.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "required": true
+      },{
+        "name": "item24",
+        "titles": [ "item24", "Question 24" ],
+        "dc:title": "SDQ-PC1 - Question 24",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item24.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "required": true
+      },{
+        "name": "item25",
+        "titles": [ "item25", "Question 25" ],
+        "dc:title": "SDQ-PC1 - Question 25",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item25.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "required": true
+      },{
+        "name": "item26",
+        "titles": [ "item26", "Question 26" ],
+        "dc:title": "SDQ-PC1 - Question 26",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item26.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "required": true
+      },{
+        "name": "item27",
+        "titles": [ "item27", "Question 27" ],
+        "dc:title": "SDQ-PC1 - Question 27",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item27.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "required": true
+      },{
+        "name": "item28",
+        "titles": [ "item28", "Question 28" ],
+        "dc:title": "SDQ-PC1 - Question 28",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item28.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "required": true
+      },{
+        "name": "item29",
+        "titles": [ "item29", "Question 29" ],
+        "dc:title": "SDQ-PC1 - Question 29",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item29.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "required": true
+      },{
+        "name": "item30",
+        "titles": [ "item30", "Question 30" ],
+        "dc:title": "SDQ-PC1 - Question 30",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item30.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "required": true
+      },{
+        "name": "item31",
+        "titles": [ "item31", "Question 31" ],
+        "dc:title": "SDQ-PC1 - Question 31",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item31.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "required": true
+      },{
+        "name": "item32",
+        "titles": [ "item32", "Question 32" ],
+        "dc:title": "SDQ-PC1 - Question 32",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item32.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "required": true
+      },{
+        "name": "item33",
+        "titles": [ "item33", "Question 33" ],
+        "dc:title": "SDQ-PC1 - Question 33",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item33.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "required": true
+      },{
+        "name": "item36",
+        "titles": [ "item36", "Question 36" ],
+        "dc:title": "SDQ-PC1 - Question 36",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item36.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "required": true
+      },{
+        "name": "item37",
+        "titles": [ "item37", "Question 37" ],
+        "dc:title": "SDQ-PC1 - Question 37",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item37.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "required": true
+      },{
+        "name": "item38",
+        "titles": [ "item38", "Question 38" ],
+        "dc:title": "SDQ-PC1 - Question 38",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item38.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "integer",
+          "minimum": 0,
+          "maximum": 2
         },
         "required": true
       }],
