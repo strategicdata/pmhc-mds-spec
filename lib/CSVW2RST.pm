@@ -167,9 +167,9 @@ sub generate_definitions {
     warn "-----------\n";
 
     foreach my $field_name ( 
-        sort { 
-            $definition_records->{$a}{'dc:title'}
-            cmp $definition_records->{$b}{'dc:title'} 
+        sort { ncmp(
+            $definition_records->{$a}{'dc:title'},
+            $definition_records->{$b}{'dc:title'})
         } keys %{$definition_records} ) 
     {
 
@@ -192,9 +192,11 @@ sub generate_definitions {
         say $fh format_datatype($field);
 
         my $domain = format_domain($field);
-        if ( defined $domain 
-             && exists $field->{"schema:description"}
-             && $domain ne $field->{"schema:description"}
+        if ( defined $domain
+             && (
+                ! exists $field->{"schema:description"}
+               || ($domain ne $field->{"schema:description"})
+             )
         ) {
             say $fh "\n:Domain:";
             say $fh indent($domain);
@@ -263,7 +265,7 @@ sub format_fk {
             $newline = "\n";
         }
     }
-    
+
     return $rv;
 
 }
