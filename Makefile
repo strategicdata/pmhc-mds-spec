@@ -1,5 +1,5 @@
 .PHONY: test
-test: org prac client episode contact k10p k5 sdqpc1
+test: org prac client episode contact k10p k5 sdq
 
 org:
 	csvlint data/organisations.csv --schema=pmhc-metadata.json
@@ -22,5 +22,5 @@ k10p:
 k5:
 	csvlint data/k5.csv --schema=pmhc-metadata.json
 
-sdqpc1:
-	csvlint data/sdqpc1.csv --schema=pmhc-metadata.json
+sdq:
+	csvlint data/sdq.csv --schema=pmhc-metadata.json

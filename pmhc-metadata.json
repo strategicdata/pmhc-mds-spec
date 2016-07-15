@@ -1267,7 +1267,7 @@
         },
         "required": true
       },{
-        "name": "item1",
+        "name": "k10p_item1",
         "titles": [ "item1", "Question 1" ],
         "dc:title": "K10+ - Question 1",
         "schema:disambiguatingDescription": "table/collection-occasion/k10p/item1.rst",
@@ -1280,7 +1280,7 @@
         },
         "required": true
       },{
-        "name": "item2",
+        "name": "k10p_item2",
         "titles": [ "item2", "Question 2" ],
         "dc:title": "K10+ - Question 2",
         "schema:disambiguatingDescription": "table/collection-occasion/k10p/item2.rst",
@@ -1293,7 +1293,7 @@
         },
         "required": true
       },{
-        "name": "item3",
+        "name": "k10p_item3",
         "titles": [ "item3", "Question 3" ],
         "dc:title": "K10+ - Question 3",
         "schema:disambiguatingDescription": "table/collection-occasion/k10p/item3.rst",
@@ -1306,7 +1306,7 @@
         },
         "required": true
       },{
-        "name": "item4",
+        "name": "k10p_item4",
         "titles": [ "item4", "Question 4" ],
         "dc:title": "K10+ - Question 4",
         "schema:disambiguatingDescription": "table/collection-occasion/k10p/item4.rst",
@@ -1319,7 +1319,7 @@
         },
         "required": true
       },{
-        "name": "item5",
+        "name": "k10p_item5",
         "titles": [ "item5", "Question 5" ],
         "dc:title": "K10+ - Question 5",
         "schema:disambiguatingDescription": "table/collection-occasion/k10p/item5.rst",
@@ -1332,7 +1332,7 @@
         },
         "required": true
       },{
-        "name": "item6",
+        "name": "k10p_item6",
         "titles": [ "item6", "Question 6" ],
         "dc:title": "K10+ - Question 6",
         "schema:disambiguatingDescription": "table/collection-occasion/k10p/item6.rst",
@@ -1345,7 +1345,7 @@
         },
         "required": true
       },{
-        "name": "item7",
+        "name": "k10p_item7",
         "titles": [ "item7", "Question 7" ],
         "dc:title": "K10+ - Question 7",
         "schema:disambiguatingDescription": "table/collection-occasion/k10p/item7.rst",
@@ -1358,7 +1358,7 @@
         },
         "required": true
       },{
-        "name": "item8",
+        "name": "k10p_item8",
         "titles": [ "item8", "Question 8" ],
         "dc:title": "K10+ - Question 8",
         "schema:disambiguatingDescription": "table/collection-occasion/k10p/item8.rst",
@@ -1371,7 +1371,7 @@
         },
         "required": true
       },{
-        "name": "item9",
+        "name": "k10p_item9",
         "titles": [ "item9", "Question 9" ],
         "dc:title": "K10+ - Question 9",
         "schema:disambiguatingDescription": "table/collection-occasion/k10p/item9.rst",
@@ -1384,7 +1384,7 @@
         },
         "required": true
       },{
-        "name": "item10",
+        "name": "k10p_item10",
         "titles": [ "item10", "Question 10" ],
         "dc:title": "K10+ - Question 10",
         "schema:disambiguatingDescription": "table/collection-occasion/k10p/item10.rst",
@@ -1397,7 +1397,7 @@
         },
         "required": true
       },{
-        "name": "item11",
+        "name": "k10p_item11",
         "titles": [ "item11", "Question 11" ],
         "dc:title": "K10+ - Question 11",
         "schema:disambiguatingDescription": "table/collection-occasion/k10p/item11.rst",
@@ -1411,7 +1411,7 @@
           "maximum": 28
         }
       },{
-        "name": "item12",
+        "name": "k10p_item12",
         "titles": [ "item12", "Question 12" ],
         "dc:title": "K10+ - Question 12",
         "schema:disambiguatingDescription": "table/collection-occasion/k10p/item12.rst",
@@ -1425,7 +1425,7 @@
           "maximum": 28
         }
       },{
-        "name": "item13",
+        "name": "k10p_item13",
         "titles": [ "item13", "Question 13" ],
         "dc:title": "K10+ - Question 13",
         "schema:disambiguatingDescription": "table/collection-occasion/k10p/item13.rst",
@@ -1439,7 +1439,7 @@
           "maximum": 89
         }
       },{
-        "name": "item14",
+        "name": "k10p_item14",
         "titles": [ "item14", "Question 14" ],
         "dc:title": "K10+ - Question 14",
         "schema:disambiguatingDescription": "table/collection-occasion/k10p/item14.rst",
@@ -1460,67 +1460,67 @@
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item1",
+        "columnReference": "k10p_item1",
         "reference": {
           "resource": "type/collection-occasion/k10p-k5.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item2",
+        "columnReference": "k10p_item2",
         "reference": {
           "resource": "type/collection-occasion/k10p-k5.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item3",
+        "columnReference": "k10p_item3",
         "reference": {
           "resource": "type/collection-occasion/k10p-k5.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item4",
+        "columnReference": "k10p_item4",
         "reference": {
           "resource": "type/collection-occasion/k10p-k5.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item5",
+        "columnReference": "k10p_item5",
         "reference": {
           "resource": "type/collection-occasion/k10p-k5.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item6",
+        "columnReference": "k10p_item6",
         "reference": {
           "resource": "type/collection-occasion/k10p-k5.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item7",
+        "columnReference": "k10p_item7",
         "reference": {
           "resource": "type/collection-occasion/k10p-k5.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item8",
+        "columnReference": "k10p_item8",
         "reference": {
           "resource": "type/collection-occasion/k10p-k5.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item9",
+        "columnReference": "k10p_item9",
         "reference": {
           "resource": "type/collection-occasion/k10p-k5.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item10",
+        "columnReference": "k10p_item10",
         "reference": {
           "resource": "type/collection-occasion/k10p-k5.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item14",
+        "columnReference": "k10p_item14",
         "reference": {
           "resource": "type/collection-occasion/k10p-k5.csv",
           "columnReference": "id"
@@ -1596,7 +1596,7 @@
         },
         "required": true
       },{
-        "name": "item1",
+        "name": "k5_item1",
         "titles": [ "item1", "Question 1" ],
         "schema:name": "K5 - Question 1",
         "schema:disambiguatingDescription": "k5/item1.txt",
@@ -1609,7 +1609,7 @@
         },
         "required": true
       },{
-        "name": "item2",
+        "name": "k5_item2",
         "titles": [ "item2", "Question 2" ],
         "schema:name": "K5 - Question 2",
         "schema:disambiguatingDescription": "k5/item2.txt",
@@ -1622,7 +1622,7 @@
         },
         "required": true
       },{
-        "name": "item3",
+        "name": "k5_item3",
         "titles": [ "item3", "Question 3" ],
         "schema:name": "K5 - Question 3",
         "schema:disambiguatingDescription": "k5/item3.txt",
@@ -1635,7 +1635,7 @@
         },
         "required": true
       },{
-        "name": "item4",
+        "name": "k5_item4",
         "titles": [ "item4", "Question 4" ],
         "schema:name": "K5 - Question 4",
         "schema:disambiguatingDescription": "k5/item4.txt",
@@ -1648,7 +1648,7 @@
         },
         "required": true
       },{
-        "name": "item5",
+        "name": "k5_item5",
         "titles": [ "item5", "Question 5" ],
         "schema:name": "K5 - Question 5",
         "schema:disambiguatingDescription": "k5/item5.txt",
@@ -1669,31 +1669,31 @@
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item1",
+        "columnReference": "k5_item1",
         "reference": {
           "resource": "type/collection-occasion/k10p-k5.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item2",
+        "columnReference": "k5_item2",
         "reference": {
           "resource": "type/collection-occasion/k10p-k5.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item3",
+        "columnReference": "k5_item3",
         "reference": {
           "resource": "type/collection-occasion/k10p-k5.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item4",
+        "columnReference": "k5_item4",
         "reference": {
           "resource": "type/collection-occasion/k10p-k5.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item5",
+        "columnReference": "k5_item5",
         "reference": {
           "resource": "type/collection-occasion/k10p-k5.csv",
           "columnReference": "id"
@@ -1701,10 +1701,10 @@
       }]
     }
   }, {
-    "dc:title": "SDQ-PC1 Collection Occasion",
-    "url": "data/sdqpc1.csv",
-    "schema:name": "sdqpc1-collection-occasion",
-    "schema:description": "table/collection-occasion/sdqpc1-collection-occasion.rst",
+    "dc:title": "SDQ Collection Occasion",
+    "url": "data/sdq.csv",
+    "schema:name": "sdq-collection-occasion",
+    "schema:description": "table/collection-occasion/sdq-collection-occasion.rst",
     "tableSchema": {
       "columns": [{
         "name": "organisation_path",
@@ -1769,10 +1769,23 @@
         },
         "required": true
       },{
-        "name": "item1",
+        "name": "sdq_version",
+        "titles": [ "sdq_version", "SDQ Version" ],
+        "dc:title": "SDQ Collection Occasion - Version",
+        "schema:description": "The version of the SDQ collected.",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdq-version.rst",
+        "schema:dateCreated": "2016-07-08",
+        "schema:dateModified": "2016-07-08",
+        "datatype": {
+          "base": "string",
+          "format": "^(1|2|5|6)$"
+        },
+        "required": true
+      },{
+        "name": "sdq_item1",
         "titles": [ "item1", "Question 1" ],
-        "dc:title": "SDQ-PC1 - Question 1",
-        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item1.rst",
+        "dc:title": "SDQ - Question 1",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdq/item1.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1782,10 +1795,10 @@
         },
         "required": true
       },{
-        "name": "item2",
+        "name": "sdq_item2",
         "titles": [ "item2", "Question 2" ],
-        "dc:title": "SDQ-PC1 - Question 2",
-        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item2.rst",
+        "dc:title": "SDQ - Question 2",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdq/item2.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1795,10 +1808,10 @@
         },
         "required": true
       },{
-        "name": "item3",
+        "name": "sdq_item3",
         "titles": [ "item3", "Question 3" ],
-        "dc:title": "SDQ-PC1 - Question 3",
-        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item3.rst",
+        "dc:title": "SDQ - Question 3",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdq/item3.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1808,10 +1821,10 @@
         },
         "required": true
       },{
-        "name": "item4",
+        "name": "sdq_item4",
         "titles": [ "item4", "Question 4" ],
-        "dc:title": "SDQ-PC1 - Question 4",
-        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item4.rst",
+        "dc:title": "SDQ - Question 4",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdq/item4.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1821,10 +1834,10 @@
         },
         "required": true
       },{
-        "name": "item5",
+        "name": "sdq_item5",
         "titles": [ "item5", "Question 5" ],
-        "dc:title": "SDQ-PC1 - Question 5",
-        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item5.rst",
+        "dc:title": "SDQ - Question 5",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdq/item5.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1834,10 +1847,10 @@
         },
         "required": true
       },{
-        "name": "item6",
+        "name": "sdq_item6",
         "titles": [ "item6", "Question 6" ],
-        "dc:title": "SDQ-PC1 - Question 6",
-        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item6.rst",
+        "dc:title": "SDQ - Question 6",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdq/item6.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1847,10 +1860,10 @@
         },
         "required": true
       },{
-        "name": "item7",
+        "name": "sdq_item7",
         "titles": [ "item7", "Question 7" ],
-        "dc:title": "SDQ-PC1 - Question 7",
-        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item7.rst",
+        "dc:title": "SDQ - Question 7",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdq/item7.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1860,10 +1873,10 @@
         },
         "required": true
       },{
-        "name": "item8",
+        "name": "sdq_item8",
         "titles": [ "item8", "Question 8" ],
-        "dc:title": "SDQ-PC1 - Question 8",
-        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item8.rst",
+        "dc:title": "SDQ - Question 8",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdq/item8.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1873,10 +1886,10 @@
         },
         "required": true
       },{
-        "name": "item9",
+        "name": "sdq_item9",
         "titles": [ "item9", "Question 9" ],
-        "dc:title": "SDQ-PC1 - Question 9",
-        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item9.rst",
+        "dc:title": "SDQ - Question 9",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdq/item9.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1886,10 +1899,10 @@
         },
         "required": true
       },{
-        "name": "item10",
+        "name": "sdq_item10",
         "titles": [ "item10", "Question 10" ],
-        "dc:title": "SDQ-PC1 - Question 10",
-        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item10.rst",
+        "dc:title": "SDQ - Question 10",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdq/item10.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1899,10 +1912,10 @@
         },
         "required": true
       },{
-        "name": "item11",
+        "name": "sdq_item11",
         "titles": [ "item11", "Question 11" ],
-        "dc:title": "SDQ-PC1 - Question 11",
-        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item11.rst",
+        "dc:title": "SDQ - Question 11",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdq/item11.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1912,10 +1925,10 @@
         },
         "required": true
       },{
-        "name": "item12",
+        "name": "sdq_item12",
         "titles": [ "item12", "Question 12" ],
-        "dc:title": "SDQ-PC1 - Question 12",
-        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item12.rst",
+        "dc:title": "SDQ - Question 12",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdq/item12.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1925,10 +1938,10 @@
         },
         "required": true
       },{
-        "name": "item13",
+        "name": "sdq_item13",
         "titles": [ "item13", "Question 13" ],
-        "dc:title": "SDQ-PC1 - Question 13",
-        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item13.rst",
+        "dc:title": "SDQ - Question 13",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdq/item13.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1938,10 +1951,10 @@
         },
         "required": true
       },{
-        "name": "item14",
+        "name": "sdq_item14",
         "titles": [ "item14", "Question 14" ],
-        "dc:title": "SDQ-PC1 - Question 14",
-        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item14.rst",
+        "dc:title": "SDQ - Question 14",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdq/item14.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1951,10 +1964,10 @@
         },
         "required": true
       },{
-        "name": "item15",
+        "name": "sdq_item15",
         "titles": [ "item15", "Question 15" ],
-        "dc:title": "SDQ-PC1 - Question 15",
-        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item15.rst",
+        "dc:title": "SDQ - Question 15",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdq/item15.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1964,10 +1977,10 @@
         },
         "required": true
       },{
-        "name": "item16",
+        "name": "sdq_item16",
         "titles": [ "item16", "Question 16" ],
-        "dc:title": "SDQ-PC1 - Question 16",
-        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item16.rst",
+        "dc:title": "SDQ - Question 16",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdq/item16.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1977,10 +1990,10 @@
         },
         "required": true
       },{
-        "name": "item17",
+        "name": "sdq_item17",
         "titles": [ "item17", "Question 17" ],
-        "dc:title": "SDQ-PC1 - Question 17",
-        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item17.rst",
+        "dc:title": "SDQ - Question 17",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdq/item17.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1990,10 +2003,10 @@
         },
         "required": true
       },{
-        "name": "item18",
+        "name": "sdq_item18",
         "titles": [ "item18", "Question 18" ],
-        "dc:title": "SDQ-PC1 - Question 18",
-        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item18.rst",
+        "dc:title": "SDQ - Question 18",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdq/item18.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -2003,10 +2016,10 @@
         },
         "required": true
       },{
-        "name": "item19",
+        "name": "sdq_item19",
         "titles": [ "item19", "Question 19" ],
-        "dc:title": "SDQ-PC1 - Question 19",
-        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item19.rst",
+        "dc:title": "SDQ - Question 19",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdq/item19.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -2016,10 +2029,10 @@
         },
         "required": true
       },{
-        "name": "item20",
+        "name": "sdq_item20",
         "titles": [ "item20", "Question 20" ],
-        "dc:title": "SDQ-PC1 - Question 20",
-        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item20.rst",
+        "dc:title": "SDQ - Question 20",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdq/item20.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -2029,10 +2042,10 @@
         },
         "required": true
       },{
-        "name": "item21",
+        "name": "sdq_item21",
         "titles": [ "item21", "Question 21" ],
-        "dc:title": "SDQ-PC1 - Question 21",
-        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item21.rst",
+        "dc:title": "SDQ - Question 21",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdq/item21.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -2042,10 +2055,10 @@
         },
         "required": true
       },{
-        "name": "item22",
+        "name": "sdq_item22",
         "titles": [ "item22", "Question 22" ],
-        "dc:title": "SDQ-PC1 - Question 22",
-        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item22.rst",
+        "dc:title": "SDQ - Question 22",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdq/item22.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -2055,10 +2068,10 @@
         },
         "required": true
       },{
-        "name": "item23",
+        "name": "sdq_item23",
         "titles": [ "item23", "Question 23" ],
-        "dc:title": "SDQ-PC1 - Question 23",
-        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item23.rst",
+        "dc:title": "SDQ - Question 23",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdq/item23.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -2068,10 +2081,10 @@
         },
         "required": true
       },{
-        "name": "item24",
+        "name": "sdq_item24",
         "titles": [ "item24", "Question 24" ],
-        "dc:title": "SDQ-PC1 - Question 24",
-        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item24.rst",
+        "dc:title": "SDQ - Question 24",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdq/item24.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -2081,10 +2094,10 @@
         },
         "required": true
       },{
-        "name": "item25",
+        "name": "sdq_item25",
         "titles": [ "item25", "Question 25" ],
-        "dc:title": "SDQ-PC1 - Question 25",
-        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item25.rst",
+        "dc:title": "SDQ - Question 25",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdq/item25.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -2094,146 +2107,224 @@
         },
         "required": true
       },{
-        "name": "item26",
+        "name": "sdq_item26",
         "titles": [ "item26", "Question 26" ],
-        "dc:title": "SDQ-PC1 - Question 26",
-        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item26.rst",
+        "dc:title": "SDQ - Question 26",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdq/item26.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
           "base": "string",
-          "format": "^(0|1|2|7|9)$"
+          "format": "^(0|1|2|3|7|9)$"
         },
         "required": true
       },{
-        "name": "item27",
+        "name": "sdq_item27",
         "titles": [ "item27", "Question 27" ],
-        "dc:title": "SDQ-PC1 - Question 27",
-        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item27.rst",
+        "dc:title": "SDQ - Question 27",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdq/item27.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
           "base": "string",
-          "format": "^(0|1|2|7|9)$"
+          "format": "^(0|1|2|3|7|8|9)$"
         },
         "required": true
       },{
-        "name": "item28",
+        "name": "sdq_item28",
         "titles": [ "item28", "Question 28" ],
-        "dc:title": "SDQ-PC1 - Question 28",
-        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item28.rst",
+        "dc:title": "SDQ - Question 28",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdq/item28.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
           "base": "string",
-          "format": "^(0|1|2|7|9)$"
+          "format": "^(0|1|2|3|7|8|9)$"
         },
         "required": true
       },{
-        "name": "item29",
+        "name": "sdq_item29",
         "titles": [ "item29", "Question 29" ],
-        "dc:title": "SDQ-PC1 - Question 29",
-        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item29.rst",
+        "dc:title": "SDQ - Question 29",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdq/item29.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
           "base": "string",
-          "format": "^(0|1|2|7|9)$"
+          "format": "^(0|1|2|3|7|8|9)$"
         },
         "required": true
       },{
-        "name": "item30",
+        "name": "sdq_item30",
         "titles": [ "item30", "Question 30" ],
-        "dc:title": "SDQ-PC1 - Question 30",
-        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item30.rst",
+        "dc:title": "SDQ - Question 30",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdq/item30.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
           "base": "string",
-          "format": "^(0|1|2|7|9)$"
+          "format": "^(0|1|2|3|7|8|9)$"
         },
         "required": true
       },{
-        "name": "item31",
+        "name": "sdq_item31",
         "titles": [ "item31", "Question 31" ],
-        "dc:title": "SDQ-PC1 - Question 31",
-        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item31.rst",
+        "dc:title": "SDQ - Question 31",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdq/item31.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
           "base": "string",
-          "format": "^(0|1|2|7|9)$"
+          "format": "^(0|1|2|3|7|8|9)$"
         },
         "required": true
       },{
-        "name": "item32",
+        "name": "sdq_item32",
         "titles": [ "item32", "Question 32" ],
-        "dc:title": "SDQ-PC1 - Question 32",
-        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item32.rst",
+        "dc:title": "SDQ - Question 32",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdq/item32.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
           "base": "string",
-          "format": "^(0|1|2|7|9)$"
+          "format": "^(0|1|2|3|7|8|9)$"
         },
         "required": true
       },{
-        "name": "item33",
+        "name": "sdq_item33",
         "titles": [ "item33", "Question 33" ],
-        "dc:title": "SDQ-PC1 - Question 33",
-        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item33.rst",
+        "dc:title": "SDQ - Question 33",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdq/item33.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
           "base": "string",
-          "format": "^(0|1|2|7|9)$"
+          "format": "^(0|1|2|3|7|8|9)$"
         },
         "required": true
       },{
-        "name": "item36",
+        "name": "sdq_item34",
+        "titles": [ "item34", "Question 34" ],
+        "dc:title": "SDQ - Question 34",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdq/item34.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "format": "^(0|1|2|3|4|7|8|9)$"
+        },
+        "required": true
+      },{
+        "name": "sdq_item35",
+        "titles": [ "item35", "Question 35" ],
+        "dc:title": "SDQ - Question 35",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdq/item35.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "format": "^(0|1|2|3|7|8|9)$"
+        },
+        "required": true
+      },{
+        "name": "sdq_item36",
         "titles": [ "item36", "Question 36" ],
-        "dc:title": "SDQ-PC1 - Question 36",
-        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item36.rst",
+        "dc:title": "SDQ - Question 36",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdq/item36.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
           "base": "string",
-          "format": "^(0|1|2|7|9)$"
+          "format": "^(0|1|2|7|8|9)$"
         },
         "required": true
       },{
-        "name": "item37",
+        "name": "sdq_item37",
         "titles": [ "item37", "Question 37" ],
-        "dc:title": "SDQ-PC1 - Question 37",
-        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item37.rst",
+        "dc:title": "SDQ - Question 37",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdq/item37.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
           "base": "string",
-          "format": "^(0|1|2|7|9)$"
+          "format": "^(0|1|2|7|8|9)$"
         },
         "required": true
       },{
-        "name": "item38",
+        "name": "sdq_item38",
         "titles": [ "item38", "Question 38" ],
-        "dc:title": "SDQ-PC1 - Question 38",
-        "schema:disambiguatingDescription": "table/collection-occasion/sdqpc1/item38.rst",
+        "dc:title": "SDQ - Question 38",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdq/item38.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
           "base": "string",
-          "format": "^(0|1|2|7|9)$"
+          "format": "^(0|1|2|7|8|9)$"
+        },
+        "required": true
+      },{
+        "name": "sdq_item39",
+        "titles": [ "item39", "Question 39" ],
+        "dc:title": "SDQ - Question 39",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdq/item39.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "format": "^(0|1|2|7|8|9)$"
+        },
+        "required": true
+      },{
+        "name": "sdq_item40",
+        "titles": [ "item40", "Question 40" ],
+        "dc:title": "SDQ - Question 40",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdq/item40.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "format": "^(0|1|2|7|8|9)$"
+        },
+        "required": true
+      },{
+        "name": "sdq_item41",
+        "titles": [ "item41", "Question 41" ],
+        "dc:title": "SDQ - Question 41",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdq/item41.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "format": "^(0|1|2|7|8|9)$"
+        },
+        "required": true
+      },{
+        "name": "sdq_item42",
+        "titles": [ "item42", "Question 42" ],
+        "dc:title": "SDQ - Question 42",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdq/item42.rst",
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string",
+          "format": "^(0|1|2|7|8|9)$"
         },
         "required": true
       }],
@@ -2245,219 +2336,261 @@
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item1",
+        "columnReference": "sdq_version",
         "reference": {
-          "resource": "type/collection-occasion/sdq.csv",
+          "resource": "type/collection-occasion/sdq-version.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item2",
+        "columnReference": "sdq_item1",
         "reference": {
-          "resource": "type/collection-occasion/sdq.csv",
+          "resource": "type/collection-occasion/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item3",
+        "columnReference": "sdq_item2",
         "reference": {
-          "resource": "type/collection-occasion/sdq.csv",
+          "resource": "type/collection-occasion/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item4",
+        "columnReference": "sdq_item3",
         "reference": {
-          "resource": "type/collection-occasion/sdq.csv",
+          "resource": "type/collection-occasion/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item5",
+        "columnReference": "sdq_item4",
         "reference": {
-          "resource": "type/collection-occasion/sdq.csv",
+          "resource": "type/collection-occasion/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item6",
+        "columnReference": "sdq_item5",
         "reference": {
-          "resource": "type/collection-occasion/sdq.csv",
+          "resource": "type/collection-occasion/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item7",
+        "columnReference": "sdq_item6",
         "reference": {
-          "resource": "type/collection-occasion/sdq.csv",
+          "resource": "type/collection-occasion/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item8",
+        "columnReference": "sdq_item7",
         "reference": {
-          "resource": "type/collection-occasion/sdq.csv",
+          "resource": "type/collection-occasion/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item9",
+        "columnReference": "sdq_item8",
         "reference": {
-          "resource": "type/collection-occasion/sdq.csv",
+          "resource": "type/collection-occasion/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item10",
+        "columnReference": "sdq_item9",
         "reference": {
-          "resource": "type/collection-occasion/sdq.csv",
+          "resource": "type/collection-occasion/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item11",
+        "columnReference": "sdq_item10",
         "reference": {
-          "resource": "type/collection-occasion/sdq.csv",
+          "resource": "type/collection-occasion/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item12",
+        "columnReference": "sdq_item11",
         "reference": {
-          "resource": "type/collection-occasion/sdq.csv",
+          "resource": "type/collection-occasion/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item13",
+        "columnReference": "sdq_item12",
         "reference": {
-          "resource": "type/collection-occasion/sdq.csv",
+          "resource": "type/collection-occasion/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item14",
+        "columnReference": "sdq_item13",
         "reference": {
-          "resource": "type/collection-occasion/sdq.csv",
+          "resource": "type/collection-occasion/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item15",
+        "columnReference": "sdq_item14",
         "reference": {
-          "resource": "type/collection-occasion/sdq.csv",
+          "resource": "type/collection-occasion/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item16",
+        "columnReference": "sdq_item15",
         "reference": {
-          "resource": "type/collection-occasion/sdq.csv",
+          "resource": "type/collection-occasion/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item17",
+        "columnReference": "sdq_item16",
         "reference": {
-          "resource": "type/collection-occasion/sdq.csv",
+          "resource": "type/collection-occasion/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item18",
+        "columnReference": "sdq_item17",
         "reference": {
-          "resource": "type/collection-occasion/sdq.csv",
+          "resource": "type/collection-occasion/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item19",
+        "columnReference": "sdq_item18",
         "reference": {
-          "resource": "type/collection-occasion/sdq.csv",
+          "resource": "type/collection-occasion/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item20",
+        "columnReference": "sdq_item19",
         "reference": {
-          "resource": "type/collection-occasion/sdq.csv",
+          "resource": "type/collection-occasion/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item21",
+        "columnReference": "sdq_item20",
         "reference": {
-          "resource": "type/collection-occasion/sdq.csv",
+          "resource": "type/collection-occasion/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item22",
+        "columnReference": "sdq_item21",
         "reference": {
-          "resource": "type/collection-occasion/sdq.csv",
+          "resource": "type/collection-occasion/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item23",
+        "columnReference": "sdq_item22",
         "reference": {
-          "resource": "type/collection-occasion/sdq.csv",
+          "resource": "type/collection-occasion/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item24",
+        "columnReference": "sdq_item23",
         "reference": {
-          "resource": "type/collection-occasion/sdq.csv",
+          "resource": "type/collection-occasion/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item25",
+        "columnReference": "sdq_item24",
         "reference": {
-          "resource": "type/collection-occasion/sdq.csv",
+          "resource": "type/collection-occasion/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item26",
+        "columnReference": "sdq_item25",
         "reference": {
-          "resource": "type/collection-occasion/sdq.csv",
+          "resource": "type/collection-occasion/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item27",
+        "columnReference": "sdq_item26",
         "reference": {
-          "resource": "type/collection-occasion/sdq.csv",
+          "resource": "type/collection-occasion/sdq-26.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item28",
+        "columnReference": "sdq_item27",
         "reference": {
-          "resource": "type/collection-occasion/sdq.csv",
+          "resource": "type/collection-occasion/sdq-27.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item29",
+        "columnReference": "sdq_item28",
         "reference": {
-          "resource": "type/collection-occasion/sdq.csv",
+          "resource": "type/collection-occasion/sdq-28-33_35.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item30",
+        "columnReference": "sdq_item29",
         "reference": {
-          "resource": "type/collection-occasion/sdq.csv",
+          "resource": "type/collection-occasion/sdq-28-33_35.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item31",
+        "columnReference": "sdq_item30",
         "reference": {
-          "resource": "type/collection-occasion/sdq.csv",
+          "resource": "type/collection-occasion/sdq-28-33_35.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item32",
+        "columnReference": "sdq_item31",
         "reference": {
-          "resource": "type/collection-occasion/sdq.csv",
+          "resource": "type/collection-occasion/sdq-28-33_35.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item33",
+        "columnReference": "sdq_item32",
         "reference": {
-          "resource": "type/collection-occasion/sdq.csv",
+          "resource": "type/collection-occasion/sdq-28-33_35.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item36",
+        "columnReference": "sdq_item33",
         "reference": {
-          "resource": "type/collection-occasion/sdq.csv",
+          "resource": "type/collection-occasion/sdq-28-33_35.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item37",
+        "columnReference": "sdq_item34",
         "reference": {
-          "resource": "type/collection-occasion/sdq.csv",
+          "resource": "type/collection-occasion/sdq-34.csv",
           "columnReference": "id"
         }
       }, {
-        "columnReference": "item38",
+        "columnReference": "sdq_item35",
         "reference": {
-          "resource": "type/collection-occasion/sdq.csv",
+          "resource": "type/collection-occasion/sdq-28-33_35.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "sdq_item36",
+        "reference": {
+          "resource": "type/collection-occasion/sdq-36-42.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "sdq_item37",
+        "reference": {
+          "resource": "type/collection-occasion/sdq-36-42.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "sdq_item38",
+        "reference": {
+          "resource": "type/collection-occasion/sdq-36-42.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "sdq_item39",
+        "reference": {
+          "resource": "type/collection-occasion/sdq-36-42.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "sdq_item40",
+        "reference": {
+          "resource": "type/collection-occasion/sdq-36-42.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "sdq_item41",
+        "reference": {
+          "resource": "type/collection-occasion/sdq-36-42.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "sdq_item42",
+        "reference": {
+          "resource": "type/collection-occasion/sdq-36-42.csv",
           "columnReference": "id"
         }
       }]
@@ -3167,7 +3300,139 @@
       "primaryKey": "id"
     }
   }, {
-    "url": "type/collection-occasion/sdq.csv",
+    "url": "type/collection-occasion/sdq-1-25.csv",
+    "tableSchema": {
+      "columns": [{
+        "name": "id",
+        "titles": [ "id", "ID" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": "string"
+      },{
+        "name": "description",
+        "titles": [ "description", "Description" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        }
+      }],
+      "primaryKey": "id"
+    }
+  }, {
+    "url": "type/collection-occasion/sdq-26.csv",
+    "tableSchema": {
+      "columns": [{
+        "name": "id",
+        "titles": [ "id", "ID" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": "string"
+      },{
+        "name": "description",
+        "titles": [ "description", "Description" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        }
+      }],
+      "primaryKey": "id"
+    }
+  }, {
+    "url": "type/collection-occasion/sdq-27.csv",
+    "tableSchema": {
+      "columns": [{
+        "name": "id",
+        "titles": [ "id", "ID" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": "string"
+      },{
+        "name": "description",
+        "titles": [ "description", "Description" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        }
+      }],
+      "primaryKey": "id"
+    }
+  }, {
+    "url": "type/collection-occasion/sdq-28-33_35.csv",
+    "tableSchema": {
+      "columns": [{
+        "name": "id",
+        "titles": [ "id", "ID" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": "string"
+      },{
+        "name": "description",
+        "titles": [ "description", "Description" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        }
+      }],
+      "primaryKey": "id"
+    }
+  }, {
+    "url": "type/collection-occasion/sdq-34.csv",
+    "tableSchema": {
+      "columns": [{
+        "name": "id",
+        "titles": [ "id", "ID" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": "string"
+      },{
+        "name": "description",
+        "titles": [ "description", "Description" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        }
+      }],
+      "primaryKey": "id"
+    }
+  }, {
+    "url": "type/collection-occasion/sdq-36-42.csv",
+    "tableSchema": {
+      "columns": [{
+        "name": "id",
+        "titles": [ "id", "ID" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": "string"
+      },{
+        "name": "description",
+        "titles": [ "description", "Description" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        }
+      }],
+      "primaryKey": "id"
+    }
+  }, {
+    "url": "type/collection-occasion/sdq-version.csv",
     "tableSchema": {
       "columns": [{
         "name": "id",
