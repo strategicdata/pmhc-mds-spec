@@ -1462,67 +1462,67 @@
       }, {
         "columnReference": "k10p_item1",
         "reference": {
-          "resource": "type/collection-occasion/k10p-k5.csv",
+          "resource": "table/collection-occasion/k10p-k5.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "k10p_item2",
         "reference": {
-          "resource": "type/collection-occasion/k10p-k5.csv",
+          "resource": "table/collection-occasion/k10p-k5.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "k10p_item3",
         "reference": {
-          "resource": "type/collection-occasion/k10p-k5.csv",
+          "resource": "table/collection-occasion/k10p-k5.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "k10p_item4",
         "reference": {
-          "resource": "type/collection-occasion/k10p-k5.csv",
+          "resource": "table/collection-occasion/k10p-k5.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "k10p_item5",
         "reference": {
-          "resource": "type/collection-occasion/k10p-k5.csv",
+          "resource": "table/collection-occasion/k10p-k5.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "k10p_item6",
         "reference": {
-          "resource": "type/collection-occasion/k10p-k5.csv",
+          "resource": "table/collection-occasion/k10p-k5.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "k10p_item7",
         "reference": {
-          "resource": "type/collection-occasion/k10p-k5.csv",
+          "resource": "table/collection-occasion/k10p-k5.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "k10p_item8",
         "reference": {
-          "resource": "type/collection-occasion/k10p-k5.csv",
+          "resource": "table/collection-occasion/k10p-k5.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "k10p_item9",
         "reference": {
-          "resource": "type/collection-occasion/k10p-k5.csv",
+          "resource": "table/collection-occasion/k10p-k5.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "k10p_item10",
         "reference": {
-          "resource": "type/collection-occasion/k10p-k5.csv",
+          "resource": "table/collection-occasion/k10p-k5.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "k10p_item14",
         "reference": {
-          "resource": "type/collection-occasion/k10p-k5.csv",
+          "resource": "table/collection-occasion/k10p-k5.csv",
           "columnReference": "id"
         }
       }]
@@ -1536,7 +1536,7 @@
       "columns": [{
         "name": "organisation_path",
         "titles": [ "organisation_path", "Organisation Path" ],
-        "schema:name": "Organisation Path",
+        "dc:title": "Organisation Path",
         "schema:description": "A sequence of colon separated Organisation Codes that fully specifies the upload organisation.",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -1549,7 +1549,7 @@
       },{
         "name": "collection_occasion_key",
         "titles": [ "collection_occasion_key", "Collection Occasion Key" ],
-        "schema:name": "Collection Occasion Key",
+        "dc:title": "Collection Occasion Key",
         "schema:description": "This is a number or code assigned to each collection occasion of outcome measures. The Collection Occasion Key is unique and stable for each collection occasion at the level of the organisation.",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -1563,7 +1563,7 @@
       },{
          "name": "episode_key",
         "titles": [ "episode_key", "Episode Key" ],
-        "schema:name": "Episode Key",
+        "dc:title": "Episode Key",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1571,7 +1571,7 @@
       },{
         "name": "measure_date",
         "titles": [ "measure_date", "Measure Date" ],
-        "schema:name": "Collection Occasion - Measure Date",
+        "dc:title": "Collection Occasion - Measure Date",
         "schema:description": "The date the measure was given.",
         "schema:disambiguatingDescription": "table/collection-occasion/date.rst",
         "schema:dateCreated": "2016-06-22",
@@ -1598,8 +1598,8 @@
       },{
         "name": "k5_item1",
         "titles": [ "item1", "Question 1" ],
-        "schema:name": "K5 - Question 1",
-        "schema:disambiguatingDescription": "k5/item1.txt",
+        "dc:title": "K5 - Question 1",
+        "schema:disambiguatingDescription": "table/collection-occasion/k5/item1.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1611,8 +1611,8 @@
       },{
         "name": "k5_item2",
         "titles": [ "item2", "Question 2" ],
-        "schema:name": "K5 - Question 2",
-        "schema:disambiguatingDescription": "k5/item2.txt",
+        "dc:title": "K5 - Question 2",
+        "schema:disambiguatingDescription": "table/collection-occasion/k5/item2.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1624,8 +1624,8 @@
       },{
         "name": "k5_item3",
         "titles": [ "item3", "Question 3" ],
-        "schema:name": "K5 - Question 3",
-        "schema:disambiguatingDescription": "k5/item3.txt",
+        "dc:title": "K5 - Question 3",
+        "schema:disambiguatingDescription": "table/collection-occasion/k5/item3.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1637,8 +1637,8 @@
       },{
         "name": "k5_item4",
         "titles": [ "item4", "Question 4" ],
-        "schema:name": "K5 - Question 4",
-        "schema:disambiguatingDescription": "k5/item4.txt",
+        "dc:title": "K5 - Question 4",
+        "schema:disambiguatingDescription": "table/collection-occasion/k5/item4.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1650,8 +1650,8 @@
       },{
         "name": "k5_item5",
         "titles": [ "item5", "Question 5" ],
-        "schema:name": "K5 - Question 5",
-        "schema:disambiguatingDescription": "k5/item5.txt",
+        "dc:title": "K5 - Question 5",
+        "schema:disambiguatingDescription": "table/collection-occasion/k5/item5.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1671,31 +1671,31 @@
       }, {
         "columnReference": "k5_item1",
         "reference": {
-          "resource": "type/collection-occasion/k10p-k5.csv",
+          "resource": "table/collection-occasion/k10p-k5.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "k5_item2",
         "reference": {
-          "resource": "type/collection-occasion/k10p-k5.csv",
+          "resource": "table/collection-occasion/k10p-k5.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "k5_item3",
         "reference": {
-          "resource": "type/collection-occasion/k10p-k5.csv",
+          "resource": "table/collection-occasion/k10p-k5.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "k5_item4",
         "reference": {
-          "resource": "type/collection-occasion/k10p-k5.csv",
+          "resource": "table/collection-occasion/k10p-k5.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "k5_item5",
         "reference": {
-          "resource": "type/collection-occasion/k10p-k5.csv",
+          "resource": "table/collection-occasion/k10p-k5.csv",
           "columnReference": "id"
         }
       }]
@@ -1773,7 +1773,7 @@
         "titles": [ "sdq_version", "SDQ Version" ],
         "dc:title": "SDQ Collection Occasion - Version",
         "schema:description": "The version of the SDQ collected.",
-        "schema:disambiguatingDescription": "table/collection-occasion/sdq-version.rst",
+        "schema:disambiguatingDescription": "table/collection-occasion/sdq/sdq-version.rst",
         "schema:dateCreated": "2016-07-08",
         "schema:dateModified": "2016-07-08",
         "datatype": {
@@ -2338,259 +2338,259 @@
       }, {
         "columnReference": "sdq_version",
         "reference": {
-          "resource": "type/collection-occasion/sdq-version.csv",
+          "resource": "table/collection-occasion/sdq/sdq-version.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "sdq_item1",
         "reference": {
-          "resource": "type/collection-occasion/sdq-1-25.csv",
+          "resource": "table/collection-occasion/sdq/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "sdq_item2",
         "reference": {
-          "resource": "type/collection-occasion/sdq-1-25.csv",
+          "resource": "table/collection-occasion/sdq/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "sdq_item3",
         "reference": {
-          "resource": "type/collection-occasion/sdq-1-25.csv",
+          "resource": "table/collection-occasion/sdq/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "sdq_item4",
         "reference": {
-          "resource": "type/collection-occasion/sdq-1-25.csv",
+          "resource": "table/collection-occasion/sdq/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "sdq_item5",
         "reference": {
-          "resource": "type/collection-occasion/sdq-1-25.csv",
+          "resource": "table/collection-occasion/sdq/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "sdq_item6",
         "reference": {
-          "resource": "type/collection-occasion/sdq-1-25.csv",
+          "resource": "table/collection-occasion/sdq/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "sdq_item7",
         "reference": {
-          "resource": "type/collection-occasion/sdq-1-25.csv",
+          "resource": "table/collection-occasion/sdq/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "sdq_item8",
         "reference": {
-          "resource": "type/collection-occasion/sdq-1-25.csv",
+          "resource": "table/collection-occasion/sdq/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "sdq_item9",
         "reference": {
-          "resource": "type/collection-occasion/sdq-1-25.csv",
+          "resource": "table/collection-occasion/sdq/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "sdq_item10",
         "reference": {
-          "resource": "type/collection-occasion/sdq-1-25.csv",
+          "resource": "table/collection-occasion/sdq/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "sdq_item11",
         "reference": {
-          "resource": "type/collection-occasion/sdq-1-25.csv",
+          "resource": "table/collection-occasion/sdq/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "sdq_item12",
         "reference": {
-          "resource": "type/collection-occasion/sdq-1-25.csv",
+          "resource": "table/collection-occasion/sdq/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "sdq_item13",
         "reference": {
-          "resource": "type/collection-occasion/sdq-1-25.csv",
+          "resource": "table/collection-occasion/sdq/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "sdq_item14",
         "reference": {
-          "resource": "type/collection-occasion/sdq-1-25.csv",
+          "resource": "table/collection-occasion/sdq/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "sdq_item15",
         "reference": {
-          "resource": "type/collection-occasion/sdq-1-25.csv",
+          "resource": "table/collection-occasion/sdq/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "sdq_item16",
         "reference": {
-          "resource": "type/collection-occasion/sdq-1-25.csv",
+          "resource": "table/collection-occasion/sdq/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "sdq_item17",
         "reference": {
-          "resource": "type/collection-occasion/sdq-1-25.csv",
+          "resource": "table/collection-occasion/sdq/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "sdq_item18",
         "reference": {
-          "resource": "type/collection-occasion/sdq-1-25.csv",
+          "resource": "table/collection-occasion/sdq/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "sdq_item19",
         "reference": {
-          "resource": "type/collection-occasion/sdq-1-25.csv",
+          "resource": "table/collection-occasion/sdq/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "sdq_item20",
         "reference": {
-          "resource": "type/collection-occasion/sdq-1-25.csv",
+          "resource": "table/collection-occasion/sdq/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "sdq_item21",
         "reference": {
-          "resource": "type/collection-occasion/sdq-1-25.csv",
+          "resource": "table/collection-occasion/sdq/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "sdq_item22",
         "reference": {
-          "resource": "type/collection-occasion/sdq-1-25.csv",
+          "resource": "table/collection-occasion/sdq/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "sdq_item23",
         "reference": {
-          "resource": "type/collection-occasion/sdq-1-25.csv",
+          "resource": "table/collection-occasion/sdq/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "sdq_item24",
         "reference": {
-          "resource": "type/collection-occasion/sdq-1-25.csv",
+          "resource": "table/collection-occasion/sdq/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "sdq_item25",
         "reference": {
-          "resource": "type/collection-occasion/sdq-1-25.csv",
+          "resource": "table/collection-occasion/sdq/sdq-1-25.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "sdq_item26",
         "reference": {
-          "resource": "type/collection-occasion/sdq-26.csv",
+          "resource": "table/collection-occasion/sdq/sdq-26.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "sdq_item27",
         "reference": {
-          "resource": "type/collection-occasion/sdq-27.csv",
+          "resource": "table/collection-occasion/sdq/sdq-27.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "sdq_item28",
         "reference": {
-          "resource": "type/collection-occasion/sdq-28-33_35.csv",
+          "resource": "table/collection-occasion/sdq/sdq-28-33_35.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "sdq_item29",
         "reference": {
-          "resource": "type/collection-occasion/sdq-28-33_35.csv",
+          "resource": "table/collection-occasion/sdq/sdq-28-33_35.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "sdq_item30",
         "reference": {
-          "resource": "type/collection-occasion/sdq-28-33_35.csv",
+          "resource": "table/collection-occasion/sdq/sdq-28-33_35.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "sdq_item31",
         "reference": {
-          "resource": "type/collection-occasion/sdq-28-33_35.csv",
+          "resource": "table/collection-occasion/sdq/sdq-28-33_35.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "sdq_item32",
         "reference": {
-          "resource": "type/collection-occasion/sdq-28-33_35.csv",
+          "resource": "table/collection-occasion/sdq/sdq-28-33_35.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "sdq_item33",
         "reference": {
-          "resource": "type/collection-occasion/sdq-28-33_35.csv",
+          "resource": "table/collection-occasion/sdq/sdq-28-33_35.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "sdq_item34",
         "reference": {
-          "resource": "type/collection-occasion/sdq-34.csv",
+          "resource": "table/collection-occasion/sdq/sdq-34.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "sdq_item35",
         "reference": {
-          "resource": "type/collection-occasion/sdq-28-33_35.csv",
+          "resource": "table/collection-occasion/sdq/sdq-28-33_35.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "sdq_item36",
         "reference": {
-          "resource": "type/collection-occasion/sdq-36-42.csv",
+          "resource": "table/collection-occasion/sdq/sdq-36-42.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "sdq_item37",
         "reference": {
-          "resource": "type/collection-occasion/sdq-36-42.csv",
+          "resource": "table/collection-occasion/sdq/sdq-36-42.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "sdq_item38",
         "reference": {
-          "resource": "type/collection-occasion/sdq-36-42.csv",
+          "resource": "table/collection-occasion/sdq/sdq-36-42.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "sdq_item39",
         "reference": {
-          "resource": "type/collection-occasion/sdq-36-42.csv",
+          "resource": "table/collection-occasion/sdq/sdq-36-42.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "sdq_item40",
         "reference": {
-          "resource": "type/collection-occasion/sdq-36-42.csv",
+          "resource": "table/collection-occasion/sdq/sdq-36-42.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "sdq_item41",
         "reference": {
-          "resource": "type/collection-occasion/sdq-36-42.csv",
+          "resource": "table/collection-occasion/sdq/sdq-36-42.csv",
           "columnReference": "id"
         }
       }, {
         "columnReference": "sdq_item42",
         "reference": {
-          "resource": "type/collection-occasion/sdq-36-42.csv",
+          "resource": "table/collection-occasion/sdq/sdq-36-42.csv",
           "columnReference": "id"
         }
       }]
@@ -3278,7 +3278,7 @@
       "primaryKey": "id"
     }
   }, {
-    "url": "type/collection-occasion/k10p-k5.csv",
+    "url": "table/collection-occasion/k10p-k5.csv",
     "tableSchema": {
       "columns": [{
         "name": "id",
@@ -3300,7 +3300,7 @@
       "primaryKey": "id"
     }
   }, {
-    "url": "type/collection-occasion/sdq-1-25.csv",
+    "url": "table/collection-occasion/sdq/sdq-1-25.csv",
     "tableSchema": {
       "columns": [{
         "name": "id",
@@ -3322,7 +3322,7 @@
       "primaryKey": "id"
     }
   }, {
-    "url": "type/collection-occasion/sdq-26.csv",
+    "url": "table/collection-occasion/sdq/sdq-26.csv",
     "tableSchema": {
       "columns": [{
         "name": "id",
@@ -3344,7 +3344,7 @@
       "primaryKey": "id"
     }
   }, {
-    "url": "type/collection-occasion/sdq-27.csv",
+    "url": "table/collection-occasion/sdq/sdq-27.csv",
     "tableSchema": {
       "columns": [{
         "name": "id",
@@ -3366,7 +3366,7 @@
       "primaryKey": "id"
     }
   }, {
-    "url": "type/collection-occasion/sdq-28-33_35.csv",
+    "url": "table/collection-occasion/sdq/sdq-28-33_35.csv",
     "tableSchema": {
       "columns": [{
         "name": "id",
@@ -3388,7 +3388,7 @@
       "primaryKey": "id"
     }
   }, {
-    "url": "type/collection-occasion/sdq-34.csv",
+    "url": "table/collection-occasion/sdq/sdq-34.csv",
     "tableSchema": {
       "columns": [{
         "name": "id",
@@ -3410,7 +3410,7 @@
       "primaryKey": "id"
     }
   }, {
-    "url": "type/collection-occasion/sdq-36-42.csv",
+    "url": "table/collection-occasion/sdq/sdq-36-42.csv",
     "tableSchema": {
       "columns": [{
         "name": "id",
@@ -3432,7 +3432,7 @@
       "primaryKey": "id"
     }
   }, {
-    "url": "type/collection-occasion/sdq-version.csv",
+    "url": "table/collection-occasion/sdq/sdq-version.csv",
     "tableSchema": {
       "columns": [{
         "name": "id",
