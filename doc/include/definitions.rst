@@ -117,6 +117,23 @@ The term 'gender' refers to the way in which a person identifies their masculine
 
 ----------
 
+Client Key
+^^^^^^^^^^
+
+This is a number or code assigned to each individual referred to the commissioned organisation. The client identifier is unique and stable for each individual at the level of the PMHC top level organisation.
+
+:Field name: client_key
+
+:Data type: string
+:Notes:
+  Client keys must be unique across the entire PHN network independent of the
+  treating organisation. It is the responsibility of PHNs and Provider
+  Organisations to co-ordinate to maintain this identifier. Clients should not be
+  assigned multiple keys within the same PHN.
+  
+
+----------
+
 Client - Main Language Spoken at Home
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -197,23 +214,6 @@ A key that enables two or more records belonging to the same individual to be br
   
 
 :METeOR: `349510 <http://meteor.aihw.gov.au/content/index.phtml/itemId/349510>`__
-
-----------
-
-Client Key
-^^^^^^^^^^
-
-This is a number or code assigned to each individual referred to the commissioned organisation. The client identifier is unique and stable for each individual at the level of the PMHC top level organisation.
-
-:Field name: client_key
-
-:Data type: string
-:Notes:
-  Client keys must be unique across the entire PHN network independent of the
-  treating organisation. It is the responsibility of PHNs and Provider
-  Organisations to co-ordinate to maintain this identifier. Clients should not be
-  assigned multiple keys within the same PHN.
-  
 
 ----------
 
@@ -515,6 +515,27 @@ An indication of whether the client has been homeless in the 4 weeks prior to th
   - If code 1 applied at any time over the 4 week period, code 1
   - If code 2 but not code 1 applied at any time over the 4 week period, code 2
   - Otherwise Code 3 applies
+  
+
+----------
+
+Episode Key
+^^^^^^^^^^^
+
+This is a number or code assigned to each episode. The Episode Key is unique and stable for each episode at the level of the organisation.
+
+:Field name: episode_key
+
+:Data type: string
+:Notes:
+  Episode Keys must be genrated by the organisation to be unique at the provider
+  organisation level and must persist across time. Creation of episode keys in
+  this way allows clients to be merged (where duplicate Client Keys have been
+  identified) without having to re-allocate episode identifiers since they can
+  never clash.
+  
+  A recommended approach for the creation of Episode Keys is to compute `random
+  UUIDs <https://en.wikipedia.org/wiki/Universally_unique_identifier>`_.
   
 
 ----------
@@ -1172,23 +1193,112 @@ Identifies those individuals where a recent history of suicide attempt, or suici
 
 ----------
 
-Episode Key
-^^^^^^^^^^^
+K5 - Question 1
+^^^^^^^^^^^^^^^
 
-This is a number or code assigned to each episode. The Episode Key is unique and stable for each episode at the level of the organisation.
 
-:Field name: episode_key
+:Field name: k5_item1
 
 :Data type: string
+
+:Domain:
+  :1: None of the time
+  :2: A little of the time
+  :3: Some of the time
+  :4: Most of the time
+  :5: All of the time
+  :6: Don't know
+  :9: Not stated / Missing
 :Notes:
-  Episode Keys must be genrated by the organisation to be unique at the provider
-  organisation level and must persist across time. Creation of episode keys in
-  this way allows clients to be merged (where duplicate Client Keys have been
-  identified) without having to re-allocate episode identifiers since they can
-  never clash.
+  In the last 4 weeks, about how often did you feel nervous?
   
-  A recommended approach for the creation of Episode Keys is to compute `random
-  UUIDs <https://en.wikipedia.org/wiki/Universally_unique_identifier>`_.
+
+----------
+
+K5 - Question 2
+^^^^^^^^^^^^^^^
+
+
+:Field name: k5_item2
+
+:Data type: string
+
+:Domain:
+  :1: None of the time
+  :2: A little of the time
+  :3: Some of the time
+  :4: Most of the time
+  :5: All of the time
+  :6: Don't know
+  :9: Not stated / Missing
+:Notes:
+  In the last 4 weeks, about how often did you feel without hope?
+  
+
+----------
+
+K5 - Question 3
+^^^^^^^^^^^^^^^
+
+
+:Field name: k5_item3
+
+:Data type: string
+
+:Domain:
+  :1: None of the time
+  :2: A little of the time
+  :3: Some of the time
+  :4: Most of the time
+  :5: All of the time
+  :6: Don't know
+  :9: Not stated / Missing
+:Notes:
+  In the last 4 weeks, about how often did you feel restless or jumpy?
+  
+
+----------
+
+K5 - Question 4
+^^^^^^^^^^^^^^^
+
+
+:Field name: k5_item4
+
+:Data type: string
+
+:Domain:
+  :1: None of the time
+  :2: A little of the time
+  :3: Some of the time
+  :4: Most of the time
+  :5: All of the time
+  :6: Don't know
+  :9: Not stated / Missing
+:Notes:
+  In the last 4 weeks, about how often did you feel everything was an effort?
+  
+
+----------
+
+K5 - Question 5
+^^^^^^^^^^^^^^^
+
+
+:Field name: k5_item5
+
+:Data type: string
+
+:Domain:
+  :1: None of the time
+  :2: A little of the time
+  :3: Some of the time
+  :4: Most of the time
+  :5: All of the time
+  :6: Don't know
+  :9: Not stated / Missing
+:Notes:
+  In the last 4 weeks, about how often did you feel so sad that nothing could cheer you up?
   
 
 ----------
@@ -1197,11 +1307,196 @@ K10+ - Question 1
 ^^^^^^^^^^^^^^^^^
 
 
-:Field name: item1
+:Field name: k10p_item1
 
-:Data type: integer
+:Data type: string
+
+:Domain:
+  :1: None of the time
+  :2: A little of the time
+  :3: Some of the time
+  :4: Most of the time
+  :5: All of the time
+  :6: Don't know
+  :9: Not stated / Missing
 :Notes:
   In the past 4 weeks, about how often did you feel tired out for no good reason?
+  
+
+----------
+
+K10+ - Question 2
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: k10p_item2
+
+:Data type: string
+
+:Domain:
+  :1: None of the time
+  :2: A little of the time
+  :3: Some of the time
+  :4: Most of the time
+  :5: All of the time
+  :6: Don't know
+  :9: Not stated / Missing
+:Notes:
+  In the past 4 weeks, about how often did you feel nervous?
+  
+
+----------
+
+K10+ - Question 3
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: k10p_item3
+
+:Data type: string
+
+:Domain:
+  :1: None of the time
+  :2: A little of the time
+  :3: Some of the time
+  :4: Most of the time
+  :5: All of the time
+  :6: Don't know
+  :9: Not stated / Missing
+:Notes:
+  In the past 4 weeks, about how often did you feel so nervous that nothing could calm you down?
+  
+
+----------
+
+K10+ - Question 4
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: k10p_item4
+
+:Data type: string
+
+:Domain:
+  :1: None of the time
+  :2: A little of the time
+  :3: Some of the time
+  :4: Most of the time
+  :5: All of the time
+  :6: Don't know
+  :9: Not stated / Missing
+:Notes:
+  In the past 4 weeks, how often did you feel hopeless?
+  
+
+----------
+
+K10+ - Question 5
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: k10p_item5
+
+:Data type: string
+
+:Domain:
+  :1: None of the time
+  :2: A little of the time
+  :3: Some of the time
+  :4: Most of the time
+  :5: All of the time
+  :6: Don't know
+  :9: Not stated / Missing
+:Notes:
+  In the past 4 weeks, how often did you feel restless or fidgety?
+  
+
+----------
+
+K10+ - Question 6
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: k10p_item6
+
+:Data type: string
+
+:Domain:
+  :1: None of the time
+  :2: A little of the time
+  :3: Some of the time
+  :4: Most of the time
+  :5: All of the time
+  :6: Don't know
+  :9: Not stated / Missing
+:Notes:
+  In the past 4 weeks, how often did you feel so restless you could not sit still?
+  
+
+----------
+
+K10+ - Question 7
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: k10p_item7
+
+:Data type: string
+
+:Domain:
+  :1: None of the time
+  :2: A little of the time
+  :3: Some of the time
+  :4: Most of the time
+  :5: All of the time
+  :6: Don't know
+  :9: Not stated / Missing
+:Notes:
+  In the past 4 weeks, how often did you feel depressed?
+  
+
+----------
+
+K10+ - Question 8
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: k10p_item8
+
+:Data type: string
+
+:Domain:
+  :1: None of the time
+  :2: A little of the time
+  :3: Some of the time
+  :4: Most of the time
+  :5: All of the time
+  :6: Don't know
+  :9: Not stated / Missing
+:Notes:
+  In the past 4 weeks, how often did you feel that everything was an effort?
+  
+
+----------
+
+K10+ - Question 9
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: k10p_item9
+
+:Data type: string
+
+:Domain:
+  :1: None of the time
+  :2: A little of the time
+  :3: Some of the time
+  :4: Most of the time
+  :5: All of the time
+  :6: Don't know
+  :9: Not stated / Missing
+:Notes:
+  In the past 4 weeks, how often did you feel so sad that nothing could cheer you up?
   
 
 ----------
@@ -1210,9 +1505,18 @@ K10+ - Question 10
 ^^^^^^^^^^^^^^^^^^
 
 
-:Field name: item10
+:Field name: k10p_item10
 
-:Data type: integer
+:Data type: string
+
+:Domain:
+  :1: None of the time
+  :2: A little of the time
+  :3: Some of the time
+  :4: Most of the time
+  :5: All of the time
+  :6: Don't know
+  :9: Not stated / Missing
 :Notes:
   In the past 4 weeks, how often did you feel worthless?
   
@@ -1223,7 +1527,7 @@ K10+ - Question 11
 ^^^^^^^^^^^^^^^^^^
 
 
-:Field name: item11
+:Field name: k10p_item11
 
 :Data type: integer
 :Notes:
@@ -1236,7 +1540,7 @@ K10+ - Question 12
 ^^^^^^^^^^^^^^^^^^
 
 
-:Field name: item12
+:Field name: k10p_item12
 
 :Data type: integer
 :Notes:
@@ -1249,7 +1553,7 @@ K10+ - Question 13
 ^^^^^^^^^^^^^^^^^^
 
 
-:Field name: item13
+:Field name: k10p_item13
 
 :Data type: integer
 :Notes:
@@ -1262,115 +1566,20 @@ K10+ - Question 14
 ^^^^^^^^^^^^^^^^^^
 
 
-:Field name: item14
+:Field name: k10p_item14
 
-:Data type: integer
+:Data type: string
+
+:Domain:
+  :1: None of the time
+  :2: A little of the time
+  :3: Some of the time
+  :4: Most of the time
+  :5: All of the time
+  :6: Don't know
+  :9: Not stated / Missing
 :Notes:
   In the past four weeks, how often have physical health problems been the main cause of these feelings?
-  
-
-----------
-
-K10+ - Question 2
-^^^^^^^^^^^^^^^^^
-
-
-:Field name: item2
-
-:Data type: integer
-:Notes:
-  In the past 4 weeks, about how often did you feel nervous?
-  
-
-----------
-
-K10+ - Question 3
-^^^^^^^^^^^^^^^^^
-
-
-:Field name: item3
-
-:Data type: integer
-:Notes:
-  In the past 4 weeks, about how often did you feel so nervous that nothing could calm you down?
-  
-
-----------
-
-K10+ - Question 4
-^^^^^^^^^^^^^^^^^
-
-
-:Field name: item4
-
-:Data type: integer
-:Notes:
-  In the past 4 weeks, how often did you feel hopeless?
-  
-
-----------
-
-K10+ - Question 5
-^^^^^^^^^^^^^^^^^
-
-
-:Field name: item5
-
-:Data type: integer
-:Notes:
-  In the past 4 weeks, how often did you feel restless or fidgety?
-  
-
-----------
-
-K10+ - Question 6
-^^^^^^^^^^^^^^^^^
-
-
-:Field name: item6
-
-:Data type: integer
-:Notes:
-  In the past 4 weeks, how often did you feel so restless you could not sit still?
-  
-
-----------
-
-K10+ - Question 7
-^^^^^^^^^^^^^^^^^
-
-
-:Field name: item7
-
-:Data type: integer
-:Notes:
-  In the past 4 weeks, how often did you feel depressed?
-  
-
-----------
-
-K10+ - Question 8
-^^^^^^^^^^^^^^^^^
-
-
-:Field name: item8
-
-:Data type: integer
-:Notes:
-  In the past 4 weeks, how often did you feel that everything was an effort?
-  
-
-----------
-
-K10+ - Question 9
-^^^^^^^^^^^^^^^^^
-
-
-:Field name: item9
-
-:Data type: integer
-:Notes:
-  In the past 4 weeks, how often did you feel so sad that nothing could cheer you up?
   
 
 ----------
@@ -1383,6 +1592,52 @@ A sequence of colon separated Organisation Codes that fully specifies the upload
 :Field name: organisation_path
 
 :Data type: string
+
+----------
+
+Practitioner - Aboriginal and Torres Strait Islander Status
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Whether a person identifies as being of Aboriginal and/or Torres Strait Islander origin, as represented by a code.
+
+:Field name: practitioner_atsi_status
+
+:Data type: string
+
+:Domain:
+  :1: Aboriginal but not Torres Strait Islander origin
+  :2: Torres Strait Islander but not Aboriginal origin
+  :3: Both Aboriginal and Torres Strait Islander origin
+  :4: Neither Aboriginal or Torres Strait Islander origin
+  :9: Not stated/inadequately described
+:Notes:
+  Code 9 is not to be available as a valid answer to the questions but is
+    intended for use:
+  
+    - Primarily when importing data from other data collections that do not
+      contain mappable data.
+    - Where an answer was refused.
+    - Where the question was not able to be asked prior to completion of
+      assistance because the client was unable to communicate or a person who
+      knows the client was not available.
+  
+
+:METeOR: `291036 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291036>`__
+
+----------
+
+Practitioner - Active
+^^^^^^^^^^^^^^^^^^^^^
+
+A flag to represent whether a practitioner is actively delivering services. This is a system field that is aimed at helping organisations manage practitioner codes.
+
+:Field name: practitioner_active
+
+:Data type: string
+
+:Domain:
+  :0: Inactive
+  :1: Active
 
 ----------
 
@@ -1433,52 +1688,6 @@ Indicates whether a practitioner has completed a recognised training programme i
 
 ----------
 
-Practitioner - Aboriginal and Torres Strait Islander Status
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Whether a person identifies as being of Aboriginal and/or Torres Strait Islander origin, as represented by a code.
-
-:Field name: practitioner_atsi_status
-
-:Data type: string
-
-:Domain:
-  :1: Aboriginal but not Torres Strait Islander origin
-  :2: Torres Strait Islander but not Aboriginal origin
-  :3: Both Aboriginal and Torres Strait Islander origin
-  :4: Neither Aboriginal or Torres Strait Islander origin
-  :9: Not stated/inadequately described
-:Notes:
-  Code 9 is not to be available as a valid answer to the questions but is
-    intended for use:
-  
-    - Primarily when importing data from other data collections that do not
-      contain mappable data.
-    - Where an answer was refused.
-    - Where the question was not able to be asked prior to completion of
-      assistance because the client was unable to communicate or a person who
-      knows the client was not available.
-  
-
-:METeOR: `291036 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291036>`__
-
-----------
-
-Practitioner - Active
-^^^^^^^^^^^^^^^^^^^^^
-
-A flag to represent whether a practitioner is actively delivering services. This is a system field that is aimed at helping organisations manage practitioner codes.
-
-:Field name: practitioner_active
-
-:Data type: string
-
-:Domain:
-  :0: Inactive
-  :1: Active
-
-----------
-
 Practitioner - Category
 ^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -1523,6 +1732,17 @@ The term 'gender' refers to the way in which a person identifies their masculine
 
 ----------
 
+Practitioner Key
+^^^^^^^^^^^^^^^^
+
+A unique identifier for a practitioner within the responsible organisation. Assigned by the organisation.
+
+:Field name: practitioner_key
+
+:Data type: string
+
+----------
+
 Practitioner - Year of Birth
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -1543,17 +1763,6 @@ The year the practitioner was born.
     be used to estimate a year of birth
   - If the date of birth is totally unknown, use 9999.
   
-
-----------
-
-Practitioner Key
-^^^^^^^^^^^^^^^^
-
-A unique identifier for a practitioner within the responsible organisation. Assigned by the organisation.
-
-:Field name: practitioner_key
-
-:Data type: string
 
 ----------
 
@@ -1648,6 +1857,966 @@ A sequence of characters which uniquely identifies the provider organisation. As
 :Field name: organisation_key
 
 :Data type: string
+
+----------
+
+SDQ Collection Occasion - Version
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The version of the SDQ collected.
+
+:Field name: sdq_version
+
+:Data type: string
+
+:Domain:
+  :1: Parent Report Measure 4-10 yrs, Baseline version, Australian Version 1
+  :2: Parent Report Measure 4-10 yrs, Follow Up version, Australian Version 1
+  :5: Self report Version, 11-17 years, Baseline version, Australian Version 1
+  :6: Self report Version, 11-17 years, Follow Up version, Australian Version 1
+:Notes:
+  Version 1 of each of the above is reproduced in Mental Health National Outcomes
+  and Casemix Collection: Overview of clinical and self-report measures and data
+  items, Version 1.50. Commonwealth Department of Health and Ageing, Canberra, 2003.
+  
+  Domain values align with those collected in the NOCC dataset as defined at
+  https://webval.validator.com.au/spec/NOCC/
+  
+
+----------
+
+SDQ - Question 1
+^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_item1
+
+:Data type: string
+
+:Domain:
+  :0: Not True
+  :1: Somewhat True
+  :2: Certainly True
+  :7: Unable to rate (insufficient information)
+  :9: Not stated / Missing
+:Notes:
+  Parent Report: Considerate of other people's feelings.
+  
+  Youth Self Report: I try to be nice to other people. I care about their feelings.
+  
+
+----------
+
+SDQ - Question 2
+^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_item2
+
+:Data type: string
+
+:Domain:
+  :0: Not True
+  :1: Somewhat True
+  :2: Certainly True
+  :7: Unable to rate (insufficient information)
+  :9: Not stated / Missing
+:Notes:
+  Parent Report: Restless, overactive, cannot stay still for long.
+  
+  Youth Self Report: I am restless, I cannot stay still for long.
+  
+
+----------
+
+SDQ - Question 3
+^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_item3
+
+:Data type: string
+
+:Domain:
+  :0: Not True
+  :1: Somewhat True
+  :2: Certainly True
+  :7: Unable to rate (insufficient information)
+  :9: Not stated / Missing
+:Notes:
+  Parent Report: Often complains of headaches, stomach-aches or sickness.
+  
+  Youth Self Report: I get a lot of headaches, stomach-aches or sickness.
+  
+
+----------
+
+SDQ - Question 4
+^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_item4
+
+:Data type: string
+
+:Domain:
+  :0: Not True
+  :1: Somewhat True
+  :2: Certainly True
+  :7: Unable to rate (insufficient information)
+  :9: Not stated / Missing
+:Notes:
+  Parent Report: Shares readily with other children {for example toys, treats, pencils} / young people {for example CDs, games, food}.
+  
+  Youth Self Report: I usually share with others, for examples CDs, games, food.
+  
+
+----------
+
+SDQ - Question 5
+^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_item5
+
+:Data type: string
+
+:Domain:
+  :0: Not True
+  :1: Somewhat True
+  :2: Certainly True
+  :7: Unable to rate (insufficient information)
+  :9: Not stated / Missing
+:Notes:
+  Parent Report: Often loses temper.
+  
+  Youth Self Report: I get very angry and often lose my temper.
+  
+
+----------
+
+SDQ - Question 6
+^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_item6
+
+:Data type: string
+
+:Domain:
+  :0: Not True
+  :1: Somewhat True
+  :2: Certainly True
+  :7: Unable to rate (insufficient information)
+  :9: Not stated / Missing
+:Notes:
+  Parent Report: {Rather solitary, prefers to play alone} / {would rather be alone than with other young people}.
+  
+  Youth Self Report: I would rather be alone than with people of my age.
+  
+
+----------
+
+SDQ - Question 7
+^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_item7
+
+:Data type: string
+
+:Domain:
+  :0: Not True
+  :1: Somewhat True
+  :2: Certainly True
+  :7: Unable to rate (insufficient information)
+  :9: Not stated / Missing
+:Notes:
+  Parent Report: {Generally well behaved} / {Usually does what adults requests}.
+  
+  Youth Self Report: I usually do as I am told.
+  
+
+----------
+
+SDQ - Question 8
+^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_item8
+
+:Data type: string
+
+:Domain:
+  :0: Not True
+  :1: Somewhat True
+  :2: Certainly True
+  :7: Unable to rate (insufficient information)
+  :9: Not stated / Missing
+:Notes:
+  Parent Report: Many worries or often seems worried.
+  
+  Youth Self Report: I worry a lot.
+  
+
+----------
+
+SDQ - Question 9
+^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_item9
+
+:Data type: string
+
+:Domain:
+  :0: Not True
+  :1: Somewhat True
+  :2: Certainly True
+  :7: Unable to rate (insufficient information)
+  :9: Not stated / Missing
+:Notes:
+  Parent Report: Helpful if someone is hurt, upset or feeling ill.
+  
+  Youth Self Report: I am helpful if someone is hurt, upset or feeling ill.
+  
+
+----------
+
+SDQ - Question 10
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_item10
+
+:Data type: string
+
+:Domain:
+  :0: Not True
+  :1: Somewhat True
+  :2: Certainly True
+  :7: Unable to rate (insufficient information)
+  :9: Not stated / Missing
+:Notes:
+  Parent Report: Constantly fidgeting or squirming.
+  
+  Youth Self Report: I am constantly fidgeting or squirming.
+  
+
+----------
+
+SDQ - Question 11
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_item11
+
+:Data type: string
+
+:Domain:
+  :0: Not True
+  :1: Somewhat True
+  :2: Certainly True
+  :7: Unable to rate (insufficient information)
+  :9: Not stated / Missing
+:Notes:
+  Parent Report: Has at least one good friend.
+  
+  Youth Self Report: I have one good friend or more.
+  
+
+----------
+
+SDQ - Question 12
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_item12
+
+:Data type: string
+
+:Domain:
+  :0: Not True
+  :1: Somewhat True
+  :2: Certainly True
+  :7: Unable to rate (insufficient information)
+  :9: Not stated / Missing
+:Notes:
+  Parent Report: Often fights with other {children} or bullies them / {young people}.
+  
+  Youth Self Report: I fight a lot. I can make other people do what I want.
+  
+
+----------
+
+SDQ - Question 13
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_item13
+
+:Data type: string
+
+:Domain:
+  :0: Not True
+  :1: Somewhat True
+  :2: Certainly True
+  :7: Unable to rate (insufficient information)
+  :9: Not stated / Missing
+:Notes:
+  Parent Report: Often unhappy, depressed or tearful.
+  
+  Youth Self Report: I am often unhappy, depressed or tearful.
+  
+
+----------
+
+SDQ - Question 14
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_item14
+
+:Data type: string
+
+:Domain:
+  :0: Not True
+  :1: Somewhat True
+  :2: Certainly True
+  :7: Unable to rate (insufficient information)
+  :9: Not stated / Missing
+:Notes:
+  Parent Report: Generally liked by other {children} / {young people}
+  
+  Youth Self Report: Other people my age generally like me.
+  
+
+----------
+
+SDQ - Question 15
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_item15
+
+:Data type: string
+
+:Domain:
+  :0: Not True
+  :1: Somewhat True
+  :2: Certainly True
+  :7: Unable to rate (insufficient information)
+  :9: Not stated / Missing
+:Notes:
+  Parent Report: Easily distracted, concentration wanders.
+  
+  Youth Self Report: I am easily distracted, I find it difficult to concentrate.
+  
+
+----------
+
+SDQ - Question 16
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_item16
+
+:Data type: string
+
+:Domain:
+  :0: Not True
+  :1: Somewhat True
+  :2: Certainly True
+  :7: Unable to rate (insufficient information)
+  :9: Not stated / Missing
+:Notes:
+  Parent Report: Nervous or {clingy} in new situations, easily loses confidence {omit clingy in PY}.
+  
+  Youth Self Report: I am nervous in new situations. I easily lose confidence.
+  
+
+----------
+
+SDQ - Question 17
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_item17
+
+:Data type: string
+
+:Domain:
+  :0: Not True
+  :1: Somewhat True
+  :2: Certainly True
+  :7: Unable to rate (insufficient information)
+  :9: Not stated / Missing
+:Notes:
+  Parent Report: Kind to younger children.
+  
+  Youth Self Report: I am kind to younger people.
+  
+
+----------
+
+SDQ - Question 18
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_item18
+
+:Data type: string
+
+:Domain:
+  :0: Not True
+  :1: Somewhat True
+  :2: Certainly True
+  :7: Unable to rate (insufficient information)
+  :9: Not stated / Missing
+:Notes:
+  Parent Report: Often lies or cheats.
+  
+  Youth Self Report: I am often accused of lying or cheating.
+  
+
+----------
+
+SDQ - Question 19
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_item19
+
+:Data type: string
+
+:Domain:
+  :0: Not True
+  :1: Somewhat True
+  :2: Certainly True
+  :7: Unable to rate (insufficient information)
+  :9: Not stated / Missing
+:Notes:
+  Parent Report: Picked on or bullied by {children} / {youth}.
+  
+  Youth Self Report: Other children or young people pick on me or bully me.
+  
+
+----------
+
+SDQ - Question 20
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_item20
+
+:Data type: string
+
+:Domain:
+  :0: Not True
+  :1: Somewhat True
+  :2: Certainly True
+  :7: Unable to rate (insufficient information)
+  :9: Not stated / Missing
+:Notes:
+  Parent Report: Often volunteers to help others (parents, teachers, {other} children) / Omit 'other' in PY.
+  
+  Youth Self Report: I often volunteer to help others (parents, teachers, children).
+  
+
+----------
+
+SDQ - Question 21
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_item21
+
+:Data type: string
+
+:Domain:
+  :0: Not True
+  :1: Somewhat True
+  :2: Certainly True
+  :7: Unable to rate (insufficient information)
+  :9: Not stated / Missing
+:Notes:
+  Parent Report: Thinks things out before acting.
+  
+  Youth Self Report: I think before I do things.
+  
+
+----------
+
+SDQ - Question 22
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_item22
+
+:Data type: string
+
+:Domain:
+  :0: Not True
+  :1: Somewhat True
+  :2: Certainly True
+  :7: Unable to rate (insufficient information)
+  :9: Not stated / Missing
+:Notes:
+  Parent Report: Steals from home, school or elsewhere.
+  
+  Youth Self Report: I take things that are not mine from home, school or elsewhere.
+  
+
+----------
+
+SDQ - Question 23
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_item23
+
+:Data type: string
+
+:Domain:
+  :0: Not True
+  :1: Somewhat True
+  :2: Certainly True
+  :7: Unable to rate (insufficient information)
+  :9: Not stated / Missing
+:Notes:
+  Parent Report: Gets along better with adults than with other {children} / {youth}.
+  
+  Youth Self Report: I get along better with adults than with people my own age.
+  
+
+----------
+
+SDQ - Question 24
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_item24
+
+:Data type: string
+
+:Domain:
+  :0: Not True
+  :1: Somewhat True
+  :2: Certainly True
+  :7: Unable to rate (insufficient information)
+  :9: Not stated / Missing
+:Notes:
+  Parent Report: Many fears, easily scared.
+  
+  Youth Self Report: I have many fears, I am easily scared.
+  
+
+----------
+
+SDQ - Question 25
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_item25
+
+:Data type: string
+
+:Domain:
+  :0: Not True
+  :1: Somewhat True
+  :2: Certainly True
+  :7: Unable to rate (insufficient information)
+  :9: Not stated / Missing
+:Notes:
+  Parent Report: Good attention span sees chores or homework through to the end.
+  
+  Youth Self Report: I finish the work I'm doing. My attention is good.
+  
+
+----------
+
+SDQ - Question 26
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_item26
+
+:Data type: string
+
+:Domain:
+  :0: No
+  :1: Yes - minor difficulties
+  :2: Yes - definite difficulties
+  :3: Yes - severe difficulties
+  :7: Unable to rate (insufficient information)
+  :9: Not stated / Missing
+:Notes:
+  Parent Report: Overall, do you think that your child has difficulties in any of the following areas: emotions, concentration, behaviour or being able to get along with other people?
+  
+  Youth Self Report: Overall, do you think that you have difficulties in any of the following areas: emotions, concentration, behaviour or being able to get along with other people?
+  
+
+----------
+
+SDQ - Question 27
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_item27
+
+:Data type: string
+
+:Domain:
+  :0: Less than a month
+  :1: 1-5 months
+  :2: 6-12 months
+  :3: Over a year
+  :7: Unable to rate (insufficient information)
+  :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
+  :9: Not stated / Missing
+:Notes:
+  Parent Report: How long have these difficulties been present?
+  
+  Youth Self Report: How long have these difficulties been present?
+  
+
+----------
+
+SDQ - Question 28
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_item28
+
+:Data type: string
+
+:Domain:
+  :0: Not at all
+  :1: A little
+  :2: A medium amount
+  :3: A great deal
+  :7: Unable to rate (insufficient information)
+  :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
+  :9: Not stated / Missing
+:Notes:
+  Parent Report: Do the difficulties upset or distress your child?
+  
+  Youth Self Report: Do the difficulties upset or distress you?
+  
+
+----------
+
+SDQ - Question 29
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_item29
+
+:Data type: string
+
+:Domain:
+  :0: Not at all
+  :1: A little
+  :2: A medium amount
+  :3: A great deal
+  :7: Unable to rate (insufficient information)
+  :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
+  :9: Not stated / Missing
+:Notes:
+  Parent Report: Do the difficulties interfere with your child's everyday life in the following areas? HOME LIFE.
+  
+  Youth Self Report: Do the difficulties interfere with your everyday life in the following areas? HOME LIFE.
+  
+
+----------
+
+SDQ - Question 30
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_item30
+
+:Data type: string
+
+:Domain:
+  :0: Not at all
+  :1: A little
+  :2: A medium amount
+  :3: A great deal
+  :7: Unable to rate (insufficient information)
+  :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
+  :9: Not stated / Missing
+:Notes:
+  Parent Report: Do the difficulties interfere with your child's everyday life in the following areas? FRIENDSHIPS.
+  
+  Youth Self Report: Do the difficulties interfere with your everyday life in the following areas? FRIENDSHIPS.
+  
+
+----------
+
+SDQ - Question 31
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_item31
+
+:Data type: string
+
+:Domain:
+  :0: Not at all
+  :1: A little
+  :2: A medium amount
+  :3: A great deal
+  :7: Unable to rate (insufficient information)
+  :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
+  :9: Not stated / Missing
+:Notes:
+  Parent Report: Do the difficulties interfere with your child's everyday life in the following areas? CLASSROOM LEARNING.
+  
+  Youth Self Report: Do the difficulties interfere with your everyday life in the following areas? CLASSROOM LEARNING
+  
+
+----------
+
+SDQ - Question 32
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_item32
+
+:Data type: string
+
+:Domain:
+  :0: Not at all
+  :1: A little
+  :2: A medium amount
+  :3: A great deal
+  :7: Unable to rate (insufficient information)
+  :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
+  :9: Not stated / Missing
+:Notes:
+  Parent Report: Do the difficulties interfere with your child's everyday life in the following areas? LEISURE ACTIVITIES.
+  
+  Youth Self Report: Do the difficulties interfere with your everyday life in the following areas? LEISURE ACTIVITIES.
+  
+
+----------
+
+SDQ - Question 33
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_item33
+
+:Data type: string
+
+:Domain:
+  :0: Not at all
+  :1: A little
+  :2: A medium amount
+  :3: A great deal
+  :7: Unable to rate (insufficient information)
+  :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
+  :9: Not stated / Missing
+:Notes:
+  Parent Report: Do the difficulties put a burden on you or the family as a whole?
+  
+  Youth Self Report: Do the difficulties make it harder for those around you (family, friends, teachers, etc)?
+  
+
+----------
+
+SDQ - Question 34
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_item34
+
+:Data type: string
+
+:Domain:
+  :0: Much worse
+  :1: A bit worse
+  :2: About the same
+  :3: A bit better
+  :4: Much better
+  :7: Unable to rate (insufficient information)
+  :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
+  :9: Not stated / Missing
+:Notes:
+  Parent Report: Since coming to the services, are your child's problems:
+  
+  Youth Self Report: 'Since coming to the service, are your problems:'
+  
+
+----------
+
+SDQ - Question 35
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_item35
+
+:Data type: string
+
+:Domain:
+  :0: Not at all
+  :1: A little
+  :2: A medium amount
+  :3: A great deal
+  :7: Unable to rate (insufficient information)
+  :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
+  :9: Not stated / Missing
+:Notes:
+  Has coming to the service been helpful in other ways eg. providing information or making the problems bearable?
+  
+
+----------
+
+SDQ - Question 36
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_item36
+
+:Data type: string
+
+:Domain:
+  :0: No
+  :1: A little
+  :2: A lot
+  :7: Unable to rate (insufficient information)
+  :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
+  :9: Not stated / Missing
+:Notes:
+  Over the last 6 months have your child's teachers complained of fidgetiness, restlessness or overactivity?
+  
+
+----------
+
+SDQ - Question 37
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_item37
+
+:Data type: string
+
+:Domain:
+  :0: No
+  :1: A little
+  :2: A lot
+  :7: Unable to rate (insufficient information)
+  :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
+  :9: Not stated / Missing
+:Notes:
+  Over the last 6 months have your child's teachers complained of poor concentration or being easily distracted?
+  
+
+----------
+
+SDQ - Question 38
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_item38
+
+:Data type: string
+
+:Domain:
+  :0: No
+  :1: A little
+  :2: A lot
+  :7: Unable to rate (insufficient information)
+  :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
+  :9: Not stated / Missing
+:Notes:
+  Over the last 6 months have your child's teachers complained of acting without thinking, frequently butting in, or not waiting for his or her turn?
+  
+
+----------
+
+SDQ - Question 39
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_item39
+
+:Data type: string
+
+:Domain:
+  :0: No
+  :1: A little
+  :2: A lot
+  :7: Unable to rate (insufficient information)
+  :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
+  :9: Not stated / Missing
+:Notes:
+  Does your family complain about you having problems with overactivity or poor concentration?
+  
+
+----------
+
+SDQ - Question 40
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_item40
+
+:Data type: string
+
+:Domain:
+  :0: No
+  :1: A little
+  :2: A lot
+  :7: Unable to rate (insufficient information)
+  :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
+  :9: Not stated / Missing
+:Notes:
+  Do your teachers complain about you having problems with overactivity or poor concentration?
+  
+
+----------
+
+SDQ - Question 41
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_item41
+
+:Data type: string
+
+:Domain:
+  :0: No
+  :1: A little
+  :2: A lot
+  :7: Unable to rate (insufficient information)
+  :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
+  :9: Not stated / Missing
+:Notes:
+  Does your family complain about you being awkward or troublesome?
+  
+
+----------
+
+SDQ - Question 42
+^^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_item42
+
+:Data type: string
+
+:Domain:
+  :0: No
+  :1: A little
+  :2: A lot
+  :7: Unable to rate (insufficient information)
+  :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
+  :9: Not stated / Missing
+:Notes:
+  Do your teachers complain about you being awkward or troublesome?
+  
 
 ----------
 

@@ -16,7 +16,7 @@
 ",string,":1: Episode start
 :2: Review
 :3: Episode end"
-"`K10+ - Question 1`_ (k10p_item1)
+"`K5 - Question 1`_ (k5_item1)
 
 ",string,":1: None of the time
 :2: A little of the time
@@ -25,7 +25,7 @@
 :5: All of the time
 :6: Don't know
 :9: Not stated / Missing"
-"`K10+ - Question 2`_ (k10p_item2)
+"`K5 - Question 2`_ (k5_item2)
 
 ",string,":1: None of the time
 :2: A little of the time
@@ -34,7 +34,7 @@
 :5: All of the time
 :6: Don't know
 :9: Not stated / Missing"
-"`K10+ - Question 3`_ (k10p_item3)
+"`K5 - Question 3`_ (k5_item3)
 
 ",string,":1: None of the time
 :2: A little of the time
@@ -43,7 +43,7 @@
 :5: All of the time
 :6: Don't know
 :9: Not stated / Missing"
-"`K10+ - Question 4`_ (k10p_item4)
+"`K5 - Question 4`_ (k5_item4)
 
 ",string,":1: None of the time
 :2: A little of the time
@@ -52,70 +52,7 @@
 :5: All of the time
 :6: Don't know
 :9: Not stated / Missing"
-"`K10+ - Question 5`_ (k10p_item5)
-
-",string,":1: None of the time
-:2: A little of the time
-:3: Some of the time
-:4: Most of the time
-:5: All of the time
-:6: Don't know
-:9: Not stated / Missing"
-"`K10+ - Question 6`_ (k10p_item6)
-
-",string,":1: None of the time
-:2: A little of the time
-:3: Some of the time
-:4: Most of the time
-:5: All of the time
-:6: Don't know
-:9: Not stated / Missing"
-"`K10+ - Question 7`_ (k10p_item7)
-
-",string,":1: None of the time
-:2: A little of the time
-:3: Some of the time
-:4: Most of the time
-:5: All of the time
-:6: Don't know
-:9: Not stated / Missing"
-"`K10+ - Question 8`_ (k10p_item8)
-
-",string,":1: None of the time
-:2: A little of the time
-:3: Some of the time
-:4: Most of the time
-:5: All of the time
-:6: Don't know
-:9: Not stated / Missing"
-"`K10+ - Question 9`_ (k10p_item9)
-
-",string,":1: None of the time
-:2: A little of the time
-:3: Some of the time
-:4: Most of the time
-:5: All of the time
-:6: Don't know
-:9: Not stated / Missing"
-"`K10+ - Question 10`_ (k10p_item10)
-
-",string,":1: None of the time
-:2: A little of the time
-:3: Some of the time
-:4: Most of the time
-:5: All of the time
-:6: Don't know
-:9: Not stated / Missing"
-"`K10+ - Question 11`_ (k10p_item11)
-
-",integer
-"`K10+ - Question 12`_ (k10p_item12)
-
-",integer
-"`K10+ - Question 13`_ (k10p_item13)
-
-",integer
-"`K10+ - Question 14`_ (k10p_item14)
+"`K5 - Question 5`_ (k5_item5)
 
 ",string,":1: None of the time
 :2: A little of the time
