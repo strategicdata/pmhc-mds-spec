@@ -1,0 +1,60 @@
+"Data Element (Field Name)","Type [Length]","Format / Values"
+"`Organisation Path`_ (organisation_path)
+
+",string,"A sequence of colon separated Organisation Codes that fully specifies the upload organisation."
+"`Collection Occasion Key`_ (collection_occasion_key)
+
+",string,"This is a number or code assigned to each collection occasion of outcome measures. The Collection Occasion Key is unique and stable for each collection occasion at the level of the organisation."
+"`Episode Key`_ (episode_key)
+
+",,
+"`Collection Occasion - Measure Date`_ (measure_date)
+
+",date,"The date the measure was given."
+"`Collection Occasion - Reason`_ (reason_for_collection)
+
+",string,":1: Episode start
+:2: Review
+:3: Episode end"
+"`K10+ - Question 1`_ (item1)
+
+",integer
+"`K10+ - Question 2`_ (item2)
+
+",integer
+"`K10+ - Question 3`_ (item3)
+
+",integer
+"`K10+ - Question 4`_ (item4)
+
+",integer
+"`K10+ - Question 5`_ (item5)
+
+",integer
+"`K10+ - Question 6`_ (item6)
+
+",integer
+"`K10+ - Question 7`_ (item7)
+
+",integer
+"`K10+ - Question 8`_ (item8)
+
+",integer
+"`K10+ - Question 9`_ (item9)
+
+",integer
+"`K10+ - Question 10`_ (item10)
+
+",integer
+"`K10+ - Question 11`_ (item11)
+
+",integer
+"`K10+ - Question 12`_ (item12)
+
+",integer
+"`K10+ - Question 13`_ (item13)
+
+",integer
+"`K10+ - Question 14`_ (item14)
+
+",integer

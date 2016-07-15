@@ -85,7 +85,9 @@ METeOR: `605149 <http://meteor.aihw.gov.au/content/index.phtml/itemId/605149>`__
 :9: Not stated"
 "`Episode - NDIS Participant`_ (ndis_participant)
 
-",string,"Is the client a participant in the National Disability Insurance Scheme?, as represented by a code."
+",string,":1: Yes
+:2: No
+:9: Not stated/inadequately described"
 "`Episode - Marital Status`_ (marital_status)
 
 
@@ -174,22 +176,21 @@ METeOR: `291045 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291045>`__
 
 ",string,":1: General Practitioner
 :2: Psychiatrist
-:3: Case Manager
-:4: Midwife
-:5: Obstetrician
-:6: Maternal Health Nurse
-:7: Self
-:8: Social Worker
-:9: Clinical Psychologist
-:10: Generalist/Other Psychologist
-:11: Paediatrician
-:12: School psychologist / counsellor
-:13: Deputy principal or Principal
-:14: Director of Early Childhood Services or Equivalent
-:15: Aboriginal Health Worker
-:16: Outreach Worker
-:17: Mental Health Nurse
-:18: Other?"
+:3: Obstetrician
+:4: Paediatrician
+:5: Other Medical Specialist
+:6: Midwife
+:7: Maternal Health Nurse
+:8: Psychologist
+:9: Mental Health Nurse
+:10: Social Worker
+:11: Occupational therapist
+:12: Aboriginal Health Worker
+:13: Educational professional
+:14: Early childhood service worker
+:15: Other
+:98: N/A - Self referral
+:99: Not stated"
 "`Episode - Referrer Organisation Type`_ (referrer_organisation_type)
 
 ",string,":1: General Practice
@@ -213,5 +214,5 @@ METeOR: `291045 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291045>`__
 :19: Housing service
 :20: Centrelink
 :21: Other
-:22: Not applicable
+:98: N/A - Self referral
 :99: Not stated"

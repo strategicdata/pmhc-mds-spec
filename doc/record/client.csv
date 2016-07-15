@@ -21,9 +21,12 @@ METeOR: `287007 <http://meteor.aihw.gov.au/content/index.phtml/itemId/287007>`__
 :2: Date of birth is an estimate
 :8: Date of birth is a 'dummy' date (ie, 09099999)
 :9: Accuracy of stated date of birth is not known"
-"`Client - Gender`_ (gender)
+"`Client - Gender`_ (client_gender)
 
-",string,"The term 'gender' refers to the way in which a person identifies their masculine or feminine characteristics. A persons gender relates to their deeply held internal and individual sense of gender and is not always exclusively male or female. It may or may not correspond to their sex assigned at birth."
+",string,":0: Not stated/Inadequately described
+:1: Male
+:2: Female
+:3: Other"
 "`Client - Aboriginal and Torres Strait Islander Status`_ (client_atsi_status)
 
 
