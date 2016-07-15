@@ -134,8 +134,25 @@ as well as the Strengths & Difficulties Questionnaires.
 Individual item scores will be required, final specifications for the
 individual measures will be released shortly.
 
-.. csv-table:: Outcome collection occasion record layout
-   :file: record/collection-occasion.csv
+K5
+^^
+
+.. csv-table:: K5 record layout
+   :file: record/k5-collection-occasion.csv
+   :header-rows: 1
+
+K10+
+^^^^
+
+.. csv-table:: K10+ record layout
+   :file: record/k10p-collection-occasion.csv
+   :header-rows: 1
+
+SQD
+^^^
+
+.. csv-table:: SDQ record layout
+   :file: record/sdq-collection-occasion.csv
    :header-rows: 1
 
 -----
