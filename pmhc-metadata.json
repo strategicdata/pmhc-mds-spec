@@ -1275,9 +1275,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 1,
-          "maximum": 5
+          "base": "string",
+          "format": "^(1|2|3|4|5|6|9)$"
         },
         "required": true
       },{
@@ -1289,9 +1288,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 1,
-          "maximum": 5
+          "base": "string",
+          "format": "^(1|2|3|4|5|6|9)$"
         },
         "required": true
       },{
@@ -1303,9 +1301,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 1,
-          "maximum": 5
+          "base": "string",
+          "format": "^(1|2|3|4|5|6|9)$"
         },
         "required": true
       },{
@@ -1317,9 +1314,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 1,
-          "maximum": 5
+          "base": "string",
+          "format": "^(1|2|3|4|5|6|9)$"
         },
         "required": true
       },{
@@ -1331,9 +1327,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 1,
-          "maximum": 5
+          "base": "string",
+          "format": "^(1|2|3|4|5|6|9)$"
         },
         "required": true
       },{
@@ -1345,9 +1340,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 1,
-          "maximum": 5
+          "base": "string",
+          "format": "^(1|2|3|4|5|6|9)$"
         },
         "required": true
       },{
@@ -1359,9 +1353,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 1,
-          "maximum": 5
+          "base": "string",
+          "format": "^(1|2|3|4|5|6|9)$"
         },
         "required": true
       },{
@@ -1373,9 +1366,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 1,
-          "maximum": 5
+          "base": "string",
+          "format": "^(1|2|3|4|5|6|9)$"
         },
         "required": true
       },{
@@ -1387,9 +1379,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 1,
-          "maximum": 5
+          "base": "string",
+          "format": "^(1|2|3|4|5|6|9)$"
         },
         "required": true
       },{
@@ -1401,9 +1392,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 1,
-          "maximum": 5
+          "base": "string",
+          "format": "^(1|2|3|4|5|6|9)$"
         },
         "required": true
       },{
@@ -1414,12 +1404,12 @@
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
+        "null": "99",
         "datatype": {
           "base": "integer",
           "minimum": 0,
           "maximum": 28
-        },
-        "required": true
+        }
       },{
         "name": "item12",
         "titles": [ "item12", "Question 12" ],
@@ -1428,12 +1418,12 @@
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
+        "null": "99",
         "datatype": {
           "base": "integer",
           "minimum": 0,
           "maximum": 28
-        },
-        "required": true
+        }
       },{
         "name": "item13",
         "titles": [ "item13", "Question 13" ],
@@ -1442,12 +1432,12 @@
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
+        "null": "99",
         "datatype": {
           "base": "integer",
           "minimum": 0,
-          "maximum": 50
-        },
-        "required": true
+          "maximum": 89
+        }
       },{
         "name": "item14",
         "titles": [ "item14", "Question 14" ],
@@ -1457,9 +1447,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 1,
-          "maximum": 5
+          "base": "string",
+          "format": "^(1|2|3|4|5|6|9)$"
         },
         "required": true
       }],
@@ -1468,6 +1457,72 @@
         "columnReference": "reason_for_collection",
         "reference": {
           "resource": "table/collection-occasion/reason.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item1",
+        "reference": {
+          "resource": "type/collection-occasion/k10p-k5.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item2",
+        "reference": {
+          "resource": "type/collection-occasion/k10p-k5.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item3",
+        "reference": {
+          "resource": "type/collection-occasion/k10p-k5.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item4",
+        "reference": {
+          "resource": "type/collection-occasion/k10p-k5.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item5",
+        "reference": {
+          "resource": "type/collection-occasion/k10p-k5.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item6",
+        "reference": {
+          "resource": "type/collection-occasion/k10p-k5.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item7",
+        "reference": {
+          "resource": "type/collection-occasion/k10p-k5.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item8",
+        "reference": {
+          "resource": "type/collection-occasion/k10p-k5.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item9",
+        "reference": {
+          "resource": "type/collection-occasion/k10p-k5.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item10",
+        "reference": {
+          "resource": "type/collection-occasion/k10p-k5.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item14",
+        "reference": {
+          "resource": "type/collection-occasion/k10p-k5.csv",
           "columnReference": "id"
         }
       }]
@@ -1549,9 +1604,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 1,
-          "maximum": 5
+          "base": "string",
+          "format": "^(1|2|3|4|5|6|9)$"
         },
         "required": true
       },{
@@ -1563,9 +1617,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 1,
-          "maximum": 5
+          "base": "string",
+          "format": "^(1|2|3|4|5|6|9)$"
         },
         "required": true
       },{
@@ -1577,9 +1630,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 1,
-          "maximum": 5
+          "base": "string",
+          "format": "^(1|2|3|4|5|6|9)$"
         },
         "required": true
       },{
@@ -1591,9 +1643,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 1,
-          "maximum": 5
+          "base": "string",
+          "format": "^(1|2|3|4|5|6|9)$"
         },
         "required": true
       },{
@@ -1605,9 +1656,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 1,
-          "maximum": 5
+          "base": "string",
+          "format": "^(1|2|3|4|5|6|9)$"
         },
         "required": true
       }],
@@ -1616,6 +1666,36 @@
         "columnReference": "reason_for_collection",
         "reference": {
           "resource": "table/collection-occasion/reason.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item1",
+        "reference": {
+          "resource": "type/collection-occasion/k10p-k5.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item2",
+        "reference": {
+          "resource": "type/collection-occasion/k10p-k5.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item3",
+        "reference": {
+          "resource": "type/collection-occasion/k10p-k5.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item4",
+        "reference": {
+          "resource": "type/collection-occasion/k10p-k5.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item5",
+        "reference": {
+          "resource": "type/collection-occasion/k10p-k5.csv",
           "columnReference": "id"
         }
       }]
@@ -1697,9 +1777,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 0,
-          "maximum": 2
+          "base": "string",
+          "format": "^(0|1|2|7|9)$"
         },
         "required": true
       },{
@@ -1711,9 +1790,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 0,
-          "maximum": 2
+          "base": "string",
+          "format": "^(0|1|2|7|9)$"
         },
         "required": true
       },{
@@ -1725,9 +1803,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 0,
-          "maximum": 2
+          "base": "string",
+          "format": "^(0|1|2|7|9)$"
         },
         "required": true
       },{
@@ -1739,9 +1816,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 0,
-          "maximum": 2
+          "base": "string",
+          "format": "^(0|1|2|7|9)$"
         },
         "required": true
       },{
@@ -1753,9 +1829,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 0,
-          "maximum": 2
+          "base": "string",
+          "format": "^(0|1|2|7|9)$"
         },
         "required": true
       },{
@@ -1767,9 +1842,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 0,
-          "maximum": 2
+          "base": "string",
+          "format": "^(0|1|2|7|9)$"
         },
         "required": true
       },{
@@ -1781,9 +1855,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 0,
-          "maximum": 2
+          "base": "string",
+          "format": "^(0|1|2|7|9)$"
         },
         "required": true
       },{
@@ -1795,9 +1868,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 0,
-          "maximum": 2
+          "base": "string",
+          "format": "^(0|1|2|7|9)$"
         },
         "required": true
       },{
@@ -1809,9 +1881,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 0,
-          "maximum": 2
+          "base": "string",
+          "format": "^(0|1|2|7|9)$"
         },
         "required": true
       },{
@@ -1823,9 +1894,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 0,
-          "maximum": 2
+          "base": "string",
+          "format": "^(0|1|2|7|9)$"
         },
         "required": true
       },{
@@ -1837,9 +1907,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 0,
-          "maximum": 2
+          "base": "string",
+          "format": "^(0|1|2|7|9)$"
         },
         "required": true
       },{
@@ -1851,9 +1920,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 0,
-          "maximum": 2
+          "base": "string",
+          "format": "^(0|1|2|7|9)$"
         },
         "required": true
       },{
@@ -1865,9 +1933,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 0,
-          "maximum": 2
+          "base": "string",
+          "format": "^(0|1|2|7|9)$"
         },
         "required": true
       },{
@@ -1879,9 +1946,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 0,
-          "maximum": 2
+          "base": "string",
+          "format": "^(0|1|2|7|9)$"
         },
         "required": true
       },{
@@ -1893,9 +1959,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 0,
-          "maximum": 2
+          "base": "string",
+          "format": "^(0|1|2|7|9)$"
         },
         "required": true
       },{
@@ -1907,9 +1972,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 0,
-          "maximum": 2
+          "base": "string",
+          "format": "^(0|1|2|7|9)$"
         },
         "required": true
       },{
@@ -1921,9 +1985,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 0,
-          "maximum": 2
+          "base": "string",
+          "format": "^(0|1|2|7|9)$"
         },
         "required": true
       },{
@@ -1935,9 +1998,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 0,
-          "maximum": 2
+          "base": "string",
+          "format": "^(0|1|2|7|9)$"
         },
         "required": true
       },{
@@ -1949,9 +2011,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 0,
-          "maximum": 2
+          "base": "string",
+          "format": "^(0|1|2|7|9)$"
         },
         "required": true
       },{
@@ -1963,9 +2024,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 0,
-          "maximum": 2
+          "base": "string",
+          "format": "^(0|1|2|7|9)$"
         },
         "required": true
       },{
@@ -1977,9 +2037,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 0,
-          "maximum": 2
+          "base": "string",
+          "format": "^(0|1|2|7|9)$"
         },
         "required": true
       },{
@@ -1991,9 +2050,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 0,
-          "maximum": 2
+          "base": "string",
+          "format": "^(0|1|2|7|9)$"
         },
         "required": true
       },{
@@ -2005,9 +2063,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 0,
-          "maximum": 2
+          "base": "string",
+          "format": "^(0|1|2|7|9)$"
         },
         "required": true
       },{
@@ -2019,9 +2076,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 0,
-          "maximum": 2
+          "base": "string",
+          "format": "^(0|1|2|7|9)$"
         },
         "required": true
       },{
@@ -2033,9 +2089,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 0,
-          "maximum": 2
+          "base": "string",
+          "format": "^(0|1|2|7|9)$"
         },
         "required": true
       },{
@@ -2047,9 +2102,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 0,
-          "maximum": 2
+          "base": "string",
+          "format": "^(0|1|2|7|9)$"
         },
         "required": true
       },{
@@ -2061,9 +2115,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 0,
-          "maximum": 2
+          "base": "string",
+          "format": "^(0|1|2|7|9)$"
         },
         "required": true
       },{
@@ -2075,9 +2128,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 0,
-          "maximum": 2
+          "base": "string",
+          "format": "^(0|1|2|7|9)$"
         },
         "required": true
       },{
@@ -2089,9 +2141,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 0,
-          "maximum": 2
+          "base": "string",
+          "format": "^(0|1|2|7|9)$"
         },
         "required": true
       },{
@@ -2103,9 +2154,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 0,
-          "maximum": 2
+          "base": "string",
+          "format": "^(0|1|2|7|9)$"
         },
         "required": true
       },{
@@ -2117,9 +2167,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 0,
-          "maximum": 2
+          "base": "string",
+          "format": "^(0|1|2|7|9)$"
         },
         "required": true
       },{
@@ -2131,9 +2180,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 0,
-          "maximum": 2
+          "base": "string",
+          "format": "^(0|1|2|7|9)$"
         },
         "required": true
       },{
@@ -2145,9 +2193,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 0,
-          "maximum": 2
+          "base": "string",
+          "format": "^(0|1|2|7|9)$"
         },
         "required": true
       },{
@@ -2159,9 +2206,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 0,
-          "maximum": 2
+          "base": "string",
+          "format": "^(0|1|2|7|9)$"
         },
         "required": true
       },{
@@ -2173,9 +2219,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 0,
-          "maximum": 2
+          "base": "string",
+          "format": "^(0|1|2|7|9)$"
         },
         "required": true
       },{
@@ -2187,9 +2232,8 @@
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
         "datatype": {
-          "base": "integer",
-          "minimum": 0,
-          "maximum": 2
+          "base": "string",
+          "format": "^(0|1|2|7|9)$"
         },
         "required": true
       }],
@@ -2198,6 +2242,222 @@
         "columnReference": "reason_for_collection",
         "reference": {
           "resource": "table/collection-occasion/reason.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item1",
+        "reference": {
+          "resource": "type/collection-occasion/sdq.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item2",
+        "reference": {
+          "resource": "type/collection-occasion/sdq.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item3",
+        "reference": {
+          "resource": "type/collection-occasion/sdq.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item4",
+        "reference": {
+          "resource": "type/collection-occasion/sdq.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item5",
+        "reference": {
+          "resource": "type/collection-occasion/sdq.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item6",
+        "reference": {
+          "resource": "type/collection-occasion/sdq.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item7",
+        "reference": {
+          "resource": "type/collection-occasion/sdq.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item8",
+        "reference": {
+          "resource": "type/collection-occasion/sdq.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item9",
+        "reference": {
+          "resource": "type/collection-occasion/sdq.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item10",
+        "reference": {
+          "resource": "type/collection-occasion/sdq.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item11",
+        "reference": {
+          "resource": "type/collection-occasion/sdq.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item12",
+        "reference": {
+          "resource": "type/collection-occasion/sdq.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item13",
+        "reference": {
+          "resource": "type/collection-occasion/sdq.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item14",
+        "reference": {
+          "resource": "type/collection-occasion/sdq.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item15",
+        "reference": {
+          "resource": "type/collection-occasion/sdq.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item16",
+        "reference": {
+          "resource": "type/collection-occasion/sdq.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item17",
+        "reference": {
+          "resource": "type/collection-occasion/sdq.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item18",
+        "reference": {
+          "resource": "type/collection-occasion/sdq.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item19",
+        "reference": {
+          "resource": "type/collection-occasion/sdq.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item20",
+        "reference": {
+          "resource": "type/collection-occasion/sdq.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item21",
+        "reference": {
+          "resource": "type/collection-occasion/sdq.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item22",
+        "reference": {
+          "resource": "type/collection-occasion/sdq.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item23",
+        "reference": {
+          "resource": "type/collection-occasion/sdq.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item24",
+        "reference": {
+          "resource": "type/collection-occasion/sdq.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item25",
+        "reference": {
+          "resource": "type/collection-occasion/sdq.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item26",
+        "reference": {
+          "resource": "type/collection-occasion/sdq.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item27",
+        "reference": {
+          "resource": "type/collection-occasion/sdq.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item28",
+        "reference": {
+          "resource": "type/collection-occasion/sdq.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item29",
+        "reference": {
+          "resource": "type/collection-occasion/sdq.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item30",
+        "reference": {
+          "resource": "type/collection-occasion/sdq.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item31",
+        "reference": {
+          "resource": "type/collection-occasion/sdq.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item32",
+        "reference": {
+          "resource": "type/collection-occasion/sdq.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item33",
+        "reference": {
+          "resource": "type/collection-occasion/sdq.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item36",
+        "reference": {
+          "resource": "type/collection-occasion/sdq.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item37",
+        "reference": {
+          "resource": "type/collection-occasion/sdq.csv",
+          "columnReference": "id"
+        }
+      }, {
+        "columnReference": "item38",
+        "reference": {
+          "resource": "type/collection-occasion/sdq.csv",
           "columnReference": "id"
         }
       }]
@@ -2864,6 +3124,50 @@
     }
   }, {
     "url": "table/collection-occasion/reason.csv",
+    "tableSchema": {
+      "columns": [{
+        "name": "id",
+        "titles": [ "id", "ID" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": "string"
+      },{
+        "name": "description",
+        "titles": [ "description", "Description" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        }
+      }],
+      "primaryKey": "id"
+    }
+  }, {
+    "url": "type/collection-occasion/k10p-k5.csv",
+    "tableSchema": {
+      "columns": [{
+        "name": "id",
+        "titles": [ "id", "ID" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": "string"
+      },{
+        "name": "description",
+        "titles": [ "description", "Description" ],
+        "schema:dateCreated": "2016-06-22",
+        "schema:dateDeleted": "2016-06-22",
+        "schema:dateModified": "2016-06-22",
+        "datatype": {
+          "base": "string"
+        }
+      }],
+      "primaryKey": "id"
+    }
+  }, {
+    "url": "type/collection-occasion/sdq.csv",
     "tableSchema": {
       "columns": [{
         "name": "id",
