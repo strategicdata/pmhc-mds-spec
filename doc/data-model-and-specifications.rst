@@ -9,6 +9,11 @@ Data model
 
    PMHC data model
 
+.. figure:: figures/collection-occasion-data-model.svg
+   :alt: PMHC Collection Occasion data model
+
+   PMHC Collection Occasion data model
+
 Record formats
 --------------
 
@@ -74,7 +79,7 @@ across PHN-commissioned services:
   organisation/clinician**. The implication is that the care provided by the
   organisation to an individual client at any point in time is subject to only
   one set of reporting requirements.
-  
+
 - **Episodes commence at the point of first contact**
 
 - **Discharge from care concludes the episode**
@@ -158,4 +163,3 @@ SQD
 -----
 
 .. include:: include/definitions.rst
-
