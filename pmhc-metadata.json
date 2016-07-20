@@ -1778,7 +1778,7 @@
         "schema:dateModified": "2016-07-08",
         "datatype": {
           "base": "string",
-          "format": "^(1|2|5|6)$"
+          "format": "^(PC101|PC201|PY101|PY201|YR101|YR201)$"
         },
         "required": true
       },{

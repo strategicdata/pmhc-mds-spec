@@ -19,3 +19,5 @@ Issues:
     },
   removes the error.
 - Format of "#####0.##" for copayment isn't being checked.
+
+- Different versions of the SDQ require different items. Currently checks are not dependant of version of SDQ specified.
