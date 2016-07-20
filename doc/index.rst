@@ -11,4 +11,5 @@ Table of contents
    identifier-management
    data-model-and-specifications
    data-item-summary
+   upload-specification
 
