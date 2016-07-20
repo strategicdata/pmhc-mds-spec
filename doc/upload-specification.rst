@@ -4,8 +4,8 @@ Upload Specification
 File Types
 ------------
 Files will be accepted in the following types:
-* Comma Separated Values (CSV)
-* Excel
+- Comma Separated Values (CSV)
+- Excel (XLSX)
 
 Comma Separated Values (CSV)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -15,33 +15,19 @@ In addition, CSV files must be created using US-ASCII character encoding.
 
 CSV files should have the file extension .csv
 
-Excel
-^^^^^
-??????Which Excel file formats will we support???????
+Excel (XLSX)
+^^^^^^^^^^^^
+Excel files should be in XLSX format and should conform to the `ECMA-376 <http://www.ecma-international.org/publications/standards/Ecma-376.htm>`__ standard.
 
-Excel files should have the file extension .xlsx     ???????Double check this??????
+Excel files should have the file extension .xlsx
 
 Files to upload
 ---------------
 The following files can be uploaded to the PMHC MDS:
 
-+---------------------------------------------------+----------------------+-----------------------+-----------+
-| Fle Type                               _          | CSV filename         | Excel filename        | Required  |
-+===================================================+======================+=======================+===========+
-| :ref:`Client <client-format>`                     | clients.csv          | clients.xlsx          | Required  |
-+---------------------------------------------------+----------------------+-----------------------+-----------+
-| :ref:`Episodes <episode-format>`                  | episodes.csv         | episodes.xlsx         | Required  |
-+---------------------------------------------------+----------------------+-----------------------+-----------+
-| :ref:`Service Contacts <service-contact-format>`  | service-contacts.csv | service-contacts.xlsx | Required  |
-+---------------------------------------------------+----------------------+-----------------------+-----------+
-| :ref:`K10+ Collection Occasions <k10p-format>`    | k10p.csv             | k10p.xlsx             | Required  |
-+---------------------------------------------------+----------------------+-----------------------+-----------+
-| :ref:`K5 Collection Occasions <k5-format>`      _ | k5.csv               | k5.xlsx               | Required  |
-+---------------------------------------------------+----------------------+-----------------------+-----------+
-| :ref:`SDQ Collection Occasions <sdq-format>`   __ | sdq.csv              | sdq.xlsx              | Required  |
-+---------------------------------------------------+----------------------+-----------------------+-----------+
-| :ref:`Practitioners <practitioner-format>`     __ | practitioner.csv     | practitioner.xlsx     | Optional  |
-+---------------------------------------------------+----------------------+-----------------------+-----------+
+.. csv-table:: Summary of files to upload
+  :file: upload-file-types.csv
+  :header-rows: 1
 
 File Format
 -----------
@@ -54,9 +40,11 @@ The first row line in each file should include the following columns:
 The second row should contain the column headings as defined for each file type.
 The third and subsequent rows should contain the data.
 
-Data elements for each file are defined at :ref: `record-formats`.
-Each item is a column in the file.
-The Field Name should be used for the column headings.
+Data elements for each file are defined at :ref:`record-formats`.
+
+Each data item is a column in the file.
+
+The 'Field Name' should be used for the column headings.
 
 .. _client-format:
 
@@ -66,7 +54,7 @@ The client file is required to be uploaded each time.
 
 Data elements for the client upload file are defined at :ref:`client-data-elements`.
 
-:doc: `Example client file <_static/clients.csv>`_.
+:doc:`Example client file <_static/clients.csv>`_.
 
 .. _episode-format:
 
@@ -76,7 +64,7 @@ The episode file is required to be uploaded each time.
 
 Data elements for the episode upload file are defined at :ref:`episode-data-elements`.
 
-:doc: `Example episode file <_static/episodes.csv>`_.
+:doc:`Example episode file <_static/episodes.csv>`_.
 
 .. _service-contact-format:
 
@@ -86,7 +74,7 @@ The service contact  file is required to be uploaded each time.
 
 Data elements for the service contact upload file are defined at :ref:`service-contact-data-elements`.
 
-:doc: `Example service contact file <_static/service-contacts.csv>`_.
+:doc:`Example service contact file <_static/service-contacts.csv>`_.
 
 .. _k10p-format:
 
@@ -96,7 +84,7 @@ The K10+ file is required to be uploaded each time.
 
 Data elements for the K10+ collection occasion upload file are defined at :ref:`k10p-data-elements`.
 
-:doc: `Example K10+ file <_static/k10p.csv>`_.
+:doc:`Example K10+ file <_static/k10p.csv>`_.
 
 .. _k5-format:
 
@@ -106,7 +94,7 @@ The K5 file is required to be uploaded each time.
 
 Data elements for the K5 collection occasion upload file are defined at :ref:`k5-data-elements`.
 
-:doc: `Example K5 file <_static/k5.csv>`_.
+:doc:`Example K5 file <_static/k5.csv>`_.
 
 .. _sdq-format:
 
@@ -116,7 +104,7 @@ The SDQ file is required to be uploaded each time.
 
 Data elements for the SDQ collection occasion upload file are defined at :ref:`sdq-data-elements`.
 
-:doc: `Example SDQ file <_static/sdq.csv>`_.
+:doc:`Example SDQ file <_static/sdq.csv>`_.
 
 .. _practitioner-format:
 
@@ -127,4 +115,4 @@ There is no harm in including it in every upload.
 
 Data elements for the practitioner upload file are defined at :ref:`sdq-data-elements`.
 
-:doc: `Example practitioner file <_static/practitioners.csv>`_.
+:doc:`Example practitioner file <_static/practitioners.csv>`_.

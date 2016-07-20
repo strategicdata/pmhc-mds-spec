@@ -1270,7 +1270,7 @@
         "name": "k10p_item1",
         "titles": [ "item1", "Question 1" ],
         "dc:title": "K10+ - Question 1",
-        "schema:disambiguatingDescription": "table/collection-occasion/k10p/item1.rst",
+        "schema:description": "In the past 4 weeks, about how often did you feel tired out for no good reason?",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1283,7 +1283,7 @@
         "name": "k10p_item2",
         "titles": [ "item2", "Question 2" ],
         "dc:title": "K10+ - Question 2",
-        "schema:disambiguatingDescription": "table/collection-occasion/k10p/item2.rst",
+        "schema:description": "In the past 4 weeks, about how often did you feel nervous?",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1296,7 +1296,7 @@
         "name": "k10p_item3",
         "titles": [ "item3", "Question 3" ],
         "dc:title": "K10+ - Question 3",
-        "schema:disambiguatingDescription": "table/collection-occasion/k10p/item3.rst",
+        "schema:description": "In the past 4 weeks, about how often did you feel so nervous that nothing could calm you down?",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1309,7 +1309,7 @@
         "name": "k10p_item4",
         "titles": [ "item4", "Question 4" ],
         "dc:title": "K10+ - Question 4",
-        "schema:disambiguatingDescription": "table/collection-occasion/k10p/item4.rst",
+        "schema:description": "In the past 4 weeks, how often did you feel hopeless?",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1322,7 +1322,7 @@
         "name": "k10p_item5",
         "titles": [ "item5", "Question 5" ],
         "dc:title": "K10+ - Question 5",
-        "schema:disambiguatingDescription": "table/collection-occasion/k10p/item5.rst",
+        "schema:description": "In the past 4 weeks, how often did you feel restless or fidgety?",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1335,7 +1335,7 @@
         "name": "k10p_item6",
         "titles": [ "item6", "Question 6" ],
         "dc:title": "K10+ - Question 6",
-        "schema:disambiguatingDescription": "table/collection-occasion/k10p/item6.rst",
+        "schema:description": "In the past 4 weeks, how often did you feel so restless you could not sit still?",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1348,7 +1348,7 @@
         "name": "k10p_item7",
         "titles": [ "item7", "Question 7" ],
         "dc:title": "K10+ - Question 7",
-        "schema:disambiguatingDescription": "table/collection-occasion/k10p/item7.rst",
+        "schema:description": "In the past 4 weeks, how often did you feel depressed?",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1361,7 +1361,7 @@
         "name": "k10p_item8",
         "titles": [ "item8", "Question 8" ],
         "dc:title": "K10+ - Question 8",
-        "schema:disambiguatingDescription": "table/collection-occasion/k10p/item8.rst",
+        "schema:description": "In the past 4 weeks, how often did you feel that everything was an effort?",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1374,7 +1374,7 @@
         "name": "k10p_item9",
         "titles": [ "item9", "Question 9" ],
         "dc:title": "K10+ - Question 9",
-        "schema:disambiguatingDescription": "table/collection-occasion/k10p/item9.rst",
+        "schema:description": "In the past 4 weeks, how often did you feel so sad that nothing could cheer you up?",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1387,7 +1387,7 @@
         "name": "k10p_item10",
         "titles": [ "item10", "Question 10" ],
         "dc:title": "K10+ - Question 10",
-        "schema:disambiguatingDescription": "table/collection-occasion/k10p/item10.rst",
+        "schema:description": "In the past 4 weeks, how often did you feel worthless?",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1400,7 +1400,7 @@
         "name": "k10p_item11",
         "titles": [ "item11", "Question 11" ],
         "dc:title": "K10+ - Question 11",
-        "schema:disambiguatingDescription": "table/collection-occasion/k10p/item11.rst",
+        "schema:description": "In the past four weeks, how many days were you totally unable to work, study or manage your day to day activities because of these feelings?",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1414,7 +1414,7 @@
         "name": "k10p_item12",
         "titles": [ "item12", "Question 12" ],
         "dc:title": "K10+ - Question 12",
-        "schema:disambiguatingDescription": "table/collection-occasion/k10p/item12.rst",
+        "schema:description": "Aside from those days, in the past four weeks, how many days were you able to work or study or manage your day to day activities, but had to cut down on what you did because of these feelings?",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1428,7 +1428,7 @@
         "name": "k10p_item13",
         "titles": [ "item13", "Question 13" ],
         "dc:title": "K10+ - Question 13",
-        "schema:disambiguatingDescription": "table/collection-occasion/k10p/item13.rst",
+        "schema:description": "In the past four weeks, how many times have you seen a doctor or any other health professional about these feelings?",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1442,7 +1442,7 @@
         "name": "k10p_item14",
         "titles": [ "item14", "Question 14" ],
         "dc:title": "K10+ - Question 14",
-        "schema:disambiguatingDescription": "table/collection-occasion/k10p/item14.rst",
+        "schema:description": "In the past four weeks, how often have physical health problems been the main cause of these feelings?",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1599,7 +1599,7 @@
         "name": "k5_item1",
         "titles": [ "item1", "Question 1" ],
         "dc:title": "K5 - Question 1",
-        "schema:disambiguatingDescription": "table/collection-occasion/k5/item1.rst",
+        "schema:description": "In the last 4 weeks, about how often did you feel nervous?",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1612,7 +1612,7 @@
         "name": "k5_item2",
         "titles": [ "item2", "Question 2" ],
         "dc:title": "K5 - Question 2",
-        "schema:disambiguatingDescription": "table/collection-occasion/k5/item2.rst",
+        "schema:description": "In the last 4 weeks, about how often did you feel without hope?",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1625,7 +1625,7 @@
         "name": "k5_item3",
         "titles": [ "item3", "Question 3" ],
         "dc:title": "K5 - Question 3",
-        "schema:disambiguatingDescription": "table/collection-occasion/k5/item3.rst",
+        "schema:description": "In the last 4 weeks, about how often did you feel restless or jumpy?",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1638,7 +1638,7 @@
         "name": "k5_item4",
         "titles": [ "item4", "Question 4" ],
         "dc:title": "K5 - Question 4",
-        "schema:disambiguatingDescription": "table/collection-occasion/k5/item4.rst",
+        "schema:description": "In the last 4 weeks, about how often did you feel everything was an effort?",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1651,7 +1651,7 @@
         "name": "k5_item5",
         "titles": [ "item5", "Question 5" ],
         "dc:title": "K5 - Question 5",
-        "schema:disambiguatingDescription": "table/collection-occasion/k5/item5.rst",
+        "schema:description": "In the last 4 weeks, about how often did you feel so sad that nothing could cheer you up?",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
         "schema:dateModified": "2016-06-22",
@@ -1785,6 +1785,9 @@
         "name": "sdq_item1",
         "titles": [ "item1", "Question 1" ],
         "dc:title": "SDQ - Question 1",
+        "schema:description": "Parent Report: Considerate of other people's feelings.
+
+Youth Self Report: I try to be nice to other people. I care about their feelings.",
         "schema:disambiguatingDescription": "table/collection-occasion/sdq/item1.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -1798,6 +1801,9 @@
         "name": "sdq_item2",
         "titles": [ "item2", "Question 2" ],
         "dc:title": "SDQ - Question 2",
+        "schema:description": "Parent Report: Restless, overactive, cannot stay still for long.
+
+Youth Self Report: I am restless, I cannot stay still for long.",
         "schema:disambiguatingDescription": "table/collection-occasion/sdq/item2.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -1811,6 +1817,9 @@
         "name": "sdq_item3",
         "titles": [ "item3", "Question 3" ],
         "dc:title": "SDQ - Question 3",
+        "schema:description": "Parent Report: Often complains of headaches, stomach-aches or sickness.
+
+Youth Self Report: I get a lot of headaches, stomach-aches or sickness.",
         "schema:disambiguatingDescription": "table/collection-occasion/sdq/item3.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -1824,6 +1833,9 @@
         "name": "sdq_item4",
         "titles": [ "item4", "Question 4" ],
         "dc:title": "SDQ - Question 4",
+        "schema:description": "Parent Report: Shares readily with other children {for example toys, treats, pencils} / young people {for example CDs, games, food}.
+
+Youth Self Report: I usually share with others, for examples CDs, games, food.",
         "schema:disambiguatingDescription": "table/collection-occasion/sdq/item4.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -1837,6 +1849,9 @@
         "name": "sdq_item5",
         "titles": [ "item5", "Question 5" ],
         "dc:title": "SDQ - Question 5",
+        "schema:description": "Parent Report: Often loses temper.
+
+Youth Self Report: I get very angry and often lose my temper.",
         "schema:disambiguatingDescription": "table/collection-occasion/sdq/item5.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -1850,6 +1865,9 @@
         "name": "sdq_item6",
         "titles": [ "item6", "Question 6" ],
         "dc:title": "SDQ - Question 6",
+        "schema:description": "Parent Report: {Rather solitary, prefers to play alone} / {would rather be alone than with other young people}.
+
+Youth Self Report: I would rather be alone than with people of my age.",
         "schema:disambiguatingDescription": "table/collection-occasion/sdq/item6.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -1863,6 +1881,9 @@
         "name": "sdq_item7",
         "titles": [ "item7", "Question 7" ],
         "dc:title": "SDQ - Question 7",
+        "schema:description": "Parent Report: {Generally well behaved} / {Usually does what adults requests}.
+
+Youth Self Report: I usually do as I am told.",
         "schema:disambiguatingDescription": "table/collection-occasion/sdq/item7.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -1876,6 +1897,9 @@
         "name": "sdq_item8",
         "titles": [ "item8", "Question 8" ],
         "dc:title": "SDQ - Question 8",
+        "schema:description": "Parent Report: Many worries or often seems worried.
+
+Youth Self Report: I worry a lot.",
         "schema:disambiguatingDescription": "table/collection-occasion/sdq/item8.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -1889,6 +1913,9 @@
         "name": "sdq_item9",
         "titles": [ "item9", "Question 9" ],
         "dc:title": "SDQ - Question 9",
+        "schema:description": "Parent Report: Helpful if someone is hurt, upset or feeling ill.
+
+        Youth Self Report: I am helpful if someone is hurt, upset or feeling ill.",
         "schema:disambiguatingDescription": "table/collection-occasion/sdq/item9.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -1902,6 +1929,9 @@
         "name": "sdq_item10",
         "titles": [ "item10", "Question 10" ],
         "dc:title": "SDQ - Question 10",
+        "schema:description": "Parent Report: Constantly fidgeting or squirming.
+
+        Youth Self Report: I am constantly fidgeting or squirming.",
         "schema:disambiguatingDescription": "table/collection-occasion/sdq/item10.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -1915,6 +1945,9 @@
         "name": "sdq_item11",
         "titles": [ "item11", "Question 11" ],
         "dc:title": "SDQ - Question 11",
+        "schema:description": "Parent Report: Has at least one good friend.
+
+        Youth Self Report: I have one good friend or more.",
         "schema:disambiguatingDescription": "table/collection-occasion/sdq/item11.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -1928,6 +1961,9 @@
         "name": "sdq_item12",
         "titles": [ "item12", "Question 12" ],
         "dc:title": "SDQ - Question 12",
+        "schema:description": "Parent Report: Often fights with other {children} or bullies them / {young people}.
+
+        Youth Self Report: I fight a lot. I can make other people do what I want.",
         "schema:disambiguatingDescription": "table/collection-occasion/sdq/item12.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -1941,6 +1977,9 @@
         "name": "sdq_item13",
         "titles": [ "item13", "Question 13" ],
         "dc:title": "SDQ - Question 13",
+        "schema:description": "Parent Report: Often unhappy, depressed or tearful.
+
+        Youth Self Report: I am often unhappy, depressed or tearful.",
         "schema:disambiguatingDescription": "table/collection-occasion/sdq/item13.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -1954,6 +1993,9 @@
         "name": "sdq_item14",
         "titles": [ "item14", "Question 14" ],
         "dc:title": "SDQ - Question 14",
+        "schema:description": "Parent Report: Generally liked by other {children} / {young people}
+
+        Youth Self Report: Other people my age generally like me.",
         "schema:disambiguatingDescription": "table/collection-occasion/sdq/item14.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -1967,6 +2009,9 @@
         "name": "sdq_item15",
         "titles": [ "item15", "Question 15" ],
         "dc:title": "SDQ - Question 15",
+        "schema:description": "Parent Report: Easily distracted, concentration wanders.
+
+        Youth Self Report: I am easily distracted, I find it difficult to concentrate.",
         "schema:disambiguatingDescription": "table/collection-occasion/sdq/item15.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -1980,6 +2025,9 @@
         "name": "sdq_item16",
         "titles": [ "item16", "Question 16" ],
         "dc:title": "SDQ - Question 16",
+        "schema:description": "Parent Report: Nervous or {clingy} in new situations, easily loses confidence {omit clingy in PY}.
+
+        Youth Self Report: I am nervous in new situations. I easily lose confidence.",
         "schema:disambiguatingDescription": "table/collection-occasion/sdq/item16.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -1993,6 +2041,9 @@
         "name": "sdq_item17",
         "titles": [ "item17", "Question 17" ],
         "dc:title": "SDQ - Question 17",
+        "schema:description": "Parent Report: Kind to younger children.
+
+        Youth Self Report: I am kind to younger people.",
         "schema:disambiguatingDescription": "table/collection-occasion/sdq/item17.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -2006,6 +2057,9 @@
         "name": "sdq_item18",
         "titles": [ "item18", "Question 18" ],
         "dc:title": "SDQ - Question 18",
+        "schema:description": "Parent Report: Often lies or cheats.
+
+        Youth Self Report: I am often accused of lying or cheating.",
         "schema:disambiguatingDescription": "table/collection-occasion/sdq/item18.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -2019,6 +2073,9 @@
         "name": "sdq_item19",
         "titles": [ "item19", "Question 19" ],
         "dc:title": "SDQ - Question 19",
+        "schema:description": "Parent Report: Picked on or bullied by {children} / {youth}.
+
+        Youth Self Report: Other children or young people pick on me or bully me.",
         "schema:disambiguatingDescription": "table/collection-occasion/sdq/item19.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -2032,6 +2089,9 @@
         "name": "sdq_item20",
         "titles": [ "item20", "Question 20" ],
         "dc:title": "SDQ - Question 20",
+        "schema:description": "Parent Report: Often volunteers to help others (parents, teachers, {other} children) / Omit 'other' in PY.
+
+        Youth Self Report: I often volunteer to help others (parents, teachers, children).",
         "schema:disambiguatingDescription": "table/collection-occasion/sdq/item20.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -2045,6 +2105,9 @@
         "name": "sdq_item21",
         "titles": [ "item21", "Question 21" ],
         "dc:title": "SDQ - Question 21",
+        "schema:description": "Parent Report: Thinks things out before acting.
+
+        Youth Self Report: I think before I do things.",
         "schema:disambiguatingDescription": "table/collection-occasion/sdq/item21.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -2058,6 +2121,9 @@
         "name": "sdq_item22",
         "titles": [ "item22", "Question 22" ],
         "dc:title": "SDQ - Question 22",
+        "schema:description": "Parent Report: Steals from home, school or elsewhere.
+
+        Youth Self Report: I take things that are not mine from home, school or elsewhere.",
         "schema:disambiguatingDescription": "table/collection-occasion/sdq/item22.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -2071,6 +2137,9 @@
         "name": "sdq_item23",
         "titles": [ "item23", "Question 23" ],
         "dc:title": "SDQ - Question 23",
+        "schema:description": "Parent Report: Gets along better with adults than with other {children} / {youth}.
+
+        Youth Self Report: I get along better with adults than with people my own age.",
         "schema:disambiguatingDescription": "table/collection-occasion/sdq/item23.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -2084,6 +2153,9 @@
         "name": "sdq_item24",
         "titles": [ "item24", "Question 24" ],
         "dc:title": "SDQ - Question 24",
+        "schema:description": "Parent Report: Many fears, easily scared.
+
+        Youth Self Report: I have many fears, I am easily scared.",
         "schema:disambiguatingDescription": "table/collection-occasion/sdq/item24.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -2097,6 +2169,9 @@
         "name": "sdq_item25",
         "titles": [ "item25", "Question 25" ],
         "dc:title": "SDQ - Question 25",
+        "schema:description": "Parent Report: Good attention span sees chores or homework through to the end.
+
+        Youth Self Report: I finish the work I'm doing. My attention is good.",
         "schema:disambiguatingDescription": "table/collection-occasion/sdq/item25.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -2110,6 +2185,9 @@
         "name": "sdq_item26",
         "titles": [ "item26", "Question 26" ],
         "dc:title": "SDQ - Question 26",
+        "schema:description": "Parent Report: Overall, do you think that your child has difficulties in any of the following areas: emotions, concentration, behaviour or being able to get along with other people?
+
+        Youth Self Report: Overall, do you think that you have difficulties in any of the following areas: emotions, concentration, behaviour or being able to get along with other people?",
         "schema:disambiguatingDescription": "table/collection-occasion/sdq/item26.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -2123,6 +2201,9 @@
         "name": "sdq_item27",
         "titles": [ "item27", "Question 27" ],
         "dc:title": "SDQ - Question 27",
+        "schema:description": "Parent Report: How long have these difficulties been present?
+
+        Youth Self Report: How long have these difficulties been present?",
         "schema:disambiguatingDescription": "table/collection-occasion/sdq/item27.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -2136,6 +2217,9 @@
         "name": "sdq_item28",
         "titles": [ "item28", "Question 28" ],
         "dc:title": "SDQ - Question 28",
+        "schema:description": "Parent Report: Do the difficulties upset or distress your child?
+
+        Youth Self Report: Do the difficulties upset or distress you?",
         "schema:disambiguatingDescription": "table/collection-occasion/sdq/item28.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -2149,6 +2233,9 @@
         "name": "sdq_item29",
         "titles": [ "item29", "Question 29" ],
         "dc:title": "SDQ - Question 29",
+        "schema:description": "Parent Report: Do the difficulties interfere with your child's everyday life in the following areas? HOME LIFE.
+
+        Youth Self Report: Do the difficulties interfere with your everyday life in the following areas? HOME LIFE.",
         "schema:disambiguatingDescription": "table/collection-occasion/sdq/item29.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -2162,6 +2249,9 @@
         "name": "sdq_item30",
         "titles": [ "item30", "Question 30" ],
         "dc:title": "SDQ - Question 30",
+        "schema:description": "Parent Report: Do the difficulties interfere with your child's everyday life in the following areas? FRIENDSHIPS.
+
+        Youth Self Report: Do the difficulties interfere with your everyday life in the following areas? FRIENDSHIPS.",
         "schema:disambiguatingDescription": "table/collection-occasion/sdq/item30.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -2175,6 +2265,9 @@
         "name": "sdq_item31",
         "titles": [ "item31", "Question 31" ],
         "dc:title": "SDQ - Question 31",
+        "schema:description": "Parent Report: Do the difficulties interfere with your child's everyday life in the following areas? CLASSROOM LEARNING.
+
+        Youth Self Report: Do the difficulties interfere with your everyday life in the following areas? CLASSROOM LEARNING",
         "schema:disambiguatingDescription": "table/collection-occasion/sdq/item31.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -2188,6 +2281,9 @@
         "name": "sdq_item32",
         "titles": [ "item32", "Question 32" ],
         "dc:title": "SDQ - Question 32",
+        "schema:description": "Parent Report: Do the difficulties interfere with your child's everyday life in the following areas? LEISURE ACTIVITIES.
+
+        Youth Self Report: Do the difficulties interfere with your everyday life in the following areas? LEISURE ACTIVITIES.",
         "schema:disambiguatingDescription": "table/collection-occasion/sdq/item32.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -2201,6 +2297,9 @@
         "name": "sdq_item33",
         "titles": [ "item33", "Question 33" ],
         "dc:title": "SDQ - Question 33",
+        "schema:description": "Parent Report: Do the difficulties put a burden on you or the family as a whole?
+
+        Youth Self Report: Do the difficulties make it harder for those around you (family, friends, teachers, etc)?",
         "schema:disambiguatingDescription": "table/collection-occasion/sdq/item33.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -2214,6 +2313,9 @@
         "name": "sdq_item34",
         "titles": [ "item34", "Question 34" ],
         "dc:title": "SDQ - Question 34",
+        "schema:description": "Parent Report: Since coming to the services, are your child's problems:
+
+        Youth Self Report: 'Since coming to the service, are your problems:",
         "schema:disambiguatingDescription": "table/collection-occasion/sdq/item34.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -2227,6 +2329,7 @@
         "name": "sdq_item35",
         "titles": [ "item35", "Question 35" ],
         "dc:title": "SDQ - Question 35",
+        "schema:description": "Has coming to the service been helpful in other ways eg. providing information or making the problems bearable?",
         "schema:disambiguatingDescription": "table/collection-occasion/sdq/item35.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -2240,6 +2343,7 @@
         "name": "sdq_item36",
         "titles": [ "item36", "Question 36" ],
         "dc:title": "SDQ - Question 36",
+        "schema:description": "Over the last 6 months have your child's teachers complained of fidgetiness, restlessness or overactivity?",
         "schema:disambiguatingDescription": "table/collection-occasion/sdq/item36.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -2253,6 +2357,7 @@
         "name": "sdq_item37",
         "titles": [ "item37", "Question 37" ],
         "dc:title": "SDQ - Question 37",
+        "schema:description": "Over the last 6 months have your child's teachers complained of poor concentration or being easily distracted?",
         "schema:disambiguatingDescription": "table/collection-occasion/sdq/item37.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -2266,6 +2371,7 @@
         "name": "sdq_item38",
         "titles": [ "item38", "Question 38" ],
         "dc:title": "SDQ - Question 38",
+        "schema:description": "Over the last 6 months have your child's teachers complained of acting without thinking, frequently butting in, or not waiting for his or her turn?",
         "schema:disambiguatingDescription": "table/collection-occasion/sdq/item38.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -2279,6 +2385,7 @@
         "name": "sdq_item39",
         "titles": [ "item39", "Question 39" ],
         "dc:title": "SDQ - Question 39",
+        "schema:description": "Does your family complain about you having problems with overactivity or poor concentration?",
         "schema:disambiguatingDescription": "table/collection-occasion/sdq/item39.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -2292,6 +2399,7 @@
         "name": "sdq_item40",
         "titles": [ "item40", "Question 40" ],
         "dc:title": "SDQ - Question 40",
+        "schema:description": "Do your teachers complain about you having problems with overactivity or poor concentration?",
         "schema:disambiguatingDescription": "table/collection-occasion/sdq/item40.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -2305,6 +2413,7 @@
         "name": "sdq_item41",
         "titles": [ "item41", "Question 41" ],
         "dc:title": "SDQ - Question 41",
+        "schema:description": "Does your family complain about you being awkward or troublesome?",
         "schema:disambiguatingDescription": "table/collection-occasion/sdq/item41.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
@@ -2318,6 +2427,7 @@
         "name": "sdq_item42",
         "titles": [ "item42", "Question 42" ],
         "dc:title": "SDQ - Question 42",
+        "schema:description": "Do your teachers complain about you being awkward or troublesome?",
         "schema:disambiguatingDescription": "table/collection-occasion/sdq/item42.rst",
         "schema:dateCreated": "2016-06-22",
         "schema:dateDeleted": "2016-06-22",
