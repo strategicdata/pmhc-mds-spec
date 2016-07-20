@@ -18,10 +18,12 @@
 :3: Episode end"
 "`SDQ Collection Occasion - Version`_ (sdq_version)
 
-",string,":1: Parent Report Measure 4-10 yrs, Baseline version, Australian Version 1
-:2: Parent Report Measure 4-10 yrs, Follow Up version, Australian Version 1
-:5: Self report Version, 11-17 years, Baseline version, Australian Version 1
-:6: Self report Version, 11-17 years, Follow Up version, Australian Version 1"
+",string,":PC101: Parent Report Measure 4-10 yrs, Baseline version, Australian Version 1
+:PC201: Parent Report Measure 4-10 yrs, Follow Up version, Australian Version 1
+:PY101: Parent Report Measure 11-17 yrs, Baseline version, Australian Version 1
+:PY201: Parent Report Measure 11-17 yrs, Follow Up version, Australian Version 1
+:YR101: Self report Version, 11-17 years, Baseline version, Australian Version 1
+:YR201: Self report Version, 11-17 years, Follow Up version, Australian Version 1"
 "`SDQ - Question 1`_ (sdq_item1)
 
 ",string,":0: Not True

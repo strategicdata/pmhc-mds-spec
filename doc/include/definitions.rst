@@ -1870,10 +1870,12 @@ The version of the SDQ collected.
 :Data type: string
 
 :Domain:
-  :1: Parent Report Measure 4-10 yrs, Baseline version, Australian Version 1
-  :2: Parent Report Measure 4-10 yrs, Follow Up version, Australian Version 1
-  :5: Self report Version, 11-17 years, Baseline version, Australian Version 1
-  :6: Self report Version, 11-17 years, Follow Up version, Australian Version 1
+  :PC101: Parent Report Measure 4-10 yrs, Baseline version, Australian Version 1
+  :PC201: Parent Report Measure 4-10 yrs, Follow Up version, Australian Version 1
+  :PY101: Parent Report Measure 11-17 yrs, Baseline version, Australian Version 1
+  :PY201: Parent Report Measure 11-17 yrs, Follow Up version, Australian Version 1
+  :YR101: Self report Version, 11-17 years, Baseline version, Australian Version 1
+  :YR201: Self report Version, 11-17 years, Follow Up version, Australian Version 1
 :Notes:
   Version 1 of each of the above is reproduced in Mental Health National Outcomes
   and Casemix Collection: Overview of clinical and self-report measures and data
