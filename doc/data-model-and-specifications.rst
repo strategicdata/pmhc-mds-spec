@@ -14,6 +14,8 @@ Data model
 
    PMHC Collection Occasion data model
 
+.. _record-formats:
+
 Record formats
 --------------
 
@@ -30,6 +32,8 @@ it cannot be uploaded.
 
 ----------
 
+.. _practitioner-data-elements:
+
 Practitioner
 ^^^^^^^^^^^^
 
@@ -43,6 +47,8 @@ administrative interface, it cannot be uploaded.
 
 ----------
 
+.. _client-data-elements:
+
 Client
 ^^^^^^
 
@@ -53,6 +59,8 @@ Client
    :header-rows: 1
 
 ----------
+
+.. _episode-data-elements:
 
 Episode
 ^^^^^^^
@@ -93,6 +101,8 @@ across PHN-commissioned services:
    :header-rows: 1
 
 ----------
+
+.. _service-contact-data-elements:
 
 Service Contact
 ^^^^^^^^^^^^^^^
@@ -139,12 +149,16 @@ as well as the Strengths & Difficulties Questionnaires.
 Individual item scores will be required, final specifications for the
 individual measures will be released shortly.
 
+.. _k5-data-elements:
+
 K5
 ^^
 
 .. csv-table:: K5 record layout
    :file: record/k5-collection-occasion.csv
    :header-rows: 1
+
+.. _k10p-data-elements:
 
 K10+
 ^^^^
@@ -153,7 +167,9 @@ K10+
    :file: record/k10p-collection-occasion.csv
    :header-rows: 1
 
-SQD
+.. _sdq-data-elements:
+
+SDQ
 ^^^
 
 .. csv-table:: SDQ record layout
