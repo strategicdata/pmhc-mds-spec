@@ -1,7 +1,7 @@
-Upload Specification
-======================
+Upload specification
+====================
 
-File Types
+File types
 ------------
 Files will be accepted in the following types:
 - Comma Separated Values (CSV)
@@ -29,7 +29,7 @@ The following files can be uploaded to the PMHC MDS:
   :file: upload-file-types.csv
   :header-rows: 1
 
-File Format
+File format
 -----------
 The first row line in each file should include the following columns:
 
@@ -47,7 +47,7 @@ column headings.
 
 .. _client-format:
 
-Client File Format
+Client file format
 ^^^^^^^^^^^^^^^^^^
 The client file is required to be uploaded each time.
 
@@ -57,7 +57,7 @@ Data elements for the client upload file are defined at :ref:`client-data-elemen
 
 .. _episode-format:
 
-Episode File Format
+Episode file format
 ^^^^^^^^^^^^^^^^^^^
 The episode file is required to be uploaded each time.
 
@@ -67,7 +67,7 @@ Data elements for the episode upload file are defined at :ref:`episode-data-elem
 
 .. _service-contact-format:
 
-Service Contact File Format
+Service Contact file format
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The service contact  file is required to be uploaded each time.
 
@@ -77,7 +77,7 @@ Data elements for the service contact upload file are defined at :ref:`service-c
 
 .. _k10p-format:
 
-K10+ Collection Occasion File Format
+K10+ Collection Occasion file format
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The K10+ file is required to be uploaded each time.
 
@@ -87,7 +87,7 @@ Data elements for the K10+ collection occasion upload file are defined at :ref:`
 
 .. _k5-format:
 
-K5 Collection Occasion File Format
+K5 Collection Occasion file format
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The K5 file is required to be uploaded each time.
 
@@ -97,7 +97,7 @@ Data elements for the K5 collection occasion upload file are defined at :ref:`k5
 
 .. _sdq-format:
 
-SDQ Collection Occasion File Format
+SDQ Collection Occasion file format
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The SDQ file is required to be uploaded each time.
 
@@ -107,7 +107,7 @@ Data elements for the SDQ collection occasion upload file are defined at :ref:`s
 
 .. _practitioner-format:
 
-Practitioner File Format
+Practitioner file format
 ^^^^^^^^^^^^^^^^^^^^^^^^
 The practitioner file is optional. It only needs to be uploaded if there is a change in practitioners.
 There is no harm in including it in every upload.
