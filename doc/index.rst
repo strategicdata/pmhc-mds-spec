@@ -1,15 +1,13 @@
 PMHC MDS Specification
 ======================
 
-Table of contents
------------------
-
 .. toctree::
+   :caption: Table of contents
    :maxdepth: 2
 
    reporting-arrangements
    identifier-management
-   data-item-summary
    data-model-and-specifications
    upload-specification
+   data-item-summary
 
