@@ -1,8 +1,8 @@
-File Type,CSV filename,Excel filename,Excel worksheet name,Required
-:ref:`Client <client-format>`,clients.csv,clients.xlsx,Clients,Required
-:ref:`Episodes <episode-format>`,episodes.csv,episodes.xlsx,Episodes,Required
-:ref:`Service Contacts <service-contact-format>`,service-contacts.csv,service-contacts.xlsx,Service Contacts,Required
-:ref:`K10+ Collection Occasions <k10p-format>`,k10p.csv,k10p.xlsx,K10+,Required
-:ref:`K5 Collection Occasions <k5-format>`,k5.csv,k5.xlsx,K5,Required
-:ref:`SDQ Collection Occasions <sdq-format>`,sdq.csv,sdq.xlsx,SDQ,Required
-:ref:`Practitioners <practitioner-format>`,practitioner.csv,practitioner.xlsx,Practitioners,Optional
+File Type,CSV filename,Excel worksheet name,Required
+:ref:`Client <client-format>`,clients.csv,Clients,Required
+:ref:`Episodes <episode-format>`,episodes.csv,Episodes,Required
+:ref:`Service Contacts <service-contact-format>`,service-contacts.csv,Service Contacts,Required
+:ref:`K10+ Collection Occasions <k10p-format>`,k10p.csv,K10+,Required
+:ref:`K5 Collection Occasions <k5-format>`,k5.csv,K5,Required
+:ref:`SDQ Collection Occasions <sdq-format>`,sdq.csv,SDQ,Required
+:ref:`Practitioners <practitioner-format>`,practitioner.csv,Practitioners,Optional

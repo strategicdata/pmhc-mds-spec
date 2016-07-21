@@ -9,7 +9,7 @@ Table of contents
 
    reporting-arrangements
    identifier-management
-   data-model-and-specifications
    data-item-summary
+   data-model-and-specifications
    upload-specification
 

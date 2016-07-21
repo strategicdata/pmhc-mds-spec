@@ -1,7 +1,7 @@
-Upload Specification
-======================
+Upload specification
+====================
 
-File Types
+File types
 ------------
 Files will be accepted in the following types:
 - Comma Separated Values (CSV)
@@ -35,7 +35,7 @@ The following files can be uploaded to the PMHC MDS:
   :file: upload-file-types.csv
   :header-rows: 1
 
-File Format
+File format
 -----------
 The first row line in each file should include the following columns:
 
@@ -48,77 +48,76 @@ The third and subsequent rows should contain the data.
 
 Data elements for each file are defined at :ref:`record-formats`.
 
-Each data item is a column in the file.
-
-The 'Field Name' should be used for the column headings.
+Each item is a column in the file. The 'Field Name' should be used for the
+column headings.
 
 .. _client-format:
 
-Client File Format
+Client file format
 ^^^^^^^^^^^^^^^^^^
 The client file is required to be uploaded each time.
 
 Data elements for the client upload file are defined at :ref:`client-data-elements`.
 
-:doc:`Example client file <_static/clients.csv>`_.
+`Example client file <_static/clients.csv>`_.
 
 .. _episode-format:
 
-Episode File Format
+Episode file format
 ^^^^^^^^^^^^^^^^^^^
 The episode file is required to be uploaded each time.
 
 Data elements for the episode upload file are defined at :ref:`episode-data-elements`.
 
-:doc:`Example episode file <_static/episodes.csv>`_.
+`Example episode file <_static/episodes.csv>`_.
 
 .. _service-contact-format:
 
-Service Contact File Format
+Service Contact file format
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The service contact  file is required to be uploaded each time.
 
 Data elements for the service contact upload file are defined at :ref:`service-contact-data-elements`.
 
-:doc:`Example service contact file <_static/service-contacts.csv>`_.
+`Example service contact file <_static/service-contacts.csv>`_.
 
 .. _k10p-format:
 
-K10+ Collection Occasion File Format
+K10+ Collection Occasion file format
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The K10+ file is required to be uploaded each time.
 
 Data elements for the K10+ collection occasion upload file are defined at :ref:`k10p-data-elements`.
 
-:doc:`Example K10+ file <_static/k10p.csv>`_.
+`Example K10+ file <_static/k10p.csv>`_.
 
 .. _k5-format:
 
-K5 Collection Occasion File Format
+K5 Collection Occasion file format
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The K5 file is required to be uploaded each time.
 
 Data elements for the K5 collection occasion upload file are defined at :ref:`k5-data-elements`.
 
-:doc:`Example K5 file <_static/k5.csv>`_.
+`Example K5 file <_static/k5.csv>`_.
 
 .. _sdq-format:
 
-SDQ Collection Occasion File Format
+SDQ Collection Occasion file format
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The SDQ file is required to be uploaded each time.
 
 Data elements for the SDQ collection occasion upload file are defined at :ref:`sdq-data-elements`.
 
-:doc:`Example SDQ file <_static/sdq.csv>`_.
+`Example SDQ file <_static/sdq.csv>`_.
 
 .. _practitioner-format:
 
-Practitioner File Format
+Practitioner file format
 ^^^^^^^^^^^^^^^^^^^^^^^^
 The practitioner file is optional. It only needs to be uploaded if there is a change in practitioners.
 There is no harm in including it in every upload.
 
 Data elements for the practitioner upload file are defined at :ref:`sdq-data-elements`.
 
-:doc:`Example practitioner file <_static/practitioners.csv>`_.
+`Example practitioner file <_static/practitioners.csv>`_.
