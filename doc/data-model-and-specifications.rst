@@ -38,8 +38,8 @@ Practitioner
 ^^^^^^^^^^^^
 
 Practitioner data is intended to provide workforce planning data for use by the
-Department. It is managed by the provider organisations via the PMHC MDS
-administrative interface, it cannot be uploaded.
+Department. It is managed by the provider organisations via either the PMHC MDS
+administrative interface or upload.
 
 .. csv-table:: Practitioner record layout
   :file: record/practitioner.csv
@@ -52,7 +52,7 @@ administrative interface, it cannot be uploaded.
 Client
 ^^^^^^
 
-| Explanatory text to go here ...
+Clients are managed by the provider organisations via upload.
 
 .. csv-table:: Client record layout
    :file: record/client.csv
@@ -96,6 +96,8 @@ across PHN-commissioned services:
   has been lost with the client. A new episode is deemed to commence if the
   person re-presents to the organisation.
 
+  Episodes are managed by the provider organisations via upload.
+
 .. csv-table:: Episode record layout
    :file: record/episode.csv
    :header-rows: 1
@@ -128,6 +130,8 @@ Service Contact
   <http://meteor.aihw.gov.au/content/index.phtml/itemId/493304>`_ with
   modification.
 
+  Service contacts are managed by the provider organisations via upload.
+
 .. csv-table:: Service contact record layout
    :file: record/service-contact.csv
    :header-rows: 1
@@ -143,20 +147,12 @@ the required outcome measure is to be collected. At a minimum, collection of
 outcome data is required at both Episode Start and Episode End, but may be more
 frequent if clinically indicated and agreed by the client.
 
-Measures will be the Kessler Psychological Distress Scale K5 and K10+ versions
+Measures will be the Kessler Psychological Distress Scale K10+ and K5 versions
 as well as the Strengths & Difficulties Questionnaires.
 
-Individual item scores will be required, final specifications for the
-individual measures will be released shortly.
+Individual item scores will be required.
 
-.. _k5-data-elements:
-
-K5
-^^
-
-.. csv-table:: K5 record layout
-   :file: record/k5-collection-occasion.csv
-   :header-rows: 1
+Outcome collection occasions are managed by the provider organisations via upload.
 
 .. _k10p-data-elements:
 
@@ -165,6 +161,15 @@ K10+
 
 .. csv-table:: K10+ record layout
    :file: record/k10p-collection-occasion.csv
+   :header-rows: 1
+
+.. _k5-data-elements:
+
+K5
+^^
+
+.. csv-table:: K5 record layout
+   :file: record/k5-collection-occasion.csv
    :header-rows: 1
 
 .. _sdq-data-elements:
