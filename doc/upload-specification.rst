@@ -59,7 +59,7 @@ The client file is required to be uploaded each time.
 
 Data elements for the client upload file are defined at :ref:`client-data-elements`.
 
-:doc:`Example client file <_static/clients.csv>`_.
+`Example client file <_static/clients.csv>`_.
 
 .. _episode-format:
 
@@ -69,7 +69,7 @@ The episode file is required to be uploaded each time.
 
 Data elements for the episode upload file are defined at :ref:`episode-data-elements`.
 
-:doc:`Example episode file <_static/episodes.csv>`_.
+`Example episode file <_static/episodes.csv>`_.
 
 .. _service-contact-format:
 
@@ -79,7 +79,7 @@ The service contact  file is required to be uploaded each time.
 
 Data elements for the service contact upload file are defined at :ref:`service-contact-data-elements`.
 
-:doc:`Example service contact file <_static/service-contacts.csv>`_.
+`Example service contact file <_static/service-contacts.csv>`_.
 
 .. _k10p-format:
 
@@ -89,7 +89,7 @@ The K10+ file is required to be uploaded each time.
 
 Data elements for the K10+ collection occasion upload file are defined at :ref:`k10p-data-elements`.
 
-:doc:`Example K10+ file <_static/k10p.csv>`_.
+`Example K10+ file <_static/k10p.csv>`_.
 
 .. _k5-format:
 
@@ -99,7 +99,7 @@ The K5 file is required to be uploaded each time.
 
 Data elements for the K5 collection occasion upload file are defined at :ref:`k5-data-elements`.
 
-:doc:`Example K5 file <_static/k5.csv>`_.
+`Example K5 file <_static/k5.csv>`_.
 
 .. _sdq-format:
 
@@ -109,7 +109,7 @@ The SDQ file is required to be uploaded each time.
 
 Data elements for the SDQ collection occasion upload file are defined at :ref:`sdq-data-elements`.
 
-:doc:`Example SDQ file <_static/sdq.csv>`_.
+`Example SDQ file <_static/sdq.csv>`_.
 
 .. _practitioner-format:
 
@@ -120,4 +120,4 @@ There is no harm in including it in every upload.
 
 Data elements for the practitioner upload file are defined at :ref:`sdq-data-elements`.
 
-:doc:`Example practitioner file <_static/practitioners.csv>`_.
+`Example practitioner file <_static/practitioners.csv>`_.
