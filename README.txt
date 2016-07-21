@@ -21,3 +21,10 @@ Issues:
 - Format of "#####0.##" for copayment isn't being checked.
 
 - Different versions of the SDQ require different items. Currently checks are not dependant of version of SDQ specified.
+
+- Can't get the following working in order to have a version of the first line:
+  "dialect": {
+    "header": true,
+    "headerRowCount": 1,
+    "skipRows": 1
+  },

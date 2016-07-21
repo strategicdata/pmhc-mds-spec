@@ -17,7 +17,13 @@ CSV files should have the file extension .csv
 
 Excel (XLSX)
 ^^^^^^^^^^^^
-Excel files should be in XLSX format and should conform to the `ECMA-376 <http://www.ecma-international.org/publications/standards/Ecma-376.htm>`__ standard.
+Excel files should be in XLSX format. The following versions of Excel support this format:
+- Excel 2007 (v12.0)
+- Excel 2010 (v14.0)
+- Excel 2013 (v15.0)
+- Excel 2016 (v16.0)
+
+
 
 Excel files should have the file extension .xlsx
 
