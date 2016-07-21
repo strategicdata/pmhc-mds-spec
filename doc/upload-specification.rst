@@ -25,23 +25,23 @@ Files to upload
 ---------------
 The following files can be uploaded to the PMHC MDS:
 
-+---------------------------------------------------+----------------------+-----------------------+-----------+
-| Fle Type                               _          | CSV filename         | Excel filename        | Required  |
-+===================================================+======================+=======================+===========+
-| :ref:`Client <client-format>`                     | clients.csv          | clients.xlsx          | Required  |
-+---------------------------------------------------+----------------------+-----------------------+-----------+
-| :ref:`Episodes <episode-format>`                  | episodes.csv         | episodes.xlsx         | Required  |
-+---------------------------------------------------+----------------------+-----------------------+-----------+
-| :ref:`Service Contacts <service-contact-format>`  | service-contacts.csv | service-contacts.xlsx | Required  |
-+---------------------------------------------------+----------------------+-----------------------+-----------+
-| :ref:`K10+ Collection Occasions <k10p-format>`    | k10p.csv             | k10p.xlsx             | Required  |
-+---------------------------------------------------+----------------------+-----------------------+-----------+
-| :ref:`K5 Collection Occasions <k5-format>`      _ | k5.csv               | k5.xlsx               | Required  |
-+---------------------------------------------------+----------------------+-----------------------+-----------+
-| :ref:`SDQ Collection Occasions <sdq-format>`   __ | sdq.csv              | sdq.xlsx              | Required  |
-+---------------------------------------------------+----------------------+-----------------------+-----------+
-| :ref:`Practitioners <practitioner-format>`     __ | practitioner.csv     | practitioner.xlsx     | Optional  |
-+---------------------------------------------------+----------------------+-----------------------+-----------+
++---------------------------------------------------+----------------------+-------------------+-----------+
+| Fle Type                                          | CSV filename         | Excel sheet name  | Required  |
++===================================================+======================+===================+===========+
+| :ref:`Client <client-format>`                     | clients.csv          | clients           | Required  |
++---------------------------------------------------+----------------------+-------------------+-----------+
+| :ref:`Episodes <episode-format>`                  | episodes.csv         | episodes          | Required  |
++---------------------------------------------------+----------------------+-------------------+-----------+
+| :ref:`Service Contacts <service-contact-format>`  | service-contacts.csv | service-contacts  | Required  |
++---------------------------------------------------+----------------------+-------------------+-----------+
+| :ref:`K10+ Collection Occasions <k10p-format>`    | k10p.csv             | k10p              | Required  |
++---------------------------------------------------+----------------------+-------------------+-----------+
+| :ref:`K5 Collection Occasions <k5-format>`        | k5.csv               | k5                | Required  |
++---------------------------------------------------+----------------------+-------------------+-----------+
+| :ref:`SDQ Collection Occasions <sdq-format>`      | sdq.csv              | sdq               | Required  |
++---------------------------------------------------+----------------------+-------------------+-----------+
+| :ref:`Practitioners <practitioner-format>`        | practitioner.csv     | practitioner      | Optional  |
++---------------------------------------------------+----------------------+-------------------+-----------+
 
 File Format
 -----------
@@ -54,7 +54,7 @@ The first row line in each file should include the following columns:
 The second row should contain the column headings as defined for each file type.
 The third and subsequent rows should contain the data.
 
-Data elements for each file are defined at :ref: `record-formats`.
+Data elements for each file are defined at :ref:`record-formats`.
 Each item is a column in the file.
 The Field Name should be used for the column headings.
 
