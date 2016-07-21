@@ -41,15 +41,9 @@ The second row should contain the column headings as defined for each file type.
 The third and subsequent rows should contain the data.
 
 Data elements for each file are defined at :ref:`record-formats`.
-<<<<<<< HEAD
-Each item is a column in the file.
-The Field Name should be used for the column headings.
-=======
 
-Each data item is a column in the file.
-
-The 'Field Name' should be used for the column headings.
->>>>>>> f2651c5c6ab75c477a47babd0547577f4e39584d
+Each item is a column in the file. The 'Field Name' should be used for the
+column headings.
 
 .. _client-format:
 
