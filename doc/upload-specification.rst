@@ -71,7 +71,7 @@ Data elements for the client upload file/worksheet are defined at :ref:`client-d
 
 Example client data:
 - `CSV client file <_static/clients.csv>`_.
-- `XLSX client worksheet <_static/pmhc_upload.xlsx>`_.
+- `XLSX client worksheet <_static/pmhc-upload.xlsx>`_.
 
 .. _episode-format:
 
@@ -83,7 +83,7 @@ Data elements for the episode upload file/worksheet are defined at :ref:`episode
 
 Example episode data:
 - `CSV episode file <_static/episodes.csv>`_.
-- `XLSX episode worksheet <_static/pmhc_upload.xlsx>`_.
+- `XLSX episode worksheet <_static/pmhc-upload.xlsx>`_.
 
 .. _service-contact-format:
 
@@ -95,7 +95,7 @@ Data elements for the service contact upload file/worksheet are defined at :ref:
 
 Example service contact data:
 - `CSV service contact file <_static/service-contacts.csv>`_.
-- `XLSX service contact worksheet <_static/pmhc_upload.xlsx>`_.
+- `XLSX service contact worksheet <_static/pmhc-upload.xlsx>`_.
 
 .. _k10p-format:
 
@@ -107,7 +107,7 @@ Data elements for the K10+ collection occasion upload file/worksheet are defined
 
 Example K10+ data:
 - `CSV K10+ file <_static/k10p.csv>`_.
-- `XLSX K10+ worksheet <_static/pmhc_upload.xlsx>`_.
+- `XLSX K10+ worksheet <_static/pmhc-upload.xlsx>`_.
 
 .. _k5-format:
 
@@ -119,7 +119,7 @@ Data elements for the K5 collection occasion upload file/worksheet are defined a
 
 Example K5 data:
 - `CSV K5 file <_static/k5.csv>`_.
-- `XLSX K5 worksheet <_static/pmhc_upload.xlsx>`_.
+- `XLSX K5 worksheet <_static/pmhc-upload.xlsx>`_.
 
 .. _sdq-format:
 
@@ -131,7 +131,7 @@ Data elements for the SDQ collection occasion upload file/worksheet are defined 
 
 Example SDQ data:
 - `CSV SDQ file <_static/sdq.csv>`_.
-- `XLSX SDQ worksheet <_static/pmhc_upload.xlsx>`_.
+- `XLSX SDQ worksheet <_static/pmhc-upload.xlsx>`_.
 
 .. _practitioner-format:
 
@@ -144,4 +144,4 @@ Data elements for the practitioner upload file/worksheet are defined at :ref:`pr
 
 Example practitioner data:
 - `CSV practitioner file <_static/practitioners.csv>`_.
-- `XLSX practitioner worksheet <_static/pmhc_upload.xlsx>`_.
+- `XLSX practitioner worksheet <_static/pmhc-upload.xlsx>`_.
