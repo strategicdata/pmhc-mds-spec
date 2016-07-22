@@ -1196,6 +1196,7 @@ Identifies those individuals where a recent history of suicide attempt, or suici
 K5 - Question 1
 ^^^^^^^^^^^^^^^
 
+In the last 4 weeks, about how often did you feel nervous?
 
 :Field name: k5_item1
 
@@ -1209,15 +1210,13 @@ K5 - Question 1
   :5: All of the time
   :6: Don't know
   :9: Not stated / Missing
-:Notes:
-  In the last 4 weeks, about how often did you feel nervous?
-  
 
 ----------
 
 K5 - Question 2
 ^^^^^^^^^^^^^^^
 
+In the last 4 weeks, about how often did you feel without hope?
 
 :Field name: k5_item2
 
@@ -1231,15 +1230,13 @@ K5 - Question 2
   :5: All of the time
   :6: Don't know
   :9: Not stated / Missing
-:Notes:
-  In the last 4 weeks, about how often did you feel without hope?
-  
 
 ----------
 
 K5 - Question 3
 ^^^^^^^^^^^^^^^
 
+In the last 4 weeks, about how often did you feel restless or jumpy?
 
 :Field name: k5_item3
 
@@ -1253,15 +1250,13 @@ K5 - Question 3
   :5: All of the time
   :6: Don't know
   :9: Not stated / Missing
-:Notes:
-  In the last 4 weeks, about how often did you feel restless or jumpy?
-  
 
 ----------
 
 K5 - Question 4
 ^^^^^^^^^^^^^^^
 
+In the last 4 weeks, about how often did you feel everything was an effort?
 
 :Field name: k5_item4
 
@@ -1275,15 +1270,13 @@ K5 - Question 4
   :5: All of the time
   :6: Don't know
   :9: Not stated / Missing
-:Notes:
-  In the last 4 weeks, about how often did you feel everything was an effort?
-  
 
 ----------
 
 K5 - Question 5
 ^^^^^^^^^^^^^^^
 
+In the last 4 weeks, about how often did you feel so sad that nothing could cheer you up?
 
 :Field name: k5_item5
 
@@ -1297,15 +1290,13 @@ K5 - Question 5
   :5: All of the time
   :6: Don't know
   :9: Not stated / Missing
-:Notes:
-  In the last 4 weeks, about how often did you feel so sad that nothing could cheer you up?
-  
 
 ----------
 
 K10+ - Question 1
 ^^^^^^^^^^^^^^^^^
 
+In the past 4 weeks, about how often did you feel tired out for no good reason?
 
 :Field name: k10p_item1
 
@@ -1319,15 +1310,13 @@ K10+ - Question 1
   :5: All of the time
   :6: Don't know
   :9: Not stated / Missing
-:Notes:
-  In the past 4 weeks, about how often did you feel tired out for no good reason?
-  
 
 ----------
 
 K10+ - Question 2
 ^^^^^^^^^^^^^^^^^
 
+In the past 4 weeks, about how often did you feel nervous?
 
 :Field name: k10p_item2
 
@@ -1341,15 +1330,13 @@ K10+ - Question 2
   :5: All of the time
   :6: Don't know
   :9: Not stated / Missing
-:Notes:
-  In the past 4 weeks, about how often did you feel nervous?
-  
 
 ----------
 
 K10+ - Question 3
 ^^^^^^^^^^^^^^^^^
 
+In the past 4 weeks, about how often did you feel so nervous that nothing could calm you down?
 
 :Field name: k10p_item3
 
@@ -1363,15 +1350,13 @@ K10+ - Question 3
   :5: All of the time
   :6: Don't know
   :9: Not stated / Missing
-:Notes:
-  In the past 4 weeks, about how often did you feel so nervous that nothing could calm you down?
-  
 
 ----------
 
 K10+ - Question 4
 ^^^^^^^^^^^^^^^^^
 
+In the past 4 weeks, how often did you feel hopeless?
 
 :Field name: k10p_item4
 
@@ -1385,15 +1370,13 @@ K10+ - Question 4
   :5: All of the time
   :6: Don't know
   :9: Not stated / Missing
-:Notes:
-  In the past 4 weeks, how often did you feel hopeless?
-  
 
 ----------
 
 K10+ - Question 5
 ^^^^^^^^^^^^^^^^^
 
+In the past 4 weeks, how often did you feel restless or fidgety?
 
 :Field name: k10p_item5
 
@@ -1407,15 +1390,13 @@ K10+ - Question 5
   :5: All of the time
   :6: Don't know
   :9: Not stated / Missing
-:Notes:
-  In the past 4 weeks, how often did you feel restless or fidgety?
-  
 
 ----------
 
 K10+ - Question 6
 ^^^^^^^^^^^^^^^^^
 
+In the past 4 weeks, how often did you feel so restless you could not sit still?
 
 :Field name: k10p_item6
 
@@ -1429,15 +1410,13 @@ K10+ - Question 6
   :5: All of the time
   :6: Don't know
   :9: Not stated / Missing
-:Notes:
-  In the past 4 weeks, how often did you feel so restless you could not sit still?
-  
 
 ----------
 
 K10+ - Question 7
 ^^^^^^^^^^^^^^^^^
 
+In the past 4 weeks, how often did you feel depressed?
 
 :Field name: k10p_item7
 
@@ -1451,15 +1430,13 @@ K10+ - Question 7
   :5: All of the time
   :6: Don't know
   :9: Not stated / Missing
-:Notes:
-  In the past 4 weeks, how often did you feel depressed?
-  
 
 ----------
 
 K10+ - Question 8
 ^^^^^^^^^^^^^^^^^
 
+In the past 4 weeks, how often did you feel that everything was an effort?
 
 :Field name: k10p_item8
 
@@ -1473,15 +1450,13 @@ K10+ - Question 8
   :5: All of the time
   :6: Don't know
   :9: Not stated / Missing
-:Notes:
-  In the past 4 weeks, how often did you feel that everything was an effort?
-  
 
 ----------
 
 K10+ - Question 9
 ^^^^^^^^^^^^^^^^^
 
+In the past 4 weeks, how often did you feel so sad that nothing could cheer you up?
 
 :Field name: k10p_item9
 
@@ -1495,15 +1470,13 @@ K10+ - Question 9
   :5: All of the time
   :6: Don't know
   :9: Not stated / Missing
-:Notes:
-  In the past 4 weeks, how often did you feel so sad that nothing could cheer you up?
-  
 
 ----------
 
 K10+ - Question 10
 ^^^^^^^^^^^^^^^^^^
 
+In the past 4 weeks, how often did you feel worthless?
 
 :Field name: k10p_item10
 
@@ -1517,54 +1490,46 @@ K10+ - Question 10
   :5: All of the time
   :6: Don't know
   :9: Not stated / Missing
-:Notes:
-  In the past 4 weeks, how often did you feel worthless?
-  
 
 ----------
 
 K10+ - Question 11
 ^^^^^^^^^^^^^^^^^^
 
+In the past four weeks, how many days were you totally unable to work, study or manage your day to day activities because of these feelings?
 
 :Field name: k10p_item11
 
 :Data type: integer
-:Notes:
-  In the past four weeks, how many days were you totally unable to work, study or manage your day to day activities because of these feelings?
-  
 
 ----------
 
 K10+ - Question 12
 ^^^^^^^^^^^^^^^^^^
 
+Aside from those days, in the past four weeks, how many days were you able to work or study or manage your day to day activities, but had to cut down on what you did because of these feelings?
 
 :Field name: k10p_item12
 
 :Data type: integer
-:Notes:
-  Aside from those days, in the past four weeks, how many days were you able to work or study or manage your day to day activities, but had to cut down on what you did because of these feelings?
-  
 
 ----------
 
 K10+ - Question 13
 ^^^^^^^^^^^^^^^^^^
 
+In the past four weeks, how many times have you seen a doctor or any other health professional about these feelings?
 
 :Field name: k10p_item13
 
 :Data type: integer
-:Notes:
-  In the past four weeks, how many times have you seen a doctor or any other health professional about these feelings?
-  
 
 ----------
 
 K10+ - Question 14
 ^^^^^^^^^^^^^^^^^^
 
+In the past four weeks, how often have physical health problems been the main cause of these feelings?
 
 :Field name: k10p_item14
 
@@ -1578,9 +1543,6 @@ K10+ - Question 14
   :5: All of the time
   :6: Don't know
   :9: Not stated / Missing
-:Notes:
-  In the past four weeks, how often have physical health problems been the main cause of these feelings?
-  
 
 ----------
 
@@ -1877,10 +1839,6 @@ The version of the SDQ collected.
   :YR101: Self report Version, 11-17 years, Baseline version, Australian Version 1
   :YR201: Self report Version, 11-17 years, Follow Up version, Australian Version 1
 :Notes:
-  Version 1 of each of the above is reproduced in Mental Health National Outcomes
-  and Casemix Collection: Overview of clinical and self-report measures and data
-  items, Version 1.50. Commonwealth Department of Health and Ageing, Canberra, 2003.
-  
   Domain values align with those collected in the NOCC dataset as defined at
   https://webval.validator.com.au/spec/NOCC/
   
@@ -1890,6 +1848,9 @@ The version of the SDQ collected.
 SDQ - Question 1
 ^^^^^^^^^^^^^^^^
 
+Parent Report: Considerate of other people's feelings.
+
+Youth Self Report: I try to be nice to other people. I care about their feelings.
 
 :Field name: sdq_item1
 
@@ -1902,9 +1863,7 @@ SDQ - Question 1
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
 :Notes:
-  Parent Report: Considerate of other people's feelings.
-  
-  Youth Self Report: I try to be nice to other people. I care about their feelings.
+  Required Versions: All
   
 
 ----------
@@ -1912,6 +1871,9 @@ SDQ - Question 1
 SDQ - Question 2
 ^^^^^^^^^^^^^^^^
 
+Parent Report: Restless, overactive, cannot stay still for long.
+
+Youth Self Report: I am restless, I cannot stay still for long.
 
 :Field name: sdq_item2
 
@@ -1924,9 +1886,7 @@ SDQ - Question 2
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
 :Notes:
-  Parent Report: Restless, overactive, cannot stay still for long.
-  
-  Youth Self Report: I am restless, I cannot stay still for long.
+  Required Versions: All
   
 
 ----------
@@ -1934,6 +1894,9 @@ SDQ - Question 2
 SDQ - Question 3
 ^^^^^^^^^^^^^^^^
 
+Parent Report: Often complains of headaches, stomach-aches or sickness.
+
+Youth Self Report: I get a lot of headaches, stomach-aches or sickness.
 
 :Field name: sdq_item3
 
@@ -1946,9 +1909,7 @@ SDQ - Question 3
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
 :Notes:
-  Parent Report: Often complains of headaches, stomach-aches or sickness.
-  
-  Youth Self Report: I get a lot of headaches, stomach-aches or sickness.
+  Required Versions: All
   
 
 ----------
@@ -1956,6 +1917,9 @@ SDQ - Question 3
 SDQ - Question 4
 ^^^^^^^^^^^^^^^^
 
+Parent Report: Shares readily with other children {for example toys, treats, pencils} / young people {for example CDs, games, food}.
+
+Youth Self Report: I usually share with others, for examples CDs, games, food.
 
 :Field name: sdq_item4
 
@@ -1968,9 +1932,7 @@ SDQ - Question 4
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
 :Notes:
-  Parent Report: Shares readily with other children {for example toys, treats, pencils} / young people {for example CDs, games, food}.
-  
-  Youth Self Report: I usually share with others, for examples CDs, games, food.
+  Required Versions: All
   
 
 ----------
@@ -1978,6 +1940,9 @@ SDQ - Question 4
 SDQ - Question 5
 ^^^^^^^^^^^^^^^^
 
+Parent Report: Often loses temper.
+
+Youth Self Report: I get very angry and often lose my temper.
 
 :Field name: sdq_item5
 
@@ -1990,9 +1955,7 @@ SDQ - Question 5
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
 :Notes:
-  Parent Report: Often loses temper.
-  
-  Youth Self Report: I get very angry and often lose my temper.
+  Required Versions: All
   
 
 ----------
@@ -2000,6 +1963,9 @@ SDQ - Question 5
 SDQ - Question 6
 ^^^^^^^^^^^^^^^^
 
+Parent Report: {Rather solitary, prefers to play alone} / {would rather be alone than with other young people}.
+
+Youth Self Report: I would rather be alone than with people of my age.
 
 :Field name: sdq_item6
 
@@ -2012,9 +1978,7 @@ SDQ - Question 6
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
 :Notes:
-  Parent Report: {Rather solitary, prefers to play alone} / {would rather be alone than with other young people}.
-  
-  Youth Self Report: I would rather be alone than with people of my age.
+  Required Versions: All
   
 
 ----------
@@ -2022,6 +1986,9 @@ SDQ - Question 6
 SDQ - Question 7
 ^^^^^^^^^^^^^^^^
 
+Parent Report: {Generally well behaved} / {Usually does what adults requests}.
+
+Youth Self Report: I usually do as I am told.
 
 :Field name: sdq_item7
 
@@ -2034,9 +2001,7 @@ SDQ - Question 7
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
 :Notes:
-  Parent Report: {Generally well behaved} / {Usually does what adults requests}.
-  
-  Youth Self Report: I usually do as I am told.
+  Required Versions: All
   
 
 ----------
@@ -2044,6 +2009,9 @@ SDQ - Question 7
 SDQ - Question 8
 ^^^^^^^^^^^^^^^^
 
+Parent Report: Many worries or often seems worried.
+
+Youth Self Report: I worry a lot.
 
 :Field name: sdq_item8
 
@@ -2056,9 +2024,7 @@ SDQ - Question 8
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
 :Notes:
-  Parent Report: Many worries or often seems worried.
-  
-  Youth Self Report: I worry a lot.
+  Required Versions: All
   
 
 ----------
@@ -2066,6 +2032,9 @@ SDQ - Question 8
 SDQ - Question 9
 ^^^^^^^^^^^^^^^^
 
+Parent Report: Helpful if someone is hurt, upset or feeling ill.
+
+Youth Self Report: I am helpful if someone is hurt, upset or feeling ill.
 
 :Field name: sdq_item9
 
@@ -2078,9 +2047,7 @@ SDQ - Question 9
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
 :Notes:
-  Parent Report: Helpful if someone is hurt, upset or feeling ill.
-  
-  Youth Self Report: I am helpful if someone is hurt, upset or feeling ill.
+  Required Versions: All
   
 
 ----------
@@ -2088,6 +2055,9 @@ SDQ - Question 9
 SDQ - Question 10
 ^^^^^^^^^^^^^^^^^
 
+Parent Report: Constantly fidgeting or squirming.
+
+Youth Self Report: I am constantly fidgeting or squirming.
 
 :Field name: sdq_item10
 
@@ -2100,9 +2070,7 @@ SDQ - Question 10
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
 :Notes:
-  Parent Report: Constantly fidgeting or squirming.
-  
-  Youth Self Report: I am constantly fidgeting or squirming.
+  Required Versions: All
   
 
 ----------
@@ -2110,6 +2078,9 @@ SDQ - Question 10
 SDQ - Question 11
 ^^^^^^^^^^^^^^^^^
 
+Parent Report: Has at least one good friend.
+
+Youth Self Report: I have one good friend or more.
 
 :Field name: sdq_item11
 
@@ -2122,9 +2093,7 @@ SDQ - Question 11
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
 :Notes:
-  Parent Report: Has at least one good friend.
-  
-  Youth Self Report: I have one good friend or more.
+  Required Versions: All
   
 
 ----------
@@ -2132,6 +2101,9 @@ SDQ - Question 11
 SDQ - Question 12
 ^^^^^^^^^^^^^^^^^
 
+Parent Report: Often fights with other {children} or bullies them / {young people}.
+
+Youth Self Report: I fight a lot. I can make other people do what I want.
 
 :Field name: sdq_item12
 
@@ -2144,9 +2116,7 @@ SDQ - Question 12
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
 :Notes:
-  Parent Report: Often fights with other {children} or bullies them / {young people}.
-  
-  Youth Self Report: I fight a lot. I can make other people do what I want.
+  Required Versions: All
   
 
 ----------
@@ -2154,6 +2124,9 @@ SDQ - Question 12
 SDQ - Question 13
 ^^^^^^^^^^^^^^^^^
 
+Parent Report: Often unhappy, depressed or tearful.
+
+Youth Self Report: I am often unhappy, depressed or tearful.
 
 :Field name: sdq_item13
 
@@ -2166,9 +2139,7 @@ SDQ - Question 13
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
 :Notes:
-  Parent Report: Often unhappy, depressed or tearful.
-  
-  Youth Self Report: I am often unhappy, depressed or tearful.
+  Required Versions: All
   
 
 ----------
@@ -2176,6 +2147,9 @@ SDQ - Question 13
 SDQ - Question 14
 ^^^^^^^^^^^^^^^^^
 
+Parent Report: Generally liked by other {children} / {young people}
+
+Youth Self Report: Other people my age generally like me.
 
 :Field name: sdq_item14
 
@@ -2188,9 +2162,7 @@ SDQ - Question 14
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
 :Notes:
-  Parent Report: Generally liked by other {children} / {young people}
-  
-  Youth Self Report: Other people my age generally like me.
+  Required Versions: All
   
 
 ----------
@@ -2198,6 +2170,9 @@ SDQ - Question 14
 SDQ - Question 15
 ^^^^^^^^^^^^^^^^^
 
+Parent Report: Easily distracted, concentration wanders.
+
+Youth Self Report: I am easily distracted, I find it difficult to concentrate.
 
 :Field name: sdq_item15
 
@@ -2210,9 +2185,7 @@ SDQ - Question 15
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
 :Notes:
-  Parent Report: Easily distracted, concentration wanders.
-  
-  Youth Self Report: I am easily distracted, I find it difficult to concentrate.
+  Required Versions: All
   
 
 ----------
@@ -2220,6 +2193,9 @@ SDQ - Question 15
 SDQ - Question 16
 ^^^^^^^^^^^^^^^^^
 
+Parent Report: Nervous or {clingy} in new situations, easily loses confidence {omit clingy in PY}.
+
+Youth Self Report: I am nervous in new situations. I easily lose confidence.
 
 :Field name: sdq_item16
 
@@ -2232,9 +2208,7 @@ SDQ - Question 16
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
 :Notes:
-  Parent Report: Nervous or {clingy} in new situations, easily loses confidence {omit clingy in PY}.
-  
-  Youth Self Report: I am nervous in new situations. I easily lose confidence.
+  Required Versions: All
   
 
 ----------
@@ -2242,6 +2216,9 @@ SDQ - Question 16
 SDQ - Question 17
 ^^^^^^^^^^^^^^^^^
 
+Parent Report: Kind to younger children.
+
+Youth Self Report: I am kind to younger people.
 
 :Field name: sdq_item17
 
@@ -2254,9 +2231,7 @@ SDQ - Question 17
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
 :Notes:
-  Parent Report: Kind to younger children.
-  
-  Youth Self Report: I am kind to younger people.
+  Required Versions: All
   
 
 ----------
@@ -2264,6 +2239,9 @@ SDQ - Question 17
 SDQ - Question 18
 ^^^^^^^^^^^^^^^^^
 
+Parent Report: Often lies or cheats.
+
+Youth Self Report: I am often accused of lying or cheating.
 
 :Field name: sdq_item18
 
@@ -2276,9 +2254,7 @@ SDQ - Question 18
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
 :Notes:
-  Parent Report: Often lies or cheats.
-  
-  Youth Self Report: I am often accused of lying or cheating.
+  Required Versions: All
   
 
 ----------
@@ -2286,6 +2262,9 @@ SDQ - Question 18
 SDQ - Question 19
 ^^^^^^^^^^^^^^^^^
 
+Parent Report: Picked on or bullied by {children} / {youth}.
+
+Youth Self Report: Other children or young people pick on me or bully me.
 
 :Field name: sdq_item19
 
@@ -2298,9 +2277,7 @@ SDQ - Question 19
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
 :Notes:
-  Parent Report: Picked on or bullied by {children} / {youth}.
-  
-  Youth Self Report: Other children or young people pick on me or bully me.
+  Required Versions: All
   
 
 ----------
@@ -2308,6 +2285,9 @@ SDQ - Question 19
 SDQ - Question 20
 ^^^^^^^^^^^^^^^^^
 
+Parent Report: Often volunteers to help others (parents, teachers, {other} children) / Omit 'other' in PY.
+
+Youth Self Report: I often volunteer to help others (parents, teachers, children).
 
 :Field name: sdq_item20
 
@@ -2320,9 +2300,7 @@ SDQ - Question 20
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
 :Notes:
-  Parent Report: Often volunteers to help others (parents, teachers, {other} children) / Omit 'other' in PY.
-  
-  Youth Self Report: I often volunteer to help others (parents, teachers, children).
+  Required Versions: All
   
 
 ----------
@@ -2330,6 +2308,9 @@ SDQ - Question 20
 SDQ - Question 21
 ^^^^^^^^^^^^^^^^^
 
+Parent Report: Thinks things out before acting.
+
+Youth Self Report: I think before I do things.
 
 :Field name: sdq_item21
 
@@ -2342,9 +2323,7 @@ SDQ - Question 21
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
 :Notes:
-  Parent Report: Thinks things out before acting.
-  
-  Youth Self Report: I think before I do things.
+  Required Versions: All
   
 
 ----------
@@ -2352,6 +2331,9 @@ SDQ - Question 21
 SDQ - Question 22
 ^^^^^^^^^^^^^^^^^
 
+Parent Report: Steals from home, school or elsewhere.
+
+Youth Self Report: I take things that are not mine from home, school or elsewhere.
 
 :Field name: sdq_item22
 
@@ -2364,9 +2346,7 @@ SDQ - Question 22
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
 :Notes:
-  Parent Report: Steals from home, school or elsewhere.
-  
-  Youth Self Report: I take things that are not mine from home, school or elsewhere.
+  Required Versions: All
   
 
 ----------
@@ -2374,6 +2354,9 @@ SDQ - Question 22
 SDQ - Question 23
 ^^^^^^^^^^^^^^^^^
 
+Parent Report: Gets along better with adults than with other {children} / {youth}.
+
+Youth Self Report: I get along better with adults than with people my own age.
 
 :Field name: sdq_item23
 
@@ -2386,9 +2369,7 @@ SDQ - Question 23
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
 :Notes:
-  Parent Report: Gets along better with adults than with other {children} / {youth}.
-  
-  Youth Self Report: I get along better with adults than with people my own age.
+  Required Versions: All
   
 
 ----------
@@ -2396,6 +2377,9 @@ SDQ - Question 23
 SDQ - Question 24
 ^^^^^^^^^^^^^^^^^
 
+Parent Report: Many fears, easily scared.
+
+Youth Self Report: I have many fears, I am easily scared.
 
 :Field name: sdq_item24
 
@@ -2408,9 +2392,7 @@ SDQ - Question 24
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
 :Notes:
-  Parent Report: Many fears, easily scared.
-  
-  Youth Self Report: I have many fears, I am easily scared.
+  Required Versions: All
   
 
 ----------
@@ -2418,6 +2400,9 @@ SDQ - Question 24
 SDQ - Question 25
 ^^^^^^^^^^^^^^^^^
 
+Parent Report: Good attention span sees chores or homework through to the end.
+
+Youth Self Report: I finish the work I'm doing. My attention is good.
 
 :Field name: sdq_item25
 
@@ -2430,9 +2415,7 @@ SDQ - Question 25
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
 :Notes:
-  Parent Report: Good attention span sees chores or homework through to the end.
-  
-  Youth Self Report: I finish the work I'm doing. My attention is good.
+  Required Versions: All
   
 
 ----------
@@ -2440,6 +2423,9 @@ SDQ - Question 25
 SDQ - Question 26
 ^^^^^^^^^^^^^^^^^
 
+Parent Report: Overall, do you think that your child has difficulties in any of the following areas: emotions, concentration, behaviour or being able to get along with other people?
+
+Youth Self Report: Overall, do you think that you have difficulties in any of the following areas: emotions, concentration, behaviour or being able to get along with other people?
 
 :Field name: sdq_item26
 
@@ -2453,9 +2439,7 @@ SDQ - Question 26
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
 :Notes:
-  Parent Report: Overall, do you think that your child has difficulties in any of the following areas: emotions, concentration, behaviour or being able to get along with other people?
-  
-  Youth Self Report: Overall, do you think that you have difficulties in any of the following areas: emotions, concentration, behaviour or being able to get along with other people?
+  Required Versions: All
   
 
 ----------
@@ -2463,6 +2447,9 @@ SDQ - Question 26
 SDQ - Question 27
 ^^^^^^^^^^^^^^^^^
 
+Parent Report: How long have these difficulties been present?
+
+Youth Self Report: How long have these difficulties been present?
 
 :Field name: sdq_item27
 
@@ -2477,9 +2464,10 @@ SDQ - Question 27
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
 :Notes:
-  Parent Report: How long have these difficulties been present?
-  
-  Youth Self Report: How long have these difficulties been present?
+  Required Versions:
+  - PC101
+  - PY101
+  - YR101
   
 
 ----------
@@ -2487,6 +2475,9 @@ SDQ - Question 27
 SDQ - Question 28
 ^^^^^^^^^^^^^^^^^
 
+Parent Report: Do the difficulties upset or distress your child?
+
+Youth Self Report: Do the difficulties upset or distress you?
 
 :Field name: sdq_item28
 
@@ -2501,9 +2492,7 @@ SDQ - Question 28
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
 :Notes:
-  Parent Report: Do the difficulties upset or distress your child?
-  
-  Youth Self Report: Do the difficulties upset or distress you?
+  Required Versions: All
   
 
 ----------
@@ -2511,6 +2500,9 @@ SDQ - Question 28
 SDQ - Question 29
 ^^^^^^^^^^^^^^^^^
 
+Parent Report: Do the difficulties interfere with your child's everyday life in the following areas? HOME LIFE.
+
+Youth Self Report: Do the difficulties interfere with your everyday life in the following areas? HOME LIFE.
 
 :Field name: sdq_item29
 
@@ -2525,9 +2517,7 @@ SDQ - Question 29
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
 :Notes:
-  Parent Report: Do the difficulties interfere with your child's everyday life in the following areas? HOME LIFE.
-  
-  Youth Self Report: Do the difficulties interfere with your everyday life in the following areas? HOME LIFE.
+  Required Versions: All
   
 
 ----------
@@ -2535,6 +2525,9 @@ SDQ - Question 29
 SDQ - Question 30
 ^^^^^^^^^^^^^^^^^
 
+Parent Report: Do the difficulties interfere with your child's everyday life in the following areas? FRIENDSHIPS.
+
+Youth Self Report: Do the difficulties interfere with your everyday life in the following areas? FRIENDSHIPS.
 
 :Field name: sdq_item30
 
@@ -2549,9 +2542,7 @@ SDQ - Question 30
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
 :Notes:
-  Parent Report: Do the difficulties interfere with your child's everyday life in the following areas? FRIENDSHIPS.
-  
-  Youth Self Report: Do the difficulties interfere with your everyday life in the following areas? FRIENDSHIPS.
+  Required Versions: All
   
 
 ----------
@@ -2559,6 +2550,9 @@ SDQ - Question 30
 SDQ - Question 31
 ^^^^^^^^^^^^^^^^^
 
+Parent Report: Do the difficulties interfere with your child's everyday life in the following areas? CLASSROOM LEARNING.
+
+Youth Self Report: Do the difficulties interfere with your everyday life in the following areas? CLASSROOM LEARNING
 
 :Field name: sdq_item31
 
@@ -2573,9 +2567,7 @@ SDQ - Question 31
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
 :Notes:
-  Parent Report: Do the difficulties interfere with your child's everyday life in the following areas? CLASSROOM LEARNING.
-  
-  Youth Self Report: Do the difficulties interfere with your everyday life in the following areas? CLASSROOM LEARNING
+  Required Versions: All
   
 
 ----------
@@ -2583,6 +2575,9 @@ SDQ - Question 31
 SDQ - Question 32
 ^^^^^^^^^^^^^^^^^
 
+Parent Report: Do the difficulties interfere with your child's everyday life in the following areas? LEISURE ACTIVITIES.
+
+Youth Self Report: Do the difficulties interfere with your everyday life in the following areas? LEISURE ACTIVITIES.
 
 :Field name: sdq_item32
 
@@ -2597,9 +2592,7 @@ SDQ - Question 32
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
 :Notes:
-  Parent Report: Do the difficulties interfere with your child's everyday life in the following areas? LEISURE ACTIVITIES.
-  
-  Youth Self Report: Do the difficulties interfere with your everyday life in the following areas? LEISURE ACTIVITIES.
+  Required Versions: All
   
 
 ----------
@@ -2607,6 +2600,9 @@ SDQ - Question 32
 SDQ - Question 33
 ^^^^^^^^^^^^^^^^^
 
+Parent Report: Do the difficulties put a burden on you or the family as a whole?
+
+Youth Self Report: Do the difficulties make it harder for those around you (family, friends, teachers, etc)?
 
 :Field name: sdq_item33
 
@@ -2621,9 +2617,7 @@ SDQ - Question 33
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
 :Notes:
-  Parent Report: Do the difficulties put a burden on you or the family as a whole?
-  
-  Youth Self Report: Do the difficulties make it harder for those around you (family, friends, teachers, etc)?
+  Required Versions: All
   
 
 ----------
@@ -2631,6 +2625,9 @@ SDQ - Question 33
 SDQ - Question 34
 ^^^^^^^^^^^^^^^^^
 
+Parent Report: Since coming to the services, are your child's problems:
+
+Youth Self Report: 'Since coming to the service, are your problems:
 
 :Field name: sdq_item34
 
@@ -2646,9 +2643,10 @@ SDQ - Question 34
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
 :Notes:
-  Parent Report: Since coming to the services, are your child's problems:
-  
-  Youth Self Report: 'Since coming to the service, are your problems:'
+  Required Versions:
+  - PC201
+  - PY201
+  - YR201
   
 
 ----------
@@ -2656,6 +2654,7 @@ SDQ - Question 34
 SDQ - Question 35
 ^^^^^^^^^^^^^^^^^
 
+Has coming to the service been helpful in other ways eg. providing information or making the problems bearable?
 
 :Field name: sdq_item35
 
@@ -2670,7 +2669,10 @@ SDQ - Question 35
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
 :Notes:
-  Has coming to the service been helpful in other ways eg. providing information or making the problems bearable?
+  Required Versions:
+  - PC201
+  - PY201
+  - YR201
   
 
 ----------
@@ -2678,6 +2680,7 @@ SDQ - Question 35
 SDQ - Question 36
 ^^^^^^^^^^^^^^^^^
 
+Over the last 6 months have your child's teachers complained of fidgetiness, restlessness or overactivity?
 
 :Field name: sdq_item36
 
@@ -2691,7 +2694,9 @@ SDQ - Question 36
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
 :Notes:
-  Over the last 6 months have your child's teachers complained of fidgetiness, restlessness or overactivity?
+  Required Versions:
+  - PC101
+  - PY101
   
 
 ----------
@@ -2699,6 +2704,7 @@ SDQ - Question 36
 SDQ - Question 37
 ^^^^^^^^^^^^^^^^^
 
+Over the last 6 months have your child's teachers complained of poor concentration or being easily distracted?
 
 :Field name: sdq_item37
 
@@ -2712,7 +2718,9 @@ SDQ - Question 37
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
 :Notes:
-  Over the last 6 months have your child's teachers complained of poor concentration or being easily distracted?
+  Required Versions:
+  - PC101
+  - PY101
   
 
 ----------
@@ -2720,6 +2728,7 @@ SDQ - Question 37
 SDQ - Question 38
 ^^^^^^^^^^^^^^^^^
 
+Over the last 6 months have your child's teachers complained of acting without thinking, frequently butting in, or not waiting for his or her turn?
 
 :Field name: sdq_item38
 
@@ -2733,7 +2742,9 @@ SDQ - Question 38
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
 :Notes:
-  Over the last 6 months have your child's teachers complained of acting without thinking, frequently butting in, or not waiting for his or her turn?
+  Required Versions:
+  - PC101
+  - PY101
   
 
 ----------
@@ -2741,6 +2752,7 @@ SDQ - Question 38
 SDQ - Question 39
 ^^^^^^^^^^^^^^^^^
 
+Does your family complain about you having problems with overactivity or poor concentration?
 
 :Field name: sdq_item39
 
@@ -2754,7 +2766,8 @@ SDQ - Question 39
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
 :Notes:
-  Does your family complain about you having problems with overactivity or poor concentration?
+  Required Versions:
+  - YR101
   
 
 ----------
@@ -2762,6 +2775,7 @@ SDQ - Question 39
 SDQ - Question 40
 ^^^^^^^^^^^^^^^^^
 
+Do your teachers complain about you having problems with overactivity or poor concentration?
 
 :Field name: sdq_item40
 
@@ -2775,7 +2789,8 @@ SDQ - Question 40
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
 :Notes:
-  Do your teachers complain about you having problems with overactivity or poor concentration?
+  Required Versions:
+  - YR101
   
 
 ----------
@@ -2783,6 +2798,7 @@ SDQ - Question 40
 SDQ - Question 41
 ^^^^^^^^^^^^^^^^^
 
+Does your family complain about you being awkward or troublesome?
 
 :Field name: sdq_item41
 
@@ -2796,7 +2812,8 @@ SDQ - Question 41
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
 :Notes:
-  Does your family complain about you being awkward or troublesome?
+  Required Versions:
+  - YR101
   
 
 ----------
@@ -2804,6 +2821,7 @@ SDQ - Question 41
 SDQ - Question 42
 ^^^^^^^^^^^^^^^^^
 
+Do your teachers complain about you being awkward or troublesome?
 
 :Field name: sdq_item42
 
@@ -2817,7 +2835,8 @@ SDQ - Question 42
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
 :Notes:
-  Do your teachers complain about you being awkward or troublesome?
+  Required Versions:
+  - YR101
   
 
 ----------
@@ -2904,6 +2923,17 @@ The time from the start to finish of a service contact.
 :Field name: service_contact_duration
 
 :Data type: string
+
+:Domain:
+  :1: 0-15 mins
+  :2: 16-30 mins
+  :3: 31-45 mins
+  :4: 46-60 mins
+  :5: 61-75 mins
+  :6: 76-90 mins
+  :7: 91-105 mins
+  :8: 106-120 mins
+  :9: over 120 mins
 :Notes:
   For group sessions the time for client spent in the session is recorded for
   each client, regardless of the number of clients or third parties participating
