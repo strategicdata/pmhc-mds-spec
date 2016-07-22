@@ -1,4 +1,4 @@
 Version,1.0
 organisation_path,client_key,slk,date_of_birth,est_date_of_birth,client_gender,client_atsi_status,country_of_birth,main_lang_at_home,prof_english
-"PHN_01:Test PHN",CL01,ee12371ef32e847f3ea6a36adcb0050bfbc2ff84,28021983,1,2,4,1101,1201,3
-"PHN_01:Test PHN",CL02,ee12371ef32e847f3ea6a36adcb0050bfbc2ff84,28021983,1,2,4,1101,1201,3
+"PHN_01:Test PHN",CL01,ee12371ef32e847f3ea6a36adcb0050bfbc2ff84,28021983,1,2,4,1102,1202,3
+"PHN_01:Test PHN",CL02,ee12371ef32e847f3ea6a36adcb0050bfbc2ff84,28021983,2,2,4,1101,1201,3

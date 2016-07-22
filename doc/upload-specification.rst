@@ -11,7 +11,7 @@ Comma Separated Values (CSV)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The CSV files should conform to `RFC 4180 <https://www.ietf.org/rfc/rfc4180.txt>`__.
 
-In addition, CSV files must be created using US-ASCII character encoding.
+In addition, CSV files must be created using UTF-8 character encoding.
 
 CSV files should have the file extension .csv
 

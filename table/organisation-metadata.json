@@ -1,0 +1,88 @@
+{
+  "@id": "organisation-metadata.json",
+  "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
+  "columns": [{
+    "name": "organisation_key",
+    "titles": [ "organisation_key", "Organisation Key" ],
+    "dc:title": "Provider Organisation Key",
+    "schema:description": "A sequence of characters which uniquely identifies the provider organisation. Assigned by the Primary Health Network.",
+    "schema:dateCreated": "2016-06-22",
+    "schema:dateDeleted": "2016-06-22",
+    "schema:dateModified": "2016-06-22",
+    "datatype": {
+      "base": "string",
+      "minLength": 2,
+      "maxLength": 50
+      },
+    "required": true
+  },{
+    "name": "organisation_name",
+    "titles": [ "organisation_name", "Name" ],
+    "dc:title" : "Provider Organisation - Name",
+    "schema:description": "The name of the provider organisation.",
+    "schema:dateCreated": "2016-06-22",
+    "schema:dateDeleted": "2016-06-22",
+    "schema:dateModified": "2016-06-22",
+    "datatype": {
+      "base": "string",
+      "minLength": 2,
+      "maxLength": 100
+      },
+    "required": true
+  },{
+    "name": "organisation_abn",
+    "titles": [ "organisation_abn", "ABN" ],
+    "dc:title" : "Provider Organisation - ABN",
+    "schema:description": "The Australian Business Number of the provider organisation.",
+    "schema:dateCreated": "2016-07-08",
+    "schema:dateModified": "2016-07-08",
+    "datatype": {
+      "base": "string",
+      "minLength": 11,
+      "maxLength": 11
+      }
+  },{
+     "name": "organisation_type",
+    "titles": [ "organisation_type", "Type" ],
+    "dc:title" : "Provider Organisation - Type",
+    "schema:description": "The type of the provider organisation.",
+    "schema:disambiguatingDescription": "table/organisation/type.rst",
+    "schema:dateCreated": "2016-06-22",
+    "schema:dateDeleted": "2016-06-22",
+    "schema:dateModified": "2016-06-22",
+    "datatype": {
+      "base": "string",
+      "format": "^(0|1|2|3|4|5|6|7|8|9|10|11)$"
+    },
+    "required": true
+  },{
+    "name": "organisation_state",
+    "titles": [ "organisation_state", "State" ],
+    "dc:title" : "Provider Organisation - State",
+    "schema:description": "The state that the provider organisation operates in.",
+    "schema:disambiguatingDescription": "table/organisation/state.rst",
+    "schema:meteorItem": "613718",
+    "schema:dateCreated": "2016-06-22",
+    "schema:dateDeleted": "2016-06-22",
+    "schema:dateModified": "2016-06-22",
+    "datatype": {
+      "base": "string",
+      "format": "^(1|2|3|4|5|6|7|8|9)$"
+    },
+    "required": true
+  }],
+  "primaryKey": "organisation_key",
+  "foreignKeys": [{
+    "columnReference": "organisation_state",
+    "reference": {
+      "resource": "table/organisation/state.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "organisation_type",
+    "reference": {
+      "resource": "table/organisation/type.csv",
+      "columnReference": "id"
+    }
+  }]
+}

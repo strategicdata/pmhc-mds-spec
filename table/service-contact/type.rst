@@ -68,7 +68,7 @@ to report on Service Type for all Service Contacts.
   child’s teacher to provide advice on assisting the child in their educational
   environment; working with a young person's employer to assist the young
   person to their work environment.
-  
+
   *Note: This code should only be used for
   Service Contacts that cannot be described by any other Service Type. It is
   expected that the majority of Service Contacts delivered to children and
@@ -88,11 +88,13 @@ to report on Service Type for all Service Contacts.
   assigned to other categories.*
 
 8 - Cultural specific assistance NEC
-  Services delivered to, or on behalf, of an Aboriginal or Torres Strait
-  Islander client that cannot be described elsewhere. These can include, for
-  example, ... **(more to be added)**
+  Culturally appropriate services delivered to, or on behalf, of an Aboriginal
+  or Torres Strait Islander client that cannot be described elsewhere.  These
+  can include, for example, working with the client’s community support network
+  including family and carers, men’s and women’s groups, traditional healers,
+  interpreters and social and emotional wellbeing counsellors.
 
   *Note: This code should only be used for Service Contacts that cannot be
-  described by any other Service Type. It is expected that many of Service
-  Contacts delivered to Aboriginal or Torres Strait Islander client's can be
-  assigned to other categories.*
+  described by any other Service Type. It is expected that the majority of
+  Service Contacts (see domains below) delivered to Aboriginal or Torres Strait
+  Islander clients can be assigned to other categories.*

@@ -1,0 +1,22 @@
+{
+  "@id": "table/episode/ndis-participant.json",
+  "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
+  "columns": [{
+    "name": "id",
+    "titles": [ "id", "ID" ],
+    "schema:dateCreated": "2016-06-22",
+    "schema:dateDeleted": "2016-06-22",
+    "schema:dateModified": "2016-06-22",
+    "datatype": "string"
+  },{
+    "name": "description",
+    "titles": [ "description", "Description" ],
+    "schema:dateCreated": "2016-06-22",
+    "schema:dateDeleted": "2016-06-22",
+    "schema:dateModified": "2016-06-22",
+    "datatype": {
+      "base": "string"
+    }
+  }],
+  "primaryKey": "id"
+}
