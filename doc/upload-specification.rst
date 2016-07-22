@@ -4,6 +4,7 @@ Upload specification
 File types
 ------------
 Files will be accepted in the following types:
+
 - Comma Separated Values (CSV)
 - Excel (XLSX)
 
@@ -22,6 +23,7 @@ CSV files can compressed by zipping or tar/zipping before uploading, or they can
 Excel (XLSX)
 ^^^^^^^^^^^^
 Excel files should be in XLSX format. The following versions of Excel support this format:
+
 - Excel 2007 (v12.0)
 - Excel 2010 (v14.0)
 - Excel 2013 (v15.0)
@@ -70,6 +72,7 @@ The client file/worksheet is required to be uploaded each time.
 Data elements for the client upload file/worksheet are defined at :ref:`client-data-elements`.
 
 Example client data:
+
 - `CSV client file <_static/clients.csv>`_.
 - `XLSX client worksheet <_static/pmhc-upload.xlsx>`_.
 
@@ -82,6 +85,7 @@ The episode file/worksheet is required to be uploaded each time.
 Data elements for the episode upload file/worksheet are defined at :ref:`episode-data-elements`.
 
 Example episode data:
+
 - `CSV episode file <_static/episodes.csv>`_.
 - `XLSX episode worksheet <_static/pmhc-upload.xlsx>`_.
 
@@ -94,6 +98,7 @@ The service contact file/worksheet is required to be uploaded each time.
 Data elements for the service contact upload file/worksheet are defined at :ref:`service-contact-data-elements`.
 
 Example service contact data:
+
 - `CSV service contact file <_static/service-contacts.csv>`_.
 - `XLSX service contact worksheet <_static/pmhc-upload.xlsx>`_.
 
@@ -106,6 +111,7 @@ The K10+ file/worksheet is required to be uploaded each time.
 Data elements for the K10+ collection occasion upload file/worksheet are defined at :ref:`k10p-data-elements`.
 
 Example K10+ data:
+
 - `CSV K10+ file <_static/k10p.csv>`_.
 - `XLSX K10+ worksheet <_static/pmhc-upload.xlsx>`_.
 
@@ -118,6 +124,7 @@ The K5 file/worksheet is required to be uploaded each time.
 Data elements for the K5 collection occasion upload file/worksheet are defined at :ref:`k5-data-elements`.
 
 Example K5 data:
+
 - `CSV K5 file <_static/k5.csv>`_.
 - `XLSX K5 worksheet <_static/pmhc-upload.xlsx>`_.
 
@@ -130,6 +137,7 @@ The SDQ file/worksheet is required to be uploaded each time.
 Data elements for the SDQ collection occasion upload file/worksheet are defined at :ref:`sdq-data-elements`.
 
 Example SDQ data:
+
 - `CSV SDQ file <_static/sdq.csv>`_.
 - `XLSX SDQ worksheet <_static/pmhc-upload.xlsx>`_.
 
@@ -143,5 +151,6 @@ There is no harm in including it in every upload.
 Data elements for the practitioner upload file/worksheet are defined at :ref:`practitioner-data-elements`.
 
 Example practitioner data:
+
 - `CSV practitioner file <_static/practitioners.csv>`_.
 - `XLSX practitioner worksheet <_static/pmhc-upload.xlsx>`_.
