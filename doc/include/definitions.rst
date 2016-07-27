@@ -148,7 +148,7 @@ The language reported by a client as the main language other than English spoken
   or 9999 if info is not known or client refuses to supply.
   
   The ABS recommends the following question in order to collect this data:
-  Which language does the client mainly speak at home? (If more that one
+  Which language does the client mainly speak at home? (If more than one
   language, indicate the one that is spoken most often.)
   
   Organisations are encouraged to produce customised lists of the most common
@@ -1840,7 +1840,7 @@ The version of the SDQ collected.
   :YR201: Self report Version, 11-17 years, Follow Up version, Australian Version 1
 :Notes:
   Domain values align with those collected in the NOCC dataset as defined at
-  https://webval.validator.com.au/spec/NOCC/
+  https://webval.validator.com.au/spec/NOCC/current/SDQ/SDQVer
   
 
 ----------
@@ -3206,7 +3206,7 @@ The main type of service provided in the service contact, as represented by the 
     child’s teacher to provide advice on assisting the child in their educational
     environment; working with a young person's employer to assist the young
     person to their work environment.
-    
+  
     *Note: This code should only be used for
     Service Contacts that cannot be described by any other Service Type. It is
     expected that the majority of Service Contacts delivered to children and
@@ -3226,14 +3226,16 @@ The main type of service provided in the service contact, as represented by the 
     assigned to other categories.*
   
   8 - Cultural specific assistance NEC
-    Services delivered to, or on behalf, of an Aboriginal or Torres Strait
-    Islander client that cannot be described elsewhere. These can include, for
-    example, ... **(more to be added)**
+    Culturally appropriate services delivered to, or on behalf, of an Aboriginal
+    or Torres Strait Islander client that cannot be described elsewhere.  These
+    can include, for example, working with the client’s community support network
+    including family and carers, men’s and women’s groups, traditional healers,
+    interpreters and social and emotional wellbeing counsellors.
   
     *Note: This code should only be used for Service Contacts that cannot be
-    described by any other Service Type. It is expected that many of Service
-    Contacts delivered to Aboriginal or Torres Strait Islander client's can be
-    assigned to other categories.*
+    described by any other Service Type. It is expected that the majority of
+    Service Contacts (see domains below) delivered to Aboriginal or Torres Strait
+    Islander clients can be assigned to other categories.*
   
 
 ----------
