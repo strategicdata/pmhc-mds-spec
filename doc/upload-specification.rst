@@ -35,7 +35,6 @@ described :ref:`below <files-to-upload>`.
 When saving your file, please choose the filetype 'Excel Workbook (.xlsx)'.
 
 The filename of the Excel file doesn't matter as long as it has the file extension .xlsx
-???????Are we better specifying a filename for simplicity??????????
 
 .. _files-to-upload:
 

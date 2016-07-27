@@ -79,12 +79,12 @@ Three business rules apply to how the *Episode of Care* concept is implemented
 across PHN-commissioned services:
 
 - **One episode at a time for each client, defined at the level of the provider
-  organisation / clinician**
+  organisation**
 
   While an individual may have multiple *Episodes of Care* over the course of
   their illness, they may be considered as being in only one episode at any
   given point of time for **any particular PHN-commissioned provider
-  organisation/clinician**. The implication is that the care provided by the
+  organisation**. The implication is that the care provided by the
   organisation to an individual client at any point in time is subject to only
   one set of reporting requirements.
 
@@ -147,8 +147,9 @@ the required outcome measure is to be collected. At a minimum, collection of
 outcome data is required at both Episode Start and Episode End, but may be more
 frequent if clinically indicated and agreed by the client.
 
-Measures will be the Kessler Psychological Distress Scale K10+ and K5 versions
-as well as the Strengths & Difficulties Questionnaires.
+Measures will be the Kessler Psychological Distress Scale K10+ (on the case of
+Aboriginal and Torres Strait Islander clients, the K5) as well as the Strengths
+& Difficulties Questionnaires.
 
 Individual item scores will be required.
 

@@ -1,4 +1,4 @@
 Version,1.0
 organisation_key,organisation_name,organisation_abn,organisation_type,organisation_state
-PHN01,Primary Health Network 1,A16G3H92A1B,11,9
-PO01,Provider Organisation 1,4U81d3C29H1,2,9
+PHN999,Test PHN,27061783015,0,1
+NFP01,Test Not For Profit,73522479291,2,1
