@@ -11,8 +11,8 @@ Data model
 
    PMHC data model
 
-**Note: See :ref:`pmhc-collection-occasion-data-model` for more details about
-  Collection Occasion records.**
+**Note: See :ref:`pmhc-collection-occasion-data-model` for more details about 
+Collection Occasion records.**
 
 .. _pmhc-collection-occasion-data-model:
 
