@@ -289,7 +289,7 @@ The main additional condition or complaint co-existing with the Principal Diagno
 :Data type: string
 
 :Domain:
-  See `Episode - Principal Diagnosis`_
+  See *Episode - Principal Diagnosis*
 :Notes:
   Additional Diagnosis gives information on conditions that are significant in
   terms of treatment required and resources used during the episode of care.
@@ -1208,7 +1208,6 @@ In the last 4 weeks, about how often did you feel nervous?
   :3: Some of the time
   :4: Most of the time
   :5: All of the time
-  :6: Don't know
   :9: Not stated / Missing
 
 ----------
@@ -1228,7 +1227,6 @@ In the last 4 weeks, about how often did you feel without hope?
   :3: Some of the time
   :4: Most of the time
   :5: All of the time
-  :6: Don't know
   :9: Not stated / Missing
 
 ----------
@@ -1248,7 +1246,6 @@ In the last 4 weeks, about how often did you feel restless or jumpy?
   :3: Some of the time
   :4: Most of the time
   :5: All of the time
-  :6: Don't know
   :9: Not stated / Missing
 
 ----------
@@ -1268,7 +1265,6 @@ In the last 4 weeks, about how often did you feel everything was an effort?
   :3: Some of the time
   :4: Most of the time
   :5: All of the time
-  :6: Don't know
   :9: Not stated / Missing
 
 ----------
@@ -1288,7 +1284,6 @@ In the last 4 weeks, about how often did you feel so sad that nothing could chee
   :3: Some of the time
   :4: Most of the time
   :5: All of the time
-  :6: Don't know
   :9: Not stated / Missing
 
 ----------
@@ -1308,7 +1303,6 @@ In the past 4 weeks, about how often did you feel tired out for no good reason?
   :3: Some of the time
   :4: Most of the time
   :5: All of the time
-  :6: Don't know
   :9: Not stated / Missing
 
 ----------
@@ -1328,7 +1322,6 @@ In the past 4 weeks, about how often did you feel nervous?
   :3: Some of the time
   :4: Most of the time
   :5: All of the time
-  :6: Don't know
   :9: Not stated / Missing
 
 ----------
@@ -1348,7 +1341,6 @@ In the past 4 weeks, about how often did you feel so nervous that nothing could 
   :3: Some of the time
   :4: Most of the time
   :5: All of the time
-  :6: Don't know
   :9: Not stated / Missing
 
 ----------
@@ -1368,7 +1360,6 @@ In the past 4 weeks, how often did you feel hopeless?
   :3: Some of the time
   :4: Most of the time
   :5: All of the time
-  :6: Don't know
   :9: Not stated / Missing
 
 ----------
@@ -1388,7 +1379,6 @@ In the past 4 weeks, how often did you feel restless or fidgety?
   :3: Some of the time
   :4: Most of the time
   :5: All of the time
-  :6: Don't know
   :9: Not stated / Missing
 
 ----------
@@ -1408,7 +1398,6 @@ In the past 4 weeks, how often did you feel so restless you could not sit still?
   :3: Some of the time
   :4: Most of the time
   :5: All of the time
-  :6: Don't know
   :9: Not stated / Missing
 
 ----------
@@ -1428,7 +1417,6 @@ In the past 4 weeks, how often did you feel depressed?
   :3: Some of the time
   :4: Most of the time
   :5: All of the time
-  :6: Don't know
   :9: Not stated / Missing
 
 ----------
@@ -1448,7 +1436,6 @@ In the past 4 weeks, how often did you feel that everything was an effort?
   :3: Some of the time
   :4: Most of the time
   :5: All of the time
-  :6: Don't know
   :9: Not stated / Missing
 
 ----------
@@ -1468,7 +1455,6 @@ In the past 4 weeks, how often did you feel so sad that nothing could cheer you 
   :3: Some of the time
   :4: Most of the time
   :5: All of the time
-  :6: Don't know
   :9: Not stated / Missing
 
 ----------
@@ -1488,7 +1474,6 @@ In the past 4 weeks, how often did you feel worthless?
   :3: Some of the time
   :4: Most of the time
   :5: All of the time
-  :6: Don't know
   :9: Not stated / Missing
 
 ----------
@@ -1541,7 +1526,6 @@ In the past four weeks, how often have physical health problems been the main ca
   :3: Some of the time
   :4: Most of the time
   :5: All of the time
-  :6: Don't know
   :9: Not stated / Missing
 
 ----------
