@@ -178,6 +178,60 @@ K5
 SDQ
 ^^^
 
+Extensive support materials are available on the SDQ developers' website,
+including copies of the various versions of the instrument, background
+information and scoring instructions. See http://www.sdqinfo.com. There are
+six versions (parent-report and youth-self report) currently specified format
+PMHC MDS reporting.
+
+The "1" versions are administered on admission and are rated on the basis of
+the proceeding 6 months. The "2" follow up versions are administered on review
+and discharge and are rated on the basis of the previous 1 month period.
+
+The versions specified for PMHC MDS reporting are:
+
+- PC1 - Parent Report Measure for Children aged 4-10, Baseline version;
+- PC2 - Parent Report Measure for Children and Adolescents aged 4-10, Follow up version;
+- PY1 - Parent Report Measure for Youth aged 11-17, Baseline version;
+- PY2 - Parent Report Measure for Youth aged 11-17, Follow up version;
+- YR1 - Youth self report measure (11-17), Baseline version; and
+- YR2 - Youth self report measure (11-17), Follow up version.
+
+Please note that the item numbering in the SDQ versions is deliberately non
+sequential because it covers all items in all versions, both to indicate item
+equivalence across versions and to assist data entry, especially of
+translated versions. The table below indicates the items that are included in
+each version, the rating periods used and the broad content covered by each
+item.
+
+        +-----------------------------+--------------------------------+--------------------------------+
+        | Informant                   | Parent                         | Young Person                   |
+        +-----------------------------+---------------------+----------+----------+---------------------+
+        | Age range                   | 4-10                | 11-17               | 11 - 17             |
+        +-----------------------------+----------+----------+----------+----------+----------+----------+
+        | Application                 | Baseline | Followup | Baseline | Followup | Baseline | Followup |
+        +-----------------------------+----------+----------+----------+----------+----------+----------+
+        | Rating period               | 6 months | 1 month  | 6 months | 1 month  | 6 months | 1 month  |
++-------+-----------------------------+----------+----------+----------+----------+----------+----------+
+| Items | Item Content                | Version                                                         |
+|       |                             |----------+----------+----------+----------+----------+----------+
+|       |                             | PC1      | PC2      | PY1      | PY2      | YR1      | YR2      |
++=======+=============================+==========+==========+==========+==========+==========+==========+
+| 1-25  | Symptoms                    | ✓        | ✓        | ✓        | ✓        | ✓        | ✓        |
++-------+-----------------------------+----------+----------+----------+----------+----------+----------+
+| 26    | Overall                     | ✓        | ✓        | ✓        | ✓        | ✓        | ✓        |
++-------+-----------------------------+----------+----------+----------+----------+----------+----------+
+| 27    | Duration                    | ✓        | X        | ✓        | X        | ✓        |         |
++-------+-----------------------------+----------+----------+----------+----------+----------+----------+
+| 28-33 | Impact                      | ✓        | ✓        | ✓        | ✓        | ✓        | ✓        |
++-------+-----------------------------+----------+----------+----------+----------+----------+----------+
+| 34-35 | Follow up progress          | X        | ✓        | X        | ✓        | X        | ✓        |
++-------+-----------------------------+----------+----------+----------+----------+----------+----------+
+| 36-38 | Cross-Informant information | ✓        | X        | ✓        | X        | X        | X        |
++-------+-----------------------------+----------+----------+----------+----------+----------+----------+
+| 39-42 | Cross-Informant information | X        | X        | X        | X        | ✓        | X        |
++-------+-----------------------------+----------+----------+----------+----------+----------+----------+
+
 .. csv-table:: SDQ record layout
    :file: record/sdq-collection-occasion.csv
    :header-rows: 1
