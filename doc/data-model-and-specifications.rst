@@ -4,15 +4,25 @@ Data model and specifications
 Data model
 ----------
 
+.. _pmhc_data_model:
+
 .. figure:: figures/data-model.svg
    :alt: PMHC data model
 
    PMHC data model
 
+**Note: See :ref:`pmhc-collection-occasion-data-model` for more details about
+  Collection Occasion records.**
+
+.. _pmhc-collection-occasion-data-model:
+
 .. figure:: figures/collection-occasion-data-model.svg
    :alt: PMHC Collection Occasion data model
 
    PMHC Collection Occasion data model
+
+* **Note: See :ref:`pmhc-data-model` for more details about how
+  Collection Occasion records fit into the overall structure.**
 
 .. _record-formats:
 
