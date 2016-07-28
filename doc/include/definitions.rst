@@ -289,7 +289,7 @@ The main additional condition or complaint co-existing with the Principal Diagno
 :Data type: string
 
 :Domain:
-  See *Episode - Principal Diagnosis*
+  See `Episode - Principal Diagnosis`_
 :Notes:
   Additional Diagnosis gives information on conditions that are significant in
   terms of treatment required and resources used during the episode of care.
