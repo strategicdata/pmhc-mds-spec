@@ -41,9 +41,9 @@ The country in which the client was born, as represented by a code.
 
 :Data type: string[4]
 :Notes:
-  `Standard Australian Classification of Countries 2011 (SACC 2011) 4-digit
+  `Standard Australian Classification of Countries (SACC), 2016 4-digit
   code (ABS Catalogue No. 1269.0)
-  <http://www.abs.gov.au/ausstats/abs@.nsf/mf/1269.0>`_ SACC 2011 is a
+  <http://www.abs.gov.au/ausstats/abs@.nsf/mf/1269.0>`_ SACC 2016 is a
   four-digit, three-level hierarchical structure specifying major group, minor
   group and country. 9999 is used when the information is not known or the
   client has refused to provide the information.
@@ -143,7 +143,7 @@ The language reported by a client as the main language other than English spoken
 
 :Data type: string[4]
 :Notes:
-  `Australian Standard Classification of Languages 2011 4-digit code (ABS
+  `Australian Standard Classification of Languages (ASCL), 2016 4-digit code (ABS
   Catalogue No. 1267.0) <http://www.abs.gov.au/ausstats/abs@.nsf/mf/1267.0>`_
   or 9999 if info is not known or client refuses to supply.
   
@@ -1791,20 +1791,20 @@ The type of the provider organisation.
 :Data type: string
 
 :Domain:
-  :0: Primary Heath Network
-  :1: Private Primary Health Care Organisation - for profit
-  :2: Private Primary Health Care Organisation - not for profit
-  :3: Medicare Local
-  :4: Division of General Practice
-  :5: Aboriginal Health/Medical Service
-  :6: General Practice
-  :7: Private Psychiatry service
-  :8: Drug and/or Alcohol Service
-  :9: Community-managed Community Support Organisation
-  :10: State/Territory Health Services
-  :11: Headspace Centre
-  :12: Solo Practitioner
-  :13: Other
+  :1: Primary Heath Network
+  :2: Private Primary Health Care Organisation - for profit
+  :3: Private Primary Health Care Organisation - not for profit
+  :4: Medicare Local
+  :5: Division of General Practice
+  :6: Aboriginal Health/Medical Service
+  :7: General Practice
+  :8: Private Psychiatry service
+  :9: Drug and/or Alcohol Service
+  :10: Community-managed Community Support Organisation
+  :11: State/Territory Health Services
+  :12: Headspace Centre
+  :13: Solo Practitioner
+  :14: Other
 :Notes:
   Coding options will be finalised following feedback from PHNs.
   
