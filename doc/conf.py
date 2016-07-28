@@ -30,6 +30,7 @@ import shlex
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 
+# extensions = ['cloud_sptheme.ext.table_styling']
 extensions = []
 
 
