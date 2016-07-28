@@ -12,6 +12,7 @@ use Encode 'encode';
 use File::ShareDir qw(module_dir);
 use YAML::XS qw(LoadFile);
 use Text::CSV_XS;
+use Cpanel::JSON::XS;
 
 use Data::Dumper;
 
@@ -77,11 +78,13 @@ sub generate {
 
         my $row_count = 1;
         
+        my $table_schema = decode_json(path($record->{tableSchema})->slurp);
+        
         my $field_fk;
         %{$field_fk} = map { ($_->{columnReference}, $_->{reference}) } 
-            @{$record->{tableSchema}{foreignKeys}};
+            @{$table_schema->{foreignKeys}};
 
-        foreach my $field ( @{$record->{'tableSchema'}{'columns'}} ) {
+        foreach my $field ( @{$table_schema->{columns}} ) {
             warn "\t", $field->{'dc:title'}, "\n";
             #say '^' x length $field->{'dc:title'};
             #say Dumper $field;
