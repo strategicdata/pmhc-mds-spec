@@ -1,4 +1,4 @@
-`Australian Standard Classification of Languages 2011 4-digit code (ABS
+`Australian Standard Classification of Languages (ASCL), 2016 4-digit code (ABS
 Catalogue No. 1267.0) <http://www.abs.gov.au/ausstats/abs@.nsf/mf/1267.0>`_
 or 9999 if info is not known or client refuses to supply.
 
