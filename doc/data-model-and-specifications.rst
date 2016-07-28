@@ -147,7 +147,7 @@ the required outcome measure is to be collected. At a minimum, collection of
 outcome data is required at both Episode Start and Episode End, but may be more
 frequent if clinically indicated and agreed by the client.
 
-Measures will be the Kessler Psychological Distress Scale K10+ (on the case of
+Measures will be the Kessler Psychological Distress Scale K10+ (in the case of
 Aboriginal and Torres Strait Islander clients, the K5) as well as the Strengths
 & Difficulties Questionnaires.
 
