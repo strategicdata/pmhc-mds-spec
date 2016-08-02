@@ -47,9 +47,10 @@ it cannot be uploaded.
 Practitioner
 ^^^^^^^^^^^^
 
-Practitioner data is intended to provide workforce planning data for use by the
-Department. It is managed by the provider organisations via either the PMHC MDS
-administrative interface or upload.
+Practitioner data is intended to provide workforce planning data for use
+regionally by the PHN and nationally by the Department. It is managed by the
+provider organisations via either the PMHC MDS administrative interface or
+upload.
 
 .. csv-table:: Practitioner record layout
   :file: record/practitioner.csv
