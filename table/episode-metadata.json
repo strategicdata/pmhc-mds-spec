@@ -111,6 +111,19 @@
     },
     "required": true
   },{
+    "name": "mental_health_treatment_plan",
+    "titles": [ "mental_health_treatment_plan", "Mental Health Treatment Plan" ],
+    "dc:title": "Episode - GP Mental Health Treatment Plan Flag",
+    "schema:description": "An indication of whether a client has a GP mental health treatment plan. A GP should be involved in a referral where appropriate however a mental health treatment plan is not mandatory.",
+    "schema:dateCreated": "2016-06-22",
+    "schema:dateDeleted": "2016-06-22",
+    "schema:dateModified": "2016-07-08",
+    "datatype": {
+      "base": "string",
+      "format": "^(1|2|3|9)$"
+    },
+    "required": true
+  },{
     "name": "homelessness",
     "titles": [ "homelessness", "Homelessness Flag" ],
     "dc:title": "Episode - Homelessness Flag",
@@ -372,6 +385,12 @@
     "columnReference": "principal_focus",
     "reference": {
       "resource": "table/episode/principal-focus.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "mental_health_treatment_plan",
+    "reference": {
+      "resource": "table/episode/mental-health-treatment-plan.csv",
       "columnReference": "id"
     }
   }, {
