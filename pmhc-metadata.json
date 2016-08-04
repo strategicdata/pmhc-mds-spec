@@ -98,8 +98,11 @@
     "url": "table/episode/labour-force-status.csv",
     "tableSchema": "table/episode/labour-force-status.json"
   }, {
-    "url": "table/episode/mental-health-service-plan.csv",
-    "tableSchema": "table/episode/mental-health-service-plan.json"
+    "url": "table/episode/mental-health-treatment-plan.csv",
+    "tableSchema": "table/episode/mental-health-treatment-plan.json"
+  }, {
+    "url": "table/episode/client-consent.csv",
+    "tableSchema": "table/episode/client-consent.json"
   }, {
     "url": "table/episode/employment-participation.csv",
     "tableSchema": "table/episode/employment-participation.json"
