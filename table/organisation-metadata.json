@@ -70,6 +70,19 @@
       "format": "^(1|2|3|4|5|6|7|8|9)$"
     },
     "required": true
+  },{
+    "name": "organisation_tags",
+    "titles": [ "organisation_tags", "Tags" ],
+    "dc:title" : "Provider Organisation - Tags",
+    "schema:description": "List of tags for the provider organisation.",
+    "schema:disambiguatingDescription": "type/tags.rst",
+    "schema:dateCreated": "2016-06-22",
+    "schema:dateDeleted": "2016-06-22",
+    "schema:dateModified": "2016-06-22",
+    "datatype": {
+      "base": "string"
+      },
+    "required": false
   }],
   "primaryKey": "organisation_key",
   "foreignKeys": [{

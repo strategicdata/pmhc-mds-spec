@@ -224,6 +224,19 @@
       "format": "^(1|2|3)$"
     },
     "required": true
+  },{
+    "name": "service_contact_tags",
+    "titles": [ "service_contact_tags", "Tags" ],
+    "dc:title" : "Service Contact - Tags",
+    "schema:description": "List of tags for the service contact.",
+    "schema:disambiguatingDescription": "type/tags.rst",
+    "schema:dateCreated": "2016-06-22",
+    "schema:dateDeleted": "2016-06-22",
+    "schema:dateModified": "2016-06-22",
+    "datatype": {
+      "base": "string"
+      },
+    "required": false
   }],
   "primaryKey": "service_contact_key",
   "foreignKeys": [{

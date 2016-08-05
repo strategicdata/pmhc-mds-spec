@@ -385,6 +385,19 @@
       "base": "string"
     },
     "required": true
+  },{
+    "name": "episode_tags",
+    "titles": [ "episode_tags", "Tags" ],
+    "dc:title" : "Episode - Tags",
+    "schema:description": "List of tags for the episode.",
+    "schema:disambiguatingDescription": "type/tags.rst",
+    "schema:dateCreated": "2016-06-22",
+    "schema:dateDeleted": "2016-06-22",
+    "schema:dateModified": "2016-06-22",
+    "datatype": {
+      "base": "string"
+      },
+    "required": false
   }],
   "primaryKey": "episode_key",
   "foreignKeys": [{
