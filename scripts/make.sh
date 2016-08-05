@@ -9,6 +9,9 @@ pushd .
 
 cd doc
 
+rm -rf _data
+cp -rf ../data _data
+
 if [ -z $1 ]; then
   ARG1=html
 else
