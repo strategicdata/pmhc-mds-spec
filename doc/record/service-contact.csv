@@ -10,7 +10,7 @@
 ",string,"This is a number or code assigned to each episode. The Episode Key is unique and stable for each episode at the level of the organisation."
 "`Practitioner Key`_ (practitioner_key)
 
-",string,"A unique identifier for a practitioner within the PMHC top level organisation."
+",string,"A unique identifier for a practitioner within the provider organisation."
 "`Service Contact - Date`_ (service_contact_date)
 
 

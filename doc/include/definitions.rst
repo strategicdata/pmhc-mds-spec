@@ -120,16 +120,16 @@ The term 'gender' refers to the way in which a person identifies their masculine
 Client Key
 ^^^^^^^^^^
 
-This is a number or code assigned to each individual referred to the commissioned organisation. The client identifier is unique and stable for each individual at the level of the PMHC top level organisation.
+This is a number or code assigned to each individual referred to the commissioned organisation. The client identifier is unique and stable for each individual witin the PHN.
 
 :Field name: client_key
 
 :Data type: string
 :Notes:
-  Client keys must be unique across the entire PHN network independent of the
-  treating organisation. It is the responsibility of PHNs and Provider
-  Organisations to co-ordinate to maintain this identifier. Clients should not be
-  assigned multiple keys within the same PHN.
+  Client keys must be unique within each PHN independent of the treating
+  organisation. It is the responsibility of PHNs and Provider Organisations to
+  co-ordinate to maintain this identifier. Clients should not be assigned
+  multiple keys within the same PHN.
   
 
 ----------

@@ -4,7 +4,7 @@
 ",string,"A sequence of colon separated Organisation Codes that fully specifies the upload organisation."
 "`Client Key`_ (client_key)
 
-",string,"This is a number or code assigned to each individual referred to the commissioned organisation. The client identifier is unique and stable for each individual at the level of the PMHC top level organisation."
+",string,"This is a number or code assigned to each individual referred to the commissioned organisation. The client identifier is unique and stable for each individual witin the PHN."
 "`Client - Statistical Linkage Key`_ (slk)
 
 
