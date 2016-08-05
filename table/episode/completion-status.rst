@@ -1,3 +1,6 @@
+All *Episode closed administratively* items are appropriate regardless of whether
+service contacts exist.
+
 1 - Episode closed - treatment concluded
   No further service contacts are planned as the client no longer requires
   treatment.
