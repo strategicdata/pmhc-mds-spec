@@ -364,6 +364,10 @@ An indication that the client has consented to their de-identified data being st
 :Field name: client_consent
 
 :Data type: string
+
+:Domain:
+  :1: Yes
+  :2: No
 :Notes:
   1 - Yes
     The client has consented to their de-identified data being stored in the PMHC

@@ -15,7 +15,8 @@
 METeOR: `614094 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614094>`__",date,"The date on which an *Episode of Care* is formally or administratively ended"
 "`Episode - Client Consent to De-identified Data`_ (client_consent)
 
-",string,"An indication that the client has consented to their de-identified data being stored in the PMHC MDS."
+",string,":1: Yes
+:2: No"
 "`Episode - Completion Status`_ (episode_completion_status)
 
 ",string,":1: Episode closed - treatment concluded
