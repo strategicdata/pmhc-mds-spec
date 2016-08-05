@@ -392,6 +392,12 @@
       "columnReference": "id"
     }
   }, {
+    "columnReference": "client_consent",
+    "reference": {
+      "resource": "table/episode/client-consent.csv",
+      "columnReference": "id"
+    }
+  }, {
     "columnReference": "principal_focus",
     "reference": {
       "resource": "table/episode/principal-focus.csv",
