@@ -99,7 +99,8 @@ across PHN-commissioned services:
   organisation to an individual client at any point in time is subject to only
   one set of reporting requirements.
 
-- **Episodes commence at the point of first contact**
+- **Episodes commence at the point of first contact.** The episode start date
+  will be derived from the first service contact date.
 
 - **Discharge from care concludes the episode**
 

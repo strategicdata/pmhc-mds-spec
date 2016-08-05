@@ -1,3 +1,29 @@
+1 - Episode closed - treatment concluded
+  No further service contacts are planned as the client no longer requires
+  treatment.
+
+2 - Episode closed administratively - client could not be contacted
+  Further service contacts were planned but the client could no longer be
+  contacted.
+
+3 - Episode closed administratively - client declined further contact
+  Further service contacts were planned but the client declined further treatment.
+
+4 - Episode closed administratively - client moved out of area
+  Further service contacts were planned but the client moved out of the area
+  without a referral elsewhere. Where a client was referred somewhere else
+  *Episode Completion Status* should be recorded as code 5 (Episode closed
+  administratively - client referred elsewhere).
+
+5 - Episode closed administratively - client referred elsewhere
+  Where a client still requires treatment, but a different service has been
+  deemed appropriate or a client has moved out of the area so has moved to a
+  different provider.
+
+6 - Episode closed administratively - other reason
+  Where a client is no longer being given treatment but the reason for
+  conclusion is not covered above.
+
 *Episode Completion Status* interacts with two other data items in the PMHC MDS -
 *Service Contact - Final*, and *Episode End Date*.
 
