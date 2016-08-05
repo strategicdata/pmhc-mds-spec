@@ -37,3 +37,6 @@ METeOR: `613718 <http://meteor.aihw.gov.au/content/index.phtml/itemId/613718>`__
 :7: Northern Territory
 :8: Australian Capital Territory
 :9: Other Territories"
+"`Provider Organisation - Tags`_ (organisation_tags)
+
+",string,"List of tags for the provider organisation."

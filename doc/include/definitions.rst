@@ -217,6 +217,27 @@ A key that enables two or more records belonging to the same individual to be br
 
 ----------
 
+Client - Tags
+^^^^^^^^^^^^^
+
+List of tags for the client.
+
+:Field name: client_tags
+
+:Data type: string
+:Notes:
+  A space separated list of tags.
+  
+  Organisations can use this field to tag records in order to partition them as
+  per organisation requirements.
+  
+  Organisations must not begin tags with an underscore (eg. "_tagname"). Tags
+  beginning with an underscore will be reserved for future Department of
+  Health use.
+  
+
+----------
+
 Collection Occasion - Measure Date
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -335,6 +356,27 @@ The Australian postcode of the client.
 
 ----------
 
+Episode - Client Consent to De-identified Data
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+An indication that the client has consented to their de-identified data being stored in the PMHC MDS.
+
+:Field name: client_consent
+
+:Data type: string
+:Notes:
+  1 - Yes
+    The client has consented to their de-identified data being stored in the PMHC
+    MDS.
+  
+  2 - No
+    The client has not consented to their de-identified data being stored in the
+    PMHC MDS. An error will be generated if any records are uploaded or input with
+    this value.
+  
+
+----------
+
 Episode - Completion Status
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -348,9 +390,39 @@ An indication of the completion status of an *Episode of Care*.
   :1: Episode closed - treatment concluded
   :2: Episode closed administratively - client could not be contacted
   :3: Episode closed administratively - client declined further contact
-  :4: Episode closed administratively - Client moved out of area
-  :5: Episode closed administratively - other reason
+  :4: Episode closed administratively - client moved out of area
+  :5: Episode closed administratively - client referred elsewhere
+  :6: Episode closed administratively - other reason
 :Notes:
+  All *Episode closed administratively* items are appropriate regardless of whether
+  service contacts exist.
+  
+  1 - Episode closed - treatment concluded
+    No further service contacts are planned as the client no longer requires
+    treatment.
+  
+  2 - Episode closed administratively - client could not be contacted
+    Further service contacts were planned but the client could no longer be
+    contacted.
+  
+  3 - Episode closed administratively - client declined further contact
+    Further service contacts were planned but the client declined further treatment.
+  
+  4 - Episode closed administratively - client moved out of area
+    Further service contacts were planned but the client moved out of the area
+    without a referral elsewhere. Where a client was referred somewhere else
+    *Episode Completion Status* should be recorded as code 5 (Episode closed
+    administratively - client referred elsewhere).
+  
+  5 - Episode closed administratively - client referred elsewhere
+    Where a client still requires treatment, but a different service has been
+    deemed appropriate or a client has moved out of the area so has moved to a
+    different provider.
+  
+  6 - Episode closed administratively - other reason
+    Where a client is no longer being given treatment but the reason for
+    conclusion is not covered above.
+  
   *Episode Completion Status* interacts with two other data items in the PMHC MDS -
   *Service Contact - Final*, and *Episode End Date*.
   
@@ -365,6 +437,7 @@ An indication of the completion status of an *Episode of Care*.
     where a Final Service Contact is recorded and the *Episode Completion Status*
     field is recorded as code 1 (Episode closed - treatment concluded), *Episode
     End Date* should be recorded as the date of the final Service Contact.
+  
 
 ----------
 
@@ -450,6 +523,23 @@ The date on which an *Episode of Care* is formally or administratively ended
   
 
 :METeOR: `614094 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614094>`__
+
+----------
+
+Episode - GP Mental Health Treatment Plan Flag
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+An indication of whether a client has a GP mental health treatment plan. A GP should be involved in a referral where appropriate however a mental health treatment plan is not mandatory.
+
+:Field name: mental_health_treatment_plan
+
+:Data type: string
+
+:Domain:
+  :1: Yes
+  :2: No
+  :3: Unknown
+  :9: Not stated/inadequately described
 
 ----------
 
@@ -1158,25 +1248,6 @@ The source from which a person derives the greatest proportion of his/her income
 
 ----------
 
-Episode - Start Date
-^^^^^^^^^^^^^^^^^^^^
-
-The date on which the client formally commences an *Episode of Care*.
-
-:Field name: episode_start_date
-
-:Data type: date
-:Notes:
-  An Episode of Care should be recorded as commencing on the date the first
-  Service Contact with the client is made.
-  
-  This field will be derived from the first service event date.
-  
-
-:METeOR: `614072 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614072>`__
-
-----------
-
 Episode - Suicide Referral Flag
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -1190,6 +1261,27 @@ Identifies those individuals where a recent history of suicide attempt, or suici
   :1: Yes
   :2: No
   :9: Unknown
+
+----------
+
+Episode - Tags
+^^^^^^^^^^^^^^
+
+List of tags for the episode.
+
+:Field name: episode_tags
+
+:Data type: string
+:Notes:
+  A space separated list of tags.
+  
+  Organisations can use this field to tag records in order to partition them as
+  per organisation requirements.
+  
+  Organisations must not begin tags with an underscore (eg. "_tagname"). Tags
+  beginning with an underscore will be reserved for future Department of
+  Health use.
+  
 
 ----------
 
@@ -1285,6 +1377,27 @@ In the last 4 weeks, about how often did you feel so sad that nothing could chee
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
+----------
+
+K5 - Tags
+^^^^^^^^^
+
+List of tags for the collection occasion.
+
+:Field name: k5_tags
+
+:Data type: string
+:Notes:
+  A space separated list of tags.
+  
+  Organisations can use this field to tag records in order to partition them as
+  per organisation requirements.
+  
+  Organisations must not begin tags with an underscore (eg. "_tagname"). Tags
+  beginning with an underscore will be reserved for future Department of
+  Health use.
+  
 
 ----------
 
@@ -1530,6 +1643,27 @@ In the past four weeks, how often have physical health problems been the main ca
 
 ----------
 
+K10+ - Tags
+^^^^^^^^^^^
+
+List of tags for the collection occasion.
+
+:Field name: k10p_tags
+
+:Data type: string
+:Notes:
+  A space separated list of tags.
+  
+  Organisations can use this field to tag records in order to partition them as
+  per organisation requirements.
+  
+  Organisations must not begin tags with an underscore (eg. "_tagname"). Tags
+  beginning with an underscore will be reserved for future Department of
+  Health use.
+  
+
+----------
+
 Organisation Path
 ^^^^^^^^^^^^^^^^^
 
@@ -1689,6 +1823,27 @@ A unique identifier for a practitioner within the responsible organisation. Assi
 
 ----------
 
+Practitioner - Tags
+^^^^^^^^^^^^^^^^^^^
+
+List of tags for the practitioner.
+
+:Field name: practitioner_tags
+
+:Data type: string
+:Notes:
+  A space separated list of tags.
+  
+  Organisations can use this field to tag records in order to partition them as
+  per organisation requirements.
+  
+  Organisations must not begin tags with an underscore (eg. "_tagname"). Tags
+  beginning with an underscore will be reserved for future Department of
+  Health use.
+  
+
+----------
+
 Practitioner - Year of Birth
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -1762,6 +1917,27 @@ The state that the provider organisation operates in.
   
 
 :METeOR: `613718 <http://meteor.aihw.gov.au/content/index.phtml/itemId/613718>`__
+
+----------
+
+Provider Organisation - Tags
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+List of tags for the provider organisation.
+
+:Field name: organisation_tags
+
+:Data type: string
+:Notes:
+  A space separated list of tags.
+  
+  Organisations can use this field to tag records in order to partition them as
+  per organisation requirements.
+  
+  Organisations must not begin tags with an underscore (eg. "_tagname"). Tags
+  beginning with an underscore will be reserved for future Department of
+  Health use.
+  
 
 ----------
 
@@ -2825,6 +3001,27 @@ Do your teachers complain about you being awkward or troublesome?
 
 ----------
 
+SDQ - Tags
+^^^^^^^^^^
+
+List of tags for the collection occasion.
+
+:Field name: sdq_tags
+
+:Data type: string
+:Notes:
+  A space separated list of tags.
+  
+  Organisations can use this field to tag records in order to partition them as
+  per organisation requirements.
+  
+  Organisations must not begin tags with an underscore (eg. "_tagname"). Tags
+  beginning with an underscore will be reserved for future Department of
+  Health use.
+  
+
+----------
+
 Service Contact - Client Participation Indicator
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -3098,6 +3295,27 @@ The Australian postcode where the service contact took place.
   
 
 :METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__
+
+----------
+
+Service Contact - Tags
+^^^^^^^^^^^^^^^^^^^^^^
+
+List of tags for the service contact.
+
+:Field name: service_contact_tags
+
+:Data type: string
+:Notes:
+  A space separated list of tags.
+  
+  Organisations can use this field to tag records in order to partition them as
+  per organisation requirements.
+  
+  Organisations must not begin tags with an underscore (eg. "_tagname"). Tags
+  beginning with an underscore will be reserved for future Department of
+  Health use.
+  
 
 ----------
 

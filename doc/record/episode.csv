@@ -8,23 +8,22 @@
 "`Client Key`_ (client_key)
 
 ",string,"This is a number or code assigned to each individual referred to the commissioned organisation. The client identifier is unique and stable for each individual at the level of the PMHC top level organisation."
-"`Episode - Start Date`_ (episode_start_date)
-
-
-
-METeOR: `614072 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614072>`__",date,"The date on which the client formally commences an *Episode of Care*."
 "`Episode - End Date`_ (episode_end_date)
 
 
 
 METeOR: `614094 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614094>`__",date,"The date on which an *Episode of Care* is formally or administratively ended"
+"`Episode - Client Consent to De-identified Data`_ (client_consent)
+
+",string,"An indication that the client has consented to their de-identified data being stored in the PMHC MDS."
 "`Episode - Completion Status`_ (episode_completion_status)
 
 ",string,":1: Episode closed - treatment concluded
 :2: Episode closed administratively - client could not be contacted
 :3: Episode closed administratively - client declined further contact
-:4: Episode closed administratively - Client moved out of area
-:5: Episode closed administratively - other reason"
+:4: Episode closed administratively - client moved out of area
+:5: Episode closed administratively - client referred elsewhere
+:6: Episode closed administratively - other reason"
 "`Episode - Referral Date`_ (referral_date)
 
 ",date,"The date the referrer made the referral."
@@ -37,6 +36,12 @@ METeOR: `614094 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614094>`__
 :5: Child and youth-specific mental health services
 :6: Indigenous-specific mental health services
 :7: Other"
+"`Episode - GP Mental Health Treatment Plan Flag`_ (mental_health_treatment_plan)
+
+",string,":1: Yes
+:2: No
+:3: Unknown
+:9: Not stated/inadequately described"
 "`Episode - Homelessness Flag`_ (homelessness)
 
 ",string,":1: Sleeping rough or in non-conventional accommodation
@@ -216,3 +221,6 @@ METeOR: `291045 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291045>`__
 :21: Other
 :98: N/A - Self referral
 :99: Not stated"
+"`Episode - Tags`_ (episode_tags)
+
+",string,"List of tags for the episode."

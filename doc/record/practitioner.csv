@@ -47,3 +47,6 @@ METeOR: `291036 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291036>`__
 
 ",string,":0: Inactive
 :1: Active"
+"`Practitioner - Tags`_ (practitioner_tags)
+
+",string,"List of tags for the practitioner."
