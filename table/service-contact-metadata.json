@@ -46,7 +46,7 @@
     "name": "practitioner_key",
     "titles": [ "practitioner_key", "Practitioner Key" ],
     "dc:title": "Practitioner Key",
-    "schema:description": "A unique identifier for a practitioner within the PMHC top level organisation.",
+    "schema:description": "A unique identifier for a practitioner within the provider organisation.",
     "schema:dateCreated": "2016-06-22",
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
