@@ -3,7 +3,7 @@ test: org prac client episode contact k10p k5 sdq
 
 clean:
 	rm data/*.csv
-	
+
 org:
 	tail -n +2 data/_orig/organisations.csv > data/organisations.csv; csvlint data/organisations.csv --schema=pmhc-metadata.json
 
