@@ -9,7 +9,7 @@ pushd .
 
 cd doc
 
-rm -rf _data
+rm -rf _data build
 cp -rf ../data _data
 
 if [ -z $1 ]; then
