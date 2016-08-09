@@ -362,7 +362,7 @@ The Australian postcode of the client.
 Episode - Client Consent to De-identified Data
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-An indication that the client has consented to their de-identified data being stored in the PMHC MDS.
+An indication that the client has consented to their de-identified data being provided to the Department of Health for the purposes of planning and improving mental health services.
 
 :Field name: client_consent
 
@@ -377,9 +377,9 @@ An indication that the client has consented to their de-identified data being st
     MDS.
   
   2 - No
-    The client has not consented to their de-identified data being stored in the
-    PMHC MDS. An error will be generated if any records are uploaded or input with
-    this value.
+    The client has not consented to their de-identified data being provided to
+    the Department of Health. The client's data will be excluded from reports and
+    extracts accessible by the Department of Health.
   
 
 ----------
