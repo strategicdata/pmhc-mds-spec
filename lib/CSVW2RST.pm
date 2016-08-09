@@ -111,12 +111,18 @@ sub generate {
             if ( $field->{'schema:meteorItem'} ) {
                 $meteor_link = "\n\nMETeOR: " . meteor($field->{'schema:meteorItem'});
             }
+            
+            my $abs_link = '';
+            if ( $field->{'schema:absItem'} ) {
+                $abs_link = "\n\n" . abs_link($field->{'schema:absItem'}, 'ABS');
+            }
 
             $csv->say($fh, [
                 '`' . $field->{'dc:title'} . '`_'
                 . ' (' . $field->{'name'} . ')'
 . "\n\n" #                . "$note_ref,
-                . $meteor_link,
+                . $meteor_link
+                . $abs_link,
                 format_datatype($field),
                 format_domain($field),
             ]);
@@ -211,9 +217,14 @@ sub generate_definitions {
             say $fh indent(path($field->{'schema:disambiguatingDescription'})->slurp);
         }
 
-        if( $field->{'schema:meteorItem'} ) {
+        if ( $field->{'schema:meteorItem'} ) {
             print $fh "\n:METeOR: ";
             say $fh meteor($field->{'schema:meteorItem'});
+        }
+
+        if ( $field->{'schema:absItem'} ) {
+            print $fh "\n:ABS: ";
+            say $fh abs_link($field->{'schema:absItem'},$field->{'schema:absItem'});
         }
 
         say $fh "\n----------\n";
@@ -278,6 +289,13 @@ sub meteor {
     my $meteor_id = shift || return '—';
 
     return "`$meteor_id <" . METEOR_URL . "$meteor_id>`__"
+}
+
+sub abs_link {
+    my $link = shift || return '—';
+    my $name = shift;
+
+    return "`$name <" . $link . ">`__"
 }
 
 sub _string_to_anchor {

@@ -1,5 +1,4 @@
-All *Episode closed administratively* items are appropriate regardless of whether
-service contacts exist.
+In order to use code 1 (Episode closed - treatment concluded) the client must have at least one service contact. All other codes may be applicable even when the client has no service contacts. 
 
 1 - Episode closed - treatment concluded
   No further service contacts are planned as the client no longer requires
@@ -27,17 +26,19 @@ service contacts exist.
   Where a client is no longer being given treatment but the reason for
   conclusion is not covered above.
 
-*Episode Completion Status* interacts with two other data items in the PMHC MDS -
-*Service Contact - Final*, and *Episode End Date*.
+*Episode Completion Status* interacts with two other data items in the PMHC MDS
+- *Service Contact - Final*, and *Episode End Date*.
 
 *Service Contact - Final*
-  Collection of data for *Service Contacts* includes a *Service Contact - Final*
-  item that requires the service provider to indicate whether further Service
-  Contacts are planned. Where this item is recorded as 'no further services
-  planned', the *Episode Completion Status* should be recorded as code 1 (Episode
-  closed - treatment concluded)
+  Collection of data for *Service Contacts* includes a *Service Contact -
+  Final* item that requires the service provider to indicate whether further
+  Service Contacts are planned. Where this item is recorded as 'no further
+  services planned', the *Episode Completion Status* should be recorded as code
+  1 (Episode closed - treatment concluded) code 3 (Episode closed
+  administratively - client declined further contact), code 4 (Episode closed
+  administratively - client moved out of area), or code 5 (Episode closed
+  administratively - client referred elsewhere). Selection of coding option
+  should be that which best describes the circumstances of the episode ending.
 
-*Episode End Date*
-  where a Final Service Contact is recorded and the *Episode Completion Status*
-  field is recorded as code 1 (Episode closed - treatment concluded), *Episode
-  End Date* should be recorded as the date of the final Service Contact.
+*Episode End Date* where a Final Service Contact is recorded *Episode End Date*
+should be recorded as the date of the final Service Contact.

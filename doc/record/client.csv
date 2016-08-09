@@ -23,7 +23,9 @@ METeOR: `287007 <http://meteor.aihw.gov.au/content/index.phtml/itemId/287007>`__
 :9: Accuracy of stated date of birth is not known"
 "`Client - Gender`_ (client_gender)
 
-",string,":0: Not stated/Inadequately described
+
+
+`ABS <http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/1200.0.55.012Main%20Features12016?opendocument&tabname=Summary&prodno=1200.0.55.012&issue=2016&num=&view=>`__",string,":0: Not stated/Inadequately described
 :1: Male
 :2: Female
 :3: Other"
@@ -40,12 +42,16 @@ METeOR: `291036 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291036>`__
 
 
 
-METeOR: `459973 <http://meteor.aihw.gov.au/content/index.phtml/itemId/459973>`__",string[4],"The country in which the client was born, as represented by a code."
+METeOR: `459973 <http://meteor.aihw.gov.au/content/index.phtml/itemId/459973>`__
+
+`ABS <http://www.abs.gov.au/ausstats/abs@.nsf/mf/1269.0>`__",string[4],"The country in which the client was born, as represented by a code."
 "`Client - Main Language Spoken at Home`_ (main_lang_at_home)
 
 
 
-METeOR: `460125 <http://meteor.aihw.gov.au/content/index.phtml/itemId/460125>`__",string[4],"The language reported by a client as the main language other than English spoken by that client in his/her home (or most recent private residential setting occupied by the client) to communicate with other residents of the home or setting and regular visitors, as represented by a code."
+METeOR: `460125 <http://meteor.aihw.gov.au/content/index.phtml/itemId/460125>`__
+
+`ABS <http://www.abs.gov.au/ausstats/abs@.nsf/mf/1267.0>`__",string[4],"The language reported by a client as the main language other than English spoken by that client in his/her home (or most recent private residential setting occupied by the client) to communicate with other residents of the home or setting and regular visitors, as represented by a code."
 "`Client - Proficiency in Spoken English`_ (prof_english)
 
 

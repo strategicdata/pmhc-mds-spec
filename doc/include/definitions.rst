@@ -58,6 +58,8 @@ The country in which the client was born, as represented by a code.
 
 :METeOR: `459973 <http://meteor.aihw.gov.au/content/index.phtml/itemId/459973>`__
 
+:ABS: `http://www.abs.gov.au/ausstats/abs@.nsf/mf/1269.0 <http://www.abs.gov.au/ausstats/abs@.nsf/mf/1269.0>`__
+
 ----------
 
 .. _dfn-date_of_birth:
@@ -125,6 +127,8 @@ The term 'gender' refers to the way in which a person identifies their masculine
   :2: Female
   :3: Other
 
+:ABS: `http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/1200.0.55.012Main%20Features12016?opendocument&tabname=Summary&prodno=1200.0.55.012&issue=2016&num=&view= <http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/1200.0.55.012Main%20Features12016?opendocument&tabname=Summary&prodno=1200.0.55.012&issue=2016&num=&view=>`__
+
 ----------
 
 .. _dfn-client_key:
@@ -170,6 +174,8 @@ The language reported by a client as the main language other than English spoken
   
 
 :METeOR: `460125 <http://meteor.aihw.gov.au/content/index.phtml/itemId/460125>`__
+
+:ABS: `http://www.abs.gov.au/ausstats/abs@.nsf/mf/1267.0 <http://www.abs.gov.au/ausstats/abs@.nsf/mf/1267.0>`__
 
 ----------
 
@@ -405,8 +411,9 @@ An indication that the client has consented to their de-identified data being pr
   :2: No
 :Notes:
   1 - Yes
-    The client has consented to their de-identified data being stored in the PMHC
-    MDS.
+    The client has consented to their de-identified data being provided to
+    the Department of Health. The client's data will be excluded from reports and
+    extracts accessible by the Department of Health.
   
   2 - No
     The client has not consented to their de-identified data being provided to
@@ -435,8 +442,7 @@ An indication of the completion status of an *Episode of Care*.
   :5: Episode closed administratively - client referred elsewhere
   :6: Episode closed administratively - other reason
 :Notes:
-  All *Episode closed administratively* items are appropriate regardless of whether
-  service contacts exist.
+  In order to use code 1 (Episode closed - treatment concluded) the client must have at least one service contact. All other codes may be applicable even when the client has no service contacts. 
   
   1 - Episode closed - treatment concluded
     No further service contacts are planned as the client no longer requires
@@ -464,20 +470,22 @@ An indication of the completion status of an *Episode of Care*.
     Where a client is no longer being given treatment but the reason for
     conclusion is not covered above.
   
-  *Episode Completion Status* interacts with two other data items in the PMHC MDS -
-  *Service Contact - Final*, and *Episode End Date*.
+  *Episode Completion Status* interacts with two other data items in the PMHC MDS
+  - *Service Contact - Final*, and *Episode End Date*.
   
   *Service Contact - Final*
-    Collection of data for *Service Contacts* includes a *Service Contact - Final*
-    item that requires the service provider to indicate whether further Service
-    Contacts are planned. Where this item is recorded as 'no further services
-    planned', the *Episode Completion Status* should be recorded as code 1 (Episode
-    closed - treatment concluded)
+    Collection of data for *Service Contacts* includes a *Service Contact -
+    Final* item that requires the service provider to indicate whether further
+    Service Contacts are planned. Where this item is recorded as 'no further
+    services planned', the *Episode Completion Status* should be recorded as code
+    1 (Episode closed - treatment concluded) code 3 (Episode closed
+    administratively - client declined further contact), code 4 (Episode closed
+    administratively - client moved out of area), or code 5 (Episode closed
+    administratively - client referred elsewhere). Selection of coding option
+    should be that which best describes the circumstances of the episode ending.
   
-  *Episode End Date*
-    where a Final Service Contact is recorded and the *Episode Completion Status*
-    field is recorded as code 1 (Episode closed - treatment concluded), *Episode
-    End Date* should be recorded as the date of the final Service Contact.
+  *Episode End Date* where a Final Service Contact is recorded *Episode End Date*
+  should be recorded as the date of the final Service Contact.
   
 
 ----------
@@ -1957,6 +1965,8 @@ The term 'gender' refers to the way in which a person identifies their masculine
   :1: Male
   :2: Female
   :3: Other
+
+:ABS: `http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/1200.0.55.012Main%20Features12016?opendocument&tabname=Summary&prodno=1200.0.55.012&issue=2016&num=&view= <http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/1200.0.55.012Main%20Features12016?opendocument&tabname=Summary&prodno=1200.0.55.012&issue=2016&num=&view=>`__
 
 ----------
 
