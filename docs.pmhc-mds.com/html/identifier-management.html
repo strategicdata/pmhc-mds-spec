@@ -1,0 +1,248 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Identifier management &mdash; PMHC MDS Version 1 - DRAFT documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+    <link rel="top" title="PMHC MDS Version 1 - DRAFT documentation" href="index.html"/>
+        <link rel="next" title="Data model and specifications" href="data-model-and-specifications.html"/>
+        <link rel="prev" title="Reporting arrangements" href="reporting-arrangements.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> PMHC MDS
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                Version 1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="reporting-arrangements.html">Reporting arrangements</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Identifier management</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#managing-provider-organisation-keys">Managing Provider Organisation Keys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#managing-client-keys">Managing Client Keys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#managing-practitioner-episode-service-contact-and-outcome-collection-occasion-keys">Managing Practitioner, Episode, Service Contact and Outcome Collection Occasion Keys</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="data-model-and-specifications.html">Data model and specifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload-specification.html">Upload specification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-item-summary.html">Data item summary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="change-log.html">Change log</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">PMHC MDS</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Identifier management</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/identifier-management.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="identifier-management">
+<h1>Identifier management<a class="headerlink" href="#identifier-management" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="managing-provider-organisation-keys">
+<h2>Managing Provider Organisation Keys<a class="headerlink" href="#managing-provider-organisation-keys" title="Permalink to this headline">¶</a></h2>
+<p>Provider Organisations will be created and managed by Primary Health
+Networks (PHNs) through a user interface. Each PHN must create their own
+Provider Organisations before any data can be uploaded. Each Provider
+Organisation will need to be assigned a unique key. It is the responsibility
+of the PHN to assign and manage these keys.</p>
+</div>
+<div class="section" id="managing-client-keys">
+<h2>Managing Client Keys<a class="headerlink" href="#managing-client-keys" title="Permalink to this headline">¶</a></h2>
+<p>Client records will be created and managed by Provider Organisations via the
+upload interface. Each Client record needs to be assigned a unique key in order
+to facilitate adding/updating/deleting each item when uploading data. Once
+assigned, this key cannot change.</p>
+<p>These keys will be managed by the Provider Organisation, however, they need to
+be unique across the PHN in order to ensure that there is a single key
+for a client within the PHN. During Stage 2 of the PMHC MDS implementation a
+master client index will be created to allow Provider Organisations to manage
+the client keys across PHNs. Until the master client index
+is implemented PHNs will need to play a role in coordinating assignment and
+management of these keys.</p>
+</div>
+<div class="section" id="managing-practitioner-episode-service-contact-and-outcome-collection-occasion-keys">
+<h2>Managing Practitioner, Episode, Service Contact and Outcome Collection Occasion Keys<a class="headerlink" href="#managing-practitioner-episode-service-contact-and-outcome-collection-occasion-keys" title="Permalink to this headline">¶</a></h2>
+<p>Practitioner, Episode, Service Contact, and Outcome Collection Keys will be
+created and managed by Provider Organisations via the upload interface. Each
+record needs to be assigned a unique key in order to facilitate
+adding/updating/deleting each item when uploading data. These keys will be
+managed by the Provider Organisation. Where data is being exported from client
+systems, these keys can be auto generated, providing that a key does not change
+once it is assigned.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="data-model-and-specifications.html" class="btn btn-neutral float-right" title="Data model and specifications" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="reporting-arrangements.html" class="btn btn-neutral" title="Reporting arrangements" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Australian Government - Department of Health.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'Version 1 - DRAFT',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://hypothes.is/embed.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
