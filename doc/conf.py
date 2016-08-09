@@ -338,5 +338,5 @@ numfig = True
 
 # CSS overides
 def setup(app):
-   app.add_javascript('https://hypothes.is/embed.js')
+#   app.add_javascript('https://hypothes.is/embed.js')
    app.add_stylesheet("custom.css")
