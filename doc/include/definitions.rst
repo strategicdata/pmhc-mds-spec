@@ -484,8 +484,9 @@ An indication of the completion status of an *Episode of Care*.
     administratively - client referred elsewhere). Selection of coding option
     should be that which best describes the circumstances of the episode ending.
   
-  *Episode End Date* where a Final Service Contact is recorded *Episode End Date*
-  should be recorded as the date of the final Service Contact.
+  *Episode End Date*
+    Where a Final Service Contact is recorded *Episode End Date* should be
+    recorded as the date of the final Service Contact.
   
 
 ----------
