@@ -60,7 +60,7 @@
     "name": "client_consent",
     "titles": [ "client_consent", "Client Consent" ],
     "dc:title": "Episode - Client Consent to De-identified Data",
-    "schema:description": "An indication that the client has consented to their de-identified data being stored in the PMHC MDS.",
+    "schema:description": "An indication that the client has consented to their de-identified data being provided to the Department of Health for the purposes of planning and improving mental health services.",
     "schema:disambiguatingDescription": "table/episode/client-consent.rst",
     "schema:dateCreated": "2016-07-08",
     "schema:dateModified": "2016-07-08",

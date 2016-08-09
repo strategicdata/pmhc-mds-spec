@@ -3,6 +3,6 @@
   MDS.
 
 2 - No
-  The client has not consented to their de-identified data being stored in the
-  PMHC MDS. An error will be generated if any records are uploaded or input with
-  this value.
+  The client has not consented to their de-identified data being provided to
+  the Department of Health. The client's data will be excluded from reports and
+  extracts accessible by the Department of Health.
