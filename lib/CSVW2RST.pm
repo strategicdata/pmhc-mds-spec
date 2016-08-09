@@ -181,6 +181,7 @@ sub generate_definitions {
         warn $field->{name} . "\n";
 
         #print $fh "\n";
+        say $fh '.. _dfn-' . $field->{'name'} . ":\n";
         say $fh $field->{'dc:title'};
         say $fh ('^' x length $field->{'dc:title'}) . "\n";
 
