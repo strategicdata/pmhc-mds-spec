@@ -1,27 +1,29 @@
 Data model and specifications
 =============================
 
+.. _data-model:
+
 Data model
 ----------
 
-.. _pmhc-data-model:
+.. _data-model-diagram:
 
 .. figure:: figures/data-model.svg
    :alt: PMHC data model
 
    PMHC data model
 
-**Note:** :ref:`pmhc-collection-occasion-data-model` for more details about
+**Note:** :ref:`collection-occasion-diagram` for more details about
 Collection Occasion records.
 
-.. _pmhc-collection-occasion-data-model:
+.. _collection-occasion-diagram:
 
 .. figure:: figures/collection-occasion-data-model.svg
    :alt: PMHC Collection Occasion data model
 
    PMHC Collection Occasion data model
 
-**Note:** See :ref:`pmhc-data-model` for more details about how
+**Note:** See :ref:`data-model-diagram` for more details about how
 Collection Occasion records fit into the overall structure.
 
 .. _record-formats:
@@ -150,6 +152,8 @@ Service Contact
 
 
 ----------
+
+.. _outcome-collection-occasion-data-elements:
 
 Outcome Collection Occasion
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^

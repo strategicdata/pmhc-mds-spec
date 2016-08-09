@@ -1,6 +1,8 @@
 Definitions
 -----------
 
+.. _dfn-client_atsi_status:
+
 Client - Aboriginal and Torres Strait Islander Status
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -32,6 +34,8 @@ Whether a person identifies as being of Aboriginal and/or Torres Strait Islander
 
 ----------
 
+.. _dfn-country_of_birth:
+
 Client - Country of Birth
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -55,6 +59,8 @@ The country in which the client was born, as represented by a code.
 :METeOR: `459973 <http://meteor.aihw.gov.au/content/index.phtml/itemId/459973>`__
 
 ----------
+
+.. _dfn-date_of_birth:
 
 Client - Date of Birth
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -83,6 +89,8 @@ The date on which an individual was born.
 
 ----------
 
+.. _dfn-est_date_of_birth:
+
 Client - Estimated Date of Birth Flag
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -99,6 +107,8 @@ The date of birth estimate flag records whether or not the client's date of birt
   :9: Accuracy of stated date of birth is not known
 
 ----------
+
+.. _dfn-client_gender:
 
 Client - Gender
 ^^^^^^^^^^^^^^^
@@ -117,6 +127,8 @@ The term 'gender' refers to the way in which a person identifies their masculine
 
 ----------
 
+.. _dfn-client_key:
+
 Client Key
 ^^^^^^^^^^
 
@@ -133,6 +145,8 @@ This is a number or code assigned to each individual referred to the commissione
   
 
 ----------
+
+.. _dfn-main_lang_at_home:
 
 Client - Main Language Spoken at Home
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -158,6 +172,8 @@ The language reported by a client as the main language other than English spoken
 :METeOR: `460125 <http://meteor.aihw.gov.au/content/index.phtml/itemId/460125>`__
 
 ----------
+
+.. _dfn-prof_english:
 
 Client - Proficiency in Spoken English
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -190,6 +206,8 @@ The self-assessed level of ability to speak English, asked of people whose first
 
 ----------
 
+.. _dfn-slk:
+
 Client - Statistical Linkage Key
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -217,6 +235,8 @@ A key that enables two or more records belonging to the same individual to be br
 
 ----------
 
+.. _dfn-client_tags:
+
 Client - Tags
 ^^^^^^^^^^^^^
 
@@ -241,6 +261,8 @@ List of tags for the client.
 
 ----------
 
+.. _dfn-measure_date:
+
 Collection Occasion - Measure Date
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -258,6 +280,8 @@ The date the measure was given.
   
 
 ----------
+
+.. _dfn-reason_for_collection:
 
 Collection Occasion - Reason
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -292,6 +316,8 @@ The reason for the collection of the outcome measures on the identified Outcome 
 
 ----------
 
+.. _dfn-collection_occasion_key:
+
 Collection Occasion Key
 ^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -302,6 +328,8 @@ This is a number or code assigned to each collection occasion of outcome measure
 :Data type: string
 
 ----------
+
+.. _dfn-additional_diagnosis:
 
 Episode - Additional Diagnosis
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -332,6 +360,8 @@ The main additional condition or complaint co-existing with the Principal Diagno
 
 ----------
 
+.. _dfn-client_postcode:
+
 Episode - Area of usual residence, postcode
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -359,6 +389,8 @@ The Australian postcode of the client.
 
 ----------
 
+.. _dfn-client_consent:
+
 Episode - Client Consent to De-identified Data
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -383,6 +415,8 @@ An indication that the client has consented to their de-identified data being pr
   
 
 ----------
+
+.. _dfn-episode_completion_status:
 
 Episode - Completion Status
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -448,6 +482,8 @@ An indication of the completion status of an *Episode of Care*.
 
 ----------
 
+.. _dfn-employment_participation:
+
 Episode - Employment Participation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -489,6 +525,8 @@ Whether a person in paid employment is employed full-time or part-time, as repre
 :METeOR: `269950 <http://meteor.aihw.gov.au/content/index.phtml/itemId/269950>`__
 
 ----------
+
+.. _dfn-episode_end_date:
 
 Episode - End Date
 ^^^^^^^^^^^^^^^^^^
@@ -533,6 +571,8 @@ The date on which an *Episode of Care* is formally or administratively ended
 
 ----------
 
+.. _dfn-mental_health_treatment_plan:
+
 Episode - GP Mental Health Treatment Plan Flag
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -549,6 +589,8 @@ An indication of whether a client has a GP mental health treatment plan. A GP sh
   :9: Not stated/inadequately described
 
 ----------
+
+.. _dfn-health_care_card:
 
 Episode - Health Care Card
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -574,6 +616,8 @@ An indication of whether the person is a current holder of a Health Care Card th
 :METeOR: `605149 <http://meteor.aihw.gov.au/content/index.phtml/itemId/605149>`__
 
 ----------
+
+.. _dfn-homelessness:
 
 Episode - Homelessness Flag
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -616,6 +660,8 @@ An indication of whether the client has been homeless in the 4 weeks prior to th
 
 ----------
 
+.. _dfn-episode_key:
+
 Episode Key
 ^^^^^^^^^^^
 
@@ -636,6 +682,8 @@ This is a number or code assigned to each episode. The Episode Key is unique and
   
 
 ----------
+
+.. _dfn-labour_force_status:
 
 Episode - Labour Force Status
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -708,6 +756,8 @@ The self-reported status the person currently has in being either in the labour 
 
 ----------
 
+.. _dfn-marital_status:
+
 Episode - Marital Status
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -750,6 +800,8 @@ A person's current relationship status in terms of a couple relationship or, for
 
 ----------
 
+.. _dfn-medication_antidepressants:
+
 Episode - Medication - Antidepressants (N06A)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -774,6 +826,8 @@ Whether the client is taking prescribed antidepressants for a mental health cond
   
 
 ----------
+
+.. _dfn-medication_antipsychotics:
 
 Episode - Medication - Antipsychotics (N05A)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -801,6 +855,8 @@ Whether the client is taking prescribed antipsychotics for a mental health condi
 
 ----------
 
+.. _dfn-medication_anxiolytics:
+
 Episode - Medication - Anxiolytics (N05B)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -826,6 +882,8 @@ Whether the client is taking prescribed anxiolytics for a mental health conditio
   
 
 ----------
+
+.. _dfn-medication_hypnotics:
 
 Episode - Medication - Hypnotics and sedatives (N05C)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -854,6 +912,8 @@ Whether the client is taking prescribed hypnotics and sedatives for a mental hea
 
 ----------
 
+.. _dfn-medication_psychostimulants:
+
 Episode - Medication - Psychostimulants and nootropics (N06B)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -880,6 +940,8 @@ Whether the client is taking prescribed psychostimulants and nootropics for a me
 
 ----------
 
+.. _dfn-ndis_participant:
+
 Episode - NDIS Participant
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -895,6 +957,8 @@ Is the client a participant in the National Disability Insurance Scheme?, as rep
   :9: Not stated/inadequately described
 
 ----------
+
+.. _dfn-principal_diagnosis:
 
 Episode - Principal Diagnosis
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -991,6 +1055,8 @@ The Principal Diagnosis is the diagnosis established after study to be chiefly r
   Edition, Text Revision. Copyright 2000 American Psychiatric Association.
 
 ----------
+
+.. _dfn-principal_focus:
 
 Episode - Principal Focus of Treatment Plan
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1115,6 +1181,8 @@ The range of activities that best describes the overall services intended to be 
 
 ----------
 
+.. _dfn-referral_date:
+
 Episode - Referral Date
 ^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -1132,6 +1200,8 @@ The date the referrer made the referral.
   
 
 ----------
+
+.. _dfn-referrer_organisation_type:
 
 Episode - Referrer Organisation Type
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1180,6 +1250,8 @@ Type of organisation in which the referring professional is based.
 
 ----------
 
+.. _dfn-referrer_profession:
+
 Episode - Referrer Profession
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -1214,6 +1286,8 @@ Profession of the provider who referred the client.
   
 
 ----------
+
+.. _dfn-income_source:
 
 Episode - Source of Cash Income
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1255,6 +1329,8 @@ The source from which a person derives the greatest proportion of his/her income
 
 ----------
 
+.. _dfn-suicide_referral_flag:
+
 Episode - Suicide Referral Flag
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -1270,6 +1346,8 @@ Identifies those individuals where a recent history of suicide attempt, or suici
   :9: Unknown
 
 ----------
+
+.. _dfn-episode_tags:
 
 Episode - Tags
 ^^^^^^^^^^^^^^
@@ -1295,6 +1373,8 @@ List of tags for the episode.
 
 ----------
 
+.. _dfn-k5_item1:
+
 K5 - Question 1
 ^^^^^^^^^^^^^^^
 
@@ -1313,6 +1393,8 @@ In the last 4 weeks, about how often did you feel nervous?
   :9: Not stated / Missing
 
 ----------
+
+.. _dfn-k5_item2:
 
 K5 - Question 2
 ^^^^^^^^^^^^^^^
@@ -1333,6 +1415,8 @@ In the last 4 weeks, about how often did you feel without hope?
 
 ----------
 
+.. _dfn-k5_item3:
+
 K5 - Question 3
 ^^^^^^^^^^^^^^^
 
@@ -1351,6 +1435,8 @@ In the last 4 weeks, about how often did you feel restless or jumpy?
   :9: Not stated / Missing
 
 ----------
+
+.. _dfn-k5_item4:
 
 K5 - Question 4
 ^^^^^^^^^^^^^^^
@@ -1371,6 +1457,8 @@ In the last 4 weeks, about how often did you feel everything was an effort?
 
 ----------
 
+.. _dfn-k5_item5:
+
 K5 - Question 5
 ^^^^^^^^^^^^^^^
 
@@ -1389,6 +1477,8 @@ In the last 4 weeks, about how often did you feel so sad that nothing could chee
   :9: Not stated / Missing
 
 ----------
+
+.. _dfn-k5_tags:
 
 K5 - Tags
 ^^^^^^^^^
@@ -1414,6 +1504,8 @@ List of tags for the collection occasion.
 
 ----------
 
+.. _dfn-k10p_item1:
+
 K10+ - Question 1
 ^^^^^^^^^^^^^^^^^
 
@@ -1432,6 +1524,8 @@ In the past 4 weeks, about how often did you feel tired out for no good reason?
   :9: Not stated / Missing
 
 ----------
+
+.. _dfn-k10p_item2:
 
 K10+ - Question 2
 ^^^^^^^^^^^^^^^^^
@@ -1452,6 +1546,8 @@ In the past 4 weeks, about how often did you feel nervous?
 
 ----------
 
+.. _dfn-k10p_item3:
+
 K10+ - Question 3
 ^^^^^^^^^^^^^^^^^
 
@@ -1470,6 +1566,8 @@ In the past 4 weeks, about how often did you feel so nervous that nothing could 
   :9: Not stated / Missing
 
 ----------
+
+.. _dfn-k10p_item4:
 
 K10+ - Question 4
 ^^^^^^^^^^^^^^^^^
@@ -1490,6 +1588,8 @@ In the past 4 weeks, how often did you feel hopeless?
 
 ----------
 
+.. _dfn-k10p_item5:
+
 K10+ - Question 5
 ^^^^^^^^^^^^^^^^^
 
@@ -1508,6 +1608,8 @@ In the past 4 weeks, how often did you feel restless or fidgety?
   :9: Not stated / Missing
 
 ----------
+
+.. _dfn-k10p_item6:
 
 K10+ - Question 6
 ^^^^^^^^^^^^^^^^^
@@ -1528,6 +1630,8 @@ In the past 4 weeks, how often did you feel so restless you could not sit still?
 
 ----------
 
+.. _dfn-k10p_item7:
+
 K10+ - Question 7
 ^^^^^^^^^^^^^^^^^
 
@@ -1546,6 +1650,8 @@ In the past 4 weeks, how often did you feel depressed?
   :9: Not stated / Missing
 
 ----------
+
+.. _dfn-k10p_item8:
 
 K10+ - Question 8
 ^^^^^^^^^^^^^^^^^
@@ -1566,6 +1672,8 @@ In the past 4 weeks, how often did you feel that everything was an effort?
 
 ----------
 
+.. _dfn-k10p_item9:
+
 K10+ - Question 9
 ^^^^^^^^^^^^^^^^^
 
@@ -1584,6 +1692,8 @@ In the past 4 weeks, how often did you feel so sad that nothing could cheer you 
   :9: Not stated / Missing
 
 ----------
+
+.. _dfn-k10p_item10:
 
 K10+ - Question 10
 ^^^^^^^^^^^^^^^^^^
@@ -1604,6 +1714,8 @@ In the past 4 weeks, how often did you feel worthless?
 
 ----------
 
+.. _dfn-k10p_item11:
+
 K10+ - Question 11
 ^^^^^^^^^^^^^^^^^^
 
@@ -1614,6 +1726,8 @@ In the past four weeks, how many days were you totally unable to work, study or 
 :Data type: integer
 
 ----------
+
+.. _dfn-k10p_item12:
 
 K10+ - Question 12
 ^^^^^^^^^^^^^^^^^^
@@ -1626,6 +1740,8 @@ Aside from those days, in the past four weeks, how many days were you able to wo
 
 ----------
 
+.. _dfn-k10p_item13:
+
 K10+ - Question 13
 ^^^^^^^^^^^^^^^^^^
 
@@ -1636,6 +1752,8 @@ In the past four weeks, how many times have you seen a doctor or any other healt
 :Data type: integer
 
 ----------
+
+.. _dfn-k10p_item14:
 
 K10+ - Question 14
 ^^^^^^^^^^^^^^^^^^
@@ -1655,6 +1773,8 @@ In the past four weeks, how often have physical health problems been the main ca
   :9: Not stated / Missing
 
 ----------
+
+.. _dfn-k10p_tags:
 
 K10+ - Tags
 ^^^^^^^^^^^
@@ -1680,6 +1800,8 @@ List of tags for the collection occasion.
 
 ----------
 
+.. _dfn-organisation_path:
+
 Organisation Path
 ^^^^^^^^^^^^^^^^^
 
@@ -1690,6 +1812,8 @@ A sequence of colon separated Organisation Codes that fully specifies the upload
 :Data type: string
 
 ----------
+
+.. _dfn-practitioner_atsi_status:
 
 Practitioner - Aboriginal and Torres Strait Islander Status
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1722,6 +1846,8 @@ Whether a person identifies as being of Aboriginal and/or Torres Strait Islander
 
 ----------
 
+.. _dfn-practitioner_active:
+
 Practitioner - Active
 ^^^^^^^^^^^^^^^^^^^^^
 
@@ -1736,6 +1862,8 @@ A flag to represent whether a practitioner is actively delivering services. This
   :1: Active
 
 ----------
+
+.. _dfn-atsi_cultural_training:
 
 Practitioner - ATSI Cultural Training
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1784,6 +1912,8 @@ Indicates whether a practitioner has completed a recognised training programme i
 
 ----------
 
+.. _dfn-practitioner_category:
+
 Practitioner - Category
 ^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -1811,6 +1941,8 @@ The type or category of the practitioner, as represented by a code.
 
 ----------
 
+.. _dfn-practitioner_gender:
+
 Practitioner - Gender
 ^^^^^^^^^^^^^^^^^^^^^
 
@@ -1828,6 +1960,8 @@ The term 'gender' refers to the way in which a person identifies their masculine
 
 ----------
 
+.. _dfn-practitioner_key:
+
 Practitioner Key
 ^^^^^^^^^^^^^^^^
 
@@ -1838,6 +1972,8 @@ A unique identifier for a practitioner within the responsible organisation. Assi
 :Data type: string
 
 ----------
+
+.. _dfn-practitioner_tags:
 
 Practitioner - Tags
 ^^^^^^^^^^^^^^^^^^^
@@ -1863,6 +1999,8 @@ List of tags for the practitioner.
 
 ----------
 
+.. _dfn-practitioner_year_of_birth:
+
 Practitioner - Year of Birth
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -1886,6 +2024,8 @@ The year the practitioner was born.
 
 ----------
 
+.. _dfn-organisation_abn:
+
 Provider Organisation - ABN
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -1897,6 +2037,8 @@ The Australian Business Number of the provider organisation.
 
 ----------
 
+.. _dfn-organisation_name:
+
 Provider Organisation - Name
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -1907,6 +2049,8 @@ The name of the provider organisation.
 :Data type: string
 
 ----------
+
+.. _dfn-organisation_state:
 
 Provider Organisation - State
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1939,6 +2083,8 @@ The state that the provider organisation operates in.
 
 ----------
 
+.. _dfn-organisation_tags:
+
 Provider Organisation - Tags
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -1962,6 +2108,8 @@ List of tags for the provider organisation.
   
 
 ----------
+
+.. _dfn-organisation_type:
 
 Provider Organisation - Type
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1993,6 +2141,8 @@ The type of the provider organisation.
 
 ----------
 
+.. _dfn-organisation_key:
+
 Provider Organisation Key
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -2003,6 +2153,8 @@ A sequence of characters which uniquely identifies the provider organisation. As
 :Data type: string
 
 ----------
+
+.. _dfn-sdq_version:
 
 SDQ Collection Occasion - Version
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -2027,6 +2179,8 @@ The version of the SDQ collected.
 
 ----------
 
+.. _dfn-sdq_item1:
+
 SDQ - Question 1
 ^^^^^^^^^^^^^^^^
 
@@ -2049,6 +2203,8 @@ Youth Self Report: I try to be nice to other people. I care about their feelings
   
 
 ----------
+
+.. _dfn-sdq_item2:
 
 SDQ - Question 2
 ^^^^^^^^^^^^^^^^
@@ -2073,6 +2229,8 @@ Youth Self Report: I am restless, I cannot stay still for long.
 
 ----------
 
+.. _dfn-sdq_item3:
+
 SDQ - Question 3
 ^^^^^^^^^^^^^^^^
 
@@ -2095,6 +2253,8 @@ Youth Self Report: I get a lot of headaches, stomach-aches or sickness.
   
 
 ----------
+
+.. _dfn-sdq_item4:
 
 SDQ - Question 4
 ^^^^^^^^^^^^^^^^
@@ -2119,6 +2279,8 @@ Youth Self Report: I usually share with others, for examples CDs, games, food.
 
 ----------
 
+.. _dfn-sdq_item5:
+
 SDQ - Question 5
 ^^^^^^^^^^^^^^^^
 
@@ -2141,6 +2303,8 @@ Youth Self Report: I get very angry and often lose my temper.
   
 
 ----------
+
+.. _dfn-sdq_item6:
 
 SDQ - Question 6
 ^^^^^^^^^^^^^^^^
@@ -2165,6 +2329,8 @@ Youth Self Report: I would rather be alone than with people of my age.
 
 ----------
 
+.. _dfn-sdq_item7:
+
 SDQ - Question 7
 ^^^^^^^^^^^^^^^^
 
@@ -2187,6 +2353,8 @@ Youth Self Report: I usually do as I am told.
   
 
 ----------
+
+.. _dfn-sdq_item8:
 
 SDQ - Question 8
 ^^^^^^^^^^^^^^^^
@@ -2211,6 +2379,8 @@ Youth Self Report: I worry a lot.
 
 ----------
 
+.. _dfn-sdq_item9:
+
 SDQ - Question 9
 ^^^^^^^^^^^^^^^^
 
@@ -2233,6 +2403,8 @@ Youth Self Report: I am helpful if someone is hurt, upset or feeling ill.
   
 
 ----------
+
+.. _dfn-sdq_item10:
 
 SDQ - Question 10
 ^^^^^^^^^^^^^^^^^
@@ -2257,6 +2429,8 @@ Youth Self Report: I am constantly fidgeting or squirming.
 
 ----------
 
+.. _dfn-sdq_item11:
+
 SDQ - Question 11
 ^^^^^^^^^^^^^^^^^
 
@@ -2279,6 +2453,8 @@ Youth Self Report: I have one good friend or more.
   
 
 ----------
+
+.. _dfn-sdq_item12:
 
 SDQ - Question 12
 ^^^^^^^^^^^^^^^^^
@@ -2303,6 +2479,8 @@ Youth Self Report: I fight a lot. I can make other people do what I want.
 
 ----------
 
+.. _dfn-sdq_item13:
+
 SDQ - Question 13
 ^^^^^^^^^^^^^^^^^
 
@@ -2325,6 +2503,8 @@ Youth Self Report: I am often unhappy, depressed or tearful.
   
 
 ----------
+
+.. _dfn-sdq_item14:
 
 SDQ - Question 14
 ^^^^^^^^^^^^^^^^^
@@ -2349,6 +2529,8 @@ Youth Self Report: Other people my age generally like me.
 
 ----------
 
+.. _dfn-sdq_item15:
+
 SDQ - Question 15
 ^^^^^^^^^^^^^^^^^
 
@@ -2371,6 +2553,8 @@ Youth Self Report: I am easily distracted, I find it difficult to concentrate.
   
 
 ----------
+
+.. _dfn-sdq_item16:
 
 SDQ - Question 16
 ^^^^^^^^^^^^^^^^^
@@ -2395,6 +2579,8 @@ Youth Self Report: I am nervous in new situations. I easily lose confidence.
 
 ----------
 
+.. _dfn-sdq_item17:
+
 SDQ - Question 17
 ^^^^^^^^^^^^^^^^^
 
@@ -2417,6 +2603,8 @@ Youth Self Report: I am kind to younger people.
   
 
 ----------
+
+.. _dfn-sdq_item18:
 
 SDQ - Question 18
 ^^^^^^^^^^^^^^^^^
@@ -2441,6 +2629,8 @@ Youth Self Report: I am often accused of lying or cheating.
 
 ----------
 
+.. _dfn-sdq_item19:
+
 SDQ - Question 19
 ^^^^^^^^^^^^^^^^^
 
@@ -2463,6 +2653,8 @@ Youth Self Report: Other children or young people pick on me or bully me.
   
 
 ----------
+
+.. _dfn-sdq_item20:
 
 SDQ - Question 20
 ^^^^^^^^^^^^^^^^^
@@ -2487,6 +2679,8 @@ Youth Self Report: I often volunteer to help others (parents, teachers, children
 
 ----------
 
+.. _dfn-sdq_item21:
+
 SDQ - Question 21
 ^^^^^^^^^^^^^^^^^
 
@@ -2509,6 +2703,8 @@ Youth Self Report: I think before I do things.
   
 
 ----------
+
+.. _dfn-sdq_item22:
 
 SDQ - Question 22
 ^^^^^^^^^^^^^^^^^
@@ -2533,6 +2729,8 @@ Youth Self Report: I take things that are not mine from home, school or elsewher
 
 ----------
 
+.. _dfn-sdq_item23:
+
 SDQ - Question 23
 ^^^^^^^^^^^^^^^^^
 
@@ -2555,6 +2753,8 @@ Youth Self Report: I get along better with adults than with people my own age.
   
 
 ----------
+
+.. _dfn-sdq_item24:
 
 SDQ - Question 24
 ^^^^^^^^^^^^^^^^^
@@ -2579,6 +2779,8 @@ Youth Self Report: I have many fears, I am easily scared.
 
 ----------
 
+.. _dfn-sdq_item25:
+
 SDQ - Question 25
 ^^^^^^^^^^^^^^^^^
 
@@ -2601,6 +2803,8 @@ Youth Self Report: I finish the work I'm doing. My attention is good.
   
 
 ----------
+
+.. _dfn-sdq_item26:
 
 SDQ - Question 26
 ^^^^^^^^^^^^^^^^^
@@ -2625,6 +2829,8 @@ Youth Self Report: Overall, do you think that you have difficulties in any of th
   
 
 ----------
+
+.. _dfn-sdq_item27:
 
 SDQ - Question 27
 ^^^^^^^^^^^^^^^^^
@@ -2654,6 +2860,8 @@ Youth Self Report: How long have these difficulties been present?
 
 ----------
 
+.. _dfn-sdq_item28:
+
 SDQ - Question 28
 ^^^^^^^^^^^^^^^^^
 
@@ -2678,6 +2886,8 @@ Youth Self Report: Do the difficulties upset or distress you?
   
 
 ----------
+
+.. _dfn-sdq_item29:
 
 SDQ - Question 29
 ^^^^^^^^^^^^^^^^^
@@ -2704,6 +2914,8 @@ Youth Self Report: Do the difficulties interfere with your everyday life in the 
 
 ----------
 
+.. _dfn-sdq_item30:
+
 SDQ - Question 30
 ^^^^^^^^^^^^^^^^^
 
@@ -2728,6 +2940,8 @@ Youth Self Report: Do the difficulties interfere with your everyday life in the 
   
 
 ----------
+
+.. _dfn-sdq_item31:
 
 SDQ - Question 31
 ^^^^^^^^^^^^^^^^^
@@ -2754,6 +2968,8 @@ Youth Self Report: Do the difficulties interfere with your everyday life in the 
 
 ----------
 
+.. _dfn-sdq_item32:
+
 SDQ - Question 32
 ^^^^^^^^^^^^^^^^^
 
@@ -2779,6 +2995,8 @@ Youth Self Report: Do the difficulties interfere with your everyday life in the 
 
 ----------
 
+.. _dfn-sdq_item33:
+
 SDQ - Question 33
 ^^^^^^^^^^^^^^^^^
 
@@ -2803,6 +3021,8 @@ Youth Self Report: Do the difficulties make it harder for those around you (fami
   
 
 ----------
+
+.. _dfn-sdq_item34:
 
 SDQ - Question 34
 ^^^^^^^^^^^^^^^^^
@@ -2833,6 +3053,8 @@ Youth Self Report: 'Since coming to the service, are your problems:
 
 ----------
 
+.. _dfn-sdq_item35:
+
 SDQ - Question 35
 ^^^^^^^^^^^^^^^^^
 
@@ -2859,6 +3081,8 @@ Has coming to the service been helpful in other ways eg. providing information o
 
 ----------
 
+.. _dfn-sdq_item36:
+
 SDQ - Question 36
 ^^^^^^^^^^^^^^^^^
 
@@ -2882,6 +3106,8 @@ Over the last 6 months have your child's teachers complained of fidgetiness, res
   
 
 ----------
+
+.. _dfn-sdq_item37:
 
 SDQ - Question 37
 ^^^^^^^^^^^^^^^^^
@@ -2907,6 +3133,8 @@ Over the last 6 months have your child's teachers complained of poor concentrati
 
 ----------
 
+.. _dfn-sdq_item38:
+
 SDQ - Question 38
 ^^^^^^^^^^^^^^^^^
 
@@ -2931,6 +3159,8 @@ Over the last 6 months have your child's teachers complained of acting without t
 
 ----------
 
+.. _dfn-sdq_item39:
+
 SDQ - Question 39
 ^^^^^^^^^^^^^^^^^
 
@@ -2953,6 +3183,8 @@ Does your family complain about you having problems with overactivity or poor co
   
 
 ----------
+
+.. _dfn-sdq_item40:
 
 SDQ - Question 40
 ^^^^^^^^^^^^^^^^^
@@ -2977,6 +3209,8 @@ Do your teachers complain about you having problems with overactivity or poor co
 
 ----------
 
+.. _dfn-sdq_item41:
+
 SDQ - Question 41
 ^^^^^^^^^^^^^^^^^
 
@@ -2999,6 +3233,8 @@ Does your family complain about you being awkward or troublesome?
   
 
 ----------
+
+.. _dfn-sdq_item42:
 
 SDQ - Question 42
 ^^^^^^^^^^^^^^^^^
@@ -3023,6 +3259,8 @@ Do your teachers complain about you being awkward or troublesome?
 
 ----------
 
+.. _dfn-sdq_tags:
+
 SDQ - Tags
 ^^^^^^^^^^
 
@@ -3046,6 +3284,8 @@ List of tags for the collection occasion.
   
 
 ----------
+
+.. _dfn-service_contact_participation_indicator:
 
 Service Contact - Client Participation Indicator
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -3080,6 +3320,8 @@ An indicator of whether the client participated in the service contact, as repre
 
 ----------
 
+.. _dfn-service_contact_copayment:
+
 Service Contact - Copayment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -3101,6 +3343,8 @@ The co-payment is the amount paid by the client per session.
 
 ----------
 
+.. _dfn-service_contact_date:
+
 Service Contact - Date
 ^^^^^^^^^^^^^^^^^^^^^^
 
@@ -3120,6 +3364,8 @@ The date of each mental health service contact between a health service provider
 :METeOR: `494356 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494356>`__
 
 ----------
+
+.. _dfn-service_contact_duration:
 
 Service Contact - Duration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -3152,6 +3398,8 @@ The time from the start to finish of a service contact.
 
 ----------
 
+.. _dfn-service_contact_final:
+
 Service Contact - Final
 ^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -3182,6 +3430,8 @@ An indication of whether the Service Contact is the final for the current Episod
   
 
 ----------
+
+.. _dfn-service_contact_interpreter:
 
 Service Contact - Interpreter Used
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -3216,6 +3466,8 @@ Whether an interpreter service was used during the Service Contact
 
 ----------
 
+.. _dfn-service_contact_modality:
+
 Service Contact - Modality
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -3239,6 +3491,8 @@ How the service contact was delivered, as represented by a code.
 
 ----------
 
+.. _dfn-service_contact_no_show:
+
 Service Contact - No Show
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -3259,6 +3513,8 @@ Where an appointment was made for a client, but the client failed to attend the 
   
 
 ----------
+
+.. _dfn-service_contact_participants:
 
 Service Contact - Participants
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -3301,6 +3557,8 @@ An indication of whether a Service Contact is provided to one or more clients an
 
 ----------
 
+.. _dfn-service_contact_postcode:
+
 Service Contact - Postcode
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -3322,6 +3580,8 @@ The Australian postcode where the service contact took place.
 :METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__
 
 ----------
+
+.. _dfn-service_contact_tags:
 
 Service Contact - Tags
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -3346,6 +3606,8 @@ List of tags for the service contact.
   
 
 ----------
+
+.. _dfn-service_contact_type:
 
 Service Contact - Type
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -3470,6 +3732,8 @@ The main type of service provided in the service contact, as represented by the 
 
 ----------
 
+.. _dfn-service_contact_venue:
+
 Service Contact - Venue
 ^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -3501,6 +3765,8 @@ Where the service contact was delivered, as represented by a code.
   
 
 ----------
+
+.. _dfn-service_contact_key:
 
 Service Contact Key
 ^^^^^^^^^^^^^^^^^^^
