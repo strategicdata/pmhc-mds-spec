@@ -665,6 +665,104 @@
     },
     "required": true
   },{
+    "name": "sdq_emotional_symptoms",
+    "titles": [ "sdq_emotional_symptoms", "Emotional Symptoms" ],
+    "dc:title" : "SDQ - Emotional Symptoms Scale",
+    "schema:dateCreated": "2016-06-22",
+    "schema:dateDeleted": "2016-06-22",
+    "schema:dateModified": "2016-06-22",
+    "null": "99",
+    "datatype": {
+      "base": "integer",
+      "minimum": 0,
+      "maximum": 10
+      },
+    "required": false
+  },{
+    "name": "sdq_conduct_problem",
+    "titles": [ "sdq_conduct_problem", "Conduct Problem" ],
+    "dc:title" : "SDQ - Conduct Problem Scale",
+    "schema:dateCreated": "2016-06-22",
+    "schema:dateDeleted": "2016-06-22",
+    "schema:dateModified": "2016-06-22",
+    "null": "99",
+    "datatype": {
+      "base": "integer",
+      "minimum": 0,
+      "maximum": 10
+      },
+    "required": false
+  },{
+    "name": "sdq_hyperactivity",
+    "titles": [ "sdq_hyperactivity", "Hyperactivity" ],
+    "dc:title" : "SDQ - Hyperactivity Scale",
+    "schema:dateCreated": "2016-06-22",
+    "schema:dateDeleted": "2016-06-22",
+    "schema:dateModified": "2016-06-22",
+    "null": "99",
+    "datatype": {
+      "base": "integer",
+      "minimum": 0,
+      "maximum": 10
+      },
+    "required": false
+  },{
+    "name": "sdq_peer_problem",
+    "titles": [ "sdq_peer_problem", "Peer Problem" ],
+    "dc:title" : "SDQ - Peer Problem Scale",
+    "schema:dateCreated": "2016-06-22",
+    "schema:dateDeleted": "2016-06-22",
+    "schema:dateModified": "2016-06-22",
+    "null": "99",
+    "datatype": {
+      "base": "integer",
+      "minimum": 0,
+      "maximum": 10
+      },
+    "required": false
+  },{
+    "name": "sdq_prosocial",
+    "titles": [ "sdq_prosocial", "Prosocial" ],
+    "dc:title" : "SDQ - Prosocial Scale",
+    "schema:dateCreated": "2016-06-22",
+    "schema:dateDeleted": "2016-06-22",
+    "schema:dateModified": "2016-06-22",
+    "null": "99",
+    "datatype": {
+      "base": "integer",
+      "minimum": 0,
+      "maximum": 10
+      },
+    "required": false
+  },{
+    "name": "sdq_total",
+    "titles": [ "sdq_total", "Total" ],
+    "dc:title" : "SDQ - Total Difficulties Score",
+    "schema:dateCreated": "2016-06-22",
+    "schema:dateDeleted": "2016-06-22",
+    "schema:dateModified": "2016-06-22",
+    "null": "99",
+    "datatype": {
+      "base": "integer",
+      "minimum": 0,
+      "maximum": 40
+      },
+    "required": false
+  },{
+    "name": "sdq_impact",
+    "titles": [ "sdq_impact", "Total" ],
+    "dc:title" : "SDQ - Impact Score",
+    "schema:dateCreated": "2016-06-22",
+    "schema:dateDeleted": "2016-06-22",
+    "schema:dateModified": "2016-06-22",
+    "null": "99",
+    "datatype": {
+      "base": "integer",
+      "minimum": 0,
+      "maximum": 10
+      },
+    "required": false
+  },{
     "name": "sdq_tags",
     "titles": [ "sdq_tags", "Tags" ],
     "dc:title" : "SDQ - Tags",

@@ -75,7 +75,7 @@
       "base": "string",
       "format": "^(1|2|3|4|5|6|9)$"
     },
-    "required": true
+    "required": false
   },{
     "name": "k10p_item2",
     "titles": [ "k10p_item2", "Question 2" ],
@@ -88,7 +88,7 @@
       "base": "string",
       "format": "^(1|2|3|4|5|6|9)$"
     },
-    "required": true
+    "required": false
   },{
     "name": "k10p_item3",
     "titles": [ "k10p_item3", "Question 3" ],
@@ -101,7 +101,7 @@
       "base": "string",
       "format": "^(1|2|3|4|5|6|9)$"
     },
-    "required": true
+    "required": false
   },{
     "name": "k10p_item4",
     "titles": [ "k10p_item4", "Question 4" ],
@@ -114,7 +114,7 @@
       "base": "string",
       "format": "^(1|2|3|4|5|6|9)$"
     },
-    "required": true
+    "required": false
   },{
     "name": "k10p_item5",
     "titles": [ "k10p_item5", "Question 5" ],
@@ -127,7 +127,7 @@
       "base": "string",
       "format": "^(1|2|3|4|5|6|9)$"
     },
-    "required": true
+    "required": false
   },{
     "name": "k10p_item6",
     "titles": [ "k10p_item6", "Question 6" ],
@@ -140,7 +140,7 @@
       "base": "string",
       "format": "^(1|2|3|4|5|6|9)$"
     },
-    "required": true
+    "required": false
   },{
     "name": "k10p_item7",
     "titles": [ "k10p_item7", "Question 7" ],
@@ -153,7 +153,7 @@
       "base": "string",
       "format": "^(1|2|3|4|5|6|9)$"
     },
-    "required": true
+    "required": false
   },{
     "name": "k10p_item8",
     "titles": [ "k10p_item8", "Question 8" ],
@@ -166,7 +166,7 @@
       "base": "string",
       "format": "^(1|2|3|4|5|6|9)$"
     },
-    "required": true
+    "required": false
   },{
     "name": "k10p_item9",
     "titles": [ "k10p_item9", "Question 9" ],
@@ -179,7 +179,7 @@
       "base": "string",
       "format": "^(1|2|3|4|5|6|9)$"
     },
-    "required": true
+    "required": false
   },{
     "name": "k10p_item10",
     "titles": [ "k10p_item10", "Question 10" ],
@@ -192,7 +192,7 @@
       "base": "string",
       "format": "^(1|2|3|4|5|6|9)$"
     },
-    "required": true
+    "required": false
   },{
     "name": "k10p_item11",
     "titles": [ "k10p_item11", "Question 11" ],
@@ -248,6 +248,22 @@
       "format": "^(1|2|3|4|5|6|9)$"
     },
     "required": true
+  },{
+    "name": "k10p_score",
+    "titles": [ "k10p_score", "Score" ],
+    "dc:title" : "K10+ - Score",
+    "schema:description": "The overall K10 score.",
+    "schema:disambiguatingDescription": "table/collection-occasion/k10p/score.rst",
+    "schema:dateCreated": "2016-06-22",
+    "schema:dateDeleted": "2016-06-22",
+    "schema:dateModified": "2016-06-22",
+    "null": "99",
+    "datatype": {
+      "base": "integer",
+      "minimum": 10,
+      "maximum": 50
+      },
+    "required": false
   },{
     "name": "k10p_tags",
     "titles": [ "k10p_tags", "Tags" ],

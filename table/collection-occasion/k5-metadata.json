@@ -129,6 +129,22 @@
     },
     "required": true
   },{
+    "name": "k5_score",
+    "titles": [ "k5_score", "Score" ],
+    "dc:title" : "K5 - Score",
+    "schema:description": "The overall K5 score.",
+    "schema:disambiguatingDescription": "table/collection-occasion/k5/score.rst",
+    "schema:dateCreated": "2016-06-22",
+    "schema:dateDeleted": "2016-06-22",
+    "schema:dateModified": "2016-06-22",
+    "null": "99",
+    "datatype": {
+      "base": "integer",
+      "minimum": 5,
+      "maximum": 25
+      },
+    "required": false
+  },{
     "name": "k5_tags",
     "titles": [ "k5_tags", "Tags" ],
     "dc:title" : "K5 - Tags",
