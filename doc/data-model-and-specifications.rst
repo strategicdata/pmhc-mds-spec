@@ -167,7 +167,10 @@ Measures will be the Kessler Psychological Distress Scale K10+ (in the case of
 Aboriginal and Torres Strait Islander clients, the K5) as well as the Strengths
 & Difficulties Questionnaires.
 
-Individual item scores will be required.
+Individual item scores will eventually be required, however, it is noted that
+in the short term there are issues with collecting individual item scores.
+Therefore, as a transitional phase, reporting overall scores/subscales will be
+allowed.
 
 Outcome collection occasions are managed by the provider organisations via upload.
 
@@ -175,6 +178,10 @@ Outcome collection occasions are managed by the provider organisations via uploa
 
 K10+
 ^^^^
+
+As noted above, reporting individual item scores will eventually be required.
+In the short term, respondents can either report all 14 item scores or report
+the K10 total score as well as item scores for the 4 extra items in the K10+.
 
 .. csv-table:: K10+ record layout
    :file: record/k10p-collection-occasion.csv
@@ -184,6 +191,10 @@ K10+
 
 K5
 ^^
+
+As noted above, reporting individual item scores will eventually be required.
+In the short term, respondents can either report all 5 item scores or report
+the K5 total score.
 
 .. csv-table:: K5 record layout
    :file: record/k5-collection-occasion.csv
@@ -247,6 +258,49 @@ item.
 +-------+-----------------------------+----------+----------+----------+----------+----------+----------+
 | 39-42 | Cross-Informant information | X        | X        | X        | X        | ✓        | X        |
 +-------+-----------------------------+----------+----------+----------+----------+----------+----------+
+
+As noted above, reporting individual item scores will eventually be required.
+In the short term, respondents can either report all 42 item scores or report
+the SDQ subscale scores.
+
+The standard values for coding individual Item responses are 0 (Not True),
+1 (Somewhat True), 2 (Certainly True) and 9 (Missing data).
+
+For completed items (response coded 0,1,2) the Item scores are usually the same
+as the standard values. Them exceptions are item 07, 11, 14, 21 and 25. These
+items are "reverse-scored", that is, the standard value is mapped to Item scores
+as follows: 0->2, 1->1, 2->0.
+
+Summary scores are only calculated if at least three of the five items have been
+completed (that is, coded 0, 1 or 2). Otherwise the summary score is set to
+missing. For the Summary scores, the missing value used should be 99.
+
+The Summary scores are computed using the equation shown below, with the result
+being rounded to the nearest whole number. In the first 25 SDQ questions,
+each summary scale is composed of five items.
+
+Summary score = (sum of item scores/number of valid completed items) x number of items
+
+The simplest way to calculate the total difficulties score is to add up the
+following summary scores with the result being rounded to the nearest whole
+number.
+
+Total score = Emotional Scale + Conduct Scale + Hyperactivity Scale + Peer Problem Scale
+
+However, some of the summary scores may be missing. The rule is if more than
+one summary score is missing the Total Score is set to missing, value 99.
+
+Items 28-32 are not completed if respondents have answered "No" to Item 26, which
+asks for an overall opinion about difficulties being present. In this case,
+all Item responses for Items 27 through 33 should be coded "8" for "not applicable",
+and the impact score should be coded to zero. Item 27 is not included in the
+Impact Score since it assesses the chronicity of the difficulties- the length
+of time they have been present. Item 33 is not included in the Impact Score,
+since it assess the burden on others rather than on the child/youth.
+
+The coded Item Responses for the remaining Items 28 through 32 have to be
+mapped to their Item Scores before adding up. This mapping is the same for all,
+namely: 0->0, 1->0, 2->1, 3->2.
 
 .. csv-table:: SDQ record layout
    :file: record/sdq-collection-occasion.csv
