@@ -1487,6 +1487,29 @@ In the last 4 weeks, about how often did you feel so sad that nothing could chee
 
 ----------
 
+.. _dfn-k5_score:
+
+K5 - Score
+^^^^^^^^^^
+
+The overall K5 score.
+
+:Field name: k5_score
+
+:Data type: integer
+:Notes:
+  The K5 Total score is based on the sum of K5 item 1 through 5 (range: 5-25).
+  
+  The Total score is computed as the sum of the item scores. If any item has not
+  been completed (that is, has not been coded 1, 2, 3, 4, 5), it is excluded from
+  the calculation and not counted as a valid item. If any item is missing, the
+  Total Score is set as missing.
+  
+  For the Total score, the missing value used should be 99.
+  
+
+----------
+
 .. _dfn-k5_tags:
 
 K5 - Tags
@@ -1780,6 +1803,33 @@ In the past four weeks, how often have physical health problems been the main ca
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
+----------
+
+.. _dfn-k10p_score:
+
+K10+ - Score
+^^^^^^^^^^^^
+
+The overall K10 score.
+
+:Field name: k10p_score
+
+:Data type: integer
+:Notes:
+  The K10 Total score is based on the sum of K10 item 01 through 10 (range: 10-50). Items 11
+  through 14 are excluded from the total because they are separate measures of disability
+  associated with the problems referred to in the preceding ten items.
+  
+  The Total score is computed using the equation shown below, with the result being rounded to
+  the nearest whole number. If any item has not been completed (that is, has not been coded 1, 2,
+  3, 4, 5), it is excluded from the calculation and not counted as a valid item. If more than one item
+  is missing, the Total Score is set as missing.
+  
+  Total score = (sum of item scores/number of valid completed items) x number of items
+  
+  For the Total score, the missing value used should be 99.
+  
 
 ----------
 
@@ -2187,6 +2237,78 @@ The version of the SDQ collected.
   Domain values align with those collected in the NOCC dataset as defined at
   https://webval.validator.com.au/spec/NOCC/current/SDQ/SDQVer
   
+
+----------
+
+.. _dfn-sdq_conduct_problem:
+
+SDQ - Conduct Problem Scale
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_conduct_problem
+
+:Data type: integer
+
+----------
+
+.. _dfn-sdq_emotional_symptoms:
+
+SDQ - Emotional Symptoms Scale
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_emotional_symptoms
+
+:Data type: integer
+
+----------
+
+.. _dfn-sdq_hyperactivity:
+
+SDQ - Hyperactivity Scale
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_hyperactivity
+
+:Data type: integer
+
+----------
+
+.. _dfn-sdq_impact:
+
+SDQ - Impact Score
+^^^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_impact
+
+:Data type: integer
+
+----------
+
+.. _dfn-sdq_peer_problem:
+
+SDQ - Peer Problem Scale
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_peer_problem
+
+:Data type: integer
+
+----------
+
+.. _dfn-sdq_prosocial:
+
+SDQ - Prosocial Scale
+^^^^^^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_prosocial
+
+:Data type: integer
 
 ----------
 
@@ -3293,6 +3415,18 @@ List of tags for the collection occasion.
   Tags beginning with an exclamation mark (!) are reserved for future use by the
   Department. e.g. ``!reserved, ! reserved, !department-use-only``.
   
+
+----------
+
+.. _dfn-sdq_total:
+
+SDQ - Total Difficulties Score
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+:Field name: sdq_total
+
+:Data type: integer
 
 ----------
 
