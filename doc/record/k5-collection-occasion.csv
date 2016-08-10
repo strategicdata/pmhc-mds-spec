@@ -56,6 +56,9 @@
 :4: Most of the time
 :5: All of the time
 :9: Not stated / Missing"
+"`K5 - Score`_ (k5_score)
+
+",integer,"The overall K5 score."
 "`K5 - Tags`_ (k5_tags)
 
 ",string,"List of tags for the collection occasion."

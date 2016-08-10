@@ -113,6 +113,9 @@
 :4: Most of the time
 :5: All of the time
 :9: Not stated / Missing"
+"`K10+ - Score`_ (k10p_score)
+
+",integer,"The overall K10 score."
 "`K10+ - Tags`_ (k10p_tags)
 
 ",string,"List of tags for the collection occasion."

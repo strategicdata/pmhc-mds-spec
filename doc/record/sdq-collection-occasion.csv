@@ -345,6 +345,27 @@
 :7: Unable to rate (insufficient information)
 :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
 :9: Not stated / Missing"
+"`SDQ - Emotional Symptoms Scale`_ (sdq_emotional_symptoms)
+
+",integer
+"`SDQ - Conduct Problem Scale`_ (sdq_conduct_problem)
+
+",integer
+"`SDQ - Hyperactivity Scale`_ (sdq_hyperactivity)
+
+",integer
+"`SDQ - Peer Problem Scale`_ (sdq_peer_problem)
+
+",integer
+"`SDQ - Prosocial Scale`_ (sdq_prosocial)
+
+",integer
+"`SDQ - Total Difficulties Score`_ (sdq_total)
+
+",integer
+"`SDQ - Impact Score`_ (sdq_impact)
+
+",integer
 "`SDQ - Tags`_ (sdq_tags)
 
 ",string,"List of tags for the collection occasion."
