@@ -126,6 +126,19 @@ The term 'gender' refers to the way in which a person identifies their masculine
   :1: Male
   :2: Female
   :3: Other
+:Notes:
+  1 - M - Male
+    Adults who identify themselves as men, and children who identify themselves
+    as boys.
+  
+  2 - F - Female
+    Adults who identify themselves as women, and children who identify themselves
+    as girls.
+  
+  3 - X- Other
+    Adults and children who identify as non-binary, gender diverse, or with
+    descriptors other than man/boy or woman/girl.
+  
 
 :ABS: `http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/1200.0.55.012Main%20Features12016?opendocument&tabname=Summary&prodno=1200.0.55.012&issue=2016&num=&view= <http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/1200.0.55.012Main%20Features12016?opendocument&tabname=Summary&prodno=1200.0.55.012&issue=2016&num=&view=>`__
 
