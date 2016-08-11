@@ -262,8 +262,7 @@
       "base": "integer",
       "minimum": 10,
       "maximum": 50
-      },
-    "required": false
+      }
   },{
     "name": "k10p_tags",
     "titles": [ "k10p_tags", "Tags" ],
@@ -275,8 +274,7 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-      },
-    "required": false
+      }
   }],
   "primaryKey": "collection_occasion_key",
   "foreignKeys": [{

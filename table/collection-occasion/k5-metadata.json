@@ -74,8 +74,7 @@
     "datatype": {
       "base": "string",
       "format": "^(1|2|3|4|5|6|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "k5_item2",
     "titles": [ "k5_item2", "Question 2" ],
@@ -87,8 +86,7 @@
     "datatype": {
       "base": "string",
       "format": "^(1|2|3|4|5|6|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "k5_item3",
     "titles": [ "k5_item3", "Question 3" ],
@@ -100,8 +98,7 @@
     "datatype": {
       "base": "string",
       "format": "^(1|2|3|4|5|6|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "k5_item4",
     "titles": [ "k5_item4", "Question 4" ],
@@ -113,8 +110,7 @@
     "datatype": {
       "base": "string",
       "format": "^(1|2|3|4|5|6|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "k5_item5",
     "titles": [ "k5_item5", "Question 5" ],
@@ -126,8 +122,7 @@
     "datatype": {
       "base": "string",
       "format": "^(1|2|3|4|5|6|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "k5_score",
     "titles": [ "k5_score", "Score" ],
@@ -142,8 +137,7 @@
       "base": "integer",
       "minimum": 5,
       "maximum": 25
-      },
-    "required": false
+      }
   },{
     "name": "k5_tags",
     "titles": [ "k5_tags", "Tags" ],
@@ -155,8 +149,7 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-      },
-    "required": false
+      }
   }],
   "primaryKey": "collection_occasion_key",
   "foreignKeys": [{

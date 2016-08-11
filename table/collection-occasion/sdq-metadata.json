@@ -88,8 +88,7 @@
     "datatype": {
       "base": "string",
       "format": "^(0|1|2|7|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "sdq_item2",
     "titles": [ "sdq_item2", "Question 2" ],
@@ -102,8 +101,7 @@
     "datatype": {
       "base": "string",
       "format": "^(0|1|2|7|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "sdq_item3",
     "titles": [ "sdq_item3", "Question 3" ],
@@ -116,8 +114,7 @@
     "datatype": {
       "base": "string",
       "format": "^(0|1|2|7|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "sdq_item4",
     "titles": [ "sdq_item4", "Question 4" ],
@@ -130,8 +127,7 @@
     "datatype": {
       "base": "string",
       "format": "^(0|1|2|7|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "sdq_item5",
     "titles": [ "sdq_item5", "Question 5" ],
@@ -144,8 +140,7 @@
     "datatype": {
       "base": "string",
       "format": "^(0|1|2|7|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "sdq_item6",
     "titles": [ "sdq_item6", "Question 6" ],
@@ -158,8 +153,7 @@
     "datatype": {
       "base": "string",
       "format": "^(0|1|2|7|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "sdq_item7",
     "titles": [ "sdq_item7", "Question 7" ],
@@ -172,8 +166,7 @@
     "datatype": {
       "base": "string",
       "format": "^(0|1|2|7|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "sdq_item8",
     "titles": [ "sdq_item8", "Question 8" ],
@@ -186,8 +179,7 @@
     "datatype": {
       "base": "string",
       "format": "^(0|1|2|7|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "sdq_item9",
     "titles": [ "sdq_item9", "Question 9" ],
@@ -200,8 +192,7 @@
     "datatype": {
       "base": "string",
       "format": "^(0|1|2|7|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "sdq_item10",
     "titles": [ "sdq_item10", "Question 10" ],
@@ -214,8 +205,7 @@
     "datatype": {
       "base": "string",
       "format": "^(0|1|2|7|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "sdq_item11",
     "titles": [ "sdq_item11", "Question 11" ],
@@ -228,8 +218,7 @@
     "datatype": {
       "base": "string",
       "format": "^(0|1|2|7|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "sdq_item12",
     "titles": [ "sdq_item12", "Question 12" ],
@@ -242,8 +231,7 @@
     "datatype": {
       "base": "string",
       "format": "^(0|1|2|7|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "sdq_item13",
     "titles": [ "sdq_item13", "Question 13" ],
@@ -256,8 +244,7 @@
     "datatype": {
       "base": "string",
       "format": "^(0|1|2|7|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "sdq_item14",
     "titles": [ "sdq_item14", "Question 14" ],
@@ -270,8 +257,7 @@
     "datatype": {
       "base": "string",
       "format": "^(0|1|2|7|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "sdq_item15",
     "titles": [ "sdq_item15", "Question 15" ],
@@ -284,8 +270,7 @@
     "datatype": {
       "base": "string",
       "format": "^(0|1|2|7|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "sdq_item16",
     "titles": [ "sdq_item16", "Question 16" ],
@@ -298,8 +283,7 @@
     "datatype": {
       "base": "string",
       "format": "^(0|1|2|7|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "sdq_item17",
     "titles": [ "sdq_item17", "Question 17" ],
@@ -312,8 +296,7 @@
     "datatype": {
       "base": "string",
       "format": "^(0|1|2|7|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "sdq_item18",
     "titles": [ "sdq_item18", "Question 18" ],
@@ -326,8 +309,7 @@
     "datatype": {
       "base": "string",
       "format": "^(0|1|2|7|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "sdq_item19",
     "titles": [ "sdq_item19", "Question 19" ],
@@ -340,8 +322,7 @@
     "datatype": {
       "base": "string",
       "format": "^(0|1|2|7|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "sdq_item20",
     "titles": [ "sdq_item20", "Question 20" ],
@@ -354,8 +335,7 @@
     "datatype": {
       "base": "string",
       "format": "^(0|1|2|7|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "sdq_item21",
     "titles": [ "sdq_item21", "Question 21" ],
@@ -368,8 +348,7 @@
     "datatype": {
       "base": "string",
       "format": "^(0|1|2|7|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "sdq_item22",
     "titles": [ "sdq_item22", "Question 22" ],
@@ -382,8 +361,7 @@
     "datatype": {
       "base": "string",
       "format": "^(0|1|2|7|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "sdq_item23",
     "titles": [ "sdq_item23", "Question 23" ],
@@ -396,8 +374,7 @@
     "datatype": {
       "base": "string",
       "format": "^(0|1|2|7|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "sdq_item24",
     "titles": [ "sdq_item24", "Question 24" ],
@@ -410,8 +387,7 @@
     "datatype": {
       "base": "string",
       "format": "^(0|1|2|7|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "sdq_item25",
     "titles": [ "sdq_item25", "Question 25" ],
@@ -424,8 +400,7 @@
     "datatype": {
       "base": "string",
       "format": "^(0|1|2|7|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "sdq_item26",
     "titles": [ "sdq_item26", "Question 26" ],
@@ -438,8 +413,7 @@
     "datatype": {
       "base": "string",
       "format": "^(0|1|2|3|7|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "sdq_item27",
     "titles": [ "sdq_item27", "Question 27" ],
@@ -452,8 +426,7 @@
     "datatype": {
       "base": "string",
       "format": "^(0|1|2|3|7|8|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "sdq_item28",
     "titles": [ "sdq_item28", "Question 28" ],
@@ -466,8 +439,7 @@
     "datatype": {
       "base": "string",
       "format": "^(0|1|2|3|7|8|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "sdq_item29",
     "titles": [ "sdq_item29", "Question 29" ],
@@ -480,8 +452,7 @@
     "datatype": {
       "base": "string",
       "format": "^(0|1|2|3|7|8|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "sdq_item30",
     "titles": [ "sdq_item30", "Question 30" ],
@@ -494,8 +465,7 @@
     "datatype": {
       "base": "string",
       "format": "^(0|1|2|3|7|8|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "sdq_item31",
     "titles": [ "sdq_item31", "Question 31" ],
@@ -508,8 +478,7 @@
     "datatype": {
       "base": "string",
       "format": "^(0|1|2|3|7|8|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "sdq_item32",
     "titles": [ "sdq_item32", "Question 32" ],
@@ -522,8 +491,7 @@
     "datatype": {
       "base": "string",
       "format": "^(0|1|2|3|7|8|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "sdq_item33",
     "titles": [ "sdq_item33", "Question 33" ],
@@ -536,8 +504,7 @@
     "datatype": {
       "base": "string",
       "format": "^(0|1|2|3|7|8|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "sdq_item34",
     "titles": [ "sdq_item34", "Question 34" ],
@@ -550,8 +517,7 @@
     "datatype": {
       "base": "string",
       "format": "^(0|1|2|3|4|7|8|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "sdq_item35",
     "titles": [ "sdq_item35", "Question 35" ],
@@ -564,8 +530,7 @@
     "datatype": {
       "base": "string",
       "format": "^(0|1|2|3|7|8|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "sdq_item36",
     "titles": [ "sdq_item36", "Question 36" ],
@@ -578,8 +543,7 @@
     "datatype": {
       "base": "string",
       "format": "^(0|1|2|7|8|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "sdq_item37",
     "titles": [ "sdq_item37", "Question 37" ],
@@ -592,8 +556,7 @@
     "datatype": {
       "base": "string",
       "format": "^(0|1|2|7|8|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "sdq_item38",
     "titles": [ "sdq_item38", "Question 38" ],
@@ -606,8 +569,7 @@
     "datatype": {
       "base": "string",
       "format": "^(0|1|2|7|8|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "sdq_item39",
     "titles": [ "sdq_item39", "Question 39" ],
@@ -620,8 +582,7 @@
     "datatype": {
       "base": "string",
       "format": "^(0|1|2|7|8|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "sdq_item40",
     "titles": [ "sdq_item40", "Question 40" ],
@@ -634,8 +595,7 @@
     "datatype": {
       "base": "string",
       "format": "^(0|1|2|7|8|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "sdq_item41",
     "titles": [ "sdq_item41", "Question 41" ],
@@ -648,8 +608,7 @@
     "datatype": {
       "base": "string",
       "format": "^(0|1|2|7|8|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "sdq_item42",
     "titles": [ "sdq_item42", "Question 42" ],
@@ -662,8 +621,7 @@
     "datatype": {
       "base": "string",
       "format": "^(0|1|2|7|8|9)$"
-    },
-    "required": true
+    }
   },{
     "name": "sdq_emotional_symptoms",
     "titles": [ "sdq_emotional_symptoms", "Emotional Symptoms" ],
@@ -676,8 +634,7 @@
       "base": "integer",
       "minimum": 0,
       "maximum": 10
-      },
-    "required": false
+      }
   },{
     "name": "sdq_conduct_problem",
     "titles": [ "sdq_conduct_problem", "Conduct Problem" ],
@@ -690,8 +647,7 @@
       "base": "integer",
       "minimum": 0,
       "maximum": 10
-      },
-    "required": false
+      }
   },{
     "name": "sdq_hyperactivity",
     "titles": [ "sdq_hyperactivity", "Hyperactivity" ],
@@ -704,8 +660,7 @@
       "base": "integer",
       "minimum": 0,
       "maximum": 10
-      },
-    "required": false
+      }
   },{
     "name": "sdq_peer_problem",
     "titles": [ "sdq_peer_problem", "Peer Problem" ],
@@ -718,8 +673,7 @@
       "base": "integer",
       "minimum": 0,
       "maximum": 10
-      },
-    "required": false
+      }
   },{
     "name": "sdq_prosocial",
     "titles": [ "sdq_prosocial", "Prosocial" ],
@@ -732,8 +686,7 @@
       "base": "integer",
       "minimum": 0,
       "maximum": 10
-      },
-    "required": false
+      }
   },{
     "name": "sdq_total",
     "titles": [ "sdq_total", "Total" ],
@@ -746,8 +699,7 @@
       "base": "integer",
       "minimum": 0,
       "maximum": 40
-      },
-    "required": false
+      }
   },{
     "name": "sdq_impact",
     "titles": [ "sdq_impact", "Total" ],
@@ -760,8 +712,7 @@
       "base": "integer",
       "minimum": 0,
       "maximum": 10
-      },
-    "required": false
+      }
   },{
     "name": "sdq_tags",
     "titles": [ "sdq_tags", "Tags" ],
@@ -773,8 +724,7 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-      },
-    "required": false
+      }
   }],
   "primaryKey": "collection_occasion_key",
   "foreignKeys": [{

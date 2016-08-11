@@ -177,7 +177,7 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string",
-      "format": "^(1|2|7|9)$"
+      "format": "^(1|2|3|7|9)$"
     },
     "required": true
   },{
@@ -272,8 +272,7 @@
     "schema:dateModified": "2016-06-08",
     "datatype": {
       "base": "string"
-    },
-    "required": true
+    }
   },{
     "name": "medication_antipsychotics",
     "titles": [ "medication_antipsychotics", "Medication Antipsychotics" ],
