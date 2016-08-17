@@ -1,24 +1,24 @@
-"Data Element (Field Name)","Type [Length]","Format / Values"
+"Data Element (Field Name)","Type (min - max)","Format / Values"
 "`Organisation Path`_ (organisation_path)
 
-",string,"A sequence of colon separated Organisation Codes that fully specifies the upload organisation."
+","string(,)","A sequence of colon separated Organisation Codes that fully specifies the upload organisation."
 "`Collection Occasion Key`_ (collection_occasion_key)
 
-",string,"This is a number or code assigned to each collection occasion of outcome measures. The Collection Occasion Key is unique and stable for each collection occasion at the level of the organisation."
+","string(2,50)","This is a number or code assigned to each collection occasion of outcome measures. The Collection Occasion Key is unique and stable for each collection occasion at the level of the organisation."
 "`Episode Key`_ (episode_key)
 
 ",,
 "`Collection Occasion - Measure Date`_ (measure_date)
 
-",date,"The date the measure was given."
+","date(,)","The date the measure was given."
 "`Collection Occasion - Reason`_ (reason_for_collection)
 
-",string,":1: Episode start
+","string(,)",":1: Episode start
 :2: Review
 :3: Episode end"
 "`K10+ - Question 1`_ (k10p_item1)
 
-",string,":1: None of the time
+","string(,)",":1: None of the time
 :2: A little of the time
 :3: Some of the time
 :4: Most of the time
@@ -26,7 +26,7 @@
 :9: Not stated / Missing"
 "`K10+ - Question 2`_ (k10p_item2)
 
-",string,":1: None of the time
+","string(,)",":1: None of the time
 :2: A little of the time
 :3: Some of the time
 :4: Most of the time
@@ -34,7 +34,7 @@
 :9: Not stated / Missing"
 "`K10+ - Question 3`_ (k10p_item3)
 
-",string,":1: None of the time
+","string(,)",":1: None of the time
 :2: A little of the time
 :3: Some of the time
 :4: Most of the time
@@ -42,7 +42,7 @@
 :9: Not stated / Missing"
 "`K10+ - Question 4`_ (k10p_item4)
 
-",string,":1: None of the time
+","string(,)",":1: None of the time
 :2: A little of the time
 :3: Some of the time
 :4: Most of the time
@@ -50,7 +50,7 @@
 :9: Not stated / Missing"
 "`K10+ - Question 5`_ (k10p_item5)
 
-",string,":1: None of the time
+","string(,)",":1: None of the time
 :2: A little of the time
 :3: Some of the time
 :4: Most of the time
@@ -58,7 +58,7 @@
 :9: Not stated / Missing"
 "`K10+ - Question 6`_ (k10p_item6)
 
-",string,":1: None of the time
+","string(,)",":1: None of the time
 :2: A little of the time
 :3: Some of the time
 :4: Most of the time
@@ -66,7 +66,7 @@
 :9: Not stated / Missing"
 "`K10+ - Question 7`_ (k10p_item7)
 
-",string,":1: None of the time
+","string(,)",":1: None of the time
 :2: A little of the time
 :3: Some of the time
 :4: Most of the time
@@ -74,7 +74,7 @@
 :9: Not stated / Missing"
 "`K10+ - Question 8`_ (k10p_item8)
 
-",string,":1: None of the time
+","string(,)",":1: None of the time
 :2: A little of the time
 :3: Some of the time
 :4: Most of the time
@@ -82,7 +82,7 @@
 :9: Not stated / Missing"
 "`K10+ - Question 9`_ (k10p_item9)
 
-",string,":1: None of the time
+","string(,)",":1: None of the time
 :2: A little of the time
 :3: Some of the time
 :4: Most of the time
@@ -90,7 +90,7 @@
 :9: Not stated / Missing"
 "`K10+ - Question 10`_ (k10p_item10)
 
-",string,":1: None of the time
+","string(,)",":1: None of the time
 :2: A little of the time
 :3: Some of the time
 :4: Most of the time
@@ -98,16 +98,16 @@
 :9: Not stated / Missing"
 "`K10+ - Question 11`_ (k10p_item11)
 
-",integer,"In the past four weeks, how many days were you totally unable to work, study or manage your day to day activities because of these feelings?"
+","integer(,)","In the past four weeks, how many days were you totally unable to work, study or manage your day to day activities because of these feelings?"
 "`K10+ - Question 12`_ (k10p_item12)
 
-",integer,"Aside from those days, in the past four weeks, how many days were you able to work or study or manage your day to day activities, but had to cut down on what you did because of these feelings?"
+","integer(,)","Aside from those days, in the past four weeks, how many days were you able to work or study or manage your day to day activities, but had to cut down on what you did because of these feelings?"
 "`K10+ - Question 13`_ (k10p_item13)
 
-",integer,"In the past four weeks, how many times have you seen a doctor or any other health professional about these feelings?"
+","integer(,)","In the past four weeks, how many times have you seen a doctor or any other health professional about these feelings?"
 "`K10+ - Question 14`_ (k10p_item14)
 
-",string,":1: None of the time
+","string(,)",":1: None of the time
 :2: A little of the time
 :3: Some of the time
 :4: Most of the time
@@ -115,7 +115,7 @@
 :9: Not stated / Missing"
 "`K10+ - Score`_ (k10p_score)
 
-",integer,"The overall K10 score."
+","integer(,)","The overall K10 score."
 "`K10+ - Tags`_ (k10p_tags)
 
-",string,"List of tags for the collection occasion."
+","string(,)","List of tags for the collection occasion."
