@@ -72,7 +72,7 @@ sub generate {
 
         $csv->say($fh, [
             'Data Element (Field Name)',
-            'Type [Length]',
+            'Type (min,max)',
             'Format / Values',
         ]);
 
@@ -143,13 +143,41 @@ sub generate {
 
 sub format_datatype {
     my $field    = shift;
-    
+
     my $formatted_dt;
     if ( ref $field->{datatype} eq 'HASH' ) {
         $formatted_dt = $field->{datatype}{base};
+
+        my $minl;
+        my $maxl;
+
         if ( exists $field->{datatype}{length} ) {
-            $formatted_dt .= '[' . $field->{datatype}{length} .']';
-        };
+            $minl = $maxl = $field->{datatype}{length};
+        }
+        else {
+            $minl = $field->{datatype}{minLength}
+                if exists $field->{datatype}{minLength};
+
+            $maxl = $field->{datatype}{maxLength}
+                if exists $field->{datatype}{maxLength};
+
+        }
+
+        if ( defined $minl && $minl eq $maxl ) {
+            $minl = undef;
+        }
+
+        if ( defined $minl and defined $maxl ) {
+            $formatted_dt .= " ($minl,$maxl)";
+        }
+        elsif ( defined $maxl ) {
+            $formatted_dt .= " ($maxl)";
+        }
+        elsif ( defined $minl ) {
+            die "minLength defined with no maxLength\n";
+            #$formatted_dt .= " (>= $minl)";
+        }
+
     }
     else {
         $formatted_dt = $field->{datatype};
