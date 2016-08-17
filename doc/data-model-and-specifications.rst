@@ -244,7 +244,7 @@ Outcome collection occasions are managed by the provider organisations via uploa
 .. _k10p-data-elements:
 
 K10+
-^^^^
+""""
 
 As noted above, reporting individual item scores will eventually be required.
 In the short term, respondents can either report all 14 item scores or report
@@ -257,7 +257,7 @@ the K10 total score as well as item scores for the 4 extra items in the K10+.
 .. _k5-data-elements:
 
 K5
-^^
+""
 
 As noted above, reporting individual item scores will eventually be required.
 In the short term, respondents can either report all 5 item scores or report
@@ -270,7 +270,7 @@ the K5 total score.
 .. _sdq-data-elements:
 
 SDQ
-^^^
+"""
 
 Extensive support materials are available on the SDQ developers' website,
 including copies of the various versions of the instrument, background
@@ -333,7 +333,7 @@ the SDQ subscale scores.
 .. _scoring-the-sdq:
 
 Scoring the SDQ
-"""""""""""""""
+'''''''''''''''
 
 The standard values for coding individual Item responses are 0 (Not True),
 1 (Somewhat True), 2 (Certainly True) and 9 (Missing data).
