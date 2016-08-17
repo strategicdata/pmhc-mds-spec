@@ -1,16 +1,16 @@
-"Data Element (Field Name)","Type (min - max)","Format / Values"
+"Data Element (Field Name)","Type (min,max)","Format / Values"
 "`Provider Organisation Key`_ (organisation_key)
 
-","string(2,50)","A sequence of characters which uniquely identifies the provider organisation. Assigned by the Primary Health Network."
+","string (2,50)","A sequence of characters which uniquely identifies the provider organisation. Assigned by the Primary Health Network."
 "`Provider Organisation - Name`_ (organisation_name)
 
-","string(2,100)","The name of the provider organisation."
+","string (2,100)","The name of the provider organisation."
 "`Provider Organisation - ABN`_ (organisation_abn)
 
-","string(11,11)","The Australian Business Number of the provider organisation."
+","string (11)","The Australian Business Number of the provider organisation."
 "`Provider Organisation - Type`_ (organisation_type)
 
-","string(,)",":1: Primary Heath Network
+",string,":1: Primary Heath Network
 :2: Private Primary Health Care Organisation - for profit
 :3: Private Primary Health Care Organisation - not for profit
 :4: Medicare Local
@@ -28,7 +28,7 @@
 
 
 
-METeOR: `613718 <http://meteor.aihw.gov.au/content/index.phtml/itemId/613718>`__","string(,)",":1: New South Wales
+METeOR: `613718 <http://meteor.aihw.gov.au/content/index.phtml/itemId/613718>`__",string,":1: New South Wales
 :2: Victoria
 :3: Queensland
 :4: South Australia
@@ -39,4 +39,4 @@ METeOR: `613718 <http://meteor.aihw.gov.au/content/index.phtml/itemId/613718>`__
 :9: Other Territories"
 "`Provider Organisation - Tags`_ (organisation_tags)
 
-","string(,)","List of tags for the provider organisation."
+",string,"List of tags for the provider organisation."
