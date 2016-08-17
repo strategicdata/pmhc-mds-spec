@@ -26,54 +26,45 @@ Collection Occasion records.
 **Note:** See :ref:`data-model-diagram` for more details about how
 Collection Occasion records fit into the overall structure.
 
-.. _record-formats:
+.. _key-concepts:
 
-Record formats
---------------
+Key concepts
+------------
+
+.. _key-concepts-primary-health-network:
+
+Primary Health Network
+^^^^^^^^^^^^^^^^^^^^^^
+
+Primary Health Networks (PHNs) have been established by the Australian Government
+with the key objectives of increasing the efficiency and effectiveness of
+medical services for patients, particularly those at risk of poor health
+outcomes, and improving coordination of care to ensure patients receive the
+right care in the right place at the right time.
+
+.. _key-concepts-provider-organisation:
 
 Provider Organisation
 ^^^^^^^^^^^^^^^^^^^^^
 
-Provider Organisation data is for administrative use within the PMHC MDS
-system. It is managed by the PHN's via the PMHC MDS administrative interface,
-it cannot be uploaded.
+The Provider Organisation is the business entity that the PHN has commissioned
+to provide the service.
 
-.. csv-table:: Provider Organisation record layout
-  :file: record/organisation.csv
-  :header-rows: 1
-
-----------
-
-.. _practitioner-data-elements:
+.. _key-concepts-practitioner:
 
 Practitioner
 ^^^^^^^^^^^^
 
-Practitioner data is intended to provide workforce planning data for use
-regionally by the PHN and nationally by the Department. It is managed by the
-provider organisations via either the PMHC MDS administrative interface or
-upload.
+The Practitioner is the person who is delivering the service.
 
-.. csv-table:: Practitioner record layout
-  :file: record/practitioner.csv
-  :header-rows: 1
-
-----------
-
-.. _client-data-elements:
+.. _key-concepts-client:
 
 Client
 ^^^^^^
 
-Clients are managed by the provider organisations via upload.
+The Client is the person who is receiving the service.
 
-.. csv-table:: Client record layout
-   :file: record/client.csv
-   :header-rows: 1
-
-----------
-
-.. _episode-data-elements:
+.. _key-concepts-episode:
 
 Episode
 ^^^^^^^
@@ -110,15 +101,7 @@ across PHN-commissioned services:
   has been lost with the client. A new episode is deemed to commence if the
   person re-presents to the organisation.
 
-  Episodes are managed by the provider organisations via upload.
-
-.. csv-table:: Episode record layout
-   :file: record/episode.csv
-   :header-rows: 1
-
-----------
-
-.. _service-contact-data-elements:
+.. _key-concepts-service-contact:
 
 Service Contact
 ^^^^^^^^^^^^^^^
@@ -144,7 +127,97 @@ Service Contact
   <http://meteor.aihw.gov.au/content/index.phtml/itemId/493304>`_ with
   modification.
 
-  Service contacts are managed by the provider organisations via upload.
+.. _key-concepts-outcome-collection-occasion:
+
+Outcome Collection Occasion
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A Collection Occasion is defined as an occasion during an Episode of Care when
+the required outcome measure is to be collected. At a minimum, collection of
+outcome data is required at both Episode Start and Episode End, but may be more
+frequent if clinically indicated and agreed by the client.
+
+Measures will be the Kessler Psychological Distress Scale K10+ (in the case of
+Aboriginal and Torres Strait Islander clients, the K5) as well as the Strengths
+& Difficulties Questionnaires.
+
+.. _record-formats:
+
+Record formats
+--------------
+
+Provider Organisation
+^^^^^^^^^^^^^^^^^^^^^
+
+See :ref:`key-concepts-provider-organisation` for the definition of a provider
+organisation.
+
+Provider Organisation data is for administrative use within the PMHC MDS
+system. It is managed by the PHN's via the PMHC MDS administrative interface,
+it cannot be uploaded.
+
+.. csv-table:: Provider Organisation record layout
+  :file: record/organisation.csv
+  :header-rows: 1
+
+----------
+
+.. _practitioner-data-elements:
+
+Practitioner
+^^^^^^^^^^^^
+
+See :ref:`key-concepts-practitioner` for the definition of a practitioner.
+
+Practitioner data is intended to provide workforce planning data for use
+regionally by the PHN and nationally by the Department. It is managed by the
+provider organisations via either the PMHC MDS administrative interface or
+upload.
+
+.. csv-table:: Practitioner record layout
+  :file: record/practitioner.csv
+  :header-rows: 1
+
+----------
+
+.. _client-data-elements:
+
+Client
+^^^^^^
+
+See :ref:`key-concepts-client` for definition of a client.
+
+Clients are managed by the provider organisations via upload.
+
+.. csv-table:: Client record layout
+   :file: record/client.csv
+   :header-rows: 1
+
+----------
+
+.. _episode-data-elements:
+
+Episode
+^^^^^^^
+
+See :ref:`key-concepts-episode` for definition of an episode.
+
+Episodes are managed by the provider organisations via upload.
+
+.. csv-table:: Episode record layout
+   :file: record/episode.csv
+   :header-rows: 1
+
+----------
+
+.. _service-contact-data-elements:
+
+Service Contact
+^^^^^^^^^^^^^^^
+
+See :ref:`key-concepts-service-contact` for definition of a service contact.
+
+Service contacts are managed by the provider organisations via upload.
 
 .. csv-table:: Service contact record layout
    :file: record/service-contact.csv
@@ -158,14 +231,8 @@ Service Contact
 Outcome Collection Occasion
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-A Collection Occasion is defined as an occasion during an Episode of Care when
-the required outcome measure is to be collected. At a minimum, collection of
-outcome data is required at both Episode Start and Episode End, but may be more
-frequent if clinically indicated and agreed by the client.
-
-Measures will be the Kessler Psychological Distress Scale K10+ (in the case of
-Aboriginal and Torres Strait Islander clients, the K5) as well as the Strengths
-& Difficulties Questionnaires.
+See :ref:`key-concepts-outcome-collection-occasion` for definition of an outcome
+collection occasion.
 
 Individual item scores will eventually be required, however, it is noted that
 in the short term there are issues with collecting individual item scores.
@@ -262,6 +329,11 @@ item.
 As noted above, reporting individual item scores will eventually be required.
 In the short term, respondents can either report all 42 item scores or report
 the SDQ subscale scores.
+
+.. _scoring-the-sdq:
+
+Scoring the SDQ
+"""""""""""""""
 
 The standard values for coding individual Item responses are 0 (Not True),
 1 (Somewhat True), 2 (Certainly True) and 9 (Missing data).
