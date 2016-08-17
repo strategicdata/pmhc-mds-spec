@@ -2262,6 +2262,9 @@ SDQ - Conduct Problem Scale
 :Field name: sdq_conduct_problem
 
 :Data type: integer
+:Notes:
+  See :ref:`scoring-the-sdq` for instructions on scoring the Conduct Problem Scale.
+  
 
 ----------
 
@@ -2274,6 +2277,9 @@ SDQ - Emotional Symptoms Scale
 :Field name: sdq_emotional_symptoms
 
 :Data type: integer
+:Notes:
+  See :ref:`scoring-the-sdq` for instructions on scoring the Emotional Symptoms Scale.
+  
 
 ----------
 
@@ -2286,6 +2292,9 @@ SDQ - Hyperactivity Scale
 :Field name: sdq_hyperactivity
 
 :Data type: integer
+:Notes:
+  See :ref:`scoring-the-sdq` for instructions on scoring the Hyperactivity Scale.
+  
 
 ----------
 
@@ -2298,6 +2307,9 @@ SDQ - Impact Score
 :Field name: sdq_impact
 
 :Data type: integer
+:Notes:
+  See :ref:`scoring-the-sdq` for instructions on scoring the Impact Score.
+  
 
 ----------
 
@@ -2310,6 +2322,9 @@ SDQ - Peer Problem Scale
 :Field name: sdq_peer_problem
 
 :Data type: integer
+:Notes:
+  See :ref:`scoring-the-sdq` for instructions on scoring the Peer Problem Scale.
+  
 
 ----------
 
@@ -2322,6 +2337,9 @@ SDQ - Prosocial Scale
 :Field name: sdq_prosocial
 
 :Data type: integer
+:Notes:
+  See :ref:`scoring-the-sdq` for instructions on scoring the Prosocial Scale.
+  
 
 ----------
 
@@ -3440,6 +3458,9 @@ SDQ - Total Difficulties Score
 :Field name: sdq_total
 
 :Data type: integer
+:Notes:
+  See :ref:`scoring-the-sdq` for instructions on scoring the Total Difficulties Score.
+  
 
 ----------
 
