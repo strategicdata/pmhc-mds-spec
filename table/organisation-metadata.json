@@ -38,9 +38,8 @@
     "schema:dateModified": "2016-07-08",
     "datatype": {
       "base": "string",
-      "minLength": 11,
-      "maxLength": 11
-      }
+      "length": 11
+    }
   },{
      "name": "organisation_type",
     "titles": [ "organisation_type", "Type" ],
