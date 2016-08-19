@@ -1,5 +1,5 @@
 Running with csvlint:
-csvlint clients.csv --schema=clients-metadata.json
+csvlint data/clients.csv --schema=pmhc-metadata.json
 
 Issues:
 - Will only accept one date format, not multiple alternatives.
@@ -20,7 +20,8 @@ Issues:
   removes the error.
 - Format of "#####0.##" for copayment isn't being checked.
 
-- Different versions of the SDQ require different items. Currently checks are not dependant of version of SDQ specified.
+- Different versions of the SDQ require different items. Currently checks are not dependent of version of SDQ specified.
+- Other interdependent checks such as Episode Completion Status and Service Contact/Episode End Date
 
 - Can't get the following working in order to have a version of the first line:
   "dialect": {
