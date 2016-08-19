@@ -22,6 +22,7 @@ Issues:
 
 - Different versions of the SDQ require different items. Currently checks are not dependent of version of SDQ specified.
 - Other interdependent checks such as Episode Completion Status and Service Contact/Episode End Date
+- Client consent on episode == 0 is valid csv but we will throw an error
 
 - Can't get the following working in order to have a version of the first line:
   "dialect": {
