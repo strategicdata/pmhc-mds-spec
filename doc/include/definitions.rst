@@ -2188,29 +2188,98 @@ List of tags for the provider organisation.
 Provider Organisation - Type
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The type of the provider organisation.
+The category that best describes the provider organisation.
 
 :Field name: organisation_type
 
 :Data type: string
 
 :Domain:
-  :1: Primary Heath Network
-  :2: Private Primary Health Care Organisation - for profit
-  :3: Private Primary Health Care Organisation - not for profit
-  :4: Medicare Local
-  :5: Division of General Practice
-  :6: Aboriginal Health/Medical Service
-  :7: General Practice
-  :8: Private Psychiatry service
-  :9: Drug and/or Alcohol Service
-  :10: Community-managed Community Support Organisation
-  :11: State/Territory Health Services
-  :12: Headspace Centre
-  :13: Solo Practitioner
+  :1: Primary Health Network
+  :2: Private Allied Health Professional Practice
+  :3: General Medical Practice
+  :4: Private Psychiatry Practice
+  :5: Headspace Centre
+  :6: Early Youth Psychosis Centre
+  :7: Aboriginal Health/Medical Service
+  :8: Private Hospital
+  :9: Community-managed Community Support Organisation
+  :10: Drug and/or Alcohol Service
+  :11: Medicare Local
+  :12: Division of General Practice
+  :13: State/Territory Health Service Organisation
   :14: Other
 :Notes:
-  Coding options will be finalised following feedback from PHNs.
+  1 - Primary Heath Network
+    The PHN is the provider organisation and employs the service delivery
+    practitioners. This may occur during the transition period as the PHN moves to
+    a full commissioning role, or in cases of market failure where there is no
+    option to commission external providers.
+  
+  2 - Private Allied Health Professional Practice
+    The provider organisation is a group of single- or multi-discipline allied
+    health practitioners operating as private service providers. This includes
+    both group and solo practitioner entities.
+  
+  3 - General Medical Practice
+    The provider organisation is a General Medical Practice. This includes both
+    group and solo practitioner entities.
+  
+  4 - Private Psychiatry practice
+    The provider organisation is a Private Psychiatry practice. This includes both
+    group and solo practitioner entities.
+  
+  5 - Headspace Centre
+    The provider organisation is a Headspace centre, delivering services funded by
+    the PHN.
+  
+    Note: Headspace and Early Psychosis Youth Centres currently collect and report
+    a standardised dataset to headspace National Office.  Pending the future of
+    these arrangements, reporting of the PMHC minimum data set is not required by
+    those organisations previously funded through headspace National Office that
+    transitioned to PHNs. Where new or additional services are commissioned by
+    PHNs and delivered through existing Headspace or Early Psychosis Youth Centres,
+    local decisions will be required as to whether these services can be captured
+    through headspace National Office sustem or are better reported through the
+    PMHC MDS.
+  
+  6 - Early Youth Psychosis Centre
+    The provider organisation is a Early Youth Psychosis Centre, delivering
+    services funded by the PHN.
+  
+    Note: See Note above re Headspace.
+  
+  7 - Aboriginal Health/Medical Service
+    The provider organisation is an Aboriginal or Torres Strait Islander-controlled
+    health service organisation.
+  
+  8 - Private Hospital
+    The provider organisation is a private hospital.  This includes for-profit and
+    not-for-profit hospitals.
+  
+  9 - Community-managed Community Support Organisation
+    The provider organisation is a community-managed (non-government) organisation
+    that primarily delivers disability-related or social support services.
+  
+  10 - Drug and/or Alcohol Service Organisation
+    The provider organisation is an organisation that provides specialised drug
+    and alcohol treatment services. The organisation may be operating in the
+    government or non-government sector, and where the latter, may be for-profit
+    or not-for-profit.
+  
+  11 - Medicare Local
+    The provider organisation is a former Medicare Local entity.
+  
+  12 - Division of General Practice
+    The provider organisation is a former Division of General Practice entity.
+  
+  13 - State/Territory Health Service Organisation
+    The provider organisation is a health service entity principally funded by a
+    state or territory government.  This includes all services delivered through
+    Local Hospital Networks (variously named across jurisdictions).
+  
+  14 - Other
+    The provider organisation cannot be described by any of the available options.
   
 
 ----------
@@ -3698,7 +3767,7 @@ Where an appointment was made for a client, but the client failed to attend the 
 Service Contact - Participants
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-An indication of whether a Service Contact is provided to one or more clients and participants in the Service Contact.
+An indication of who participated in the Service Contact.
 
 :Field name: service_contact_participants
 
@@ -3707,25 +3776,28 @@ An indication of whether a Service Contact is provided to one or more clients an
 :Domain:
   :1: Individual client
   :2: Client group
-  :3: Family / Client Support Network
-  :4: Other
+  :3: Other health professional or service provider
+  :4: Family / Client Support Network
+  :5: Other
   :9: Not stated
 :Notes:
-  ***Coding categories for this item are under review and to be finalised pending PHN feedback***
-  
-  1	Individual
+  1 - Individual
     Code applies for Service Contacts delivered individually to a single client
     without third party participants.
   
-  2	Client group
+  2 - Client group
     Code applies for Service Contacts delivered on a group basis to two or more
     clients.
   
-  3	Family / Client Support Network
+  3 - Other health professional or service provider
+    Code applies for Service Contacts that involve another health professional or
+    service provider, with or without the participation of the client.
+  
+  4 - Family / Client Support Network
     Code applies to Service Contacts delivered to the family/social support
     persons of the client, with or without the participation of the client.
   
-  4	Other
+  5 - Other
     Code applies to Service Contacts delivered to other third parties, with or
     without the participation of the client.
   
