@@ -174,9 +174,21 @@
       "columnReference": "id"
     }
   }, {
+    "columnReference": "country_of_birth",
+    "reference": {
+      "resource": "table/client/country-of-birth.csv",
+      "columnReference": "id"
+    }
+  }, {
     "columnReference": "est_date_of_birth",
     "reference": {
       "resource": "table/client/est-date-of-birth.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "main_lang_at_home",
+    "reference": {
+      "resource": "table/client/main-lang-at-home.csv",
       "columnReference": "id"
     }
   }, {
