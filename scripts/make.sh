@@ -3,7 +3,7 @@
 # Exit if anything errors
 set -e
 
-./scripts/ddict2rst.pl pmhc-metadata.json
+docker run -it --rm -v `pwd`:/mnt/cwd docker.sdlocal.net/csvw/metadata2rst
 
 pushd .
 
