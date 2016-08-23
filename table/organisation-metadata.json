@@ -44,14 +44,14 @@
      "name": "organisation_type",
     "titles": [ "organisation_type", "Type" ],
     "dc:title" : "Provider Organisation - Type",
-    "schema:description": "The type of the provider organisation.",
+    "schema:description": "The category that best describes the provider organisation.",
     "schema:disambiguatingDescription": "table/organisation/type.rst",
     "schema:dateCreated": "2016-06-22",
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string",
-      "format": "^(0|1|2|3|4|5|6|7|8|9|10|11)$"
+      "format": "^(1|2|3|4|5|6|7|8|9|10|11|12|13|14)$"
     },
     "required": true
   },{

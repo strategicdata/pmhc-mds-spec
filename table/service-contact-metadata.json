@@ -118,13 +118,13 @@
     "name": "service_contact_participants",
     "titles": [ "service_contact_participants", "Participants" ],
     "dc:title": "Service Contact - Participants",
-    "schema:description": "An indication of whether a Service Contact is provided to one or more clients and participants in the Service Contact.",
+    "schema:description": "An indication of who participated in the Service Contact.",
     "schema:disambiguatingDescription": "table/service-contact/participants.rst",
     "schema:dateCreated": "2016-06-22",
     "schema:dateModified": "2016-06-08",
     "datatype": {
       "base": "string",
-      "format": "^(1|2|3)$"
+      "format": "^(1|2|3|4|5|9)$"
     },
     "required": true
   },{
