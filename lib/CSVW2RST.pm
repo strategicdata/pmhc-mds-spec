@@ -302,8 +302,15 @@ sub format_fk {
         
         my $newline = "";
         foreach my $item ( @{$aoh} ) {
-            my $key   = $item->{id};
+            
+            die $field->{_domain}{resource} . " does not have an id column\n"
+                unless exists $item->{id};
+            my $key = $item->{id};
+            
+            die $field->{_domain}{resource} . " does not have a description column\n"
+                unless exists $item->{description};
             my $value = $item->{description};
+
             $rv .= "$newline:$key: $value";
             $newline = "\n";
         }
