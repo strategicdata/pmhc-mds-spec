@@ -10,19 +10,19 @@
 ","string (11)","The Australian Business Number of the provider organisation."
 "`Provider Organisation - Type`_ (organisation_type)
 
-",string,":1: Primary Heath Network
-:2: Private Primary Health Care Organisation - for profit
-:3: Private Primary Health Care Organisation - not for profit
-:4: Medicare Local
-:5: Division of General Practice
-:6: Aboriginal Health/Medical Service
-:7: General Practice
-:8: Private Psychiatry service
-:9: Drug and/or Alcohol Service
-:10: Community-managed Community Support Organisation
-:11: State/Territory Health Services
-:12: Headspace Centre
-:13: Solo Practitioner
+",string,":1: Primary Health Network
+:2: Private Allied Health Professional Practice
+:3: General Medical Practice
+:4: Private Psychiatry Practice
+:5: Headspace Centre
+:6: Early Youth Psychosis Centre
+:7: Aboriginal Health/Medical Service
+:8: Private Hospital
+:9: Community-managed Community Support Organisation
+:10: Drug and/or Alcohol Service
+:11: Medicare Local
+:12: Division of General Practice
+:13: State/Territory Health Service Organisation
 :14: Other"
 "`Provider Organisation - State`_ (organisation_state)
 

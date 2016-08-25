@@ -83,8 +83,14 @@
     "url": "table/practitioner/active.csv",
     "tableSchema": "table/practitioner/active.json"
   }, {
+    "url": "table/client/country-of-birth.csv",
+    "tableSchema": "table/client/country-of-birth.json"
+  }, {
     "url": "table/client/est-date-of-birth.csv",
     "tableSchema": "table/client/est-date-of-birth.json"
+  }, {
+    "url": "table/client/main-lang-at-home.csv",
+    "tableSchema": "table/client/main-lang-at-home.json"
   }, {
     "url": "table/client/prof-english.csv",
     "tableSchema": "table/client/prof-english.json"
