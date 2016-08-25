@@ -77,8 +77,7 @@
     "schema:dateCreated": "2016-07-08",
     "schema:dateModified": "2016-07-08",
     "datatype": {
-      "base": "string",
-      "format": "^(1|2|3|4|5|6)$"
+      "base": "string"
     }
   },{
     "name": "referral_date",

@@ -146,6 +146,8 @@ Aboriginal and Torres Strait Islander clients, the K5) as well as the Strengths
 Record formats
 --------------
 
+.. _provider-organisation-data-elements:
+
 Provider Organisation
 ^^^^^^^^^^^^^^^^^^^^^
 

@@ -1,21 +1,19 @@
-1 - Primary Heath Network
-  The PHN is the provider organisation and employs the service delivery
-  practitioners. This may occur during the transition period as the PHN moves to
-  a full commissioning role, or in cases of market failure where there is no
-  option to commission external providers.
-
-2 - Private Allied Health Professional Practice
+1 - Private Allied Health Professional Practice
   The provider organisation is a group of single- or multi-discipline allied
   health practitioners operating as private service providers. This includes
   both group and solo practitioner entities.
+
+2 - Private Psychiatry practice
+  The provider organisation is a Private Psychiatry practice. This includes both
+  group and solo practitioner entities.
 
 3 - General Medical Practice
   The provider organisation is a General Medical Practice. This includes both
   group and solo practitioner entities.
 
-4 - Private Psychiatry practice
-  The provider organisation is a Private Psychiatry practice. This includes both
-  group and solo practitioner entities.
+4 - Private Hospital
+  The provider organisation is a private hospital.  This includes for-profit and
+  not-for-profit hospitals.
 
 5 - Headspace Centre
   The provider organisation is a Headspace centre, delivering services funded by
@@ -37,17 +35,18 @@
 
   Note: See Note above re Headspace.
 
-7 - Aboriginal Health/Medical Service
+7 - Community-managed Community Support Organisation
+  The provider organisation is a community-managed (non-government) organisation
+  that primarily delivers disability-related or social support services.
+
+8 - Aboriginal Health/Medical Service
   The provider organisation is an Aboriginal or Torres Strait Islander-controlled
   health service organisation.
 
-8 - Private Hospital
-  The provider organisation is a private hospital.  This includes for-profit and
-  not-for-profit hospitals.
-
-9 - Community-managed Community Support Organisation
-  The provider organisation is a community-managed (non-government) organisation
-  that primarily delivers disability-related or social support services.
+9 - State/Territory Health Service Organisation
+  The provider organisation is a health service entity principally funded by a
+  state or territory government.  This includes all services delivered through
+  Local Hospital Networks (variously named across jurisdictions).
 
 10 - Drug and/or Alcohol Service Organisation
   The provider organisation is an organisation that provides specialised drug
@@ -55,16 +54,17 @@
   government or non-government sector, and where the latter, may be for-profit
   or not-for-profit.
 
-11 - Medicare Local
+11 - Primary Heath Network
+  The PHN is the provider organisation and employs the service delivery
+  practitioners. This may occur during the transition period as the PHN moves to
+  a full commissioning role, or in cases of market failure where there is no
+  option to commission external providers.
+
+12 - Medicare Local
   The provider organisation is a former Medicare Local entity.
 
-12 - Division of General Practice
+13 - Division of General Practice
   The provider organisation is a former Division of General Practice entity.
 
-13 - State/Territory Health Service Organisation
-  The provider organisation is a health service entity principally funded by a
-  state or territory government.  This includes all services delivered through
-  Local Hospital Networks (variously named across jurisdictions).
-
-14 - Other
+98 - Other
   The provider organisation cannot be described by any of the available options.
