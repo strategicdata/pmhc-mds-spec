@@ -1,2 +1,2 @@
-FROM bradjonesllc/docker-nginx-letsencrypt
+FROM nginx
 COPY build/html /usr/share/nginx/html
