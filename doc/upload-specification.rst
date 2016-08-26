@@ -46,6 +46,15 @@ The following files/worksheets can be uploaded to the PMHC MDS:
   :file: upload-file-types.csv
   :header-rows: 1
 
+Each of the example files assumes the following organisation structure:
++------------------|----------------------------+---------------------------------------------+---------------------+
+| Organisation Key | Organisation Name          | Organisation Type                           | Parent Organisation |
++==================+============================+=============================================+=====================+
+| PHN999           | Test PHN                   | Primary Health Network                      | None                |
++------------------+----------------------------+---------------------------------------------+---------------------+
+| NFP01            | Test Provider Organisation | Private Allied Health Professional Practice | PHN999              |
++------------------+----------------------------+---------------------------------------------+---------------------+
+
 File format
 -----------
 The first row in each file/worksheet should include the following columns:
