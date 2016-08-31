@@ -1,5 +1,11 @@
 # Usage
 
+## Start docker (if needed)
+```
+docker-machine start
+eval $(docker-machine env)
+```
+
 ## Build the documentation
 
 ```
