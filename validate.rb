@@ -2,6 +2,7 @@
 
 require 'csvlint/cli'
 require 'pp'
+require 'json'
 
 class PMHC < Csvlint::Cli
 
@@ -15,20 +16,45 @@ class PMHC < Csvlint::Cli
     if v == true
       puts "Data is valid"
     else
-      puts @results
+      results = "{\"results\": [" + @results.join(",") + "]}"
+      json_results = JSON.parse(results)
+
+      json_results["results"].each do |result|
+        # Only report errors for data files, not specification files
+        if result["validation"]["file"] =~ /data/
+          if result["validation"]["state"] == "invalid"
+            puts result["validation"]["file"] + " is invalid."
+            pp result["validation"]["errors"]
+          end
+
+          if result["validation"]["warnings"].length > 0
+            puts result["validation"]["file"] + " has warnings."
+            pp result["validation"]["warnings"]
+          end
+        end
+      end
+
+      # Annoyingly csvlint includes errors for foreign key references on the
+      # final file to be processed
+      last_result = json_results["results"].last
+      if last_result["validation"]["state"] == "invalid"
+        last_result["validation"]["errors"].each do |error|
+          if error["type"] == "unmatched_foreign_key_reference"
+            pp error
+          end
+        end
+      end
     end
   end
-
 
   private
     def verify(source = nil)
       valid = true
-      @results = ""
+      @results = []
       schema_file = "pmhc-metadata.json"
       @schema = get_schema(schema_file)
       valid &= fetch_schema_tables(@schema, {})
 
-      # valid = validate_csv(source, @schema, nil, nil)
       return valid
     end
 
@@ -79,9 +105,7 @@ class PMHC < Csvlint::Cli
         }
       }.to_json
 
-      #puts json
-
-      @results += json
+      @results.push(json)
 
       return validator.valid?
     end
@@ -111,8 +135,6 @@ class PMHC < Csvlint::Cli
     def validate_pmhc(validator, csv)
       data = validator.data
 
-      #puts csv
-
       if csv =~ /episodes/ then validate_episodes( validator, data )
       elsif csv =~ /service-contacts/ then validate_service_contacts( validator, data )
       elsif csv =~ /sdq/ then validate_sdq( validator, data )
@@ -120,13 +142,6 @@ class PMHC < Csvlint::Cli
     end
 
     def validate_episodes(validator, data)
-      #puts "schema.tables"
-      #validator.schema.tables.keys.each do |source|
-      #  if source =~ /consent/
-      #    pp validator.schema.tables[source]
-      #  end
-      #end
-
       # Client must consent
       header = data.shift
       client_consent_index = header.index("client_consent")
@@ -157,12 +172,40 @@ class PMHC < Csvlint::Cli
            validator.build_errors(:invalid_participation_indicator, :service_contact, current_line, participation_indicator_index, row[participation_indicator_index])
           end
         end
+        current_line += 1
       end
     end
 
     def validate_sdq(validator, data)
-      puts "validate_sdq"
-#      pp data
+      versions = {
+        "PC101" => [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,36,37,38],
+        "PC201" => [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,28,29,30,31,32,33,34,35],
+        "PY101" => [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,36,37,38],
+        "PY201" => [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,28,29,30,31,32,33,34,35],
+        "YR101" => [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,39,40,41,42],
+        "YR201" => [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,28,29,30,31,32,33,39,40,41,42]
+      }
+
+      header = data.shift
+      version_index = header.index("sdq_version")
+      sdq_item1_index = header.index("sdq_item1")
+
+      current_line = 1
+      data.each do |row|
+        valid_items = versions[row[version_index]]
+
+        for i in 1..42
+          unless valid_items.include?(i)
+            item_index = header.index("sdq_item#{i}")
+            unless row[item_index] == "9"
+              validator.build_errors(:invalid_sdq_item_included, :sdq, current_line, item_index, row[item_index])
+            end
+          end
+        end
+        current_line += 1
+      end
+
+      # If using item scores, totals must be missing, if using totals, item scores must be missing
     end
 end
 
