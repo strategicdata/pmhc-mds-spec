@@ -48,7 +48,7 @@ The following files/worksheets can be uploaded to the PMHC MDS:
 
 Each of the example files assumes the following organisation structure:
 
-+------------------|----------------------------+---------------------------------------------+---------------------+
++------------------+----------------------------+---------------------------------------------+---------------------+
 | Organisation Key | Organisation Name          | Organisation Type                           | Parent Organisation |
 +==================+============================+=============================================+=====================+
 | PHN999           | Test PHN                   | Primary Health Network                      | None                |
