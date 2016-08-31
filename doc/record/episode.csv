@@ -19,7 +19,8 @@ METeOR: `614094 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614094>`__
 :2: No"
 "`Episode - Completion Status`_ (episode_completion_status)
 
-",string,":1: Episode closed - treatment concluded
+",string,":: Episode open
+:1: Episode closed - treatment concluded
 :2: Episode closed administratively - client could not be contacted
 :3: Episode closed administratively - client declined further contact
 :4: Episode closed administratively - client moved out of area
@@ -149,7 +150,8 @@ METeOR: `291045 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291045>`__
 :902: Depressive symptoms
 :903: Mixed anxiety and depressive symptoms
 :904: Stress related
-:905: Other"
+:905: Other
+:999: Missing"
 "`Episode - Additional Diagnosis`_ (additional_diagnosis)
 
 ",string,"See *Episode - Principal Diagnosis*"

@@ -1144,6 +1144,7 @@ An indication of the completion status of an *Episode of Care*.
 :Data type: string
 
 :Domain:
+  :: Episode open
   :1: Episode closed - treatment concluded
   :2: Episode closed administratively - client could not be contacted
   :3: Episode closed administratively - client declined further contact
@@ -1727,6 +1728,7 @@ The Principal Diagnosis is the diagnosis established after study to be chiefly r
   :903: Mixed anxiety and depressive symptoms
   :904: Stress related
   :905: Other
+  :999: Missing
 :Notes:
   Dignoses are grouped into 7 major categories:
   
@@ -2891,39 +2893,38 @@ The category that best describes the provider organisation.
 :Data type: string
 
 :Domain:
-  :1: Primary Health Network
-  :2: Private Allied Health Professional Practice
+  :1: Private Allied Health Professional Practice
+  :2: Private Psychiatry Practice
   :3: General Medical Practice
-  :4: Private Psychiatry Practice
+  :4: Private Hospital
   :5: Headspace Centre
   :6: Early Youth Psychosis Centre
-  :7: Aboriginal Health/Medical Service
-  :8: Private Hospital
-  :9: Community-managed Community Support Organisation
+  :7: Community-managed Community Support Organisation
+  :8: Aboriginal Health/Medical Service
+  :9: State/Territory Health Service Organisation
   :10: Drug and/or Alcohol Service
-  :11: Medicare Local
-  :12: Division of General Practice
-  :13: State/Territory Health Service Organisation
-  :14: Other
+  :11: Primary Health Network
+  :12: Medicare Local
+  :13: Division of General Practice
+  :98: Other
+  :99: Missing
 :Notes:
-  1 - Primary Heath Network
-    The PHN is the provider organisation and employs the service delivery
-    practitioners. This may occur during the transition period as the PHN moves to
-    a full commissioning role, or in cases of market failure where there is no
-    option to commission external providers.
-  
-  2 - Private Allied Health Professional Practice
+  1 - Private Allied Health Professional Practice
     The provider organisation is a group of single- or multi-discipline allied
     health practitioners operating as private service providers. This includes
     both group and solo practitioner entities.
+  
+  2 - Private Psychiatry practice
+    The provider organisation is a Private Psychiatry practice. This includes both
+    group and solo practitioner entities.
   
   3 - General Medical Practice
     The provider organisation is a General Medical Practice. This includes both
     group and solo practitioner entities.
   
-  4 - Private Psychiatry practice
-    The provider organisation is a Private Psychiatry practice. This includes both
-    group and solo practitioner entities.
+  4 - Private Hospital
+    The provider organisation is a private hospital.  This includes for-profit and
+    not-for-profit hospitals.
   
   5 - Headspace Centre
     The provider organisation is a Headspace centre, delivering services funded by
@@ -2945,17 +2946,18 @@ The category that best describes the provider organisation.
   
     Note: See Note above re Headspace.
   
-  7 - Aboriginal Health/Medical Service
+  7 - Community-managed Community Support Organisation
+    The provider organisation is a community-managed (non-government) organisation
+    that primarily delivers disability-related or social support services.
+  
+  8 - Aboriginal Health/Medical Service
     The provider organisation is an Aboriginal or Torres Strait Islander-controlled
     health service organisation.
   
-  8 - Private Hospital
-    The provider organisation is a private hospital.  This includes for-profit and
-    not-for-profit hospitals.
-  
-  9 - Community-managed Community Support Organisation
-    The provider organisation is a community-managed (non-government) organisation
-    that primarily delivers disability-related or social support services.
+  9 - State/Territory Health Service Organisation
+    The provider organisation is a health service entity principally funded by a
+    state or territory government.  This includes all services delivered through
+    Local Hospital Networks (variously named across jurisdictions).
   
   10 - Drug and/or Alcohol Service Organisation
     The provider organisation is an organisation that provides specialised drug
@@ -2963,18 +2965,19 @@ The category that best describes the provider organisation.
     government or non-government sector, and where the latter, may be for-profit
     or not-for-profit.
   
-  11 - Medicare Local
+  11 - Primary Heath Network
+    The PHN is the provider organisation and employs the service delivery
+    practitioners. This may occur during the transition period as the PHN moves to
+    a full commissioning role, or in cases of market failure where there is no
+    option to commission external providers.
+  
+  12 - Medicare Local
     The provider organisation is a former Medicare Local entity.
   
-  12 - Division of General Practice
+  13 - Division of General Practice
     The provider organisation is a former Division of General Practice entity.
   
-  13 - State/Territory Health Service Organisation
-    The provider organisation is a health service entity principally funded by a
-    state or territory government.  This includes all services delivered through
-    Local Hospital Networks (variously named across jurisdictions).
-  
-  14 - Other
+  98 - Other
     The provider organisation cannot be described by any of the available options.
   
 
@@ -4472,8 +4475,8 @@ An indication of who participated in the Service Contact.
 :Domain:
   :1: Individual client
   :2: Client group
-  :3: Other health professional or service provider
-  :4: Family / Client Support Network
+  :3: Family / Client Support Network
+  :4: Other health professional or service provider
   :5: Other
   :9: Not stated
 :Notes:
@@ -4485,21 +4488,22 @@ An indication of who participated in the Service Contact.
     Code applies for Service Contacts delivered on a group basis to two or more
     clients.
   
-  3 - Other health professional or service provider
-    Code applies for Service Contacts that involve another health professional or
-    service provider, with or without the participation of the client.
-  
-  4 - Family / Client Support Network
+  3 - Family / Client Support Network
     Code applies to Service Contacts delivered to the family/social support
     persons of the client, with or without the participation of the client.
   
-  5 - Other
-    Code applies to Service Contacts delivered to other third parties, with or
-    without the participation of the client.
+  4 - Other health professional or service provider
+    Code applies for Service Contacts that involve another health professional or
+    service provider (in addition to the Practitioner), with or without the
+    participation of the client.
   
-  This item interacts with Service Contact - Client Participation Indicator which
-  is used to denote whether the individual client was a participant in the
-  Service Contact.
+  5 - Other
+    Code applies to Service Contacts delivered to other third parties
+    (e.g., teachers, employer), with or without the participation of the client.
+  
+  Note that this item interacts with Service Contact - Client Participation
+  Indicator which is used to denote whether the individual client was a
+  participant in the Service Contact.
   
 
 ----------
@@ -4703,6 +4707,7 @@ Where the service contact was delivered, as represented by a code.
   :10: Client's Workplace
   :11: Other
   :98: Not applicable (Service Contact Modality is not face to face)
+  :99: Not stated
 :Notes:
   Values other than ‘Not applicable’ only to be specified when Service Contact
   Modality is ‘Face to Face’.

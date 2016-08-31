@@ -188,8 +188,8 @@ described <a class="reference internal" href="#files-to-upload"><span class="std
 <div class="section" id="files-or-worksheets-to-upload">
 <span id="files-to-upload"></span><h2>Files or worksheets to upload<a class="headerlink" href="#files-or-worksheets-to-upload" title="Permalink to this headline">¶</a></h2>
 <p>The following files/worksheets can be uploaded to the PMHC MDS:</p>
-<table border="1" class="docutils" id="id2">
-<caption><span class="caption-number">Table 9 </span><span class="caption-text">Summary of files to upload</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
+<table border="1" class="docutils" id="id4">
+<caption><span class="caption-number">Table 9 </span><span class="caption-text">Summary of files to upload</span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="25%" />
 <col width="25%" />
@@ -241,6 +241,14 @@ described <a class="reference internal" href="#files-to-upload"><span class="std
 </tr>
 </tbody>
 </table>
+<p>Each of the example files assumes the following organisation structure:
++&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;<a href="#id1"><span class="problematic" id="id2">|</span></a>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;-+&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;+&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;+
+| Organisation Key | Organisation Name          | Organisation Type                           | Parent Organisation |
++==================+============================+=============================================+=====================+
+| PHN999           | Test PHN                   | Primary Health Network                      | None                |
++&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;+&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;-+&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;+&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;+
+| NFP01            | Test Provider Organisation | Private Allied Health Professional Practice | PHN999              |
++&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;+&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;-+&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;+&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;+</p>
 </div>
 <div class="section" id="file-format">
 <h2>File format<a class="headerlink" href="#file-format" title="Permalink to this headline">¶</a></h2>
@@ -262,7 +270,7 @@ The third and subsequent rows should contain the data.</p>
 <p>Each item is a column in the file/worksheet. The &#8216;Field Name&#8217; should be used for the
 column headings.</p>
 <div class="section" id="client-format">
-<span id="id1"></span><h3>Client format<a class="headerlink" href="#client-format" title="Permalink to this headline">¶</a></h3>
+<span id="id3"></span><h3>Client format<a class="headerlink" href="#client-format" title="Permalink to this headline">¶</a></h3>
 <p>The client file/worksheet is required to be uploaded each time.</p>
 <p>Data elements for the client upload file/worksheet are defined at <a class="reference internal" href="data-model-and-specifications.html#client-data-elements"><span class="std std-ref">Client</span></a>.</p>
 <p>Example client data:</p>

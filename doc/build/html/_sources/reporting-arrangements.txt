@@ -8,15 +8,33 @@ service providers will be able to either export data from their client
 systems and upload to the PMHC MDS or manually create spreadsheets that can
 then be uploaded.
 
-Data will be uploaded in either Excel or CSV format and an upload
+The system is able to accept data for any period, either in its entirety or
+parially. Please note the section below regarding timeliness. 
+
+Accepting data for any period allows organisations to upload corrections when
+erroneous data has been identified. Allowing partial uploads allows for
+submission of data by separate providers without the need for the PHN to
+aggregate all data prior to upload.
+
+Where associated unique keys match (e.g. Patient Key or Episode Key)
+these records will be replaced, if the key is new, a new record will be created.
+
+Data may be uploaded in either Excel or CSV format and an upload
 specification will be provided to PHNs by August 2016. 
 
-Upload frequency
-----------------
-The Department accesses information where and when it needs. Data in the
-MDS needs to be current to ensure the accuracy of the data produced for the
-Department. Therefore the recommended upload frequency is monthly with the
-upload frequency being no longer than three monthly.
+Reporting timeliness
+--------------------
+
+Records must be reported to the MDS within 31 days of the activity which
+generated them. For example if a user was added to the system on the 12th of
+November 2016 their client record must be added to the MDS on or before the
+13th of December 2016. Similarly, if a service contact occurred on that date,
+the data associated with that contact must be submitted to the MDS by 13th of
+December 2016 also.
+
+The Department accesses information within the MDS for internal planning and
+governance purposes therefore data in the MDS needs to be current to ensure the
+accuracy of the data produced for the Department.
 
 Transition arrangements
 -----------------------
