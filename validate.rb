@@ -137,6 +137,8 @@ class PMHC < Csvlint::Cli
 
       if csv =~ /episodes/ then validate_episodes( validator, data )
       elsif csv =~ /service-contacts/ then validate_service_contacts( validator, data )
+      elsif csv =~ /k10p/ then validate_k10p( validator, data )
+      elsif csv =~ /k5/ then validate_k5( validator, data )
       elsif csv =~ /sdq/ then validate_sdq( validator, data )
       end
     end
@@ -176,6 +178,53 @@ class PMHC < Csvlint::Cli
       end
     end
 
+    def validate_k10p(validator, data)
+      measure = "k10p"
+      scales = [ "k10p_score" ]
+      items = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+
+      validate_kessler( validator, data, measure, scales, items )
+    end
+
+    def validate_k5( validator, data )
+      measure = "k5"
+      scales = [ "k5_score" ]
+      items = [ 1, 2, 3, 4, 5 ]
+
+      validate_kessler( validator, data, measure, scales, items )
+    end
+
+    def validate_kessler(validator, data, measure, scales, items )
+      header = data.shift
+
+      current_line = 1
+      data.each do |row|
+        # Must use either item scores or total scores, not both
+        using_item_scores = 0
+        for i in items
+          item_index = header.index("#{measure}_item#{i}")
+          unless row[item_index] == "9"
+            using_item_scores = 1
+          end
+        end
+
+        using_total_scores = 0
+        scales.each do |scale|
+          item_index = header.index(scale)
+          unless row[item_index] == nil
+            using_total_scores = 1
+            break
+          end
+        end
+
+        if using_item_scores == 1 and using_total_scores == 1
+          validator.build_errors(:item_scores_and_total_scores_used, "#{measure}", current_line, item_index, row[item_index])
+        end
+
+        current_line += 1
+      end
+    end
+
     def validate_sdq(validator, data)
       versions = {
         "PC101" => [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,36,37,38],
@@ -185,27 +234,47 @@ class PMHC < Csvlint::Cli
         "YR101" => [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,39,40,41,42],
         "YR201" => [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,28,29,30,31,32,33,39,40,41,42]
       }
+      sdq_scales = [ "sdq_emotional_symptoms", "sdq_conduct_problem", "sdq_hyperactivity",
+                     "sdq_peer_problem", "sdq_prosocial", "sdq_total", "sdq_impact"]
 
       header = data.shift
       version_index = header.index("sdq_version")
-      sdq_item1_index = header.index("sdq_item1")
 
       current_line = 1
       data.each do |row|
         valid_items = versions[row[version_index]]
 
+        # Must use either item scores or total scores, not both
+        using_item_scores = 0
         for i in 1..42
-          unless valid_items.include?(i)
-            item_index = header.index("sdq_item#{i}")
+          item_index = header.index("sdq_item#{i}")
+          if valid_items.include?(i)
+            unless row[item_index] == "9"
+              using_item_scores = 1
+            end
+          else
             unless row[item_index] == "9"
               validator.build_errors(:invalid_sdq_item_included, :sdq, current_line, item_index, row[item_index])
             end
           end
         end
+
+        # Must use either item scores or total scores, not both
+        using_total_scores = 0
+        sdq_scales.each do |scale|
+          item_index = header.index(scale)
+          unless row[item_index] == nil
+            using_total_scores = 1
+            break
+          end
+        end
+
+        if using_item_scores == 1 and using_total_scores == 1
+          validator.build_errors(:item_scores_and_total_scores_used, :sdq, current_line, item_index, row[item_index])
+        end
+
         current_line += 1
       end
-
-      # If using item scores, totals must be missing, if using totals, item scores must be missing
     end
 end
 
