@@ -1,4 +1,11 @@
-#!/bin/bash
+#!/bin/bash 
 
-docker build -t stratdat/docs-pmhc-mds doc \
-  && docker push stratdat/docs-pmhc-mds
+git checkout master && \
+  git add doc && \
+  git commit -m "Update processed documentation" && \
+  git push
+
+git checkout v1/preview && \
+  git merge master && \
+  git push publish v1/preview && \
+  git checkout master 
