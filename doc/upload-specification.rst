@@ -47,6 +47,7 @@ The following files/worksheets can be uploaded to the PMHC MDS:
   :header-rows: 1
 
 Each of the example files assumes the following organisation structure:
+
 +------------------|----------------------------+---------------------------------------------+---------------------+
 | Organisation Key | Organisation Name          | Organisation Type                           | Parent Organisation |
 +==================+============================+=============================================+=====================+
