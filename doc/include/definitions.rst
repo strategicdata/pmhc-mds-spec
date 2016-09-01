@@ -311,7 +311,8 @@ The country in which the client was born, as represented by a code.
   client has refused to provide the information.
   
   Organisations are encouraged to produce customised lists of the most common
-  languages in use by their local populations from the above resource.
+  languages in use by their local populations from the above resource. Please
+  refer to :ref:`form_country_of_birth` for help on designing forms.
   
 
 :METeOR: `459973 <http://meteor.aihw.gov.au/content/index.phtml/itemId/459973>`__
@@ -879,7 +880,8 @@ The language reported by a client as the main language other than English spoken
   language, indicate the one that is spoken most often.)
   
   Organisations are encouraged to produce customised lists of the most common
-  countries based on their local populations from the above resource.
+  countries based on their local populations from the above resource. Please
+  refer to :ref:`form_main_lang_at_home` for help on designing forms.
   
 
 :METeOR: `460125 <http://meteor.aihw.gov.au/content/index.phtml/itemId/460125>`__

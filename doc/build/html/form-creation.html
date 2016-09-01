@@ -1,0 +1,335 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Using the data specification to create client forms &mdash; PMHC MDS Version 1 - DRAFT documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+    <link rel="top" title="PMHC MDS Version 1 - DRAFT documentation" href="index.html"/>
+        <link rel="next" title="Change log" href="change-log.html"/>
+        <link rel="prev" title="Data item summary" href="data-item-summary.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> PMHC MDS
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                Version 1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="reporting-arrangements.html">Reporting arrangements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="identifier-management.html">Identifier management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-model-and-specifications.html">Data model and specifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload-specification.html">Upload specification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-item-summary.html">Data item summary</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Using the data specification to create client forms</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#not-stated-missing-codes">Not stated/missing codes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#country-of-birth">Country of Birth</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#detailed-question-module">Detailed question module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#short-question-module">Short question module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#main-language-spoken-at-home">Main Language Spoken at Home</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#mlsh-detailed-module">Detailed question module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mlsh-short-module">Short question module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="change-log.html">Change log</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">PMHC MDS</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Using the data specification to create client forms</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/form-creation.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="using-the-data-specification-to-create-client-forms">
+<h1>Using the data specification to create client forms<a class="headerlink" href="#using-the-data-specification-to-create-client-forms" title="Permalink to this headline">¶</a></h1>
+<p>Some consideration needs to be taken when designing forms based on this data
+specification.</p>
+<div class="section" id="not-stated-missing-codes">
+<h2>Not stated/missing codes<a class="headerlink" href="#not-stated-missing-codes" title="Permalink to this headline">¶</a></h2>
+<p>Not stated/missing codes (often code 9 or 99) are not to be available as a valid
+answers to questions but is intended for use:</p>
+<ul class="simple">
+<li>Primarily when importing data from other data collections that do not contain
+mappable data.</li>
+<li>Where an answer was refused.</li>
+<li>Where the question was not able to be asked prior to completion of assistance
+because the client was unable to communicate or a person who knows the client
+was not available.</li>
+</ul>
+</div>
+<div class="section" id="country-of-birth">
+<span id="form-country-of-birth"></span><h2>Country of Birth<a class="headerlink" href="#country-of-birth" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="data-model-and-specifications.html#dfn-country-of-birth"><span class="std std-ref">Client - Country of Birth</span></a> has a large permitted domain. It is not feasible to provide
+all allowed responses on a form. The Australian Bureau of Statistics
+recommends two standard question modules for Country of Birth:</p>
+<ul class="simple">
+<li><a class="reference internal" href="#cob-detailed-module"><span class="std std-ref">Detailed question module</span></a></li>
+<li><a class="reference internal" href="#cob-short-module"><span class="std std-ref">Short question module</span></a></li>
+</ul>
+<div class="section" id="detailed-question-module">
+<span id="cob-detailed-module"></span><h3>Detailed question module<a class="headerlink" href="#detailed-question-module" title="Permalink to this headline">¶</a></h3>
+<p>The detailed question module is the recommended module for Country of Birth.
+An example is:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>Q. In which country [were you][was the person] born?
+
+  Australia     q
+  England       q
+  New Zealand   q
+  India         q
+  Italy         q
+  Vietnam       q
+  Philippines   q
+  South Africa  q
+  Scotland      q
+  Malaysia      q
+  Other - Please specify..............
+</pre></div>
+</div>
+<p>Form designers do not need to use the countries shown in this example. They
+should choose countries relevant to the population for their region. The &#8220;Other&#8221;
+response can then be mapped to a <a class="reference internal" href="data-model-and-specifications.html#dfn-country-of-birth"><span class="std std-ref">Client - Country of Birth</span></a> during data entry.</p>
+</div>
+<div class="section" id="short-question-module">
+<span id="cob-short-module"></span><h3>Short question module<a class="headerlink" href="#short-question-module" title="Permalink to this headline">¶</a></h3>
+<p>The short question module can be used where there are space constraints.
+An example is:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>Q. In which country [were you][was the person] born?
+
+  Australia    q
+  Other - please specify..............
+</pre></div>
+</div>
+<p>The &#8220;Other&#8221; response can then be mapped to a country code during data entry.
+This form has higher overheads as each response will need to be matched to a
+<a class="reference internal" href="data-model-and-specifications.html#dfn-country-of-birth"><span class="std std-ref">Client - Country of Birth</span></a> during data entry.</p>
+</div>
+</div>
+<div class="section" id="main-language-spoken-at-home">
+<span id="form-main-lang-at-home"></span><h2>Main Language Spoken at Home<a class="headerlink" href="#main-language-spoken-at-home" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="data-model-and-specifications.html#dfn-main-lang-at-home"><span class="std std-ref">Client - Main Language Spoken at Home</span></a> has a large permitted domain. It is not feasible
+to provide all allowed responses on a form. The Australian Bureau of Statistics
+recommends two standard question modules for Main Language Spoken at Home:</p>
+<ul class="simple">
+<li><a class="reference internal" href="#mlsh-detailed-module"><span class="std std-ref">Detailed question module</span></a></li>
+<li><a class="reference internal" href="#mlsh-short-module"><span class="std std-ref">Short question module</span></a></li>
+</ul>
+<div class="section" id="mlsh-detailed-module">
+<span id="id1"></span><h3>Detailed question module<a class="headerlink" href="#mlsh-detailed-module" title="Permalink to this headline">¶</a></h3>
+<p>The detailed question module is the recommended module for Main Language
+Spoken at Home. An example is:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>Q. [Do you][Does the person] speak a language other than English at home?
+   (If more than one language, indicate the one that is spoken most often.)
+
+  No, English       q
+  Yes,  Mandarin    q
+  Yes,  Italian     q
+  Yes,  Arabic      q
+  Yes,  Cantonese   q
+  Yes,  Greek       q
+  Yes,  Vietnamese  q
+  Yes,  Spanish     q
+  Yes,  Hindi       q
+  Yes,  Tagalog     q
+  Yes,  Other - Please Specify.............
+</pre></div>
+</div>
+<p>For self enumerated questionnaires, respondents should be instructed to mark one box only.</p>
+<p>Form designers do not need to use the languages shown in this example. They
+should choose languages relevant to the population for their region. The &#8220;Other&#8221;
+response can then be mapped to a <a class="reference internal" href="data-model-and-specifications.html#dfn-main-lang-at-home"><span class="std std-ref">Client - Main Language Spoken at Home</span></a> during data entry.</p>
+</div>
+<div class="section" id="mlsh-short-module">
+<span id="id2"></span><h3>Short question module<a class="headerlink" href="#mlsh-short-module" title="Permalink to this headline">¶</a></h3>
+<p>The short question module can be used where there are space constraints.
+An example is:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>Q. [Do you] [Does the person] speak a language other than English at home?
+
+  No, English only    q
+  Yes,  Other - please specify..............
+</pre></div>
+</div>
+<p>The &#8220;Other&#8221; response can then be mapped to a country code during data entry.
+This form has higher overheads as each response will need to be matched to a
+<a class="reference internal" href="data-model-and-specifications.html#dfn-main-lang-at-home"><span class="std std-ref">Client - Main Language Spoken at Home</span></a> during data entry.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="change-log.html" class="btn btn-neutral float-right" title="Change log" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="data-item-summary.html" class="btn btn-neutral" title="Data item summary" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Australian Government - Department of Health.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'Version 1 - DRAFT',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

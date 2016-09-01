@@ -7,4 +7,5 @@ Which language does the client mainly speak at home? (If more than one
 language, indicate the one that is spoken most often.)
 
 Organisations are encouraged to produce customised lists of the most common
-countries based on their local populations from the above resource.
+countries based on their local populations from the above resource. Please
+refer to :ref:`form_main_lang_at_home` for help on designing forms.
