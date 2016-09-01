@@ -2952,7 +2952,7 @@ upload.</p>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#service-contact-copayment">Service Contact - Copayment</a> (service_contact_copayment)</td>
 <td>number</td>
-<td>The co-payment is the amount paid by the client per session.</td>
+<td>0 - 999999</td>
 </tr>
 <tr class="row-even"><td><p class="first"><a class="reference internal" href="#service-contact-client-participation-indicator">Service Contact - Client Participation Indicator</a> (service_contact_participation_indicator)</p>
 <p class="last">METeOR: <a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/494341">494341</a></p>
@@ -3306,15 +3306,15 @@ the K10 total score as well as item scores for the 4 extra items in the K10+.</p
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#k10-question-11">K10+ - Question 11</a> (k10p_item11)</td>
 <td>integer</td>
-<td>In the past four weeks, how many days were you totally unable to work, study or manage your day to day activities because of these feelings?</td>
+<td>0 - 28</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#k10-question-12">K10+ - Question 12</a> (k10p_item12)</td>
 <td>integer</td>
-<td>Aside from those days, in the past four weeks, how many days were you able to work or study or manage your day to day activities, but had to cut down on what you did because of these feelings?</td>
+<td>0 - 28</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#k10-question-13">K10+ - Question 13</a> (k10p_item13)</td>
 <td>integer</td>
-<td>In the past four weeks, how many times have you seen a doctor or any other health professional about these feelings?</td>
+<td>0 - 89</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#k10-question-14">K10+ - Question 14</a> (k10p_item14)</td>
 <td>string</td>
@@ -3340,7 +3340,7 @@ the K10 total score as well as item scores for the 4 extra items in the K10+.</p
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#k10-score">K10+ - Score</a> (k10p_score)</td>
 <td>integer</td>
-<td>The overall K10 score.</td>
+<td>10 - 50</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#k10-tags">K10+ - Tags</a> (k10p_tags)</td>
 <td>string</td>
@@ -3512,7 +3512,7 @@ the K5 total score.</p>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#k5-score">K5 - Score</a> (k5_score)</td>
 <td>integer</td>
-<td>The overall K5 score.</td>
+<td>5 - 25</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#k5-tags">K5 - Tags</a> (k5_tags)</td>
 <td>string</td>
@@ -4660,31 +4660,31 @@ namely: 0-&gt;0, 1-&gt;0, 2-&gt;1, 3-&gt;2.</p>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#sdq-emotional-symptoms-scale">SDQ - Emotional Symptoms Scale</a> (sdq_emotional_symptoms)</td>
 <td>integer</td>
-<td>&nbsp;</td>
+<td>0 - 10</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#sdq-conduct-problem-scale">SDQ - Conduct Problem Scale</a> (sdq_conduct_problem)</td>
 <td>integer</td>
-<td>&nbsp;</td>
+<td>0 - 10</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#sdq-hyperactivity-scale">SDQ - Hyperactivity Scale</a> (sdq_hyperactivity)</td>
 <td>integer</td>
-<td>&nbsp;</td>
+<td>0 - 10</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#sdq-peer-problem-scale">SDQ - Peer Problem Scale</a> (sdq_peer_problem)</td>
 <td>integer</td>
-<td>&nbsp;</td>
+<td>0 - 10</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#sdq-prosocial-scale">SDQ - Prosocial Scale</a> (sdq_prosocial)</td>
 <td>integer</td>
-<td>&nbsp;</td>
+<td>0 - 10</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#sdq-total-difficulties-score">SDQ - Total Difficulties Score</a> (sdq_total)</td>
 <td>integer</td>
-<td>&nbsp;</td>
+<td>0 - 40</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#sdq-impact-score">SDQ - Impact Score</a> (sdq_impact)</td>
 <td>integer</td>
-<td>&nbsp;</td>
+<td>0 - 10</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#sdq-tags">SDQ - Tags</a> (sdq_tags)</td>
 <td>string</td>
@@ -8180,7 +8180,10 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">integer</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">The K5 Total score is based on the sum of K5 item 1 through 5 (range: 5-25).</p>
+<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><p class="first">5 - 25</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">The K5 Total score is based on the sum of K5 item 1 through 5 (range: 5-25).</p>
 <p>The Total score is computed as the sum of the item scores. If any item has not
 been completed (that is, has not been coded 1, 2, 3, 4, 5), it is excluded from
 the calculation and not counted as a valid item. If any item is missing, the
@@ -8600,6 +8603,8 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">integer</td>
 </tr>
+<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body">0 - 28</td>
+</tr>
 </tbody>
 </table>
 <hr class="docutils" />
@@ -8615,6 +8620,8 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">integer</td>
 </tr>
+<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body">0 - 28</td>
+</tr>
 </tbody>
 </table>
 <hr class="docutils" />
@@ -8629,6 +8636,8 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body">k10p_item13</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">integer</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body">0 - 89</td>
 </tr>
 </tbody>
 </table>
@@ -8684,7 +8693,10 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">integer</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">The K10 Total score is based on the sum of K10 item 01 through 10 (range: 10-50). Items 11
+<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><p class="first">10 - 50</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">The K10 Total score is based on the sum of K10 item 01 through 10 (range: 10-50). Items 11
 through 14 are excluded from the total because they are separate measures of disability
 associated with the problems referred to in the preceding ten items.</p>
 <p>The Total score is computed using the equation shown below, with the result being rounded to
@@ -9353,7 +9365,9 @@ option to commission external providers.</p>
 </tr>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">integer</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">Scoring the SDQ</span></a> for instructions on scoring the Conduct Problem Scale.</td>
+<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body">0 - 10</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">Scoring the SDQ</span></a> for instructions on scoring the Conduct Problem Scale.</td>
 </tr>
 </tbody>
 </table>
@@ -9369,7 +9383,9 @@ option to commission external providers.</p>
 </tr>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">integer</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">Scoring the SDQ</span></a> for instructions on scoring the Emotional Symptoms Scale.</td>
+<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body">0 - 10</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">Scoring the SDQ</span></a> for instructions on scoring the Emotional Symptoms Scale.</td>
 </tr>
 </tbody>
 </table>
@@ -9385,7 +9401,9 @@ option to commission external providers.</p>
 </tr>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">integer</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">Scoring the SDQ</span></a> for instructions on scoring the Hyperactivity Scale.</td>
+<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body">0 - 10</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">Scoring the SDQ</span></a> for instructions on scoring the Hyperactivity Scale.</td>
 </tr>
 </tbody>
 </table>
@@ -9401,7 +9419,9 @@ option to commission external providers.</p>
 </tr>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">integer</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">Scoring the SDQ</span></a> for instructions on scoring the Impact Score.</td>
+<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body">0 - 10</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">Scoring the SDQ</span></a> for instructions on scoring the Impact Score.</td>
 </tr>
 </tbody>
 </table>
@@ -9417,7 +9437,9 @@ option to commission external providers.</p>
 </tr>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">integer</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">Scoring the SDQ</span></a> for instructions on scoring the Peer Problem Scale.</td>
+<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body">0 - 10</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">Scoring the SDQ</span></a> for instructions on scoring the Peer Problem Scale.</td>
 </tr>
 </tbody>
 </table>
@@ -9433,7 +9455,9 @@ option to commission external providers.</p>
 </tr>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">integer</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">Scoring the SDQ</span></a> for instructions on scoring the Prosocial Scale.</td>
+<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body">0 - 10</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">Scoring the SDQ</span></a> for instructions on scoring the Prosocial Scale.</td>
 </tr>
 </tbody>
 </table>
@@ -11179,7 +11203,9 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">integer</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">Scoring the SDQ</span></a> for instructions on scoring the Total Difficulties Score.</td>
+<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body">0 - 40</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">Scoring the SDQ</span></a> for instructions on scoring the Total Difficulties Score.</td>
 </tr>
 </tbody>
 </table>
@@ -11248,7 +11274,10 @@ participating.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">number</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Up to 6 digits before the decimal point; up to 2 digits after the decimal
+<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><p class="first">0 - 999999</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Up to 6 digits before the decimal point; up to 2 digits after the decimal
 point.</p>
 <p class="last">The co-payment is the amount paid by the client per service contact, not the
 fee paid by the project to the practitioner or the fee paid by the project to the
