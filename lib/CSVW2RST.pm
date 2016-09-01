@@ -151,31 +151,35 @@ sub format_datatype {
         my $minl;
         my $maxl;
 
-        if ( exists $field->{datatype}{length} ) {
-            $minl = $maxl = $field->{datatype}{length};
-        }
-        else {
-            $minl = $field->{datatype}{minLength}
-                if exists $field->{datatype}{minLength};
+        if ( $field->{datatype}{base} eq 'string' ) {
 
-            $maxl = $field->{datatype}{maxLength}
-                if exists $field->{datatype}{maxLength};
+            if ( exists $field->{datatype}{length} ) {
+                $minl = $maxl = $field->{datatype}{length};
+            }
+            else {
+                $minl = $field->{datatype}{minLength}
+                    if exists $field->{datatype}{minLength};
 
-        }
+                $maxl = $field->{datatype}{maxLength}
+                    if exists $field->{datatype}{maxLength};
 
-        if ( defined $minl && $minl eq $maxl ) {
-            $minl = undef;
-        }
+            }
 
-        if ( defined $minl and defined $maxl ) {
-            $formatted_dt .= " ($minl,$maxl)";
-        }
-        elsif ( defined $maxl ) {
-            $formatted_dt .= " ($maxl)";
-        }
-        elsif ( defined $minl ) {
-            die "minLength defined with no maxLength\n";
-            #$formatted_dt .= " (>= $minl)";
+            if ( defined $minl && $minl eq $maxl ) {
+                $minl = undef;
+            }
+
+            if ( defined $minl and defined $maxl ) {
+                $formatted_dt .= " ($minl,$maxl)";
+            }
+            elsif ( defined $maxl ) {
+                $formatted_dt .= " ($maxl)";
+            }
+            elsif ( defined $minl ) {
+                die "minLength defined with no maxLength\n";
+                #$formatted_dt .= " (>= $minl)";
+            }
+
         }
 
     }
@@ -275,6 +279,20 @@ sub format_domain {
 
     if ( my $rv = format_fk($field) ) {
         return $rv;
+    }
+
+    if ( grep { $field->{datatype}{base} eq $_ } ('integer','number') ) {
+
+        if (
+            defined $field->{datatype}{minimum}
+            and ! defined $field->{datatype}{maximum}
+        ) {
+            die "Min defined but no max";
+        }
+
+        return $field->{datatype}{minimum}
+               . ' - '
+               . $field->{datatype}{maximum};
     }
     
     if ( exists $field->{'schema:description'} ){
