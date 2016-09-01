@@ -166,7 +166,9 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "number",
-      "format": "#####0.##"
+      "format": "#####0.##",
+      "minimum": 0,
+      "maximum": 999999
     },
     "default": "0"
   },{
