@@ -347,25 +347,25 @@
 :9: Not stated / Missing"
 "`SDQ - Emotional Symptoms Scale`_ (sdq_emotional_symptoms)
 
-",integer,"0 - 10"
+",integer
 "`SDQ - Conduct Problem Scale`_ (sdq_conduct_problem)
 
-",integer,"0 - 10"
+",integer
 "`SDQ - Hyperactivity Scale`_ (sdq_hyperactivity)
 
-",integer,"0 - 10"
+",integer
 "`SDQ - Peer Problem Scale`_ (sdq_peer_problem)
 
-",integer,"0 - 10"
+",integer
 "`SDQ - Prosocial Scale`_ (sdq_prosocial)
 
-",integer,"0 - 10"
+",integer
 "`SDQ - Total Difficulties Score`_ (sdq_total)
 
-",integer,"0 - 40"
+",integer
 "`SDQ - Impact Score`_ (sdq_impact)
 
-",integer,"0 - 10"
+",integer
 "`SDQ - Tags`_ (sdq_tags)
 
 ",string,"List of tags for the collection occasion."

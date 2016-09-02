@@ -16,25 +16,29 @@ In addition, CSV files must be created using UTF-8 character encoding.
 
 CSV files should have the file extension .csv
 
-Multiple CSV files should be uploaded - one CSV file for each format described :ref:`below <files-to-upload>`.
+Multiple CSV files should be uploaded - one CSV file for each format described
+:ref:`below <files-to-upload>`.
 
-CSV files can compressed by zipping or tar/zipping before uploading, or they can be uploaded raw.
+CSV files can compressed by zipping or tar/zipping before uploading, or they
+can be uploaded raw.
 
 Excel (XLSX)
 ^^^^^^^^^^^^
-Excel files should be in XLSX format. The following versions of Excel support this format:
+Excel files should be in XLSX format. The following versions of Excel support t
+his format:
 
 - Excel 2007 (v12.0)
 - Excel 2010 (v14.0)
 - Excel 2013 (v15.0)
 - Excel 2016 (v16.0)
 
-One XLSX file should be uploaded containing multiple worksheets - one worksheet for each format
-described :ref:`below <files-to-upload>`.
+One XLSX file should be uploaded containing multiple worksheets - one worksheet
+for each format described :ref:`below <files-to-upload>`.
 
 When saving your file, please choose the filetype 'Excel Workbook (.xlsx)'.
 
-The filename of the Excel file doesn't matter as long as it has the file extension .xlsx
+The filename of the Excel file doesn't matter as long as it has the file
+extension .xlsx
 
 .. _files-to-upload:
 
@@ -69,8 +73,12 @@ The third and subsequent rows should contain the data.
 
 Data elements for each file/worksheet are defined at :ref:`record-formats`.
 
-Each item is a column in the file/worksheet. The 'Field Name' should be used for the
-column headings.
+Each item is a column in the file/worksheet. The 'Field Name' should be used for
+the column headings.
+
+All files should be internally inconsistent. An example of what this means is
+that for every row in the episode file/worksheet, there should be a
+corresponding client in the client file/worksheet.
 
 .. _client-format:
 
@@ -78,7 +86,8 @@ Client format
 ^^^^^^^^^^^^^^^^^^
 The client file/worksheet is required to be uploaded each time.
 
-Data elements for the client upload file/worksheet are defined at :ref:`client-data-elements`.
+Data elements for the client upload file/worksheet are defined at
+:ref:`client-data-elements`.
 
 Example client data:
 
@@ -91,7 +100,8 @@ Episode file format
 ^^^^^^^^^^^^^^^^^^^
 The episode file/worksheet is required to be uploaded each time.
 
-Data elements for the episode upload file/worksheet are defined at :ref:`episode-data-elements`.
+Data elements for the episode upload file/worksheet are defined at
+:ref:`episode-data-elements`.
 
 Example episode data:
 
@@ -104,7 +114,8 @@ Service Contact file format
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The service contact file/worksheet is required to be uploaded each time.
 
-Data elements for the service contact upload file/worksheet are defined at :ref:`service-contact-data-elements`.
+Data elements for the service contact upload file/worksheet are defined at
+:ref:`service-contact-data-elements`.
 
 Example service contact data:
 
@@ -117,7 +128,8 @@ K10+ Collection Occasion file format
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The K10+ file/worksheet is required to be uploaded each time.
 
-Data elements for the K10+ collection occasion upload file/worksheet are defined at :ref:`k10p-data-elements`.
+Data elements for the K10+ collection occasion upload file/worksheet are defined
+at :ref:`k10p-data-elements`.
 
 Example K10+ data:
 
@@ -130,7 +142,8 @@ K5 Collection Occasion file format
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The K5 file/worksheet is required to be uploaded each time.
 
-Data elements for the K5 collection occasion upload file/worksheet are defined at :ref:`k5-data-elements`.
+Data elements for the K5 collection occasion upload file/worksheet are defined
+at :ref:`k5-data-elements`.
 
 Example K5 data:
 
@@ -143,7 +156,8 @@ SDQ Collection Occasion file format
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The SDQ file/worksheet is required to be uploaded each time.
 
-Data elements for the SDQ collection occasion upload file/worksheet are defined at :ref:`sdq-data-elements`.
+Data elements for the SDQ collection occasion upload file/worksheet are defined
+at :ref:`sdq-data-elements`.
 
 Example SDQ data:
 
@@ -154,10 +168,11 @@ Example SDQ data:
 
 Practitioner file format
 ^^^^^^^^^^^^^^^^^^^^^^^^
-The practitioner file/worksheet is optional. It only needs to be uploaded if there is a change in practitioners.
-There is no harm in including it in every upload.
+The practitioner file/worksheet is optional. It only needs to be uploaded if
+there is a change in practitioners. There is no harm in including it in every upload.
 
-Data elements for the practitioner upload file/worksheet are defined at :ref:`practitioner-data-elements`.
+Data elements for the practitioner upload file/worksheet are defined at
+:ref:`practitioner-data-elements`.
 
 Example practitioner data:
 

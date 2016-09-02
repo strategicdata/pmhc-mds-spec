@@ -168,22 +168,26 @@
 <p>The CSV files should conform to <a class="reference external" href="https://www.ietf.org/rfc/rfc4180.txt">RFC 4180</a>.</p>
 <p>In addition, CSV files must be created using UTF-8 character encoding.</p>
 <p>CSV files should have the file extension .csv</p>
-<p>Multiple CSV files should be uploaded - one CSV file for each format described <a class="reference internal" href="#files-to-upload"><span class="std std-ref">below</span></a>.</p>
-<p>CSV files can compressed by zipping or tar/zipping before uploading, or they can be uploaded raw.</p>
+<p>Multiple CSV files should be uploaded - one CSV file for each format described
+<a class="reference internal" href="#files-to-upload"><span class="std std-ref">below</span></a>.</p>
+<p>CSV files can compressed by zipping or tar/zipping before uploading, or they
+can be uploaded raw.</p>
 </div>
 <div class="section" id="excel-xlsx">
 <h3>Excel (XLSX)<a class="headerlink" href="#excel-xlsx" title="Permalink to this headline">¶</a></h3>
-<p>Excel files should be in XLSX format. The following versions of Excel support this format:</p>
+<p>Excel files should be in XLSX format. The following versions of Excel support t
+his format:</p>
 <ul class="simple">
 <li>Excel 2007 (v12.0)</li>
 <li>Excel 2010 (v14.0)</li>
 <li>Excel 2013 (v15.0)</li>
 <li>Excel 2016 (v16.0)</li>
 </ul>
-<p>One XLSX file should be uploaded containing multiple worksheets - one worksheet for each format
-described <a class="reference internal" href="#files-to-upload"><span class="std std-ref">below</span></a>.</p>
+<p>One XLSX file should be uploaded containing multiple worksheets - one worksheet
+for each format described <a class="reference internal" href="#files-to-upload"><span class="std std-ref">below</span></a>.</p>
 <p>When saving your file, please choose the filetype &#8216;Excel Workbook (.xlsx)&#8217;.</p>
-<p>The filename of the Excel file doesn&#8217;t matter as long as it has the file extension .xlsx</p>
+<p>The filename of the Excel file doesn&#8217;t matter as long as it has the file
+extension .xlsx</p>
 </div>
 </div>
 <div class="section" id="files-or-worksheets-to-upload">
@@ -288,12 +292,16 @@ described <a class="reference internal" href="#files-to-upload"><span class="std
 <p>The second row should contain the column headings as defined for each file type.
 The third and subsequent rows should contain the data.</p>
 <p>Data elements for each file/worksheet are defined at <a class="reference internal" href="data-model-and-specifications.html#record-formats"><span class="std std-ref">Record formats</span></a>.</p>
-<p>Each item is a column in the file/worksheet. The &#8216;Field Name&#8217; should be used for the
-column headings.</p>
+<p>Each item is a column in the file/worksheet. The &#8216;Field Name&#8217; should be used for
+the column headings.</p>
+<p>All files should be internally inconsistent. An example of what this means is
+that for every row in the episode file/worksheet, there should be a
+corresponding client in the client file/worksheet.</p>
 <div class="section" id="client-format">
 <span id="id1"></span><h3>Client format<a class="headerlink" href="#client-format" title="Permalink to this headline">¶</a></h3>
 <p>The client file/worksheet is required to be uploaded each time.</p>
-<p>Data elements for the client upload file/worksheet are defined at <a class="reference internal" href="data-model-and-specifications.html#client-data-elements"><span class="std std-ref">Client</span></a>.</p>
+<p>Data elements for the client upload file/worksheet are defined at
+<a class="reference internal" href="data-model-and-specifications.html#client-data-elements"><span class="std std-ref">Client</span></a>.</p>
 <p>Example client data:</p>
 <ul class="simple">
 <li><a class="reference external" href="_static/clients.csv">CSV client file</a>.</li>
@@ -303,7 +311,8 @@ column headings.</p>
 <div class="section" id="episode-file-format">
 <span id="episode-format"></span><h3>Episode file format<a class="headerlink" href="#episode-file-format" title="Permalink to this headline">¶</a></h3>
 <p>The episode file/worksheet is required to be uploaded each time.</p>
-<p>Data elements for the episode upload file/worksheet are defined at <a class="reference internal" href="data-model-and-specifications.html#episode-data-elements"><span class="std std-ref">Episode</span></a>.</p>
+<p>Data elements for the episode upload file/worksheet are defined at
+<a class="reference internal" href="data-model-and-specifications.html#episode-data-elements"><span class="std std-ref">Episode</span></a>.</p>
 <p>Example episode data:</p>
 <ul class="simple">
 <li><a class="reference external" href="_static/episodes.csv">CSV episode file</a>.</li>
@@ -313,7 +322,8 @@ column headings.</p>
 <div class="section" id="service-contact-file-format">
 <span id="service-contact-format"></span><h3>Service Contact file format<a class="headerlink" href="#service-contact-file-format" title="Permalink to this headline">¶</a></h3>
 <p>The service contact file/worksheet is required to be uploaded each time.</p>
-<p>Data elements for the service contact upload file/worksheet are defined at <a class="reference internal" href="data-model-and-specifications.html#service-contact-data-elements"><span class="std std-ref">Service Contact</span></a>.</p>
+<p>Data elements for the service contact upload file/worksheet are defined at
+<a class="reference internal" href="data-model-and-specifications.html#service-contact-data-elements"><span class="std std-ref">Service Contact</span></a>.</p>
 <p>Example service contact data:</p>
 <ul class="simple">
 <li><a class="reference external" href="_static/service-contacts.csv">CSV service contact file</a>.</li>
@@ -323,7 +333,8 @@ column headings.</p>
 <div class="section" id="k10-collection-occasion-file-format">
 <span id="k10p-format"></span><h3>K10+ Collection Occasion file format<a class="headerlink" href="#k10-collection-occasion-file-format" title="Permalink to this headline">¶</a></h3>
 <p>The K10+ file/worksheet is required to be uploaded each time.</p>
-<p>Data elements for the K10+ collection occasion upload file/worksheet are defined at <a class="reference internal" href="data-model-and-specifications.html#k10p-data-elements"><span class="std std-ref">K10+</span></a>.</p>
+<p>Data elements for the K10+ collection occasion upload file/worksheet are defined
+at <a class="reference internal" href="data-model-and-specifications.html#k10p-data-elements"><span class="std std-ref">K10+</span></a>.</p>
 <p>Example K10+ data:</p>
 <ul class="simple">
 <li><a class="reference external" href="_static/k10p.csv">CSV K10+ file</a>.</li>
@@ -333,7 +344,8 @@ column headings.</p>
 <div class="section" id="k5-collection-occasion-file-format">
 <span id="k5-format"></span><h3>K5 Collection Occasion file format<a class="headerlink" href="#k5-collection-occasion-file-format" title="Permalink to this headline">¶</a></h3>
 <p>The K5 file/worksheet is required to be uploaded each time.</p>
-<p>Data elements for the K5 collection occasion upload file/worksheet are defined at <a class="reference internal" href="data-model-and-specifications.html#k5-data-elements"><span class="std std-ref">K5</span></a>.</p>
+<p>Data elements for the K5 collection occasion upload file/worksheet are defined
+at <a class="reference internal" href="data-model-and-specifications.html#k5-data-elements"><span class="std std-ref">K5</span></a>.</p>
 <p>Example K5 data:</p>
 <ul class="simple">
 <li><a class="reference external" href="_static/k5.csv">CSV K5 file</a>.</li>
@@ -343,7 +355,8 @@ column headings.</p>
 <div class="section" id="sdq-collection-occasion-file-format">
 <span id="sdq-format"></span><h3>SDQ Collection Occasion file format<a class="headerlink" href="#sdq-collection-occasion-file-format" title="Permalink to this headline">¶</a></h3>
 <p>The SDQ file/worksheet is required to be uploaded each time.</p>
-<p>Data elements for the SDQ collection occasion upload file/worksheet are defined at <a class="reference internal" href="data-model-and-specifications.html#sdq-data-elements"><span class="std std-ref">SDQ</span></a>.</p>
+<p>Data elements for the SDQ collection occasion upload file/worksheet are defined
+at <a class="reference internal" href="data-model-and-specifications.html#sdq-data-elements"><span class="std std-ref">SDQ</span></a>.</p>
 <p>Example SDQ data:</p>
 <ul class="simple">
 <li><a class="reference external" href="_static/sdq.csv">CSV SDQ file</a>.</li>
@@ -352,9 +365,10 @@ column headings.</p>
 </div>
 <div class="section" id="practitioner-file-format">
 <span id="practitioner-format"></span><h3>Practitioner file format<a class="headerlink" href="#practitioner-file-format" title="Permalink to this headline">¶</a></h3>
-<p>The practitioner file/worksheet is optional. It only needs to be uploaded if there is a change in practitioners.
-There is no harm in including it in every upload.</p>
-<p>Data elements for the practitioner upload file/worksheet are defined at <a class="reference internal" href="data-model-and-specifications.html#practitioner-data-elements"><span class="std std-ref">Practitioner</span></a>.</p>
+<p>The practitioner file/worksheet is optional. It only needs to be uploaded if
+there is a change in practitioners. There is no harm in including it in every upload.</p>
+<p>Data elements for the practitioner upload file/worksheet are defined at
+<a class="reference internal" href="data-model-and-specifications.html#practitioner-data-elements"><span class="std std-ref">Practitioner</span></a>.</p>
 <p>Example practitioner data:</p>
 <ul class="simple">
 <li><a class="reference external" href="_static/practitioners.csv">CSV practitioner file</a>.</li>

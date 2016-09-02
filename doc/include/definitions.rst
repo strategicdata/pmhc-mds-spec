@@ -2210,9 +2210,6 @@ The overall K5 score.
 :Field name: k5_score
 
 :Data type: integer
-
-:Domain:
-  5 - 25
 :Notes:
   The K5 Total score is based on the sum of K5 item 1 through 5 (range: 5-25).
   
@@ -2473,9 +2470,6 @@ In the past four weeks, how many days were you totally unable to work, study or 
 
 :Data type: integer
 
-:Domain:
-  0 - 28
-
 ----------
 
 .. _dfn-k10p_item12:
@@ -2489,9 +2483,6 @@ Aside from those days, in the past four weeks, how many days were you able to wo
 
 :Data type: integer
 
-:Domain:
-  0 - 28
-
 ----------
 
 .. _dfn-k10p_item13:
@@ -2504,9 +2495,6 @@ In the past four weeks, how many times have you seen a doctor or any other healt
 :Field name: k10p_item13
 
 :Data type: integer
-
-:Domain:
-  0 - 89
 
 ----------
 
@@ -2541,9 +2529,6 @@ The overall K10 score.
 :Field name: k10p_score
 
 :Data type: integer
-
-:Domain:
-  10 - 50
 :Notes:
   The K10 Total score is based on the sum of K10 item 01 through 10 (range: 10-50). Items 11
   through 14 are excluded from the total because they are separate measures of disability
@@ -3047,9 +3032,6 @@ SDQ - Conduct Problem Scale
 :Field name: sdq_conduct_problem
 
 :Data type: integer
-
-:Domain:
-  0 - 10
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Conduct Problem Scale.
   
@@ -3065,9 +3047,6 @@ SDQ - Emotional Symptoms Scale
 :Field name: sdq_emotional_symptoms
 
 :Data type: integer
-
-:Domain:
-  0 - 10
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Emotional Symptoms Scale.
   
@@ -3083,9 +3062,6 @@ SDQ - Hyperactivity Scale
 :Field name: sdq_hyperactivity
 
 :Data type: integer
-
-:Domain:
-  0 - 10
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Hyperactivity Scale.
   
@@ -3101,9 +3077,6 @@ SDQ - Impact Score
 :Field name: sdq_impact
 
 :Data type: integer
-
-:Domain:
-  0 - 10
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Impact Score.
   
@@ -3119,9 +3092,6 @@ SDQ - Peer Problem Scale
 :Field name: sdq_peer_problem
 
 :Data type: integer
-
-:Domain:
-  0 - 10
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Peer Problem Scale.
   
@@ -3137,9 +3107,6 @@ SDQ - Prosocial Scale
 :Field name: sdq_prosocial
 
 :Data type: integer
-
-:Domain:
-  0 - 10
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Prosocial Scale.
   
@@ -4261,9 +4228,6 @@ SDQ - Total Difficulties Score
 :Field name: sdq_total
 
 :Data type: integer
-
-:Domain:
-  0 - 40
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Total Difficulties Score.
   
@@ -4315,9 +4279,6 @@ The co-payment is the amount paid by the client per session.
 :Field name: service_contact_copayment
 
 :Data type: number
-
-:Domain:
-  0 - 999999
 :Notes:
   Up to 6 digits before the decimal point; up to 2 digits after the decimal
   point.

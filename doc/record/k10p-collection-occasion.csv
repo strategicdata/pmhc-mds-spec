@@ -98,13 +98,13 @@
 :9: Not stated / Missing"
 "`K10+ - Question 11`_ (k10p_item11)
 
-",integer,"0 - 28"
+",integer,"In the past four weeks, how many days were you totally unable to work, study or manage your day to day activities because of these feelings?"
 "`K10+ - Question 12`_ (k10p_item12)
 
-",integer,"0 - 28"
+",integer,"Aside from those days, in the past four weeks, how many days were you able to work or study or manage your day to day activities, but had to cut down on what you did because of these feelings?"
 "`K10+ - Question 13`_ (k10p_item13)
 
-",integer,"0 - 89"
+",integer,"In the past four weeks, how many times have you seen a doctor or any other health professional about these feelings?"
 "`K10+ - Question 14`_ (k10p_item14)
 
 ",string,":1: None of the time
@@ -115,7 +115,7 @@
 :9: Not stated / Missing"
 "`K10+ - Score`_ (k10p_score)
 
-",integer,"10 - 50"
+",integer,"The overall K10 score."
 "`K10+ - Tags`_ (k10p_tags)
 
 ",string,"List of tags for the collection occasion."
