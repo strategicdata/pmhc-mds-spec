@@ -328,6 +328,10 @@ sub format_fk {
             die $field->{_domain}{resource} . " does not have a description column\n"
                 unless exists $item->{description};
             my $value = $item->{description};
+            
+            unless ( $key ) {
+                $key = 'blank';
+            }
 
             $rv .= "$newline:$key: $value";
             $newline = "\n";
