@@ -4,7 +4,7 @@
 ",string,"A sequence of colon separated Organisation Codes that fully specifies the upload organisation."
 "`Client Key`_ (client_key)
 
-","string (2,50)","This is a number or code assigned to each individual referred to the commissioned organisation. The client identifier is unique and stable for each individual witin the PHN."
+","string (2,50)","This is a number or code assigned to each individual referred to the commissioned organisation. The client identifier is unique and stable for each individual within the PHN."
 "`Client - Statistical Linkage Key`_ (slk)
 
 
@@ -25,7 +25,7 @@ METeOR: `287007 <http://meteor.aihw.gov.au/content/index.phtml/itemId/287007>`__
 
 
 
-`ABS <http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/1200.0.55.012Main%20Features12016?opendocument&tabname=Summary&prodno=1200.0.55.012&issue=2016&num=&view=>`__",string,":0: Not stated/Inadequately described
+`ABS <http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/1200.0.55.012Main%20Features12016?opendocument&tabname=Summary&prodno=1200.0.55.012&issue=2016&num=&view=>`__",string,":blank: Not stated/Inadequately described
 :1: Male
 :2: Female
 :3: Other"
@@ -746,7 +746,7 @@ METeOR: `460125 <http://meteor.aihw.gov.au/content/index.phtml/itemId/460125>`__
 
 
 
-METeOR: `270203 <http://meteor.aihw.gov.au/content/index.phtml/itemId/270203>`__",string,":0: Not applicable (persons under 5 years of age or who speak only English)
+METeOR: `270203 <http://meteor.aihw.gov.au/content/index.phtml/itemId/270203>`__",string,":blank: Not applicable (persons under 5 years of age or who speak only English)
 :1: Very well
 :2: Well
 :3: Not well

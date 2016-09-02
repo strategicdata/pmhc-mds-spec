@@ -381,7 +381,7 @@ The term 'gender' refers to the way in which a person identifies their masculine
 :Data type: string
 
 :Domain:
-  :0: Not stated/Inadequately described
+  :blank: Not stated/Inadequately described
   :1: Male
   :2: Female
   :3: Other
@@ -408,7 +408,7 @@ The term 'gender' refers to the way in which a person identifies their masculine
 Client Key
 ^^^^^^^^^^
 
-This is a number or code assigned to each individual referred to the commissioned organisation. The client identifier is unique and stable for each individual witin the PHN.
+This is a number or code assigned to each individual referred to the commissioned organisation. The client identifier is unique and stable for each individual within the PHN.
 
 :Field name: client_key
 
@@ -902,7 +902,7 @@ The self-assessed level of ability to speak English, asked of people whose first
 :Data type: string
 
 :Domain:
-  :0: Not applicable (persons under 5 years of age or who speak only English)
+  :blank: Not applicable (persons under 5 years of age or who speak only English)
   :1: Very well
   :2: Well
   :3: Not well
@@ -1146,7 +1146,7 @@ An indication of the completion status of an *Episode of Care*.
 :Data type: string
 
 :Domain:
-  :: Episode open
+  :blank: Episode open
   :1: Episode closed - treatment concluded
   :2: Episode closed administratively - client could not be contacted
   :3: Episode closed administratively - client declined further contact
@@ -1154,8 +1154,12 @@ An indication of the completion status of an *Episode of Care*.
   :5: Episode closed administratively - client referred elsewhere
   :6: Episode closed administratively - other reason
 :Notes:
-  In order to use code 1 (Episode closed - treatment concluded) the client must have at least one service contact. All other codes may be applicable even when the client has no service contacts. 
+  In order to use code 1 (Episode closed - treatment concluded) the client must have at least one service contact. All other codes may be applicable even when the client has no service contacts.
   
+  Blank - Episode open
+    The client still requires treatment and further service contacts are
+    required.
+    
   1 - Episode closed - treatment concluded
     No further service contacts are planned as the client no longer requires
     treatment.
@@ -2210,6 +2214,9 @@ The overall K5 score.
 :Field name: k5_score
 
 :Data type: integer
+
+:Domain:
+  5 - 25
 :Notes:
   The K5 Total score is based on the sum of K5 item 1 through 5 (range: 5-25).
   
@@ -2470,6 +2477,9 @@ In the past four weeks, how many days were you totally unable to work, study or 
 
 :Data type: integer
 
+:Domain:
+  0 - 28
+
 ----------
 
 .. _dfn-k10p_item12:
@@ -2483,6 +2493,9 @@ Aside from those days, in the past four weeks, how many days were you able to wo
 
 :Data type: integer
 
+:Domain:
+  0 - 28
+
 ----------
 
 .. _dfn-k10p_item13:
@@ -2495,6 +2508,9 @@ In the past four weeks, how many times have you seen a doctor or any other healt
 :Field name: k10p_item13
 
 :Data type: integer
+
+:Domain:
+  0 - 89
 
 ----------
 
@@ -2529,6 +2545,9 @@ The overall K10 score.
 :Field name: k10p_score
 
 :Data type: integer
+
+:Domain:
+  10 - 50
 :Notes:
   The K10 Total score is based on the sum of K10 item 01 through 10 (range: 10-50). Items 11
   through 14 are excluded from the total because they are separate measures of disability
@@ -2630,7 +2649,7 @@ A flag to represent whether a practitioner is actively delivering services. This
 :Data type: string
 
 :Domain:
-  :0: Inactive
+  :blank: Inactive
   :1: Active
 
 ----------
@@ -2725,7 +2744,7 @@ The term 'gender' refers to the way in which a person identifies their masculine
 :Data type: string
 
 :Domain:
-  :0: Not stated/Inadequately described
+  :blank: Not stated/Inadequately described
   :1: Male
   :2: Female
   :3: Other
@@ -3032,6 +3051,9 @@ SDQ - Conduct Problem Scale
 :Field name: sdq_conduct_problem
 
 :Data type: integer
+
+:Domain:
+  0 - 10
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Conduct Problem Scale.
   
@@ -3047,6 +3069,9 @@ SDQ - Emotional Symptoms Scale
 :Field name: sdq_emotional_symptoms
 
 :Data type: integer
+
+:Domain:
+  0 - 10
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Emotional Symptoms Scale.
   
@@ -3062,6 +3087,9 @@ SDQ - Hyperactivity Scale
 :Field name: sdq_hyperactivity
 
 :Data type: integer
+
+:Domain:
+  0 - 10
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Hyperactivity Scale.
   
@@ -3077,6 +3105,9 @@ SDQ - Impact Score
 :Field name: sdq_impact
 
 :Data type: integer
+
+:Domain:
+  0 - 10
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Impact Score.
   
@@ -3092,6 +3123,9 @@ SDQ - Peer Problem Scale
 :Field name: sdq_peer_problem
 
 :Data type: integer
+
+:Domain:
+  0 - 10
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Peer Problem Scale.
   
@@ -3107,6 +3141,9 @@ SDQ - Prosocial Scale
 :Field name: sdq_prosocial
 
 :Data type: integer
+
+:Domain:
+  0 - 10
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Prosocial Scale.
   
@@ -3127,7 +3164,7 @@ Youth Self Report: I try to be nice to other people. I care about their feelings
 :Data type: string
 
 :Domain:
-  :0: Not True
+  :blank: Not True
   :1: Somewhat True
   :2: Certainly True
   :7: Unable to rate (insufficient information)
@@ -3152,7 +3189,7 @@ Youth Self Report: I am restless, I cannot stay still for long.
 :Data type: string
 
 :Domain:
-  :0: Not True
+  :blank: Not True
   :1: Somewhat True
   :2: Certainly True
   :7: Unable to rate (insufficient information)
@@ -3177,7 +3214,7 @@ Youth Self Report: I get a lot of headaches, stomach-aches or sickness.
 :Data type: string
 
 :Domain:
-  :0: Not True
+  :blank: Not True
   :1: Somewhat True
   :2: Certainly True
   :7: Unable to rate (insufficient information)
@@ -3202,7 +3239,7 @@ Youth Self Report: I usually share with others, for examples CDs, games, food.
 :Data type: string
 
 :Domain:
-  :0: Not True
+  :blank: Not True
   :1: Somewhat True
   :2: Certainly True
   :7: Unable to rate (insufficient information)
@@ -3227,7 +3264,7 @@ Youth Self Report: I get very angry and often lose my temper.
 :Data type: string
 
 :Domain:
-  :0: Not True
+  :blank: Not True
   :1: Somewhat True
   :2: Certainly True
   :7: Unable to rate (insufficient information)
@@ -3252,7 +3289,7 @@ Youth Self Report: I would rather be alone than with people of my age.
 :Data type: string
 
 :Domain:
-  :0: Not True
+  :blank: Not True
   :1: Somewhat True
   :2: Certainly True
   :7: Unable to rate (insufficient information)
@@ -3277,7 +3314,7 @@ Youth Self Report: I usually do as I am told.
 :Data type: string
 
 :Domain:
-  :0: Not True
+  :blank: Not True
   :1: Somewhat True
   :2: Certainly True
   :7: Unable to rate (insufficient information)
@@ -3302,7 +3339,7 @@ Youth Self Report: I worry a lot.
 :Data type: string
 
 :Domain:
-  :0: Not True
+  :blank: Not True
   :1: Somewhat True
   :2: Certainly True
   :7: Unable to rate (insufficient information)
@@ -3327,7 +3364,7 @@ Youth Self Report: I am helpful if someone is hurt, upset or feeling ill.
 :Data type: string
 
 :Domain:
-  :0: Not True
+  :blank: Not True
   :1: Somewhat True
   :2: Certainly True
   :7: Unable to rate (insufficient information)
@@ -3352,7 +3389,7 @@ Youth Self Report: I am constantly fidgeting or squirming.
 :Data type: string
 
 :Domain:
-  :0: Not True
+  :blank: Not True
   :1: Somewhat True
   :2: Certainly True
   :7: Unable to rate (insufficient information)
@@ -3377,7 +3414,7 @@ Youth Self Report: I have one good friend or more.
 :Data type: string
 
 :Domain:
-  :0: Not True
+  :blank: Not True
   :1: Somewhat True
   :2: Certainly True
   :7: Unable to rate (insufficient information)
@@ -3402,7 +3439,7 @@ Youth Self Report: I fight a lot. I can make other people do what I want.
 :Data type: string
 
 :Domain:
-  :0: Not True
+  :blank: Not True
   :1: Somewhat True
   :2: Certainly True
   :7: Unable to rate (insufficient information)
@@ -3427,7 +3464,7 @@ Youth Self Report: I am often unhappy, depressed or tearful.
 :Data type: string
 
 :Domain:
-  :0: Not True
+  :blank: Not True
   :1: Somewhat True
   :2: Certainly True
   :7: Unable to rate (insufficient information)
@@ -3452,7 +3489,7 @@ Youth Self Report: Other people my age generally like me.
 :Data type: string
 
 :Domain:
-  :0: Not True
+  :blank: Not True
   :1: Somewhat True
   :2: Certainly True
   :7: Unable to rate (insufficient information)
@@ -3477,7 +3514,7 @@ Youth Self Report: I am easily distracted, I find it difficult to concentrate.
 :Data type: string
 
 :Domain:
-  :0: Not True
+  :blank: Not True
   :1: Somewhat True
   :2: Certainly True
   :7: Unable to rate (insufficient information)
@@ -3502,7 +3539,7 @@ Youth Self Report: I am nervous in new situations. I easily lose confidence.
 :Data type: string
 
 :Domain:
-  :0: Not True
+  :blank: Not True
   :1: Somewhat True
   :2: Certainly True
   :7: Unable to rate (insufficient information)
@@ -3527,7 +3564,7 @@ Youth Self Report: I am kind to younger people.
 :Data type: string
 
 :Domain:
-  :0: Not True
+  :blank: Not True
   :1: Somewhat True
   :2: Certainly True
   :7: Unable to rate (insufficient information)
@@ -3552,7 +3589,7 @@ Youth Self Report: I am often accused of lying or cheating.
 :Data type: string
 
 :Domain:
-  :0: Not True
+  :blank: Not True
   :1: Somewhat True
   :2: Certainly True
   :7: Unable to rate (insufficient information)
@@ -3577,7 +3614,7 @@ Youth Self Report: Other children or young people pick on me or bully me.
 :Data type: string
 
 :Domain:
-  :0: Not True
+  :blank: Not True
   :1: Somewhat True
   :2: Certainly True
   :7: Unable to rate (insufficient information)
@@ -3602,7 +3639,7 @@ Youth Self Report: I often volunteer to help others (parents, teachers, children
 :Data type: string
 
 :Domain:
-  :0: Not True
+  :blank: Not True
   :1: Somewhat True
   :2: Certainly True
   :7: Unable to rate (insufficient information)
@@ -3627,7 +3664,7 @@ Youth Self Report: I think before I do things.
 :Data type: string
 
 :Domain:
-  :0: Not True
+  :blank: Not True
   :1: Somewhat True
   :2: Certainly True
   :7: Unable to rate (insufficient information)
@@ -3652,7 +3689,7 @@ Youth Self Report: I take things that are not mine from home, school or elsewher
 :Data type: string
 
 :Domain:
-  :0: Not True
+  :blank: Not True
   :1: Somewhat True
   :2: Certainly True
   :7: Unable to rate (insufficient information)
@@ -3677,7 +3714,7 @@ Youth Self Report: I get along better with adults than with people my own age.
 :Data type: string
 
 :Domain:
-  :0: Not True
+  :blank: Not True
   :1: Somewhat True
   :2: Certainly True
   :7: Unable to rate (insufficient information)
@@ -3702,7 +3739,7 @@ Youth Self Report: I have many fears, I am easily scared.
 :Data type: string
 
 :Domain:
-  :0: Not True
+  :blank: Not True
   :1: Somewhat True
   :2: Certainly True
   :7: Unable to rate (insufficient information)
@@ -3727,7 +3764,7 @@ Youth Self Report: I finish the work I'm doing. My attention is good.
 :Data type: string
 
 :Domain:
-  :0: Not True
+  :blank: Not True
   :1: Somewhat True
   :2: Certainly True
   :7: Unable to rate (insufficient information)
@@ -3752,7 +3789,7 @@ Youth Self Report: Overall, do you think that you have difficulties in any of th
 :Data type: string
 
 :Domain:
-  :0: No
+  :blank: No
   :1: Yes - minor difficulties
   :2: Yes - definite difficulties
   :3: Yes - severe difficulties
@@ -3778,7 +3815,7 @@ Youth Self Report: How long have these difficulties been present?
 :Data type: string
 
 :Domain:
-  :0: Less than a month
+  :blank: Less than a month
   :1: 1-5 months
   :2: 6-12 months
   :3: Over a year
@@ -3808,7 +3845,7 @@ Youth Self Report: Do the difficulties upset or distress you?
 :Data type: string
 
 :Domain:
-  :0: Not at all
+  :blank: Not at all
   :1: A little
   :2: A medium amount
   :3: A great deal
@@ -3835,7 +3872,7 @@ Youth Self Report: Do the difficulties interfere with your everyday life in the 
 :Data type: string
 
 :Domain:
-  :0: Not at all
+  :blank: Not at all
   :1: A little
   :2: A medium amount
   :3: A great deal
@@ -3862,7 +3899,7 @@ Youth Self Report: Do the difficulties interfere with your everyday life in the 
 :Data type: string
 
 :Domain:
-  :0: Not at all
+  :blank: Not at all
   :1: A little
   :2: A medium amount
   :3: A great deal
@@ -3889,7 +3926,7 @@ Youth Self Report: Do the difficulties interfere with your everyday life in the 
 :Data type: string
 
 :Domain:
-  :0: Not at all
+  :blank: Not at all
   :1: A little
   :2: A medium amount
   :3: A great deal
@@ -3916,7 +3953,7 @@ Youth Self Report: Do the difficulties interfere with your everyday life in the 
 :Data type: string
 
 :Domain:
-  :0: Not at all
+  :blank: Not at all
   :1: A little
   :2: A medium amount
   :3: A great deal
@@ -3943,7 +3980,7 @@ Youth Self Report: Do the difficulties make it harder for those around you (fami
 :Data type: string
 
 :Domain:
-  :0: Not at all
+  :blank: Not at all
   :1: A little
   :2: A medium amount
   :3: A great deal
@@ -3970,7 +4007,7 @@ Youth Self Report: 'Since coming to the service, are your problems:
 :Data type: string
 
 :Domain:
-  :0: Much worse
+  :blank: Much worse
   :1: A bit worse
   :2: About the same
   :3: A bit better
@@ -3999,7 +4036,7 @@ Has coming to the service been helpful in other ways eg. providing information o
 :Data type: string
 
 :Domain:
-  :0: Not at all
+  :blank: Not at all
   :1: A little
   :2: A medium amount
   :3: A great deal
@@ -4027,7 +4064,7 @@ Over the last 6 months have your child's teachers complained of fidgetiness, res
 :Data type: string
 
 :Domain:
-  :0: No
+  :blank: No
   :1: A little
   :2: A lot
   :7: Unable to rate (insufficient information)
@@ -4053,7 +4090,7 @@ Over the last 6 months have your child's teachers complained of poor concentrati
 :Data type: string
 
 :Domain:
-  :0: No
+  :blank: No
   :1: A little
   :2: A lot
   :7: Unable to rate (insufficient information)
@@ -4079,7 +4116,7 @@ Over the last 6 months have your child's teachers complained of acting without t
 :Data type: string
 
 :Domain:
-  :0: No
+  :blank: No
   :1: A little
   :2: A lot
   :7: Unable to rate (insufficient information)
@@ -4105,7 +4142,7 @@ Does your family complain about you having problems with overactivity or poor co
 :Data type: string
 
 :Domain:
-  :0: No
+  :blank: No
   :1: A little
   :2: A lot
   :7: Unable to rate (insufficient information)
@@ -4130,7 +4167,7 @@ Do your teachers complain about you having problems with overactivity or poor co
 :Data type: string
 
 :Domain:
-  :0: No
+  :blank: No
   :1: A little
   :2: A lot
   :7: Unable to rate (insufficient information)
@@ -4155,7 +4192,7 @@ Does your family complain about you being awkward or troublesome?
 :Data type: string
 
 :Domain:
-  :0: No
+  :blank: No
   :1: A little
   :2: A lot
   :7: Unable to rate (insufficient information)
@@ -4180,7 +4217,7 @@ Do your teachers complain about you being awkward or troublesome?
 :Data type: string
 
 :Domain:
-  :0: No
+  :blank: No
   :1: A little
   :2: A lot
   :7: Unable to rate (insufficient information)
@@ -4228,6 +4265,9 @@ SDQ - Total Difficulties Score
 :Field name: sdq_total
 
 :Data type: integer
+
+:Domain:
+  0 - 40
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Total Difficulties Score.
   
@@ -4279,6 +4319,9 @@ The co-payment is the amount paid by the client per session.
 :Field name: service_contact_copayment
 
 :Data type: number
+
+:Domain:
+  0 - 999999
 :Notes:
   Up to 6 digits before the decimal point; up to 2 digits after the decimal
   point.

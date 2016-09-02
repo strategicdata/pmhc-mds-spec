@@ -32,7 +32,7 @@
 
 
 
-`ABS <http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/1200.0.55.012Main%20Features12016?opendocument&tabname=Summary&prodno=1200.0.55.012&issue=2016&num=&view=>`__",string,":0: Not stated/Inadequately described
+`ABS <http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/1200.0.55.012Main%20Features12016?opendocument&tabname=Summary&prodno=1200.0.55.012&issue=2016&num=&view=>`__",string,":blank: Not stated/Inadequately described
 :1: Male
 :2: Female
 :3: Other"
@@ -47,7 +47,7 @@ METeOR: `291036 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291036>`__
 :9: Not stated/inadequately described"
 "`Practitioner - Active`_ (practitioner_active)
 
-",string,":0: Inactive
+",string,":blank: Inactive
 :1: Active"
 "`Practitioner - Tags`_ (practitioner_tags)
 
