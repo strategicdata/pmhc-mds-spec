@@ -7,8 +7,8 @@ specification.
 Not stated/missing codes
 ------------------------
 
-Not stated/missing codes (often code 9 or 99) are not to be available as a valid
-answers to questions but is intended for use:
+Not stated/missing codes (normally code 9, 99, 999 or 9999) are not to be
+available as a valid answers to questions but is intended for use:
 
 * Primarily when importing data from other data collections that do not contain
   mappable data.
@@ -22,8 +22,8 @@ answers to questions but is intended for use:
 Country of Birth
 ----------------
 
-:ref:`dfn-country_of_birth` has a large permitted domain. It is not feasible to provide
-all allowed responses on a form. The Australian Bureau of Statistics
+:ref:`dfn-country_of_birth` has a large permitted domain. It is not feasible to
+provide all allowed responses on a form. The Australian Bureau of Statistics
 recommends two standard question modules for Country of Birth:
 
 * :ref:`cob_detailed_module`
@@ -107,7 +107,8 @@ Spoken at Home. An example is::
     Yes,  Tagalog     q
     Yes,  Other - Please Specify.............
 
-For self enumerated questionnaires, respondents should be instructed to mark one box only.
+For self enumerated questionnaires, respondents should be instructed to mark one
+box only.
 
 Form designers do not need to use the languages shown in this example. They
 should choose languages relevant to the population for their region. The "Other"
