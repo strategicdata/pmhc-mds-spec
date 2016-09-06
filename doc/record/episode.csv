@@ -13,7 +13,7 @@
 
 
 METeOR: `614094 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614094>`__",date,"The date on which an *Episode of Care* is formally or administratively ended"
-"`Episode - Client Consent to De-identified Data`_ (client_consent)
+"`Episode - Client Consent to Anonymised Data`_ (client_consent)
 
 ",string,":1: Yes
 :2: No"

@@ -129,7 +129,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#collection-occasion-key">Collection Occasion Key</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#episode-additional-diagnosis">Episode - Additional Diagnosis</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#episode-area-of-usual-residence-postcode">Episode - Area of usual residence, postcode</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#episode-client-consent-to-de-identified-data">Episode - Client Consent to De-identified Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#episode-client-consent-to-anonymised-data">Episode - Client Consent to Anonymised Data</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#episode-completion-status">Episode - Completion Status</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#episode-employment-participation">Episode - Employment Participation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#episode-end-date">Episode - End Date</a></li>
@@ -2256,7 +2256,7 @@ upload.</p>
 <td>date</td>
 <td>The date on which an <em>Episode of Care</em> is formally or administratively ended</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#episode-client-consent-to-de-identified-data">Episode - Client Consent to De-identified Data</a> (client_consent)</td>
+<tr class="row-even"><td><a class="reference internal" href="#episode-client-consent-to-anonymised-data">Episode - Client Consent to Anonymised Data</a> (client_consent)</td>
 <td>string</td>
 <td><table class="first last docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -6645,9 +6645,9 @@ they currently reside.&#8217;</p>
 </table>
 <hr class="docutils" />
 </div>
-<div class="section" id="episode-client-consent-to-de-identified-data">
-<span id="dfn-client-consent"></span><h3>Episode - Client Consent to De-identified Data<a class="headerlink" href="#episode-client-consent-to-de-identified-data" title="Permalink to this headline">¶</a></h3>
-<p>An indication that the client has consented to their de-identified data being provided to the Department of Health for the purposes of planning and improving mental health services.</p>
+<div class="section" id="episode-client-consent-to-anonymised-data">
+<span id="dfn-client-consent"></span><h3>Episode - Client Consent to Anonymised Data<a class="headerlink" href="#episode-client-consent-to-anonymised-data" title="Permalink to this headline">¶</a></h3>
+<p>An indication that the client has consented to their anonymised data being provided to the Department of Health for statistical purposes in planning and improving mental health services.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -6672,13 +6672,15 @@ they currently reside.&#8217;</p>
 </tr>
 <tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><dl class="first last docutils">
 <dt>1 - Yes</dt>
-<dd><p class="first last">The client has consented to their de-identified data being provided to
-the Department of Health. The client&#8217;s data will be excluded from reports and
+<dd><p class="first last">The client has consented to their anonymised data being provided to the
+Department of Health for statistical purposes in planning and improving
+mental health services. The client&#8217;s data will be included in reports and
 extracts accessible by the Department of Health.</p>
 </dd>
 <dt>2 - No</dt>
-<dd><p class="first last">The client has not consented to their de-identified data being provided to
-the Department of Health. The client&#8217;s data will be excluded from reports and
+<dd><p class="first last">The client has consented to their anonymised data being provided to the
+Department of Health for statistical purposes in planning and improving
+mental health services. The client&#8217;s data will be excluded from reports and
 extracts accessible by the Department of Health.</p>
 </dd>
 </dl>

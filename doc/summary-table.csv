@@ -3,7 +3,7 @@
 "Provider Organisation - Name","Practitioner Key","Client Key","Episode Key","Service Contact Key","Collection Occasion Key","Collection Occasion Key","Collection Occasion Key"
 "Provider Organisation - ABN","Practitioner - Category","Client - Statistical Linkage Key","Client Key","Episode Key","Episode Key","Episode Key","Episode Key"
 "Provider Organisation - Type","Practitioner - ATSI Cultural Training","Client - Date of Birth","Episode - End Date","Practitioner Key","Collection Occasion - Measure Date","Collection Occasion - Measure Date","Collection Occasion - Measure Date"
-"Provider Organisation - State","Practitioner - Year of Birth","Client - Estimated Date of Birth Flag","Episode - Client Consent to De-identified Data","Service Contact - Date","Collection Occasion - Reason","Collection Occasion - Reason","Collection Occasion - Reason"
+"Provider Organisation - State","Practitioner - Year of Birth","Client - Estimated Date of Birth Flag","Episode - Client Consent to Anonymised Data","Service Contact - Date","Collection Occasion - Reason","Collection Occasion - Reason","Collection Occasion - Reason"
 "Provider Organisation - Tags","Practitioner - Gender","Client - Gender","Episode - Completion Status","Service Contact - Type","K10+ - Question 1","K5 - Question 1","SDQ Collection Occasion - Version"
 ,"Practitioner - Aboriginal and Torres Strait Islander Status","Client - Aboriginal and Torres Strait Islander Status","Episode - Referral Date","Service Contact - Postcode","K10+ - Question 2","K5 - Question 2","SDQ - Question 1"
 ,"Practitioner - Active","Client - Country of Birth","Episode - Principal Focus of Treatment Plan","Service Contact - Modality","K10+ - Question 3","K5 - Question 3","SDQ - Question 2"

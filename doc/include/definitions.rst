@@ -1108,10 +1108,10 @@ The Australian postcode of the client.
 
 .. _dfn-client_consent:
 
-Episode - Client Consent to De-identified Data
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Episode - Client Consent to Anonymised Data
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-An indication that the client has consented to their de-identified data being provided to the Department of Health for the purposes of planning and improving mental health services.
+An indication that the client has consented to their anonymised data being provided to the Department of Health for statistical purposes in planning and improving mental health services.
 
 :Field name: client_consent
 
@@ -1122,14 +1122,16 @@ An indication that the client has consented to their de-identified data being pr
   :2: No
 :Notes:
   1 - Yes
-    The client has consented to their de-identified data being provided to
-    the Department of Health. The client's data will be excluded from reports and
-    extracts accessible by the Department of Health.
+      The client has consented to their anonymised data being provided to the
+      Department of Health for statistical purposes in planning and improving
+      mental health services. The client's data will be included in reports and
+      extracts accessible by the Department of Health.
   
   2 - No
-    The client has not consented to their de-identified data being provided to
-    the Department of Health. The client's data will be excluded from reports and
-    extracts accessible by the Department of Health.
+      The client has consented to their anonymised data being provided to the
+      Department of Health for statistical purposes in planning and improving
+      mental health services. The client's data will be excluded from reports and
+      extracts accessible by the Department of Health.
   
 
 ----------
