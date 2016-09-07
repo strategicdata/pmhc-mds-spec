@@ -144,16 +144,26 @@ class PMHC < Csvlint::Cli
     end
 
     def validate_episodes(validator, data)
-      # Client must consent
+
       header = data.shift
       client_consent_index = header.index("client_consent")
+      referrer_organisation_type_index = header.index("referrer_organisation_type")
+      referrer_profession_index = header.index("referrer_profession")
 
       current_line = 1
       data.each do |row|
+        # Client must consent
         # Would be nice if this wasn't hard coded. If we could get the value from client-consent.csv
         # Leave this exercise to someone with more Ruby knowldege than me. - JW
         unless row[client_consent_index] == "1"
          validator.build_errors(:invalid_consent, :episode, current_line, client_consent_index, row[client_consent_index])
+        end
+
+        # Referrer Organisation Type of N/A - Self referral should only be selected
+        # where referrer profession is also Self referral
+        if ( row[referrer_organisation_type_index] == "98" and row[referrer_profession_index] != "98" ) or
+          ( row[referrer_organisation_type_index] != "98" and row[referrer_profession_index] == "98" )
+          validator.build_errors(:invalid_self_referral, :episode, current_line, referrer_organisation_type_index, row[referrer_organisation_type_index])
         end
         current_line += 1
       end
