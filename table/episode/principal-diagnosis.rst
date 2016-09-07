@@ -4,7 +4,7 @@ Dignoses are grouped into 7 major categories:
 - 2xx - Affective (Mood) disorders
 - 3xx - Substance use disorders
 - 4xx - Psychotic disorder
-- 5xx - Disorders with onset usually occurring in childhood and adolescence not listed elsewhere 
+- 5xx - Disorders with onset usually occurring in childhood and adolescence not listed elsewhere
 - 6xx - Other mental disorder
 - 9xx - No formal mental disorder but subsyndromal problem
 
@@ -24,13 +24,12 @@ disorders in the Australian adult, child and adolescent population,
 supplemented by less prevalent conditions that may be experienced by clients of
 PHN-commissioned mental health services. The diagnosis options are based on an
 abbreviated set of clinical terms and groupings specified in the Diagnostic and
-Statistical Manual of Mental Disorders Fourth Edition (DSM-IV-TR) (add link to
-reference below). These code list summarises the approximate 300 unique mental
-health disorder codes in the full DSM-IV to a set to 9 major categories, and 37
-individual codes. Diagnoses are grouped under higher level categories, based on
-the DSM-IV. Code numbers have been assigned specifically for the PMHC MDS to
-create a logical ordering but are capable of being mapped to both DSM-IV and
-ICD-10 codes.
+Statistical Manual of Mental Disorders Fourth Edition (DSM-IV-TR). These code
+list summarises the approximate 300 unique mental health disorder codes in the
+full DSM-IV to a set to 9 major categories, and 37 individual codes. Diagnoses
+are grouped under higher level categories, based on the DSM-IV. Code numbers
+have been assigned specifically for the PMHC MDS to create a logical ordering
+but are capable of being mapped to both DSM-IV and ICD-10 codes.
 
 Options for recording Principal Diagnosis include the broad category ‘No formal
 mental disorder but subsyndromal problem’ (codes commencing with 9). These

@@ -33,7 +33,6 @@
     "titles": [ "practitioner_category", "Category" ],
     "dc:title": "Practitioner - Category",
     "schema:description": "The type or category of the practitioner, as represented by a code.",
-    "schema:disambiguatingDescription": "table/practitioner/category.rst",
     "schema:dateCreated": "2016-06-22",
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",

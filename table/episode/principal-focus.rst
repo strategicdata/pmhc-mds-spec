@@ -73,14 +73,19 @@ each Service Contact.
   that have some level of responsibility for the client’s treatment and/or
   well-being.
 
-4 - Complex care package for adults
-  The treatment plan for the client is primarily based around the delivery of
-  an individually tailored 'package' of services for an adult client with
-  severe and complex mental illness who is being managed principally within a
-  primary care setting. The overarching requirement is the episode of care aims
-  to bundle a range of services that extend beyond 'standard' service delivery
-  where this would not otherwise not sufficiently meet clinical needs.
-  
+4 - Complex Care Package
+  The treatment plan for the client is primarily based around the delivery of an
+  individually tailored ‘package’ of services for a client with severe and
+  complex mental illness who is being managed principally within a primary care
+  setting. The overarching requirement is that the client receives an
+  individually tailored ‘package’ of services that bundles a range of services
+  that extends beyond ‘standard’ service delivery and which is funded through
+  innovative, non-standard funding models.
+  Note: As outlined in the relevant guidance documentation, only three selected
+  PHN Lead Sites with responsibilities for trialling work in this area are
+  expected to deliver complex care packages. A wider roll-out may be undertaken
+  in the future pending results of the trial.
+
 5 - Child and youth-specific mental health services
   The treatment plan for the client is primarily based around the delivery of a
   range of services for children (0-11 years) or youth (aged 12-24 years) who
@@ -90,7 +95,7 @@ each Service Contact.
   non-clinical services and may include a significant component of clinical
   care coordination and liaison. Child and youth-specific mental health
   episodes have substantial flexibility in types of services actually delivered.
-  
+
 6 - Indigenous-specific services
   The treatment plan for the client is primarily based around delivery of
   mental health services that are specifically designed to provide culturally
