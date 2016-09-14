@@ -1,12 +1,14 @@
-The K10 Total score is based on the sum of K10 item 01 through 10 (range: 10-50). Items 11
-through 14 are excluded from the total because they are separate measures of disability
-associated with the problems referred to in the preceding ten items.
+The K10 Total score is based on the sum of K10 item 01 through 10 (range: 10-50).
+Items 11 through 14 are excluded from the total because they are separate
+measures of disability associated with the problems referred to in the preceding
+ten items.
 
-The Total score is computed using the equation shown below, with the result being rounded to
-the nearest whole number. If any item has not been completed (that is, has not been coded 1, 2,
-3, 4, 5), it is excluded from the calculation and not counted as a valid item. If more than one item
-is missing, the Total Score is set as missing.
+The Total score is computed using the equation shown below, with the result
+being rounded to the nearest whole number. If any item has not been completed
+(that is, has not been coded 1, 2, 3, 4, 5), it is excluded from the calculation
+and not counted as a valid item. If more than one item is missing, the Total
+Score is set as missing.
 
-Total score = (sum of item scores/number of valid completed items) x number of items
+Total score = (sum of item scores/number of valid completed items) x total number of items
 
 For the Total score, the missing value used should be 99.
