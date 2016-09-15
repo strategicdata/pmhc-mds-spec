@@ -19,8 +19,9 @@ CSV files should have the file extension .csv
 Multiple CSV files should be uploaded - one CSV file for each format described
 :ref:`below <files-to-upload>`.
 
-CSV files can compressed by zipping or tar/zipping before uploading, or they
-can be uploaded raw.
+The CSV files must be compressed into a single file by zipping before upload. The
+filename of the zip file doesn't matter as long as it has the file
+extension .zip
 
 Excel (XLSX)
 ^^^^^^^^^^^^
