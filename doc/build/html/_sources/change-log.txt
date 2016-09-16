@@ -1,8 +1,8 @@
 Change log
 ==========
 
-Updates between final draft version and Version 1
--------------------------------------------------
+18/9/2016 - Updates between final draft version and Version 1
+-------------------------------------------------------------
 
 * Reporting arrangements
 
@@ -54,8 +54,8 @@ Updates between final draft version and Version 1
 
 * Added :ref:`form_creation`
 
-Updates since last release
---------------------------
+9/8/2016 - Updates since last release
+-------------------------------------
 
 * Updated :ref:`data-model` diagrams including addition of collection occasions
 * Renumbered :ref:`dfn-organisation_type` response options

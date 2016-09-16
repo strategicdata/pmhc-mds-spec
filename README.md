@@ -50,7 +50,7 @@ publish	git@github.com:strategicdata/pmhc-mds-spec.git (push)
 This will:
 
 * Push the publish branch to our public git repo, which will automatically
-* prompt hub.docker.com to build the static in a docker container, which will automatically
+* prompt hub.docker.com to build the static in a docker container, which will automatically (https://hub.docker.com/r/stratdat/pmhc-mds-spec/)
 * prompt Docker Cloud to update the running containers
 
 ## Docker

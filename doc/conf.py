@@ -75,7 +75,7 @@ def get_version():
 version = "Version 1"
 
 # The full version, including alpha/beta/rc tags.
-release = version + " - DRAFT"
+release = version
 
 current_year = '2016-17'
 
@@ -308,7 +308,7 @@ if not on_rtd:  # only import and set the theme if we're building docs locally
     import sphinx_rtd_theme
     html_theme = 'sphinx_rtd_theme'
     html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
-    
+
 # For substitutions in docs
 # see https://github.com/hoccleve-archive/hocl.tk/blob/70b71b5a265d0b1d64c5cb6e43b686d03ead4078/docs/conf.py#L48
 
