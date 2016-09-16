@@ -28,8 +28,8 @@ Updates between final draft version and Version 1
     * :ref:`dfn-principal_focus` - 4 = 'Complex care package
       for adults' renamed 'Complex Care Package' and notes updated.
     * :ref:`dfn-principal_diagnosis` - 999 = 'Missing' response option added
-    * :ref:`dfn-service_contact_participants` - 4 = 'Other health professional or service
-      provider' response option added
+    * :ref:`dfn-service_contact_participants` - 4 = 'Other health professional or
+      service provider' response option added
     * :ref:`dfn-service_contact_participants` - 5 = 'Other' response option added
     * :ref:`dfn-service_contact_venue` - 99 = 'Not stated' response option added
     * Outcome Collection Occasion
