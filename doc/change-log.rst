@@ -1,17 +1,70 @@
 Change log
 ==========
 
+Updates between final draft version and Version 1
+-------------------------------------------------
+
+* Reporting arrangements
+
+  * :ref:`uploading_data` section expanded
+  * 'Upload frequency' section renamed :ref:`reporting_timeliness` and expanded
+
+* Data model and specifications
+
+  * Updated :ref:`data-model` diagrams including addition of collection occasion
+    total and sub scores
+  * Added :ref:`key-concepts` section
+  * Record formats
+
+    * Added lengths to all string types
+    * Added minimum and maximum values to number types
+    * Added links to Australian Bureau of Statistics (ABS) definitions
+    * :ref:`dfn-organisation_type` updated domain
+    * :ref:`dfn-country_of_birth` - Fully specified domain
+    * :ref:`dfn-main_lang_at_home` - Fully specified domain
+    * Episode - Client Consent to De-identified Data renamed :ref:`dfn-client_consent`
+    * :ref:`dfn-episode_completion_status` - Added blank as a valid response to mean that
+      the episode is still open
+    * :ref:`dfn-principal_focus` - 4 = 'Complex care package
+      for adults' renamed 'Complex Care Package' and notes updated.
+    * :ref:`dfn-principal_diagnosis` - 999 = 'Missing' response option added
+    * :ref:`dfn-service_contact_participants` - 4 = 'Other health professional or service
+      provider' response option added
+    * :ref:`dfn-service_contact_participants` - 5 = 'Other' response option added
+    * :ref:`dfn-service_contact_venue` - 99 = 'Not stated' response option added
+    * Outcome Collection Occasion
+
+      * Total scores and sub scores will be accepted in the short term
+        Individual item scores will eventually be required
+      * :ref:`dfn-k10p_score` added
+      * :ref:`dfn-k5_score` added
+      * :ref:`dfn-sdq_emotional_symptoms` added
+      * :ref:`dfn-sdq_conduct_problem` added
+      * :ref:`dfn-sdq_hyperactivity` added
+      * :ref:`dfn-sdq_peer_problem` added
+      * :ref:`dfn-sdq_prosocial` added
+      * :ref:`dfn-sdq_total` added
+      * :ref:`dfn-sdq_impact` added
+
+* :ref:`upload_specification`
+
+  * CSV files must be compressed into a single zip file before uploading
+  * Example organisation structure added
+  * All files/worksheet must be internally consistent
+
+* Added :ref:`form_creation`
+
 Updates since last release
 --------------------------
 
-* Updated :ref:`data-model` diagrams including additon of collection occasions
+* Updated :ref:`data-model` diagrams including addition of collection occasions
 * Renumbered :ref:`dfn-organisation_type` response options
 * Updated description of :ref:`practitioner-data-elements` record type
-* Removal of Episode - Start Date from the :ref:`episode-data-elements` record layout as it is derived from the first service contact 
+* Removal of Episode - Start Date from the :ref:`episode-data-elements` record layout as it is derived from the first service contact
 * Added :ref:`dfn-client_consent` field
 * :ref:`dfn-episode_completion_status`:
 
-  * Added option Episode closed administratively - client referred elsewhere 
+  * Added option Episode closed administratively - client referred elsewhere
   * Recoded Episode closed administratively - other reason
   * Updated explanations of response options.
 
@@ -19,13 +72,13 @@ Updates since last release
 * :ref:`dfn-service_contact_duration` added response options
 * :ref:`outcome-collection-occasion-data-elements`
 
-  * Updated definiton
+  * Updated definition
   * Added explicit record types for :ref:`k10p-data-elements`, :ref:`k5-data-elements`, and :ref:`sdq-data-elements`
 
 * :ref:`dfn-country_of_birth` now refers to recently released ABS 2016 release
-* :ref:`dfn-client_key` - Updated definiton
+* :ref:`dfn-client_key` - Updated definition
 * :ref:`dfn-main_lang_at_home` now refers to recently released ABS 2016 release
-* :ref:`dfn-episode_key` - Updated definiton
+* :ref:`dfn-episode_key` - Updated definition
 * :ref:`dfn-organisation_path` - Added definition
 * :ref:`dfn-atsi_cultural_training` - updated definition
 * :ref:`dfn-service_contact_type` - 8 = 'Cultural specific assistance NEC' response option updated definition

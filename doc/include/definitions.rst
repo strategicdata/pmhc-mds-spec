@@ -1128,7 +1128,7 @@ An indication that the client has consented to their anonymised data being provi
       extracts accessible by the Department of Health.
   
   2 - No
-      The client has consented to their anonymised data being provided to the
+      The client has not consented to their anonymised data being provided to the
       Department of Health for statistical purposes in planning and improving
       mental health services. The client's data will be excluded from reports and
       extracts accessible by the Department of Health.
@@ -2544,15 +2544,13 @@ The overall K10 score.
   measures of disability associated with the problems referred to in the preceding
   ten items.
   
-  The Total score is computed using the equation shown below, with the result
-  being rounded to the nearest whole number. If any item has not been completed
-  (that is, has not been coded 1, 2, 3, 4, 5), it is excluded from the calculation
-  and not counted as a valid item. If more than one item is missing, the Total
-  Score is set as missing.
+  The Total score is computed as the sum of the scores for items 1 to 10. If any
+  item has not been completed (that is, has not been coded 1, 2, 3, 4, 5), it is
+  excluded from the total with the proviso that a competed K10 with more than one
+  missing item is regarded as invalid.
   
-  Total score = (sum of item scores/number of valid completed items) x total number of items
-  
-  For the Total score, the missing value used should be 99.
+  If more than one item of items 1 to 10 are missing, the Total Score is set as
+  missing. Where this is the case, the missing value used should be 99.
   
 
 ----------

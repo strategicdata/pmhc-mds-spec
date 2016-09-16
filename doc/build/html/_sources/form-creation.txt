@@ -1,3 +1,5 @@
+.. _form_creation:
+
 Using the data specification to create client forms
 ===================================================
 

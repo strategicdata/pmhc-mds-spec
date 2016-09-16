@@ -91,6 +91,7 @@
 <li class="toctree-l1"><a class="reference internal" href="data-item-summary.html">Data item summary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="form-creation.html">Using the data specification to create client forms</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Change log</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#updates-between-final-draft-version-and-version-1">Updates between final draft version and Version 1</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#updates-since-last-release">Updates since last release</a></li>
 </ul>
 </li>
@@ -140,10 +141,66 @@
             
   <div class="section" id="change-log">
 <h1>Change log<a class="headerlink" href="#change-log" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="updates-between-final-draft-version-and-version-1">
+<h2>Updates between final draft version and Version 1<a class="headerlink" href="#updates-between-final-draft-version-and-version-1" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Reporting arrangements<ul>
+<li><a class="reference internal" href="reporting-arrangements.html#uploading-data"><span class="std std-ref">Uploading data</span></a> section expanded</li>
+<li>&#8216;Upload frequency&#8217; section renamed <a class="reference internal" href="reporting-arrangements.html#reporting-timeliness"><span class="std std-ref">Reporting timeliness</span></a> and expanded</li>
+</ul>
+</li>
+<li>Data model and specifications<ul>
+<li>Updated <a class="reference internal" href="data-model-and-specifications.html#data-model"><span class="std std-ref">Data model</span></a> diagrams including addition of collection occasion
+total and sub scores</li>
+<li>Added <a class="reference internal" href="data-model-and-specifications.html#key-concepts"><span class="std std-ref">Key concepts</span></a> section</li>
+<li>Record formats<ul>
+<li>Added lengths to all string types</li>
+<li>Added minimum and maximum values to number types</li>
+<li>Added links to Australian Bureau of Statistics (ABS) definitions</li>
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-organisation-type"><span class="std std-ref">Provider Organisation - Type</span></a> updated domain</li>
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-country-of-birth"><span class="std std-ref">Client - Country of Birth</span></a> - Fully specified domain</li>
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-main-lang-at-home"><span class="std std-ref">Client - Main Language Spoken at Home</span></a> - Fully specified domain</li>
+<li>Episode - Client Consent to De-identified Data renamed <a class="reference internal" href="data-model-and-specifications.html#dfn-client-consent"><span class="std std-ref">Episode - Client Consent to Anonymised Data</span></a></li>
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-episode-completion-status"><span class="std std-ref">Episode - Completion Status</span></a> - Added blank as a valid response to mean that
+the episode is still open</li>
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-principal-focus"><span class="std std-ref">Episode - Principal Focus of Treatment Plan</span></a> - 4 = &#8216;Complex care package
+for adults&#8217; renamed &#8216;Complex Care Package&#8217; and notes updated.</li>
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-principal-diagnosis"><span class="std std-ref">Episode - Principal Diagnosis</span></a> - 999 = &#8216;Missing&#8217; response option added</li>
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-participants"><span class="std std-ref">Service Contact - Participants</span></a> - 4 = &#8216;Other health professional or service
+provider&#8217; response option added</li>
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-participants"><span class="std std-ref">Service Contact - Participants</span></a> - 5 = &#8216;Other&#8217; response option added</li>
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-venue"><span class="std std-ref">Service Contact - Venue</span></a> - 99 = &#8216;Not stated&#8217; response option added</li>
+<li>Outcome Collection Occasion<ul>
+<li>Total scores and sub scores will be accepted in the short term
+Individual item scores will eventually be required</li>
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-k10p-score"><span class="std std-ref">K10+ - Score</span></a> added</li>
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-k5-score"><span class="std std-ref">K5 - Score</span></a> added</li>
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-sdq-emotional-symptoms"><span class="std std-ref">SDQ - Emotional Symptoms Scale</span></a> added</li>
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-sdq-conduct-problem"><span class="std std-ref">SDQ - Conduct Problem Scale</span></a> added</li>
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-sdq-hyperactivity"><span class="std std-ref">SDQ - Hyperactivity Scale</span></a> added</li>
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-sdq-peer-problem"><span class="std std-ref">SDQ - Peer Problem Scale</span></a> added</li>
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-sdq-prosocial"><span class="std std-ref">SDQ - Prosocial Scale</span></a> added</li>
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-sdq-total"><span class="std std-ref">SDQ - Total Difficulties Score</span></a> added</li>
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-sdq-impact"><span class="std std-ref">SDQ - Impact Score</span></a> added</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="upload-specification.html#upload-specification"><span class="std std-ref">Upload specification</span></a><ul>
+<li>CSV files must be compressed into a single zip file before uploading</li>
+<li>Example organisation structure added</li>
+<li>All files/worksheet must be internally consistent</li>
+</ul>
+</li>
+<li>Added <a class="reference internal" href="form-creation.html#form-creation"><span class="std std-ref">Using the data specification to create client forms</span></a></li>
+</ul>
+</div>
 <div class="section" id="updates-since-last-release">
 <h2>Updates since last release<a class="headerlink" href="#updates-since-last-release" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Updated <a class="reference internal" href="data-model-and-specifications.html#data-model"><span class="std std-ref">Data model</span></a> diagrams including additon of collection occasions</li>
+<li>Updated <a class="reference internal" href="data-model-and-specifications.html#data-model"><span class="std std-ref">Data model</span></a> diagrams including addition of collection occasions</li>
 <li>Renumbered <a class="reference internal" href="data-model-and-specifications.html#dfn-organisation-type"><span class="std std-ref">Provider Organisation - Type</span></a> response options</li>
 <li>Updated description of <a class="reference internal" href="data-model-and-specifications.html#practitioner-data-elements"><span class="std std-ref">Practitioner</span></a> record type</li>
 <li>Removal of Episode - Start Date from the <a class="reference internal" href="data-model-and-specifications.html#episode-data-elements"><span class="std std-ref">Episode</span></a> record layout as it is derived from the first service contact</li>
@@ -157,14 +214,14 @@
 <li>Added <a class="reference internal" href="data-model-and-specifications.html#dfn-mental-health-treatment-plan"><span class="std std-ref">Episode - GP Mental Health Treatment Plan Flag</span></a></li>
 <li><a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-duration"><span class="std std-ref">Service Contact - Duration</span></a> added response options</li>
 <li><a class="reference internal" href="data-model-and-specifications.html#outcome-collection-occasion-data-elements"><span class="std std-ref">Outcome Collection Occasion</span></a><ul>
-<li>Updated definiton</li>
+<li>Updated definition</li>
 <li>Added explicit record types for <a class="reference internal" href="data-model-and-specifications.html#k10p-data-elements"><span class="std std-ref">K10+</span></a>, <a class="reference internal" href="data-model-and-specifications.html#k5-data-elements"><span class="std std-ref">K5</span></a>, and <a class="reference internal" href="data-model-and-specifications.html#sdq-data-elements"><span class="std std-ref">SDQ</span></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="data-model-and-specifications.html#dfn-country-of-birth"><span class="std std-ref">Client - Country of Birth</span></a> now refers to recently released ABS 2016 release</li>
-<li><a class="reference internal" href="data-model-and-specifications.html#dfn-client-key"><span class="std std-ref">Client Key</span></a> - Updated definiton</li>
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-client-key"><span class="std std-ref">Client Key</span></a> - Updated definition</li>
 <li><a class="reference internal" href="data-model-and-specifications.html#dfn-main-lang-at-home"><span class="std std-ref">Client - Main Language Spoken at Home</span></a> now refers to recently released ABS 2016 release</li>
-<li><a class="reference internal" href="data-model-and-specifications.html#dfn-episode-key"><span class="std std-ref">Episode Key</span></a> - Updated definiton</li>
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-episode-key"><span class="std std-ref">Episode Key</span></a> - Updated definition</li>
 <li><a class="reference internal" href="data-model-and-specifications.html#dfn-organisation-path"><span class="std std-ref">Organisation Path</span></a> - Added definition</li>
 <li><a class="reference internal" href="data-model-and-specifications.html#dfn-atsi-cultural-training"><span class="std std-ref">Practitioner - ATSI Cultural Training</span></a> - updated definition</li>
 <li><a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-type"><span class="std std-ref">Service Contact - Type</span></a> - 8 = &#8216;Cultural specific assistance NEC&#8217; response option updated definition</li>

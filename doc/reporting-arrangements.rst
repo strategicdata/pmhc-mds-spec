@@ -1,6 +1,8 @@
 Reporting arrangements
 ======================
 
+.. _uploading_data:
+
 Uploading data
 --------------
 During the initial stage of implementing the PMHC MDS, PHNs and their
@@ -9,7 +11,7 @@ systems and upload to the PMHC MDS or manually create spreadsheets that can
 then be uploaded.
 
 The system is able to accept data for any period, either in its entirety or
-parially. Please note the section below regarding timeliness. 
+partially. Please note the section below regarding timeliness.
 
 Accepting data for any period allows organisations to upload corrections when
 erroneous data has been identified. Allowing partial uploads allows for
@@ -19,8 +21,9 @@ aggregate all data prior to upload.
 Where associated unique keys match (e.g. Patient Key or Episode Key)
 these records will be replaced, if the key is new, a new record will be created.
 
-Data may be uploaded in either Excel or CSV format and an upload
-specification will be provided to PHNs by August 2016. 
+Data may be uploaded in either Excel or CSV format.
+
+.. _reporting_timeliness:
 
 Reporting timeliness
 --------------------
@@ -45,7 +48,7 @@ provide data through that system until they are either ready to export data
 to the new upload interface or until the new data entry interface is
 available after a later stage of development. Once all ATAPS/MHSRRA
 organisations are submitting data to the PMHC MDS the ATAPS/MHSRRA MDS will
-be shut down. 
+be shut down.
 
 Data for programmes other than ATAPS/MHSRRA will have to be
 submitted via the PMHC MDS interface.
@@ -68,6 +71,3 @@ in existing client management systems. For those PHNs who do not upload via
 a client management system, documentation and support will be available to
 manually create spreadsheets. Once the upload system goes live in October
 support will be available to assist with uploading data.
-
-
-

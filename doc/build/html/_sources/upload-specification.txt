@@ -1,3 +1,5 @@
+.. _upload_specification:
+
 Upload specification
 ====================
 
@@ -77,7 +79,7 @@ Data elements for each file/worksheet are defined at :ref:`record-formats`.
 Each item is a column in the file/worksheet. The 'Field Name' should be used for
 the column headings.
 
-All files should be internally inconsistent. An example of what this means is
+All files must be internally consistent. An example of what this means is
 that for every row in the episode file/worksheet, there should be a
 corresponding client in the client file/worksheet.
 
