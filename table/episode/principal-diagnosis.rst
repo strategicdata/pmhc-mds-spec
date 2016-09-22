@@ -1,4 +1,4 @@
-Dignoses are grouped into 7 major categories:
+Diagnoses are grouped into 7 major categories:
 
 - 1xx - Anxiety disorders
 - 2xx - Affective (Mood) disorders
