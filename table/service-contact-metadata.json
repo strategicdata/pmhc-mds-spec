@@ -81,8 +81,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(1|2|3|4|5|6|7|8)$"
+      "base": "string"
     },
     "required": true
   },{
@@ -97,8 +96,7 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string",
-      "length": 4,
-      "format": "^[0-9]{4}$"
+      "length": 4
     }
   },{
     "name": "service_contact_modality",
@@ -110,8 +108,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(1|2|3|4)$"
+      "base": "string"
     },
     "required": true
   },{
@@ -123,8 +120,7 @@
     "schema:dateCreated": "2016-06-22",
     "schema:dateModified": "2016-06-08",
     "datatype": {
-      "base": "string",
-      "format": "^(1|2|3|4|5|9)$"
+      "base": "string"
     },
     "required": true
   },{
@@ -137,8 +133,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(1|2|3|4|5|6)$"
+      "base": "string"
     },
     "required": true
   },{
@@ -151,8 +146,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(1|2|3|4|5|6|7|8|9)$"
+      "base": "string"
     },
     "required": true
   },{
@@ -182,8 +176,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(1|2)$"
+      "base": "string"
     },
     "required": true
   },{
@@ -195,8 +188,7 @@
     "schema:dateCreated": "2016-07-08",
     "schema:dateModified": "2016-07-08",
     "datatype": {
-      "base": "string",
-      "format": "^(1|2|9)$"
+      "base": "string"
     },
     "required": true
   },{
@@ -209,8 +201,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(1|2)$"
+      "base": "string"
     },
     "required": true
   },{
@@ -222,8 +213,7 @@
     "schema:dateCreated": "2016-07-08",
     "schema:dateModified": "2016-07-08",
     "datatype": {
-      "base": "string",
-      "format": "^(1|2|3)$"
+      "base": "string"
     },
     "required": true
   },{

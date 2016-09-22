@@ -59,8 +59,7 @@
     "schema:dateCreated": "2016-07-08",
     "schema:dateModified": "2016-07-08",
     "datatype": {
-      "base": "string",
-      "format": "^(1|2|3)$"
+      "base": "string"
     },
     "required": true
   },{
@@ -72,8 +71,7 @@
     "schema:dateCreated": "2016-07-08",
     "schema:dateModified": "2016-07-08",
     "datatype": {
-      "base": "string",
-      "format": "^(PC101|PC201|PY101|PY201|YR101|YR201)$"
+      "base": "string"
     },
     "required": true
   },{
@@ -86,8 +84,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(0|1|2|7|9)$"
+      "base": "string"
     }
   },{
     "name": "sdq_item2",
@@ -99,8 +96,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(0|1|2|7|9)$"
+      "base": "string"
     }
   },{
     "name": "sdq_item3",
@@ -112,8 +108,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(0|1|2|7|9)$"
+      "base": "string"
     }
   },{
     "name": "sdq_item4",
@@ -125,8 +120,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(0|1|2|7|9)$"
+      "base": "string"
     }
   },{
     "name": "sdq_item5",
@@ -138,8 +132,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(0|1|2|7|9)$"
+      "base": "string"
     }
   },{
     "name": "sdq_item6",
@@ -151,8 +144,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(0|1|2|7|9)$"
+      "base": "string"
     }
   },{
     "name": "sdq_item7",
@@ -164,8 +156,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(0|1|2|7|9)$"
+      "base": "string"
     }
   },{
     "name": "sdq_item8",
@@ -177,8 +168,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(0|1|2|7|9)$"
+      "base": "string"
     }
   },{
     "name": "sdq_item9",
@@ -190,8 +180,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(0|1|2|7|9)$"
+      "base": "string"
     }
   },{
     "name": "sdq_item10",
@@ -203,8 +192,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(0|1|2|7|9)$"
+      "base": "string"
     }
   },{
     "name": "sdq_item11",
@@ -216,8 +204,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(0|1|2|7|9)$"
+      "base": "string"
     }
   },{
     "name": "sdq_item12",
@@ -229,8 +216,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(0|1|2|7|9)$"
+      "base": "string"
     }
   },{
     "name": "sdq_item13",
@@ -242,8 +228,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(0|1|2|7|9)$"
+      "base": "string"
     }
   },{
     "name": "sdq_item14",
@@ -255,8 +240,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(0|1|2|7|9)$"
+      "base": "string"
     }
   },{
     "name": "sdq_item15",
@@ -268,8 +252,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(0|1|2|7|9)$"
+      "base": "string"
     }
   },{
     "name": "sdq_item16",
@@ -281,8 +264,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(0|1|2|7|9)$"
+      "base": "string"
     }
   },{
     "name": "sdq_item17",
@@ -294,8 +276,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(0|1|2|7|9)$"
+      "base": "string"
     }
   },{
     "name": "sdq_item18",
@@ -307,8 +288,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(0|1|2|7|9)$"
+      "base": "string"
     }
   },{
     "name": "sdq_item19",
@@ -320,8 +300,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(0|1|2|7|9)$"
+      "base": "string"
     }
   },{
     "name": "sdq_item20",
@@ -333,8 +312,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(0|1|2|7|9)$"
+      "base": "string"
     }
   },{
     "name": "sdq_item21",
@@ -346,8 +324,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(0|1|2|7|9)$"
+      "base": "string"
     }
   },{
     "name": "sdq_item22",
@@ -359,8 +336,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(0|1|2|7|9)$"
+      "base": "string"
     }
   },{
     "name": "sdq_item23",
@@ -372,8 +348,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(0|1|2|7|9)$"
+      "base": "string"
     }
   },{
     "name": "sdq_item24",
@@ -385,8 +360,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(0|1|2|7|9)$"
+      "base": "string"
     }
   },{
     "name": "sdq_item25",
@@ -398,8 +372,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(0|1|2|7|9)$"
+      "base": "string"
     }
   },{
     "name": "sdq_item26",
@@ -411,8 +384,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(0|1|2|3|7|9)$"
+      "base": "string"
     }
   },{
     "name": "sdq_item27",
@@ -424,8 +396,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(0|1|2|3|7|8|9)$"
+      "base": "string"
     }
   },{
     "name": "sdq_item28",
@@ -437,8 +408,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(0|1|2|3|7|8|9)$"
+      "base": "string"
     }
   },{
     "name": "sdq_item29",
@@ -450,8 +420,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(0|1|2|3|7|8|9)$"
+      "base": "string"
     }
   },{
     "name": "sdq_item30",
@@ -463,8 +432,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(0|1|2|3|7|8|9)$"
+      "base": "string"
     }
   },{
     "name": "sdq_item31",
@@ -476,8 +444,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(0|1|2|3|7|8|9)$"
+      "base": "string"
     }
   },{
     "name": "sdq_item32",
@@ -489,8 +456,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(0|1|2|3|7|8|9)$"
+      "base": "string"
     }
   },{
     "name": "sdq_item33",
@@ -502,8 +468,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(0|1|2|3|7|8|9)$"
+      "base": "string"
     }
   },{
     "name": "sdq_item34",
@@ -515,8 +480,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(0|1|2|3|4|7|8|9)$"
+      "base": "string"
     }
   },{
     "name": "sdq_item35",
@@ -528,8 +492,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(0|1|2|3|7|8|9)$"
+      "base": "string"
     }
   },{
     "name": "sdq_item36",
@@ -541,8 +504,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(0|1|2|7|8|9)$"
+      "base": "string"
     }
   },{
     "name": "sdq_item37",
@@ -554,8 +516,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(0|1|2|7|8|9)$"
+      "base": "string"
     }
   },{
     "name": "sdq_item38",
@@ -567,8 +528,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(0|1|2|7|8|9)$"
+      "base": "string"
     }
   },{
     "name": "sdq_item39",
@@ -580,8 +540,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(0|1|2|7|8|9)$"
+      "base": "string"
     }
   },{
     "name": "sdq_item40",
@@ -593,8 +552,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(0|1|2|7|8|9)$"
+      "base": "string"
     }
   },{
     "name": "sdq_item41",
@@ -606,8 +564,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(0|1|2|7|8|9)$"
+      "base": "string"
     }
   },{
     "name": "sdq_item42",
@@ -619,8 +576,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(0|1|2|7|8|9)$"
+      "base": "string"
     }
   },{
     "name": "sdq_emotional_symptoms",

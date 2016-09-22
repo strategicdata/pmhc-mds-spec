@@ -59,8 +59,7 @@
     "schema:dateCreated": "2016-07-08",
     "schema:dateModified": "2016-07-08",
     "datatype": {
-      "base": "string",
-      "format": "^(1|2|3)$"
+      "base": "string"
     },
     "required": true
   },{
@@ -72,8 +71,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(1|2|3|4|5|6|9)$"
+      "base": "string"
     },
     "required": false
   },{
@@ -85,8 +83,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(1|2|3|4|5|6|9)$"
+      "base": "string"
     },
     "required": false
   },{
@@ -98,8 +95,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(1|2|3|4|5|6|9)$"
+      "base": "string"
     },
     "required": false
   },{
@@ -111,8 +107,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(1|2|3|4|5|6|9)$"
+      "base": "string"
     },
     "required": false
   },{
@@ -124,8 +119,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(1|2|3|4|5|6|9)$"
+      "base": "string"
     },
     "required": false
   },{
@@ -137,8 +131,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(1|2|3|4|5|6|9)$"
+      "base": "string"
     },
     "required": false
   },{
@@ -150,8 +143,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(1|2|3|4|5|6|9)$"
+      "base": "string"
     },
     "required": false
   },{
@@ -163,8 +155,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(1|2|3|4|5|6|9)$"
+      "base": "string"
     },
     "required": false
   },{
@@ -176,8 +167,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(1|2|3|4|5|6|9)$"
+      "base": "string"
     },
     "required": false
   },{
@@ -189,8 +179,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(1|2|3|4|5|6|9)$"
+      "base": "string"
     },
     "required": false
   },{
@@ -244,8 +233,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(1|2|3|4|5|6|9)$"
+      "base": "string"
     },
     "required": true
   },{
