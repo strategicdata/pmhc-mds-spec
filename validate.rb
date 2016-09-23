@@ -216,6 +216,16 @@ class PMHC < Csvlint::Cli
           end
         end
 
+        # Episode end date should be after referral date
+        if eed != nil and rd != nil
+          ee_date = Date.new( eed[:year], eed[:month], eed[:day] )
+          r_date = Date.new( rd[:year], rd[:month], rd[:day] )
+          if ( r_date <=> ee_date ) > 0
+            validator.build_errors(:invalid_episode_end_date, :episode, current_line,
+              episode_end_date_index, eed)
+          end
+        end
+
         current_line += 1
       end
 
