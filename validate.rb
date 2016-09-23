@@ -140,6 +140,7 @@ class PMHC < Csvlint::Cli
       if    csv =~ /clients/ then validate_clients( validator, data )
       elsif csv =~ /episodes/ then validate_episodes( validator, data )
       elsif csv =~ /service-contacts/ then validate_service_contacts( validator, data )
+      elsif csv =~ /practitioners/ then validate_practitioners( validator, data )
       elsif csv =~ /k10p/ then validate_k10p( validator, data )
       elsif csv =~ /k5/ then validate_k5( validator, data )
       elsif csv =~ /sdq/ then validate_sdq( validator, data )
@@ -258,6 +259,26 @@ class PMHC < Csvlint::Cli
           if ( today <=> date ) < 0
             validator.build_errors(:future_date_not_allowed, :service_contact, current_line,
               service_contact_date_index, scd)
+          end
+        end
+        current_line += 1
+      end
+    end
+
+    def validate_practitioners(validator, data)
+      header = data.shift
+      yob_index = header.index("practitioner_year_of_birth")
+
+      today = Date.today
+
+      current_line = 1
+      data.each do |row|
+        # Year of birth cannot be in the future
+        yob = row[yob_index]
+        unless yob == nil
+          if ( yob[:year] > today.year )
+            validator.build_errors(:future_year_not_allowed, :practitioner, current_line,
+              yob_index, yob)
           end
         end
         current_line += 1
