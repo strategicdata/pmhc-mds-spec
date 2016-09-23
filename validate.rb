@@ -3,6 +3,7 @@
 require 'csvlint/cli'
 require 'pp'
 require 'json'
+require 'date'
 
 class PMHC < Csvlint::Cli
 
@@ -13,10 +14,11 @@ class PMHC < Csvlint::Cli
   def validate
     v = verify()
 
+    results = "{\"results\": [" + @results.join(",") + "]}"
+
     if v == true
       puts "Data is valid"
     else
-      results = "{\"results\": [" + @results.join(",") + "]}"
       json_results = JSON.parse(results)
 
       json_results["results"].each do |result|
@@ -135,11 +137,34 @@ class PMHC < Csvlint::Cli
     def validate_pmhc(validator, csv)
       data = validator.data
 
-      if csv =~ /episodes/ then validate_episodes( validator, data )
+      if    csv =~ /clients/ then validate_clients( validator, data )
+      elsif csv =~ /episodes/ then validate_episodes( validator, data )
       elsif csv =~ /service-contacts/ then validate_service_contacts( validator, data )
       elsif csv =~ /k10p/ then validate_k10p( validator, data )
       elsif csv =~ /k5/ then validate_k5( validator, data )
       elsif csv =~ /sdq/ then validate_sdq( validator, data )
+      end
+    end
+
+    def validate_clients(validator, data)
+      header = data.shift
+      dob_index = header.index("date_of_birth")
+
+      today = Date.today
+
+      current_line = 1
+      data.each do |row|
+        # Date of birth cannot be in the future
+        dob = row[dob_index]
+        unless dob == nil
+          date = Date.new( dob[:year], dob[:month], dob[:day] )
+
+          if ( today <=> date ) < 0
+            validator.build_errors(:future_date_not_allowed, :client, current_line,
+              dob_index, dob)
+          end
+        end
+        current_line += 1
       end
     end
 
@@ -149,6 +174,10 @@ class PMHC < Csvlint::Cli
       client_consent_index = header.index("client_consent")
       referrer_organisation_type_index = header.index("referrer_organisation_type")
       referrer_profession_index = header.index("referrer_profession")
+      episode_end_date_index = header.index("episode_end_date")
+      referral_date_index = header.index("referral_date")
+
+      today = Date.today
 
       current_line = 1
       data.each do |row|
@@ -156,32 +185,69 @@ class PMHC < Csvlint::Cli
         # Would be nice if this wasn't hard coded. If we could get the value from client-consent.csv
         # Leave this exercise to someone with more Ruby knowldege than me. - JW
         unless row[client_consent_index] == "1"
-         validator.build_errors(:invalid_consent, :episode, current_line, client_consent_index, row[client_consent_index])
+          validator.build_errors(:invalid_consent, :episode, current_line,
+            client_consent_index, row[client_consent_index])
         end
 
-        # Referrer Organisation Type of N/A - Self referral should only be selected
-        # where referrer profession is also Self referral
+        # Referrer Organisation Type == 'N/A - Self referral' should only be selected
+        # where referrer profession is also 'Self referral'
         if ( row[referrer_organisation_type_index] == "98" and row[referrer_profession_index] != "98" ) or
           ( row[referrer_organisation_type_index] != "98" and row[referrer_profession_index] == "98" )
           validator.build_errors(:invalid_self_referral, :episode, current_line, referrer_organisation_type_index, row[referrer_organisation_type_index])
         end
+
+        # Episode end date cannot be in the future
+        eed = row[episode_end_date_index]
+        unless eed == nil
+          date = Date.new( eed[:year], eed[:month], eed[:day] )
+          if ( today <=> date ) < 0
+            validator.build_errors(:future_date_not_allowed, :episode, current_line,
+              episode_end_date_index, eed)
+          end
+        end
+
+        # Referral date cannot be in the future
+        rd = row[referral_date_index]
+        unless rd == nil
+          date = Date.new( rd[:year], rd[:month], rd[:day] )
+          if ( today <=> date ) < 0
+            validator.build_errors(:future_date_not_allowed, :episode, current_line,
+              referral_date_index, rd)
+          end
+        end
+
         current_line += 1
       end
 
     end
 
     def validate_service_contacts(validator, data)
-      # If Service Contact Participants == Individual Client, Client Participation
-      # Indicator must = 1
+
       header = data.shift
       participation_indicator_index = header.index( "service_contact_participation_indicator" )
       participants_index = header.index( "service_contact_participants" )
+      service_contact_date_index = header.index( "service_contact_date")
+
+      today = Date.today
 
       current_line = 1
       data.each do |row|
+        # If Service Contact Participants == Individual Client, Client Participation
+        # Indicator must = 1
         if row[participants_index] == "1"
           unless row[participation_indicator_index] == "1"
-           validator.build_errors(:invalid_participation_indicator, :service_contact, current_line, participation_indicator_index, row[participation_indicator_index])
+           validator.build_errors(:invalid_participation_indicator, :service_contact,
+             current_line, participation_indicator_index, row[participation_indicator_index])
+          end
+        end
+
+        # Service contact date cannot be in the future
+        scd = row[service_contact_date_index]
+        unless scd == nil
+          date = Date.new( scd[:year], scd[:month], scd[:day] )
+          if ( today <=> date ) < 0
+            validator.build_errors(:future_date_not_allowed, :service_contact, current_line,
+              service_contact_date_index, scd)
           end
         end
         current_line += 1
@@ -207,6 +273,10 @@ class PMHC < Csvlint::Cli
     def validate_kessler(validator, data, measure, scales, items )
       header = data.shift
 
+      measure_date_index = header.index("measure_date")
+
+      today = Date.today
+
       current_line = 1
       data.each do |row|
         # Must use either item scores or total scores, not both
@@ -231,6 +301,16 @@ class PMHC < Csvlint::Cli
           validator.build_errors(:item_scores_and_total_scores_used, "#{measure}", current_line, item_index, row[item_index])
         end
 
+        # Measure date cannot be in the future
+        md = row[measure_date_index]
+        unless md == nil
+          date = Date.new( md[:year], md[:month], md[:day] )
+          if ( today <=> date ) < 0
+            validator.build_errors(:future_date_not_allowed, "#{measure}", current_line,
+              measure_date_index, md)
+          end
+        end
+
         current_line += 1
       end
     end
@@ -249,22 +329,29 @@ class PMHC < Csvlint::Cli
 
       header = data.shift
       version_index = header.index("sdq_version")
+      measure_date_index = header.index("measure_date")
+
+      today = Date.today
 
       current_line = 1
       data.each do |row|
         valid_items = versions[row[version_index]]
 
-        # Must use either item scores or total scores, not both
-        using_item_scores = 0
-        for i in 1..42
-          item_index = header.index("sdq_item#{i}")
-          if valid_items.include?(i)
-            unless row[item_index] == "9"
-              using_item_scores = 1
-            end
-          else
-            unless row[item_index] == "9"
-              validator.build_errors(:invalid_sdq_item_included, :sdq, current_line, item_index, row[item_index])
+        # Error should be thrown through foreign key checking if the version is
+        # not valid. We don't want to double up on error messages.
+        unless valid_items == nil
+          # Check the items provided are valid for the sdq version
+          using_item_scores = 0
+          for i in 1..42
+            item_index = header.index("sdq_item#{i}")
+            if valid_items.include?(i)
+              unless row[item_index] == "9"
+                using_item_scores = 1
+              end
+            else
+              unless row[item_index] == "9"
+                validator.build_errors(:invalid_sdq_item_included, :sdq, current_line, item_index, row[item_index])
+              end
             end
           end
         end
@@ -281,6 +368,16 @@ class PMHC < Csvlint::Cli
 
         if using_item_scores == 1 and using_total_scores == 1
           validator.build_errors(:item_scores_and_total_scores_used, :sdq, current_line, item_index, row[item_index])
+        end
+
+        # Measure date cannot be in the future
+        md = row[measure_date_index]
+        unless md == nil
+          date = Date.new( md[:year], md[:month], md[:day] )
+          if ( today <=> date ) < 0
+            validator.build_errors(:future_date_not_allowed, :sdq, current_line,
+              measure_date_index, md)
+          end
         end
 
         current_line += 1
