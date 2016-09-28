@@ -7,7 +7,7 @@ require 'date'
 
 class PMHC < Csvlint::Cli
 
-  attr_accessor :results
+  attr_accessor :results, :validators
 
   include Csvlint::ErrorCollector
 
@@ -53,6 +53,8 @@ class PMHC < Csvlint::Cli
     def verify(source = nil)
       valid = true
       @results = []
+      @validators = Hash.new
+
       schema_file = "pmhc-metadata.json"
       @schema = get_schema(schema_file)
       valid &= fetch_schema_tables(@schema, {})
@@ -137,13 +139,27 @@ class PMHC < Csvlint::Cli
     def validate_pmhc(validator, csv)
       data = validator.data
 
-      if    csv =~ /clients/ then validate_clients( validator, data )
-      elsif csv =~ /episodes/ then validate_episodes( validator, data )
-      elsif csv =~ /service-contacts/ then validate_service_contacts( validator, data )
-      elsif csv =~ /practitioners/ then validate_practitioners( validator, data )
-      elsif csv =~ /k10p/ then validate_k10p( validator, data )
-      elsif csv =~ /k5/ then validate_k5( validator, data )
-      elsif csv =~ /sdq/ then validate_sdq( validator, data )
+      if    csv =~ /clients/
+        validate_clients( validator, data )
+        @validators['clients'] = validator
+      elsif csv =~ /episodes/
+        validate_episodes( validator, data )
+        @validators['episodes'] = validator
+      elsif csv =~ /service-contacts/
+        validate_service_contacts( validator, data )
+        @validators['service_contacts'] = validator
+      elsif csv =~ /practitioners/
+        validate_practitioners( validator, data )
+        @validators['practitioners'] = validator
+      elsif csv =~ /k10p/
+        validate_k10p( validator, data )
+        @validators['k10p'] = validator
+      elsif csv =~ /k5/
+        validate_k5( validator, data )
+        @validators['k5'] = validator
+      elsif csv =~ /sdq/
+        validate_sdq( validator, data )
+        @validators['sdq'] = validator
       end
     end
 
@@ -167,16 +183,18 @@ class PMHC < Csvlint::Cli
         end
         current_line += 1
       end
+
+      data.unshift(header)
     end
 
     def validate_episodes(validator, data)
-
       header = data.shift
       client_consent_index = header.index("client_consent")
       referrer_organisation_type_index = header.index("referrer_organisation_type")
       referrer_profession_index = header.index("referrer_profession")
       episode_end_date_index = header.index("episode_end_date")
       referral_date_index = header.index("referral_date")
+      episode_completion_status_index = header.index("episode_completion_status")
 
       today = Date.today
 
@@ -205,6 +223,21 @@ class PMHC < Csvlint::Cli
             validator.build_errors(:future_date_not_allowed, :episode, current_line,
               episode_end_date_index, eed)
           end
+
+          # Where an episode has ended a completion status should be recorded
+          if row[episode_completion_status_index] == nil
+            validator.build_errors(:invalid_episode_completion_status, :episode,
+              current_line, episode_completion_status_index, row[episode_completion_status_index])
+          end
+        end
+
+        # If a completion status is recorded episode end date should be recorded
+        unless row[episode_completion_status_index] == nil
+          if eed == nil
+            validator.build_errors(:invalid_episode_completion_status, :episode,
+              current_line, episode_completion_status_index, row[episode_completion_status_index])
+
+          end
         end
 
         # Referral date cannot be in the future
@@ -230,10 +263,10 @@ class PMHC < Csvlint::Cli
         current_line += 1
       end
 
+      data.unshift(header)
     end
 
     def validate_service_contacts(validator, data)
-
       header = data.shift
       participation_indicator_index = header.index( "service_contact_participation_indicator" )
       participants_index = header.index( "service_contact_participants" )
@@ -241,6 +274,15 @@ class PMHC < Csvlint::Cli
       modality_index = header.index( "service_contact_modality")
       venue_index = header.index( "service_contact_venue")
       postcode_index = header.index( "service_contact_postcode")
+      service_contact_final_index = header.index( "service_contact_final")
+      episode_key_index = header.index( "episode_key")
+
+      episode_validator = @validators['episodes']
+      episode_data = episode_validator.data
+      episode_header = episode_data.shift
+      episode_episode_key_index = episode_header.index("episode_key")
+      episode_end_date_index = episode_header.index("episode_end_date")
+      episode_completion_status_index = episode_header.index("episode_completion_status")
 
       today = Date.today
 
@@ -291,10 +333,44 @@ class PMHC < Csvlint::Cli
           end
         end
 
+        episode_current_line = 1
+        episode_data.each do |episode_row|
+          if episode_row[episode_episode_key_index] == row[episode_key_index]
+            # Where service contact final is recorded as 1 (No further services planned):
+            #  - the date of the final service contact should be recorded as
+            #    the episode end date
+            #  - the episode completion status should be recorded using one of the
+            #    treatment concluded responses
+            if row[service_contact_final_index] == "1"
+              unless episode_row[episode_end_date_index] == scd
+                validator.build_errors(:invalid_service_contact_final, :service_contact,
+                  current_line, service_contact_final_index, row[service_contact_final_index])
+              end
 
+
+            end
+
+            eed = episode_row[episode_end_date_index]
+            unless eed == nil
+              unless scd == nil
+                episode_end_date = Date.new( eed[:year], eed[:month], eed[:day] )
+                sc_date = Date.new( scd[:year], scd[:month], scd[:day] )
+
+                if ( sc_date <=> episode_end_date ) > 0
+                  validator.build_errors(:episode_already_concluded, :service_contact,
+                    current_line, service_contact_date_index, row[service_contact_date_index])
+                end
+              end
+            end
+          end
+
+          episode_current_line += 1
+        end
 
         current_line += 1
       end
+
+      data.unshift(header)
     end
 
     def validate_practitioners(validator, data)
@@ -315,6 +391,8 @@ class PMHC < Csvlint::Cli
         end
         current_line += 1
       end
+
+      data.unshift(header)
     end
 
     def validate_k10p(validator, data)
@@ -376,6 +454,8 @@ class PMHC < Csvlint::Cli
 
         current_line += 1
       end
+
+      data.unshift(header)
     end
 
     def validate_sdq(validator, data)
@@ -445,6 +525,8 @@ class PMHC < Csvlint::Cli
 
         current_line += 1
       end
+
+      data.unshift(header)
     end
 end
 
