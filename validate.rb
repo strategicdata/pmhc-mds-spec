@@ -364,7 +364,7 @@ class PMHC < Csvlint::Cli
           end
         end
 
-        episode_validate = nil
+        episode_validator = nil
         unless @validators['episodes']  == nil
           episode_validator = @validators['episodes']
           episode_data = episode_validator.data
@@ -456,6 +456,7 @@ class PMHC < Csvlint::Cli
       header = data.shift
 
       measure_date_index = header.index("measure_date")
+      episode_key_index = header.index("episode_key")
 
       today = Date.today
 
@@ -485,12 +486,39 @@ class PMHC < Csvlint::Cli
 
         # Measure date cannot be in the future
         md = row[measure_date_index]
+        measure_date = nil
         unless md == nil
-          date = Date.new( md[:year], md[:month], md[:day] )
-          if ( today <=> date ) < 0
+          measure_date = Date.new( md[:year], md[:month], md[:day] )
+          if ( today <=> measure_date ) < 0
             validator.build_errors(:future_date_not_allowed, "#{measure}", current_line,
               measure_date_index, md)
           end
+        end
+
+        episode_validator = nil
+        unless @validators['episodes']  == nil
+          episode_validator = @validators['episodes']
+          episode_data = episode_validator.data
+          episode_header = episode_data.shift
+          episode_episode_key_index = episode_header.index("episode_key")
+          referral_date_index = episode_header.index("referral_date")
+
+          episode_current_line = 1
+          episode_data.each do |episode_row|
+            if episode_row[episode_episode_key_index] == row[episode_key_index]
+              rd = episode_row[referral_date_index]
+              unless ( rd == nil and measure_date == nil )
+                referral_date = Date.new( rd[:year], rd[:month], rd[:day] )
+                if ( measure_date <=> referral_date ) < 0
+                  validator.build_errors(:invalid_measure_date, "#{measure}", current_line,
+                    measure_date_index, md)
+                end
+              end
+              break
+            end
+          end
+
+          episode_data.unshift(episode_header)
         end
 
         current_line += 1
@@ -514,6 +542,7 @@ class PMHC < Csvlint::Cli
       header = data.shift
       version_index = header.index("sdq_version")
       measure_date_index = header.index("measure_date")
+      episode_key_index = header.index("episode_key")
 
       today = Date.today
 
@@ -556,12 +585,39 @@ class PMHC < Csvlint::Cli
 
         # Measure date cannot be in the future
         md = row[measure_date_index]
+        measure_date = nil
         unless md == nil
-          date = Date.new( md[:year], md[:month], md[:day] )
-          if ( today <=> date ) < 0
+          measure_date = Date.new( md[:year], md[:month], md[:day] )
+          if ( today <=> measure_date ) < 0
             validator.build_errors(:future_date_not_allowed, :sdq, current_line,
               measure_date_index, md)
           end
+        end
+
+        episode_validator = nil
+        unless @validators['episodes']  == nil
+          episode_validator = @validators['episodes']
+          episode_data = episode_validator.data
+          episode_header = episode_data.shift
+          episode_episode_key_index = episode_header.index("episode_key")
+          referral_date_index = episode_header.index("referral_date")
+
+          episode_current_line = 1
+          episode_data.each do |episode_row|
+            if episode_row[episode_episode_key_index] == row[episode_key_index]
+              rd = episode_row[referral_date_index]
+              unless ( rd == nil and measure_date == nil )
+                referral_date = Date.new( rd[:year], rd[:month], rd[:day] )
+                if ( measure_date <=> referral_date ) < 0
+                  validator.build_errors(:invalid_measure_date, :sdq, current_line,
+                    measure_date_index, md)
+                end
+              end
+              break
+            end
+          end
+
+          episode_data.unshift(episode_header)
         end
 
         current_line += 1
