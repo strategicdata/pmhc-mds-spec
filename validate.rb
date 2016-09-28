@@ -195,6 +195,8 @@ class PMHC < Csvlint::Cli
       episode_end_date_index = header.index("episode_end_date")
       referral_date_index = header.index("referral_date")
       episode_completion_status_index = header.index("episode_completion_status")
+      income_source_index = header.index("income_source")
+      client_key_index = header.index("client_key")
 
       today = Date.today
 
@@ -260,6 +262,42 @@ class PMHC < Csvlint::Cli
           end
         end
 
+        client_validator = nil
+        unless @validators['clients']  == nil
+          client_validator = @validators['clients']
+          client_data = client_validator.data
+          client_header = client_data.shift
+          client_client_key_index = client_header.index("client_key")
+          date_of_birth_index = client_header.index("date_of_birth")
+
+          client_current_line = 1
+          client_data.each do |client_row|
+            if client_row[client_client_key_index] == row[client_key_index]
+              # Source of Cash Income is not applicable where a person is aged less
+              # than 16 years
+              dob = client_row[date_of_birth_index]
+              unless dob == nil
+                dob_date = Date.new(dob[:year], dob[:month], dob[:day])
+                if row[income_source_index] == nil
+                  if age_in_completed_years( dob_date, today ) >= 16
+                    validator.build_errors(:invalid_source_of_cash_income, :episode,
+                      current_line, income_source_index, row[income_source_index])
+                  end
+                else
+                  if age_in_completed_years( dob_date, today ) < 16
+                    validator.build_errors(:invalid_source_of_cash_income, :episode,
+                      current_line, income_source_index, row[income_source_index])
+                  end
+                end
+              end
+            end
+
+            client_current_line += 1
+          end
+
+          client_data.unshift(client_header)
+        end
+
         current_line += 1
       end
 
@@ -276,13 +314,6 @@ class PMHC < Csvlint::Cli
       postcode_index = header.index( "service_contact_postcode")
       service_contact_final_index = header.index( "service_contact_final")
       episode_key_index = header.index( "episode_key")
-
-      episode_validator = @validators['episodes']
-      episode_data = episode_validator.data
-      episode_header = episode_data.shift
-      episode_episode_key_index = episode_header.index("episode_key")
-      episode_end_date_index = episode_header.index("episode_end_date")
-      episode_completion_status_index = episode_header.index("episode_completion_status")
 
       today = Date.today
 
@@ -333,38 +364,48 @@ class PMHC < Csvlint::Cli
           end
         end
 
-        episode_current_line = 1
-        episode_data.each do |episode_row|
-          if episode_row[episode_episode_key_index] == row[episode_key_index]
-            # Where service contact final is recorded as 1 (No further services planned):
-            #  - the date of the final service contact should be recorded as
-            #    the episode end date
-            #  - the episode completion status should be recorded using one of the
-            #    treatment concluded responses
-            if row[service_contact_final_index] == "1"
-              unless episode_row[episode_end_date_index] == scd
-                validator.build_errors(:invalid_service_contact_final, :service_contact,
-                  current_line, service_contact_final_index, row[service_contact_final_index])
+        episode_validate = nil
+        unless @validators['episodes']  == nil
+          episode_validator = @validators['episodes']
+          episode_data = episode_validator.data
+          episode_header = episode_data.shift
+          episode_episode_key_index = episode_header.index("episode_key")
+          episode_end_date_index = episode_header.index("episode_end_date")
+          episode_completion_status_index = episode_header.index("episode_completion_status")
+
+          episode_current_line = 1
+          episode_data.each do |episode_row|
+            if episode_row[episode_episode_key_index] == row[episode_key_index]
+              # Where service contact final is recorded as 1 (No further services planned):
+              #  - the date of the final service contact should be recorded as
+              #    the episode end date
+              #  - the episode completion status should be recorded using one of the
+              #    treatment concluded responses
+              if row[service_contact_final_index] == "1"
+                unless episode_row[episode_end_date_index] == scd
+                  validator.build_errors(:invalid_service_contact_final, :service_contact,
+                    current_line, service_contact_final_index, row[service_contact_final_index])
+                end
               end
 
+              eed = episode_row[episode_end_date_index]
+              unless eed == nil
+                unless scd == nil
+                  episode_end_date = Date.new( eed[:year], eed[:month], eed[:day] )
+                  sc_date = Date.new( scd[:year], scd[:month], scd[:day] )
 
-            end
-
-            eed = episode_row[episode_end_date_index]
-            unless eed == nil
-              unless scd == nil
-                episode_end_date = Date.new( eed[:year], eed[:month], eed[:day] )
-                sc_date = Date.new( scd[:year], scd[:month], scd[:day] )
-
-                if ( sc_date <=> episode_end_date ) > 0
-                  validator.build_errors(:episode_already_concluded, :service_contact,
-                    current_line, service_contact_date_index, row[service_contact_date_index])
+                  if ( sc_date <=> episode_end_date ) > 0
+                    validator.build_errors(:episode_already_concluded, :service_contact,
+                      current_line, service_contact_date_index, row[service_contact_date_index])
+                  end
                 end
               end
             end
+
+            episode_current_line += 1
           end
 
-          episode_current_line += 1
+          episode_data.unshift(episode_header)
         end
 
         current_line += 1
@@ -527,6 +568,17 @@ class PMHC < Csvlint::Cli
       end
 
       data.unshift(header)
+    end
+
+    def age_in_completed_years( dob, today )
+      # Difference in years, less one if you have not had a birthday this year.
+      age = today.year - dob.year
+      age = a - 1 if (
+         dob.month >  today.month or
+        (dob.month >= dob.month and dob.day > today.day )
+      )
+
+      return age
     end
 end
 
