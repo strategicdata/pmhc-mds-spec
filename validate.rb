@@ -238,6 +238,9 @@ class PMHC < Csvlint::Cli
       participation_indicator_index = header.index( "service_contact_participation_indicator" )
       participants_index = header.index( "service_contact_participants" )
       service_contact_date_index = header.index( "service_contact_date")
+      modality_index = header.index( "service_contact_modality")
+      venue_index = header.index( "service_contact_venue")
+      postcode_index = header.index( "service_contact_postcode")
 
       today = Date.today
 
@@ -247,8 +250,8 @@ class PMHC < Csvlint::Cli
         # Indicator must = 1
         if row[participants_index] == "1"
           unless row[participation_indicator_index] == "1"
-           validator.build_errors(:invalid_participation_indicator, :service_contact,
-             current_line, participation_indicator_index, row[participation_indicator_index])
+            validator.build_errors(:invalid_participation_indicator, :service_contact,
+              current_line, participation_indicator_index, row[participation_indicator_index])
           end
         end
 
@@ -261,6 +264,35 @@ class PMHC < Csvlint::Cli
               service_contact_date_index, scd)
           end
         end
+
+        # Service contact modality.
+        if row[modality_index] == "1"
+          # If 'Face to Face' is selected:
+          #   - A value other than 'Not applicable' must be selected for
+          #     service contact venue.
+          #   - A valid Australian postcode must be entered for service contact
+          #     postcode
+          if row[venue_index] == "98"
+            validator.build_errors(:invalid_service_contact_venue, :service_contact,
+              current_line, venue_index, row[venue_index])
+          end
+          # !!!!! DO WE NEED TO HAVE MORE CHECKS FOR VALID POSTCODE HERE? OR DO
+          # !!!!! THE STRAIGHT CHECKS ON SERVICE CONTACT POSTCODE SUFFISE? !!!!
+          if row[postcode_index] == "9999"
+            validator.build_errors(:invalid_service_contact_postcode, :service_contact,
+              current_line, postcode_index, row[postcode_index])
+          end
+        else
+          # If 'Face to Face' is not selected:
+          #   - Service contact postcode should be 9999
+          unless row[postcode_index] == "9999"
+            validator.build_errors(:extraneous_service_contact_postcode, :service_contact,
+              current_line, postcode_index, row[postcode_index])
+          end
+        end
+
+
+
         current_line += 1
       end
     end
