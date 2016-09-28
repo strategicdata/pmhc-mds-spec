@@ -272,6 +272,12 @@
       "columnReference": "id"
     }
   }, {
+    "columnReference": "episode_key",
+    "reference": {
+      "resource": "data/episodes.csv",
+      "columnReference": "episode_key"
+    }
+  }, {
     "columnReference": "k10p_item1",
     "reference": {
       "resource": "table/collection-occasion/k10p-k5.csv",

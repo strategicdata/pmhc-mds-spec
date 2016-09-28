@@ -238,6 +238,18 @@
       "columnReference": "id"
     }
   }, {
+    "columnReference": "episode_key",
+    "reference": {
+      "resource": "data/episodes.csv",
+      "columnReference": "episode_key"
+    }
+  }, {
+    "columnReference": "practitioner_key",
+    "reference": {
+      "resource": "data/practitioners.csv",
+      "columnReference": "practitioner_key"
+    }
+  }, {
     "columnReference": "service_contact_modality",
     "reference": {
       "resource": "table/service-contact/modality.csv",

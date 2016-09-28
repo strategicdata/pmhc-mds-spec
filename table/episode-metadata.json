@@ -374,6 +374,12 @@
       "columnReference": "id"
     }
   }, {
+    "columnReference": "client_key",
+    "reference": {
+      "resource": "data/clients.csv",
+      "columnReference": "client_key"
+    }
+  }, {
     "columnReference": "client_consent",
     "reference": {
       "resource": "table/episode/client-consent.csv",

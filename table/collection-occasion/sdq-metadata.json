@@ -697,6 +697,12 @@
       "columnReference": "id"
     }
   }, {
+    "columnReference": "episode_key",
+    "reference": {
+      "resource": "data/episodes.csv",
+      "columnReference": "episode_key"
+    }
+  }, {
     "columnReference": "sdq_version",
     "reference": {
       "resource": "table/collection-occasion/sdq/sdq-version.csv",
