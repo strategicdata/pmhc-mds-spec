@@ -629,7 +629,7 @@ class PMHC < Csvlint::Cli
     def age_in_completed_years( dob, today )
       # Difference in years, less one if you have not had a birthday this year.
       age = today.year - dob.year
-      age = a - 1 if (
+      age = age - 1 if (
          dob.month >  today.month or
         (dob.month >= dob.month and dob.day > today.day )
       )
