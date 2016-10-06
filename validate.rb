@@ -272,7 +272,7 @@ class PMHC < Csvlint::Cli
                 dob_date = Date.new(dob[:year], dob[:month], dob[:day])
                 age = age_in_completed_years( dob_date, today )
                 unless age == nil
-                  if row[income_source_index] == nil
+                  if row[income_source_index] == "0"
                     if age >= 16
                       validator.build_errors(:invalid_source_of_cash_income, :episode,
                         current_line, income_source_index, row[income_source_index])
