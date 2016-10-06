@@ -175,7 +175,7 @@ class PMHC < Csvlint::Cli
         dob = row[dob_index]
         if is_date_in_future( dob )
           validator.build_errors(:future_date_not_allowed, :client, current_line,
-          dob_index, dob)
+          dob_index+1, dob)
         end
         current_line += 1
       end
@@ -203,14 +203,15 @@ class PMHC < Csvlint::Cli
         # Leave this exercise to someone with more Ruby knowldege than me. - JW
         unless row[client_consent_index] == "1"
           validator.build_errors(:invalid_consent, :episode, current_line,
-            client_consent_index, row[client_consent_index])
+            client_consent_index+1, row[client_consent_index])
         end
 
         # Referrer Organisation Type == 'N/A - Self referral' should only be selected
         # where referrer profession is also 'Self referral'
         if ( row[referrer_organisation_type_index] == "98" and row[referrer_profession_index] != "98" ) or
           ( row[referrer_organisation_type_index] != "98" and row[referrer_profession_index] == "98" )
-          validator.build_errors(:invalid_self_referral, :episode, current_line, referrer_organisation_type_index, row[referrer_organisation_type_index])
+          validator.build_errors(:invalid_self_referral, :episode, current_line,
+            referrer_organisation_type_index+1, row[referrer_organisation_type_index])
         end
 
         # Episode end date cannot be in the future
@@ -218,13 +219,13 @@ class PMHC < Csvlint::Cli
         unless eed == nil
           if is_date_in_future( eed )
             validator.build_errors(:future_date_not_allowed, :episode, current_line,
-              episode_end_date_index, eed)
+              episode_end_date_index+1, eed)
           end
 
           # Where an episode has ended a completion status should be recorded
           if row[episode_completion_status_index] == nil
             validator.build_errors(:invalid_episode_completion_status, :episode,
-              current_line, episode_completion_status_index, row[episode_completion_status_index])
+              current_line, episode_completion_status_index+1, row[episode_completion_status_index])
           end
         end
 
@@ -232,7 +233,7 @@ class PMHC < Csvlint::Cli
         unless row[episode_completion_status_index] == nil
           if eed == nil
             validator.build_errors(:invalid_episode_completion_status, :episode,
-              current_line, episode_completion_status_index, row[episode_completion_status_index])
+              current_line, episode_completion_status_index+1, row[episode_completion_status_index])
 
           end
         end
@@ -241,7 +242,7 @@ class PMHC < Csvlint::Cli
         rd = row[referral_date_index]
         if is_date_in_future( rd )
           validator.build_errors(:future_date_not_allowed, :episode, current_line,
-            referral_date_index, rd)
+            referral_date_index+1, rd)
         end
 
         # Episode end date should be after referral date
@@ -250,7 +251,7 @@ class PMHC < Csvlint::Cli
           r_date = Date.new( rd[:year], rd[:month], rd[:day] )
           if ( r_date <=> ee_date ) > 0
             validator.build_errors(:invalid_episode_end_date, :episode, current_line,
-              episode_end_date_index, eed)
+              episode_end_date_index+1, eed)
           end
         end
 
@@ -275,12 +276,12 @@ class PMHC < Csvlint::Cli
                   if row[income_source_index] == "0"
                     if age >= 16
                       validator.build_errors(:invalid_source_of_cash_income, :episode,
-                        current_line, income_source_index, row[income_source_index])
+                        current_line, income_source_index+1, row[income_source_index])
                     end
                   else
                     if age < 16
                       validator.build_errors(:invalid_source_of_cash_income, :episode,
-                        current_line, income_source_index, row[income_source_index])
+                        current_line, income_source_index+1, row[income_source_index])
                     end
                   end
                 end
@@ -319,7 +320,7 @@ class PMHC < Csvlint::Cli
         if row[participants_index] == "1"
           unless row[participation_indicator_index] == "1"
             validator.build_errors(:invalid_participation_indicator, :service_contact,
-              current_line, participation_indicator_index, row[participation_indicator_index])
+              current_line, participation_indicator_index+1, row[participation_indicator_index])
           end
         end
 
@@ -327,7 +328,7 @@ class PMHC < Csvlint::Cli
         scd = row[service_contact_date_index]
         if is_date_in_future( scd )
           validator.build_errors(:future_date_not_allowed, :service_contact, current_line,
-            service_contact_date_index, scd)
+            service_contact_date_index+1, scd)
         end
 
         # Service contact modality.
@@ -339,18 +340,18 @@ class PMHC < Csvlint::Cli
           #     postcode
           if row[venue_index] == "98"
             validator.build_errors(:invalid_service_contact_venue, :service_contact,
-              current_line, venue_index, row[venue_index])
+              current_line, venue_index+1, row[venue_index])
           end
           if row[postcode_index] == "9999"
             validator.build_errors(:invalid_service_contact_postcode, :service_contact,
-              current_line, postcode_index, row[postcode_index])
+              current_line, postcode_index+1, row[postcode_index])
           end
         else
           # If 'Face to Face' is not selected:
           #   - Service contact postcode should be 9999
           unless row[postcode_index] == "9999"
             validator.build_errors(:extraneous_service_contact_postcode, :service_contact,
-              current_line, postcode_index, row[postcode_index])
+              current_line, postcode_index+1, row[postcode_index])
           end
         end
 
@@ -374,7 +375,7 @@ class PMHC < Csvlint::Cli
               if row[service_contact_final_index] == "1"
                 unless episode_row[episode_end_date_index] == scd
                   validator.build_errors(:invalid_service_contact_final, :service_contact,
-                    current_line, service_contact_final_index, row[service_contact_final_index])
+                    current_line, service_contact_final_index+1, row[service_contact_final_index])
                 end
               end
 
@@ -386,7 +387,7 @@ class PMHC < Csvlint::Cli
 
                   if ( sc_date <=> episode_end_date ) > 0
                     validator.build_errors(:episode_already_concluded, :service_contact,
-                      current_line, service_contact_date_index, row[service_contact_date_index])
+                      current_line, service_contact_date_index+1, row[service_contact_date_index])
                   end
                 end
               end
@@ -416,7 +417,7 @@ class PMHC < Csvlint::Cli
         yob = row[yob_index]
         if is_year_in_future( yob )
           validator.build_errors(:future_year_not_allowed, :practitioner, current_line,
-            yob_index, yob)
+            yob_index+1, yob)
         end
         current_line += 1
       end
@@ -469,7 +470,8 @@ class PMHC < Csvlint::Cli
         end
 
         if using_item_scores == 1 and using_total_scores == 1
-          validator.build_errors(:item_scores_and_total_scores_used, "#{measure}", current_line, item_index, row[item_index])
+          validator.build_errors(:item_scores_and_total_scores_used, "#{measure}",
+            current_line, item_index+1, row[item_index])
         end
 
         # Measure date cannot be in the future
@@ -479,7 +481,7 @@ class PMHC < Csvlint::Cli
           measure_date = Date.new( md[:year], md[:month], md[:day] )
           if is_date_in_future( md )
             validator.build_errors(:future_date_not_allowed, "#{measure}", current_line,
-              measure_date_index, md)
+              measure_date_index+1, md)
           end
         end
 
@@ -499,7 +501,7 @@ class PMHC < Csvlint::Cli
                 referral_date = Date.new( rd[:year], rd[:month], rd[:day] )
                 if ( measure_date <=> referral_date ) < 0
                   validator.build_errors(:invalid_measure_date, "#{measure}", current_line,
-                    measure_date_index, md)
+                    measure_date_index+1, md)
                 end
               end
               break
@@ -551,7 +553,8 @@ class PMHC < Csvlint::Cli
               end
             else
               unless row[item_index] == "9"
-                validator.build_errors(:invalid_sdq_item_included, :sdq, current_line, item_index, row[item_index])
+                validator.build_errors(:invalid_sdq_item_included, :sdq,
+                  current_line, item_index+1, row[item_index])
               end
             end
           end
@@ -578,7 +581,7 @@ class PMHC < Csvlint::Cli
           measure_date = Date.new( md[:year], md[:month], md[:day] )
           if is_date_in_future( md )
             validator.build_errors(:future_date_not_allowed, :sdq, current_line,
-              measure_date_index, md)
+              measure_date_index+1, md)
           end
         end
 
@@ -598,7 +601,7 @@ class PMHC < Csvlint::Cli
                 referral_date = Date.new( rd[:year], rd[:month], rd[:day] )
                 if ( measure_date <=> referral_date ) < 0
                   validator.build_errors(:invalid_measure_date, :sdq, current_line,
-                    measure_date_index, md)
+                    measure_date_index+1, md)
                 end
               end
               break
