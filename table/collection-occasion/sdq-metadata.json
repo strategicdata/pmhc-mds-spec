@@ -85,7 +85,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "sdq_item2",
     "titles": [ "sdq_item2", "Question 2" ],
@@ -97,7 +98,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "sdq_item3",
     "titles": [ "sdq_item3", "Question 3" ],
@@ -109,7 +111,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "sdq_item4",
     "titles": [ "sdq_item4", "Question 4" ],
@@ -121,7 +124,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "sdq_item5",
     "titles": [ "sdq_item5", "Question 5" ],
@@ -133,7 +137,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "sdq_item6",
     "titles": [ "sdq_item6", "Question 6" ],
@@ -145,7 +150,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "sdq_item7",
     "titles": [ "sdq_item7", "Question 7" ],
@@ -157,7 +163,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "sdq_item8",
     "titles": [ "sdq_item8", "Question 8" ],
@@ -169,7 +176,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "sdq_item9",
     "titles": [ "sdq_item9", "Question 9" ],
@@ -181,7 +189,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "sdq_item10",
     "titles": [ "sdq_item10", "Question 10" ],
@@ -193,7 +202,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "sdq_item11",
     "titles": [ "sdq_item11", "Question 11" ],
@@ -205,7 +215,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "sdq_item12",
     "titles": [ "sdq_item12", "Question 12" ],
@@ -217,7 +228,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "sdq_item13",
     "titles": [ "sdq_item13", "Question 13" ],
@@ -229,7 +241,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "sdq_item14",
     "titles": [ "sdq_item14", "Question 14" ],
@@ -241,7 +254,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "sdq_item15",
     "titles": [ "sdq_item15", "Question 15" ],
@@ -253,7 +267,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "sdq_item16",
     "titles": [ "sdq_item16", "Question 16" ],
@@ -265,7 +280,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "sdq_item17",
     "titles": [ "sdq_item17", "Question 17" ],
@@ -277,7 +293,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "sdq_item18",
     "titles": [ "sdq_item18", "Question 18" ],
@@ -289,7 +306,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "sdq_item19",
     "titles": [ "sdq_item19", "Question 19" ],
@@ -301,7 +319,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "sdq_item20",
     "titles": [ "sdq_item20", "Question 20" ],
@@ -313,7 +332,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "sdq_item21",
     "titles": [ "sdq_item21", "Question 21" ],
@@ -325,7 +345,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "sdq_item22",
     "titles": [ "sdq_item22", "Question 22" ],
@@ -337,7 +358,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "sdq_item23",
     "titles": [ "sdq_item23", "Question 23" ],
@@ -349,7 +371,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "sdq_item24",
     "titles": [ "sdq_item24", "Question 24" ],
@@ -361,7 +384,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "sdq_item25",
     "titles": [ "sdq_item25", "Question 25" ],
@@ -373,7 +397,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "sdq_item26",
     "titles": [ "sdq_item26", "Question 26" ],
@@ -385,7 +410,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "sdq_item27",
     "titles": [ "sdq_item27", "Question 27" ],
@@ -397,7 +423,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "sdq_item28",
     "titles": [ "sdq_item28", "Question 28" ],
@@ -409,7 +436,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "sdq_item29",
     "titles": [ "sdq_item29", "Question 29" ],
@@ -421,7 +449,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "sdq_item30",
     "titles": [ "sdq_item30", "Question 30" ],
@@ -433,7 +462,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "sdq_item31",
     "titles": [ "sdq_item31", "Question 31" ],
@@ -445,7 +475,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "sdq_item32",
     "titles": [ "sdq_item32", "Question 32" ],
@@ -457,7 +488,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "sdq_item33",
     "titles": [ "sdq_item33", "Question 33" ],
@@ -469,7 +501,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "sdq_item34",
     "titles": [ "sdq_item34", "Question 34" ],
@@ -481,7 +514,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "sdq_item35",
     "titles": [ "sdq_item35", "Question 35" ],
@@ -493,7 +527,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "sdq_item36",
     "titles": [ "sdq_item36", "Question 36" ],
@@ -505,7 +540,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "sdq_item37",
     "titles": [ "sdq_item37", "Question 37" ],
@@ -517,7 +553,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "sdq_item38",
     "titles": [ "sdq_item38", "Question 38" ],
@@ -529,7 +566,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "sdq_item39",
     "titles": [ "sdq_item39", "Question 39" ],
@@ -541,7 +579,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "sdq_item40",
     "titles": [ "sdq_item40", "Question 40" ],
@@ -553,7 +592,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "sdq_item41",
     "titles": [ "sdq_item41", "Question 41" ],
@@ -565,7 +605,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "sdq_item42",
     "titles": [ "sdq_item42", "Question 42" ],
@@ -577,7 +618,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "sdq_emotional_symptoms",
     "titles": [ "sdq_emotional_symptoms", "Emotional Symptoms" ],

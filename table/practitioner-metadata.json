@@ -51,7 +51,8 @@
     "datatype": {
       "base": "string"
     },
-    "default": "9"
+    "default": "9",
+    "required": true
   },{
     "name": "practitioner_year_of_birth",
     "titles": [ "practitioner_year_of_birth", "Year of Birth" ],
@@ -101,7 +102,8 @@
     "datatype": {
       "base": "string"
     },
-    "default": "1"
+    "default": "1",
+    "required": true
   },{
     "name": "practitioner_tags",
     "titles": [ "practitioner_tags", "Tags" ],

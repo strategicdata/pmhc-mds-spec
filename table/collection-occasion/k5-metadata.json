@@ -72,7 +72,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "k5_item2",
     "titles": [ "k5_item2", "Question 2" ],
@@ -83,7 +84,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "k5_item3",
     "titles": [ "k5_item3", "Question 3" ],
@@ -94,7 +96,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "k5_item4",
     "titles": [ "k5_item4", "Question 4" ],
@@ -105,7 +108,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "k5_item5",
     "titles": [ "k5_item5", "Question 5" ],
@@ -116,7 +120,8 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "k5_score",
     "titles": [ "k5_score", "Score" ],

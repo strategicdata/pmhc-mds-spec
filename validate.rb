@@ -173,13 +173,9 @@ class PMHC < Csvlint::Cli
       data.each do |row|
         # Date of birth cannot be in the future
         dob = row[dob_index]
-        unless dob == nil
-          date = Date.new( dob[:year], dob[:month], dob[:day] )
-
-          if ( today <=> date ) < 0
-            validator.build_errors(:future_date_not_allowed, :client, current_line,
-              dob_index, dob)
-          end
+        if is_date_in_future( dob )
+          validator.build_errors(:future_date_not_allowed, :client, current_line,
+          dob_index, dob)
         end
         current_line += 1
       end
@@ -220,8 +216,7 @@ class PMHC < Csvlint::Cli
         # Episode end date cannot be in the future
         eed = row[episode_end_date_index]
         unless eed == nil
-          date = Date.new( eed[:year], eed[:month], eed[:day] )
-          if ( today <=> date ) < 0
+          if is_date_in_future( eed )
             validator.build_errors(:future_date_not_allowed, :episode, current_line,
               episode_end_date_index, eed)
           end
@@ -244,12 +239,9 @@ class PMHC < Csvlint::Cli
 
         # Referral date cannot be in the future
         rd = row[referral_date_index]
-        unless rd == nil
-          date = Date.new( rd[:year], rd[:month], rd[:day] )
-          if ( today <=> date ) < 0
-            validator.build_errors(:future_date_not_allowed, :episode, current_line,
-              referral_date_index, rd)
-          end
+        if is_date_in_future( rd )
+          validator.build_errors(:future_date_not_allowed, :episode, current_line,
+            referral_date_index, rd)
         end
 
         # Episode end date should be after referral date
@@ -278,15 +270,18 @@ class PMHC < Csvlint::Cli
               dob = client_row[date_of_birth_index]
               unless dob == nil
                 dob_date = Date.new(dob[:year], dob[:month], dob[:day])
-                if row[income_source_index] == nil
-                  if age_in_completed_years( dob_date, today ) >= 16
-                    validator.build_errors(:invalid_source_of_cash_income, :episode,
-                      current_line, income_source_index, row[income_source_index])
-                  end
-                else
-                  if age_in_completed_years( dob_date, today ) < 16
-                    validator.build_errors(:invalid_source_of_cash_income, :episode,
-                      current_line, income_source_index, row[income_source_index])
+                age = age_in_completed_years( dob_date, today )
+                unless age == nil
+                  if row[income_source_index] == nil
+                    if age >= 16
+                      validator.build_errors(:invalid_source_of_cash_income, :episode,
+                        current_line, income_source_index, row[income_source_index])
+                    end
+                  else
+                    if age < 16
+                      validator.build_errors(:invalid_source_of_cash_income, :episode,
+                        current_line, income_source_index, row[income_source_index])
+                    end
                   end
                 end
               end
@@ -330,12 +325,9 @@ class PMHC < Csvlint::Cli
 
         # Service contact date cannot be in the future
         scd = row[service_contact_date_index]
-        unless scd == nil
-          date = Date.new( scd[:year], scd[:month], scd[:day] )
-          if ( today <=> date ) < 0
-            validator.build_errors(:future_date_not_allowed, :service_contact, current_line,
-              service_contact_date_index, scd)
-          end
+        if is_date_in_future( scd )
+          validator.build_errors(:future_date_not_allowed, :service_contact, current_line,
+            service_contact_date_index, scd)
         end
 
         # Service contact modality.
@@ -349,8 +341,6 @@ class PMHC < Csvlint::Cli
             validator.build_errors(:invalid_service_contact_venue, :service_contact,
               current_line, venue_index, row[venue_index])
           end
-          # !!!!! DO WE NEED TO HAVE MORE CHECKS FOR VALID POSTCODE HERE? OR DO
-          # !!!!! THE STRAIGHT CHECKS ON SERVICE CONTACT POSTCODE SUFFISE? !!!!
           if row[postcode_index] == "9999"
             validator.build_errors(:invalid_service_contact_postcode, :service_contact,
               current_line, postcode_index, row[postcode_index])
@@ -424,11 +414,9 @@ class PMHC < Csvlint::Cli
       data.each do |row|
         # Year of birth cannot be in the future
         yob = row[yob_index]
-        unless yob == nil
-          if ( yob[:year] > today.year )
-            validator.build_errors(:future_year_not_allowed, :practitioner, current_line,
-              yob_index, yob)
-          end
+        if is_year_in_future( yob )
+          validator.build_errors(:future_year_not_allowed, :practitioner, current_line,
+            yob_index, yob)
         end
         current_line += 1
       end
@@ -489,7 +477,7 @@ class PMHC < Csvlint::Cli
         measure_date = nil
         unless md == nil
           measure_date = Date.new( md[:year], md[:month], md[:day] )
-          if ( today <=> measure_date ) < 0
+          if is_date_in_future( md )
             validator.build_errors(:future_date_not_allowed, "#{measure}", current_line,
               measure_date_index, md)
           end
@@ -588,7 +576,7 @@ class PMHC < Csvlint::Cli
         measure_date = nil
         unless md == nil
           measure_date = Date.new( md[:year], md[:month], md[:day] )
-          if ( today <=> measure_date ) < 0
+          if is_date_in_future( md )
             validator.build_errors(:future_date_not_allowed, :sdq, current_line,
               measure_date_index, md)
           end
@@ -628,13 +616,46 @@ class PMHC < Csvlint::Cli
 
     def age_in_completed_years( dob, today )
       # Difference in years, less one if you have not had a birthday this year.
-      age = today.year - dob.year
-      age = a - 1 if (
-         dob.month >  today.month or
-        (dob.month >= dob.month and dob.day > today.day )
-      )
+      missing = Date.new(9999,9,9)
 
-      return age
+      if ( dob <=> missing ) == 0
+        return nil
+      else
+        age = today.year - dob.year
+        age = age - 1 if (
+           dob.month >  today.month or
+          (dob.month >= dob.month and dob.day > today.day )
+        )
+
+        return age
+      end
+    end
+
+    def is_date_in_future( date )
+        today = Date.today
+        missing = Date.new(9999,9,9)
+
+        date_obj = nil
+        unless date == nil
+          date_obj = Date.new( date[:year], date[:month], date[:day] )
+          if ( ( today <=> date_obj ) < 0 ) and ( ( date_obj <=> missing ) != 0 )
+            return true
+          end
+        end
+
+        return false
+    end
+
+    def is_year_in_future( year )
+        today = Date.today
+
+        unless year == nil
+          if ( year[:year] > today.year ) and year[:year] != 9999
+            return true
+          end
+        end
+
+        return false
     end
 end
 

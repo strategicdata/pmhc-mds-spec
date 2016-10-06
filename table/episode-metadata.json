@@ -67,7 +67,8 @@
     "datatype": {
       "base": "string",
       "format": "^(1|2)$"
-    }
+    },
+    "required": true
   },{
     "name": "episode_completion_status",
     "titles": [ "episode_completion_status", "Completion Status" ],
@@ -181,10 +182,11 @@
     "schema:disambiguatingDescription": "table/episode/income-source.rst",
     "schema:meteorItem": "386449",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
+    "schema:dateModified": "2016-10-06",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "health_care_card",
     "titles": [ "health_care_card", "Health Care Card" ],
@@ -259,7 +261,8 @@
     "schema:dateModified": "2016-06-08",
     "datatype": {
       "base": "string"
-    }
+    },
+    "required": true
   },{
     "name": "medication_antipsychotics",
     "titles": [ "medication_antipsychotics", "Medication Antipsychotics" ],
@@ -272,7 +275,8 @@
     "datatype": {
       "base": "string"
     },
-    "default": "9"
+    "default": "9",
+    "required": true
   },{
     "name": "medication_anxiolytics",
     "titles": [ "medication_anxiolytics", "Medication Anxiolytics" ],
@@ -285,7 +289,8 @@
     "datatype": {
       "base": "string"
     },
-    "default": "9"
+    "default": "9",
+    "required": true
   },{
     "name": "medication_hypnotics",
     "titles": [ "medication_hypnotics", "Medication Hypnotics" ],
@@ -298,7 +303,8 @@
     "datatype": {
       "base": "string"
     },
-    "default": "9"
+    "default": "9",
+    "required": true
   },{
     "name": "medication_antidepressants",
     "titles": [ "medication_antidepressants", "Medication Antidepressants" ],
@@ -311,7 +317,8 @@
     "datatype": {
       "base": "string"
     },
-    "default": "9"
+    "default": "9",
+    "required": true
   },{
     "name": "medication_psychostimulants",
     "titles": [ "medication_psychostimulants", "Medication Psychostimulants" ],
@@ -324,7 +331,8 @@
     "datatype": {
       "base": "string"
     },
-    "default": "9"
+    "default": "9",
+    "required": true
   },{
     "name": "referrer_profession",
     "titles": [ "referrer_profession", "Referrer Profession" ],

@@ -1,6 +1,20 @@
 Change log
 ==========
 
+6/10/2016 - Version 1.0.1
+-------------------------
+
+* Data model and specifications
+
+  * Record formats
+
+    * :ref:`dfn-principal_focus` - Updated response 4 from 'Complex care package for adults' to 'Complex care package'
+    * :ref:`dfn-income_source` - Added 0 as a valid response for when the client is aged less than 16 years
+
+  * Definitions
+
+    * Added required field to all definitions
+
 18/9/2016 - Updates between final draft version and Version 1
 -------------------------------------------------------------
 
