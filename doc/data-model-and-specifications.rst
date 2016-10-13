@@ -338,8 +338,6 @@ SDQ items and Scale Summary scores
 ''''''''''''''''''''''''''''''''''
 - The first 25 items in the SDQ comprise 5 scales of 5 items each. It is usually easiest to score all 5 scales before working out the Total Difficulties score.  For data entry, the responses to items should always be entered the same way (see below), but they are not all scored the same way.  Somewhat True is always scored as 1, but the scoring of Not True and Certainly True varies with each item (see Table 5). For each of the 5 scales the score can range from 0-10 if all 5 items were completed. Scale scores can be prorated if at least 3 items were completed.
 
-**Table 1: The individual SDQ items and the Total score derived from them.**
-
 +-----------------------------------------------------------+----------------+----------------------+-----------------------+-----------------+
 |                                                           | | Not True     | | Some-what True     | | Certainly True      |                 |
 | Standard Values for Data Entry                            | | 0            | | 1                  | | 2                   |                 |
@@ -354,7 +352,7 @@ SDQ items and Scale Summary scores
 | | Item 16    | | Nervous or clingy in new situations ….   | | 0            | | 1                  | | 2                   |                 |
 | | Item 24    | | Many fears, easily scared                | | 0            | | 1                  | | 2                   |                 |
 +--------------+--------------------------------------------+----------------+----------------------+-----------------------+-----------------+
-| Conduct Problem Scale                                                                                                     | 0-10          |
+| Conduct Problem Scale                                                                                                     | 0-10            |
 +--------------+--------------------------------------------+----------------+----------------------+-----------------------+-----------------+
 | | Item 05    | | Often loses temper ….                    | | 0            | | 1                  | | 2                   |                 |
 | | Item 07    | | Generally well behaved …...              | | 2            | | 1                  | | 0                   |                 |
