@@ -393,7 +393,7 @@ SDQ items and Scale Summary scores
 |              |  Hyperactivity Scale                                  |  0-10                                    |               |
 |              |  Peer Problem Scale                                   |  0-10                                    |               |
 +==============+=======================================================+==========================================+===============+
-- NB. Bold items indicate reverse scoring
+- *NB. Bold items indicate reverse scoring*
 
 Scoring the SDQ
 '''''''''''''''
