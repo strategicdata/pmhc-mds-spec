@@ -348,11 +348,11 @@ SDQ items and Scale Summary scores
 +==============+========================================+=========================================================+===============+
 | Emotional Symptoms Scale                                                                                        | 0-10          |
 +--------------+----------------------------------------+--------------+--------------------+---------------------+---------------+
-| Item 03\n    | Often complains of headaches, ….       | 0            | 1                  | 2                   |               |
-| Item 08\n    | Many worries or often seems worried    | 0            | 1                  | 2                   |               |
-| Item 13\n    | Often unhappy, depressed or tearful    | 0            | 1                  | 2                   |               |
-| Item 16\n    | Nervous or clingy in new situations …. | 0            | 1                  | 2                   |               |
-| Item 24\n    | Many fears, easily scared              | 0            | 1                  | 2                   |               |
+| | Item 03    | Often complains of headaches, ….       | 0            | 1                  | 2                   |               |
+| | Item 08    | Many worries or often seems worried    | 0            | 1                  | 2                   |               |
+| | Item 13    | Often unhappy, depressed or tearful    | 0            | 1                  | 2                   |               |
+| | Item 16    | Nervous or clingy in new situations …. | 0            | 1                  | 2                   |               |
+| | Item 24    | Many fears, easily scared              | 0            | 1                  | 2                   |               |
 +--------------+----------------------------------------+--------------+--------------------+---------------------+---------------+
 | Conduct Problem Scale                                                                                           | 0-10          |
 +--------------+----------------------------------------+--------------+--------------------+---------------------+---------------+
