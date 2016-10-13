@@ -16,6 +16,8 @@ class PMHC < Csvlint::Cli
 
     results = "{\"results\": [" + @results.join(",") + "]}"
 
+    puts results
+
     if v == true
       puts "Data is valid"
     else
@@ -186,16 +188,18 @@ class PMHC < Csvlint::Cli
         age = age_in_completed_years( dob_date )
         main_lang_at_home = row[main_lang_index]
         english = "1201"
-        if prof_english == "0"
-          unless age < 5 or main_lang_at_home == english
-            validator.build_errors(:invalid_proficiency_in_spoken_english, :client,
-              current_line+1, prof_english_index+1, prof_english)
-          end
-        else
-          if age < 5 or main_lang_at_home == english
-            validator.build_errors(:invalid_proficiency_in_spoken_english, :client,
-              current_line+1, prof_english_index+1, prof_english)
+        if age != nil
+          if prof_english == "0"
+            unless age < 5 or main_lang_at_home == english
+              validator.build_errors(:invalid_proficiency_in_spoken_english, :client,
+                current_line+1, prof_english_index+1, prof_english)
             end
+          else
+            if age < 5 or main_lang_at_home == english
+              validator.build_errors(:invalid_proficiency_in_spoken_english, :client,
+                current_line+1, prof_english_index+1, prof_english)
+            end
+          end
         end
 
         current_line += 1
@@ -507,6 +511,7 @@ class PMHC < Csvlint::Cli
           episode_episode_key_index = episode_header.index("episode_key")
           referral_date_index = episode_header.index("referral_date")
 
+          # Measure date must be after referral date
           episode_current_line = 1
           episode_data.each do |episode_row|
             if episode_row[episode_episode_key_index] == row[episode_key_index]
@@ -564,7 +569,7 @@ class PMHC < Csvlint::Cli
                 using_item_scores = 1
               end
             else
-              unless row[item_index] == "9"
+              unless row[item_index] == "8"
                 validator.build_errors(:invalid_sdq_item_included, :sdq,
                   current_line+1, item_index+1, row[item_index])
               end
