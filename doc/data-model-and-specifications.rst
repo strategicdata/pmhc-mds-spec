@@ -341,12 +341,12 @@ SDQ items and Scale Summary scores
 **Table 1: The individual SDQ items and the Total score derived from them.**
 
 +-------------------------------------------------------+--------------+--------------------+---------------------+---------------+
-|                                                       | **Not True** | **Some-what True** | **Certainly True ** |               |
-| **Standard Values for Data Entry ========⇒**          | **0**        | **1**              | **2**               |               |
+|                                                       | Not True     | Some-what True     | Certainly True      |               |
+| Standard Values for Data Entry                        | 0            | 1                  | 2                   |               |
 +--------------+----------------------------------------+--------------+--------------------+---------------------+---------------+
 | Data element | SDQ Item number and description        | Item Score                                              | Summary Score |
 +==============+========================================+=========================================================+===============+
-| *Emotional Symptoms Scale*                                                                                      | 0-10          |
+| Emotional Symptoms Scale                                                                                        | 0-10          |
 +--------------+----------------------------------------+--------------+--------------------+---------------------+---------------+
 | Item 03      | Often complains of headaches, ….       | 0            | 1                  | 2                   |               |
 | Item 08      | Many worries or often seems worried    | 0            | 1                  | 2                   |               |
@@ -354,31 +354,31 @@ SDQ items and Scale Summary scores
 | Item 16      | Nervous or clingy in new situations …. | 0            | 1                  | 2                   |               |
 | Item 24      | Many fears, easily scared              | 0            | 1                  | 2                   |               |
 +--------------+----------------------------------------+--------------+--------------------+---------------------+---------------+
-| *Conduct Problem Scale*                                                                                         | 0-10          |
+| Conduct Problem Scale                                                                                           | 0-10          |
 +--------------+----------------------------------------+--------------+--------------------+---------------------+---------------+
 | Item 05      | Often loses temper ….                  | 0            | 1                  | 2                   |               |
-| **Item 07**  | **Generally well behaved …...**        | **2**        | **1**              | **0**               |               |
+| Item 07      | Generally well behaved …...            | 2            | 1                  | 0                   |               |
 | Item 12      | Often fights with other children ….    | 0            | 1                  | 2                   |               |
 | Item 18      | Often lies or cheats                   | 0            | 1                  | 2                   |               |
 | Item 22      | Steals from home, school…….            | 0            | 1                  | 2                   |               |
 +--------------+----------------------------------------+--------------+--------------------+---------------------+---------------+
-| *Hyperactivity Scale*                                                                                           | 0-10          |
+| Hyperactivity Scale                                                                                             | 0-10          |
 +--------------+----------------------------------------+--------------+--------------------+---------------------+---------------+
 | Item 02      | Restless, overactive….                 | 0            | 1                  | 2                   |               |
 | Item 10      | Constantly fidgeting …                 | 0            | 1                  | 2                   |               |
 | Item 15      | Easily distracted ….                   | 0            | 1                  | 2                   |               |
-| **Item 21**  | **Thinks things out before acting**    | **2**        | **1**              | **0**               |               |
-| **Item 25**  | **Good attention span, …**             | **2**        | **1**              | **0**               |               |
+| Item 21      | Thinks things out before acting        | 2            | 1                  | 0                   |               |
+| Item 25      | Good attention span, …                 | 2            | 1                  | 0                   |               |
 +--------------+----------------------------------------+--------------+--------------------+---------------------+---------------+
-| *Peer Problem Scale*                                                                                           | 0-10          |
+| Peer Problem Scale                                                                                              | 0-10          |
 +--------------+----------------------------------------+--------------+--------------------+---------------------+---------------+
 | Item 06      | Rather solitary, prefers to play alone | 0            | 1                  | 2                   |               |
-| **Item 11**  | **Has at least one good friend**       | **2**        | **1**              | **0**               |               |
-| **Item 14**  | **Generally liked by other children**  | **2**        | **1**              | **0**               |               |
+| Item 11      | Has at least one good friend           | 2            | 1                  | 0                   |               |
+| Item 14      | Generally liked by other children      | 2            | 1                  | 0                   |               |
 | Item 19      | Picked on or bullied….                 | 0            | 1                  | 2                   |               |
 | Item 23      | Gets along better with adults …        | 0            | 1                  | 2                   |               |
 +--------------+----------------------------------------+--------------+--------------------+---------------------+---------------+
-| *Prosocial Scale*                                                                                               | 0-10          |
+| Prosocial Scale                                                                                                 | 0-10          |
 +--------------+----------------------------------------+--------------+--------------------+---------------------+---------------+
 | Item 01      | Considerate of other people’s feelings | 0            | 1                  | 2                   |               |
 | Item 04      | Shares readily with other children, …  | 0            | 1                  | 2                   |               |
@@ -386,12 +386,12 @@ SDQ items and Scale Summary scores
 | Item 17      | Kind to younger children               | 0            | 1                  | 2                   |               |
 | Item 20      | Often volunteers to help others …      | 0            | 1                  | 2                   |               |
 +--------------+----------------------------------------+--------------+--------------------+---------------------+---------------+
-| SDQ Total Difficulties Score = Sum of Scales below                                                             | 0-40          |
+| SDQ Total Difficulties Score = Sum of Scales below                                                              | 0-40          |
 +--------------+-------------------------------------------------------+------------------------------------------+---------------+
-|              | *Emotional Symptoms Scale*                            |  0-10                                    |               |
-|              | *Conduct Problem Scale*                               |  0-10                                    |               |
-|              | *Hyperactivity Scale*                                 |  0-10                                    |               |
-|              | *Peer Problem Scale*                                  |  0-10                                    |               |
+|              |  Emotional Symptoms Scale                             |  0-10                                    |               |
+|              |  Conduct Problem Scale                                |  0-10                                    |               |
+|              |  Hyperactivity Scale                                  |  0-10                                    |               |
+|              |  Peer Problem Scale                                   |  0-10                                    |               |
 +==============+=======================================================+==========================================+===============+
 - NB. Bold items indicate reverse scoring
 
