@@ -39,7 +39,8 @@
     "datatype": {
       "base": "string",
       "length": 11
-    }
+    },
+    "required": true
   },{
      "name": "organisation_type",
     "titles": [ "organisation_type", "Type" ],
@@ -79,6 +80,20 @@
     "datatype": {
       "base": "string"
       },
+    "required": false
+  },{
+    "name": "organisation_path",
+    "titles": [ "organisation_path", "Path" ],
+    "dc:title" : "Organisation Path",
+    "schema:description": "A sequence of colon separated Organisation Codes that fully specifies the upload organisation.",
+    "schema:dateCreated": "2016-09-29",
+    "schema:dateDeleted": "2016-09-29",
+    "schema:dateModified": "2016-09-29",
+    "schema:isPublished": "False",
+    "datatype": {
+      "base": "string"
+      },
+    "separator": ":",
     "required": false
   }],
   "primaryKey": "organisation_key",

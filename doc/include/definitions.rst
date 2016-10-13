@@ -12,6 +12,8 @@ Whether a person identifies as being of Aboriginal and/or Torres Strait Islander
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :1: Aboriginal but not Torres Strait Islander origin
   :2: Torres Strait Islander but not Aboriginal origin
@@ -44,6 +46,8 @@ The country in which the client was born, as represented by a code.
 :Field name: country_of_birth
 
 :Data type: string (4)
+
+:Required: true
 
 :Domain:
   :1101: Australia
@@ -331,6 +335,8 @@ The date on which an individual was born.
 :Field name: date_of_birth
 
 :Data type: date
+
+:Required: true
 :Notes:
   If the date of birth is unknown, the following approaches should be used:
   
@@ -361,6 +367,8 @@ The date of birth estimate flag records whether or not the client's date of birt
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :1: Date of birth is accurate
   :2: Date of birth is an estimate
@@ -379,6 +387,8 @@ The term 'gender' refers to the way in which a person identifies their masculine
 :Field name: client_gender
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :0: Not stated/Inadequately described
@@ -413,6 +423,8 @@ This is a number or code assigned to each individual referred to the commissione
 :Field name: client_key
 
 :Data type: string (2,50)
+
+:Required: true
 :Notes:
   Client keys must be unique within each PHN independent of the treating
   organisation. It is the responsibility of PHNs and Provider Organisations to
@@ -432,6 +444,8 @@ The language reported by a client as the main language other than English spoken
 :Field name: main_lang_at_home
 
 :Data type: string (4)
+
+:Required: true
 
 :Domain:
   :1101: Gaelic (Scotland)
@@ -901,6 +915,8 @@ The self-assessed level of ability to speak English, asked of people whose first
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :0: Not applicable (persons under 5 years of age or who speak only English)
   :1: Very well
@@ -933,6 +949,8 @@ A key that enables two or more records belonging to the same individual to be br
 :Field name: slk
 
 :Data type: string (14,40)
+
+:Required: true
 :Notes:
   System generated non-identifiable alphanumeric code derived from information
   held by the PMHC organisation.
@@ -962,6 +980,8 @@ List of tags for the client.
 :Field name: client_tags
 
 :Data type: string
+
+:Required: false
 :Notes:
   A comma separated list of tags.
   
@@ -988,6 +1008,8 @@ The date the measure was given.
 :Field name: measure_date
 
 :Data type: date
+
+:Required: true
 :Notes:
   For Date fields, data must be recorded in compliance with the standard format
   used across the National Health Data Dictionary; specifically, dates must be
@@ -1008,6 +1030,8 @@ The reason for the collection of the outcome measures on the identified Outcome 
 :Field name: reason_for_collection
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :1: Episode start
@@ -1044,6 +1068,8 @@ This is a number or code assigned to each collection occasion of outcome measure
 
 :Data type: string (2,50)
 
+:Required: true
+
 ----------
 
 .. _dfn-additional_diagnosis:
@@ -1056,6 +1082,8 @@ The main additional condition or complaint co-existing with the Principal Diagno
 :Field name: additional_diagnosis
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   See *Episode - Principal Diagnosis*
@@ -1086,7 +1114,9 @@ The Australian postcode of the client.
 
 :Field name: client_postcode
 
-:Data type: string (4)
+:Data type: string
+
+:Required: true
 :Notes:
   A valid Australian postcode or 9999 if the postcode is unknown or the client
   has not provided sufficient information to confirm their current residential
@@ -1116,6 +1146,8 @@ An indication that the client has consented to their anonymised data being provi
 :Field name: client_consent
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :1: Yes
@@ -1147,8 +1179,10 @@ An indication of the completion status of an *Episode of Care*.
 
 :Data type: string
 
+:Required: false
+
 :Domain:
-  :: Episode open
+  :blank: Episode open
   :1: Episode closed - treatment concluded
   :2: Episode closed administratively - client could not be contacted
   :3: Episode closed administratively - client declined further contact
@@ -1220,6 +1254,8 @@ Whether a person in paid employment is employed full-time or part-time, as repre
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :1: Full-time
   :2: Part-time
@@ -1263,6 +1299,8 @@ The date on which an *Episode of Care* is formally or administratively ended
 :Field name: episode_end_date
 
 :Data type: date
+
+:Required: false
 :Notes:
   An *Episode of Care* may be ended in one of two ways:
   
@@ -1309,6 +1347,8 @@ An indication of whether a client has a GP mental health treatment plan. A GP sh
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :1: Yes
   :2: No
@@ -1327,6 +1367,8 @@ An indication of whether the person is a current holder of a Health Care Card th
 :Field name: health_care_card
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :1: Yes
@@ -1352,6 +1394,8 @@ An indication of whether the client has been homeless in the 4 weeks prior to th
 :Field name: homelessness
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :1: Sleeping rough or in non-conventional accommodation
@@ -1395,6 +1439,8 @@ This is a number or code assigned to each episode. The Episode Key is unique and
 :Field name: episode_key
 
 :Data type: string (2,50)
+
+:Required: true
 :Notes:
   Episode Keys must be genrated by the organisation to be unique at the provider
   organisation level and must persist across time. Creation of episode keys in
@@ -1418,6 +1464,8 @@ The self-reported status the person currently has in being either in the labour 
 :Field name: labour_force_status
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :1: Employed
@@ -1492,6 +1540,8 @@ A person's current relationship status in terms of a couple relationship or, for
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :1: Never married
   :2: Widowed
@@ -1536,6 +1586,8 @@ Whether the client is taking prescribed antidepressants for a mental health cond
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :1: Yes
   :2: No
@@ -1562,6 +1614,8 @@ Whether the client is taking prescribed antipsychotics for a mental health condi
 :Field name: medication_antipsychotics
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :1: Yes
@@ -1591,6 +1645,8 @@ Whether the client is taking prescribed anxiolytics for a mental health conditio
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :1: Yes
   :2: No
@@ -1618,6 +1674,8 @@ Whether the client is taking prescribed hypnotics and sedatives for a mental hea
 :Field name: medication_hypnotics
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :1: Yes
@@ -1648,6 +1706,8 @@ Whether the client is taking prescribed psychostimulants and nootropics for a me
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :1: Yes
   :2: No
@@ -1676,6 +1736,8 @@ Is the client a participant in the National Disability Insurance Scheme?, as rep
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :1: Yes
   :2: No
@@ -1693,6 +1755,8 @@ The Principal Diagnosis is the diagnosis established after study to be chiefly r
 :Field name: principal_diagnosis
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :101: Panic disorder
@@ -1736,7 +1800,7 @@ The Principal Diagnosis is the diagnosis established after study to be chiefly r
   :905: Other
   :999: Missing
 :Notes:
-  Dignoses are grouped into 7 major categories:
+  Diagnoses are grouped into 7 major categories:
   
   - 1xx - Anxiety disorders
   - 2xx - Affective (Mood) disorders
@@ -1793,11 +1857,13 @@ The range of activities that best describes the overall services intended to be 
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :1: Psychological therapy
   :2: Low intensity psychological intervention
   :3: Clinical care coordination
-  :4: Complex care package for adults
+  :4: Complex care package
   :5: Child and youth-specific mental health services
   :6: Indigenous-specific mental health services
   :7: Other
@@ -1922,6 +1988,8 @@ The date the referrer made the referral.
 :Field name: referral_date
 
 :Data type: date
+
+:Required: false
 :Notes:
   For Date fields, data must be recorded in compliance with the standard format
   used across the National Health Data Dictionary; specifically, dates must be
@@ -1942,6 +2010,8 @@ Type of organisation in which the referring professional is based.
 :Field name: referrer_organisation_type
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :1: General Practice
@@ -1992,6 +2062,8 @@ Profession of the provider who referred the client.
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :1: General Practitioner
   :2: Psychiatrist
@@ -2029,7 +2101,10 @@ The source from which a person derives the greatest proportion of his/her income
 
 :Data type: string
 
+:Required: true
+
 :Domain:
+  :0: N/A - Client aged less than 16 years
   :1: Disability Support Pension
   :2: Other pension or benefit (not superannuation)
   :3: Paid employment
@@ -2071,6 +2146,8 @@ Identifies those individuals where a recent history of suicide attempt, or suici
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :1: Yes
   :2: No
@@ -2088,6 +2165,8 @@ List of tags for the episode.
 :Field name: episode_tags
 
 :Data type: string
+
+:Required: false
 :Notes:
   A comma separated list of tags.
   
@@ -2115,6 +2194,8 @@ In the last 4 weeks, about how often did you feel nervous?
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :1: None of the time
   :2: A little of the time
@@ -2135,6 +2216,8 @@ In the last 4 weeks, about how often did you feel without hope?
 :Field name: k5_item2
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :1: None of the time
@@ -2157,6 +2240,8 @@ In the last 4 weeks, about how often did you feel restless or jumpy?
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :1: None of the time
   :2: A little of the time
@@ -2177,6 +2262,8 @@ In the last 4 weeks, about how often did you feel everything was an effort?
 :Field name: k5_item4
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :1: None of the time
@@ -2199,6 +2286,8 @@ In the last 4 weeks, about how often did you feel so sad that nothing could chee
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :1: None of the time
   :2: A little of the time
@@ -2219,6 +2308,11 @@ The overall K5 score.
 :Field name: k5_score
 
 :Data type: integer
+
+:Required: true
+
+:Domain:
+  5 - 25, 99
 :Notes:
   The K5 Total score is based on the sum of K5 item 1 through 5 (range: 5-25).
   
@@ -2242,6 +2336,8 @@ List of tags for the collection occasion.
 :Field name: k5_tags
 
 :Data type: string
+
+:Required: false
 :Notes:
   A comma separated list of tags.
   
@@ -2269,6 +2365,8 @@ In the past 4 weeks, about how often did you feel tired out for no good reason?
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :1: None of the time
   :2: A little of the time
@@ -2289,6 +2387,8 @@ In the past 4 weeks, about how often did you feel nervous?
 :Field name: k10p_item2
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :1: None of the time
@@ -2311,6 +2411,8 @@ In the past 4 weeks, about how often did you feel so nervous that nothing could 
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :1: None of the time
   :2: A little of the time
@@ -2331,6 +2433,8 @@ In the past 4 weeks, how often did you feel hopeless?
 :Field name: k10p_item4
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :1: None of the time
@@ -2353,6 +2457,8 @@ In the past 4 weeks, how often did you feel restless or fidgety?
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :1: None of the time
   :2: A little of the time
@@ -2373,6 +2479,8 @@ In the past 4 weeks, how often did you feel so restless you could not sit still?
 :Field name: k10p_item6
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :1: None of the time
@@ -2395,6 +2503,8 @@ In the past 4 weeks, how often did you feel depressed?
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :1: None of the time
   :2: A little of the time
@@ -2415,6 +2525,8 @@ In the past 4 weeks, how often did you feel that everything was an effort?
 :Field name: k10p_item8
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :1: None of the time
@@ -2437,6 +2549,8 @@ In the past 4 weeks, how often did you feel so sad that nothing could cheer you 
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :1: None of the time
   :2: A little of the time
@@ -2457,6 +2571,8 @@ In the past 4 weeks, how often did you feel worthless?
 :Field name: k10p_item10
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :1: None of the time
@@ -2479,6 +2595,11 @@ In the past four weeks, how many days were you totally unable to work, study or 
 
 :Data type: integer
 
+:Required: true
+
+:Domain:
+  0 - 28, 99
+
 ----------
 
 .. _dfn-k10p_item12:
@@ -2491,6 +2612,11 @@ Aside from those days, in the past four weeks, how many days were you able to wo
 :Field name: k10p_item12
 
 :Data type: integer
+
+:Required: true
+
+:Domain:
+  0 - 28, 99
 
 ----------
 
@@ -2505,6 +2631,11 @@ In the past four weeks, how many times have you seen a doctor or any other healt
 
 :Data type: integer
 
+:Required: true
+
+:Domain:
+  0 - 89, 99
+
 ----------
 
 .. _dfn-k10p_item14:
@@ -2517,6 +2648,8 @@ In the past four weeks, how often have physical health problems been the main ca
 :Field name: k10p_item14
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :1: None of the time
@@ -2538,6 +2671,11 @@ The overall K10 score.
 :Field name: k10p_score
 
 :Data type: integer
+
+:Required: true
+
+:Domain:
+  10 - 50, 99
 :Notes:
   The K10 Total score is based on the sum of K10 item 01 through 10 (range: 10-50).
   Items 11 through 14 are excluded from the total because they are separate
@@ -2565,6 +2703,8 @@ List of tags for the collection occasion.
 :Field name: k10p_tags
 
 :Data type: string
+
+:Required: false
 :Notes:
   A comma separated list of tags.
   
@@ -2592,6 +2732,8 @@ A sequence of colon separated Organisation Codes that fully specifies the upload
 
 :Data type: string
 
+:Required: false
+
 ----------
 
 .. _dfn-practitioner_atsi_status:
@@ -2604,6 +2746,8 @@ Whether a person identifies as being of Aboriginal and/or Torres Strait Islander
 :Field name: practitioner_atsi_status
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :1: Aboriginal but not Torres Strait Islander origin
@@ -2638,6 +2782,8 @@ A flag to represent whether a practitioner is actively delivering services. This
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :0: Inactive
   :1: Active
@@ -2654,6 +2800,8 @@ Indicates whether a practitioner has completed a recognised training programme i
 :Field name: atsi_cultural_training
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :1: Yes
@@ -2704,6 +2852,8 @@ The type or category of the practitioner, as represented by a code.
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :1: Clinical Psychologist
   :2: General Psychologist
@@ -2731,6 +2881,8 @@ The term 'gender' refers to the way in which a person identifies their masculine
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :0: Not stated/Inadequately described
   :1: Male
@@ -2752,6 +2904,8 @@ A unique identifier for a practitioner within the responsible organisation. Assi
 
 :Data type: string (2,50)
 
+:Required: true
+
 ----------
 
 .. _dfn-practitioner_tags:
@@ -2764,6 +2918,8 @@ List of tags for the practitioner.
 :Field name: practitioner_tags
 
 :Data type: string
+
+:Required: false
 :Notes:
   A comma separated list of tags.
   
@@ -2791,6 +2947,8 @@ The year the practitioner was born.
 
 :Data type: gYear
 
+:Required: true
+
 :Domain:
   gYear
 :Notes:
@@ -2816,6 +2974,8 @@ The Australian Business Number of the provider organisation.
 
 :Data type: string (11)
 
+:Required: true
+
 ----------
 
 .. _dfn-organisation_name:
@@ -2829,6 +2989,8 @@ The name of the provider organisation.
 
 :Data type: string (2,100)
 
+:Required: true
+
 ----------
 
 .. _dfn-organisation_state:
@@ -2841,6 +3003,8 @@ The state that the provider organisation operates in.
 :Field name: organisation_state
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :1: New South Wales
@@ -2874,6 +3038,8 @@ List of tags for the provider organisation.
 :Field name: organisation_tags
 
 :Data type: string
+
+:Required: false
 :Notes:
   A comma separated list of tags.
   
@@ -2900,6 +3066,8 @@ The category that best describes the provider organisation.
 :Field name: organisation_type
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :1: Private Allied Health Professional Practice
@@ -3003,6 +3171,8 @@ A sequence of characters which uniquely identifies the provider organisation. As
 
 :Data type: string (2,50)
 
+:Required: true
+
 ----------
 
 .. _dfn-sdq_version:
@@ -3015,6 +3185,8 @@ The version of the SDQ collected.
 :Field name: sdq_version
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :PC101: Parent Report Measure 4-10 yrs, Baseline version, Australian Version 1
@@ -3039,6 +3211,11 @@ SDQ - Conduct Problem Scale
 :Field name: sdq_conduct_problem
 
 :Data type: integer
+
+:Required: true
+
+:Domain:
+  0 - 10, 99
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Conduct Problem Scale.
   
@@ -3054,6 +3231,11 @@ SDQ - Emotional Symptoms Scale
 :Field name: sdq_emotional_symptoms
 
 :Data type: integer
+
+:Required: true
+
+:Domain:
+  0 - 10, 99
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Emotional Symptoms Scale.
   
@@ -3069,6 +3251,11 @@ SDQ - Hyperactivity Scale
 :Field name: sdq_hyperactivity
 
 :Data type: integer
+
+:Required: true
+
+:Domain:
+  0 - 10, 99
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Hyperactivity Scale.
   
@@ -3084,6 +3271,11 @@ SDQ - Impact Score
 :Field name: sdq_impact
 
 :Data type: integer
+
+:Required: true
+
+:Domain:
+  0 - 10, 99
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Impact Score.
   
@@ -3099,6 +3291,11 @@ SDQ - Peer Problem Scale
 :Field name: sdq_peer_problem
 
 :Data type: integer
+
+:Required: true
+
+:Domain:
+  0 - 10, 99
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Peer Problem Scale.
   
@@ -3114,6 +3311,11 @@ SDQ - Prosocial Scale
 :Field name: sdq_prosocial
 
 :Data type: integer
+
+:Required: true
+
+:Domain:
+  0 - 10, 99
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Prosocial Scale.
   
@@ -3132,6 +3334,8 @@ Youth Self Report: I try to be nice to other people. I care about their feelings
 :Field name: sdq_item1
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :0: Not True
@@ -3158,6 +3362,8 @@ Youth Self Report: I am restless, I cannot stay still for long.
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :0: Not True
   :1: Somewhat True
@@ -3182,6 +3388,8 @@ Youth Self Report: I get a lot of headaches, stomach-aches or sickness.
 :Field name: sdq_item3
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :0: Not True
@@ -3208,6 +3416,8 @@ Youth Self Report: I usually share with others, for examples CDs, games, food.
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :0: Not True
   :1: Somewhat True
@@ -3232,6 +3442,8 @@ Youth Self Report: I get very angry and often lose my temper.
 :Field name: sdq_item5
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :0: Not True
@@ -3258,6 +3470,8 @@ Youth Self Report: I would rather be alone than with people of my age.
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :0: Not True
   :1: Somewhat True
@@ -3282,6 +3496,8 @@ Youth Self Report: I usually do as I am told.
 :Field name: sdq_item7
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :0: Not True
@@ -3308,6 +3524,8 @@ Youth Self Report: I worry a lot.
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :0: Not True
   :1: Somewhat True
@@ -3332,6 +3550,8 @@ Youth Self Report: I am helpful if someone is hurt, upset or feeling ill.
 :Field name: sdq_item9
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :0: Not True
@@ -3358,6 +3578,8 @@ Youth Self Report: I am constantly fidgeting or squirming.
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :0: Not True
   :1: Somewhat True
@@ -3382,6 +3604,8 @@ Youth Self Report: I have one good friend or more.
 :Field name: sdq_item11
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :0: Not True
@@ -3408,6 +3632,8 @@ Youth Self Report: I fight a lot. I can make other people do what I want.
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :0: Not True
   :1: Somewhat True
@@ -3432,6 +3658,8 @@ Youth Self Report: I am often unhappy, depressed or tearful.
 :Field name: sdq_item13
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :0: Not True
@@ -3458,6 +3686,8 @@ Youth Self Report: Other people my age generally like me.
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :0: Not True
   :1: Somewhat True
@@ -3482,6 +3712,8 @@ Youth Self Report: I am easily distracted, I find it difficult to concentrate.
 :Field name: sdq_item15
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :0: Not True
@@ -3508,6 +3740,8 @@ Youth Self Report: I am nervous in new situations. I easily lose confidence.
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :0: Not True
   :1: Somewhat True
@@ -3532,6 +3766,8 @@ Youth Self Report: I am kind to younger people.
 :Field name: sdq_item17
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :0: Not True
@@ -3558,6 +3794,8 @@ Youth Self Report: I am often accused of lying or cheating.
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :0: Not True
   :1: Somewhat True
@@ -3582,6 +3820,8 @@ Youth Self Report: Other children or young people pick on me or bully me.
 :Field name: sdq_item19
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :0: Not True
@@ -3608,6 +3848,8 @@ Youth Self Report: I often volunteer to help others (parents, teachers, children
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :0: Not True
   :1: Somewhat True
@@ -3632,6 +3874,8 @@ Youth Self Report: I think before I do things.
 :Field name: sdq_item21
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :0: Not True
@@ -3658,6 +3902,8 @@ Youth Self Report: I take things that are not mine from home, school or elsewher
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :0: Not True
   :1: Somewhat True
@@ -3682,6 +3928,8 @@ Youth Self Report: I get along better with adults than with people my own age.
 :Field name: sdq_item23
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :0: Not True
@@ -3708,6 +3956,8 @@ Youth Self Report: I have many fears, I am easily scared.
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :0: Not True
   :1: Somewhat True
@@ -3732,6 +3982,8 @@ Youth Self Report: I finish the work I'm doing. My attention is good.
 :Field name: sdq_item25
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :0: Not True
@@ -3758,6 +4010,8 @@ Youth Self Report: Overall, do you think that you have difficulties in any of th
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :0: No
   :1: Yes - minor difficulties
@@ -3783,6 +4037,8 @@ Youth Self Report: How long have these difficulties been present?
 :Field name: sdq_item27
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :0: Less than a month
@@ -3814,6 +4070,8 @@ Youth Self Report: Do the difficulties upset or distress you?
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :0: Not at all
   :1: A little
@@ -3840,6 +4098,8 @@ Youth Self Report: Do the difficulties interfere with your everyday life in the 
 :Field name: sdq_item29
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :0: Not at all
@@ -3868,6 +4128,8 @@ Youth Self Report: Do the difficulties interfere with your everyday life in the 
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :0: Not at all
   :1: A little
@@ -3894,6 +4156,8 @@ Youth Self Report: Do the difficulties interfere with your everyday life in the 
 :Field name: sdq_item31
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :0: Not at all
@@ -3922,6 +4186,8 @@ Youth Self Report: Do the difficulties interfere with your everyday life in the 
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :0: Not at all
   :1: A little
@@ -3949,6 +4215,8 @@ Youth Self Report: Do the difficulties make it harder for those around you (fami
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :0: Not at all
   :1: A little
@@ -3975,6 +4243,8 @@ Youth Self Report: 'Since coming to the service, are your problems:
 :Field name: sdq_item34
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :0: Much worse
@@ -4005,6 +4275,8 @@ Has coming to the service been helpful in other ways eg. providing information o
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :0: Not at all
   :1: A little
@@ -4033,6 +4305,8 @@ Over the last 6 months have your child's teachers complained of fidgetiness, res
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :0: No
   :1: A little
@@ -4058,6 +4332,8 @@ Over the last 6 months have your child's teachers complained of poor concentrati
 :Field name: sdq_item37
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :0: No
@@ -4085,6 +4361,8 @@ Over the last 6 months have your child's teachers complained of acting without t
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :0: No
   :1: A little
@@ -4111,6 +4389,8 @@ Does your family complain about you having problems with overactivity or poor co
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :0: No
   :1: A little
@@ -4135,6 +4415,8 @@ Do your teachers complain about you having problems with overactivity or poor co
 :Field name: sdq_item40
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :0: No
@@ -4161,6 +4443,8 @@ Does your family complain about you being awkward or troublesome?
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :0: No
   :1: A little
@@ -4186,6 +4470,8 @@ Do your teachers complain about you being awkward or troublesome?
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :0: No
   :1: A little
@@ -4210,6 +4496,8 @@ List of tags for the collection occasion.
 :Field name: sdq_tags
 
 :Data type: string
+
+:Required: false
 :Notes:
   A comma separated list of tags.
   
@@ -4235,6 +4523,11 @@ SDQ - Total Difficulties Score
 :Field name: sdq_total
 
 :Data type: integer
+
+:Required: true
+
+:Domain:
+  0 - 40, 99
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Total Difficulties Score.
   
@@ -4251,6 +4544,8 @@ An indicator of whether the client participated in the service contact, as repre
 :Field name: service_contact_participation_indicator
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :1: Yes
@@ -4286,6 +4581,11 @@ The co-payment is the amount paid by the client per session.
 :Field name: service_contact_copayment
 
 :Data type: number
+
+:Required: true
+
+:Domain:
+  0 - 999999
 :Notes:
   Up to 6 digits before the decimal point; up to 2 digits after the decimal
   point.
@@ -4309,6 +4609,8 @@ The date of each mental health service contact between a health service provider
 :Field name: service_contact_date
 
 :Data type: date
+
+:Required: true
 :Notes:
   For Date fields, data must be recorded in compliance with the standard format
   used across the National Health Data Dictionary; specifically, dates must be
@@ -4331,6 +4633,8 @@ The time from the start to finish of a service contact.
 :Field name: service_contact_duration
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :1: 0-15 mins
@@ -4365,6 +4669,8 @@ An indication of whether the Service Contact is the final for the current Episod
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :1: No further services are planned for the client in the current episode
   :2: Further services are planned for the client in the current episode
@@ -4397,6 +4703,8 @@ Whether an interpreter service was used during the Service Contact
 :Field name: service_contact_interpreter
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :1: Yes
@@ -4433,6 +4741,8 @@ How the service contact was delivered, as represented by a code.
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :1: Face to Face
   :2: Telephone
@@ -4458,6 +4768,8 @@ Where an appointment was made for a client, but the client failed to attend the 
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :1: Yes
   :2: No
@@ -4480,6 +4792,8 @@ An indication of who participated in the Service Contact.
 :Field name: service_contact_participants
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :1: Individual client
@@ -4526,7 +4840,9 @@ The Australian postcode where the service contact took place.
 
 :Field name: service_contact_postcode
 
-:Data type: string (4)
+:Data type: string
+
+:Required: true
 :Notes:
   A valid Australian postcode or 9999 if the postcode is unknown. The full list
   of Australian Postcodes can be found at `Australia Post
@@ -4551,6 +4867,8 @@ List of tags for the service contact.
 :Field name: service_contact_tags
 
 :Data type: string
+
+:Required: false
 :Notes:
   A comma separated list of tags.
   
@@ -4577,6 +4895,8 @@ The main type of service provided in the service contact, as represented by the 
 :Field name: service_contact_type
 
 :Data type: string
+
+:Required: true
 
 :Domain:
   :1: Assessment
@@ -4703,6 +5023,8 @@ Where the service contact was delivered, as represented by a code.
 
 :Data type: string
 
+:Required: true
+
 :Domain:
   :1: Client's Home
   :2: Service provider's office
@@ -4737,6 +5059,8 @@ This is a number or code assigned to each service contact. The Service Contact K
 :Field name: service_contact_key
 
 :Data type: string (2,50)
+
+:Required: true
 
 ----------
 

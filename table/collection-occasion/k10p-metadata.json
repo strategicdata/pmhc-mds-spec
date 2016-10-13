@@ -59,8 +59,7 @@
     "schema:dateCreated": "2016-07-08",
     "schema:dateModified": "2016-07-08",
     "datatype": {
-      "base": "string",
-      "format": "^(1|2|3)$"
+      "base": "string"
     },
     "required": true
   },{
@@ -72,10 +71,9 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(1|2|3|4|5|6|9)$"
+      "base": "string"
     },
-    "required": false
+    "required": true
   },{
     "name": "k10p_item2",
     "titles": [ "k10p_item2", "Question 2" ],
@@ -85,10 +83,9 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(1|2|3|4|5|6|9)$"
+      "base": "string"
     },
-    "required": false
+    "required": true
   },{
     "name": "k10p_item3",
     "titles": [ "k10p_item3", "Question 3" ],
@@ -98,10 +95,9 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(1|2|3|4|5|6|9)$"
+      "base": "string"
     },
-    "required": false
+    "required": true
   },{
     "name": "k10p_item4",
     "titles": [ "k10p_item4", "Question 4" ],
@@ -111,10 +107,9 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(1|2|3|4|5|6|9)$"
+      "base": "string"
     },
-    "required": false
+    "required": true
   },{
     "name": "k10p_item5",
     "titles": [ "k10p_item5", "Question 5" ],
@@ -124,10 +119,9 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(1|2|3|4|5|6|9)$"
+      "base": "string"
     },
-    "required": false
+    "required": true
   },{
     "name": "k10p_item6",
     "titles": [ "k10p_item6", "Question 6" ],
@@ -137,10 +131,9 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(1|2|3|4|5|6|9)$"
+      "base": "string"
     },
-    "required": false
+    "required": true
   },{
     "name": "k10p_item7",
     "titles": [ "k10p_item7", "Question 7" ],
@@ -150,10 +143,9 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(1|2|3|4|5|6|9)$"
+      "base": "string"
     },
-    "required": false
+    "required": true
   },{
     "name": "k10p_item8",
     "titles": [ "k10p_item8", "Question 8" ],
@@ -163,10 +155,9 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(1|2|3|4|5|6|9)$"
+      "base": "string"
     },
-    "required": false
+    "required": true
   },{
     "name": "k10p_item9",
     "titles": [ "k10p_item9", "Question 9" ],
@@ -176,10 +167,9 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(1|2|3|4|5|6|9)$"
+      "base": "string"
     },
-    "required": false
+    "required": true
   },{
     "name": "k10p_item10",
     "titles": [ "k10p_item10", "Question 10" ],
@@ -189,10 +179,9 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(1|2|3|4|5|6|9)$"
+      "base": "string"
     },
-    "required": false
+    "required": true
   },{
     "name": "k10p_item11",
     "titles": [ "k10p_item11", "Question 11" ],
@@ -244,8 +233,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(1|2|3|4|5|6|9)$"
+      "base": "string"
     },
     "required": true
   },{
@@ -262,7 +250,7 @@
       "base": "integer",
       "minimum": 10,
       "maximum": 50
-      }
+    }
   },{
     "name": "k10p_tags",
     "titles": [ "k10p_tags", "Tags" ],
@@ -282,6 +270,12 @@
     "reference": {
       "resource": "table/collection-occasion/reason.csv",
       "columnReference": "id"
+    }
+  }, {
+    "columnReference": "episode_key",
+    "reference": {
+      "resource": "data/episodes.csv",
+      "columnReference": "episode_key"
     }
   }, {
     "columnReference": "k10p_item1",

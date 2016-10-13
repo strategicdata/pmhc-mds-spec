@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Data model and specifications &mdash; PMHC MDS Version 1 documentation</title>
+  <title>Data model and specifications &mdash; PMHC MDS Version 1.0.1 documentation</title>
   
 
   
@@ -32,7 +32,7 @@
   
 
   
-    <link rel="top" title="PMHC MDS Version 1 documentation" href="index.html"/>
+    <link rel="top" title="PMHC MDS Version 1.0.1 documentation" href="index.html"/>
         <link rel="next" title="Upload specification" href="upload-specification.html"/>
         <link rel="prev" title="Identifier management" href="identifier-management.html"/> 
 
@@ -62,7 +62,7 @@
             
             
               <div class="version">
-                Version 1
+                Version 1.0.1
               </div>
             
           
@@ -526,6 +526,10 @@ it cannot be uploaded.</p>
 <tr class="row-odd"><td><a class="reference internal" href="#provider-organisation-tags">Provider Organisation - Tags</a> (organisation_tags)</td>
 <td>string</td>
 <td>List of tags for the provider organisation.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#organisation-path">Organisation Path</a> (organisation_path)</td>
+<td>string</td>
+<td>A sequence of colon separated Organisation Codes that fully specifies the upload organisation.</td>
 </tr>
 </tbody>
 </table>
@@ -2272,13 +2276,27 @@ upload.</p>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#episode-completion-status">Episode - Completion Status</a> (episode_completion_status)</td>
 <td>string</td>
-<td>:: Episode open
-:1: Episode closed - treatment concluded
-:2: Episode closed administratively - client could not be contacted
-:3: Episode closed administratively - client declined further contact
-:4: Episode closed administratively - client moved out of area
-:5: Episode closed administratively - client referred elsewhere
-:6: Episode closed administratively - other reason</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">blank:</th><td class="field-body">Episode open</td>
+</tr>
+<tr class="field-even field"><th class="field-name">1:</th><td class="field-body">Episode closed - treatment concluded</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">2:</th><td class="field-body">Episode closed administratively - client could not be contacted</td>
+</tr>
+<tr class="field-even field"><th class="field-name">3:</th><td class="field-body">Episode closed administratively - client declined further contact</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">4:</th><td class="field-body">Episode closed administratively - client moved out of area</td>
+</tr>
+<tr class="field-even field"><th class="field-name">5:</th><td class="field-body">Episode closed administratively - client referred elsewhere</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">6:</th><td class="field-body">Episode closed administratively - other reason</td>
+</tr>
+</tbody>
+</table>
+</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#episode-referral-date">Episode - Referral Date</a> (referral_date)</td>
 <td>date</td>
@@ -2296,7 +2314,7 @@ upload.</p>
 </tr>
 <tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">Clinical care coordination</td>
 </tr>
-<tr class="field-even field"><th class="field-name">4:</th><td class="field-body">Complex care package for adults</td>
+<tr class="field-even field"><th class="field-name">4:</th><td class="field-body">Complex care package</td>
 </tr>
 <tr class="field-odd field"><th class="field-name">5:</th><td class="field-body">Child and youth-specific mental health services</td>
 </tr>
@@ -2345,7 +2363,7 @@ upload.</p>
 <tr class="row-even"><td><p class="first"><a class="reference internal" href="#episode-area-of-usual-residence-postcode">Episode - Area of usual residence, postcode</a> (client_postcode)</p>
 <p class="last">METeOR: <a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/429894">429894</a></p>
 </td>
-<td>string (4)</td>
+<td>string</td>
 <td>The Australian postcode of the client.</td>
 </tr>
 <tr class="row-odd"><td><p class="first"><a class="reference internal" href="#episode-labour-force-status">Episode - Labour Force Status</a> (labour_force_status)</p>
@@ -2396,21 +2414,23 @@ upload.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Disability Support Pension</td>
+<tr class="field-odd field"><th class="field-name">0:</th><td class="field-body">N/A - Client aged less than 16 years</td>
 </tr>
-<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">Other pension or benefit (not superannuation)</td>
+<tr class="field-even field"><th class="field-name">1:</th><td class="field-body">Disability Support Pension</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">Paid employment</td>
+<tr class="field-odd field"><th class="field-name">2:</th><td class="field-body">Other pension or benefit (not superannuation)</td>
 </tr>
-<tr class="field-even field"><th class="field-name">4:</th><td class="field-body">Compensation payments</td>
+<tr class="field-even field"><th class="field-name">3:</th><td class="field-body">Paid employment</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">5:</th><td class="field-body">Other (e.g. superannuation, investments etc.)</td>
+<tr class="field-odd field"><th class="field-name">4:</th><td class="field-body">Compensation payments</td>
 </tr>
-<tr class="field-even field"><th class="field-name">6:</th><td class="field-body">Nil income</td>
+<tr class="field-even field"><th class="field-name">5:</th><td class="field-body">Other (e.g. superannuation, investments etc.)</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">7:</th><td class="field-body">Not known</td>
+<tr class="field-odd field"><th class="field-name">6:</th><td class="field-body">Nil income</td>
 </tr>
-<tr class="field-even field"><th class="field-name">9:</th><td class="field-body">Not stated/inadequately described</td>
+<tr class="field-even field"><th class="field-name">7:</th><td class="field-body">Not known</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Not stated/inadequately described</td>
 </tr>
 </tbody>
 </table>
@@ -2843,7 +2863,7 @@ upload.</p>
 <tr class="row-even"><td><p class="first"><a class="reference internal" href="#service-contact-postcode">Service Contact - Postcode</a> (service_contact_postcode)</p>
 <p class="last">METeOR: <a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/429894">429894</a></p>
 </td>
-<td>string (4)</td>
+<td>string</td>
 <td>The Australian postcode where the service contact took place.</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#service-contact-modality">Service Contact - Modality</a> (service_contact_modality)</td>
@@ -2952,7 +2972,7 @@ upload.</p>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#service-contact-copayment">Service Contact - Copayment</a> (service_contact_copayment)</td>
 <td>number</td>
-<td>The co-payment is the amount paid by the client per session.</td>
+<td>0 - 999999</td>
 </tr>
 <tr class="row-even"><td><p class="first"><a class="reference internal" href="#service-contact-client-participation-indicator">Service Contact - Client Participation Indicator</a> (service_contact_participation_indicator)</p>
 <p class="last">METeOR: <a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/494341">494341</a></p>
@@ -3306,15 +3326,15 @@ the K10 total score as well as item scores for the 4 extra items in the K10+.</p
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#k10-question-11">K10+ - Question 11</a> (k10p_item11)</td>
 <td>integer</td>
-<td>In the past four weeks, how many days were you totally unable to work, study or manage your day to day activities because of these feelings?</td>
+<td>0 - 28, 99</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#k10-question-12">K10+ - Question 12</a> (k10p_item12)</td>
 <td>integer</td>
-<td>Aside from those days, in the past four weeks, how many days were you able to work or study or manage your day to day activities, but had to cut down on what you did because of these feelings?</td>
+<td>0 - 28, 99</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#k10-question-13">K10+ - Question 13</a> (k10p_item13)</td>
 <td>integer</td>
-<td>In the past four weeks, how many times have you seen a doctor or any other health professional about these feelings?</td>
+<td>0 - 89, 99</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#k10-question-14">K10+ - Question 14</a> (k10p_item14)</td>
 <td>string</td>
@@ -3340,7 +3360,7 @@ the K10 total score as well as item scores for the 4 extra items in the K10+.</p
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#k10-score">K10+ - Score</a> (k10p_score)</td>
 <td>integer</td>
-<td>The overall K10 score.</td>
+<td>10 - 50, 99</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#k10-tags">K10+ - Tags</a> (k10p_tags)</td>
 <td>string</td>
@@ -3512,7 +3532,7 @@ the K5 total score.</p>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#k5-score">K5 - Score</a> (k5_score)</td>
 <td>integer</td>
-<td>The overall K5 score.</td>
+<td>5 - 25, 99</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#k5-tags">K5 - Tags</a> (k5_tags)</td>
 <td>string</td>
@@ -4660,31 +4680,31 @@ namely: 0-&gt;0, 1-&gt;0, 2-&gt;1, 3-&gt;2.</p>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#sdq-emotional-symptoms-scale">SDQ - Emotional Symptoms Scale</a> (sdq_emotional_symptoms)</td>
 <td>integer</td>
-<td>&nbsp;</td>
+<td>0 - 10, 99</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#sdq-conduct-problem-scale">SDQ - Conduct Problem Scale</a> (sdq_conduct_problem)</td>
 <td>integer</td>
-<td>&nbsp;</td>
+<td>0 - 10, 99</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#sdq-hyperactivity-scale">SDQ - Hyperactivity Scale</a> (sdq_hyperactivity)</td>
 <td>integer</td>
-<td>&nbsp;</td>
+<td>0 - 10, 99</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#sdq-peer-problem-scale">SDQ - Peer Problem Scale</a> (sdq_peer_problem)</td>
 <td>integer</td>
-<td>&nbsp;</td>
+<td>0 - 10, 99</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#sdq-prosocial-scale">SDQ - Prosocial Scale</a> (sdq_prosocial)</td>
 <td>integer</td>
-<td>&nbsp;</td>
+<td>0 - 10, 99</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#sdq-total-difficulties-score">SDQ - Total Difficulties Score</a> (sdq_total)</td>
 <td>integer</td>
-<td>&nbsp;</td>
+<td>0 - 40, 99</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#sdq-impact-score">SDQ - Impact Score</a> (sdq_impact)</td>
 <td>integer</td>
-<td>&nbsp;</td>
+<td>0 - 10, 99</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#sdq-tags">SDQ - Tags</a> (sdq_tags)</td>
 <td>string</td>
@@ -4712,7 +4732,10 @@ namely: 0-&gt;0, 1-&gt;0, 2-&gt;1, 3-&gt;2.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -4765,7 +4788,10 @@ knows the client was not available.</li>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string (4)</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -5318,7 +5344,10 @@ refer to <a class="reference internal" href="form-creation.html#form-country-of-
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">date</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">If the date of birth is unknown, the following approaches should be used:</p>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">If the date of birth is unknown, the following approaches should be used:</p>
 <blockquote>
 <div><ul class="simple">
 <li>If the age of the person is known, the age should be used to derive the
@@ -5335,7 +5364,7 @@ following convention: 0101Estimated year of birth.</li>
 </div></blockquote>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">METeOR:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/287007">287007</a></p>
+<tr class="field-odd field"><th class="field-name">METeOR:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/287007">287007</a></p>
 </td>
 </tr>
 </tbody>
@@ -5355,7 +5384,10 @@ following convention: 0101Estimated year of birth.</li>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -5388,7 +5420,10 @@ following convention: 0101Estimated year of birth.</li>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -5438,7 +5473,9 @@ descriptors other than man/boy or woman/girl.</p>
 </tr>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">string (2,50)</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">Client keys must be unique within each PHN independent of the treating
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body">Client keys must be unique within each PHN independent of the treating
 organisation. It is the responsibility of PHNs and Provider Organisations to
 co-ordinate to maintain this identifier. Clients should not be assigned
 multiple keys within the same PHN.</td>
@@ -5460,7 +5497,10 @@ multiple keys within the same PHN.</td>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string (4)</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -6374,7 +6414,10 @@ refer to <a class="reference internal" href="form-creation.html#form-main-lang-a
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -6427,7 +6470,10 @@ transferring data from data sets where the item has not been collected.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string (14,40)</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">System generated non-identifiable alphanumeric code derived from information
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">System generated non-identifiable alphanumeric code derived from information
 held by the PMHC organisation.</p>
 <dl class="docutils">
 <dt>Supported formats:</dt>
@@ -6443,7 +6489,7 @@ in length.</li>
 <p>SLK values are stored in sha1_hex format.</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">METeOR:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/349510">349510</a></p>
+<tr class="field-odd field"><th class="field-name">METeOR:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/349510">349510</a></p>
 </td>
 </tr>
 </tbody>
@@ -6463,7 +6509,10 @@ in length.</li>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">A comma separated list of tags.</p>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">false</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">A comma separated list of tags.</p>
 <p>Organisations can use this field to tag records in order to partition them as
 per local requirements.</p>
 <p>Tags can contain lower case letters (or will get lowercased), numbers, dashes,
@@ -6488,7 +6537,9 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">date</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">For Date fields, data must be recorded in compliance with the standard format
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body">For Date fields, data must be recorded in compliance with the standard format
 used across the National Health Data Dictionary; specifically, dates must be
 of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
 necessary to pad out a value. For instance, 13th March 2008 would appear as
@@ -6511,7 +6562,10 @@ necessary to pad out a value. For instance, 13th March 2008 would appear as
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -6561,6 +6615,8 @@ health status;</li>
 </tr>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">string (2,50)</td>
 </tr>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+</tr>
 </tbody>
 </table>
 <hr class="docutils" />
@@ -6578,10 +6634,13 @@ health status;</li>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><p class="first">See <em>Episode - Principal Diagnosis</em></p>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Additional Diagnosis gives information on conditions that are significant in
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><p class="first">See <em>Episode - Principal Diagnosis</em></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Additional Diagnosis gives information on conditions that are significant in
 terms of treatment required and resources used during the episode of care.
 Additional diagnoses should be interpreted as conditions that affect client
 management in terms of requiring any of the following:</p>
@@ -6610,10 +6669,13 @@ see Principal Diagnosis</p>
 <tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">client_postcode</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string (4)</p>
+<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">A valid Australian postcode or 9999 if the postcode is unknown or the client
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">A valid Australian postcode or 9999 if the postcode is unknown or the client
 has not provided sufficient information to confirm their current residential
 address.</p>
 <p>The full list of Australian Postcodes can be found at <a class="reference external" href="http://www.auspost.com.au/">Australia Post</a>.</p>
@@ -6624,7 +6686,7 @@ their main residence, or where the person has no other residence, the place
 they currently reside.&#8217;</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">METeOR:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/429894">429894</a></p>
+<tr class="field-odd field"><th class="field-name">METeOR:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/429894">429894</a></p>
 </td>
 </tr>
 </tbody>
@@ -6644,7 +6706,10 @@ they currently reside.&#8217;</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -6689,13 +6754,29 @@ extracts accessible by the Department of Health.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><p class="first">:: Episode open
-:1: Episode closed - treatment concluded
-:2: Episode closed administratively - client could not be contacted
-:3: Episode closed administratively - client declined further contact
-:4: Episode closed administratively - client moved out of area
-:5: Episode closed administratively - client referred elsewhere
-:6: Episode closed administratively - other reason</p>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">false</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">blank:</th><td class="field-body">Episode open</td>
+</tr>
+<tr class="field-even field"><th class="field-name">1:</th><td class="field-body">Episode closed - treatment concluded</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">2:</th><td class="field-body">Episode closed administratively - client could not be contacted</td>
+</tr>
+<tr class="field-even field"><th class="field-name">3:</th><td class="field-body">Episode closed administratively - client declined further contact</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">4:</th><td class="field-body">Episode closed administratively - client moved out of area</td>
+</tr>
+<tr class="field-even field"><th class="field-name">5:</th><td class="field-body">Episode closed administratively - client referred elsewhere</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">6:</th><td class="field-body">Episode closed administratively - other reason</td>
+</tr>
+</tbody>
+</table>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">In order to use code 1 (Episode closed - treatment concluded) the client must have at least one service contact. All other codes may be applicable even when the client has no service contacts.</p>
@@ -6769,7 +6850,10 @@ recorded as the date of the final Service Contact.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -6830,7 +6914,10 @@ item has not been collected.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">date</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">An <em>Episode of Care</em> may be ended in one of two ways:</p>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">false</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">An <em>Episode of Care</em> may be ended in one of two ways:</p>
 <ul class="simple">
 <li>clinically, consequent upon conclusion of treatment for the client and
 discharge from care; or</li>
@@ -6860,7 +6947,7 @@ date on which the organisation made the decision to close episode.</p>
 </dl>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">METeOR:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/614094">614094</a></p>
+<tr class="field-odd field"><th class="field-name">METeOR:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/614094">614094</a></p>
 </td>
 </tr>
 </tbody>
@@ -6880,7 +6967,10 @@ date on which the organisation made the decision to close episode.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -6913,7 +7003,10 @@ date on which the organisation made the decision to close episode.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -6953,7 +7046,10 @@ date on which the organisation made the decision to close episode.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -7012,7 +7108,10 @@ following coding hierarchy should be followed:</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string (2,50)</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Episode Keys must be genrated by the organisation to be unique at the provider
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Episode Keys must be genrated by the organisation to be unique at the provider
 organisation level and must persist across time. Creation of episode keys in
 this way allows clients to be merged (where duplicate Client Keys have been
 identified) without having to re-allocate episode identifiers since they can
@@ -7038,7 +7137,10 @@ UUIDs</a>.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -7136,7 +7238,10 @@ permanently unable to work.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -7199,7 +7304,10 @@ where the item has not been collected.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -7238,7 +7346,10 @@ medical products. It covers drugs designed for the depressive disorders.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -7278,7 +7389,10 @@ disorders.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -7318,7 +7432,10 @@ associated with anxiety and tension.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -7359,7 +7476,10 @@ Sedative drugs are prescribed to reduce excitability or anxiety.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -7399,7 +7519,10 @@ disorder (ADHD) and to improve impaired cognitive abilities.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -7430,7 +7553,10 @@ disorder (ADHD) and to improve impaired cognitive abilities.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -7518,7 +7644,7 @@ disorder (ADHD) and to improve impaired cognitive abilities.</p>
 </table>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Dignoses are grouped into 7 major categories:</p>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Diagnoses are grouped into 7 major categories:</p>
 <ul class="simple">
 <li>1xx - Anxiety disorders</li>
 <li>2xx - Affective (Mood) disorders</li>
@@ -7576,7 +7702,10 @@ Edition, Text Revision. Copyright 2000 American Psychiatric Association.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -7586,7 +7715,7 @@ Edition, Text Revision. Copyright 2000 American Psychiatric Association.</p>
 </tr>
 <tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">Clinical care coordination</td>
 </tr>
-<tr class="field-even field"><th class="field-name">4:</th><td class="field-body">Complex care package for adults</td>
+<tr class="field-even field"><th class="field-name">4:</th><td class="field-body">Complex care package</td>
 </tr>
 <tr class="field-odd field"><th class="field-name">5:</th><td class="field-body">Child and youth-specific mental health services</td>
 </tr>
@@ -7721,7 +7850,9 @@ that cannot be described by other categories.</p>
 </tr>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">date</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">For Date fields, data must be recorded in compliance with the standard format
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">false</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body">For Date fields, data must be recorded in compliance with the standard format
 used across the National Health Data Dictionary; specifically, dates must be
 of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
 necessary to pad out a value. For instance, 13th March 2008 would appear as
@@ -7744,7 +7875,10 @@ necessary to pad out a value. For instance, 13th March 2008 would appear as
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -7824,7 +7958,10 @@ services, and s specialised residential mental health care services).</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -7888,31 +8025,36 @@ is a response option included within &#8216;Referrer profession&#8217;.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Disability Support Pension</td>
+<tr class="field-odd field"><th class="field-name">0:</th><td class="field-body">N/A - Client aged less than 16 years</td>
 </tr>
-<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">Other pension or benefit (not superannuation)</td>
+<tr class="field-even field"><th class="field-name">1:</th><td class="field-body">Disability Support Pension</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">Paid employment</td>
+<tr class="field-odd field"><th class="field-name">2:</th><td class="field-body">Other pension or benefit (not superannuation)</td>
 </tr>
-<tr class="field-even field"><th class="field-name">4:</th><td class="field-body">Compensation payments</td>
+<tr class="field-even field"><th class="field-name">3:</th><td class="field-body">Paid employment</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">5:</th><td class="field-body">Other (e.g. superannuation, investments etc.)</td>
+<tr class="field-odd field"><th class="field-name">4:</th><td class="field-body">Compensation payments</td>
 </tr>
-<tr class="field-even field"><th class="field-name">6:</th><td class="field-body">Nil income</td>
+<tr class="field-even field"><th class="field-name">5:</th><td class="field-body">Other (e.g. superannuation, investments etc.)</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">7:</th><td class="field-body">Not known</td>
+<tr class="field-odd field"><th class="field-name">6:</th><td class="field-body">Nil income</td>
 </tr>
-<tr class="field-even field"><th class="field-name">9:</th><td class="field-body">Not stated/inadequately described</td>
+<tr class="field-even field"><th class="field-name">7:</th><td class="field-body">Not known</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Not stated/inadequately described</td>
 </tr>
 </tbody>
 </table>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">This data standard is not applicable to person&#8217;s aged less than 16 years.</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">This data standard is not applicable to person&#8217;s aged less than 16 years.</p>
 <p>This item refers to the source by which a person derives most (equal to or
 greater than 50%) of his/her income. If the person has multiple sources of
 income and none are equal to or greater than 50%, the one which contributes
@@ -7926,7 +8068,7 @@ the service user or their carer/family/advocate to provide the information
 (i.e. they have been asked but do not know).</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">METeOR:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/386449">386449</a></p>
+<tr class="field-odd field"><th class="field-name">METeOR:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/386449">386449</a></p>
 </td>
 </tr>
 </tbody>
@@ -7946,7 +8088,10 @@ the service user or their carer/family/advocate to provide the information
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -7977,7 +8122,10 @@ the service user or their carer/family/advocate to provide the information
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">A comma separated list of tags.</p>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">false</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">A comma separated list of tags.</p>
 <p>Organisations can use this field to tag records in order to partition them as
 per local requirements.</p>
 <p>Tags can contain lower case letters (or will get lowercased), numbers, dashes,
@@ -8004,7 +8152,10 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -8041,7 +8192,10 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -8078,7 +8232,10 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -8115,7 +8272,10 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -8152,7 +8312,10 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -8189,6 +8352,12 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">integer</p>
 </td>
 </tr>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><p class="first">5 - 25, 99</p>
+</td>
+</tr>
 <tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">The K5 Total score is based on the sum of K5 item 1 through 5 (range: 5-25).</p>
 <p>The Total score is computed as the sum of the item scores. If any item has not
 been completed (that is, has not been coded 1, 2, 3, 4, 5), it is excluded from
@@ -8214,7 +8383,10 @@ Total Score is set as missing.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">A comma separated list of tags.</p>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">false</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">A comma separated list of tags.</p>
 <p>Organisations can use this field to tag records in order to partition them as
 per local requirements.</p>
 <p>Tags can contain lower case letters (or will get lowercased), numbers, dashes,
@@ -8241,7 +8413,10 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -8278,7 +8453,10 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -8315,7 +8493,10 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -8352,7 +8533,10 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -8389,7 +8573,10 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -8426,7 +8613,10 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -8463,7 +8653,10 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -8500,7 +8693,10 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -8537,7 +8733,10 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -8574,7 +8773,10 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -8609,6 +8811,10 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">integer</td>
 </tr>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 28, 99</td>
+</tr>
 </tbody>
 </table>
 <hr class="docutils" />
@@ -8624,6 +8830,10 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">integer</td>
 </tr>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 28, 99</td>
+</tr>
 </tbody>
 </table>
 <hr class="docutils" />
@@ -8638,6 +8848,10 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body">k10p_item13</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">integer</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 89, 99</td>
 </tr>
 </tbody>
 </table>
@@ -8656,7 +8870,10 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -8693,6 +8910,12 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">integer</p>
 </td>
 </tr>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><p class="first">10 - 50, 99</p>
+</td>
+</tr>
 <tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">The K10 Total score is based on the sum of K10 item 01 through 10 (range: 10-50).
 Items 11 through 14 are excluded from the total because they are separate
 measures of disability associated with the problems referred to in the preceding
@@ -8722,7 +8945,10 @@ missing. Where this is the case, the missing value used should be 99.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">A comma separated list of tags.</p>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">false</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">A comma separated list of tags.</p>
 <p>Organisations can use this field to tag records in order to partition them as
 per local requirements.</p>
 <p>Tags can contain lower case letters (or will get lowercased), numbers, dashes,
@@ -8747,6 +8973,8 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">string</td>
 </tr>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">false</td>
+</tr>
 </tbody>
 </table>
 <hr class="docutils" />
@@ -8764,7 +8992,10 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -8817,7 +9048,10 @@ knows the client was not available.</li>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -8846,7 +9080,10 @@ knows the client was not available.</li>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -8913,7 +9150,10 @@ practitioners.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -8962,7 +9202,10 @@ practitioners.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -8996,6 +9239,8 @@ practitioners.</p>
 </tr>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">string (2,50)</td>
 </tr>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+</tr>
 </tbody>
 </table>
 <hr class="docutils" />
@@ -9013,7 +9258,10 @@ practitioners.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">A comma separated list of tags.</p>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">false</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">A comma separated list of tags.</p>
 <p>Organisations can use this field to tag records in order to partition them as
 per local requirements.</p>
 <p>Tags can contain lower case letters (or will get lowercased), numbers, dashes,
@@ -9040,10 +9288,13 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">gYear</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><p class="first">gYear</p>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">If the year of birth is unknown, the following approaches should be used:</p>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><p class="first">gYear</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">If the year of birth is unknown, the following approaches should be used:</p>
 <ul class="last simple">
 <li>If the age of the practitioner is known, the age should be used to derive the
 year of birth</li>
@@ -9068,6 +9319,8 @@ be used to estimate a year of birth</li>
 </tr>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">string (11)</td>
 </tr>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+</tr>
 </tbody>
 </table>
 <hr class="docutils" />
@@ -9082,6 +9335,8 @@ be used to estimate a year of birth</li>
 <tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body">organisation_name</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">string (2,100)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
 </tr>
 </tbody>
 </table>
@@ -9100,7 +9355,10 @@ be used to estimate a year of birth</li>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -9153,7 +9411,10 @@ be used to estimate a year of birth</li>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">A comma separated list of tags.</p>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">false</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">A comma separated list of tags.</p>
 <p>Organisations can use this field to tag records in order to partition them as
 per local requirements.</p>
 <p>Tags can contain lower case letters (or will get lowercased), numbers, dashes,
@@ -9180,7 +9441,10 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -9306,6 +9570,8 @@ option to commission external providers.</p>
 </tr>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">string (2,50)</td>
 </tr>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+</tr>
 </tbody>
 </table>
 <hr class="docutils" />
@@ -9323,7 +9589,10 @@ option to commission external providers.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -9361,6 +9630,10 @@ option to commission external providers.</p>
 </tr>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">integer</td>
 </tr>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 10, 99</td>
+</tr>
 <tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">Scoring the SDQ</span></a> for instructions on scoring the Conduct Problem Scale.</td>
 </tr>
 </tbody>
@@ -9376,6 +9649,10 @@ option to commission external providers.</p>
 <tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body">sdq_emotional_symptoms</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">integer</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 10, 99</td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">Scoring the SDQ</span></a> for instructions on scoring the Emotional Symptoms Scale.</td>
 </tr>
@@ -9393,6 +9670,10 @@ option to commission external providers.</p>
 </tr>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">integer</td>
 </tr>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 10, 99</td>
+</tr>
 <tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">Scoring the SDQ</span></a> for instructions on scoring the Hyperactivity Scale.</td>
 </tr>
 </tbody>
@@ -9408,6 +9689,10 @@ option to commission external providers.</p>
 <tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body">sdq_impact</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">integer</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 10, 99</td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">Scoring the SDQ</span></a> for instructions on scoring the Impact Score.</td>
 </tr>
@@ -9425,6 +9710,10 @@ option to commission external providers.</p>
 </tr>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">integer</td>
 </tr>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 10, 99</td>
+</tr>
 <tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">Scoring the SDQ</span></a> for instructions on scoring the Peer Problem Scale.</td>
 </tr>
 </tbody>
@@ -9440,6 +9729,10 @@ option to commission external providers.</p>
 <tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body">sdq_prosocial</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">integer</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 10, 99</td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">Scoring the SDQ</span></a> for instructions on scoring the Prosocial Scale.</td>
 </tr>
@@ -9461,7 +9754,10 @@ option to commission external providers.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -9500,7 +9796,10 @@ option to commission external providers.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -9539,7 +9838,10 @@ option to commission external providers.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -9578,7 +9880,10 @@ option to commission external providers.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -9617,7 +9922,10 @@ option to commission external providers.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -9656,7 +9964,10 @@ option to commission external providers.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -9695,7 +10006,10 @@ option to commission external providers.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -9734,7 +10048,10 @@ option to commission external providers.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -9773,7 +10090,10 @@ option to commission external providers.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -9812,7 +10132,10 @@ option to commission external providers.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -9851,7 +10174,10 @@ option to commission external providers.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -9890,7 +10216,10 @@ option to commission external providers.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -9929,7 +10258,10 @@ option to commission external providers.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -9968,7 +10300,10 @@ option to commission external providers.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -10007,7 +10342,10 @@ option to commission external providers.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -10046,7 +10384,10 @@ option to commission external providers.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -10085,7 +10426,10 @@ option to commission external providers.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -10124,7 +10468,10 @@ option to commission external providers.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -10163,7 +10510,10 @@ option to commission external providers.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -10202,7 +10552,10 @@ option to commission external providers.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -10241,7 +10594,10 @@ option to commission external providers.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -10280,7 +10636,10 @@ option to commission external providers.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -10319,7 +10678,10 @@ option to commission external providers.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -10358,7 +10720,10 @@ option to commission external providers.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -10397,7 +10762,10 @@ option to commission external providers.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -10436,7 +10804,10 @@ option to commission external providers.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -10477,7 +10848,10 @@ option to commission external providers.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -10523,7 +10897,10 @@ option to commission external providers.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -10566,7 +10943,10 @@ option to commission external providers.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -10609,7 +10989,10 @@ option to commission external providers.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -10652,7 +11035,10 @@ option to commission external providers.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -10695,7 +11081,10 @@ option to commission external providers.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -10738,7 +11127,10 @@ option to commission external providers.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -10781,7 +11173,10 @@ option to commission external providers.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -10828,7 +11223,10 @@ option to commission external providers.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -10873,7 +11271,10 @@ option to commission external providers.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -10915,7 +11316,10 @@ option to commission external providers.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -10957,7 +11361,10 @@ option to commission external providers.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -10999,7 +11406,10 @@ option to commission external providers.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -11040,7 +11450,10 @@ option to commission external providers.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -11081,7 +11494,10 @@ option to commission external providers.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -11122,7 +11538,10 @@ option to commission external providers.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -11163,7 +11582,10 @@ option to commission external providers.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">A comma separated list of tags.</p>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">false</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">A comma separated list of tags.</p>
 <p>Organisations can use this field to tag records in order to partition them as
 per local requirements.</p>
 <p>Tags can contain lower case letters (or will get lowercased), numbers, dashes,
@@ -11187,6 +11609,10 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">integer</td>
 </tr>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 40, 99</td>
+</tr>
 <tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">Scoring the SDQ</span></a> for instructions on scoring the Total Difficulties Score.</td>
 </tr>
 </tbody>
@@ -11206,7 +11632,10 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -11256,6 +11685,12 @@ participating.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">number</p>
 </td>
 </tr>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><p class="first">0 - 999999</p>
+</td>
+</tr>
 <tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Up to 6 digits before the decimal point; up to 2 digits after the decimal
 point.</p>
 <p class="last">The co-payment is the amount paid by the client per service contact, not the
@@ -11280,13 +11715,15 @@ is charged it should be minimal and based on an individual&#8217;s capacity to p
 </tr>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">date</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">For Date fields, data must be recorded in compliance with the standard format
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body">For Date fields, data must be recorded in compliance with the standard format
 used across the National Health Data Dictionary; specifically, dates must be
 of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
 necessary to pad out a value. For instance, 13th March 2008 would appear as
 13032008.</td>
 </tr>
-<tr class="field-even field"><th class="field-name">METeOR:</th><td class="field-body"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/494356">494356</a></td>
+<tr class="field-odd field"><th class="field-name">METeOR:</th><td class="field-body"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/494356">494356</a></td>
 </tr>
 </tbody>
 </table>
@@ -11305,7 +11742,10 @@ necessary to pad out a value. For instance, 13th March 2008 would appear as
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -11358,7 +11798,10 @@ the duration of the service contact.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -11404,7 +11847,10 @@ additional activity to be recorded.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -11454,7 +11900,10 @@ option for clinicians, it is for administrative use only.</p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -11495,7 +11944,10 @@ postcode must be entered for Service Contact Postcode.</li>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -11534,7 +11986,10 @@ postcode must be entered for Service Contact Postcode.</li>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -11596,10 +12051,13 @@ participant in the Service Contact.</p>
 <tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">service_contact_postcode</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string (4)</p>
+<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">A valid Australian postcode or 9999 if the postcode is unknown. The full list
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">A valid Australian postcode or 9999 if the postcode is unknown. The full list
 of Australian Postcodes can be found at <a class="reference external" href="http://www.auspost.com.au/">Australia Post</a>.</p>
 <ul class="simple">
 <li>If Service Contact Modality is not &#8216;Face to Face&#8217; enter 9999</li>
@@ -11608,7 +12066,7 @@ entered</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">METeOR:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/429894">429894</a></p>
+<tr class="field-odd field"><th class="field-name">METeOR:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/429894">429894</a></p>
 </td>
 </tr>
 </tbody>
@@ -11628,7 +12086,10 @@ entered</li>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">A comma separated list of tags.</p>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">false</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">A comma separated list of tags.</p>
 <p>Organisations can use this field to tag records in order to partition them as
 per local requirements.</p>
 <p>Tags can contain lower case letters (or will get lowercased), numbers, dashes,
@@ -11655,7 +12116,10 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -11799,7 +12263,10 @@ Islander clients can be assigned to other categories.</em></p>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -11854,6 +12321,8 @@ such as community health centres.</p>
 </tr>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">string (2,50)</td>
 </tr>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+</tr>
 </tbody>
 </table>
 <hr class="docutils" />
@@ -11902,7 +12371,7 @@ such as community health centres.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'Version 1',
+            VERSION:'Version 1.0.1',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

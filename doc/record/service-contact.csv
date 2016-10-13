@@ -30,7 +30,7 @@ METeOR: `494356 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494356>`__
 
 
 
-METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__","string (4)","The Australian postcode where the service contact took place."
+METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__",string,"The Australian postcode where the service contact took place."
 "`Service Contact - Modality`_ (service_contact_modality)
 
 ",string,":1: Face to Face
@@ -73,7 +73,7 @@ METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__
 :9: over 120 mins"
 "`Service Contact - Copayment`_ (service_contact_copayment)
 
-",number,"The co-payment is the amount paid by the client per session."
+",number,"0 - 999999"
 "`Service Contact - Client Participation Indicator`_ (service_contact_participation_indicator)
 
 

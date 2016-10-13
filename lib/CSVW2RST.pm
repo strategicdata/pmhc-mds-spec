@@ -31,7 +31,7 @@ sub generate {
     my $summary_column = 0;
 
     my $summary_fh;
-    
+
     if ( ! path("doc/")->exists ) {
         path("doc/")->mkpath;
     }
@@ -46,11 +46,13 @@ sub generate {
     foreach my $record ( @{$meta->{tables}} ) {
 
         next unless $record->{'dc:title'};
-        
+        next if ( defined( $record->{'schema::isPublished'} ) and
+                  $record->{'schema::isPublished'} eq "False" );
+
         #say '=' x length $record->{'dc:title'};
         warn $record->{'dc:title'}, "\n";
         #say '-' x length $record->{'dc:title'};
-        
+
         #my $ddmd = $Data::Dumper::Maxdepth;
         #$Data::Dumper::Maxdepth = 3;
         #say Dumper $record;
@@ -58,7 +60,7 @@ sub generate {
         #say "\n";
 
         $summary_table->[0][$summary_column] = $record->{'dc:title'};
-        
+
         if ( ! path("doc/record")->exists ) {
             path("doc/record")->mkpath;
         }
@@ -77,11 +79,11 @@ sub generate {
         ]);
 
         my $row_count = 1;
-        
+
         my $table_schema = decode_json(path($record->{tableSchema})->slurp);
-        
+
         my $field_fk;
-        %{$field_fk} = map { ($_->{columnReference}, $_->{reference}) } 
+        %{$field_fk} = map { ($_->{columnReference}, $_->{reference}) }
             @{$table_schema->{foreignKeys}};
 
         foreach my $field ( @{$table_schema->{columns}} ) {
@@ -89,7 +91,7 @@ sub generate {
             #say '^' x length $field->{'dc:title'};
             #say Dumper $field;
             #say "\n";
-            
+
             if ( exists $field_fk->{$field->{name}} ) {
                 $field->{_domain} = $field_fk->{$field->{name}};
             }
@@ -102,7 +104,7 @@ sub generate {
             }
 
             $summary_table->[$row_count++][$summary_column] = $field->{'dc:title'};
-            
+
             if ($row_count > $max_rows ) {
                 $max_rows = $row_count;
             }
@@ -111,7 +113,7 @@ sub generate {
             if ( $field->{'schema:meteorItem'} ) {
                 $meteor_link = "\n\nMETeOR: " . meteor($field->{'schema:meteorItem'});
             }
-            
+
             my $abs_link = '';
             if ( $field->{'schema:absItem'} ) {
                 $abs_link = "\n\n" . abs_link($field->{'schema:absItem'}, 'ABS');
@@ -186,14 +188,14 @@ sub format_datatype {
     else {
         $formatted_dt = $field->{datatype};
     }
-    
+
     return $formatted_dt;
 }
 
 sub generate_definitions {
     my $definition_records = shift;
     my $field_fk = shift;
-    
+
     if ( ! path("doc/include")->exists ) {
         path("doc/include")->mkpath;
     }
@@ -203,15 +205,15 @@ sub generate_definitions {
 
     say $fh "Definitions";
     say $fh "-----------\n";
-    
+
     warn "\nDefinitions\n";
     warn "-----------\n";
 
-    foreach my $field_name ( 
+    foreach my $field_name (
         sort { ncmp(
             $definition_records->{$a}{'dc:title'},
             $definition_records->{$b}{'dc:title'})
-        } keys %{$definition_records} ) 
+        } keys %{$definition_records} )
     {
 
         my $field = $definition_records->{$field_name};
@@ -229,9 +231,21 @@ sub generate_definitions {
 
         print $fh "\n:Field name: ";
         say $fh $field->{'name'};
-        
+
         print $fh "\n:Data type: ";
         say $fh format_datatype($field);
+
+        print $fh "\n:Required: ";
+        if  ( defined $field->{'required'}
+              and $field->{'required'} eq 'true'
+        ) {
+            say $fh $field->{'required'};
+        } elsif ( exists $field->{'null'} ) {
+            say $fh "true";
+        } else {
+            say $fh "false";
+        }
+
 
         my $domain = format_domain($field);
         if ( defined $domain
@@ -268,11 +282,11 @@ sub generate_definitions {
 sub format_domain {
 
     my $field = shift;
-    
+
     if ( ! ref $field->{datatype} ) {
         return $field->{datatype};
     }
-    
+
     if (exists $field->{'schema:domain'} ) {
         return $field->{'schema:domain'};
     }
@@ -290,46 +304,55 @@ sub format_domain {
             die "Min defined but no max";
         }
 
-        return $field->{datatype}{minimum}
+        my $rv = $field->{datatype}{minimum}
                . ' - '
                . $field->{datatype}{maximum};
+
+        if ( defined( $field->{'null'} ) ) {
+            $rv .= ", " . $field->{'null'};
+        }
+
+        return $rv;
     }
-    
+
     if ( exists $field->{'schema:description'} ){
         return $field->{'schema:description'};
     }
-    
+
     return;
 }
 
 sub format_fk {
     my $field = shift;
-    
+
     my $csv = Text::CSV_XS->new ({ binary => 1, auto_diag => 2 });
 
     my $rv = undef;
     my $aoh;
 
     if ( exists $field->{_domain} ) {
+        return if $field->{_domain}{columnReference} ne "id";
 
         $rv = '';
         $aoh = $csv->csv(
             in      => $field->{_domain}{resource},
             headers => "auto"
         );
-        
+
         my $newline = "";
         foreach my $item ( @{$aoh} ) {
-            
             die $field->{_domain}{resource} . " does not have an id column\n"
                 unless exists $item->{id};
             my $key = $item->{id};
-            
+
             die $field->{_domain}{resource} . " does not have a description column\n"
                 unless exists $item->{description};
             my $value = $item->{description};
-            
-            unless ( $key ) {
+
+            if (
+                !defined( $key )
+                or $key eq ""
+            ) {
                 $key = 'blank';
             }
 
@@ -384,9 +407,9 @@ sub smart_html {
 
 sub indent {
     my $text = shift;
-    
+
     $text =~ s/\n/\n  /sg;
-    
+
     return '  ' . $text;
 }
 

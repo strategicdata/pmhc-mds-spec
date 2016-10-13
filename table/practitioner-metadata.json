@@ -37,8 +37,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(1|2|3|4|5|6|7|8)$"
+      "base": "string"
     },
     "required": true
   },{
@@ -50,10 +49,10 @@
     "schema:dateCreated": "2016-06-22",
     "schema:dateModified": "2016-06-08",
     "datatype": {
-      "base": "string",
-      "format": "^(1|2|3|9)$"
+      "base": "string"
     },
-    "default": "9"
+    "default": "9",
+    "required": true
   },{
     "name": "practitioner_year_of_birth",
     "titles": [ "practitioner_year_of_birth", "Year of Birth" ],
@@ -75,8 +74,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(0|1|2|3)$"
+      "base": "string"
     },
     "required": true
   },{
@@ -90,8 +88,7 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(1|2|3|4|9)$"
+      "base": "string"
     },
     "required": true
   },{
@@ -103,10 +100,10 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": {
-      "base": "string",
-      "format": "^(0|1)$"
+      "base": "string"
     },
-    "default": "1"
+    "default": "1",
+    "required": true
   },{
     "name": "practitioner_tags",
     "titles": [ "practitioner_tags", "Tags" ],
