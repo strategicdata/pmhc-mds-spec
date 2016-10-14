@@ -17,38 +17,6 @@ class PMHC < Csvlint::Cli
     results = "{\"results\": [" + @results.join(",") + "]}"
 
     puts results
-
-    if v == true
-      puts "Data is valid"
-    else
-      json_results = JSON.parse(results)
-
-      json_results["results"].each do |result|
-        # Only report errors for data files, not specification files
-        if result["validation"]["file"] =~ /data/
-          if result["validation"]["state"] == "invalid"
-            puts result["validation"]["file"] + " is invalid."
-            pp result["validation"]["errors"]
-          end
-
-          if result["validation"]["warnings"].length > 0
-            puts result["validation"]["file"] + " has warnings."
-            pp result["validation"]["warnings"]
-          end
-        end
-      end
-
-      # Annoyingly csvlint includes errors for foreign key references on the
-      # final file to be processed
-      last_result = json_results["results"].last
-      if last_result["validation"]["state"] == "invalid"
-        last_result["validation"]["errors"].each do |error|
-          if error["type"] == "unmatched_foreign_key_reference"
-            pp error
-          end
-        end
-      end
-    end
   end
 
   private

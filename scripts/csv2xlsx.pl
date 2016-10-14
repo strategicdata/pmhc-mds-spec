@@ -11,15 +11,13 @@ csv2xlsx.pl [options] [csv_directory]
 
 Automatically generate Excel XLSX file from CSV files stored in <csv_directory>.
 
-  --csv     <csv_directory>  generate Excel XLSX file from CSV files stored in <csv_directory>
   --help                  Show this text
 
 EOT
     ;
 our ($csv_dir, $help);
 
-GetOptions('csv=s'    => \$csv_dir,
-           'help|?|h'  => \$help)
+GetOptions('help|?|h'  => \$help)
     or do { print usage; exit 1; };
 
 if ($help) { print usage; exit 0; }
@@ -47,7 +45,6 @@ my $t = tie( %csvfiles, 'Tie::IxHash' );
 
 # Create a new Excel workbook
 my $workbook  = Excel::Writer::XLSX->new( "$csv_dir/pmhc-upload.xlsx" );
-
 
 # Create a new CSV parsing object
 my $csv = Text::CSV_XS->new;
@@ -78,3 +75,5 @@ foreach my $file ( keys( %csvfiles ) ) {
     }
   }
 }
+
+exit( 0 );
