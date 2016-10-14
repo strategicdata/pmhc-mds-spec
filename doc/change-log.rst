@@ -1,6 +1,17 @@
 Change log
 ==========
 
+14/10/2016 - Version 1.0.2
+--------------------------
+
+* Data model and specifications
+
+  * Record formats
+
+    * Outcome Collection Occasion
+
+      * Updated :ref:`sdq-data-elements` by adding :ref:`scoring-the-sdq` subsection
+
 6/10/2016 - Version 1.0.1
 -------------------------
 

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Data model and specifications &mdash; PMHC MDS Version 1.0.1 documentation</title>
+  <title>Data model and specifications &mdash; PMHC MDS Version 1.0.2 documentation</title>
   
 
   
@@ -32,7 +32,7 @@
   
 
   
-    <link rel="top" title="PMHC MDS Version 1.0.1 documentation" href="index.html"/>
+    <link rel="top" title="PMHC MDS Version 1.0.2 documentation" href="index.html"/>
         <link rel="next" title="Upload specification" href="upload-specification.html"/>
         <link rel="prev" title="Identifier management" href="identifier-management.html"/> 
 
@@ -62,7 +62,7 @@
             
             
               <div class="version">
-                Version 1.0.1
+                Version 1.0.2
               </div>
             
           
@@ -3685,8 +3685,257 @@ item.</p>
 <p>As noted above, reporting individual item scores will eventually be required.
 In the short term, respondents can either report all 42 item scores or report
 the SDQ subscale scores.</p>
-<div class="section" id="scoring-the-sdq">
-<span id="id11"></span><h5>Scoring the SDQ<a class="headerlink" href="#scoring-the-sdq" title="Permalink to this headline">¶</a></h5>
+<div class="section" id="sdq-items-and-scale-summary-scores">
+<span id="scoring-the-sdq"></span><h5>SDQ items and Scale Summary scores<a class="headerlink" href="#sdq-items-and-scale-summary-scores" title="Permalink to this headline">¶</a></h5>
+<p>The first 25 items in the SDQ comprise 5 scales of 5 items each. It is usually easiest to score all 5 scales before working out the Total Difficulties score.  For data entry, the responses to items should always be entered the same way (see below), but they are not all scored the same way.  Somewhat True is always scored as 1, but the scoring of Not True and Certainly True varies with each item (see Table 5). For each of the 5 scales the score can range from 0-10 if all 5 items were completed. Scale scores can be prorated if at least 3 items were completed.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="13%" />
+<col width="33%" />
+<col width="11%" />
+<col width="15%" />
+<col width="16%" />
+<col width="12%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head" colspan="2">&nbsp;</th>
+<th class="head">Not True</th>
+<th class="head">Some-what True</th>
+<th class="head">Certainly True</th>
+<th class="head" rowspan="3">Summary Score</th>
+</tr>
+<tr class="row-even"><th class="head" colspan="2">Standard Values for Data Entry</th>
+<th class="head">0</th>
+<th class="head">1</th>
+<th class="head">2</th>
+</tr>
+<tr class="row-odd"><th class="head">Data element</th>
+<th class="head">SDQ Item number and description</th>
+<th class="head" colspan="3">Item Score</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td colspan="5"><em>Emotional Symptoms Scale</em></td>
+<td>0-10</td>
+</tr>
+<tr class="row-odd"><td>Item 03</td>
+<td>Often complains of headaches …</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>Item 08</td>
+<td>Many worries or often seems worried</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>Item 13</td>
+<td>Often unhappy, depressed or tearful</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>Item 16</td>
+<td>Nervous or clingy in new situations …</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>Item 24</td>
+<td>Many fears, easily scared</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td colspan="5"><em>Conduct Problem Scale</em></td>
+<td>0-10</td>
+</tr>
+<tr class="row-odd"><td>Item 05</td>
+<td>Often loses temper …</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><strong>Item 07</strong></td>
+<td><strong>Generally well behaved</strong> …</td>
+<td><strong>2</strong></td>
+<td><strong>1</strong></td>
+<td><strong>0</strong></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>Item 12</td>
+<td>Often fights with other children …</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>Item 18</td>
+<td>Often lies or cheats</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>Item 22</td>
+<td>Steals from home, school …</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td colspan="5"><em>Hyperactivity Scale</em></td>
+<td>0-10</td>
+</tr>
+<tr class="row-odd"><td>Item 02</td>
+<td>Restless, overactive …</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>Item 10</td>
+<td>Constantly fidgeting …</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>Item 15</td>
+<td>Easily distracted …</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><strong>Item 21</strong></td>
+<td><strong>Thinks things out before acting</strong></td>
+<td><strong>2</strong></td>
+<td><strong>1</strong></td>
+<td><strong>0</strong></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><strong>Item 25</strong></td>
+<td><strong>Good attention span</strong> …</td>
+<td><strong>2</strong></td>
+<td><strong>1</strong></td>
+<td><strong>0</strong></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td colspan="5"><em>Peer Problem Scale</em></td>
+<td>0-10</td>
+</tr>
+<tr class="row-odd"><td>Item 06</td>
+<td>Rather solitary, prefers to play alone</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><strong>Item 11</strong></td>
+<td><strong>Has at least one good friend</strong></td>
+<td><strong>2</strong></td>
+<td><strong>1</strong></td>
+<td><strong>0</strong></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><strong>Item 14</strong></td>
+<td><strong>Generally liked by other children</strong></td>
+<td><strong>2</strong></td>
+<td><strong>1</strong></td>
+<td><strong>0</strong></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>Item 19</td>
+<td>Picked on or bullied …</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>Item 23</td>
+<td>Gets along better with adults …</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td colspan="5"><em>Prosocial Scale</em></td>
+<td>0-10</td>
+</tr>
+<tr class="row-odd"><td>Item 01</td>
+<td>Considerate of other people’s feelings</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>Item 04</td>
+<td>Shares readily with other children …</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>Item 09</td>
+<td>Helpful if someone is hurt …</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>Item 17</td>
+<td>Kind to younger children</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>Item 20</td>
+<td>Often volunteers to help others …</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td colspan="5"><em>SDQ Total Difficulties Score = Sum of Scales below</em></td>
+<td>0-40</td>
+</tr>
+<tr class="row-odd"><td>&nbsp;</td>
+<td><em>Emotional Symptoms Scale</em></td>
+<td colspan="3">0-10</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>&nbsp;</td>
+<td><em>Conduct Problem Scale</em></td>
+<td colspan="3">0-10</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>&nbsp;</td>
+<td><em>Hyperactivity Scale</em></td>
+<td colspan="3">0-10</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>&nbsp;</td>
+<td><em>Peer Problem Scale</em></td>
+<td colspan="3">0-10</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><em>NB. Bold items indicate reverse scoring</em></li>
+</ul>
+</div>
+<div class="section" id="id11">
+<h5>Scoring the SDQ<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h5>
 <p>The standard values for coding individual Item responses are 0 (Not True),
 1 (Somewhat True), 2 (Certainly True) and 9 (Missing data).</p>
 <p>For completed items (response coded 0,1,2) the Item scores are usually the same
@@ -7111,7 +7360,7 @@ following coding hierarchy should be followed:</p>
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Episode Keys must be genrated by the organisation to be unique at the provider
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Episode Keys must be generated by the organisation to be unique at the provider
 organisation level and must persist across time. Creation of episode keys in
 this way allows clients to be merged (where duplicate Client Keys have been
 identified) without having to re-allocate episode identifiers since they can
@@ -9634,7 +9883,7 @@ option to commission external providers.</p>
 </tr>
 <tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 10, 99</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">Scoring the SDQ</span></a> for instructions on scoring the Conduct Problem Scale.</td>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">SDQ items and Scale Summary scores</span></a> for instructions on scoring the Conduct Problem Scale.</td>
 </tr>
 </tbody>
 </table>
@@ -9654,7 +9903,7 @@ option to commission external providers.</p>
 </tr>
 <tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 10, 99</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">Scoring the SDQ</span></a> for instructions on scoring the Emotional Symptoms Scale.</td>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">SDQ items and Scale Summary scores</span></a> for instructions on scoring the Emotional Symptoms Scale.</td>
 </tr>
 </tbody>
 </table>
@@ -9674,7 +9923,7 @@ option to commission external providers.</p>
 </tr>
 <tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 10, 99</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">Scoring the SDQ</span></a> for instructions on scoring the Hyperactivity Scale.</td>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">SDQ items and Scale Summary scores</span></a> for instructions on scoring the Hyperactivity Scale.</td>
 </tr>
 </tbody>
 </table>
@@ -9694,7 +9943,7 @@ option to commission external providers.</p>
 </tr>
 <tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 10, 99</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">Scoring the SDQ</span></a> for instructions on scoring the Impact Score.</td>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">SDQ items and Scale Summary scores</span></a> for instructions on scoring the Impact Score.</td>
 </tr>
 </tbody>
 </table>
@@ -9714,7 +9963,7 @@ option to commission external providers.</p>
 </tr>
 <tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 10, 99</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">Scoring the SDQ</span></a> for instructions on scoring the Peer Problem Scale.</td>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">SDQ items and Scale Summary scores</span></a> for instructions on scoring the Peer Problem Scale.</td>
 </tr>
 </tbody>
 </table>
@@ -9734,7 +9983,7 @@ option to commission external providers.</p>
 </tr>
 <tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 10, 99</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">Scoring the SDQ</span></a> for instructions on scoring the Prosocial Scale.</td>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">SDQ items and Scale Summary scores</span></a> for instructions on scoring the Prosocial Scale.</td>
 </tr>
 </tbody>
 </table>
@@ -11613,7 +11862,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 <tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 40, 99</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">Scoring the SDQ</span></a> for instructions on scoring the Total Difficulties Score.</td>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">SDQ items and Scale Summary scores</span></a> for instructions on scoring the Total Difficulties Score.</td>
 </tr>
 </tbody>
 </table>
@@ -12371,7 +12620,7 @@ such as community health centres.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'Version 1.0.1',
+            VERSION:'Version 1.0.2',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true
