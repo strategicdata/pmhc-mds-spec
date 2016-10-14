@@ -355,7 +355,7 @@ SDQ items and Scale Summary scores
 | Conduct Problem Scale                                                                                                         | 0-10            |
 +--------------+------------------------------------------------+----------------+----------------------+-----------------------+-----------------+
 | | Item 05    | | Often loses temper …                         | | 0            | | 1                  | | 2                   |                 |
-| | Item 07    | | Generally well behaved …                     | | 2            | | 1                  | | 0                   |                 |
+| | **Item 07**| | Generally well behaved …                     | | 2            | | 1                  | | 0                   |                 |
 | | Item 12    | | Often fights with other children …           | | 0            | | 1                  | | 2                   |                 |
 | | Item 18    | | Often lies or cheats                         | | 0            | | 1                  | | 2                   |                 |
 | | Item 22    | | Steals from home, school …                   | | 0            | | 1                  | | 2                   |                 |
@@ -390,7 +390,7 @@ SDQ items and Scale Summary scores
 |              | | Conduct Problem Scale                        | | 0-10                                                        |                 |
 |              | | Hyperactivity Scale                          | | 0-10                                                        |                 |
 |              | | Peer Problem Scale                           | | 0-10                                                        |                 |
-+==============+================================================+===============================================================+=================+
++--------------+------------------------------------------------+---------------------------------------------------------------+-----------------+
 
 - *NB. Bold items indicate reverse scoring*
 
