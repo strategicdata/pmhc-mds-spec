@@ -10,7 +10,7 @@ Change log
 
     * Outcome Collection Occasion
 
-      * :ref:`measure_date` updated to included missing value of 09099999
+      * :ref:`dfn-measure_date` updated to include missing value of 09099999
 
 14/10/2016 - Version 1.0.2
 --------------------------
