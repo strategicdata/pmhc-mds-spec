@@ -1,6 +1,17 @@
 Change log
 ==========
 
+21/10/2016 - Version 1.0.3
+--------------------------
+
+* Data model and specifications
+
+  * Record formats
+
+    * Outcome Collection Occasion
+
+      * :ref:`measure_date` updated to included missing value of 09099999
+
 14/10/2016 - Version 1.0.2
 --------------------------
 
