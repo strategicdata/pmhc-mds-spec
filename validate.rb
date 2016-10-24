@@ -11,8 +11,8 @@ class PMHC < Csvlint::Cli
 
   include Csvlint::ErrorCollector
 
-  def validate
-    v = verify()
+  def validate(schema_dir=nil, data_dir=nil)
+    v = verify(schema_dir, data_dir)
 
     results = "{\"results\": [" + @results.join(",") + "]}"
 
@@ -20,14 +20,14 @@ class PMHC < Csvlint::Cli
   end
 
   private
-    def verify(source = nil)
+    def verify(schema_dir = nil, data_dir = nil)
       valid = true
       @results = []
       @validators = Hash.new
 
-      schema_file = "pmhc-metadata.json"
+      schema_file = (schema_dir.nil? || schema_dir.empty? ? "" : schema_dir + "/") + "pmhc-metadata.json"
       @schema = get_schema(schema_file)
-      valid &= fetch_schema_tables(@schema, {})
+      valid &= fetch_schema_tables(@schema, { data: data_dir })
 
       return valid
     end
@@ -40,6 +40,11 @@ class PMHC < Csvlint::Cli
       schema.tables.keys.each do |source|
         begin
           source = source.sub("file:","")
+          if options[:data]
+              puts source
+              source.sub!(/.*\/data\//, options[:data] + "/")
+              puts source
+          end
           source = File.new( source )
         rescue Errno::ENOENT
           return_error "#{source} not found"
