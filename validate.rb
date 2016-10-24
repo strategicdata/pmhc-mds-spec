@@ -41,9 +41,7 @@ class PMHC < Csvlint::Cli
         begin
           source = source.sub("file:","")
           if options[:data]
-              puts source
               source.sub!(/.*\/data\//, options[:data] + "/")
-              puts source
           end
           source = File.new( source )
         rescue Errno::ENOENT
