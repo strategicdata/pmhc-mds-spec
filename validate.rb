@@ -333,11 +333,7 @@ class PMHC < Csvlint::Cli
           #     postcode
           if row[venue_index] == "98"
             validator.build_errors(:invalid_service_contact_venue, :service_contact,
-              current_line, venue_index+1, row[venue_index])
-          end
-          if row[postcode_index] == "9999"
-            validator.build_errors(:invalid_service_contact_postcode, :service_contact,
-              current_line+1, postcode_index+1, row[postcode_index])
+              current_line+1, venue_index+1, row[venue_index])
           end
         else
           # If 'Face to Face' is not selected:
@@ -460,7 +456,7 @@ class PMHC < Csvlint::Cli
 
         if using_item_scores == 1 and using_total_scores == 1
           validator.build_errors(:item_scores_and_total_scores_used, "#{measure}",
-            current_line, item_index+1, row[item_index])
+            current_line+1, item_index+1, row[item_index])
         end
 
         # Measure date cannot be in the future

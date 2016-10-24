@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Data model and specifications &mdash; PMHC MDS Version 1.0.2 documentation</title>
+  <title>Data model and specifications &mdash; PMHC MDS Version 1.0.3 documentation</title>
   
 
   
@@ -32,7 +32,7 @@
   
 
   
-    <link rel="top" title="PMHC MDS Version 1.0.2 documentation" href="index.html"/>
+    <link rel="top" title="PMHC MDS Version 1.0.3 documentation" href="index.html"/>
         <link rel="next" title="Upload specification" href="upload-specification.html"/>
         <link rel="prev" title="Identifier management" href="identifier-management.html"/> 
 
@@ -62,7 +62,7 @@
             
             
               <div class="version">
-                Version 1.0.2
+                Version 1.0.3
               </div>
             
           
@@ -6782,17 +6782,22 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body">measure_date</td>
+<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">measure_date</p>
+</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">date</td>
+<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">date</p>
+</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body">For Date fields, data must be recorded in compliance with the standard format
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">For Date fields, data must be recorded in compliance with the standard format
 used across the National Health Data Dictionary; specifically, dates must be
 of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
 necessary to pad out a value. For instance, 13th March 2008 would appear as
-13032008.</td>
+13032008.</p>
+<p class="last">If the date the measure was given is unknown, 09099999 should be used.</p>
+</td>
 </tr>
 </tbody>
 </table>
@@ -12620,7 +12625,7 @@ such as community health centres.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'Version 1.0.2',
+            VERSION:'Version 1.0.3',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true
