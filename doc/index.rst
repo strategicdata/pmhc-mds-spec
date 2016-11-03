@@ -11,4 +11,5 @@ PMHC MDS Specification
    upload-specification
    data-item-summary
    form-creation
+   user-documentation
    change-log
