@@ -736,8 +736,8 @@ PMHC MDS.  You can invite a new user through the Users tab, by following these s
       :alt: PMHC MDS Invite Accepted
 
 7. If the user requires more than one role you can now follow the
-   instructions at :ref:`adding_roles`. Also update the organisations contact details,
-   if a new user is the organistions primary contact.
+   instructions at :ref:`adding_roles`. Also update the organisation's contact details,
+   if a new user is the organisation's primary contact.
 
 .. _accepting_invitation:
 
@@ -863,7 +863,7 @@ Initial login to the PMHC for the primary contact user
 ------------------------------------------------------
 
 1. Activate your account
-^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 When a PHN is ready to start uploading to the PMHC MDS, the primary contact user
 will be sent an invitation via email and an SMS containing a verification code.
@@ -875,7 +875,7 @@ activate your account and login to the PMHC MDS.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The PMHC MDS model allows PHNs to setup provider organisations underneath the
-PHN, and users of provider organisation will only see that provider organisations data.
+PHN. Users of provider organisations will only see that provider organisation's data.
 
 The PHNs primary contact user will initially need to login to the PMHC MDS and
 create each of these provider organisations.
