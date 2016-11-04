@@ -627,9 +627,9 @@ these steps:
       :alt: PMHC MDS Add Role
 
 4. Enter the users email address.
-6. Check to ensure you have selected the correct user by reviewing the users details now displayed.
-7. Select a role.
-8. Click the blue 'Save' button
+5. Check to ensure you have selected the correct user by reviewing the users details now displayed.
+6. Select a role.
+7. Click the blue 'Save' button
 
 You will receive confirmation that the user has been saved to the
 organisations and they will now be displaying in the Users assigned to
@@ -735,8 +735,9 @@ PMHC MDS.  You can invite a new user through the Users tab, by following these s
    .. figure:: screen-shots/invite-accepted-email.png
       :alt: PMHC MDS Invite Accepted
 
-6. If the user requires more than one role you can now follow the
-   instructions at :ref:`adding_roles`.
+7. If the user requires more than one role you can now follow the
+   instructions at :ref:`adding_roles`. Also update the organisations contact details,
+   if a new user is the organistions primary contact.
 
 .. _accepting_invitation:
 
@@ -822,11 +823,12 @@ You can upload data files through the upload tab, by following these steps:
    name now displayed below the 'Select File' button.
 
 7. Click the green 'Upload' button.
-8. You will receive confirmation that your file has been accepted. The file will
-   now be validated and you will shortly receive an email informing you if
-   your file was successfully uploaded to the PMHC MDS, or informing you of
-   any errors that occurred. Please email support@pmhc-mds.com if you don't
-   receive an email within one hour.
+
+You will receive confirmation that your file has been accepted. The file will
+now be validated and you will shortly receive an email informing you if
+your file was successfully uploaded to the PMHC MDS, or informing you of
+any errors that occurred. Please email support@pmhc-mds.com if you don't
+receive an email within one hour.
 
 .. _slk_generator:
 
@@ -852,8 +854,8 @@ In order to generate an SLK:
 
 The client's 'SLK Key' and 'Generated Hash' key will now be displayed.
 
-#. Click 'Copy to clipboard' next to either of these items.
-#. Paste this information into your data file.
+4. Click 'Copy to clipboard' next to either of these items.
+5. Paste this information into your data file.
 
 *Please note: you can only copy one SLK at a time to the clipboard.*
 
@@ -873,9 +875,9 @@ activate your account and login to the PMHC MDS.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The PMHC MDS model allows PHNs to setup provider organisations underneath the
-PHN.
+PHN, and users of provider organisation will only see that provider organisations data.
 
-The primary contact user will initially need to login to the PMHC MDS and
+The PHNs primary contact user will initially need to login to the PMHC MDS and
 create each of these provider organisations.
 
 The information required about each provider organisation is defined at
