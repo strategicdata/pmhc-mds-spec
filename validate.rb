@@ -11,8 +11,8 @@ class PMHC < Csvlint::Cli
 
   include Csvlint::ErrorCollector
 
-  def validate(schema_dir=nil, data_dir=nil)
-    v = verify(schema_dir, data_dir)
+  def validate(schema_dir=nil)
+    v = verify(schema_dir)
 
     results = "{\"results\": [" + @results.join(",") + "]}"
 
@@ -20,14 +20,14 @@ class PMHC < Csvlint::Cli
   end
 
   private
-    def verify(schema_dir = nil, data_dir = nil)
+    def verify(schema_dir = nil)
       valid = true
       @results = []
       @validators = Hash.new
 
       schema_file = (schema_dir.nil? || schema_dir.empty? ? "" : schema_dir + "/") + "pmhc-metadata.json"
       @schema = get_schema(schema_file)
-      valid &= fetch_schema_tables(@schema, { data: data_dir })
+      valid &= fetch_schema_tables(@schema, {})
 
       return valid
     end
@@ -40,9 +40,6 @@ class PMHC < Csvlint::Cli
       schema.tables.keys.each do |source|
         begin
           source = source.sub("file:","")
-          if options[:data]
-              source.sub!(/.*\/data\//, options[:data] + "/")
-          end
           source = File.new( source )
         rescue Errno::ENOENT
           return_error "#{source} not found"
@@ -63,6 +60,7 @@ class PMHC < Csvlint::Cli
       end
 
 #      validator = Csvlint::Validator.new( source, {}, schema, { lambda: ->(validator) { validate_pmhc( validator, csv ) } } )
+
       validator = Csvlint::Validator.new( source, {}, schema, {} )
 
       # Only do extra pmhc checks on data files, not specification files.
