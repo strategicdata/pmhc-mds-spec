@@ -57,7 +57,7 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "date",
-      "format": "ddMMyyyy"
+      "format": "dMMyyyy"
     },
     "required": true
   },{

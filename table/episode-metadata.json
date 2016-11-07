@@ -54,7 +54,7 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "date",
-      "format": "ddMMyyyy"
+      "format": "dMMyyyy"
     }
   },{
     "name": "client_consent",
@@ -91,7 +91,7 @@
     "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "date",
-      "format": "ddMMyyyy"
+      "format": "dMMyyyy"
     }
   },{
     "name": "principal_focus",
