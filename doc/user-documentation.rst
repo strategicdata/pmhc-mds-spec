@@ -7,6 +7,15 @@ Frequently Asked Questions
 Accessing the PMHC Minimum Data Set
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+What internet browser should I use?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can access the PMHC MDS using the following browsers:
+* Chrome (version 30+)
+* Firefox (version 38+)
+* Internet Explorer 11
+* Safari 8 +
+
 .. _how-do-i-obtain-access-to-the-mds:
 
 How do I obtain access to the PMHC MDS?
@@ -370,7 +379,7 @@ event that you no longer have access to your primary email address.
    .. figure:: screen-shots/confirm-update-email.png
       :alt: PMHC MDS Confirm Update Email
 
-9. Navigate back to https://pmhc-mds.com/ and sign in.
+9. Navigate back to https://pmhc-mds.net/ and sign in.
 10. What you see once you login will depend upon what roles you have been
     assigned. The table below lists the tabs that will be shown for each role:
 
@@ -772,7 +781,7 @@ will need to accept this invitation as follows:
    .. figure:: screen-shots/account-activated.png
       :alt: PMHC MDS Account Activated
 
-9. Navigate to https://pmhc-mds.com/ and follow the :ref:`logging_in`
+9. Navigate to https://pmhc-mds.net/ and follow the :ref:`logging_in`
    instructions.
 
 Upload
