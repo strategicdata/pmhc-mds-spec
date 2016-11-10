@@ -101,6 +101,7 @@
 <li class="toctree-l3"><a class="reference internal" href="users.html">Users</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Upload</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#uploading-a-file">Uploading a file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#error-messages">Error messages</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="slk.html">SLK</a></li>
@@ -205,8 +206,38 @@ name now displayed below the &#8216;Select File&#8217; button.</p>
 <p>You will receive confirmation that your file has been accepted. The file will
 now be validated and you will shortly receive an email informing you if
 your file was successfully uploaded to the PMHC MDS, or informing you of
-any errors that occurred. Please email <a class="reference external" href="mailto:support&#37;&#52;&#48;pmhc-mds&#46;com">support<span>&#64;</span>pmhc-mds<span>&#46;</span>com</a> if you don&#8217;t
+any errors that occurred. Further discussion about the error messages can be
+found at <a class="reference internal" href="#error-messages"><span class="std std-ref">Error messages</span></a>. Please email <a class="reference external" href="mailto:support&#37;&#52;&#48;pmhc-mds&#46;com">support<span>&#64;</span>pmhc-mds<span>&#46;</span>com</a> if you don&#8217;t
 receive an email within one hour.</p>
+</div>
+<div class="section" id="error-messages">
+<span id="id2"></span><h2>Error messages<a class="headerlink" href="#error-messages" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="could-not-find-worksheet-name">
+<h3>Could not find worksheet [Name]<a class="headerlink" href="#could-not-find-worksheet-name" title="Permalink to this headline">¶</a></h3>
+<p>This error occurs when you are uploading and Excel spreadsheet. The worksheet
+names need to exactly match the name in the &#8216;Excel worksheet name&#8217; column
+of the &#8216;Summary of files to upload&#8217; table at <a class="reference internal" href="../upload-specification.html#files-to-upload"><span class="std std-ref">Files or worksheets to upload</span></a>. If all the
+required worksheets are not present you will receive the error above.</p>
+</div>
+<div class="section" id="invalid-version-line-in-worksheet-name">
+<h3>Invalid version line in worksheet [Name]<a class="headerlink" href="#invalid-version-line-in-worksheet-name" title="Permalink to this headline">¶</a></h3>
+<p>The top line of the worksheet must include the following columns:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="44%" />
+<col width="56%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>Version</td>
+<td>1.0</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="could-not-parse-worksheet-name-bad-request-at">
+<h3>Could not parse worksheet [Name]: Bad request at ...<a class="headerlink" href="#could-not-parse-worksheet-name-bad-request-at" title="Permalink to this headline">¶</a></h3>
+<p>Something has gone wrong with the upload. Please contact <a class="reference external" href="mailto:support&#37;&#52;&#48;pmhc-mds&#46;com">support<span>&#64;</span>pmhc-mds<span>&#46;</span>com</a>.</p>
+</div>
 </div>
 </div>
 

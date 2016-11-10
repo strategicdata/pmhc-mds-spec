@@ -50,5 +50,33 @@ You can upload data files through the upload tab, by following these steps:
 You will receive confirmation that your file has been accepted. The file will
 now be validated and you will shortly receive an email informing you if
 your file was successfully uploaded to the PMHC MDS, or informing you of
-any errors that occurred. Please email support@pmhc-mds.com if you don't
+any errors that occurred. Further discussion about the error messages can be
+found at :ref:`error-messages`. Please email support@pmhc-mds.com if you don't
 receive an email within one hour.
+
+.. _error-messages:
+
+Error messages
+^^^^^^^^^^^^^^
+
+Could not find worksheet [Name]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This error occurs when you are uploading and Excel spreadsheet. The worksheet
+names need to exactly match the name in the 'Excel worksheet name' column
+of the 'Summary of files to upload' table at :ref:`files-to-upload`. If all the
+required worksheets are not present you will receive the error above.
+
+Invalid version line in worksheet [Name]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The top line of the worksheet must include the following columns:
+
++------------+---------------+
+| Version    | 1.0           |
++------------+---------------+
+
+Could not parse worksheet [Name]: Bad request at ...
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Something has gone wrong with the upload. Please contact support@pmhc-mds.com.
