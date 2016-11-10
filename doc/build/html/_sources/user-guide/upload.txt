@@ -1,0 +1,54 @@
+Upload
+======
+
+You will only be able to see the Upload tab if you have been assigned
+the 'Upload' role.
+
+If you don’t have access to the Upload tab and you believe you should, please
+contact someone in your provider organisation or provider organisation's PHN
+who has the 'User Management' role.
+
+If you are unsure who has the 'User Management' role please email the
+PMHC helpdesk at support@pmhc-mds.com
+
+After navigating to the Upload tab, you will be presented with a drop down list
+of the organisations to which you can upload.
+
+.. figure:: screen-shots/upload.png
+   :alt: PMHC MDS Upload
+
+.. _uploading_a_file:
+
+Uploading a file
+^^^^^^^^^^^^^^^^
+
+After navigating to the Upload tab, you will be able to upload
+data files to organisations for which you have the 'Upload' role.
+
+You can upload data files through the upload tab, by following these steps:
+
+1. Navigate to the 'Upload' tab.
+2. If you are allowed to upload to more than one organisation you will be
+   asked to enter an organisation name.
+3. Select the name of the organisation whose data you are uploading from the drop down list.
+
+   .. figure:: screen-shots/upload.png
+      :alt: PMHC MDS Upload
+
+4. Click the blue 'Select File' button.
+5. Navigate to where the upload file is saved on your system. Select the file
+   and click the grey 'Open' button.
+
+   .. figure:: screen-shots/file-selected.png
+      :alt: PMHC MDS File Selected
+
+6. Check to ensure you have selected the correct file by reviewing the file
+   name now displayed below the 'Select File' button.
+
+7. Click the green 'Upload' button.
+
+You will receive confirmation that your file has been accepted. The file will
+now be validated and you will shortly receive an email informing you if
+your file was successfully uploaded to the PMHC MDS, or informing you of
+any errors that occurred. Please email support@pmhc-mds.com if you don't
+receive an email within one hour.
