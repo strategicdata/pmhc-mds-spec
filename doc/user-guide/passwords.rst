@@ -6,11 +6,11 @@ Passwords
 Passwords are to be:
 
 * 13 or more characters with no complexity requirements, or
-* a minimum of 9 characters with at least 3 of the following character sets
+* a minimum of 10 characters with at least 3 of the following character sets
 
   - lowercase characters (a-z)
   - uppercase characters (A-Z)
-  - digits (0-9)
+  - digits (0-10)
   - punctuation and special characters
 
 * changed at least every 90 days
