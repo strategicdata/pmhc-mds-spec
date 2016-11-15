@@ -76,7 +76,22 @@ The top line of the worksheet must include the following columns:
 | Version    | 1.0           |
 +------------+---------------+
 
+Column [Name] is not valid
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Each item is a column in the file/worksheet. The 'Field Name' should be used for
+the column headings. These values can be found at :ref:`file-format`, or
+listed on the provided example file at :ref:`files-to-upload`. If the Column [Name]
+doesn't match identically you will receive the error above.
+
 Could not parse worksheet [Name]: Bad request at ...
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Something has gone wrong with the upload. Please contact support@pmhc-mds.com.
+
+Column [Name] is required on row ...
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+There is a required field that has not been entered. If not supplied, insert the
+default 'Missing' or 'Not recorded' value. These values can be found at :ref:`record-formats`.
+If the Column [Name] is blank in a mandatory field you will receive the error above.
