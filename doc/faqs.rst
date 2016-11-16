@@ -165,6 +165,36 @@ Strategic Data Fax: (03) 9340 9090 or Email: support@pmhc-mds.com
 Entering data in the PMHC Minimum Data Set
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+What is the best way to manage the client key?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The SLK isn’t necessarily a unique key and therefore the Client Key is required
+to be a unique client identifier. The Client Key needs to be stable for each
+individual within the PHN.
+
+Initially the PHN will need to play a role in coordinating assignment and management
+of these keys for Provider Organisations, prior to the PMHC MDS implementation a
+Master Client Index during Stage 2 of development.
+
+Please refer to :ref:`identifier-management`.
+
+Can you suggest a best practice approach to managing client keys?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+We understand that PHNs approach :ref:`identifier-management` in various different ways
+to best suit their practice. PHNs will continue to manage client keys until the
+Master Client Index is developed and released in Stage 2. In the interim, we suggest
+speaking with another PHN in your network to understand their approach to managing
+their client keys.
+
+How will the Master Client Index work?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+During Stage 2 of the PMHC MDS implementation a Master Client Index will be created
+to allow Provider Organisations to manage the :ref:`client-keys` across PHNs. Stage 2
+development updates will be released by the Department of Health in the lead up to
+release. Regularly check the announcements on the :ref:`PMHC-MDS` home page to keep informed.
+
 How often should I enter data into the MDS?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
