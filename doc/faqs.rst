@@ -65,8 +65,8 @@ the MDS access is being requested):
 #. Mobile phone number.
 #. The exact Primary Health Network or Provider Organisation's name in the MDS
    you are seeking to access.
-#. The roles (User Management, Upload) required for the user. The user can have
-   both of these roles.
+#. The roles (Organisation Management, User Management, Upload) required for the user.
+   The user can have any combination of these roles.
 
 This letter must be faxed or scanned then emailed to:
 

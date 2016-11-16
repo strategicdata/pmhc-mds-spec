@@ -10,7 +10,7 @@ Passwords are to be:
 
   - lowercase characters (a-z)
   - uppercase characters (A-Z)
-  - digits (0-10)
+  - digits (0-9)
   - punctuation and special characters
 
 * changed at least every 90 days
