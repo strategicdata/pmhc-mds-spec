@@ -2,17 +2,17 @@ Organisations
 =============
 
 You will only be able to see the Organisations tab if you have been assigned
-the 'User Management' role.
+the 'Organisation Management' role.
 
 If you believe you should have access to an organisation and it doesn't appear
 in your list please contact someone in that provider organisation or the
-provider organisation's PHN who has the 'User Management' role.
+provider organisation's PHN who has the 'Organisation Management' role.
 
-If you are unsure who has the 'User Management' role please email the PMHC
+If you are unsure who has the 'Organisation Management' role please email the PMHC
 helpdesk at support@pmhc-mds.com
 
 After navigating to the organisation tab, you will be presented with a list of
-the organisations for which you have been assigned the 'User Management' role.
+the organisations for which you have been assigned the 'Organisation Management' role.
 
 .. figure:: screen-shots/organisations.png
    :alt: PMHC MDS Organisations
