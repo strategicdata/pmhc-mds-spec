@@ -84,6 +84,22 @@ the column headings. These values can be found at :ref:`file-format`, or
 listed on the provided example file at :ref:`files-to-upload`. If the Column [Name]
 doesn't match identically you will receive the error above.
 
+Organisation_path is not valid on row ...
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The organisation path provided does not map to a valid organisation. The format
+should be a combination of your PHN key and the provider organisation key,
+separated with a colon. Example PHN_key:POrg_key. If the organisation path
+doesn't match identically you will receive the error above.
+
+Invalid version number on row 1.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You need to record a valid version number on row 1, in column 2. Column one will
+include the word Version, Column two should inclue a number.We are currently
+only accepting Version 1, or Version 1.X eg 1.0 or 1.1 . If the version number
+doesn't match identically you will receive the error above.
+
 Could not parse worksheet [Name]: Bad request at ...
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -95,3 +111,11 @@ Column [Name] is required on row ...
 There is a required field that has not been entered. If not supplied, insert the
 default 'Missing' or 'Not recorded' value. These values can be found at :ref:`record-formats`.
 If the Column [Name] is blank in a mandatory field you will receive the error above.
+
+Client_consent must have a value of 1. Please delete row ...
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The client must consent to their information being provided.  Therefore when there
+is no consent the client information on that row must be deleted as it can not be
+uploaded to the PMHC MDS. If no consent is given and have have included the data
+in the upload file, you will receive the error above.
