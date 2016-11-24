@@ -65,8 +65,8 @@ the MDS access is being requested):
 #. Mobile phone number.
 #. The exact Primary Health Network or Provider Organisation's name in the MDS
    you are seeking to access.
-#. The roles (Organisation Management, User Management, Upload) required for the user.
-   The user can have any combination of these roles.
+#. The roles (PHN's Primary Contact, Organisation Management, User Management, Upload)
+   required for the user. The user can have any combination of these roles.
 
 This letter must be faxed or scanned then emailed to:
 
@@ -81,11 +81,11 @@ This process will also apply where a user is requesting a password re-set.
 However, the auto :ref:`password-recovery` process available to you via the
 MDS login screen is the preferred method of password retrieval.
 
-If your email address has changed, it is important that you update your account
-or notify a user with the User Management role or the PMHC helpdesk so that your
-records can be updated. When contacting the PMHC helpdesk you will be asked to
-arrange for a :ref:`letter-of-authority` stating the change(s) and this must then be
-sent to Strategic Data via fax or scan/email as documented above.
+If your email address or mobile number has changed, it is important that you update
+your account. See :ref:`Updating-your-details`. If you can't access your profile, 
+contact the PMHC helpdesk so that your records can be updated. When contacting the
+PMHC helpdesk you will be asked to arrange for a :ref:`letter-of-authority` stating
+the change(s) and this must then be sent to Strategic Data via fax or scan/email as documented above.
 
 .. _password-recovery:
 
@@ -114,17 +114,18 @@ What can a user see in the MDS?
 What you see once you login will depend upon what roles you have been assigned.
 The table below lists the tabs that will be shown for each role:
 
-    +-------------------------+---------------+
-    | Role                    | Tab           |
-    +=========================+===============+
-    | Organisation Management | Organisations |
-    |-------------------------+---------------+
-    | User Management         | Users         |
-    +-------------------------+---------------+
-    | Upload                  | Upload        |
-    +-------------------------+---------------+
-    | All users               | SLK           |
-    +-------------------------+---------------+
+    +---------------------------+---------------+
+    | Role                      | Tab           |
+    +===========================+===============+
+    | Organisation Management   | Organisations |
+    |---------------------------+---------------+
+    | User Management           | Organisations |
+    |                           | Users         |
+    +---------------------------+---------------+
+    | Upload                    | Upload        |
+    +---------------------------+---------------+
+    | All users                 | SLK           |
+    +---------------------------+---------------+
 
 See :ref:`how-do-i-obtain-access-to-the-mds` for more information on roles.
 

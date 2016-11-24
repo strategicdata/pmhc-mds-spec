@@ -144,6 +144,8 @@ Once logged in, logout by:
 
 We highly encourage users to logout once they have completed their tasks.
 
+.. _Updating_your_details:
+
 Updating your details
 ^^^^^^^^^^^^^^^^^^^^^
 

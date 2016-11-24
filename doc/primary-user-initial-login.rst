@@ -63,8 +63,9 @@ to add users to your provider organisations.
 4. Uploading data
 ^^^^^^^^^^^^^^^^^
 
-Once the primary user has set up the provider organisations and associated
-user accounts the PMHC MDS is ready for data upload.
+Once the PHN has had their initial PMHC MDS training session, the primary user
+has set up the provider organisations and associated user accounts the PMHC MDS
+is ready for data upload.
 
 Please see :ref:`uploading_a_file` for instructions on how to upload to the
 PMHC MDS.
