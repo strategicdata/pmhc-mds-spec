@@ -50,10 +50,14 @@ You can view an organisation's details through the organisation tab, by
 following these steps:
 
 #. Navigate to the Organisations tab.
+
+.. figure:: screen-shots/organisations.png
+   :alt: PMHC MDS Organisations
+
 #. Click on the organisation name in blue text displayed within the table list.
 
-The organisations details will be displayed, including a table listing the users
-that belong to this organisation.
+The organisations details will be displayed, and if you have User Management role
+will include a table listing the users that belong to this organisation.
 
 .. figure:: screen-shots/view-organisation.png
    :alt: PMHC MDS View Organisation
@@ -67,6 +71,10 @@ You can edit an organisation's details through the organisation tab, by
 following these steps:
 
 1. Navigate to the Organisation tab.
+
+.. figure:: screen-shots/organisations.png
+   :alt: PMHC MDS Organisations
+
 2. Click on the organisation name in blue text displayed within the table list.
 
    .. figure:: screen-shots/view-organisation.png
@@ -100,13 +108,13 @@ You can add an organisation through the organisation tab by following these step
       :alt: PMHC MDS Add Organisation
 
 3. Complete all the mandatory fields marked with an * in the 'Add New
-   Organisation' form. You may assign an existing user as Contact for this
+   Organisation' form. You may assign an existing user as Primary Contact for this
    organisation. If an existing user will not be responsible for this
    organisation, come back and fill this item in once the user has been added.
 4. Click the blue 'Save' button.
 
-You will receive confirmation that the organisation has
-been saved, and it will now be displaying in your organisations list.
+You will receive confirmation that the organisation has been saved, and it will
+now be displaying in your organisations list.
 
 .. figure:: screen-shots/organisation-added.png
    :alt: PMHC MDS Organisation Added
@@ -122,10 +130,14 @@ deleted please email support@pmhc-mds.com.
 Viewing Organisational Users
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You can view users assigned to an organisation through the organisation tab,
+You can view users assigned to an organisation through the organisation tab if you have been assigned a User Management role,
 by following these steps:
 
 #. Navigate to the Organisations tab.
+
+.. figure:: screen-shots/organisations.png
+   :alt: PMHC MDS Organisations
+
 #. Click on the organisation name in blue displayed within the table list.
 #. Under the organisational details, you can view a table list of the
    organisation's users. You can filter the users within this table list,
