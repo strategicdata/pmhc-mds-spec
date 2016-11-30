@@ -81,7 +81,11 @@ However, the auto :ref:`password-recovery` process available to you via the
 MDS login screen is the preferred method of password retrieval.
 
 If your email address or mobile number has changed, it is important that you update
+<<<<<<< Updated upstream
 your account. See :ref:`updating_your_details`. If you can't access your profile,
+=======
+your account. See :ref:`Updating-your-details`. If you can't access your profile,
+>>>>>>> Stashed changes
 contact the PMHC helpdesk so that your records can be updated. When contacting the
 PMHC helpdesk you will be asked to arrange for a :ref:`letter-of-authority` stating
 the change(s) and this must then be sent to Strategic Data via fax or scan/email as documented above.
