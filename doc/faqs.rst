@@ -22,22 +22,21 @@ How do I obtain access to the PMHC MDS?
 Access to the PMHC MDS is based around roles. Each role allows a user to perform
 specific tasks. A user can have more than one role. Each role is granted for a
 user against an organisation. An organisation can either be a Primary Health
-Network or a Provider Organisation. If a user is granted a role for a
-Primary Health Network (PHN) they will also have this role for any Provider
-Organisation's of that PHN. The following table provides a summary of each of
-the roles that currently exist within the PMHC MDS:
+Network (PHN) or a Provider Organisation. If a user is granted a role for a
+PHN they will also have this role for any Provider Organisations of that PHN. The following table
+provides a summary of each of the roles that currently exist within the PMHC MDS:
 
-+----------------------------+------------------------------------------------------------------------------------------------------------------------------------+
-| **Role**                   | **Tasks allowed**                                                                                                                  |
-+============================+====================================================================================================================================+
-| Organisation Management    | A user with the Organisation Management role for a PHN can manage provider organisations for that PHN                              |
-+----------------------------+------------------------------------------------------------------------------------------------------------------------------------+
-| User Management            | A user with the User Management role for an organisation can manage user accounts for that organisation                            |
-+----------------------------+------------------------------------------------------------------------------------------------------------------------------------+
-| Upload                     | A user with the Upload role can upload data to the associated organisation                                                         |
-+----------------------------+------------------------------------------------------------------------------------------------------------------------------------+
++----------------------------+----------------------------------------------------------------------------------------------------------------------------------+
+| **Role**                   | **Tasks allowed**                                                                                                                |
++============================+==================================================================================================================================+
+| Organisation Management    | A user with the Organisation Management role for a PHN can manage Provider Organisations for that PHN                            |
++----------------------------+----------------------------------------------------------------------------------------------------------------------------------+
+| User Management            | A user with the User Management role for an organisation can manage user accounts for that organisation or its suborganisations  |
++----------------------------+----------------------------------------------------------------------------------------------------------------------------------+
+| Upload                     | A user with the Upload role can upload data to that organisation or its suborganisations                                         |
++----------------------------+----------------------------------------------------------------------------------------------------------------------------------+
 
-User accounts can be created by a user at your Provider Organisation or PHN who
+User accounts can be created by a user at your PHN or Provider Organisation who
 has the User Management role. Please contact support@pmhc-mds.com to find out
 who has this access.
 
@@ -82,7 +81,7 @@ However, the auto :ref:`password-recovery` process available to you via the
 MDS login screen is the preferred method of password retrieval.
 
 If your email address or mobile number has changed, it is important that you update
-your account. See :ref:`Updating-your-details`. If you can't access your profile, 
+your account. See :ref:`updating_your_details`. If you can't access your profile,
 contact the PMHC helpdesk so that your records can be updated. When contacting the
 PMHC helpdesk you will be asked to arrange for a :ref:`letter-of-authority` stating
 the change(s) and this must then be sent to Strategic Data via fax or scan/email as documented above.
@@ -114,18 +113,17 @@ What can a user see in the MDS?
 What you see once you login will depend upon what roles you have been assigned.
 The table below lists the tabs that will be shown for each role:
 
-    +---------------------------+---------------+
-    | Role                      | Tab           |
-    +===========================+===============+
-    | Organisation Management   | Organisations |
-    |---------------------------+---------------+
-    | User Management           | Organisations |
-    |                           | Users         |
-    +---------------------------+---------------+
-    | Upload                    | Upload        |
-    +---------------------------+---------------+
-    | All users                 | SLK           |
-    +---------------------------+---------------+
++---------------------------+----------------------+
+| *Role*                    | *Tab(s)*             |
++===========================+======================+
+| Organisation Management   | Organisations        |
++---------------------------+----------------------+
+| User Management           | Organisations, Users |
++---------------------------+----------------------+
+| Upload                    | Upload               |
++---------------------------+----------------------+
+| All users                 | Home, SLK            |
++---------------------------+----------------------+
 
 See :ref:`how-do-i-obtain-access-to-the-mds` for more information on roles.
 
@@ -199,12 +197,12 @@ Initially the PHN will need to play a role in coordinating assignment and manage
 of these keys for Provider Organisations, prior to the PMHC MDS implementation a
 Master Client Index during Stage 2 of development.
 
-Please refer to :ref:`identifier-management`.
+Please refer to :ref:`identifier_management`.
 
 Can you suggest a best practice approach to managing client keys?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-We understand that PHNs approach :ref:`identifier-management` in various different ways
+We understand that PHNs approach :ref:`identifier_management` in various different ways
 to best suit their practice. PHNs will continue to manage client keys until the
 Master Client Index is developed and released in Stage 2. In the interim, we suggest
 speaking with another PHN in your network to understand their approach to managing
@@ -214,9 +212,9 @@ How will the Master Client Index work?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 During Stage 2 of the PMHC MDS implementation a Master Client Index will be created
-to allow Provider Organisations to manage the :ref:`client-keys` across PHNs. Stage 2
+to allow Provider Organisations to manage the :ref:`client_keys` across PHNs. Stage 2
 development updates will be released by the Department of Health in the lead up to
-release. Regularly check the announcements on the :ref:`PMHC-MDS` home page to keep informed.
+release. Regularly check the announcements on the home page (https://pmhc-mds.net/) to keep informed.
 
 How often should I enter data into the MDS?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -2,17 +2,18 @@ Organisations
 =============
 
 You will only be able to see the Organisations tab if you have been assigned
-the 'Organisation Management' role.
+the 'Organisation Management' or the 'User Management' role.
 
 If you believe you should have access to an organisation and it doesn't appear
 in your list please contact someone in that provider organisation or the
-provider organisation's PHN who has the 'Organisation Management' role.
+provider organisation's PHN who has the 'User Management' role.
 
-If you are unsure who has the 'Organisation Management' role please email the PMHC
+If you are unsure who has the 'User Management' role please email the PMHC
 helpdesk at support@pmhc-mds.com
 
 After navigating to the organisation tab, you will be presented with a list of
-the organisations for which you have been assigned the 'Organisation Management' role.
+the organisations for which you have been assigned the 'Organisation Management'
+or the 'User Management' role.
 
 .. figure:: screen-shots/organisations.png
    :alt: PMHC MDS Organisations
@@ -56,7 +57,7 @@ following these steps:
 
 #. Click on the organisation name in blue text displayed within the table list.
 
-The organisations details will be displayed, and if you have User Management role
+The organisations details will be displayed, and if you have the 'User Management' role
 will include a table listing the users that belong to this organisation.
 
 .. figure:: screen-shots/view-organisation.png
@@ -67,8 +68,8 @@ will include a table listing the users that belong to this organisation.
 Editing an Organisation
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-You can edit an organisation's details through the organisation tab, by
-following these steps:
+If you have the 'Organisation Management' role you can edit a provider
+organisation's details through the organisation tab, by following these steps:
 
 1. Navigate to the Organisation tab.
 
@@ -95,7 +96,8 @@ following these steps:
 Adding an Organisation
 ^^^^^^^^^^^^^^^^^^^^^^
 
-You can add an organisation through the organisation tab by following these steps:
+If you have the 'Organisation Management' role you can add provider organisations
+through the organisation tab by following these steps:
 
 1. Navigate to the Organisations tab.
 
@@ -130,8 +132,8 @@ deleted please email support@pmhc-mds.com.
 Viewing Organisational Users
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You can view users assigned to an organisation through the organisation tab if you have been assigned a User Management role,
-by following these steps:
+You can view users assigned to an organisation through the organisation tab
+if you have been assigned the 'User Management' role, by following these steps:
 
 #. Navigate to the Organisations tab.
 

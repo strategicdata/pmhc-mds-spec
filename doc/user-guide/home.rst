@@ -70,17 +70,17 @@ event that you no longer have access to your primary email address.
 10. What you see once you login will depend upon what roles you have been
     assigned. The table below lists the tabs that will be shown for each role:
 
-    +-------------------------+---------------+
-    | Role                    | Tab           |
-    +=========================+===============+
-    | Organisation Management | Organisations |
-    |-------------------------+---------------+
-    | User Management         | Users         |
-    +-------------------------+---------------+
-    | Upload                  | Upload        |
-    +-------------------------+---------------+
-    | All users               | SLK           |
-    +-------------------------+---------------+
+    +-------------------------+----------------------+
+    | Role                    | Tab                  |
+    +=========================+======================+
+    | Organisation Management | Organisations        |
+    +-------------------------+----------------------+
+    | User Management         | Organisations, Users |
+    +-------------------------+----------------------+
+    | Upload                  | Upload               |
+    +-------------------------+----------------------+
+    | All users               | SLK                  |
+    +-------------------------+----------------------+
 
 .. _forgotten_password:
 
@@ -144,7 +144,7 @@ Once logged in, logout by:
 
 We highly encourage users to logout once they have completed their tasks.
 
-.. _Updating_your_details:
+.. _updating_your_details:
 
 Updating your details
 ^^^^^^^^^^^^^^^^^^^^^
