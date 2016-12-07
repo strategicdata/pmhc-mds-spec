@@ -45,17 +45,17 @@ Provider Organisation's of that PHN.
 What users see once they are loged in will depend upon what roles they have been
 assigned. The table below lists the tabs that will be shown for each role:
 
-    +-------------------------+---------------+
-    | Role                    | Tab           |
-    +=========================+===============+
-    | Organisation Management | Organisations |
-    |-------------------------+---------------+
-    | User Management         | Users         |
-    +-------------------------+---------------+
-    | Upload                  | Upload        |
-    +-------------------------+---------------+
-    | All users               | SLK           |
-    +-------------------------+---------------+
++-------------------------+----------------------+
+| Role                    | Tab                  |
++=========================+======================+
+| Organisation Management | Organisations        |
++-------------------------+----------------------+
+| User Management         | Organisations, Users |
++-------------------------+----------------------+
+| Upload                  | Upload               |
++-------------------------+----------------------+
+| All users               | SLK                  |
++-------------------------+----------------------+
 
 Finding a user
 ^^^^^^^^^^^^^^

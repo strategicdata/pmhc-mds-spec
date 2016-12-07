@@ -18,6 +18,45 @@ users that are assigned to the organisations for which you have the
 .. figure:: screen-shots/users.png
    :alt: PMHC MDS Users
 
+.. _roles:
+
+Users Roles
+^^^^^^^^^^^
+
+Access to the PMHC MDS is based around roles. The following table provides a summary of each of
+the roles that currently exist within the PMHC MDS:
+
++----------------------------+------------------------------------------------------------------------------------------------------------------------------------+
+| **Role**                   | **Tasks allowed**                                                                                                                  |
++============================+====================================================================================================================================+
+| Organisation Management    | A user with the Organisation Management role for a PHN can manage provider organisations for that PHN                              |
++----------------------------+------------------------------------------------------------------------------------------------------------------------------------+
+| User Management            | A user with the User Management role for an organisation can manage user accounts for that organisation                            |
++----------------------------+------------------------------------------------------------------------------------------------------------------------------------+
+| Upload                     | A user with the Upload role can upload data to the associated organisation                                                         |
++----------------------------+------------------------------------------------------------------------------------------------------------------------------------+
+
+Each role allows a user to perform specific tasks. A user can have more than one role.
+Each role is granted for a user against an organisation. An organisation can
+either be a Primary Health Network or a Provider Organisation. If a user is granted
+a role for a Primary Health Network (PHN) they will also have this role for any
+Provider Organisation's of that PHN.
+
+What users see once they are loged in will depend upon what roles they have been
+assigned. The table below lists the tabs that will be shown for each role:
+
++-------------------------+----------------------+
+| Role                    | Tab                  |
++=========================+======================+
+| Organisation Management | Organisations        |
++-------------------------+----------------------+
+| User Management         | Organisations, Users |
++-------------------------+----------------------+
+| Upload                  | Upload               |
++-------------------------+----------------------+
+| All users               | SLK                  |
++-------------------------+----------------------+
+
 Finding a user
 ^^^^^^^^^^^^^^
 
@@ -53,7 +92,7 @@ You can view a user's details through the user tab, by following these steps:
 .. figure:: screen-shots/view-user.png
    :alt: PMHC MDS View User
 
-A page will display showing the user's details and the roles they have at
+A page will display showing the user's details and the :ref:`roles` they have at
 particular organisations.
 
 .. _adding_a_user:
@@ -77,7 +116,7 @@ PMHC MDS.  You can invite a new user through the Users tab, by following these s
       :alt: PMHC MDS Invite User
 
 3. Complete all the mandatory fields marked with an * in the 'Invite User' form.
-   Only one role can be selected at this stage. User's can be given multiple
+   Only one :ref:`roles` can be selected at this stage. User's can be given multiple
    roles. If more than one role is required the extra roles will need to be
    added after the user has access to the system.
 
@@ -133,3 +172,9 @@ will need to accept this invitation as follows:
 
 9. Navigate to https://pmhc-mds.net/ and follow the :ref:`logging_in`
    instructions.
+
+Adding a role to an existing user
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A user can have more than one role. Each role is granted for a user against an organisation.
+View :ref:`adding_roles` to assign extra roles to an existing organisational user.

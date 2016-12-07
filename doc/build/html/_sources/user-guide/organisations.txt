@@ -123,6 +123,15 @@ now be displaying in your organisations list.
 
 .. _delete_organisation:
 
+Inactive Organisation
+^^^^^^^^^^^^^^^^^^^^^
+
+You can make an organisation inactive by editing the 'Status' of an organisation
+from active to inactive. See :ref:`edit_organisation`
+
+*Please note: Inactive organisations will still be displayed in your organisations list.*
+
+
 Deleting an Organisation
 ^^^^^^^^^^^^^^^^^^^^^^^^
 

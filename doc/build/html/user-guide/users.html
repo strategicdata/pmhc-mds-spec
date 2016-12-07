@@ -99,10 +99,12 @@
 <li class="toctree-l3"><a class="reference internal" href="home.html">Home</a></li>
 <li class="toctree-l3"><a class="reference internal" href="organisations.html">Organisations</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Users</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#users-roles">Users Roles</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#finding-a-user">Finding a user</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#viewing-a-user-s-details">Viewing a User&#8217;s details</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#adding-a-user">Adding a user</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#accepting-an-invitation-to-become-a-pmhc-mds-user">Accepting an invitation to become a PMHC MDS User</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#adding-a-role-to-an-existing-user">Adding a role to an existing user</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="upload.html">Upload</a></li>
@@ -176,6 +178,65 @@ users that are assigned to the organisations for which you have the
 <div class="figure">
 <img alt="PMHC MDS Users" src="../_images/users.png" />
 </div>
+<div class="section" id="users-roles">
+<span id="roles"></span><h2>Users Roles<a class="headerlink" href="#users-roles" title="Permalink to this headline">¶</a></h2>
+<p>Access to the PMHC MDS is based around roles. The following table provides a summary of each of
+the roles that currently exist within the PMHC MDS:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="18%" />
+<col width="83%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><strong>Role</strong></th>
+<th class="head"><strong>Tasks allowed</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Organisation Management</td>
+<td>A user with the Organisation Management role for a PHN can manage provider organisations for that PHN</td>
+</tr>
+<tr class="row-odd"><td>User Management</td>
+<td>A user with the User Management role for an organisation can manage user accounts for that organisation</td>
+</tr>
+<tr class="row-even"><td>Upload</td>
+<td>A user with the Upload role can upload data to the associated organisation</td>
+</tr>
+</tbody>
+</table>
+<p>Each role allows a user to perform specific tasks. A user can have more than one role.
+Each role is granted for a user against an organisation. An organisation can
+either be a Primary Health Network or a Provider Organisation. If a user is granted
+a role for a Primary Health Network (PHN) they will also have this role for any
+Provider Organisation&#8217;s of that PHN.</p>
+<p>What users see once they are loged in will depend upon what roles they have been
+assigned. The table below lists the tabs that will be shown for each role:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="53%" />
+<col width="47%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Role</th>
+<th class="head">Tab</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Organisation Management</td>
+<td>Organisations</td>
+</tr>
+<tr class="row-odd"><td>User Management</td>
+<td>Organisations, Users</td>
+</tr>
+<tr class="row-even"><td>Upload</td>
+<td>Upload</td>
+</tr>
+<tr class="row-odd"><td>All users</td>
+<td>SLK</td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="section" id="finding-a-user">
 <h2>Finding a user<a class="headerlink" href="#finding-a-user" title="Permalink to this headline">¶</a></h2>
 <p>You can sort and filter the listed users through the Users tab.</p>
@@ -210,7 +271,7 @@ entered text.</li>
 <div class="figure">
 <img alt="PMHC MDS View User" src="../_images/view-user.png" />
 </div>
-<p>A page will display showing the user&#8217;s details and the roles they have at
+<p>A page will display showing the user&#8217;s details and the <a class="reference internal" href="#roles"><span class="std std-ref">Users Roles</span></a> they have at
 particular organisations.</p>
 </div>
 <div class="section" id="adding-a-user">
@@ -231,7 +292,7 @@ PMHC MDS.  You can invite a new user through the Users tab, by following these s
 </div>
 </li>
 <li><p class="first">Complete all the mandatory fields marked with an * in the &#8216;Invite User&#8217; form.
-Only one role can be selected at this stage. User&#8217;s can be given multiple
+Only one <a class="reference internal" href="#roles"><span class="std std-ref">Users Roles</span></a> can be selected at this stage. User&#8217;s can be given multiple
 roles. If more than one role is required the extra roles will need to be
 added after the user has access to the system.</p>
 <div class="figure">
@@ -295,6 +356,11 @@ you will need to input the SMS you have been sent.</p>
 instructions.</p>
 </li>
 </ol>
+</div>
+<div class="section" id="adding-a-role-to-an-existing-user">
+<h2>Adding a role to an existing user<a class="headerlink" href="#adding-a-role-to-an-existing-user" title="Permalink to this headline">¶</a></h2>
+<p>A user can have more than one role. Each role is granted for a user against an organisation.
+View <a class="reference internal" href="organisations.html#adding-roles"><span class="std std-ref">Assigning Extra Roles to an Organisational User</span></a> to assign extra roles to an existing organisational user.</p>
 </div>
 </div>
 
