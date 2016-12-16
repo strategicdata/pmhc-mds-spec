@@ -100,8 +100,8 @@
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Organisations</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#searching-for-an-organisation">Searching for an Organisation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#viewing-an-organisation">Viewing an Organisation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#editing-an-organisation">Editing an Organisation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#adding-an-organisation">Adding an Organisation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#editing-an-organisation">Editing an Organisation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#inactive-organisation">Inactive Organisation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#deleting-an-organisation">Deleting an Organisation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#viewing-organisational-users">Viewing Organisational Users</a></li>
@@ -175,7 +175,7 @@ provider organisation&#8217;s PHN who has the &#8216;User Management&#8217; role
 <p>If you are unsure who has the &#8216;User Management&#8217; role please email the PMHC
 helpdesk at <a class="reference external" href="mailto:support&#37;&#52;&#48;pmhc-mds&#46;com">support<span>&#64;</span>pmhc-mds<span>&#46;</span>com</a></p>
 <p>After navigating to the organisation tab, you will be presented with a list of
-the organisations for which you have been assigned the &#8216;Organisation Management&#8217;
+top level organisations for which you have been assigned the &#8216;Organisation Management&#8217;
 or the &#8216;User Management&#8217; role.</p>
 <div class="figure">
 <img alt="PMHC MDS Organisations" src="../_images/organisations.png" />
@@ -223,36 +223,6 @@ will include a table listing the users that belong to this organisation.</p>
 <img alt="PMHC MDS View Organisation" src="../_images/view-organisation.png" />
 </div>
 </div>
-<div class="section" id="editing-an-organisation">
-<span id="edit-organisation"></span><h2>Editing an Organisation<a class="headerlink" href="#editing-an-organisation" title="Permalink to this headline">¶</a></h2>
-<p>If you have the &#8216;Organisation Management&#8217; role you can edit a provider
-organisation&#8217;s details through the organisation tab, by following these steps:</p>
-<ol class="arabic simple">
-<li>Navigate to the Organisation tab.</li>
-</ol>
-<div class="figure">
-<img alt="PMHC MDS Organisations" src="../_images/organisations.png" />
-</div>
-<ol class="arabic" start="2">
-<li><p class="first">Click on the organisation name in blue text displayed within the table list.</p>
-<div class="figure">
-<img alt="PMHC MDS View Organisation" src="../_images/view-organisation.png" />
-</div>
-</li>
-<li><p class="first">If you have permission to edit the organisation a blue &#8216;Edit&#8217; button will
-be displayed.</p>
-</li>
-<li><p class="first">Click the blue &#8216;Edit&#8217; button.</p>
-<div class="figure">
-<img alt="PMHC MDS Edit Organisation" src="../_images/edit-organisation.png" />
-</div>
-</li>
-</ol>
-<ol class="arabic simple" start="4">
-<li>Update the organisations details. Mandatory fields are marked with an *</li>
-<li>Click the blue &#8216;Save&#8217; button.</li>
-</ol>
-</div>
 <div class="section" id="adding-an-organisation">
 <span id="add-organisation"></span><h2>Adding an Organisation<a class="headerlink" href="#adding-an-organisation" title="Permalink to this headline">¶</a></h2>
 <p>If you have the &#8216;Organisation Management&#8217; role you can add provider organisations
@@ -263,24 +233,60 @@ through the organisation tab by following these steps:</p>
 <img alt="PMHC MDS Organisations" src="../_images/organisations.png" />
 </div>
 </li>
-<li><p class="first">Click the blue &#8216;Add&#8217; button.</p>
+<li><p class="first">Click the blue &#8216;Add Suborganisation&#8217; button.</p>
 <div class="figure">
 <img alt="PMHC MDS Add Organisation" src="../_images/add-organisation.png" />
 </div>
 </li>
-<li><p class="first">Complete all the mandatory fields marked with an * in the &#8216;Add New
-Organisation&#8217; form. You may assign an existing user as Primary Contact for this
-organisation. If an existing user will not be responsible for this
-organisation, come back and fill this item in once the user has been added.</p>
+<li><p class="first">Complete all the mandatory fields marked with an * in the add suborganisation
+organisation&#8217; form.</p>
 </li>
 <li><p class="first">Click the blue &#8216;Save&#8217; button.</p>
 </li>
 </ol>
 <p>You will receive confirmation that the organisation has been saved, and it will
-now be displaying in your organisations list.</p>
+now be displaying in the suborganisations organisations list.</p>
 <div class="figure">
 <img alt="PMHC MDS Organisation Added" src="../_images/organisation-added.png" />
 </div>
+</div>
+<div class="section" id="editing-an-organisation">
+<span id="edit-organisation"></span><h2>Editing an Organisation<a class="headerlink" href="#editing-an-organisation" title="Permalink to this headline">¶</a></h2>
+<p>If you have the &#8216;Organisation Management&#8217; role you can edit a provider
+organisation&#8217;s details through the organisation tab, by following these steps:</p>
+<ol class="arabic simple">
+<li>Navigate to the Organisations tab.</li>
+</ol>
+<div class="figure">
+<img alt="PMHC MDS Organisations" src="../_images/organisations.png" />
+</div>
+<ol class="arabic" start="2">
+<li><p class="first">Click on the PHN name in blue text displayed within the table list.</p>
+<div class="figure">
+<img alt="PMHC MDS View PHN" src="../_images/view-organisation.png" />
+</div>
+</li>
+<li><p class="first">Click on the Provider Organisation name in blue text displayed within the
+suborganisations table.</p>
+<div class="figure">
+<img alt="PMHC MDS View Provider Organisation" src="../_images/view-suborganisation.png" />
+</div>
+</li>
+</ol>
+<ol class="arabic" start="3">
+<li><p class="first">If you have permission to edit the Provider Organisation a blue &#8216;Edit&#8217; button will
+be displayed.</p>
+</li>
+<li><p class="first">Click the blue &#8216;Edit&#8217; button.</p>
+<div class="figure">
+<img alt="PMHC MDS Edit Organisation" src="../_images/edit-suborganisation.png" />
+</div>
+</li>
+</ol>
+<ol class="arabic simple" start="4">
+<li>Update the organisations details. Mandatory fields are marked with an *</li>
+<li>Click the blue &#8216;Save&#8217; button.</li>
+</ol>
 </div>
 <div class="section" id="inactive-organisation">
 <span id="delete-organisation"></span><h2>Inactive Organisation<a class="headerlink" href="#inactive-organisation" title="Permalink to this headline">¶</a></h2>
@@ -303,9 +309,11 @@ if you have been assigned the &#8216;User Management&#8217; role, by following t
 <div class="figure">
 <img alt="PMHC MDS Organisations" src="../_images/organisations.png" />
 </div>
-<ol class="arabic simple">
+<ol class="arabic simple" start="2">
 <li>Click on the organisation name in blue displayed within the table list.</li>
-<li>Under the organisational details, you can view a table list of the
+<li>If you are wishing to view the users assigned to a Provider Organisation,
+click on the Provider Organisation&#8217;s name within the suborganisations table.</li>
+<li>Under the suborganisations table, you can view a table list of the
 organisation&#8217;s users. You can filter the users within this table list,
 click the grey &#8216;Filters&#8217; button and start typing in an edit box now
 displayed under the column headers. To remove the filter, click the grey
@@ -320,20 +328,23 @@ cross within the edit box beside any entered text.</li>
 <p>You can assign extra roles to an existing organisational user by following
 these steps:</p>
 <ol class="arabic">
-<li><p class="first">Navigate to the Organisation&#8217;s tab.</p>
+<li><p class="first">Navigate to the organisation at which you wish to add the role.</p>
 </li>
-<li><p class="first">Click on the organisation name in blue displayed within the table list.</p>
-</li>
-<li><p class="first">Click the blue &#8216;Add&#8217; button under the Users assigned to the organisation.</p>
+<li><p class="first">Click the blue &#8216;Add Role&#8217; button under the &#8216;Roles of users assigned to ...&#8217; table.</p>
 <div class="figure">
 <img alt="PMHC MDS Add Role" src="../_images/add-role.png" />
 </div>
 </li>
+</ol>
+<ol class="arabic" start="4">
 <li><p class="first">Enter the users email address.</p>
 </li>
 <li><p class="first">Check to ensure you have selected the correct user by reviewing the users details now displayed.</p>
 </li>
 <li><p class="first">Select a role.</p>
+<div class="figure">
+<img alt="PMHC MDS Filled In Add Role" src="../_images/filled-in-add-role.png" />
+</div>
 </li>
 <li><p class="first">Click the blue &#8216;Save&#8217; button</p>
 </li>

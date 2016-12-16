@@ -12,7 +12,7 @@ If you are unsure who has the 'User Management' role please email the PMHC
 helpdesk at support@pmhc-mds.com
 
 After navigating to the organisation tab, you will be presented with a list of
-the organisations for which you have been assigned the 'Organisation Management'
+top level organisations for which you have been assigned the 'Organisation Management'
 or the 'User Management' role.
 
 .. figure:: screen-shots/organisations.png
@@ -63,34 +63,6 @@ will include a table listing the users that belong to this organisation.
 .. figure:: screen-shots/view-organisation.png
    :alt: PMHC MDS View Organisation
 
-.. _edit_organisation:
-
-Editing an Organisation
-^^^^^^^^^^^^^^^^^^^^^^^
-
-If you have the 'Organisation Management' role you can edit a provider
-organisation's details through the organisation tab, by following these steps:
-
-1. Navigate to the Organisation tab.
-
-.. figure:: screen-shots/organisations.png
-   :alt: PMHC MDS Organisations
-
-2. Click on the organisation name in blue text displayed within the table list.
-
-   .. figure:: screen-shots/view-organisation.png
-      :alt: PMHC MDS View Organisation
-
-3. If you have permission to edit the organisation a blue 'Edit' button will
-   be displayed.
-4. Click the blue 'Edit' button.
-
-   .. figure:: screen-shots/edit-organisation.png
-      :alt: PMHC MDS Edit Organisation
-
-4. Update the organisations details. Mandatory fields are marked with an *
-5. Click the blue 'Save' button.
-
 .. _add_organisation:
 
 Adding an Organisation
@@ -104,22 +76,54 @@ through the organisation tab by following these steps:
    .. figure:: screen-shots/organisations.png
       :alt: PMHC MDS Organisations
 
-2. Click the blue 'Add' button.
+2. Click the blue 'Add Suborganisation' button.
 
    .. figure:: screen-shots/add-organisation.png
       :alt: PMHC MDS Add Organisation
 
-3. Complete all the mandatory fields marked with an * in the 'Add New
-   Organisation' form. You may assign an existing user as Primary Contact for this
-   organisation. If an existing user will not be responsible for this
-   organisation, come back and fill this item in once the user has been added.
+3. Complete all the mandatory fields marked with an * in the add suborganisation
+   organisation' form.
 4. Click the blue 'Save' button.
 
 You will receive confirmation that the organisation has been saved, and it will
-now be displaying in your organisations list.
+now be displaying in the suborganisations organisations list.
 
 .. figure:: screen-shots/organisation-added.png
    :alt: PMHC MDS Organisation Added
+
+.. _edit_organisation:
+
+Editing an Organisation
+^^^^^^^^^^^^^^^^^^^^^^^
+
+If you have the 'Organisation Management' role you can edit a provider
+organisation's details through the organisation tab, by following these steps:
+
+1. Navigate to the Organisations tab.
+
+.. figure:: screen-shots/organisations.png
+   :alt: PMHC MDS Organisations
+
+2. Click on the PHN name in blue text displayed within the table list.
+
+   .. figure:: screen-shots/view-organisation.png
+      :alt: PMHC MDS View PHN
+
+3. Click on the Provider Organisation name in blue text displayed within the
+   suborganisations table.
+
+   .. figure:: screen-shots/view-suborganisation.png
+      :alt: PMHC MDS View Provider Organisation
+
+3. If you have permission to edit the Provider Organisation a blue 'Edit' button will
+   be displayed.
+4. Click the blue 'Edit' button.
+
+   .. figure:: screen-shots/edit-suborganisation.png
+      :alt: PMHC MDS Edit Organisation
+
+4. Update the organisations details. Mandatory fields are marked with an *
+5. Click the blue 'Save' button.
 
 .. _delete_organisation:
 
@@ -144,13 +148,15 @@ Viewing Organisational Users
 You can view users assigned to an organisation through the organisation tab
 if you have been assigned the 'User Management' role, by following these steps:
 
-#. Navigate to the Organisations tab.
+1. Navigate to the Organisations tab.
 
 .. figure:: screen-shots/organisations.png
    :alt: PMHC MDS Organisations
 
-#. Click on the organisation name in blue displayed within the table list.
-#. Under the organisational details, you can view a table list of the
+2. Click on the organisation name in blue displayed within the table list.
+3. If you are wishing to view the users assigned to a Provider Organisation,
+   click on the Provider Organisation's name within the suborganisations table.
+4. Under the suborganisations table, you can view a table list of the
    organisation's users. You can filter the users within this table list,
    click the grey 'Filters' button and start typing in an edit box now
    displayed under the column headers. To remove the filter, click the grey
@@ -167,9 +173,8 @@ Assigning Extra Roles to an Organisational User
 You can assign extra roles to an existing organisational user by following
 these steps:
 
-1. Navigate to the Organisation's tab.
-2. Click on the organisation name in blue displayed within the table list.
-3. Click the blue 'Add' button under the Users assigned to the organisation.
+1. Navigate to the organisation at which you wish to add the role.
+2. Click the blue 'Add Role' button under the 'Roles of users assigned to ...' table.
 
    .. figure:: screen-shots/add-role.png
       :alt: PMHC MDS Add Role
@@ -177,6 +182,10 @@ these steps:
 4. Enter the users email address.
 5. Check to ensure you have selected the correct user by reviewing the users details now displayed.
 6. Select a role.
+
+   .. figure:: screen-shots/filled-in-add-role.png
+      :alt: PMHC MDS Filled In Add Role
+      
 7. Click the blue 'Save' button
 
 You will receive confirmation that the user has been saved to the
