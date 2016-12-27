@@ -29,7 +29,7 @@ You can upload data files through the upload tab, by following these steps:
 
 1. Navigate to the 'Upload' tab.
 2. If you are allowed to upload to more than one organisation you will be
-   asked to enter an organisation name.
+   asked to select an organisation name.
 3. Select the name of the organisation whose data you are uploading from the drop down list.
 
    .. figure:: screen-shots/upload.png
@@ -53,6 +53,104 @@ your file was successfully uploaded to the PMHC MDS, or informing you of
 any errors that occurred. Further discussion about the error messages can be
 found at :ref:`error-messages`. Please email support@pmhc-mds.com if you don't
 receive an email within one hour.
+
+.. _uploading_a_file_in_test_mode:
+
+Uploading a file in Test Mode
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A file can be uploaded in Test Mode. When uploading in test mode, the file is
+validated, however the data is not updated in the PMHC MDS database.
+
+After navigating to the Upload tab, you will be able to upload in Test Mode
+data files to organisations for which you have the 'Upload' role.
+
+You can upload data files in Test Mode through the upload tab, by following these steps:
+
+1. Navigate to the 'Upload' tab.
+2. If you are allowed to upload to more than one organisation you will be
+   asked to select an organisation name.
+3. Select the name of the organisation whose data you are uploading from the drop down list.
+
+   .. figure:: screen-shots/upload.png
+      :alt: PMHC MDS Upload
+
+4. Click the blue 'Select File' button.
+5. Navigate to where the upload file is saved on your system. Select the file
+   and click the grey 'Open' button.
+
+   .. figure:: screen-shots/file-selected.png
+      :alt: PMHC MDS File Selected
+
+6. Check to ensure you have selected the correct file by reviewing the file
+   name now displayed below the 'Select File' button.
+
+7. Click the 'Upload as test data' checkbox on the right hand side.
+
+   .. figure:: screen-shots/test-mode.png
+      :alt: PMHC MDS Test Mode selected
+
+8. Click the green 'Upload' button.
+
+You will receive confirmation that your file has been accepted. The file will
+now be validated and you will shortly receive an email informing you if
+your file was valid, or informing you of any errors that occurred.
+
+*Even if your file was valid, the data will not be updated in the PMHC MDS database.*
+
+Further discussion about the error messages can be
+found at :ref:`error-messages`. Please email support@pmhc-mds.com if you don't
+receive an email within one hour.
+
+.. _reviewing_previous_uploads:
+
+Reviewing Previous Uploads
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The PMHC MDS allows you to review previous uploads. At the bottom of the Upload
+tab there is a 'Status of Previous Uploads' table.
+
+   .. figure:: screen-shots/previous-uploads.png
+      :alt: PMHC MDS Status of Previous Uploads
+
+When an upload has been completed, irregardless of whether it validated successfully
+or not, the upload will be added to the table.
+
+The 'Status of Previous Uploads' table refreshes every 60 seconds.
+
+By default test uploads are not shown. If you need to see a test upload please
+check the 'Show test uploads' checkbox. Uploads done in Test Mode will be be
+displayed.
+
+   .. figure:: screen-shots/status-of-test-uploads.png
+      :alt: PMHC MDS Status of Test Uploads
+
+You can view the results of an upload by following these steps:
+
+1. Navigate to the 'Upload' tab.
+2. Locate the 'Status of Previous Uploads' table.
+3. Locate the date and time of the upload you are interested in.
+4. Click on the filename of the relevant upload.
+5. You will be shown the 'Upload Details' page.
+
+   .. figure:: screen-shots/upload-details.png
+      :alt: PMHC MDS Upload Details page
+
+6. This page provides the following details about the upload:
+
+    * File name
+    * Uplodate Date
+    * Status
+    * Name of the person who uploaded the file
+    * Details of any errors that occurred or details of what was updated
+
+From this page you can also download the the original file that was uploaded.
+You can download the original file by following these steps:
+
+1. Navigate to the 'Upload Details' page for the upload of interest.
+2. Click the 'Download' button.
+
+The original upload file will be downloaded to your computer.
 
 .. _error-messages:
 
