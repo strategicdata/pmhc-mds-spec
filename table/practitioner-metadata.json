@@ -12,7 +12,6 @@
     "datatype": {
       "base": "string"
     },
-    "separator": ":",
     "required": true
   },{
     "name": "practitioner_key",
@@ -118,7 +117,7 @@
       },
     "required": false
   }],
-  "primaryKey": "practitioner_key",
+  "primaryKey": [ "organisation_path", "practitioner_key" ],
   "foreignKeys": [{
     "columnReference": "practitioner_category",
     "reference": {

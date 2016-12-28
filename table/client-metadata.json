@@ -12,7 +12,6 @@
     "datatype": {
       "base": "string"
     },
-    "separator": ":",
     "required": true
   },{
      "name": "client_key",
@@ -160,7 +159,7 @@
       },
     "required": false
   }],
-  "primaryKey": "client_key",
+  "primaryKey": [ "organisation_path", "client_key" ],
   "foreignKeys": [{
     "columnReference": "client_atsi_status",
     "reference": {

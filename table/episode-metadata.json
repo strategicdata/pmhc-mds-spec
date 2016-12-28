@@ -12,7 +12,6 @@
     "datatype": {
       "base": "string"
     },
-    "separator": ":",
     "required": true
   },{
     "name": "episode_key",
@@ -373,7 +372,7 @@
       },
     "required": false
   }],
-  "primaryKey": "episode_key",
+  "primaryKey": [ "organisation_path", "episode_key" ],
   "foreignKeys": [{
     "columnReference": "episode_completion_status",
     "reference": {
@@ -381,10 +380,10 @@
       "columnReference": "id"
     }
   }, {
-    "columnReference": "client_key",
+    "columnReference": [ "organisation_path", "client_key" ],
     "reference": {
       "resource": "data/clients.csv",
-      "columnReference": "client_key"
+      "columnReference": [ "organisation_path", "client_key" ]
     }
   }, {
     "columnReference": "client_consent",

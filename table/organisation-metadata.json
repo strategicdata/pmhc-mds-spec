@@ -93,7 +93,6 @@
     "datatype": {
       "base": "string"
       },
-    "separator": ":",
     "required": false
   }],
   "primaryKey": "organisation_key",
