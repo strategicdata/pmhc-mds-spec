@@ -1,3 +1,5 @@
+.. _identifier_management:
+
 Identifier management
 =====================
 
@@ -9,6 +11,8 @@ Networks (PHNs) through a user interface. Each PHN must create their own
 Provider Organisations before any data can be uploaded. Each Provider
 Organisation will need to be assigned a unique key. It is the responsibility
 of the PHN to assign and manage these keys.
+
+.. _client_keys:
 
 Managing Client Keys
 --------------------

@@ -63,6 +63,8 @@ Each of the example files assumes the following organisation structure:
 | NFP01            | Test Provider Organisation | Private Allied Health Professional Practice | PHN999              |
 +------------------+----------------------------+---------------------------------------------+---------------------+
 
+.. _file-format:
+
 File format
 -----------
 The first row in each file/worksheet should include the following columns:
