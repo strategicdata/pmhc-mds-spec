@@ -5,7 +5,7 @@
 "Provider Organisation - Type","Practitioner - ATSI Cultural Training","Client - Date of Birth","Episode - End Date","Practitioner Key","Collection Occasion - Measure Date","Collection Occasion - Measure Date","Collection Occasion - Measure Date"
 "Provider Organisation - State","Practitioner - Year of Birth","Client - Estimated Date of Birth Flag","Episode - Client Consent to Anonymised Data","Service Contact - Date","Collection Occasion - Reason","Collection Occasion - Reason","Collection Occasion - Reason"
 "Provider Organisation - Tags","Practitioner - Gender","Client - Gender","Episode - Completion Status","Service Contact - Type","K10+ - Question 1","K5 - Question 1","SDQ Collection Occasion - Version"
-"Organisation Path","Practitioner - Aboriginal and Torres Strait Islander Status","Client - Aboriginal and Torres Strait Islander Status","Episode - Referral Date","Service Contact - Postcode","K10+ - Question 2","K5 - Question 2","SDQ - Question 1"
+,"Practitioner - Aboriginal and Torres Strait Islander Status","Client - Aboriginal and Torres Strait Islander Status","Episode - Referral Date","Service Contact - Postcode","K10+ - Question 2","K5 - Question 2","SDQ - Question 1"
 ,"Practitioner - Active","Client - Country of Birth","Episode - Principal Focus of Treatment Plan","Service Contact - Modality","K10+ - Question 3","K5 - Question 3","SDQ - Question 2"
 ,"Practitioner - Tags","Client - Main Language Spoken at Home","Episode - GP Mental Health Treatment Plan Flag","Service Contact - Participants","K10+ - Question 4","K5 - Question 4","SDQ - Question 3"
 ,,"Client - Proficiency in Spoken English","Episode - Homelessness Flag","Service Contact - Venue","K10+ - Question 5","K5 - Question 5","SDQ - Question 4"

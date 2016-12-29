@@ -2723,21 +2723,6 @@ List of tags for the collection occasion.
 
 ----------
 
-.. _dfn-organisation_path:
-
-Organisation Path
-^^^^^^^^^^^^^^^^^
-
-A sequence of colon separated Organisation Codes that fully specifies the upload organisation.
-
-:Field name: organisation_path
-
-:Data type: string
-
-:Required: false
-
-----------
-
 .. _dfn-practitioner_atsi_status:
 
 Practitioner - Aboriginal and Torres Strait Islander Status
@@ -3162,14 +3147,14 @@ The category that best describes the provider organisation.
 
 ----------
 
-.. _dfn-organisation_key:
+.. _dfn-organisation_path:
 
 Provider Organisation Key
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A sequence of characters which uniquely identifies the provider organisation. Assigned by the Primary Health Network.
 
-:Field name: organisation_key
+:Field name: organisation_path
 
 :Data type: string (2,50)
 
