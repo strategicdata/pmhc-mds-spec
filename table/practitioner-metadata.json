@@ -119,6 +119,12 @@
   }],
   "primaryKey": [ "organisation_path", "practitioner_key" ],
   "foreignKeys": [{
+    "columnReference": "organisation_path",
+    "reference": {
+      "resource": "data/organisations.csv",
+      "columnReference": "organisation_path"
+    }
+  }, {
     "columnReference": "practitioner_category",
     "reference": {
       "resource": "table/practitioner/category.csv",

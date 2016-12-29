@@ -161,6 +161,12 @@
   }],
   "primaryKey": [ "organisation_path", "client_key" ],
   "foreignKeys": [{
+    "columnReference": "organisation_path",
+    "reference": {
+      "resource": "data/organisations.csv",
+      "columnReference": "organisation_path"
+    }
+  }, {
     "columnReference": "client_atsi_status",
     "reference": {
       "resource": "type/atsi-status.csv",
