@@ -274,7 +274,6 @@
     "datatype": {
       "base": "string"
     },
-    "default": "9",
     "required": true
   },{
     "name": "medication_anxiolytics",
@@ -288,7 +287,6 @@
     "datatype": {
       "base": "string"
     },
-    "default": "9",
     "required": true
   },{
     "name": "medication_hypnotics",
@@ -302,7 +300,6 @@
     "datatype": {
       "base": "string"
     },
-    "default": "9",
     "required": true
   },{
     "name": "medication_antidepressants",
@@ -316,7 +313,6 @@
     "datatype": {
       "base": "string"
     },
-    "default": "9",
     "required": true
   },{
     "name": "medication_psychostimulants",
@@ -330,7 +326,6 @@
     "datatype": {
       "base": "string"
     },
-    "default": "9",
     "required": true
   },{
     "name": "referrer_profession",

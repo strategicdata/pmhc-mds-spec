@@ -50,7 +50,6 @@
     "datatype": {
       "base": "string"
     },
-    "default": "9",
     "required": true
   },{
     "name": "practitioner_year_of_birth",
@@ -101,7 +100,6 @@
     "datatype": {
       "base": "string"
     },
-    "default": "1",
     "required": true
   },{
     "name": "practitioner_tags",

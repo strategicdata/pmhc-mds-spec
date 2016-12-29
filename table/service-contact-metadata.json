@@ -164,7 +164,6 @@
       "minimum": 0,
       "maximum": 999999
     },
-    "default": "0",
     "required": true
   },{
     "name": "service_contact_participation_indicator",
