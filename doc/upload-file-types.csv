@@ -1,8 +1,0 @@
-File Type,CSV filename,Excel worksheet name,Required
-:ref:`Client <client-format>`,clients.csv,Clients,Required
-:ref:`Episodes <episode-format>`,episodes.csv,Episodes,Required
-:ref:`Service Contacts <service-contact-format>`,service-contacts.csv,Service Contacts,Required
-:ref:`K10+ Collection Occasions <k10p-format>`,k10p.csv,K10+,Required
-:ref:`K5 Collection Occasions <k5-format>`,k5.csv,K5,Required
-:ref:`SDQ Collection Occasions <sdq-format>`,sdq.csv,SDQ,Required
-:ref:`Practitioners <practitioner-format>`,practitioner.csv,Practitioners,Optional
