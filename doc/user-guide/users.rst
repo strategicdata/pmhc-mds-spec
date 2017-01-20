@@ -116,8 +116,7 @@ PMHC MDS.  You can invite a new user through the Users tab, by following these s
       :alt: PMHC MDS Invite User
 
 3. Complete all the mandatory fields marked with an * in the 'Invite User' form.
-   Only one :ref:`roles` can be selected at this stage. User's can be given multiple
-   roles. If more than one role is required the extra roles will need to be
+   User's can be given multiple :ref:`roles` at invitation, or extra roles can be
    added after the user has access to the system.
 
    .. figure:: screen-shots/invite-user-filled-in.png
@@ -132,10 +131,6 @@ PMHC MDS.  You can invite a new user through the Users tab, by following these s
 
    .. figure:: screen-shots/invite-accepted-email.png
       :alt: PMHC MDS Invite Accepted
-
-7. If the user requires more than one role you can now follow the
-   instructions at :ref:`adding_roles`. Also update the organisation's contact details,
-   if a new user is the organisation's primary contact.
 
 .. _accepting_invitation:
 
@@ -173,8 +168,30 @@ will need to accept this invitation as follows:
 9. Navigate to https://pmhc-mds.net/ and follow the :ref:`logging_in`
    instructions.
 
-Adding a role to an existing user
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Editing an existing users roles
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-A user can have more than one role. Each role is granted for a user against an organisation.
-View :ref:`adding_roles` to assign extra roles to an existing organisational user.
+A user can have more than one role. Each role is granted for a user against an
+organisation you have the User Management Role at.
+
+You can edit and assign extra roles to an existing user by following these steps:
+
+1. Navigate to the Users tab.
+2. Click on the user's name in blue displayed within the table list.
+3. Click the blue 'Edit' button under the Users assigned roles.
+
+   .. figure:: screen-shots/edit-role.png
+      :alt: PMHC MDS Edit Role
+!!!(insert new image)!!!
+
+4. Select the PHN from the Organisation drop down list
+5. Select a role by clicking the tick box next to the relevant organisation.
+   Multiple roles can be assigned and these roles are shown as blue tickets.
+   *Please note: roles are automatically inherited from ah higher organisation and
+   displayed as a light grey tick. Inherited roles can not be edited or deleted by
+   a User Management role at the suborganisation level.*
+6. Click the blue 'Save' button, or click the 'cancel' to edit without saving changes.
+!!!(change done to save and add a cancel button - to be consistent with edit organisaiton)!!!
+
+You will receive confirmation that the users role has been saved and they will
+now be displaying in the Users Roles list.
