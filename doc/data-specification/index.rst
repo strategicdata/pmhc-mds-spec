@@ -1,7 +1,7 @@
 .. _data-docs:
 
 Data Specification
-------------------
+==================
 
 .. toctree::
 

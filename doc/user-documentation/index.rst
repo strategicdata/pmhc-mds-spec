@@ -1,7 +1,7 @@
 .. _user-docs:
 
 User Documentation
-------------------
+==================
 
 .. toctree::
 

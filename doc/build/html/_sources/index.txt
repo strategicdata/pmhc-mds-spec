@@ -1,5 +1,5 @@
 PMHC-MDS Documentation
-========================
+======================
 
 The main documentation for the site is organized into a couple sections:
 
@@ -8,7 +8,7 @@ The main documentation for the site is organized into a couple sections:
 * :ref:`faqs`
 
 Getting Help
-^^^^^^^^^^^^
+------------
 
 A dedicated **Help Desk** is available to support Primary Health Networks and
 Provider Organisations implementing PMHC in relation to the minimum dataset

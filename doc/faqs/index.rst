@@ -1,7 +1,7 @@
 .. _faqs:
 
 Frequently Asked Questions
---------------------------
+==========================
 
 .. toctree::
 
