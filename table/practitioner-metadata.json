@@ -12,7 +12,6 @@
     "datatype": {
       "base": "string"
     },
-    "separator": ":",
     "required": true
   },{
     "name": "practitioner_key",
@@ -51,7 +50,6 @@
     "datatype": {
       "base": "string"
     },
-    "default": "9",
     "required": true
   },{
     "name": "practitioner_year_of_birth",
@@ -102,7 +100,6 @@
     "datatype": {
       "base": "string"
     },
-    "default": "1",
     "required": true
   },{
     "name": "practitioner_tags",
@@ -118,8 +115,14 @@
       },
     "required": false
   }],
-  "primaryKey": "practitioner_key",
+  "primaryKey": [ "organisation_path", "practitioner_key" ],
   "foreignKeys": [{
+    "columnReference": "organisation_path",
+    "reference": {
+      "resource": "data/organisations.csv",
+      "columnReference": "organisation_path"
+    }
+  }, {
     "columnReference": "practitioner_category",
     "reference": {
       "resource": "table/practitioner/category.csv",

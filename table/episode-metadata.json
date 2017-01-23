@@ -12,7 +12,6 @@
     "datatype": {
       "base": "string"
     },
-    "separator": ":",
     "required": true
   },{
     "name": "episode_key",
@@ -275,7 +274,6 @@
     "datatype": {
       "base": "string"
     },
-    "default": "9",
     "required": true
   },{
     "name": "medication_anxiolytics",
@@ -289,7 +287,6 @@
     "datatype": {
       "base": "string"
     },
-    "default": "9",
     "required": true
   },{
     "name": "medication_hypnotics",
@@ -303,7 +300,6 @@
     "datatype": {
       "base": "string"
     },
-    "default": "9",
     "required": true
   },{
     "name": "medication_antidepressants",
@@ -317,7 +313,6 @@
     "datatype": {
       "base": "string"
     },
-    "default": "9",
     "required": true
   },{
     "name": "medication_psychostimulants",
@@ -331,7 +326,6 @@
     "datatype": {
       "base": "string"
     },
-    "default": "9",
     "required": true
   },{
     "name": "referrer_profession",
@@ -373,7 +367,7 @@
       },
     "required": false
   }],
-  "primaryKey": "episode_key",
+  "primaryKey": [ "organisation_path", "episode_key" ],
   "foreignKeys": [{
     "columnReference": "episode_completion_status",
     "reference": {
@@ -381,10 +375,10 @@
       "columnReference": "id"
     }
   }, {
-    "columnReference": "client_key",
+    "columnReference": [ "organisation_path", "client_key" ],
     "reference": {
       "resource": "data/clients.csv",
-      "columnReference": "client_key"
+      "columnReference": [ "organisation_path", "client_key" ]
     }
   }, {
     "columnReference": "client_consent",

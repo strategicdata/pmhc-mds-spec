@@ -12,7 +12,6 @@
     "datatype": {
       "base": "string"
     },
-    "separator": ":",
     "required": true
   },{
     "name": "collection_occasion_key",
@@ -739,10 +738,10 @@
       "columnReference": "id"
     }
   }, {
-    "columnReference": "episode_key",
+    "columnReference": [ "organisation_path", "episode_key" ],
     "reference": {
       "resource": "data/episodes.csv",
-      "columnReference": "episode_key"
+      "columnReference": [ "organisation_path", "episode_key" ]
     }
   }, {
     "columnReference": "sdq_version",
