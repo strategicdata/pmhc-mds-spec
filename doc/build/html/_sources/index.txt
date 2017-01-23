@@ -1,7 +1,7 @@
 PMHC-MDS Documentation
 ======================
 
-The main documentation for the site is organized into a couple sections:
+The main documentation for the site is organized into several sections:
 
 * :ref:`user-docs`
 * :ref:`data-docs`
@@ -15,8 +15,8 @@ Provider Organisations implementing PMHC in relation to the minimum dataset
 system. All enquiries should be directed to: support@pmhc-mds.com.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
-   user-documentation/index   
+   user-documentation/index
    data-specification/index
    faqs/index
