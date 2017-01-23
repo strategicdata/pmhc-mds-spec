@@ -1,7 +1,7 @@
 "Data Element (Field Name)","Type (min,max)","Format / Values"
 "`Organisation Path`_ (organisation_path)
 
-",string,"A sequence of colon separated Organisation Keys that fully specifies the upload organisation."
+",string,"A sequence of colon separated Organisation Codes that fully specifies the upload organisation."
 "`Collection Occasion Key`_ (collection_occasion_key)
 
 ","string (2,50)","This is a number or code assigned to each collection occasion of outcome measures. The Collection Occasion Key is unique and stable for each collection occasion at the level of the organisation."
