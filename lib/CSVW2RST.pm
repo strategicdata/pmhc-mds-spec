@@ -20,6 +20,8 @@ use Data::Dumper;
 
 use constant METEOR_URL => 'http://meteor.aihw.gov.au/content/index.phtml/itemId/';
 
+use constant DATA_SPEC_PATH => 'doc/data-specification/';
+
 use version; our $VERSION = qv('1');
 
 sub generate {
@@ -32,10 +34,10 @@ sub generate {
 
     my $summary_fh;
 
-    if ( ! path("doc/")->exists ) {
-        path("doc/")->mkpath;
+    if ( ! path(DATA_SPEC_PATH)->exists ) {
+        path(DATA_SPEC_PATH)->mkpath;
     }
-    open $summary_fh, ">", 'doc/summary-table.csv' or die 'summary-table.csv' . ": $!";
+    open $summary_fh, ">", DATA_SPEC_PATH . 'summary-table.csv' or die 'summary-table.csv' . ": $!";
 
     my $max_rows = 0;
 
@@ -61,11 +63,11 @@ sub generate {
 
         $summary_table->[0][$summary_column] = $record->{'dc:title'};
 
-        if ( ! path("doc/record")->exists ) {
-            path("doc/record")->mkpath;
+        if ( ! path(DATA_SPEC_PATH . 'record')->exists ) {
+            path(DATA_SPEC_PATH . 'record')->mkpath;
         }
 
-        my $filename = 'doc/record/' . $record->{'schema:name'} . ".csv";
+        my $filename =  DATA_SPEC_PATH . 'record/' . $record->{'schema:name'} . ".csv";
         open my $fh, ">", $filename or die $filename . ": $!";
 
         my $size = 0;
@@ -196,11 +198,11 @@ sub generate_definitions {
     my $definition_records = shift;
     my $field_fk = shift;
 
-    if ( ! path("doc/include")->exists ) {
-        path("doc/include")->mkpath;
+    if ( ! path(DATA_SPEC_PATH . 'include')->exists ) {
+        path(DATA_SPEC_PATH . 'include')->mkpath;
     }
 
-    my $filename = 'doc/include/definitions.rst';
+    my $filename = DATA_SPEC_PATH . 'include/definitions.rst';
     open my $fh, ">", $filename or die $filename . ": $!";
 
     say $fh "Definitions";

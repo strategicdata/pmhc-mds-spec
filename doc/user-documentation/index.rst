@@ -1,9 +1,16 @@
 .. _user-docs:
 
-User Documentation
-==================
+User Guide
+==========
 
 .. toctree::
+   :caption: User Guide table of contents
+   :maxdepth: 1
 
-   user-guide
-   primary-user-initial-login
+   passwords
+   home
+   organisations
+   users
+   upload
+   slk
+   change-log

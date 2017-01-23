@@ -1,5 +1,5 @@
 "Data Element (Field Name)","Type (min,max)","Format / Values"
-"`Provider Organisation Key`_ (organisation_path)
+"`Provider Organisation Key`_ (organisation_key)
 
 ","string (2,50)","A sequence of characters which uniquely identifies the provider organisation. Assigned by the Primary Health Network."
 "`Provider Organisation - Name`_ (organisation_name)

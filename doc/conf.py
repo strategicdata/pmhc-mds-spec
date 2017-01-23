@@ -50,7 +50,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'PMHC MDS'
-copyright = u'2016, Australian Government - Department of Health'
+copyright = u'2017, Australian Government - Department of Health'
 author = u'PMHC MDS Working Group'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -133,7 +133,7 @@ html_theme = 'sphinx_rtd_theme'
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-#html_theme_options = {}
+html_theme_options = {}
 
 # Add any paths that contain custom themes here, relative to this directory.
 #html_theme_path = []
@@ -313,7 +313,7 @@ if not on_rtd:  # only import and set the theme if we're building docs locally
 # see https://github.com/hoccleve-archive/hocl.tk/blob/70b71b5a265d0b1d64c5cb6e43b686d03ead4078/docs/conf.py#L48
 
 start_year = 2015
-end_year = start_year + 1
+end_year = start_year + 2
 current_year = str(start_year) + "-" + str((end_year) - 2000)
 last_year = start_year - 1
 previous_year = str(last_year) + "-" + str((last_year + 1) - 2000)
