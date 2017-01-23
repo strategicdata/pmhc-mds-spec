@@ -3,6 +3,7 @@
 # Exit if anything errors
 set -e
 
+docker pull docker.sdlocal.net/csvw/metadata2rst
 docker run -it --rm -v `pwd`:/mnt/cwd docker.sdlocal.net/csvw/metadata2rst
 
 pushd .
