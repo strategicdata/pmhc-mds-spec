@@ -4849,6 +4849,10 @@ An indication of who participated in the Service Contact.
     Code applies to Service Contacts delivered to other third parties
     (e.g., teachers, employer), with or without the participation of the client.
 
+  Note that if Service Contacts delivered in a group of clients, or family/social support
+  persons of multiple clients, a contact would be recorded for each registered
+  client who attended or whose family attended.
+
   Note that this item interacts with Service Contact - Client Participation
   Indicator which is used to denote whether the individual client was a
   participant in the Service Contact.
