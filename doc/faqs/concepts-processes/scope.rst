@@ -2,8 +2,8 @@ Questions about the scope of the MDS
 ------------------------------------
 
 PHNs raised a number of questions regarding the scope of the MDS and whether specific
-areas of commissioned activity were intended to be covered.  The Overview paper covers
-the scope issue (page 4), an extract of which is copied below:
+areas of commissioned activity were intended to be covered.  The `Overview paper`_https://www.pmhc-mds.com/doc/pmhc-mds-overview-20160916.pdf
+covers the scope issue (page 4), an extract of which is copied below:
 
   “The new arrangements are designed to capture data on PHN-commissioned mental
   health services **delivered to individual clients, including group-based delivery to individual clients … **
