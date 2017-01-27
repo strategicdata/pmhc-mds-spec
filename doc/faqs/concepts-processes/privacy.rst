@@ -1,7 +1,7 @@
 Questions about privacy protections and patient consent
 -------------------------------------------------------
 
-Privacy	and	patient	consent
+Privacy and patient consent
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The Commonwealth Privacy Act 1988 and associated Australian Privacy Principles (APPs)

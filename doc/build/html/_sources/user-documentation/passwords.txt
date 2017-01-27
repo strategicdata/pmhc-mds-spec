@@ -17,6 +17,6 @@ Passwords are to be:
 * changed by users no more than once a day
 * not reused from any of the preceding eight changes
 
-Users will be reminded via email when their password is due to expire. If
-a password expires the user will not be able to access the system until they
+Users will be reminded via email, and on login, 14 days prior to when their password is due to expire.
+If a password expires the user will not be able to access the system until they
 reset their password - see :ref:`forgotten_password`.
