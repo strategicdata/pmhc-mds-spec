@@ -128,10 +128,10 @@ displayed.
 You can view the results of an upload by following these steps:
 
 1. Navigate to the 'Upload' tab.
-2. Locate the 'Status of Previous Uploads' table.
+2. Click the 'Upload Status' tab.
 3. Locate the date and time of the upload you are interested in.
 4. Click on the filename of the relevant upload.
-5. You will be shown the 'Upload Details' page.
+5. You will be shown the 'Status of Previous Uploads' page.
 
    .. figure:: screen-shots/upload-details.png
       :alt: PMHC MDS Upload Details page
