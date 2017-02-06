@@ -1403,6 +1403,7 @@ An indication of whether the client has been homeless in the 4 weeks prior to th
   :1: Sleeping rough or in non-conventional accommodation
   :2: Short-term or emergency accommodation
   :3: Not homeless
+  :9: Not stated/missing
 :Notes:
   1	- Sleeping rough or in non-conventional accommodation
     Includes sleeping on the streets, in a park, in cars or railway carriages,
@@ -1418,6 +1419,11 @@ An indication of whether the client has been homeless in the 4 weeks prior to th
   3	- Not homeless
     Includes sleeping in own accommodation/rental accommodation or living with
     friends or relatives on a stable, long term basis
+
+  9 - Not stated / missing
+    Is not to be used on primary collection forms. It is primarily for use in
+    administrative collections when transferring data from data sets where the
+    item has not been collected.
 
   Select the code that best fits the client’s sleeping arrangements over the
   preceding 4 weeks. Where multiple options apply (e.g., client has experienced
