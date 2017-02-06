@@ -168,8 +168,8 @@ will need to accept this invitation as follows:
 9. Navigate to https://pmhc-mds.net/ and follow the :ref:`logging_in`
    instructions.
 
-Editing an existing users roles
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Editing an existing user's roles
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A user can have more than one role. Each role is granted for a user against an
 organisation you have the User Management Role at.
