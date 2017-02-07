@@ -96,8 +96,8 @@ Data elements for the client upload file/worksheet are defined at
 
 Example client data:
 
-- `CSV client file <_static/clients.csv>`_.
-- `XLSX client worksheet <_static/pmhc-upload.xlsx>`_.
+- `CSV client file <../_static/clients.csv>`_.
+- `XLSX client worksheet <../_static/pmhc-upload.xlsx>`_.
 
 .. _episode-format:
 
@@ -110,8 +110,8 @@ Data elements for the episode upload file/worksheet are defined at
 
 Example episode data:
 
-- `CSV episode file <_static/episodes.csv>`_.
-- `XLSX episode worksheet <_static/pmhc-upload.xlsx>`_.
+- `CSV episode file <../_static/episodes.csv>`_.
+- `XLSX episode worksheet <../_static/pmhc-upload.xlsx>`_.
 
 .. _service-contact-format:
 
@@ -124,8 +124,8 @@ Data elements for the service contact upload file/worksheet are defined at
 
 Example service contact data:
 
-- `CSV service contact file <_static/service-contacts.csv>`_.
-- `XLSX service contact worksheet <_static/pmhc-upload.xlsx>`_.
+- `CSV service contact file <../_static/service-contacts.csv>`_.
+- `XLSX service contact worksheet <../_static/pmhc-upload.xlsx>`_.
 
 .. _k10p-format:
 
@@ -138,8 +138,8 @@ at :ref:`k10p-data-elements`.
 
 Example K10+ data:
 
-- `CSV K10+ file <_static/k10p.csv>`_.
-- `XLSX K10+ worksheet <_static/pmhc-upload.xlsx>`_.
+- `CSV K10+ file <../_static/k10p.csv>`_.
+- `XLSX K10+ worksheet <../_static/pmhc-upload.xlsx>`_.
 
 .. _k5-format:
 
@@ -152,8 +152,8 @@ at :ref:`k5-data-elements`.
 
 Example K5 data:
 
-- `CSV K5 file <_static/k5.csv>`_.
-- `XLSX K5 worksheet <_static/pmhc-upload.xlsx>`_.
+- `CSV K5 file <../_static/k5.csv>`_.
+- `XLSX K5 worksheet <../_static/pmhc-upload.xlsx>`_.
 
 .. _sdq-format:
 
@@ -166,8 +166,8 @@ at :ref:`sdq-data-elements`.
 
 Example SDQ data:
 
-- `CSV SDQ file <_static/sdq.csv>`_.
-- `XLSX SDQ worksheet <_static/pmhc-upload.xlsx>`_.
+- `CSV SDQ file <../_static/sdq.csv>`_.
+- `XLSX SDQ worksheet <../_static/pmhc-upload.xlsx>`_.
 
 .. _practitioner-format:
 
@@ -181,5 +181,5 @@ Data elements for the practitioner upload file/worksheet are defined at
 
 Example practitioner data:
 
-- `CSV practitioner file <_static/practitioners.csv>`_.
-- `XLSX practitioner worksheet <_static/pmhc-upload.xlsx>`_.
+- `CSV practitioner file <../_static/practitioners.csv>`_.
+- `XLSX practitioner worksheet <../_static/pmhc-upload.xlsx>`_.
