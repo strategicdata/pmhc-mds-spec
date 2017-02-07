@@ -1403,6 +1403,7 @@ An indication of whether the client has been homeless in the 4 weeks prior to th
   :1: Sleeping rough or in non-conventional accommodation
   :2: Short-term or emergency accommodation
   :3: Not homeless
+  :9: Not stated / Missing
 :Notes:
   1	- Sleeping rough or in non-conventional accommodation
     Includes sleeping on the streets, in a park, in cars or railway carriages,
@@ -1418,6 +1419,9 @@ An indication of whether the client has been homeless in the 4 weeks prior to th
   3	- Not homeless
     Includes sleeping in own accommodation/rental accommodation or living with
     friends or relatives on a stable, long term basis
+  
+  9	- Not stated / Missing
+    Not stated / Missing
   
   Select the code that best fits the client’s sleeping arrangements over the
   preceding 4 weeks. Where multiple options apply (e.g., client has experienced
@@ -2736,14 +2740,8 @@ A sequence of colon separated Organisation Keys that fully specifies the upload 
 
 :Required: true
 :Notes:
-  A colon separated list of Organisation Keys.
-  
   A combination of the Primary Health Network's (PHN's) Organisation Key and the
   Provider Organisation's Organisation Key separated by a colon.
-  
-  A Provider Organisation is also allowed to have suborganisations. In that case
-  the Organisation Path is the PHNs Organisation Key, the Provider Organisation Key
-  and the suborganisation's Organisation Key separated by a colon.
   
   Here is an example organisation structure showing the Organisation Path for each organisation:
   
@@ -2752,9 +2750,7 @@ A sequence of colon separated Organisation Keys that fully specifies the upload 
   +==================+===============================+=============================================+=====================+===================+
   | PHN999           | Test PHN                      | Primary Health Network                      | None                | PHN999            |
   +------------------+-------------------------------+---------------------------------------------+---------------------+-------------------+
-  | POA              | Test Provider Organisation A  | Private Allied Health Professional Practice | PHN999              | PHN999:POA        |
-  +------------------+-------------------------------+---------------------------------------------+---------------------+-------------------+
-  | POAA             | Test Provider Organisation AA | Private Allied Health Professional Practice | POA                 | PHN999:POA:POAA   |
+  | PO101            | Test Provider Organisation    | Private Allied Health Professional Practice | PHN999              | PHN999:PO101      |
   +------------------+-------------------------------+---------------------------------------------+---------------------+-------------------+
   
 

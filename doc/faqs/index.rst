@@ -4,12 +4,9 @@ Frequently Asked Questions
 ==========================
 
 .. toctree::
+   :caption: Frequently Asked Questions table of contents
+   :maxdepth: 2
 
-   access
-   data-entry
-   uploading
-   additional-data
-   checking
-   storing
-   mailing-list
-   help-desk
+   concepts-processes/index
+   system/index
+   change-log

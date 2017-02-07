@@ -48,7 +48,8 @@ METeOR: `614094 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614094>`__
 
 ",string,":1: Sleeping rough or in non-conventional accommodation
 :2: Short-term or emergency accommodation
-:3: Not homeless"
+:3: Not homeless
+:9: Not stated / Missing"
 "`Episode - Area of usual residence, postcode`_ (client_postcode)
 
 

@@ -13,6 +13,9 @@
   Includes sleeping in own accommodation/rental accommodation or living with
   friends or relatives on a stable, long term basis
 
+9	- Not stated / Missing
+  Not stated / Missing
+
 Select the code that best fits the client’s sleeping arrangements over the
 preceding 4 weeks. Where multiple options apply (e.g., client has experienced
 more than one of the sleeping arrangements over the previous 4 weeks) the
