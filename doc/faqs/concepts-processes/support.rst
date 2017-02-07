@@ -65,7 +65,7 @@ provider performance to allow engagement on how best to undertake the change pro
 
 See responses to :ref:`Questions-about-standards-reports`.
 
-.. _Questions-about-standards-reports:
+.. _Data-capture-via-web-based-portal:
 
 Data capture via the web-based portal
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -84,8 +84,8 @@ ready for the 2017-18 financial year
 Support to PHNs to engage providers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-PHNs would desirably see the actual mechanics of the MDS hands-on prior to wider release. Successful roll-out will depend on how well PHNs are able to communicate and support providers. We suggest the department conducts PHN specific webinars and training for key nominated staff.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+PHNs would desirably see the actual mechanics of the MDS hands-on prior to wider release. Successful roll-out will depend on how well PHNs are able to communicate and support providers. We suggest the department conducts PHN specific webinars and training for key nominated staff
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Online support documentation is currently being created around the data specification
 and online portal. In addition, the Department is currently in negotiations with

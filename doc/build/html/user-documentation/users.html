@@ -95,7 +95,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#viewing-a-user-s-details">Viewing a User&#8217;s details</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#adding-a-user">Adding a user</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#accepting-an-invitation-to-become-a-pmhc-mds-user">Accepting an invitation to become a PMHC MDS User</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#adding-a-role-to-an-existing-user">Adding a role to an existing user</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#editing-an-existing-users-roles">Editing an existing users roles</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="upload.html">Upload</a></li>
@@ -280,8 +280,7 @@ PMHC MDS.  You can invite a new user through the Users tab, by following these s
 </div>
 </li>
 <li><p class="first">Complete all the mandatory fields marked with an * in the &#8216;Invite User&#8217; form.
-Only one <a class="reference internal" href="#roles"><span class="std std-ref">Users Roles</span></a> can be selected at this stage. User&#8217;s can be given multiple
-roles. If more than one role is required the extra roles will need to be
+User&#8217;s can be given multiple <a class="reference internal" href="#roles"><span class="std std-ref">Users Roles</span></a> at invitation, or extra roles can be
 added after the user has access to the system.</p>
 <div class="figure">
 <img alt="PMHC MDS Invite User Complete" src="../_images/invite-user-filled-in.png" />
@@ -298,10 +297,6 @@ email before they can gain access to the system.</p>
 <div class="figure">
 <img alt="PMHC MDS Invite Accepted" src="../_images/invite-accepted-email.png" />
 </div>
-</li>
-<li><p class="first">If the user requires more than one role you can now follow the
-instructions at <a class="reference internal" href="organisations.html#adding-roles"><span class="std std-ref">Assigning Extra Roles to an Organisational User</span></a>. Also update the organisation&#8217;s contact details,
-if a new user is the organisation&#8217;s primary contact.</p>
 </li>
 </ol>
 </div>
@@ -345,10 +340,35 @@ instructions.</p>
 </li>
 </ol>
 </div>
-<div class="section" id="adding-a-role-to-an-existing-user">
-<h2>Adding a role to an existing user<a class="headerlink" href="#adding-a-role-to-an-existing-user" title="Permalink to this headline">¶</a></h2>
-<p>A user can have more than one role. Each role is granted for a user against an organisation.
-View <a class="reference internal" href="organisations.html#adding-roles"><span class="std std-ref">Assigning Extra Roles to an Organisational User</span></a> to assign extra roles to an existing organisational user.</p>
+<div class="section" id="editing-an-existing-users-roles">
+<h2>Editing an existing users roles<a class="headerlink" href="#editing-an-existing-users-roles" title="Permalink to this headline">¶</a></h2>
+<p>A user can have more than one role. Each role is granted for a user against an
+organisation you have the User Management Role at.</p>
+<p>You can edit and assign extra roles to an existing user by following these steps:</p>
+<ol class="arabic">
+<li><p class="first">Navigate to the Users tab.</p>
+</li>
+<li><p class="first">Click on the user&#8217;s name in blue displayed within the table list.</p>
+</li>
+<li><p class="first">Click the blue &#8216;Edit&#8217; button under the Users assigned roles.</p>
+<div class="figure">
+<img alt="PMHC MDS Edit Role" src="user-documentation/screen-shots/edit-role.png" />
+</div>
+</li>
+</ol>
+<p>!!!(insert new image)!!!</p>
+<ol class="arabic simple" start="4">
+<li>Select the PHN from the Organisation drop down list</li>
+<li>Select a role by clicking the tick box next to the relevant organisation.
+Multiple roles can be assigned and these roles are shown as blue tickets.
+<em>Please note: roles are automatically inherited from ah higher organisation and
+displayed as a light grey tick. Inherited roles can not be edited or deleted by
+a User Management role at the suborganisation level.</em></li>
+</ol>
+<p>6. Click the blue &#8216;Save&#8217; button, or click the &#8216;cancel&#8217; to edit without saving changes.
+!!!(change done to save and add a cancel button - to be consistent with edit organisaiton)!!!</p>
+<p>You will receive confirmation that the users role has been saved and they will
+now be displaying in the Users Roles list.</p>
 </div>
 </div>
 

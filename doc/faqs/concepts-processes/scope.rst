@@ -2,11 +2,12 @@ Questions about the scope of the MDS
 ------------------------------------
 
 PHNs raised a number of questions regarding the scope of the MDS and whether specific
-areas of commissioned activity were intended to be covered.  The `Overview paper`_https://www.pmhc-mds.com/doc/pmhc-mds-overview-20160916.pdf
+areas of commissioned activity were intended to be covered.
+The `Overview paper <https://www.pmhc-mds.com/doc/pmhc-mds-overview-20160916.pdf>`_
 covers the scope issue (page 4), an extract of which is copied below:
 
   “The new arrangements are designed to capture data on PHN-commissioned mental
-  health services **delivered to individual clients, including group-based delivery to individual clients … **
+  health services **delivered to individual clients, including group-based delivery to individual clients …**
 
   **The scope of coverage will not extend to services targeted at communities,** such as
   the community capacity building activities previously funded under projects sourced
@@ -22,7 +23,7 @@ summarised below.
 .. _community-based-suicide-prevention-activities:
 
 Coverage of community-based suicide prevention activities
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Activities such as mental health and suicide awareness training and whole of community health promotion programs (non-clinical services) (e.g., Farm-Link). targeted at groups or whole communities, are not a good fit for the PHMC MDS They are currently reported to the National Suicide Prevention Program) MDS which finishes on the 30th June 2016. What is the mechanism for the future?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

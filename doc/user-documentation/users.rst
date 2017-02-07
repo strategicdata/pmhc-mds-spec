@@ -168,6 +168,7 @@ will need to accept this invitation as follows:
 9. Navigate to https://pmhc-mds.net/ and follow the :ref:`logging_in`
    instructions.
 
+<<<<<<< HEAD
 View an existing users roles
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -185,6 +186,10 @@ You can edit and assign extra roles to an existing user by following these steps
 
 Editing an existing users roles
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+=======
+Editing an existing user's roles
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>>>>>>> origin/master
 
 A user can have more than one role. Each role is granted for a user against an
 organisation you have the User Management Role at.
