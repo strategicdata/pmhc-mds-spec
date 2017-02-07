@@ -57,6 +57,8 @@ assigned. The table below lists the tabs that will be shown for each role:
 | All users               | SLK                  |
 +-------------------------+----------------------+
 
+.. _finding_a_user:
+
 Finding a user
 ^^^^^^^^^^^^^^
 
@@ -80,6 +82,8 @@ To filter the listed users:
 
 3. To remove the filter, click the grey cross within the edit box beside any
    entered text.
+
+.. _view_users_details:
 
 Viewing a User's details
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -179,7 +183,7 @@ You can edit and assign extra roles to an existing user by following these steps
 1. Navigate to the Users tab.
 2. Click on the user's name in blue displayed within the table list.
 3. Click the 'Roles' tab to show the users assigned roles.
-3. Choose the PHN or Suborganisation from the selection box to view the users roles at that organisaiton.
+4. Choose the PHN or Suborganisation from the selection box to view the users roles at that organisaiton.
 
 .. _edit_role:
 
@@ -194,7 +198,7 @@ You can edit and assign extra roles to an existing user by following these steps
 1. Navigate to the Users tab.
 2. Click on the user's name in blue displayed within the table list.
 3. Click the 'Roles' tab.
-3. Click the 'Edit Roles' tab.
+4. Click the 'Edit Roles' tab.
 
    .. figure:: screen-shots/edit-role.png
       :alt: PMHC MDS Edit Role
