@@ -9230,12 +9230,8 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">A colon separated list of Organisation Keys.</p>
-<p>A combination of the Primary Health Network&#8217;s (PHN&#8217;s) Organisation Key and the
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">A combination of the Primary Health Network&#8217;s (PHN&#8217;s) Organisation Key and the
 Provider Organisation&#8217;s Organisation Key separated by a colon.</p>
-<p>A Provider Organisation is also allowed to have suborganisations. In that case
-the Organisation Path is the PHNs Organisation Key, the Provider Organisation Key
-and the suborganisation&#8217;s Organisation Key separated by a colon.</p>
 <p>Here is an example organisation structure showing the Organisation Path for each organisation:</p>
 <table border="1" class="last docutils">
 <colgroup>
@@ -9260,17 +9256,11 @@ and the suborganisation&#8217;s Organisation Key separated by a colon.</p>
 <td>None</td>
 <td>PHN999</td>
 </tr>
-<tr class="row-odd"><td>POA</td>
-<td>Test Provider Organisation A</td>
+<tr class="row-odd"><td>PO101</td>
+<td>Test Provider Organisation</td>
 <td>Private Allied Health Professional Practice</td>
 <td>PHN999</td>
-<td>PHN999:POA</td>
-</tr>
-<tr class="row-even"><td>POAA</td>
-<td>Test Provider Organisation AA</td>
-<td>Private Allied Health Professional Practice</td>
-<td>POA</td>
-<td>PHN999:POA:POAA</td>
+<td>PHN999:PO101</td>
 </tr>
 </tbody>
 </table>
