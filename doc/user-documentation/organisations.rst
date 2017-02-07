@@ -18,13 +18,16 @@ or the 'User Management' role.
 .. figure:: screen-shots/organisations.png
    :alt: PMHC MDS Organisations
 
-Searching for an Organisation
+.. _view_organisation:
+
+Searching for an Subrganisation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You can sort and filter the listed organisations through the organisation tab.
+You can sort and filter the listed PHNs and suborganisations through the organisation tab.
 
-Sort the listed organisations by simply clicking on a column header. Alternately
-you can click on the arrow beside a column header for more sort options, as follows:
+Sort the listed PHNs and suborganisations by simply clicking on a column header
+of their relevant tables. Alternately you can click on the arrow beside a
+column header for more sort options, as follows:
 
 - Sort Ascending
 - Sort Descending
@@ -42,30 +45,52 @@ To filter the listed organisations:
 3. To remove the filter, click the grey cross within the edit box beside any
    entered text.
 
-.. _view_organisation:
+.. _view_phn:
 
-Viewing an Organisation
-^^^^^^^^^^^^^^^^^^^^^^^
+Viewing a PHN
+^^^^^^^^^^^^^
 
-You can view an organisation's details through the organisation tab, by
+You can view an PHN organisation's details through the organisation tab, by
 following these steps:
 
-#. Navigate to the Organisations tab.
+1. Navigate to the Organisations tab.
 
 .. figure:: screen-shots/organisations.png
    :alt: PMHC MDS Organisations
 
-#. Click on the organisation name in blue text displayed within the table list.
+2. Click on the PHN name in blue text displayed within the table list.
 
-The organisations details will be displayed, and if you have the 'User Management' role
-will include a table listing the users that belong to this organisation.
+The PHN organisations details will be displayed, along with a suborganisation tab.
+If you have the 'User Management' role will also include a 'Users' tab listing
+the users that belong to this PHN.
 
 .. figure:: screen-shots/view-organisation.png
    :alt: PMHC MDS View Organisation
 
-.. _add_organisation:
+.. _view_suborganisation:
 
-Adding an Organisation
+Viewing a Suborganisation
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You can view an organisation's details through the organisation tab, by
+following these steps:
+
+1. Navigate to the Organisations tab.
+
+.. figure:: screen-shots/suborganisations.png
+   :alt: PMHC MDS Organisations
+
+2. Click on the PHN name in blue text displayed within the table list.
+3. Click on the 'Suborganisation' tab.
+
+The PHN's Suborganisations details will be displayed in a table..
+
+.. figure:: screen-shots/view-suborganisation.png
+   :alt: PMHC MDS View Organisation
+
+.. _add_suborganisation:
+
+Adding a Suborganisation
 ^^^^^^^^^^^^^^^^^^^^^^
 
 If you have the 'Organisation Management' role you can add provider organisations
@@ -76,28 +101,30 @@ through the organisation tab by following these steps:
    .. figure:: screen-shots/organisations.png
       :alt: PMHC MDS Organisations
 
-2. Click the blue 'Add Suborganisation' button.
+2. Click on the PHN name in blue text displayed within the table list.
+3. Click on the 'Suborganisation' tab.
+4. Click the 'Add Suborganisation' tab.
 
-   .. figure:: screen-shots/add-organisation.png
-      :alt: PMHC MDS Add Organisation
+   .. figure:: screen-shots/add-suborganisation.png
+      :alt: PMHC MDS Add Subrganisation
 
-3. Complete all the mandatory fields marked with an * in the add suborganisation
+5. Complete all the mandatory fields marked with an * in the add suborganisation
    organisation' form.
-4. Click the blue 'Save' button.
+6. Click the blue 'Save' button.
 
 You will receive confirmation that the organisation has been saved, and it will
 now be displaying in the suborganisations organisations list.
 
-.. figure:: screen-shots/organisation-added.png
+.. figure:: screen-shots/suborganisation-added.png
    :alt: PMHC MDS Organisation Added
 
-.. _edit_organisation:
+.. _edit_suborganisation:
 
-Editing an Organisation
+Editing a Suborganisation
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-If you have the 'Organisation Management' role you can edit a provider
-organisation's details through the organisation tab, by following these steps:
+If you have the 'Organisation Management' role you can edit a suborganisation's
+details through the organisation tab, by following these steps:
 
 1. Navigate to the Organisations tab.
 
@@ -109,13 +136,14 @@ organisation's details through the organisation tab, by following these steps:
    .. figure:: screen-shots/view-organisation.png
       :alt: PMHC MDS View PHN
 
-3. Click on the Provider Organisation name in blue text displayed within the
+3. Click on the 'Suborganisation' tab.
+4. Click on the Suborganisation name in blue text displayed within the
    suborganisations table.
 
    .. figure:: screen-shots/view-suborganisation.png
       :alt: PMHC MDS View Provider Organisation
 
-3. If you have permission to edit the Provider Organisation a blue 'Edit' button will
+3. If you have permission to edit the Suborganisation an'Edit Details' tab will
    be displayed.
 4. Click the blue 'Edit' button.
 
@@ -130,8 +158,8 @@ organisation's details through the organisation tab, by following these steps:
 Inactive Organisation
 ^^^^^^^^^^^^^^^^^^^^^
 
-You can make an organisation inactive by editing the 'Status' of an organisation
-from active to inactive. See :ref:`edit_organisation`
+You can make a suborganisation inactive by editing the 'Status' of an suborganisation
+from active to inactive. See :ref:`edit_suborganisation`
 
 *Please note: Inactive organisations will still be displayed in your organisations list.*
 
@@ -148,16 +176,16 @@ Viewing Organisational Users
 You can view users assigned to an organisation through the organisation tab
 if you have been assigned the 'User Management' role, by following these steps:
 
-1. Navigate to the Organisations tab.
+1. Navigate to the PHNs details or Suborganisations tab.
 
 .. figure:: screen-shots/organisations.png
    :alt: PMHC MDS Organisations
 
-2. Click on the organisation name in blue displayed within the table list.
-3. If you are wishing to view the users assigned to a Provider Organisation,
-   click on the Provider Organisation's name within the suborganisations table.
-4. Under the suborganisations table, you can view a table list of the
-   organisation's users. You can filter the users within this table list,
+2. Click on the PHNs or suborganisation name in blue displayed within the table list.
+   If you are unsure how to view the details see :ref:`view_PHN` or :ref:`view_suborganisation`
+3. Under the 'Users' tab, you can view a table list of the
+   organisation's users.
+4. You can filter the users within this table list,
    click the grey 'Filters' button and start typing in an edit box now
    displayed under the column headers. To remove the filter, click the grey
    cross within the edit box beside any entered text.
@@ -173,24 +201,6 @@ Assigning Extra Roles to an Organisational User
 You can assign extra roles to an existing organisational user by following
 these steps:
 
-1. Navigate to the organisation at which you wish to add the role.
-2. Click the blue 'Add Role' button under the 'Roles of users assigned to ...' table.
-
-   .. figure:: screen-shots/add-role.png
-      :alt: PMHC MDS Add Role
-
-4. Enter the users email address.
-5. Check to ensure you have selected the correct user by reviewing the users details now displayed.
-6. Select a role.
-
-   .. figure:: screen-shots/filled-in-add-role.png
-      :alt: PMHC MDS Filled In Add Role
-      
-7. Click the blue 'Save' button
-
-You will receive confirmation that the user has been saved to the
-organisations and they will now be displaying in the Users assigned to
-the organisation list.
-
-.. figure:: screen-shots/role-added.png
-   :alt: PMHC MDS Role Added
+1. Navigate to the organisation users tab at which you wish to add the role.
+2. Click the users name
+3. Follow from Step 3 at :ref:`edit_role`.
