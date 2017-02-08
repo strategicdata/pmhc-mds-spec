@@ -1,6 +1,19 @@
 Change log
 ==========
 
+8/10/2016 - Version 1.0.4
+-------------------------
+
+* Data model and specifications
+
+  * Data model - Updated the data model diagram to explicitly show Primary Health Organisations and Provider Organisations.
+
+  * Record formats
+
+    * Episode
+
+      * :ref:`dfn-homelessness` updated to include missing/not stated value of 9
+
 21/10/2016 - Version 1.0.3
 --------------------------
 
