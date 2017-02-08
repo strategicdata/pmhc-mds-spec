@@ -1,18 +1,39 @@
-Change log
-==========
+.. _data_spec_changelog:
+
+Data Specification Change log
+=============================
 
 8/10/2016 - Version 1.0.4
 -------------------------
 
 * Data model and specifications
 
-  * Data model - Updated the data model diagram to explicitly show Primary Health Organisations and Provider Organisations.
+  * :ref:`data-model` - Updated the data model diagram to explicitly show Primary
+    Health Organisations and Provider Organisations.
 
   * Record formats
 
+    * Client
+
+      * Added more description to :ref:`dfn-organisation_path`
+
     * Episode
 
+      * Added more description to :ref:`dfn-organisation_path`
+
       * :ref:`dfn-homelessness` updated to include missing/not stated value of 9
+
+    * Service Contact
+
+      * Added more description to :ref:`dfn-organisation_path`
+
+    * Collection Occasion
+
+      * Added more description to :ref:`dfn-organisation_path`
+
+    * Practitioner
+
+      * Added more description to :ref:`dfn-organisation_path`
 
 21/10/2016 - Version 1.0.3
 --------------------------

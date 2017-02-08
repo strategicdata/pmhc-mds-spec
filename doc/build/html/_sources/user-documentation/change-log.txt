@@ -1,9 +1,11 @@
-Change log
-==========
+.. _user_guide_changelog:
 
-??/1/2017
+User Guide Change log
+=====================
+
+8/2/2017
 ----------
 
-* Reorganised the documentation
+* Reorganised the documentation to separate User Guide and Frequently Asked Questions
 
-* Added more description to :ref:`dfn-organisation_path`
+* Updated user guide for user interface changes that created sub tabs

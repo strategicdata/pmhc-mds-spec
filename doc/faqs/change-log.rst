@@ -1,8 +1,13 @@
-Change log
-==========
+.. _faq_changelog:
 
-??/1/2017
-----------
+Frequently Asked Questions Change log
+=====================================
 
-* Made the 'Department reponse to issues raised by PHNs' document a section in
-  the online Frequently Asked Questions
+8/2/2017
+--------
+
+* Made the 'Department reponse to issues raised by PHNs' document the
+  :ref:`concepts_processes_faqs` subsection in the online Frequently Asked Questions
+
+* Moved the current Frequently Asked Questions section into the
+  :ref:`system_faqs` subsecion in the online Frequently Asked Questions
