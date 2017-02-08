@@ -202,15 +202,16 @@ You can edit and assign extra roles to an existing user by following these steps
 
    .. figure:: screen-shots/edit-role.png
       :alt: PMHC MDS Edit Role
-!!!(insert new image)!!!
 
-4. Select the PHN from the Organisation drop down list
-5. Select a role by clicking the tick box next to the relevant organisation.
+5. Select the PHN from the Organisation drop down list
+6. Select a role by clicking the tick box next to the relevant organisation.
    Multiple roles can be assigned and these roles are shown as blue tickets.
-   *Please note: roles are automatically inherited from ah higher organisation and
+
+   *Please note: roles are automatically inherited from a higher organisation and
    displayed as a light grey tick. Inherited roles can not be edited or deleted by
    a User Management role at the suborganisation level.*
-6. Click the blue 'Save' button, or click the 'cancel' to edit without saving changes.
+
+7. Click the blue 'Save' button, or click the 'cancel' to edit without saving changes.
 !!!(change done to save and add a cancel button - to be consistent with edit organisaiton)!!!
 
 You will receive confirmation that the users role has been saved and they will

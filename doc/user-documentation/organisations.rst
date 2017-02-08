@@ -27,10 +27,6 @@ You can view a PHN organisation's details through the Organisations tab, by
 following these steps:
 
 1. Navigate to the Organisations tab.
-
-.. figure:: screen-shots/organisations.png
-   :alt: PMHC MDS Organisations
-
 2. Click on the PHN name in blue text displayed within the table list.
 
 The PHN organisations details will be displayed, along with a suborganisations tab.
@@ -49,10 +45,6 @@ You can search for a provider organisation by sorting and filtering
 the provider organisations of a PHN. Follow these steps:
 
 1. Navigate to the Organisations tab.
-
-.. figure:: screen-shots/suborganisations.png
-   :alt: PMHC MDS Organisations
-
 2. Click on the PHN name in blue text displayed within the table list.
 3. Click on the 'Suborganisations' tab.
 4. Sort the listed provider organisations by simply clicking on a column header
@@ -84,10 +76,6 @@ You can view a provider organisation's details through the Organisations tab, by
 following these steps:
 
 1. Navigate to the Organisations tab.
-
-.. figure:: screen-shots/suborganisations.png
-   :alt: PMHC MDS Organisations
-
 2. Click on the PHN name in blue text displayed within the table list.
 3. Click on the 'Suborganisations' tab.
 
@@ -105,16 +93,12 @@ If you have the 'Organisation Management' role you can add provider organisation
 through the organisation tab by following these steps:
 
 1. Navigate to the Organisations tab.
-
-   .. figure:: screen-shots/organisations.png
-      :alt: PMHC MDS Organisations
-
 2. Click on the PHN name in blue text displayed within the table list.
 3. Click on the 'Suborganisations' tab.
 4. Click the 'Add Suborganisation' tab.
 
    .. figure:: screen-shots/add-suborganisation.png
-      :alt: PMHC MDS Add Subrganisation
+      :alt: PMHC MDS Add Suborganisation
 
 5. Complete all the mandatory fields marked with an * in the add suborganisation
    organisation form.
@@ -135,10 +119,6 @@ If you have the 'Organisation Management' role you can edit a suborganisation's
 details through the organisation tab, by following these steps:
 
 1. Navigate to the Organisations tab.
-
-.. figure:: screen-shots/organisations.png
-   :alt: PMHC MDS Organisations
-
 2. Click on the PHN name in blue text displayed within the table list.
 
    .. figure:: screen-shots/view-organisation.png
@@ -188,10 +168,6 @@ You can view users assigned to an organisation through the organisation tab
 if you have been assigned the 'User Management' role, by following these steps:
 
 1. Navigate to the tab showing either the PHNs details or the provider organisations details.
-
-.. figure:: screen-shots/organisations.png
-   :alt: PMHC MDS Organisations
-
 2. Click on the PHNs or provider organisations name in blue displayed within the table list.
    If you are unsure how to view the details see :ref:`view_PHN` or :ref:`view_provider_organisation`
 3. Under the 'Users' tab, you can view a table list of the
@@ -212,6 +188,7 @@ Assigning Extra Roles to an Organisational User
 You can assign extra roles to an existing organisational user by following
 these steps:
 
-1. Navigate to the organisation users tab at which you wish to add the role.
+1. Navigate to the organisation or suborganisation at which you wish to add the role.
+2. Click on the Users tab
 2. Click the users name
 3. Follow from Step 3 at :ref:`edit_role`.
