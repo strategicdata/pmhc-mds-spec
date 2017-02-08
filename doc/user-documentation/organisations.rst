@@ -105,10 +105,7 @@ through the organisation tab by following these steps:
 6. Click the blue 'Save' button.
 
 You will receive confirmation that the organisation has been saved, and it will
-now be displaying in the PHNs  suborganisations list.
-
-.. figure:: screen-shots/suborganisation-added.png
-   :alt: PMHC MDS Organisation Added
+now be displaying in the PHN's suborganisations list.
 
 .. _edit_provider_organisation:
 
@@ -190,5 +187,5 @@ these steps:
 
 1. Navigate to the organisation or suborganisation at which you wish to add the role.
 2. Click on the Users tab
-2. Click the users name
-3. Follow from Step 3 at :ref:`edit_role`.
+3. Click the users name
+4. Follow from Step 3 at :ref:`edit_role`.
