@@ -212,7 +212,6 @@ You can edit and assign extra roles to an existing user by following these steps
    a User Management role at the suborganisation level.*
 
 7. Click the blue 'Save' button, or click the 'cancel' to edit without saving changes.
-!!!(change done to save and add a cancel button - to be consistent with edit organisaiton)!!!
 
 You will receive confirmation that the users role has been saved and they will
 now be displaying in the Users Roles list.
