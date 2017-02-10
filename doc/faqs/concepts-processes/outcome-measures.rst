@@ -160,3 +160,30 @@ Please specify whether measured changes should be statistically significant.
 No, the data required for the immediate future by the PMHC MDS are individual
 item scores, or as noted above, subscale scores and totals. These will be used
 to derive a range of change indicators.
+
+MHNIP outcome measures
+^^^^^^^^^^^^^^^^^^^^^^
+The PHMC MDS requires the K10+, K5 or SDQ to be captured, however for the MHNIP as per DoH 2015-16 guidelines requires providers to capture the HoNOS. Can we record HoNOS through PMHC MDS?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+From July 2016, funding has been provided to PHNs through a flexible funding pool
+to enable commissioning of a wide range of primary mental healthcare and suicide
+prevention services at regional levels. As such the MHIP and other programs that
+have transitioned into the flexible funding pool, and their associated guidelines,
+are no longer applicable.
+
+All 31 PHNs are required to collect and enter/upload data into the PMHC MDS.
+The PMHC MDS has been developed to capture the broader range of mental health
+services now being commissioned by PHNs, including services previously delivered
+under MHNIP. However, principal responsibility for establishing regional arrangements
+for data collection and reporting rests with PHNs.
+
+The PMHC MDS is designed to monitor and evaluate regional service delivery against
+key mental health performance indicators. The PMHC MDS does not confine PHNs to
+the data specified. Rather, it sets the minimum and common ground for what data
+are to be collected and reported for mental health services commissioned by PHNs.
+It is anticipated that many PHNs will seek to collect an enhanced set of data to
+meet local needs, however this data will not be submitted to the MDS. Therefore,
+a PHN can of course continue to collect additional outcome measures such as the
+HoNOS in relation to specific service/episode types but this is at their discretion
+and will not form part of the MDS at this time.
