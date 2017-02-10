@@ -161,20 +161,22 @@ No, the data required for the immediate future by the PMHC MDS are individual
 item scores, or as noted above, subscale scores and totals. These will be used
 to derive a range of change indicators.
 
-MHNIP Outcome measures
+MHNIP outcome measures
 ^^^^^^^^^^^^^^^^^^^^^^
-The PHMC MDS requires the K10+, K5 or SDQ to be captured, however for the MHNIP as per DoH 2015-16 guidelines requires providers to capture the HoNOS. Can we record HoNOS through PMHC MDS?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The PHMC MDS requires the K10+, K5 or SDQ to be captured, however for MHNIP the DoH 2015-16 guidelines requires providers to capture the HoNOS. Can we record HoNOS through PMHC MDS?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 From July 2016, funding has been provided to PHNs through a flexible funding pool
 to enable commissioning of a wide range of primary mental healthcare and suicide
-prevention services at regional levels.
+prevention services at regional levels. As such the MHNIP and other programs that
+have transitioned into the flexible funding pool, and their associated guidelines,
+are no longer applicable.
 
-All 31 PHNs are required to collect and enter/upload data into the PMHC MDS. The
-PMHC MDS has been developed to capture the broader range of mental health services
-now being commissioned by PHNs, including services previously delivered under MHNIP.
-However, principal responsibility for establishing regional arrangements for data
-collection and reporting rests with PHNs.
+All 31 PHNs are required to collect and enter/upload data into the PMHC MDS.
+The PMHC MDS has been developed to capture the broader range of mental health
+services now being commissioned by PHNs, including services previously delivered
+under MHNIP. However, principal responsibility for establishing regional arrangements
+for data collection and reporting rests with PHNs.
 
 The PMHC MDS is designed to monitor and evaluate regional service delivery against
 key mental health performance indicators. The PMHC MDS does not confine PHNs to

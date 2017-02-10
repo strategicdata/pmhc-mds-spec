@@ -163,12 +163,12 @@ to derive a range of change indicators.
 
 MHNIP outcome measures
 ^^^^^^^^^^^^^^^^^^^^^^
-The PHMC MDS requires the K10+, K5 or SDQ to be captured, however for the MHNIP as per DoH 2015-16 guidelines requires providers to capture the HoNOS. Can we record HoNOS through PMHC MDS?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The PHMC MDS requires the K10+, K5 or SDQ to be captured, however for MHNIP the DoH 2015-16 guidelines requires providers to capture the HoNOS. Can we record HoNOS through PMHC MDS?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 From July 2016, funding has been provided to PHNs through a flexible funding pool
 to enable commissioning of a wide range of primary mental healthcare and suicide
-prevention services at regional levels. As such the MHIP and other programs that
+prevention services at regional levels. As such the MHNIP and other programs that
 have transitioned into the flexible funding pool, and their associated guidelines,
 are no longer applicable.
 
