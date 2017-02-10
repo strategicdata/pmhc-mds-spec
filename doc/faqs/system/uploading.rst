@@ -13,3 +13,10 @@ See the online MDS documentation regarding uploads.
 
 A detailed document for data uploads is available on our website, see
 :ref:`upload_specification`.
+
+Do I need to include all service contacts and measures for an episode in an upload?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Yes, if an episode is included in an upload file, you need to include all service
+contacts and measures for that episode. Service contacts and measures that are
+not included will be removed from the PMHC MDS.
