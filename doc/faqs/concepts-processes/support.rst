@@ -15,8 +15,8 @@ System developers will have access to the following resources:
 * Access to help desk via e-mail. Telephone support will be provided where the issue can’t be resolved via email
 * Developer announcement mailing list to notify developers of pending changes and issues
 
-Staging
-^^^^^^^
+Staging:
+^^^^^^^^
 
 We would seek assurance from the Department that there is sufficient lead time for system developers to refine systems in line with these new requirements.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -40,8 +40,6 @@ Organisations should only submit data via one interface, not both.
 Data submitted via the existing ATAPS/MHSRRA MDS will be converted and merged with
 data submitted via the PMHC MDS in order to produce departmental reports.
 
-Staging
-^^^^^^^
 Is year one a baseline data gathering year as opposed to there being any expectation to manage providers against levels of activity not fully understood due to the extended MDS requirements?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -57,13 +55,19 @@ Can the Department offer assistance to PHNs in terms of creation of a spreadshee
 
 Yes – Excel data entry templates for submission are provided on the PMHC MDS website.
 
-Support to PHNs to engage providers
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Will there be further clarification on how PHNs will be expected to report on
-provider performance to allow engagement on how best to undertake the change process?
+Will there be further clarification on how PHNs will be expected to report on provider performance to allow engagement on how best to undertake the change process?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 See responses to :ref:`Questions-about-standards-reports`.
+
+PHNs would desirably see the actual mechanics of the MDS hands-on prior to wider release. Successful roll-out will depend on how well PHNs are able to communicate and support providers. We suggest the department conducts PHN specific webinars and training for key nominated staff
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Online support documentation is currently being created around the data specification
+and online portal. In addition, the Department is currently in negotiations with
+external providers to supply ongoing support and training for the system. Further
+details of these arrangements will be made available subsequent to the finalisation
+of these arrangements.
 
 .. _Data-capture-via-web-based-portal:
 
@@ -79,16 +83,4 @@ to the PMHC MDS or manually create spreadsheets that can then be uploaded. Data
 may be uploaded in either Excel or CSV format.
 
 During phase 2 a full data entry capacity will be added. This is expected to be
-ready for the 2017-18 financial year
-
-Support to PHNs to engage providers
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-PHNs would desirably see the actual mechanics of the MDS hands-on prior to wider release. Successful roll-out will depend on how well PHNs are able to communicate and support providers. We suggest the department conducts PHN specific webinars and training for key nominated staff
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Online support documentation is currently being created around the data specification
-and online portal. In addition, the Department is currently in negotiations with
-external providers to supply ongoing support and training for the system. Further
-details of these arrangements will be made available subsequent to the finalisation
-of these arrangements.
+ready for the 2017-18 financial year.
