@@ -2,9 +2,9 @@
   "@id": "organisation-metadata.json",
   "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
   "columns": [{
-    "name": "organisation_key",
-    "titles": [ "organisation_key", "Organisation Key" ],
-    "dc:title": "Provider Organisation Key",
+    "name": "organisation_path",
+    "titles": [ "organisation_path", "Organisation Path" ],
+    "dc:title": "Provider Organisation Path",
     "schema:description": "A sequence of characters which uniquely identifies the provider organisation. Assigned by the Primary Health Network.",
     "schema:dateCreated": "2016-06-22",
     "schema:dateDeleted": "2016-06-22",
