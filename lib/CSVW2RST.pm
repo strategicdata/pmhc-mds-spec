@@ -311,7 +311,8 @@ sub format_domain {
                . $field->{datatype}{maximum};
 
         if ( defined( $field->{'null'} ) ) {
-            $rv .= ", " . $field->{'null'};
+            $rv .= ", " . $field->{'null'}
+                . ' = missing';
         }
 
         return $rv;
