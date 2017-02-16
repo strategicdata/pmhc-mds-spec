@@ -53,7 +53,7 @@ Support to PHNs to engage providers
 Can the Department offer assistance to PHNs in terms of creation of a spreadsheet suitable for storing and uploading collected data
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Yes – Excel data entry templates for submission are provided on the PMHC MDS website.
+Yes – Excel data entry templates for submission are provided on the PMHC MDS website. Visit Upload Specifications :ref:`file-format`
 
 Will there be further clarification on how PHNs will be expected to report on provider performance to allow engagement on how best to undertake the change process?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
