@@ -130,7 +130,7 @@ PMHC MDS.  You can invite a new user through the Users tab, by following these s
 5. You will receive confirmation that the user has been sent an email to invite
    them to the PMHC MDS. They will also be sent an SMS containing a
    verification code. The user will need to follow the instructions in the
-   email before they can gain access to the system.
+   email before they can gain access to the system. This invitation will be valid for 7 days.
 6. When the user has accepted the invitation you will be sent an email to let you know.
 
    .. figure:: screen-shots/invite-accepted-email.png
@@ -143,7 +143,7 @@ Accepting an invitation to become a PMHC MDS User
 
 To become a PMHC MDS user you will be sent an invitation by email and a
 verification code via SMS. In order to gain access to the PMHC MDS you
-will need to accept this invitation as follows:
+will need to accept this invitation within 7 days, by following these steps:
 
 .. figure:: screen-shots/invitation-email.png
    :alt: PMHC MDS Invitation Email
