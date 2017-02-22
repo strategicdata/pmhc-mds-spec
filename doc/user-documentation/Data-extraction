@@ -1,0 +1,61 @@
+.. _data_extraction:
+
+Data Extraction
+===============
+
+You will only be able to see the Data Extraction tab if you have been assigned
+the 'Reporting' role.
+
+If you believe you should have access to Data Extraction and it doesn't appear
+in your list please contact someone in that provider organisation or the
+provider organisation's PHN who has the 'User Management' role.
+
+If you are unsure who has the 'User Management' role please email the PMHC
+helpdesk at support@pmhc-mds.com
+
+After navigating to the Data Extraction tab, you will be presented with a
+Download Data tab.
+
+.. figure:: screen-shots/data-extract.png
+   :alt: PMHC MDS Organisations
+
+.. _view_data_extract:
+
+How to download an organsiation's data
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You can extract a PHN's or provider organisation's PMHC MDS data by completing
+the Download Data fields in the Data Extraction tab, by following these steps:
+
+1. Navigate to the 'Data Extraction' tab.
+2. If you are allowed to download data from more than one organisation you will be
+   asked to select an organisation name.
+3. Select the name of the organisation from the drop down list.
+4. Click the first calendar icon to select the start date and then the second
+   calendar icon to select the start date.
+5. Select the 'Include data without associated dates' for a comprehensive listing
+   of all data within these dates. EG> If this is left unselected, you will not see
+   those clients who have a referral, but no service contacts within this date.
+6. Select the File Type you'd like this data downloaded in.
+
+   .. figure:: screen-shots/view-data-extract-form.png
+      :alt: PMHC MDS File Selected
+
+7. Click the Blue 'Download' button.
+
+!!!!!check below info!!!!!
+
+You will receive confirmation that your file download request has been received.
+The data file will now be extracted and you will shortly receive an email
+informing you when the download is available to be viewed.
+
+Please email support@pmhc-mds.com if you don't
+receive an email within one hour.
+
+
+How to view your download file
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You can view a downloaded data extraction file, by following these steps:
+
+1. Navigate to the 'Data Extraction' tab.
