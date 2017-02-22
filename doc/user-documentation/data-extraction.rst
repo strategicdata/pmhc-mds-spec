@@ -33,7 +33,7 @@ the Download Data fields in the Data Extraction tab, by following these steps:
 3. Select the name of the organisation from the drop down list.
 4. Click the first calendar icon to select the start date and then the second
    calendar icon to select the end date.
-5. The start date of and episode is derived from the date of the first service contact. 
+5. The start date of and episode is derived from the date of the first service contact.
    Therefore, if an episode doesn't have any associated service contacts, there will be
    no start date for the episode and they will not be included in the data extract.
    If you would like to include episodes, clients and practitioners without associated
@@ -43,8 +43,12 @@ the Download Data fields in the Data Extraction tab, by following these steps:
    .. figure:: screen-shots/view-data-extract-form.png
       :alt: PMHC MDS File Selected
 
-7. Click the Blue 'Request' button.
+7. Click the blue 'Request' button.
 8. A dialogue box will be displayed, showing that the file is being requested from the server.
 9. When the file is ready, a 'File ready for download' message will be displayed.
-10. Click the 'Download' button.
+
+.. figure:: screen-shots/requesting-data.png
+   :alt: PMHC MDS File Selected
+
+10. Click the blue 'Download' button.
 11. Your data extract will be downloaded to your computer.

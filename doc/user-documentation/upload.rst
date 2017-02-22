@@ -144,14 +144,6 @@ You can view the results of an upload by following these steps:
     * Name of the person who uploaded the file
     * Details of any errors that occurred or details of what was updated
 
-From this page you can also download the the original file that was uploaded.
-You can download the original file by following these steps:
-
-1. Navigate to the 'Upload Details' page for the upload of interest.
-2. Click the 'Download' button.
-
-The original upload file will be downloaded to your computer.
-
 .. _error-messages:
 
 Error messages
