@@ -256,10 +256,10 @@ the K10 total score as well as item scores for the 4 extra items in the K10+.
    :file: record/k10p-collection-occasion.csv
    :header-rows: 1
 
-.. _k5-data-elements:
-
 When the client’s responses to Q1-10 are all recorded as 1 'None of the time',
 Q11-14 will require an answer of 'not applicable' to be entered.
+
+.. _k5-data-elements:
 
 K5
 ""

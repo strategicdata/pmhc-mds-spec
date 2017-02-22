@@ -12,5 +12,7 @@ User Guide
    organisations
    users
    upload
+   data-extraction
+   reporting
    slk
    change-log

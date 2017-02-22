@@ -54,7 +54,7 @@ assigned. The table below lists the tabs that will be shown for each role:
 +-------------------------+---------------------------+
 | Upload                  | Upload                    |
 +-------------------------+---------------------------+
-| Reporting               | Data Extraction, Reports  |      |
+| Reporting               | Data Extraction, Reports  |
 +-------------------------+---------------------------+
 | All users               | SLK                       |
 +-------------------------+---------------------------+
