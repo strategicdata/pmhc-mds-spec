@@ -53,9 +53,13 @@ the Download Data fields in the Data Extraction tab, by following these steps:
 
 7. Click the blue 'Request' button.
 8. A dialogue box will be displayed, showing that the file is being requested from the server.
-9. When the file is ready, a 'File ready for download' message will be displayed.
 
 .. figure:: screen-shots/requesting-data.png
+   :alt: PMHC MDS File Selected
+
+9. When the file is ready, a 'File ready for download' message will be displayed.
+
+.. figure:: screen-shots/download-data.png
    :alt: PMHC MDS File Selected
 
 10. Click the blue 'Download' button.
