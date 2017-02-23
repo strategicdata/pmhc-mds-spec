@@ -35,6 +35,8 @@ the roles that currently exist within the PMHC MDS:
 +----------------------------+------------------------------------------------------------------------------------------------------------------------------------+
 | Upload                     | A user with the Upload role can upload data to the associated organisation                                                         |
 +----------------------------+------------------------------------------------------------------------------------------------------------------------------------+
+| Reporting                  | A user with the Reporting role can download data from the associated organisation                                                  |
++----------------------------+------------------------------------------------------------------------------------------------------------------------------------+
 
 Each role allows a user to perform specific tasks. A user can have more than one role.
 Each role is granted for a user against an organisation. An organisation can
@@ -54,7 +56,7 @@ assigned. The table below lists the tabs that will be shown for each role:
 +-------------------------+---------------------------+
 | Upload                  | Upload                    |
 +-------------------------+---------------------------+
-| Reporting               | Data Extraction, Reports  |
+| Reporting               | Data Extraction           |
 +-------------------------+---------------------------+
 | All users               | SLK                       |
 +-------------------------+---------------------------+
