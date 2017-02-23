@@ -33,13 +33,14 @@ the Download Data fields in the Data Extraction tab, by following these steps:
 3. Select the name of the organisation from the drop down list.
 4. Click the first calendar icon to select the start date and then the second
    calendar icon to select the end date.
-5. As the query is date based the following data will not by default be included in the extract:
+5. Click the 'Include data without associated dates' checkbox if required.
+   Please note: As the query is date based the following data will not by default be included in the extract:
 
    * The start date of an episode is derived from the date of the first service contact.
      Therefore, if an episode doesn't have any associated service contacts, there will be
      no start date for the episode and they will not by default be included in the data extract.
    * Clients that don't have any associated episodes, or who are associated
-     with an episode with no service contacts also will not by default be included in the data extract. 
+     with an episode with no service contacts also will not by default be included in the data extract.
    * Practitioners who are not associated with a service contact will not by default be included
      in the data extract.
 
