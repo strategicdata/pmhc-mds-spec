@@ -67,20 +67,8 @@ event that you no longer have access to your primary email address.
       :alt: PMHC MDS Confirm Update Email
 
 9. Navigate back to https://pmhc-mds.net/ and sign in.
-10. What you see once you login will depend upon what roles you have been
-    assigned. The table below lists the tabs that will be shown for each role:
-
-    +-------------------------+----------------------+
-    | Role                    | Tab                  |
-    +=========================+======================+
-    | Organisation Management | Organisations        |
-    +-------------------------+----------------------+
-    | User Management         | Organisations, Users |
-    +-------------------------+----------------------+
-    | Upload                  | Upload               |
-    +-------------------------+----------------------+
-    | All users               | SLK                  |
-    +-------------------------+----------------------+
+10. What you see once you login will depend upon what :ref:`roles` you have been
+    assigned.
 
 .. _forgotten_password:
 
