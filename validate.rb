@@ -99,8 +99,11 @@ class PMHC < Csvlint::Cli
         h[:constraints] = Hash[field.constraints.map {|k,v| [k.underscore, v] }]
       end
 
-      if /#{error.type}/ =~ "unmatched_foreign_key_reference"
-        h[:content] = error.content,
+      if /^(unmatched_foreign_key_reference|duplicate_key|multiple_matched_rows)$/ =~ error.type
+        h[:content] = error.content
+      end
+
+      if /^(unmatched_foreign_key_reference|multiple_matched_rows)$/ =~ error.type
         h[:constraints] = Hash[error.constraints.map {|k,v| [k.underscore, v] }]
       end
 
