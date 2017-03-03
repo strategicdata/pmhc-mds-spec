@@ -148,7 +148,7 @@ Can I add an existing user to another PHN or Provider Organisation?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Yes. By ensuring you enter the same email and mobile number when completing the
-steps in :ref:`adding_a_user`, the system will automatically pick up if a user
+steps in :ref:`adding_an_exsisting_user`, the system will automatically pick up if a user
 already exists in the PMHC MDS and will grant them access to the additional organisation.
 
 Why did I get this message '500 Internal Server Error: add: Inviting user failed: An outstanding PMHC MDS invite exists' when inviting a user?
