@@ -48,3 +48,25 @@ Can I go back and enter information if I don’t have it at the time?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Yes, the MDS allows you to go back and enter information at a later date.
+
+Can I enter fictitious data as a part of testing?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The MDS is live and data uploads will be recorded. Real PMHC data can be trialled
+by uploading in test mode, whereas fictitious data should be trialled with a
+'Test Organisation' on developers.pmhc-mds.net.  See the Developers announcement at https://www.pmhc-mds.com/2017/02/17/Separate-PMHC-MDS-now-available-for-software-developers-to-test-upload-files/.
+
+Where do I enter MHNIPS data collection?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The Department of Health is expecting all commissioned Mental Health Nursing services data from July 2016 to be entered into the PMHC MDS.
+
+The PHMC MDS specifications seems limited. Can we capture and record additional data?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The PMHC MDS is designed to monitor and evaluate regional service delivery against
+key mental health performance indicators. The PMHC MDS does not confine PHNs to
+the data specified. Rather, it sets the minimum and common ground for what data
+are to be collected and reported for mental health services commissioned by PHNs.
+It is anticipated that many PHNs will seek to collect an enhanced set of data to
+meet local needs, however this data will not be submitted to the MDS. 

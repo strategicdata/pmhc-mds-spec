@@ -136,3 +136,21 @@ a standardised dataset to headspace National Office.  Pending the future of thes
 arrangements, and access to data by PHNs, the PHMC MDS can be expanded at a
 future stage to allow incorporation of headspace and Early Psychosis Youth Services
 should this be required.
+
+Coverage of Mental Health Nursing services
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Are services previously delivered under MHNIP expected to collect the PHMC MDS?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+From July 2016, funding has been provided to PHNs through a flexible funding pool
+to enable commissioning of a wide range of primary mental healthcare and suicide
+prevention services at regional levels. As such the MHNIP and other programs that
+have transitioned into the flexible funding pool, and their associated guidelines,
+are no longer applicable.
+
+All 31 PHNs are required to collect and enter/upload data into the PMHC MDS.
+The PMHC MDS has been developed to capture the broader range of mental health
+services now being commissioned by PHNs, including services previously delivered
+under MHNIP. However, principal responsibility for establishing regional arrangements
+for data collection and reporting rests with PHNs.

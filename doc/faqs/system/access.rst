@@ -83,6 +83,22 @@ contact the PMHC helpdesk so that your records can be updated. When contacting t
 PMHC helpdesk you will be asked to arrange for a :ref:`letter-of-authority` stating
 the change(s) and this must then be sent to Strategic Data via fax or scan/email as documented above.
 
+.. _I-do-not-have-a-work-mobile:
+
+I do not have a work mobile. What do I do?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+A user can use their personal mobile. The mobile is only used by the PMHC MDS
+profile management system to deliver the verification code via SMS. This is used 
+to activate their profile, reset their password or if a password is forgotten or
+expires. Users' mobile phone numbers are not listed or able to be viewed by other
+users within the PMHC MDS
+
+Can I invite different users by using the same mobile?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+It is not advised for multiple PMHC users to share using the same mobile number. Please refer to :ref:`I-do-not-have-a-work-mobile` for more information.
+
 .. _password-recovery:
 
 Password or username recovery
@@ -108,21 +124,7 @@ What can a user see in the MDS?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 What you see once you login will depend upon what roles you have been assigned.
-The table below lists the tabs that will be shown for each role:
-
-+---------------------------+----------------------+
-| *Role*                    | *Tab(s)*             |
-+===========================+======================+
-| Organisation Management   | Organisations        |
-+---------------------------+----------------------+
-| User Management           | Organisations, Users |
-+---------------------------+----------------------+
-| Upload                    | Upload               |
-+---------------------------+----------------------+
-| All users                 | Home, SLK            |
-+---------------------------+----------------------+
-
-See :ref:`how-do-i-obtain-access-to-the-mds` for more information on roles.
+See :ref:`roles` for more information.
 
 How do I get started using the MDS?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -130,7 +132,7 @@ How do I get started using the MDS?
 Please refer to :ref:`how-do-i-obtain-access-to-the-mds` for information on
 getting an account on the MDS.
 
-The MDS website is available at https://pmhc-mds.com/. Here you will find
+The PMHC website is available at https://pmhc-mds.com/. Here you will find
 documentation on using the MDS.
 
 The MDS is accessed on the web at the following address: https://pmhc-mds.net/
@@ -141,6 +143,33 @@ Can I pass on my username and password to my organisation's IT person or evaluat
 No, each user should be issued with their own username and password. Please
 refer to :ref:`how-do-i-obtain-access-to-the-mds` for information on how to
 get an account.
+
+Can I add an existing user to another PHN or Provider Organisation?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Yes. By ensuring you enter the same email and mobile number when completing the
+steps in :ref:`adding_a_user`, the system will automatically pick up if a user
+already exists in the PMHC MDS and will grant them access to the additional organisation.
+
+Why did I get this message '500 Internal Server Error: add: Inviting user failed: An outstanding PMHC MDS invite exists' when inviting a user?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This user has previously been invited and has not yet completed the required
+steps for :ref:`accepting_invitation`. An invitation will be valid for 7 days
+and you can not resend an invitation within this time whilst a token is still valid.
+
+What should you do if a user didn't receive the email invitation?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Firstly confirm that you have their correct email address.  Ask the user to
+double check their junk mail folder and search for an email sent from
+noreply@strategicdata.com.au. Otherwise, please contact the helpdesk on support@pmhc-mds.com.
+
+What should you do if a user deleted the email invitation or the SMS token?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If a user didn't receive or deleted the email invitation or the SMS token, ask them
+to contact the helpdesk on support@pmhc-mds.com as we can reissue it.
 
 Can GPs or Mental Health Providers (MHPs) access the MDS to upload data themselves?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -165,7 +194,10 @@ Network.
 In order to set up the test Primary Health Network account we need to follow a
 similar procedure to setting up a proper Primary Health Network account. To do
 that we require a :ref:`letter-of-authority` as detailed in the Letter of
-Authority section above.
+Authority section above, which must be
+signed by an authority at the Primary Health Network or Provider Organisation
+who holds a position that is higher than the person for whom the account is
+being created (i.e., the person's manager or the CEO).
 
 Could you please provide a similar letter on your company's letterhead
 containing the following details:
