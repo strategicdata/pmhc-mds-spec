@@ -26,6 +26,11 @@ and then your password and click 'Sign in'.
 minutes of inactivity.  You will see a pop up box that will provide a count
 down feature prior to automatically logging out the idle user.*
 
+logout-count-down
+
+.. figure:: screen-shots/logout-count-down.png
+   :alt: PMHC MDS Auto Log Out
+
 .. _setting_backup_email:
 
 If it is your first time logging in, you will be asked to set a backup email
@@ -67,20 +72,8 @@ event that you no longer have access to your primary email address.
       :alt: PMHC MDS Confirm Update Email
 
 9. Navigate back to https://pmhc-mds.net/ and sign in.
-10. What you see once you login will depend upon what roles you have been
-    assigned. The table below lists the tabs that will be shown for each role:
-
-    +-------------------------+----------------------+
-    | Role                    | Tab                  |
-    +=========================+======================+
-    | Organisation Management | Organisations        |
-    +-------------------------+----------------------+
-    | User Management         | Organisations, Users |
-    +-------------------------+----------------------+
-    | Upload                  | Upload               |
-    +-------------------------+----------------------+
-    | All users               | SLK                  |
-    +-------------------------+----------------------+
+10. What you see once you login will depend upon what :ref:`roles` you have been
+    assigned.
 
 .. _forgotten_password:
 

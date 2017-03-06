@@ -140,6 +140,32 @@ PMHC MDS.  You can invite a new user through the Users tab, by following these s
    .. figure:: screen-shots/invite-accepted-email.png
       :alt: PMHC MDS Invite Accepted
 
+.. _adding_an_exsisting_user:
+
+Adding an existing user
+^^^^^^^^^^^^^^^^^^^^^^^
+
+Note: An existing user must have completed the required steps for :ref:`accepting_invitation`
+from their initial PMHC MDS invitation before they can be added again.
+
+Before adding an existing user please ensure you have the same email and mobile
+number as their current PMHC MDS Profile. By ensuring these are identical, the system
+will automatically pick up if a user already exists in the PMHC MDS.
+
+You can invite an existing user through the Users tab, by following these steps:
+
+1. Navigate to the Users tab.
+2. Click the 'Invite New User' tab.
+3. Complete all the mandatory fields marked with an * in the 'Invite User' form, ensuring these are the same details as their existing PMHC MDS Profile.
+   Existing user's can be given multiple :ref:`roles` at invitation, or extra roles can be added later.
+
+         .. figure:: screen-shots/invite-user-filled-in.png
+            :alt: PMHC MDS Invite User Complete
+
+4. Click the blue 'Invite' button.
+5. You will receive confirmation that the roles have been added to the existing user.
+   The user will receive notification that they have been granted these additional roles as the relevant organisation.
+
 .. _accepting_invitation:
 
 Accepting an invitation to become a PMHC MDS User
@@ -188,6 +214,9 @@ You can edit and assign extra roles to an existing user by following these steps
 2. Click on the user's name in blue displayed within the table list.
 3. Click the 'Roles' tab to show the users assigned roles.
 4. Choose the PHN or Suborganisation from the selection box to view the users roles at that organisaiton.
+
+   .. figure:: screen-shots/user-roles-at-organisation.png
+      :alt: PMHC MDS Edit Role
 
 .. _edit_role:
 

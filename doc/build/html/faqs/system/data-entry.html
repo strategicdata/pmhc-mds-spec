@@ -92,18 +92,23 @@
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">System Frequently Asked Questions</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="access.html">Accessing the PMHC Minimum Data Set</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Entering data in the PMHC Minimum Data Set</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#why-can-t-we-use-the-slk-as-the-client-key">Why can&#8217;t we use the SLK as the client key?</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#what-is-the-best-way-to-manage-the-client-key">What is the best way to manage the client key?</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#can-you-suggest-a-best-practice-approach-to-managing-client-keys">Can you suggest a best practice approach to managing client keys?</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#how-will-the-master-client-index-work">How will the Master Client Index work?</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#how-often-should-i-enter-data-into-the-mds">How often should I enter data into the MDS?</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#what-do-i-do-if-the-gp-mental-health-provider-has-not-given-an-answer-to-one-or-more-questions-in-the-minimum-dataset">What do I do If the GP / mental health provider has not given an answer to one or more questions in the minimum dataset?</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#can-i-go-back-and-enter-information-if-i-dont-have-it-at-the-time">Can I go back and enter information if I don’t have it at the time?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#can-i-enter-fictitious-data-as-a-part-of-testing">Can I enter fictitious data as a part of testing?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#where-do-i-enter-mhnips-data-collection">Where do I enter MHNIPS data collection?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#the-phmc-mds-specifications-seems-limited-can-we-capture-and-record-additional-data">The PHMC MDS specifications seems limited. Can we capture and record additional data?</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="uploading.html">Uploading data</a></li>
 <li class="toctree-l3"><a class="reference internal" href="additional-data.html">Capturing additional data</a></li>
 <li class="toctree-l3"><a class="reference internal" href="checking.html">Checking data</a></li>
 <li class="toctree-l3"><a class="reference internal" href="storing.html">Storing data relating to the minimum dataset system</a></li>
+<li class="toctree-l3"><a class="reference internal" href="development.html">Development of the PMHC Minimum Data Set</a></li>
 <li class="toctree-l3"><a class="reference internal" href="mailing-list.html">PMHC mailing list</a></li>
 <li class="toctree-l3"><a class="reference internal" href="help-desk.html">Getting Help</a></li>
 </ul>
@@ -160,29 +165,33 @@
            <div itemprop="articleBody">
             
   <div class="section" id="entering-data-in-the-pmhc-minimum-data-set">
-<h1>Entering data in the PMHC Minimum Data Set<a class="headerlink" href="#entering-data-in-the-pmhc-minimum-data-set" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="what-is-the-best-way-to-manage-the-client-key">
-<h2>What is the best way to manage the client key?<a class="headerlink" href="#what-is-the-best-way-to-manage-the-client-key" title="Permalink to this headline">¶</a></h2>
+<span id="data-entry-faqs"></span><h1>Entering data in the PMHC Minimum Data Set<a class="headerlink" href="#entering-data-in-the-pmhc-minimum-data-set" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="why-can-t-we-use-the-slk-as-the-client-key">
+<h2>Why can&#8217;t we use the SLK as the client key?<a class="headerlink" href="#why-can-t-we-use-the-slk-as-the-client-key" title="Permalink to this headline">¶</a></h2>
 <p>The SLK isn’t necessarily a unique key and therefore the Client Key is required
 to be a unique client identifier. The Client Key needs to be stable for each
-individual within the PHN.</p>
+individual within the PHN. Please refer to <a class="reference internal" href="../../data-specification/identifier-management.html#identifier-management"><span class="std std-ref">Identifier management</span></a>.</p>
+</div>
+<div class="section" id="what-is-the-best-way-to-manage-the-client-key">
+<h2>What is the best way to manage the client key?<a class="headerlink" href="#what-is-the-best-way-to-manage-the-client-key" title="Permalink to this headline">¶</a></h2>
+<p>The Client Key needs to be stable for each individual within the PHN.</p>
 <p>Initially the PHN will need to play a role in coordinating assignment and management
 of these keys for Provider Organisations, prior to the PMHC MDS implementation a
-Master Client Index during Stage 2 of development.</p>
+Master Client Index during <a class="reference internal" href="development.html#stage-two"><span class="std std-ref">Stage Two</span></a> of development.</p>
 <p>Please refer to <a class="reference internal" href="../../data-specification/identifier-management.html#identifier-management"><span class="std std-ref">Identifier management</span></a>.</p>
 </div>
 <div class="section" id="can-you-suggest-a-best-practice-approach-to-managing-client-keys">
 <h2>Can you suggest a best practice approach to managing client keys?<a class="headerlink" href="#can-you-suggest-a-best-practice-approach-to-managing-client-keys" title="Permalink to this headline">¶</a></h2>
 <p>We understand that PHNs approach <a class="reference internal" href="../../data-specification/identifier-management.html#identifier-management"><span class="std std-ref">Identifier management</span></a> in various different ways
 to best suit their practice. PHNs will continue to manage client keys until the
-Master Client Index is developed and released in Stage 2. In the interim, we suggest
+Master Client Index is developed and released in <a class="reference internal" href="development.html#stage-two"><span class="std std-ref">Stage Two</span></a>. In the interim, we suggest
 speaking with another PHN in your network to understand their approach to managing
 their client keys.</p>
 </div>
 <div class="section" id="how-will-the-master-client-index-work">
 <h2>How will the Master Client Index work?<a class="headerlink" href="#how-will-the-master-client-index-work" title="Permalink to this headline">¶</a></h2>
-<p>During Stage 2 of the PMHC MDS implementation a Master Client Index will be created
-to allow Provider Organisations to manage the <a class="reference internal" href="../../data-specification/identifier-management.html#client-keys"><span class="std std-ref">Managing Client Keys</span></a> across PHNs. Stage 2
+<p>During <a class="reference internal" href="development.html#stage-two"><span class="std std-ref">Stage Two</span></a> of the PMHC MDS implementation a Master Client Index will be created
+to allow Provider Organisations to manage the <a class="reference internal" href="../../data-specification/identifier-management.html#client-keys"><span class="std std-ref">Managing Client Keys</span></a> across PHNs. <a class="reference internal" href="development.html#stage-two"><span class="std std-ref">Stage Two</span></a>
 development updates will be released by the Department of Health in the lead up to
 release. Regularly check the announcements on the home page (<a class="reference external" href="https://pmhc-mds.net/">https://pmhc-mds.net/</a>) to keep informed.</p>
 </div>
@@ -200,6 +209,25 @@ response item. The aim is to minimise missing data as much as possible.</p>
 <div class="section" id="can-i-go-back-and-enter-information-if-i-dont-have-it-at-the-time">
 <h2>Can I go back and enter information if I don’t have it at the time?<a class="headerlink" href="#can-i-go-back-and-enter-information-if-i-dont-have-it-at-the-time" title="Permalink to this headline">¶</a></h2>
 <p>Yes, the MDS allows you to go back and enter information at a later date.</p>
+</div>
+<div class="section" id="can-i-enter-fictitious-data-as-a-part-of-testing">
+<h2>Can I enter fictitious data as a part of testing?<a class="headerlink" href="#can-i-enter-fictitious-data-as-a-part-of-testing" title="Permalink to this headline">¶</a></h2>
+<p>The MDS is live&nbsp;and data uploads will be recorded. Real PMHC data can be trialled
+by uploading in test mode, whereas fictitious data should be trialled with a
+&#8216;Test Organisation&#8217; on developers.pmhc-mds.net.  See <a class="reference external" href="https://www.pmhc-mds.com/2017/02/17/Separate-PMHC-MDS-now-available-for-software-developers-to-test-upload-files/">PMHC Developers Announcement</a>.</p>
+</div>
+<div class="section" id="where-do-i-enter-mhnips-data-collection">
+<h2>Where do I enter MHNIPS data collection?<a class="headerlink" href="#where-do-i-enter-mhnips-data-collection" title="Permalink to this headline">¶</a></h2>
+<p>The Department of Health is expecting all commissioned Mental Health Nursing services data from July 2016 to be entered into the PMHC MDS.</p>
+</div>
+<div class="section" id="the-phmc-mds-specifications-seems-limited-can-we-capture-and-record-additional-data">
+<h2>The PHMC MDS specifications seems limited. Can we capture and record additional data?<a class="headerlink" href="#the-phmc-mds-specifications-seems-limited-can-we-capture-and-record-additional-data" title="Permalink to this headline">¶</a></h2>
+<p>The PMHC MDS is designed to monitor and evaluate regional service delivery against
+key mental health performance indicators. The PMHC MDS does not confine PHNs to
+the data specified. Rather, it sets the minimum and common ground for what data
+are to be collected and reported for mental health services commissioned by PHNs.
+It is anticipated that many PHNs will seek to collect an enhanced set of data to
+meet local needs, however this data will not be submitted to the MDS.</p>
 </div>
 </div>
 

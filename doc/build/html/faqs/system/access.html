@@ -94,11 +94,17 @@
 <li class="toctree-l4"><a class="reference internal" href="#what-internet-browser-should-i-use">What internet browser should I use?</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#how-do-i-obtain-access-to-the-pmhc-mds">How do I obtain access to the PMHC MDS?</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#letter-of-authority">Letter of Authority</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#i-do-not-have-a-work-mobile-what-do-i-do">I do not have a work mobile. What do I do?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#can-i-invite-different-users-by-using-the-same-mobile">Can I invite different users by using the same mobile?</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#password-or-username-recovery">Password or username recovery</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#i-forgot-my-password-what-do-i-do">I forgot my password. What do I do?</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#what-can-a-user-see-in-the-mds">What can a user see in the MDS?</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#how-do-i-get-started-using-the-mds">How do I get started using the MDS?</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#can-i-pass-on-my-username-and-password-to-my-organisation-s-it-person-or-evaluator-if-they-are-entering-data">Can I pass on my username and password to my organisation&#8217;s IT person or evaluator if they are entering data?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#can-i-add-an-existing-user-to-another-phn-or-provider-organisation">Can I add an existing user to another PHN or Provider Organisation?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#why-did-i-get-this-message-500-internal-server-error-add-inviting-user-failed-an-outstanding-pmhc-mds-invite-exists-when-inviting-a-user">Why did I get this message &#8216;500 Internal Server Error: add: Inviting user failed: An outstanding PMHC MDS invite exists&#8217; when inviting a user?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#what-should-you-do-if-a-user-didn-t-receive-the-email-invitation">What should you do if a user didn&#8217;t receive the email invitation?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#what-should-you-do-if-a-user-deleted-the-email-invitation-or-the-sms-token">What should you do if a user deleted the email invitation or the SMS token?</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#can-gps-or-mental-health-providers-mhps-access-the-mds-to-upload-data-themselves">Can GPs or Mental Health Providers (MHPs) access the MDS to upload data themselves?</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#i-m-a-third-party-software-developer-developing-software-to-assist-with-uploading-data-to-the-mds-can-i-have-an-account-to-test-my-data-uploads">I&#8217;m a third-party software developer developing software to assist with uploading data to the MDS. Can I have an account to test my data uploads?</a></li>
 </ul>
@@ -108,6 +114,7 @@
 <li class="toctree-l3"><a class="reference internal" href="additional-data.html">Capturing additional data</a></li>
 <li class="toctree-l3"><a class="reference internal" href="checking.html">Checking data</a></li>
 <li class="toctree-l3"><a class="reference internal" href="storing.html">Storing data relating to the minimum dataset system</a></li>
+<li class="toctree-l3"><a class="reference internal" href="development.html">Development of the PMHC Minimum Data Set</a></li>
 <li class="toctree-l3"><a class="reference internal" href="mailing-list.html">PMHC mailing list</a></li>
 <li class="toctree-l3"><a class="reference internal" href="help-desk.html">Getting Help</a></li>
 </ul>
@@ -181,33 +188,11 @@
 specific tasks. A user can have more than one role. Each role is granted for a
 user against an organisation. An organisation can either be a Primary Health
 Network (PHN) or a Provider Organisation. If a user is granted a role for a
-PHN they will also have this role for any Provider Organisations of that PHN. The following table
-provides a summary of each of the roles that currently exist within the PMHC MDS:</p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="18%" />
-<col width="82%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head"><strong>Role</strong></th>
-<th class="head"><strong>Tasks allowed</strong></th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>Organisation Management</td>
-<td>A user with the Organisation Management role for a PHN can manage Provider Organisations for that PHN</td>
-</tr>
-<tr class="row-odd"><td>User Management</td>
-<td>A user with the User Management role for an organisation can manage user accounts for that organisation or its suborganisations</td>
-</tr>
-<tr class="row-even"><td>Upload</td>
-<td>A user with the Upload role can upload data to that organisation or its suborganisations</td>
-</tr>
-</tbody>
-</table>
+PHN they will also have this role for any Provider Organisations of that PHN.
+See <a class="reference internal" href="../../user-documentation/users.html#roles"><span class="std std-ref">Users Roles</span></a> for a summary of each of the roles that currently exist within the PMHC MDS:</p>
 <p>User accounts can be created by a user at your PHN or Provider Organisation who
-has the User Management role. Please contact <a class="reference external" href="mailto:support&#37;&#52;&#48;pmhc-mds&#46;com">support<span>&#64;</span>pmhc-mds<span>&#46;</span>com</a> to find out
-who has this access.</p>
+has the User Management role. If unsure who this is, please contact <a class="reference external" href="mailto:support&#37;&#52;&#48;pmhc-mds&#46;com">support<span>&#64;</span>pmhc-mds<span>&#46;</span>com</a>
+to find out who has this access.</p>
 <p>Alternatively, if you cannot contact any users who have the User Management role
 access can be gained by producing a <a class="reference internal" href="#letter-of-authority"><span class="std std-ref">Letter of Authority</span></a>.</p>
 </div>
@@ -246,6 +231,19 @@ contact the PMHC helpdesk so that your records can be updated. When contacting t
 PMHC helpdesk you will be asked to arrange for a <a class="reference internal" href="#letter-of-authority"><span class="std std-ref">Letter of Authority</span></a> stating
 the change(s) and this must then be sent to Strategic Data via fax or scan/email as documented above.</p>
 </div>
+<div class="section" id="i-do-not-have-a-work-mobile-what-do-i-do">
+<span id="i-do-not-have-a-work-mobile"></span><h2>I do not have a work mobile. What do I do?<a class="headerlink" href="#i-do-not-have-a-work-mobile-what-do-i-do" title="Permalink to this headline">¶</a></h2>
+<p>A user can use their personal mobile. The mobile is only used by the PMHC MDS
+profile management system to deliver the verification code via SMS. This is used
+to activate their profile, reset their password or if a password is forgotten or
+expires. Users&#8217; mobile phone numbers are not listed or able to be viewed by other
+users within the PMHC MDS</p>
+</div>
+<div class="section" id="can-i-invite-different-users-by-using-the-same-mobile">
+<h2>Can I invite different users by using the same mobile?<a class="headerlink" href="#can-i-invite-different-users-by-using-the-same-mobile" title="Permalink to this headline">¶</a></h2>
+<p>It is not advised for multiple PMHC users to share using the same mobile number.
+Please refer to <a class="reference internal" href="#i-do-not-have-a-work-mobile"><span class="std std-ref">I do not have a work mobile. What do I do?</span></a> and <a class="reference internal" href="#password-recovery"><span class="std std-ref">Password or username recovery</span></a> for more information.</p>
+</div>
 <div class="section" id="password-or-username-recovery">
 <span id="password-recovery"></span><h2>Password or username recovery<a class="headerlink" href="#password-or-username-recovery" title="Permalink to this headline">¶</a></h2>
 <p>The system offers an automated password/username recovery feature. The system
@@ -265,39 +263,13 @@ need to be produced in order for the PMHC MDS helpdesk to update your account.</
 <div class="section" id="what-can-a-user-see-in-the-mds">
 <h2>What can a user see in the MDS?<a class="headerlink" href="#what-can-a-user-see-in-the-mds" title="Permalink to this headline">¶</a></h2>
 <p>What you see once you login will depend upon what roles you have been assigned.
-The table below lists the tabs that will be shown for each role:</p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="55%" />
-<col width="45%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head"><em>Role</em></th>
-<th class="head"><em>Tab(s)</em></th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>Organisation Management</td>
-<td>Organisations</td>
-</tr>
-<tr class="row-odd"><td>User Management</td>
-<td>Organisations, Users</td>
-</tr>
-<tr class="row-even"><td>Upload</td>
-<td>Upload</td>
-</tr>
-<tr class="row-odd"><td>All users</td>
-<td>Home, SLK</td>
-</tr>
-</tbody>
-</table>
-<p>See <a class="reference internal" href="#how-do-i-obtain-access-to-the-mds"><span class="std std-ref">How do I obtain access to the PMHC MDS?</span></a> for more information on roles.</p>
+See <a class="reference internal" href="../../user-documentation/users.html#roles"><span class="std std-ref">Users Roles</span></a> for more information.</p>
 </div>
 <div class="section" id="how-do-i-get-started-using-the-mds">
 <h2>How do I get started using the MDS?<a class="headerlink" href="#how-do-i-get-started-using-the-mds" title="Permalink to this headline">¶</a></h2>
 <p>Please refer to <a class="reference internal" href="#how-do-i-obtain-access-to-the-mds"><span class="std std-ref">How do I obtain access to the PMHC MDS?</span></a> for information on
 getting an account on the MDS.</p>
-<p>The MDS website is available at <a class="reference external" href="https://pmhc-mds.com/">https://pmhc-mds.com/</a>. Here you will find
+<p>The PMHC website is available at <a class="reference external" href="https://pmhc-mds.com/">https://pmhc-mds.com/</a>. Here you will find
 documentation on using the MDS.</p>
 <p>The MDS is accessed on the web at the following address: <a class="reference external" href="https://pmhc-mds.net/">https://pmhc-mds.net/</a></p>
 </div>
@@ -306,6 +278,29 @@ documentation on using the MDS.</p>
 <p>No, each user should be issued with their own username and password. Please
 refer to <a class="reference internal" href="#how-do-i-obtain-access-to-the-mds"><span class="std std-ref">How do I obtain access to the PMHC MDS?</span></a> for information on how to
 get an account.</p>
+</div>
+<div class="section" id="can-i-add-an-existing-user-to-another-phn-or-provider-organisation">
+<h2>Can I add an existing user to another PHN or Provider Organisation?<a class="headerlink" href="#can-i-add-an-existing-user-to-another-phn-or-provider-organisation" title="Permalink to this headline">¶</a></h2>
+<p>Yes. By ensuring you enter the same email and mobile number when completing the
+steps in <a class="reference internal" href="../../user-documentation/users.html#adding-an-exsisting-user"><span class="std std-ref">Adding an existing user</span></a>, the system will automatically pick up if a user
+already exists in the PMHC MDS and will grant them access to the additional organisation.</p>
+</div>
+<div class="section" id="why-did-i-get-this-message-500-internal-server-error-add-inviting-user-failed-an-outstanding-pmhc-mds-invite-exists-when-inviting-a-user">
+<h2>Why did I get this message &#8216;500 Internal Server Error: add: Inviting user failed: An outstanding PMHC MDS invite exists&#8217; when inviting a user?<a class="headerlink" href="#why-did-i-get-this-message-500-internal-server-error-add-inviting-user-failed-an-outstanding-pmhc-mds-invite-exists-when-inviting-a-user" title="Permalink to this headline">¶</a></h2>
+<p>This user has previously been invited and has not yet completed the required
+steps for <a class="reference internal" href="../../user-documentation/users.html#accepting-invitation"><span class="std std-ref">Accepting an invitation to become a PMHC MDS User</span></a>. An invitation will be valid for 7 days
+and you can not resend an invitation within this time whilst a token is still valid.</p>
+</div>
+<div class="section" id="what-should-you-do-if-a-user-didn-t-receive-the-email-invitation">
+<h2>What should you do if a user didn&#8217;t receive the email invitation?<a class="headerlink" href="#what-should-you-do-if-a-user-didn-t-receive-the-email-invitation" title="Permalink to this headline">¶</a></h2>
+<p>Firstly confirm that you have their correct email address.  Ask the user to
+double check their junk mail folder and search for an email sent from
+<a class="reference external" href="mailto:noreply&#37;&#52;&#48;strategicdata&#46;com&#46;au">noreply<span>&#64;</span>strategicdata<span>&#46;</span>com<span>&#46;</span>au</a>. Otherwise, please contact the helpdesk on <a class="reference external" href="mailto:support&#37;&#52;&#48;pmhc-mds&#46;com">support<span>&#64;</span>pmhc-mds<span>&#46;</span>com</a>.</p>
+</div>
+<div class="section" id="what-should-you-do-if-a-user-deleted-the-email-invitation-or-the-sms-token">
+<h2>What should you do if a user deleted the email invitation or the SMS token?<a class="headerlink" href="#what-should-you-do-if-a-user-deleted-the-email-invitation-or-the-sms-token" title="Permalink to this headline">¶</a></h2>
+<p>If a user didn&#8217;t receive or deleted the email invitation or the SMS token, ask them
+to contact the helpdesk on <a class="reference external" href="mailto:support&#37;&#52;&#48;pmhc-mds&#46;com">support<span>&#64;</span>pmhc-mds<span>&#46;</span>com</a> as we can reissue it.</p>
 </div>
 <div class="section" id="can-gps-or-mental-health-providers-mhps-access-the-mds-to-upload-data-themselves">
 <h2>Can GPs or Mental Health Providers (MHPs) access the MDS to upload data themselves?<a class="headerlink" href="#can-gps-or-mental-health-providers-mhps-access-the-mds-to-upload-data-themselves" title="Permalink to this headline">¶</a></h2>
@@ -326,9 +321,11 @@ Network.</p>
 <p>In order to set up the test Primary Health Network account we need to follow a
 similar procedure to setting up a proper Primary Health Network account. To do
 that we require a <a class="reference internal" href="#letter-of-authority"><span class="std std-ref">Letter of Authority</span></a> as detailed in the Letter of
-Authority section above.</p>
-<p>Could you please provide a similar letter on your company&#8217;s letterhead
-containing the following details:</p>
+Authority section above, which must be signed by an authority at the Primary Health Network
+or Provider Organisation who holds a position that is higher than the person for
+whom the account is being created (i.e., the person&#8217;s manager or the CEO).</p>
+<p>Could you please provide a similar letter to <a class="reference internal" href="#letter-of-authority"><span class="std std-ref">Letter of Authority</span></a> on your
+company&#8217;s letterhead containing the following details:</p>
 <ol class="arabic simple">
 <li>The name of the person the account is for</li>
 <li>The email address of the person</li>

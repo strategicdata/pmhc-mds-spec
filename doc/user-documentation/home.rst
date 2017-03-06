@@ -27,6 +27,7 @@ minutes of inactivity.  You will see a pop up box that will provide a count
 down feature prior to automatically logging out the idle user.*
 
 logout-count-down
+
 .. figure:: screen-shots/logout-count-down.png
    :alt: PMHC MDS Auto Log Out
 

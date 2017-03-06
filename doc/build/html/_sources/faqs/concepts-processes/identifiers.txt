@@ -1,3 +1,5 @@
+.. _identifier_and_key_FAQs:
+
 Questions about Unique Identifiers and 'Keys'
 =============================================
 
@@ -18,8 +20,8 @@ Responses to specific questions are provided below.
 Client keys
 ^^^^^^^^^^^
 
-Does the Department have any recommendations for assignment of the Client Key? Can the Department provide any further information regarding the process for allocation of region wide unique client identifiers
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Does the Department have any recommendations for assignment of the Client Key? Can the Department provide any further information regarding the process for allocation of region wide unique client identifiers?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Client Keys must be unique and persistent for an individual across the entire PHN.
 It is the responsibility of the PHN to derive a format for these fields to be used
@@ -28,7 +30,7 @@ across their commissioned organisations.
 Some PHNs have or are already implementing centralised client identifier (‘key’)
 allocation in order to facilitate services between their contracted provider organisations.
 For those PHNs without this capability a master client index will be created during
-Stage 2 of the PMHC MDS implementation. The master client index will facilitate
+:ref:`Stage_Two` of the PMHC MDS implementation. The master client index will facilitate
 management of the client keys within the PHN independent of the provider organisation.
 
 In the interim it is recommended that at the very least PHNs ensure that Client Keys
@@ -46,7 +48,7 @@ record without reference to items on that record which might need to change.
 e.g. correcting a patient key or date. This also applies to the other record types
 such as client and service contact.
 
-Manual data entry via MDs interface
+Manual data entry via MDS interface
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Do we need to create ‘keys’ if we intend to enter data directly into the MDS?
@@ -63,7 +65,7 @@ change once it is assigned to an item.
 Practitioner identifiers
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-There is currently a jumble of systems for coding service providers, making it difficult to report against the ‘delivered by whom’ part of the complex multi-part question posed.  How will this be improved? 
+There is currently a jumble of systems for coding service providers, making it difficult to report against the ‘delivered by whom’ part of the complex multi-part question posed.  How will this be improved?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The new MDS specifications include separate unique keys for Provider Organisation

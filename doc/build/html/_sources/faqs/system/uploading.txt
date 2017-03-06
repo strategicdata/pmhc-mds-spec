@@ -20,3 +20,8 @@ Do I need to include all service contacts and measures for an episode in an uplo
 Yes, if an episode is included in an upload file, you need to include all service
 contacts and measures for that episode. Service contacts and measures that are
 not included will be removed from the PMHC MDS.
+
+How can I view my uploaded data
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Please visit :ref:`data_extraction` User Guide for more information.

@@ -32,8 +32,8 @@ You can upload data files through the upload tab, by following these steps:
    asked to select an organisation name.
 3. Select the name of the organisation whose data you are uploading from the drop down list.
 
-   .. figure:: screen-shots/upload.png
-      :alt: PMHC MDS Upload
+   .. figure:: screen-shots/upload-org-selected.png
+      :alt: PMHC MDS Organisation Selected
 
 4. Click the blue 'Select File' button.
 5. Navigate to where the upload file is saved on your system. Select the file
@@ -71,17 +71,9 @@ You can upload data files in Test Mode through the upload tab, by following thes
 2. If you are allowed to upload to more than one organisation you will be
    asked to select an organisation name.
 3. Select the name of the organisation whose data you are uploading from the drop down list.
-
-   .. figure:: screen-shots/upload.png
-      :alt: PMHC MDS Upload
-
 4. Click the blue 'Select File' button.
 5. Navigate to where the upload file is saved on your system. Select the file
    and click the grey 'Open' button.
-
-   .. figure:: screen-shots/file-selected.png
-      :alt: PMHC MDS File Selected
-
 6. Check to ensure you have selected the correct file by reviewing the file
    name now displayed below the 'Select File' button.
 

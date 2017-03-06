@@ -20,22 +20,12 @@ Access to the PMHC MDS is based around roles. Each role allows a user to perform
 specific tasks. A user can have more than one role. Each role is granted for a
 user against an organisation. An organisation can either be a Primary Health
 Network (PHN) or a Provider Organisation. If a user is granted a role for a
-PHN they will also have this role for any Provider Organisations of that PHN. The following table
-provides a summary of each of the roles that currently exist within the PMHC MDS:
-
-+----------------------------+----------------------------------------------------------------------------------------------------------------------------------+
-| **Role**                   | **Tasks allowed**                                                                                                                |
-+============================+==================================================================================================================================+
-| Organisation Management    | A user with the Organisation Management role for a PHN can manage Provider Organisations for that PHN                            |
-+----------------------------+----------------------------------------------------------------------------------------------------------------------------------+
-| User Management            | A user with the User Management role for an organisation can manage user accounts for that organisation or its suborganisations  |
-+----------------------------+----------------------------------------------------------------------------------------------------------------------------------+
-| Upload                     | A user with the Upload role can upload data to that organisation or its suborganisations                                         |
-+----------------------------+----------------------------------------------------------------------------------------------------------------------------------+
+PHN they will also have this role for any Provider Organisations of that PHN.
+See :ref:`roles` for a summary of each of the roles that currently exist within the PMHC MDS:
 
 User accounts can be created by a user at your PHN or Provider Organisation who
-has the User Management role. Please contact support@pmhc-mds.com to find out
-who has this access.
+has the User Management role. If unsure who this is, please contact support@pmhc-mds.com
+to find out who has this access.
 
 Alternatively, if you cannot contact any users who have the User Management role
 access can be gained by producing a :ref:`letter-of-authority`.
@@ -86,7 +76,7 @@ the change(s) and this must then be sent to Strategic Data via fax or scan/email
 .. _I-do-not-have-a-work-mobile:
 
 I do not have a work mobile. What do I do?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 A user can use their personal mobile. The mobile is only used by the PMHC MDS
 profile management system to deliver the verification code via SMS. This is used 
@@ -97,7 +87,8 @@ users within the PMHC MDS
 Can I invite different users by using the same mobile?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-It is not advised for multiple PMHC users to share using the same mobile number. Please refer to :ref:`I-do-not-have-a-work-mobile` for more information.
+It is not advised for multiple PMHC users to share using the same mobile number.
+Please refer to :ref:`I-do-not-have-a-work-mobile` and :ref:`password-recovery` for more information.
 
 .. _password-recovery:
 
@@ -194,13 +185,12 @@ Network.
 In order to set up the test Primary Health Network account we need to follow a
 similar procedure to setting up a proper Primary Health Network account. To do
 that we require a :ref:`letter-of-authority` as detailed in the Letter of
-Authority section above, which must be
-signed by an authority at the Primary Health Network or Provider Organisation
-who holds a position that is higher than the person for whom the account is
-being created (i.e., the person's manager or the CEO).
+Authority section above, which must be signed by an authority at the Primary Health Network
+or Provider Organisation who holds a position that is higher than the person for
+whom the account is being created (i.e., the person's manager or the CEO).
 
-Could you please provide a similar letter on your company's letterhead
-containing the following details:
+Could you please provide a similar letter to :ref:`letter-of-authority` on your
+company's letterhead containing the following details:
 
 #. The name of the person the account is for
 #. The email address of the person
