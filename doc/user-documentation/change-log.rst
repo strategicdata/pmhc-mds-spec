@@ -8,8 +8,6 @@ User Guide Change log
 
 * Added :ref:`adding_an_exsisting_user` documentation
 
-* Updated screenshots for :ref:`accepting_invitation` to include the Reporting role
-
 * Updated screenshots for :ref:`view_role` to show roles at an organisation
 
 * Added screenshots for :ref:`logging_in` to show the pop up count down feature
