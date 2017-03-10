@@ -11,7 +11,7 @@ What do I do if I have collected the data in Excel or Access?
 
 See the online MDS documentation regarding uploads.
 
-A detailed document for data uploads is available on our website, see
+A detailed User Guide for data uploads is available on our website, see
 :ref:`upload_specification`.
 
 Do I need to include all service contacts and measures for an episode in an upload?
@@ -20,6 +20,8 @@ Do I need to include all service contacts and measures for an episode in an uplo
 Yes, if an episode is included in an upload file, you need to include all service
 contacts and measures for that episode. Service contacts and measures that are
 not included will be removed from the PMHC MDS.
+
+.. _view_uploaded_data_faqs:
 
 How can I view my uploaded data
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

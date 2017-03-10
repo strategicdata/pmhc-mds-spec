@@ -1,3 +1,5 @@
+.. _additional_data_FAQs:
+
 Capturing additional data
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 

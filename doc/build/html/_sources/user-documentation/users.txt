@@ -202,6 +202,8 @@ will need to accept this invitation within 7 days, by following these steps:
 9. Navigate to https://pmhc-mds.net/ and follow the :ref:`logging_in`
    instructions.
 
+.. _view_role:
+
 View an existing users roles
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

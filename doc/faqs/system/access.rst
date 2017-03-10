@@ -32,8 +32,8 @@ access can be gained by producing a :ref:`letter-of-authority`.
 
 .. _letter-of-authority:
 
-Letter of Authority
-~~~~~~~~~~~~~~~~~~~
+What is required for the Letter of Authority?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The protocol for setting up a new account to access the MDS requires a written
 letter of authority. A **letter of authority** is a request made on your
@@ -64,7 +64,7 @@ it is advised that the new MDS user has a new username and password issued to
 protect the privacy and security of the organisation's data.
 
 This process will also apply where a user is requesting a password re-set.
-However, the auto :ref:`password-recovery` process available to you via the
+However, the auto :ref:`password_recovery_faqs` process available to you via the
 MDS login screen is the preferred method of password retrieval.
 
 If your email address or mobile number has changed, it is important that you update
@@ -73,7 +73,7 @@ contact the PMHC helpdesk so that your records can be updated. When contacting t
 PMHC helpdesk you will be asked to arrange for a :ref:`letter-of-authority` stating
 the change(s) and this must then be sent to Strategic Data via fax or scan/email as documented above.
 
-.. _I-do-not-have-a-work-mobile:
+.. _do-not-have-a-work-mobile_faqs:
 
 I do not have a work mobile. What do I do?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -82,18 +82,20 @@ A user can use their personal mobile. The mobile is only used by the PMHC MDS
 profile management system to deliver the verification code via SMS. This is used 
 to activate their profile, reset their password or if a password is forgotten or
 expires. Users' mobile phone numbers are not listed or able to be viewed by other
-users within the PMHC MDS
+users within the PMHC MDS. Please refer to :ref:`password_recovery_faqs` for more information.
+
+.. _using_the_same_mobile_faqs:
 
 Can I invite different users by using the same mobile?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 It is not advised for multiple PMHC users to share using the same mobile number.
-Please refer to :ref:`I-do-not-have-a-work-mobile` and :ref:`password-recovery` for more information.
+Please refer to :ref:`do-not-have-a-work-mobile_faqs` and :ref:`password_recovery_faqs` for more information.
 
-.. _password-recovery:
+.. _password_recovery_faqs:
 
-Password or username recovery
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+How can I recover my password or username?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The system offers an automated password/username recovery feature. The system
 will email the registered email address on your account and send an SMS to
@@ -110,6 +112,8 @@ I forgot my password. What do I do?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 See :ref:`forgotten_password`.
+
+.. _what_can_a_user_see_faqs:
 
 What can a user see in the MDS?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -135,12 +139,16 @@ No, each user should be issued with their own username and password. Please
 refer to :ref:`how-do-i-obtain-access-to-the-mds` for information on how to
 get an account.
 
+.. _adding_existing_user_faqs:
+
 Can I add an existing user to another PHN or Provider Organisation?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Yes. By ensuring you enter the same email and mobile number when completing the
 steps in :ref:`adding_an_exsisting_user`, the system will automatically pick up if a user
 already exists in the PMHC MDS and will grant them access to the additional organisation.
+
+.. _outstanding_invite_exists_faqs:
 
 Why did I get this message '500 Internal Server Error: add: Inviting user failed: An outstanding PMHC MDS invite exists' when inviting a user?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -149,18 +157,36 @@ This user has previously been invited and has not yet completed the required
 steps for :ref:`accepting_invitation`. An invitation will be valid for 7 days
 and you can not resend an invitation within this time whilst a token is still valid.
 
+.. _did_not_receive_email_invitation_faqs:
+
 What should you do if a user didn't receive the email invitation?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Firstly confirm that you have their correct email address.  Ask the user to
 double check their junk mail folder and search for an email sent from
-noreply@strategicdata.com.au. Otherwise, please contact the helpdesk on support@pmhc-mds.com.
+noreply@strategicdata.com.au. Otherwise, please contact the Helpdesk on support@pmhc-mds.com.
+
+If an incorrect email was entered, you will be able to re-invite the user.
+
+.. _did_not_receive_sms_invitation_faqs:
+
+What should you do if a user didn't receive the invitation SMS token?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Firstly confirm that you have their correct mobile phone number.  If an incorrect
+number was entered, please contact the Helpdesk on support@pmhc-mds.com as we can
+reissue it to the preferred number. When contacting please inform the Helpdesk of
+both the incorrect number, along with the correct number where possible.
+
+You will not be able to re-invite this user. Please see :ref:`outstanding_invite_exists_faqs` for more information why.
+
+.. _deleted_email_sms_invitation_faqs:
 
 What should you do if a user deleted the email invitation or the SMS token?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If a user didn't receive or deleted the email invitation or the SMS token, ask them
-to contact the helpdesk on support@pmhc-mds.com as we can reissue it.
+If a user deleted the email invitation or the SMS token, ask them
+to contact the Helpdesk on support@pmhc-mds.com as we can reissue it.
 
 Can GPs or Mental Health Providers (MHPs) access the MDS to upload data themselves?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -175,6 +201,8 @@ However, it is not possible to restrict their access only to their own clients'
 data. They will be able to modify data for clients across their entire provider
 organisation. Therefore, MHPs who access the MDS could potentially change data
 for a client that is not their own.
+
+.. _third-party_developer_access_faqs:
 
 I'm a third-party software developer developing software to assist with uploading data to the MDS. Can I have an account to test my data uploads?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -230,6 +230,3 @@ structured psychological intervention.
 
 
 ...
-
-Outcome Collection Occasion
-^^^^^^^^^^^^^^^^^^^^^^^^^^^

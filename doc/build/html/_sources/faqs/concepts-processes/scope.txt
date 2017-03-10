@@ -137,8 +137,12 @@ arrangements, and access to data by PHNs, the PHMC MDS can be expanded at a
 future stage to allow incorporation of headspace and Early Psychosis Youth Services
 should this be required.
 
+.. _Mental_Health_Nursing_services:
+
 Coverage of Mental Health Nursing services
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. _MHNIP_data_faqs:
 
 Are services previously delivered under MHNIP expected to collect the PHMC MDS?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

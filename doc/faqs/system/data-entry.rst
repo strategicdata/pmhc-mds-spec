@@ -3,6 +3,8 @@
 Entering data in the PMHC Minimum Data Set
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. _slk_as_client_key:
+
 Why can't we use the SLK as the client key?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -56,6 +58,8 @@ Can I go back and enter information if I don’t have it at the time?
 
 Yes, the MDS allows you to go back and enter information at a later date.
 
+.. _test_fictitious_data_faq:
+
 Can I enter fictitious data as a part of testing?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -63,10 +67,16 @@ The MDS is live and data uploads will be recorded. Real PMHC data can be triall
 by uploading in test mode, whereas fictitious data should be trialled with a
 'Test Organisation' on developers.pmhc-mds.net.  See `PMHC Developers Announcement <https://www.pmhc-mds.com/2017/02/17/Separate-PMHC-MDS-now-available-for-software-developers-to-test-upload-files/>`__.
 
+.. _enter_MHNIP_data_faq:
+
 Where do I enter MHNIPS data collection?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The Department of Health is expecting all commissioned Mental Health Nursing services data from July 2016 to be entered into the PMHC MDS.
+The Department of Health is expecting all commissioned Mental Health Nursing services
+data from July 2016 to be entered into the PMHC MDS. Please refer to the Department's
+response to :ref:`MHNIP_data_faqs`
+
+.. _record_additional_data_faq:
 
 The PHMC MDS specifications seems limited. Can we capture and record additional data?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -3,6 +3,19 @@
 User Guide Change log
 =====================
 
+10/3/2017
+---------
+
+* Added :ref:`adding_an_exsisting_user` documentation
+
+* Updated screenshots for :ref:`accepting_invitation` to include the Reporting role
+
+* Updated screenshots for :ref:`view_role` to show roles at an organisation
+
+* Added screenshots for :ref:`logging_in` to show the pop up count down feature
+
+* Added screenshots for :ref:`uploading_a_file` to include the organisation drop down
+
 24/2/2017
 ---------
 
