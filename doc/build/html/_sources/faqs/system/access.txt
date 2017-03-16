@@ -28,7 +28,8 @@ has the User Management role. If unsure who this is, please contact support@pmhc
 to find out who has this access.
 
 Alternatively, if you cannot contact any users who have the User Management role
-access can be gained by producing a :ref:`letter-of-authority`.
+access can be gained by producing a :ref:`letter of authority <letter-of-authority>`.
+
 
 .. _letter-of-authority:
 
