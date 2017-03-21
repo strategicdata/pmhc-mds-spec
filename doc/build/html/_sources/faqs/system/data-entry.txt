@@ -12,6 +12,8 @@ The SLK isn’t necessarily a unique key and therefore the Client Key is require
 to be a unique client identifier. The Client Key needs to be stable for each
 individual within the PHN. Please refer to :ref:`identifier_management`.
 
+.. _manage-client-key-faqs:
+
 What is the best way to manage the client key?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -23,6 +25,8 @@ Master Client Index during :ref:`Stage_Two` of development.
 
 Please refer to :ref:`identifier_management`.
 
+.. _best-practice-client-key-faqs:
+
 Can you suggest a best practice approach to managing client keys?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -32,6 +36,8 @@ Master Client Index is developed and released in :ref:`Stage_Two`. In the interi
 speaking with another PHN in your network to understand their approach to managing
 their client keys.
 
+.. _master-client-index-faqs:
+
 How will the Master Client Index work?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -40,10 +46,14 @@ to allow Provider Organisations to manage the :ref:`client_keys` across PHNs. :r
 development updates will be released by the Department of Health in the lead up to
 release. Regularly check the announcements on the home page (https://pmhc-mds.net/) to keep informed.
 
+.. _data-entry-frequency-faqs:
+
 How often should I enter data into the MDS?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Please refer to :ref:`reporting_timeliness`.
+
+.. _do-not-have-answer-faqs:
 
 What do I do If the GP / mental health provider has not given an answer to one or more questions in the minimum dataset?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -52,6 +62,8 @@ Provider Organisations should make every effort to ensure that the data entered
 into the MDS is as complete as possible. However, most data items specify
 a 'Missing' response. Where information is unavailable, please use this
 response item. The aim is to minimise missing data as much as possible.
+
+.. _updated-info-faqs:
 
 Can I go back and enter information if I don’t have it at the time?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -81,9 +93,4 @@ response to :ref:`MHNIP_data_faqs`
 The PHMC MDS specifications seems limited. Can we capture and record additional data?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The PMHC MDS is designed to monitor and evaluate regional service delivery against
-key mental health performance indicators. The PMHC MDS does not confine PHNs to
-the data specified. Rather, it sets the minimum and common ground for what data
-are to be collected and reported for mental health services commissioned by PHNs.
-It is anticipated that many PHNs will seek to collect an enhanced set of data to
-meet local needs, however this data will not be submitted to the MDS.
+See :ref: ``
