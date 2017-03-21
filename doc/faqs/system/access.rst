@@ -1,6 +1,8 @@
 Accessing the PMHC Minimum Data Set
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. _internet-browser:
+
 What internet browser should I use?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -28,10 +30,9 @@ has the User Management role. If unsure who this is, please contact support@pmhc
 to find out who has this access.
 
 Alternatively, if you cannot contact any users who have the User Management role
-access can be gained by producing a :ref:`letter of authority <letter-of-authority>`.
+access can be gained by producing a :ref:`letter of authority <letter-of-authority-faq>`.
 
-
-.. _letter-of-authority:
+.. _letter-of-authority-faq:
 
 What is required for the Letter of Authority?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -65,13 +66,18 @@ it is advised that the new MDS user has a new username and password issued to
 protect the privacy and security of the organisation's data.
 
 This process will also apply where a user is requesting a password re-set.
-However, the auto :ref:`password_recovery_faqs` process available to you via the
+However, the auto :ref:`password recovery <password_recovery_faqs>` process available to you via the
 MDS login screen is the preferred method of password retrieval.
+
+.. _update-details-faqs:
+
+How can I update my user details?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If your email address or mobile number has changed, it is important that you update
 your account. See :ref:`updating_your_details`. If you can't access your profile,
 contact the PMHC helpdesk so that your records can be updated. When contacting the
-PMHC helpdesk you will be asked to arrange for a :ref:`letter-of-authority` stating
+PMHC helpdesk you will be asked to arrange for a :ref:`letter of authority <letter-of-authority-faq>` stating
 the change(s) and this must then be sent to Strategic Data via fax or scan/email as documented above.
 
 .. _do-not-have-a-work-mobile_faqs:
@@ -106,8 +112,10 @@ for instructions on resetting your password.
 It is important to keep your email address and mobile phone current so that
 you can make use of this facility. If you can no longer access the PMHC MDS
 please email the PMHC MDS helpdesk at support@pmhc-mds.com to update your
-email address/mobile phone. Please note that a :ref:`letter-of-authority` will
+email address/mobile phone. Please note that a :ref:`letter of authority <letter-of-authority-faq>` will
 need to be produced in order for the PMHC MDS helpdesk to update your account.
+
+.. _forgotten-password-faqs:
 
 I forgot my password. What do I do?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -122,6 +130,8 @@ What can a user see in the MDS?
 What you see once you login will depend upon what roles you have been assigned.
 See :ref:`roles` for more information.
 
+.. _getting-started-faqs:
+
 How do I get started using the MDS?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -132,6 +142,8 @@ The PMHC website is available at https://pmhc-mds.com/. Here you will find
 documentation on using the MDS.
 
 The MDS is accessed on the web at the following address: https://pmhc-mds.net/
+
+.. _sharing-user-login-faqs:
 
 Can I pass on my username and password to my organisation's IT person or evaluator if they are entering data?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -151,17 +163,23 @@ already exists in the PMHC MDS and will grant them access to the additional orga
 
 .. _outstanding_invite_exists_faqs:
 
-Why did I get this message '500 Internal Server Error: add: Inviting user failed: An outstanding PMHC MDS invite exists' when inviting a user?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Why did I get this message '500 Internal Server Error: Inviting user failed: An outstanding PMHC MDS invite exists' when inviting a user?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This user has previously been invited and has not yet completed the required
 steps for :ref:`accepting_invitation`. An invitation will be valid for 7 days
 and you can not resend an invitation within this time whilst a token is still valid.
 
+Why are you trying to re-invite this user? For further assistance please view:
+
+- :ref:`did_not_receive_email_invitation_faqs`
+- :ref:`did_not_receive_sms_invitation_faqs`
+- :ref:`deleted_email_sms_invitation_faqs`
+
 .. _did_not_receive_email_invitation_faqs:
 
-What should you do if a user didn't receive the email invitation?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+What should I do if a user didn't receive the email invitation?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Firstly confirm that you have their correct email address.  Ask the user to
 double check their junk mail folder and search for an email sent from
@@ -171,23 +189,30 @@ If an incorrect email was entered, you will be able to re-invite the user.
 
 .. _did_not_receive_sms_invitation_faqs:
 
-What should you do if a user didn't receive the invitation SMS token?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+What should I do if a user didn't receive the invitation SMS token?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You will not be able to re-invite this user when entering the same email address as
+the previous invitation within 7 days. For more information please see :ref:`An outstanding PMHC MDS invite exists <outstanding_invite_exists_faqs>`
 
 Firstly confirm that you have their correct mobile phone number.  If an incorrect
 number was entered, please contact the Helpdesk on support@pmhc-mds.com as we can
 reissue it to the preferred number. When contacting please inform the Helpdesk of
 both the incorrect number, along with the correct number where possible.
 
-You will not be able to re-invite this user. Please see :ref:`outstanding_invite_exists_faqs` for more information why.
+Please see :ref:`deleted_email_sms_invitation_faqs`
 
 .. _deleted_email_sms_invitation_faqs:
 
-What should you do if a user deleted the email invitation or the SMS token?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+What should I do if a user deleted the email invitation or the SMS token?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If a user deleted the email invitation or the SMS token, ask them
-to contact the Helpdesk on support@pmhc-mds.com as we can reissue it.
+You will not be able to re-invite this user within 7 days, as an :ref:`outstanding PMHC MDS invite exists <outstanding_invite_exists_faqs>`.
+
+If a user deleted the email invitation or the SMS token please contact the Helpdesk
+on support@pmhc-mds.com as we can reissue it.
+
+.. _GP-provider-access-faqs:
 
 Can GPs or Mental Health Providers (MHPs) access the MDS to upload data themselves?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -213,12 +238,12 @@ Network.
 
 In order to set up the test Primary Health Network account we need to follow a
 similar procedure to setting up a proper Primary Health Network account. To do
-that we require a :ref:`letter-of-authority` as detailed in the Letter of
+that we require a :ref:`letter of authority <letter-of-authority-faq>` as detailed in the Letter of
 Authority section above, which must be signed by an authority at the Primary Health Network
 or Provider Organisation who holds a position that is higher than the person for
 whom the account is being created (i.e., the person's manager or the CEO).
 
-Could you please provide a similar letter to :ref:`letter-of-authority` on your
+Could you please provide a similar letter to :ref:`letter of authority <letter-of-authority-faq>` on your
 company's letterhead containing the following details:
 
 #. The name of the person the account is for
