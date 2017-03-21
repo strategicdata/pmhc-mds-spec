@@ -17,4 +17,15 @@ What are the options where the information collected does not fit into the avail
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Each data item has associated notes that provide guidance on which response to
-use. Please refer to the data item documentation at :ref:`record-formats`.
+use. Please refer to the data item documentation at :ref:`record-formats`. By clicking
+on the field name this will take you to the field definition which outlines the associated notes.
+
+Can we capture and record additional data?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The PMHC MDS is designed to monitor and evaluate regional service delivery against
+key mental health performance indicators. The PMHC MDS does not confine PHNs to
+the data specified. Rather, it sets the minimum and common ground for what data
+are to be collected and reported for mental health services commissioned by PHNs.
+It is anticipated that many PHNs will seek to collect an enhanced set of data to
+meet local needs, however this data will not be submitted to the MDS.

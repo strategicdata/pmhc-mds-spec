@@ -29,7 +29,7 @@ following these steps:
 1. Navigate to the Organisations tab.
 2. Click on the PHN name in blue text displayed within the table list.
 
-The PHN organisations details will be displayed, along with a suborganisations tab.
+The PHN organisations details will be displayed, along with a provider organisations tab.
 If you have the 'User Management' role will also include a 'Users' tab listing
 the users that belong to this PHN.
 
@@ -46,9 +46,9 @@ the provider organisations of a PHN. Follow these steps:
 
 1. Navigate to the Organisations tab.
 2. Click on the PHN name in blue text displayed within the table list.
-3. Click on the 'Suborganisations' tab.
+3. Click on the 'Provider Organisations' tab.
 4. Sort the listed provider organisations by simply clicking on a column header
-   of the suborganisations table. Alternately you can click on the arrow beside a
+   of the provider organisations table. Alternately you can click on the arrow beside a
    column header for more sort options, as follows:
 
    - Sort Ascending
@@ -77,11 +77,11 @@ following these steps:
 
 1. Navigate to the Organisations tab.
 2. Click on the PHN name in blue text displayed within the table list.
-3. Click on the 'Suborganisations' tab.
+3. Click on the 'Provider Organisations' tab.
 
 The PHN's provider organisations details will be displayed in a table.
 
-.. figure:: screen-shots/view-suborganisation.png
+.. figure:: screen-shots/view-provider-organisation.png
    :alt: PMHC MDS View Organisation
 
 .. _add_provider_organisation:
@@ -94,25 +94,25 @@ through the organisation tab by following these steps:
 
 1. Navigate to the Organisations tab.
 2. Click on the PHN name in blue text displayed within the table list.
-3. Click on the 'Suborganisations' tab.
-4. Click the 'Add Suborganisation' tab.
+3. Click on the 'Provider Organisations' tab.
+4. Click the 'Add Provider Organisation' tab.
 
-   .. figure:: screen-shots/add-suborganisation.png
-      :alt: PMHC MDS Add Suborganisation
+   .. figure:: screen-shots/add-provider-organisation.png
+      :alt: PMHC MDS Add Provider Organisation
 
-5. Complete all the mandatory fields marked with an * in the add suborganisation
-   organisation form.
+5. Complete all the mandatory fields marked with an * in the add Provider Organisation
+   form.
 6. Click the blue 'Save' button.
 
 You will receive confirmation that the organisation has been saved, and it will
-now be displaying in the PHN's suborganisations list.
+now be displaying in the PHN's Provider Organisations list.
 
 .. _edit_provider_organisation:
 
 Editing a Provider Organisation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If you have the 'Organisation Management' role you can edit a suborganisation's
+If you have the 'Organisation Management' role you can edit a Provider Organisation's
 details through the organisation tab, by following these steps:
 
 1. Navigate to the Organisations tab.
@@ -121,18 +121,18 @@ details through the organisation tab, by following these steps:
    .. figure:: screen-shots/view-organisation.png
       :alt: PMHC MDS View PHN
 
-3. Click on the 'Suborganisation' tab.
-4. Click on the Suborganisation name in blue text displayed within the
-   suborganisations table.
+3. Click on the 'Provider Organisation' tab.
+4. Click on the Provider Organisation name in blue text displayed within the
+   Provider Organisations table.
 
-   .. figure:: screen-shots/view-suborganisation.png
+   .. figure:: screen-shots/view-provider-organisation.png
       :alt: PMHC MDS View Provider Organisation
 
-3. If you have permission to edit the Suborganisation an'Edit Details' tab will
+3. If you have permission to edit the Provider Organisation an'Edit Details' tab will
    be displayed.
 4. Click the blue 'Edit' button.
 
-   .. figure:: screen-shots/edit-suborganisation.png
+   .. figure:: screen-shots/edit-provider-organisation.png
       :alt: PMHC MDS Edit Organisation
 
 4. Update the organisations details. Mandatory fields are marked with an *
@@ -185,7 +185,7 @@ Assigning Extra Roles to an Organisational User
 You can assign extra roles to an existing organisational user by following
 these steps:
 
-1. Navigate to the organisation or suborganisation at which you wish to add the role.
+1. Navigate to the Organisation or Provider Organisation at which you wish to add the role.
 2. Click on the Users tab
 3. Click the users name
-4. Follow from Step 3 at :ref:`edit_role`.
+4. Follow on from Step 3 at :ref:`edit_role`.
