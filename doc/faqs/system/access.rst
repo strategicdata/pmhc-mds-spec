@@ -75,21 +75,26 @@ How can I update my user details?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If your email address or mobile number has changed, it is important that you update
-your account. See :ref:`updating_your_details`. If you can't access your profile,
-contact the PMHC helpdesk so that your records can be updated. When contacting the
-PMHC helpdesk you will be asked to arrange for a :ref:`letter of authority <letter-of-authority-faq>` stating
-the change(s) and this must then be sent to Strategic Data via fax or scan/email as documented above.
+your account. See :ref:`updating_your_details`.
+
+If you can't access your profile, contact the PMHC Helpdesk so that your records
+can be updated. When contacting the PMHC Helpdesk you will be asked to arrange
+for a :ref:`letter of authority <letter-of-authority-faq>` stating the change(s)
+and this must then be sent to Strategic Data via fax or scan/email as documented above.
 
 .. _do-not-have-a-work-mobile_faqs:
 
 I do not have a work mobile. What do I do?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-A user can use their personal mobile. The mobile is only used by the PMHC MDS
-profile management system to deliver the verification code via SMS. This is used 
-to activate their profile, reset their password or if a password is forgotten or
-expires. Users' mobile phone numbers are not listed or able to be viewed by other
-users within the PMHC MDS. Please refer to :ref:`password_recovery_faqs` for more information.
+A user can use their personal mobile. Users' mobile phone numbers are not listed or able to be viewed by other
+users within the PMHC MDS.
+
+The mobile is only used by the PMHC MDS profile management system to deliver the
+verification code via SMS. This is used to activate their profile, reset their
+password or if a password is forgotten or expires. 
+
+Please refer to :ref:`password_recovery_faqs` for more information.
 
 .. _using_the_same_mobile_faqs:
 
@@ -97,6 +102,7 @@ Can I invite different users by using the same mobile?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 It is not advised for multiple PMHC users to share using the same mobile number.
+
 Please refer to :ref:`do-not-have-a-work-mobile_faqs` and :ref:`password_recovery_faqs` for more information.
 
 .. _password_recovery_faqs:
@@ -106,14 +112,15 @@ How can I recover my password or username?
 
 The system offers an automated password/username recovery feature. The system
 will email the registered email address on your account and send an SMS to
-the registered mobile phone on your account. See :ref:`forgotten_password`
-for instructions on resetting your password.
+the registered mobile phone on your account.
+
+See :ref:`forgotten_password` for instructions on resetting your password.
 
 It is important to keep your email address and mobile phone current so that
 you can make use of this facility. If you can no longer access the PMHC MDS
-please email the PMHC MDS helpdesk at support@pmhc-mds.com to update your
-email address/mobile phone. Please note that a :ref:`letter of authority <letter-of-authority-faq>` will
-need to be produced in order for the PMHC MDS helpdesk to update your account.
+please email the PMHC MDS Helpdesk at support@pmhc-mds.com to update your
+email address/mobile phone. Please note that a :ref:`letter of authority <letter-of-authority-faq>`
+will need to be produced in order for the PMHC MDS Helpdesk to update your account.
 
 .. _forgotten-password-faqs:
 
@@ -128,7 +135,8 @@ What can a user see in the MDS?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 What you see once you login will depend upon what roles you have been assigned.
-See :ref:`roles` for more information.
+
+Please refer to :ref:`roles` for more information.
 
 .. _getting-started-faqs:
 
@@ -163,14 +171,14 @@ already exists in the PMHC MDS and will grant them access to the additional orga
 
 .. _outstanding_invite_exists_faqs:
 
-Why did I get this message '500 Internal Server Error: Inviting user failed: An outstanding PMHC MDS invite exists' when inviting a user?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Why did I get this message when inviting a user - '500 Internal Server Error: Inviting user failed: An outstanding PMHC MDS invite exists'?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This user has previously been invited and has not yet completed the required
 steps for :ref:`accepting_invitation`. An invitation will be valid for 7 days
 and you can not resend an invitation within this time whilst a token is still valid.
 
-Why are you trying to re-invite this user? For further assistance please view:
+Why are you trying to re-invite this user? For further assistance please refer to:
 
 - :ref:`did_not_receive_email_invitation_faqs`
 - :ref:`did_not_receive_sms_invitation_faqs`
@@ -185,7 +193,7 @@ Firstly confirm that you have their correct email address.  Ask the user to
 double check their junk mail folder and search for an email sent from
 noreply@strategicdata.com.au. Otherwise, please contact the Helpdesk on support@pmhc-mds.com.
 
-If an incorrect email was entered, you will be able to re-invite the user.
+If an incorrect email was entered, you will be able to re-invite the user using the correct email.
 
 .. _did_not_receive_sms_invitation_faqs:
 
@@ -238,13 +246,13 @@ Network.
 
 In order to set up the test Primary Health Network account we need to follow a
 similar procedure to setting up a proper Primary Health Network account. To do
-that we require a :ref:`letter of authority <letter-of-authority-faq>` as detailed in the Letter of
-Authority section above, which must be signed by an authority at the Primary Health Network
-or Provider Organisation who holds a position that is higher than the person for
-whom the account is being created (i.e., the person's manager or the CEO).
+that we require a :ref:`letter of authority <letter-of-authority-faq>` as detailed
+in :ref:`letter-of-authority-faq`.
 
-Could you please provide a similar letter to :ref:`letter of authority <letter-of-authority-faq>` on your
-company's letterhead containing the following details:
+Could you please provide a similar :ref:`letter of authority <letter-of-authority-faq>`
+on your company's letterhead which must be signed by an authority at your company
+who holds a position that is higher than the person for whom the account is being
+created (i.e., the person's manager or the CEO). It must also contain the following details:
 
 #. The name of the person the account is for
 #. The email address of the person
