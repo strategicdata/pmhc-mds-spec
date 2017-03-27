@@ -4,7 +4,7 @@ Home
 To use the PMHC MDS navigate to https://pmhc-mds.net/
 
 The first page you will see is the Home page. The home page shows you the
-most recent announcements made via the :ref:`mailing-list`.
+most recent announcements made via the :ref:`mailing-list_FAQs`.
 
 .. figure:: screen-shots/home-page.png
    :alt: PMHC MDS Home Page
