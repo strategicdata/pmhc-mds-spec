@@ -6,4 +6,6 @@ MDS to confirm its accuracy and completion. It is advisable that this review
 is undertaken regularly to ensure data integrity and avoid widespread errors.
 
 Alternatively, for greater precision and to access your data in full, you can
-download your data. Please see :ref:`data_extraction` for more information.
+download your data.
+
+Refer to :ref:`data_extraction`.
