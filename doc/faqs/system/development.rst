@@ -24,8 +24,8 @@ Regularly check the announcements on the `PMHC MDS home page <https://pmhc-mds.n
 
 .. _stage_two_features_faq:
 
-What feature will be included in Stage Two development?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+What features will be included in Stage Two development?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
  Stage Two will feature:
 
