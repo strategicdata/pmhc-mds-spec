@@ -62,7 +62,7 @@ assigned. The table below lists the tabs that will be shown for each role:
 | All users               | SLK                       |
 +-------------------------+---------------------------+
 
-.. _finding_a_user:
+.. _finding-a-user:
 
 Finding a user
 ^^^^^^^^^^^^^^
@@ -88,7 +88,7 @@ To filter the listed users:
 3. To remove the filter, click the grey cross within the edit box beside any
    entered text.
 
-.. _view_users_details:
+.. _view-users-details:
 
 Viewing a User's details
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -104,7 +104,7 @@ You can view a user's details through the user tab, by following these steps:
 A page will display showing the user's details and the :ref:`roles` they have at
 particular organisations.
 
-.. _adding_a_user:
+.. _adding-a-user:
 
 Adding a user
 ^^^^^^^^^^^^^
@@ -141,12 +141,12 @@ PMHC MDS.  You can invite a new user through the Users tab, by following these s
    .. figure:: screen-shots/invite-accepted-email.png
       :alt: PMHC MDS Invite Accepted
 
-.. _adding_an_exsisting_user:
+.. _adding-an-exsisting-user:
 
 Adding an existing user
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Note: An existing user must have completed the required steps for :ref:`accepting_invitation`
+Note: An existing user must have completed the required steps for :ref:`accepting-invitation`
 from their initial PMHC MDS invitation before they can be added again.
 
 Before adding an existing user please ensure you have the same email and mobile
@@ -167,7 +167,7 @@ You can invite an existing user through the Users tab, by following these steps:
 5. You will receive confirmation that the roles have been added to the existing user.
    The user will receive notification that they have been granted these additional roles as the relevant organisation.
 
-.. _accepting_invitation:
+.. _accepting-invitation:
 
 Accepting an invitation to become a PMHC MDS User
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -200,10 +200,10 @@ will need to accept this invitation within 7 days, by following these steps:
    .. figure:: screen-shots/account-activated.png
       :alt: PMHC MDS Account Activated
 
-9. Navigate to https://pmhc-mds.net/ and follow the :ref:`logging_in`
+9. Navigate to https://pmhc-mds.net/ and follow the :ref:`logging-in`
    instructions.
 
-.. _view_role:
+.. _view-role:
 
 View an existing users roles
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -221,7 +221,7 @@ You can edit and assign extra roles to an existing user by following these steps
    .. figure:: screen-shots/user-roles-at-organisation.png
       :alt: PMHC MDS Edit Role
 
-.. _edit_role:
+.. _edit-role:
 
 Editing an existing users roles
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

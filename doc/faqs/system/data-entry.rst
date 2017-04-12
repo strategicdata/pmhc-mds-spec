@@ -1,9 +1,9 @@
-.. _data_entry_FAQs:
+.. _data-entry-FAQs:
 
 Entering data in the PMHC Minimum Data Set
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. _slk_as_client_key_faq:
+.. _slk-as-client-key-faq:
 
 Why can't we use the SLK as the client key?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -14,7 +14,7 @@ individual within the PHN.
 
 Refer to data specifications for :ref:`identifier_management`.
 
-.. _manage_client_key_faq:
+.. _manage-client-key-faq:
 
 What is the best way to manage the client key?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -23,45 +23,45 @@ The Client Key needs to be stable for each individual within the PHN.
 
 Initially the PHN will need to play a role in coordinating assignment and management
 of these keys for Provider Organisations, prior to the PMHC MDS implementation a
-Master Client Index during :ref:`Stage_Two` of development.
+Master Client Index during :ref:`Stage-Two` of development.
 
 See data specifications for :ref:`identifier_management`.
 
-Refer to the Department's response to :ref:`identifier_and_key_FAQs`.
+Refer to the Department's response to :ref:`identifier-and-key-FAQs`.
 
-.. _best_practice_client_key_faq:
+.. _best-practice-client-key-faq:
 
 Can you suggest a best practice approach to managing client keys?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 We understand that PHNs approach :ref:`identifier_management` in various different ways
 to best suit their practice. PHNs will continue to manage client keys until the
-Master Client Index is developed and released in :ref:`Stage_Two`. In the interim, we suggest
+Master Client Index is developed and released in :ref:`Stage-Two`. In the interim, we suggest
 speaking with another PHN in your network to understand their approach to managing
 their client keys.
 
-Refer to the Department's response to :ref:`identifier_and_key_FAQs`.
+Refer to the Department's response to :ref:`identifier-and-key-FAQs`.
 
-.. _master_client_index_faq:
+.. _master-client-index-faq:
 
 How will the Master Client Index work?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-During :ref:`Stage_Two` of the PMHC MDS implementation a Master Client Index will be created
-to allow Provider Organisations to manage the :ref:`client_keys` across PHNs. :ref:`Stage_Two`
+During :ref:`Stage-Two` of the PMHC MDS implementation a Master Client Index will be created
+to allow Provider Organisations to manage the :ref:`client_keys` across PHNs. :ref:`Stage-Two`
 development updates will be released by the Department of Health in the lead up to
 release.
 
 Regularly check the announcements on the `PMHC MDS home page <https://pmhc-mds.net/#/>`_ to keep informed.
 
-.. _data_entry_frequency_faq:
+.. _data-entry-frequency-faq:
 
 How often should I enter data into the MDS?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Refer to :ref:`reporting_timeliness`.
 
-.. _include_all_contact_data_faq:
+.. _include-all-contact-data-faq:
 
 Do I need to include all service contacts and measures for an episode in an file?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -70,7 +70,7 @@ Yes, if an episode is included in an upload file, you need to include **ALL** se
 contacts and measures for that episode. Service contacts and measures that are
 not included will be removed from the PMHC MDS.
 
-.. _do_not_have_answer_faq:
+.. _do-not-have-answer-faq:
 
 What do I do if the GP / mental health provider has not given an answer to one or more questions in the minimum dataset?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -84,7 +84,7 @@ Refer to :ref:`record-formats` for more information. By clicking on the field na
 this will take you to the field definition which outlines the associated notes that
 provide guidance on which response to use.
 
-.. _data_does_not_fit_faq:
+.. _data-does-not-fit-faq:
 
 What are the options where the information collected does not fit into the available fields?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -95,7 +95,7 @@ field definition which outlines the associated notes.
 
 Refer to :ref:`record-formats`.
 
-.. _updated_info_faq:
+.. _updated-info-faq:
 
 Can I go back and enter information if I don’t have it at the time?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -104,7 +104,7 @@ Yes, the MDS allows you to go back and enter information at a later date.
 
 Refer to upload specification :ref:`file-format`.
 
-.. _test_fictitious_data_faq:
+.. _test-fictitious-data-faq:
 
 Can I enter fictitious data as a part of testing?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -115,7 +115,7 @@ by uploading in test mode, whereas fictitious data should be trialled with a
 
 See `PMHC Developers Announcement <https://www.pmhc-mds.com/2017/02/17/Separate-PMHC-MDS-now-available-for-software-developers-to-test-upload-files/>`__.
 
-.. _enter_MHNIP_data_faq:
+.. _enter-MHNIP-data-faq:
 
 Where do I enter MHNIPS data collection?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -123,13 +123,13 @@ Where do I enter MHNIPS data collection?
 The Department of Health is expecting all commissioned Mental Health Nursing services
 data from July 2016 to be entered into the PMHC MDS.
 
-Refer to the Department's response to :ref:`MHNIP_data_faq`
+Refer to the Department's response to :ref:`MHNIP-data-faq`
 
-.. _capture_additional_data_faq:
+.. _capture-additional-data-faq:
 
 The PHMC MDS specifications seems limited. Can we capture and record additional data?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 PHNs can choose to capture and record additional data outside the PMHC MDS.
 
-See :ref:`record_additional_data_faq`
+See :ref:`record-additional-data-faq`

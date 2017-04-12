@@ -1,11 +1,11 @@
-.. _mailing-list_FAQs:
+.. _mailing-list-FAQs:
 
 .. _mailing-list:
 
 PMHC mailing list
 ^^^^^^^^^^^^^^^^^
 
-.. _news_subscribe_faq:
+.. _news-subscribe-faq:
 
 How can I be advised of any changes to the MDS?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -17,24 +17,24 @@ be informed of updates.
 
 If you would like to be added to the mailing list please email support@pmhc-mds.com.
 
-.. _user_not_receieving_email_updates_faq:
+.. _user-not-receieving-email-updates-faq:
 
 I have an MDS account but don't receive update emails.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Please check that we have your correct email address. Refer to :ref:`updating_your_details`
+Please check that we have your correct email address. Refer to :ref:`updating-your-details`
 
 Mailing list emails will be sent from support@pmhc-mds.com. Please make sure
 this is not being caught in any spam filters.
 
-.. _unsubscribe_faq:
+.. _unsubscribe-faq:
 
 I no longer wish to receive PMHC update emails. How can I be removed from the list?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Please email support@pmhc-mds.com and ask to be removed from the mailing list.
 
-.. _third-party_developers_subscribe_faq:
+.. _third-party-developers-subscribe-faq:
 
 I am a third-party software developer developing code to assist with uploading data to the MDS. Can I be informed of updates to the MDS?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -8,4 +8,4 @@ is undertaken regularly to ensure data integrity and avoid widespread errors.
 Alternatively, for greater precision and to access your data in full, you can
 download your data.
 
-Refer to :ref:`data_extraction`.
+Refer to :ref:`data-extraction`.
