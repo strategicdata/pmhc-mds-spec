@@ -6,40 +6,40 @@ Frequently Asked Questions Change log
 10/3/2017
 ---------
 
-Concepts Processes - Outcome Measures
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Concepts Processes - Outcome Measures FAQs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* Refined the answer to :ref:`MHNIP_outcome_measures_faqs`
+* Refined the answer to :ref:`MHNIP_outcome_measures_faq`
 
-Concepts Processes - Scope
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+Concepts Processes - Scope FAQs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* Added the question :ref:`MHNIP_data_faqs`
+* Added the question :ref:`MHNIP_data_faq`
 
-System - Access
-~~~~~~~~~~~~~~~
+System - Access FAQs
+~~~~~~~~~~~~~~~~~~~~
 
-* Added the question :ref:`do-not-have-a-work-mobile_faqs`
+* Added the question :ref:`do_not_have_a_work_mobile_faq`
 
-* Added the question :ref:`MHNIP_data_faqs`
+* Added the question :ref:`MHNIP_data_faq`
 
-* Added the question :ref:`using_the_same_mobile_faqs`
+* Added the question :ref:`using_the_same_mobile_faq`
 
-* Refined the answer to :ref:`what_can_a_user_see_faqs`
+* Refined the answer to :ref:`what_can_a_user_see_faq`
 
-* Added the question :ref:`did_not_receive_email_invitation_faqs`
+* Added the question :ref:`did_not_receive_email_invitation_faq`
 
-* Added the question :ref:`adding_existing_user_faqs`
+* Added the question :ref:`adding_existing_user_faq`
 
-* Added the question :ref:`outstanding_invite_exists_faqs`
+* Added the question :ref:`outstanding_invite_exists_faq`
 
-* Added the question :ref:`did_not_receive_email_invitation_faqs`
+* Added the question :ref:`did_not_receive_email_invitation_faq`
 
-* Added the question :ref:`did_not_receive_sms_invitation_faqs`
+* Added the question :ref:`did_not_receive_sms_invitation_faq`
 
-* Added the question :ref:`deleted_email_sms_invitation_faqs`
+* Added the question :ref:`deleted_email_sms_invitation_faq`
 
-* Refined the question :ref:`third-party_developer_access_faqs`
+* Refined the question :ref:`third-party_developer_access_faq`
 
 System - Data Entry FAQs
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -50,7 +50,7 @@ System - Data Entry FAQs
 
 * Added the question :ref:`record_additional_data_faq`
 
-* Added the question :ref:`slk_as_client_key`
+* Added the question :ref:`slk_as_client_key_faq`
 
 * Removed the question
 
@@ -64,7 +64,7 @@ System - Development FAQs
 System - Uploading FAQs
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-* Added the question :ref:`view_uploaded_data_faqs`
+* Added the question :ref:`view_uploaded_data_faq`
 
 8/2/2017
 --------

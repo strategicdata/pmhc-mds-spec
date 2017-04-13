@@ -20,13 +20,17 @@ the specifications of each feature will determine the development timeline.
 
 Once more information is available, the Department will circulate more specific timelines.
 
+Regularly check the announcements on the `PMHC MDS home page <https://pmhc-mds.net/#/>`_ to keep informed.
+
 .. _stage_two_features_faq:
 
-What feature will be included in Stage Two development?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+What features will be included in Stage Two development?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
  Stage Two will feature:
 
 * **Data Entry Interface** - see Questions about :ref:`data_entry_FAQs`
 * **Comprehensive Reports** - see :ref:`reports_FAQs`
 * **Master Client Index** - see :ref:`identifier_and_key_FAQs`
+
+Regularly check the announcements on the `PMHC MDS home page <https://pmhc-mds.net/#/>`_ to keep informed.
