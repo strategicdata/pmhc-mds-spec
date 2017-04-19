@@ -1167,6 +1167,10 @@ An indication that the client has consented to their anonymised data being provi
       mental health services. The client's data will be excluded from reports and
       extracts accessible by the Department of Health.
   
+  All data can be uploaded, regardless of consent flag.
+  
+  All data will be available to PHNs to extract for their own internal data evaluation purposes.
+  
 
 ----------
 
@@ -2605,6 +2609,11 @@ In the past four weeks, how many days were you totally unable to work, study or 
 
 :Domain:
   0 - 28, 99 = missing
+:Notes:
+  When the client's responses to Q1-10 are all recorded as 1 'None of the time', 
+  they are not required to answer questions 11-14. Where this question has not been
+  answered a response of 'Not stated / missing' should be selected.
+  
 
 ----------
 
@@ -2623,6 +2632,11 @@ Aside from those days, in the past four weeks, how many days were you able to wo
 
 :Domain:
   0 - 28, 99 = missing
+:Notes:
+  When the client's responses to Q1-10 are all recorded as 1 'None of the time',
+  they are not required to answer questions 11-14. Where this question has not been
+  answered a response of 'Not stated / missing' should be selected.
+  
 
 ----------
 
@@ -2641,6 +2655,11 @@ In the past four weeks, how many times have you seen a doctor or any other healt
 
 :Domain:
   0 - 89, 99 = missing
+:Notes:
+  When the client's responses to Q1-10 are all recorded as 1 'None of the time',
+  they are not required to answer questions 11-14. Where this question has not been
+  answered a response of 'Not stated / missing' should be selected.
+  
 
 ----------
 
@@ -2664,6 +2683,11 @@ In the past four weeks, how often have physical health problems been the main ca
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+:Notes:
+  When the client's responses to Q1-10 are all recorded as 1 'None of the time',
+  they are not required to answer questions 11-14. Where this question has not been
+  answered a response of 'Not stated / missing' should be selected.
+  
 
 ----------
 
