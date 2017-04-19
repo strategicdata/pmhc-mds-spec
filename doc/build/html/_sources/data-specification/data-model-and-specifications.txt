@@ -257,7 +257,8 @@ the K10 total score as well as item scores for the 4 extra items in the K10+.
    :header-rows: 1
 
 When the client’s responses to Q1-10 are all recorded as 1 'None of the time',
-Q11-14 will require an answer of 'not applicable' to be entered.
+they are not required to answer questions 11-14. Where a question has not been
+answered please select a response of 'Not stated / missing'. 
 
 .. _k5-data-elements:
 
@@ -303,8 +304,8 @@ translated versions. The table below indicates the items that are included in
 each version, the rating periods used and the broad content covered by each
 item.
 
-+-------+-----------------------------+--------------------------------+--------------------------------+
-|       | Informant                   | Parent                         | Young Person                   |
++-------+-----------------------------+-------------------------------------------+---------------------+
+|       | Informant                   | Parent                                    | Young Person        |
 +       +-----------------------------+---------------------+----------+----------+---------------------+
 |       | Age range                   | 4-10                | 11-17               | 11 - 17             |
 +       +-----------------------------+----------+----------+----------+----------+----------+----------+

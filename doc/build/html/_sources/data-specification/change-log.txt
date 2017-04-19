@@ -3,6 +3,21 @@
 Data Specification Change log
 =============================
 
+XX/4/2017 - Version 1.0.5
+-------------------------
+
+* Data model and specifications
+
+  * Record formats
+
+    * Episode
+
+          * Added more description to :ref:`dfn-client_consent`
+
+    * Outcome Collection Occasion
+
+      * :ref:`k10p-data-elements` updated reference to Q11-14 'missing' replacing 'not applicable'.
+
 8/2/2017 - Version 1.0.4
 ------------------------
 
