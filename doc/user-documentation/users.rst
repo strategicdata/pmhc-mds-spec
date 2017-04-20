@@ -165,7 +165,9 @@ You can invite an existing user through the Users tab, by following these steps:
 
 4. Click the blue 'Invite' button.
 5. You will receive confirmation that the roles have been added to the existing user.
-   The user will receive notification that they have been granted these additional roles as the relevant organisation.
+6. You will need to notify the user that they have been added to the organisation and confirm their authorised roles. The system will not automatically do this.
+
+.. 6. The user will receive notification that they have been granted these additional roles at the relevant organisation.
 
 .. _accepting-invitation:
 
@@ -248,6 +250,8 @@ You can edit and assign extra roles to an existing user by following these steps
    a User Management role at the Provider Organisation level.*
 
 7. Click the blue 'Save' button, or click the 'cancel' to edit without saving changes.
+8. You will receive confirmation that the users role has been saved and they will
+   now be displaying in the Users Roles list.
+9. You will need to notify the user of these role changes. The system will not automatically do this.
 
-You will receive confirmation that the users role has been saved and they will
-now be displaying in the Users Roles list.
+.. 9. The user will receive notification of these roles changes.
