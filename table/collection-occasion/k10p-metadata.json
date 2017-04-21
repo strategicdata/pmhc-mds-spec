@@ -264,7 +264,7 @@
       "base": "string"
       }
   }],
-  "primaryKey": "collection_occasion_key",
+  "primaryKey": [ "organisation_path", "collection_occasion_key" ],
   "foreignKeys": [{
     "columnReference": "reason_for_collection",
     "reference": {
