@@ -1,29 +1,33 @@
 Uploading data
 ^^^^^^^^^^^^^^
 
+.. _data_template_faq:
+
 How do I obtain a template to upload my data to the MDS?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Upload templates are available from :ref:`upload_specification`.
 
+
 What do I do if I have collected the data in Excel or Access?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-See the online MDS documentation regarding uploads.
+Visit the online MDS documentation regarding uploads were a detailed User Guide for data uploads is available.
 
-A detailed User Guide for data uploads is available on our website, see
-:ref:`upload_specification`.
+See :ref:`upload_specification`.
 
-Do I need to include all service contacts and measures for an episode in an upload?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. _upload_all_contact_data_faq:
 
-Yes, if an episode is included in an upload file, you need to include all service
-contacts and measures for that episode. Service contacts and measures that are
-not included will be removed from the PMHC MDS.
+Should an upload file include all service contacts and measures for an episode every time?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. _view_uploaded_data_faqs:
+Yes.
+
+Refer to :ref:`include_all_contact_data_faq`
+
+.. _view_uploaded_data_faq:
 
 How can I view my uploaded data
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Please visit :ref:`data_extraction` User Guide for more information.
+See :ref:`data_extraction` User Guide for more information.

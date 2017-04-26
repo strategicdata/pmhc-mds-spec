@@ -142,7 +142,7 @@ should this be required.
 Coverage of Mental Health Nursing services
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. _MHNIP_data_faqs:
+.. _MHNIP_data_faq:
 
 Are services previously delivered under MHNIP expected to collect the PHMC MDS?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

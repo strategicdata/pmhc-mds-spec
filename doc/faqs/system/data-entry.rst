@@ -3,14 +3,18 @@
 Entering data in the PMHC Minimum Data Set
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. _slk_as_client_key:
+.. _slk_as_client_key_faq:
 
 Why can't we use the SLK as the client key?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The SLK isn’t necessarily a unique key and therefore the Client Key is required
 to be a unique client identifier. The Client Key needs to be stable for each
-individual within the PHN. Please refer to :ref:`identifier_management`.
+individual within the PHN.
+
+Refer to data specifications for :ref:`identifier_management`.
+
+.. _manage_client_key_faq:
 
 What is the best way to manage the client key?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -21,7 +25,11 @@ Initially the PHN will need to play a role in coordinating assignment and manage
 of these keys for Provider Organisations, prior to the PMHC MDS implementation a
 Master Client Index during :ref:`Stage_Two` of development.
 
-Please refer to :ref:`identifier_management`.
+See data specifications for :ref:`identifier_management`.
+
+Refer to the Department's response to :ref:`identifier_and_key_FAQs`.
+
+.. _best_practice_client_key_faq:
 
 Can you suggest a best practice approach to managing client keys?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -32,20 +40,39 @@ Master Client Index is developed and released in :ref:`Stage_Two`. In the interi
 speaking with another PHN in your network to understand their approach to managing
 their client keys.
 
+Refer to the Department's response to :ref:`identifier_and_key_FAQs`.
+
+.. _master_client_index_faq:
+
 How will the Master Client Index work?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 During :ref:`Stage_Two` of the PMHC MDS implementation a Master Client Index will be created
 to allow Provider Organisations to manage the :ref:`client_keys` across PHNs. :ref:`Stage_Two`
 development updates will be released by the Department of Health in the lead up to
-release. Regularly check the announcements on the home page (https://pmhc-mds.net/) to keep informed.
+release.
+
+Regularly check the announcements on the `PMHC MDS home page <https://pmhc-mds.net/#/>`_ to keep informed.
+
+.. _data_entry_frequency_faq:
 
 How often should I enter data into the MDS?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Please refer to :ref:`reporting_timeliness`.
+Refer to :ref:`reporting_timeliness`.
 
-What do I do If the GP / mental health provider has not given an answer to one or more questions in the minimum dataset?
+.. _include_all_contact_data_faq:
+
+Do I need to include all service contacts and measures for an episode in an file?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Yes, if an episode is included in an upload file, you need to include **ALL** service
+contacts and measures for that episode. Service contacts and measures that are
+not included will be removed from the PMHC MDS.
+
+.. _do_not_have_answer_faq:
+
+What do I do if the GP / mental health provider has not given an answer to one or more questions in the minimum dataset?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Provider Organisations should make every effort to ensure that the data entered
@@ -53,10 +80,29 @@ into the MDS is as complete as possible. However, most data items specify
 a 'Missing' response. Where information is unavailable, please use this
 response item. The aim is to minimise missing data as much as possible.
 
+Refer to :ref:`record-formats` for more information. By clicking on the field name
+this will take you to the field definition which outlines the associated notes that
+provide guidance on which response to use.
+
+.. _data_does_not_fit_faq:
+
+What are the options where the information collected does not fit into the available fields?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Each data item has associated notes that provide guidance on which response to
+use. By clicking on the :ref:`record-formats` field name this will take you to the
+field definition which outlines the associated notes.
+
+Refer to :ref:`record-formats`.
+
+.. _updated_info_faq:
+
 Can I go back and enter information if I don’t have it at the time?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Yes, the MDS allows you to go back and enter information at a later date.
+
+Refer to upload specification :ref:`file-format`.
 
 .. _test_fictitious_data_faq:
 
@@ -65,7 +111,9 @@ Can I enter fictitious data as a part of testing?
 
 The MDS is live and data uploads will be recorded. Real PMHC data can be trialled
 by uploading in test mode, whereas fictitious data should be trialled with a
-'Test Organisation' on developers.pmhc-mds.net.  See `PMHC Developers Announcement <https://www.pmhc-mds.com/2017/02/17/Separate-PMHC-MDS-now-available-for-software-developers-to-test-upload-files/>`__.
+'Test Organisation' on developers.pmhc-mds.net.
+
+See `PMHC Developers Announcement <https://www.pmhc-mds.com/2017/02/17/Separate-PMHC-MDS-now-available-for-software-developers-to-test-upload-files/>`__.
 
 .. _enter_MHNIP_data_faq:
 
@@ -73,17 +121,15 @@ Where do I enter MHNIPS data collection?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Department of Health is expecting all commissioned Mental Health Nursing services
-data from July 2016 to be entered into the PMHC MDS. Please refer to the Department's
-response to :ref:`MHNIP_data_faqs`
+data from July 2016 to be entered into the PMHC MDS.
 
-.. _record_additional_data_faq:
+Refer to the Department's response to :ref:`MHNIP_data_faq`
+
+.. _capture_additional_data_faq:
 
 The PHMC MDS specifications seems limited. Can we capture and record additional data?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The PMHC MDS is designed to monitor and evaluate regional service delivery against
-key mental health performance indicators. The PMHC MDS does not confine PHNs to
-the data specified. Rather, it sets the minimum and common ground for what data
-are to be collected and reported for mental health services commissioned by PHNs.
-It is anticipated that many PHNs will seek to collect an enhanced set of data to
-meet local needs, however this data will not be submitted to the MDS.
+PHNs can choose to capture and record additional data outside the PMHC MDS.
+
+See :ref:`record_additional_data_faq`

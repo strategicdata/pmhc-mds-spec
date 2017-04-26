@@ -9,7 +9,7 @@ contact someone in your provider organisation or provider organisation's PHN
 who has the 'User Management' role.
 
 If you are unsure who has the 'User Management' role please email the
-PMHC helpdesk at support@pmhc-mds.com
+PMHC Helpdesk at support@pmhc-mds.com
 
 After navigating to the Users tab, you will be presented with a list of the
 users that are assigned to the organisations for which you have the
@@ -40,11 +40,12 @@ the roles that currently exist within the PMHC MDS:
 
 Each role allows a user to perform specific tasks. A user can have more than one role.
 Each role is granted for a user against an organisation. An organisation can
-either be a Primary Health Network or a Provider Organisation. If a user is granted
+either be a Primary Health Network or a provider organisation. If a user is granted
 a role for a Primary Health Network (PHN) they will also have this role for any
-Provider Organisation's of that PHN.
+provider organisation's of that PHN. A user can be invited to have a role at more
+than one organisations.
 
-What users see once they are loged in will depend upon what roles they have been
+What users see once they are logged in will depend upon what roles they have been
 assigned. The table below lists the tabs that will be shown for each role:
 
 +-------------------------+---------------------------+
@@ -164,7 +165,9 @@ You can invite an existing user through the Users tab, by following these steps:
 
 4. Click the blue 'Invite' button.
 5. You will receive confirmation that the roles have been added to the existing user.
-   The user will receive notification that they have been granted these additional roles as the relevant organisation.
+6. You will need to notify the user that they have been added to the organisation and confirm their authorised roles. The system will not automatically do this.
+
+.. 6. The user will receive notification that they have been granted these additional roles at the relevant organisation.
 
 .. _accepting_invitation:
 
@@ -215,7 +218,7 @@ You can edit and assign extra roles to an existing user by following these steps
 1. Navigate to the Users tab.
 2. Click on the user's name in blue displayed within the table list.
 3. Click the 'Roles' tab to show the users assigned roles.
-4. Choose the PHN or Suborganisation from the selection box to view the users roles at that organisaiton.
+4. Choose the PHN or Provider Organisation from the selection box to view the users roles at that organisaiton.
 
    .. figure:: screen-shots/user-roles-at-organisation.png
       :alt: PMHC MDS Edit Role
@@ -244,9 +247,11 @@ You can edit and assign extra roles to an existing user by following these steps
 
    *Please note: roles are automatically inherited from a higher organisation and
    displayed as a light grey tick. Inherited roles can not be edited or deleted by
-   a User Management role at the suborganisation level.*
+   a User Management role at the Provider Organisation level.*
 
 7. Click the blue 'Save' button, or click the 'cancel' to edit without saving changes.
+8. You will receive confirmation that the users role has been saved and they will
+   now be displaying in the Users Roles list.
+9. You will need to notify the user of these role changes. The system will not automatically do this.
 
-You will receive confirmation that the users role has been saved and they will
-now be displaying in the Users Roles list.
+.. 9. The user will receive notification of these roles changes.

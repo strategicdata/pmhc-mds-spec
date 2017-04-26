@@ -4,7 +4,7 @@ Home
 To use the PMHC MDS navigate to https://pmhc-mds.net/
 
 The first page you will see is the Home page. The home page shows you the
-most recent announcements made via the :ref:`mailing-list`.
+most recent announcements made via the :ref:`mailing-list_FAQs`.
 
 .. figure:: screen-shots/home-page.png
    :alt: PMHC MDS Home Page
@@ -21,13 +21,6 @@ After navigating to https://pmhc-mds.net/ click the 'Sign in' button to login.
 
 You will be presented with a login form. Enter your email address or username
 and then your password and click 'Sign in'.
-
-*Please note - the PMHC MDS will automatically log out users after 15
-minutes of inactivity.  You will see a pop up box that will provide a count
-down feature prior to automatically logging out the idle user.*
-
-.. figure:: screen-shots/logout-count-down.png
-   :alt: PMHC MDS Auto Log Out
 
 .. _setting_backup_email:
 
@@ -134,6 +127,13 @@ Once logged in, logout by:
 3. Click 'Logout'.
 
 We highly encourage users to logout once they have completed their tasks.
+
+*Please note - the PMHC MDS will automatically log out users after 15
+minutes of inactivity.  You will see a pop up box that will provide a count
+down feature prior to automatically logging out the idle user.*
+
+.. figure:: screen-shots/logout-count-down.png
+   :alt: PMHC MDS Auto Log Out
 
 .. _updating_your_details:
 

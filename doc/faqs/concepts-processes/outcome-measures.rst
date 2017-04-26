@@ -162,7 +162,7 @@ No, the data required for the immediate future by the PMHC MDS are individual
 item scores, or as noted above, subscale scores and totals. These will be used
 to derive a range of change indicators.
 
-.. _MHNIP_outcome_measures_faqs:
+.. _MHNIP_outcome_measures_faq:
 
 MHNIP outcome measures
 ^^^^^^^^^^^^^^^^^^^^^^

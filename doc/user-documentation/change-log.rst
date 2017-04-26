@@ -3,6 +3,11 @@
 User Guide Change log
 =====================
 
+15/3/2017
+---------
+
+* Updated the references of suborganisations to provider organisation
+
 10/3/2017
 ---------
 

@@ -54,7 +54,6 @@ Manual data entry via MDS interface
 Do we need to create ‘keys’ if we intend to enter data directly into the MDS?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
 Stage One of the PMHC MDS will only allow upload, not direct data entry. Upload
 files will either be produced automatically from client systems or by hand via
 Excel spreadsheet.  Therefore, all organisations uploading data to the PMHC MDS
