@@ -8,6 +8,9 @@
 "`Provider Organisation - Name`_ (organisation_name)
 
 ","string (2,100)","The name of the provider organisation."
+"`Provider Organisation - Legal Name`_ (organisation_legal_name)
+
+",string,"The legal name of the provider organisation."
 "`Provider Organisation - ABN`_ (organisation_abn)
 
 ","string (11)","The Australian Business Number of the provider organisation."

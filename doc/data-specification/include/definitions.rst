@@ -3013,6 +3013,21 @@ The Australian Business Number of the provider organisation.
 
 ----------
 
+.. _dfn-organisation_legal_name:
+
+Provider Organisation - Legal Name
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The legal name of the provider organisation.
+
+:Field name: organisation_legal_name
+
+:Data type: string
+
+:Required: false
+
+----------
+
 .. _dfn-organisation_name:
 
 Provider Organisation - Name

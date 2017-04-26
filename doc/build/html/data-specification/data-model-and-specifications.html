@@ -184,6 +184,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#practitioner-tags">Practitioner - Tags</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#practitioner-year-of-birth">Practitioner - Year of Birth</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#provider-organisation-abn">Provider Organisation - ABN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#provider-organisation-legal-name">Provider Organisation - Legal Name</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#provider-organisation-name">Provider Organisation - Name</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#provider-organisation-state">Provider Organisation - State</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#provider-organisation-tags">Provider Organisation - Tags</a></li>
@@ -455,11 +456,15 @@ it cannot be uploaded.</p>
 <td>string (2,100)</td>
 <td>The name of the provider organisation.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#provider-organisation-abn">Provider Organisation - ABN</a> (organisation_abn)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#provider-organisation-legal-name">Provider Organisation - Legal Name</a> (organisation_legal_name)</td>
+<td>string</td>
+<td>The legal name of the provider organisation.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#provider-organisation-abn">Provider Organisation - ABN</a> (organisation_abn)</td>
 <td>string (11)</td>
 <td>The Australian Business Number of the provider organisation.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#provider-organisation-type">Provider Organisation - Type</a> (organisation_type)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#provider-organisation-type">Provider Organisation - Type</a> (organisation_type)</td>
 <td>string</td>
 <td><table class="first last docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -499,7 +504,7 @@ it cannot be uploaded.</p>
 </table>
 </td>
 </tr>
-<tr class="row-odd"><td><p class="first"><a class="reference internal" href="#provider-organisation-state">Provider Organisation - State</a> (organisation_state)</p>
+<tr class="row-even"><td><p class="first"><a class="reference internal" href="#provider-organisation-state">Provider Organisation - State</a> (organisation_state)</p>
 <p class="last">METeOR: <a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/613718">613718</a></p>
 </td>
 <td>string</td>
@@ -529,7 +534,7 @@ it cannot be uploaded.</p>
 </table>
 </td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#provider-organisation-tags">Provider Organisation - Tags</a> (organisation_tags)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#provider-organisation-tags">Provider Organisation - Tags</a> (organisation_tags)</td>
 <td>string</td>
 <td>List of tags for the provider organisation.</td>
 </tr>
@@ -9641,6 +9646,23 @@ be used to estimate a year of birth</li>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">string (11)</td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+</div>
+<div class="section" id="provider-organisation-legal-name">
+<span id="dfn-organisation-legal-name"></span><h3>Provider Organisation - Legal Name<a class="headerlink" href="#provider-organisation-legal-name" title="Permalink to this headline">¶</a></h3>
+<p>The legal name of the provider organisation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body">organisation_legal_name</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">string</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">false</td>
 </tr>
 </tbody>
 </table>
