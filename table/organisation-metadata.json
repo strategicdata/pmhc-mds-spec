@@ -42,6 +42,18 @@
       "maxLength": 100
       },
     "required": true
+    },{
+      "name": "organisation_legal_name",
+      "titles": [ "organisation_legal_name", "Legal Name" ],
+      "dc:title" : "Provider Organisation - Legal Name",
+      "schema:description": "The legal name of the provider organisation.",
+      "schema:dateCreated": "2017-04-26",
+      "schema:dateDeleted": "2017-04-26",
+      "schema:dateModified": "2017-04-26",
+      "datatype": {
+        "base": "string",
+      },
+      "required": false
   },{
     "name": "organisation_abn",
     "titles": [ "organisation_abn", "ABN" ],
