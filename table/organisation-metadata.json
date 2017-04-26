@@ -51,7 +51,7 @@
       "schema:dateDeleted": "2017-04-26",
       "schema:dateModified": "2017-04-26",
       "datatype": {
-        "base": "string",
+        "base": "string"
       },
       "required": false
   },{
