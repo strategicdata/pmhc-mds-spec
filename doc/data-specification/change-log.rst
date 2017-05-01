@@ -10,9 +10,17 @@ Data Specification Change log
 
   * Record formats
 
+    * Episode
+
+      * Added more description to :ref:`dfn-client_consent`
+
     * Service Contact
 
-      * Changed wording of :ref:`dfn-no-show` to specify 'intended participant(s)' instead of 'client'
+      * Changed wording of :ref:`dfn-service_contact_no_show` to specify 'intended participant(s)' instead of 'client'
+
+    * Outcome Collection Occasion
+
+      * :ref:`k10p-data-elements` updated reference to Q11-14 'missing' replacing 'not applicable'.
 
 8/2/2017 - Version 1.0.4
 ------------------------
