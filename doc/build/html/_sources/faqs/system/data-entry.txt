@@ -66,7 +66,7 @@ Refer to :ref:`reporting_timeliness`.
 Should I upload client data with 'no' consent?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-All data can be uploaded to the PMHC MDS, regardless of the consent flag.
+All data should be uploaded to the PMHC MDS, regardless of the consent flag.
 
 See :ref:`dfn-client_consent`
 
@@ -115,7 +115,7 @@ Yes, the MDS allows you to go back and enter information at a later date.
 
 When data in the upload has the same identification key as recorded in the MDS,
 (eg Client, Practitioner, Episode, Service Contact, and Outcome Collection Keys)
-the data will be automatically be updated for these files. The number of files present,
+the data will automatically be updated for these files. The number of files present,
 created, and updated, are summarised on the successful upload notification email.
 
 Refer to upload specification :ref:`file-format`.

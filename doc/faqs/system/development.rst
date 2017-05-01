@@ -19,6 +19,7 @@ Stage Two development is in the very early stages of discussions and decisions o
 the specifications of each feature will determine the exact development timeline. An updated approximate schedule has been highlighted below:
 
 * Data Entry Interface (Mid 2017)
+* Basic Summary Reports (Mid 2017)
 * Comprehensive Reports (Late 2017)
 * Master Client Index (End 2017)
 
