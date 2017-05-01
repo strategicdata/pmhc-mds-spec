@@ -4797,7 +4797,7 @@ How the service contact was delivered, as represented by a code.
 Service Contact - No Show
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Where an appointment was made for a client, but the client failed to attend the appointment, as represented by a code.
+Where an appointment was made for an intended participant(s), but the intended participant(s) failed to attend the appointment, as represented by a code.
 
 :Field name: service_contact_no_show
 
@@ -4810,9 +4810,9 @@ Where an appointment was made for a client, but the client failed to attend the 
   :2: No
 :Notes:
   1 - Yes
-    The client failed to attend the appointment.
+    The intended participant(s) failed to attend the appointment.
   2 - No
-    The client attended the appointment.
+    The intended participant(s) attended the appointment.
   
 
 ----------

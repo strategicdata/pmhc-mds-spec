@@ -3,6 +3,17 @@
 Data Specification Change log
 =============================
 
+1/5/2017 - Version 1.0.5
+------------------------
+
+* Data model and specifications
+
+  * Record formats
+
+    * Service Contact
+
+      * Changed wording of :ref:`dfn-no-show` to specify 'intended participant(s)' instead of 'client'
+
 8/2/2017 - Version 1.0.4
 ------------------------
 
