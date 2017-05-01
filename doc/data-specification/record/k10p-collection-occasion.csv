@@ -98,13 +98,13 @@
 :9: Not stated / Missing"
 "`K10+ - Question 11`_ (k10p_item11)
 
-",integer,"0 - 28, 99 = missing"
+",integer,"0 - 28, 99 = Not stated / Missing"
 "`K10+ - Question 12`_ (k10p_item12)
 
-",integer,"0 - 28, 99 = missing"
+",integer,"0 - 28, 99 = Not stated / Missing"
 "`K10+ - Question 13`_ (k10p_item13)
 
-",integer,"0 - 89, 99 = missing"
+",integer,"0 - 89, 99 = Not stated / Missing"
 "`K10+ - Question 14`_ (k10p_item14)
 
 ",string,":1: None of the time
@@ -115,7 +115,7 @@
 :9: Not stated / Missing"
 "`K10+ - Score`_ (k10p_score)
 
-",integer,"10 - 50, 99 = missing"
+",integer,"10 - 50, 99 = Not stated / Missing"
 "`K10+ - Tags`_ (k10p_tags)
 
 ",string,"List of tags for the collection occasion."

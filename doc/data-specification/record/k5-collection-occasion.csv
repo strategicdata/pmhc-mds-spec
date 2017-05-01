@@ -58,7 +58,7 @@
 :9: Not stated / Missing"
 "`K5 - Score`_ (k5_score)
 
-",integer,"5 - 25, 99 = missing"
+",integer,"5 - 25, 99 = Not stated / Missing"
 "`K5 - Tags`_ (k5_tags)
 
 ",string,"List of tags for the collection occasion."

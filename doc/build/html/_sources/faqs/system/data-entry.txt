@@ -61,6 +61,17 @@ How often should I enter data into the MDS?
 
 Refer to :ref:`reporting_timeliness`.
 
+.. _data_entry_no_concent_faq:
+
+Should I upload client data with 'no' consent?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+All data should be uploaded to the PMHC MDS, regardless of the consent flag.
+
+See :ref:`dfn-client_consent`
+
+Refer to the Department's response to :ref:`privacy_FAQs`
+
 .. _include_all_contact_data_faq:
 
 Do I need to include all service contacts and measures for an episode in an file?
@@ -101,6 +112,11 @@ Can I go back and enter information if I don’t have it at the time?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Yes, the MDS allows you to go back and enter information at a later date.
+
+When data in the upload has the same identification key as recorded in the MDS,
+(eg Client, Practitioner, Episode, Service Contact, and Outcome Collection Keys)
+the data will automatically be updated for these files. The number of files present,
+created, and updated, are summarised on the successful upload notification email.
 
 Refer to upload specification :ref:`file-format`.
 

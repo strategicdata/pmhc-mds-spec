@@ -312,7 +312,7 @@ sub format_domain {
 
         if ( defined( $field->{'null'} ) ) {
             $rv .= ", " . $field->{'null'}
-                . ' = missing';
+                . ' = Not stated / Missing';
         }
 
         return $rv;

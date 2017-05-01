@@ -196,7 +196,7 @@
     "name": "service_contact_no_show",
     "titles": [ "service_contact_no_show", "No Show" ],
     "dc:title": "Service Contact - No Show",
-    "schema:description": "Where an appointment was made for a client, but the client failed to attend the appointment, as represented by a code.",
+    "schema:description": "Where an appointment was made for an intended participant(s), but the intended participant(s) failed to attend the appointment, as represented by a code.",
     "schema:disambiguatingDescription": "table/service-contact/no-show.rst",
     "schema:dateCreated": "2016-06-22",
     "schema:dateDeleted": "2016-06-22",
