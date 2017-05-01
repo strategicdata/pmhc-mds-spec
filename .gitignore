@@ -2,3 +2,4 @@
 .perl5
 _doc
 .doctree
+doc/build/doctrees/
