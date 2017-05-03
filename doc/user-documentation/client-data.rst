@@ -34,11 +34,11 @@ Search Fields
 There are three options available to search for a client. You can choose any one of
 these options, depending on the client information that you have available to you at the time.
 
-- **Client Key** - You can use this field to type in a whole :ref:`Client Key`, or part thereof.
+- **Client Key** - You can use this field to type in a whole :ref:`dfn-client_key`, or part thereof.
 
-- **SLK** - You can use this field to type in a client's Statistical Linkage Key (:ref:`SLK`)
+- **SLK** - You can use this field to type in a client's Statistical Linkage Key (:ref:`dfn-slk`)
 
-- **DOB** & **Gender** - You can use this field to type in a combination of the client's Date of Birth (:ref:`DOB`) and :ref:`Gender`.
+- **DOB** & **Gender** - You can use this field to type in a combination of the client's Date of Birth (:ref:`dfn-date_of_birth`) and :ref:`dfn-client_gender`.
 
 
 
@@ -81,12 +81,12 @@ To filter the listed clients:
 Viewing a Client's details
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You can view a clients's details through the :ref:`client search results`
+You can view a clients's details through the :ref:`search-client`
 available on the Client Data tab, by following these steps:
 
-1. Create :ref:`client search results`
+1. Create :ref:`search-client`
 2. Click on the Client Key in blue displayed within the table list.
-3. This this is the Client's summary view, with summary details along with a
+3. This is the Client's summary view, with summary details along with a
    snapshot of the five most recent episodes.
 
 .. figure:: screen-shots/XXX
@@ -113,11 +113,11 @@ available on the Client Data tab, by following these steps:
    .. figure:: screen-shots/XXX
       :alt: Client Data Summary View
 
-3. Alternately, if you would like to view all listed episode you can click on the
-   Episode Tab. This tab displays in brackets the total number of episodes recorded
-   in the PMHC MDS for this client.
+3. Alternately, if you would like to view all episodes you can click on the
+   Episode Tab. The heading for this tab displays in brackets the total number of episodes recorded
+   in the PMHC MDS for this client at Provider Organisations for which you have access.
 
-A table will display all the Client's Episodes.
+A table will display all the Client's Episodes at Provider Organisations for which you have access.
 
 .. figure:: screen-shots/XXX
    :alt: Client Episodes Table View
@@ -145,12 +145,12 @@ A page will display the Client's Episode details as recorded via the :ref:`Episo
 Viewing a Client's Service Contacts for an Episode
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You can view a clients's service contacts through the :ref:`view-client-episodes`
+You can view a client's service contacts through the :ref:`view-client-episodes`
 available on the Client Data tab, by following these steps:
 
 1. Once :ref:`view-client-episodes`
 2. From the Client's Episode Details tab, click the Service Contacts Tab.
-   This tab displays in brackets the total number of service contacts recorded
+   The heading for this tab displays in brackets the total number of service contacts recorded
    in the PMHC MDS for this episode.
 
 A table will display all the Service Contacts linked to this Client's Episode.
@@ -225,5 +225,5 @@ when this new feature is added.
 Once this feature is available, you will only be able to use the Data Entry Interface if
 you have been assigned the 'Data Entry' role.
 
-In the interim, PMHC MDS users with the Upload :ref:`role` can add their
-organisation's current PMHC MDS data through the Upload tab - see :ref:`upload`.
+In the interim, PMHC MDS users with the Upload :ref:`roles` can add their
+organisation's current PMHC MDS data through the Upload tab - see :ref:`Upload`.
