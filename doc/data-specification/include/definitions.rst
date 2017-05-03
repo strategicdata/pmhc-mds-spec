@@ -2318,7 +2318,7 @@ The overall K5 score.
 :Required: true
 
 :Domain:
-  5 - 25, 99 = missing
+  5 - 25, 99 = Not stated / Missing
 :Notes:
   The K5 Total score is based on the sum of K5 item 1 through 5 (range: 5-25).
   
@@ -2604,7 +2604,7 @@ In the past four weeks, how many days were you totally unable to work, study or 
 :Required: true
 
 :Domain:
-  0 - 28, 99 = missing
+  0 - 28, 99 = Not stated / Missing
 
 ----------
 
@@ -2622,7 +2622,7 @@ Aside from those days, in the past four weeks, how many days were you able to wo
 :Required: true
 
 :Domain:
-  0 - 28, 99 = missing
+  0 - 28, 99 = Not stated / Missing
 
 ----------
 
@@ -2640,7 +2640,7 @@ In the past four weeks, how many times have you seen a doctor or any other healt
 :Required: true
 
 :Domain:
-  0 - 89, 99 = missing
+  0 - 89, 99 = Not stated / Missing
 
 ----------
 
@@ -2681,7 +2681,7 @@ The overall K10 score.
 :Required: true
 
 :Domain:
-  10 - 50, 99 = missing
+  10 - 50, 99 = Not stated / Missing
 :Notes:
   The K10 Total score is based on the sum of K10 item 01 through 10 (range: 10-50).
   Items 11 through 14 are excluded from the total because they are separate
@@ -3235,7 +3235,7 @@ SDQ - Conduct Problem Scale
 :Required: true
 
 :Domain:
-  0 - 10, 99 = missing
+  0 - 10, 99 = Not stated / Missing
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Conduct Problem Scale.
   
@@ -3255,7 +3255,7 @@ SDQ - Emotional Symptoms Scale
 :Required: true
 
 :Domain:
-  0 - 10, 99 = missing
+  0 - 10, 99 = Not stated / Missing
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Emotional Symptoms Scale.
   
@@ -3275,7 +3275,7 @@ SDQ - Hyperactivity Scale
 :Required: true
 
 :Domain:
-  0 - 10, 99 = missing
+  0 - 10, 99 = Not stated / Missing
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Hyperactivity Scale.
   
@@ -3295,7 +3295,7 @@ SDQ - Impact Score
 :Required: true
 
 :Domain:
-  0 - 10, 99 = missing
+  0 - 10, 99 = Not stated / Missing
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Impact Score.
   
@@ -3315,7 +3315,7 @@ SDQ - Peer Problem Scale
 :Required: true
 
 :Domain:
-  0 - 10, 99 = missing
+  0 - 10, 99 = Not stated / Missing
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Peer Problem Scale.
   
@@ -3335,7 +3335,7 @@ SDQ - Prosocial Scale
 :Required: true
 
 :Domain:
-  0 - 10, 99 = missing
+  0 - 10, 99 = Not stated / Missing
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Prosocial Scale.
   
@@ -4547,7 +4547,7 @@ SDQ - Total Difficulties Score
 :Required: true
 
 :Domain:
-  0 - 40, 99 = missing
+  0 - 40, 99 = Not stated / Missing
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Total Difficulties Score.
   

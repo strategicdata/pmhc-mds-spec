@@ -12,6 +12,7 @@ User Guide
    organisations
    users
    upload
+   client-data
    data-extraction
    reporting
    slk
