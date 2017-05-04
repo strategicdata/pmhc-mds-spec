@@ -32,7 +32,10 @@
   
 
   
-    <link rel="top" title="PMHC MDS Version 1.0.4 documentation" href="../index.html"/> 
+    <link rel="top" title="PMHC MDS Version 1.0.4 documentation" href="../index.html"/>
+        <link rel="up" title="User Guide" href="index.html"/>
+        <link rel="next" title="Data Extraction" href="data-extraction.html"/>
+        <link rel="prev" title="Upload" href="upload.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -81,8 +84,33 @@
           
             
             
-                <ul>
-<li class="toctree-l1"><a class="reference internal" href="index.html">User Guide</a></li>
+                <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">User Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="passwords.html">Passwords</a></li>
+<li class="toctree-l2"><a class="reference internal" href="home.html">Home</a></li>
+<li class="toctree-l2"><a class="reference internal" href="organisations.html">Organisations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="users.html">Users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="upload.html">Upload</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Client Data</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#finding-a-client">Finding a Client</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#search-fields">Search Fields</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#client-search-results">Client Search Results</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#viewing-a-client-s-details">Viewing a Client&#8217;s details</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#viewing-a-client-s-episodes">Viewing a Client&#8217;s Episodes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#viewing-a-client-s-service-contacts-for-an-episode">Viewing a Client&#8217;s Service Contacts for an Episode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#viewing-a-practitioner">Viewing a Practitioner</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#viewing-a-client-s-outcome-collection-occasions-for-an-episode">Viewing a Client&#8217;s Outcome Collection Occasions for an Episode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#adding-a-client-and-client-s-data">Adding a Client and Client&#8217;s data</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="data-extraction.html">Data Extraction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reporting.html">Reporting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slk.html">SLK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html">User Guide Change log</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../data-specification/index.html">Data Specification</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faqs/index.html">Frequently Asked Questions</a></li>
 </ul>
@@ -115,11 +143,13 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../index.html">Docs</a> &raquo;</li>
       
+          <li><a href="index.html">User Guide</a> &raquo;</li>
+      
     <li>Client Data</li>
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../_sources/user-documentation/client data.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/user-documentation/client-data.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -152,9 +182,9 @@ If you have roles at more than one PHN, you will need to select the relevant PHN
 <p>There are three options available to search for a client. You can choose any one of
 these options, depending on the client information that you have available to you at the time.</p>
 <ul class="simple">
-<li><strong>Client Key</strong> - You can use this field to type in a whole <span class="xref std std-ref">Client Key</span>, or part thereof.</li>
-<li><strong>SLK</strong> - You can use this field to type in a client&#8217;s Statistical Linkage Key (<span class="xref std std-ref">SLK</span>)</li>
-<li><strong>DOB</strong> &amp; <strong>Gender</strong> - You can use this field to type in a combination of the client&#8217;s Date of Birth (<span class="xref std std-ref">DOB</span>) and <span class="xref std std-ref">Gender</span>.</li>
+<li><strong>Client Key</strong> - You can use this field to type in a whole <a class="reference internal" href="../data-specification/data-model-and-specifications.html#dfn-client-key"><span class="std std-ref">Client Key</span></a>, or part thereof.</li>
+<li><strong>SLK</strong> - You can use this field to type in a client&#8217;s Statistical Linkage Key (<a class="reference internal" href="../data-specification/data-model-and-specifications.html#dfn-slk"><span class="std std-ref">Client - Statistical Linkage Key</span></a>)</li>
+<li><strong>DOB</strong> &amp; <strong>Gender</strong> - You can use this field to type in a combination of the client&#8217;s Date of Birth (<a class="reference internal" href="../data-specification/data-model-and-specifications.html#dfn-date-of-birth"><span class="std std-ref">Client - Date of Birth</span></a>) and <a class="reference internal" href="../data-specification/data-model-and-specifications.html#dfn-client-gender"><span class="std std-ref">Client - Gender</span></a>.</li>
 </ul>
 </div>
 </div>
@@ -187,12 +217,12 @@ entered text.</li>
 </div>
 <div class="section" id="viewing-a-client-s-details">
 <span id="view-client-details"></span><h2>Viewing a Client&#8217;s details<a class="headerlink" href="#viewing-a-client-s-details" title="Permalink to this headline">¶</a></h2>
-<p>You can view a clients&#8217;s details through the <span class="xref std std-ref">client search results</span>
+<p>You can view a clients&#8217;s details through the <a class="reference internal" href="#search-client"><span class="std std-ref">Client Search Results</span></a>
 available on the Client Data tab, by following these steps:</p>
 <ol class="arabic simple">
-<li>Create <span class="xref std std-ref">client search results</span></li>
+<li>Create <a class="reference internal" href="#search-client"><span class="std std-ref">Client Search Results</span></a></li>
 <li>Click on the Client Key in blue displayed within the table list.</li>
-<li>This this is the Client&#8217;s summary view, with summary details along with a
+<li>This is the Client&#8217;s summary view, with summary details along with a
 snapshot of the five most recent episodes.</li>
 </ol>
 <div class="figure">
@@ -216,12 +246,12 @@ the Blue Episode Key displayed in the snapshot of the five most recent episodes.
 <img alt="Client Data Summary View" src="user-documentation/screen-shots/XXX" />
 </div>
 </li>
-<li><p class="first">Alternately, if you would like to view all listed episode you can click on the
-Episode Tab. This tab displays in brackets the total number of episodes recorded
-in the PMHC MDS for this client.</p>
+<li><p class="first">Alternately, if you would like to view all episodes you can click on the
+Episode Tab. The heading for this tab displays in brackets the total number of episodes recorded
+in the PMHC MDS for this client at Provider Organisations for which you have access.</p>
 </li>
 </ol>
-<p>A table will display all the Client&#8217;s Episodes.</p>
+<p>A table will display all the Client&#8217;s Episodes at Provider Organisations for which you have access.</p>
 <div class="figure">
 <img alt="Client Episodes Table View" src="user-documentation/screen-shots/XXX" />
 </div>
@@ -244,12 +274,12 @@ in the PMHC MDS for this client.</p>
 </div>
 <div class="section" id="viewing-a-client-s-service-contacts-for-an-episode">
 <span id="view-client-service-contact"></span><h2>Viewing a Client&#8217;s Service Contacts for an Episode<a class="headerlink" href="#viewing-a-client-s-service-contacts-for-an-episode" title="Permalink to this headline">¶</a></h2>
-<p>You can view a clients&#8217;s service contacts through the <a class="reference internal" href="#view-client-episodes"><span class="std std-ref">Viewing a Client&#8217;s Episodes</span></a>
+<p>You can view a client&#8217;s service contacts through the <a class="reference internal" href="#view-client-episodes"><span class="std std-ref">Viewing a Client&#8217;s Episodes</span></a>
 available on the Client Data tab, by following these steps:</p>
 <ol class="arabic simple">
 <li>Once <a class="reference internal" href="#view-client-episodes"><span class="std std-ref">Viewing a Client&#8217;s Episodes</span></a></li>
 <li>From the Client&#8217;s Episode Details tab, click the Service Contacts Tab.
-This tab displays in brackets the total number of service contacts recorded
+The heading for this tab displays in brackets the total number of service contacts recorded
 in the PMHC MDS for this episode.</li>
 </ol>
 <p>A table will display all the Service Contacts linked to this Client&#8217;s Episode.</p>
@@ -307,8 +337,8 @@ in <span class="xref std std-ref">Stage Two</span> of the PMHC MDS development.<
 when this new feature is added.</p>
 <p>Once this feature is available, you will only be able to use the Data Entry Interface if
 you have been assigned the &#8216;Data Entry&#8217; role.</p>
-<p>In the interim, PMHC MDS users with the Upload <span class="xref std std-ref">role</span> can add their
-organisation&#8217;s current PMHC MDS data through the Upload tab - see <span class="xref std std-ref">upload</span>.</p>
+<p>In the interim, PMHC MDS users with the Upload <a class="reference internal" href="users.html#roles"><span class="std std-ref">Users Roles</span></a> can add their
+organisation&#8217;s current PMHC MDS data through the Upload tab - see <a class="reference internal" href="upload.html#upload"><span class="std std-ref">Upload</span></a>.</p>
 </div>
 </div>
 
@@ -316,6 +346,15 @@ organisation&#8217;s current PMHC MDS data through the Upload tab - see <span cl
            </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="data-extraction.html" class="btn btn-neutral float-right" title="Data Extraction" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="upload.html" class="btn btn-neutral" title="Upload" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
