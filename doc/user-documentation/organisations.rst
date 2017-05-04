@@ -174,7 +174,7 @@ if you have been assigned the 'User Management' role, by following these steps:
    displayed under the column headers. To remove the filter, click the grey
    cross within the edit box beside any entered text.
 
-.. figure:: screen-shots/view-organisation-users.png
+.. figure:: screen-shots/user-roles-at-organisation.png
    :alt: PMHC MDS User Roles at Organisation
 
 .. _adding_roles:
