@@ -8,9 +8,8 @@ Entering data in the PMHC Minimum Data Set
 Why can't we use the SLK as the client key?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The SLK isn’t necessarily a unique key and therefore the Client Key is required
-to be a unique client identifier. The Client Key needs to be stable for each
-individual within the PHN.
+The Client Key is required to be a unique client identifier. The SLK isn’t a
+unique key and therefore not suitable to be used as the Client Key.
 
 Refer to data specifications for :ref:`identifier_management`.
 
