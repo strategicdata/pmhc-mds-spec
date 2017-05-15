@@ -211,7 +211,7 @@ class PMHC < Csvlint::Cli
 
         # Episode end date cannot be in the future
         eed = row[episode_end_date_index]
-        unless eed == nil
+        unless is_date_missing(eed)
           if is_date_in_future( eed )
             validator.build_errors(:future_date_not_allowed, :episode, current_line+1,
               episode_end_date_index+1, eed)
@@ -227,10 +227,9 @@ class PMHC < Csvlint::Cli
 
         # If a completion status is recorded episode end date should be recorded
         unless row[episode_completion_status_index] == nil
-          if eed == nil
-            validator.build_errors(:invalid_episode_completion_status, :episode,
+          if is_date_missing(eed)
+            validator.build_errors(:invalid_episode_completion_statusy, :episode,
               current_line+1, episode_completion_status_index+1, row[episode_completion_status_index])
-
           end
         end
 
@@ -621,19 +620,14 @@ class PMHC < Csvlint::Cli
       end
     end
 
+    def is_date_missing( date )
+        return (date == nil or date[:year] == 9999)
+    end
+
     def is_date_in_future( date )
-        today = Date.today
-        missing = Date.new(9999,9,9)
-
-        date_obj = nil
-        unless date == nil
-          date_obj = Date.new( date[:year], date[:month], date[:day] )
-          if ( ( today <=> date_obj ) < 0 ) and ( ( date_obj <=> missing ) != 0 )
-            return true
-          end
-        end
-
-        return false
+        return false if is_date_missing(date)
+        date_obj = Date.new( date[:year], date[:month], date[:day] )
+        return Date.today < date_obj
     end
 
     def is_year_in_future( year )
