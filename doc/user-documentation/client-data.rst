@@ -158,7 +158,7 @@ A table will display all the Service Contacts linked to this Client's Episode.
 .. figure:: screen-shots/client-service-contacts-view
    :alt: Client Episode Service Contacts Table View
 
-4. To view the Service Contacts details, click the Blue Service Contact Key.
+3. To view the Service Contacts details, click the Blue Service Contact Key.
 
 .. figure:: screen-shots/client-service-contacts-details
    :alt: Client Episode Service Contacts Details View
@@ -204,7 +204,7 @@ A table will display all the Collection Occasions linked to this Client's Episod
 .. figure:: screen-shots/client-collection-occasions-view
    :alt: Client Episode Collection Occasions Table View
 
-4. To view the Collection Occasions details, click the Blue Service Contact Key.
+3. To view the Collection Occasions details, click the Blue Service Contact Key.
 
 .. figure:: screen-shots/client-collection-occasions-details
    :alt: Client Episode Collection Occasions Details View
