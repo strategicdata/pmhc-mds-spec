@@ -536,7 +536,7 @@ class PMHC < Csvlint::Cli
                 using_item_scores = 1
               end
             else
-              unless row[item_index] == "8"
+              unless row[item_index] == "8" or row[item_index] == "9"
                 validator.build_errors(:invalid_sdq_item_included, :sdq,
                   current_line+1, item_index+1, row[item_index])
               end
