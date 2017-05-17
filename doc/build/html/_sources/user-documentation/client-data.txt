@@ -21,7 +21,7 @@ you have permission to access.
 Finding a Client
 ^^^^^^^^^^^^^^^^
 
-There are three :ref:`search-fields` options available to finding for a client.
+There are three :ref:`search-fields` options available to find a client.
 
 .. _search-fields:
 

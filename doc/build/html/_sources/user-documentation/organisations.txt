@@ -1,8 +1,8 @@
 Organisations
 =============
 
-You will only be able to see the Organisations tab if you have been assigned
-the 'Organisation Management' or the 'User Management' role.
+You will be able to see the Organisations tab if you have been assigned
+the 'Organisation Management', the 'User Management' or the 'Data Entry' role.
 
 If you believe you should have access to an organisation and it doesn't appear
 in your list please contact someone in that provider organisation or the
