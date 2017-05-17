@@ -183,12 +183,13 @@ To filter the listed practitioners:
 
 1. Click the grey 'Filters' button.
 2. Start typing in an edit box now displayed under the column headers.
-
-.. figure:: screen-shots/practitioners-filter.png
-   :alt: PMHC MDS Practitioners Filter
-
 3. To remove the filter, click the grey cross within the edit box beside any
    entered text.
+
+.. .. figure:: screen-shots/practitioners-filter.png
+   :alt: PMHC MDS Practitioners Filter
+
+
 
 .. _view-practitioner:
 

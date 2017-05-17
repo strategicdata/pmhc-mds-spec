@@ -36,7 +36,7 @@ You can choose any one of three search options to search for a client, depending
 
 - **DOB** & **Gender** - You can use this field to type in a combination of the client's Date of Birth (:ref:`dfn-date_of_birth`) and :ref:`dfn-client_gender`.
 
-.. figure:: screen-shots/client-search-fields
+.. figure:: screen-shots/client-search-fields.png
    :alt: Client Data Search Fields
 
 After entering information into one of these :ref:`search-fields`, simply click
@@ -63,7 +63,7 @@ you can click on the arrow beside a column header for more sort options, as foll
 
 You can clear the search results by clicking on the blue 'Clear Results' button.
 
-.. figure:: screen-shots/client-search-results
+.. figure:: screen-shots/client-search-results.png
    :alt: Client Data Search Results
 
 ..  XXX Check filter feature functionality - keeping to be added at a later date XXX
@@ -88,14 +88,14 @@ available on the Client Data tab, by following these steps:
 3. This is the Client's summary view, with summary details along with a
    snapshot of the five most recent episodes.
 
-.. figure:: screen-shots/client-view-summary
+.. figure:: screen-shots/client-view-summary.png
    :alt: Client Data Summary View
 
 4. Click Details tab for more information on the Client.
 
 A page will display the Client's details as recorded via the Client Data Elements - :ref:`client-data-elements`.
 
-.. figure:: screen-shots/client-view-details
+.. figure:: screen-shots/client-view-details.png
    :alt: Client Data Details View
 
 .. _view-client-episodes:
@@ -110,7 +110,7 @@ available on the Client Data tab, by following these steps:
 2. From the Client's Summary tab, you can shortcut straight to an episode by clicking
    the Blue Episode Key displayed in the snapshot of the five most recent episodes.
 
- .. figure:: screen-shots/client-episode-summary
+ .. figure:: screen-shots/client-episode-summary.png
     :alt: Client Data Summary View
 
 3. Alternately, if you would like to view all episodes you can click on the
@@ -119,7 +119,7 @@ available on the Client Data tab, by following these steps:
 
 A table will display all the Client's Episodes at Provider Organisations for which you have access.
 
-.. figure:: screen-shots/client-episodes-view
+.. figure:: screen-shots/client-episodes-view.png
    :alt: Client Episodes Table View
 
 A Drop down list is available to view:
@@ -128,12 +128,12 @@ A Drop down list is available to view:
 * Currently Open Episodes
 * Closed Episodes
 
-.. figure:: screen-shots/client-episodes-sort
+.. figure:: screen-shots/client-episodes-sort.png
    :alt: Client Episodes Sort View
 
 4. To view the Client's Episode details, click the Blue Episode Key.
 
-.. figure:: screen-shots/client-episodes-details
+.. figure:: screen-shots/client-episodes-details.png
    :alt: Client Episodes Details View
 
 A page will display the Client's Episode details as recorded via the :ref:`Episode Data Elements <episode-data-elements>`.
@@ -155,12 +155,12 @@ available on the Client Data tab, by following these steps:
 
 A table will display all the Service Contacts linked to this Client's Episode.
 
-.. figure:: screen-shots/client-service-contacts-view
+.. figure:: screen-shots/client-service-contacts-view.png
    :alt: Client Episode Service Contacts Table View
 
 3. To view the Service Contacts details, click the Blue Service Contact Key.
 
-.. figure:: screen-shots/client-service-contacts-details
+.. figure:: screen-shots/client-service-contacts-details.png
    :alt: Client Episode Service Contacts Details View
 
 A page will display the Service Contacts details as recorded via the :ref:`Service Contact Data Elements <service-contact-data-elements>`.
@@ -177,12 +177,12 @@ available on the Client Data tab, by following these steps:
 1. Once :ref:`view-client-service-contact`
 2. From the Service Contacts Details tab, click the Practitioner Key.
 
-.. figure:: screen-shots/client-service-contacts-practitioner-key
+.. figure:: screen-shots/client-service-contacts-practitioner-key.png
    :alt: Practitioner Key on Service Contacts Details
 
 A page will display the Practitioner's details as recorded via the :ref:`Practitioner Data Elements <practitioner-data-elements>`.
 
-.. figure:: screen-shots/practitioner-details
+.. figure:: screen-shots/practitioner-details.png
    :alt: Practitioner Details View
 
 
@@ -201,12 +201,12 @@ available on the Client Data tab, by following these steps:
 
 A table will display all the Collection Occasions linked to this Client's Episode.
 
-.. figure:: screen-shots/client-collection-occasions-view
+.. figure:: screen-shots/client-collection-occasions-view.png
    :alt: Client Episode Collection Occasions Table View
 
 3. To view the Collection Occasions details, click the Blue Service Contact Key.
 
-.. figure:: screen-shots/client-collection-occasions-details
+.. figure:: screen-shots/client-collection-occasions-details.png
    :alt: Client Episode Collection Occasions Details View
 
 A page will display the Collection Occasions details as recorded via the :ref:`Outcome Collection Occasion Data Elements <outcome-collection-occasion-data-elements>`.
