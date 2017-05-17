@@ -97,7 +97,6 @@
 <li class="toctree-l4"><a class="reference internal" href="#can-you-suggest-a-best-practice-approach-to-managing-client-keys">Can you suggest a best practice approach to managing client keys?</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#how-will-the-master-client-index-work">How will the Master Client Index work?</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#how-often-should-i-enter-data-into-the-mds">How often should I enter data into the MDS?</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#should-i-upload-client-data-with-no-consent">Should I upload client data with &#8216;no&#8217; consent?</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#do-i-need-to-include-all-service-contacts-and-measures-for-an-episode-in-an-file">Do I need to include all service contacts and measures for an episode in an file?</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#what-do-i-do-if-the-gp-mental-health-provider-has-not-given-an-answer-to-one-or-more-questions-in-the-minimum-dataset">What do I do if the GP / mental health provider has not given an answer to one or more questions in the minimum dataset?</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#what-are-the-options-where-the-information-collected-does-not-fit-into-the-available-fields">What are the options where the information collected does not fit into the available fields?</a></li>
@@ -171,9 +170,8 @@
 <span id="data-entry-faqs"></span><h1>Entering data in the PMHC Minimum Data Set<a class="headerlink" href="#entering-data-in-the-pmhc-minimum-data-set" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="why-can-t-we-use-the-slk-as-the-client-key">
 <span id="slk-as-client-key-faq"></span><h2>Why can&#8217;t we use the SLK as the client key?<a class="headerlink" href="#why-can-t-we-use-the-slk-as-the-client-key" title="Permalink to this headline">¶</a></h2>
-<p>The SLK isn’t necessarily a unique key and therefore the Client Key is required
-to be a unique client identifier. The Client Key needs to be stable for each
-individual within the PHN.</p>
+<p>The Client Key is required to be a unique client identifier. The SLK isn’t a
+unique key and therefore not suitable to be used as the Client Key.</p>
 <p>Refer to data specifications for <a class="reference internal" href="../../data-specification/identifier-management.html#identifier-management"><span class="std std-ref">Identifier management</span></a>.</p>
 </div>
 <div class="section" id="what-is-the-best-way-to-manage-the-client-key">
@@ -205,12 +203,6 @@ release.</p>
 <div class="section" id="how-often-should-i-enter-data-into-the-mds">
 <span id="data-entry-frequency-faq"></span><h2>How often should I enter data into the MDS?<a class="headerlink" href="#how-often-should-i-enter-data-into-the-mds" title="Permalink to this headline">¶</a></h2>
 <p>Refer to <a class="reference internal" href="../../data-specification/reporting-arrangements.html#reporting-timeliness"><span class="std std-ref">Reporting timeliness</span></a>.</p>
-</div>
-<div class="section" id="should-i-upload-client-data-with-no-consent">
-<span id="data-entry-no-concent-faq"></span><h2>Should I upload client data with &#8216;no&#8217; consent?<a class="headerlink" href="#should-i-upload-client-data-with-no-consent" title="Permalink to this headline">¶</a></h2>
-<p>All data should be uploaded to the PMHC MDS, regardless of the consent flag.</p>
-<p>See <a class="reference internal" href="../../data-specification/data-model-and-specifications.html#dfn-client-consent"><span class="std std-ref">Episode - Client Consent to Anonymised Data</span></a></p>
-<p>Refer to the Department&#8217;s response to <a class="reference internal" href="../concepts-processes/privacy.html#privacy-faqs"><span class="std std-ref">Questions about privacy protections and patient consent</span></a></p>
 </div>
 <div class="section" id="do-i-need-to-include-all-service-contacts-and-measures-for-an-episode-in-an-file">
 <span id="include-all-contact-data-faq"></span><h2>Do I need to include all service contacts and measures for an episode in an file?<a class="headerlink" href="#do-i-need-to-include-all-service-contacts-and-measures-for-an-episode-in-an-file" title="Permalink to this headline">¶</a></h2>

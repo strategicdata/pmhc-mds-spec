@@ -34,14 +34,8 @@ What features will be included in Stage Two development?
 
 Stage Two will feature:
 
-<<<<<<< HEAD
 * **Data Entry Interface** - see Questions about :ref:`data-entry-FAQs`
 * **Comprehensive Reports** - see :ref:`reports-FAQs`
 * **Master Client Index** - see :ref:`identifier-and-key-FAQs`
-=======
-* **Data Entry Interface**  - see Questions about :ref:`data_entry_FAQs`
-* **Comprehensive Reports** - see :ref:`reports_FAQs`
-* **Master Client Index** - see :ref:`identifier_and_key_FAQs`
->>>>>>> master
 
 Regularly check the announcements on the `PMHC MDS home page <https://pmhc-mds.net/#/>`_ to keep informed.

@@ -166,11 +166,6 @@ You can invite an existing user through the Users tab, by following these steps:
 4. Click the blue 'Invite' button.
 5. You will receive confirmation that the roles have been added to the existing user.
 6. You will need to notify the user that they have been added to the organisation and confirm their authorised roles. The system will not automatically do this.
-<<<<<<< HEAD
-=======
-
-.. 6. The user will receive notification that they have been granted these additional roles at the relevant organisation.
->>>>>>> master
 
 .. 6. The user will receive notification that they have been granted these additional roles at the relevant organisation.
 

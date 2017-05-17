@@ -38,7 +38,7 @@ Network (PHN) or a Provider Organisation. If a user is granted a role for a
 PHN they will also have this role for any Provider Organisations of that PHN.
 A user can be invited to have a role at more than one organisations.
 
-See :ref:`roles` for a summary of each of the roles that currently exist within the PMHC MDS:
+See :ref:`roles` for a summary of each of the roles that currently exist within the PMHC MDS.
 
 User accounts can be created by a user at your PHN or Provider Organisation who
 has the User Management role. If unsure who this is, please contact support@pmhc-mds.com
@@ -68,8 +68,8 @@ the MDS access is being requested):
 #. Mobile phone number.
 #. The exact Primary Health Network or Provider Organisation's name in the MDS
    you are seeking to access.
-#. The roles (PHN's Primary Contact, Organisation Management, User Management, Upload)
-   required for the user. The user can have any combination of these roles.
+#. The roles required for the user. The user can have any combination of these roles.
+   (See :ref:`roles` for a summary of each of the roles that currently exist within the PMHC MDS.)
 
 This letter must be faxed or scanned then emailed to:
 
