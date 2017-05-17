@@ -66,7 +66,7 @@ assigned. The table below lists the tabs that will be shown for each role:
 | All users               | SLK                          |
 +-------------------------+------------------------------+
 
-.. _finding_a_user:
+.. _finding-a-user:
 
 Finding a user
 ^^^^^^^^^^^^^^
@@ -92,7 +92,23 @@ To filter the listed users:
 3. To remove the filter, click the grey cross within the edit box beside any
    entered text.
 
-.. _adding_a_user:
+.. _view-users-details:
+
+Viewing a User's details
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+You can view a user's details through the user tab, by following these steps:
+
+#. Navigate to the Users tab.
+#. Click on the user's name in blue displayed within the table list.
+
+.. figure:: screen-shots/view-user.png
+   :alt: PMHC MDS View User
+
+A page will display showing the user's details and the :ref:`roles` they have at
+particular organisations.
+
+.. _adding-a-user:
 
 Adding a user
 ^^^^^^^^^^^^^
@@ -129,12 +145,12 @@ PMHC MDS.  You can invite a new user through the Users tab, by following these s
    .. figure:: screen-shots/invite-accepted-email.png
       :alt: PMHC MDS Invite Accepted
 
-.. _adding_an_exsisting_user:
+.. _adding-an-exsisting-user:
 
 Adding an existing user
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Note: An existing user must have completed the required steps for :ref:`accepting_invitation`
+Note: An existing user must have completed the required steps for :ref:`accepting-invitation`
 from their initial PMHC MDS invitation before they can be added again.
 
 Before adding an existing user please ensure you have the same email and mobile
@@ -157,7 +173,7 @@ You can invite an existing user through the Users tab, by following these steps:
 
 .. 6. The user will receive notification that they have been granted these additional roles at the relevant organisation.
 
-.. _accepting_invitation:
+.. _accepting-invitation:
 
 Accepting an invitation to become a PMHC MDS User
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -190,7 +206,7 @@ will need to accept this invitation within 7 days, by following these steps:
    .. figure:: screen-shots/account-activated.png
       :alt: PMHC MDS Account Activated
 
-9. Navigate to https://pmhc-mds.net/ and follow the :ref:`logging_in`
+9. Navigate to https://pmhc-mds.net/ and follow the :ref:`logging-in`
    instructions.
 
 .. _delete_user:
@@ -200,25 +216,9 @@ Deleting a user
 
 A user can be deleted from an organisation by removing all the roles the user has at that organisaiton.
 
-See :ref:`edit_role`
+See :ref:`edit-role`
 
-.. _view_users_details:
-
-Viewing a User's details
-^^^^^^^^^^^^^^^^^^^^^^^^
-
-You can view a user's details through the user tab, by following these steps:
-
-#. Navigate to the Users tab.
-#. Click on the user's name in blue displayed within the table list.
-
-.. figure:: screen-shots/view-user.png
-   :alt: PMHC MDS View User
-
-A page will display showing the user's details and the :ref:`roles` they have at
-particular organisations.
-
-.. _view_role:
+.. _view-role:
 
 Viewing a users roles
 ^^^^^^^^^^^^^^^^^^^^^
@@ -236,7 +236,9 @@ You can edit and assign extra roles to an existing user by following these steps
    .. figure:: screen-shots/user-roles-at-organisation.png
       :alt: PMHC MDS Edit Role
 
-.. _edit_role:
+A tick displays the user currently has this role assigned at the relevant organisation.
+
+.. _edit-role:
 
 Editing a users roles
 ^^^^^^^^^^^^^^^^^^^^^
@@ -255,16 +257,18 @@ You can edit and assign extra roles to an existing user by following these steps
       :alt: PMHC MDS Edit Role
 
 5. Select the PHN from the Organisation drop down list
-6. Select a role by clicking the tick box next to the relevant organisation.
+6. A tick indicates the user currently has this role assigned at the relevant organisation.
    Multiple roles can be assigned and these roles are shown as blue tickets.
 
-   *Please note: roles are automatically inherited from a higher organisation and
+| **Add** a role by clicking the empty checkbox.
+| **Remove** a role by clicking the ticked checkbox.
+|
+| *Please note: roles are automatically inherited from a higher organisation and
    displayed as a light grey tick. Inherited roles can not be edited or deleted by
    a User Management role at the Provider Organisation level.*
+|
 
-7. Click the blue 'Save' button, or click the 'cancel' to edit without saving changes.
-8. You will receive confirmation that the users role has been saved and they will
-   now be displaying in the Users Roles list.
-9. You will need to notify the user of these role changes. The system will not automatically do this.
+7. All changes are automatically saved.
+8. You will need to notify the user of these role changes. The system will not automatically do this.
 
 .. 9. The user will receive notification of these roles changes.

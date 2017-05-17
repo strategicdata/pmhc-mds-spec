@@ -79,7 +79,7 @@ The third and subsequent rows should contain the data.
 Data elements for each file/worksheet are defined at :ref:`record-formats`.
 
 Each item is a column in the file/worksheet. The 'Field Name' should be used for
-the column headings.
+the column headings. The columns must be kept in the same order.
 
 All files must be internally consistent. An example of what this means is
 that for every row in the episode file/worksheet, there should be a

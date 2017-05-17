@@ -1,4 +1,4 @@
-.. _data_extraction:
+.. _data-extraction:
 
 Data Extraction
 ===============
@@ -19,7 +19,7 @@ Download Data tab.
 .. figure:: screen-shots/data-extract.png
    :alt: PMHC MDS Organisations
 
-.. _view_data_extract:
+.. _view-data-extract:
 
 How to download an organsiation's data
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

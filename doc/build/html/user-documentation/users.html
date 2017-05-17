@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Users &mdash; PMHC MDS Version 1.0.4 documentation</title>
+  <title>Users &mdash; PMHC MDS Version 1.0.5 documentation</title>
   
 
   
@@ -32,7 +32,7 @@
   
 
   
-    <link rel="top" title="PMHC MDS Version 1.0.4 documentation" href="../index.html"/>
+    <link rel="top" title="PMHC MDS Version 1.0.5 documentation" href="../index.html"/>
         <link rel="up" title="User Guide" href="index.html"/>
         <link rel="next" title="Upload" href="upload.html"/>
         <link rel="prev" title="Organisations" href="organisations.html"/> 
@@ -63,7 +63,7 @@
             
             
               <div class="version">
-                Version 1.0.4
+                Version 1.0.5
               </div>
             
           
@@ -92,11 +92,11 @@
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Users</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#users-roles">Users Roles</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#finding-a-user">Finding a user</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#viewing-a-user-s-details">Viewing a User&#8217;s details</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#adding-a-user">Adding a user</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#adding-an-existing-user">Adding an existing user</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#accepting-an-invitation-to-become-a-pmhc-mds-user">Accepting an invitation to become a PMHC MDS User</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#deleting-a-user">Deleting a user</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#viewing-a-user-s-details">Viewing a User&#8217;s details</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#viewing-a-users-roles">Viewing a users roles</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#editing-a-users-roles">Editing a users roles</a></li>
 </ul>
@@ -268,6 +268,19 @@ you can click on the arrow beside a column header for more sort options, as foll
 entered text.</li>
 </ol>
 </div>
+<div class="section" id="viewing-a-user-s-details">
+<span id="view-users-details"></span><h2>Viewing a User&#8217;s details<a class="headerlink" href="#viewing-a-user-s-details" title="Permalink to this headline">¶</a></h2>
+<p>You can view a user&#8217;s details through the user tab, by following these steps:</p>
+<ol class="arabic simple">
+<li>Navigate to the Users tab.</li>
+<li>Click on the user&#8217;s name in blue displayed within the table list.</li>
+</ol>
+<div class="figure">
+<img alt="PMHC MDS View User" src="../_images/view-user.png" />
+</div>
+<p>A page will display showing the user&#8217;s details and the <a class="reference internal" href="#roles"><span class="std std-ref">Users Roles</span></a> they have at
+particular organisations.</p>
+</div>
 <div class="section" id="adding-a-user">
 <span id="id2"></span><h2>Adding a user<a class="headerlink" href="#adding-a-user" title="Permalink to this headline">¶</a></h2>
 <p>Note: PHNs can devolve user management authority to one or more users in a
@@ -380,19 +393,6 @@ instructions.</p>
 <p>A user can be deleted from an organisation by removing all the roles the user has at that organisaiton.</p>
 <p>See <a class="reference internal" href="#edit-role"><span class="std std-ref">Editing a users roles</span></a></p>
 </div>
-<div class="section" id="viewing-a-user-s-details">
-<span id="view-users-details"></span><h2>Viewing a User&#8217;s details<a class="headerlink" href="#viewing-a-user-s-details" title="Permalink to this headline">¶</a></h2>
-<p>You can view a user&#8217;s details through the user tab, by following these steps:</p>
-<ol class="arabic simple">
-<li>Navigate to the Users tab.</li>
-<li>Click on the user&#8217;s name in blue displayed within the table list.</li>
-</ol>
-<div class="figure">
-<img alt="PMHC MDS View User" src="../_images/view-user.png" />
-</div>
-<p>A page will display showing the user&#8217;s details and the <a class="reference internal" href="#roles"><span class="std std-ref">Users Roles</span></a> they have at
-particular organisations.</p>
-</div>
 <div class="section" id="viewing-a-users-roles">
 <span id="view-role"></span><h2>Viewing a users roles<a class="headerlink" href="#viewing-a-users-roles" title="Permalink to this headline">¶</a></h2>
 <p>A user can have more than one role. Each role is granted for a user against an
@@ -411,6 +411,7 @@ organisation you have the User Management Role at.</p>
 </div>
 </li>
 </ol>
+<p>A tick displays the user currently has this role assigned at the relevant organisation.</p>
 </div>
 <div class="section" id="editing-a-users-roles">
 <span id="edit-role"></span><h2>Editing a users roles<a class="headerlink" href="#editing-a-users-roles" title="Permalink to this headline">¶</a></h2>
@@ -431,19 +432,22 @@ organisation you have the User Management Role at.</p>
 </li>
 <li><p class="first">Select the PHN from the Organisation drop down list</p>
 </li>
-<li><p class="first">Select a role by clicking the tick box next to the relevant organisation.
+<li><p class="first">A tick indicates the user currently has this role assigned at the relevant organisation.
 Multiple roles can be assigned and these roles are shown as blue tickets.</p>
-<p><em>Please note: roles are automatically inherited from a higher organisation and
+</li>
+</ol>
+<div class="line-block">
+<div class="line"><strong>Add</strong> a role by clicking the empty checkbox.</div>
+<div class="line"><strong>Remove</strong> a role by clicking the ticked checkbox.</div>
+<div class="line"><br /></div>
+<div class="line"><em>Please note: roles are automatically inherited from a higher organisation and
 displayed as a light grey tick. Inherited roles can not be edited or deleted by
-a User Management role at the Provider Organisation level.</em></p>
-</li>
-<li><p class="first">Click the blue &#8216;Save&#8217; button, or click the &#8216;cancel&#8217; to edit without saving changes.</p>
-</li>
-<li><p class="first">You will receive confirmation that the users role has been saved and they will
-now be displaying in the Users Roles list.</p>
-</li>
-<li><p class="first">You will need to notify the user of these role changes. The system will not automatically do this.</p>
-</li>
+a User Management role at the Provider Organisation level.</em></div>
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="7">
+<li>All changes are automatically saved.</li>
+<li>You will need to notify the user of these role changes. The system will not automatically do this.</li>
 </ol>
 </div>
 </div>
@@ -489,7 +493,7 @@ now be displaying in the Users Roles list.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'Version 1.0.4',
+            VERSION:'Version 1.0.5',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

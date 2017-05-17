@@ -4,12 +4,12 @@ Home
 To use the PMHC MDS navigate to https://pmhc-mds.net/
 
 The first page you will see is the Home page. The home page shows you the
-most recent announcements made via the :ref:`mailing-list_FAQs`.
+most recent announcements made via the :ref:`mailing-list-FAQs`.
 
 .. figure:: screen-shots/home-page.png
    :alt: PMHC MDS Home Page
 
-.. _logging_in:
+.. _logging-in:
 
 Logging In
 ^^^^^^^^^^
@@ -22,7 +22,7 @@ After navigating to https://pmhc-mds.net/ click the 'Sign in' button to login.
 You will be presented with a login form. Enter your email address or username
 and then your password and click 'Sign in'.
 
-.. _setting_backup_email:
+.. _setting-backup-email:
 
 If it is your first time logging in, you will be asked to set a backup email
 address.
@@ -66,7 +66,7 @@ event that you no longer have access to your primary email address.
 10. What you see once you login will depend upon what :ref:`roles` you have been
     assigned.
 
-.. _forgotten_password:
+.. _forgotten-password:
 
 Forgotten or Expired Password
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -135,7 +135,7 @@ down feature prior to automatically logging out the idle user.*
 .. figure:: screen-shots/logout-count-down.png
    :alt: PMHC MDS Auto Log Out
 
-.. _updating_your_details:
+.. _updating-your-details:
 
 Updating your details
 ^^^^^^^^^^^^^^^^^^^^^

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Entering data in the PMHC Minimum Data Set &mdash; PMHC MDS Version 1.0.4 documentation</title>
+  <title>Entering data in the PMHC Minimum Data Set &mdash; PMHC MDS Version 1.0.5 documentation</title>
   
 
   
@@ -32,7 +32,7 @@
   
 
   
-    <link rel="top" title="PMHC MDS Version 1.0.4 documentation" href="../../index.html"/>
+    <link rel="top" title="PMHC MDS Version 1.0.5 documentation" href="../../index.html"/>
         <link rel="up" title="System Frequently Asked Questions" href="index.html"/>
         <link rel="next" title="Uploading data" href="uploading.html"/>
         <link rel="prev" title="Accessing the PMHC Minimum Data Set" href="access.html"/> 
@@ -63,7 +63,7 @@
             
             
               <div class="version">
-                Version 1.0.4
+                Version 1.0.5
               </div>
             
           
@@ -170,9 +170,8 @@
 <span id="data-entry-faqs"></span><h1>Entering data in the PMHC Minimum Data Set<a class="headerlink" href="#entering-data-in-the-pmhc-minimum-data-set" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="why-can-t-we-use-the-slk-as-the-client-key">
 <span id="slk-as-client-key-faq"></span><h2>Why can&#8217;t we use the SLK as the client key?<a class="headerlink" href="#why-can-t-we-use-the-slk-as-the-client-key" title="Permalink to this headline">¶</a></h2>
-<p>The SLK isn’t necessarily a unique key and therefore the Client Key is required
-to be a unique client identifier. The Client Key needs to be stable for each
-individual within the PHN.</p>
+<p>The Client Key is required to be a unique client identifier. The SLK isn’t a
+unique key and therefore not suitable to be used as the Client Key.</p>
 <p>Refer to data specifications for <a class="reference internal" href="../../data-specification/identifier-management.html#identifier-management"><span class="std std-ref">Identifier management</span></a>.</p>
 </div>
 <div class="section" id="what-is-the-best-way-to-manage-the-client-key">
@@ -231,6 +230,10 @@ field definition which outlines the associated notes.</p>
 <div class="section" id="can-i-go-back-and-enter-information-if-i-dont-have-it-at-the-time">
 <span id="updated-info-faq"></span><h2>Can I go back and enter information if I don’t have it at the time?<a class="headerlink" href="#can-i-go-back-and-enter-information-if-i-dont-have-it-at-the-time" title="Permalink to this headline">¶</a></h2>
 <p>Yes, the MDS allows you to go back and enter information at a later date.</p>
+<p>When data in the upload has the same identification key as recorded in the MDS,
+(eg Client, Practitioner, Episode, Service Contact, and Outcome Collection Keys)
+the data will automatically be updated for these files. The number of files present,
+created, and updated, are summarised on the successful upload notification email.</p>
 <p>Refer to upload specification <a class="reference internal" href="../../data-specification/upload-specification.html#file-format"><span class="std std-ref">File format</span></a>.</p>
 </div>
 <div class="section" id="can-i-enter-fictitious-data-as-a-part-of-testing">
@@ -294,7 +297,7 @@ data from July 2016 to be entered into the PMHC MDS.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'Version 1.0.4',
+            VERSION:'Version 1.0.5',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

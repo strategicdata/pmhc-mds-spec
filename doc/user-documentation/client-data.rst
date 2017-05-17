@@ -219,7 +219,7 @@ Adding a Client and Client's data
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The Data Entry Interface is due to be fully integrated into the PMHC MDS
-in :ref:`Stage_Two` of the PMHC MDS development.
+in :ref:`Stage-Two` of the PMHC MDS development.
 
 An update will be circulated to all current users and the mailing list
 when this new feature is added.

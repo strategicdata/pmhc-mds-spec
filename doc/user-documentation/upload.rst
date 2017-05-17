@@ -19,7 +19,7 @@ of the organisations to which you can upload.
 .. figure:: screen-shots/upload.png
    :alt: PMHC MDS Upload
 
-.. _uploading_a_file:
+.. _uploading-a-file:
 
 Uploading a file
 ^^^^^^^^^^^^^^^^
@@ -56,7 +56,7 @@ any errors that occurred. Further discussion about the error messages can be
 found at :ref:`error-messages`. Please email support@pmhc-mds.com if you don't
 receive an email within one hour.
 
-.. _uploading_a_file_in_test_mode:
+.. _uploading-a-file-in-test-mode:
 
 Uploading a file in Test Mode
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -96,7 +96,7 @@ Further discussion about the error messages can be
 found at :ref:`error-messages`. Please email support@pmhc-mds.com if you don't
 receive an email within one hour.
 
-.. _reviewing_previous_uploads:
+.. _reviewing-previous-uploads:
 
 Reviewing Previous Uploads
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -195,11 +195,3 @@ Column [Name] is required on row ...
 There is a required field that has not been entered. If not supplied, insert the
 default 'Missing' or 'Not recorded' value. These values can be found at :ref:`record-formats`.
 If the Column [Name] is blank in a mandatory field you will receive the error above.
-
-Client_consent must have a value of 1. Please delete row ...
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-The client must consent to their information being provided.  Therefore when there
-is no consent the client information on that row must be deleted as it can not be
-uploaded to the PMHC MDS. If no consent is given and have have included the data
-in the upload file, you will receive the error above.

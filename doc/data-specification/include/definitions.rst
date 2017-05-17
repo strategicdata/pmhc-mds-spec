@@ -1167,6 +1167,10 @@ An indication that the client has consented to their anonymised data being provi
       mental health services. The client's data will be excluded from reports and
       extracts accessible by the Department of Health.
   
+  All data can be uploaded, regardless of consent flag.
+  
+  All data will be available to PHNs to extract for their own internal data evaluation purposes.
+  
 
 ----------
 
@@ -2605,6 +2609,11 @@ In the past four weeks, how many days were you totally unable to work, study or 
 
 :Domain:
   0 - 28, 99 = Not stated / Missing
+:Notes:
+  When the client's responses to Q1-10 are all recorded as 1 'None of the time', 
+  they are not required to answer questions 11-14. Where this question has not been
+  answered a response of 'Not stated / missing' should be selected.
+  
 
 ----------
 
@@ -2623,6 +2632,11 @@ Aside from those days, in the past four weeks, how many days were you able to wo
 
 :Domain:
   0 - 28, 99 = Not stated / Missing
+:Notes:
+  When the client's responses to Q1-10 are all recorded as 1 'None of the time',
+  they are not required to answer questions 11-14. Where this question has not been
+  answered a response of 'Not stated / missing' should be selected.
+  
 
 ----------
 
@@ -2641,6 +2655,11 @@ In the past four weeks, how many times have you seen a doctor or any other healt
 
 :Domain:
   0 - 89, 99 = Not stated / Missing
+:Notes:
+  When the client's responses to Q1-10 are all recorded as 1 'None of the time',
+  they are not required to answer questions 11-14. Where this question has not been
+  answered a response of 'Not stated / missing' should be selected.
+  
 
 ----------
 
@@ -2664,6 +2683,11 @@ In the past four weeks, how often have physical health problems been the main ca
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+:Notes:
+  When the client's responses to Q1-10 are all recorded as 1 'None of the time',
+  they are not required to answer questions 11-14. Where this question has not been
+  answered a response of 'Not stated / missing' should be selected.
+  
 
 ----------
 
@@ -3010,6 +3034,21 @@ The Australian Business Number of the provider organisation.
 :Data type: string (11)
 
 :Required: true
+
+----------
+
+.. _dfn-organisation_legal_name:
+
+Provider Organisation - Legal Name
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The legal name of the provider organisation.
+
+:Field name: organisation_legal_name
+
+:Data type: string
+
+:Required: false
 
 ----------
 
@@ -4782,7 +4821,7 @@ How the service contact was delivered, as represented by a code.
 Service Contact - No Show
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Where an appointment was made for a client, but the client failed to attend the appointment, as represented by a code.
+Where an appointment was made for an intended participant(s), but the intended participant(s) failed to attend the appointment, as represented by a code.
 
 :Field name: service_contact_no_show
 
@@ -4795,9 +4834,9 @@ Where an appointment was made for a client, but the client failed to attend the 
   :2: No
 :Notes:
   1 - Yes
-    The client failed to attend the appointment.
+    The intended participant(s) failed to attend the appointment.
   2 - No
-    The client attended the appointment.
+    The intended participant(s) attended the appointment.
   
 
 ----------
