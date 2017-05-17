@@ -9,14 +9,12 @@ Frequently Asked Questions Change log
 System - Data Entry FAQs
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-* Refined the answer to :ref:`updated_info_faq`
-
-* Added the question :ref:`data_entry_no_concent_faq`
+* Refined the answer to :ref:`updated-info-faq`
 
 System - Development FAQs
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* Refined the answer to :ref:`stage_two_date_faq`
+* Refined the answer to :ref:`stage-two-date-faq`
 
 
 10/3/2017

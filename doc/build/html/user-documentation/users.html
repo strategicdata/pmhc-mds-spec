@@ -96,12 +96,13 @@
 <li class="toctree-l3"><a class="reference internal" href="#adding-a-user">Adding a user</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#adding-an-existing-user">Adding an existing user</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#accepting-an-invitation-to-become-a-pmhc-mds-user">Accepting an invitation to become a PMHC MDS User</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#view-an-existing-users-roles">View an existing users roles</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#editing-an-existing-users-roles">Editing an existing users roles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#deleting-a-user">Deleting a user</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#viewing-a-users-roles">Viewing a users roles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#editing-a-users-roles">Editing a users roles</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#you-will-need-to-notify-the-user-of-these-role-changes-the-system-will-not-automatically-do-this">9. You will need to notify the user of these role changes. The system will not automatically do this.</a></li>
 <li class="toctree-l2"><a class="reference internal" href="upload.html">Upload</a></li>
+<li class="toctree-l2"><a class="reference internal" href="client-data.html">Client Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="data-extraction.html">Data Extraction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reporting.html">Reporting</a></li>
 <li class="toctree-l2"><a class="reference internal" href="slk.html">SLK</a></li>
@@ -187,7 +188,7 @@ the roles that currently exist within the PMHC MDS:</p>
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td>Organisation Management</td>
-<td>A user with the Organisation Management role for a PHN can manage provider organisations for that PHN</td>
+<td>A user with the Organisation Management role for a PHN can manage provider organisations for that PHN.</td>
 </tr>
 <tr class="row-odd"><td>User Management</td>
 <td>A user with the User Management role for an organisation can manage user accounts for that organisation</td>
@@ -197,6 +198,9 @@ the roles that currently exist within the PMHC MDS:</p>
 </tr>
 <tr class="row-odd"><td>Reporting</td>
 <td>A user with the Reporting role can download data from the associated organisation</td>
+</tr>
+<tr class="row-even"><td>Data Entry</td>
+<td>A user with the Data Entry role can view client data and practitioners from the associated organisation</td>
 </tr>
 </tbody>
 </table>
@@ -210,8 +214,8 @@ than one organisations.</p>
 assigned. The table below lists the tabs that will be shown for each role:</p>
 <table border="1" class="docutils">
 <colgroup>
-<col width="48%" />
-<col width="52%" />
+<col width="45%" />
+<col width="55%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Role</th>
@@ -231,7 +235,10 @@ assigned. The table below lists the tabs that will be shown for each role:</p>
 <tr class="row-odd"><td>Reporting</td>
 <td>Data Extraction</td>
 </tr>
-<tr class="row-even"><td>All users</td>
+<tr class="row-even"><td>Data Entry</td>
+<td>Organisations, Client Data</td>
+</tr>
+<tr class="row-odd"><td>All users</td>
 <td>SLK</td>
 </tr>
 </tbody>
@@ -381,8 +388,13 @@ instructions.</p>
 </li>
 </ol>
 </div>
-<div class="section" id="view-an-existing-users-roles">
-<span id="view-role"></span><h2>View an existing users roles<a class="headerlink" href="#view-an-existing-users-roles" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="deleting-a-user">
+<span id="delete-user"></span><h2>Deleting a user<a class="headerlink" href="#deleting-a-user" title="Permalink to this headline">¶</a></h2>
+<p>A user can be deleted from an organisation by removing all the roles the user has at that organisaiton.</p>
+<p>See <a class="reference internal" href="#edit-role"><span class="std std-ref">Editing a users roles</span></a></p>
+</div>
+<div class="section" id="viewing-a-users-roles">
+<span id="view-role"></span><h2>Viewing a users roles<a class="headerlink" href="#viewing-a-users-roles" title="Permalink to this headline">¶</a></h2>
 <p>A user can have more than one role. Each role is granted for a user against an
 organisation you have the User Management Role at.</p>
 <p>You can edit and assign extra roles to an existing user by following these steps:</p>
@@ -399,14 +411,10 @@ organisation you have the User Management Role at.</p>
 </div>
 </li>
 </ol>
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-.. _edit-role:
-=======
-A tick displays the user currently has this role assigned at the relevant organisation.</p>
-<p>&gt;&gt;&gt;&gt;&gt;&gt;&gt; master</p>
+<p>A tick displays the user currently has this role assigned at the relevant organisation.</p>
 </div>
-<div class="section" id="editing-an-existing-users-roles">
-<h2>Editing an existing users roles<a class="headerlink" href="#editing-an-existing-users-roles" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="editing-a-users-roles">
+<span id="edit-role"></span><h2>Editing a users roles<a class="headerlink" href="#editing-a-users-roles" title="Permalink to this headline">¶</a></h2>
 <p>A user can have more than one role. Each role is granted for a user against an
 organisation you have the User Management Role at.</p>
 <p>You can edit and assign extra roles to an existing user by following these steps:</p>
@@ -437,20 +445,11 @@ displayed as a light grey tick. Inherited roles can not be edited or deleted by
 a User Management role at the Provider Organisation level.</em></div>
 <div class="line"><br /></div>
 </div>
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-7. Click the blue &#8216;Save&#8217; button, or click the &#8216;cancel&#8217; to edit without saving changes.
-8. You will receive confirmation that the users role has been saved and they will</p>
-<blockquote>
-<div>now be displaying in the Users Roles list.</div></blockquote>
-</div>
-</div>
-<div class="section" id="you-will-need-to-notify-the-user-of-these-role-changes-the-system-will-not-automatically-do-this">
-<h1>9. You will need to notify the user of these role changes. The system will not automatically do this.<a class="headerlink" href="#you-will-need-to-notify-the-user-of-these-role-changes-the-system-will-not-automatically-do-this" title="Permalink to this headline">¶</a></h1>
 <ol class="arabic simple" start="7">
 <li>All changes are automatically saved.</li>
+<li>You will need to notify the user of these role changes. The system will not automatically do this.</li>
 </ol>
-<p>8. You will need to notify the user of these role changes. The system will not automatically do this.
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; master</p>
+</div>
 </div>
 
 

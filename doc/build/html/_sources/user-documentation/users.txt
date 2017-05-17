@@ -29,13 +29,15 @@ the roles that currently exist within the PMHC MDS:
 +----------------------------+------------------------------------------------------------------------------------------------------------------------------------+
 | **Role**                   | **Tasks allowed**                                                                                                                  |
 +============================+====================================================================================================================================+
-| Organisation Management    | A user with the Organisation Management role for a PHN can manage provider organisations for that PHN                              |
+| Organisation Management    | A user with the Organisation Management role for a PHN can manage provider organisations for that PHN.                             |
 +----------------------------+------------------------------------------------------------------------------------------------------------------------------------+
 | User Management            | A user with the User Management role for an organisation can manage user accounts for that organisation                            |
 +----------------------------+------------------------------------------------------------------------------------------------------------------------------------+
 | Upload                     | A user with the Upload role can upload data to the associated organisation                                                         |
 +----------------------------+------------------------------------------------------------------------------------------------------------------------------------+
 | Reporting                  | A user with the Reporting role can download data from the associated organisation                                                  |
++----------------------------+------------------------------------------------------------------------------------------------------------------------------------+
+| Data Entry                 | A user with the Data Entry role can view client data and practitioners from the associated organisation                            |
 +----------------------------+------------------------------------------------------------------------------------------------------------------------------------+
 
 Each role allows a user to perform specific tasks. A user can have more than one role.
@@ -48,19 +50,21 @@ than one organisations.
 What users see once they are logged in will depend upon what roles they have been
 assigned. The table below lists the tabs that will be shown for each role:
 
-+-------------------------+---------------------------+
-| Role                    | Tab                       |
-+=========================+===========================+
-| Organisation Management | Organisations             |
-+-------------------------+---------------------------+
-| User Management         | Organisations, Users      |
-+-------------------------+---------------------------+
-| Upload                  | Upload                    |
-+-------------------------+---------------------------+
-| Reporting               | Data Extraction           |
-+-------------------------+---------------------------+
-| All users               | SLK                       |
-+-------------------------+---------------------------+
++-------------------------+------------------------------+
+| Role                    | Tab                          |
++=========================+==============================+
+| Organisation Management | Organisations                |
++-------------------------+------------------------------+
+| User Management         | Organisations, Users         |
++-------------------------+------------------------------+
+| Upload                  | Upload                       |
++-------------------------+------------------------------+
+| Reporting               | Data Extraction              |
++-------------------------+------------------------------+
+| Data Entry              | Organisations, Client Data   |
++-------------------------+------------------------------+
+| All users               | SLK                          |
++-------------------------+------------------------------+
 
 .. _finding-a-user:
 
@@ -205,10 +209,19 @@ will need to accept this invitation within 7 days, by following these steps:
 9. Navigate to https://pmhc-mds.net/ and follow the :ref:`logging-in`
    instructions.
 
+.. _delete_user:
+
+Deleting a user
+^^^^^^^^^^^^^^^
+
+A user can be deleted from an organisation by removing all the roles the user has at that organisaiton.
+
+See :ref:`edit-role`
+
 .. _view-role:
 
-View an existing users roles
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Viewing a users roles
+^^^^^^^^^^^^^^^^^^^^^
 
 A user can have more than one role. Each role is granted for a user against an
 organisation you have the User Management Role at.
@@ -223,16 +236,12 @@ You can edit and assign extra roles to an existing user by following these steps
    .. figure:: screen-shots/user-roles-at-organisation.png
       :alt: PMHC MDS Edit Role
 
-<<<<<<< HEAD
-.. _edit-role:
-=======
 A tick displays the user currently has this role assigned at the relevant organisation.
 
-.. _edit_role:
->>>>>>> master
+.. _edit-role:
 
-Editing an existing users roles
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Editing a users roles
+^^^^^^^^^^^^^^^^^^^^^
 
 A user can have more than one role. Each role is granted for a user against an
 organisation you have the User Management Role at.
@@ -259,14 +268,7 @@ You can edit and assign extra roles to an existing user by following these steps
    a User Management role at the Provider Organisation level.*
 |
 
-<<<<<<< HEAD
-7. Click the blue 'Save' button, or click the 'cancel' to edit without saving changes.
-8. You will receive confirmation that the users role has been saved and they will
-   now be displaying in the Users Roles list.
-9. You will need to notify the user of these role changes. The system will not automatically do this.
-=======
 7. All changes are automatically saved.
 8. You will need to notify the user of these role changes. The system will not automatically do this.
->>>>>>> master
 
 .. 9. The user will receive notification of these roles changes.

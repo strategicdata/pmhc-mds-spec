@@ -4,7 +4,7 @@ Reporting
 =========
 
 A comprehensive Reporting feature is due to be fully integrated into the PMHC MDS
-in :ref:`Stage_Two` of the PMHC MDS development.
+in :ref:`Stage-Two` of the PMHC MDS development, currently scheduled for mid 2017.
 
 We plan to release some basic reporting features prior to the implementation of
 Departmental Reports.  An update will be circulated to all current users and the mailing list
