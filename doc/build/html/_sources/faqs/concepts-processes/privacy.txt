@@ -1,3 +1,6 @@
+.. _privacy_FAQs:
+
+
 Questions about privacy protections and patient consent
 -------------------------------------------------------
 

@@ -101,6 +101,11 @@ Can I go back and enter information if I don’t have it at the time?
 
 Yes, the MDS allows you to go back and enter information at a later date.
 
+When data in the upload has the same identification key as recorded in the MDS,
+(eg Client, Practitioner, Episode, Service Contact, and Outcome Collection Keys)
+the data will automatically be updated for these files. The number of files present,
+created, and updated, are summarised on the successful upload notification email.
+
 Refer to upload specification :ref:`file-format`.
 
 .. _test-fictitious-data-faq:

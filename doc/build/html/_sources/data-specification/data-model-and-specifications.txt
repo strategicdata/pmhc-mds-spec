@@ -243,6 +243,19 @@ allowed.
 
 Outcome collection occasions are managed by the provider organisations via upload.
 
+PMHC MDS requires the use of one of the following three required outcome collection occasions measures, as follows:
+
+* **For adults (18+ years)** - Kessler Psychological Distress Scale :ref:`k10p-data-elements`
+  is the prescribed measure, with the option to use the :ref:`k5-data-elements` for
+  Aboriginal and Torres Strait Islander people if that is considered more appropriate.
+* **For children and young people (up to and including 17 years)** - the
+  Strengths & Difficulties Questionnaires (:ref:`sdq-data-elements`) is the
+  prescribed tool.  The specified versions include the parent-report for 4-10
+  years and 11-17 years; and the self-report for 11-17 years.
+  *We acknowledge that there is also a parent-report for 2-4 years; and teacher versions for all the years (2-4; 4-10 and 11-17) but that these are not to be reported the PMHC-MDS.*
+
+*Please note: For adolescents, clinician-discretion is allowed, and that the K10+ or K5 may be used, even though the person is under 18 years*
+
 .. _k10p-data-elements:
 
 K10+
@@ -257,7 +270,8 @@ the K10 total score as well as item scores for the 4 extra items in the K10+.
    :header-rows: 1
 
 When the client’s responses to Q1-10 are all recorded as 1 'None of the time',
-Q11-14 will require an answer of 'not applicable' to be entered.
+they are not required to answer questions 11-14. Where a question has not been
+answered please select a response of 'Not stated / missing'.
 
 .. _k5-data-elements:
 
@@ -303,8 +317,8 @@ translated versions. The table below indicates the items that are included in
 each version, the rating periods used and the broad content covered by each
 item.
 
-+-------+-----------------------------+--------------------------------+--------------------------------+
-|       | Informant                   | Parent                         | Young Person                   |
++-------+-----------------------------+-------------------------------------------+---------------------+
+|       | Informant                   | Parent                                    | Young Person        |
 +       +-----------------------------+---------------------+----------+----------+---------------------+
 |       | Age range                   | 4-10                | 11-17               | 11 - 17             |
 +       +-----------------------------+----------+----------+----------+----------+----------+----------+

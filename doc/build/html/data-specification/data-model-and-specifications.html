@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Data model and specifications &mdash; PMHC MDS Version 1.0.4 documentation</title>
+  <title>Data model and specifications &mdash; PMHC MDS Version 1.0.5 documentation</title>
   
 
   
@@ -32,7 +32,7 @@
   
 
   
-    <link rel="top" title="PMHC MDS Version 1.0.4 documentation" href="../index.html"/>
+    <link rel="top" title="PMHC MDS Version 1.0.5 documentation" href="../index.html"/>
         <link rel="up" title="Data Specification" href="index.html"/>
         <link rel="next" title="Upload specification" href="upload-specification.html"/>
         <link rel="prev" title="Identifier management" href="identifier-management.html"/> 
@@ -63,7 +63,7 @@
             
             
               <div class="version">
-                Version 1.0.4
+                Version 1.0.5
               </div>
             
           
@@ -184,6 +184,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#practitioner-tags">Practitioner - Tags</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#practitioner-year-of-birth">Practitioner - Year of Birth</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#provider-organisation-abn">Provider Organisation - ABN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#provider-organisation-legal-name">Provider Organisation - Legal Name</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#provider-organisation-name">Provider Organisation - Name</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#provider-organisation-state">Provider Organisation - State</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#provider-organisation-tags">Provider Organisation - Tags</a></li>
@@ -455,11 +456,15 @@ it cannot be uploaded.</p>
 <td>string (2,100)</td>
 <td>The name of the provider organisation.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#provider-organisation-abn">Provider Organisation - ABN</a> (organisation_abn)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#provider-organisation-legal-name">Provider Organisation - Legal Name</a> (organisation_legal_name)</td>
+<td>string</td>
+<td>The legal name of the provider organisation.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#provider-organisation-abn">Provider Organisation - ABN</a> (organisation_abn)</td>
 <td>string (11)</td>
 <td>The Australian Business Number of the provider organisation.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#provider-organisation-type">Provider Organisation - Type</a> (organisation_type)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#provider-organisation-type">Provider Organisation - Type</a> (organisation_type)</td>
 <td>string</td>
 <td><table class="first last docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -499,7 +504,7 @@ it cannot be uploaded.</p>
 </table>
 </td>
 </tr>
-<tr class="row-odd"><td><p class="first"><a class="reference internal" href="#provider-organisation-state">Provider Organisation - State</a> (organisation_state)</p>
+<tr class="row-even"><td><p class="first"><a class="reference internal" href="#provider-organisation-state">Provider Organisation - State</a> (organisation_state)</p>
 <p class="last">METeOR: <a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/613718">613718</a></p>
 </td>
 <td>string</td>
@@ -529,7 +534,7 @@ it cannot be uploaded.</p>
 </table>
 </td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#provider-organisation-tags">Provider Organisation - Tags</a> (organisation_tags)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#provider-organisation-tags">Provider Organisation - Tags</a> (organisation_tags)</td>
 <td>string</td>
 <td>List of tags for the provider organisation.</td>
 </tr>
@@ -3057,6 +3062,18 @@ in the short term there are issues with collecting individual item scores.
 Therefore, as a transitional phase, reporting overall scores/subscales will be
 allowed.</p>
 <p>Outcome collection occasions are managed by the provider organisations via upload.</p>
+<p>PMHC MDS requires the use of one of the following three required outcome collection occasions measures, as follows:</p>
+<ul class="simple">
+<li><strong>For adults (18+ years)</strong> - Kessler Psychological Distress Scale <a class="reference internal" href="#k10p-data-elements"><span class="std std-ref">K10+</span></a>
+is the prescribed measure, with the option to use the <a class="reference internal" href="#k5-data-elements"><span class="std std-ref">K5</span></a> for
+Aboriginal and Torres Strait Islander people if that is considered more appropriate.</li>
+<li><strong>For children and young people (up to and including 17 years)</strong> - the
+Strengths &amp; Difficulties Questionnaires (<a class="reference internal" href="#sdq-data-elements"><span class="std std-ref">SDQ</span></a>) is the
+prescribed tool.  The specified versions include the parent-report for 4-10
+years and 11-17 years; and the self-report for 11-17 years.
+<em>We acknowledge that there is also a parent-report for 2-4 years; and teacher versions for all the years (2-4; 4-10 and 11-17) but that these are not to be reported the PMHC-MDS.</em></li>
+</ul>
+<p><em>Please note: For adolescents, clinician-discretion is allowed, and that the K10+ or K5 may be used, even though the person is under 18 years</em></p>
 <div class="section" id="k10">
 <span id="k10p-data-elements"></span><h4>K10+<a class="headerlink" href="#k10" title="Permalink to this headline">¶</a></h4>
 <p>As noted above, reporting individual item scores will eventually be required.
@@ -3330,15 +3347,15 @@ the K10 total score as well as item scores for the 4 extra items in the K10+.</p
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#k10-question-11">K10+ - Question 11</a> (k10p_item11)</td>
 <td>integer</td>
-<td>0 - 28, 99 = missing</td>
+<td>0 - 28, 99 = Not stated / Missing</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#k10-question-12">K10+ - Question 12</a> (k10p_item12)</td>
 <td>integer</td>
-<td>0 - 28, 99 = missing</td>
+<td>0 - 28, 99 = Not stated / Missing</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#k10-question-13">K10+ - Question 13</a> (k10p_item13)</td>
 <td>integer</td>
-<td>0 - 89, 99 = missing</td>
+<td>0 - 89, 99 = Not stated / Missing</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#k10-question-14">K10+ - Question 14</a> (k10p_item14)</td>
 <td>string</td>
@@ -3364,7 +3381,7 @@ the K10 total score as well as item scores for the 4 extra items in the K10+.</p
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#k10-score">K10+ - Score</a> (k10p_score)</td>
 <td>integer</td>
-<td>10 - 50, 99 = missing</td>
+<td>10 - 50, 99 = Not stated / Missing</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#k10-tags">K10+ - Tags</a> (k10p_tags)</td>
 <td>string</td>
@@ -3373,7 +3390,8 @@ the K10 total score as well as item scores for the 4 extra items in the K10+.</p
 </tbody>
 </table>
 <p>When the client’s responses to Q1-10 are all recorded as 1 &#8216;None of the time&#8217;,
-Q11-14 will require an answer of &#8216;not applicable&#8217; to be entered.</p>
+they are not required to answer questions 11-14. Where a question has not been
+answered please select a response of &#8216;Not stated / missing&#8217;.</p>
 </div>
 <div class="section" id="k5">
 <span id="k5-data-elements"></span><h4>K5<a class="headerlink" href="#k5" title="Permalink to this headline">¶</a></h4>
@@ -3538,7 +3556,7 @@ the K5 total score.</p>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#k5-score">K5 - Score</a> (k5_score)</td>
 <td>integer</td>
-<td>5 - 25, 99 = missing</td>
+<td>5 - 25, 99 = Not stated / Missing</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#k5-tags">K5 - Tags</a> (k5_tags)</td>
 <td>string</td>
@@ -3586,8 +3604,8 @@ item.</p>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head" rowspan="4">&nbsp;</th>
 <th class="head">Informant</th>
-<th class="head" colspan="3">Parent</th>
-<th class="head" colspan="3">Young Person</th>
+<th class="head" colspan="4">Parent</th>
+<th class="head" colspan="2">Young Person</th>
 </tr>
 <tr class="row-even"><th class="head">Age range</th>
 <th class="head" colspan="2">4-10</th>
@@ -4935,31 +4953,31 @@ namely: 0-&gt;0, 1-&gt;0, 2-&gt;1, 3-&gt;2.</p>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#sdq-emotional-symptoms-scale">SDQ - Emotional Symptoms Scale</a> (sdq_emotional_symptoms)</td>
 <td>integer</td>
-<td>0 - 10, 99 = missing</td>
+<td>0 - 10, 99 = Not stated / Missing</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#sdq-conduct-problem-scale">SDQ - Conduct Problem Scale</a> (sdq_conduct_problem)</td>
 <td>integer</td>
-<td>0 - 10, 99 = missing</td>
+<td>0 - 10, 99 = Not stated / Missing</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#sdq-hyperactivity-scale">SDQ - Hyperactivity Scale</a> (sdq_hyperactivity)</td>
 <td>integer</td>
-<td>0 - 10, 99 = missing</td>
+<td>0 - 10, 99 = Not stated / Missing</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#sdq-peer-problem-scale">SDQ - Peer Problem Scale</a> (sdq_peer_problem)</td>
 <td>integer</td>
-<td>0 - 10, 99 = missing</td>
+<td>0 - 10, 99 = Not stated / Missing</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#sdq-prosocial-scale">SDQ - Prosocial Scale</a> (sdq_prosocial)</td>
 <td>integer</td>
-<td>0 - 10, 99 = missing</td>
+<td>0 - 10, 99 = Not stated / Missing</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#sdq-total-difficulties-score">SDQ - Total Difficulties Score</a> (sdq_total)</td>
 <td>integer</td>
-<td>0 - 40, 99 = missing</td>
+<td>0 - 40, 99 = Not stated / Missing</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#sdq-impact-score">SDQ - Impact Score</a> (sdq_impact)</td>
 <td>integer</td>
-<td>0 - 10, 99 = missing</td>
+<td>0 - 10, 99 = Not stated / Missing</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#sdq-tags">SDQ - Tags</a> (sdq_tags)</td>
 <td>string</td>
@@ -6981,7 +6999,7 @@ they currently reside.&#8217;</p>
 </table>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><dl class="first last docutils">
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><dl class="first docutils">
 <dt>1 - Yes</dt>
 <dd><p class="first last">The client has consented to their anonymised data being provided to the
 Department of Health for statistical purposes in planning and improving
@@ -6995,6 +7013,8 @@ mental health services. The client&#8217;s data will be excluded from reports an
 extracts accessible by the Department of Health.</p>
 </dd>
 </dl>
+<p>All data can be uploaded, regardless of consent flag.</p>
+<p class="last">All data will be available to PHNs to extract for their own internal data evaluation purposes.</p>
 </td>
 </tr>
 </tbody>
@@ -8620,7 +8640,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><p class="first">5 - 25, 99 = missing</p>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><p class="first">5 - 25, 99 = Not stated / Missing</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">The K5 Total score is based on the sum of K5 item 1 through 5 (range: 5-25).</p>
@@ -9078,7 +9098,11 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 28, 99 = missing</td>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 28, 99 = Not stated / Missing</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">When the client&#8217;s responses to Q1-10 are all recorded as 1 &#8216;None of the time&#8217;,
+they are not required to answer questions 11-14. Where this question has not been
+answered a response of &#8216;Not stated / missing&#8217; should be selected.</td>
 </tr>
 </tbody>
 </table>
@@ -9097,7 +9121,11 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 28, 99 = missing</td>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 28, 99 = Not stated / Missing</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">When the client&#8217;s responses to Q1-10 are all recorded as 1 &#8216;None of the time&#8217;,
+they are not required to answer questions 11-14. Where this question has not been
+answered a response of &#8216;Not stated / missing&#8217; should be selected.</td>
 </tr>
 </tbody>
 </table>
@@ -9116,7 +9144,11 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 89, 99 = missing</td>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 89, 99 = Not stated / Missing</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">When the client&#8217;s responses to Q1-10 are all recorded as 1 &#8216;None of the time&#8217;,
+they are not required to answer questions 11-14. Where this question has not been
+answered a response of &#8216;Not stated / missing&#8217; should be selected.</td>
 </tr>
 </tbody>
 </table>
@@ -9138,7 +9170,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -9156,6 +9188,11 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 </tbody>
 </table>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">When the client&#8217;s responses to Q1-10 are all recorded as 1 &#8216;None of the time&#8217;,
+they are not required to answer questions 11-14. Where this question has not been
+answered a response of &#8216;Not stated / missing&#8217; should be selected.</p>
 </td>
 </tr>
 </tbody>
@@ -9178,7 +9215,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><p class="first">10 - 50, 99 = missing</p>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><p class="first">10 - 50, 99 = Not stated / Missing</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">The K10 Total score is based on the sum of K10 item 01 through 10 (range: 10-50).
@@ -9646,6 +9683,23 @@ be used to estimate a year of birth</li>
 </table>
 <hr class="docutils" />
 </div>
+<div class="section" id="provider-organisation-legal-name">
+<span id="dfn-organisation-legal-name"></span><h3>Provider Organisation - Legal Name<a class="headerlink" href="#provider-organisation-legal-name" title="Permalink to this headline">¶</a></h3>
+<p>The legal name of the provider organisation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body">organisation_legal_name</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">string</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">false</td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+</div>
 <div class="section" id="provider-organisation-name">
 <span id="dfn-organisation-name"></span><h3>Provider Organisation - Name<a class="headerlink" href="#provider-organisation-name" title="Permalink to this headline">¶</a></h3>
 <p>The name of the provider organisation.</p>
@@ -9936,7 +9990,7 @@ option to commission external providers.</p>
 </tr>
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 10, 99 = missing</td>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 10, 99 = Not stated / Missing</td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">SDQ items and Scale Summary scores</span></a> for instructions on scoring the Conduct Problem Scale.</td>
 </tr>
@@ -9956,7 +10010,7 @@ option to commission external providers.</p>
 </tr>
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 10, 99 = missing</td>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 10, 99 = Not stated / Missing</td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">SDQ items and Scale Summary scores</span></a> for instructions on scoring the Emotional Symptoms Scale.</td>
 </tr>
@@ -9976,7 +10030,7 @@ option to commission external providers.</p>
 </tr>
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 10, 99 = missing</td>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 10, 99 = Not stated / Missing</td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">SDQ items and Scale Summary scores</span></a> for instructions on scoring the Hyperactivity Scale.</td>
 </tr>
@@ -9996,7 +10050,7 @@ option to commission external providers.</p>
 </tr>
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 10, 99 = missing</td>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 10, 99 = Not stated / Missing</td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">SDQ items and Scale Summary scores</span></a> for instructions on scoring the Impact Score.</td>
 </tr>
@@ -10016,7 +10070,7 @@ option to commission external providers.</p>
 </tr>
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 10, 99 = missing</td>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 10, 99 = Not stated / Missing</td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">SDQ items and Scale Summary scores</span></a> for instructions on scoring the Peer Problem Scale.</td>
 </tr>
@@ -10036,7 +10090,7 @@ option to commission external providers.</p>
 </tr>
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 10, 99 = missing</td>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 10, 99 = Not stated / Missing</td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">SDQ items and Scale Summary scores</span></a> for instructions on scoring the Prosocial Scale.</td>
 </tr>
@@ -11915,7 +11969,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 40, 99 = missing</td>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 40, 99 = Not stated / Missing</td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">SDQ items and Scale Summary scores</span></a> for instructions on scoring the Total Difficulties Score.</td>
 </tr>
@@ -12237,7 +12291,7 @@ postcode must be entered for Service Contact Postcode.</li>
 </div>
 <div class="section" id="service-contact-no-show">
 <span id="dfn-service-contact-no-show"></span><h3>Service Contact - No Show<a class="headerlink" href="#service-contact-no-show" title="Permalink to this headline">¶</a></h3>
-<p>Where an appointment was made for a client, but the client failed to attend the appointment, as represented by a code.</p>
+<p>Where an appointment was made for an intended participant(s), but the intended participant(s) failed to attend the appointment, as represented by a code.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -12265,10 +12319,10 @@ postcode must be entered for Service Contact Postcode.</li>
 </tr>
 <tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><dl class="first last docutils">
 <dt>1 - Yes</dt>
-<dd><p class="first last">The client failed to attend the appointment.</p>
+<dd><p class="first last">The intended participant(s) failed to attend the appointment.</p>
 </dd>
 <dt>2 - No</dt>
-<dd><p class="first last">The client attended the appointment.</p>
+<dd><p class="first last">The intended participant(s) attended the appointment.</p>
 </dd>
 </dl>
 </td>
@@ -12675,7 +12729,7 @@ such as community health centres.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'Version 1.0.4',
+            VERSION:'Version 1.0.5',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

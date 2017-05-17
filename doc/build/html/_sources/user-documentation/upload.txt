@@ -193,11 +193,3 @@ Column [Name] is required on row ...
 There is a required field that has not been entered. If not supplied, insert the
 default 'Missing' or 'Not recorded' value. These values can be found at :ref:`record-formats`.
 If the Column [Name] is blank in a mandatory field you will receive the error above.
-
-Client_consent must have a value of 1. Please delete row ...
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-The client must consent to their information being provided.  Therefore when there
-is no consent the client information on that row must be deleted as it can not be
-uploaded to the PMHC MDS. If no consent is given and have have included the data
-in the upload file, you will receive the error above.
