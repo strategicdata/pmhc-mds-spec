@@ -37,7 +37,7 @@ the roles that currently exist within the PMHC MDS:
 +----------------------------+------------------------------------------------------------------------------------------------------------------------------------+
 | Reporting                  | A user with the Reporting role can download data from the associated organisation                                                  |
 +----------------------------+------------------------------------------------------------------------------------------------------------------------------------+
-| Data Entry                 | A user with the Data Entry role can view client data from the associated organisation                                              |
+| Data Entry                 | A user with the Data Entry role can view client data and practitioners from the associated organisation                            |
 +----------------------------+------------------------------------------------------------------------------------------------------------------------------------+
 
 Each role allows a user to perform specific tasks. A user can have more than one role.
@@ -50,21 +50,21 @@ than one organisations.
 What users see once they are logged in will depend upon what roles they have been
 assigned. The table below lists the tabs that will be shown for each role:
 
-+-------------------------+---------------------------+
-| Role                    | Tab                       |
-+=========================+===========================+
-| Organisation Management | Organisations             |
-+-------------------------+---------------------------+
-| User Management         | Organisations, Users      |
-+-------------------------+---------------------------+
-| Upload                  | Upload                    |
-+-------------------------+---------------------------+
-| Reporting               | Data Extraction           |
-+-------------------------+---------------------------+
-| Data Entry              | Client Data               |
-+-------------------------+---------------------------+
-| All users               | SLK                       |
-+-------------------------+---------------------------+
++-------------------------+------------------------------+
+| Role                    | Tab                          |
++=========================+==============================+
+| Organisation Management | Organisations                |
++-------------------------+------------------------------+
+| User Management         | Organisations, Users         |
++-------------------------+------------------------------+
+| Upload                  | Upload                       |
++-------------------------+------------------------------+
+| Reporting               | Data Extraction              |
++-------------------------+------------------------------+
+| Data Entry              | Organisations, Client Data   |
++-------------------------+------------------------------+
+| All users               | SLK                          |
++-------------------------+------------------------------+
 
 .. _finding_a_user:
 
@@ -91,22 +91,6 @@ To filter the listed users:
 
 3. To remove the filter, click the grey cross within the edit box beside any
    entered text.
-
-.. _view_users_details:
-
-Viewing a User's details
-^^^^^^^^^^^^^^^^^^^^^^^^
-
-You can view a user's details through the user tab, by following these steps:
-
-#. Navigate to the Users tab.
-#. Click on the user's name in blue displayed within the table list.
-
-.. figure:: screen-shots/view-user.png
-   :alt: PMHC MDS View User
-
-A page will display showing the user's details and the :ref:`roles` they have at
-particular organisations.
 
 .. _adding_a_user:
 
@@ -209,10 +193,35 @@ will need to accept this invitation within 7 days, by following these steps:
 9. Navigate to https://pmhc-mds.net/ and follow the :ref:`logging_in`
    instructions.
 
+.. _delete_user:
+
+Deleting a user
+^^^^^^^^^^^^^^^
+
+A user can be deleted from an organisation by removing all the roles the user has at that organisaiton.
+
+See :ref:`edit_role`
+
+.. _view_users_details:
+
+Viewing a User's details
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+You can view a user's details through the user tab, by following these steps:
+
+#. Navigate to the Users tab.
+#. Click on the user's name in blue displayed within the table list.
+
+.. figure:: screen-shots/view-user.png
+   :alt: PMHC MDS View User
+
+A page will display showing the user's details and the :ref:`roles` they have at
+particular organisations.
+
 .. _view_role:
 
-View an existing users roles
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Viewing a users roles
+^^^^^^^^^^^^^^^^^^^^^
 
 A user can have more than one role. Each role is granted for a user against an
 organisation you have the User Management Role at.
@@ -229,8 +238,8 @@ You can edit and assign extra roles to an existing user by following these steps
 
 .. _edit_role:
 
-Editing an existing users roles
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Editing a users roles
+^^^^^^^^^^^^^^^^^^^^^
 
 A user can have more than one role. Each role is granted for a user against an
 organisation you have the User Management Role at.

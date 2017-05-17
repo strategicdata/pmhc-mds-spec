@@ -156,6 +156,54 @@ Deleting a Provider Organisation
 You cannot delete a provider organisation. If you believe an organisation should be
 deleted please email support@pmhc-mds.com.
 
+.. _search_practitioner:
+
+Searching for a Practitioner
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You can search for a practitioner by sorting and filtering the practitioners of
+a provider organisation through the organisations tab. Follow these steps:
+
+1. Navigate to a provider organisations details. (See :ref:`view_provider_organisation`)
+2. Click on the 'Practitioners' tab.
+
+.. figure:: screen-shots/practitioners-view.png
+   :alt: PMHC MDS Practitioners Table View
+
+4. Sort the listed practitioners by simply clicking on a column header
+   of the provider organisations table. Alternately you can click on the arrow beside a
+   column header for more sort options, as follows:
+
+   - Sort Ascending
+   - Sort Descending
+   - Remove Sort
+   - Hide Column
+
+To filter the listed practitioners:
+
+1. Click the grey 'Filters' button.
+2. Start typing in an edit box now displayed under the column headers.
+
+.. figure:: screen-shots/practitioners-filter.png
+   :alt: PMHC MDS Practitioners Filter
+
+3. To remove the filter, click the grey cross within the edit box beside any
+   entered text.
+
+.. _view-practitioner:
+
+Viewing a Practitioner
+^^^^^^^^^^^^^^^^^^^^^^
+
+You can view a practitioner's details through the :ref:`search_practitioner`
+available on the Organisations tab, by following these steps:
+
+1. Navigate to the 'Practitioners' tab. (See :ref:`search_practitioner`)
+2. Click on the practitioner's key in blue displayed within the table list.
+
+.. figure:: screen-shots/practitioners-detail-view.png
+   :alt: PMHC MDS Practitioner Details View
+
 .. _viewing_organisational_users:
 
 Viewing Organisational Users
