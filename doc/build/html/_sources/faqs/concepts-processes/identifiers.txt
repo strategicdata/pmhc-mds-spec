@@ -1,4 +1,4 @@
-.. _identifier_and_key_FAQs:
+.. _identifier-and-key-FAQs:
 
 Questions about Unique Identifiers and 'Keys'
 =============================================
@@ -30,7 +30,7 @@ across their commissioned organisations.
 Some PHNs have or are already implementing centralised client identifier (‘key’)
 allocation in order to facilitate services between their contracted provider organisations.
 For those PHNs without this capability a master client index will be created during
-:ref:`Stage_Two` of the PMHC MDS implementation. The master client index will facilitate
+:ref:`Stage-Two` of the PMHC MDS implementation. The master client index will facilitate
 management of the client keys within the PHN independent of the provider organisation.
 
 In the interim it is recommended that at the very least PHNs ensure that Client Keys

@@ -17,7 +17,7 @@ of the organisations to which you can upload.
 .. figure:: screen-shots/upload.png
    :alt: PMHC MDS Upload
 
-.. _uploading_a_file:
+.. _uploading-a-file:
 
 Uploading a file
 ^^^^^^^^^^^^^^^^
@@ -54,7 +54,7 @@ any errors that occurred. Further discussion about the error messages can be
 found at :ref:`error-messages`. Please email support@pmhc-mds.com if you don't
 receive an email within one hour.
 
-.. _uploading_a_file_in_test_mode:
+.. _uploading-a-file-in-test-mode:
 
 Uploading a file in Test Mode
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -94,7 +94,7 @@ Further discussion about the error messages can be
 found at :ref:`error-messages`. Please email support@pmhc-mds.com if you don't
 receive an email within one hour.
 
-.. _reviewing_previous_uploads:
+.. _reviewing-previous-uploads:
 
 Reviewing Previous Uploads
 ^^^^^^^^^^^^^^^^^^^^^^^^^^

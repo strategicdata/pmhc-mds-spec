@@ -14,4 +14,4 @@ Once this feature is available, you will only be able to see the Reporting tab i
 you have been assigned the 'Reporting' role.
 
 In the interim, PMHC MDS users with the reporting role can access their
-organisation's current PMHC MDS data through the Data Extraction tab - see :ref:`data_extraction`.
+organisation's current PMHC MDS data through the Data Extraction tab - see :ref:`data-extraction`.
