@@ -524,19 +524,22 @@ class PMHC < Csvlint::Cli
       data.each do |row|
         valid_items = versions[row[version_index]]
 
+        # Must use either item scores or total scores, not both
+        using_total_scores = sdq_scales.any? { |scale| row[header.index(scale)] != nil }
+
         # Error should be thrown through foreign key checking if the version is
         # not valid. We don't want to double up on error messages.
         unless valid_items == nil
           # Check the items provided are valid for the sdq version
-          using_item_scores = 0
+          using_item_scores = false
           for i in 1..42
             item_index = header.index("sdq_item#{i}")
             if valid_items.include?(i)
               unless row[item_index] == "9"
-                using_item_scores = 1
+                using_item_scores = true
               end
             else
-              unless row[item_index] == "8" or row[item_index] == "9"
+              unless row[item_index] == "8" or (row[item_index] == "9" and using_total_scores)
                 validator.build_errors(:invalid_sdq_item_included, :sdq,
                   current_line+1, item_index+1, row[item_index])
               end
@@ -544,17 +547,7 @@ class PMHC < Csvlint::Cli
           end
         end
 
-        # Must use either item scores or total scores, not both
-        using_total_scores = 0
-        sdq_scales.each do |scale|
-          item_index = header.index(scale)
-          unless row[item_index] == nil
-            using_total_scores = 1
-            break
-          end
-        end
-
-        if using_item_scores == 1 and using_total_scores == 1
+        if using_item_scores and using_total_scores
           validator.build_errors(:item_scores_and_total_scores_used, :sdq,
             current_line+1, item_index, row[item_index])
         end
