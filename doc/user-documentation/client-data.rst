@@ -13,7 +13,7 @@ After navigating to the Client Data tab, you will be presented with three search
 which will allow you to easily find and view the client data for the organisations
 you have permission to access.
 
-.. figure:: screen-shots/client-data
+.. figure:: screen-shots/client-data.png
    :alt: Client Data Tab View
 
 .. _find-client:
