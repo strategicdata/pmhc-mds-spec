@@ -113,7 +113,10 @@ class PMHC < Csvlint::Cli
     def validate_pmhc(validator, csv)
       data = validator.data
 
-      if    csv =~ /clients/
+      if    csv =~ /organisations/
+        validate_organisations( validator, data )
+        @validators['organisations'] = validator
+      elsif csv =~ /clients/
         validate_clients( validator, data )
         @validators['clients'] = validator
       elsif csv =~ /episodes/
@@ -135,6 +138,10 @@ class PMHC < Csvlint::Cli
         validate_sdq( validator, data )
         @validators['sdq'] = validator
       end
+    end
+
+    def validate_organisations(validator, data)
+      # pass, nothing to check here yet.
     end
 
     def validate_clients(validator, data)
@@ -398,16 +405,29 @@ class PMHC < Csvlint::Cli
       header = data.shift
       yob_index = header.index("practitioner_year_of_birth")
 
-      current_line = 1
-      data.each do |row|
+      org_hash = Hash.new()
+      org_data = @validators["organisations"].data
+      org_header = org_data.shift
+      org_data.each do |org| 
+        org_hash[org[org_header.index('organisation_path')]] = org[org_header.index('organisation_type')]
+      end
+
+      data.each_with_index do |row,line|
         # Year of birth cannot be in the future
         yob = row[yob_index]
         if is_year_in_future( yob )
-          validator.build_errors(:future_year_not_allowed, :practitioner, current_line+1,
+          validator.build_errors(:future_year_not_allowed, :practitioner, line+2,
             yob_index+1, yob)
         end
-        current_line += 1
+
+        org_type = org_hash[row[header.index('organisation_path')]]
+        if row[header.index('atsi_cultural_training')] == '3'
+          unless (org_type == '8' or ['1','2','3'].include? row[header.index('practitioner_atsi_status')])
+            validator.build_errors(:atsi_cultural_training, :practitioner, line+2, header.index('atsi_cultural_training'), data[header.index('atsi_cultural_training')])
+          end
+        end
       end
+
 
       data.unshift(header)
     end
