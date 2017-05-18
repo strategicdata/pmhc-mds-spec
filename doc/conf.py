@@ -60,7 +60,7 @@ author = u'PMHC MDS Working Group'
 
 def get_version():
 
-   version = 'v1.0.5'
+   version = 'v1.0.6'
 
    try:
       version = os.environ["GIT_VERSION"]
