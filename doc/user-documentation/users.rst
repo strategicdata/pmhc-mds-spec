@@ -85,12 +85,11 @@ To filter the listed users:
 
 1. Click the grey 'Filters' button.
 2. Start typing in an edit box now displayed under the column headers.
-
-.. figure:: screen-shots/users-filter.png
-   :alt: PMHC MDS Users Filter
-
 3. To remove the filter, click the grey cross within the edit box beside any
    entered text.
+
+   .. figure:: screen-shots/users-filter.png
+      :alt: PMHC MDS Users Filter
 
 .. _view-users-details:
 
@@ -106,12 +105,21 @@ You can view a user's details through the user tab, by following these steps:
    :alt: PMHC MDS View User
 
 A page will display showing the user's details and the :ref:`roles` they have at
-particular organisations.
+particular organisations. See :ref:`view-role`.
+
+.. _editing_user:
+
+Editing a User's details
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+A user can edit their own contact details.
+
+See :ref:`updating-your-details`
 
 .. _adding-a-user:
 
-Adding a user
-^^^^^^^^^^^^^
+Adding a new user
+^^^^^^^^^^^^^^^^^
 
 Note: PHNs can devolve user management authority to one or more users in a
 provider organisation so that the provider organisation can manage their own
@@ -119,8 +127,13 @@ logins, or a PHN can choose to keep user management authority at the level of
 the PHN requiring each provider organisation to contact the PHN when they need
 a new user added.
 
-The first step to adding a new user is to invite the potential user to the
-PMHC MDS.  You can invite a new user through the Users tab, by following these steps:
+Before inviting a user, it is always best to inform them that they will receive a
+PMHC MDS invitation by email from noreply@strategicdata.com and a verification code via SMS.
+You can also provide them with the link to the online :ref:`user-docs` to read
+the steps they will need to complete the steps outlined in :ref:`accepting-invitation`.
+
+The next step to adding a new user is to invite them through the Users tab,
+by following these steps:
 
 1. Navigate to the Users tab.
 2. Click the 'Invite New User' tab.
@@ -172,51 +185,6 @@ You can invite an existing user through the Users tab, by following these steps:
 6. You will need to notify the user that they have been added to the organisation and confirm their authorised roles. The system will not automatically do this.
 
 .. 6. The user will receive notification that they have been granted these additional roles at the relevant organisation.
-
-.. _accepting-invitation:
-
-Accepting an invitation to become a PMHC MDS User
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-To become a PMHC MDS user you will be sent an invitation by email and a
-verification code via SMS. In order to gain access to the PMHC MDS you
-will need to accept this invitation within 7 days, by following these steps:
-
-.. figure:: screen-shots/invitation-email.png
-   :alt: PMHC MDS Invitation Email
-
-1. Click on the link contained in the email. You will be shown a page where
-   you will need to input the SMS you have been sent.
-
-   .. figure:: screen-shots/verify-user.png
-      :alt: PMHC MDS Verify User
-
-2. Input your verification code.
-3. Click 'Submit'.
-4. You will be shown a page where you need to choose a password.
-
-   .. figure:: screen-shots/activate-account.png
-      :alt: PMHC MDS Activate Account
-
-5. Enter your password.
-6. Confirm your password.
-7. Click 'Submit'.
-8. Your account will now be activated.
-
-   .. figure:: screen-shots/account-activated.png
-      :alt: PMHC MDS Account Activated
-
-9. Navigate to https://pmhc-mds.net/ and follow the :ref:`logging-in`
-   instructions.
-
-.. _delete_user:
-
-Deleting a user
-^^^^^^^^^^^^^^^
-
-A user can be deleted from an organisation by removing all the roles the user has at that organisaiton.
-
-See :ref:`edit-role`
 
 .. _view-role:
 
@@ -272,3 +240,12 @@ You can edit and assign extra roles to an existing user by following these steps
 8. You will need to notify the user of these role changes. The system will not automatically do this.
 
 .. 9. The user will receive notification of these roles changes.
+
+.. _delete_user:
+
+Deleting a user
+^^^^^^^^^^^^^^^
+
+A user can be deleted from an organisation by removing all the roles the user has at that organisaiton.
+
+See :ref:`edit-role`

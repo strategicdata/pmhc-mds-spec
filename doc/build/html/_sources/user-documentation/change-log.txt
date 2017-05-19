@@ -3,6 +3,21 @@
 User Guide Change log
 =====================
 
+18/5/2017
+---------
+
+* Added :ref:`client-data` documentation
+
+* Added :ref:`view-practitioner`
+
+* Added to the :ref:`roles` section
+
+* Moved :ref:`accepting-invitation` under Home tab
+
+* Updated screenshots for :ref:`adding-a-user`
+
+* Updated screenshots for :ref:`edit-role`
+
 15/3/2017
 ---------
 
