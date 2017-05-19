@@ -72,7 +72,7 @@ def get_version():
 # The short X.Y version.
 # version = get_version().lstrip('v').rstrip()
 
-version = "Version 1.0.5"
+version = "Version 1.0.6"
 
 # The full version, including alpha/beta/rc tags.
 release = version
