@@ -2756,7 +2756,7 @@ List of tags for the collection occasion.
 Organisation Key
 ^^^^^^^^^^^^^^^^
 
-A sequence of characters which uniquely identifies the provider organisation. Assigned by the Primary Health Network.
+A sequence of characters which uniquely identifies the provider organisation to the Primary Health Network. Assigned by the Primary Health Network.
 
 :Field name: organisation_key
 

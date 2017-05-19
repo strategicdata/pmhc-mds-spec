@@ -13,22 +13,27 @@ Data Specification Change log
     * Practitioner
 
       * Updated :ref:`dfn-organisation_path` to specify the Provider Organisation providing a service to the client.
+      * Updated :ref:`dfn-organisation_key` to specify the key uniquely identifies the Provider Organisation to the Primary Health Network.
 
     * Client
 
       * Updated :ref:`dfn-organisation_path` to specify the Provider Organisation providing a service to the client.
+      * Updated :ref:`dfn-organisation_key` to specify the key uniquely identifies the Provider Organisation to the Primary Health Network.
 
     * Episode
 
       * Updated :ref:`dfn-organisation_path` to specify the Provider Organisation providing a service to the client.
+      * Updated :ref:`dfn-organisation_key` to specify the key uniquely identifies the Provider Organisation to the Primary Health Network.
 
     * Collection Occasion
 
       * Updated :ref:`dfn-organisation_path` to specify the Provider Organisation providing a service to the client.
+      * Updated :ref:`dfn-organisation_key` to specify the key uniquely identifies the Provider Organisation to the Primary Health Network.
 
     * Service Contact
 
       * Updated :ref:`dfn-organisation_path` to specify the Provider Organisation providing a service to the client.
+      * Updated :ref:`dfn-organisation_key` to specify the key uniquely identifies the Provider Organisation to the Primary Health Network.
 
 * Upload specification
 
