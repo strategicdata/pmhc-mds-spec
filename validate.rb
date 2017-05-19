@@ -113,7 +113,10 @@ class PMHC < Csvlint::Cli
     def validate_pmhc(validator, csv)
       data = validator.data
 
-      if    csv =~ /clients/
+      if    csv =~ /organisations/
+        validate_organisations( validator, data )
+        @validators['organisations'] = validator
+      elsif csv =~ /clients/
         validate_clients( validator, data )
         @validators['clients'] = validator
       elsif csv =~ /episodes/
@@ -135,6 +138,10 @@ class PMHC < Csvlint::Cli
         validate_sdq( validator, data )
         @validators['sdq'] = validator
       end
+    end
+
+    def validate_organisations(validator, data)
+      # pass, nothing to check here yet.
     end
 
     def validate_clients(validator, data)
@@ -211,7 +218,7 @@ class PMHC < Csvlint::Cli
 
         # Episode end date cannot be in the future
         eed = row[episode_end_date_index]
-        unless eed == nil
+        unless is_date_missing(eed)
           if is_date_in_future( eed )
             validator.build_errors(:future_date_not_allowed, :episode, current_line+1,
               episode_end_date_index+1, eed)
@@ -227,10 +234,9 @@ class PMHC < Csvlint::Cli
 
         # If a completion status is recorded episode end date should be recorded
         unless row[episode_completion_status_index] == nil
-          if eed == nil
-            validator.build_errors(:invalid_episode_completion_status, :episode,
+          if is_date_missing(eed)
+            validator.build_errors(:invalid_episode_completion_statusy, :episode,
               current_line+1, episode_completion_status_index+1, row[episode_completion_status_index])
-
           end
         end
 
@@ -399,16 +405,29 @@ class PMHC < Csvlint::Cli
       header = data.shift
       yob_index = header.index("practitioner_year_of_birth")
 
-      current_line = 1
-      data.each do |row|
+      org_hash = Hash.new()
+      org_data = @validators["organisations"].data
+      org_header = org_data.shift
+      org_data.each do |org| 
+        org_hash[org[org_header.index('organisation_path')]] = org[org_header.index('organisation_type')]
+      end
+
+      data.each_with_index do |row,line|
         # Year of birth cannot be in the future
         yob = row[yob_index]
         if is_year_in_future( yob )
-          validator.build_errors(:future_year_not_allowed, :practitioner, current_line+1,
+          validator.build_errors(:future_year_not_allowed, :practitioner, line+2,
             yob_index+1, yob)
         end
-        current_line += 1
+
+        org_type = org_hash[row[header.index('organisation_path')]]
+        if row[header.index('atsi_cultural_training')] == '3'
+          unless (org_type == '8' or ['1','2','3'].include? row[header.index('practitioner_atsi_status')])
+            validator.build_errors(:atsi_cultural_training, :practitioner, line+2, header.index('atsi_cultural_training'), data[header.index('atsi_cultural_training')])
+          end
+        end
       end
+
 
       data.unshift(header)
     end
@@ -525,19 +544,22 @@ class PMHC < Csvlint::Cli
       data.each do |row|
         valid_items = versions[row[version_index]]
 
+        # Must use either item scores or total scores, not both
+        using_total_scores = sdq_scales.any? { |scale| row[header.index(scale)] != nil }
+
         # Error should be thrown through foreign key checking if the version is
         # not valid. We don't want to double up on error messages.
         unless valid_items == nil
           # Check the items provided are valid for the sdq version
-          using_item_scores = 0
+          using_item_scores = false
           for i in 1..42
             item_index = header.index("sdq_item#{i}")
             if valid_items.include?(i)
               unless row[item_index] == "9"
-                using_item_scores = 1
+                using_item_scores = true
               end
             else
-              unless row[item_index] == "8"
+              unless row[item_index] == "8" or (row[item_index] == "9" and using_total_scores)
                 validator.build_errors(:invalid_sdq_item_included, :sdq,
                   current_line+1, item_index+1, row[item_index])
               end
@@ -545,17 +567,7 @@ class PMHC < Csvlint::Cli
           end
         end
 
-        # Must use either item scores or total scores, not both
-        using_total_scores = 0
-        sdq_scales.each do |scale|
-          item_index = header.index(scale)
-          unless row[item_index] == nil
-            using_total_scores = 1
-            break
-          end
-        end
-
-        if using_item_scores == 1 and using_total_scores == 1
+        if using_item_scores and using_total_scores
           validator.build_errors(:item_scores_and_total_scores_used, :sdq,
             current_line+1, item_index, row[item_index])
         end
@@ -621,19 +633,14 @@ class PMHC < Csvlint::Cli
       end
     end
 
+    def is_date_missing( date )
+        return (date == nil or date[:year] == 9999)
+    end
+
     def is_date_in_future( date )
-        today = Date.today
-        missing = Date.new(9999,9,9)
-
-        date_obj = nil
-        unless date == nil
-          date_obj = Date.new( date[:year], date[:month], date[:day] )
-          if ( ( today <=> date_obj ) < 0 ) and ( ( date_obj <=> missing ) != 0 )
-            return true
-          end
-        end
-
-        return false
+        return false if is_date_missing(date)
+        date_obj = Date.new( date[:year], date[:month], date[:day] )
+        return Date.today < date_obj
     end
 
     def is_year_in_future( year )

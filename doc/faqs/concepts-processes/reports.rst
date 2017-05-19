@@ -1,6 +1,6 @@
 .. _Questions-about-standards-reports:
 
-.. _reports_FAQs:
+.. _reports-FAQs:
 
 Questions about Standard Reports
 --------------------------------
@@ -12,7 +12,7 @@ The documentation indicates standard reports will be designed to meet PHN and de
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Department will be planning a range of standard reports and will consult with PHNs
-about their requirements.  Standard Reports are expected to be developed for :ref:`Stage_Two`.
+about their requirements.  Standard Reports are expected to be developed for :ref:`Stage-Two`.
 
 Benchmarking reports
 ^^^^^^^^^^^^^^^^^^^^
@@ -21,4 +21,4 @@ Are the PHNs going to receive reports on collated data and benchmarked against o
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Department will be planning a range of standard reports and will consult with PHNs
-about their requirements.  Standard Reports are expected to be developed for :ref:`Stage_Two`.
+about their requirements.  Standard Reports are expected to be developed for :ref:`Stage-Two`.

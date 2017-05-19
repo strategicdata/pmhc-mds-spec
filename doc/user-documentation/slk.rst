@@ -1,4 +1,4 @@
-.. _slk_generator:
+.. _slk-generator:
 
 SLK
 ===

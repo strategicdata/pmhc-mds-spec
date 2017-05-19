@@ -1,3 +1,5 @@
+.. _upload:
+
 Upload
 ======
 
@@ -17,7 +19,7 @@ of the organisations to which you can upload.
 .. figure:: screen-shots/upload.png
    :alt: PMHC MDS Upload
 
-.. _uploading_a_file:
+.. _uploading-a-file:
 
 Uploading a file
 ^^^^^^^^^^^^^^^^
@@ -54,7 +56,7 @@ any errors that occurred. Further discussion about the error messages can be
 found at :ref:`error-messages`. Please email support@pmhc-mds.com if you don't
 receive an email within one hour.
 
-.. _uploading_a_file_in_test_mode:
+.. _uploading-a-file-in-test-mode:
 
 Uploading a file in Test Mode
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -94,28 +96,34 @@ Further discussion about the error messages can be
 found at :ref:`error-messages`. Please email support@pmhc-mds.com if you don't
 receive an email within one hour.
 
-.. _reviewing_previous_uploads:
+.. _viewing-previous-uploads:
 
-Reviewing Previous Uploads
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+Viewing Previous Uploads
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 The PMHC MDS allows you to review previous uploads. At the bottom of the Upload
 tab there is a 'Status of Previous Uploads' table.
 
-   .. figure:: screen-shots/previous-uploads.png
+   .. figure:: screen-shots/previous-upload.png
       :alt: PMHC MDS Status of Previous Uploads
 
 When an upload has been completed, irregardless of whether it validated successfully
 or not, the upload will be added to the table.
 
-The 'Status of Previous Uploads' table refreshes every 60 seconds.
+The 'Status of Previous Uploads' table refreshes every 60 seconds. Types of status results are:
 
-By default test uploads are not shown. If you need to see a test upload please
-check the 'Show test uploads' checkbox. Uploads done in Test Mode will be be
-displayed.
+  * **accept** - the file is currently going through the validation process
+  * **complete** - the file has successfully passed the validation process
+  * **error** - the file has returned errors through the validation process. Please review the error messages and correct the data to upload again
 
-   .. figure:: screen-shots/status-of-test-uploads.png
-      :alt: PMHC MDS Status of Test Uploads
+  .. By default test uploads are not shown.
+
+If you need to see a test upload please check the 'Show test uploads' checkbox.
+
+.. _viewing-uploads-details:
+
+Viewing Upload Details
+^^^^^^^^^^^^^^^^^^^^^^
 
 You can view the results of an upload by following these steps:
 
@@ -123,7 +131,7 @@ You can view the results of an upload by following these steps:
 2. Click the 'Upload Status' tab.
 3. Locate the date and time of the upload you are interested in.
 4. Click on the filename of the relevant upload.
-5. You will be shown the 'Status of Previous Uploads' page.
+5. You will be shown the 'Upload Detail' page.
 
    .. figure:: screen-shots/upload-details.png
       :alt: PMHC MDS Upload Details page
@@ -140,6 +148,13 @@ You can view the results of an upload by following these steps:
 
 Error messages
 ^^^^^^^^^^^^^^
+
+If the status of your file shows error, you can view the returned errors through :ref:`viewing-previous-uploads`.
+
+.. figure:: screen-shots/upload-details-error.png
+   :alt: PMHC MDS Upload Details error page
+
+Below are some example error messages, and how to fix them:
 
 Could not find worksheet [Name]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

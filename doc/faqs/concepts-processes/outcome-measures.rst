@@ -54,7 +54,7 @@ Alternative measures – additional measures set by PHNS
 Can the measures be extended to include the Depression, Anxiety Stress Scale (DASS) and Modified Scale Suicide Ideation (MSSI)?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-As per :ref:`additional_data_FAQs`, each PHN has the capacity to add additional outcome measures to
+As per :ref:`additional-data-FAQs`, each PHN has the capacity to add additional outcome measures to
 their own regional data collection systems to meet local requirements but these
 are not necessary for reporting the national data PMHC minimum data set.
 
@@ -162,7 +162,7 @@ No, the data required for the immediate future by the PMHC MDS are individual
 item scores, or as noted above, subscale scores and totals. These will be used
 to derive a range of change indicators.
 
-.. _MHNIP_outcome_measures_faq:
+.. _MHNIP-outcome-measures-faq:
 
 MHNIP outcome measures
 ^^^^^^^^^^^^^^^^^^^^^^

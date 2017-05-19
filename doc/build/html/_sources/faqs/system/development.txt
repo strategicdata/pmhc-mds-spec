@@ -1,12 +1,12 @@
 Development of the PMHC Minimum Data Set
 ----------------------------------------
 
-.. _Stage_Two:
+.. _Stage-Two:
 
 Stage Two
 ^^^^^^^^^
 
-.. _stage_two_date_faq:
+.. _stage-two-date-faq:
 
 When is Stage Two of development going to be implemented?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -27,15 +27,15 @@ Once more information is available, the Department will circulate more specific 
 
 Regularly check the announcements on the `PMHC MDS home page <https://pmhc-mds.net/#/>`_ to keep informed.
 
-.. _stage_two_features_faq:
+.. _stage-two-features-faq:
 
 What features will be included in Stage Two development?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Stage Two will feature:
 
-* **Data Entry Interface**  - see Questions about :ref:`data_entry_FAQs`
-* **Comprehensive Reports** - see :ref:`reports_FAQs`
-* **Master Client Index** - see :ref:`identifier_and_key_FAQs`
+* **Data Entry Interface** - see Questions about :ref:`data-entry-FAQs`
+* **Comprehensive Reports** - see :ref:`reports-FAQs`
+* **Master Client Index** - see :ref:`identifier-and-key-FAQs`
 
 Regularly check the announcements on the `PMHC MDS home page <https://pmhc-mds.net/#/>`_ to keep informed.

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Users &mdash; PMHC MDS Version 1.0.5 documentation</title>
+  <title>Users &mdash; PMHC MDS Version 1.0.6 documentation</title>
   
 
   
@@ -32,7 +32,7 @@
   
 
   
-    <link rel="top" title="PMHC MDS Version 1.0.5 documentation" href="../index.html"/>
+    <link rel="top" title="PMHC MDS Version 1.0.6 documentation" href="../index.html"/>
         <link rel="up" title="User Guide" href="index.html"/>
         <link rel="next" title="Upload" href="upload.html"/>
         <link rel="prev" title="Organisations" href="organisations.html"/> 
@@ -63,7 +63,7 @@
             
             
               <div class="version">
-                Version 1.0.5
+                Version 1.0.6
               </div>
             
           
@@ -93,14 +93,16 @@
 <li class="toctree-l3"><a class="reference internal" href="#users-roles">Users Roles</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#finding-a-user">Finding a user</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#viewing-a-user-s-details">Viewing a User&#8217;s details</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#adding-a-user">Adding a user</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#editing-a-user-s-details">Editing a User&#8217;s details</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#adding-a-new-user">Adding a new user</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#adding-an-existing-user">Adding an existing user</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#accepting-an-invitation-to-become-a-pmhc-mds-user">Accepting an invitation to become a PMHC MDS User</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#view-an-existing-users-roles">View an existing users roles</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#editing-an-existing-users-roles">Editing an existing users roles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#viewing-a-users-roles">Viewing a users roles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#editing-a-users-roles">Editing a users roles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#deleting-a-user">Deleting a user</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="upload.html">Upload</a></li>
+<li class="toctree-l2"><a class="reference internal" href="client-data.html">Client Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="data-extraction.html">Data Extraction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reporting.html">Reporting</a></li>
 <li class="toctree-l2"><a class="reference internal" href="slk.html">SLK</a></li>
@@ -186,7 +188,7 @@ the roles that currently exist within the PMHC MDS:</p>
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td>Organisation Management</td>
-<td>A user with the Organisation Management role for a PHN can manage provider organisations for that PHN</td>
+<td>A user with the Organisation Management role for a PHN can manage provider organisations for that PHN.</td>
 </tr>
 <tr class="row-odd"><td>User Management</td>
 <td>A user with the User Management role for an organisation can manage user accounts for that organisation</td>
@@ -196,6 +198,9 @@ the roles that currently exist within the PMHC MDS:</p>
 </tr>
 <tr class="row-odd"><td>Reporting</td>
 <td>A user with the Reporting role can download data from the associated organisation</td>
+</tr>
+<tr class="row-even"><td>Data Entry</td>
+<td>A user with the Data Entry role can view client data and practitioners from the associated organisation</td>
 </tr>
 </tbody>
 </table>
@@ -209,8 +214,8 @@ than one organisations.</p>
 assigned. The table below lists the tabs that will be shown for each role:</p>
 <table border="1" class="docutils">
 <colgroup>
-<col width="48%" />
-<col width="52%" />
+<col width="45%" />
+<col width="55%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Role</th>
@@ -230,7 +235,10 @@ assigned. The table below lists the tabs that will be shown for each role:</p>
 <tr class="row-odd"><td>Reporting</td>
 <td>Data Extraction</td>
 </tr>
-<tr class="row-even"><td>All users</td>
+<tr class="row-even"><td>Data Entry</td>
+<td>Organisations, Client Data</td>
+</tr>
+<tr class="row-odd"><td>All users</td>
 <td>SLK</td>
 </tr>
 </tbody>
@@ -248,16 +256,17 @@ you can click on the arrow beside a column header for more sort options, as foll
 <li>Hide Column</li>
 </ul>
 <p>To filter the listed users:</p>
-<ol class="arabic simple">
-<li>Click the grey &#8216;Filters&#8217; button.</li>
-<li>Start typing in an edit box now displayed under the column headers.</li>
-</ol>
+<ol class="arabic">
+<li><p class="first">Click the grey &#8216;Filters&#8217; button.</p>
+</li>
+<li><p class="first">Start typing in an edit box now displayed under the column headers.</p>
+</li>
+<li><p class="first">To remove the filter, click the grey cross within the edit box beside any
+entered text.</p>
 <div class="figure">
 <img alt="PMHC MDS Users Filter" src="../_images/users-filter.png" />
 </div>
-<ol class="arabic simple" start="3">
-<li>To remove the filter, click the grey cross within the edit box beside any
-entered text.</li>
+</li>
 </ol>
 </div>
 <div class="section" id="viewing-a-user-s-details">
@@ -271,17 +280,26 @@ entered text.</li>
 <img alt="PMHC MDS View User" src="../_images/view-user.png" />
 </div>
 <p>A page will display showing the user&#8217;s details and the <a class="reference internal" href="#roles"><span class="std std-ref">Users Roles</span></a> they have at
-particular organisations.</p>
+particular organisations. See <a class="reference internal" href="#view-role"><span class="std std-ref">Viewing a users roles</span></a>.</p>
 </div>
-<div class="section" id="adding-a-user">
-<span id="id2"></span><h2>Adding a user<a class="headerlink" href="#adding-a-user" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="editing-a-user-s-details">
+<span id="editing-user"></span><h2>Editing a User&#8217;s details<a class="headerlink" href="#editing-a-user-s-details" title="Permalink to this headline">¶</a></h2>
+<p>A user can edit their own contact details.</p>
+<p>See <a class="reference internal" href="home.html#updating-your-details"><span class="std std-ref">Updating your details</span></a></p>
+</div>
+<div class="section" id="adding-a-new-user">
+<span id="adding-a-user"></span><h2>Adding a new user<a class="headerlink" href="#adding-a-new-user" title="Permalink to this headline">¶</a></h2>
 <p>Note: PHNs can devolve user management authority to one or more users in a
 provider organisation so that the provider organisation can manage their own
 logins, or a PHN can choose to keep user management authority at the level of
 the PHN requiring each provider organisation to contact the PHN when they need
 a new user added.</p>
-<p>The first step to adding a new user is to invite the potential user to the
-PMHC MDS.  You can invite a new user through the Users tab, by following these steps:</p>
+<p>Before inviting a user, it is always best to inform them that they will receive a
+PMHC MDS invitation by email from <a class="reference external" href="mailto:noreply&#37;&#52;&#48;strategicdata&#46;com">noreply<span>&#64;</span>strategicdata<span>&#46;</span>com</a> and a verification code via SMS.
+You can also provide them with the link to the online <a class="reference internal" href="index.html#user-docs"><span class="std std-ref">User Guide</span></a> to read
+the steps they will need to complete the steps outlined in <a class="reference internal" href="home.html#accepting-invitation"><span class="std std-ref">Accepting an invitation to become a PMHC MDS User</span></a>.</p>
+<p>The next step to adding a new user is to invite them through the Users tab,
+by following these steps:</p>
 <ol class="arabic">
 <li><p class="first">Navigate to the Users tab.</p>
 </li>
@@ -313,7 +331,7 @@ email before they can gain access to the system. This invitation will be valid f
 </div>
 <div class="section" id="adding-an-existing-user">
 <span id="adding-an-exsisting-user"></span><h2>Adding an existing user<a class="headerlink" href="#adding-an-existing-user" title="Permalink to this headline">¶</a></h2>
-<p>Note: An existing user must have completed the required steps for <a class="reference internal" href="#accepting-invitation"><span class="std std-ref">Accepting an invitation to become a PMHC MDS User</span></a>
+<p>Note: An existing user must have completed the required steps for <a class="reference internal" href="home.html#accepting-invitation"><span class="std std-ref">Accepting an invitation to become a PMHC MDS User</span></a>
 from their initial PMHC MDS invitation before they can be added again.</p>
 <p>Before adding an existing user please ensure you have the same email and mobile
 number as their current PMHC MDS Profile. By ensuring these are identical, the system
@@ -340,48 +358,8 @@ Existing user&#8217;s can be given multiple <a class="reference internal" href="
 </li>
 </ol>
 </div>
-<div class="section" id="accepting-an-invitation-to-become-a-pmhc-mds-user">
-<span id="accepting-invitation"></span><h2>Accepting an invitation to become a PMHC MDS User<a class="headerlink" href="#accepting-an-invitation-to-become-a-pmhc-mds-user" title="Permalink to this headline">¶</a></h2>
-<p>To become a PMHC MDS user you will be sent an invitation by email and a
-verification code via SMS. In order to gain access to the PMHC MDS you
-will need to accept this invitation within 7 days, by following these steps:</p>
-<div class="figure">
-<img alt="PMHC MDS Invitation Email" src="../_images/invitation-email.png" />
-</div>
-<ol class="arabic">
-<li><p class="first">Click on the link contained in the email. You will be shown a page where
-you will need to input the SMS you have been sent.</p>
-<div class="figure">
-<img alt="PMHC MDS Verify User" src="../_images/verify-user.png" />
-</div>
-</li>
-<li><p class="first">Input your verification code.</p>
-</li>
-<li><p class="first">Click &#8216;Submit&#8217;.</p>
-</li>
-<li><p class="first">You will be shown a page where you need to choose a password.</p>
-<div class="figure">
-<img alt="PMHC MDS Activate Account" src="../_images/activate-account.png" />
-</div>
-</li>
-<li><p class="first">Enter your password.</p>
-</li>
-<li><p class="first">Confirm your password.</p>
-</li>
-<li><p class="first">Click &#8216;Submit&#8217;.</p>
-</li>
-<li><p class="first">Your account will now be activated.</p>
-<div class="figure">
-<img alt="PMHC MDS Account Activated" src="../_images/account-activated.png" />
-</div>
-</li>
-<li><p class="first">Navigate to <a class="reference external" href="https://pmhc-mds.net/">https://pmhc-mds.net/</a> and follow the <a class="reference internal" href="home.html#logging-in"><span class="std std-ref">Logging In</span></a>
-instructions.</p>
-</li>
-</ol>
-</div>
-<div class="section" id="view-an-existing-users-roles">
-<span id="view-role"></span><h2>View an existing users roles<a class="headerlink" href="#view-an-existing-users-roles" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="viewing-a-users-roles">
+<span id="view-role"></span><h2>Viewing a users roles<a class="headerlink" href="#viewing-a-users-roles" title="Permalink to this headline">¶</a></h2>
 <p>A user can have more than one role. Each role is granted for a user against an
 organisation you have the User Management Role at.</p>
 <p>You can edit and assign extra roles to an existing user by following these steps:</p>
@@ -398,9 +376,10 @@ organisation you have the User Management Role at.</p>
 </div>
 </li>
 </ol>
+<p>A tick displays the user currently has this role assigned at the relevant organisation.</p>
 </div>
-<div class="section" id="editing-an-existing-users-roles">
-<span id="edit-role"></span><h2>Editing an existing users roles<a class="headerlink" href="#editing-an-existing-users-roles" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="editing-a-users-roles">
+<span id="edit-role"></span><h2>Editing a users roles<a class="headerlink" href="#editing-a-users-roles" title="Permalink to this headline">¶</a></h2>
 <p>A user can have more than one role. Each role is granted for a user against an
 organisation you have the User Management Role at.</p>
 <p>You can edit and assign extra roles to an existing user by following these steps:</p>
@@ -418,20 +397,28 @@ organisation you have the User Management Role at.</p>
 </li>
 <li><p class="first">Select the PHN from the Organisation drop down list</p>
 </li>
-<li><p class="first">Select a role by clicking the tick box next to the relevant organisation.
+<li><p class="first">A tick indicates the user currently has this role assigned at the relevant organisation.
 Multiple roles can be assigned and these roles are shown as blue tickets.</p>
-<p><em>Please note: roles are automatically inherited from a higher organisation and
-displayed as a light grey tick. Inherited roles can not be edited or deleted by
-a User Management role at the Provider Organisation level.</em></p>
-</li>
-<li><p class="first">Click the blue &#8216;Save&#8217; button, or click the &#8216;cancel&#8217; to edit without saving changes.</p>
-</li>
-<li><p class="first">You will receive confirmation that the users role has been saved and they will
-now be displaying in the Users Roles list.</p>
-</li>
-<li><p class="first">You will need to notify the user of these role changes. The system will not automatically do this.</p>
 </li>
 </ol>
+<div class="line-block">
+<div class="line"><strong>Add</strong> a role by clicking the empty checkbox.</div>
+<div class="line"><strong>Remove</strong> a role by clicking the ticked checkbox.</div>
+<div class="line"><br /></div>
+<div class="line"><em>Please note: roles are automatically inherited from a higher organisation and
+displayed as a light grey tick. Inherited roles can not be edited or deleted by
+a User Management role at the Provider Organisation level.</em></div>
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="7">
+<li>All changes are automatically saved.</li>
+<li>You will need to notify the user of these role changes. The system will not automatically do this.</li>
+</ol>
+</div>
+<div class="section" id="deleting-a-user">
+<span id="delete-user"></span><h2>Deleting a user<a class="headerlink" href="#deleting-a-user" title="Permalink to this headline">¶</a></h2>
+<p>A user can be deleted from an organisation by removing all the roles the user has at that organisaiton.</p>
+<p>See <a class="reference internal" href="#edit-role"><span class="std std-ref">Editing a users roles</span></a></p>
 </div>
 </div>
 
@@ -476,7 +463,7 @@ now be displaying in the Users Roles list.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'Version 1.0.5',
+            VERSION:'Version 1.0.6',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

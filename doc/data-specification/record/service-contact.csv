@@ -1,7 +1,7 @@
 "Data Element (Field Name)","Type (min,max)","Format / Values"
 "`Organisation Path`_ (organisation_path)
 
-",string,"A sequence of colon separated Organisation Keys that fully specifies the upload organisation."
+",string,"A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client."
 "`Service Contact Key`_ (service_contact_key)
 
 ","string (2,50)","This is a number or code assigned to each service contact. The Service Contact Key is unique and stable for each service contact at the level of the organisation."

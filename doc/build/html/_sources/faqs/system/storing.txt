@@ -1,7 +1,7 @@
 Storing data relating to the minimum dataset system
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. _hardcory_archive_time_faq:
+.. _hardcory-archive-time-faq:
 
 After entering data in the MDS how long should I store my hardcopy and/or electronic files?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

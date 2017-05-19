@@ -1,4 +1,4 @@
-.. _getting_help_FAQs:
+.. _getting-help-FAQs:
 
 Getting Help
 ^^^^^^^^^^^^

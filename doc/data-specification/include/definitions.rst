@@ -2771,7 +2771,7 @@ A sequence of characters which uniquely identifies the provider organisation. As
 Organisation Path
 ^^^^^^^^^^^^^^^^^
 
-A sequence of colon separated Organisation Keys that fully specifies the upload organisation.
+A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.
 
 :Field name: organisation_path
 

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Data model and specifications &mdash; PMHC MDS Version 1.0.5 documentation</title>
+  <title>Data model and specifications &mdash; PMHC MDS Version 1.0.6 documentation</title>
   
 
   
@@ -32,7 +32,7 @@
   
 
   
-    <link rel="top" title="PMHC MDS Version 1.0.5 documentation" href="../index.html"/>
+    <link rel="top" title="PMHC MDS Version 1.0.6 documentation" href="../index.html"/>
         <link rel="up" title="Data Specification" href="index.html"/>
         <link rel="next" title="Upload specification" href="upload-specification.html"/>
         <link rel="prev" title="Identifier management" href="identifier-management.html"/> 
@@ -63,7 +63,7 @@
             
             
               <div class="version">
-                Version 1.0.5
+                Version 1.0.6
               </div>
             
           
@@ -446,7 +446,7 @@ it cannot be uploaded.</p>
 <tbody valign="top">
 <tr class="row-even"><td><a class="reference internal" href="#organisation-path">Organisation Path</a> (organisation_path)</td>
 <td>string</td>
-<td>A sequence of colon separated Organisation Keys that fully specifies the upload organisation.</td>
+<td>A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#organisation-key">Organisation Key</a> (organisation_key)</td>
 <td>string (2,50)</td>
@@ -565,7 +565,7 @@ upload.</p>
 <tbody valign="top">
 <tr class="row-even"><td><a class="reference internal" href="#organisation-path">Organisation Path</a> (organisation_path)</td>
 <td>string</td>
-<td>A sequence of colon separated Organisation Keys that fully specifies the upload organisation.</td>
+<td>A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#practitioner-key">Practitioner Key</a> (practitioner_key)</td>
 <td>string (2,50)</td>
@@ -711,7 +711,7 @@ upload.</p>
 <tbody valign="top">
 <tr class="row-even"><td><a class="reference internal" href="#organisation-path">Organisation Path</a> (organisation_path)</td>
 <td>string</td>
-<td>A sequence of colon separated Organisation Keys that fully specifies the upload organisation.</td>
+<td>A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#client-key">Client Key</a> (client_key)</td>
 <td>string (2,50)</td>
@@ -2251,7 +2251,7 @@ upload.</p>
 <tbody valign="top">
 <tr class="row-even"><td><a class="reference internal" href="#organisation-path">Organisation Path</a> (organisation_path)</td>
 <td>string</td>
-<td>A sequence of colon separated Organisation Keys that fully specifies the upload organisation.</td>
+<td>A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#episode-key">Episode Key</a> (episode_key)</td>
 <td>string (2,50)</td>
@@ -2823,7 +2823,7 @@ upload.</p>
 <tbody valign="top">
 <tr class="row-even"><td><a class="reference internal" href="#organisation-path">Organisation Path</a> (organisation_path)</td>
 <td>string</td>
-<td>A sequence of colon separated Organisation Keys that fully specifies the upload organisation.</td>
+<td>A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#service-contact-key">Service Contact Key</a> (service_contact_key)</td>
 <td>string (2,50)</td>
@@ -3062,6 +3062,18 @@ in the short term there are issues with collecting individual item scores.
 Therefore, as a transitional phase, reporting overall scores/subscales will be
 allowed.</p>
 <p>Outcome collection occasions are managed by the provider organisations via upload.</p>
+<p>PMHC MDS requires the use of one of the following three required outcome collection occasions measures, as follows:</p>
+<ul class="simple">
+<li><strong>For adults (18+ years)</strong> - Kessler Psychological Distress Scale <a class="reference internal" href="#k10p-data-elements"><span class="std std-ref">K10+</span></a>
+is the prescribed measure, with the option to use the <a class="reference internal" href="#k5-data-elements"><span class="std std-ref">K5</span></a> for
+Aboriginal and Torres Strait Islander people if that is considered more appropriate.</li>
+<li><strong>For children and young people (up to and including 17 years)</strong> - the
+Strengths &amp; Difficulties Questionnaires (<a class="reference internal" href="#sdq-data-elements"><span class="std std-ref">SDQ</span></a>) is the
+prescribed tool.  The specified versions include the parent-report for 4-10
+years and 11-17 years; and the self-report for 11-17 years.
+<em>We acknowledge that there is also a parent-report for 2-4 years; and teacher versions for all the years (2-4; 4-10 and 11-17) but that these are not to be reported the PMHC-MDS.</em></li>
+</ul>
+<p><em>Please note: For adolescents, clinician-discretion is allowed, and that the K10+ or K5 may be used, even though the person is under 18 years</em></p>
 <div class="section" id="k10">
 <span id="k10p-data-elements"></span><h4>K10+<a class="headerlink" href="#k10" title="Permalink to this headline">¶</a></h4>
 <p>As noted above, reporting individual item scores will eventually be required.
@@ -3083,7 +3095,7 @@ the K10 total score as well as item scores for the 4 extra items in the K10+.</p
 <tbody valign="top">
 <tr class="row-even"><td><a class="reference internal" href="#organisation-path">Organisation Path</a> (organisation_path)</td>
 <td>string</td>
-<td>A sequence of colon separated Organisation Keys that fully specifies the upload organisation.</td>
+<td>A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#collection-occasion-key">Collection Occasion Key</a> (collection_occasion_key)</td>
 <td>string (2,50)</td>
@@ -3402,7 +3414,7 @@ the K5 total score.</p>
 <tbody valign="top">
 <tr class="row-even"><td><a class="reference internal" href="#organisation-path">Organisation Path</a> (organisation_path)</td>
 <td>string</td>
-<td>A sequence of colon separated Organisation Keys that fully specifies the upload organisation.</td>
+<td>A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#collection-occasion-key">Collection Occasion Key</a> (collection_occasion_key)</td>
 <td>string (2,50)</td>
@@ -3993,7 +4005,7 @@ namely: 0-&gt;0, 1-&gt;0, 2-&gt;1, 3-&gt;2.</p>
 <tbody valign="top">
 <tr class="row-even"><td><a class="reference internal" href="#organisation-path">Organisation Path</a> (organisation_path)</td>
 <td>string</td>
-<td>A sequence of colon separated Organisation Keys that fully specifies the upload organisation.</td>
+<td>A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#collection-occasion-key">Collection Occasion Key</a> (collection_occasion_key)</td>
 <td>string (2,50)</td>
@@ -9271,7 +9283,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </div>
 <div class="section" id="organisation-path">
 <span id="dfn-organisation-path"></span><h3>Organisation Path<a class="headerlink" href="#organisation-path" title="Permalink to this headline">¶</a></h3>
-<p>A sequence of colon separated Organisation Keys that fully specifies the upload organisation.</p>
+<p>A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -12717,7 +12729,7 @@ such as community health centres.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'Version 1.0.5',
+            VERSION:'Version 1.0.6',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true
