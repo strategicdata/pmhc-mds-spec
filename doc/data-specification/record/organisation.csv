@@ -4,7 +4,7 @@
 ",string,"A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client."
 "`Organisation Key`_ (organisation_key)
 
-","string (2,50)","A sequence of characters which uniquely identifies the provider organisation. Assigned by the Primary Health Network."
+","string (2,50)","A sequence of characters which uniquely identifies the provider organisation to the Primary Health Network. Assigned by the Primary Health Network."
 "`Provider Organisation - Name`_ (organisation_name)
 
 ","string (2,100)","The name of the provider organisation."
