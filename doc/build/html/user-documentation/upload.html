@@ -93,7 +93,8 @@
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Upload</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#uploading-a-file">Uploading a file</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#uploading-a-file-in-test-mode">Uploading a file in Test Mode</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#reviewing-previous-uploads">Reviewing Previous Uploads</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#viewing-previous-uploads">Viewing Previous Uploads</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#viewing-upload-details">Viewing Upload Details</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#error-messages">Error messages</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#could-not-find-worksheet-name">Could not find worksheet [Name]</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#invalid-version-line-in-worksheet-name">Invalid version line in worksheet [Name]</a></li>
@@ -251,26 +252,29 @@ your file was valid, or informing you of any errors that occurred.</p>
 found at <a class="reference internal" href="#error-messages"><span class="std std-ref">Error messages</span></a>. Please email <a class="reference external" href="mailto:support&#37;&#52;&#48;pmhc-mds&#46;com">support<span>&#64;</span>pmhc-mds<span>&#46;</span>com</a> if you don&#8217;t
 receive an email within one hour.</p>
 </div>
-<div class="section" id="reviewing-previous-uploads">
-<span id="id4"></span><h2>Reviewing Previous Uploads<a class="headerlink" href="#reviewing-previous-uploads" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="viewing-previous-uploads">
+<span id="id4"></span><h2>Viewing Previous Uploads<a class="headerlink" href="#viewing-previous-uploads" title="Permalink to this headline">¶</a></h2>
 <p>The PMHC MDS allows you to review previous uploads. At the bottom of the Upload
 tab there is a &#8216;Status of Previous Uploads&#8217; table.</p>
 <blockquote>
 <div><div class="figure">
-<img alt="PMHC MDS Status of Previous Uploads" src="../_images/previous-uploads.png" />
+<img alt="PMHC MDS Status of Previous Uploads" src="../_images/previous-upload.png" />
 </div>
 </div></blockquote>
 <p>When an upload has been completed, irregardless of whether it validated successfully
 or not, the upload will be added to the table.</p>
-<p>The &#8216;Status of Previous Uploads&#8217; table refreshes every 60 seconds.</p>
-<p>By default test uploads are not shown. If you need to see a test upload please
-check the &#8216;Show test uploads&#8217; checkbox. Uploads done in Test Mode will be be
-displayed.</p>
+<p>The &#8216;Status of Previous Uploads&#8217; table refreshes every 60 seconds. Types of status results are:</p>
 <blockquote>
-<div><div class="figure">
-<img alt="PMHC MDS Status of Test Uploads" src="../_images/status-of-test-uploads.png" />
-</div>
+<div><ul class="simple">
+<li><strong>accept</strong> - the file is currently going through the validation process</li>
+<li><strong>complete</strong> - the file has successfully passed the validation process</li>
+<li><strong>error</strong> - the file has returned errors through the validation process. Please review the error messages and correct the data to upload again</li>
+</ul>
 </div></blockquote>
+<p>If you need to see a test upload please check the &#8216;Show test uploads&#8217; checkbox.</p>
+</div>
+<div class="section" id="viewing-upload-details">
+<span id="viewing-uploads-details"></span><h2>Viewing Upload Details<a class="headerlink" href="#viewing-upload-details" title="Permalink to this headline">¶</a></h2>
 <p>You can view the results of an upload by following these steps:</p>
 <ol class="arabic">
 <li><p class="first">Navigate to the &#8216;Upload&#8217; tab.</p>
@@ -281,7 +285,7 @@ displayed.</p>
 </li>
 <li><p class="first">Click on the filename of the relevant upload.</p>
 </li>
-<li><p class="first">You will be shown the &#8216;Status of Previous Uploads&#8217; page.</p>
+<li><p class="first">You will be shown the &#8216;Upload Detail&#8217; page.</p>
 <div class="figure">
 <img alt="PMHC MDS Upload Details page" src="../_images/upload-details.png" />
 </div>
@@ -301,6 +305,11 @@ displayed.</p>
 </div>
 <div class="section" id="error-messages">
 <span id="id5"></span><h2>Error messages<a class="headerlink" href="#error-messages" title="Permalink to this headline">¶</a></h2>
+<p>If the status of your file shows error, you can view the returned errors through <a class="reference internal" href="#viewing-previous-uploads"><span class="std std-ref">Viewing Previous Uploads</span></a>.</p>
+<div class="figure">
+<img alt="PMHC MDS Upload Details error page" src="../_images/upload-details-error.png" />
+</div>
+<p>Below are some example error messages, and how to fix them:</p>
 <div class="section" id="could-not-find-worksheet-name">
 <h3>Could not find worksheet [Name]<a class="headerlink" href="#could-not-find-worksheet-name" title="Permalink to this headline">¶</a></h3>
 <p>This error occurs when you are uploading and Excel spreadsheet. The worksheet

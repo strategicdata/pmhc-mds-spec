@@ -128,7 +128,7 @@ details through the organisation tab, by following these steps:
    .. figure:: screen-shots/view-provider-organisation.png
       :alt: PMHC MDS View Provider Organisation
 
-3. If you have permission to edit the Provider Organisation an'Edit Details' tab will
+3. If you have permission to edit the Provider Organisation an 'Edit Details' tab will
    be displayed.
 4. Click the blue 'Edit' button.
 
@@ -158,11 +158,12 @@ deleted please email support@pmhc-mds.com.
 
 .. _search-practitioner:
 
-Searching for a Practitioner
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Searching for a Practitioner at a Provider Organisaiton
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You can search for a practitioner by sorting and filtering the practitioners of
-a provider organisation through the organisations tab. Follow these steps:
+You can search for practitioners assigned to an organisation through the organisation tab
+if you have been assigned the 'Data Entry' role, by following these steps:
+
 
 1. Navigate to a provider organisations details. (See :ref:`view-provider-organisation`)
 2. Click on the 'Practitioners' tab.
@@ -179,31 +180,31 @@ a provider organisation through the organisations tab. Follow these steps:
    - Remove Sort
    - Hide Column
 
-To filter the listed practitioners:
+   To filter the listed practitioners:
 
-1. Click the grey 'Filters' button.
-2. Start typing in an edit box now displayed under the column headers.
-3. To remove the filter, click the grey cross within the edit box beside any
-   entered text.
+   1. Click the grey 'Filters' button.
+   2. Start typing in an edit box now displayed under the column headers.
+   3. To remove the filter, click the grey cross within the edit box beside any
+      entered text.
 
 .. .. figure:: screen-shots/practitioners-filter.png
    :alt: PMHC MDS Practitioners Filter
-
-
 
 .. _view-practitioner:
 
 Viewing a Practitioner
 ^^^^^^^^^^^^^^^^^^^^^^
 
-You can view a practitioner's details through the :ref:`search-practitioner`
-available on the Organisations tab, by following these steps:
+You can view a practitioner's details through the organisation tab
+if you have been assigned the 'Data Entry' role, by following these steps:
 
-1. Navigate to the 'Practitioners' tab. (See :ref:`search-practitioner`)
+1. Navigate to the list of Practitioners at the organisation. (See :ref:`search-practitioner`)
 2. Click on the practitioner's key in blue displayed within the table list.
 
 .. figure:: screen-shots/practitioners-detail-view.png
    :alt: PMHC MDS Practitioner Details View
+
+Please note: You can also view a practitioner's details through the 'Client Data' tab. See :ref:`view-practitioner-details`
 
 .. _viewing-organisational-users:
 
@@ -231,8 +232,8 @@ if you have been assigned the 'User Management' role, by following these steps:
 Assigning Extra Roles to an Organisational User
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You can assign extra roles to an existing organisational user by following
-these steps:
+You can assign extra roles to an existing organisational user if you have been
+assigned the 'User Management' role, by following these steps:
 
 1. Navigate to the Organisation or Provider Organisation at which you wish to add the role.
 2. Click on the Users tab

@@ -1,3 +1,5 @@
+.. _client-data:
+
 Client Data
 ===========
 
@@ -168,8 +170,8 @@ A page will display the Service Contacts details as recorded via the :ref:`Servi
 
 .. _view-practitioner-details:
 
-Viewing a Practitioner
-^^^^^^^^^^^^^^^^^^^^^^
+Viewing a Practitioner Providing Client Services
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You can view a practitioner's details through the :ref:`view-client-service-contact`
 available on the Client Data tab, by following these steps:

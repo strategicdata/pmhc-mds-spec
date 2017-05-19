@@ -3,6 +3,39 @@
 Data Specification Change log
 =============================
 
+18/5/2017 - Version 1.0.6
+------------------------
+
+* Data model and specifications
+
+  * Record formats
+
+    * Practitioner
+
+      * Updated :ref:`dfn-organisation_path`to specify the Provider Organisation providing a service to the client.
+
+    * Client
+
+      * Updated :ref:`dfn-organisation_path`; to specify the Provider Organisation providing a service to the client.
+
+    * Episode
+
+      * Updated :ref:`dfn-organisation_path`; to specify the Provider Organisation providing a service to the client.
+
+    * Collection Occasion
+
+      * Updated :ref:`dfn-organisation_path`; to specify the Provider Organisation providing a service to the client.
+
+    * Service Contact
+
+      * Updated :ref:`dfn-organisation_path`; to specify the Provider Organisation providing a service to the client.
+
+* Upload specification
+
+  * File types
+
+    * Updated :ref:`upload_specification` to specify practitioners.csv filename in zipped CSV uploads.
+
 1/5/2017 - Version 1.0.5
 ------------------------
 
