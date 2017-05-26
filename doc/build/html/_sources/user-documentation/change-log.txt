@@ -3,6 +3,21 @@
 User Guide Change log
 =====================
 
+26/5/2017
+---------
+
+* Updated screenshots for :ref:`client-data` documentation
+
+* Updated screenshots for :ref:`adding-a-user`
+
+* Updated screenshots for :ref:`edit-role`
+
+* Updated screenshots for :ref:`viewing-uploads-details`
+
+* Updated screenshots for :ref:`error-messages`
+
+* Added :ref:`viewing-complete-uploads`
+
 18/5/2017
 ---------
 

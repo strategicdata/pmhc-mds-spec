@@ -53,7 +53,7 @@ You will receive confirmation that your file has been accepted. The file will
 now be validated and you will shortly receive an email informing you if
 your file was successfully uploaded to the PMHC MDS, or informing you of
 any errors that occurred. Further discussion about the error messages can be
-found at :ref:`error-messages`. Please email support@pmhc-mds.com if you don't
+found at :ref:`upload-error-messages`. Please email support@pmhc-mds.com if you don't
 receive an email within one hour.
 
 .. _uploading-a-file-in-test-mode:
@@ -92,9 +92,8 @@ your file was valid, or informing you of any errors that occurred.
 
 *Even if your file was valid, the data will not be updated in the PMHC MDS database.*
 
-Further discussion about the error messages can be
-found at :ref:`error-messages`. Please email support@pmhc-mds.com if you don't
-receive an email within one hour.
+.. figure:: screen-shots/upload-test-comp.png
+   :alt: PMHC MDS Upload Test Complete Details page
 
 .. _viewing-previous-uploads:
 
@@ -103,6 +102,8 @@ Viewing Previous Uploads
 
 The PMHC MDS allows you to review previous uploads. At the bottom of the Upload
 tab there is a 'Status of Previous Uploads' table.
+
+If you need to see a test upload please check the 'Show test uploads' checkbox.
 
    .. figure:: screen-shots/previous-upload.png
       :alt: PMHC MDS Status of Previous Uploads
@@ -116,9 +117,8 @@ The 'Status of Previous Uploads' table refreshes every 60 seconds. Types of stat
   * **complete** - the file has successfully passed the validation process
   * **error** - the file has returned errors through the validation process. Please review the error messages and correct the data to upload again
 
-  .. By default test uploads are not shown.
-
-If you need to see a test upload please check the 'Show test uploads' checkbox.
+Further discussion about the error messages can be found at :ref:`upload-error-messages`. Please email support@pmhc-mds.com if you don't
+receive an email within one hour.
 
 .. _viewing-uploads-details:
 
@@ -133,18 +133,19 @@ You can view the results of an upload by following these steps:
 4. Click on the filename of the relevant upload.
 5. You will be shown the 'Upload Detail' page.
 
-   .. figure:: screen-shots/upload-details.png
-      :alt: PMHC MDS Upload Details page
+.. _viewing-complete-uploads:
 
-6. This page provides the following details about the upload:
+Complete uploads
+^^^^^^^^^^^^^^^^
 
-    * File name
-    * Uplodate Date
-    * Status
-    * Name of the person who uploaded the file
-    * Details of any errors that occurred or details of what was updated
+:ref:`viewing-uploads-details` for complete uploads will display data verification
+information by listing the number of data records present and if those records
+are added or uploaded within the MDS records.
 
-.. _error-messages:
+.. figure:: screen-shots/upload-details.png
+   :alt: PMHC MDS Upload Details page
+
+.. _upload-error-messages:
 
 Error messages
 ^^^^^^^^^^^^^^
@@ -153,6 +154,10 @@ If the status of your file shows error, you can view the returned errors through
 
 .. figure:: screen-shots/upload-details-error.png
    :alt: PMHC MDS Upload Details error page
+
+The definition of each data item has associated notes that will provide guidance on why an error is returned. By visiting the data specifications documentation and clicking on the :ref:`record-formats` field name this will take you to the field definition which outlines the associated notes.
+
+Please email support@pmhc-mds.com if you require assistance in understanding an error message.
 
 Below are some example error messages, and how to fix them:
 
@@ -197,14 +202,15 @@ include the word Version, Column two should inclue a number.We are currently
 only accepting Version 1, or Version 1.X eg 1.0 or 1.1 . If the version number
 doesn't match identically you will receive the error above.
 
-Could not parse worksheet [Name]: Bad request at ...
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Something has gone wrong with the upload. Please contact support@pmhc-mds.com.
-
 Column [Name] is required on row ...
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 There is a required field that has not been entered. If not supplied, insert the
 default 'Missing' or 'Not recorded' value. These values can be found at :ref:`record-formats`.
 If the Column [Name] is blank in a mandatory field you will receive the error above.
+
+
+Could not parse worksheet [Name]: Bad request at ...
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Something has gone wrong with the upload. Please contact support@pmhc-mds.com.

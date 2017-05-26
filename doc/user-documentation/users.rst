@@ -141,22 +141,25 @@ by following these steps:
    .. figure:: screen-shots/invite-user.png
       :alt: PMHC MDS Invite User
 
-3. Complete all the mandatory fields marked with an * in the 'Invite User' form.
-   User's can be given multiple :ref:`roles` at invitation, or extra roles can be
-   added after the user has access to the system.
+3. Complete all the fields with the new users contact details. (Mandatory fields are marked with an * )
+4. Select an organisation, either a PHN or Provider Organisation.
+5. Assign one or more :ref:`roles`. (extra roles can be added after the user has access to the system. See :ref:`edit-role`)
 
    .. figure:: screen-shots/invite-user-filled-in.png
       :alt: PMHC MDS Invite User Complete
 
-4. Click the blue 'Invite' button.
-5. You will receive confirmation that the user has been sent an email to invite
+6. Click the blue 'Invite' button.
+7. You will receive confirmation that the user has been sent an email to invite
    them to the PMHC MDS. They will also be sent an SMS containing a
    verification code. The user will need to follow the instructions in the
    email before they can gain access to the system. This invitation will be valid for 7 days.
-6. When the user has accepted the invitation you will be sent an email to let you know.
+8. When the user has accepted the invitation you will be sent an email to let you know.
 
    .. figure:: screen-shots/invite-accepted-email.png
       :alt: PMHC MDS Invite Accepted
+
+Please note: An invitation for a new user is valid for 7 days. You can not re-invite
+this user within this time, unless the verification code has expired, or they have :ref:` accepted the invitation <accepting-invitation>`.
 
 .. _adding-an-exsisting-user:
 
@@ -175,14 +178,14 @@ You can invite an existing user through the Users tab, by following these steps:
 1. Navigate to the Users tab.
 2. Click the 'Invite New User' tab.
 3. Complete all the mandatory fields marked with an * in the 'Invite User' form, ensuring these are the same details as their existing PMHC MDS Profile.
-   Existing user's can be given multiple :ref:`roles` at invitation, or extra roles can be added later.
+4. Select an organisation and assign their :ref:`roles`.
 
-         .. figure:: screen-shots/invite-user-filled-in.png
-            :alt: PMHC MDS Invite User Complete
+   .. figure:: screen-shots/invite-user.png
+      :alt: PMHC MDS Invite User
 
-4. Click the blue 'Invite' button.
-5. You will receive confirmation that the roles have been added to the existing user.
-6. You will need to notify the user that they have been added to the organisation and confirm their authorised roles. The system will not automatically do this.
+5. Click the blue 'Invite' button.
+6. You will receive confirmation that the roles have been added to the existing user.
+7. Please note: You will need to notify the user that they have been added to the organisation and confirm their authorised roles. The system will not automatically do this.
 
 .. 6. The user will receive notification that they have been granted these additional roles at the relevant organisation.
 
@@ -199,7 +202,7 @@ You can edit and assign extra roles to an existing user by following these steps
 1. Navigate to the Users tab.
 2. Click on the user's name in blue displayed within the table list.
 3. Click the 'Roles' tab to show the users assigned roles.
-4. Choose the PHN or Provider Organisation from the selection box to view the users roles at that organisaiton.
+4. Choose the PHN or Provider Organisation from the selection box to view the users roles at that organisation.
 
    .. figure:: screen-shots/user-roles-at-organisation.png
       :alt: PMHC MDS Edit Role
@@ -246,6 +249,6 @@ You can edit and assign extra roles to an existing user by following these steps
 Deleting a user
 ^^^^^^^^^^^^^^^
 
-A user can be deleted from an organisation by removing all the roles the user has at that organisaiton.
+A user can be deleted from an organisation by removing all the roles the user has at that organisation.
 
 See :ref:`edit-role`
