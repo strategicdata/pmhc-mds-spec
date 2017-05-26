@@ -34,15 +34,17 @@ You can choose any one of three search options to search for a client, depending
 
 - **Client Key** - You can use this field to type in a whole :ref:`dfn-client_key`, or start thereof.
 
-- **SLK** - You can use this field to type in a client's Statistical Linkage Key (:ref:`dfn-slk`)
+- **SLK** - You can use this field to type in a client's :ref:`Statistical Linkage Key <dfn-slk>`
 
-- **DOB** & **Gender** - You can use this field to type in a combination of the client's Date of Birth (:ref:`dfn-date_of_birth`) and :ref:`dfn-client_gender`.
+- **DOB** - You can use this field to type in a client's :ref:`dfn-date_of_birth`.
 
 .. figure:: screen-shots/client-search-fields.png
    :alt: Client Data Search Fields
 
 After entering information into one of these :ref:`search-fields`, simply click
 the blue 'Search' button to see :ref:`search-client`
+
+Use the grey 'Clear Search' button to removed any previously entered text.
 
 .. _search-client:
 
@@ -63,19 +65,20 @@ you can click on the arrow beside a column header for more sort options, as foll
 - Remove Sort
 - Hide Column
 
-You can clear the search results by clicking on the blue 'Clear Results' button.
-
 .. figure:: screen-shots/client-search-results.png
    :alt: Client Data Search Results
 
-..  XXX Check filter feature functionality - keeping to be added at a later date XXX
+To filter the listed clients:
 
-.. To filter the listed clients:
+  1. Click the grey 'Filters' button.
+  2. Start typing in an edit box now displayed under the column headers.
+  3. To remove the filter, click the grey cross within the edit box beside any entered text or click the grey 'Filters' button.
 
-.. 1. Click the grey 'Filters' button.
-.. 2. Start typing in an edit box now displayed under the column headers.
-.. 3. To remove the filter, click the grey cross within the edit box beside any
-   entered text.
+.. figure:: screen-shots/client-search-results-filter.png
+   :alt: Client Data Search Results Filtered
+
+You can clear the search results and start a new search by clicking on the blue
+'Edit Search' button.
 
 .. _view-client-details:
 
@@ -112,8 +115,8 @@ available on the Client Data tab, by following these steps:
 2. From the Client's Summary tab, you can shortcut straight to an episode by clicking
    the Blue Episode Key displayed in the snapshot of the five most recent episodes.
 
- .. figure:: screen-shots/client-episode-summary.png
-    :alt: Client Data Summary View
+.. figure:: screen-shots/client-view-summary.png
+   :alt: Client Data Summary View
 
 3. Alternately, if you would like to view all episodes you can click on the
    Episode Tab. The heading for this tab displays in brackets the total number of episodes recorded
@@ -121,8 +124,8 @@ available on the Client Data tab, by following these steps:
 
 A table will display all the Client's Episodes at Provider Organisations for which you have access.
 
-.. figure:: screen-shots/client-episodes-view.png
-   :alt: Client Episodes Table View
+.. figure:: screen-shots/client-episode-summary.png
+   :alt: Client Data Summary View
 
 A Drop down list is available to view:
 
