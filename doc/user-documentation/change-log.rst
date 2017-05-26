@@ -14,7 +14,7 @@ User Guide Change log
 
 * Updated screenshots for :ref:`viewing-uploads-details`
 
-* Updated screenshots for :ref:`error-messages`
+* Updated screenshots for :ref:`upload-error-messages`
 
 * Added :ref:`viewing-complete-uploads`
 
