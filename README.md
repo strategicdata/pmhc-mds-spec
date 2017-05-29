@@ -11,6 +11,8 @@ This will:
 * move generated content into the correct locations
 * run sphinx to generate the html output in doc/build/html
 
+### Produce a single html page version of the documentation
+
 ```
 ./scripts/make.sh singlehtml
 ```
