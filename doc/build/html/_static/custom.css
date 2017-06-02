@@ -1,24 +1,14 @@
 /* override table width restrictions */
-
-html body .wy-table-responsive table td p {
-    font-size: 14px;
+.wy-table-responsive table td, .wy-table-responsive table th {
+  /* !important prevents the common CSS stylesheets from
+  overriding this as on RTD they are loaded after this stylesheet */
+  white-space: normal !important;
 }
 
-html body .wy-table-responsive table td p.first,
-html body .wy-table-responsive table td p {
-    margin-bottom: 7px;
+.wy-table-responsive {
+  overflow: visible !important;
 }
 
-@media screen and (min-width: 767px) {
-    html body .wy-table-responsive table td,
-    html body .wy-table-responsive table th {
-        white-space: normal;
-    }
-
-    html body .wy-table-responsive {
-        margin-bottom: 24px;
-        max-width: 100%;
-        overflow: visible;
-    }
+.wy-nav-content {
+  max-width: 1200px !important;
 }
-

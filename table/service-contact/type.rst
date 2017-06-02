@@ -3,6 +3,9 @@ defined list of categories.  Where more than service type was provided select
 that which accounted for most provider time. Service providers are required
 to report on Service Type for all Service Contacts.
 
+0 - No contact took place
+  Only use this code where the service contact is recorded as a no show.
+
 1 - Assessment
   Determination of a person's mental health status and need for mental
   health services, made by a suitably trained mental health professional,
