@@ -414,7 +414,7 @@ class PMHC < Csvlint::Cli
         org_type = org_hash[row[header.index('organisation_path')]]
         if row[header.index('atsi_cultural_training')] == '3'
           unless (org_type == '8' or ['1','2','3'].include? row[header.index('practitioner_atsi_status')])
-            validator.build_errors(:atsi_cultural_training, :practitioner, line+2, header.index('atsi_cultural_training'), data[header.index('atsi_cultural_training')])
+            validator.build_errors(:invalid_cultural_training, :practitioner, line+2, header.index('atsi_cultural_training'), data[header.index('atsi_cultural_training')])
           end
         end
       end
