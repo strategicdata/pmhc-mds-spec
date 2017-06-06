@@ -4696,7 +4696,8 @@ The time from the start to finish of a service contact.
 :Required: true
 
 :Domain:
-  :1: 0-15 mins
+  :0: No contact took place
+  :1: 1-15 mins
   :2: 16-30 mins
   :3: 31-45 mins
   :4: 46-60 mins
@@ -4714,6 +4715,10 @@ The time from the start to finish of a service contact.
   Travel to or from the location at which the service is provided, for example to
   or from outreach facilities or private homes, is not to be reported as part of
   the duration of the service contact.
+  
+  0 - No contact took place
+    Only use this code where the service contact is recorded as a no show.
+  
 
 ----------
 
@@ -4803,15 +4808,20 @@ How the service contact was delivered, as represented by a code.
 :Required: true
 
 :Domain:
+  :0: No contact took place
   :1: Face to Face
   :2: Telephone
   :3: Video
   :4: Internet-based
 :Notes:
-  - If 'Face to Face' is selected, a value other than 'Not applicable' must
-    be selected for Service Contact Venue
-  - If 'Face to Face' is selected a valid Australian
-    postcode must be entered for Service Contact Postcode.
+  0 - No contact took place
+    Only use this code where the service contact is recorded as a no show.
+  
+  1 - Face to Face
+    - If 'Face to Face' is selected, a value other than 'Not applicable' must
+      be selected for Service Contact Venue
+    - If 'Face to Face' is selected a valid Australian
+      postcode must be entered for Service Contact Postcode.
   
 
 ----------
@@ -4958,6 +4968,7 @@ The main type of service provided in the service contact, as represented by the 
 :Required: true
 
 :Domain:
+  :0: No contact took place
   :1: Assessment
   :2: Structured psychological intervention
   :3: Other psychological intervention
@@ -4971,6 +4982,9 @@ The main type of service provided in the service contact, as represented by the 
   defined list of categories.  Where more than service type was provided select
   that which accounted for most provider time. Service providers are required
   to report on Service Type for all Service Contacts.
+  
+  0 - No contact took place
+    Only use this code where the service contact is recorded as a no show.
   
   1 - Assessment
     Determination of a person's mental health status and need for mental

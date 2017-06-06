@@ -303,6 +303,9 @@ class PMHC < Csvlint::Cli
       postcode_index = header.index( "service_contact_postcode")
       service_contact_final_index = header.index( "service_contact_final")
       episode_key_index = header.index( "episode_key")
+      contact_type_index = header.index("service_contact_type")
+      duration_index = header.index("service_contact_duration")
+      no_show_index = header.index("service_contact_no_show")
 
       current_line = 1
       data.each do |row|
@@ -322,7 +325,7 @@ class PMHC < Csvlint::Cli
             service_contact_date_index+1, scd)
         end
 
-        # Service contact modality.
+        # Service contact modality / venue / postcode
         if row[modality_index] == "1"
           # If 'Face to Face' is selected:
           #   - A value other than 'Not applicable' must be selected for
@@ -339,6 +342,34 @@ class PMHC < Csvlint::Cli
           unless row[postcode_index] == "9999"
             validator.build_errors(:extraneous_service_contact_postcode, :service_contact,
               current_line+1, postcode_index+1, row[postcode_index])
+          end
+        end
+
+        # Service contact modality + no_show
+        if row[modality_index] == "0"
+          # If 'No service contact occurred' is selected,
+          # the session must be a no show
+          unless row[no_show_index] == "1"
+            validator.build_errors(:invalid_service_contact_modality_no_show, :service_contact, current_line+1,
+              modality_index+1, row[modality_index])
+          end
+        end
+
+        # Service contact duration + no_show
+        if row[duration_index] == "0"
+          # If 'No service contact occurred' is selected, the session must be a no show
+          unless row[no_show_index] == "1"
+            validator.build_errors(:invalid_service_contact_duration_no_show, :service_contact, current_line+1,
+              duration_index+1, row[duration_index])
+          end
+        end
+
+        # Service contact type + no_show
+        if row[contact_type_index] == "0"
+          # If 'No service contact occurred' is selected, the session must be a no show
+          unless row[no_show_index] == "1"
+            validator.build_errors(:invalid_service_contact_type_no_show, :service_contact, current_line+1,
+              contact_type_index+1, row[contact_type_index])
           end
         end
 

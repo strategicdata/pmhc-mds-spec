@@ -3,6 +3,20 @@
 Data Specification Change log
 =============================
 
+??/6/2017 - Version 1.0.7
+-------------------------
+
+* Data model and specifications
+
+  * Record formats
+
+    * Service Contact
+
+      * Updated :ref:`dfn-service_contact_duration` to add response 0: 'No contact took place'.
+      * Updated :ref:`dfn-service_contact_duration` response 1 from '0-15 mins' to '1-15 mins'.
+      * Updated :ref:`dfn-service_contact_type` to add response 0: 'No contact took place'.
+      * Updated :ref:`dfn-service_contact_modality` to add response 0: 'No contact took place'.
+
 18/5/2017 - Version 1.0.6
 -------------------------
 
