@@ -252,3 +252,34 @@ Deleting a user
 A user can be deleted from an organisation by removing all the roles the user has at that organisation.
 
 See :ref:`edit-role`
+
+.. _viewing-organisational-users:
+
+Viewing all Organisational Users
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You can view users assigned to an organisation through the organisation tab, by following these steps:
+
+1. Navigate to the tab showing either the PHNs details or the provider organisations details.
+2. Click on the PHNs or provider organisations name in blue displayed within the table list.
+   If you are unsure how to view the details see :ref:`view-PHN` or :ref:`view-provider-organisation`
+3. Under the 'Users' tab, you can view a table list of the
+   organisation's users.
+4. You can filter the users within this table list,
+   click the grey 'Filters' button and start typing in an edit box now
+   displayed under the column headers. To remove the filter, click the grey
+   cross within the edit box beside any entered text.
+
+.. figure:: screen-shots/view-organisation-users.png
+   :alt: PMHC MDS User Roles at Organisation
+
+.. _adding-roles:
+
+Assigning Extra Roles to an Organisational User
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You can assign extra roles to an existing organisational user, by following these steps:
+
+1. Once :ref:`view-client-details`
+2. Click the users name
+3. Follow on from Step 3 at :ref:`edit-role`.

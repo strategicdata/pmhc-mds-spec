@@ -3,6 +3,23 @@
 User Guide Change log
 =====================
 
+8/6/2017
+--------
+
+* Added :ref:`add-practitioner`
+
+* Added :ref:`edit-practitioner`
+
+* Added :ref:`delete-practitioner`
+
+* Moved :ref:`find-practitioner` under Client Data tab
+
+* Moved :ref:`view-practitioner` under Client Data tab
+
+* Moved :ref:`viewing-organisational-users` under Users tab
+
+* Moved :ref:`adding-roles` under Users tab
+
 26/5/2017
 ---------
 

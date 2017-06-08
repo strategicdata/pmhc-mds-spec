@@ -3,6 +3,8 @@
 Client Data
 ===========
 
+.. _data-entry:
+
 You will only be able to see the Client Data tab if you have been assigned
 the 'Data Entry' :ref:`roles`.
 
@@ -18,17 +20,20 @@ you have permission to access.
 .. figure:: screen-shots/client-data.png
    :alt: Client Data Tab View
 
+Clients
+^^^^^^^
+
 .. _find-client:
 
 Finding a Client
-^^^^^^^^^^^^^^^^
+----------------
 
 There are three :ref:`search-fields` options available to find a client.
 
 .. _search-fields:
 
 Search Fields
--------------
+~~~~~~~~~~~~~
 
 You can choose any one of three search options to search for a client, depending on the client information that you have available to you at the time.
 
@@ -49,7 +54,7 @@ Use the grey 'Clear Search' button to removed any previously entered text.
 .. _search-client:
 
 Client Search Results
-^^^^^^^^^^^^^^^^^^^^^
+---------------------
 
 A display of the details used within the :ref:`search-fields` used in :ref:`find-client`
 will be visible above the search results table, when results are available.
@@ -83,7 +88,7 @@ You can clear the search results and start a new search by clicking on the blue
 .. _view-client-details:
 
 Viewing a Client's details
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+--------------------------
 
 You can view a clients's details through the :ref:`search-client`
 available on the Client Data tab, by following these steps:
@@ -98,15 +103,31 @@ available on the Client Data tab, by following these steps:
 
 4. Click Details tab for more information on the Client.
 
-A page will display the Client's details as recorded via the Client Data Elements - :ref:`client-data-elements`.
+A page will display the Client's details as recorded via the :ref:`Client Data Elements <client-data-elements>`.
 
 .. figure:: screen-shots/client-view-details.png
    :alt: Client Data Details View
 
+.. _add-client:
+
+Adding a Client and Client's data
+---------------------------------
+
+The Data Entry Interface is due to be fully integrated into the PMHC MDS
+in the coming weeks.
+
+An update will be circulated to all current users and the mailing list
+when this new feature is added.
+
+.. _episode-data:
+
+Episodes
+^^^^^^^^
+
 .. _view-client-episodes:
 
 Viewing a Client's Episodes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------
 
 You can view a clients's episodes through the :ref:`view-client-details`
 available on the Client Data tab, by following these steps:
@@ -143,12 +164,26 @@ A Drop down list is available to view:
 
 A page will display the Client's Episode details as recorded via the :ref:`Episode Data Elements <episode-data-elements>`.
 
+.. _add-episodes:
 
+Adding a Client's Episode data
+---------------------------------
+
+The Data Entry Interface is due to be fully integrated into the PMHC MDS
+in the coming weeks.
+
+An update will be circulated to all current users and the mailing list
+when this new feature is added.
+
+.. _service-contact-data:
+
+Service Contacts
+^^^^^^^^^^^^^^^^
 
 .. _view-client-service-contact:
 
 Viewing a Client's Service Contacts for an Episode
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+--------------------------------------------------
 
 You can view a client's service contacts through the :ref:`view-client-episodes`
 available on the Client Data tab, by following these steps:
@@ -170,31 +205,26 @@ A table will display all the Service Contacts linked to this Client's Episode.
 
 A page will display the Service Contacts details as recorded via the :ref:`Service Contact Data Elements <service-contact-data-elements>`.
 
+.. _add-service-contacts:
 
-.. _view-practitioner-details:
+Adding a Client's Service Contact data
+--------------------------------------
 
-Viewing a Practitioner Providing Client Services
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The Data Entry Interface is due to be fully integrated into the PMHC MDS
+in the coming weeks.
 
-You can view a practitioner's details through the :ref:`view-client-service-contact`
-available on the Client Data tab, by following these steps:
+An update will be circulated to all current users and the mailing list
+when this new feature is added.
 
-1. Once :ref:`view-client-service-contact`
-2. From the Service Contacts Details tab, click the Practitioner Key.
+.. _outcome-collection-occasion-data:
 
-.. figure:: screen-shots/client-service-contacts-practitioner-key.png
-   :alt: Practitioner Key on Service Contacts Details
-
-A page will display the Practitioner's details as recorded via the :ref:`Practitioner Data Elements <practitioner-data-elements>`.
-
-.. figure:: screen-shots/practitioner-details.png
-   :alt: Practitioner Details View
-
+Outcome Collection Occasions
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. _view-client-collection-occasion:
 
 Viewing a Client's Outcome Collection Occasions for an Episode
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+--------------------------------------------------------------
 
 You can view a clients's outcome collection occasions through the :ref:`view-client-episodes`
 available on the Client Data tab, by following these steps:
@@ -217,20 +247,117 @@ A table will display all the Collection Occasions linked to this Client's Episod
 A page will display the Collection Occasions details as recorded via the :ref:`Outcome Collection Occasion Data Elements <outcome-collection-occasion-data-elements>`.
 
 
+.. _add-client-collection-occasion:
 
-.. _add-client:
-
-Adding a Client and Client's data
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Adding a Client's Outcome Collection Occasions data
+---------------------------------------------------
 
 The Data Entry Interface is due to be fully integrated into the PMHC MDS
-in :ref:`Stage-Two` of the PMHC MDS development.
+in the coming weeks.
 
 An update will be circulated to all current users and the mailing list
 when this new feature is added.
 
-Once this feature is available, you will only be able to use the Data Entry Interface if
-you have been assigned the 'Data Entry' role.
 
-In the interim, PMHC MDS users with the Upload :ref:`roles` can add their
-organisation's current PMHC MDS data through the Upload tab - see :ref:`Upload`.
+.. _practitioner:
+
+Practitioners
+^^^^^^^^^^^^^
+
+.. _find-practitioner:
+
+Finding a Practitioner at a Provider Organisaiton
+-------------------------------------------------
+
+You can search for practitioners assigned to an organisation through the organisation tab
+if you have been assigned the 'Data Entry' role, by following these steps:
+
+
+1. Navigate to a provider organisations details. (See :ref:`view-provider-organisation`)
+
+.. figure:: screen-shots/practitioners-detail-view.png
+   :alt: PMHC MDS Provider Organisation Practitioners View
+
+2. Click on the 'Practitioners' tab.
+
+.. figure:: screen-shots/practitioners-view.png
+   :alt: PMHC MDS Practitioners Table View
+
+.. _view-practitioner:
+
+Viewing a Practitioner
+----------------------
+
+You can view a practitioner's details through the organisation tab
+if you have been assigned the 'Data Entry' role, by following these steps:
+
+1. Once :ref:`find-practitioner`
+2. Click on the practitioner's key in blue displayed within the table list.
+
+.. figure:: screen-shots/practitioner-details.png
+   :alt: PMHC MDS Practitioner Details View
+
+Please note: You can also view a practitioner's details through the 'Client Data' tab. See :ref:`view-practitioner-details`
+
+
+.. _view-practitioner-details:
+
+Viewing a Practitioner Providing Client Services
+------------------------------------------------
+
+You can view a practitioner's details through :ref:`view-client-service-contact`
+on the Client Data tab, by following these steps:
+
+1. Once :ref:`view-client-service-contact`
+2. From the Service Contacts Details tab, click the Practitioner Key.
+
+.. figure:: screen-shots/client-service-contacts-practitioner-key.png
+   :alt: Practitioner Key on Service Contacts Details
+
+A page will display the Practitioner's details as recorded via the :ref:`Practitioner Data Elements <practitioner-data-elements>`.
+
+.. figure:: screen-shots/practitioner-details.png
+   :alt: Practitioner Details View
+
+
+.. _edit-practitioner:
+
+Editing a Practitioner
+----------------------
+
+You can edit a practitioner's details through the organisation tab, by following these steps:
+
+1. Once :ref:`view-practitioner`
+2. From the View Practitioner Details tab, click the Edit Practitioner tab.
+3. Update the practitioner's details. Mandatory fields are marked with an *
+4. Click the blue 'Save' button.
+
+.. figure:: screen-shots/practitioners-edit-view.png
+   :alt: PMHC MDS Practitioner Details View
+
+
+.. _add-practitioner:
+
+Adding a Practitioner
+----------------------
+
+You can edit a practitioner's details through the organisation tab, by following these steps:
+
+1. Once :ref:`find-practitioner`
+2. From the View Practitioners tab, click the Add Practitioner tab.
+3. Enter the practitioner's details. Mandatory fields are marked with an *
+4. Click the blue 'Save' button.
+
+.. figure:: screen-shots/practitioners-add-view.png
+   :alt: PMHC MDS Practitioner Details View
+
+
+.. _delete-practitioner:
+
+Deleting a Practitioner
+-----------------------
+
+Currently a practitioner can not be deleted from the PMHC MDS. However, you can
+change the practitioner from active to inactive by editing their details.
+
+See :ref:`edit-practitioner`

@@ -5,10 +5,27 @@
   white-space: normal !important;
 }
 
-.wy-table-responsive {
+/*.wy-table-responsive {
   overflow: visible !important;
-}
+}*/
 
 .wy-nav-content {
   max-width: 1200px !important;
+}
+
+a.headerlink {
+  display:none
+}
+
+@media print {
+
+/*  #sdq > div.wy-table-responsive {
+    page-break-before: always;
+    page-break-after: always;*/
+  }
+
+  #data-item-summary > div.wy-table-responsive {
+  overflow: visible !important;
+  }
+
 }
