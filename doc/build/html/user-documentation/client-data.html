@@ -92,17 +92,37 @@
 <li class="toctree-l2"><a class="reference internal" href="users.html">Users</a></li>
 <li class="toctree-l2"><a class="reference internal" href="upload.html">Upload</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Client Data</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#finding-a-client">Finding a Client</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#search-fields">Search Fields</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#clients">Clients</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#finding-a-client">Finding a Client</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#client-search-results">Client Search Results</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#viewing-a-client-s-details">Viewing a Client&#8217;s details</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#adding-a-client-and-client-s-data">Adding a Client and Client&#8217;s data</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#client-search-results">Client Search Results</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#viewing-a-client-s-details">Viewing a Client&#8217;s details</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#viewing-a-client-s-episodes">Viewing a Client&#8217;s Episodes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#viewing-a-client-s-service-contacts-for-an-episode">Viewing a Client&#8217;s Service Contacts for an Episode</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#viewing-a-practitioner-providing-client-services">Viewing a Practitioner Providing Client Services</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#viewing-a-client-s-outcome-collection-occasions-for-an-episode">Viewing a Client&#8217;s Outcome Collection Occasions for an Episode</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#adding-a-client-and-client-s-data">Adding a Client and Client&#8217;s data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#episodes">Episodes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#viewing-a-client-s-episodes">Viewing a Client&#8217;s Episodes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#adding-a-client-s-episode-data">Adding a Client&#8217;s Episode data</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#service-contacts">Service Contacts</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#viewing-a-client-s-service-contacts-for-an-episode">Viewing a Client&#8217;s Service Contacts for an Episode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#adding-a-client-s-service-contact-data">Adding a Client&#8217;s Service Contact data</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#outcome-collection-occasions">Outcome Collection Occasions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#viewing-a-client-s-outcome-collection-occasions-for-an-episode">Viewing a Client&#8217;s Outcome Collection Occasions for an Episode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#adding-a-client-s-outcome-collection-occasions-data">Adding a Client&#8217;s Outcome Collection Occasions data</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#practitioners">Practitioners</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#finding-a-practitioner-at-a-provider-organisaiton">Finding a Practitioner at a Provider Organisaiton</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#viewing-a-practitioner">Viewing a Practitioner</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#viewing-a-practitioner-providing-client-services">Viewing a Practitioner Providing Client Services</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#editing-a-practitioner">Editing a Practitioner</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#adding-a-practitioner">Adding a Practitioner</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#deleting-a-practitioner">Deleting a Practitioner</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="data-extraction.html">Data Extraction</a></li>
@@ -161,7 +181,7 @@
             
   <div class="section" id="client-data">
 <span id="id1"></span><h1>Client Data<a class="headerlink" href="#client-data" title="Permalink to this headline">¶</a></h1>
-<p>You will only be able to see the Client Data tab if you have been assigned
+<p id="data-entry">You will only be able to see the Client Data tab if you have been assigned
 the &#8216;Data Entry&#8217; <a class="reference internal" href="users.html#roles"><span class="std std-ref">Users Roles</span></a>.</p>
 <p>If you don’t have access to the Client Data tab and you believe you should, please
 contact someone in your provider organisation or provider organisation&#8217;s PHN
@@ -173,11 +193,13 @@ you have permission to access.</p>
 <div class="figure">
 <img alt="Client Data Tab View" src="../_images/client-data.png" />
 </div>
+<div class="section" id="clients">
+<h2>Clients<a class="headerlink" href="#clients" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="finding-a-client">
-<span id="find-client"></span><h2>Finding a Client<a class="headerlink" href="#finding-a-client" title="Permalink to this headline">¶</a></h2>
+<span id="find-client"></span><h3>Finding a Client<a class="headerlink" href="#finding-a-client" title="Permalink to this headline">¶</a></h3>
 <p>There are three <a class="reference internal" href="#search-fields"><span class="std std-ref">Search Fields</span></a> options available to find a client.</p>
 <div class="section" id="search-fields">
-<span id="id2"></span><h3>Search Fields<a class="headerlink" href="#search-fields" title="Permalink to this headline">¶</a></h3>
+<span id="id2"></span><h4>Search Fields<a class="headerlink" href="#search-fields" title="Permalink to this headline">¶</a></h4>
 <p>You can choose any one of three search options to search for a client, depending on the client information that you have available to you at the time.</p>
 <ul class="simple">
 <li><strong>Client Key</strong> - You can use this field to type in a whole <a class="reference internal" href="../data-specification/data-model-and-specifications.html#dfn-client-key"><span class="std std-ref">Client Key</span></a>, or start thereof.</li>
@@ -193,7 +215,7 @@ the blue &#8216;Search&#8217; button to see <a class="reference internal" href="
 </div>
 </div>
 <div class="section" id="client-search-results">
-<span id="search-client"></span><h2>Client Search Results<a class="headerlink" href="#client-search-results" title="Permalink to this headline">¶</a></h2>
+<span id="search-client"></span><h3>Client Search Results<a class="headerlink" href="#client-search-results" title="Permalink to this headline">¶</a></h3>
 <p>A display of the details used within the <a class="reference internal" href="#search-fields"><span class="std std-ref">Search Fields</span></a> used in <a class="reference internal" href="#find-client"><span class="std std-ref">Finding a Client</span></a>
 will be visible above the search results table, when results are available.</p>
 <p>You can sort the listed client search results through either of the
@@ -224,7 +246,7 @@ you can click on the arrow beside a column header for more sort options, as foll
 &#8216;Edit Search&#8217; button.</p>
 </div>
 <div class="section" id="viewing-a-client-s-details">
-<span id="view-client-details"></span><h2>Viewing a Client&#8217;s details<a class="headerlink" href="#viewing-a-client-s-details" title="Permalink to this headline">¶</a></h2>
+<span id="view-client-details"></span><h3>Viewing a Client&#8217;s details<a class="headerlink" href="#viewing-a-client-s-details" title="Permalink to this headline">¶</a></h3>
 <p>You can view a clients&#8217;s details through the <a class="reference internal" href="#search-client"><span class="std std-ref">Client Search Results</span></a>
 available on the Client Data tab, by following these steps:</p>
 <ol class="arabic simple">
@@ -239,13 +261,23 @@ snapshot of the five most recent episodes.</li>
 <ol class="arabic simple" start="4">
 <li>Click Details tab for more information on the Client.</li>
 </ol>
-<p>A page will display the Client&#8217;s details as recorded via the Client Data Elements - <a class="reference internal" href="../data-specification/data-model-and-specifications.html#client-data-elements"><span class="std std-ref">Client</span></a>.</p>
+<p>A page will display the Client&#8217;s details as recorded via the <a class="reference internal" href="../data-specification/data-model-and-specifications.html#client-data-elements"><span class="std std-ref">Client Data Elements</span></a>.</p>
 <div class="figure">
 <img alt="Client Data Details View" src="../_images/client-view-details.png" />
 </div>
 </div>
+<div class="section" id="adding-a-client-and-client-s-data">
+<span id="add-client"></span><h3>Adding a Client and Client&#8217;s data<a class="headerlink" href="#adding-a-client-and-client-s-data" title="Permalink to this headline">¶</a></h3>
+<p>The Data Entry Interface is due to be fully integrated into the PMHC MDS
+in the coming weeks.</p>
+<p>An update will be circulated to all current users and the mailing list
+when this new feature is added.</p>
+</div>
+</div>
+<div class="section" id="episodes">
+<span id="episode-data"></span><h2>Episodes<a class="headerlink" href="#episodes" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="viewing-a-client-s-episodes">
-<span id="view-client-episodes"></span><h2>Viewing a Client&#8217;s Episodes<a class="headerlink" href="#viewing-a-client-s-episodes" title="Permalink to this headline">¶</a></h2>
+<span id="view-client-episodes"></span><h3>Viewing a Client&#8217;s Episodes<a class="headerlink" href="#viewing-a-client-s-episodes" title="Permalink to this headline">¶</a></h3>
 <p>You can view a clients&#8217;s episodes through the <a class="reference internal" href="#view-client-details"><span class="std std-ref">Viewing a Client&#8217;s details</span></a>
 available on the Client Data tab, by following these steps:</p>
 <ol class="arabic simple">
@@ -282,8 +314,18 @@ in the PMHC MDS for this client at Provider Organisations for which you have acc
 </div>
 <p>A page will display the Client&#8217;s Episode details as recorded via the <a class="reference internal" href="../data-specification/data-model-and-specifications.html#episode-data-elements"><span class="std std-ref">Episode Data Elements</span></a>.</p>
 </div>
+<div class="section" id="adding-a-client-s-episode-data">
+<span id="add-episodes"></span><h3>Adding a Client&#8217;s Episode data<a class="headerlink" href="#adding-a-client-s-episode-data" title="Permalink to this headline">¶</a></h3>
+<p>The Data Entry Interface is due to be fully integrated into the PMHC MDS
+in the coming weeks.</p>
+<p>An update will be circulated to all current users and the mailing list
+when this new feature is added.</p>
+</div>
+</div>
+<div class="section" id="service-contacts">
+<span id="service-contact-data"></span><h2>Service Contacts<a class="headerlink" href="#service-contacts" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="viewing-a-client-s-service-contacts-for-an-episode">
-<span id="view-client-service-contact"></span><h2>Viewing a Client&#8217;s Service Contacts for an Episode<a class="headerlink" href="#viewing-a-client-s-service-contacts-for-an-episode" title="Permalink to this headline">¶</a></h2>
+<span id="view-client-service-contact"></span><h3>Viewing a Client&#8217;s Service Contacts for an Episode<a class="headerlink" href="#viewing-a-client-s-service-contacts-for-an-episode" title="Permalink to this headline">¶</a></h3>
 <p>You can view a client&#8217;s service contacts through the <a class="reference internal" href="#view-client-episodes"><span class="std std-ref">Viewing a Client&#8217;s Episodes</span></a>
 available on the Client Data tab, by following these steps:</p>
 <ol class="arabic simple">
@@ -304,24 +346,18 @@ in the PMHC MDS for this episode.</li>
 </div>
 <p>A page will display the Service Contacts details as recorded via the <a class="reference internal" href="../data-specification/data-model-and-specifications.html#service-contact-data-elements"><span class="std std-ref">Service Contact Data Elements</span></a>.</p>
 </div>
-<div class="section" id="viewing-a-practitioner-providing-client-services">
-<span id="view-practitioner-details"></span><h2>Viewing a Practitioner Providing Client Services<a class="headerlink" href="#viewing-a-practitioner-providing-client-services" title="Permalink to this headline">¶</a></h2>
-<p>You can view a practitioner&#8217;s details through the <a class="reference internal" href="#view-client-service-contact"><span class="std std-ref">Viewing a Client&#8217;s Service Contacts for an Episode</span></a>
-available on the Client Data tab, by following these steps:</p>
-<ol class="arabic simple">
-<li>Once <a class="reference internal" href="#view-client-service-contact"><span class="std std-ref">Viewing a Client&#8217;s Service Contacts for an Episode</span></a></li>
-<li>From the Service Contacts Details tab, click the Practitioner Key.</li>
-</ol>
-<div class="figure">
-<img alt="Practitioner Key on Service Contacts Details" src="../_images/client-service-contacts-practitioner-key.png" />
-</div>
-<p>A page will display the Practitioner&#8217;s details as recorded via the <a class="reference internal" href="../data-specification/data-model-and-specifications.html#practitioner-data-elements"><span class="std std-ref">Practitioner Data Elements</span></a>.</p>
-<div class="figure">
-<img alt="Practitioner Details View" src="../_images/practitioner-details.png" />
+<div class="section" id="adding-a-client-s-service-contact-data">
+<span id="add-service-contacts"></span><h3>Adding a Client&#8217;s Service Contact data<a class="headerlink" href="#adding-a-client-s-service-contact-data" title="Permalink to this headline">¶</a></h3>
+<p>The Data Entry Interface is due to be fully integrated into the PMHC MDS
+in the coming weeks.</p>
+<p>An update will be circulated to all current users and the mailing list
+when this new feature is added.</p>
 </div>
 </div>
+<div class="section" id="outcome-collection-occasions">
+<span id="outcome-collection-occasion-data"></span><h2>Outcome Collection Occasions<a class="headerlink" href="#outcome-collection-occasions" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="viewing-a-client-s-outcome-collection-occasions-for-an-episode">
-<span id="view-client-collection-occasion"></span><h2>Viewing a Client&#8217;s Outcome Collection Occasions for an Episode<a class="headerlink" href="#viewing-a-client-s-outcome-collection-occasions-for-an-episode" title="Permalink to this headline">¶</a></h2>
+<span id="view-client-collection-occasion"></span><h3>Viewing a Client&#8217;s Outcome Collection Occasions for an Episode<a class="headerlink" href="#viewing-a-client-s-outcome-collection-occasions-for-an-episode" title="Permalink to this headline">¶</a></h3>
 <p>You can view a clients&#8217;s outcome collection occasions through the <a class="reference internal" href="#view-client-episodes"><span class="std std-ref">Viewing a Client&#8217;s Episodes</span></a>
 available on the Client Data tab, by following these steps:</p>
 <ol class="arabic simple">
@@ -342,16 +378,94 @@ in the PMHC MDS for this episode.</li>
 </div>
 <p>A page will display the Collection Occasions details as recorded via the <a class="reference internal" href="../data-specification/data-model-and-specifications.html#outcome-collection-occasion-data-elements"><span class="std std-ref">Outcome Collection Occasion Data Elements</span></a>.</p>
 </div>
-<div class="section" id="adding-a-client-and-client-s-data">
-<span id="add-client"></span><h2>Adding a Client and Client&#8217;s data<a class="headerlink" href="#adding-a-client-and-client-s-data" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="adding-a-client-s-outcome-collection-occasions-data">
+<span id="add-client-collection-occasion"></span><h3>Adding a Client&#8217;s Outcome Collection Occasions data<a class="headerlink" href="#adding-a-client-s-outcome-collection-occasions-data" title="Permalink to this headline">¶</a></h3>
 <p>The Data Entry Interface is due to be fully integrated into the PMHC MDS
-in <a class="reference internal" href="../faqs/system/development.html#stage-two"><span class="std std-ref">Stage Two</span></a> of the PMHC MDS development.</p>
+in the coming weeks.</p>
 <p>An update will be circulated to all current users and the mailing list
 when this new feature is added.</p>
-<p>Once this feature is available, you will only be able to use the Data Entry Interface if
-you have been assigned the &#8216;Data Entry&#8217; role.</p>
-<p>In the interim, PMHC MDS users with the Upload <a class="reference internal" href="users.html#roles"><span class="std std-ref">Users Roles</span></a> can add their
-organisation&#8217;s current PMHC MDS data through the Upload tab - see <a class="reference internal" href="upload.html#upload"><span class="std std-ref">Upload</span></a>.</p>
+</div>
+</div>
+<div class="section" id="practitioners">
+<span id="practitioner"></span><h2>Practitioners<a class="headerlink" href="#practitioners" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="finding-a-practitioner-at-a-provider-organisaiton">
+<span id="find-practitioner"></span><h3>Finding a Practitioner at a Provider Organisaiton<a class="headerlink" href="#finding-a-practitioner-at-a-provider-organisaiton" title="Permalink to this headline">¶</a></h3>
+<p>You can search for practitioners assigned to an organisation through the organisation tab
+if you have been assigned the &#8216;Data Entry&#8217; role, by following these steps:</p>
+<ol class="arabic simple">
+<li>Navigate to a provider organisations details. (See <a class="reference internal" href="organisations.html#view-provider-organisation"><span class="std std-ref">Viewing a Provider Organisation</span></a>)</li>
+</ol>
+<div class="figure">
+<img alt="PMHC MDS Provider Organisation Practitioners View" src="../_images/practitioners-detail-view.png" />
+</div>
+<ol class="arabic simple" start="2">
+<li>Click on the &#8216;Practitioners&#8217; tab.</li>
+</ol>
+<div class="figure">
+<img alt="PMHC MDS Practitioners Table View" src="../_images/practitioners-view.png" />
+</div>
+</div>
+<div class="section" id="viewing-a-practitioner">
+<span id="view-practitioner"></span><h3>Viewing a Practitioner<a class="headerlink" href="#viewing-a-practitioner" title="Permalink to this headline">¶</a></h3>
+<p>You can view a practitioner&#8217;s details through the organisation tab
+if you have been assigned the &#8216;Data Entry&#8217; role, by following these steps:</p>
+<ol class="arabic simple">
+<li>Once <a class="reference internal" href="#find-practitioner"><span class="std std-ref">Finding a Practitioner at a Provider Organisaiton</span></a></li>
+<li>Click on the practitioner&#8217;s key in blue displayed within the table list.</li>
+</ol>
+<div class="figure">
+<img alt="PMHC MDS Practitioner Details View" src="../_images/practitioner-details.png" />
+</div>
+<p>Please note: You can also view a practitioner&#8217;s details through the &#8216;Client Data&#8217; tab. See <a class="reference internal" href="#view-practitioner-details"><span class="std std-ref">Viewing a Practitioner Providing Client Services</span></a></p>
+</div>
+<div class="section" id="viewing-a-practitioner-providing-client-services">
+<span id="view-practitioner-details"></span><h3>Viewing a Practitioner Providing Client Services<a class="headerlink" href="#viewing-a-practitioner-providing-client-services" title="Permalink to this headline">¶</a></h3>
+<p>You can view a practitioner&#8217;s details through <a class="reference internal" href="#view-client-service-contact"><span class="std std-ref">Viewing a Client&#8217;s Service Contacts for an Episode</span></a>
+on the Client Data tab, by following these steps:</p>
+<ol class="arabic simple">
+<li>Once <a class="reference internal" href="#view-client-service-contact"><span class="std std-ref">Viewing a Client&#8217;s Service Contacts for an Episode</span></a></li>
+<li>From the Service Contacts Details tab, click the Practitioner Key.</li>
+</ol>
+<div class="figure">
+<img alt="Practitioner Key on Service Contacts Details" src="../_images/client-service-contacts-practitioner-key.png" />
+</div>
+<p>A page will display the Practitioner&#8217;s details as recorded via the <a class="reference internal" href="../data-specification/data-model-and-specifications.html#practitioner-data-elements"><span class="std std-ref">Practitioner Data Elements</span></a>.</p>
+<div class="figure">
+<img alt="Practitioner Details View" src="../_images/practitioner-details.png" />
+</div>
+</div>
+<div class="section" id="editing-a-practitioner">
+<span id="edit-practitioner"></span><h3>Editing a Practitioner<a class="headerlink" href="#editing-a-practitioner" title="Permalink to this headline">¶</a></h3>
+<p>You can edit a practitioner&#8217;s details through the organisation tab, by following these steps:</p>
+<ol class="arabic simple">
+<li>Once <a class="reference internal" href="#view-practitioner"><span class="std std-ref">Viewing a Practitioner</span></a></li>
+<li>From the View Practitioner Details tab, click the Edit Practitioner tab.</li>
+<li>Update the practitioner&#8217;s details. Mandatory fields are marked with an *</li>
+<li>Click the blue &#8216;Save&#8217; button.</li>
+</ol>
+<div class="figure">
+<img alt="PMHC MDS Practitioner Details View" src="../_images/practitioners-edit-view.png" />
+</div>
+</div>
+<div class="section" id="adding-a-practitioner">
+<span id="add-practitioner"></span><h3>Adding a Practitioner<a class="headerlink" href="#adding-a-practitioner" title="Permalink to this headline">¶</a></h3>
+<p>You can edit a practitioner&#8217;s details through the organisation tab, by following these steps:</p>
+<ol class="arabic simple">
+<li>Once <a class="reference internal" href="#find-practitioner"><span class="std std-ref">Finding a Practitioner at a Provider Organisaiton</span></a></li>
+<li>From the View Practitioners tab, click the Add Practitioner tab.</li>
+<li>Enter the practitioner&#8217;s details. Mandatory fields are marked with an *</li>
+<li>Click the blue &#8216;Save&#8217; button.</li>
+</ol>
+<div class="figure">
+<img alt="PMHC MDS Practitioner Details View" src="../_images/practitioners-add-view.png" />
+</div>
+</div>
+<div class="section" id="deleting-a-practitioner">
+<span id="delete-practitioner"></span><h3>Deleting a Practitioner<a class="headerlink" href="#deleting-a-practitioner" title="Permalink to this headline">¶</a></h3>
+<p>Currently a practitioner can not be deleted from the PMHC MDS. However, you can
+change the practitioner from active to inactive by editing their details.</p>
+<p>See <a class="reference internal" href="#edit-practitioner"><span class="std std-ref">Editing a Practitioner</span></a></p>
+</div>
 </div>
 </div>
 
