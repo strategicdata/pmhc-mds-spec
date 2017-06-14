@@ -3,8 +3,8 @@
 User Guide Change log
 =====================
 
-8/6/2017
---------
+14/6/2017
+---------
 
 * Added :ref:`add-practitioner`
 
