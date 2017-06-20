@@ -75,7 +75,7 @@ to report on Service Type for all Service Contacts.
   *Note: This code should only be used for
   Service Contacts that cannot be described by any other Service Type. It is
   expected that the majority of Service Contacts delivered to children and
-  young people can be assigned to other categories*
+  young people can be assigned to other categories.*
 
 7 - Suicide prevention specific assistance NEC
   Services delivered to, or on behalf, of a client who presents with risk of
@@ -101,3 +101,12 @@ to report on Service Type for all Service Contacts.
   described by any other Service Type. It is expected that the majority of
   Service Contacts (see domains below) delivered to Aboriginal or Torres Strait
   Islander clients can be assigned to other categories.*
+
+98 - ATAPS
+  Services delivered as part of ATAPS funded referrals that are recorded and/or
+  migrated into the PMHC MDS.
+
+  *Note: This code should only be used for Service Contacts that are migrated from
+  ATAPS MDS sources that cannot be described by any other Service Type. It is
+  expected that the majority of Service Contacts delivered to clients from
+  1st July, 2017 can be assigned to other categories.*
