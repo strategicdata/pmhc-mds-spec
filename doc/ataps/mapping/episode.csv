@@ -47,15 +47,29 @@ ATAPS referral conclusion                       PMHC episode completion status
 (referral_date)",date,"ATAPS referral_date"
 ":ref:`dfn-principal_focus`
 
-(principal_focus)",string,"TODO
+(principal_focus)",string,"Determined from ATAPS referral type using the following mapping:
 
-:1: Psychological therapy
-:2: Low intensity psychological intervention
-:3: Clinical care coordination
-:4: Complex care package
-:5: Child and youth-specific mental health services
-:6: Indigenous-specific mental health services
-:7: Other"
+====================================  ============================
+ATAPS referral type                   PMHC episode principal focus
+====================================  ============================
+:1: General ATAPS                     :1: Psychological therapy
+:2: Telephone CBT                     :7: Other
+:3: Suicide Prevention                :7: Other
+:4: Perinatal Depression              :7: Other
+:5: Bushfire                          :7: Other
+:6: Homelessness                      :7: Other
+:7: Aboriginal & TSI                  :6: Indigenous-specific mental health services
+:8: Rural & remote                    :1: Psychological therapy
+:9: Children                          :5: Child and youth-specific mental health services
+:10: 2010-11 Floods and Cyclone Yasi  :7: Other
+:11: ATSI Suicide prevention          :6: Indigenous-specific mental health services
+:12: Tier 2 ECE - Flood/Cyclone       :7: Other
+:13: Tier 2 ECE - Bushfire            :7: Other
+:14: Tier 2 ECE - Other               :7: Other
+:15: MHSRRA                           :1: Psychological therapy
+====================================  ============================
+
+"
 ":ref:`dfn-mental_health_treatment_plan`
 
 (mental_health_treatment_plan)",string,"Not part of ATAPS MDS. All episode records populated with
@@ -207,51 +221,51 @@ Otherwise
 :9: Unknown"
 ":ref:`dfn-referrer_profession`
 
-(referrer_profession)",string,"TODO
+(referrer_profession)",string,"Mapped from ATAPS referral referrer type:
 
-:1: General Practitioner
-:2: Psychiatrist
-:3: Obstetrician
-:4: Paediatrician
-:5: Other Medical Specialist
-:6: Midwife
-:7: Maternal Health Nurse
-:8: Psychologist
-:9: Mental Health Nurse
-:10: Social Worker
-:11: Occupational therapist
-:12: Aboriginal Health Worker
-:13: Educational professional
-:14: Early childhood service worker
-:15: Other
-:98: N/A - Self referral
+========================================================  =======================================
+ATAPS referral referrer type                              PMHC episode referrer profession
+========================================================  =======================================
+:1: GP                                                    :1: General Practitioner
+:2: Psychiatrist                                          :2: Psychiatrist
+:5: Case Manager                                          :10: Social Worker
+:7: Midwife                                               :6: Midwife
+:8: Obstetrician                                          :3: Obstetrician
+:9: Maternal health nurse                                 :7: Maternal Health Nurse
+:10: Self                                                 :98: N/A - Self referral
+:11: Centrelink Social Workers                            :10: Social Worker
+:14: Paediatrician                                        :4: Paediatrician
+:17: Medical officers in NGOs                             :10: Social Worker
+:18: School psychologist / counsellor                     :8: Psychologist
+:19: Deputy principals or principals                      :13: Educational professional
+:20: Director of early childhood services or equivalent   :14: Early childhood service worker
+========================================================  =======================================
+
+All other referrer types  are mapped to the referrer profession
+
 :99: Not stated"
 ":ref:`dfn-referrer_organisation_type`
 
-(referrer_organisation_type)",string,"TODO
+(referrer_organisation_type)",string,"Mapped from ATAPS referral referrer type:
 
-:1: General Practice
-:2: Medical Specialist Consulting Rooms
-:3: Private practice
-:4: Public mental health service
-:5: Public Hospital
-:6: Private Hospital
-:7: Emergency Department
-:8: Community Health Centre
-:9: Drug and Alcohol Service
-:10: Community Support Organisation NFP
-:11: Indigenous Health Organisation
-:12: Child and Maternal Health
-:13: Nursing Service
-:14: Telephone helpline
-:15: Digital health service
-:16: Family Support Service
-:17: School
-:18: Tertiary Education institution
-:19: Housing service
-:20: Centrelink
-:21: Other
-:98: N/A - Self referral
+======================================================================================  =======================================
+ATAPS referral referrer type                                                            PMHC episode referrer organisation type
+======================================================================================  =======================================
+:3: Community Mental Health                                                             :8: Community Health Centre
+:4: Emergency Department                                                                :7: Emergency Department
+:6: NGO                                                                                 :10: Community Support Organisation NFP
+:10: Self                                                                               :98: N/A - Self referral
+:11: Centrelink Social Workers                                                          :20: Centrelink
+:16: ATSI health organisation / ACCHS (Aboriginal Controlled Community Health Service)  :11: Indigenous Health Organisation
+:17: Medical officers in NGOs                                                           :10: Community Support Organisation NFP
+:18: School psychologist / counsellor                                                   :17: School
+:19: Deputy principals or principals                                                    :17: School
+:21: Drug and alcohol service                                                           :9: Drug and Alcohol Service
+:22: Acute mental health team                                                           :4: Public mental health service
+======================================================================================  =======================================
+
+All other referrer types are mapped to the referrer organisation type
+
 :99: Not stated"
 ":ref:`dfn-episode_tags`
 
