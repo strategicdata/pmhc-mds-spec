@@ -38,13 +38,20 @@ ATAPS gender       PMHC gender
 "
 ":ref:`dfn-client_atsi_status`
 
-(client_atsi_status)",string,"TODO
+(client_atsi_status)",string,"Calculated from the ATAPS patient 'Aboriginal' (aboriginal) and 'Torres Strait islander' (torres_si) fields.
 
-:1: Aboriginal but not Torres Strait Islander origin
-:2: Torres Strait Islander but not Aboriginal origin
-:3: Both Aboriginal and Torres Strait Islander origin
-:4: Neither Aboriginal or Torres Strait Islander origin
-:9: Not stated/inadequately described"
+==========================  ==========================  =======================
+ATAPS patient 'aboriginal'  ATAPS patient 'torres_si'   PMHC client atsi status
+==========================  ==========================  =======================
+:1: Yes                     :2: No (or Blank)           :1: Aboriginal but not Torres Strait Islander origin
+:2: No (or Blank)           :1: Yes                     :2: Torres Strait Islander but not Aboriginal origin
+:1: Yes                     :1: Yes                     :3: Both Aboriginal and Torres Strait Islander origin
+:2: No (or Blank)           :2: No (or Blank)           :4: Neither Aboriginal or Torres Strait Islander origin
+:3: Unknown                 (any value)                 :9: Not stated/inadequately described
+(any value)                 :3: Unknown                 :9: Not stated/inadequately described
+==========================  ==========================  =======================
+
+"
 ":ref:`dfn-country_of_birth`
 
 (country_of_birth)","string (4)","Not part of ATAPS MDS. All practitioner records populated with 
@@ -52,10 +59,38 @@ ATAPS gender       PMHC gender
 :9999: Unknown"
 ":ref:`dfn-main_lang_at_home`
 
-(main_lang_at_home)","string (4)","TODO"
+(main_lang_at_home)","string (4)","ATAPS patient 'language spoken at home' had a reduced set of options. These map to PMHC client 'main language spoken at home' as
+
+==========================  ============================
+ATAPS patient lang_at_home  PMHC client main_lan_at_home
+==========================  ============================
+:1: English                 :1201: English
+:2: Italian                 :2401: Italian
+:3: Greek                   :2201: Greek
+:4: Cantonese               :7101: Cantonese
+:5: Mandarin                :7104: Mandarin
+:6: Arabic                  :4202: Arabic
+:7: Vietnamese              :6302: Vietnamese
+:8: Other  (or blank)       :9999: Unknown
+==========================  ============================
+
+"
 ":ref:`dfn-prof_english`
 
-(prof_english)",string,"TODO"
+(prof_english)",string,"Mapped from ATAPS patient english level:
+
+===========================  =========================================
+ATAPS patient english level  PMHC client proficiency in spoken english
+===========================  =========================================
+:1: Very Well                :1: Very well
+:2: Well                     :2: Well
+:3: Not Well                 :3: Not well
+:4: Not at All               :4: Not at all
+:5: Unknown                  :9: Not stated/inadequately described
+:0: (blank)                  :9: Not stated/inadequately described
+===========================  =========================================
+
+"
 ":ref:`dfn-client_tags`
 
 (client_tags)
