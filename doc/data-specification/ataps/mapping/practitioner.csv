@@ -1,7 +1,7 @@
 "Data Element (Field Name)","Type (min,max)","Format / Values"
 ":ref:`dfn-organisation_path`
 
-(organisation_path)",string,"No compariable concept in ATAPS MDS.
+(organisation_path)",string,"No comparable concept in ATAPS MDS.
 
 PHN's will be required to populate this field."
 ":ref:`dfn-practitioner_key`
@@ -63,7 +63,7 @@ ATAPS gender       PMHC gender
 :1: Active"
 ":ref:`dfn-practitioner_tags`
 
-(practitioner_tags)",string,"No compariable concept in the ATAPS MDS. All records will be populated with the reserved tag
+(practitioner_tags)",string,"No comparable concept in the ATAPS MDS. All records will be populated with the reserved tag
 
  !ATAPS
 "

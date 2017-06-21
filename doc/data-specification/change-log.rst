@@ -3,6 +3,19 @@
 Data Specification Change log
 =============================
 
+??/6/2017 - Version 1.0.8
+-------------------------
+
+* Data model and specifications
+
+  * Record formats
+
+    * Service Contact
+
+      * Updated :ref:`dfn-service_contact_type` to add response 98: 'ATAPS'.
+
+* Added :ref:`ataps-pmhc-mapping`
+
 14/6/2017 - Version 1.0.7
 -------------------------
 

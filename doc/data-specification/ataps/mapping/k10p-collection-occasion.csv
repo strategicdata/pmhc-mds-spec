@@ -1,7 +1,7 @@
 "Data Element (Field Name)","Type (min,max)","Format / Values"
 ":ref:`dfn-organisation_path`
 
-(organisation_path)",string,"No compariable concept in ATAPS MDS.
+(organisation_path)",string,"No comparable concept in ATAPS MDS.
 
 PHN's will be required to populate this field."
 ":ref:`dfn-collection_occasion_key`
@@ -87,6 +87,6 @@ while 'final' K10+ measures are mapped to
 (k10p_score)",integer,"ATAPS K10+ collection occasion total score (ktot10)"
 ":ref:`dfn-k10p_tags`
 
-(k10p_tags)",string,"No compariable concept in the ATAPS MDS. All records will be populated with the reserved tag
+(k10p_tags)",string,"No comparable concept in the ATAPS MDS. All records will be populated with the reserved tag
 
  !ATAPS"

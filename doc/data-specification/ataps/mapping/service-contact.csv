@@ -1,7 +1,7 @@
 "Data Element (Field Name)","Type (min,max)","Format / Values"
 ":ref:`dfn-organisation_path`
 
-(organisation_path)",string,"No compariable concept in ATAPS MDS.
+(organisation_path)",string,"No comparable concept in ATAPS MDS.
 
 PHN's will be required to populate this field."
 ":ref:`dfn-service_contact_key`
@@ -63,7 +63,7 @@ records will be populated with the postcode
 :9999: Unknown"
 ":ref:`dfn-service_contact_modality`
 
-(service_contact_modality)",string,"Mapped from ATAPS session no_show and modailty fields.
+(service_contact_modality)",string,"Mapped from ATAPS session no_show and modality fields.
 
 If the ATAPS session was flagged as a `no_show`, the PMHC service contact modaility is
 
@@ -103,7 +103,7 @@ Any ATAPS sessions with a missing value for session type are mapped to
 :9: Not stated"
 ":ref:`dfn-service_contact_venue`
 
-(service_contact_venue)",string,"No compariable concept in ATAPS MDS.
+(service_contact_venue)",string,"No comparable concept in ATAPS MDS.
 
 Sessions that were delivered with a modality of Telephone, Video or Internet-based
 (session.modailty > 1 ) are mapped to
@@ -180,13 +180,13 @@ Otherwise
 
 (service_contact_final)
 
-",string,"No compariable concept in ATAPS MDS. All service contacts will be populated with
+",string,"No comparable concept in ATAPS MDS. All service contacts will be populated with
 
 :3: Not known at this stage"
 ":ref:`dfn-service_contact_tags`
 
 (service_contact_tags)
 
-",string,"No compariable concept in the ATAPS MDS. All records will be populated with the reserved tag
+",string,"No comparable concept in the ATAPS MDS. All records will be populated with the reserved tag
 
  !ATAPS"
