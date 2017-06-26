@@ -108,16 +108,59 @@ A page will display the Client's details as recorded via the :ref:`Client Data E
 .. figure:: screen-shots/client-view-details.png
    :alt: Client Data Details View
 
+.. _edit-client:
+
+Editing a Client
+----------------
+
+You can edit a clients's details through the :ref:`search-client`
+available on the Client Data tab, by following these steps:
+
+1. Create :ref:`search-client`
+2. Click on the Client Key in blue displayed within the table list.
+3. Click Details tab to view information on this Client.
+4. Click Edit Details tab.
+5. Update the Client's details. Mandatory fields are marked with an * (Specification :ref:`Client Data Elements <client-data-elements>`)
+6. Click the blue 'Save' button. (If you decide not to save changes, you can simply navigate away from this screen)
+
+.. figure:: screen-shots/client-edit-details.png
+   :alt: Client Data Edit Details
+
+You will receive confirmation that the Client's details have been saved, and it will
+now be displaying these new details in the Clients View Details tab.
+
 .. _add-client:
 
-Adding a Client and Client's data
----------------------------------
+Adding a New Client
+-------------------
 
-The Data Entry Interface is due to be fully integrated into the PMHC MDS
-in the coming weeks.
+You can add a clients through the :ref:`search-client`
+available on the Client Data tab, by following these steps:
 
-An update will be circulated to all current users and the mailing list
-when this new feature is added.
+1. Create :ref:`search-client`
+2. Firstly double check the client is not already added.
+3. Click the blue 'Add New Client' button.
+4. Choose the Provider Organisation from the drop down list.
+5. Enter the Client's details. Mandatory fields are marked with an * (Specification :ref:`Client Data Elements <client-data-elements>`)
+6. Click the blue 'Save' button. (If you decide not to add this client, you can simply navigate away from this screen)
+
+.. figure:: screen-shots/client-add.png
+   :alt: Client Data Add Client
+
+You will receive confirmation that the Client has been saved, and it will
+now be displaying the client's saved information in the Clients View Details tab.
+
+.. figure:: screen-shots/client-view-details.png
+   :alt: Client Data Details View
+
+.. _delete-client:
+
+Deleting a Client
+----------------
+
+You can not currently delete a client. The client delete feature will be released in July 2017.
+
+In the interim, if this causes you any significant issues please email support@pmhc-mds.com.
 
 .. _episode-data:
 
