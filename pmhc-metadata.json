@@ -125,8 +125,8 @@
     "url": "table/episode/ndis-participant.csv",
     "tableSchema": "table/episode/ndis-participant.json"
   }, {
-    "url": "table/episode/principle-diagnosis.csv",
-    "tableSchema": "table/episode/principle-diagnosis.json"
+    "url": "table/episode/principal-diagnosis.csv",
+    "tableSchema": "table/episode/principal-diagnosis.json"
   }, {
     "url": "table/episode/additional-diagnosis.csv",
     "tableSchema": "table/episode/additional-diagnosis.json"
