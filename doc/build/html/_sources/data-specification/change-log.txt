@@ -12,13 +12,28 @@ Data Specification Change log
 
     * Episode
 
-      * Updated :ref:`dfn-additional_diagnosis` to add response 998: 'No additional diagnosis'
+      * Updated :ref:`dfn-additional_diagnosis` to add the following response codes:
+
+        * 000: No additional diagnosis
+        * 100: Anxiety disorders (ATAPS)
+        * 200: Affective (Mood) disorders (ATAPS)
+        * 300: Substance use disorders (ATAPS)
+        * 400: Psychotic disorders (ATAPS)
+
+      * Updated :ref:`dfn-principal_diagnosis` to add the following response codes:
+
+        * 100: Anxiety disorders (ATAPS)
+        * 200: Affective (Mood) disorders (ATAPS)
+        * 300: Substance use disorders (ATAPS)
+        * 400: Psychotic disorders (ATAPS)
 
     * Service Contact
 
-      * Updated :ref:`dfn-service_contact_type` to add response 98: 'ATAPS'.
+      * Updated :ref:`dfn-service_contact_type` to add the following response code:
 
-* Added :ref:`ataps-to-pmhc-mapping`
+        * 98: ATAPS
+
+  * Added :ref:`ataps-to-pmhc-mapping`
 
 14/6/2017 - Version 1.0.7
 -------------------------
