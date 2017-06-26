@@ -162,8 +162,8 @@ All other referrals will be mapped to
 
 :905: Other
 
-Note: There is work in progress to determine if its possible to defined an ordering
-of a referral's diagnoses where multiple diagnosis were specified."
+Note: There is work in progress to determine if its possible to define an ordering
+of a referral's diagnoses where multiple ATAPS diagnosis were specified. If it is determined that such a mapping is possible further announcements will be made via the PMHC MDS mailing list."
 ":ref:`dfn-additional_diagnosis`
 
 (additional_diagnosis)
@@ -182,8 +182,8 @@ For all other referrals, the additional diagnosis is mapped to
 
 :905: Other
 
-Note: There is work in progress to determine if its possible to defined an ordering
-of a referral's diagnoses where multiple diagnosis were specified."
+Note: There is work in progress to determine if its possible to define an ordering
+of a referral's diagnoses where multiple ATAPS diagnosis were specified. If it is determined that such a mapping is possible further announcements will be made via the PMHC MDS mailing list."
 ":ref:`dfn-medication_antipsychotics`
 
 (medication_antipsychotics)",string,"If ATAPS referral med_pheno is TRUE (or `1`) then
