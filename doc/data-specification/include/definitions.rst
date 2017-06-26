@@ -1088,6 +1088,7 @@ The main additional condition or complaint co-existing with the Principal Diagno
 :Required: true
 
 :Domain:
+  :000: No additional diagnosis
   :100: Anxiety disorders (ATAPS)
   :101: Panic disorder
   :102: Agoraphobia
@@ -1131,7 +1132,6 @@ The main additional condition or complaint co-existing with the Principal Diagno
   :903: Mixed anxiety and depressive symptoms
   :904: Stress related
   :905: Other
-  :998: No additional diagnosis
   :999: Missing
 :Notes:
   Additional Diagnosis gives information on conditions that are significant in

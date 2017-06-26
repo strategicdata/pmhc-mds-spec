@@ -160,7 +160,8 @@ METeOR: `291045 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291045>`__
 :999: Missing"
 "`Episode - Additional Diagnosis`_ (additional_diagnosis)
 
-",string,":100: Anxiety disorders (ATAPS)
+",string,":000: No additional diagnosis
+:100: Anxiety disorders (ATAPS)
 :101: Panic disorder
 :102: Agoraphobia
 :103: Social phobia
@@ -203,7 +204,6 @@ METeOR: `291045 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291045>`__
 :903: Mixed anxiety and depressive symptoms
 :904: Stress related
 :905: Other
-:998: No additional diagnosis
 :999: Missing"
 "`Episode - Medication - Antipsychotics (N05A)`_ (medication_antipsychotics)
 

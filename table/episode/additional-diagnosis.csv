@@ -1,4 +1,5 @@
 id,description
+000,"No additional diagnosis"
 100,"Anxiety disorders (ATAPS)"
 101,"Panic disorder"
 102,"Agoraphobia"
@@ -42,5 +43,4 @@ id,description
 903,"Mixed anxiety and depressive symptoms"
 904,"Stress related"
 905,"Other"
-998,"No additional diagnosis"
 999,"Missing"
