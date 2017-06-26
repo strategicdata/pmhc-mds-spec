@@ -1,3 +1,5 @@
+.. _ataps-to-pmhc-mapping:
+
 ATAPS MDS to PMHC MDS data mapping
 ==================================
 

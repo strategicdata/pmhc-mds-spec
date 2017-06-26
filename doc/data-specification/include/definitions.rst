@@ -1088,7 +1088,51 @@ The main additional condition or complaint co-existing with the Principal Diagno
 :Required: true
 
 :Domain:
-  See *Episode - Principal Diagnosis*
+  :100: Anxiety disorders (ATAPS)
+  :101: Panic disorder
+  :102: Agoraphobia
+  :103: Social phobia
+  :104: Generalised anxiety disorder
+  :105: Obsessive-compulsive disorder
+  :106: Post-traumatic stress disorder
+  :107: Acute stress disorder
+  :108: Other anxiety disorder
+  :200: Affective (Mood) disorders (ATAPS)
+  :201: Major depressive disorder
+  :202: Dysthymia
+  :203: Depressive disorder NOS
+  :204: Bipolar disorder
+  :205: Cyclothymic disorder
+  :206: Other affective disorder
+  :300: Substance use disorders (ATAPS)
+  :301: Alcohol harmful use
+  :302: Alcohol dependence
+  :303: Other drug harmful use
+  :304: Other drug dependence
+  :305: Other substance use disorder
+  :400: Psychotic disorders (ATAPS)
+  :401: Schizophrenia
+  :402: Schizoaffective disorder
+  :403: Brief psychotic disorder
+  :404: Other psychotic disorder
+  :501: Separation anxiety disorder
+  :502: Attention deficit hyperactivity disorder (ADHD)
+  :503: Conduct disorder
+  :504: Oppositional defiant disorder
+  :505: Pervasive developmental disorder
+  :506: Other disorder of childhood and adolescence
+  :601: Adjustment disorder
+  :602: Eating disorder
+  :603: Somatoform disorder
+  :604: Personality disorder
+  :605: Other mental disorder
+  :901: Anxiety symptoms
+  :902: Depressive symptoms
+  :903: Mixed anxiety and depressive symptoms
+  :904: Stress related
+  :905: Other
+  :998: No additional diagnosis
+  :999: Missing
 :Notes:
   Additional Diagnosis gives information on conditions that are significant in
   terms of treatment required and resources used during the episode of care.
@@ -1101,8 +1145,27 @@ The main additional condition or complaint co-existing with the Principal Diagno
   
   Where the client one or more comorbid mental health conditions in addition to
   the condition coded as the Principal Diagnosis, record the main condition as
-  the Additional Diagnosis. For further notes on the recording of diagnosis codes
-  see Principal Diagnosis
+  the Additional Diagnosis. 
+  
+  The following responses have been added to allow mapping of ATAPS data to PMHC
+  format.
+  
+  - 100: Anxiety disorders (ATAPS)
+  - 200: Affective (Mood) disorders (ATAPS)
+  - 300: Substance use disorders (ATAPS)
+  - 400: Psychotic disorders (ATAPS)
+  
+  *Note: These four codes should only be used for Episodes that are migrated
+  from ATAPS MDS sources that cannot be described by any other Diagnosis.
+  It is expected that the majority of Episodes delivered to clients
+  from 1st July, 2017 can be assigned to other diagnoses.*
+  
+  These responses will only be allowed on episodes where the original
+  ATAPS referral date was before 1 July 2017
+  
+  These responses will only be allowed on episodes with the !ATAPS flag.
+  
+  For further notes on the recording of diagnosis codes see Principal Diagnosis.
   
 
 ----------
@@ -1856,6 +1919,24 @@ The Principal Diagnosis is the diagnosis established after study to be chiefly r
   
   Reference: Diagnostic and Statistical Manual of Mental Disorders, Fourth
   Edition, Text Revision. Copyright 2000 American Psychiatric Association.
+  
+  The following responses have been added to allow mapping of ATAPS data to PMHC 
+  format.
+  
+  - 100: Anxiety disorders (ATAPS)
+  - 200: Affective (Mood) disorders (ATAPS)
+  - 300: Substance use disorders (ATAPS)
+  - 400: Psychotic disorders (ATAPS)
+  
+  *Note: These four codes should only be used for Episodes that are migrated 
+  from ATAPS MDS sources that cannot be described by any other Diagnosis. 
+  It is expected that the majority of Episodes delivered to clients 
+  from 1st July, 2017 can be assigned to other diagnoses.*
+  
+  These responses will only be allowed on episodes where the original 
+  ATAPS referral date was before 1 July 2017
+  
+  These responses will only be allowed on episodes with the !ATAPS flag.
   
 
 ----------
@@ -4981,6 +5062,7 @@ The main type of service provided in the service contact, as represented by the 
   :6: Child or youth specific assistance NEC
   :7: Suicide prevention specific assistance NEC
   :8: Cultural specific assistance NEC
+  :98: ATAPS
 :Notes:
   Describes the main type of service delivered in the contact, selected from a
   defined list of categories.  Where more than service type was provided select
@@ -5059,7 +5141,7 @@ The main type of service provided in the service contact, as represented by the 
     *Note: This code should only be used for
     Service Contacts that cannot be described by any other Service Type. It is
     expected that the majority of Service Contacts delivered to children and
-    young people can be assigned to other categories*
+    young people can be assigned to other categories.*
   
   7 - Suicide prevention specific assistance NEC
     Services delivered to, or on behalf, of a client who presents with risk of
@@ -5085,6 +5167,20 @@ The main type of service provided in the service contact, as represented by the 
     described by any other Service Type. It is expected that the majority of
     Service Contacts (see domains below) delivered to Aboriginal or Torres Strait
     Islander clients can be assigned to other categories.*
+  
+  98 - ATAPS
+    Services delivered as part of ATAPS funded referrals that are recorded and/or
+    migrated into the PMHC MDS.
+  
+    *Note: This code should only be used for Service Contacts that are migrated 
+    from ATAPS MDS sources that cannot be described by any other Service Type. 
+    It is expected that the majority of Service Contacts delivered to clients 
+    from 1st July, 2017 can be assigned to other categories.*
+  
+    This response will not be allowed on service contacts delivered after 
+    30 June 2018. (All ATAPS referrals should have concluded by that date).
+  
+    This response will only be allowed on service contacts with the !ATAPS flag.
   
 
 ----------

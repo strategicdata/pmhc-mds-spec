@@ -60,7 +60,7 @@ author = u'PMHC MDS Working Group'
 
 def get_version():
 
-   version = 'v1.0.7'
+   version = 'v1.0.8'
 
    try:
       version = os.environ["GIT_VERSION"]
@@ -72,7 +72,7 @@ def get_version():
 # The short X.Y version.
 # version = get_version().lstrip('v').rstrip()
 
-version = "Version 1.0.7"
+version = "Version 1.0.8"
 
 # The full version, including alpha/beta/rc tags.
 release = version

@@ -106,7 +106,12 @@ to report on Service Type for all Service Contacts.
   Services delivered as part of ATAPS funded referrals that are recorded and/or
   migrated into the PMHC MDS.
 
-  *Note: This code should only be used for Service Contacts that are migrated from
-  ATAPS MDS sources that cannot be described by any other Service Type. It is
-  expected that the majority of Service Contacts delivered to clients from
-  1st July, 2017 can be assigned to other categories.*
+  *Note: This code should only be used for Service Contacts that are migrated 
+  from ATAPS MDS sources that cannot be described by any other Service Type. 
+  It is expected that the majority of Service Contacts delivered to clients 
+  from 1st July, 2017 can be assigned to other categories.*
+
+  This response will not be allowed on service contacts delivered after 
+  30 June 2018. (All ATAPS referrals should have concluded by that date).
+
+  This response will only be allowed on service contacts with the !ATAPS flag.

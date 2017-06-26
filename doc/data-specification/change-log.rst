@@ -10,11 +10,15 @@ Data Specification Change log
 
   * Record formats
 
+    * Episode
+
+      * Updated :ref:`dfn-additional_diagnosis` to add response 998: 'No additional diagnosis'
+
     * Service Contact
 
       * Updated :ref:`dfn-service_contact_type` to add response 98: 'ATAPS'.
 
-* Added :ref:`ataps-pmhc-mapping`
+* Added :ref:`ataps-to-pmhc-mapping`
 
 14/6/2017 - Version 1.0.7
 -------------------------

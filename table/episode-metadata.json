@@ -256,7 +256,6 @@
     "dc:title": "Episode - Additional Diagnosis",
     "schema:description": "The main additional condition or complaint co-existing with the Principal Diagnosis or arising during the episode of care.",
     "schema:disambiguatingDescription": "table/episode/additional-diagnosis.rst",
-    "schema:domain": "See *Episode - Principal Diagnosis*",
     "schema:dateCreated": "2016-06-22",
     "schema:dateModified": "2016-06-08",
     "datatype": {
@@ -450,13 +449,13 @@
   }, {
     "columnReference": "principal_diagnosis",
     "reference": {
-      "resource": "table/episode/diagnosis.csv",
+      "resource": "table/episode/principal-diagnosis.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "additional_diagnosis",
     "reference": {
-      "resource": "table/episode/diagnosis.csv",
+      "resource": "table/episode/additional-diagnosis.csv",
       "columnReference": "id"
     }
   }, {
