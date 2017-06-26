@@ -177,8 +177,9 @@ Example SDQ data:
 
 Practitioner file format
 ^^^^^^^^^^^^^^^^^^^^^^^^
-The practitioner file/worksheet is optional. It only needs to be uploaded if
-there is a change in practitioners. There is no harm in including it in every upload.
+The practitioner file/worksheet is required for the first upload and if there 
+is a change in practitioners. It is optional otherwise.  There is no harm in 
+including it in every upload.
 
 Data elements for the practitioner upload file/worksheet are defined at
 :ref:`practitioner-data-elements`.
