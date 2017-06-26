@@ -132,7 +132,7 @@ to be specified for a referral. Those referrals where no diagnosis or a single
 diagnosis were specified are mapped as follows:
 
 =======================================================  =====================================================
-ATAPS referral diagnosis                                 PMHC episode primary diagnosis
+ATAPS referral diagnosis                                 PMHC episode principal diagnosis
 =======================================================  =====================================================
 No diagnosis field defined                               :999: Missing
 :icd_f1: Alcohol & Drug Use                              :300: Substance use disorders (ATAPS)
