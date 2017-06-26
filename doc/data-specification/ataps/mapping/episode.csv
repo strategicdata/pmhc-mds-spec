@@ -127,53 +127,63 @@ All other referral types map to
 :2: No"
 ":ref:`dfn-principal_diagnosis`
 
-(principal_diagnosis)",string,"TODO
+(principal_diagnosis)",string,"The ATAPS specifications allowed multiple diagnosis
+to be specified for a referral. Those referrals where no diagnosis or a single
+diagnosis were specified are mapped as follows:
 
-:101: Panic disorder
-:102: Agoraphobia
-:103: Social phobia
-:104: Generalised anxiety disorder
-:105: Obsessive-compulsive disorder
-:106: Post-traumatic stress disorder
-:107: Acute stress disorder
-:108: Other anxiety disorder
-:201: Major depressive disorder
-:202: Dysthymia
-:203: Depressive disorder NOS
-:204: Bipolar disorder
-:205: Cyclothymic disorder
-:206: Other affective disorder
-:301: Alcohol harmful use
-:302: Alcohol dependence
-:303: Other drug harmful use
-:304: Other drug dependence
-:305: Other substance use disorder
-:401: Schizophrenia
-:402: Schizoaffective disorder
-:403: Brief psychotic disorder
-:404: Other psychotic disorder
-:501: Separation anxiety disorder
-:502: Attention deficit hyperactivity disorder (ADHD)
-:503: Conduct disorder
-:504: Oppositional defiant disorder
-:505: Pervasive developmental disorder
-:506: Other disorder of childhood and adolescence
-:601: Adjustment disorder
-:602: Eating disorder
-:603: Somatoform disorder
-:604: Personality disorder
-:605: Other mental disorder
-:901: Anxiety symptoms
-:902: Depressive symptoms
-:903: Mixed anxiety and depressive symptoms
-:904: Stress related
+=======================================================  =====================================================
+ATAPS referral diagnosis                                 PMHC episode primary diagnosis
+=======================================================  =====================================================
+No diagnosis field defined                               :999: Missing
+:icd_f1: Alcohol & Drug Use                              :300: Substance use disorders (ATAPS)
+:icd_f2: Psychotic Disorders                             :400: Psychotic disorders (ATAPS)
+:icd_f3: Depression                                      :200: Affective (Mood) disorders (ATAPS)
+:icd_f4: Anxiety Disorders                               :100: Anxiety disorders (ATAPS)
+:icd_f5: Unexplained Somatic                             :603: Somatoform disorder
+:icd_no_formal_diagnosis: No formal diagnosis            :905: Other
+:icd_unknown: Unknown                                    :999: Missing
+:icd_other: Other                                        :905: Other
+:icd_f10_f11: F10 & F11 Substance use disorders          :300: Substance use disorders
+:icd_f32: F32 Depression                                 :200: Affective (Mood) disorders
+:icd_f40_f41_f41_1: F40, F41, F41.1 Anxiety              :100: Anxiety disorders
+:icd_f43_2: F43.2 Adjustment disorder                    :601: Adjustment disorder
+:icd_f44: F44 Dissociative (conversion) disorder         :605: Other mental disorder
+:icd_f45: F45 Unexplained somatic disorder               :603: Somatoform disorder
+:icd_f48: F48 Neurasthenia (chronic fatigue syndrome)    :605: Other mental disorder
+:icd_f50: F50 Eating disorders                           :602: Eating disorder
+:icd_f51: F51 Sleep problems                             :605: Other mental disorder
+:icd_f52: F52 Sexual disorders                           :605: Other mental disorder
+:icd_f90: F90 Hyperkinetic (attention deficit) disorder  :502: Attention deficit hyperactivity disorder (ADHD)
+:icd_f91: F91 Conduct disorder                           :503: Conduct disorder
+:icd_f98: F98 Enuresis                                   :506: Other disorder of childhood and adolescence
+=======================================================  =====================================================
+
+All other referrals will be mapped to
+
 :905: Other
-:999: Missing"
+
+Note: There is work in progress to determine if its possible to defined an ordering
+of a referral's diagnoses where multiple diagnosis were specified."
 ":ref:`dfn-additional_diagnosis`
 
 (additional_diagnosis)
 
-",string,"TODO"
+",string,"Mapped from ATAPS referral diagnosis fields
+
+For referrals where NO diagnosis field was specified, the additional diagnosis is mapped to
+
+:999: Missing
+
+Referrals where exactly ONE diagnosis field was specified, the additional diagnosis is mapped to
+
+:000: No additional diagnosis
+
+For all other referrals, the additional diagnosis is mapped to
+
+:905: Other
+
+Note: There is work in progress to determine if its possible to defined an ordering
+of a referral's diagnoses where multiple diagnosis were specified."
 ":ref:`dfn-medication_antipsychotics`
 
 (medication_antipsychotics)",string,"If ATAPS referral med_pheno is TRUE (or `1`) then
