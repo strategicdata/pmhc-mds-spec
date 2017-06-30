@@ -94,6 +94,18 @@
     },
     "required": true
   },{
+    "name": "organisation_status",
+    "titles": [ "organisation_status", "Status" ],
+    "dc:title" : "Provider Organisation - Status",
+    "schema:description": "A flag to represent whether a provider organisation is actively delivering services.",
+    "schema:dateCreated": "2016-06-22",
+    "schema:dateDeleted": "2016-06-22",
+    "schema:dateModified": "2017-06-29",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
     "name": "organisation_tags",
     "titles": [ "organisation_tags", "Tags" ],
     "dc:title" : "Provider Organisation - Tags",
@@ -118,6 +130,12 @@
     "columnReference": "organisation_type",
     "reference": {
       "resource": "table/organisation/type.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "organisation_status",
+    "reference": {
+      "resource": "type/active.csv",
       "columnReference": "id"
     }
   }]
