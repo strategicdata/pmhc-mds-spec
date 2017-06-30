@@ -1,5 +1,5 @@
 {
-  "@id": "table/practitioner/active.json",
+  "@id": "type/active.json",
   "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
   "columns": [{
     "name": "id",
