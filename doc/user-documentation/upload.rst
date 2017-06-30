@@ -32,7 +32,7 @@ You can upload data files through the upload tab, by following these steps:
 1. Navigate to the 'Upload' tab.
 2. If you are allowed to upload to more than one organisation you will be
    asked to select an organisation name.
-3. Select the name of the organisation whose data you are uploading from the drop down list.
+3. Select the name of the PHN whose data you are uploading from the drop down list.
 
    .. figure:: screen-shots/upload-org-selected.png
       :alt: PMHC MDS Organisation Selected
