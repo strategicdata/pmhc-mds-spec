@@ -108,23 +108,63 @@ A page will display the Client's details as recorded via the :ref:`Client Data E
 .. figure:: screen-shots/client-view-details.png
    :alt: Client Data Details View
 
+.. _edit-client:
+
+Editing a Client
+----------------
+
+You can edit a clients's details through the :ref:`search-client`
+available on the Client Data tab, by following these steps:
+
+1. Create :ref:`search-client`
+2. From the Client Search table, click the Client Key.
+3. Click Details tab, to view Client's details.
+4. Click Edit Details tab.
+5. Update the Client's details. Mandatory fields are marked with an * (Specification :ref:`Client Data Elements <client-data-elements>`)
+6. Click the blue 'Save' button. (If you decide not to save changes, you can simply navigate away from this screen)
+
+.. figure:: screen-shots/client-edit-details.png
+   :alt: Client Data Edit Details
+
+You will receive confirmation that the Client's details have been saved, and it will
+now be displaying these new details in the Clients View Details tab.
+
 .. _add-client:
 
-Adding a Client and Client's data
----------------------------------
+Adding a New Client
+-------------------
 
-The Data Entry Interface is due to be fully integrated into the PMHC MDS
-in the coming weeks.
+You can add a clients through the :ref:`search-client`
+available on the Client Data tab, by following these steps:
 
-An update will be circulated to all current users and the mailing list
-when this new feature is added.
+1. Create :ref:`search-client`
+2. Firstly double check the client is not already added.
+3. Click the blue 'Add New Client' button.
+4. Choose the Provider Organisation from the drop down list.
+5. Enter the Client's details. Mandatory fields are marked with an * (Specification :ref:`Client Data Elements <client-data-elements>`)
+6. Click the blue 'Save' button. (If you decide not to add this client, you can simply navigate away from this screen)
+
+.. figure:: screen-shots/client-add.png
+   :alt: Client Data Add Client
+
+You will receive confirmation that the Client has been saved, and it will
+now be displaying the client's saved information in the Clients View Details tab.
+
+.. _delete-client:
+
+Deleting a Client
+-----------------
+
+You can not currently delete a client. The client delete feature will be released in July 2017.
+
+In the interim, if this causes you any significant issues please email support@pmhc-mds.com.
 
 .. _episode-data:
 
 Episodes
 ^^^^^^^^
 
-.. _view-client-episodes:
+.. _view-episodes:
 
 Viewing a Client's Episodes
 ---------------------------
@@ -164,31 +204,70 @@ A Drop down list is available to view:
 
 A page will display the Client's Episode details as recorded via the :ref:`Episode Data Elements <episode-data-elements>`.
 
-.. _add-episodes:
+.. _edit-episode:
+
+Editing a Client's Episode data
+-------------------------------
+
+You can edit a Client's Episode details through the :ref:`view-client-details`
+available on the Client Data tab, by following these steps:
+
+1. Once :ref:`view-episodes`
+2. From the Client's Episode table, click the Episode Key.
+3. Click Edit Details tab.
+4. Update the Client's Episode details. Mandatory fields are marked with an * (Specification :ref:`Episode Data Elements <episode-data-elements>`)
+5. Click the blue 'Save' button. (If you decide not to save changes, you can simply navigate away from this screen)
+
+.. figure:: screen-shots/client-episodes-edit.png
+   :alt: Client Episodes Edit Details
+
+You will receive confirmation that the Client's Episode details have been saved,
+and it will now be displaying these new details in the Episode View Details tab.
+
+.. _add-episode:
 
 Adding a Client's Episode data
----------------------------------
+------------------------------
 
-The Data Entry Interface is due to be fully integrated into the PMHC MDS
-in the coming weeks.
+You can add a clients through the :ref:`view-client-details`
+available on the Client Data tab, by following these steps:
 
-An update will be circulated to all current users and the mailing list
-when this new feature is added.
+1. Once :ref:`view-episodes`
+2. Firstly double check the client does not have any open episode already showing. (A client can only have one open episode at a provider organsiation. :ref:`key-concepts-episode`)
+3. Click the Add Episode tab.
+4. Enter the Client's Episode details. Mandatory fields are marked with an * (Specification :ref:`Episode Data Elements <episode-data-elements>`)
+5. Click the blue 'Save' button. (If you decide not to add this client's episode, you can simply navigate away from this screen)
+
+.. figure:: screen-shots/client-episodes-add.png
+   :alt: Client Data Add Episode
+
+You will receive confirmation that the Client's Episode details have been added,
+and it will now be displaying these new details in the Episode View Details tab.
+
+.. _delete-episode:
+
+Deleting an Episode
+-------------------
+
+You can not currently delete a client's episode. The episode delete feature will be released in July 2017.
+
+In the interim, if this causes you any significant issues please email support@pmhc-mds.com.
+
 
 .. _service-contact-data:
 
 Service Contacts
 ^^^^^^^^^^^^^^^^
 
-.. _view-client-service-contact:
+.. _view-service-contact:
 
 Viewing a Client's Service Contacts for an Episode
 --------------------------------------------------
 
-You can view a client's service contacts through the :ref:`view-client-episodes`
+You can view a client's service contacts through the :ref:`view-episodes`
 available on the Client Data tab, by following these steps:
 
-1. Once :ref:`view-client-episodes`
+1. Once :ref:`view-episodes`
 2. From the Client's Episode Details tab, click the Service Contacts Tab.
    The heading for this tab displays in brackets the total number of service contacts recorded
    in the PMHC MDS for this episode.
@@ -205,16 +284,55 @@ A table will display all the Service Contacts linked to this Client's Episode.
 
 A page will display the Service Contacts details as recorded via the :ref:`Service Contact Data Elements <service-contact-data-elements>`.
 
-.. _add-service-contacts:
+.. _edit-service-contact:
+
+Editing a Client's Service Contacts for an Episode
+--------------------------------------------------
+
+You can edit a client's service contacts through the :ref:`view-episodes`
+available on the Client Data tab, by following these steps:
+
+1. Once :ref:`view-service-contact`
+2. From the Service Contacts table, click the Service Contact Key.
+3. Click Edit Service Contact tab.
+4. Update the Client's Service Contact details for that episode. Mandatory fields are marked with an * (Specification :ref:`Service Contact Data Elements <service-contact-data-elements>`)
+5. Click the blue 'Save' button. (If you decide not to save changes, you can simply navigate away from this screen)
+
+.. figure:: screen-shots/client-service-contacts-edit.png
+   :alt: Client Service Contact Edit Details
+
+You will receive confirmation that the Client's service contact details have been saved,
+and it will now be displaying these new details in the View service Contact Details tab.
+
+.. _add-service-contact:
 
 Adding a Client's Service Contact data
 --------------------------------------
 
-The Data Entry Interface is due to be fully integrated into the PMHC MDS
-in the coming weeks.
+You can edit a client's service contacts through the :ref:`view-episodes`
+available on the Client Data tab, by following these steps:
 
-An update will be circulated to all current users and the mailing list
-when this new feature is added.
+1. Once :ref:`view-service-contact`
+2. Firstly double check the service contact is not already showing.
+3. Click the Add Service Contact tab.
+4. Enter the Client's Service Contact details for that episode. Mandatory fields are marked with an * (Specification :ref:`Service Contact Data Elements <service-contact-data-elements>`)
+5. Click the blue 'Save' button. (If you decide not to add this client's episode, you can simply navigate away from this screen)
+
+.. figure:: screen-shots/client-service-contacts-add.png
+   :alt: Client Data Add Service Contact
+
+You will receive confirmation that the Client's service contact details have been added,
+and it will now be displaying these new details in the View service Contact Details tab.
+
+.. _delete-service-contact:
+
+Deleting an Service Contact
+---------------------------
+
+You can not currently delete a client's service contact for an episode. The
+service contact delete feature will be released in July 2017.
+
+In the interim, if this causes you any significant issues please email support@pmhc-mds.com.
 
 .. _outcome-collection-occasion-data:
 
@@ -226,10 +344,10 @@ Outcome Collection Occasions
 Viewing a Client's Outcome Collection Occasions for an Episode
 --------------------------------------------------------------
 
-You can view a clients's outcome collection occasions through the :ref:`view-client-episodes`
+You can view a clients's outcome collection occasions through the :ref:`view-episodes`
 available on the Client Data tab, by following these steps:
 
-1. Once :ref:`view-client-episodes`
+1. Once :ref:`view-episodes`
 2. From the Client's Episode Details tab, click the Collection Occasions Tab.
    This tab displays in brackets the total number of collection occasions recorded
    in the PMHC MDS for this episode.
@@ -244,7 +362,8 @@ A table will display all the Collection Occasions linked to this Client's Episod
 .. figure:: screen-shots/client-collection-occasions-details.png
    :alt: Client Episode Collection Occasions Details View
 
-A page will display the Collection Occasions details as recorded via the :ref:`Outcome Collection Occasion Data Elements <outcome-collection-occasion-data-elements>`.
+A page will display the Collection Occasions details as recorded via the
+:ref:`Outcome Collection Occasion Data Elements <outcome-collection-occasion-data-elements>`.
 
 
 .. _add-client-collection-occasion:
@@ -297,7 +416,8 @@ if you have been assigned the 'Data Entry' role, by following these steps:
 .. figure:: screen-shots/practitioner-details.png
    :alt: PMHC MDS Practitioner Details View
 
-Please note: You can also view a practitioner's details through the 'Client Data' tab. See :ref:`view-practitioner-details`
+Please note: You can also view a practitioner's details through the 'Client Data' tab.
+See :ref:`view-practitioner-details`
 
 
 .. _view-practitioner-details:
@@ -305,10 +425,10 @@ Please note: You can also view a practitioner's details through the 'Client Data
 Viewing a Practitioner Providing Client Services
 ------------------------------------------------
 
-You can view a practitioner's details through :ref:`view-client-service-contact`
+You can view a practitioner's details through :ref:`view-service-contact`
 on the Client Data tab, by following these steps:
 
-1. Once :ref:`view-client-service-contact`
+1. Once :ref:`view-service-contact`
 2. From the Service Contacts Details tab, click the Practitioner Key.
 
 .. figure:: screen-shots/client-service-contacts-practitioner-key.png

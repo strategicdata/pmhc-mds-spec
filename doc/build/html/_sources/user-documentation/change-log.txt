@@ -3,6 +3,29 @@
 User Guide Change log
 =====================
 
+30/6/2017
+---------
+
+* Added :ref:`add-client`
+
+* Added :ref:`edit-client`
+
+* Added :ref:`delete-client`
+
+* Added :ref:`add-episode`
+
+* Added :ref:`edit-episode`
+
+* Added :ref:`delete-episode`
+
+* Added :ref:`add-service-contact`
+
+* Added :ref:`edit-service-contact`
+
+* Added :ref:`delete-service-contact`
+
+* Updated screenshots for :ref:`client-data`
+
 14/6/2017
 ---------
 
