@@ -64,6 +64,7 @@ class PMHC < Csvlint::Cli
       validator = Csvlint::Validator.new( source, {}, schema, {} )
 
       # Only do extra pmhc checks on data files, not specification files.
+
       if csv =~ /data/
         if validator.valid?
           validate_pmhc( validator, csv )
@@ -426,6 +427,8 @@ class PMHC < Csvlint::Cli
     def validate_practitioners(validator, data)
       header = data.shift
       yob_index = header.index("practitioner_year_of_birth")
+
+      if not @validators["organisations"] then return end
 
       org_hash = Hash.new()
       org_data = @validators["organisations"].data
