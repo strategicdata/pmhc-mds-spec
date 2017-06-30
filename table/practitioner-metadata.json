@@ -150,7 +150,7 @@
   }, {
     "columnReference": "practitioner_active",
     "reference": {
-      "resource": "table/practitioner/active.csv",
+      "resource": "type/active.csv",
       "columnReference": "id"
     }
   }]

@@ -3,7 +3,7 @@
 Data Specification Change log
 =============================
 
-??/6/2017 - Version 1.0.8
+26/6/2017 - Version 1.0.8
 -------------------------
 
 * Data model and specifications

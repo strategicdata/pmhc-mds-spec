@@ -251,7 +251,7 @@ extension .xlsx</p>
 <tr class="row-even"><td><a class="reference internal" href="#practitioner-format"><span class="std std-ref">Practitioners</span></a></td>
 <td>practitioners.csv</td>
 <td>Practitioners</td>
-<td>Optional</td>
+<td>Required for first upload and when practitioner information changes. Optional otherwise</td>
 </tr>
 </tbody>
 </table>
@@ -377,8 +377,9 @@ at <a class="reference internal" href="data-model-and-specifications.html#sdq-da
 </div>
 <div class="section" id="practitioner-file-format">
 <span id="practitioner-format"></span><h3>Practitioner file format<a class="headerlink" href="#practitioner-file-format" title="Permalink to this headline">¶</a></h3>
-<p>The practitioner file/worksheet is optional. It only needs to be uploaded if
-there is a change in practitioners. There is no harm in including it in every upload.</p>
+<p>The practitioner file/worksheet is required for the first upload and if there
+is a change in practitioners. It is optional otherwise.  There is no harm in
+including it in every upload.</p>
 <p>Data elements for the practitioner upload file/worksheet are defined at
 <a class="reference internal" href="data-model-and-specifications.html#practitioner-data-elements"><span class="std std-ref">Practitioner</span></a>.</p>
 <p>Example practitioner data:</p>

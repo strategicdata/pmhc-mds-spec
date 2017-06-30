@@ -1828,100 +1828,482 @@ populated with an estimated date of birth, being 1st January in the recorded yea
 <p class="last">(principal_diagnosis)</p>
 </td>
 <td>string</td>
-<td><p class="first">TODO</p>
-<table class="last docutils field-list" frame="void" rules="none">
+<td><p class="first">The ATAPS specifications allowed multiple diagnosis
+to be specified for a referral. Those referrals where no diagnosis or a single
+diagnosis were specified are mapped as follows:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="51%" />
+<col width="49%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">ATAPS referral diagnosis</th>
+<th class="head">PMHC episode principal diagnosis</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>No diagnosis field defined</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">101:</th><td class="field-body">Panic disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">102:</th><td class="field-body">Agoraphobia</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">103:</th><td class="field-body">Social phobia</td>
-</tr>
-<tr class="field-even field"><th class="field-name">104:</th><td class="field-body">Generalised anxiety disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">105:</th><td class="field-body">Obsessive-compulsive disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">106:</th><td class="field-body">Post-traumatic stress disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">107:</th><td class="field-body">Acute stress disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">108:</th><td class="field-body">Other anxiety disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">201:</th><td class="field-body">Major depressive disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">202:</th><td class="field-body">Dysthymia</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">203:</th><td class="field-body">Depressive disorder NOS</td>
-</tr>
-<tr class="field-even field"><th class="field-name">204:</th><td class="field-body">Bipolar disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">205:</th><td class="field-body">Cyclothymic disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">206:</th><td class="field-body">Other affective disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">301:</th><td class="field-body">Alcohol harmful use</td>
-</tr>
-<tr class="field-even field"><th class="field-name">302:</th><td class="field-body">Alcohol dependence</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">303:</th><td class="field-body">Other drug harmful use</td>
-</tr>
-<tr class="field-even field"><th class="field-name">304:</th><td class="field-body">Other drug dependence</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">305:</th><td class="field-body">Other substance use disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">401:</th><td class="field-body">Schizophrenia</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">402:</th><td class="field-body">Schizoaffective disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">403:</th><td class="field-body">Brief psychotic disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">404:</th><td class="field-body">Other psychotic disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">501:</th><td class="field-body">Separation anxiety disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">502:</th><td class="field-body">Attention deficit hyperactivity disorder (ADHD)</td>
-</tr>
-<tr class="field-even field"><th class="field-name">503:</th><td class="field-body">Conduct disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">504:</th><td class="field-body">Oppositional defiant disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">505:</th><td class="field-body">Pervasive developmental disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">506:</th><td class="field-body">Other disorder of childhood and adolescence</td>
-</tr>
-<tr class="field-even field"><th class="field-name">601:</th><td class="field-body">Adjustment disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">602:</th><td class="field-body">Eating disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">603:</th><td class="field-body">Somatoform disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">604:</th><td class="field-body">Personality disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">605:</th><td class="field-body">Other mental disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">901:</th><td class="field-body">Anxiety symptoms</td>
-</tr>
-<tr class="field-even field"><th class="field-name">902:</th><td class="field-body">Depressive symptoms</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">903:</th><td class="field-body">Mixed anxiety and depressive symptoms</td>
-</tr>
-<tr class="field-even field"><th class="field-name">904:</th><td class="field-body">Stress related</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">905:</th><td class="field-body">Other</td>
-</tr>
-<tr class="field-even field"><th class="field-name">999:</th><td class="field-body">Missing</td>
+<tr class="field-odd field"><th class="field-name">999:</th><td class="field-body">Missing</td>
 </tr>
 </tbody>
 </table>
+</td>
+</tr>
+<tr class="row-odd"><td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">icd_f1:</th><td class="field-body">Alcohol &amp; Drug Use</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">300:</th><td class="field-body">Substance use disorders (ATAPS)</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-even"><td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">icd_f2:</th><td class="field-body">Psychotic Disorders</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">400:</th><td class="field-body">Psychotic disorders (ATAPS)</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-odd"><td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">icd_f3:</th><td class="field-body">Depression</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">200:</th><td class="field-body">Affective (Mood) disorders (ATAPS)</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-even"><td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">icd_f4:</th><td class="field-body">Anxiety Disorders</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">100:</th><td class="field-body">Anxiety disorders (ATAPS)</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-odd"><td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">icd_f5:</th><td class="field-body">Unexplained Somatic</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">603:</th><td class="field-body">Somatoform disorder</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-even"><td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">icd_no_formal_diagnosis:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body">No formal diagnosis</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">905:</th><td class="field-body">Other</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-odd"><td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">icd_unknown:</th><td class="field-body">Unknown</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">999:</th><td class="field-body">Missing</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-even"><td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">icd_other:</th><td class="field-body">Other</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">905:</th><td class="field-body">Other</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-odd"><td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">icd_f10_f11:</th><td class="field-body">F10 &amp; F11 Substance use disorders</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">300:</th><td class="field-body">Substance use disorders</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-even"><td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">icd_f32:</th><td class="field-body">F32 Depression</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">200:</th><td class="field-body">Affective (Mood) disorders</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-odd"><td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">icd_f40_f41_f41_1:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body">F40, F41, F41.1 Anxiety</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">100:</th><td class="field-body">Anxiety disorders</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-even"><td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">icd_f43_2:</th><td class="field-body">F43.2 Adjustment disorder</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">601:</th><td class="field-body">Adjustment disorder</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-odd"><td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">icd_f44:</th><td class="field-body">F44 Dissociative (conversion) disorder</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">605:</th><td class="field-body">Other mental disorder</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-even"><td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">icd_f45:</th><td class="field-body">F45 Unexplained somatic disorder</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">603:</th><td class="field-body">Somatoform disorder</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-odd"><td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">icd_f48:</th><td class="field-body">F48 Neurasthenia (chronic fatigue syndrome)</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">605:</th><td class="field-body">Other mental disorder</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-even"><td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">icd_f50:</th><td class="field-body">F50 Eating disorders</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">602:</th><td class="field-body">Eating disorder</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-odd"><td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">icd_f51:</th><td class="field-body">F51 Sleep problems</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">605:</th><td class="field-body">Other mental disorder</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-even"><td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">icd_f52:</th><td class="field-body">F52 Sexual disorders</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">605:</th><td class="field-body">Other mental disorder</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-odd"><td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">icd_f90:</th><td class="field-body">F90 Hyperkinetic (attention deficit) disorder</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">502:</th><td class="field-body">Attention deficit hyperactivity disorder (ADHD)</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-even"><td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">icd_f91:</th><td class="field-body">F91 Conduct disorder</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">503:</th><td class="field-body">Conduct disorder</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-odd"><td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">icd_f98:</th><td class="field-body">F98 Enuresis</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">506:</th><td class="field-body">Other disorder of childhood and adolescence</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<p>All other referrals will be mapped to</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">905:</th><td class="field-body">Other</td>
+</tr>
+</tbody>
+</table>
+<p class="last">Note: There is work in progress to determine if its possible to define an ordering
+of a referral&#8217;s diagnoses where multiple ATAPS diagnosis were specified. If it is determined that such a mapping is possible further announcements will be made via the PMHC MDS mailing list.</p>
 </td>
 </tr>
 <tr class="row-even"><td><p class="first"><a class="reference internal" href="../data-model-and-specifications.html#dfn-additional-diagnosis"><span class="std std-ref">Episode - Additional Diagnosis</span></a></p>
 <p class="last">(additional_diagnosis)</p>
 </td>
 <td>string</td>
-<td>TODO</td>
+<td><p class="first">Mapped from ATAPS referral diagnosis fields</p>
+<p>For referrals where NO diagnosis field was specified, the additional diagnosis is mapped to</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">999:</th><td class="field-body">Missing</td>
+</tr>
+</tbody>
+</table>
+<p>Referrals where exactly ONE diagnosis field was specified, the additional diagnosis is mapped to</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">000:</th><td class="field-body">No additional diagnosis</td>
+</tr>
+</tbody>
+</table>
+<p>For all other referrals, the additional diagnosis is mapped to</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">905:</th><td class="field-body">Other</td>
+</tr>
+</tbody>
+</table>
+<p class="last">Note: There is work in progress to determine if its possible to define an ordering
+of a referral&#8217;s diagnoses where multiple ATAPS diagnosis were specified. If it is determined that such a mapping is possible further announcements will be made via the PMHC MDS mailing list.</p>
+</td>
 </tr>
 <tr class="row-odd"><td><p class="first"><a class="reference internal" href="../data-model-and-specifications.html#dfn-medication-antipsychotics"><span class="std std-ref">Episode - Medication - Antipsychotics (N05A)</span></a></p>
 <p class="last">(medication_antipsychotics)</p>
