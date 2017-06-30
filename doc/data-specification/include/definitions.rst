@@ -3187,6 +3187,25 @@ The state that the provider organisation operates in.
 
 ----------
 
+.. _dfn-organisation_status:
+
+Provider Organisation - Status
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A flag to represent whether a provider organisation is actively delivering services.
+
+:Field name: organisation_status
+
+:Data type: string
+
+:Required: true
+
+:Domain:
+  :0: Inactive
+  :1: Active
+
+----------
+
 .. _dfn-organisation_tags:
 
 Provider Organisation - Tags

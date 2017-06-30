@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Data model and specifications &mdash; PMHC MDS Version 1.0.8 documentation</title>
+  <title>Data model and specifications &mdash; PMHC MDS Version 1.0.9 documentation</title>
   
 
   
@@ -32,7 +32,7 @@
   
 
   
-    <link rel="top" title="PMHC MDS Version 1.0.8 documentation" href="../index.html"/>
+    <link rel="top" title="PMHC MDS Version 1.0.9 documentation" href="../index.html"/>
         <link rel="up" title="Data Specification" href="index.html"/>
         <link rel="next" title="Upload specification" href="upload-specification.html"/>
         <link rel="prev" title="Identifier management" href="identifier-management.html"/> 
@@ -63,7 +63,7 @@
             
             
               <div class="version">
-                Version 1.0.8
+                Version 1.0.9
               </div>
             
           
@@ -187,6 +187,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#provider-organisation-legal-name">Provider Organisation - Legal Name</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#provider-organisation-name">Provider Organisation - Name</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#provider-organisation-state">Provider Organisation - State</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#provider-organisation-status">Provider Organisation - Status</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#provider-organisation-tags">Provider Organisation - Tags</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#provider-organisation-type">Provider Organisation - Type</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#sdq-collection-occasion-version">SDQ Collection Occasion - Version</a></li>
@@ -535,7 +536,21 @@ it cannot be uploaded.</p>
 </table>
 </td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#provider-organisation-tags">Provider Organisation - Tags</a> (organisation_tags)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#provider-organisation-status">Provider Organisation - Status</a> (organisation_status)</td>
+<td>string</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">0:</th><td class="field-body">Inactive</td>
+</tr>
+<tr class="field-even field"><th class="field-name">1:</th><td class="field-body">Active</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#provider-organisation-tags">Provider Organisation - Tags</a> (organisation_tags)</td>
 <td>string</td>
 <td>List of tags for the provider organisation.</td>
 </tr>
@@ -10019,6 +10034,38 @@ be used to estimate a year of birth</li>
 </table>
 <hr class="docutils" />
 </div>
+<div class="section" id="provider-organisation-status">
+<span id="dfn-organisation-status"></span><h3>Provider Organisation - Status<a class="headerlink" href="#provider-organisation-status" title="Permalink to this headline">¶</a></h3>
+<p>A flag to represent whether a provider organisation is actively delivering services.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">organisation_status</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">0:</th><td class="field-body">Inactive</td>
+</tr>
+<tr class="field-even field"><th class="field-name">1:</th><td class="field-body">Active</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+</div>
 <div class="section" id="provider-organisation-tags">
 <span id="dfn-organisation-tags"></span><h3>Provider Organisation - Tags<a class="headerlink" href="#provider-organisation-tags" title="Permalink to this headline">¶</a></h3>
 <p>List of tags for the provider organisation.</p>
@@ -13009,7 +13056,7 @@ such as community health centres.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'Version 1.0.8',
+            VERSION:'Version 1.0.9',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

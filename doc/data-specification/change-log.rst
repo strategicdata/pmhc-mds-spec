@@ -3,6 +3,20 @@
 Data Specification Change log
 =============================
 
+30/6/2017 - Version 1.0.9
+-------------------------
+
+* Data model and specifications
+
+  * Record formats
+
+    * Provider Organisation
+
+      * Updated :ref:`provider-organisation-data-elements` to add the following field:
+
+        * :ref:`dfn-organisation_status`
+
+
 26/6/2017 - Version 1.0.8
 -------------------------
 
