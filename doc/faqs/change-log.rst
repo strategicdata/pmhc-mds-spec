@@ -3,6 +3,27 @@
 Frequently Asked Questions Change log
 =====================================
 
+6/7/2017
+--------
+
+System - Data Entry FAQs
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Added the question to :ref:`data-entry-episode-uncommenced`
+
+System - Development FAQs
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Added the question to :ref:`dev-data-entry-faq`
+
+* Added the question to :ref:`dev-MCI-faq`
+
+System - Upload FAQs
+~~~~~~~~~~~~~~~~~~~~
+
+* Added the question to :ref:`upload-error-faq`
+
+
 1/5/2017
 --------
 

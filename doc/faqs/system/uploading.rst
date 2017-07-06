@@ -31,3 +31,10 @@ How can I view my uploaded data
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 See :ref:`data-extraction` User Guide for more information.
+
+.. _upload-error-faq:
+
+How can I review why the status of my upload file shows error?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Refer to :ref:`upload-error-messages`

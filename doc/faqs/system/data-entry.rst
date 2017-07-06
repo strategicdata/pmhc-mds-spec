@@ -60,6 +60,19 @@ How often should I enter data into the MDS?
 
 Refer to :ref:`reporting_timeliness`.
 
+.. _data-entry-episode-uncommenced:
+
+Why is an episode showing as uncommenced?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The episode definition states that 'Episodes commence at the point of first contact.
+The episode start date will be derived from the first service contact date.'
+
+When an episode does not have any service contacts added yet, it does not have
+a start date and the system will reported it as 'Uncommenced'.
+
+Refer to :ref:`key-concepts-episode`.
+
 .. _include-all-contact-data-faq:
 
 Do I need to include all service contacts and measures for an episode in an file?
