@@ -209,6 +209,10 @@ There is a required field that has not been entered. If not supplied, insert the
 default 'Missing' or 'Not recorded' value. These values can be found at :ref:`record-formats`.
 If the Column [Name] is blank in a mandatory field you will receive the error above.
 
+Invalid file ...
+~~~~~~~~~~~~~~~~
+
+The system is having trouble identifying your upload file. Please provide a copy of your upload file to support@pmhc-mds.com.
 
 Could not parse worksheet [Name]: Bad request at ...
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
