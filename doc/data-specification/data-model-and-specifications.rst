@@ -252,7 +252,6 @@ PMHC MDS requires the use of one of the following three required outcome collect
   Strengths & Difficulties Questionnaires (:ref:`sdq-data-elements`) is the
   prescribed tool.  The specified versions include the parent-report for 4-10
   years and 11-17 years; and the self-report for 11-17 years.
-  *We acknowledge that there is also a parent-report for 2-4 years; and teacher versions for all the years (2-4; 4-10 and 11-17) but that these are not to be reported the PMHC-MDS.*
 
 *Please note: For adolescents, clinician-discretion is allowed, and that the K10+ or K5 may be used, even though the person is under 18 years*
 
@@ -309,6 +308,8 @@ The versions specified for PMHC MDS reporting are:
 - PY2 - Parent Report Measure for Youth aged 11-17, Follow up version;
 - YR1 - Youth self report measure (11-17), Baseline version; and
 - YR2 - Youth self report measure (11-17), Follow up version.
+
+*We acknowledge that there is also a parent-report for 2-4 years; and teacher versions for all the years (2-4; 4-10 and 11-17) but that these are not to be reported the PMHC-MDS.*
 
 Please note that the item numbering in the SDQ versions is deliberately non
 sequential because it covers all items in all versions, both to indicate item

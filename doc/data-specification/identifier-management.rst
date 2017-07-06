@@ -38,11 +38,10 @@ Managing Practitioner, Episode, Service Contact and Outcome Collection Occasion 
 ------------------------------------------------------------------------------------
 
 Practitioner, Episode, Service Contact, and Outcome Collection Keys will be
-created and managed by Provider Organisations via the upload interface. Each
-record needs to be assigned a unique key in order to facilitate
-adding/updating/deleting each item when uploading data. These keys will be
-managed by the Provider Organisation. Where data is being exported from client
-systems, these keys can be auto generated, providing that a key does not change
-once it is assigned.
+created and managed by Provider Organisations. Each record needs to be assigned
+a unique key in order to facilitate adding/updating/deleting each item when
+uploading/entering data. These keys will be managed by the Provider Organisation.
+Where data is being exported from client systems, these keys can be auto generated,
+providing that a key does not change once it is assigned.
 
-*If you still have questions after reading this information, please visit the Department's responses to :ref:`identifier_and_key_FAQs`*
+*If you still have questions after reading this information, please visit the Department's responses to* :ref:`identifier_and_key_FAQs`
