@@ -67,3 +67,14 @@ Stage Two will feature:
 * PHN Reports (Late 2017)
 
 Regularly check the announcements on the `PMHC MDS home page <https://pmhc-mds.net/#/>`_ to keep informed.
+
+Future Milestone Releases
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+We will continue to release additional features throughout the next financial year, and are currently scheduled to be:
+
+* Initial Summary Reports
+* Comprehensive Departmental Reports
+* PHN Reports
+
+Regularly check the announcements on the `PMHC MDS home page <https://pmhc-mds.net/#/>`_ to keep informed.

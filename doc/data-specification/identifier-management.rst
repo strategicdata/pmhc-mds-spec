@@ -44,4 +44,4 @@ uploading/entering data. These keys will be managed by the Provider Organisation
 Where data is being exported from client systems, these keys can be auto generated,
 providing that a key does not change once it is assigned.
 
-*If you still have questions after reading this information, please visit the Department's responses to* :ref:`identifier_and_key_FAQs`
+*If you still have questions after reading this information, please visit the Department's responses to* :ref:`identifier-and-key-FAQs`
