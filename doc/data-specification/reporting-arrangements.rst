@@ -63,6 +63,11 @@ via the PMHC MDS in order to produce departmental reports.
 
    Transitional Reporting Process
 
+Transition to Full Compliance
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Refer to the recent Department announcement on the `INFORMATION and ACTION: PHN CEO - Primary Mental Health Care Minimum Data Set Update | June 21, 2017 <https://www.pmhc-mds.com/communications/#/2017/06/21/FOR-INFORMATION-and-ACTION-PHN-CEO-Primary-Mental-Health-Care-Minimum-Data-Set-Update/>`_.
+
 Support arrangements
 --------------------
 Once the upload specification has been released, support will be available to PHNs and
