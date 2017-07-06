@@ -10,3 +10,5 @@ missing item is regarded as invalid.
 
 If more than one item of items 1 to 10 are missing, the Total Score is set as
 missing. Where this is the case, the missing value used should be 99.
+
+When reporting individual item scores use ‘99 - Not stated / Missing’.
