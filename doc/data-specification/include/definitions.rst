@@ -2298,6 +2298,9 @@ In the last 4 weeks, about how often did you feel nervous?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
 
 ----------
 
@@ -2321,6 +2324,9 @@ In the last 4 weeks, about how often did you feel without hope?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
 
 ----------
 
@@ -2344,6 +2350,9 @@ In the last 4 weeks, about how often did you feel restless or jumpy?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
 
 ----------
 
@@ -2367,6 +2376,9 @@ In the last 4 weeks, about how often did you feel everything was an effort?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
 
 ----------
 
@@ -2390,6 +2402,9 @@ In the last 4 weeks, about how often did you feel so sad that nothing could chee
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
 
 ----------
 
@@ -2417,6 +2432,8 @@ The overall K5 score.
   Total Score is set as missing.
   
   For the Total score, the missing value used should be 99.
+  
+  When reporting individual item scores use ‘99 - Not stated / Missing’
   
 
 ----------
@@ -2469,6 +2486,9 @@ In the past 4 weeks, about how often did you feel tired out for no good reason?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
 
 ----------
 
@@ -2492,6 +2512,9 @@ In the past 4 weeks, about how often did you feel nervous?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
 
 ----------
 
@@ -2515,6 +2538,9 @@ In the past 4 weeks, about how often did you feel so nervous that nothing could 
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
 
 ----------
 
@@ -2538,6 +2564,9 @@ In the past 4 weeks, how often did you feel hopeless?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
 
 ----------
 
@@ -2561,6 +2590,9 @@ In the past 4 weeks, how often did you feel restless or fidgety?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
 
 ----------
 
@@ -2584,6 +2616,9 @@ In the past 4 weeks, how often did you feel so restless you could not sit still?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
 
 ----------
 
@@ -2607,6 +2642,9 @@ In the past 4 weeks, how often did you feel depressed?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
 
 ----------
 
@@ -2630,6 +2668,9 @@ In the past 4 weeks, how often did you feel that everything was an effort?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
 
 ----------
 
@@ -2653,6 +2694,9 @@ In the past 4 weeks, how often did you feel so sad that nothing could cheer you 
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
 
 ----------
 
@@ -2676,6 +2720,9 @@ In the past 4 weeks, how often did you feel worthless?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
 
 ----------
 
@@ -2697,7 +2744,7 @@ In the past four weeks, how many days were you totally unable to work, study or 
 :Notes:
   When the client's responses to Q1-10 are all recorded as 1 'None of the time', 
   they are not required to answer questions 11-14. Where this question has not been
-  answered a response of 'Not stated / missing' should be selected.
+  answered a response of '99 - Not stated / Missing' should be selected.
   
 
 ----------
@@ -2720,7 +2767,7 @@ Aside from those days, in the past four weeks, how many days were you able to wo
 :Notes:
   When the client's responses to Q1-10 are all recorded as 1 'None of the time',
   they are not required to answer questions 11-14. Where this question has not been
-  answered a response of 'Not stated / missing' should be selected.
+  answered a response of '99 - Not stated / Missing' should be selected.
   
 
 ----------
@@ -2743,7 +2790,7 @@ In the past four weeks, how many times have you seen a doctor or any other healt
 :Notes:
   When the client's responses to Q1-10 are all recorded as 1 'None of the time',
   they are not required to answer questions 11-14. Where this question has not been
-  answered a response of 'Not stated / missing' should be selected.
+  answered a response of '99 - Not stated / Missing' should be selected.
   
 
 ----------
@@ -2771,7 +2818,7 @@ In the past four weeks, how often have physical health problems been the main ca
 :Notes:
   When the client's responses to Q1-10 are all recorded as 1 'None of the time',
   they are not required to answer questions 11-14. Where this question has not been
-  answered a response of 'Not stated / missing' should be selected.
+  answered a response of '99 - Not stated / Missing' should be selected.
   
 
 ----------
@@ -2804,6 +2851,8 @@ The overall K10 score.
   
   If more than one item of items 1 to 10 are missing, the Total Score is set as
   missing. Where this is the case, the missing value used should be 99.
+  
+  When reporting individual item scores use ‘99 - Not stated / Missing’.
   
 
 ----------
@@ -3042,7 +3091,7 @@ The term 'gender' refers to the way in which a person identifies their masculine
 Practitioner Key
 ^^^^^^^^^^^^^^^^
 
-A unique identifier for a practitioner within the responsible organisation. Assigned by the organisation.
+A unique identifier for a practitioner within the responsible provider organisation. Assigned by either the PHN or provider organisation depending on local procedures.
 
 :Field name: practitioner_key
 
@@ -3382,6 +3431,8 @@ SDQ - Conduct Problem Scale
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Conduct Problem Scale.
   
+  When reporting individual item scores use ‘99 - Not stated / Missing’.
+  
 
 ----------
 
@@ -3401,6 +3452,8 @@ SDQ - Emotional Symptoms Scale
   0 - 10, 99 = Not stated / Missing
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Emotional Symptoms Scale.
+  
+  When reporting individual item scores use ‘99 - Not stated / Missing’.
   
 
 ----------
@@ -3422,6 +3475,8 @@ SDQ - Hyperactivity Scale
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Hyperactivity Scale.
   
+  When reporting individual item scores use ‘99 - Not stated / Missing’.
+  
 
 ----------
 
@@ -3441,6 +3496,8 @@ SDQ - Impact Score
   0 - 10, 99 = Not stated / Missing
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Impact Score.
+  
+  When reporting individual item scores use ‘99 - Not stated / Missing’.
   
 
 ----------
@@ -3462,6 +3519,8 @@ SDQ - Peer Problem Scale
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Peer Problem Scale.
   
+  When reporting individual item scores use ‘99 - Not stated / Missing’.
+  
 
 ----------
 
@@ -3481,6 +3540,8 @@ SDQ - Prosocial Scale
   0 - 10, 99 = Not stated / Missing
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Prosocial Scale.
+  
+  When reporting individual item scores use ‘99 - Not stated / Missing’.
   
 
 ----------
@@ -3509,6 +3570,8 @@ Youth Self Report: I try to be nice to other people. I care about their feelings
 :Notes:
   Required Versions: All
   
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
+  
 
 ----------
 
@@ -3535,6 +3598,8 @@ Youth Self Report: I am restless, I cannot stay still for long.
   :9: Not stated / Missing
 :Notes:
   Required Versions: All
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -3563,6 +3628,8 @@ Youth Self Report: I get a lot of headaches, stomach-aches or sickness.
 :Notes:
   Required Versions: All
   
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
+  
 
 ----------
 
@@ -3589,6 +3656,8 @@ Youth Self Report: I usually share with others, for examples CDs, games, food.
   :9: Not stated / Missing
 :Notes:
   Required Versions: All
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -3617,6 +3686,8 @@ Youth Self Report: I get very angry and often lose my temper.
 :Notes:
   Required Versions: All
   
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
+  
 
 ----------
 
@@ -3643,6 +3714,8 @@ Youth Self Report: I would rather be alone than with people of my age.
   :9: Not stated / Missing
 :Notes:
   Required Versions: All
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -3671,6 +3744,8 @@ Youth Self Report: I usually do as I am told.
 :Notes:
   Required Versions: All
   
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
+  
 
 ----------
 
@@ -3697,6 +3772,8 @@ Youth Self Report: I worry a lot.
   :9: Not stated / Missing
 :Notes:
   Required Versions: All
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -3725,6 +3802,8 @@ Youth Self Report: I am helpful if someone is hurt, upset or feeling ill.
 :Notes:
   Required Versions: All
   
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
+  
 
 ----------
 
@@ -3751,6 +3830,8 @@ Youth Self Report: I am constantly fidgeting or squirming.
   :9: Not stated / Missing
 :Notes:
   Required Versions: All
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -3779,6 +3860,8 @@ Youth Self Report: I have one good friend or more.
 :Notes:
   Required Versions: All
   
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
+  
 
 ----------
 
@@ -3805,6 +3888,8 @@ Youth Self Report: I fight a lot. I can make other people do what I want.
   :9: Not stated / Missing
 :Notes:
   Required Versions: All
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -3833,6 +3918,8 @@ Youth Self Report: I am often unhappy, depressed or tearful.
 :Notes:
   Required Versions: All
   
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
+  
 
 ----------
 
@@ -3859,6 +3946,8 @@ Youth Self Report: Other people my age generally like me.
   :9: Not stated / Missing
 :Notes:
   Required Versions: All
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -3887,6 +3976,8 @@ Youth Self Report: I am easily distracted, I find it difficult to concentrate.
 :Notes:
   Required Versions: All
   
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
+  
 
 ----------
 
@@ -3913,6 +4004,8 @@ Youth Self Report: I am nervous in new situations. I easily lose confidence.
   :9: Not stated / Missing
 :Notes:
   Required Versions: All
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -3941,6 +4034,8 @@ Youth Self Report: I am kind to younger people.
 :Notes:
   Required Versions: All
   
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
+  
 
 ----------
 
@@ -3967,6 +4062,8 @@ Youth Self Report: I am often accused of lying or cheating.
   :9: Not stated / Missing
 :Notes:
   Required Versions: All
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -3995,6 +4092,8 @@ Youth Self Report: Other children or young people pick on me or bully me.
 :Notes:
   Required Versions: All
   
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
+  
 
 ----------
 
@@ -4021,6 +4120,8 @@ Youth Self Report: I often volunteer to help others (parents, teachers, children
   :9: Not stated / Missing
 :Notes:
   Required Versions: All
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -4049,6 +4150,8 @@ Youth Self Report: I think before I do things.
 :Notes:
   Required Versions: All
   
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
+  
 
 ----------
 
@@ -4075,6 +4178,8 @@ Youth Self Report: I take things that are not mine from home, school or elsewher
   :9: Not stated / Missing
 :Notes:
   Required Versions: All
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -4103,6 +4208,8 @@ Youth Self Report: I get along better with adults than with people my own age.
 :Notes:
   Required Versions: All
   
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
+  
 
 ----------
 
@@ -4129,6 +4236,8 @@ Youth Self Report: I have many fears, I am easily scared.
   :9: Not stated / Missing
 :Notes:
   Required Versions: All
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -4157,6 +4266,8 @@ Youth Self Report: I finish the work I'm doing. My attention is good.
 :Notes:
   Required Versions: All
   
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
+  
 
 ----------
 
@@ -4184,6 +4295,8 @@ Youth Self Report: Overall, do you think that you have difficulties in any of th
   :9: Not stated / Missing
 :Notes:
   Required Versions: All
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -4217,6 +4330,8 @@ Youth Self Report: How long have these difficulties been present?
   - PY101
   - YR101
   
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
+  
 
 ----------
 
@@ -4245,6 +4360,8 @@ Youth Self Report: Do the difficulties upset or distress you?
   :9: Not stated / Missing
 :Notes:
   Required Versions: All
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -4275,6 +4392,8 @@ Youth Self Report: Do the difficulties interfere with your everyday life in the 
 :Notes:
   Required Versions: All
   
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
+  
 
 ----------
 
@@ -4303,6 +4422,8 @@ Youth Self Report: Do the difficulties interfere with your everyday life in the 
   :9: Not stated / Missing
 :Notes:
   Required Versions: All
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -4333,6 +4454,8 @@ Youth Self Report: Do the difficulties interfere with your everyday life in the 
 :Notes:
   Required Versions: All
   
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
+  
 
 ----------
 
@@ -4361,6 +4484,8 @@ Youth Self Report: Do the difficulties interfere with your everyday life in the 
   :9: Not stated / Missing
 :Notes:
   Required Versions: All
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -4391,6 +4516,8 @@ Youth Self Report: Do the difficulties make it harder for those around you (fami
 :Notes:
   Required Versions: All
   
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
+  
 
 ----------
 
@@ -4420,9 +4547,12 @@ Youth Self Report: 'Since coming to the service, are your problems:
   :9: Not stated / Missing
 :Notes:
   Required Versions:
+  
   - PC201
   - PY201
   - YR201
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -4450,9 +4580,12 @@ Has coming to the service been helpful in other ways eg. providing information o
   :9: Not stated / Missing
 :Notes:
   Required Versions:
+  
   - PC201
   - PY201
   - YR201
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -4479,8 +4612,11 @@ Over the last 6 months have your child's teachers complained of fidgetiness, res
   :9: Not stated / Missing
 :Notes:
   Required Versions:
+  
   - PC101
   - PY101
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -4507,8 +4643,11 @@ Over the last 6 months have your child's teachers complained of poor concentrati
   :9: Not stated / Missing
 :Notes:
   Required Versions:
+  
   - PC101
   - PY101
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -4535,8 +4674,11 @@ Over the last 6 months have your child's teachers complained of acting without t
   :9: Not stated / Missing
 :Notes:
   Required Versions:
+  
   - PC101
   - PY101
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -4563,7 +4705,10 @@ Does your family complain about you having problems with overactivity or poor co
   :9: Not stated / Missing
 :Notes:
   Required Versions:
+  
   - YR101
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -4590,7 +4735,10 @@ Do your teachers complain about you having problems with overactivity or poor co
   :9: Not stated / Missing
 :Notes:
   Required Versions:
+  
   - YR101
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -4617,7 +4765,10 @@ Does your family complain about you being awkward or troublesome?
   :9: Not stated / Missing
 :Notes:
   Required Versions:
+  
   - YR101
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -4644,7 +4795,10 @@ Do your teachers complain about you being awkward or troublesome?
   :9: Not stated / Missing
 :Notes:
   Required Versions:
+  
   - YR101
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -4693,6 +4847,8 @@ SDQ - Total Difficulties Score
   0 - 40, 99 = Not stated / Missing
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Total Difficulties Score.
+  
+  When reporting individual item scores use ‘99 - Not stated / Missing’.
   
 
 ----------

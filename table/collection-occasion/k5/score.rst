@@ -6,3 +6,5 @@ the calculation and not counted as a valid item. If any item is missing, the
 Total Score is set as missing.
 
 For the Total score, the missing value used should be 99.
+
+When reporting individual item scores use ‘99 - Not stated / Missing’

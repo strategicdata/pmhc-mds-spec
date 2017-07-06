@@ -585,7 +585,7 @@ upload.</p>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#practitioner-key">Practitioner Key</a> (practitioner_key)</td>
 <td>string (2,50)</td>
-<td>A unique identifier for a practitioner within the responsible organisation. Assigned by the organisation.</td>
+<td>A unique identifier for a practitioner within the responsible provider organisation. Assigned by either the PHN or provider organisation depending on local procedures.</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#practitioner-category">Practitioner - Category</a> (practitioner_category)</td>
 <td>string</td>
@@ -8701,7 +8701,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -8719,6 +8719,9 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 </tbody>
 </table>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">When reporting total score use ‘9 - Not stated / Missing’</p>
 </td>
 </tr>
 </tbody>
@@ -8741,7 +8744,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -8759,6 +8762,9 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 </tbody>
 </table>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">When reporting total score use ‘9 - Not stated / Missing’</p>
 </td>
 </tr>
 </tbody>
@@ -8781,7 +8787,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -8799,6 +8805,9 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 </tbody>
 </table>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">When reporting total score use ‘9 - Not stated / Missing’</p>
 </td>
 </tr>
 </tbody>
@@ -8821,7 +8830,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -8839,6 +8848,9 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 </tbody>
 </table>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">When reporting total score use ‘9 - Not stated / Missing’</p>
 </td>
 </tr>
 </tbody>
@@ -8861,7 +8873,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -8879,6 +8891,9 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 </tbody>
 </table>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">When reporting total score use ‘9 - Not stated / Missing’</p>
 </td>
 </tr>
 </tbody>
@@ -8909,7 +8924,8 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 been completed (that is, has not been coded 1, 2, 3, 4, 5), it is excluded from
 the calculation and not counted as a valid item. If any item is missing, the
 Total Score is set as missing.</p>
-<p class="last">For the Total score, the missing value used should be 99.</p>
+<p>For the Total score, the missing value used should be 99.</p>
+<p class="last">When reporting individual item scores use ‘99 - Not stated / Missing’</p>
 </td>
 </tr>
 </tbody>
@@ -8962,7 +8978,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -8980,6 +8996,9 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 </tbody>
 </table>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">When reporting total score use ‘9 - Not stated / Missing’</p>
 </td>
 </tr>
 </tbody>
@@ -9002,7 +9021,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -9020,6 +9039,9 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 </tbody>
 </table>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">When reporting total score use ‘9 - Not stated / Missing’</p>
 </td>
 </tr>
 </tbody>
@@ -9042,7 +9064,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -9060,6 +9082,9 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 </tbody>
 </table>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">When reporting total score use ‘9 - Not stated / Missing’</p>
 </td>
 </tr>
 </tbody>
@@ -9082,7 +9107,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -9100,6 +9125,9 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 </tbody>
 </table>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">When reporting total score use ‘9 - Not stated / Missing’</p>
 </td>
 </tr>
 </tbody>
@@ -9122,7 +9150,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -9140,6 +9168,9 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 </tbody>
 </table>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">When reporting total score use ‘9 - Not stated / Missing’</p>
 </td>
 </tr>
 </tbody>
@@ -9162,7 +9193,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -9180,6 +9211,9 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 </tbody>
 </table>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">When reporting total score use ‘9 - Not stated / Missing’</p>
 </td>
 </tr>
 </tbody>
@@ -9202,7 +9236,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -9220,6 +9254,9 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 </tbody>
 </table>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">When reporting total score use ‘9 - Not stated / Missing’</p>
 </td>
 </tr>
 </tbody>
@@ -9242,7 +9279,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -9260,6 +9297,9 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 </tbody>
 </table>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">When reporting total score use ‘9 - Not stated / Missing’</p>
 </td>
 </tr>
 </tbody>
@@ -9282,7 +9322,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -9300,6 +9340,9 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 </tbody>
 </table>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">When reporting total score use ‘9 - Not stated / Missing’</p>
 </td>
 </tr>
 </tbody>
@@ -9322,7 +9365,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -9340,6 +9383,9 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 </tbody>
 </table>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">When reporting total score use ‘9 - Not stated / Missing’</p>
 </td>
 </tr>
 </tbody>
@@ -9363,7 +9409,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 <tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">When the client&#8217;s responses to Q1-10 are all recorded as 1 &#8216;None of the time&#8217;,
 they are not required to answer questions 11-14. Where this question has not been
-answered a response of &#8216;Not stated / missing&#8217; should be selected.</td>
+answered a response of &#8216;99 - Not stated / Missing&#8217; should be selected.</td>
 </tr>
 </tbody>
 </table>
@@ -9386,7 +9432,7 @@ answered a response of &#8216;Not stated / missing&#8217; should be selected.</t
 </tr>
 <tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">When the client&#8217;s responses to Q1-10 are all recorded as 1 &#8216;None of the time&#8217;,
 they are not required to answer questions 11-14. Where this question has not been
-answered a response of &#8216;Not stated / missing&#8217; should be selected.</td>
+answered a response of &#8216;99 - Not stated / Missing&#8217; should be selected.</td>
 </tr>
 </tbody>
 </table>
@@ -9409,7 +9455,7 @@ answered a response of &#8216;Not stated / missing&#8217; should be selected.</t
 </tr>
 <tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">When the client&#8217;s responses to Q1-10 are all recorded as 1 &#8216;None of the time&#8217;,
 they are not required to answer questions 11-14. Where this question has not been
-answered a response of &#8216;Not stated / missing&#8217; should be selected.</td>
+answered a response of &#8216;99 - Not stated / Missing&#8217; should be selected.</td>
 </tr>
 </tbody>
 </table>
@@ -9453,7 +9499,7 @@ answered a response of &#8216;Not stated / missing&#8217; should be selected.</t
 </tr>
 <tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">When the client&#8217;s responses to Q1-10 are all recorded as 1 &#8216;None of the time&#8217;,
 they are not required to answer questions 11-14. Where this question has not been
-answered a response of &#8216;Not stated / missing&#8217; should be selected.</p>
+answered a response of &#8216;99 - Not stated / Missing&#8217; should be selected.</p>
 </td>
 </tr>
 </tbody>
@@ -9487,8 +9533,9 @@ ten items.</p>
 item has not been completed (that is, has not been coded 1, 2, 3, 4, 5), it is
 excluded from the total with the proviso that a competed K10 with more than one
 missing item is regarded as invalid.</p>
-<p class="last">If more than one item of items 1 to 10 are missing, the Total Score is set as
+<p>If more than one item of items 1 to 10 are missing, the Total Score is set as
 missing. Where this is the case, the missing value used should be 99.</p>
+<p class="last">When reporting individual item scores use ‘99 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -9849,7 +9896,7 @@ practitioners.</p>
 </div>
 <div class="section" id="practitioner-key">
 <span id="dfn-practitioner-key"></span><h3>Practitioner Key<a class="headerlink" href="#practitioner-key" title="Permalink to this headline">¶</a></h3>
-<p>A unique identifier for a practitioner within the responsible organisation. Assigned by the organisation.</p>
+<p>A unique identifier for a practitioner within the responsible provider organisation. Assigned by either the PHN or provider organisation depending on local procedures.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -10277,15 +10324,21 @@ option to commission external providers.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body">sdq_conduct_problem</td>
+<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">sdq_conduct_problem</p>
+</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">integer</td>
+<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">integer</p>
+</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 10, 99 = Not stated / Missing</td>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><p class="first">0 - 10, 99 = Not stated / Missing</p>
+</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">SDQ items and Scale Summary scores</span></a> for instructions on scoring the Conduct Problem Scale.</td>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">SDQ items and Scale Summary scores</span></a> for instructions on scoring the Conduct Problem Scale.</p>
+<p class="last">When reporting individual item scores use ‘99 - Not stated / Missing’.</p>
+</td>
 </tr>
 </tbody>
 </table>
@@ -10297,15 +10350,21 @@ option to commission external providers.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body">sdq_emotional_symptoms</td>
+<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">sdq_emotional_symptoms</p>
+</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">integer</td>
+<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">integer</p>
+</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 10, 99 = Not stated / Missing</td>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><p class="first">0 - 10, 99 = Not stated / Missing</p>
+</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">SDQ items and Scale Summary scores</span></a> for instructions on scoring the Emotional Symptoms Scale.</td>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">SDQ items and Scale Summary scores</span></a> for instructions on scoring the Emotional Symptoms Scale.</p>
+<p class="last">When reporting individual item scores use ‘99 - Not stated / Missing’.</p>
+</td>
 </tr>
 </tbody>
 </table>
@@ -10317,15 +10376,21 @@ option to commission external providers.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body">sdq_hyperactivity</td>
+<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">sdq_hyperactivity</p>
+</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">integer</td>
+<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">integer</p>
+</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 10, 99 = Not stated / Missing</td>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><p class="first">0 - 10, 99 = Not stated / Missing</p>
+</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">SDQ items and Scale Summary scores</span></a> for instructions on scoring the Hyperactivity Scale.</td>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">SDQ items and Scale Summary scores</span></a> for instructions on scoring the Hyperactivity Scale.</p>
+<p class="last">When reporting individual item scores use ‘99 - Not stated / Missing’.</p>
+</td>
 </tr>
 </tbody>
 </table>
@@ -10337,15 +10402,21 @@ option to commission external providers.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body">sdq_impact</td>
+<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">sdq_impact</p>
+</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">integer</td>
+<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">integer</p>
+</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 10, 99 = Not stated / Missing</td>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><p class="first">0 - 10, 99 = Not stated / Missing</p>
+</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">SDQ items and Scale Summary scores</span></a> for instructions on scoring the Impact Score.</td>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">SDQ items and Scale Summary scores</span></a> for instructions on scoring the Impact Score.</p>
+<p class="last">When reporting individual item scores use ‘99 - Not stated / Missing’.</p>
+</td>
 </tr>
 </tbody>
 </table>
@@ -10357,15 +10428,21 @@ option to commission external providers.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body">sdq_peer_problem</td>
+<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">sdq_peer_problem</p>
+</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">integer</td>
+<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">integer</p>
+</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 10, 99 = Not stated / Missing</td>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><p class="first">0 - 10, 99 = Not stated / Missing</p>
+</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">SDQ items and Scale Summary scores</span></a> for instructions on scoring the Peer Problem Scale.</td>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">SDQ items and Scale Summary scores</span></a> for instructions on scoring the Peer Problem Scale.</p>
+<p class="last">When reporting individual item scores use ‘99 - Not stated / Missing’.</p>
+</td>
 </tr>
 </tbody>
 </table>
@@ -10377,15 +10454,21 @@ option to commission external providers.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body">sdq_prosocial</td>
+<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">sdq_prosocial</p>
+</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">integer</td>
+<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">integer</p>
+</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 10, 99 = Not stated / Missing</td>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><p class="first">0 - 10, 99 = Not stated / Missing</p>
+</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">SDQ items and Scale Summary scores</span></a> for instructions on scoring the Prosocial Scale.</td>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">SDQ items and Scale Summary scores</span></a> for instructions on scoring the Prosocial Scale.</p>
+<p class="last">When reporting individual item scores use ‘99 - Not stated / Missing’.</p>
+</td>
 </tr>
 </tbody>
 </table>
@@ -10426,7 +10509,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -10468,7 +10552,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -10510,7 +10595,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -10552,7 +10638,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -10594,7 +10681,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -10636,7 +10724,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -10678,7 +10767,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -10720,7 +10810,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -10762,7 +10853,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -10804,7 +10896,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -10846,7 +10939,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -10888,7 +10982,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -10930,7 +11025,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -10972,7 +11068,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -11014,7 +11111,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -11056,7 +11154,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -11098,7 +11197,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -11140,7 +11240,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -11182,7 +11283,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -11224,7 +11326,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -11266,7 +11369,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -11308,7 +11412,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -11350,7 +11455,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -11392,7 +11498,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -11434,7 +11541,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -11478,7 +11586,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -11524,10 +11633,11 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions:
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions:
 - PC101
 - PY101
 - YR101</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -11573,7 +11683,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -11619,7 +11730,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -11665,7 +11777,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -11711,7 +11824,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -11757,7 +11871,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -11803,7 +11918,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -11851,10 +11967,13 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions:
-- PC201
-- PY201
-- YR201</p>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions:</p>
+<ul class="simple">
+<li>PC201</li>
+<li>PY201</li>
+<li>YR201</li>
+</ul>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -11899,10 +12018,13 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions:
-- PC201
-- PY201
-- YR201</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions:</p>
+<ul class="simple">
+<li>PC201</li>
+<li>PY201</li>
+<li>YR201</li>
+</ul>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -11945,9 +12067,12 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions:
-- PC101
-- PY101</p>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions:</p>
+<ul class="simple">
+<li>PC101</li>
+<li>PY101</li>
+</ul>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -11990,9 +12115,12 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions:
-- PC101
-- PY101</p>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions:</p>
+<ul class="simple">
+<li>PC101</li>
+<li>PY101</li>
+</ul>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -12035,9 +12163,12 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions:
-- PC101
-- PY101</p>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions:</p>
+<ul class="simple">
+<li>PC101</li>
+<li>PY101</li>
+</ul>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -12080,8 +12211,11 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions:
-- YR101</p>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions:</p>
+<ul class="simple">
+<li>YR101</li>
+</ul>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -12124,8 +12258,11 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions:
-- YR101</p>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions:</p>
+<ul class="simple">
+<li>YR101</li>
+</ul>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -12168,8 +12305,11 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions:
-- YR101</p>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions:</p>
+<ul class="simple">
+<li>YR101</li>
+</ul>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -12212,8 +12352,11 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions:
-- YR101</p>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions:</p>
+<ul class="simple">
+<li>YR101</li>
+</ul>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -12256,15 +12399,21 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body">sdq_total</td>
+<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">sdq_total</p>
+</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">integer</td>
+<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">integer</p>
+</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 40, 99 = Not stated / Missing</td>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><p class="first">0 - 40, 99 = Not stated / Missing</p>
+</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">SDQ items and Scale Summary scores</span></a> for instructions on scoring the Total Difficulties Score.</td>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">SDQ items and Scale Summary scores</span></a> for instructions on scoring the Total Difficulties Score.</p>
+<p class="last">When reporting individual item scores use ‘99 - Not stated / Missing’.</p>
+</td>
 </tr>
 </tbody>
 </table>
