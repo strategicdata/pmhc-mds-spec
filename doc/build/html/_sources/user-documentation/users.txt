@@ -2,7 +2,7 @@ Users
 =====
 
 You will only be able to see the Users tab if you have been assigned
-the 'User Management' role.
+the 'User Management' role, when logged into the PMHC MDS on https://pmhc-mds.net.
 
 If you don’t have access to the Users tab and you believe you should, please
 contact someone in your provider organisation or provider organisation's PHN
@@ -101,7 +101,7 @@ You can view a user's details through the user tab, by following these steps:
 #. Navigate to the Users tab.
 #. Click on the user's name in blue displayed within the table list.
 
-.. figure:: screen-shots/view-user.png
+.. figure:: screen-shots/user-view-details.png
    :alt: PMHC MDS View User
 
 A page will display showing the user's details and the :ref:`roles` they have at
@@ -138,14 +138,14 @@ by following these steps:
 1. Navigate to the Users tab.
 2. Click the 'Invite New User' tab.
 
-   .. figure:: screen-shots/invite-user.png
+   .. figure:: screen-shots/user-invite.png
       :alt: PMHC MDS Invite User
 
 3. Complete all the fields with the new users contact details. (Mandatory fields are marked with an * )
 4. Select an organisation, either a PHN or Provider Organisation.
 5. Assign one or more :ref:`roles`. (extra roles can be added after the user has access to the system. See :ref:`edit-role`)
 
-   .. figure:: screen-shots/invite-user-filled-in.png
+   .. figure:: screen-shots/user-invite-filled-in.png
       :alt: PMHC MDS Invite User Complete
 
 6. Click the blue 'Invite' button.
@@ -155,7 +155,7 @@ by following these steps:
    email before they can gain access to the system. This invitation will be valid for 7 days.
 8. When the user has accepted the invitation you will be sent an email to let you know.
 
-   .. figure:: screen-shots/invite-accepted-email.png
+   .. figure:: screen-shots/user-invite-accepted-email.png
       :alt: PMHC MDS Invite Accepted
 
 Please note: An invitation for a new user is valid for 7 days. You can not re-invite
@@ -180,7 +180,7 @@ You can invite an existing user through the Users tab, by following these steps:
 3. Complete all the mandatory fields marked with an * in the 'Invite User' form, ensuring these are the same details as their existing PMHC MDS Profile.
 4. Select an organisation and assign their :ref:`roles`.
 
-   .. figure:: screen-shots/invite-user.png
+   .. figure:: screen-shots/user-invite.png
       :alt: PMHC MDS Invite User
 
 5. Click the blue 'Invite' button.
@@ -204,8 +204,8 @@ You can edit and assign extra roles to an existing user by following these steps
 3. Click the 'Roles' tab to show the users assigned roles.
 4. Choose the PHN or Provider Organisation from the selection box to view the users roles at that organisation.
 
-   .. figure:: screen-shots/user-roles-at-organisation.png
-      :alt: PMHC MDS Edit Role
+   .. figure:: screen-shots/user-roles.png
+      :alt: PMHC MDS User Roles
 
 A tick displays the user currently has this role assigned at the relevant organisation.
 
@@ -224,8 +224,8 @@ You can edit and assign extra roles to an existing user by following these steps
 3. Click the 'Roles' tab.
 4. Click the 'Edit Roles' tab.
 
-   .. figure:: screen-shots/edit-role.png
-      :alt: PMHC MDS Edit Role
+   .. figure:: screen-shots/user-edit-role.png
+      :alt: PMHC MDS Edit Users Role
 
 5. Select the PHN from the Organisation drop down list
 6. A tick indicates the user currently has this role assigned at the relevant organisation.
@@ -270,7 +270,7 @@ You can view users assigned to an organisation through the organisation tab, by 
    displayed under the column headers. To remove the filter, click the grey
    cross within the edit box beside any entered text.
 
-.. figure:: screen-shots/view-organisation-users.png
+.. figure:: screen-shots/users-organisation-list.png
    :alt: PMHC MDS User Roles at Organisation
 
 .. _adding-roles:

@@ -1,8 +1,10 @@
+.. _organisations:
+
 Organisations
 =============
 
 You will be able to see the Organisations tab if you have been assigned
-the 'Organisation Management', the 'User Management' or the 'Data Entry' role.
+the 'Organisation Management', or the 'User Management' role, , when logged into the PMHC MDS on https://pmhc-mds.net.
 
 If you believe you should have access to an organisation and it doesn't appear
 in your list please contact someone in that provider organisation or the
@@ -33,7 +35,7 @@ The PHN organisations details will be displayed, along with a provider organisat
 If you have the 'User Management' role will also include a 'Users' tab listing
 the users that belong to this PHN.
 
-.. figure:: screen-shots/view-organisation.png
+.. figure:: screen-shots/organisation-phn-view.png
    :alt: PMHC MDS View Organisation
 
 .. _search-provider-organisation:
@@ -61,7 +63,7 @@ To filter the listed provider organisations:
 1. Click the grey 'Filters' button.
 2. Start typing in an edit box now displayed under the column headers.
 
-.. figure:: screen-shots/organisations-filter.png
+.. figure:: screen-shots/organisations-provider-filter.png
    :alt: PMHC MDS Organisations Filter
 
 3. To remove the filter, click the grey cross within the edit box beside any
@@ -78,11 +80,10 @@ following these steps:
 1. Navigate to the Organisations tab.
 2. Click on the PHN name in blue text displayed within the table list.
 3. Click on the 'Provider Organisations' tab.
+4. Click on the provider organisation's name from the 'View Provider Organisations' table
 
-The PHN's provider organisations details will be displayed in a table.
-
-.. figure:: screen-shots/view-provider-organisation.png
-   :alt: PMHC MDS View Organisation
+.. figure:: screen-shots/organisation-provider-view.png
+   :alt: PMHC MDS View Provider Organisation
 
 .. _add-provider-organisation:
 
@@ -97,7 +98,7 @@ through the organisation tab by following these steps:
 3. Click on the 'Provider Organisations' tab.
 4. Click the 'Add Provider Organisation' tab.
 
-   .. figure:: screen-shots/add-provider-organisation.png
+   .. figure:: screen-shots/organisation-provider-add.png
       :alt: PMHC MDS Add Provider Organisation
 
 5. Complete all the mandatory fields marked with an * in the add Provider Organisation
@@ -118,21 +119,21 @@ details through the organisation tab, by following these steps:
 1. Navigate to the Organisations tab.
 2. Click on the PHN name in blue text displayed within the table list.
 
-   .. figure:: screen-shots/view-organisation.png
+   .. figure:: screen-shots/organisation-phn-view.png
       :alt: PMHC MDS View PHN
 
 3. Click on the 'Provider Organisation' tab.
 4. Click on the Provider Organisation name in blue text displayed within the
    Provider Organisations table.
 
-   .. figure:: screen-shots/view-provider-organisation.png
+   .. figure:: screen-shots/organisation-provider-view.png
       :alt: PMHC MDS View Provider Organisation
 
 3. If you have permission to edit the Provider Organisation an 'Edit Details' tab will
    be displayed.
 4. Click the blue 'Edit' button.
 
-   .. figure:: screen-shots/edit-provider-organisation.png
+   .. figure:: screen-shots/organisation-provider-edit.png
       :alt: PMHC MDS Edit Organisation
 
 4. Update the organisations details. Mandatory fields are marked with an *

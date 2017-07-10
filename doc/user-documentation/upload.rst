@@ -4,7 +4,7 @@ Upload
 ======
 
 You will only be able to see the Upload tab if you have been assigned
-the 'Upload' role.
+the 'Upload' role, when logged into the PMHC MDS on https://pmhc-mds.net.
 
 If you don’t have access to the Upload tab and you believe you should, please
 contact someone in your provider organisation or provider organisation's PHN
@@ -41,8 +41,8 @@ You can upload data files through the upload tab, by following these steps:
 5. Navigate to where the upload file is saved on your system. Select the file
    and click the grey 'Open' button.
 
-   .. figure:: screen-shots/file-selected.png
-      :alt: PMHC MDS File Selected
+   .. figure:: screen-shots/upload-file-selected.png
+      :alt: PMHC MDS Upload File Selected
 
 6. Check to ensure you have selected the correct file by reviewing the file
    name now displayed below the 'Select File' button.
@@ -78,10 +78,9 @@ You can upload data files in Test Mode through the upload tab, by following thes
    and click the grey 'Open' button.
 6. Check to ensure you have selected the correct file by reviewing the file
    name now displayed below the 'Select File' button.
-
 7. Click the 'Upload as test data' checkbox on the right hand side.
 
-   .. figure:: screen-shots/test-mode.png
+   .. figure:: screen-shots/upload-test-mode.png
       :alt: PMHC MDS Test Mode selected
 
 8. Click the green 'Upload' button.
@@ -105,7 +104,7 @@ tab there is a 'Status of Previous Uploads' table.
 
 If you need to see a test upload please check the 'Show test uploads' checkbox.
 
-   .. figure:: screen-shots/previous-upload.png
+   .. figure:: screen-shots/upload-previous.png
       :alt: PMHC MDS Status of Previous Uploads
 
 When an upload has been completed, irregardless of whether it validated successfully
