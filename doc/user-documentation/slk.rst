@@ -7,17 +7,17 @@ SLK
    :alt: PMHC MDS SLK Generator
 
 We have provided a stand-alone generator that can be used without logging into
-the PMHC MDS. This allows users to generate Statistical Linkage Keys (SLK's)
-to enter into upload files.
+the PMHC MDS on https://pmhc-mds.net. This allows users to generate a client's
+Statistical Linkage Key (SLK) to enter into upload files.
 
 In order to generate an SLK:
 
-#. Navigate to the 'SLK' tab. This will open up the SLK generator.
-#. Enter the following client details: Given Name, Surname, Date of Birth and
+1. Navigate to the 'SLK' tab. This will open up the SLK generator.
+2. Enter the following client details: Given Name, Surname, Date of Birth and
    Gender.
-#. Click on the blue 'Generate Key' button.
+3. Click on the blue 'Generate Key' button.
 
-.. figure:: screen-shots/generated-slk.png
+.. figure:: screen-shots/slk-generated.png
    :alt: PMHC MDS Generated SLK
 
 The client's 'SLK Key' and 'Generated Hash' key will now be displayed.

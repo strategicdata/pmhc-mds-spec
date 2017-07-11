@@ -1,27 +1,27 @@
-.. _client-data:
-
-Client Data
-===========
-
 .. _data-entry:
 
-You will only be able to see the Client Data tab if you have been assigned
-the 'Data Entry' :ref:`roles`.
+Data Entry
+===========
 
-If you don’t have access to the Client Data tab and you believe you should, please
+You will only be able to see the Data Entry tab if you have been assigned
+the 'Data Entry' :ref:`roles`, when logged into the PMHC MDS on https://pmhc-mds.net.
+
+If you don’t have access to the Data Entry tab and you believe you should, please
 contact someone in your provider organisation or provider organisation's PHN
 who has the 'User Management' role. If you are unsure who has the 'User Management'
 role please email the PMHC Helpdesk at support@pmhc-mds.com
 
-After navigating to the Client Data tab, you will be presented with three search boxes
+After navigating to the Data Entry tab, you will be presented with three search boxes
 which will allow you to easily find and view the client data for the organisations
 you have permission to access.
 
 .. figure:: screen-shots/client-data.png
-   :alt: Client Data Tab View
+   :alt: Data Entry tab View
 
-Clients
-^^^^^^^
+.. _client-data:
+
+Client Data
+^^^^^^^^^^^
 
 .. _find-client:
 
@@ -91,7 +91,7 @@ Viewing a Client's details
 --------------------------
 
 You can view a clients's details through the :ref:`search-client`
-available on the Client Data tab, by following these steps:
+available on the Data Entry tab, by following these steps:
 
 1. Create :ref:`search-client`
 2. Click on the Client Key in blue displayed within the table list.
@@ -114,7 +114,7 @@ Editing a Client
 ----------------
 
 You can edit a clients's details through the :ref:`search-client`
-available on the Client Data tab, by following these steps:
+available on the Data Entry tab, by following these steps:
 
 1. Create :ref:`search-client`
 2. From the Client Search table, click the Client Key.
@@ -135,7 +135,7 @@ Adding a New Client
 -------------------
 
 You can add a clients through the :ref:`search-client`
-available on the Client Data tab, by following these steps:
+available on the Data Entry tab, by following these steps:
 
 1. Create :ref:`search-client`
 2. Firstly double check the client is not already added.
@@ -170,7 +170,7 @@ Viewing a Client's Episodes
 ---------------------------
 
 You can view a clients's episodes through the :ref:`view-client-details`
-available on the Client Data tab, by following these steps:
+available on the Data Entry tab, by following these steps:
 
 1. Once :ref:`view-client-details`
 2. From the Client's Summary tab, you can shortcut straight to an episode by clicking
@@ -210,7 +210,7 @@ Editing a Client's Episode data
 -------------------------------
 
 You can edit a Client's Episode details through the :ref:`view-client-details`
-available on the Client Data tab, by following these steps:
+available on the Data Entry tab, by following these steps:
 
 1. Once :ref:`view-episodes`
 2. From the Client's Episode table, click the Episode Key.
@@ -230,7 +230,7 @@ Adding a Client's Episode data
 ------------------------------
 
 You can add a clients through the :ref:`view-client-details`
-available on the Client Data tab, by following these steps:
+available on the Data Entry tab, by following these steps:
 
 1. Once :ref:`view-episodes`
 2. Firstly double check the client does not have any open episode already showing. (A client can only have one open episode at a provider organsiation. :ref:`key-concepts-episode`)
@@ -265,7 +265,7 @@ Viewing a Client's Service Contacts for an Episode
 --------------------------------------------------
 
 You can view a client's service contacts through the :ref:`view-episodes`
-available on the Client Data tab, by following these steps:
+available on the Data Entry tab, by following these steps:
 
 1. Once :ref:`view-episodes`
 2. From the Client's Episode Details tab, click the Service Contacts Tab.
@@ -290,7 +290,7 @@ Editing a Client's Service Contacts for an Episode
 --------------------------------------------------
 
 You can edit a client's service contacts through the :ref:`view-episodes`
-available on the Client Data tab, by following these steps:
+available on the Data Entry tab, by following these steps:
 
 1. Once :ref:`view-service-contact`
 2. From the Service Contacts table, click the Service Contact Key.
@@ -310,7 +310,7 @@ Adding a Client's Service Contact data
 --------------------------------------
 
 You can edit a client's service contacts through the :ref:`view-episodes`
-available on the Client Data tab, by following these steps:
+available on the Data Entry tab, by following these steps:
 
 1. Once :ref:`view-service-contact`
 2. Firstly double check the service contact is not already showing.
@@ -345,7 +345,7 @@ Viewing a Client's Outcome Collection Occasions for an Episode
 --------------------------------------------------------------
 
 You can view a clients's outcome collection occasions through the :ref:`view-episodes`
-available on the Client Data tab, by following these steps:
+available on the Data Entry tab, by following these steps:
 
 1. Once :ref:`view-episodes`
 2. From the Client's Episode Details tab, click the Collection Occasions Tab.
@@ -388,16 +388,10 @@ Practitioners
 Finding a Practitioner at a Provider Organisaiton
 -------------------------------------------------
 
-You can search for practitioners assigned to an organisation through the organisation tab
-if you have been assigned the 'Data Entry' role, by following these steps:
+You can search for practitioners assigned to an organisation through the
+Data Entry tab, by following these steps:
 
-
-1. Navigate to a provider organisations details. (See :ref:`view-provider-organisation`)
-
-.. figure:: screen-shots/practitioners-detail-view.png
-   :alt: PMHC MDS Provider Organisation Practitioners View
-
-2. Click on the 'Practitioners' tab.
+1. Click on the Practitioners tab.
 
 .. figure:: screen-shots/practitioners-view.png
    :alt: PMHC MDS Practitioners Table View
@@ -407,8 +401,8 @@ if you have been assigned the 'Data Entry' role, by following these steps:
 Viewing a Practitioner
 ----------------------
 
-You can view a practitioner's details through the organisation tab
-if you have been assigned the 'Data Entry' role, by following these steps:
+You can view a practitioner's details through :ref:`find-practitioner`
+on the Data Entry tab, by following these steps:
 
 1. Once :ref:`find-practitioner`
 2. Click on the practitioner's key in blue displayed within the table list.
@@ -426,7 +420,7 @@ Viewing a Practitioner Providing Client Services
 ------------------------------------------------
 
 You can view a practitioner's details through :ref:`view-service-contact`
-on the Client Data tab, by following these steps:
+on the Data Entry tab, by following these steps:
 
 1. Once :ref:`view-service-contact`
 2. From the Service Contacts Details tab, click the Practitioner Key.
@@ -448,7 +442,7 @@ Editing a Practitioner
 You can edit a practitioner's details through the organisation tab, by following these steps:
 
 1. Once :ref:`view-practitioner`
-2. From the View Practitioner Details tab, click the Edit Practitioner tab.
+2. From the View Practitioner Details tab, click the Edit Details tab.
 3. Update the practitioner's details. Mandatory fields are marked with an *
 4. Click the blue 'Save' button.
 
@@ -461,16 +455,17 @@ You can edit a practitioner's details through the organisation tab, by following
 Adding a Practitioner
 ----------------------
 
-You can edit a practitioner's details through the organisation tab, by following these steps:
+You can add a practitioner's details through the organisation tab, by following these steps:
 
 1. Once :ref:`find-practitioner`
-2. From the View Practitioners tab, click the Add Practitioner tab.
+2. From the Practitioners tab, click the Add New Practitioner tab.
 3. Enter the practitioner's details. Mandatory fields are marked with an *
 4. Click the blue 'Save' button.
 
 .. figure:: screen-shots/practitioners-add-view.png
    :alt: PMHC MDS Practitioner Details View
 
+Alternately, practitioner records can be uploaded in bulk. See :ref:`upload`
 
 .. _delete-practitioner:
 

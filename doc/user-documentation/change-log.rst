@@ -3,6 +3,21 @@
 User Guide Change log
 =====================
 
+11/7/2017
+---------
+
+* Edited  :ref:`find-practitioner`
+
+* Edited  :ref:`view-practitioner`
+
+* Edited :ref:`add-practitioner`
+
+* Edited  :ref:`edit-practitioner`
+
+* Edited  :ref:`delete-practitioner`
+
+* Updated screenshots for :ref:`data-entry`
+
 30/6/2017
 ---------
 
@@ -24,7 +39,7 @@ User Guide Change log
 
 * Added :ref:`delete-service-contact`
 
-* Updated screenshots for :ref:`client-data`
+* Updated screenshots for :ref:`data-entry`
 
 14/6/2017
 ---------
@@ -35,9 +50,9 @@ User Guide Change log
 
 * Added :ref:`delete-practitioner`
 
-* Moved :ref:`find-practitioner` under Client Data tab
+* Moved :ref:`find-practitioner` under Data Entry tab
 
-* Moved :ref:`view-practitioner` under Client Data tab
+* Moved :ref:`view-practitioner` under Data Entry tab
 
 * Moved :ref:`viewing-organisational-users` under Users tab
 
@@ -46,7 +61,7 @@ User Guide Change log
 26/5/2017
 ---------
 
-* Updated screenshots for :ref:`client-data` documentation
+* Updated screenshots for :ref:`data-entry` documentation
 
 * Updated screenshots for :ref:`adding-a-user`
 
@@ -61,7 +76,7 @@ User Guide Change log
 18/5/2017
 ---------
 
-* Added :ref:`client-data` documentation
+* Added :ref:`data-entry` documentation
 
 * Added :ref:`view-practitioner`
 
