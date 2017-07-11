@@ -455,7 +455,7 @@ You can edit a practitioner's details through the organisation tab, by following
 Adding a Practitioner
 ----------------------
 
-You can edit a practitioner's details through the organisation tab, by following these steps:
+You can add a practitioner's details through the organisation tab, by following these steps:
 
 1. Once :ref:`find-practitioner`
 2. From the Practitioners tab, click the Add New Practitioner tab.
@@ -465,6 +465,7 @@ You can edit a practitioner's details through the organisation tab, by following
 .. figure:: screen-shots/practitioners-add-view.png
    :alt: PMHC MDS Practitioner Details View
 
+Alternately, practitioner records can be uploaded in bulk. See :ref:`upload`
 
 .. _delete-practitioner:
 
