@@ -123,7 +123,7 @@ available on the Data Entry tab, by following these steps:
 5. Update the Client's details. Mandatory fields are marked with an * (Specification :ref:`Client Data Elements <client-data-elements>`)
 6. Click the blue 'Save' button. (If you decide not to save changes, you can simply navigate away from this screen)
 
-.. figure:: screen-shots/client-edit-details.png
+.. figure:: screen-shots/client-view-edit.png
    :alt: Client Data Edit Details
 
 You will receive confirmation that the Client's details have been saved, and it will
