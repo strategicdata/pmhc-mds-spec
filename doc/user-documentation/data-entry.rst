@@ -385,8 +385,8 @@ Practitioners
 
 .. _find-practitioner:
 
-Finding a Practitioner at a Provider Organisaiton
--------------------------------------------------
+Finding a Practitioner
+----------------------
 
 You can search for practitioners assigned to an organisation through the
 Data Entry tab, by following these steps:
