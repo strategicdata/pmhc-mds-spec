@@ -3,6 +3,15 @@
 User Guide Change log
 =====================
 
+20/7/2017
+---------
+
+* Added :ref:`add-collection-occasion`
+
+* Added :ref:`edit-collection-occasion`
+
+* Added :ref:`delete-collection-occasion`
+
 11/7/2017
 ---------
 

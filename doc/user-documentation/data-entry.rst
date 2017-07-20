@@ -309,7 +309,7 @@ and it will now be displaying these new details in the View service Contact Deta
 Adding a Client's Service Contact data
 --------------------------------------
 
-You can edit a client's service contacts through the :ref:`view-episodes`
+You can add a client's service contacts through the :ref:`view-episodes`
 available on the Data Entry tab, by following these steps:
 
 1. Once :ref:`view-service-contact`
@@ -339,16 +339,16 @@ In the interim, if this causes you any significant issues please email support@p
 Outcome Collection Occasions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. _view-client-collection-occasion:
+.. _view-collection-occasion:
 
 Viewing a Client's Outcome Collection Occasions for an Episode
 --------------------------------------------------------------
 
-You can view a clients's outcome collection occasions through the :ref:`view-episodes`
+You can view a clients's outcome collection occasions through :ref:`view-episodes`
 available on the Data Entry tab, by following these steps:
 
-1. Once :ref:`view-episodes`
-2. From the Client's Episode Details tab, click the Collection Occasions Tab.
+1. Once :ref:`Viewing the Client's Episode <view-episodes>`
+2. Click the Episode Collection Occasions Tab.
    This tab displays in brackets the total number of collection occasions recorded
    in the PMHC MDS for this episode.
 
@@ -357,7 +357,7 @@ A table will display all the Collection Occasions linked to this Client's Episod
 .. figure:: screen-shots/client-collection-occasions-view.png
    :alt: Client Episode Collection Occasions Table View
 
-3. To view the Collection Occasions details, click the Blue Service Contact Key.
+4. To view the Collection Occasions details, click the Blue Collection Occasions Key.
 
 .. figure:: screen-shots/client-collection-occasions-details.png
    :alt: Client Episode Collection Occasions Details View
@@ -366,16 +366,68 @@ A page will display the Collection Occasions details as recorded via the
 :ref:`Outcome Collection Occasion Data Elements <outcome-collection-occasion-data-elements>`.
 
 
-.. _add-client-collection-occasion:
+.. _edit-collection-occasion:
+
+Editing a Client's Outcome Collection Occasions for an Episode
+--------------------------------------------------------------
+
+You can edit a client's Outcome Collection Occasions through :ref:`view-collection-occasion`
+available on the Data Entry tab, by following these steps:
+
+1. Once :ref:`view-collection-occasion`
+2. Click the Collection Occasions Key.
+3. Click Edit Details tab.
+4. Update the Client's Collection Occasions details. Mandatory fields are marked with an * (Specification :ref:`Collection Occasions Data Elements <outcome-collection-occasion-data-elements>`)
+5. Click the blue 'Save' button. (If you decide not to save changes, you can simply navigate away from this screen)
+
+.. figure:: screen-shots/client-collection-occasions-edit1.png
+   :alt: Client Collection Occasions Edit Details
+
+.. figure:: screen-shots/client-collection-occasions-edit2.png
+   :alt: Client Collection Occasions Edit Details
+
+You will receive confirmation that the Client's Collection Occasions details have been saved,
+and it will now be displaying these new details in the View Collection Occasions Details tab.
+
+.. _add-collection-occasion:
 
 Adding a Client's Outcome Collection Occasions data
 ---------------------------------------------------
 
-The Data Entry Interface is due to be fully integrated into the PMHC MDS
-in the coming weeks.
+You can add a client's Outcome Collection Occasions through :ref:`view-collection-occasion`
+available on the Data Entry tab, by following these steps:
 
-An update will be circulated to all current users and the mailing list
-when this new feature is added.
+1. Once :ref:`view-collection-occasion`
+2. Firstly double check the Collection Occasions is not already showing.
+3. Click the Add New Collection Occasion tab.
+4. Select the Collection Occassion Measure, either K10+ or K5. (The SDQ will be added in the near future. (Development Release Schedule :ref:`dev-data-entry-faq`)
+
+.. figure:: screen-shots/client-collection-occasions-measure.png
+   :alt: Client Data Add Collection Occasions
+
+5. Select to enter the item scores or the total score. (Individual item scores will eventually be required)
+
+.. figure:: screen-shots/client-collection-occasions-score.png
+   :alt: Client Data Add Collection Occasions
+
+6. Enter the Client's Collection Occasions details for that episode. Mandatory fields are marked with an * (Specification :ref:`Collection Occasions Data Elements <outcome-collection-occasion-data-elements>`)
+7. Click the blue 'Save' button. (If you decide not to add this client's episode, you can simply navigate away from this screen)
+
+.. figure:: screen-shots/client-collection-occasions-add.png
+   :alt: Client Data Add Collection Occasions
+
+You will receive confirmation that the Client's Collection Occasions details have been added,
+and it will now be displaying these new details in the View Collection Occasions Details tab.
+
+.. _delete-collection-occasion:
+
+Deleting an Outcome Collection Occasions
+----------------------------------------
+
+You can not currently delete a client's service contact for an episode. The
+service contact delete feature will be released in July 2017.
+
+In the interim, if this causes you any significant issues please email support@pmhc-mds.com.
 
 
 .. _practitioner:
@@ -423,10 +475,10 @@ You can view a practitioner's details through :ref:`view-service-contact`
 on the Data Entry tab, by following these steps:
 
 1. Once :ref:`view-service-contact`
-2. From the Service Contacts Details tab, click the Practitioner Key.
+2. From the Outcome Collection Occasions Details tab, click the Practitioner Key.
 
 .. figure:: screen-shots/client-service-contacts-practitioner-key.png
-   :alt: Practitioner Key on Service Contacts Details
+   :alt: Practitioner Key on Outcome Collection Occasions Details
 
 A page will display the Practitioner's details as recorded via the :ref:`Practitioner Data Elements <practitioner-data-elements>`.
 
