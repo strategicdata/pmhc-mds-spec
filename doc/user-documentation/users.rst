@@ -61,7 +61,7 @@ assigned. The table below lists the tabs that will be shown for each role:
 +-------------------------+------------------------------+
 | Reporting               | Data Extraction              |
 +-------------------------+------------------------------+
-| Data Entry              | Organisations, Client Data   |
+| Data Entry              | Data Entry                   |
 +-------------------------+------------------------------+
 | All users               | SLK                          |
 +-------------------------+------------------------------+
