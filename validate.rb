@@ -174,11 +174,6 @@ class PMHC < Csvlint::Cli
               validator.build_errors(:invalid_proficiency_in_spoken_english, :client,
                 current_line+1, prof_english_index+1, prof_english)
             end
-          else
-            if age < 5 or main_lang_at_home == english
-              validator.build_errors(:invalid_proficiency_in_spoken_english, :client,
-                current_line+1, prof_english_index+1, prof_english)
-            end
           end
         end
 
@@ -266,18 +261,9 @@ class PMHC < Csvlint::Cli
               unless dob == nil
                 dob_date = Date.new(dob[:year], dob[:month], dob[:day])
                 age = age_in_completed_years( dob_date )
-                unless age == nil
-                  if row[income_source_index] == "0"
-                    if age >= 16
+                if age != nil and row[income_source_index] == "0" and age >= 16
                       validator.build_errors(:invalid_source_of_cash_income, :episode,
                         current_line+1, income_source_index+1, row[income_source_index])
-                    end
-                  else
-                    if age < 16
-                      validator.build_errors(:invalid_source_of_cash_income, :episode,
-                        current_line+1, income_source_index+1, row[income_source_index])
-                    end
-                  end
                 end
               end
             end
