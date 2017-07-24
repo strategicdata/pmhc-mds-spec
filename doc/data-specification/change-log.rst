@@ -3,6 +3,15 @@
 Data Specification Change log
 =============================
 
+24/7/2017 
+---------
+
+* Data model and specifications
+
+  * Upload specification
+
+    * Example file updated so that practitioners file/worksheet validates correctly
+
 6/7/2017 - Version 1.0.10
 -------------------------
 
