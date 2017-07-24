@@ -3,6 +3,15 @@
 Frequently Asked Questions Change log
 =====================================
 
+21/6/2017
+---------
+
+System - Development FAQs
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Updated the question to :ref:`dev-data-entry-faq`
+
+
 6/7/2017
 --------
 
