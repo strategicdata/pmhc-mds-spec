@@ -539,12 +539,7 @@ class PMHC < Csvlint::Cli
           using_item_scores = false
           for i in 1..42
             item_index = header.index("sdq_item#{i}")
-            if valid_items.include?(i)
-              if row[item_index] == "8"
-                validator.build_errors(:required_sdq_item_missing, :sdq,
-                  current_line+1, item_index+1, row[item_index])
-              end
-            else
+            unless valid_items.include?(i)
               unless row[item_index] == "8" or (row[item_index] == "9")
                 validator.build_errors(:invalid_sdq_item_included, :sdq,
                   current_line+1, item_index+1, row[item_index])
