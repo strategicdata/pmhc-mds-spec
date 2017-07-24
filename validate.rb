@@ -467,29 +467,6 @@ class PMHC < Csvlint::Cli
 
       current_line = 1
       data.each do |row|
-        # Must use either item scores or total scores, not both
-        using_item_scores = 0
-        for i in items
-          item_index = header.index("#{measure}_item#{i}")
-          unless row[item_index] == "9"
-            using_item_scores = 1
-          end
-        end
-
-        using_total_scores = 0
-        scales.each do |scale|
-          item_index = header.index(scale)
-          unless row[item_index] == nil
-            using_total_scores = 1
-            break
-          end
-        end
-
-        if using_item_scores == 1 and using_total_scores == 1
-          validator.build_errors(:item_scores_and_total_scores_used, "#{measure}",
-            current_line+1, item_index+1, row[item_index])
-        end
-
         # Measure date cannot be in the future
         md = row[measure_date_index]
         measure_date = nil
@@ -536,12 +513,12 @@ class PMHC < Csvlint::Cli
 
     def validate_sdq(validator, data)
       versions = {
-        "PC101" => [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,36,37,38],
-        "PC201" => [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,28,29,30,31,32,33,34,35],
-        "PY101" => [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,36,37,38],
-        "PY201" => [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,28,29,30,31,32,33,34,35],
-        "YR101" => [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,39,40,41,42],
-        "YR201" => [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,28,29,30,31,32,33,39,40,41,42]
+        "PC101" => [*1..33, *36..38],
+        "PC201" => [*1..26, *28..35],
+        "PY101" => [*1..33, *36..38],
+        "PY201" => [*1..26, *28..35],
+        "YR101" => [*1..33, *39..42],
+        "YR201" => [*1..26, *28..33, *39..42]
       }
       sdq_scales = [ "sdq_emotional_symptoms", "sdq_conduct_problem", "sdq_hyperactivity",
                      "sdq_peer_problem", "sdq_prosocial", "sdq_total", "sdq_impact"]
@@ -555,9 +532,6 @@ class PMHC < Csvlint::Cli
       data.each do |row|
         valid_items = versions[row[version_index]]
 
-        # Must use either item scores or total scores, not both
-        using_total_scores = sdq_scales.any? { |scale| row[header.index(scale)] != nil }
-
         # Error should be thrown through foreign key checking if the version is
         # not valid. We don't want to double up on error messages.
         unless valid_items == nil
@@ -566,21 +540,17 @@ class PMHC < Csvlint::Cli
           for i in 1..42
             item_index = header.index("sdq_item#{i}")
             if valid_items.include?(i)
-              unless row[item_index] == "9"
-                using_item_scores = true
+              if row[item_index] == "8"
+                validator.build_errors(:required_sdq_item_missing, :sdq,
+                  current_line+1, item_index+1, row[item_index])
               end
             else
-              unless row[item_index] == "8" or (row[item_index] == "9" and using_total_scores)
+              unless row[item_index] == "8" or (row[item_index] == "9")
                 validator.build_errors(:invalid_sdq_item_included, :sdq,
                   current_line+1, item_index+1, row[item_index])
               end
             end
           end
-        end
-
-        if using_item_scores and using_total_scores
-          validator.build_errors(:item_scores_and_total_scores_used, :sdq,
-            current_line+1, item_index, row[item_index])
         end
 
         # Measure date cannot be in the future
