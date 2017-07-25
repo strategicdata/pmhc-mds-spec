@@ -185,10 +185,7 @@ would be Depression and mapped to code 200, as if specified as a single diagnosi
 
 All other referrals will be mapped to
 
-:905: Other
-
-Note: There is work in progress to determine if its possible to define an ordering
-of a referral's diagnoses where multiple ATAPS diagnosis were specified. If it is determined that such a mapping is possible further announcements will be made via the PMHC MDS mailing list."
+:905: Other"
 ":ref:`dfn-additional_diagnosis`
 
 (additional_diagnosis)
@@ -217,10 +214,7 @@ F43.2 Adjustment disorder and mapped to code 601.
 
 For all other referrals, the additional diagnosis is mapped to
 
-:905: Other
-
-Note: There is work in progress to determine if its possible to define an ordering
-of a referral's diagnoses where multiple ATAPS diagnosis were specified. If it is determined that such a mapping is possible further announcements will be made via the PMHC MDS mailing list."
+:905: Other"
 ":ref:`dfn-medication_antipsychotics`
 
 (medication_antipsychotics)",string,"If ATAPS referral med_pheno is TRUE (or `1`) then
