@@ -3,6 +3,16 @@
 Frequently Asked Questions Change log
 =====================================
 
+26/6/2017
+---------
+
+System - Development FAQs
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Updated the section :ref:`pmhc-mds-development`
+* Removed the question `What features will be included in Stage Two development?`
+* Added the section :ref:`dev-reports-faq`
+
 21/6/2017
 ---------
 
@@ -10,7 +20,6 @@ System - Development FAQs
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * Updated the question to :ref:`dev-data-entry-faq`
-
 
 6/7/2017
 --------
@@ -96,14 +105,12 @@ System - Data Entry FAQs
 
 * Added the question :ref:`slk-as-client-key-faq`
 
-* Removed the question
-
 System - Development FAQs
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * Added the question :ref:`stage-two-date-faq`
 
-* Added the question :ref:`stage-two-features-faq`
+* Added the question `What features will be included in Stage Two development?`
 
 System - Uploading FAQs
 ~~~~~~~~~~~~~~~~~~~~~~~

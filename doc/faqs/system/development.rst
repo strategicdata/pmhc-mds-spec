@@ -1,3 +1,5 @@
+.. _pmhc-mds-development:
+
 Development of the PMHC Minimum Data Set
 ----------------------------------------
 
@@ -49,35 +51,26 @@ The remaining features will be rolled out iteratively over the following weeks, 
 
 Regularly check the announcements on the `PMHC MDS home page <https://pmhc-mds.net/#/>`_ to keep informed.
 
+.. _dev-reports-faq:
+
+Reporting
+~~~~~~~~~
+
+The following reports will be rolled out iteratively over the following weeks:
+
+* Category A reports: Monitoring progress of MDS implementation
+* Category B reports: Monitoring overall service delivery
+* Category C reports: Monitoring implementation of stepped care
+* Category D reports: Key Performance Indicators
+* Category E reports: Reports for data managers to monitor data supply
+
+Category E reports will be implemented first, followed by Category A reports.
+
+Regularly check the announcements on the `PMHC MDS home page <https://pmhc-mds.net/#/>`_ to keep informed.
+
 .. _dev-MCI-faq:
 
-Master Client Index (End 2017)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Master Client Index
+~~~~~~~~~~~~~~~~~~~
 
 Refer to the recent Department announcement on the `INFORMATION and ACTION: PHN CEO - Primary Mental Health Care Minimum Data Set Update | June 21, 2017 <https://www.pmhc-mds.com/communications/#/2017/06/21/FOR-INFORMATION-and-ACTION-PHN-CEO-Primary-Mental-Health-Care-Minimum-Data-Set-Update/>`_.
-
-.. _stage-two-features-faq:
-
-What features will be included in Stage Two development?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Stage Two will feature:
-
-* Basic Summary Reports (Mid 2017)
-* Comprehensive Reports (Late 2017)
-* PHN Reports (Late 2017)
-
-Regularly check the announcements on the `PMHC MDS home page <https://pmhc-mds.net/#/>`_ to keep informed.
-
-.. _future-milestone-releases-faq:
-
-Future Milestone Releases
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
-We will continue to release additional features throughout the next financial year, and are currently scheduled to be:
-
-* Initial Summary Reports
-* Comprehensive Departmental Reports
-* PHN Reports
-
-Regularly check the announcements on the `PMHC MDS home page <https://pmhc-mds.net/#/>`_ to keep informed.
