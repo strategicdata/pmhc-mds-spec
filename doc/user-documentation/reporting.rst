@@ -51,51 +51,37 @@ E1 - High level summary of overall volumes by entity
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This report is designed to provide a ‘one page’ view, with data aggregated for the
-specified reporting period, covering counts of clients, episodes, service contacts and
-practitioners, without any filtering for business rules.
+specified reporting period, covering counts of clients, episodes, service contacts,
+collection occasions and practitioners, without any filtering for business rules.
 
 Key specifications:
 
-* Clients to be counted regardless of number of episodes.
-* Episodes to be counted regardless of number of Service Contacts.
-* K10+ to be counted regardless of number of Service Contacts.
-* K5 to be counted regardless of number of Service Contacts.
-* SDQ to be counted regardless of number of Service Contacts.
-* Practitioners to be counted regardless of number of Service Contacts.
-* All dates refer to date of upload or data entry, not date of service.
+* All records to be counted with no filtering.
+* All dates refer to date of insertion, not date of service.
 
 E2 - Volume trends
 ~~~~~~~~~~~~~~~~~~
 
-This report is designed to show volume trends in clients/episodes/service
-contacts/collection occasions/practitioners
+This report is designed to show volume trends in clients, episodes, service
+contacts, collection occasions and practitioners.
 
 Key specifications:
 
-* Clients to be counted regardless of number of episodes
-* Episodes to be counted regardless of number of Service Contacts.
-* K10+ to be counted regardless of number of Service Contacts.
-* K5 to be counted regardless of number of Service Contacts.
-* SDQ to be counted regardless of number of Service Contacts.
-* Practitioners to be counted regardless of number of Service Contacts.
-* All dates refer to date of upload or data entry, not date of service.
+* All records to be counted with no filtering.
+* All dates refer to date of insertion, not date of service.
 
 E3 - Activity per day
 ~~~~~~~~~~~~~~~~~~~~~
 
-This report will show a summary of the number of clients/episodes/service
-contacts/collections occasions/practitioners added each day. Its purpose is to give
-entities information about when and how much data was added.
+This report will show a summary of the number of clients, episodes, service
+contacts, collections occasions and practitioners added or modified each day.
+Its purpose is to give entities information about when and how much data was
+added or modified.
 
 Key specifications:
 
-* Clients to be counted regardless of number of episodes
-* Episodes to be counted regardless of number of Service Contacts.
-* K10+ to be counted regardless of number of Service Contacts.
-* K5 to be counted regardless of number of Service Contacts.
-* SDQ to be counted regardless of number of Service Contacts.
-* Practitioners to be counted regardless of number of Service Contacts.
-* All dates refer to date of upload or data entry, not date of service.
+* All records to be counted with no filtering.
+* All dates refer to date of modification, not date of service.
 
 .. _data-extraction:
 
