@@ -40,9 +40,10 @@ The second feature, **Practitioners Data Entry Interface**, was released in `v0.
 
 The third feature, **Client, Episode and Service Contact Data Entry Interface**, was released in `v0.12.0 <https://www.pmhc-mds.com/communications/#/2017/06/30/Update-to-the-PMHC-MDS-v0-12-0-and-Data-Specifications-v1-0-9/>`_.
 
+The fourth feature, **K10+ and K5 Outcome Collection Occasion Data Entry Interface**, was released in `v0.13.2 <https://www.pmhc-mds.com/communications/#/2017/07/20/Update-to-the-PMHC-MDS-v-0-13-2/>`_.
+
 The remaining features will be rolled out iteratively over the following weeks, and will be:
 
-* K10+ and K5 Data Entry Interface
 * SDQ Data Entry Interface
 * An Online K5 and K10+ Outcome Measures Self-Service Interface
 
@@ -67,6 +68,8 @@ Stage Two will feature:
 * PHN Reports (Late 2017)
 
 Regularly check the announcements on the `PMHC MDS home page <https://pmhc-mds.net/#/>`_ to keep informed.
+
+.. _future-milestone-releases-faq:
 
 Future Milestone Releases
 ~~~~~~~~~~~~~~~~~~~~~~~~~
