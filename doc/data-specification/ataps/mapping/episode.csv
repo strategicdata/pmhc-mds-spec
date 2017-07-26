@@ -158,12 +158,34 @@ No diagnosis field defined                               :999: Missing
 :icd_f98: F98 Enuresis                                   :506: Other disorder of childhood and adolescence
 =======================================================  =====================================================
 
+
+Referrals where TWO diagnosis fields were specified, the principal diagnosis is determined using the following hierarchies.
+
+:ATAPS referral diagnosis hierarchy:
+  :icd_f3: Depression, then
+  :icd_f4: Anxiety Disorders, then
+  :icd_f5: Unexplained Somatic.
+
+
+For pairs of children diagnoses
+
+:ATAPS children referral diagnosis hierarchy:
+  :icd_f32: F32 Depression, then
+  :icd_f40_f41_f41_1: F40, F41, F41.1 Anxiety, then
+  :icd_f43_2: F43.2 Adjustment disorder, then
+  :icd_f44: F44 Dissociative (conversion) disorder, then
+  :icd_f50: F50 Eating disorders, then
+  :icd_f51: F51 Sleep problems, then
+  :icd_f90: F90 Hyperkinetic (attention deficit) disorder, then
+  :icd_f91: F91 Conduct disorder.
+
+For example, if a referral was flagged as being for Depression and Unexplained Somatic, the principal diagnosis
+would be Depression and mapped to code 200, as if specified as a single diagnosis above.
+
+
 All other referrals will be mapped to
 
-:905: Other
-
-Note: There is work in progress to determine if its possible to define an ordering
-of a referral's diagnoses where multiple ATAPS diagnosis were specified. If it is determined that such a mapping is possible further announcements will be made via the PMHC MDS mailing list."
+:905: Other"
 ":ref:`dfn-additional_diagnosis`
 
 (additional_diagnosis)
@@ -178,12 +200,21 @@ Referrals where exactly ONE diagnosis field was specified, the additional diagno
 
 :000: No additional diagnosis
 
+For referrals where TWO diagnosis fields were specified, the additional diagnosis is determined using the same hierarchies
+as described in the principal diagnosis when two diagnoses were specified for the referral. The diagnosis NOT selected as
+the principal diagnosis is mapped as the additional diagnosis.
+
+For example, if a referral was flagged as being for Depression and Unexplained Somatic,
+the additional diagnosis would be Unexplained Somatic and mapped to code 603,
+using the table above for a single principal diagnosis.
+
+Similarlly for the children diagnosis options. If a referral was recorded with F32 Depression and F43.2 Adjustment disorder,
+the principal diagnosis would be F32 Depression and mapped to code 200, while the additional diagnosis would be
+F43.2 Adjustment disorder and mapped to code 601.
+
 For all other referrals, the additional diagnosis is mapped to
 
-:905: Other
-
-Note: There is work in progress to determine if its possible to define an ordering
-of a referral's diagnoses where multiple ATAPS diagnosis were specified. If it is determined that such a mapping is possible further announcements will be made via the PMHC MDS mailing list."
+:905: Other"
 ":ref:`dfn-medication_antipsychotics`
 
 (medication_antipsychotics)",string,"If ATAPS referral med_pheno is TRUE (or `1`) then
