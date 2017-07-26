@@ -606,7 +606,7 @@ class PMHC < Csvlint::Cli
           episode_data.each do |episode_row|
             if episode_row[episode_episode_key_index] == row[episode_key_index]
               rd = episode_row[referral_date_index]
-              unless ( rd == nil and measure_date == nil )
+              unless ( rd == nil or measure_date == nil )
                 referral_date = Date.new( rd[:year], rd[:month], rd[:day] )
                 if ( measure_date <=> referral_date ) < 0
                   validator.build_errors(:invalid_measure_date, :sdq, current_line+1,
