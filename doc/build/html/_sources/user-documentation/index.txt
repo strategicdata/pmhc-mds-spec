@@ -13,7 +13,6 @@ User Guide
    users
    upload
    data-entry
-   data-extraction
    reporting
    slk
    change-log

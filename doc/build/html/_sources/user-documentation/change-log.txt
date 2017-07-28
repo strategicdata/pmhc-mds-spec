@@ -3,6 +3,15 @@
 User Guide Change log
 =====================
 
+28/7/2017
+---------
+
+* Removed `Reporting` documentation
+
+* Added :ref:`reports` documentation
+
+* Moved :ref:`data-extraction` under :ref:`reports`
+
 20/7/2017
 ---------
 
@@ -120,7 +129,7 @@ User Guide Change log
 
 * Added :ref:`data-extraction` documentation
 
-* Added :ref:`reporting` documentation
+* Added `Reporting` documentation
 
 * Added Reporting role information to the :ref:`roles` section
 
