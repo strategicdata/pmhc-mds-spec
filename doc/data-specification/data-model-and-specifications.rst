@@ -50,6 +50,8 @@ Provider Organisation
 The Provider Organisation is the business entity that the PHN has commissioned
 to provide the service.
 
+See :ref:`provider-organisation-data-elements` for the data elements for a provider organisation.
+
 .. _key-concepts-practitioner:
 
 Practitioner
@@ -57,12 +59,16 @@ Practitioner
 
 The Practitioner is the person who is delivering the service.
 
+See :ref:`practitioner-data-elements` for the data elements for a practitioner.
+
 .. _key-concepts-client:
 
 Client
 ^^^^^^
 
 The Client is the person who is receiving the service.
+
+See :ref:`client-data-elements` for the data elements for a client.
 
 .. _key-concepts-episode:
 
@@ -101,6 +107,8 @@ across PHN-commissioned services:
   has been lost with the client. A new episode is deemed to commence if the
   person re-presents to the organisation.
 
+See :ref:`episode-data-elements` for the data elements for a episode.
+
 .. _key-concepts-service-contact:
 
 Service Contact
@@ -127,6 +135,8 @@ Service Contact
   <http://meteor.aihw.gov.au/content/index.phtml/itemId/493304>`_ with
   modification.
 
+See :ref:`service-contact-data-elements` for the data elements for a service contact.
+
 .. _key-concepts-outcome-collection-occasion:
 
 Outcome Collection Occasion
@@ -140,6 +150,9 @@ frequent if clinically indicated and agreed by the client.
 Measures will be the Kessler Psychological Distress Scale K10+ (in the case of
 Aboriginal and Torres Strait Islander clients, the K5) as well as the Strengths
 & Difficulties Questionnaires.
+
+See :ref:`outcome-collection-occasion-data-elements` for the data elements for an outcome
+collection occasion.
 
 .. _record-formats:
 

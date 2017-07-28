@@ -5,4 +5,7 @@
   - If 'Face to Face' is selected, a value other than 'Not applicable' must
     be selected for Service Contact Venue
   - If 'Face to Face' is selected a valid Australian
-    postcode must be entered for Service Contact Postcode.
+    postcode must be entered for Service Contact Postcode. The unknown postcode is not valid.
+
+
+If Service Contact Modality is not 'Face to Face' the postcode must be entered as unknown 9999.

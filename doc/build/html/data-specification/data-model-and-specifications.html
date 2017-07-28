@@ -342,14 +342,17 @@ right care in the right place at the right time.</p>
 <span id="key-concepts-provider-organisation"></span><h3>Provider Organisation<a class="headerlink" href="#provider-organisation" title="Permalink to this headline">¶</a></h3>
 <p>The Provider Organisation is the business entity that the PHN has commissioned
 to provide the service.</p>
+<p>See <a class="reference internal" href="#provider-organisation-data-elements"><span class="std std-ref">Provider Organisation</span></a> for the data elements for a provider organisation.</p>
 </div>
 <div class="section" id="practitioner">
 <span id="key-concepts-practitioner"></span><h3>Practitioner<a class="headerlink" href="#practitioner" title="Permalink to this headline">¶</a></h3>
 <p>The Practitioner is the person who is delivering the service.</p>
+<p>See <a class="reference internal" href="#practitioner-data-elements"><span class="std std-ref">Practitioner</span></a> for the data elements for a practitioner.</p>
 </div>
 <div class="section" id="client">
 <span id="key-concepts-client"></span><h3>Client<a class="headerlink" href="#client" title="Permalink to this headline">¶</a></h3>
 <p>The Client is the person who is receiving the service.</p>
+<p>See <a class="reference internal" href="#client-data-elements"><span class="std std-ref">Client</span></a> for the data elements for a client.</p>
 </div>
 <div class="section" id="episode">
 <span id="key-concepts-episode"></span><h3>Episode<a class="headerlink" href="#episode" title="Permalink to this headline">¶</a></h3>
@@ -383,6 +386,7 @@ has been lost with the client. A new episode is deemed to commence if the
 person re-presents to the organisation.</p>
 </li>
 </ul>
+<p>See <a class="reference internal" href="#episode-data-elements"><span class="std std-ref">Episode</span></a> for the data elements for a episode.</p>
 </div>
 <div class="section" id="service-contact">
 <span id="key-concepts-service-contact"></span><h3>Service Contact<a class="headerlink" href="#service-contact" title="Permalink to this headline">¶</a></h3>
@@ -411,6 +415,7 @@ appointment).</p>
 modification.</p>
 </li>
 </ul>
+<p>See <a class="reference internal" href="#service-contact-data-elements"><span class="std std-ref">Service Contact</span></a> for the data elements for a service contact.</p>
 </div>
 <div class="section" id="outcome-collection-occasion">
 <span id="key-concepts-outcome-collection-occasion"></span><h3>Outcome Collection Occasion<a class="headerlink" href="#outcome-collection-occasion" title="Permalink to this headline">¶</a></h3>
@@ -421,6 +426,8 @@ frequent if clinically indicated and agreed by the client.</p>
 <p>Measures will be the Kessler Psychological Distress Scale K10+ (in the case of
 Aboriginal and Torres Strait Islander clients, the K5) as well as the Strengths
 &amp; Difficulties Questionnaires.</p>
+<p>See <a class="reference internal" href="#outcome-collection-occasion-data-elements"><span class="std std-ref">Outcome Collection Occasion</span></a> for the data elements for an outcome
+collection occasion.</p>
 </div>
 </div>
 <div class="section" id="record-formats">
@@ -12728,7 +12735,7 @@ option for clinicians, it is for administrative use only.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><dl class="first last docutils">
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><dl class="first docutils">
 <dt>0 - No contact took place</dt>
 <dd><p class="first last">Only use this code where the service contact is recorded as a no show.</p>
 </dd>
@@ -12737,10 +12744,11 @@ option for clinicians, it is for administrative use only.</p>
 <li>If &#8216;Face to Face&#8217; is selected, a value other than &#8216;Not applicable&#8217; must
 be selected for Service Contact Venue</li>
 <li>If &#8216;Face to Face&#8217; is selected a valid Australian
-postcode must be entered for Service Contact Postcode.</li>
+postcode must be entered for Service Contact Postcode. The unknown postcode is not valid.</li>
 </ul>
 </dd>
 </dl>
+<p class="last">If Service Contact Modality is not &#8216;Face to Face&#8217; the postcode must be entered as unknown 9999.</p>
 </td>
 </tr>
 </tbody>
@@ -12967,6 +12975,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 defined list of categories.  Where more than service type was provided select
 that which accounted for most provider time. Service providers are required
 to report on Service Type for all Service Contacts.</p>
+<p><em>Note: NEC is used for &#8216;Not Elsewhere Classified&#8217;. For these records, only use these service types if they cannot be classified by any of the other service options.</em></p>
 <dl class="last docutils">
 <dt>0 - No contact took place</dt>
 <dd><p class="first last">Only use this code where the service contact is recorded as a no show.</p>
