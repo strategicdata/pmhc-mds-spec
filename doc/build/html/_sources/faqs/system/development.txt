@@ -17,7 +17,6 @@ Stage Two development has been split into several components as outlined below:
 
 * :ref:`dev-data-entry-faq`
 * :ref:`dev-reports-faq`
-* :ref:`dev-reports-faq`
 
 Once more information is available, we will circulate more specific timelines.
 
@@ -47,15 +46,16 @@ Regularly check the announcements on the `PMHC MDS home page <https://pmhc-mds.n
 Reporting
 ~~~~~~~~~
 
+* Category E reports: Reports for data managers to monitor data supply, was released in `v0.14.0 <https://www.pmhc-mds.com/communications/#/2017/07/28/Update-to-the-PMHC-MDS-v-0-14-0/>`_.
+
 The following reports will be rolled out iteratively over the following weeks:
 
 * Category A reports: Monitoring progress of MDS implementation
 * Category B reports: Monitoring overall service delivery
 * Category C reports: Monitoring implementation of stepped care
 * Category D reports: Key Performance Indicators
-* Category E reports: Reports for data managers to monitor data supply (Currently in development)
 
-Category E reports will be implemented first, followed by Category A reports.
+Category A reports will be implemented next.
 
 Regularly check the announcements on the `PMHC MDS home page <https://pmhc-mds.net/#/>`_ to keep informed.
 

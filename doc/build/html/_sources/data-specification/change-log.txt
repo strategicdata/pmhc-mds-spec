@@ -3,7 +3,16 @@
 Data Specification Change log
 =============================
 
-24/7/2017 
+28/7/2017
+---------
+
+* :ref:`ataps-to-pmhc-mapping`
+
+  * Updated to show the mapping of ATAPS MDS diagnosis fields to PMHC
+    Principal Diagnosis and Additional Diagnsis where two ATAPS diagnosis
+    fields have been specified
+
+24/7/2017
 ---------
 
 * Data model and specifications
@@ -19,7 +28,7 @@ Data Specification Change log
 
   * Data model
 
-    * Updated data model diagram following Department of Health communication on 21 June, 2017 
+    * Updated data model diagram following Department of Health communication on 21 June, 2017
       regarding the Master Client Index
 
 30/6/2017 - Version 1.0.9
