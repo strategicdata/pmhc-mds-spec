@@ -12,7 +12,7 @@ who has the 'User Management' role. If you are unsure who has the 'User Manageme
 role please email the PMHC Helpdesk at support@pmhc-mds.com
 
 After navigating to the Reports tab, you will be presented with two tabs -
-'System Reports' and 'Data Extract'.
+:ref:`system-reports` and :ref:`data-extraction`.
 
 .. figure:: screen-shots/reports.png
    :alt: Reports tab View
@@ -22,12 +22,54 @@ After navigating to the Reports tab, you will be presented with two tabs -
 System Reports
 ^^^^^^^^^^^^^^
 
+.. _produce-system-report:
+
+How to produce a report
+-----------------------
+
+You can produce a system report by completing the fields in the Systems Reports
+tab by following these steps:
+
+1. Navigate to the 'System Reports tab' that is contained within the 'Reports' tab.
+
+.. figure:: screen-shots/system-reports.png
+   :alt: Reports tab View
+
+2. Select the type of report you would like to produce.
+3. If you are allowed to produce reports for more than one organisation you
+   will be asked to select an organisation name.
+4. Select the name of the organisation from the drop down list.
+5. Click the first calendar icon to select the start date and then the second
+   calendar icon to select the end date.
+6. Click the blue ‘Request’ button.
+7. Your report will be displayed.
+
+.. figure:: screen-shots/sample-system-report.png
+   :alt: Reports tab View
+
+.. _system-report-types:
+
+Types of System Reports
+-----------------------
+
+The reports are grouped into five categories, each designed to serve different
+purposes:
+
+* Category A: Monitoring progress of MDS implementation
+* Category B: Monitoring overall service delivery
+* Category C: Monitoring implementation of stepped care
+* Category D: Key Performance Indicators
+* :ref:`category-e`
+
+**Note:** Category A-D reports are still to be implemented.
+
 .. _category-e:
 
-Category E reports: Reports for data managers to monitor data supply
---------------------------------------------------------------------
+Category E: Reports for data managers to monitor data supply
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-These reports are designed to assist in monitoring the amount and type of data that has been inputted into the MDS.
+These reports are designed to assist in monitoring the amount and type of data
+that has been input into the MDS.
 
 They are based on a subset of Category A reports but differ in two important ways:
 
@@ -36,9 +78,11 @@ They are based on a subset of Category A reports but differ in two important way
   by specific edit criteria (e.g., Category A reports are only based on
   ‘active clients’, ‘active episodes’ and ‘active providers’).
 
-* All dates refer to date of upload. Comparable Category A reports are based on date of service.
+* All dates refer to date of upload. Comparable Category A reports are based on
+  date of service.
 
-Category E reports are specifically designed to enable PHN system administrators to monitor upload and data supply to the MDS.
+Category E reports are specifically designed to enable PHN and Provider
+Organisation data managers to monitor upload and data supply to the MDS.
 
 The reports provide summary data on:
 
@@ -69,6 +113,7 @@ Key specifications:
 
 * All records to be counted with no filtering.
 * All dates refer to date of insertion, not date of service.
+* Results are cumulative.
 
 E3 - Activity per day
 ~~~~~~~~~~~~~~~~~~~~~
@@ -102,7 +147,7 @@ How to download an organsiation's data
 You can extract a PHN's or provider organisation's PMHC MDS data by completing
 the Download Data fields in the Data Extraction tab, by following these steps:
 
-1. Navigate to the 'Data Extraction' tab.
+1. Navigate to the 'Data Extract' tab that is contained within the 'Reports' tab.
 2. If you are allowed to download data from more than one organisation you will be
    asked to select an organisation name.
 3. Select the name of the organisation from the drop down list.
@@ -110,7 +155,8 @@ the Download Data fields in the Data Extraction tab, by following these steps:
    calendar icon to select the end date.
 5. Click the 'Include data without associated dates' checkbox, if required.
 
-   **Please note:** As the query is date based the following data will not by default be included in the extract:
+   **Please note:** As the query is date based the following data will not by
+   default be included in the extract:
 
    * The start date of an episode is derived from the date of the first service contact.
      Therefore, if an episode doesn't have any associated service contacts, there will be
