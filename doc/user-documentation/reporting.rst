@@ -57,7 +57,7 @@ collection occasions and practitioners, without any filtering for business rules
 Key specifications:
 
 * All records to be counted with no filtering.
-* All dates refer to date of insertion, not date of service.
+* All dates refer to date of modification, not date of service.
 
 E2 - Volume trends
 ~~~~~~~~~~~~~~~~~~
