@@ -3,12 +3,12 @@
 SLK
 ===
 
-.. figure:: screen-shots/slk-generator.png
-   :alt: PMHC MDS SLK Generator
-
 We have provided a stand-alone generator that can be used without logging into
 the PMHC MDS on https://pmhc-mds.net. This allows users to generate a client's
 Statistical Linkage Key (SLK) to enter into upload files.
+
+.. figure:: screen-shots/slk-generator.png
+   :alt: PMHC MDS SLK Generator
 
 In order to generate an SLK:
 

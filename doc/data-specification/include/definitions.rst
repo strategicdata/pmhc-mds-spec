@@ -5081,7 +5081,10 @@ How the service contact was delivered, as represented by a code.
     - If 'Face to Face' is selected, a value other than 'Not applicable' must
       be selected for Service Contact Venue
     - If 'Face to Face' is selected a valid Australian
-      postcode must be entered for Service Contact Postcode.
+      postcode must be entered for Service Contact Postcode. The unknown postcode is not valid.
+  
+  
+  If Service Contact Modality is not 'Face to Face' the postcode must be entered as unknown 9999.
   
 
 ----------
@@ -5239,10 +5242,14 @@ The main type of service provided in the service contact, as represented by the 
   :8: Cultural specific assistance NEC
   :98: ATAPS
 :Notes:
+  
+  
   Describes the main type of service delivered in the contact, selected from a
   defined list of categories.  Where more than service type was provided select
   that which accounted for most provider time. Service providers are required
   to report on Service Type for all Service Contacts.
+  
+  *Note: NEC is used for 'Not Elsewhere Classified'. For these records, only use these service types if they cannot be classified by any of the other service options.*
   
   0 - No contact took place
     Only use this code where the service contact is recorded as a no show.
@@ -5347,12 +5354,12 @@ The main type of service provided in the service contact, as represented by the 
     Services delivered as part of ATAPS funded referrals that are recorded and/or
     migrated into the PMHC MDS.
   
-    *Note: This code should only be used for Service Contacts that are migrated 
-    from ATAPS MDS sources that cannot be described by any other Service Type. 
-    It is expected that the majority of Service Contacts delivered to clients 
+    *Note: This code should only be used for Service Contacts that are migrated
+    from ATAPS MDS sources that cannot be described by any other Service Type.
+    It is expected that the majority of Service Contacts delivered to clients
     from 1st July, 2017 can be assigned to other categories.*
   
-    This response will not be allowed on service contacts delivered after 
+    This response will not be allowed on service contacts delivered after
     30 June 2018. (All ATAPS referrals should have concluded by that date).
   
     This response will only be allowed on service contacts with the !ATAPS flag.

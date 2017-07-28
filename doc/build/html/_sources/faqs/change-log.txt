@@ -3,6 +3,14 @@
 Frequently Asked Questions Change log
 =====================================
 
+28/7/2017
+---------
+
+System - Development FAQs
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Updated the section :ref:`pmhc-mds-development`
+
 26/6/2017
 ---------
 

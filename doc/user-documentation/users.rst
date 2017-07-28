@@ -37,7 +37,7 @@ the roles that currently exist within the PMHC MDS:
 +----------------------------+------------------------------------------------------------------------------------------------------------------------------------+
 | Reporting                  | A user with the Reporting role can download data from the associated organisation                                                  |
 +----------------------------+------------------------------------------------------------------------------------------------------------------------------------+
-| Data Entry                 | A user with the Data Entry role can view client data and practitioners from the associated organisation                            |
+| Data Entry                 | A user with the Data Entry role can enter client data and practitioners from the associated organisation                           |
 +----------------------------+------------------------------------------------------------------------------------------------------------------------------------+
 
 Each role allows a user to perform specific tasks. A user can have more than one role.
