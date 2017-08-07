@@ -13,7 +13,8 @@
     "datatype": {
       "base": "string"
     },
-    "required": true
+    "required": true,
+    "schema:formOrder": "1"
   },{
     "name": "practitioner_key",
     "titles": [ "practitioner_key", "Practitioner Key" ],
@@ -27,7 +28,8 @@
       "minLength": 2,
       "maxLength": 50
       },
-    "required": true
+    "required": true,
+    "schema:formOrder": "2"
   },{
      "name": "practitioner_category",
     "titles": [ "practitioner_category", "Category" ],
@@ -39,7 +41,8 @@
     "datatype": {
       "base": "string"
     },
-    "required": true
+    "required": true,
+    "schema:formOrder": "3"
   },{
     "name": "atsi_cultural_training",
     "titles": [ "atsi_cultural_training", "Cultural Training Flag" ],
@@ -51,7 +54,8 @@
     "datatype": {
       "base": "string"
     },
-    "required": true
+    "required": true,
+    "schema:formOrder": "8"
   },{
     "name": "practitioner_year_of_birth",
     "titles": [ "practitioner_year_of_birth", "Year of Birth" ],
@@ -62,7 +66,8 @@
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": "gYear",
-    "required": true
+    "required": true,
+    "schema:formOrder": "5"
   },{
     "name": "practitioner_gender",
     "titles": [ "practitioner_gender", "Gender" ],
@@ -75,7 +80,8 @@
     "datatype": {
       "base": "string"
     },
-    "required": true
+    "required": true,
+    "schema:formOrder": "6"
   },{
     "name": "practitioner_atsi_status",
     "titles": [ "practitioner_atsi_status", "ATSI Status" ],
@@ -89,7 +95,8 @@
     "datatype": {
       "base": "string"
     },
-    "required": true
+    "required": true,
+    "schema:formOrder": "7"
   },{
     "name": "practitioner_active",
     "titles": [ "practitioner_active", "Active" ],
@@ -101,7 +108,8 @@
     "datatype": {
       "base": "string"
     },
-    "required": true
+    "required": true,
+    "schema:formOrder": "4"
   },{
     "name": "practitioner_tags",
     "titles": [ "practitioner_tags", "Tags" ],
@@ -114,7 +122,8 @@
     "datatype": {
       "base": "string"
       },
-    "required": false
+    "required": false,
+    "schema:formOrder": "9"
   }],
   "primaryKey": [ "organisation_path", "practitioner_key" ],
   "foreignKeys": [{

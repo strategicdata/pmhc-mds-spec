@@ -13,7 +13,8 @@
     "datatype": {
       "base": "string"
     },
-    "required": true
+    "required": true,
+    "schema:formOrder": "1"
   },{
      "name": "client_key",
     "titles": [ "client_key", "Client Key" ],
@@ -28,7 +29,8 @@
       "minLength": 2,
       "maxLength": 50
       },
-    "required": true
+    "required": true,
+    "schema:formOrder": "2"
   },{
     "name": "slk",
     "titles": [ "slk", "Statistical Linkage Key" ],
@@ -44,7 +46,8 @@
       "minLength": 14,
       "maxLength": 40
       },
-    "required": true
+    "required": true,
+    "schema:formOrder": "6"
   },{
     "name": "date_of_birth",
     "titles": [ "date_of_birth", "Date of Birth" ],
@@ -59,7 +62,8 @@
       "base": "date",
       "format": "dMMyyyy"
     },
-    "required": true
+    "required": true,
+    "schema:formOrder": "3"
   },{
     "name": "est_date_of_birth",
     "titles": [ "est_date_of_birth", "Estimated Date of Birth Flag" ],
@@ -71,7 +75,8 @@
     "datatype": {
       "base": "string"
     },
-    "required": true
+    "required": true,
+    "schema:formOrder": "4"
   },{
     "name": "client_gender",
     "titles": [ "client_gender", "Gender" ],
@@ -85,7 +90,8 @@
     "datatype": {
       "base": "string"
     },
-    "required": true
+    "required": true,
+    "schema:formOrder": "5"
   },{
     "name": "client_atsi_status",
     "titles": [ "client_atsi_status", "ATSI Status", "Aboriginal and Torres Strait Islander Status" ],
@@ -99,7 +105,8 @@
     "datatype": {
       "base": "string"
     },
-    "required": true
+    "required": true,
+    "schema:formOrder": "7"
   },{
     "name": "country_of_birth",
     "titles": [ "country_of_birth", "Country of Birth" ],
@@ -115,7 +122,8 @@
       "base": "string",
       "length": 4
     },
-    "required": true
+    "required": true,
+    "schema:formOrder": "8"
   },{
     "name": "main_lang_at_home",
     "titles": [ "main_lang_at_home", "Main Language Spoken at Home" ],
@@ -131,7 +139,8 @@
       "base": "string",
       "length": 4
     },
-    "required": true
+    "required": true,
+    "schema:formOrder": "9"
   },{
     "name": "prof_english",
     "titles": [ "prof_english", "Proficiency in Spoken English" ],
@@ -145,7 +154,8 @@
     "datatype": {
       "base": "string"
     },
-    "required": true
+    "required": true,
+    "schema:formOrder": "10"
   },{
     "name": "client_tags",
     "titles": [ "client_tags", "Tags" ],
@@ -158,7 +168,8 @@
     "datatype": {
       "base": "string"
       },
-    "required": false
+    "required": false,
+    "schema:formOrder": "11"
   }],
   "primaryKey": [ "organisation_path", "client_key" ],
   "foreignKeys": [{
