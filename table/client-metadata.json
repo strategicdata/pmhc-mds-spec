@@ -139,7 +139,7 @@
       "base": "string",
       "length": 4
     },
-    "required": true
+    "required": true,
     "schema:formOrder": "9"
   },{
     "name": "prof_english",
@@ -154,7 +154,7 @@
     "datatype": {
       "base": "string"
     },
-    "required": true
+    "required": true,
     "schema:formOrder": "10"
   },{
     "name": "client_tags",
