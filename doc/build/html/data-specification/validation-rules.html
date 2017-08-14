@@ -198,31 +198,58 @@ age is under 5 years of age or where <a class="reference internal" href="data-mo
 <div class="section" id="episode">
 <span id="episode-current-validations"></span><h2>Episode<a class="headerlink" href="#episode" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div><ul class="simple">
-<li><a class="reference internal" href="data-model-and-specifications.html#dfn-episode-end-date"><span class="std std-ref">Episode - End Date</span></a> should not be in the future</li>
-<li><a class="reference internal" href="data-model-and-specifications.html#dfn-referral-date"><span class="std std-ref">Episode - Referral Date</span></a> should not be in the future</li>
-<li>The <a class="reference internal" href="data-model-and-specifications.html#dfn-episode-end-date"><span class="std std-ref">Episode - End Date</span></a> should be after the <a class="reference internal" href="data-model-and-specifications.html#dfn-referral-date"><span class="std std-ref">Episode - Referral Date</span></a></li>
-<li>Where <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-final"><span class="std std-ref">Service Contact - Final</span></a> is recorded as &#8216;1: No further services
+<div><ul>
+<li><p class="first"><a class="reference internal" href="data-model-and-specifications.html#dfn-episode-end-date"><span class="std std-ref">Episode - End Date</span></a> should not be in the future</p>
+</li>
+<li><p class="first"><a class="reference internal" href="data-model-and-specifications.html#dfn-referral-date"><span class="std std-ref">Episode - Referral Date</span></a> should not be in the future</p>
+</li>
+<li><p class="first">The <a class="reference internal" href="data-model-and-specifications.html#dfn-episode-end-date"><span class="std std-ref">Episode - End Date</span></a> should be after the <a class="reference internal" href="data-model-and-specifications.html#dfn-referral-date"><span class="std std-ref">Episode - Referral Date</span></a></p>
+</li>
+<li><p class="first">Where <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-final"><span class="std std-ref">Service Contact - Final</span></a> is recorded as &#8216;1: No further services
 are planned for the client in the current episode&#8217;, the date of the
-<a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-final"><span class="std std-ref">Service Contact - Final</span></a> should be recorded as the Episode End Date</li>
-<li>Where <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-final"><span class="std std-ref">Service Contact - Final</span></a> is recorded as &#8216;1: No further services
+<a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-final"><span class="std std-ref">Service Contact - Final</span></a> should be recorded as the Episode End Date</p>
+</li>
+<li><p class="first">Where <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-final"><span class="std std-ref">Service Contact - Final</span></a> is recorded as &#8216;1: No further services
 are planned for the client in the current episode&#8217;, the
 <a class="reference internal" href="data-model-and-specifications.html#dfn-episode-completion-status"><span class="std std-ref">Episode - Completion Status</span></a> should be recorded using one of the
-&#8216;Episode closed&#8217; responses (Response items 2-6)</li>
-<li>Where an <a class="reference internal" href="data-model-and-specifications.html#dfn-episode-end-date"><span class="std std-ref">Episode - End Date</span></a> has been recorded, there should be a service
+&#8216;Episode closed&#8217; responses (Response items 2-6)</p>
+</li>
+<li><p class="first">Where an <a class="reference internal" href="data-model-and-specifications.html#dfn-episode-end-date"><span class="std std-ref">Episode - End Date</span></a> has been recorded, there should be a service
 contact with <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-final"><span class="std std-ref">Service Contact - Final</span></a> set to &#8216;1: No further services
-are planned for the client in the current episode&#8217;</li>
-<li>Where an <a class="reference internal" href="data-model-and-specifications.html#dfn-episode-end-date"><span class="std std-ref">Episode - End Date</span></a> has been recorded, a later
-<a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-date"><span class="std std-ref">Service Contact - Date</span></a> cannot be added</li>
-<li><a class="reference internal" href="data-model-and-specifications.html#dfn-client-postcode"><span class="std std-ref">Episode - Area of usual residence, postcode</span></a> should be a valid Australian postcode in the
-range 0200-0299, 0800-9999</li>
-<li><a class="reference internal" href="data-model-and-specifications.html#dfn-income-source"><span class="std std-ref">Episode - Source of Cash Income</span></a> can only have a value of
+are planned for the client in the current episode&#8217;</p>
+</li>
+<li><p class="first">Where an <a class="reference internal" href="data-model-and-specifications.html#dfn-episode-end-date"><span class="std std-ref">Episode - End Date</span></a> has been recorded, a later
+<a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-date"><span class="std std-ref">Service Contact - Date</span></a> cannot be added</p>
+</li>
+<li><p class="first"><a class="reference internal" href="data-model-and-specifications.html#dfn-client-postcode"><span class="std std-ref">Episode - Area of usual residence, postcode</span></a> should be a valid Australian postcode in the
+range 0200-0299, 0800-9999</p>
+</li>
+<li><p class="first"><a class="reference internal" href="data-model-and-specifications.html#dfn-income-source"><span class="std std-ref">Episode - Source of Cash Income</span></a> can only have a value of
 &#8216;0: N/A - Client aged less than 16 years&#8217; where the client is less than
 16 years of age
-<strong>Nick: How do we determine age?</strong></li>
-<li><a class="reference internal" href="data-model-and-specifications.html#dfn-referrer-organisation-type"><span class="std std-ref">Episode - Referrer Organisation Type</span></a> should only be set to
+<strong>Nick: How do we determine age?</strong></p>
+</li>
+<li><p class="first"><a class="reference internal" href="data-model-and-specifications.html#dfn-referrer-organisation-type"><span class="std std-ref">Episode - Referrer Organisation Type</span></a> should only be set to
 &#8216;98: N/A - Self referral&#8217; where <a class="reference internal" href="data-model-and-specifications.html#dfn-referrer-profession"><span class="std std-ref">Episode - Referrer Profession</span></a> is also
-&#8216;98: N/A - Self referral&#8217;</li>
+&#8216;98: N/A - Self referral&#8217;</p>
+</li>
+<li><p class="first">Only one episode is allowed to be open per client</p>
+</li>
+<li><p class="first">On <a class="reference internal" href="data-model-and-specifications.html#dfn-principal-diagnosis"><span class="std std-ref">Episode - Principal Diagnosis</span></a> and <a class="reference internal" href="data-model-and-specifications.html#dfn-additional-diagnosis"><span class="std std-ref">Episode - Additional Diagnosis</span></a>
+the values:</p>
+<ul class="simple">
+<li>100: Anxiety disorders (ATAPS)</li>
+<li>200: Affective (Mood) disorders (ATAPS)</li>
+<li>300: Substance use disorders (ATAPS)</li>
+<li>400: Psychotic disorders (ATAPS)</li>
+</ul>
+<p>will only be allowed where data has been migrated from ATAPS. The above
+responses will only be allowed under the following conditions:</p>
+<ul class="simple">
+<li>The <a class="reference internal" href="data-model-and-specifications.html#dfn-referral-date"><span class="std std-ref">Episode - Referral Date</span></a> was before 1 July 2017</li>
+<li>The <a class="reference internal" href="data-model-and-specifications.html#dfn-episode-tags"><span class="std std-ref">Episode - Tags</span></a> field must contain the !ATAPS flag</li>
+</ul>
+</li>
 </ul>
 </div></blockquote>
 </div>
@@ -242,6 +269,13 @@ valid Australian postcode must be entered for <a class="reference internal" href
 <strong>Nick - How is this being checked?</strong></li>
 <li>If <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-modality"><span class="std std-ref">Service Contact - Modality</span></a> is not &#8216;1: Face to Face&#8217;
 <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-postcode"><span class="std std-ref">Service Contact - Postcode</span></a> should be 9999</li>
+<li>On <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-type"><span class="std std-ref">Service Contact - Type</span></a> the value &#8216;98: ATAPS&#8217; will only be
+allowed where data has been migrated from ATAPS. The above
+response will only be allowed under the following conditions:<ul>
+<li>The <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-date"><span class="std std-ref">Service Contact - Date</span></a> was before 30 June 2018</li>
+<li>The <a class="reference internal" href="data-model-and-specifications.html#dfn-episode-tags"><span class="std std-ref">Episode - Tags</span></a> field must contain the !ATAPS flag</li>
+</ul>
+</li>
 </ul>
 </div></blockquote>
 </div>

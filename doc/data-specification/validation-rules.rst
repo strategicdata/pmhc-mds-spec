@@ -65,6 +65,20 @@ Episode
   * :ref:`dfn-referrer_organisation_type` should only be set to
     '98: N/A - Self referral' where :ref:`dfn-referrer_profession` is also
     '98: N/A - Self referral'
+  * Only one episode is allowed to be open per client
+  * On :ref:`dfn-principal_diagnosis` and :ref:`dfn-additional_diagnosis`
+    the values:
+
+    * 100: Anxiety disorders (ATAPS)
+    * 200: Affective (Mood) disorders (ATAPS)
+    * 300: Substance use disorders (ATAPS)
+    * 400: Psychotic disorders (ATAPS)
+
+    will only be allowed where data has been migrated from ATAPS. The above
+    responses will only be allowed under the following conditions:
+
+    * The :ref:`dfn-referral_date` was before 1 July 2017
+    * The :ref:`dfn-episode_tags` field must contain the !ATAPS flag
 
 .. _service-contact-current-validations:
 
@@ -83,6 +97,12 @@ Service Contact
     **Nick - How is this being checked?**
   * If :ref:`dfn-service_contact_modality` is not '1: Face to Face'
     :ref:`dfn-service_contact_postcode` should be 9999
+  * On :ref:`dfn-service_contact_type` the value '98: ATAPS' will only be
+    allowed where data has been migrated from ATAPS. The above
+    response will only be allowed under the following conditions:
+
+    * The :ref:`dfn-service_contact_date` was before 30 June 2018
+    * The :ref:`dfn-episode_tags` field must contain the !ATAPS flag
 
 .. _k10p-current-validations:
 
