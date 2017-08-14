@@ -222,7 +222,7 @@ class PMHC < Csvlint::Cli
         # If a completion status is recorded episode end date should be recorded
         unless row[episode_completion_status_index] == nil
           if is_date_missing(eed)
-            validator.build_errors(:invalid_episode_completion_statusy, :episode,
+            validator.build_errors(:invalid_episode_completion_status, :episode,
               current_line+1, episode_completion_status_index+1, row[episode_completion_status_index])
           end
         end
