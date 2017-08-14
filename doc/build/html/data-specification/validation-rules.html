@@ -167,7 +167,7 @@
 <span id="practitioner-current-validations"></span><h2>Practitioner<a class="headerlink" href="#practitioner" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><ul>
-<li><p class="first"><a class="reference internal" href="data-model-and-specifications.html#dfn-practitioner-year-of-birth"><span class="std std-ref">Practitioner - Year of Birth</span></a> should not be in the future</p>
+<li><p class="first"><a class="reference internal" href="data-model-and-specifications.html#dfn-practitioner-year-of-birth"><span class="std std-ref">Practitioner - Year of Birth</span></a> must not be in the future</p>
 </li>
 <li><p class="first"><a class="reference internal" href="data-model-and-specifications.html#dfn-atsi-cultural-training"><span class="std std-ref">Practitioner - ATSI Cultural Training</span></a> is only allowed to be set to
 &#8216;3 - Not required&#8217; if <a class="reference internal" href="data-model-and-specifications.html#dfn-practitioner-atsi-status"><span class="std std-ref">Practitioner - Aboriginal and Torres Strait Islander Status</span></a> is one of</p>
@@ -191,7 +191,7 @@
 years of age or who speak only English)&#8217;  is only allowed when the persons
 age is under 5 years of age or where <a class="reference internal" href="data-model-and-specifications.html#dfn-main-lang-at-home"><span class="std std-ref">Client - Main Language Spoken at Home</span></a> is
 &#8216;1201: English&#8217;</li>
-<li><a class="reference internal" href="data-model-and-specifications.html#dfn-date-of-birth"><span class="std std-ref">Client - Date of Birth</span></a> should not be in the future</li>
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-date-of-birth"><span class="std std-ref">Client - Date of Birth</span></a> must not be in the future</li>
 </ul>
 </div></blockquote>
 </div>
@@ -199,29 +199,29 @@ age is under 5 years of age or where <a class="reference internal" href="data-mo
 <span id="episode-current-validations"></span><h2>Episode<a class="headerlink" href="#episode" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><ul>
-<li><p class="first"><a class="reference internal" href="data-model-and-specifications.html#dfn-episode-end-date"><span class="std std-ref">Episode - End Date</span></a> should not be in the future</p>
+<li><p class="first"><a class="reference internal" href="data-model-and-specifications.html#dfn-episode-end-date"><span class="std std-ref">Episode - End Date</span></a> must not be in the future</p>
 </li>
-<li><p class="first"><a class="reference internal" href="data-model-and-specifications.html#dfn-referral-date"><span class="std std-ref">Episode - Referral Date</span></a> should not be in the future</p>
+<li><p class="first"><a class="reference internal" href="data-model-and-specifications.html#dfn-referral-date"><span class="std std-ref">Episode - Referral Date</span></a> must not be in the future</p>
 </li>
-<li><p class="first">The <a class="reference internal" href="data-model-and-specifications.html#dfn-episode-end-date"><span class="std std-ref">Episode - End Date</span></a> should be after the <a class="reference internal" href="data-model-and-specifications.html#dfn-referral-date"><span class="std std-ref">Episode - Referral Date</span></a></p>
+<li><p class="first">The <a class="reference internal" href="data-model-and-specifications.html#dfn-episode-end-date"><span class="std std-ref">Episode - End Date</span></a> must be after the <a class="reference internal" href="data-model-and-specifications.html#dfn-referral-date"><span class="std std-ref">Episode - Referral Date</span></a></p>
 </li>
 <li><p class="first">Where <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-final"><span class="std std-ref">Service Contact - Final</span></a> is recorded as &#8216;1: No further services
 are planned for the client in the current episode&#8217;, the date of the
-<a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-final"><span class="std std-ref">Service Contact - Final</span></a> should be recorded as the Episode End Date</p>
+<a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-final"><span class="std std-ref">Service Contact - Final</span></a> must be recorded as the Episode End Date</p>
 </li>
 <li><p class="first">Where <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-final"><span class="std std-ref">Service Contact - Final</span></a> is recorded as &#8216;1: No further services
 are planned for the client in the current episode&#8217;, the
-<a class="reference internal" href="data-model-and-specifications.html#dfn-episode-completion-status"><span class="std std-ref">Episode - Completion Status</span></a> should be recorded using one of the
+<a class="reference internal" href="data-model-and-specifications.html#dfn-episode-completion-status"><span class="std std-ref">Episode - Completion Status</span></a> must be recorded using one of the
 &#8216;Episode closed&#8217; responses (Response items 2-6)</p>
 </li>
-<li><p class="first">Where an <a class="reference internal" href="data-model-and-specifications.html#dfn-episode-end-date"><span class="std std-ref">Episode - End Date</span></a> has been recorded, there should be a service
+<li><p class="first">Where an <a class="reference internal" href="data-model-and-specifications.html#dfn-episode-end-date"><span class="std std-ref">Episode - End Date</span></a> has been recorded, there must be a service
 contact with <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-final"><span class="std std-ref">Service Contact - Final</span></a> set to &#8216;1: No further services
 are planned for the client in the current episode&#8217;</p>
 </li>
 <li><p class="first">Where an <a class="reference internal" href="data-model-and-specifications.html#dfn-episode-end-date"><span class="std std-ref">Episode - End Date</span></a> has been recorded, a later
 <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-date"><span class="std std-ref">Service Contact - Date</span></a> cannot be added</p>
 </li>
-<li><p class="first"><a class="reference internal" href="data-model-and-specifications.html#dfn-client-postcode"><span class="std std-ref">Episode - Area of usual residence, postcode</span></a> should be a valid Australian postcode in the
+<li><p class="first"><a class="reference internal" href="data-model-and-specifications.html#dfn-client-postcode"><span class="std std-ref">Episode - Area of usual residence, postcode</span></a> must be a valid Australian postcode in the
 range 0200-0299, 0800-9999</p>
 </li>
 <li><p class="first"><a class="reference internal" href="data-model-and-specifications.html#dfn-income-source"><span class="std std-ref">Episode - Source of Cash Income</span></a> can only have a value of
@@ -229,7 +229,7 @@ range 0200-0299, 0800-9999</p>
 16 years of age
 <strong>Nick: How do we determine age?</strong></p>
 </li>
-<li><p class="first"><a class="reference internal" href="data-model-and-specifications.html#dfn-referrer-organisation-type"><span class="std std-ref">Episode - Referrer Organisation Type</span></a> should only be set to
+<li><p class="first"><a class="reference internal" href="data-model-and-specifications.html#dfn-referrer-organisation-type"><span class="std std-ref">Episode - Referrer Organisation Type</span></a> must only be set to
 &#8216;98: N/A - Self referral&#8217; where <a class="reference internal" href="data-model-and-specifications.html#dfn-referrer-profession"><span class="std std-ref">Episode - Referrer Profession</span></a> is also
 &#8216;98: N/A - Self referral&#8217;</p>
 </li>
@@ -257,8 +257,8 @@ responses will only be allowed under the following conditions:</p>
 <span id="service-contact-current-validations"></span><h2>Service Contact<a class="headerlink" href="#service-contact" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><ul class="simple">
-<li><a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-date"><span class="std std-ref">Service Contact - Date</span></a> should not be in the future</li>
-<li><a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-postcode"><span class="std std-ref">Service Contact - Postcode</span></a> should be a valid Australian postcode in the
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-date"><span class="std std-ref">Service Contact - Date</span></a> must not be in the future</li>
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-postcode"><span class="std std-ref">Service Contact - Postcode</span></a> must be a valid Australian postcode in the
 range 0200-0299, 0800-9999</li>
 <li>If <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-modality"><span class="std std-ref">Service Contact - Modality</span></a> is &#8216;1: Face to Face&#8217;
 a value other than
@@ -268,7 +268,7 @@ must be selected for <a class="reference internal" href="data-model-and-specific
 valid Australian postcode must be entered for <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-postcode"><span class="std std-ref">Service Contact - Postcode</span></a>
 <strong>Nick - How is this being checked?</strong></li>
 <li>If <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-modality"><span class="std std-ref">Service Contact - Modality</span></a> is not &#8216;1: Face to Face&#8217;
-<a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-postcode"><span class="std std-ref">Service Contact - Postcode</span></a> should be 9999</li>
+<a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-postcode"><span class="std std-ref">Service Contact - Postcode</span></a> must be 9999</li>
 <li>On <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-type"><span class="std std-ref">Service Contact - Type</span></a> the value &#8216;98: ATAPS&#8217; will only be
 allowed where data has been migrated from ATAPS. The above
 response will only be allowed under the following conditions:<ul>
@@ -283,7 +283,7 @@ response will only be allowed under the following conditions:<ul>
 <span id="k10p-current-validations"></span><h2>K10+<a class="headerlink" href="#k10" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><ul class="simple">
-<li><a class="reference internal" href="data-model-and-specifications.html#dfn-measure-date"><span class="std std-ref">Collection Occasion - Measure Date</span></a> should be after <a class="reference internal" href="data-model-and-specifications.html#dfn-referral-date"><span class="std std-ref">Episode - Referral Date</span></a></li>
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-measure-date"><span class="std std-ref">Collection Occasion - Measure Date</span></a> must be after <a class="reference internal" href="data-model-and-specifications.html#dfn-referral-date"><span class="std std-ref">Episode - Referral Date</span></a></li>
 <li>If both item scores and a total score are specified, the item scores must
 add up to the total score</li>
 </ul>
@@ -293,7 +293,7 @@ add up to the total score</li>
 <span id="k5-current-validations"></span><h2>K5<a class="headerlink" href="#k5" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><ul class="simple">
-<li><a class="reference internal" href="data-model-and-specifications.html#dfn-measure-date"><span class="std std-ref">Collection Occasion - Measure Date</span></a> should be after <a class="reference internal" href="data-model-and-specifications.html#dfn-referral-date"><span class="std std-ref">Episode - Referral Date</span></a></li>
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-measure-date"><span class="std std-ref">Collection Occasion - Measure Date</span></a> must be after <a class="reference internal" href="data-model-and-specifications.html#dfn-referral-date"><span class="std std-ref">Episode - Referral Date</span></a></li>
 <li>If both item scores and a total score are specified, the item scores must
 add up to the total score</li>
 </ul>
@@ -303,7 +303,7 @@ add up to the total score</li>
 <span id="sdq-current-validations"></span><h2>SDQ<a class="headerlink" href="#sdq" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><ul class="simple">
-<li><a class="reference internal" href="data-model-and-specifications.html#dfn-measure-date"><span class="std std-ref">Collection Occasion - Measure Date</span></a> should be after <a class="reference internal" href="data-model-and-specifications.html#dfn-referral-date"><span class="std std-ref">Episode - Referral Date</span></a></li>
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-measure-date"><span class="std std-ref">Collection Occasion - Measure Date</span></a> must be after <a class="reference internal" href="data-model-and-specifications.html#dfn-referral-date"><span class="std std-ref">Episode - Referral Date</span></a></li>
 </ul>
 </div></blockquote>
 </div>
