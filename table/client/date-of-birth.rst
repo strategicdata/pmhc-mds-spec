@@ -1,4 +1,5 @@
-If the date of birth is unknown, the following approaches should be used:
+- The date of birth must not be in the future.
+- If the date of birth is unknown, the following approaches should be used:
 
   - If the age of the person is known, the age should be used to derive the
     year of birth

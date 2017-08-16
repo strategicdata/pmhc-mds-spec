@@ -338,7 +338,8 @@ The date on which an individual was born.
 
 :Required: true
 :Notes:
-  If the date of birth is unknown, the following approaches should be used:
+  - The date of birth must not be in the future.
+  - If the date of birth is unknown, the following approaches should be used:
   
     - If the age of the person is known, the age should be used to derive the
       year of birth
@@ -1019,6 +1020,8 @@ The date the measure was given.
   
   If the date the measure was given is unknown, 09099999 should be used.
   
+  - The measure date must not be in the future.
+  
 
 ----------
 
@@ -1371,6 +1374,8 @@ The date on which an *Episode of Care* is formally or administratively ended
 
 :Required: false
 :Notes:
+  - The episode end date must not be in the future.
+  
   An *Episode of Care* may be ended in one of two ways:
   
   - clinically, consequent upon conclusion of treatment for the client and
@@ -1398,7 +1403,6 @@ The date on which an *Episode of Care* is formally or administratively ended
     *Episode Completion Status* for additional guidance). Where an episode is
     closed administratively, the *Episode End Date* should be recorded as the
     date on which the organisation made the decision to close episode.
-  
   
 
 :METeOR: `614094 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614094>`__
@@ -2091,6 +2095,8 @@ The date the referrer made the referral.
   of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
   necessary to pad out a value. For instance, 13th March 2008 would appear as
   13032008.
+  
+  - The referral date must not be in the future.
   
 
 ----------
@@ -3145,13 +3151,15 @@ The year the practitioner was born.
 :Domain:
   gYear
 :Notes:
-  If the year of birth is unknown, the following approaches should be used:
+  - The year of birth must not be in the future.
+  - The year of birth must be after 1900.
+  - If the year of birth is unknown, the following approaches should be used:
   
-  - If the age of the practitioner is known, the age should be used to derive the
-    year of birth
-  - If the age of the practitioner is unknown, an estimated age of the practitioner should
-    be used to estimate a year of birth
-  - If the date of birth is totally unknown, use 9999.
+    - If the age of the practitioner is known, the age should be used to derive the
+      year of birth
+    - If the age of the practitioner is unknown, an estimated age of the practitioner should
+      be used to estimate a year of birth
+    - If the date of birth is totally unknown, use 9999.
   
 
 ----------
@@ -4937,6 +4945,8 @@ The date of each mental health service contact between a health service provider
   necessary to pad out a value. For instance, 13th March 2008 would appear as
   13032008.
   
+  - The service contact date must not be in the future.
+  
 
 :METeOR: `494356 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494356>`__
 
@@ -5183,6 +5193,9 @@ The Australian postcode where the service contact took place.
   - If Service Contact Modality is not 'Face to Face' enter 9999
   - If Service Contact Modality is 'Face to Face' a valid Australian postcode must be
     entered
+  
+  - As of 1 November 2016, PMHC MDS currently validates that postcodes are in the
+    range 0200-0299 or 0800-9999.
   
 
 :METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__

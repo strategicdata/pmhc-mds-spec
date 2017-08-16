@@ -3,6 +3,22 @@
 Data Specification Change log
 =============================
 
+??/8/2017
+---------
+
+* Added :ref:`validation-rules`
+
+* Updated :ref:`dfn-practitioner_year_of_birth` to clarify which years are valid.
+* Updated :ref:`dfn-date_of_birth` to clarify that future dates are not valid.
+* Updated :ref:`dfn-episode_end_date` to clarify that future dates are not valid.
+* Updated :ref:`dfn-referral_date` to clarify that future dates are not valid.
+* Updated :ref:`dfn-service_contact_date` to clarify that future dates are not
+  valid.
+* Updated :ref:`dfn-service_contact_postcode` to clarify the ranges of postcodes
+  that are valid.
+* Updated :ref:`dfn-measure_date` to clarify that future dates are not valid.
+
+
 28/7/2017
 ---------
 
