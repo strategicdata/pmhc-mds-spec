@@ -1,6 +1,9 @@
 Validation Rules
 ================
 
+This document defines validation rules between items and record types.
+The domain of individual items is defined in :ref:`record-formats`.
+
 .. _current-validations:
 
 Current Validations
@@ -12,6 +15,7 @@ Practitioner
 ------------
 
   * :ref:`dfn-practitioner_year_of_birth` must not be in the future
+  * :ref:`dfn-practitioner_year_of_birth` must be after 1900
   * :ref:`dfn-atsi_cultural_training` is only allowed to be set to
     '3 - Not required' if :ref:`dfn-practitioner_atsi_status` is one of
 
@@ -24,16 +28,24 @@ Practitioner
     The organistion to which the practitioner belongs has
     :ref:`dfn-organisation_type` set to '8: Aboriginal Health/Medical Service'
 
-
 .. _client-current-validations:
 
 Client
 ------
 
+  * :ref:`dfn-slk` must but 14, 32 or 40 characters long
   * :ref:`dfn-prof_english` response '0: Not applicable (persons under 5
-    years of age or who speak only English)'  is only allowed when the persons
-    age is under 5 years of age or where :ref:`dfn-main_lang_at_home` is
-    '1201: English'
+    years of age or who speak only English)' is only allowed where
+
+    * :ref:`dfn-main_lang_at_home` is '1201: English', or
+    * :ref:`dfn-est_date_of_birth` is  '1: Date of birth is accurate' and the
+      person is under 5, or
+    * :ref:`dfn-est_date_of_birth` is '2: Date of birth is an estimate' and the
+      person is under 6
+
+    Where :ref:`dfn-est_date_of_birth` is '8: Date of birth is a dummy' or
+    '9: Accuracy of stated date of birth is not known' :ref:`dfn-prof_english`
+    is not checked.
   * :ref:`dfn-date_of_birth` must not be in the future
 
 .. _episode-current-validations:
@@ -58,12 +70,8 @@ Episode
     :ref:`dfn-service_contact_date` cannot be added
   * :ref:`dfn-client_postcode` must be a valid Australian postcode in the
     range 0200-0299, 0800-9999
-  * :ref:`dfn-income_source` can only have a value of
-    '0: N/A - Client aged less than 16 years' where the client is less than
-    16 years of age
-    **Nick: How do we determine age?**
-  * :ref:`dfn-referrer_organisation_type` must only be set to
-    '98: N/A - Self referral' where :ref:`dfn-referrer_profession` is also
+  * :ref:`dfn-referrer_organisation_type` must be set to
+    '98: N/A - Self referral' if and only if :ref:`dfn-referrer_profession` is also
     '98: N/A - Self referral'
   * Only one episode is allowed to be open per client
   * On :ref:`dfn-principal_diagnosis` and :ref:`dfn-additional_diagnosis`
@@ -88,13 +96,15 @@ Service Contact
   * :ref:`dfn-service_contact_date` must not be in the future
   * :ref:`dfn-service_contact_postcode` must be a valid Australian postcode in the
     range 0200-0299, 0800-9999
+  * If :ref:`dfn-service_contact_modality` is '0: No contact took place'
+    :ref:`dfn-service_contact_no_show` must be '1: Yes'
+  * If :ref:`dfn-service_contact_modality` is '0: No contact took place'
+    :ref:`dfn-service_contact_postcode` must be 9999
   * If :ref:`dfn-service_contact_modality` is '1: Face to Face'
-    a value other than
+    :ref:`dfn-service_contact_postcode` must not be 9999
+  * If :ref:`dfn-service_contact_modality` is '1: Face to Face'
+    :ref:`dfn-service_contact_venue` must not be
     '98: Not applicable (Service Contact Modality is not face to face)'
-    must be selected for :ref:`dfn-service_contact_venue`
-  * If :ref:`dfn-service_contact_modality` is '1: Face to Face' a
-    valid Australian postcode must be entered for :ref:`dfn-service_contact_postcode`
-    **Nick - How is this being checked?**
   * If :ref:`dfn-service_contact_modality` is not '1: Face to Face'
     :ref:`dfn-service_contact_postcode` must be 9999
   * On :ref:`dfn-service_contact_type` the value '98: ATAPS' will only be
@@ -110,8 +120,13 @@ K10+
 ----
 
   * :ref:`dfn-measure_date` must be after :ref:`dfn-referral_date`
+  * :ref:`dfn-measure_date` must not be in the future
   * If both item scores and a total score are specified, the item scores must
     add up to the total score
+
+.. did you want to list the full validation spec here, eg: ranges of answers and totals?
+
+.. checking totals this isn't properly implemented (yet) ...
 
 .. _k5-current-validations:
 
@@ -119,15 +134,26 @@ K5
 ---
 
   * :ref:`dfn-measure_date` must be after :ref:`dfn-referral_date`
+  * :ref:`dfn-measure_date` must not be in the future
   * If both item scores and a total score are specified, the item scores must
     add up to the total score
 
 .. _sdq-current-validations:
 
+.. did you want to list the full validation spec here, eg: ranges of answers and totals?
+
+.. checking totals this isn't properly implemented (yet) ...
+
 SDQ
 ---
 
   * :ref:`dfn-measure_date` must be after :ref:`dfn-referral_date`
+  * :ref:`dfn-measure_date` must not be in the future
+
+.. did you want to list the full validation spec here, eg: ranges of answers and totals?
+
+.. something about subtotals etc adding up correctly.
+   checking totals this isn't properly implemented (yet) ...
 
 .. _future-validations:
 

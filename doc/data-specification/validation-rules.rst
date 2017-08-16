@@ -1,9 +1,8 @@
 Validation Rules
 ================
 
-.. We should probably have some generic validation rules for keys up here somewhere.
-   Clarify that they can't be blank, are case sensitive, not sure where we're at with
-   them being unicode clean.
+This document defines validation rules between items and record types.
+The domain of individual items is defined in :ref:`record-formats`.
 
 .. _current-validations:
 
@@ -34,16 +33,19 @@ Practitioner
 Client
 ------
 
-.. 'english_proficiency_check' is slightly complicated by dob_status_id: it applies for
-   persons under 5 with an exact dob, or persons under 6 with an approximate dob and not
-   for unknown dobs
-
-.. 'nonempty_slk' actually enforces that SLK is either 14, 32 or 40 characters long
-
+  * :ref:`dfn-slk` must but 14, 32 or 40 characters long
   * :ref:`dfn-prof_english` response '0: Not applicable (persons under 5
-    years of age or who speak only English)'  is only allowed when the persons
-    age is under 5 years of age or where :ref:`dfn-main_lang_at_home` is
-    '1201: English'
+    years of age or who speak only English)' is only allowed where
+
+    * :ref:`dfn-main_lang_at_home` is '1201: English', or
+    * :ref:`dfn-est_date_of_birth` is  '1: Date of birth is accurate' and the
+      person is under 5, or
+    * :ref:`dfn-est_date_of_birth` is '2: Date of birth is an estimate' and the
+      person is under 6
+
+    Where :ref:`dfn-est_date_of_birth` is '8: Date of birth is a dummy' or
+    '9: Accuracy of stated date of birth is not known' :ref:`dfn-prof_english`
+    is not checked.
   * :ref:`dfn-date_of_birth` must not be in the future
 
 .. _episode-current-validations:
@@ -68,16 +70,6 @@ Episode
     :ref:`dfn-service_contact_date` cannot be added
   * :ref:`dfn-client_postcode` must be a valid Australian postcode in the
     range 0200-0299, 0800-9999
-  * :ref:`dfn-income_source` can only have a value of
-    '0: N/A - Client aged less than 16 years' where the client is less than
-    16 years of age
-
-.. **Nick: How do we determine age?**
-   good question ... see #857 currently it isn't checked.
-
-.. The constraints on SC status vs Episode status are also really messy because
-   we create the episode before the SCs are created so we can't constrain this!
-
   * :ref:`dfn-referrer_organisation_type` must be set to
     '98: N/A - Self referral' if and only if :ref:`dfn-referrer_profession` is also
     '98: N/A - Self referral'
@@ -104,28 +96,20 @@ Service Contact
   * :ref:`dfn-service_contact_date` must not be in the future
   * :ref:`dfn-service_contact_postcode` must be a valid Australian postcode in the
     range 0200-0299, 0800-9999
+  * If :ref:`dfn-service_contact_modality` is '0: No contact took place'
+    :ref:`dfn-service_contact_no_show` must be '1: Yes'
+  * If :ref:`dfn-service_contact_modality` is '0: No contact took place'
+    :ref:`dfn-service_contact_postcode` must be 9999
   * If :ref:`dfn-service_contact_modality` is '1: Face to Face'
-    a value other than
+    :ref:`dfn-service_contact_postcode` must not be 9999
+  * If :ref:`dfn-service_contact_modality` is '1: Face to Face'
+    :ref:`dfn-service_contact_venue` must not be
     '98: Not applicable (Service Contact Modality is not face to face)'
-    must be selected for :ref:`dfn-service_contact_venue`
-  * If :ref:`dfn-service_contact_modality` is '1: Face to Face' a
-    valid Australian postcode must be entered for :ref:`dfn-service_contact_postcode`
-
-.. **Nick - How is this being checked?**
-   there's a check constraint valid_modality_face2face_postcode which checks venue_id <> 98
-   and postcode != 9999; postcode can still be set to 9998 though
-
-.. valid_modality_face2face_postcode : (((modality_id = 1) AND (venue_id <> 98) AND (postcode <> '9999'::text)) OR ((modality_id < 1) OR (modality_id > 1)))
-
   * If :ref:`dfn-service_contact_modality` is not '1: Face to Face'
     :ref:`dfn-service_contact_postcode` must be 9999
   * On :ref:`dfn-service_contact_type` the value '98: ATAPS' will only be
     allowed where data has been migrated from ATAPS. The above
     response will only be allowed under the following conditions:
-
-.. valid_modality_no_show_postcode : (((modality_id = 0) AND (no_show_flag = 1) AND (postcode = '9999'::text)) OR (modality_id > 0))
-
-.. valid_modality_postcode_unknown : (((modality_id > 1) AND (postcode = '9999'::text)) OR (modality_id <= 1))
 
     * The :ref:`dfn-service_contact_date` was before 30 June 2018
     * The :ref:`dfn-episode_tags` field must contain the !ATAPS flag

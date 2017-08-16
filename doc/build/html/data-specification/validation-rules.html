@@ -160,6 +160,8 @@
             
   <div class="section" id="validation-rules">
 <h1>Validation Rules<a class="headerlink" href="#validation-rules" title="Permalink to this headline">¶</a></h1>
+<p>This document defines validation rules between items and record types.
+The domain of individual items is defined in <a class="reference internal" href="data-model-and-specifications.html#record-formats"><span class="std std-ref">Record formats</span></a>.</p>
 <div class="section" id="current-validations">
 <span id="id1"></span><h2>Current Validations<a class="headerlink" href="#current-validations" title="Permalink to this headline">¶</a></h2>
 </div>
@@ -168,6 +170,8 @@
 <blockquote>
 <div><ul>
 <li><p class="first"><a class="reference internal" href="data-model-and-specifications.html#dfn-practitioner-year-of-birth"><span class="std std-ref">Practitioner - Year of Birth</span></a> must not be in the future</p>
+</li>
+<li><p class="first"><a class="reference internal" href="data-model-and-specifications.html#dfn-practitioner-year-of-birth"><span class="std std-ref">Practitioner - Year of Birth</span></a> must be after 1900</p>
 </li>
 <li><p class="first"><a class="reference internal" href="data-model-and-specifications.html#dfn-atsi-cultural-training"><span class="std std-ref">Practitioner - ATSI Cultural Training</span></a> is only allowed to be set to
 &#8216;3 - Not required&#8217; if <a class="reference internal" href="data-model-and-specifications.html#dfn-practitioner-atsi-status"><span class="std std-ref">Practitioner - Aboriginal and Torres Strait Islander Status</span></a> is one of</p>
@@ -186,12 +190,24 @@
 <div class="section" id="client">
 <span id="client-current-validations"></span><h2>Client<a class="headerlink" href="#client" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div><ul class="simple">
-<li><a class="reference internal" href="data-model-and-specifications.html#dfn-prof-english"><span class="std std-ref">Client - Proficiency in Spoken English</span></a> response &#8216;0: Not applicable (persons under 5
-years of age or who speak only English)&#8217;  is only allowed when the persons
-age is under 5 years of age or where <a class="reference internal" href="data-model-and-specifications.html#dfn-main-lang-at-home"><span class="std std-ref">Client - Main Language Spoken at Home</span></a> is
-&#8216;1201: English&#8217;</li>
-<li><a class="reference internal" href="data-model-and-specifications.html#dfn-date-of-birth"><span class="std std-ref">Client - Date of Birth</span></a> must not be in the future</li>
+<div><ul>
+<li><p class="first"><a class="reference internal" href="data-model-and-specifications.html#dfn-slk"><span class="std std-ref">Client - Statistical Linkage Key</span></a> must but 14, 32 or 40 characters long</p>
+</li>
+<li><p class="first"><a class="reference internal" href="data-model-and-specifications.html#dfn-prof-english"><span class="std std-ref">Client - Proficiency in Spoken English</span></a> response &#8216;0: Not applicable (persons under 5
+years of age or who speak only English)&#8217; is only allowed where</p>
+<ul class="simple">
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-main-lang-at-home"><span class="std std-ref">Client - Main Language Spoken at Home</span></a> is &#8216;1201: English&#8217;, or</li>
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-est-date-of-birth"><span class="std std-ref">Client - Estimated Date of Birth Flag</span></a> is  &#8216;1: Date of birth is accurate&#8217; and the
+person is under 5, or</li>
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-est-date-of-birth"><span class="std std-ref">Client - Estimated Date of Birth Flag</span></a> is &#8216;2: Date of birth is an estimate&#8217; and the
+person is under 6</li>
+</ul>
+<p>Where <a class="reference internal" href="data-model-and-specifications.html#dfn-est-date-of-birth"><span class="std std-ref">Client - Estimated Date of Birth Flag</span></a> is &#8216;8: Date of birth is a dummy&#8217; or
+&#8216;9: Accuracy of stated date of birth is not known&#8217; <a class="reference internal" href="data-model-and-specifications.html#dfn-prof-english"><span class="std std-ref">Client - Proficiency in Spoken English</span></a>
+is not checked.</p>
+</li>
+<li><p class="first"><a class="reference internal" href="data-model-and-specifications.html#dfn-date-of-birth"><span class="std std-ref">Client - Date of Birth</span></a> must not be in the future</p>
+</li>
 </ul>
 </div></blockquote>
 </div>
@@ -224,13 +240,8 @@ are planned for the client in the current episode&#8217;</p>
 <li><p class="first"><a class="reference internal" href="data-model-and-specifications.html#dfn-client-postcode"><span class="std std-ref">Episode - Area of usual residence, postcode</span></a> must be a valid Australian postcode in the
 range 0200-0299, 0800-9999</p>
 </li>
-<li><p class="first"><a class="reference internal" href="data-model-and-specifications.html#dfn-income-source"><span class="std std-ref">Episode - Source of Cash Income</span></a> can only have a value of
-&#8216;0: N/A - Client aged less than 16 years&#8217; where the client is less than
-16 years of age
-<strong>Nick: How do we determine age?</strong></p>
-</li>
-<li><p class="first"><a class="reference internal" href="data-model-and-specifications.html#dfn-referrer-organisation-type"><span class="std std-ref">Episode - Referrer Organisation Type</span></a> must only be set to
-&#8216;98: N/A - Self referral&#8217; where <a class="reference internal" href="data-model-and-specifications.html#dfn-referrer-profession"><span class="std std-ref">Episode - Referrer Profession</span></a> is also
+<li><p class="first"><a class="reference internal" href="data-model-and-specifications.html#dfn-referrer-organisation-type"><span class="std std-ref">Episode - Referrer Organisation Type</span></a> must be set to
+&#8216;98: N/A - Self referral&#8217; if and only if <a class="reference internal" href="data-model-and-specifications.html#dfn-referrer-profession"><span class="std std-ref">Episode - Referrer Profession</span></a> is also
 &#8216;98: N/A - Self referral&#8217;</p>
 </li>
 <li><p class="first">Only one episode is allowed to be open per client</p>
@@ -260,13 +271,15 @@ responses will only be allowed under the following conditions:</p>
 <li><a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-date"><span class="std std-ref">Service Contact - Date</span></a> must not be in the future</li>
 <li><a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-postcode"><span class="std std-ref">Service Contact - Postcode</span></a> must be a valid Australian postcode in the
 range 0200-0299, 0800-9999</li>
+<li>If <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-modality"><span class="std std-ref">Service Contact - Modality</span></a> is &#8216;0: No contact took place&#8217;
+<a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-no-show"><span class="std std-ref">Service Contact - No Show</span></a> must be &#8216;1: Yes&#8217;</li>
+<li>If <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-modality"><span class="std std-ref">Service Contact - Modality</span></a> is &#8216;0: No contact took place&#8217;
+<a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-postcode"><span class="std std-ref">Service Contact - Postcode</span></a> must be 9999</li>
 <li>If <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-modality"><span class="std std-ref">Service Contact - Modality</span></a> is &#8216;1: Face to Face&#8217;
-a value other than
-&#8216;98: Not applicable (Service Contact Modality is not face to face)&#8217;
-must be selected for <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-venue"><span class="std std-ref">Service Contact - Venue</span></a></li>
-<li>If <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-modality"><span class="std std-ref">Service Contact - Modality</span></a> is &#8216;1: Face to Face&#8217; a
-valid Australian postcode must be entered for <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-postcode"><span class="std std-ref">Service Contact - Postcode</span></a>
-<strong>Nick - How is this being checked?</strong></li>
+<a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-postcode"><span class="std std-ref">Service Contact - Postcode</span></a> must not be 9999</li>
+<li>If <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-modality"><span class="std std-ref">Service Contact - Modality</span></a> is &#8216;1: Face to Face&#8217;
+<a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-venue"><span class="std std-ref">Service Contact - Venue</span></a> must not be
+&#8216;98: Not applicable (Service Contact Modality is not face to face)&#8217;</li>
 <li>If <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-modality"><span class="std std-ref">Service Contact - Modality</span></a> is not &#8216;1: Face to Face&#8217;
 <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-postcode"><span class="std std-ref">Service Contact - Postcode</span></a> must be 9999</li>
 <li>On <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-type"><span class="std std-ref">Service Contact - Type</span></a> the value &#8216;98: ATAPS&#8217; will only be
@@ -284,6 +297,7 @@ response will only be allowed under the following conditions:<ul>
 <blockquote>
 <div><ul class="simple">
 <li><a class="reference internal" href="data-model-and-specifications.html#dfn-measure-date"><span class="std std-ref">Collection Occasion - Measure Date</span></a> must be after <a class="reference internal" href="data-model-and-specifications.html#dfn-referral-date"><span class="std std-ref">Episode - Referral Date</span></a></li>
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-measure-date"><span class="std std-ref">Collection Occasion - Measure Date</span></a> must not be in the future</li>
 <li>If both item scores and a total score are specified, the item scores must
 add up to the total score</li>
 </ul>
@@ -294,16 +308,18 @@ add up to the total score</li>
 <blockquote>
 <div><ul class="simple">
 <li><a class="reference internal" href="data-model-and-specifications.html#dfn-measure-date"><span class="std std-ref">Collection Occasion - Measure Date</span></a> must be after <a class="reference internal" href="data-model-and-specifications.html#dfn-referral-date"><span class="std std-ref">Episode - Referral Date</span></a></li>
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-measure-date"><span class="std std-ref">Collection Occasion - Measure Date</span></a> must not be in the future</li>
 <li>If both item scores and a total score are specified, the item scores must
 add up to the total score</li>
 </ul>
 </div></blockquote>
-</div>
+<span class="target" id="sdq-current-validations"></span></div>
 <div class="section" id="sdq">
-<span id="sdq-current-validations"></span><h2>SDQ<a class="headerlink" href="#sdq" title="Permalink to this headline">¶</a></h2>
+<h2>SDQ<a class="headerlink" href="#sdq" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><ul class="simple">
 <li><a class="reference internal" href="data-model-and-specifications.html#dfn-measure-date"><span class="std std-ref">Collection Occasion - Measure Date</span></a> must be after <a class="reference internal" href="data-model-and-specifications.html#dfn-referral-date"><span class="std std-ref">Episode - Referral Date</span></a></li>
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-measure-date"><span class="std std-ref">Collection Occasion - Measure Date</span></a> must not be in the future</li>
 </ul>
 </div></blockquote>
 </div>
