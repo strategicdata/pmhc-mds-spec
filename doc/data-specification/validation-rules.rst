@@ -53,19 +53,9 @@ Episode
 
   * The :ref:`dfn-episode_end_date` must be after the :ref:`dfn-referral_date`
   * Where :ref:`dfn-service_contact_final` is recorded as '1: No further services
-    are planned for the client in the current episode', the date of the
-    :ref:`dfn-service_contact_final` must be recorded as the Episode End Date
-  * Where :ref:`dfn-service_contact_final` is recorded as '1: No further services
     are planned for the client in the current episode', the
     :ref:`dfn-episode_completion_status` must be recorded using one of the
     'Episode closed' responses (Response items 2-6)
-  * Where an :ref:`dfn-episode_end_date` has been recorded, there must be a service
-    contact with :ref:`dfn-service_contact_final` set to '1: No further services
-    are planned for the client in the current episode'
-  * Where an :ref:`dfn-episode_end_date` has been recorded, a later
-    :ref:`dfn-service_contact_date` cannot be added
-  * :ref:`dfn-client_postcode` must be a valid Australian postcode in the
-    range 0200-0299, 0800-9999
   * :ref:`dfn-referrer_organisation_type` must be set to
     '98: N/A - Self referral' if and only if :ref:`dfn-referrer_profession` is also
     '98: N/A - Self referral'
@@ -89,6 +79,14 @@ Episode
 Service Contact
 ---------------
 
+  * Where :ref:`dfn-service_contact_final` is recorded as '1: No further services
+    are planned for the client in the current episode', the date of the
+    :ref:`dfn-service_contact_final` must be recorded as the Episode End Date
+  * Where an :ref:`dfn-episode_end_date` has been recorded, there must be a service
+    contact with :ref:`dfn-service_contact_final` set to '1: No further services
+    are planned for the client in the current episode'
+  * Where an :ref:`dfn-episode_end_date` has been recorded, a later
+    :ref:`dfn-service_contact_date` cannot be added
   * If :ref:`dfn-service_contact_modality` is '0: No contact took place'
     :ref:`dfn-service_contact_no_show` must be '1: Yes'
   * If :ref:`dfn-service_contact_modality` is '0: No contact took place'

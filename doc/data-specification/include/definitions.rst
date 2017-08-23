@@ -1199,6 +1199,8 @@ The Australian postcode of the client.
   their main residence, or where the person has no other residence, the place
   they currently reside.'
   
+  Postcodes are deemed valid if they are in the range 0200-0299, 0800-9999.
+  
 
 :METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__
 
