@@ -1,0 +1,413 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Validation Rules &mdash; PMHC MDS Version 1.0.10 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+
+  
+    <link rel="top" title="PMHC MDS Version 1.0.10 documentation" href="../index.html"/>
+        <link rel="up" title="Data Specification" href="index.html"/>
+        <link rel="next" title="ATAPS MDS to PMHC MDS data mapping" href="ataps/ataps-pmhc-mapping.html"/>
+        <link rel="prev" title="Using the data specification to create client forms" href="form-creation.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> PMHC MDS
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                Version 1.0.10
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../user-documentation/index.html">User Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Data Specification</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="reporting-arrangements.html">Reporting arrangements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="identifier-management.html">Identifier management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data-model-and-specifications.html">Data model and specifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="upload-specification.html">Upload specification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data-item-summary.html">Data item summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="form-creation.html">Using the data specification to create client forms</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Validation Rules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#current-validations">Current Validations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#practitioner">Practitioner</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#episode">Episode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#service-contact">Service Contact</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#k10">K10+</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#k5">K5</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sdq">SDQ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#future-validations">Future Validations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#episode-future-validations">Episode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">SDQ</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ataps/ataps-pmhc-mapping.html">ATAPS MDS to PMHC MDS data mapping</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html">Data Specification Change log</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../faqs/index.html">Frequently Asked Questions</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">PMHC MDS</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="index.html">Data Specification</a> &raquo;</li>
+      
+    <li>Validation Rules</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/data-specification/validation-rules.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="validation-rules">
+<span id="id1"></span><h1>Validation Rules<a class="headerlink" href="#validation-rules" title="Permalink to this headline">¶</a></h1>
+<p>This document defines validation rules between items and record types.
+The domain of individual items is defined in <a class="reference internal" href="data-model-and-specifications.html#record-formats"><span class="std std-ref">Record formats</span></a>.</p>
+<div class="section" id="current-validations">
+<span id="id2"></span><h2>Current Validations<a class="headerlink" href="#current-validations" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="practitioner">
+<span id="practitioner-current-validations"></span><h2>Practitioner<a class="headerlink" href="#practitioner" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul>
+<li><p class="first"><a class="reference internal" href="data-model-and-specifications.html#dfn-atsi-cultural-training"><span class="std std-ref">Practitioner - ATSI Cultural Training</span></a> is only allowed to be set to
+&#8216;3 - Not required&#8217; if <a class="reference internal" href="data-model-and-specifications.html#dfn-practitioner-atsi-status"><span class="std std-ref">Practitioner - Aboriginal and Torres Strait Islander Status</span></a> is one of</p>
+<ul class="simple">
+<li>1 - Aboriginal but not Torres Strait Islander origin</li>
+<li>2 - Torres Strait Islander but not Aboriginal origin</li>
+<li>3 - Both Aboriginal and Torres Strait Islander origin</li>
+</ul>
+<p>or</p>
+<p>The organistion to which the practitioner belongs has
+<a class="reference internal" href="data-model-and-specifications.html#dfn-organisation-type"><span class="std std-ref">Provider Organisation - Type</span></a> set to &#8216;8: Aboriginal Health/Medical Service&#8217;</p>
+</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="client">
+<span id="client-current-validations"></span><h2>Client<a class="headerlink" href="#client" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul>
+<li><p class="first"><a class="reference internal" href="data-model-and-specifications.html#dfn-prof-english"><span class="std std-ref">Client - Proficiency in Spoken English</span></a> response &#8216;0: Not applicable (persons under 5
+years of age or who speak only English)&#8217; is only allowed where</p>
+<ul class="simple">
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-main-lang-at-home"><span class="std std-ref">Client - Main Language Spoken at Home</span></a> is &#8216;1201: English&#8217;, or</li>
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-est-date-of-birth"><span class="std std-ref">Client - Estimated Date of Birth Flag</span></a> is  &#8216;1: Date of birth is accurate&#8217; and the
+person is under 5, or</li>
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-est-date-of-birth"><span class="std std-ref">Client - Estimated Date of Birth Flag</span></a> is &#8216;2: Date of birth is an estimate&#8217; and the
+person is under 6</li>
+</ul>
+<p>Where <a class="reference internal" href="data-model-and-specifications.html#dfn-est-date-of-birth"><span class="std std-ref">Client - Estimated Date of Birth Flag</span></a> is &#8216;8: Date of birth is a dummy&#8217; or
+&#8216;9: Accuracy of stated date of birth is not known&#8217; <a class="reference internal" href="data-model-and-specifications.html#dfn-prof-english"><span class="std std-ref">Client - Proficiency in Spoken English</span></a>
+is not checked.</p>
+</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="episode">
+<span id="episode-current-validations"></span><h2>Episode<a class="headerlink" href="#episode" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul>
+<li><p class="first">The <a class="reference internal" href="data-model-and-specifications.html#dfn-episode-end-date"><span class="std std-ref">Episode - End Date</span></a> must be after the <a class="reference internal" href="data-model-and-specifications.html#dfn-referral-date"><span class="std std-ref">Episode - Referral Date</span></a></p>
+</li>
+<li><p class="first">Where <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-final"><span class="std std-ref">Service Contact - Final</span></a> is recorded as &#8216;1: No further services
+are planned for the client in the current episode&#8217;, the date of the
+<a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-final"><span class="std std-ref">Service Contact - Final</span></a> must be recorded as the Episode End Date</p>
+</li>
+<li><p class="first">Where <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-final"><span class="std std-ref">Service Contact - Final</span></a> is recorded as &#8216;1: No further services
+are planned for the client in the current episode&#8217;, the
+<a class="reference internal" href="data-model-and-specifications.html#dfn-episode-completion-status"><span class="std std-ref">Episode - Completion Status</span></a> must be recorded using one of the
+&#8216;Episode closed&#8217; responses (Response items 2-6)</p>
+</li>
+<li><p class="first">Where an <a class="reference internal" href="data-model-and-specifications.html#dfn-episode-end-date"><span class="std std-ref">Episode - End Date</span></a> has been recorded, there must be a service
+contact with <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-final"><span class="std std-ref">Service Contact - Final</span></a> set to &#8216;1: No further services
+are planned for the client in the current episode&#8217;</p>
+</li>
+<li><p class="first">Where an <a class="reference internal" href="data-model-and-specifications.html#dfn-episode-end-date"><span class="std std-ref">Episode - End Date</span></a> has been recorded, a later
+<a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-date"><span class="std std-ref">Service Contact - Date</span></a> cannot be added</p>
+</li>
+<li><p class="first"><a class="reference internal" href="data-model-and-specifications.html#dfn-client-postcode"><span class="std std-ref">Episode - Area of usual residence, postcode</span></a> must be a valid Australian postcode in the
+range 0200-0299, 0800-9999</p>
+</li>
+<li><p class="first"><a class="reference internal" href="data-model-and-specifications.html#dfn-referrer-organisation-type"><span class="std std-ref">Episode - Referrer Organisation Type</span></a> must be set to
+&#8216;98: N/A - Self referral&#8217; if and only if <a class="reference internal" href="data-model-and-specifications.html#dfn-referrer-profession"><span class="std std-ref">Episode - Referrer Profession</span></a> is also
+&#8216;98: N/A - Self referral&#8217;</p>
+</li>
+<li><p class="first">Only one episode is allowed to be open per client</p>
+</li>
+<li><p class="first">On <a class="reference internal" href="data-model-and-specifications.html#dfn-principal-diagnosis"><span class="std std-ref">Episode - Principal Diagnosis</span></a> and <a class="reference internal" href="data-model-and-specifications.html#dfn-additional-diagnosis"><span class="std std-ref">Episode - Additional Diagnosis</span></a>
+the values:</p>
+<ul class="simple">
+<li>100: Anxiety disorders (ATAPS)</li>
+<li>200: Affective (Mood) disorders (ATAPS)</li>
+<li>300: Substance use disorders (ATAPS)</li>
+<li>400: Psychotic disorders (ATAPS)</li>
+</ul>
+<p>will only be allowed where data has been migrated from ATAPS. The above
+responses will only be allowed under the following conditions:</p>
+<ul class="simple">
+<li>The <a class="reference internal" href="data-model-and-specifications.html#dfn-referral-date"><span class="std std-ref">Episode - Referral Date</span></a> was before 1 July 2017</li>
+<li>The <a class="reference internal" href="data-model-and-specifications.html#dfn-episode-tags"><span class="std std-ref">Episode - Tags</span></a> field must contain the !ATAPS flag</li>
+</ul>
+</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="service-contact">
+<span id="service-contact-current-validations"></span><h2>Service Contact<a class="headerlink" href="#service-contact" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li>If <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-modality"><span class="std std-ref">Service Contact - Modality</span></a> is &#8216;0: No contact took place&#8217;
+<a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-no-show"><span class="std std-ref">Service Contact - No Show</span></a> must be &#8216;1: Yes&#8217;</li>
+<li>If <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-modality"><span class="std std-ref">Service Contact - Modality</span></a> is &#8216;0: No contact took place&#8217;
+<a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-postcode"><span class="std std-ref">Service Contact - Postcode</span></a> must be 9999</li>
+<li>If <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-modality"><span class="std std-ref">Service Contact - Modality</span></a> is &#8216;1: Face to Face&#8217;
+<a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-postcode"><span class="std std-ref">Service Contact - Postcode</span></a> must not be 9999</li>
+<li>If <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-modality"><span class="std std-ref">Service Contact - Modality</span></a> is &#8216;1: Face to Face&#8217;
+<a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-venue"><span class="std std-ref">Service Contact - Venue</span></a> must not be
+&#8216;98: Not applicable (Service Contact Modality is not face to face)&#8217;</li>
+<li>If <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-modality"><span class="std std-ref">Service Contact - Modality</span></a> is not &#8216;1: Face to Face&#8217;
+<a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-postcode"><span class="std std-ref">Service Contact - Postcode</span></a> must be 9999</li>
+<li>On <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-type"><span class="std std-ref">Service Contact - Type</span></a> the value &#8216;98: ATAPS&#8217; will only be
+allowed where data has been migrated from ATAPS. The above
+response will only be allowed under the following conditions:<ul>
+<li>The <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-date"><span class="std std-ref">Service Contact - Date</span></a> was before 30 June 2018</li>
+<li>The <a class="reference internal" href="data-model-and-specifications.html#dfn-episode-tags"><span class="std std-ref">Episode - Tags</span></a> field must contain the !ATAPS flag</li>
+</ul>
+</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="k10">
+<span id="k10p-current-validations"></span><h2>K10+<a class="headerlink" href="#k10" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-measure-date"><span class="std std-ref">Collection Occasion - Measure Date</span></a> must be after <a class="reference internal" href="data-model-and-specifications.html#dfn-referral-date"><span class="std std-ref">Episode - Referral Date</span></a></li>
+<li>If both item scores and a total score are specified, the item scores must
+add up to the total score</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="k5">
+<span id="k5-current-validations"></span><h2>K5<a class="headerlink" href="#k5" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-measure-date"><span class="std std-ref">Collection Occasion - Measure Date</span></a> must be after <a class="reference internal" href="data-model-and-specifications.html#dfn-referral-date"><span class="std std-ref">Episode - Referral Date</span></a></li>
+<li>If both item scores and a total score are specified, the item scores must
+add up to the total score</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="sdq">
+<span id="sdq-current-validations"></span><h2>SDQ<a class="headerlink" href="#sdq" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-measure-date"><span class="std std-ref">Collection Occasion - Measure Date</span></a> must be after <a class="reference internal" href="data-model-and-specifications.html#dfn-referral-date"><span class="std std-ref">Episode - Referral Date</span></a></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="future-validations">
+<span id="id3"></span><h2>Future Validations<a class="headerlink" href="#future-validations" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="episode-future-validations">
+<span id="id4"></span><h2>Episode<a class="headerlink" href="#episode-future-validations" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li>Restrict &#8216;4: Complex care package&#8217; for <a class="reference internal" href="data-model-and-specifications.html#dfn-principal-focus"><span class="std std-ref">Episode - Principal Focus of Treatment Plan</span></a> to
+selected PHN Lead Sites</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id5">
+<h2>SDQ<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li>Use the table at <a class="reference internal" href="data-model-and-specifications.html#sdq-data-elements"><span class="std std-ref">SDQ</span></a> to validate the items that
+are used in each version of the SDQ.</li>
+<li>If both item scores, subscales and total score are specified, the item
+scores must agree with the subscales/total score.</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ataps/ataps-pmhc-mapping.html" class="btn btn-neutral float-right" title="ATAPS MDS to PMHC MDS data mapping" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="form-creation.html" class="btn btn-neutral" title="Using the data specification to create client forms" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Australian Government - Department of Health.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'Version 1.0.10',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+ 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-84023505-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+</body>
+</html>
