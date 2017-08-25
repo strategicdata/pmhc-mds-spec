@@ -64,4 +64,6 @@ Regularly check the announcements on the `PMHC MDS home page <https://pmhc-mds.n
 Master Client Index
 ~~~~~~~~~~~~~~~~~~~
 
+Current development for the Master Client Index is on hold.
+
 Refer to the recent Department announcement on the `INFORMATION and ACTION: PHN CEO - Primary Mental Health Care Minimum Data Set Update | June 21, 2017 <https://www.pmhc-mds.com/communications/#/2017/06/21/FOR-INFORMATION-and-ACTION-PHN-CEO-Primary-Mental-Health-Care-Minimum-Data-Set-Update/>`_.

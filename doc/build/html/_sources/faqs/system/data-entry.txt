@@ -18,9 +18,9 @@ Refer to data specifications for :ref:`identifier_management`.
 What is the best way to manage the client key?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The Client Key needs to be stable for each individual within the PHN.
+The Client Key needs to be stable for each individual within the Provider Organisation.
 
-Initially the PHN will need to play a role in coordinating assignment and management
+Initially the PHN may decide to play a role in coordinating assignment and management
 of these keys for Provider Organisations, prior to the PMHC MDS implementation a
 Master Client Index during :ref:`Stage-Two` of development.
 
@@ -33,10 +33,11 @@ Refer to the Department's response to :ref:`identifier-and-key-FAQs`.
 Can you suggest a best practice approach to managing client keys?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-We understand that PHNs approach :ref:`identifier_management` in various different ways
-to best suit their practice. PHNs will continue to manage client keys until the
-Master Client Index is developed and released in :ref:`Stage-Two`. In the interim, we suggest
-speaking with another PHN in your network to understand their approach to managing
+We understand that PHNs and Provider Organisations will approach :ref:`identifier_management`
+in various different ways to best suit their practice. PHNs may decide to
+manage client keys until the Master Client Index is developed and released
+in :ref:`Stage-Two`. In the interim, we suggest speaking with your PHN or another
+Provider Organisation in your network to understand their approach to managing
 their client keys.
 
 Refer to the Department's response to :ref:`identifier-and-key-FAQs`.
@@ -46,12 +47,21 @@ Refer to the Department's response to :ref:`identifier-and-key-FAQs`.
 How will the Master Client Index work?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-During :ref:`Stage-Two` of the PMHC MDS implementation a Master Client Index will be created
-to allow Provider Organisations to manage the :ref:`client_keys` across PHNs. :ref:`Stage-Two`
-development updates will be released by the Department of Health in the lead up to
-release.
+The previous PMHC MDS specification requires a Client Key that is unique and
+stable at the PHN regional level, not at the provider organisation level. The
+purpose of the Master Client Index is to help PHNs and their provider organisations
+manage client information across the PHN region. This requirement has proven
+problematic for PHNs and is being worked through by the PMHC MDS Working Group.
 
-Regularly check the announcements on the `PMHC MDS home page <https://pmhc-mds.net/#/>`_ to keep informed.
+To determine what issues exist with managing the client key and possible solutions,
+nine PHNs worked with Strategic Data to describe their models for triaging patients,
+the information systems being used by PHNs and provider organisations, the ease of
+updating information systems and resources available for manual reconciliation of clients.
+
+As a result of this work, a Master Client Index is not possible at this time,
+and as such, will not be a requirement for full compliance from 1 July 2017.
+
+See :ref:`dev-MCI-faq`
 
 .. _data-entry-frequency-faq:
 
@@ -72,15 +82,6 @@ When an episode does not have any service contacts added yet, it does not have
 a start date and the system will reported it as 'Uncommenced'.
 
 Refer to :ref:`key-concepts-episode`.
-
-.. _include-all-contact-data-faq:
-
-Do I need to include all service contacts and measures for an episode in an file?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Yes, if an episode is included in an upload file, you need to include **ALL** service
-contacts and measures for that episode. Service contacts and measures that are
-not included will be removed from the PMHC MDS.
 
 .. _do-not-have-answer-faq:
 
@@ -149,4 +150,16 @@ The PHMC MDS specifications seems limited. Can we capture and record additional 
 
 PHNs can choose to capture and record additional data outside the PMHC MDS.
 
-See :ref:`record-additional-data-faq`
+How do I enter a referral?
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+A referral is entered as an :ref:`key-concepts-episode`
+
+Refer to the online User Guide :ref:`episode-data`
+
+How do I enter a K10+, K5 or SDQ?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+These measures are entered as an :ref:`outcome-collection-occasion-data-elements`
+
+Refer to the online User Guide :ref:`episode-data`

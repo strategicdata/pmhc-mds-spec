@@ -59,7 +59,7 @@ assigned. The table below lists the tabs that will be shown for each role:
 +-------------------------+------------------------------+
 | Upload                  | Upload                       |
 +-------------------------+------------------------------+
-| Reporting               | Data Extraction              |
+| Reporting               | Reports                      |
 +-------------------------+------------------------------+
 | Data Entry              | Data Entry                   |
 +-------------------------+------------------------------+

@@ -72,9 +72,10 @@ Statistical Linkage Keys (SLK) - will these be generated in a similar manner to 
 
 Yes.
 
-Details on how they are created, currently available on the ATAPS website, will
-be included in the support resources to be progressively incorporated on the
-PMHC MDS website.
+Details on how the SLKs are created, are currently available on the `PMHC MDS Specifications - SLK <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#client-statistical-linkage-key>`_.
+An SLK Generator has been developed on the `PMHC MDS - SLK tab <https://pmhc-mds.net/#/slk>`_.
+
+See :ref:`record-additional-data-faq` for details how to use this feature.
 
 ...
 
