@@ -3,6 +3,15 @@
 User Guide Change log
 =====================
 
+25/8/2017
+---------
+
+* Edited :ref:`add-client`
+
+* Edited :ref:`edit-client`
+
+* Updated screenshots for :ref:`data-entry`
+
 28/7/2017
 ---------
 
