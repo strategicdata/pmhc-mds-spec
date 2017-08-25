@@ -134,7 +134,7 @@ now be displaying these new details in the Clients View Details tab.
 
 If you receive an error message, the data will need to be corrected before the
 record is saved and added to the PMHC MDS.
-See Validation Rules - :Ref:`https://docs.pmhc-mds.com/data-specification/validation-rules.html#client`
+See Validation Rules - :Ref:`client-current-validations`
 
 .. _add-client:
 
@@ -168,7 +168,7 @@ now be displaying the client's saved information in the Clients View Details tab
 
 If you receive an error message, the data will need to be corrected before the
 record is saved and added to the PMHC MDS.
-See Validation Rules - :Ref:`https://docs.pmhc-mds.com/data-specification/validation-rules.html#client`
+See Validation Rules - :Ref:`client-current-validations`
 
 .. _delete-client:
 
@@ -256,7 +256,7 @@ and it will now be displaying these new details in the Episode View Details tab.
 
 If you receive an error message, the data will need to be corrected before the
 record is saved and added to the PMHC MDS.
-See Validation Rules - Episode :Ref:`https://docs.pmhc-mds.com/data-specification/validation-rules.html#episode`
+See Validation Rules - Episode :Ref:`episode-current-validations`
 
 .. _add-episode:
 
@@ -283,7 +283,7 @@ and it will now be displaying these new details in the Episode View Details tab.
 
 If you receive an error message, the data will need to be corrected before the
 record is saved and added to the PMHC MDS.
-See Validation Rules - :Ref:`https://docs.pmhc-mds.com/data-specification/validation-rules.html#episode`
+See Validation Rules - :Ref:`episode-current-validations`
 
 .. _delete-episode:
 
@@ -350,7 +350,7 @@ and it will now be displaying these new details in the View service Contact Deta
 
 If you receive an error message, the data will need to be corrected before the
 record is saved and added to the PMHC MDS.
-See Validation Rules - :Ref:`https://docs.pmhc-mds.com/data-specification/validation-rules.html#service-contact`
+See Validation Rules - :Ref:`service-contact-current-validations`
 
 .. _add-service-contact:
 
@@ -377,7 +377,7 @@ and it will now be displaying these new details in the View service Contact Deta
 
 If you receive an error message, the data will need to be corrected before the
 record is saved and added to the PMHC MDS.
-See Validation Rules - :Ref:`https://docs.pmhc-mds.com/data-specification/validation-rules.html#service-contact`
+See Validation Rules - :Ref:`service-contact-current-validations`
 
 .. _delete-service-contact:
 
@@ -450,9 +450,9 @@ and it will now be displaying these new details in the View Collection Occasions
 If you receive an error message, the data will need to be corrected before the
 record is saved and added to the PMHC MDS.
 See Validation Rules for:
-* :Ref:`https://docs.pmhc-mds.com/data-specification/validation-rules.html#k10`
-* :Ref:`https://docs.pmhc-mds.com/data-specification/validation-rules.html#k5`
-* :Ref:`https://docs.pmhc-mds.com/data-specification/validation-rules.html#sdq`
+* :Ref:`k10p-current-validations`
+* :Ref:`k5-current-validations`
+* :Ref:`sdq-current-validations`
 
 .. _add-collection-occasion:
 
@@ -491,9 +491,9 @@ and it will now be displaying these new details in the View Collection Occasions
 If you receive an error message, the data will need to be corrected before the
 record is saved and added to the PMHC MDS.
 See Validation Rules for:
-* :Ref:`https://docs.pmhc-mds.com/data-specification/validation-rules.html#k10`
-* :Ref:`https://docs.pmhc-mds.com/data-specification/validation-rules.html#k5`
-* :Ref:`https://docs.pmhc-mds.com/data-specification/validation-rules.html#sdq`
+* :Ref:`k10p-current-validations`
+* :Ref:`k5-current-validations`
+* :Ref:`sdq-current-validations`
 
 .. _delete-collection-occasion:
 
@@ -586,7 +586,7 @@ and it will now be displaying these new details in the View Practitioner Details
 
 If you receive an error message, the data will need to be corrected before the
 record is saved and added to the PMHC MDS.
-See Validation Rules - :Ref:`https://docs.pmhc-mds.com/data-specification/validation-rules.html#practitioner`
+See Validation Rules - :Ref:`practitioner-current-validations`
 
 .. _add-practitioner:
 
@@ -612,7 +612,7 @@ and it will now be displaying these new details in the View Practitioner Details
 
 If you receive an error message, the data will need to be corrected before the
 record is saved and added to the PMHC MDS.
-See Validation Rules - :Ref:`https://docs.pmhc-mds.com/data-specification/validation-rules.html#practitioner`
+See Validation Rules - :Ref:`practitioner-current-validations`
 
 You can add a practitioners individually through the data entry interface or alternately, practitioner records can be uploaded in bulk. See :ref:`upload`
 
