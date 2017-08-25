@@ -10,3 +10,5 @@ recommends that 'usual' be defined as: 'the place where the person has or
 intends to live for 6 months or more, or the place that the person regards as
 their main residence, or where the person has no other residence, the place
 they currently reside.'
+
+Postcodes are deemed valid if they are in the range 0200-0299, 0800-9999.

@@ -262,6 +262,7 @@
 <li class="toctree-l2"><a class="reference internal" href="upload-specification.html">Upload specification</a></li>
 <li class="toctree-l2"><a class="reference internal" href="data-item-summary.html">Data item summary</a></li>
 <li class="toctree-l2"><a class="reference internal" href="form-creation.html">Using the data specification to create client forms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="validation-rules.html">Validation Rules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ataps/ataps-pmhc-mapping.html">ATAPS MDS to PMHC MDS data mapping</a></li>
 <li class="toctree-l2"><a class="reference internal" href="change-log.html">Data Specification Change log</a></li>
 </ul>
@@ -5755,9 +5756,9 @@ refer to <a class="reference internal" href="form-creation.html#form-country-of-
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">If the date of birth is unknown, the following approaches should be used:</p>
-<blockquote>
-<div><ul class="simple">
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><ul class="first simple">
+<li>The date of birth must not be in the future.</li>
+<li>If the date of birth is unknown, the following approaches should be used:<ul>
 <li>If the age of the person is known, the age should be used to derive the
 year of birth</li>
 <li>If the age of the person is unknown, an estimated age of the person should
@@ -5769,7 +5770,8 @@ following convention: 0101Estimated year of birth.</li>
 <li>If you have estimated the year of birth make sure you record this in the
 &#8216;Estimated date of birth flag&#8217;</li>
 </ul>
-</div></blockquote>
+</li>
+</ul>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">METeOR:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/287007">287007</a></p>
@@ -6955,7 +6957,10 @@ used across the National Health Data Dictionary; specifically, dates must be
 of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
 necessary to pad out a value. For instance, 13th March 2008 would appear as
 13032008.</p>
-<p class="last">If the date the measure was given is unknown, 09099999 should be used.</p>
+<p>If the date the measure was given is unknown, 09099999 should be used.</p>
+<ul class="last simple">
+<li>The measure date must not be in the future.</li>
+</ul>
 </td>
 </tr>
 </tbody>
@@ -7207,6 +7212,7 @@ recommends that &#8216;usual&#8217; be defined as: &#8216;the place where the pe
 intends to live for 6 months or more, or the place that the person regards as
 their main residence, or where the person has no other residence, the place
 they currently reside.&#8217;</p>
+<p>Postcodes are deemed valid if they are in the range 0200-0299, 0800-9999.</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">METeOR:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/429894">429894</a></p>
@@ -7442,7 +7448,10 @@ item has not been collected.</p>
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">false</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">An <em>Episode of Care</em> may be ended in one of two ways:</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><ul class="first simple">
+<li>The episode end date must not be in the future.</li>
+</ul>
+<p>An <em>Episode of Care</em> may be ended in one of two ways:</p>
 <ul class="simple">
 <li>clinically, consequent upon conclusion of treatment for the client and
 discharge from care; or</li>
@@ -8399,17 +8408,24 @@ that cannot be described by other categories.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body">referral_date</td>
+<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">referral_date</p>
+</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">date</td>
+<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">date</p>
+</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">false</td>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">false</p>
+</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body">For Date fields, data must be recorded in compliance with the standard format
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">For Date fields, data must be recorded in compliance with the standard format
 used across the National Health Data Dictionary; specifically, dates must be
 of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
 necessary to pad out a value. For instance, 13th March 2008 would appear as
-13032008.</td>
+13032008.</p>
+<ul class="last simple">
+<li>The referral date must not be in the future.</li>
+</ul>
+</td>
 </tr>
 </tbody>
 </table>
@@ -9967,13 +9983,17 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><p class="first">gYear</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">If the year of birth is unknown, the following approaches should be used:</p>
-<ul class="last simple">
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><ul class="first last simple">
+<li>The year of birth must not be in the future.</li>
+<li>The year of birth must be after 1900.</li>
+<li>If the year of birth is unknown, the following approaches should be used:<ul>
 <li>If the age of the practitioner is known, the age should be used to derive the
 year of birth</li>
 <li>If the age of the practitioner is unknown, an estimated age of the practitioner should
 be used to estimate a year of birth</li>
 <li>If the date of birth is totally unknown, use 9999.</li>
+</ul>
+</li>
 </ul>
 </td>
 </tr>
@@ -12518,19 +12538,27 @@ is charged it should be minimal and based on an individual&#8217;s capacity to p
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body">service_contact_date</td>
+<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">service_contact_date</p>
+</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">date</td>
+<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">date</p>
+</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body">For Date fields, data must be recorded in compliance with the standard format
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">For Date fields, data must be recorded in compliance with the standard format
 used across the National Health Data Dictionary; specifically, dates must be
 of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
 necessary to pad out a value. For instance, 13th March 2008 would appear as
-13032008.</td>
+13032008.</p>
+<ul class="simple">
+<li>The service contact date must not be in the future.</li>
+</ul>
+</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">METeOR:</th><td class="field-body"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/494356">494356</a></td>
+<tr class="field-odd field"><th class="field-name">METeOR:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/494356">494356</a></p>
+</td>
 </tr>
 </tbody>
 </table>
@@ -12887,6 +12915,8 @@ of Australian Postcodes can be found at <a class="reference external" href="http
 <li>If Service Contact Modality is not &#8216;Face to Face&#8217; enter 9999</li>
 <li>If Service Contact Modality is &#8216;Face to Face&#8217; a valid Australian postcode must be
 entered</li>
+<li>As of 1 November 2016, PMHC MDS currently validates that postcodes are in the
+range 0200-0299 or 0800-9999.</li>
 </ul>
 </td>
 </tr>

@@ -1,0 +1,360 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Entering data in the PMHC Minimum Data Set &mdash; PMHC MDS Version 1.0.10 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+
+  
+    <link rel="top" title="PMHC MDS Version 1.0.10 documentation" href="../../index.html"/>
+        <link rel="up" title="System Frequently Asked Questions" href="index.html"/>
+        <link rel="next" title="Uploading data" href="uploading.html"/>
+        <link rel="prev" title="Accessing the PMHC Minimum Data Set" href="access.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> PMHC MDS
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                Version 1.0.10
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../user-documentation/index.html">User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../data-specification/index.html">Data Specification</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Frequently Asked Questions</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../concepts-processes/index.html">Concepts and Processes Frequently Asked Questions</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">System Frequently Asked Questions</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="access.html">Accessing the PMHC Minimum Data Set</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Entering data in the PMHC Minimum Data Set</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#why-can-t-we-use-the-slk-as-the-client-key">Why can&#8217;t we use the SLK as the client key?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#what-is-the-best-way-to-manage-the-client-key">What is the best way to manage the client key?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#can-you-suggest-a-best-practice-approach-to-managing-client-keys">Can you suggest a best practice approach to managing client keys?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#how-will-the-master-client-index-work">How will the Master Client Index work?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#how-often-should-i-enter-data-into-the-mds">How often should I enter data into the MDS?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#why-is-an-episode-showing-as-uncommenced">Why is an episode showing as uncommenced?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#what-do-i-do-if-the-gp-mental-health-provider-has-not-given-an-answer-to-one-or-more-questions-in-the-minimum-dataset">What do I do if the GP / mental health provider has not given an answer to one or more questions in the minimum dataset?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#what-are-the-options-where-the-information-collected-does-not-fit-into-the-available-fields">What are the options where the information collected does not fit into the available fields?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#can-i-go-back-and-enter-information-if-i-dont-have-it-at-the-time">Can I go back and enter information if I don’t have it at the time?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#can-i-enter-fictitious-data-as-a-part-of-testing">Can I enter fictitious data as a part of testing?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#where-do-i-enter-mhnips-data-collection">Where do I enter MHNIPS data collection?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#the-phmc-mds-specifications-seems-limited-can-we-capture-and-record-additional-data">The PHMC MDS specifications seems limited. Can we capture and record additional data?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#how-do-i-enter-a-referral">How do I enter a referral?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#how-do-i-enter-a-k10-k5-or-sdq">How do I enter a K10+, K5 or SDQ?</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="uploading.html">Uploading data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="additional-data.html">Capturing additional data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="checking.html">Checking data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="storing.html">Storing data relating to the minimum dataset system</a></li>
+<li class="toctree-l3"><a class="reference internal" href="development.html">Development of the PMHC Minimum Data Set</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mailing-list.html">PMHC mailing list</a></li>
+<li class="toctree-l3"><a class="reference internal" href="help-desk.html">Getting Help</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../change-log.html">Frequently Asked Questions Change log</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../index.html">PMHC MDS</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="../index.html">Frequently Asked Questions</a> &raquo;</li>
+      
+          <li><a href="index.html">System Frequently Asked Questions</a> &raquo;</li>
+      
+    <li>Entering data in the PMHC Minimum Data Set</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/faqs/system/data-entry.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="entering-data-in-the-pmhc-minimum-data-set">
+<span id="data-entry-faqs"></span><h1>Entering data in the PMHC Minimum Data Set<a class="headerlink" href="#entering-data-in-the-pmhc-minimum-data-set" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="why-can-t-we-use-the-slk-as-the-client-key">
+<span id="slk-as-client-key-faq"></span><h2>Why can&#8217;t we use the SLK as the client key?<a class="headerlink" href="#why-can-t-we-use-the-slk-as-the-client-key" title="Permalink to this headline">¶</a></h2>
+<p>The Client Key is required to be a unique client identifier. The SLK isn’t a
+unique key and therefore not suitable to be used as the Client Key.</p>
+<p>Refer to data specifications for <a class="reference internal" href="../../data-specification/identifier-management.html#identifier-management"><span class="std std-ref">Identifier management</span></a>.</p>
+</div>
+<div class="section" id="what-is-the-best-way-to-manage-the-client-key">
+<span id="manage-client-key-faq"></span><h2>What is the best way to manage the client key?<a class="headerlink" href="#what-is-the-best-way-to-manage-the-client-key" title="Permalink to this headline">¶</a></h2>
+<p>The Client Key needs to be stable for each individual within the Provider Organisation.</p>
+<p>Initially the PHN may decide to play a role in coordinating assignment and management
+of these keys for Provider Organisations, prior to the PMHC MDS implementation a
+Master Client Index during <a class="reference internal" href="development.html#stage-two"><span class="std std-ref">Stage Two</span></a> of development.</p>
+<p>See data specifications for <a class="reference internal" href="../../data-specification/identifier-management.html#identifier-management"><span class="std std-ref">Identifier management</span></a>.</p>
+<p>Refer to the Department&#8217;s response to <a class="reference internal" href="../concepts-processes/identifiers.html#identifier-and-key-faqs"><span class="std std-ref">Questions about Unique Identifiers and &#8216;Keys&#8217;</span></a>.</p>
+</div>
+<div class="section" id="can-you-suggest-a-best-practice-approach-to-managing-client-keys">
+<span id="best-practice-client-key-faq"></span><h2>Can you suggest a best practice approach to managing client keys?<a class="headerlink" href="#can-you-suggest-a-best-practice-approach-to-managing-client-keys" title="Permalink to this headline">¶</a></h2>
+<p>We understand that PHNs and Provider Organisations will approach <a class="reference internal" href="../../data-specification/identifier-management.html#identifier-management"><span class="std std-ref">Identifier management</span></a>
+in various different ways to best suit their practice. PHNs may decide to
+manage client keys until the Master Client Index is developed and released
+in <a class="reference internal" href="development.html#stage-two"><span class="std std-ref">Stage Two</span></a>. In the interim, we suggest speaking with your PHN or another
+Provider Organisation in your network to understand their approach to managing
+their client keys.</p>
+<p>Refer to the Department&#8217;s response to <a class="reference internal" href="../concepts-processes/identifiers.html#identifier-and-key-faqs"><span class="std std-ref">Questions about Unique Identifiers and &#8216;Keys&#8217;</span></a>.</p>
+</div>
+<div class="section" id="how-will-the-master-client-index-work">
+<span id="master-client-index-faq"></span><h2>How will the Master Client Index work?<a class="headerlink" href="#how-will-the-master-client-index-work" title="Permalink to this headline">¶</a></h2>
+<p>The previous PMHC MDS specification requires a Client Key that is unique and
+stable at the PHN regional level, not at the provider organisation level. The
+purpose of the Master Client Index is to help PHNs and their provider organisations
+manage client information across the PHN region. This requirement has proven
+problematic for PHNs and is being worked through by the PMHC MDS Working Group.</p>
+<p>To determine what issues exist with managing the client key and possible solutions,
+nine PHNs worked with Strategic Data to describe their models for triaging patients,
+the information systems being used by PHNs and provider organisations, the ease of
+updating information systems and resources available for manual reconciliation of clients.</p>
+<p>As a result of this work, a Master Client Index is not possible at this time,
+and as such, will not be a requirement for full compliance from 1 July 2017.</p>
+<p>See <a class="reference internal" href="development.html#dev-mci-faq"><span class="std std-ref">Master Client Index</span></a></p>
+</div>
+<div class="section" id="how-often-should-i-enter-data-into-the-mds">
+<span id="data-entry-frequency-faq"></span><h2>How often should I enter data into the MDS?<a class="headerlink" href="#how-often-should-i-enter-data-into-the-mds" title="Permalink to this headline">¶</a></h2>
+<p>Refer to <a class="reference internal" href="../../data-specification/reporting-arrangements.html#reporting-timeliness"><span class="std std-ref">Reporting timeliness</span></a>.</p>
+</div>
+<div class="section" id="why-is-an-episode-showing-as-uncommenced">
+<span id="data-entry-episode-uncommenced"></span><h2>Why is an episode showing as uncommenced?<a class="headerlink" href="#why-is-an-episode-showing-as-uncommenced" title="Permalink to this headline">¶</a></h2>
+<p>The episode definition states that &#8216;Episodes commence at the point of first contact.
+The episode start date will be derived from the first service contact date.&#8217;</p>
+<p>When an episode does not have any service contacts added yet, it does not have
+a start date and the system will reported it as &#8216;Uncommenced&#8217;.</p>
+<p>Refer to <a class="reference internal" href="../../data-specification/data-model-and-specifications.html#key-concepts-episode"><span class="std std-ref">Episode</span></a>.</p>
+</div>
+<div class="section" id="what-do-i-do-if-the-gp-mental-health-provider-has-not-given-an-answer-to-one-or-more-questions-in-the-minimum-dataset">
+<span id="do-not-have-answer-faq"></span><h2>What do I do if the GP / mental health provider has not given an answer to one or more questions in the minimum dataset?<a class="headerlink" href="#what-do-i-do-if-the-gp-mental-health-provider-has-not-given-an-answer-to-one-or-more-questions-in-the-minimum-dataset" title="Permalink to this headline">¶</a></h2>
+<p>Provider Organisations should make every effort to ensure that the data entered
+into the MDS is as complete as possible. However, most data items specify
+a &#8216;Missing&#8217; response. Where information is unavailable, please use this
+response item. The aim is to minimise missing data as much as possible.</p>
+<p>Refer to <a class="reference internal" href="../../data-specification/data-model-and-specifications.html#record-formats"><span class="std std-ref">Record formats</span></a> for more information. By clicking on the field name
+this will take you to the field definition which outlines the associated notes that
+provide guidance on which response to use.</p>
+</div>
+<div class="section" id="what-are-the-options-where-the-information-collected-does-not-fit-into-the-available-fields">
+<span id="data-does-not-fit-faq"></span><h2>What are the options where the information collected does not fit into the available fields?<a class="headerlink" href="#what-are-the-options-where-the-information-collected-does-not-fit-into-the-available-fields" title="Permalink to this headline">¶</a></h2>
+<p>Each data item has associated notes that provide guidance on which response to
+use. By clicking on the <a class="reference internal" href="../../data-specification/data-model-and-specifications.html#record-formats"><span class="std std-ref">Record formats</span></a> field name this will take you to the
+field definition which outlines the associated notes.</p>
+<p>Refer to <a class="reference internal" href="../../data-specification/data-model-and-specifications.html#record-formats"><span class="std std-ref">Record formats</span></a>.</p>
+</div>
+<div class="section" id="can-i-go-back-and-enter-information-if-i-dont-have-it-at-the-time">
+<span id="updated-info-faq"></span><h2>Can I go back and enter information if I don’t have it at the time?<a class="headerlink" href="#can-i-go-back-and-enter-information-if-i-dont-have-it-at-the-time" title="Permalink to this headline">¶</a></h2>
+<p>Yes, the MDS allows you to go back and enter information at a later date.</p>
+<p>When data in the upload has the same identification key as recorded in the MDS,
+(eg Client, Practitioner, Episode, Service Contact, and Outcome Collection Keys)
+the data will automatically be updated for these files. The number of files present,
+created, and updated, are summarised on the successful upload notification email.</p>
+<p>Refer to upload specification <a class="reference internal" href="../../data-specification/upload-specification.html#file-format"><span class="std std-ref">File format</span></a>.</p>
+</div>
+<div class="section" id="can-i-enter-fictitious-data-as-a-part-of-testing">
+<span id="test-fictitious-data-faq"></span><h2>Can I enter fictitious data as a part of testing?<a class="headerlink" href="#can-i-enter-fictitious-data-as-a-part-of-testing" title="Permalink to this headline">¶</a></h2>
+<p>The MDS is live&nbsp;and data uploads will be recorded. Real PMHC data can be trialled
+by uploading in test mode, whereas fictitious data should be trialled with a
+&#8216;Test Organisation&#8217; on developers.pmhc-mds.net.</p>
+<p>See <a class="reference external" href="https://www.pmhc-mds.com/2017/02/17/Separate-PMHC-MDS-now-available-for-software-developers-to-test-upload-files/">PMHC Developers Announcement</a>.</p>
+</div>
+<div class="section" id="where-do-i-enter-mhnips-data-collection">
+<span id="enter-mhnip-data-faq"></span><h2>Where do I enter MHNIPS data collection?<a class="headerlink" href="#where-do-i-enter-mhnips-data-collection" title="Permalink to this headline">¶</a></h2>
+<p>The Department of Health is expecting all commissioned Mental Health Nursing services
+data from July 2016 to be entered into the PMHC MDS.</p>
+<p>Refer to the Department&#8217;s response to <a class="reference internal" href="../concepts-processes/scope.html#mhnip-data-faq"><span class="std std-ref">Are services previously delivered under MHNIP expected to collect the PHMC MDS?</span></a></p>
+</div>
+<div class="section" id="the-phmc-mds-specifications-seems-limited-can-we-capture-and-record-additional-data">
+<span id="capture-additional-data-faq"></span><h2>The PHMC MDS specifications seems limited. Can we capture and record additional data?<a class="headerlink" href="#the-phmc-mds-specifications-seems-limited-can-we-capture-and-record-additional-data" title="Permalink to this headline">¶</a></h2>
+<p>PHNs can choose to capture and record additional data outside the PMHC MDS.</p>
+</div>
+<div class="section" id="how-do-i-enter-a-referral">
+<h2>How do I enter a referral?<a class="headerlink" href="#how-do-i-enter-a-referral" title="Permalink to this headline">¶</a></h2>
+<p>A referral is entered as an <a class="reference internal" href="../../data-specification/data-model-and-specifications.html#key-concepts-episode"><span class="std std-ref">Episode</span></a></p>
+<p>Refer to the online User Guide <a class="reference internal" href="../../user-documentation/data-entry.html#episode-data"><span class="std std-ref">Episodes</span></a></p>
+</div>
+<div class="section" id="how-do-i-enter-a-k10-k5-or-sdq">
+<h2>How do I enter a K10+, K5 or SDQ?<a class="headerlink" href="#how-do-i-enter-a-k10-k5-or-sdq" title="Permalink to this headline">¶</a></h2>
+<p>These measures are entered as an <a class="reference internal" href="../../data-specification/data-model-and-specifications.html#outcome-collection-occasion-data-elements"><span class="std std-ref">Outcome Collection Occasion</span></a></p>
+<p>Refer to the online User Guide <a class="reference internal" href="../../user-documentation/data-entry.html#episode-data"><span class="std std-ref">Episodes</span></a></p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="uploading.html" class="btn btn-neutral float-right" title="Uploading data" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="access.html" class="btn btn-neutral" title="Accessing the PMHC Minimum Data Set" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Australian Government - Department of Health.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'Version 1.0.10',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+ 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-84023505-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+</body>
+</html>
