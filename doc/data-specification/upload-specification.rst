@@ -177,8 +177,8 @@ Example SDQ data:
 
 Practitioner file format
 ^^^^^^^^^^^^^^^^^^^^^^^^
-The practitioner file/worksheet is required for the first upload and if there 
-is a change in practitioners. It is optional otherwise.  There is no harm in 
+The practitioner file/worksheet is required for the first upload and if there
+is a change in practitioners. It is optional otherwise.  There is no harm in
 including it in every upload.
 
 Data elements for the practitioner upload file/worksheet are defined at
@@ -188,3 +188,17 @@ Example practitioner data:
 
 - `CSV practitioner file <../_static/practitioners.csv>`_.
 - `XLSX practitioner worksheet <../_static/pmhc-upload.xlsx>`_.
+
+Organisation file format
+^^^^^^^^^^^^^^^^^^^^^^^^
+This file is for PHN use only. The organisation file/worksheet is optional. Can
+be included to upload Provider Organisations in bulk or if there is a change in
+Provider Organisation details. There is no harm in including it in every upload.
+
+Data elements for the Provider Organisation upload file/worksheet are defined at
+:ref:`provider-organisation-data-elements`.
+
+Example organisation data:
+
+- `CSV organisation file <../_static/practitioners.csv>`_.
+- `XLSX organisation worksheet <../_static/pmhc-upload.xlsx>`_.

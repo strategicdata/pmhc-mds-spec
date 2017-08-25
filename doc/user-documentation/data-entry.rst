@@ -15,7 +15,7 @@ After navigating to the Data Entry tab, you will be presented with three search 
 which will allow you to easily find and view the client data for the organisations
 you have permission to access.
 
-.. figure:: screen-shots/client-data.png
+.. figure:: screen-shots/client-data-entry.png
    :alt: Data Entry tab View
 
 .. _client-data:
@@ -129,6 +129,13 @@ available on the Data Entry tab, by following these steps:
 You will receive confirmation that the Client's details have been saved, and it will
 now be displaying these new details in the Clients View Details tab.
 
+        .. figure:: screen-shots/client-data-saved.png
+           :alt: Client Data Saved Successfully
+
+If you receive an error message, the data will need to be corrected before the
+record is saved and added to the PMHC MDS.
+See Validation Rules - :Ref:`https://docs.pmhc-mds.com/data-specification/validation-rules.html#client`
+
 .. _add-client:
 
 Adding a New Client
@@ -142,13 +149,26 @@ available on the Data Entry tab, by following these steps:
 3. Click the blue 'Add New Client' button.
 4. Choose the Provider Organisation from the drop down list.
 5. Enter the Client's details. Mandatory fields are marked with an * (Specification :ref:`Client Data Elements <client-data-elements>`)
+    *Please note: With the 'Statistical Linkage Key' field you can choose to 'Enter' or 'Generate' a Client's SLK.*
+    *The SLK is generated on your device, the names used are not stored or transmitted over the network.*
+
+    .. figure:: screen-shots/client-view-generate-slk.png
+       :alt: Client Data Generate Client SLK
+
 6. Click the blue 'Save' button. (If you decide not to add this client, you can simply navigate away from this screen)
 
-.. figure:: screen-shots/client-add.png
+.. figure:: screen-shots/client-view-add.png
    :alt: Client Data Add Client
 
 You will receive confirmation that the Client has been saved, and it will
 now be displaying the client's saved information in the Clients View Details tab.
+
+        .. figure:: screen-shots/client-data-saved.png
+           :alt: Client Data Saved Successfully
+
+If you receive an error message, the data will need to be corrected before the
+record is saved and added to the PMHC MDS.
+See Validation Rules - :Ref:`https://docs.pmhc-mds.com/data-specification/validation-rules.html#client`
 
 .. _delete-client:
 
@@ -216,6 +236,13 @@ available on the Data Entry tab, by following these steps:
 2. From the Client's Episode table, click the Episode Key.
 3. Click Edit Details tab.
 4. Update the Client's Episode details. Mandatory fields are marked with an * (Specification :ref:`Episode Data Elements <episode-data-elements>`)
+    *Please note: If you edit the 'Date of Birth' or 'Gender' you will be required to update the 'Statistical Linkage Key' field.*
+    *You can choose to 'Enter' or 'Generate' a Client's SLK.*
+    *The SLK is generated on your device, the names used are not stored or transmitted over the network.*
+
+    .. figure:: screen-shots/client-view-generate-slk-edit.png
+       :alt: Client Data Generated Client SLK Edit
+
 5. Click the blue 'Save' button. (If you decide not to save changes, you can simply navigate away from this screen)
 
 .. figure:: screen-shots/client-episodes-edit.png
@@ -223,6 +250,13 @@ available on the Data Entry tab, by following these steps:
 
 You will receive confirmation that the Client's Episode details have been saved,
 and it will now be displaying these new details in the Episode View Details tab.
+
+        .. figure:: screen-shots/client-data-saved.png
+           :alt: Client Data Saved Successfully
+
+If you receive an error message, the data will need to be corrected before the
+record is saved and added to the PMHC MDS.
+See Validation Rules - Episode :Ref:`https://docs.pmhc-mds.com/data-specification/validation-rules.html#episode`
 
 .. _add-episode:
 
@@ -243,6 +277,13 @@ available on the Data Entry tab, by following these steps:
 
 You will receive confirmation that the Client's Episode details have been added,
 and it will now be displaying these new details in the Episode View Details tab.
+
+        .. figure:: screen-shots/client-data-saved.png
+           :alt: Client Data Saved Successfully
+
+If you receive an error message, the data will need to be corrected before the
+record is saved and added to the PMHC MDS.
+See Validation Rules - :Ref:`https://docs.pmhc-mds.com/data-specification/validation-rules.html#episode`
 
 .. _delete-episode:
 
@@ -304,6 +345,13 @@ available on the Data Entry tab, by following these steps:
 You will receive confirmation that the Client's service contact details have been saved,
 and it will now be displaying these new details in the View service Contact Details tab.
 
+        .. figure:: screen-shots/client-data-saved.png
+           :alt: Client Data Saved Successfully
+
+If you receive an error message, the data will need to be corrected before the
+record is saved and added to the PMHC MDS.
+See Validation Rules - :Ref:`https://docs.pmhc-mds.com/data-specification/validation-rules.html#service-contact`
+
 .. _add-service-contact:
 
 Adding a Client's Service Contact data
@@ -323,6 +371,13 @@ available on the Data Entry tab, by following these steps:
 
 You will receive confirmation that the Client's service contact details have been added,
 and it will now be displaying these new details in the View service Contact Details tab.
+
+        .. figure:: screen-shots/client-data-saved.png
+           :alt: Client Data Saved Successfully
+
+If you receive an error message, the data will need to be corrected before the
+record is saved and added to the PMHC MDS.
+See Validation Rules - :Ref:`https://docs.pmhc-mds.com/data-specification/validation-rules.html#service-contact`
 
 .. _delete-service-contact:
 
@@ -378,7 +433,6 @@ available on the Data Entry tab, by following these steps:
 2. Click the Collection Occasions Key.
 3. Click Edit Details tab.
 4. Update the Client's Collection Occasions details. Mandatory fields are marked with an * (Specification :ref:`Collection Occasions Data Elements <outcome-collection-occasion-data-elements>`)
-5. Click the blue 'Save' button. (If you decide not to save changes, you can simply navigate away from this screen)
 
 .. figure:: screen-shots/client-collection-occasions-edit1.png
    :alt: Client Collection Occasions Edit Details
@@ -386,8 +440,19 @@ available on the Data Entry tab, by following these steps:
 .. figure:: screen-shots/client-collection-occasions-edit2.png
    :alt: Client Collection Occasions Edit Details
 
+5. Click the blue 'Save' button. (If you decide not to save changes, you can simply navigate away from this screen)
 You will receive confirmation that the Client's Collection Occasions details have been saved,
 and it will now be displaying these new details in the View Collection Occasions Details tab.
+
+        .. figure:: screen-shots/client-data-saved.png
+           :alt: Client Data Saved Successfully
+
+If you receive an error message, the data will need to be corrected before the
+record is saved and added to the PMHC MDS.
+See Validation Rules for:
+* :Ref:`https://docs.pmhc-mds.com/data-specification/validation-rules.html#k10`
+* :Ref:`https://docs.pmhc-mds.com/data-specification/validation-rules.html#k5`
+* :Ref:`https://docs.pmhc-mds.com/data-specification/validation-rules.html#sdq`
 
 .. _add-collection-occasion:
 
@@ -405,19 +470,30 @@ available on the Data Entry tab, by following these steps:
 .. figure:: screen-shots/client-collection-occasions-measure.png
    :alt: Client Data Add Collection Occasions
 
-5. Select to enter the item scores or the total score. (Individual item scores will eventually be required)
+5. Select to enter the item scores or the total score. (Individual item scores will eventually be required and should be entered when available)
 
 .. figure:: screen-shots/client-collection-occasions-score.png
    :alt: Client Data Add Collection Occasions
 
 6. Enter the Client's Collection Occasions details for that episode. Mandatory fields are marked with an * (Specification :ref:`Collection Occasions Data Elements <outcome-collection-occasion-data-elements>`)
-7. Click the blue 'Save' button. (If you decide not to add this client's episode, you can simply navigate away from this screen)
 
 .. figure:: screen-shots/client-collection-occasions-add.png
    :alt: Client Data Add Collection Occasions
 
+7. Click the blue 'Save' button. (If you decide not to add this client's episode, you can simply navigate away from this screen)
+
 You will receive confirmation that the Client's Collection Occasions details have been added,
 and it will now be displaying these new details in the View Collection Occasions Details tab.
+
+        .. figure:: screen-shots/client-data-saved.png
+           :alt: Client Data Saved Successfully
+
+If you receive an error message, the data will need to be corrected before the
+record is saved and added to the PMHC MDS.
+See Validation Rules for:
+* :Ref:`https://docs.pmhc-mds.com/data-specification/validation-rules.html#k10`
+* :Ref:`https://docs.pmhc-mds.com/data-specification/validation-rules.html#k5`
+* :Ref:`https://docs.pmhc-mds.com/data-specification/validation-rules.html#sdq`
 
 .. _delete-collection-occasion:
 
@@ -496,11 +572,21 @@ You can edit a practitioner's details through the organisation tab, by following
 1. Once :ref:`view-practitioner`
 2. From the View Practitioner Details tab, click the Edit Details tab.
 3. Update the practitioner's details. Mandatory fields are marked with an *
-4. Click the blue 'Save' button.
 
 .. figure:: screen-shots/practitioners-edit-view.png
    :alt: PMHC MDS Practitioner Details View
 
+4. Click the blue 'Save' button. (If you decide not to save changes, you can simply navigate away from this screen)
+
+You will receive confirmation that the practitioner's details have been added,
+and it will now be displaying these new details in the View Practitioner Details tab.
+
+        .. figure:: screen-shots/client-data-saved.png
+           :alt: Client Data Saved Successfully
+
+If you receive an error message, the data will need to be corrected before the
+record is saved and added to the PMHC MDS.
+See Validation Rules - :Ref:`https://docs.pmhc-mds.com/data-specification/validation-rules.html#practitioner`
 
 .. _add-practitioner:
 
@@ -512,12 +598,23 @@ You can add a practitioner's details through the organisation tab, by following 
 1. Once :ref:`find-practitioner`
 2. From the Practitioners tab, click the Add New Practitioner tab.
 3. Enter the practitioner's details. Mandatory fields are marked with an *
-4. Click the blue 'Save' button.
 
 .. figure:: screen-shots/practitioners-add-view.png
    :alt: PMHC MDS Practitioner Details View
 
-Alternately, practitioner records can be uploaded in bulk. See :ref:`upload`
+4. Click the blue 'Save' button.  (If you decide not to save changes, you can simply navigate away from this screen)
+
+You will receive confirmation that the practitioner's details have been added,
+and it will now be displaying these new details in the View Practitioner Details tab.
+
+        .. figure:: screen-shots/client-data-saved.png
+           :alt: Client Data Saved Successfully
+
+If you receive an error message, the data will need to be corrected before the
+record is saved and added to the PMHC MDS.
+See Validation Rules - :Ref:`https://docs.pmhc-mds.com/data-specification/validation-rules.html#practitioner`
+
+You can add a practitioners individually through the data entry interface or alternately, practitioner records can be uploaded in bulk. See :ref:`upload`
 
 .. _delete-practitioner:
 
