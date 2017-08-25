@@ -136,7 +136,6 @@ If you receive an error message, the data will need to be corrected before the
 record is saved and added to the PMHC MDS.
 See Validation Rules - :ref:`client-current-validations`
 
-
 .. _add-client:
 
 Adding a New Client
