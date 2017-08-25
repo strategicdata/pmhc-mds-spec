@@ -14,7 +14,7 @@ Current Validations
 .. _practitioner-current-validations:
 
 Practitioner
-------------
+~~~~~~~~~~~~
 
   * :ref:`dfn-atsi_cultural_training` is only allowed to be set to
     '3 - Not required' if :ref:`dfn-practitioner_atsi_status` is one of
@@ -31,7 +31,7 @@ Practitioner
 .. _client-current-validations:
 
 Client
-------
+~~~~~~
 
   * :ref:`dfn-prof_english` response '0: Not applicable (persons under 5
     years of age or who speak only English)' is only allowed where
@@ -49,7 +49,7 @@ Client
 .. _episode-current-validations:
 
 Episode
--------
+~~~~~~~
 
   * The :ref:`dfn-episode_end_date` must be after the :ref:`dfn-referral_date`
   * Where :ref:`dfn-service_contact_final` is recorded as '1: No further services
@@ -77,7 +77,7 @@ Episode
 .. _service-contact-current-validations:
 
 Service Contact
----------------
+~~~~~~~~~~~~~~~
 
   * Where :ref:`dfn-service_contact_final` is recorded as '1: No further services
     are planned for the client in the current episode', the date of the
@@ -108,7 +108,7 @@ Service Contact
 .. _k10p-current-validations:
 
 K10+
-----
+~~~~
 
   * :ref:`dfn-measure_date` must be after :ref:`dfn-referral_date`
   * If both item scores and a total score are specified, the item scores must
@@ -117,7 +117,7 @@ K10+
 .. _k5-current-validations:
 
 K5
----
+~~~
 
   * :ref:`dfn-measure_date` must be after :ref:`dfn-referral_date`
   * If both item scores and a total score are specified, the item scores must
@@ -126,7 +126,7 @@ K5
 .. _sdq-current-validations:
 
 SDQ
----
+~~~
 
   * :ref:`dfn-measure_date` must be after :ref:`dfn-referral_date`
 
@@ -138,13 +138,13 @@ Future Validations
 .. _episode-future-validations:
 
 Episode
--------
+~~~~~~~
 
   * Restrict '4: Complex care package' for :ref:`dfn-principal_focus` to
     selected PHN Lead Sites
 
 SDQ
----
+~~~
 
   * Use the table at :ref:`sdq-data-elements` to validate the items that
     are used in each version of the SDQ.
