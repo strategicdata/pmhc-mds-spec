@@ -189,6 +189,8 @@ Example practitioner data:
 - `CSV practitioner file <../_static/practitioners.csv>`_.
 - `XLSX practitioner worksheet <../_static/pmhc-upload.xlsx>`_.
 
+.. _organisation-format:
+
 Organisation file format
 ^^^^^^^^^^^^^^^^^^^^^^^^
 This file is for PHN use only. The organisation file/worksheet is optional. Can
@@ -200,5 +202,5 @@ Data elements for the Provider Organisation upload file/worksheet are defined at
 
 Example organisation data:
 
-- `CSV organisation file <../_static/practitioners.csv>`_.
+- `CSV organisation file <../_static/organisations.csv>`_.
 - `XLSX organisation worksheet <../_static/pmhc-upload.xlsx>`_.

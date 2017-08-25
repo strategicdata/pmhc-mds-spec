@@ -51,7 +51,7 @@ Client
 Episode
 ~~~~~~~
 
-  * The :ref:`dfn-episode_end_date` must be after the :ref:`dfn-referral_date`
+  * The :ref:`dfn-episode_end_date` must not be before the :ref:`dfn-referral_date`
   * Where :ref:`dfn-service_contact_final` is recorded as '1: No further services
     are planned for the client in the current episode', the
     :ref:`dfn-episode_completion_status` must be recorded using one of the
@@ -110,7 +110,7 @@ Service Contact
 K10+
 ~~~~
 
-  * :ref:`dfn-measure_date` must be after :ref:`dfn-referral_date`
+  * :ref:`dfn-measure_date` must not be before :ref:`dfn-referral_date`
   * If both item scores and a total score are specified, the item scores must
     add up to the total score
 
@@ -119,7 +119,7 @@ K10+
 K5
 ~~~
 
-  * :ref:`dfn-measure_date` must be after :ref:`dfn-referral_date`
+  * :ref:`dfn-measure_date` must not be before :ref:`dfn-referral_date`
   * If both item scores and a total score are specified, the item scores must
     add up to the total score
 
@@ -128,7 +128,7 @@ K5
 SDQ
 ~~~
 
-  * :ref:`dfn-measure_date` must be after :ref:`dfn-referral_date`
+  * :ref:`dfn-measure_date` must not be before :ref:`dfn-referral_date`
 
 .. _future-validations:
 
