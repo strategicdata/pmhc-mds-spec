@@ -3,16 +3,6 @@
 Entering data in the PMHC Minimum Data Set
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. _slk-as-client-key-faq:
-
-Why can't we use the SLK as the client key?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-The Client Key is required to be a unique client identifier. The SLK isn’t a
-unique key and therefore not suitable to be used as the Client Key.
-
-Refer to data specifications for :ref:`identifier_management`.
-
 .. _manage-client-key-faq:
 
 What is the best way to manage the client key?
@@ -41,6 +31,16 @@ Provider Organisation in your network to understand their approach to managing
 their client keys.
 
 Refer to the Department's response to :ref:`identifier-and-key-FAQs`.
+
+.. _slk-as-client-key-faq:
+
+Why can't we use the SLK as the client key?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The Client Key is required to be a unique client identifier. The SLK isn’t a
+unique key and therefore not suitable to be used as the Client Key.
+
+Refer to data specifications for :ref:`identifier_management`.
 
 .. _master-client-index-faq:
 
@@ -122,6 +122,15 @@ created, and updated, are summarised on the successful upload notification email
 
 Refer to upload specification :ref:`file-format`.
 
+.. _capture-additional-data-faq:
+
+The PHMC MDS specifications seems limited. Can we capture and record additional data?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+PHNs can choose to capture and record additional data outside the PMHC MDS.
+
+See :ref:`record-additional-data-faq`
+
 .. _test-fictitious-data-faq:
 
 Can I enter fictitious data as a part of testing?
@@ -133,6 +142,73 @@ by uploading in test mode, whereas fictitious data should be trialled with a
 
 See `PMHC Developers Announcement <https://www.pmhc-mds.com/2017/02/17/Separate-PMHC-MDS-now-available-for-software-developers-to-test-upload-files/>`__.
 
+.. _enter-slk-faq:
+
+How do I find or create a Client's Statistical Linkage Key (SLK)?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you don't have an internal system that can provide you with the client's SLK,
+an SLK generator is available within the client data entry forms.
+
+There is also a manual Statistical Linkage Key Generator available on the PMHC MDS
+website, under the SLK tab - https://pmhc-mds.net/#/slk. For more information
+on how to use this feature, please visit the PMHC MDS Online User Guide - https://docs.pmhc-mds.com/user-documentation/slk.html
+
+.. _enter-referral-faq:
+
+How do I enter a referral?
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+A referral is entered as an :ref:`key-concepts-episode`
+
+Refer to the online User Guide :ref:`episode-data`
+
+.. _enter-k10-k5-sdq-faq:
+
+How do I enter a K10+, K5 or SDQ?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+These measures tools, K10+, K5 or SDQ, are entered as an :ref:`outcome-collection-occasion-data-elements`
+
+Refer to the online User Guide :ref:`outcome-collection-occasion-data`
+
+.. _enter-no-show-faq:
+
+Do I enter a Service Contact when a client doesn't show up for the session?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Yes.
+
+To enter a 'No Show', add new Service Contact. For any Service Contact fields
+that do not have a 'no show' option available to be selected, please enter the
+response that would have been entered if the participant had attended the session.
+
+Refer to :ref:`service-contact-data-elements`.
+
+.. _client-referred-elsewhere-faq:
+
+If the client is referred elsewhere (e.g. not suitable for this service) should this be recorded?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This decision depends upon your local guidelines.
+
+Under the new PMHC MDS, an episode does not formally commence until the client
+receives their first Service Contact. For referrals that do not lead to a
+Service Contact, and where the person is referred elsewhere, there is no need to
+open an Episode.
+
+However the Department understands that many PHNs are likely to want to do this
+as a means to track referrals that do not lead to Service Contacts, or to begin
+entering data prior to the first Service Contact. Therefore, there is scope in
+the system to set up an Episode even it does not lead to a Service Contact.
+Standard reports to be developed will build in capacity to monitor these and
+ensure that they are not counted in service delivery indicators.
+
+Where a referral is followed by an initial Service Contact, and the person is
+referred elsewhere due to being assessed as not suitable, or requires an alternative
+service, a new code for Episode- Completion Status has been added
+(‘Episode closed administratively - client referred elsewhere’).
+
 .. _enter-MHNIP-data-faq:
 
 Where do I enter MHNIPS data collection?
@@ -143,23 +219,17 @@ data from July 2016 to be entered into the PMHC MDS.
 
 Refer to the Department's response to :ref:`MHNIP-data-faq`
 
-.. _capture-additional-data-faq:
+.. _enter-error-data-faq:
 
-The PHMC MDS specifications seems limited. Can we capture and record additional data?
+I have an error message but no idea what it means or how to fix it. What should I do?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-PHNs can choose to capture and record additional data outside the PMHC MDS.
+Refer to :ref:`record-formats` for more information. By clicking on the field name
+this will take you to the field definition which outlines the associated notes that
+provide guidance on which response to use.
 
-How do I enter a referral?
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-A referral is entered as an :ref:`key-concepts-episode`
-
-Refer to the online User Guide :ref:`episode-data`
-
-How do I enter a K10+, K5 or SDQ?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-These measures are entered as an :ref:`outcome-collection-occasion-data-elements`
-
-Refer to the online User Guide :ref:`episode-data`
+If still unsure, please email the PMHC Helpdesk on support@pmhc-mds.com and provide
+a description of where the error occurred, a screenshot if possible, and the
+error log number. The error log number is displayed at the end of the error message,
+eg [BVDS105Q], and is very important for the Helpdesk to quickly identifying the
+error and to provide you with a clear response on how to rectify the data issue.

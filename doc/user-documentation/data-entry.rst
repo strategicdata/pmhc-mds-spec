@@ -121,10 +121,11 @@ available on the Data Entry tab, by following these steps:
 3. Click Details tab, to view Client's details.
 4. Click Edit Details tab.
 5. Update the Client's details. Mandatory fields are marked with an * (Specification :ref:`Client Data Elements <client-data-elements>`)
-6. Click the blue 'Save' button. (If you decide not to save changes, you can simply navigate away from this screen)
 
 .. figure:: screen-shots/client-view-edit.png
    :alt: Client Data Edit Details
+
+6. Click the blue 'Save' button. (If you decide not to save changes, you can simply navigate away from this screen)
 
 You will receive confirmation that the Client's details have been saved, and it will
 now be displaying these new details in the Clients View Details tab.
@@ -270,10 +271,11 @@ available on the Data Entry tab, by following these steps:
 2. Firstly double check the client does not have any open episode already showing. (A client can only have one open episode at a provider organsiation. :ref:`key-concepts-episode`)
 3. Click the Add Episode tab.
 4. Enter the Client's Episode details. Mandatory fields are marked with an * (Specification :ref:`Episode Data Elements <episode-data-elements>`)
-5. Click the blue 'Save' button. (If you decide not to add this client's episode, you can simply navigate away from this screen)
 
 .. figure:: screen-shots/client-episodes-add.png
    :alt: Client Data Add Episode
+
+5. Click the blue 'Save' button. (If you decide not to add this client's episode, you can simply navigate away from this screen)
 
 You will receive confirmation that the Client's Episode details have been added,
 and it will now be displaying these new details in the Episode View Details tab.
@@ -337,10 +339,11 @@ available on the Data Entry tab, by following these steps:
 2. From the Service Contacts table, click the Service Contact Key.
 3. Click Edit Service Contact tab.
 4. Update the Client's Service Contact details for that episode. Mandatory fields are marked with an * (Specification :ref:`Service Contact Data Elements <service-contact-data-elements>`)
-5. Click the blue 'Save' button. (If you decide not to save changes, you can simply navigate away from this screen)
 
 .. figure:: screen-shots/client-service-contacts-edit.png
    :alt: Client Service Contact Edit Details
+
+5. Click the blue 'Save' button. (If you decide not to save changes, you can simply navigate away from this screen)
 
 You will receive confirmation that the Client's service contact details have been saved,
 and it will now be displaying these new details in the View service Contact Details tab.
@@ -364,10 +367,11 @@ available on the Data Entry tab, by following these steps:
 2. Firstly double check the service contact is not already showing.
 3. Click the Add Service Contact tab.
 4. Enter the Client's Service Contact details for that episode. Mandatory fields are marked with an * (Specification :ref:`Service Contact Data Elements <service-contact-data-elements>`)
-5. Click the blue 'Save' button. (If you decide not to add this client's episode, you can simply navigate away from this screen)
 
 .. figure:: screen-shots/client-service-contacts-add.png
    :alt: Client Data Add Service Contact
+
+5. Click the blue 'Save' button. (If you decide not to add this client's episode, you can simply navigate away from this screen)
 
 You will receive confirmation that the Client's service contact details have been added,
 and it will now be displaying these new details in the View service Contact Details tab.

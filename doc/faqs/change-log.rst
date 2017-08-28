@@ -3,6 +3,49 @@
 Frequently Asked Questions Change log
 =====================================
 
+25/8/2017
+---------
+
+System - Data Entry FAQs
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Updated the question :ref:`manage-client-key-faq`
+
+* Updated the question :ref:`best-practice-client-key-faq`
+
+* Updated the question :ref:`master-client-index-faq`
+
+* Added the question :ref:`enter-slk-faq`
+
+* Added the question :ref:`enter-referral-faq`
+
+* Added the question :ref:`enter-k10-k5-sdq-faq`
+
+* Added the question :ref:`enter-no-show-faq`
+
+* Added the question :ref:`client-referred-elsewhere-faq`
+
+* Added the question :ref:`enter-error-data-faq`
+
+System - Upload FAQs
+~~~~~~~~~~~~~~~~~~~~
+
+* Added the question :ref:`include-all-contact-data-faq`
+
+* Added the question :ref:`upload-edit-data-faq`
+
+* Added the question :ref:`upload-view-data-faq`
+
+* Added the question :ref:`upload-delete-data-faq`
+
+* Added the question :ref:`upload-csv-files-faq`
+
+* Added the question :ref:`upload-files-error-faq`
+
+* Added the question :ref:`upload-data-error-faq`
+
+* Added the question :ref:`upload-error-support-faq`
+
 28/7/2017
 ---------
 
@@ -123,7 +166,7 @@ System - Development FAQs
 System - Uploading FAQs
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-* Added the question :ref:`view-uploaded-data-faq`
+* Added the question :ref:`upload-view-data-faq`
 
 8/2/2017
 --------
