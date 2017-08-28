@@ -3,6 +3,11 @@
 Data Specification Change log
 =============================
 
+25/8/2017
+---------
+
+* Updated :ref:`upload_specification` to include provider organisations.
+
 23/8/2017
 ---------
 
