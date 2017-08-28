@@ -57,8 +57,14 @@ Any remaining session will be mapped to the restricted response
 :98: ATAPS"
 ":ref:`dfn-service_contact_postcode`
 
-(service_contact_postcode)",string,"No postcode was recorded for ATAPS sessions. All service contact
-records will be populated with the postcode
+(service_contact_postcode)",string,"No postcode was recorded for ATAPS sessions.
+
+If the ATAPS session modality is recorded as `Face to Face`, a valid Australian postcode
+is required. Where is is unavailable, the postcode may be recorded as
+
+:9998: Other
+
+All other service contact records will be populated with the postcode
 
 :9999: Unknown"
 ":ref:`dfn-service_contact_modality`
