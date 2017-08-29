@@ -3,7 +3,6 @@
 Frequently Asked Questions Change log
 =====================================
 
-<<<<<<< HEAD
 25/8/2017
 ---------
 
@@ -47,8 +46,6 @@ System - Upload FAQs
 
 * Added the question :ref:`upload-error-support-faq`
 
-=======
->>>>>>> PMHC/master
 28/7/2017
 ---------
 

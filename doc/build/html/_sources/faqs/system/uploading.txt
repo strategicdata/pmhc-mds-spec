@@ -103,12 +103,12 @@ Refer to :ref:`upload-error-messages`
 How do I fix data errors?
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Refer to :ref:`record-formats` for more information. By clicking on the field name
-this will take you to the field definition which outlines the associated notes that
-provide guidance on which response to use.
+Refer to :ref:`record-formats` related to column name for each error. By clicking
+on the field name this will take you to the field definition which outlines the
+associated notes that provide guidance on which response to use.
 
 If still unsure, please email the PMHC Helpdesk on support@pmhc-mds.com and provide
-a copy of the error email, and/or a screenshot if possible.. The error email is
+a copy of the error email, and/or a screenshot if possible. The error email is
 very important for the Helpdesk to quickly identifying the error and to provide
 you with a clear response on how to rectify the data issue.
 

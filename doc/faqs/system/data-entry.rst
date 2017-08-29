@@ -148,11 +148,10 @@ How do I find or create a Client's Statistical Linkage Key (SLK)?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you don't have an internal system that can provide you with the client's SLK,
-an SLK generator is available within the client data entry forms.
+an SLK generator is available within the client data entry forms. See :ref:`add-client`.
 
 There is also a manual Statistical Linkage Key Generator available on the PMHC MDS
-website, under the SLK tab - https://pmhc-mds.net/#/slk. For more information
-on how to use this feature, please visit the PMHC MDS Online User Guide - https://docs.pmhc-mds.com/user-documentation/slk.html
+website, under the SLK tab - https://pmhc-mds.net/#/slk. See :ref:`slk-generator`.
 
 .. _enter-referral-faq:
 
