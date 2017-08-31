@@ -3,7 +3,7 @@
 Frequently Asked Questions Change log
 =====================================
 
-25/8/2017
+30/8/2017
 ---------
 
 System - Data Entry FAQs
@@ -26,6 +26,19 @@ System - Data Entry FAQs
 * Added the question :ref:`client-referred-elsewhere-faq`
 
 * Added the question :ref:`enter-error-data-faq`
+
+* Added the question :ref:`enter-practitioner-key-faq`
+
+* Added the question :ref:`enter-unique-key-faq`
+
+* Added the question :ref:`enter-delete-data-faq`
+
+* Added the question :ref:`enter-edit-key-faq`
+
+System - Development FAQs
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Updated the section :ref:`pmhc-mds-development`
 
 System - Upload FAQs
 ~~~~~~~~~~~~~~~~~~~~

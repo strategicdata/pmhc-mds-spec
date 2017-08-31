@@ -23,16 +23,16 @@ Should an upload file include all service contacts and measures for an episode e
 
 Yes.
 
-Refer to :ref:`include-all-contact-data-faq`
+Refer to :ref:`include-all-contact-data-faq`.
 
 .. _include-all-contact-data-faq:
 
 Do I need to include all service contacts and measures for an episode in an file?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Yes, if an episode is included in an upload file, you need to include **ALL** service
-contacts and measures for that episode. Service contacts and measures that are
-not included will be removed from the PMHC MDS.
+Yes, an episode is included in an upload file, you need to include **ALL** Service
+Contact and **ALL** Outcome Collection Occasions measures for that episode.
+Service contacts and measures that are not included will be removed from the PMHC MDS.
 
 .. _upload-edit-data-faq:
 
@@ -46,7 +46,7 @@ in the system.
 
 When an upload is completed successfully, you will see a summary of the updated
 records shown in the 'Upload Change Summary' table displayed in the View Upload
-Details for complete uploads. See :ref:`viewing-complete-uploads`
+Details for complete uploads. See :ref:`viewing-complete-uploads`.
 
 
 .. _upload-delete-data-faq:
@@ -54,8 +54,8 @@ Details for complete uploads. See :ref:`viewing-complete-uploads`
 How can I delete a record I have previously uploaded?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If an episode is included in an upload file, you need to include **ALL** service
-contacts and measures for that episode.
+If an episode is included in an upload file, you need to include **ALL** Service
+Contact and **ALL** Outcome Collection Occasions measures for that episode.
 
 Any missing Service Contacts and Outcome Collection Occasions measures that have
 been previously uploaded but are not present in a subsequent upload will be removed
@@ -69,15 +69,20 @@ Deleting a Client or an Episode will need to be done through the Data Entry Inte
 How can I review why the status of my upload file shows error?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Refer to :ref:`upload-error-messages`
+If the status of your file shows error, you can view the returned errors through Viewing Previous Uploads.
 
+Refer to :ref:`upload-error-messages`.
 
 .. _upload-view-data-faq:
 
 How can I view my uploaded data?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-See :ref:`data-extraction` User Guide for more information.
+When an upload is completed successfully, you will see a summary of the updated
+records shown in the 'Upload Change Summary' table. See :ref:`viewing-complete-uploads`.
+
+If you have the Reporting role, you can produce system reports or extract recorded data.
+See :ref:`reports`.
 
 .. _upload-csv-files-faq:
 
@@ -86,22 +91,23 @@ How do I upload the individual CSV files?
 
 The CSV files must be compressed into a single file by zipping before upload.
 The filename of the zip file doesn’t matter as long as it has the file extension .zip
-All the required CSV files must be included on every upload. The optional CSV files
-must be included in the single upload zip file that contains the required files.
+All the required CSV files must be included for each upload, even if the file
+contains no data. If choosing to include any optional CSV files, these must be
+included with the required files in the single upload zip file.
 
-See :ref:`upload_specification`
+See :ref:`upload_specification`.
 
 .. _upload-files-error-faq:
 
 How do I fix upload file errors?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Refer to :ref:`upload-error-messages`
+Refer to :ref:`upload-error-messages`.
 
 .. _upload-data-error-faq:
 
-How do I fix data errors?
-~~~~~~~~~~~~~~~~~~~~~~~~~
+How do I fix data errors in an upload?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Refer to :ref:`record-formats` related to column name for each error. By clicking
 on the field name this will take you to the field definition which outlines the
@@ -119,4 +125,4 @@ Has my data uploaded if my file has an error status?
 
 No. Only 'Complete' uploads that are not in test mode, are recorded in the PMHC MDS.
 
-See :ref:`viewing-previous-uploads`
+See :ref:`viewing-previous-uploads`.

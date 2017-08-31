@@ -103,7 +103,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#how-can-i-view-my-uploaded-data">How can I view my uploaded data?</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#how-do-i-upload-the-individual-csv-files">How do I upload the individual CSV files?</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#how-do-i-fix-upload-file-errors">How do I fix upload file errors?</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#how-do-i-fix-data-errors">How do I fix data errors?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#how-do-i-fix-data-errors-in-an-upload">How do I fix data errors in an upload?</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#has-my-data-uploaded-if-my-file-has-an-error-status">Has my data uploaded if my file has an error status?</a></li>
 </ul>
 </li>
@@ -180,13 +180,13 @@
 <div class="section" id="should-an-upload-file-include-all-service-contacts-and-measures-for-an-episode-every-time">
 <span id="upload-all-contact-data-faq"></span><h2>Should an upload file include all service contacts and measures for an episode every time?<a class="headerlink" href="#should-an-upload-file-include-all-service-contacts-and-measures-for-an-episode-every-time" title="Permalink to this headline">¶</a></h2>
 <p>Yes.</p>
-<p>Refer to <a class="reference internal" href="#include-all-contact-data-faq"><span class="std std-ref">Do I need to include all service contacts and measures for an episode in an file?</span></a></p>
+<p>Refer to <a class="reference internal" href="#include-all-contact-data-faq"><span class="std std-ref">Do I need to include all service contacts and measures for an episode in an file?</span></a>.</p>
 </div>
 <div class="section" id="do-i-need-to-include-all-service-contacts-and-measures-for-an-episode-in-an-file">
 <span id="include-all-contact-data-faq"></span><h2>Do I need to include all service contacts and measures for an episode in an file?<a class="headerlink" href="#do-i-need-to-include-all-service-contacts-and-measures-for-an-episode-in-an-file" title="Permalink to this headline">¶</a></h2>
-<p>Yes, if an episode is included in an upload file, you need to include <strong>ALL</strong> service
-contacts and measures for that episode. Service contacts and measures that are
-not included will be removed from the PMHC MDS.</p>
+<p>Yes, an episode is included in an upload file, you need to include <strong>ALL</strong> Service
+Contact and <strong>ALL</strong> Outcome Collection Occasions measures for that episode.
+Service contacts and measures that are not included will be removed from the PMHC MDS.</p>
 </div>
 <div class="section" id="how-can-i-edit-a-record-i-have-previously-uploaded">
 <span id="upload-edit-data-faq"></span><h2>How can I edit a record I have previously uploaded?<a class="headerlink" href="#how-can-i-edit-a-record-i-have-previously-uploaded" title="Permalink to this headline">¶</a></h2>
@@ -196,12 +196,12 @@ then the MDS will recognise this records key and update the data already recorde
 in the system.</p>
 <p>When an upload is completed successfully, you will see a summary of the updated
 records shown in the &#8216;Upload Change Summary&#8217; table displayed in the View Upload
-Details for complete uploads. See <a class="reference internal" href="../../user-documentation/upload.html#viewing-complete-uploads"><span class="std std-ref">Complete uploads</span></a></p>
+Details for complete uploads. See <a class="reference internal" href="../../user-documentation/upload.html#viewing-complete-uploads"><span class="std std-ref">Complete uploads</span></a>.</p>
 </div>
 <div class="section" id="how-can-i-delete-a-record-i-have-previously-uploaded">
 <span id="upload-delete-data-faq"></span><h2>How can I delete a record I have previously uploaded?<a class="headerlink" href="#how-can-i-delete-a-record-i-have-previously-uploaded" title="Permalink to this headline">¶</a></h2>
-<p>If an episode is included in an upload file, you need to include <strong>ALL</strong> service
-contacts and measures for that episode.</p>
+<p>If an episode is included in an upload file, you need to include <strong>ALL</strong> Service
+Contact and <strong>ALL</strong> Outcome Collection Occasions measures for that episode.</p>
 <p>Any missing Service Contacts and Outcome Collection Occasions measures that have
 been previously uploaded but are not present in a subsequent upload will be removed
 from the PMHC MDS. Or Service Contacts and Outcome Collection Occasions can be
@@ -210,26 +210,31 @@ deleted through the Data Entry Interface.</p>
 </div>
 <div class="section" id="how-can-i-review-why-the-status-of-my-upload-file-shows-error">
 <span id="upload-error-faq"></span><h2>How can I review why the status of my upload file shows error?<a class="headerlink" href="#how-can-i-review-why-the-status-of-my-upload-file-shows-error" title="Permalink to this headline">¶</a></h2>
-<p>Refer to <a class="reference internal" href="../../user-documentation/upload.html#upload-error-messages"><span class="std std-ref">Error messages</span></a></p>
+<p>If the status of your file shows error, you can view the returned errors through Viewing Previous Uploads.</p>
+<p>Refer to <a class="reference internal" href="../../user-documentation/upload.html#upload-error-messages"><span class="std std-ref">Error messages</span></a>.</p>
 </div>
 <div class="section" id="how-can-i-view-my-uploaded-data">
 <span id="upload-view-data-faq"></span><h2>How can I view my uploaded data?<a class="headerlink" href="#how-can-i-view-my-uploaded-data" title="Permalink to this headline">¶</a></h2>
-<p>See <a class="reference internal" href="../../user-documentation/reporting.html#data-extraction"><span class="std std-ref">Data Extract</span></a> User Guide for more information.</p>
+<p>When an upload is completed successfully, you will see a summary of the updated
+records shown in the &#8216;Upload Change Summary&#8217; table. See <a class="reference internal" href="../../user-documentation/upload.html#viewing-complete-uploads"><span class="std std-ref">Complete uploads</span></a>.</p>
+<p>If you have the Reporting role, you can produce system reports or extract recorded data.
+See <a class="reference internal" href="../../user-documentation/reporting.html#reports"><span class="std std-ref">Reports</span></a>.</p>
 </div>
 <div class="section" id="how-do-i-upload-the-individual-csv-files">
 <span id="upload-csv-files-faq"></span><h2>How do I upload the individual CSV files?<a class="headerlink" href="#how-do-i-upload-the-individual-csv-files" title="Permalink to this headline">¶</a></h2>
 <p>The CSV files must be compressed into a single file by zipping before upload.
 The filename of the zip file doesn’t matter as long as it has the file extension .zip
-All the required CSV files must be included on every upload. The optional CSV files
-must be included in the single upload zip file that contains the required files.</p>
-<p>See <a class="reference internal" href="../../data-specification/upload-specification.html#upload-specification"><span class="std std-ref">Upload specification</span></a></p>
+All the required CSV files must be included for each upload, even if the file
+contains no data. If choosing to include any optional CSV files, these must be
+included with the required files in the single upload zip file.</p>
+<p>See <a class="reference internal" href="../../data-specification/upload-specification.html#upload-specification"><span class="std std-ref">Upload specification</span></a>.</p>
 </div>
 <div class="section" id="how-do-i-fix-upload-file-errors">
 <span id="upload-files-error-faq"></span><h2>How do I fix upload file errors?<a class="headerlink" href="#how-do-i-fix-upload-file-errors" title="Permalink to this headline">¶</a></h2>
-<p>Refer to <a class="reference internal" href="../../user-documentation/upload.html#upload-error-messages"><span class="std std-ref">Error messages</span></a></p>
+<p>Refer to <a class="reference internal" href="../../user-documentation/upload.html#upload-error-messages"><span class="std std-ref">Error messages</span></a>.</p>
 </div>
-<div class="section" id="how-do-i-fix-data-errors">
-<span id="upload-data-error-faq"></span><h2>How do I fix data errors?<a class="headerlink" href="#how-do-i-fix-data-errors" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="how-do-i-fix-data-errors-in-an-upload">
+<span id="upload-data-error-faq"></span><h2>How do I fix data errors in an upload?<a class="headerlink" href="#how-do-i-fix-data-errors-in-an-upload" title="Permalink to this headline">¶</a></h2>
 <p>Refer to <a class="reference internal" href="../../data-specification/data-model-and-specifications.html#record-formats"><span class="std std-ref">Record formats</span></a> related to column name for each error. By clicking
 on the field name this will take you to the field definition which outlines the
 associated notes that provide guidance on which response to use.</p>
@@ -241,7 +246,7 @@ you with a clear response on how to rectify the data issue.</p>
 <div class="section" id="has-my-data-uploaded-if-my-file-has-an-error-status">
 <span id="upload-error-support-faq"></span><h2>Has my data uploaded if my file has an error status?<a class="headerlink" href="#has-my-data-uploaded-if-my-file-has-an-error-status" title="Permalink to this headline">¶</a></h2>
 <p>No. Only &#8216;Complete&#8217; uploads that are not in test mode, are recorded in the PMHC MDS.</p>
-<p>See <a class="reference internal" href="../../user-documentation/upload.html#viewing-previous-uploads"><span class="std std-ref">Viewing Previous Uploads</span></a></p>
+<p>See <a class="reference internal" href="../../user-documentation/upload.html#viewing-previous-uploads"><span class="std std-ref">Viewing Previous Uploads</span></a>.</p>
 </div>
 </div>
 

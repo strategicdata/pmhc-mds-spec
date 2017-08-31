@@ -104,12 +104,16 @@
 <li class="toctree-l4"><a class="reference internal" href="#the-phmc-mds-specifications-seems-limited-can-we-capture-and-record-additional-data">The PHMC MDS specifications seems limited. Can we capture and record additional data?</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#can-i-enter-fictitious-data-as-a-part-of-testing">Can I enter fictitious data as a part of testing?</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#how-do-i-find-or-create-a-client-s-statistical-linkage-key-slk">How do I find or create a Client&#8217;s Statistical Linkage Key (SLK)?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#how-do-i-find-what-my-practitioner-key-is">How do I find what my Practitioner Key is?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#how-do-i-find-what-the-episode-key-service-contact-key-and-outcome-collection-occasion-key-is">How do I find what the Episode Key, Service Contact Key and Outcome Collection Occasion Key is?</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#how-do-i-enter-a-referral">How do I enter a referral?</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#how-do-i-enter-a-k10-k5-or-sdq">How do I enter a K10+, K5 or SDQ?</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#do-i-enter-a-service-contact-when-a-client-doesn-t-show-up-for-the-session">Do I enter a Service Contact when a client doesn&#8217;t show up for the session?</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#if-the-client-is-referred-elsewhere-e-g-not-suitable-for-this-service-should-this-be-recorded">If the client is referred elsewhere (e.g. not suitable for this service) should this be recorded?</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#where-do-i-enter-mhnips-data-collection">Where do I enter MHNIPS data collection?</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#i-have-an-error-message-but-no-idea-what-it-means-or-how-to-fix-it-what-should-i-do">I have an error message but no idea what it means or how to fix it. What should I do?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#how-can-i-delete-a-record-i-incorrectly-entered">How can I delete a record I incorrectly entered?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#why-can-t-i-edit-a-record-s-identifying-key">Why can&#8217;t I edit a record&#8217;s identifying key?</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="uploading.html">Uploading data</a></li>
@@ -181,7 +185,6 @@
 of these keys for Provider Organisations, prior to the PMHC MDS implementation a
 Master Client Index during <a class="reference internal" href="development.html#stage-two"><span class="std std-ref">Stage Two</span></a> of development.</p>
 <p>See data specifications for <a class="reference internal" href="../../data-specification/identifier-management.html#identifier-management"><span class="std std-ref">Identifier management</span></a>.</p>
-<p>Refer to the Department&#8217;s response to <a class="reference internal" href="../concepts-processes/identifiers.html#identifier-and-key-faqs"><span class="std std-ref">Questions about Unique Identifiers and &#8216;Keys&#8217;</span></a>.</p>
 </div>
 <div class="section" id="can-you-suggest-a-best-practice-approach-to-managing-client-keys">
 <span id="best-practice-client-key-faq"></span><h2>Can you suggest a best practice approach to managing client keys?<a class="headerlink" href="#can-you-suggest-a-best-practice-approach-to-managing-client-keys" title="Permalink to this headline">¶</a></h2>
@@ -202,17 +205,17 @@ unique key and therefore not suitable to be used as the Client Key.</p>
 <div class="section" id="how-will-the-master-client-index-work">
 <span id="master-client-index-faq"></span><h2>How will the Master Client Index work?<a class="headerlink" href="#how-will-the-master-client-index-work" title="Permalink to this headline">¶</a></h2>
 <p>The previous PMHC MDS specification requires a Client Key that is unique and
-stable at the PHN regional level, not at the provider organisation level. The
-purpose of the Master Client Index is to help PHNs and their provider organisations
+stable at the PHN regional level, not at the Provider Organisation level. The
+purpose of the Master Client Index is to help PHNs and their Provider Organisations
 manage client information across the PHN region. This requirement has proven
 problematic for PHNs and is being worked through by the PMHC MDS Working Group.</p>
 <p>To determine what issues exist with managing the client key and possible solutions,
 nine PHNs worked with Strategic Data to describe their models for triaging patients,
-the information systems being used by PHNs and provider organisations, the ease of
+the information systems being used by PHNs and Provider Organisations, the ease of
 updating information systems and resources available for manual reconciliation of clients.</p>
 <p>As a result of this work, a Master Client Index is not possible at this time,
 and as such, will not be a requirement for full compliance from 1 July 2017.</p>
-<p>See <a class="reference internal" href="development.html#dev-mci-faq"><span class="std std-ref">Master Client Index</span></a></p>
+<p>See <a class="reference internal" href="development.html#dev-mci-faq"><span class="std std-ref">Master Client Index</span></a>.</p>
 </div>
 <div class="section" id="how-often-should-i-enter-data-into-the-mds">
 <span id="data-entry-frequency-faq"></span><h2>How often should I enter data into the MDS?<a class="headerlink" href="#how-often-should-i-enter-data-into-the-mds" title="Permalink to this headline">¶</a></h2>
@@ -255,7 +258,7 @@ created, and updated, are summarised on the successful upload notification email
 <div class="section" id="the-phmc-mds-specifications-seems-limited-can-we-capture-and-record-additional-data">
 <span id="capture-additional-data-faq"></span><h2>The PHMC MDS specifications seems limited. Can we capture and record additional data?<a class="headerlink" href="#the-phmc-mds-specifications-seems-limited-can-we-capture-and-record-additional-data" title="Permalink to this headline">¶</a></h2>
 <p>PHNs can choose to capture and record additional data outside the PMHC MDS.</p>
-<p>See <a class="reference internal" href="additional-data.html#record-additional-data-faq"><span class="std std-ref">Can the PMHC MDS capture and record additional data?</span></a></p>
+<p>See <a class="reference internal" href="additional-data.html#record-additional-data-faq"><span class="std std-ref">Can the PMHC MDS capture and record additional data?</span></a>.</p>
 </div>
 <div class="section" id="can-i-enter-fictitious-data-as-a-part-of-testing">
 <span id="test-fictitious-data-faq"></span><h2>Can I enter fictitious data as a part of testing?<a class="headerlink" href="#can-i-enter-fictitious-data-as-a-part-of-testing" title="Permalink to this headline">¶</a></h2>
@@ -267,19 +270,37 @@ by uploading in test mode, whereas fictitious data should be trialled with a
 <div class="section" id="how-do-i-find-or-create-a-client-s-statistical-linkage-key-slk">
 <span id="enter-slk-faq"></span><h2>How do I find or create a Client&#8217;s Statistical Linkage Key (SLK)?<a class="headerlink" href="#how-do-i-find-or-create-a-client-s-statistical-linkage-key-slk" title="Permalink to this headline">¶</a></h2>
 <p>If you don&#8217;t have an internal system that can provide you with the client&#8217;s SLK,
-an SLK generator is available within the client data entry forms. See <a class="reference internal" href="../../user-documentation/data-entry.html#add-client"><span class="std std-ref">Adding a New Client</span></a>.</p>
+an SLK generator is available within the client data entry forms. Refer to the
+online User Guide <a class="reference internal" href="../../user-documentation/data-entry.html#add-client"><span class="std std-ref">Adding a New Client</span></a>.</p>
 <p>There is also a manual Statistical Linkage Key Generator available on the PMHC MDS
 website, under the SLK tab - <a class="reference external" href="https://pmhc-mds.net/#/slk">https://pmhc-mds.net/#/slk</a>. See <a class="reference internal" href="../../user-documentation/slk.html#slk-generator"><span class="std std-ref">SLK</span></a>.</p>
 </div>
+<div class="section" id="how-do-i-find-what-my-practitioner-key-is">
+<span id="enter-practitioner-key-faq"></span><h2>How do I find what my Practitioner Key is?<a class="headerlink" href="#how-do-i-find-what-my-practitioner-key-is" title="Permalink to this headline">¶</a></h2>
+<p>The Practitioner Key is one of the system <a class="reference internal" href="../../data-specification/identifier-management.html#unique-keys"><span class="std std-ref">unique identification keys</span></a> that will
+need to be manually created and managed by your Provider Organisation.</p>
+<p>Data Entry users can add a Practitioner once they know their key. Refer to the
+online User Guide <a class="reference internal" href="../../user-documentation/data-entry.html#add-practitioner"><span class="std std-ref">Adding a Practitioner</span></a>.</p>
+</div>
+<div class="section" id="how-do-i-find-what-the-episode-key-service-contact-key-and-outcome-collection-occasion-key-is">
+<span id="enter-unique-key-faq"></span><h2>How do I find what the Episode Key, Service Contact Key and Outcome Collection Occasion Key is?<a class="headerlink" href="#how-do-i-find-what-the-episode-key-service-contact-key-and-outcome-collection-occasion-key-is" title="Permalink to this headline">¶</a></h2>
+<p>The <a class="reference internal" href="../../data-specification/data-model-and-specifications.html#episode-data-elements"><span class="std std-ref">Episode Key</span></a>, <a class="reference internal" href="../../data-specification/data-model-and-specifications.html#service-contact-data-elements"><span class="std std-ref">Service Contact Key</span></a>
+and <a class="reference internal" href="../../data-specification/data-model-and-specifications.html#outcome-collection-occasion-data-elements"><span class="std std-ref">Outcome Collection Occasion Key</span></a>
+are the system <a class="reference internal" href="../../data-specification/identifier-management.html#unique-keys"><span class="std std-ref">unique identification keys</span></a> that will need to
+be manually created and managed by your Provider Organisation.</p>
+<p>Each record needs to be assigned a stable unique key within the Provider Organisation,
+in order to facilitate adding/updating/deleting each item when entering data.</p>
+<p>See data specifications for <a class="reference internal" href="../../data-specification/identifier-management.html#identifier-management"><span class="std std-ref">Identifier management</span></a>.</p>
+</div>
 <div class="section" id="how-do-i-enter-a-referral">
 <span id="enter-referral-faq"></span><h2>How do I enter a referral?<a class="headerlink" href="#how-do-i-enter-a-referral" title="Permalink to this headline">¶</a></h2>
-<p>A referral is entered as an <a class="reference internal" href="../../data-specification/data-model-and-specifications.html#key-concepts-episode"><span class="std std-ref">Episode</span></a></p>
-<p>Refer to the online User Guide <a class="reference internal" href="../../user-documentation/data-entry.html#episode-data"><span class="std std-ref">Episodes</span></a></p>
+<p>A referral is entered as an <a class="reference internal" href="../../data-specification/data-model-and-specifications.html#key-concepts-episode"><span class="std std-ref">Episode</span></a>.</p>
+<p>Refer to the online User Guide <a class="reference internal" href="../../user-documentation/data-entry.html#episode-data"><span class="std std-ref">Episodes</span></a>.</p>
 </div>
 <div class="section" id="how-do-i-enter-a-k10-k5-or-sdq">
 <span id="enter-k10-k5-sdq-faq"></span><h2>How do I enter a K10+, K5 or SDQ?<a class="headerlink" href="#how-do-i-enter-a-k10-k5-or-sdq" title="Permalink to this headline">¶</a></h2>
-<p>These measures tools, K10+, K5 or SDQ, are entered as an <a class="reference internal" href="../../data-specification/data-model-and-specifications.html#outcome-collection-occasion-data-elements"><span class="std std-ref">Outcome Collection Occasion</span></a></p>
-<p>Refer to the online User Guide <a class="reference internal" href="../../user-documentation/data-entry.html#outcome-collection-occasion-data"><span class="std std-ref">Outcome Collection Occasions</span></a></p>
+<p>These measures tools, K10+, K5 or SDQ, are entered as an <a class="reference internal" href="../../data-specification/data-model-and-specifications.html#outcome-collection-occasion-data-elements"><span class="std std-ref">Outcome Collection Occasion</span></a>.</p>
+<p>Refer to the online User Guide <a class="reference internal" href="../../user-documentation/data-entry.html#outcome-collection-occasion-data"><span class="std std-ref">Outcome Collection Occasions</span></a>.</p>
 </div>
 <div class="section" id="do-i-enter-a-service-contact-when-a-client-doesn-t-show-up-for-the-session">
 <span id="enter-no-show-faq"></span><h2>Do I enter a Service Contact when a client doesn&#8217;t show up for the session?<a class="headerlink" href="#do-i-enter-a-service-contact-when-a-client-doesn-t-show-up-for-the-session" title="Permalink to this headline">¶</a></h2>
@@ -311,18 +332,37 @@ service, a new code for Episode- Completion Status has been added
 <span id="enter-mhnip-data-faq"></span><h2>Where do I enter MHNIPS data collection?<a class="headerlink" href="#where-do-i-enter-mhnips-data-collection" title="Permalink to this headline">¶</a></h2>
 <p>The Department of Health is expecting all commissioned Mental Health Nursing services
 data from July 2016 to be entered into the PMHC MDS.</p>
-<p>Refer to the Department&#8217;s response to <a class="reference internal" href="../concepts-processes/scope.html#mhnip-data-faq"><span class="std std-ref">Are services previously delivered under MHNIP expected to collect the PHMC MDS?</span></a></p>
+<p>Refer to the Department&#8217;s response to <a class="reference internal" href="../concepts-processes/scope.html#mhnip-data-faq"><span class="std std-ref">Are services previously delivered under MHNIP expected to collect the PHMC MDS?</span></a>.</p>
 </div>
 <div class="section" id="i-have-an-error-message-but-no-idea-what-it-means-or-how-to-fix-it-what-should-i-do">
 <span id="enter-error-data-faq"></span><h2>I have an error message but no idea what it means or how to fix it. What should I do?<a class="headerlink" href="#i-have-an-error-message-but-no-idea-what-it-means-or-how-to-fix-it-what-should-i-do" title="Permalink to this headline">¶</a></h2>
-<p>Refer to <a class="reference internal" href="../../data-specification/data-model-and-specifications.html#record-formats"><span class="std std-ref">Record formats</span></a> for more information. By clicking on the field name
-this will take you to the field definition which outlines the associated notes that
-provide guidance on which response to use.</p>
+<p>Refer to <a class="reference internal" href="../../data-specification/data-model-and-specifications.html#record-formats"><span class="std std-ref">Record formats</span></a> for more information. By clicking on the field
+name this will take you to the field definition which outlines the associated
+notes that provide guidance on which response to use. It will also inform you if
+there are any interrelated field requirements that can cause data errors.</p>
 <p>If still unsure, please email the PMHC Helpdesk on <a class="reference external" href="mailto:support&#37;&#52;&#48;pmhc-mds&#46;com">support<span>&#64;</span>pmhc-mds<span>&#46;</span>com</a> and provide
 a description of where the error occurred, a screenshot if possible, and the
 error log number. The error log number is displayed at the end of the error message,
 eg [BVDS105Q], and is very important for the Helpdesk to quickly identifying the
 error and to provide you with a clear response on how to rectify the data issue.</p>
+</div>
+<div class="section" id="how-can-i-delete-a-record-i-incorrectly-entered">
+<span id="enter-delete-data-faq"></span><h2>How can I delete a record I incorrectly entered?<a class="headerlink" href="#how-can-i-delete-a-record-i-incorrectly-entered" title="Permalink to this headline">¶</a></h2>
+<p>You can not currently delete a record you have entered. The delete feature will
+be released in <a class="reference internal" href="development.html#dev-data-entry-faq"><span class="std std-ref">future data entry interface development</span></a>.</p>
+<p>In the interim, if this causes you any significant issues please email <a class="reference external" href="mailto:support&#37;&#52;&#48;pmhc-mds&#46;com">support<span>&#64;</span>pmhc-mds<span>&#46;</span>com</a>
+requesting the record to be deleted. Please provide the record&#8217;s identifying key
+and the organisation path.</p>
+</div>
+<div class="section" id="why-can-t-i-edit-a-record-s-identifying-key">
+<span id="enter-edit-key-faq"></span><h2>Why can&#8217;t I edit a record&#8217;s identifying key?<a class="headerlink" href="#why-can-t-i-edit-a-record-s-identifying-key" title="Permalink to this headline">¶</a></h2>
+<p>Each record needs to be assigned a stable unique key within the Provider Organisation,
+in order to facilitate adding/updating/deleting each item when entering data.</p>
+<p>You can not currently edit a record&#8217;s identifying key you have entered. The edit key feature
+will be released in <a class="reference internal" href="development.html#dev-data-entry-faq"><span class="std std-ref">future data entry interface development</span></a>.</p>
+<p>In the interim, if this causes you any significant issues please email <a class="reference external" href="mailto:support&#37;&#52;&#48;pmhc-mds&#46;com">support<span>&#64;</span>pmhc-mds<span>&#46;</span>com</a>
+requesting the record&#8217;s identifying key to be edited. Please provide the organisation path,
+the record&#8217;s identifying key that has been added and the key it needs to be changed to.</p>
 </div>
 </div>
 
