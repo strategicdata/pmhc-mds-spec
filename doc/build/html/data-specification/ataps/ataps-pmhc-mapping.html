@@ -3126,8 +3126,19 @@ F43.2 Adjustment disorder and mapped to code 601.</p>
 <p class="last">(service_contact_postcode)</p>
 </td>
 <td>string</td>
-<td><p class="first">No postcode was recorded for ATAPS sessions. All service contact
-records will be populated with the postcode</p>
+<td><p class="first">No postcode was recorded for ATAPS sessions.</p>
+<p>If the ATAPS session modality is recorded as <cite>Face to Face</cite> and the
+ATAPS session <cite>no_show</cite> field is FALSE, a valid Australian postcode
+is required. Where this is unavailable, the postcode may be recorded as</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">9998:</th><td class="field-body">Other</td>
+</tr>
+</tbody>
+</table>
+<p>All other service contact records will be populated with the postcode</p>
 <table class="last docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />

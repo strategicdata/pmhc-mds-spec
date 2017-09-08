@@ -3,6 +3,12 @@
 Data Specification Change log
 =============================
 
+29/8/2017
+---------
+
+* Updated :ref:`client_keys` reference to clarify future development
+* Updated :ref:`unique_keys` and specification links
+
 25/8/2017
 ---------
 

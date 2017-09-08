@@ -163,24 +163,27 @@ of the PHN to assign and manage these keys.</p>
 <div class="section" id="managing-client-keys">
 <span id="client-keys"></span><h2>Managing Client Keys<a class="headerlink" href="#managing-client-keys" title="Permalink to this headline">¶</a></h2>
 <p>Client records will be created and managed by Provider Organisations via the
-upload interface. Each Client record needs to be assigned a unique key in order
-to facilitate adding/updating/deleting each item when uploading data. Once
-assigned, this key cannot change.</p>
-<p>These keys will be managed by the Provider Organisation, however, they need to
-be unique across the PHN in order to ensure that there is a single key
-for a client within the PHN. During Stage 2 of the PMHC MDS implementation a
-master client index will be created to allow Provider Organisations to manage
-the client keys across PHNs. Until the master client index
-is implemented PHNs will need to play a role in coordinating assignment and
-management of these keys.</p>
+upload and data entry interface. Each Client record needs to be assigned a
+unique key in order to facilitate adding/updating/deleting each item when
+uploading data. Once assigned, this key cannot change.</p>
+<p>The <a class="reference internal" href="data-model-and-specifications.html#client-data-elements"><span class="std std-ref">Client Key</span></a> will be managed by the Provider
+Organisation, however, the PHN may decide to play a role in
+coordinating assignment and management of these client keys.</p>
+<p>Initially the Department wanted these keys to be unique across the PHN in order
+to ensure that there is a single key for a client within the PHN, and will
+continue to be investigate options for the PMHC MDS implementation of a
+Master Client Index during <a class="reference internal" href="../faqs/system/development.html#stage-two"><span class="std std-ref">Stage Two</span></a> of development.</p>
 </div>
 <div class="section" id="managing-practitioner-episode-service-contact-and-outcome-collection-occasion-keys">
 <span id="unique-keys"></span><h2>Managing Practitioner, Episode, Service Contact and Outcome Collection Occasion Keys<a class="headerlink" href="#managing-practitioner-episode-service-contact-and-outcome-collection-occasion-keys" title="Permalink to this headline">¶</a></h2>
-<p>Practitioner, Episode, Service Contact, and Outcome Collection Keys will be
-created and managed by Provider Organisations. Each record needs to be assigned
-a unique key in order to facilitate adding/updating/deleting each item when
-uploading/entering data. These keys will be managed by the Provider Organisation.
-Where data is being exported from client systems, these keys can be auto generated,
+<p>The <a class="reference internal" href="data-model-and-specifications.html#practitioner-data-elements"><span class="std std-ref">Practitioner Key</span></a>, <a class="reference internal" href="data-model-and-specifications.html#episode-data-elements"><span class="std std-ref">Episode Key</span></a>,
+<a class="reference internal" href="data-model-and-specifications.html#service-contact-data-elements"><span class="std std-ref">Service Contact Key</span></a> and
+<a class="reference internal" href="data-model-and-specifications.html#outcome-collection-occasion-data-elements"><span class="std std-ref">Outcome Collection Occasion Key</span></a>
+will be created and managed by Provider Organisations.</p>
+<p>Each record needs to be assigned a unique key in order to facilitate
+adding/updating/deleting each item when uploading/entering data. These keys will
+be created and managed by the Provider Organisation.</p>
+<p>Where data is being exported from client systems, these keys can be auto generated,
 providing that a key does not change once it is assigned.</p>
 <p><em>If you still have questions after reading this information, please visit the Department&#8217;s responses to</em> <a class="reference internal" href="../faqs/concepts-processes/identifiers.html#identifier-and-key-faqs"><span class="std std-ref">Questions about Unique Identifiers and &#8216;Keys&#8217;</span></a></p>
 </div>
