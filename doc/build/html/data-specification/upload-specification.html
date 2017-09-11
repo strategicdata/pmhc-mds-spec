@@ -106,8 +106,10 @@
 <li class="toctree-l4"><a class="reference internal" href="#sdq-collection-occasion-file-format">SDQ Collection Occasion file format</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#practitioner-file-format">Practitioner file format</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#organisation-file-format">Organisation file format</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#deleting-records">Deleting records</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="#frequently-asked-questions">Frequently Asked Questions</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="data-item-summary.html">Data item summary</a></li>
@@ -204,8 +206,8 @@ extension .xlsx</p>
 <div class="section" id="files-or-worksheets-to-upload">
 <span id="files-to-upload"></span><h2>Files or worksheets to upload<a class="headerlink" href="#files-or-worksheets-to-upload" title="Permalink to this headline">¶</a></h2>
 <p>The following files/worksheets can be uploaded to the PMHC MDS:</p>
-<table border="1" class="docutils" id="id4">
-<caption><span class="caption-number">Table 9 </span><span class="caption-text">Summary of files to upload</span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
+<table border="1" class="docutils" id="id5">
+<caption><span class="caption-number">Table 9 </span><span class="caption-text">Summary of files to upload</span><a class="headerlink" href="#id5" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="25%" />
 <col width="25%" />
@@ -408,6 +410,27 @@ Provider Organisation details. There is no harm in including it in every upload.
 <li><a class="reference external" href="../_static/pmhc-upload.xlsx">XLSX organisation worksheet</a>.</li>
 </ul>
 </div>
+<div class="section" id="deleting-records">
+<span id="id4"></span><h3>Deleting records<a class="headerlink" href="#deleting-records" title="Permalink to this headline">¶</a></h3>
+<p><strong>*Deletion of records has not yet been implemented. This is a feature that will
+be implemented in the future. We are documenting the file format that will be
+used so that developers of client systems that export data into the PMHC MDS
+can allow for deletion in their exported files.*</strong></p>
+<ul class="simple">
+<li>An extra optional &#8220;Delete&#8221; column will be added to each upload file/worksheet.</li>
+<li>To delete a record, include its organisation path and its entity key, leave
+all other fields blank and put &#8220;DELETE&#8221; in the &#8220;Delete&#8221; column.</li>
+<li>Marking a record as deleted will require all child records of that record also
+to be marked for deletion. For example, marking a client as deleted will
+require all episodes, service contacts and collection occasions of that
+client to be marked for deletion.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="frequently-asked-questions">
+<h2>Frequently Asked Questions<a class="headerlink" href="#frequently-asked-questions" title="Permalink to this headline">¶</a></h2>
+<p>Please also refer to <a class="reference internal" href="../faqs/system/uploading.html#uploading-data-faqs"><span class="std std-ref">Uploading data</span></a> for answers to frequently
+asked questions about uploading data.</p>
 </div>
 </div>
 

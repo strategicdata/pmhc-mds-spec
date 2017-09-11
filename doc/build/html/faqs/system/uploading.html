@@ -95,8 +95,7 @@
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Uploading data</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#how-do-i-obtain-a-template-to-upload-my-data-to-the-mds">How do I obtain a template to upload my data to the MDS?</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#what-do-i-do-if-i-have-collected-the-data-in-excel-or-access">What do I do if I have collected the data in Excel or Access?</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#should-an-upload-file-include-all-service-contacts-and-measures-for-an-episode-every-time">Should an upload file include all service contacts and measures for an episode every time?</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#do-i-need-to-include-all-service-contacts-and-measures-for-an-episode-in-an-file">Do I need to include all service contacts and measures for an episode in an file?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#should-an-upload-file-only-contain-new-or-changed-data-or-should-it-contain-all-cumulative-data-from-the-start-of-service-delivery">Should an upload file only contain new or changed data or should it contain all cumulative data from the start of service delivery?</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#how-can-i-edit-a-record-i-have-previously-uploaded">How can I edit a record I have previously uploaded?</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#how-can-i-delete-a-record-i-have-previously-uploaded">How can I delete a record I have previously uploaded?</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#how-can-i-review-why-the-status-of-my-upload-file-shows-error">How can I review why the status of my upload file shows error?</a></li>
@@ -105,6 +104,8 @@
 <li class="toctree-l4"><a class="reference internal" href="#how-do-i-fix-upload-file-errors">How do I fix upload file errors?</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#how-do-i-fix-data-errors-in-an-upload">How do I fix data errors in an upload?</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#has-my-data-uploaded-if-my-file-has-an-error-status">Has my data uploaded if my file has an error status?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#will-valid-data-be-accepted-if-there-are-errors-in-the-file">Will valid data be accepted if there are errors in the file?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#if-validation-rules-change-how-will-you-treat-legacy-data">If validation rules change how will you treat legacy data?</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="additional-data.html">Capturing additional data</a></li>
@@ -167,7 +168,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="uploading-data">
-<h1>Uploading data<a class="headerlink" href="#uploading-data" title="Permalink to this headline">¶</a></h1>
+<span id="uploading-data-faqs"></span><h1>Uploading data<a class="headerlink" href="#uploading-data" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="how-do-i-obtain-a-template-to-upload-my-data-to-the-mds">
 <span id="data-template-faq"></span><h2>How do I obtain a template to upload my data to the MDS?<a class="headerlink" href="#how-do-i-obtain-a-template-to-upload-my-data-to-the-mds" title="Permalink to this headline">¶</a></h2>
 <p>Upload templates are available from <a class="reference internal" href="../../data-specification/upload-specification.html#upload-specification"><span class="std std-ref">Upload specification</span></a>.</p>
@@ -177,22 +178,22 @@
 <p>Visit the online MDS documentation regarding uploads were a detailed User Guide for data uploads is available.</p>
 <p>See <a class="reference internal" href="../../data-specification/upload-specification.html#upload-specification"><span class="std std-ref">Upload specification</span></a>.</p>
 </div>
-<div class="section" id="should-an-upload-file-include-all-service-contacts-and-measures-for-an-episode-every-time">
-<span id="upload-all-contact-data-faq"></span><h2>Should an upload file include all service contacts and measures for an episode every time?<a class="headerlink" href="#should-an-upload-file-include-all-service-contacts-and-measures-for-an-episode-every-time" title="Permalink to this headline">¶</a></h2>
-<p>Yes.</p>
-<p>Refer to <a class="reference internal" href="#include-all-contact-data-faq"><span class="std std-ref">Do I need to include all service contacts and measures for an episode in an file?</span></a>.</p>
-</div>
-<div class="section" id="do-i-need-to-include-all-service-contacts-and-measures-for-an-episode-in-an-file">
-<span id="include-all-contact-data-faq"></span><h2>Do I need to include all service contacts and measures for an episode in an file?<a class="headerlink" href="#do-i-need-to-include-all-service-contacts-and-measures-for-an-episode-in-an-file" title="Permalink to this headline">¶</a></h2>
-<p>Yes, an episode is included in an upload file, you need to include <strong>ALL</strong> Service
-Contact and <strong>ALL</strong> Outcome Collection Occasions measures for that episode.
-Service contacts and measures that are not included will be removed from the PMHC MDS.</p>
+<div class="section" id="should-an-upload-file-only-contain-new-or-changed-data-or-should-it-contain-all-cumulative-data-from-the-start-of-service-delivery">
+<span id="which-data"></span><h2>Should an upload file only contain new or changed data or should it contain all cumulative data from the start of service delivery?<a class="headerlink" href="#should-an-upload-file-only-contain-new-or-changed-data-or-should-it-contain-all-cumulative-data-from-the-start-of-service-delivery" title="Permalink to this headline">¶</a></h2>
+<p>All data should be uploaded for the first upload, but subsequently only new or
+changed data should be uploaded. However, parent records of new or changed data
+also need to be uploaded in order to keep the file internally consistent.</p>
+<p>As example of what this means is that if a service contact record is added
+or changed, there msut be a corresponding episode record in the episode file
+and a client record in the clients file, even if the episode and client data
+hasn&#8217;t changed. Also, as service contacts refer to practitioners, there must
+also be a practitioner record in the practitioner file.</p>
 </div>
 <div class="section" id="how-can-i-edit-a-record-i-have-previously-uploaded">
 <span id="upload-edit-data-faq"></span><h2>How can I edit a record I have previously uploaded?<a class="headerlink" href="#how-can-i-edit-a-record-i-have-previously-uploaded" title="Permalink to this headline">¶</a></h2>
 <p>There is a unique identifying key associated with every record in the PMHC MDS.
 When you upload a record with the same unique identifying key with updated data,
-then the MDS will recognise this records key and update the data already recorded
+then the MDS will recognise this record&#8217;s key and update the data already recorded
 in the system.</p>
 <p>When an upload is completed successfully, you will see a summary of the updated
 records shown in the &#8216;Upload Change Summary&#8217; table displayed in the View Upload
@@ -200,17 +201,12 @@ Details for complete uploads. See <a class="reference internal" href="../../user
 </div>
 <div class="section" id="how-can-i-delete-a-record-i-have-previously-uploaded">
 <span id="upload-delete-data-faq"></span><h2>How can I delete a record I have previously uploaded?<a class="headerlink" href="#how-can-i-delete-a-record-i-have-previously-uploaded" title="Permalink to this headline">¶</a></h2>
-<p>If an episode is included in an upload file, you need to include <strong>ALL</strong> Service
-Contact and <strong>ALL</strong> Outcome Collection Occasions measures for that episode.</p>
-<p>Any missing Service Contacts and Outcome Collection Occasions measures that have
-been previously uploaded but are not present in a subsequent upload will be removed
-from the PMHC MDS. Or Service Contacts and Outcome Collection Occasions can be
-deleted through the Data Entry Interface.</p>
-<p>Deleting a Client or an Episode will need to be done through the Data Entry Interface.</p>
+<p>Please refer to <a class="reference internal" href="../../data-specification/upload-specification.html#deleting-records"><span class="std std-ref">Deleting records</span></a>.</p>
 </div>
 <div class="section" id="how-can-i-review-why-the-status-of-my-upload-file-shows-error">
 <span id="upload-error-faq"></span><h2>How can I review why the status of my upload file shows error?<a class="headerlink" href="#how-can-i-review-why-the-status-of-my-upload-file-shows-error" title="Permalink to this headline">¶</a></h2>
-<p>If the status of your file shows error, you can view the returned errors through Viewing Previous Uploads.</p>
+<p>If the status of your file shows error, you can view the returned errors
+through Viewing Previous Uploads.</p>
 <p>Refer to <a class="reference internal" href="../../user-documentation/upload.html#upload-error-messages"><span class="std std-ref">Error messages</span></a>.</p>
 </div>
 <div class="section" id="how-can-i-view-my-uploaded-data">
@@ -247,6 +243,22 @@ you with a clear response on how to rectify the data issue.</p>
 <span id="upload-error-support-faq"></span><h2>Has my data uploaded if my file has an error status?<a class="headerlink" href="#has-my-data-uploaded-if-my-file-has-an-error-status" title="Permalink to this headline">¶</a></h2>
 <p>No. Only &#8216;Complete&#8217; uploads that are not in test mode, are recorded in the PMHC MDS.</p>
 <p>See <a class="reference internal" href="../../user-documentation/upload.html#viewing-previous-uploads"><span class="std std-ref">Viewing Previous Uploads</span></a>.</p>
+</div>
+<div class="section" id="will-valid-data-be-accepted-if-there-are-errors-in-the-file">
+<span id="when-is-file-accepted"></span><h2>Will valid data be accepted if there are errors in the file?<a class="headerlink" href="#will-valid-data-be-accepted-if-there-are-errors-in-the-file" title="Permalink to this headline">¶</a></h2>
+<p>For example, if we upload 200 lines of service contacts, and there are
+validation errors in 10 lines - will 190 lines be accepted?</p>
+<p>All files and records in an upload have to validate before any data is
+accepted.</p>
+</div>
+<div class="section" id="if-validation-rules-change-how-will-you-treat-legacy-data">
+<span id="changing-validation-rules"></span><h2>If validation rules change how will you treat legacy data?<a class="headerlink" href="#if-validation-rules-change-how-will-you-treat-legacy-data" title="Permalink to this headline">¶</a></h2>
+<p>When implementing new validation rules or changing existing rules, where
+possible we prefer to enfore the new rules as of a certain date.</p>
+<p>For example, if a data field that is now optional where to be made mandatory, we
+would specify that it was mandatory as of a particular date. For any data previous
+to that date the field could still be optional, but for any data after that
+date the field would be mandatory.</p>
 </div>
 </div>
 

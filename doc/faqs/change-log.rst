@@ -4,7 +4,7 @@ Frequently Asked Questions Change log
 =====================================
 
 ??/9/2017
-~~~~~~~~~
+---------
 
 System - Uploading data FAQs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -54,7 +54,7 @@ System - Development FAQs
 System - Upload FAQs
 ~~~~~~~~~~~~~~~~~~~~
 
-* Added the question :ref:`include-all-contact-data-faq`
+* Added the question 'Do I need to include all service contacts and measures for an episode in an file?'
 
 * Added the question :ref:`upload-edit-data-faq`
 

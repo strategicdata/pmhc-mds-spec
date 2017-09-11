@@ -4,7 +4,7 @@ Upload specification
 ====================
 
 File types
-------------
+----------
 Files will be accepted in the following types:
 
 - Comma Separated Values (CSV)
@@ -89,10 +89,12 @@ It also mean that for every episode included in an upload file, you must include
 ALL service contacts and measures for that episode. Any service contacts and measures
 that are not included will be removed from the PMHC MDS.
 
+
+
 .. _client-format:
 
 Client format
-^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^
 The client file/worksheet is required to be uploaded each time.
 
 Data elements for the client upload file/worksheet are defined at
@@ -204,3 +206,29 @@ Example organisation data:
 
 - `CSV organisation file <../_static/organisations.csv>`_.
 - `XLSX organisation worksheet <../_static/pmhc-upload.xlsx>`_.
+
+.. _deleting-records:
+
+Deleting records
+^^^^^^^^^^^^^^^^
+
+***Deletion of records has not yet been implemented. This is a feature that will
+be implemented in the future. We are documenting the file format that will be
+used so that developers of client systems that export data into the PMHC MDS
+can allow for deletion in their exported files.***
+
+* An extra optional "Delete" column will be added to each upload file/worksheet.
+
+* To delete a record, include its organisation path and its entity key, leave
+  all other fields blank and put "DELETE" in the "Delete" column.
+
+* Marking a record as deleted will require all child records of that record also
+  to be marked for deletion. For example, marking a client as deleted will
+  require all episodes, service contacts and collection occasions of that
+  client to be marked for deletion.
+
+Frequently Asked Questions
+--------------------------
+
+Please also refer to :ref:`uploading-data-FAQs` for answers to frequently
+asked questions about uploading data.
