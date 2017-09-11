@@ -212,10 +212,10 @@ Example organisation data:
 Deleting records
 ^^^^^^^^^^^^^^^^
 
-***Deletion of records has not yet been implemented. This is a feature that will
+**Deletion of records has not yet been implemented. This is a feature that will
 be implemented in the future. We are documenting the file format that will be
 used so that developers of client systems that export data into the PMHC MDS
-can allow for deletion in their exported files.***
+can allow for deletion in their exported files.**
 
 * An extra optional "Delete" column will be added to each upload file/worksheet.
 
