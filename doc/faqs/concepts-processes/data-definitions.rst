@@ -75,7 +75,7 @@ Yes.
 Details on how the SLKs are created, are currently available on the `PMHC MDS Specifications - SLK <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#client-statistical-linkage-key>`_.
 An SLK Generator has been developed on the `PMHC MDS - SLK tab <https://pmhc-mds.net/#/slk>`_.
 
-See :ref:`record-additional-data-faq` for details how to use this feature.
+See :ref:`slk-generator` for details how to use this feature.
 
 ...
 

@@ -11,9 +11,9 @@ contact someone in your provider organisation or provider organisation's PHN
 who has the 'User Management' role. If you are unsure who has the 'User Management'
 role please email the PMHC Helpdesk at support@pmhc-mds.com
 
-After navigating to the Data Entry tab, you will be presented with three search boxes
-which will allow you to easily find and view the client data for the organisations
-you have permission to access.
+After navigating to the Data Entry tab, you will be presented with three search
+boxes which will allow you to easily find and view the client data for the
+organisations you have permission to access.
 
 .. figure:: screen-shots/client-data-entry.png
    :alt: Data Entry tab View
@@ -35,7 +35,8 @@ There are three :ref:`search-fields` options available to find a client.
 Search Fields
 ~~~~~~~~~~~~~
 
-You can choose any one of three search options to search for a client, depending on the client information that you have available to you at the time.
+You can choose any one of three search options to search for a client, depending
+on the client information that you have available to you at the time.
 
 - **Client Key** - You can use this field to type in a whole :ref:`dfn-client_key`, or start thereof.
 
@@ -121,13 +122,14 @@ available on the Data Entry tab, by following these steps:
 3. Click Details tab, to view Client's details.
 4. Click Edit Details tab.
 5. Update the Client's details. Mandatory fields are marked with an * (Specification :ref:`Client Data Elements <client-data-elements>`)
-6. Click the blue 'Save' button. (If you decide not to save changes, you can simply navigate away from this screen)
 
 .. figure:: screen-shots/client-view-edit.png
    :alt: Client Data Edit Details
 
-You will receive confirmation that the Client's details have been saved, and it will
-now be displaying these new details in the Clients View Details tab.
+6. Click the blue 'Save' button. (If you decide not to save changes, you can simply navigate away from this screen)
+
+You will receive confirmation that the Client's details have been saved, and it
+will now be displaying these new details in the Clients View Details tab.
 
         .. figure:: screen-shots/client-data-saved.png
            :alt: Client Data Saved Successfully
@@ -175,7 +177,8 @@ See Validation Rules - :ref:`client-current-validations`
 Deleting a Client
 -----------------
 
-You can not currently delete a client. The client delete feature will be released in July 2017.
+You can not currently delete a client. The client delete feature will be released
+in :ref:`future data entry interface development <dev-data-entry-faq>`.
 
 In the interim, if this causes you any significant issues please email support@pmhc-mds.com.
 
@@ -270,10 +273,11 @@ available on the Data Entry tab, by following these steps:
 2. Firstly double check the client does not have any open episode already showing. (A client can only have one open episode at a provider organsiation. :ref:`key-concepts-episode`)
 3. Click the Add Episode tab.
 4. Enter the Client's Episode details. Mandatory fields are marked with an * (Specification :ref:`Episode Data Elements <episode-data-elements>`)
-5. Click the blue 'Save' button. (If you decide not to add this client's episode, you can simply navigate away from this screen)
 
 .. figure:: screen-shots/client-episodes-add.png
    :alt: Client Data Add Episode
+
+5. Click the blue 'Save' button. (If you decide not to add this client's episode, you can simply navigate away from this screen)
 
 You will receive confirmation that the Client's Episode details have been added,
 and it will now be displaying these new details in the Episode View Details tab.
@@ -290,7 +294,8 @@ See Validation Rules - :ref:`episode-current-validations`
 Deleting an Episode
 -------------------
 
-You can not currently delete a client's episode. The episode delete feature will be released in July 2017.
+You can not currently delete a client's episode. The episode delete feature will
+be released in :ref:`future data entry interface development <dev-data-entry-faq>`.
 
 In the interim, if this causes you any significant issues please email support@pmhc-mds.com.
 
@@ -337,10 +342,11 @@ available on the Data Entry tab, by following these steps:
 2. From the Service Contacts table, click the Service Contact Key.
 3. Click Edit Service Contact tab.
 4. Update the Client's Service Contact details for that episode. Mandatory fields are marked with an * (Specification :ref:`Service Contact Data Elements <service-contact-data-elements>`)
-5. Click the blue 'Save' button. (If you decide not to save changes, you can simply navigate away from this screen)
 
 .. figure:: screen-shots/client-service-contacts-edit.png
    :alt: Client Service Contact Edit Details
+
+5. Click the blue 'Save' button. (If you decide not to save changes, you can simply navigate away from this screen)
 
 You will receive confirmation that the Client's service contact details have been saved,
 and it will now be displaying these new details in the View service Contact Details tab.
@@ -364,10 +370,11 @@ available on the Data Entry tab, by following these steps:
 2. Firstly double check the service contact is not already showing.
 3. Click the Add Service Contact tab.
 4. Enter the Client's Service Contact details for that episode. Mandatory fields are marked with an * (Specification :ref:`Service Contact Data Elements <service-contact-data-elements>`)
-5. Click the blue 'Save' button. (If you decide not to add this client's episode, you can simply navigate away from this screen)
 
 .. figure:: screen-shots/client-service-contacts-add.png
    :alt: Client Data Add Service Contact
+
+5. Click the blue 'Save' button. (If you decide not to add this client's episode, you can simply navigate away from this screen)
 
 You will receive confirmation that the Client's service contact details have been added,
 and it will now be displaying these new details in the View service Contact Details tab.
@@ -385,7 +392,7 @@ Deleting an Service Contact
 ---------------------------
 
 You can not currently delete a client's service contact for an episode. The
-service contact delete feature will be released in July 2017.
+service contact delete feature will be released in :ref:`future data entry interface development <dev-data-entry-faq>`.
 
 In the interim, if this causes you any significant issues please email support@pmhc-mds.com.
 
@@ -501,7 +508,7 @@ Deleting an Outcome Collection Occasions
 ----------------------------------------
 
 You can not currently delete a client's service contact for an episode. The
-service contact delete feature will be released in July 2017.
+service contact delete feature will be released in :ref:`future data entry interface development <dev-data-entry-faq>`.
 
 In the interim, if this causes you any significant issues please email support@pmhc-mds.com.
 
@@ -567,7 +574,8 @@ A page will display the Practitioner's details as recorded via the :ref:`Practit
 Editing a Practitioner
 ----------------------
 
-You can edit a practitioner's details through the organisation tab, by following these steps:
+You can edit a practitioner's details through the organisation tab, by following
+these steps:
 
 1. Once :ref:`view-practitioner`
 2. From the View Practitioner Details tab, click the Edit Details tab.
@@ -593,7 +601,8 @@ See Validation Rules - :ref:`practitioner-current-validations`
 Adding a Practitioner
 ----------------------
 
-You can add a practitioner's details through the organisation tab, by following these steps:
+You can add a practitioner's details through the organisation tab, by following
+these steps:
 
 1. Once :ref:`find-practitioner`
 2. From the Practitioners tab, click the Add New Practitioner tab.
@@ -614,7 +623,8 @@ If you receive an error message, the data will need to be corrected before the
 record is saved and added to the PMHC MDS.
 See Validation Rules - :ref:`practitioner-current-validations`
 
-You can add a practitioners individually through the data entry interface or alternately, practitioner records can be uploaded in bulk. See :ref:`upload`
+You can add a practitioners individually through the data entry interface or
+alternately, practitioner records can be uploaded in bulk. See :ref:`upload`
 
 .. _delete-practitioner:
 
@@ -623,5 +633,7 @@ Deleting a Practitioner
 
 Currently a practitioner can not be deleted from the PMHC MDS. However, you can
 change the practitioner from active to inactive by editing their details.
+By doing this, the inactive practitioner keys will no longer be displayed in the
+Practitioner Key drop down list displayed on the Service Contact forms.
 
 See :ref:`edit-practitioner`
