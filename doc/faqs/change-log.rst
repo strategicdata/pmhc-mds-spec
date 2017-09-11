@@ -3,6 +3,17 @@
 Frequently Asked Questions Change log
 =====================================
 
+??/9/2017
+~~~~~~~~~
+
+System - Uploading data FAQs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Added the section :ref:`which_data`
+* Removed the section 'Should an upload file include all service contacts and measures for an episode every time?'
+* Removed the section 'Do I need to include all service contacts and measures for an episode in an file?'
+* Added the section :ref:`when_is_file_accepted`
+
 28/7/2017
 ---------
 

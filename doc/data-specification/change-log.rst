@@ -3,6 +3,11 @@
 Data Specification Change log
 =============================
 
+??/9/2017
+---------
+
+* Added :ref:`deleting-records`
+
 25/8/2017
 ---------
 
