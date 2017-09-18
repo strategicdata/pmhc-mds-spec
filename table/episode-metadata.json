@@ -80,7 +80,7 @@
     "datatype": {
       "base": "string"
     },
-    default: "0"
+    "default": "0"
   },{
     "name": "referral_date",
     "titles": [ "referral_date", "Referral Date" ],
