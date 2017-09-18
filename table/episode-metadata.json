@@ -79,7 +79,8 @@
     "schema:dateModified": "2016-07-08",
     "datatype": {
       "base": "string"
-    }
+    },
+    default: "0"
   },{
     "name": "referral_date",
     "titles": [ "referral_date", "Referral Date" ],
