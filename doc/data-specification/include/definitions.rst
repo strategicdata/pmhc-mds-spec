@@ -1256,7 +1256,7 @@ An indication of the completion status of an *Episode of Care*.
 :Required: false
 
 :Domain:
-  :blank: Episode open
+  :0: Episode open
   :1: Episode closed - treatment concluded
   :2: Episode closed administratively - client could not be contacted
   :3: Episode closed administratively - client declined further contact
@@ -1266,10 +1266,10 @@ An indication of the completion status of an *Episode of Care*.
 :Notes:
   In order to use code 1 (Episode closed - treatment concluded) the client must have at least one service contact. All other codes may be applicable even when the client has no service contacts.
   
-  Blank - Episode open
+  0 or Blank - Episode open
     The client still requires treatment and further service contacts are
     required.
-    
+  
   1 - Episode closed - treatment concluded
     No further service contacts are planned as the client no longer requires
     treatment.
