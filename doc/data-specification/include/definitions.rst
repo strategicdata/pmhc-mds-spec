@@ -4918,7 +4918,7 @@ The co-payment is the amount paid by the client per session.
 :Required: true
 
 :Domain:
-  0 - 999999
+  0 - 999999.99
 :Notes:
   Up to 6 digits before the decimal point; up to 2 digits after the decimal
   point.
