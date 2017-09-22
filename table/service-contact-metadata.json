@@ -170,7 +170,7 @@
     "name": "service_contact_participation_indicator",
     "titles": [ "service_contact_participation_indicator", "Participation Indicator" ],
     "dc:title": "Service Contact - Client Participation Indicator",
-    "schema:description": "An indicator of whether the client participated in the service contact, as represented by a code.",
+    "schema:description": "An indicator of whether the client participated, or intended to participate, in the service contact, as represented by a code.",
     "schema:disambiguatingDescription": "table/service-contact/participation-indicator.rst",
     "schema:meteorItem": "494341",
     "schema:dateCreated": "2016-06-22",

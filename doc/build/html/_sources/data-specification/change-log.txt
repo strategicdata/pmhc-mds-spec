@@ -7,7 +7,12 @@ Data Specification Change log
 ---------
 
 * Added :ref:`deleting-records`
-* Clarified that the upper bound for :ref:`dfn-service_contact_copayment` is 999999.99
+* Clarified that the upper bound for :ref:`dfn-service_contact_copayment` is 
+  999999.99
+* Updated :ref:`validation-rules`, :ref:`dfn-service_contact_participants` and
+  :ref:`dfn-service_contact_participation_indicator` to clarify how
+  :ref:`dfn-service_contact_participants` and
+  :ref:`dfn-service_contact_participation_indicator` interact
 
 29/8/2017
 ---------
