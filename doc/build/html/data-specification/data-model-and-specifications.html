@@ -12448,7 +12448,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </div>
 <div class="section" id="service-contact-client-participation-indicator">
 <span id="dfn-service-contact-participation-indicator"></span><h3>Service Contact - Client Participation Indicator<a class="headerlink" href="#service-contact-client-participation-indicator" title="Permalink to this headline">¶</a></h3>
-<p>An indicator of whether the client participated in the service contact, as represented by a code.</p>
+<p>An indicator of whether the client participated, or intended to participate, in the service contact, as represented by a code.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -12490,6 +12490,9 @@ record the service contact would normally warrant a dated entry, is not
 participating.</p>
 </dd>
 </dl>
+<p><em>Note:</em> Where a client intended to participate in a service contact but failed
+to attend, <a class="reference internal" href="#dfn-service-contact-participation-indicator"><span class="std std-ref">Service Contact - Client Participation Indicator</span></a> should be recorded
+as &#8216;1: Yes&#8217; and <a class="reference internal" href="#dfn-service-contact-no-show"><span class="std std-ref">Service Contact - No Show</span></a> should be recorded as &#8216;1: Yes&#8217;.</p>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">METeOR:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/494341">494341</a></p>
@@ -12864,7 +12867,7 @@ postcode must be entered for Service Contact Postcode. The unknown postcode is n
 <tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><dl class="first docutils">
 <dt>1 - Individual</dt>
 <dd><p class="first last">Code applies for Service Contacts delivered individually to a single client
-without third party participants.</p>
+without third party participants. Please refer to the Note below.</p>
 </dd>
 <dt>2 - Client group</dt>
 <dd><p class="first last">Code applies for Service Contacts delivered on a group basis to two or more
@@ -12884,9 +12887,11 @@ participation of the client.</p>
 (e.g., teachers, employer), with or without the participation of the client.</p>
 </dd>
 </dl>
-<p class="last">Note that this item interacts with Service Contact - Client Participation
-Indicator which is used to denote whether the individual client was a
-participant in the Service Contact.</p>
+<p class="last"><em>Note:</em> This item interacts with <a class="reference internal" href="#dfn-service-contact-participation-indicator"><span class="std std-ref">Service Contact - Client Participation Indicator</span></a>.
+Where <a class="reference internal" href="#dfn-service-contact-participants"><span class="std std-ref">Service Contact - Participants</span></a> has a value of
+&#8216;1: Individual&#8217;, <a class="reference internal" href="#dfn-service-contact-participation-indicator"><span class="std std-ref">Service Contact - Client Participation Indicator</span></a> must
+have a value of &#8216;1: Yes&#8217;. <a class="reference internal" href="#dfn-service-contact-no-show"><span class="std std-ref">Service Contact - No Show</span></a> is used to record if the
+patient failed to attend the appointment.</p>
 </td>
 </tr>
 </tbody>

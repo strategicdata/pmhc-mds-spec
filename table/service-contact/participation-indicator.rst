@@ -12,3 +12,7 @@ telephone, video link or other forms of direct communication.
   provider and a third party(ies) where the patient/client, in whose clinical
   record the service contact would normally warrant a dated entry, is not
   participating.
+
+*Note:* Where a client intended to participate in a service contact but failed
+to attend, :ref:`dfn-service_contact_participation_indicator` should be recorded
+as '1: Yes' and :ref:`dfn-service_contact_no_show` should be recorded as '1: Yes'.
