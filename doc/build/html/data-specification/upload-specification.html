@@ -417,9 +417,9 @@ be implemented in the future. We are documenting the file format that will be
 used so that developers of client systems that export data into the PMHC MDS
 can allow for deletion in their exported files.</strong></p>
 <ul class="simple">
-<li>An extra optional &#8220;Delete&#8221; column will be added to each upload file/worksheet.</li>
+<li>An extra optional &#8220;delete&#8221; column will be added to each upload file/worksheet.</li>
 <li>To delete a record, include its organisation path and its entity key, leave
-all other fields blank and put &#8220;DELETE&#8221; in the &#8220;Delete&#8221; column.</li>
+all other fields blank and put &#8220;DELETE&#8221; in the &#8220;delete&#8221; column.</li>
 <li>Marking a record as deleted will require all child records of that record also
 to be marked for deletion. For example, marking a client as deleted will
 require all episodes, service contacts and collection occasions of that
