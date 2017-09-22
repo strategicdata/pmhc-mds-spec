@@ -3,43 +3,85 @@
 Data Specification Change log
 =============================
 
-??/9/2017
----------
+??/9/2017 - Version 1.0.11
+--------------------------
 
-* Added :ref:`deleting-records`
-* Clarified that the upper bound for :ref:`dfn-service_contact_copayment` is 
-  999999.99
-* Updated :ref:`validation-rules`, :ref:`dfn-service_contact_participants` and
-  :ref:`dfn-service_contact_participation_indicator` to clarify how
-  :ref:`dfn-service_contact_participants` and
-  :ref:`dfn-service_contact_participation_indicator` interact
+* :ref:`upload_specification`
+
+  * Added :ref:`deleting-records`
+
+* :ref:`data-model-and-specifications`
+
+  * :ref:`record-formats`
+
+    * :ref:`episode-data-elements`
+
+      * Updated :ref:`dfn-episode_completion_status` to allow either 0 or blank
+        to represent 'Episode open'
+
+    * :ref:`service-contact-data-elements`
+
+      * Clarified that the upper bound for :ref:`dfn-service_contact_copayment` is
+        999999.99
+      * Updated :ref:`dfn-service_contact_participants` and
+        :ref:`dfn-service_contact_participation_indicator` to clarify how
+        :ref:`dfn-service_contact_participants` and
+        :ref:`dfn-service_contact_participation_indicator` interact
+
+* :ref:`validation-rules`
+
+  * Updated :ref:`validation-rules` to clarify how
+    :ref:`dfn-service_contact_participants` and
+    :ref:`dfn-service_contact_participation_indicator` interact
 
 29/8/2017
 ---------
 
-* Updated :ref:`client_keys` reference to clarify future development
-* Updated :ref:`unique_keys` and specification links
+* :ref:`identifier_management`
+
+  * Updated :ref:`client_keys` reference to clarify future development
+  * Updated :ref:`unique_keys` and specification links
 
 25/8/2017
 ---------
 
-* Updated :ref:`upload_specification` to include provider organisations.
+* :ref:`upload_specification`
+
+  * Updated :ref:`upload_specification` to include provider organisations.
 
 23/8/2017
 ---------
 
 * Added :ref:`validation-rules`
 
-* Updated :ref:`dfn-practitioner_year_of_birth` to clarify which years are valid.
-* Updated :ref:`dfn-date_of_birth` to clarify that future dates are not valid.
-* Updated :ref:`dfn-episode_end_date` to clarify that future dates are not valid.
-* Updated :ref:`dfn-client_postcode` to clarify which postcodes are valid.
-* Updated :ref:`dfn-referral_date` to clarify that future dates are not valid.
-* Updated :ref:`dfn-service_contact_date` to clarify that future dates are not
-  valid.
-* Updated :ref:`dfn-service_contact_postcode` to clarify the ranges of postcodes
-  that are valid.
-* Updated :ref:`dfn-measure_date` to clarify that future dates are not valid.
+* Data model and specifications
+
+  * Record formats
+
+    * Practitioner
+
+      * Updated :ref:`dfn-practitioner_year_of_birth` to clarify which years are valid.
+
+    * Client
+
+      * Updated :ref:`dfn-date_of_birth` to clarify that future dates are not valid.
+
+    * Episode
+
+      * Updated :ref:`dfn-episode_end_date` to clarify that future dates are not valid.
+      * Updated :ref:`dfn-client_postcode` to clarify which postcodes are valid.
+      * Updated :ref:`dfn-referral_date` to clarify that future dates are not valid.
+
+    * Service Contact
+
+      * Updated :ref:`dfn-service_contact_date` to clarify that future dates are not
+        valid.
+      * Updated :ref:`dfn-service_contact_postcode` to clarify the ranges of postcodes
+        that are valid.
+
+    * Outcome Collection Occasion
+
+      * Updated :ref:`dfn-measure_date` to clarify that future dates are not valid.
 
 
 28/7/2017

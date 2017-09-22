@@ -1,3 +1,5 @@
+.. _data-model-and-specifications:
+
 Data model and specifications
 =============================
 
