@@ -3,7 +3,7 @@
 Data Specification Change log
 =============================
 
-??/9/2017 - Version 1.0.11
+25/9/2017 - Version 1.0.11
 --------------------------
 
 * :ref:`upload_specification`
