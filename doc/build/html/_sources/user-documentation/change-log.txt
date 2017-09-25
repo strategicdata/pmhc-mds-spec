@@ -3,6 +3,12 @@
 User Guide Change log
 =====================
 
+25/9/2017
+---------
+
+* Edited :ref:`view-role`
+* Edited :ref:`edit-role`
+
 25/8/2017
 ---------
 
