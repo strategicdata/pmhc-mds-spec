@@ -191,8 +191,8 @@ You can invite an existing user through the Users tab, by following these steps:
 
 .. _view-role:
 
-Viewing a users roles
-^^^^^^^^^^^^^^^^^^^^^
+Viewing a user's roles
+^^^^^^^^^^^^^^^^^^^^^^
 
 A user can have more than one role. Each role is granted for a user against an
 organisation you have the User Management Role at.
@@ -201,8 +201,7 @@ You can edit and assign extra roles to an existing user by following these steps
 
 1. Navigate to the Users tab.
 2. Click on the user's name in blue displayed within the table list.
-3. Click the 'Roles' tab to show the users assigned roles.
-4. Choose the PHN or Provider Organisation from the selection box to view the users roles at that organisation.
+3. Click the 'Roles' tab to show the user's assigned roles.
 
    .. figure:: screen-shots/user-roles.png
       :alt: PMHC MDS User Roles
@@ -211,8 +210,8 @@ A tick displays the user currently has this role assigned at the relevant organi
 
 .. _edit-role:
 
-Editing a users roles
-^^^^^^^^^^^^^^^^^^^^^
+Editing a user's roles
+^^^^^^^^^^^^^^^^^^^^^^
 
 A user can have more than one role. Each role is granted for a user against an
 organisation you have the User Management Role at.
@@ -227,22 +226,14 @@ You can edit and assign extra roles to an existing user by following these steps
    .. figure:: screen-shots/user-edit-role.png
       :alt: PMHC MDS Edit Users Role
 
-5. Select the PHN from the Organisation drop down list
 6. A tick indicates the user currently has this role assigned at the relevant organisation.
    Multiple roles can be assigned and these roles are shown as blue tickets.
 
 | **Add** a role by clicking the empty checkbox.
 | **Remove** a role by clicking the ticked checkbox.
-|
-| *Please note: roles are automatically inherited from a higher organisation and
-   displayed as a light grey tick. Inherited roles can not be edited or deleted by
-   a User Management role at the Provider Organisation level.*
-|
 
 7. All changes are automatically saved.
 8. You will need to notify the user of these role changes. The system will not automatically do this.
-
-.. 9. The user will receive notification of these roles changes.
 
 .. _delete_user:
 
