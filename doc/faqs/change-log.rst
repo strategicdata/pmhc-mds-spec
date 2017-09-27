@@ -3,7 +3,7 @@
 Frequently Asked Questions Change log
 =====================================
 
-??/9/2017
+12/9/2017
 ---------
 
 System - Uploading data FAQs
