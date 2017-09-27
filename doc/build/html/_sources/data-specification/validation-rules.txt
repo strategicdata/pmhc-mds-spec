@@ -104,6 +104,8 @@ Service Contact
 
     * The :ref:`dfn-service_contact_date` was before 30 June 2018
     * The :ref:`dfn-episode_tags` field must contain the !ATAPS flag
+  * If :ref:`dfn-service_contact_participants` is '1: Individual client'
+    :ref:`dfn-service_contact_participation_indicator` must be '1: Yes'
 
 .. _k10p-current-validations:
 

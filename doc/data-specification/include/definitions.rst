@@ -1256,7 +1256,7 @@ An indication of the completion status of an *Episode of Care*.
 :Required: false
 
 :Domain:
-  :blank: Episode open
+  :0: Episode open
   :1: Episode closed - treatment concluded
   :2: Episode closed administratively - client could not be contacted
   :3: Episode closed administratively - client declined further contact
@@ -1266,10 +1266,10 @@ An indication of the completion status of an *Episode of Care*.
 :Notes:
   In order to use code 1 (Episode closed - treatment concluded) the client must have at least one service contact. All other codes may be applicable even when the client has no service contacts.
   
-  Blank - Episode open
+  0 or Blank - Episode open
     The client still requires treatment and further service contacts are
     required.
-    
+  
   1 - Episode closed - treatment concluded
     No further service contacts are planned as the client no longer requires
     treatment.
@@ -4868,7 +4868,7 @@ SDQ - Total Difficulties Score
 Service Contact - Client Participation Indicator
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-An indicator of whether the client participated in the service contact, as represented by a code.
+An indicator of whether the client participated, or intended to participate, in the service contact, as represented by a code.
 
 :Field name: service_contact_participation_indicator
 
@@ -4895,6 +4895,10 @@ An indicator of whether the client participated in the service contact, as repre
     record the service contact would normally warrant a dated entry, is not
     participating.
   
+  *Note:* Where a client intended to participate in a service contact but failed
+  to attend, :ref:`dfn-service_contact_participation_indicator` should be recorded
+  as '1: Yes' and :ref:`dfn-service_contact_no_show` should be recorded as '1: Yes'.
+  
 
 :METeOR: `494341 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494341>`__
 
@@ -4914,7 +4918,7 @@ The co-payment is the amount paid by the client per session.
 :Required: true
 
 :Domain:
-  0 - 999999
+  0 - 999999.99
 :Notes:
   Up to 6 digits before the decimal point; up to 2 digits after the decimal
   point.
@@ -5149,7 +5153,7 @@ An indication of who participated in the Service Contact.
 :Notes:
   1 - Individual
     Code applies for Service Contacts delivered individually to a single client
-    without third party participants.
+    without third party participants. Please refer to the Note below.
   
   2 - Client group
     Code applies for Service Contacts delivered on a group basis to two or more
@@ -5168,9 +5172,11 @@ An indication of who participated in the Service Contact.
     Code applies to Service Contacts delivered to other third parties
     (e.g., teachers, employer), with or without the participation of the client.
   
-  Note that this item interacts with Service Contact - Client Participation
-  Indicator which is used to denote whether the individual client was a
-  participant in the Service Contact.
+  *Note:* This item interacts with :ref:`dfn-service_contact_participation_indicator`.
+  Where :ref:`dfn-service_contact_participants` has a value of
+  '1: Individual', :ref:`dfn-service_contact_participation_indicator` must
+  have a value of '1: Yes'. :ref:`dfn-service_contact_no_show` is used to record if the
+  patient failed to attend the appointment.
   
 
 ----------

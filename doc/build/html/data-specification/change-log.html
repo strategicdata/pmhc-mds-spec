@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Data Specification Change log &mdash; PMHC MDS Version 1.0.10 documentation</title>
+  <title>Data Specification Change log &mdash; PMHC MDS Version 1.0.11 documentation</title>
   
 
   
@@ -32,7 +32,7 @@
   
 
   
-    <link rel="top" title="PMHC MDS Version 1.0.10 documentation" href="../index.html"/>
+    <link rel="top" title="PMHC MDS Version 1.0.11 documentation" href="../index.html"/>
         <link rel="up" title="Data Specification" href="index.html"/>
         <link rel="next" title="Frequently Asked Questions" href="../faqs/index.html"/>
         <link rel="prev" title="ATAPS MDS to PMHC MDS data mapping" href="ataps/ataps-pmhc-mapping.html"/> 
@@ -63,7 +63,7 @@
             
             
               <div class="version">
-                Version 1.0.10
+                Version 1.0.11
               </div>
             
           
@@ -96,12 +96,12 @@
 <li class="toctree-l2"><a class="reference internal" href="validation-rules.html">Validation Rules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ataps/ataps-pmhc-mapping.html">ATAPS MDS to PMHC MDS data mapping</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Data Specification Change log</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id1">??/9/2017</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id2">29/8/2017</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id3">25/8/2017</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id4">23/8/2017</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id5">28/7/2017</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id6">24/7/2017</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#version-1-0-11">25/9/2017 - Version 1.0.11</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">29/8/2017</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">25/8/2017</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">23/8/2017</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">28/7/2017</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">24/7/2017</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#version-1-0-10">6/7/2017 - Version 1.0.10</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#version-1-0-9">30/6/2017 - Version 1.0.9</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#version-1-0-8">26/6/2017 - Version 1.0.8</a></li>
@@ -167,43 +167,99 @@
             
   <div class="section" id="data-specification-change-log">
 <span id="data-spec-changelog"></span><h1>Data Specification Change log<a class="headerlink" href="#data-specification-change-log" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="id1">
-<h2>??/9/2017<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="version-1-0-11">
+<h2>25/9/2017 - Version 1.0.11<a class="headerlink" href="#version-1-0-11" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
+<li><a class="reference internal" href="upload-specification.html#upload-specification"><span class="std std-ref">Upload specification</span></a><ul>
 <li>Added <a class="reference internal" href="upload-specification.html#deleting-records"><span class="std std-ref">Deleting records</span></a></li>
 </ul>
+</li>
+<li><a class="reference internal" href="data-model-and-specifications.html#data-model-and-specifications"><span class="std std-ref">Data model and specifications</span></a><ul>
+<li><a class="reference internal" href="data-model-and-specifications.html#record-formats"><span class="std std-ref">Record formats</span></a><ul>
+<li><a class="reference internal" href="data-model-and-specifications.html#episode-data-elements"><span class="std std-ref">Episode</span></a><ul>
+<li>Updated <a class="reference internal" href="data-model-and-specifications.html#dfn-episode-completion-status"><span class="std std-ref">Episode - Completion Status</span></a> to allow either 0 or blank
+to represent &#8216;Episode open&#8217;</li>
+</ul>
+</li>
+<li><a class="reference internal" href="data-model-and-specifications.html#service-contact-data-elements"><span class="std std-ref">Service Contact</span></a><ul>
+<li>Clarified that the upper bound for <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-copayment"><span class="std std-ref">Service Contact - Copayment</span></a> is
+999999.99</li>
+<li>Updated <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-participants"><span class="std std-ref">Service Contact - Participants</span></a> and
+<a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-participation-indicator"><span class="std std-ref">Service Contact - Client Participation Indicator</span></a> to clarify how
+<a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-participants"><span class="std std-ref">Service Contact - Participants</span></a> and
+<a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-participation-indicator"><span class="std std-ref">Service Contact - Client Participation Indicator</span></a> interact</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="validation-rules.html#validation-rules"><span class="std std-ref">Validation Rules</span></a><ul>
+<li>Updated <a class="reference internal" href="validation-rules.html#validation-rules"><span class="std std-ref">Validation Rules</span></a> to clarify how
+<a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-participants"><span class="std std-ref">Service Contact - Participants</span></a> and
+<a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-participation-indicator"><span class="std std-ref">Service Contact - Client Participation Indicator</span></a> interact</li>
+</ul>
+</li>
+</ul>
 </div>
-<div class="section" id="id2">
-<h2>29/8/2017<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h2>29/8/2017<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
+<li><a class="reference internal" href="identifier-management.html#identifier-management"><span class="std std-ref">Identifier management</span></a><ul>
 <li>Updated <a class="reference internal" href="identifier-management.html#client-keys"><span class="std std-ref">Managing Client Keys</span></a> reference to clarify future development</li>
 <li>Updated <a class="reference internal" href="identifier-management.html#unique-keys"><span class="std std-ref">Managing Practitioner, Episode, Service Contact and Outcome Collection Occasion Keys</span></a> and specification links</li>
 </ul>
-</div>
-<div class="section" id="id3">
-<h2>25/8/2017<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li>Updated <a class="reference internal" href="upload-specification.html#upload-specification"><span class="std std-ref">Upload specification</span></a> to include provider organisations.</li>
+</li>
 </ul>
 </div>
-<div class="section" id="id4">
-<h2>23/8/2017<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id2">
+<h2>25/8/2017<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference internal" href="upload-specification.html#upload-specification"><span class="std std-ref">Upload specification</span></a><ul>
+<li>Updated <a class="reference internal" href="upload-specification.html#upload-specification"><span class="std std-ref">Upload specification</span></a> to include provider organisations.</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h2>23/8/2017<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>Added <a class="reference internal" href="validation-rules.html#validation-rules"><span class="std std-ref">Validation Rules</span></a></li>
+<li>Data model and specifications<ul>
+<li>Record formats<ul>
+<li>Practitioner<ul>
 <li>Updated <a class="reference internal" href="data-model-and-specifications.html#dfn-practitioner-year-of-birth"><span class="std std-ref">Practitioner - Year of Birth</span></a> to clarify which years are valid.</li>
+</ul>
+</li>
+<li>Client<ul>
 <li>Updated <a class="reference internal" href="data-model-and-specifications.html#dfn-date-of-birth"><span class="std std-ref">Client - Date of Birth</span></a> to clarify that future dates are not valid.</li>
+</ul>
+</li>
+<li>Episode<ul>
 <li>Updated <a class="reference internal" href="data-model-and-specifications.html#dfn-episode-end-date"><span class="std std-ref">Episode - End Date</span></a> to clarify that future dates are not valid.</li>
 <li>Updated <a class="reference internal" href="data-model-and-specifications.html#dfn-client-postcode"><span class="std std-ref">Episode - Area of usual residence, postcode</span></a> to clarify which postcodes are valid.</li>
 <li>Updated <a class="reference internal" href="data-model-and-specifications.html#dfn-referral-date"><span class="std std-ref">Episode - Referral Date</span></a> to clarify that future dates are not valid.</li>
+</ul>
+</li>
+<li>Service Contact<ul>
 <li>Updated <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-date"><span class="std std-ref">Service Contact - Date</span></a> to clarify that future dates are not
 valid.</li>
 <li>Updated <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-postcode"><span class="std std-ref">Service Contact - Postcode</span></a> to clarify the ranges of postcodes
 that are valid.</li>
+</ul>
+</li>
+<li>Outcome Collection Occasion<ul>
 <li>Updated <a class="reference internal" href="data-model-and-specifications.html#dfn-measure-date"><span class="std std-ref">Collection Occasion - Measure Date</span></a> to clarify that future dates are not valid.</li>
 </ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 </div>
-<div class="section" id="id5">
-<h2>28/7/2017<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id4">
+<h2>28/7/2017<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><a class="reference internal" href="ataps/ataps-pmhc-mapping.html#ataps-to-pmhc-mapping"><span class="std std-ref">ATAPS MDS to PMHC MDS data mapping</span></a><ul>
 <li>Updated to show the mapping of ATAPS MDS diagnosis fields to PMHC
@@ -213,8 +269,8 @@ fields have been specified</li>
 </li>
 </ul>
 </div>
-<div class="section" id="id6">
-<h2>24/7/2017<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id5">
+<h2>24/7/2017<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>Data model and specifications<ul>
 <li>Upload specification<ul>
@@ -588,7 +644,7 @@ Individual item scores will eventually be required</li>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'Version 1.0.10',
+            VERSION:'Version 1.0.11',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

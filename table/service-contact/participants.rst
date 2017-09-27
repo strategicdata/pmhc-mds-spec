@@ -1,6 +1,6 @@
 1 - Individual
   Code applies for Service Contacts delivered individually to a single client
-  without third party participants.
+  without third party participants. Please refer to the Note below.
 
 2 - Client group
   Code applies for Service Contacts delivered on a group basis to two or more
@@ -19,6 +19,8 @@
   Code applies to Service Contacts delivered to other third parties
   (e.g., teachers, employer), with or without the participation of the client.
 
-Note that this item interacts with Service Contact - Client Participation
-Indicator which is used to denote whether the individual client was a
-participant in the Service Contact.
+*Note:* This item interacts with :ref:`dfn-service_contact_participation_indicator`.
+Where :ref:`dfn-service_contact_participants` has a value of
+'1: Individual', :ref:`dfn-service_contact_participation_indicator` must
+have a value of '1: Yes'. :ref:`dfn-service_contact_no_show` is used to record if the
+patient failed to attend the appointment.
