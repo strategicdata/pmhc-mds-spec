@@ -485,17 +485,28 @@ class PMHC < Csvlint::Cli
           episode_header = episode_data.shift
           episode_episode_key_index = episode_header.index("episode_key")
           referral_date_index = episode_header.index("referral_date")
+          episode_end_date_index = episode_header.index("episode_end_date")
 
-          # Measure date must be after referral date
           episode_current_line = 1
           episode_data.each do |episode_row|
             if episode_row[episode_episode_key_index] == row[episode_key_index]
               rd = episode_row[referral_date_index]
+              eed = episode_row[episode_end_date_index]
+              # Measure date must note be before referral date
               unless ( rd == nil or measure_date == nil )
                 referral_date = Date.new( rd[:year], rd[:month], rd[:day] )
                 if ( measure_date <=> referral_date ) < 0
                   validator.build_errors(:invalid_measure_date, "#{measure}", current_line+1,
                     measure_date_index+1, md)
+                end
+              end
+              # Measure date must note be after episode end date
+              unless ( eed == nil or measure_date == nil )
+                episode_end_date = Date.new( eed[:year], eed[:month], eed[:day] )
+
+                if ( measure_date <=> episode_end_date ) > 0
+                  validator.build_errors(:episode_already_concluded, "#{measure}",
+                    current_line+1, measure_date_index+1, md)
                 end
               end
               break
@@ -566,11 +577,14 @@ class PMHC < Csvlint::Cli
           episode_header = episode_data.shift
           episode_episode_key_index = episode_header.index("episode_key")
           referral_date_index = episode_header.index("referral_date")
+          episode_end_date_index = episode_header.index("episode_end_date")
 
           episode_current_line = 1
           episode_data.each do |episode_row|
             if episode_row[episode_episode_key_index] == row[episode_key_index]
               rd = episode_row[referral_date_index]
+              eed = episode_row[episode_end_date_index]
+              # Measure date must note be before referral date
               unless ( rd == nil or measure_date == nil )
                 referral_date = Date.new( rd[:year], rd[:month], rd[:day] )
                 if ( measure_date <=> referral_date ) < 0
@@ -578,6 +592,16 @@ class PMHC < Csvlint::Cli
                     measure_date_index+1, md)
                 end
               end
+              # Measure date must note be after episode end date
+              unless ( eed == nil or measure_date == nil )
+                episode_end_date = Date.new( eed[:year], eed[:month], eed[:day] )
+
+                if ( measure_date <=> episode_end_date ) > 0
+                  validator.build_errors(:episode_already_concluded, :sdq,
+                    current_line+1, measure_date_index+1, md)
+                end
+              end
+
               break
             end
           end
