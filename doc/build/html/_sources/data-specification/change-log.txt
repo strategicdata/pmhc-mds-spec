@@ -6,6 +6,8 @@ Data Specification Change log
 ??/10/2017
 ----------
 
+* Added :ref:`test-data-sets`
+
 * :ref:`validation-rules`
 
   * Updated :ref:`episode-current-validations` to specify when the ``!ATAPS``
@@ -20,7 +22,7 @@ Data Specification Change log
     :ref:`dfn-measure_date` must not be after :ref:`dfn-episode_end_date`
   * Updated :ref:`k5-current-validations` to specify that
     :ref:`dfn-measure_date` must not be after :ref:`dfn-episode_end_date`
-  * Updated :ref:`sdq-current-validations` to specify that 
+  * Updated :ref:`sdq-current-validations` to specify that
     :ref:`dfn-measure_date` must not be after :ref:`dfn-episode_end_date`
 
 25/9/2017 - Version 1.0.11
