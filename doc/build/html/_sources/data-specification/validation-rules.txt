@@ -72,7 +72,9 @@ Episode
     responses will only be allowed under the following conditions:
 
     * The :ref:`dfn-referral_date` was before 1 July 2017
-    * The :ref:`dfn-episode_tags` field must contain the !ATAPS flag
+    * The :ref:`dfn-episode_tags` field must contain the ``!ATAPS`` flag
+  * The ``!ATAPS`` tag can only be included in the :ref:`dfn-episode_tags` field
+    where the :ref:`dfn-referral_date` was before 1 July 2017
 
 .. _service-contact-current-validations:
 
@@ -82,9 +84,6 @@ Service Contact
   * Where :ref:`dfn-service_contact_final` is recorded as '1: No further services
     are planned for the client in the current episode', the date of the
     :ref:`dfn-service_contact_final` must be recorded as the Episode End Date
-  * Where an :ref:`dfn-episode_end_date` has been recorded, there must be a service
-    contact with :ref:`dfn-service_contact_final` set to '1: No further services
-    are planned for the client in the current episode'
   * Where an :ref:`dfn-episode_end_date` has been recorded, a later
     :ref:`dfn-service_contact_date` cannot be added
   * If :ref:`dfn-service_contact_modality` is '0: No contact took place'
@@ -103,9 +102,11 @@ Service Contact
     response will only be allowed under the following conditions:
 
     * The :ref:`dfn-service_contact_date` was before 30 June 2018
-    * The :ref:`dfn-episode_tags` field must contain the !ATAPS flag
+    * The :ref:`dfn-service_contact_tags` field must contain the ``!ATAPS`` flag
   * If :ref:`dfn-service_contact_participants` is '1: Individual client'
     :ref:`dfn-service_contact_participation_indicator` must be '1: Yes'
+  * The ``!ATAPS`` tag can only be included in the :ref:`dfn-service_contact_tags`
+    field where the :ref:`dfn-service_contact_date` was before 30 June 2018
 
 .. _k10p-current-validations:
 
@@ -113,8 +114,10 @@ K10+
 ~~~~
 
   * :ref:`dfn-measure_date` must not be before :ref:`dfn-referral_date`
+  * :ref:`dfn-measure_date` must not be after :ref:`dfn-episode_end_date`
   * If both item scores and a total score are specified, the item scores must
     add up to the total score
+
 
 .. _k5-current-validations:
 
@@ -122,6 +125,7 @@ K5
 ~~~
 
   * :ref:`dfn-measure_date` must not be before :ref:`dfn-referral_date`
+  * :ref:`dfn-measure_date` must not be after :ref:`dfn-episode_end_date`
   * If both item scores and a total score are specified, the item scores must
     add up to the total score
 
@@ -131,6 +135,7 @@ SDQ
 ~~~
 
   * :ref:`dfn-measure_date` must not be before :ref:`dfn-referral_date`
+  * :ref:`dfn-measure_date` must not be after :ref:`dfn-episode_end_date`
 
 .. _future-validations:
 
