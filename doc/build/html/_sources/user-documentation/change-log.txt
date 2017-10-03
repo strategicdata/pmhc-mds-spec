@@ -3,6 +3,13 @@
 User Guide Change log
 =====================
 
+03/10/2017
+----------
+
+* Edited :ref:`finding-a-user`
+
+* Edited :ref:`adding-a-user`
+
 25/9/2017
 ---------
 

@@ -139,7 +139,7 @@ Complete uploads
 
 :ref:`viewing-uploads-details` for complete uploads will display data verification
 information by listing the number of data records present and if those records
-are added or uploaded within the MDS records.
+are added or updated within the MDS records.
 
 .. figure:: screen-shots/upload-details.png
    :alt: PMHC MDS Upload Details page
