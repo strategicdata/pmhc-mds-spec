@@ -73,6 +73,9 @@ Finding a user
 
 You can sort and filter the listed users through the Users tab.
 
+Please note: Newly invited users will not be visible until they have successfully
+accepted their invitation.
+
 Sort the listed users by simply clicking on the column header. Alternately
 you can click on the arrow beside a column header for more sort options, as follows:
 
@@ -153,7 +156,7 @@ by following these steps:
    them to the PMHC MDS. They will also be sent an SMS containing a
    verification code. The user will need to follow the instructions in the
    email before they can gain access to the system. This invitation will be valid for 7 days.
-8. When the user has accepted the invitation you will be sent an email to let you know.
+8. When the user has accepted the invitation you will be sent an email to let you know. This user will now be listed in the View Users table.
 
    .. figure:: screen-shots/user-invite-accepted-email.png
       :alt: PMHC MDS Invite Accepted

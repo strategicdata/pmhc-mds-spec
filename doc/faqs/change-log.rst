@@ -3,6 +3,26 @@
 Frequently Asked Questions Change log
 =====================================
 
+03/10/2017
+----------
+
+System - Data Entry FAQs
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Updated the question :ref:`enter-no-show-faq`
+
+* Updated the question :ref:`enter-k10-k5-sdq-faq`
+
+* Added the question :ref:`enter-sdq-faq`
+
+System - Uploading data FAQs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Added the question :ref:`upload_error_log`
+
+* Added the question :ref:`upload_unknown_error`
+
+
 12/9/2017
 ---------
 

@@ -189,12 +189,26 @@ Refer to the online User Guide :ref:`episode-data`.
 
 .. _enter-k10-k5-sdq-faq:
 
-How do I enter a K10+, K5 or SDQ?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+How do I enter a K10+, or K5?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-These measures tools, K10+, K5 or SDQ, are entered as an :ref:`outcome-collection-occasion-data-elements`.
+These measures tools, K10+ and K5, are entered as an :ref:`outcome-collection-occasion-data-elements`.
 
 Refer to the online User Guide :ref:`outcome-collection-occasion-data`.
+
+.. _enter-sdq-faq:
+
+How do I enter a SDQ measure?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The SDQ development for the Data Entry Interface is on hold.
+
+The Department is currently in licensing negotiation with the SDQ developers to
+be able to add an SDQ online form to the PMHC MDS.
+
+In the interim, the SDQ paper version is still able to be used and can be entered through the Data Entry Interface once the development is released.
+
+Refer to :ref:`Data Entry Interface Development<dev-data-entry-faq>`.
 
 .. _enter-no-show-faq:
 
@@ -206,6 +220,9 @@ Yes.
 To enter a 'No Show', add new Service Contact. For any Service Contact fields
 that do not have a 'no show' option available to be selected, please enter the
 response that would have been entered if the participant had attended the session.
+
+You can decide to enter as much information as possible within a no show form,
+as long as it meet the 'No Show' validation guidelines.
 
 Refer to :ref:`service-contact-data-elements`.
 

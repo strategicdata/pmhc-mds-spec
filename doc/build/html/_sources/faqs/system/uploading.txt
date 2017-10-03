@@ -135,9 +135,39 @@ If validation rules change how will you treat legacy data?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 When implementing new validation rules or changing existing rules, where
-possible we prefer to enfore the new rules as of a certain date.
+possible we prefer to enforce the new rules as of a certain date.
 
 For example, if a data field that is now optional where to be made mandatory, we
 would specify that it was mandatory as of a particular date. For any data previous
 to that date the field could still be optional, but for any data after that
 date the field would be mandatory.
+
+.. _upload_error_log:
+
+I am receiving an upload error that has a code that is not in my records. What should I do now?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+We have implemented an upload error log that reports when an error is not
+providing the relevant details. The error log code will be reported to the user
+after the error message, for example [ABC123ZY]
+
+The [AW97AZRX] error code refers to our internal error log. With this error code,
+we will be able to quickly source you the relevant key details for this record.
+And this error log is also reviewed by our developers to diagnose and fix the
+specific error to ensure that the system reports the relevant details/keys for
+future uploads.
+
+If you receive this types of errors message, please email the PMHC Helpdesk on
+support@pmhc-mds.com and provide a copy of the entire error message along with
+the error code.
+
+.. _upload_unknown_error:
+
+I am receiving an unknown error in my records. How can I fix this?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you receive an 'unknown error' message, please email the PMHC Helpdesk on
+support@pmhc-mds.com and provide a copy of the error email, and/or a screenshot
+if possible. The error email is very important for the Helpdesk to quickly
+identifying the error and to provide you with a clear response on how to rectify
+the data issue.
