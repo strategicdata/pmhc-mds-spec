@@ -55,13 +55,106 @@ Types of System Reports
 The reports are grouped into five categories, each designed to serve different
 purposes:
 
-* Category A: Monitoring progress of MDS implementation
+* :ref:`category-a`
 * Category B: Monitoring overall service delivery
 * Category C: Monitoring implementation of stepped care
 * Category D: Key Performance Indicators
 * :ref:`category-e`
 
 **Note:** Category A-D reports are still to be implemented.
+
+.. _category-a:
+
+Category A: Monitoring progress of MDS implementation
++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+These reports are designed to assist monitoring MDS uptake and compliance with
+key business rules.
+
+The reports provide summary data on:
+
+* Volumes ('active clients'/'active episodes'/contacts)
+* Data quality in terms of compliance with key business rules
+
+**Note:** A subset of these reports is included in :ref:`category-e` without
+any filtering for active clients or episodes to enable organisational data
+managers to monitor 'raw' upload and data supply to the MDS.
+
+.. _category-a1:
+
+A1 - High level summary of overall volumes by entity
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This report is designed to provide a 'one page' view, with data aggregated for
+the specified reporting period, covering counts of clients, episodes and
+service contacts.
+
+Key specifications:
+
+* To be counted, a client must have had one or more Service Contacts in the
+  reporting period, defined for this report's purposes as 'Active Clients'.
+  Clients are counted uniquely regardless of number of episodes.
+* Episodes to be counted if one or more Service Contacts were recorded in the
+  period - defined for this report purpose as 'Active Episodes'.
+* All Service Contacts in the period are reported except those that are flagged
+  as 'No Show'.
+* All dates refer to date of service not date of data upload or data entry.
+
+.. _category-a2:
+
+A2 - Volume trends
+~~~~~~~~~~~~~~~~~~
+
+This report will soon be implemented.
+
+.. _category-a3:
+
+A3 - Data quality report - Missing and invalid client data
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This report will soon be implemented.
+
+.. _category-a4:
+
+A4 - Data quality report - Missing and invalid episode data
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This report will soon be implemented.
+
+.. _category-a5:
+
+A5 - Data quality report - Missing and invalid service contact data
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This report will soon be implemented.
+
+.. _category-a6:
+
+A6 - Data quality report - Missing and invalid practitioner data
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This report will soon be implemented.
+
+.. _category-a7:
+
+A7 - Open episodes with no service contact activity for 90+ days
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This report will soon be implemented.
+
+.. _category-a8:
+
+A8 - Data quality report - Recording of outcome measures for open episodes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This report will soon be implemented.
+
+.. _category-a3:
+
+A9 - Data quality report - Recording of outcome measures for completed episodes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This report will soon be implemented.
 
 .. _category-e:
 
