@@ -3,6 +3,11 @@
 Data Specification Change log
 =============================
 
+??/10/2017
+----------
+
+* Added :ref:`test-data-sets`
+
 25/9/2017 - Version 1.0.11
 --------------------------
 
