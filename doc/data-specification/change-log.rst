@@ -3,6 +3,26 @@
 Data Specification Change log
 =============================
 
+??/10/2017
+----------
+
+* :ref:`validation-rules`
+
+  * Updated :ref:`episode-current-validations` to specify when the ``!ATAPS``
+    flag can be used in :ref:`dfn-episode_tags`
+  * Updated :ref:`service-contact-current-validations` to remove the
+    validation 'Where an :ref:`dfn-episode_end_date` has been recorded,
+    there must be a service contact with :ref:`dfn-service_contact_final`
+    set to ‘1: No further services are planned for the client in the current episode’'
+  * Updated :ref:`service-contact-current-validations` to specify when the
+    ``!ATAPS`` flag can be used in :ref:`dfn-service_contact_tags`
+  * Updated :ref:`k10p-current-validations` to specify that
+    :ref:`dfn-measure_date` must not be after :ref:`dfn-episode_end_date`
+  * Updated :ref:`k5-current-validations` to specify that
+    :ref:`dfn-measure_date` must not be after :ref:`dfn-episode_end_date`
+  * Updated :ref:`sdq-current-validations` to specify that 
+    :ref:`dfn-measure_date` must not be after :ref:`dfn-episode_end_date`
+
 25/9/2017 - Version 1.0.11
 --------------------------
 
