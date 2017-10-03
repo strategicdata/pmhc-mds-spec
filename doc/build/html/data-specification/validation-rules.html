@@ -112,6 +112,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="ataps/ataps-pmhc-mapping.html">ATAPS MDS to PMHC MDS data mapping</a></li>
+<li class="toctree-l2"><a class="reference internal" href="test-data-sets.html">Test Data Sets</a></li>
 <li class="toctree-l2"><a class="reference internal" href="change-log.html">Data Specification Change log</a></li>
 </ul>
 </li>
@@ -235,8 +236,11 @@ the values:</p>
 responses will only be allowed under the following conditions:</p>
 <ul class="simple">
 <li>The <a class="reference internal" href="data-model-and-specifications.html#dfn-referral-date"><span class="std std-ref">Episode - Referral Date</span></a> was before 1 July 2017</li>
-<li>The <a class="reference internal" href="data-model-and-specifications.html#dfn-episode-tags"><span class="std std-ref">Episode - Tags</span></a> field must contain the !ATAPS flag</li>
+<li>The <a class="reference internal" href="data-model-and-specifications.html#dfn-episode-tags"><span class="std std-ref">Episode - Tags</span></a> field must contain the <code class="docutils literal"><span class="pre">!ATAPS</span></code> flag</li>
 </ul>
+</li>
+<li><p class="first">The <code class="docutils literal"><span class="pre">!ATAPS</span></code> tag can only be included in the <a class="reference internal" href="data-model-and-specifications.html#dfn-episode-tags"><span class="std std-ref">Episode - Tags</span></a> field
+where the <a class="reference internal" href="data-model-and-specifications.html#dfn-referral-date"><span class="std std-ref">Episode - Referral Date</span></a> was before 1 July 2017</p>
 </li>
 </ul>
 </div></blockquote>
@@ -248,9 +252,6 @@ responses will only be allowed under the following conditions:</p>
 <li>Where <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-final"><span class="std std-ref">Service Contact - Final</span></a> is recorded as &#8216;1: No further services
 are planned for the client in the current episode&#8217;, the date of the
 <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-final"><span class="std std-ref">Service Contact - Final</span></a> must be recorded as the Episode End Date</li>
-<li>Where an <a class="reference internal" href="data-model-and-specifications.html#dfn-episode-end-date"><span class="std std-ref">Episode - End Date</span></a> has been recorded, there must be a service
-contact with <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-final"><span class="std std-ref">Service Contact - Final</span></a> set to &#8216;1: No further services
-are planned for the client in the current episode&#8217;</li>
 <li>Where an <a class="reference internal" href="data-model-and-specifications.html#dfn-episode-end-date"><span class="std std-ref">Episode - End Date</span></a> has been recorded, a later
 <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-date"><span class="std std-ref">Service Contact - Date</span></a> cannot be added</li>
 <li>If <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-modality"><span class="std std-ref">Service Contact - Modality</span></a> is &#8216;0: No contact took place&#8217;
@@ -268,11 +269,13 @@ are planned for the client in the current episode&#8217;</li>
 allowed where data has been migrated from ATAPS. The above
 response will only be allowed under the following conditions:<ul>
 <li>The <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-date"><span class="std std-ref">Service Contact - Date</span></a> was before 30 June 2018</li>
-<li>The <a class="reference internal" href="data-model-and-specifications.html#dfn-episode-tags"><span class="std std-ref">Episode - Tags</span></a> field must contain the !ATAPS flag</li>
+<li>The <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-tags"><span class="std std-ref">Service Contact - Tags</span></a> field must contain the <code class="docutils literal"><span class="pre">!ATAPS</span></code> flag</li>
 </ul>
 </li>
 <li>If <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-participants"><span class="std std-ref">Service Contact - Participants</span></a> is &#8216;1: Individual client&#8217;
 <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-participation-indicator"><span class="std std-ref">Service Contact - Client Participation Indicator</span></a> must be &#8216;1: Yes&#8217;</li>
+<li>The <code class="docutils literal"><span class="pre">!ATAPS</span></code> tag can only be included in the <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-tags"><span class="std std-ref">Service Contact - Tags</span></a>
+field where the <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-date"><span class="std std-ref">Service Contact - Date</span></a> was before 30 June 2018</li>
 </ul>
 </div></blockquote>
 </div>
@@ -281,6 +284,7 @@ response will only be allowed under the following conditions:<ul>
 <blockquote>
 <div><ul class="simple">
 <li><a class="reference internal" href="data-model-and-specifications.html#dfn-measure-date"><span class="std std-ref">Collection Occasion - Measure Date</span></a> must not be before <a class="reference internal" href="data-model-and-specifications.html#dfn-referral-date"><span class="std std-ref">Episode - Referral Date</span></a></li>
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-measure-date"><span class="std std-ref">Collection Occasion - Measure Date</span></a> must not be after <a class="reference internal" href="data-model-and-specifications.html#dfn-episode-end-date"><span class="std std-ref">Episode - End Date</span></a></li>
 <li>If both item scores and a total score are specified, the item scores must
 add up to the total score</li>
 </ul>
@@ -291,6 +295,7 @@ add up to the total score</li>
 <blockquote>
 <div><ul class="simple">
 <li><a class="reference internal" href="data-model-and-specifications.html#dfn-measure-date"><span class="std std-ref">Collection Occasion - Measure Date</span></a> must not be before <a class="reference internal" href="data-model-and-specifications.html#dfn-referral-date"><span class="std std-ref">Episode - Referral Date</span></a></li>
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-measure-date"><span class="std std-ref">Collection Occasion - Measure Date</span></a> must not be after <a class="reference internal" href="data-model-and-specifications.html#dfn-episode-end-date"><span class="std std-ref">Episode - End Date</span></a></li>
 <li>If both item scores and a total score are specified, the item scores must
 add up to the total score</li>
 </ul>
@@ -301,6 +306,7 @@ add up to the total score</li>
 <blockquote>
 <div><ul class="simple">
 <li><a class="reference internal" href="data-model-and-specifications.html#dfn-measure-date"><span class="std std-ref">Collection Occasion - Measure Date</span></a> must not be before <a class="reference internal" href="data-model-and-specifications.html#dfn-referral-date"><span class="std std-ref">Episode - Referral Date</span></a></li>
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-measure-date"><span class="std std-ref">Collection Occasion - Measure Date</span></a> must not be after <a class="reference internal" href="data-model-and-specifications.html#dfn-episode-end-date"><span class="std std-ref">Episode - End Date</span></a></li>
 </ul>
 </div></blockquote>
 </div>
