@@ -3,7 +3,7 @@
 Data Specification Change log
 =============================
 
-??/10/2017
+03/10/2017
 ----------
 
 * Added :ref:`test-data-sets`
