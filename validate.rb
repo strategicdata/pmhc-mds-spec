@@ -12,28 +12,23 @@ class PMHC < Csvlint::Cli
   include Csvlint::ErrorCollector
 
   def validate(schema_dir=nil)
-    v = verify(schema_dir)
+    @results = []
+    @validators = Hash.new
 
-    results = "{\"results\": [" + @results.join(",") + "]}"
+    schema_dir = (schema_dir.nil? || schema_dir.empty? ? "" : schema_dir + "/") + "pmhc-metadata.json"
+    @schema = get_schema(schema_dir)
+    fetch_schema_tables(@schema, options)
 
-    puts results
+    if options[:json] === true
+      h = { results: @results }
+      puts h.to_json
+    end
   end
 
   private
-    def verify(schema_dir = nil)
-      valid = true
-      @results = []
-      @validators = Hash.new
-
-      schema_file = (schema_dir.nil? || schema_dir.empty? ? "" : schema_dir + "/") + "pmhc-metadata.json"
-      @schema = get_schema(schema_file)
-      valid &= fetch_schema_tables(@schema, {})
-
-      return valid
-    end
-
     def fetch_schema_tables(schema, options)
       valid = true
+
       unless schema.instance_of? Csvlint::Csvw::TableGroup
         return_error "No CSV data to validate."
       end
@@ -44,13 +39,24 @@ class PMHC < Csvlint::Cli
         rescue Errno::ENOENT
           return_error "#{source} not found"
         end unless source =~ /^http(s)?/
-        valid &= validate_csv(source, schema, options[:dump], nil)
+        # CHANGE - pass JSON option
+        valid &= validate_csv(source, schema, options[:dump_errors], options[:json], options[:werror])
       end
 
+      # CHANGE - we want to remain in control and not exit if files are invalid
+      # exit 1 unless valid
       return valid
     end
 
-    def validate_csv(source, schema, dump, json)
+    def validate_csv(source, schema, dump, json, werror)
+      @error_count = 0
+
+      if json === true
+        validator = Csvlint::Validator.new( source, {}, schema )
+      else
+        validator = Csvlint::Validator.new( source, {}, schema, { lambda: report_lines } )
+      end
+
       if source.class == String
         csv = source
       elsif source.class == File
@@ -59,46 +65,42 @@ class PMHC < Csvlint::Cli
         csv = "CSV"
       end
 
-#      validator = Csvlint::Validator.new( source, {}, schema, { lambda: ->(validator) { validate_pmhc( validator, csv ) } } )
-
-      validator = Csvlint::Validator.new( source, {}, schema, {} )
-
-      # Only do extra pmhc checks on data files, not specification files.
-
+      # CHANGE - Only do extra pmhc checks on data files, not specification files.
       if csv =~ /data/
         if validator.valid?
           validate_pmhc( validator, csv )
         end
       end
 
-      json = {
-        validation: {
-          file: csv,
-          state: validator.valid? ? "valid" : "invalid",
-          errors: validator.errors.map { |v| hashify(v) },
-          warnings: validator.warnings.map { |v| hashify(v) },
-          info: validator.info_messages.map { |v| hashify(v) },
+      if json === true
+        # CHANGE - collect results, rather than emit them one file at a time
+        # include file name in summary too
+        summary = {
+          validation: {
+            file: csv,
+            state: validator.valid? ? "valid" : "invalid",
+            errors: validator.errors.map { |v| hashify(v) },
+            warnings: validator.warnings.map { |v| hashify(v) },
+            info: validator.info_messages.map { |v| hashify(v) },
+          }
         }
-      }.to_json
+        @results.push(summary)
+      else
+        if $stdout.tty?
+          puts "\r\n#{csv} is #{validator.valid? ? "VALID".green : "INVALID".red}"
+        else
+          puts "\r\n#{csv} is #{validator.valid? ? "VALID" : "INVALID"}"
+        end
+        print_errors(validator.errors,   dump)
+        print_errors(validator.warnings, dump)
+      end
 
-      @results.push(json)
-
+      return false if werror && validator.warnings.size > 0
       return validator.valid?
     end
 
     def hashify(error)
-      h = {
-        type: error.type,
-        category: error.category,
-        row: error.row,
-        col: error.column
-      }
-
-      if error.column && @schema && @schema.class == Csvlint::Schema && @schema.fields[error.column - 1] != nil
-        field = @schema.fields[error.column - 1]
-        h[:header] = field.name
-        h[:constraints] = Hash[field.constraints.map {|k,v| [k.underscore, v] }]
-      end
+      h = super(error)
 
       if /^(unmatched_foreign_key_reference|duplicate_key|multiple_matched_rows)$/ =~ error.type
         h[:content] = error.content
@@ -419,7 +421,7 @@ class PMHC < Csvlint::Cli
       org_hash = Hash.new()
       org_data = @validators["organisations"].data
       org_header = org_data.shift
-      org_data.each do |org| 
+      org_data.each do |org|
         org_hash[org[org_header.index('organisation_path')]] = org[org_header.index('organisation_type')]
       end
 
