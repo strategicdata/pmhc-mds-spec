@@ -149,7 +149,7 @@ A8 - Data quality report - Recording of outcome measures for open episodes
 
 This report will soon be implemented.
 
-.. _category-a3:
+.. _category-a9:
 
 A9 - Data quality report - Recording of outcome measures for completed episodes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -196,6 +196,8 @@ Key specifications:
 * All records to be counted with no filtering.
 * All dates refer to date of modification, not date of service.
 
+.. _category-e2:
+
 E2 - Volume trends
 ~~~~~~~~~~~~~~~~~~
 
@@ -207,6 +209,8 @@ Key specifications:
 * All records to be counted with no filtering.
 * All dates refer to date of insertion, not date of service.
 * Results are cumulative.
+
+.. _category-e3:
 
 E3 - Activity per day
 ~~~~~~~~~~~~~~~~~~~~~
