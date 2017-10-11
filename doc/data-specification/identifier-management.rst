@@ -43,6 +43,8 @@ The :ref:`Practitioner Key <practitioner-data-elements>`, :ref:`Episode Key <epi
 :ref:`Outcome Collection Occasion Key <outcome-collection-occasion-data-elements>`
 will be created and managed by Provider Organisations.
 
+The PMHC MDS specification requires each of these keys to be unique and stable at the Provider Organisation level.
+
 Each record needs to be assigned a unique key in order to facilitate
 adding/updating/deleting each item when uploading/entering data. These keys will
 be created and managed by the Provider Organisation.

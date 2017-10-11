@@ -7,5 +7,10 @@
   - If 'Face to Face' is selected a valid Australian
     postcode must be entered for Service Contact Postcode. The unknown postcode is not valid.
 
+4 - Internet-based
+    Includes email communication, that would normally warrant a dated entry in 
+    the clinical record of the client, involving a third party, such as a carer
+    or family member, and/or other professional or mental health worker, or
+    other service provider.
 
-If Service Contact Modality is not 'Face to Face' the postcode must be entered as unknown 9999.
+Note: If Service Contact Modality is not 'Face to Face' the postcode must be entered as unknown 9999.
