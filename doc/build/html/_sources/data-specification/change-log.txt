@@ -3,6 +3,22 @@
 Data Specification Change log
 =============================
 
+11/10/2017
+----------
+
+* :ref:`identifier_management`
+
+  * Updated :ref:`unique_keys`
+
+* :ref:`data-model-and-specifications`
+
+  * :ref:`record-formats`
+
+    * :ref:`service-contact-data-elements`
+
+      * Added notes for :ref:`dfn-service_contact_modality` response code
+        4: 'Internet-based'
+
 03/10/2017
 ----------
 
