@@ -190,20 +190,19 @@ The domain of individual items is defined in <a class="reference internal" href=
 <div class="section" id="client">
 <span id="client-current-validations"></span><h3>Client<a class="headerlink" href="#client" title="Permalink to this headline">¶</a></h3>
 <blockquote>
-<div><ul>
-<li><p class="first"><a class="reference internal" href="data-model-and-specifications.html#dfn-prof-english"><span class="std std-ref">Client - Proficiency in Spoken English</span></a> response &#8216;0: Not applicable (persons under 5
-years of age or who speak only English)&#8217; is only allowed where</p>
-<ul class="simple">
+<div><ul class="simple">
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-prof-english"><span class="std std-ref">Client - Proficiency in Spoken English</span></a> response &#8216;0: Not applicable (persons under 5
+years of age or who speak only English)&#8217; is only allowed where<ul>
 <li><a class="reference internal" href="data-model-and-specifications.html#dfn-main-lang-at-home"><span class="std std-ref">Client - Main Language Spoken at Home</span></a> is &#8216;1201: English&#8217;, or</li>
 <li><a class="reference internal" href="data-model-and-specifications.html#dfn-est-date-of-birth"><span class="std std-ref">Client - Estimated Date of Birth Flag</span></a> is  &#8216;1: Date of birth is accurate&#8217; and the
 person is under 5, or</li>
 <li><a class="reference internal" href="data-model-and-specifications.html#dfn-est-date-of-birth"><span class="std std-ref">Client - Estimated Date of Birth Flag</span></a> is &#8216;2: Date of birth is an estimate&#8217; and the
-person is under 6</li>
+person is under 6.</li>
 </ul>
-<p>Where <a class="reference internal" href="data-model-and-specifications.html#dfn-est-date-of-birth"><span class="std std-ref">Client - Estimated Date of Birth Flag</span></a> is &#8216;8: Date of birth is a dummy&#8217; or
-&#8216;9: Accuracy of stated date of birth is not known&#8217; <a class="reference internal" href="data-model-and-specifications.html#dfn-prof-english"><span class="std std-ref">Client - Proficiency in Spoken English</span></a>
-is not checked.</p>
 </li>
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-prof-english"><span class="std std-ref">Client - Proficiency in Spoken English</span></a> is not checked where <a class="reference internal" href="data-model-and-specifications.html#dfn-est-date-of-birth"><span class="std std-ref">Client - Estimated Date of Birth Flag</span></a>
+is &#8216;8: Date of birth is a dummy&#8217; or
+&#8216;9: Accuracy of stated date of birth is not known&#8217;.</li>
 </ul>
 </div></blockquote>
 </div>
@@ -212,11 +211,6 @@ is not checked.</p>
 <blockquote>
 <div><ul>
 <li><p class="first">The <a class="reference internal" href="data-model-and-specifications.html#dfn-episode-end-date"><span class="std std-ref">Episode - End Date</span></a> must not be before the <a class="reference internal" href="data-model-and-specifications.html#dfn-referral-date"><span class="std std-ref">Episode - Referral Date</span></a></p>
-</li>
-<li><p class="first">Where <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-final"><span class="std std-ref">Service Contact - Final</span></a> is recorded as &#8216;1: No further services
-are planned for the client in the current episode&#8217;, the
-<a class="reference internal" href="data-model-and-specifications.html#dfn-episode-completion-status"><span class="std std-ref">Episode - Completion Status</span></a> must be recorded using one of the
-&#8216;Episode closed&#8217; responses (Response items 2-6)</p>
 </li>
 <li><p class="first"><a class="reference internal" href="data-model-and-specifications.html#dfn-referrer-organisation-type"><span class="std std-ref">Episode - Referrer Organisation Type</span></a> must be set to
 &#8216;98: N/A - Self referral&#8217; if and only if <a class="reference internal" href="data-model-and-specifications.html#dfn-referrer-profession"><span class="std std-ref">Episode - Referrer Profession</span></a> is also
@@ -249,6 +243,10 @@ where the <a class="reference internal" href="data-model-and-specifications.html
 <span id="service-contact-current-validations"></span><h3>Service Contact<a class="headerlink" href="#service-contact" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><ul class="simple">
+<li>Where <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-final"><span class="std std-ref">Service Contact - Final</span></a> is recorded as &#8216;1: No further services
+are planned for the client in the current episode&#8217;, the
+<a class="reference internal" href="data-model-and-specifications.html#dfn-episode-completion-status"><span class="std std-ref">Episode - Completion Status</span></a> must be recorded using one of the
+&#8216;Episode closed&#8217; responses (Response items 1-6)</li>
 <li>Where <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-final"><span class="std std-ref">Service Contact - Final</span></a> is recorded as &#8216;1: No further services
 are planned for the client in the current episode&#8217;, the date of the
 <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-final"><span class="std std-ref">Service Contact - Final</span></a> must be recorded as the Episode End Date</li>
