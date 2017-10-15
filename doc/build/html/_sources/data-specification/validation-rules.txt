@@ -40,11 +40,10 @@ Client
     * :ref:`dfn-est_date_of_birth` is  '1: Date of birth is accurate' and the
       person is under 5, or
     * :ref:`dfn-est_date_of_birth` is '2: Date of birth is an estimate' and the
-      person is under 6
-
-    Where :ref:`dfn-est_date_of_birth` is '8: Date of birth is a dummy' or
-    '9: Accuracy of stated date of birth is not known' :ref:`dfn-prof_english`
-    is not checked.
+      person is under 6.
+  * :ref:`dfn-prof_english` is not checked where :ref:`dfn-est_date_of_birth`
+    is '8: Date of birth is a dummy' or
+    '9: Accuracy of stated date of birth is not known'.
 
 .. _episode-current-validations:
 
@@ -52,10 +51,6 @@ Episode
 ~~~~~~~
 
   * The :ref:`dfn-episode_end_date` must not be before the :ref:`dfn-referral_date`
-  * Where :ref:`dfn-service_contact_final` is recorded as '1: No further services
-    are planned for the client in the current episode', the
-    :ref:`dfn-episode_completion_status` must be recorded using one of the
-    'Episode closed' responses (Response items 2-6)
   * :ref:`dfn-referrer_organisation_type` must be set to
     '98: N/A - Self referral' if and only if :ref:`dfn-referrer_profession` is also
     '98: N/A - Self referral'
@@ -81,6 +76,10 @@ Episode
 Service Contact
 ~~~~~~~~~~~~~~~
 
+  * Where :ref:`dfn-service_contact_final` is recorded as '1: No further services
+    are planned for the client in the current episode', the
+    :ref:`dfn-episode_completion_status` must be recorded using one of the
+    'Episode closed' responses (Response items 1-6)
   * Where :ref:`dfn-service_contact_final` is recorded as '1: No further services
     are planned for the client in the current episode', the date of the
     :ref:`dfn-service_contact_final` must be recorded as the Episode End Date
