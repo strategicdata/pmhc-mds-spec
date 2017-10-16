@@ -3,6 +3,18 @@
 Data Specification Change log
 =============================
 
+16/10/2017
+----------
+
+* :ref:`validation-rules`
+
+  * Updated :ref:`episode-current-validations` to clarify which episode closed
+    responses are allowed to be recorded when :ref:`dfn-service_contact_final`
+    is recorded as
+    '1: No further services are planned for the client in the current episode'
+
+  * Updated :ref:`client-current-validations` to make the final point clearer.
+  
 11/10/2017
 ----------
 
