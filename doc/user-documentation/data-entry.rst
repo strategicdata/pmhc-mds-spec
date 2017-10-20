@@ -122,6 +122,13 @@ available on the Data Entry tab, by following these steps:
 3. Click Details tab, to view Client's details.
 4. Click Edit Details tab.
 5. Update the Client's details. Mandatory fields are marked with an * (Specification :ref:`Client Data Elements <client-data-elements>`)
+    *Please note: If you edit the 'Date of Birth' or 'Gender' you will be required to update the 'Statistical Linkage Key' field.*
+    *You can choose to 'Enter' or 'Generate' a Client's SLK.*
+    *The SLK is generated on your device, the names used are not stored or transmitted over the network.*
+
+    .. figure:: screen-shots/client-view-generate-slk-edit.png
+       :alt: Client Data Generated Client SLK Edit
+
 
 .. figure:: screen-shots/client-view-edit.png
    :alt: Client Data Edit Details
@@ -239,13 +246,6 @@ available on the Data Entry tab, by following these steps:
 2. From the Client's Episode table, click the Episode Key.
 3. Click Edit Details tab.
 4. Update the Client's Episode details. Mandatory fields are marked with an * (Specification :ref:`Episode Data Elements <episode-data-elements>`)
-    *Please note: If you edit the 'Date of Birth' or 'Gender' you will be required to update the 'Statistical Linkage Key' field.*
-    *You can choose to 'Enter' or 'Generate' a Client's SLK.*
-    *The SLK is generated on your device, the names used are not stored or transmitted over the network.*
-
-    .. figure:: screen-shots/client-view-generate-slk-edit.png
-       :alt: Client Data Generated Client SLK Edit
-
 5. Click the blue 'Save' button. (If you decide not to save changes, you can simply navigate away from this screen)
 
 .. figure:: screen-shots/client-episodes-edit.png
