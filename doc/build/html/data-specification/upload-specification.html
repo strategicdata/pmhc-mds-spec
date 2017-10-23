@@ -413,18 +413,50 @@ Provider Organisation details. There is no harm in including it in every upload.
 </div>
 <div class="section" id="deleting-records">
 <span id="id4"></span><h3>Deleting records<a class="headerlink" href="#deleting-records" title="Permalink to this headline">¶</a></h3>
-<p><strong>Deletion of records has not yet been implemented. This is a feature that will
-be implemented in the future. We are documenting the file format that will be
-used so that developers of client systems that export data into the PMHC MDS
-can allow for deletion in their exported files.</strong></p>
+<ul>
+<li><p class="first">Records of the following type can be deleted via upload:</p>
 <ul class="simple">
-<li>An extra optional &#8220;delete&#8221; column will be added to each upload file/worksheet.</li>
-<li>To delete a record, include its organisation path and its entity key, leave
-all other fields blank and put &#8220;DELETE&#8221; in the &#8220;delete&#8221; column.</li>
-<li>Marking a record as deleted will require all child records of that record also
+<li>Client</li>
+<li>Episode</li>
+<li>Service Contact</li>
+<li>K10+</li>
+<li>K5</li>
+<li>SDQ</li>
+<li>Practitioner</li>
+</ul>
+<p>Organisation records <em>cannot</em> be deleted via upload. Please email
+<a class="reference external" href="mailto:support&#37;&#52;&#48;pmhc-mds&#46;com">support<span>&#64;</span>pmhc-mds<span>&#46;</span>com</a> if you need to delete an organisation.</p>
+</li>
+<li><p class="first">An extra optional &#8220;delete&#8221; column can be added to each of the supported
+upload files/worksheets.</p>
+</li>
+<li><p class="first">This column should be the third column in each file, after the organisation
+path and the record&#8217;s entity key.</p>
+</li>
+<li><p class="first">To delete a record, include its organisation path and its entity key, leave
+all other fields blank and put &#8220;delete&#8221; in the &#8220;delete&#8221; column. Please note
+that case is important. &#8220;DELETE&#8221; will not be accepted.</p>
+</li>
+<li><p class="first">Marking a record as deleted will require all child records of that record also
 to be marked for deletion. For example, marking a client as deleted will
 require all episodes, service contacts and collection occasions of that
-client to be marked for deletion.</li>
+client to be marked for deletion.</p>
+</li>
+<li><p class="first">While deletions can be included in the same upload as insertions/updates,
+we recommend that you include all deletions in a separate upload that is
+uploaded before the insertions/updates.</p>
+</li>
+</ul>
+<p>Example files showing how to delete via upload:</p>
+<ul class="simple">
+<li><a class="reference external" href="../_static/pmhc-upload-delete.xlsx">XLSX file containing all the worksheets</a>.</li>
+<li><a class="reference external" href="../_static/client-delete.csv">CSV delete client file</a>.</li>
+<li><a class="reference external" href="../_static/episode-delete.csv">CSV delete episode file</a>.</li>
+<li><a class="reference external" href="../_static/service-contact-delete.csv">CSV delete service contact file</a>.</li>
+<li><a class="reference external" href="../_static/k10p-delete.csv">CSV delete K10+ file</a>.</li>
+<li><a class="reference external" href="../_static/k5-delete.csv">CSV detete K5 file</a>.</li>
+<li><a class="reference external" href="../_static/sdq-delete.csv">CSV delete SDQ file</a>.</li>
+<li><a class="reference external" href="../_static/practitioner-delete.csv">CSV delete practitioner file</a>.</li>
 </ul>
 </div>
 </div>
