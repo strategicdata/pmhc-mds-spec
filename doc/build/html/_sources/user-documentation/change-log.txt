@@ -3,6 +3,11 @@
 User Guide Change log
 =====================
 
+23/10/2017
+----------
+
+* Edited :ref:`edit-client`
+
 03/10/2017
 ----------
 
