@@ -184,10 +184,49 @@ See Validation Rules - :ref:`client-current-validations`
 Deleting a Client
 -----------------
 
-You can not currently delete a client. The client delete feature will be released
-in :ref:`future data entry interface development <dev-data-entry-faq>`.
+You can delete a client through ':ref:`view-client-details`'
+available on the Data Entry tab, by following these steps:
 
-In the interim, if this causes you any significant issues please email support@pmhc-mds.com.
+1. :ref:`Search<find-client>` for the client.
+2. From the :ref:`search-client` table, click the Client Key.
+3. Click Details tab, to :ref:`view Client's details<view-client-details>`.
+4. Click the red 'Delete' button.
+5. You will either be displayed a ':ref:`confirm-delete-client`' screen or a ':ref:`cannot-delete-client`' screen.
+
+.. _confirm-delete-client:
+
+Confirm Delete
+~~~~~~~~~~~~~~
+
+**Please note: Once the client is deleted, you will not be able to recover this client data.**
+
+1. Click the blue 'Confirm' button to delete this client. (or click the orange 'Cancel' button if you decide not to delete this client data.)
+
+  .. figure:: screen-shots/client-view-delete-confirm.png
+     :alt: Client Data Confirm Delete
+
+After you click 'Confirm', you will receive confirmation that the Client has
+been deleted, and you will be redirected to the :ref:`search-client` where the
+client will no longer be displayed.
+
+    .. figure:: screen-shots/client-view-delete-successful.png
+       :alt: Client Data Delete Successful
+
+.. _cannot-delete-client:
+
+Cannot Delete
+~~~~~~~~~~~~~
+
+If the client you are trying to delete has any dependant records, you will not
+be able to proceed with deleting this client until all the related records have
+been deleted.
+
+1. You can click on the link provided to View the Client's Episodes, or click the orange 'Dismiss' button
+
+  .. figure:: screen-shots/client-view-delete-cannot.png
+     :alt: Client Data Cannot Delete
+
+See :ref:`delete-episode`
 
 .. _episode-data:
 
@@ -255,7 +294,7 @@ You will receive confirmation that the Client's Episode details have been saved,
 and it will now be displaying these new details in the Episode View Details tab.
 
         .. figure:: screen-shots/client-data-saved.png
-           :alt: Client Data Saved Successfully
+           :alt: Client Episode Data Saved Successfully
 
 If you receive an error message, the data will need to be corrected before the
 record is saved and added to the PMHC MDS.
@@ -283,7 +322,7 @@ You will receive confirmation that the Client's Episode details have been added,
 and it will now be displaying these new details in the Episode View Details tab.
 
         .. figure:: screen-shots/client-data-saved.png
-           :alt: Client Data Saved Successfully
+           :alt: Client Episode Data Saved Successfully
 
 If you receive an error message, the data will need to be corrected before the
 record is saved and added to the PMHC MDS.
@@ -294,11 +333,50 @@ See Validation Rules - :ref:`episode-current-validations`
 Deleting an Episode
 -------------------
 
-You can not currently delete a client's episode. The episode delete feature will
-be released in :ref:`future data entry interface development <dev-data-entry-faq>`.
+You can delete a Client's Episode through ':ref:`view-episodes`'
+available on the Data Entry tab, by following these steps:
 
-In the interim, if this causes you any significant issues please email support@pmhc-mds.com.
+1. :ref:`Search<find-client>` for the client.
+2. From the :ref:`search-client` table, click the Client Key.
+3. Click Episodes tab, to :ref:`view Client's Episodes <view-episodes>`.
+4. From the :ref:`View Episodes <view-episodes>` table, click the Episode Key.
+5. Click the red 'Delete' button.
+6. You will either be displayed a ':ref:`confirm-delete-episode`' screen or a ':ref:`cannot-delete-episode`' screen.
 
+.. _confirm-delete-episode:
+
+Confirm Delete
+~~~~~~~~~~~~~~
+
+**Please note: Once the episode is deleted, you will not be able to recover this episode data.**
+
+1. Click the blue 'Confirm' button to delete this episode. (or click the orange 'Cancel' button if you decide not to delete this episode data.)
+
+  .. figure:: screen-shots/client-episode-delete-confirm.png
+     :alt: Client Episode Data Confirm Delete
+
+After you click 'Confirm', you will receive confirmation that the episode has
+been deleted, and you will be redirected to the :ref:`View Episodes <view-episodes>` where the
+episode will no longer be displayed.
+
+    .. figure:: screen-shots/client-episode-delete-successful.png
+       :alt: Client Episode Data Delete Successful
+
+.. _cannot-delete-episode:
+
+Cannot Delete
+~~~~~~~~~~~~~
+
+If the client you are trying to delete has any dependant records, you will not
+be able to proceed with deleting this client until all the related records have
+been deleted.
+
+1. You can click on the link provided to View the Client's Episodes, or click the orange 'Dismiss' button
+
+  .. figure:: screen-shots/client-episode-delete-cannot.png
+     :alt: Client Episode Data Cannot Delete
+
+See :ref:`delete-service-contact` and :ref:`delete-collection-occasion`
 
 .. _service-contact-data:
 
@@ -391,10 +469,31 @@ See Validation Rules - :ref:`service-contact-current-validations`
 Deleting an Service Contact
 ---------------------------
 
-You can not currently delete a client's service contact for an episode. The
-service contact delete feature will be released in :ref:`future data entry interface development <dev-data-entry-faq>`.
+You can delete a client's service contacts through ':ref:`view-service-contact`'
+available on the Data Entry tab, by following these steps:
 
-In the interim, if this causes you any significant issues please email support@pmhc-mds.com.
+1. :ref:`Search<find-client>` for the client.
+2. From the :ref:`search-client` table, click the Client Key.
+3. Click Episodes tab, to :ref:`view Client's Episodes <view-episodes>`.
+4. From the :ref:`View Episodes <view-episodes>` table, click the Episode Key.
+5. Click Service Contacts tab, to :ref:`View Client's Service Contacts <view-service-contact>`.
+6. From the :ref:`View service contact <view-service-contact>` table, click the Service Contact Key.
+7. Click the red 'Delete' button.
+8. You will be displayed a 'Confirm Deletion' screen
+
+  **Please note: Once the service contact is deleted, you will not be able to recover this service contact data.**
+
+9. Click the blue 'Confirm' button to delete this service contact. (or click the orange 'Cancel' button if you decide not to delete this service contact data.)
+
+  .. figure:: screen-shots/client-service-contact-delete-confirm.png
+     :alt: Client Service Contact Data Confirm Delete
+
+After you click 'Confirm', you will receive confirmation that the service contact has
+been deleted, and you will be redirected to the :ref:`View Service Contacts <view-service-contact>` where the
+service contact will no longer be displayed.
+
+    .. figure:: screen-shots/client-service-contact-delete-successful.png
+       :alt: Client Service Contact Data Delete Successful
 
 .. _outcome-collection-occasion-data:
 
@@ -466,7 +565,7 @@ See Validation Rules for:
 Adding a Client's Outcome Collection Occasions data
 ---------------------------------------------------
 
-You can add a client's Outcome Collection Occasions through :ref:`view-collection-occasion`
+You can add a Client's Outcome Collection Occasions through :ref:`view-collection-occasion`
 available on the Data Entry tab, by following these steps:
 
 1. Once :ref:`view-collection-occasion`
@@ -507,10 +606,31 @@ See Validation Rules for:
 Deleting an Outcome Collection Occasions
 ----------------------------------------
 
-You can not currently delete a client's service contact for an episode. The
-service contact delete feature will be released in :ref:`future data entry interface development <dev-data-entry-faq>`.
+You can delete a Client's Outcome Collection Occasion through ':ref:`view-collection-occasion`'
+available on the Data Entry tab, by following these steps:
 
-In the interim, if this causes you any significant issues please email support@pmhc-mds.com.
+1. :ref:`Search<find-client>` for the client.
+2. From the :ref:`search-client` table, click the Client Key.
+3. Click Episodes tab, to :ref:`view Client's Episodes <view-episodes>`.
+4. From the :ref:`View Episodes <view-episodes>` table, click the Episode Key.
+5. Click Collection Occasions tab, to :ref:`View Collection Occasions <view-collection-occasion>`.
+6. From the :ref:`View Collection Occasions <view-collection-occasion>` table, click the Collection Occasions Key.
+7. Click the red 'Delete' button.
+8. You will be displayed a 'Confirm Deletion' screen
+
+  **Please note: Once the collection occasion is deleted, you will not be able to recover this collection occasion data.**
+
+9. Click the blue 'Confirm' button to delete this collection occasion. (or click the orange 'Cancel' button if you decide not to delete this collection occasion data.)
+
+  .. figure:: screen-shots/client-collection-occasion-delete-confirm.png
+     :alt: Client Collection Occasion Data Confirm Delete
+
+After you click 'Confirm', you will receive confirmation that the collection occasion has
+been deleted, and you will be redirected to the :ref:`View Collection Occasions <view-collection-occasion>` where the
+collection occasion will no longer be displayed.
+
+    .. figure:: screen-shots/client-collection-occasion-delete-successful.png
+       :alt: Client Collection Occasion Data Delete Successful
 
 
 .. _practitioner:
