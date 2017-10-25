@@ -226,7 +226,7 @@ been deleted.
   .. figure:: screen-shots/client-view-delete-cannot.png
      :alt: Client Data Cannot Delete
 
-     See :ref:`delete-episode`
+See :ref:`delete-episode`
 
 .. _episode-data:
 
@@ -376,7 +376,7 @@ been deleted.
   .. figure:: screen-shots/client-episode-delete-cannot.png
      :alt: Client Episode Data Cannot Delete
 
-     See :ref:`delete-service-contact` and :ref:`delete-collection-occasion`
+See :ref:`delete-service-contact` and :ref:`delete-collection-occasion`
 
 .. _service-contact-data:
 
@@ -481,7 +481,7 @@ available on the Data Entry tab, by following these steps:
 7. Click the red 'Delete' button.
 8. You will be displayed a 'Confirm Deletion' screen
 
-**Please note: Once the service contact is deleted, you will not be able to recover this service contact data.**
+  **Please note: Once the service contact is deleted, you will not be able to recover this service contact data.**
 
 9. Click the blue 'Confirm' button to delete this service contact. (or click the orange 'Cancel' button if you decide not to delete this service contact data.)
 
@@ -606,7 +606,7 @@ See Validation Rules for:
 Deleting an Outcome Collection Occasions
 ----------------------------------------
 
-You can delete a Client's Outcome Collection Occasion through ':ref:`view-service-contact`'
+You can delete a Client's Outcome Collection Occasion through ':ref:`view-collection-occasion`'
 available on the Data Entry tab, by following these steps:
 
 1. :ref:`Search<find-client>` for the client.
@@ -614,11 +614,11 @@ available on the Data Entry tab, by following these steps:
 3. Click Episodes tab, to :ref:`view Client's Episodes <view-episodes>`.
 4. From the :ref:`View Episodes <view-episodes>` table, click the Episode Key.
 5. Click Collection Occasions tab, to :ref:`View Collection Occasions <view-collection-occasion>`.
-6. From the :ref::`View Collection Occasions <view-collection-occasion>` table, click the Collection Occasions Key.
+6. From the :ref:`View Collection Occasions <view-collection-occasion>` table, click the Collection Occasions Key.
 7. Click the red 'Delete' button.
 8. You will be displayed a 'Confirm Deletion' screen
 
-**Please note: Once the collection occasion is deleted, you will not be able to recover this collection occasion data.**
+  **Please note: Once the collection occasion is deleted, you will not be able to recover this collection occasion data.**
 
 9. Click the blue 'Confirm' button to delete this collection occasion. (or click the orange 'Cancel' button if you decide not to delete this collection occasion data.)
 
