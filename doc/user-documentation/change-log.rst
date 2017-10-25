@@ -3,6 +3,21 @@
 User Guide Change log
 =====================
 
+25/10/2017
+----------
+
+* Edited :ref:`delete-practitioner`
+
+* Edited :ref:`delete-client`
+
+* Edited :ref:`delete-episode`
+
+* Edited  :ref:`delete-service-contact`
+
+* Edited :ref:`delete-collection-occasion`
+
+* Added :ref:`delete-upload` documentation
+
 23/10/2017
 ----------
 
@@ -19,6 +34,7 @@ User Guide Change log
 ---------
 
 * Edited :ref:`view-role`
+
 * Edited :ref:`edit-role`
 
 25/8/2017

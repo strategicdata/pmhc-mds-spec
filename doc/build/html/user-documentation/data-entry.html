@@ -358,9 +358,50 @@ See Validation Rules - <a class="reference internal" href="../data-specification
 </div>
 <div class="section" id="deleting-a-client">
 <span id="delete-client"></span><h3>Deleting a Client<a class="headerlink" href="#deleting-a-client" title="Permalink to this headline">¶</a></h3>
-<p>You can not currently delete a client. The client delete feature will be released
-in <a class="reference internal" href="../faqs/system/development.html#dev-data-entry-faq"><span class="std std-ref">future data entry interface development</span></a>.</p>
-<p>In the interim, if this causes you any significant issues please email <a class="reference external" href="mailto:support&#37;&#52;&#48;pmhc-mds&#46;com">support<span>&#64;</span>pmhc-mds<span>&#46;</span>com</a>.</p>
+<p>You can delete a client through &#8216;<a class="reference internal" href="#view-client-details"><span class="std std-ref">Viewing a Client&#8217;s details</span></a>&#8216;
+available on the Data Entry tab, by following these steps:</p>
+<ol class="arabic simple">
+<li><a class="reference internal" href="#find-client"><span class="std std-ref">Search</span></a> for the client.</li>
+<li>From the <a class="reference internal" href="#search-client"><span class="std std-ref">Client Search Results</span></a> table, click the Client Key.</li>
+<li>Click Details tab, to <a class="reference internal" href="#view-client-details"><span class="std std-ref">view Client&#8217;s details</span></a>.</li>
+<li>Click the red &#8216;Delete&#8217; button.</li>
+<li>You will either be displayed a &#8216;<a class="reference internal" href="#confirm-delete-client"><span class="std std-ref">Confirm Delete</span></a>&#8216; screen or a &#8216;<a class="reference internal" href="#cannot-delete-client"><span class="std std-ref">Cannot Delete</span></a>&#8216; screen.</li>
+</ol>
+<div class="section" id="confirm-delete">
+<span id="confirm-delete-client"></span><h4>Confirm Delete<a class="headerlink" href="#confirm-delete" title="Permalink to this headline">¶</a></h4>
+<p><strong>Please note: Once the client is deleted, you will not be able to recover this client data.</strong></p>
+<ol class="arabic simple">
+<li>Click the blue &#8216;Confirm&#8217; button to delete this client. (or click the orange &#8216;Cancel&#8217; button if you decide not to delete this client data.)</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="Client Data Confirm Delete" src="../_images/client-view-delete-confirm.png" />
+</div>
+</div></blockquote>
+<p>After you click &#8216;Confirm&#8217;, you will receive confirmation that the Client has
+been deleted, and you will be redirected to the <a class="reference internal" href="#search-client"><span class="std std-ref">Client Search Results</span></a> where the
+client will no longer be displayed.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="Client Data Delete Successful" src="../_images/client-view-delete-successful.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="cannot-delete">
+<span id="cannot-delete-client"></span><h4>Cannot Delete<a class="headerlink" href="#cannot-delete" title="Permalink to this headline">¶</a></h4>
+<p>If the client you are trying to delete has any dependant records, you will not
+be able to proceed with deleting this client until all the related records have
+been deleted.</p>
+<ol class="arabic simple">
+<li>You can click on the link provided to View the Client&#8217;s Episodes, or click the orange &#8216;Dismiss&#8217; button</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="Client Data Cannot Delete" src="../_images/client-view-delete-cannot.png" />
+</div>
+</div></blockquote>
+<p>See <a class="reference internal" href="#delete-episode"><span class="std std-ref">Deleting an Episode</span></a></p>
+</div>
 </div>
 </div>
 <div class="section" id="episodes">
@@ -421,7 +462,7 @@ available on the Data Entry tab, by following these steps:</p>
 and it will now be displaying these new details in the Episode View Details tab.</p>
 <blockquote>
 <div><div class="figure">
-<img alt="Client Data Saved Successfully" src="../_images/client-data-saved.png" />
+<img alt="Client Episode Data Saved Successfully" src="../_images/client-data-saved.png" />
 </div>
 </div></blockquote>
 <p>If you receive an error message, the data will need to be corrected before the
@@ -448,7 +489,7 @@ available on the Data Entry tab, by following these steps:</p>
 and it will now be displaying these new details in the Episode View Details tab.</p>
 <blockquote>
 <div><div class="figure">
-<img alt="Client Data Saved Successfully" src="../_images/client-data-saved.png" />
+<img alt="Client Episode Data Saved Successfully" src="../_images/client-data-saved.png" />
 </div>
 </div></blockquote>
 <p>If you receive an error message, the data will need to be corrected before the
@@ -457,9 +498,51 @@ See Validation Rules - <a class="reference internal" href="../data-specification
 </div>
 <div class="section" id="deleting-an-episode">
 <span id="delete-episode"></span><h3>Deleting an Episode<a class="headerlink" href="#deleting-an-episode" title="Permalink to this headline">¶</a></h3>
-<p>You can not currently delete a client&#8217;s episode. The episode delete feature will
-be released in <a class="reference internal" href="../faqs/system/development.html#dev-data-entry-faq"><span class="std std-ref">future data entry interface development</span></a>.</p>
-<p>In the interim, if this causes you any significant issues please email <a class="reference external" href="mailto:support&#37;&#52;&#48;pmhc-mds&#46;com">support<span>&#64;</span>pmhc-mds<span>&#46;</span>com</a>.</p>
+<p>You can delete a Client&#8217;s Episode through &#8216;<a class="reference internal" href="#view-episodes"><span class="std std-ref">Viewing a Client&#8217;s Episodes</span></a>&#8216;
+available on the Data Entry tab, by following these steps:</p>
+<ol class="arabic simple">
+<li><a class="reference internal" href="#find-client"><span class="std std-ref">Search</span></a> for the client.</li>
+<li>From the <a class="reference internal" href="#search-client"><span class="std std-ref">Client Search Results</span></a> table, click the Client Key.</li>
+<li>Click Episodes tab, to <a class="reference internal" href="#view-episodes"><span class="std std-ref">view Client&#8217;s Episodes</span></a>.</li>
+<li>From the <a class="reference internal" href="#view-episodes"><span class="std std-ref">View Episodes</span></a> table, click the Episode Key.</li>
+<li>Click the red &#8216;Delete&#8217; button.</li>
+<li>You will either be displayed a &#8216;<a class="reference internal" href="#confirm-delete-episode"><span class="std std-ref">Confirm Delete</span></a>&#8216; screen or a &#8216;<a class="reference internal" href="#cannot-delete-episode"><span class="std std-ref">Cannot Delete</span></a>&#8216; screen.</li>
+</ol>
+<div class="section" id="confirm-delete-episode">
+<span id="id4"></span><h4>Confirm Delete<a class="headerlink" href="#confirm-delete-episode" title="Permalink to this headline">¶</a></h4>
+<p><strong>Please note: Once the episode is deleted, you will not be able to recover this episode data.</strong></p>
+<ol class="arabic simple">
+<li>Click the blue &#8216;Confirm&#8217; button to delete this episode. (or click the orange &#8216;Cancel&#8217; button if you decide not to delete this episode data.)</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="Client Episode Data Confirm Delete" src="../_images/client-episode-delete-confirm.png" />
+</div>
+</div></blockquote>
+<p>After you click &#8216;Confirm&#8217;, you will receive confirmation that the episode has
+been deleted, and you will be redirected to the <a class="reference internal" href="#view-episodes"><span class="std std-ref">View Episodes</span></a> where the
+episode will no longer be displayed.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="Client Episode Data Delete Successful" src="../_images/client-episode-delete-successful.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="cannot-delete-episode">
+<span id="id5"></span><h4>Cannot Delete<a class="headerlink" href="#cannot-delete-episode" title="Permalink to this headline">¶</a></h4>
+<p>If the client you are trying to delete has any dependant records, you will not
+be able to proceed with deleting this client until all the related records have
+been deleted.</p>
+<ol class="arabic simple">
+<li>You can click on the link provided to View the Client&#8217;s Episodes, or click the orange &#8216;Dismiss&#8217; button</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="Client Episode Data Cannot Delete" src="../_images/client-episode-delete-cannot.png" />
+</div>
+</div></blockquote>
+<p>See <a class="reference internal" href="#delete-service-contact"><span class="std std-ref">Deleting an Service Contact</span></a> and <a class="reference internal" href="#delete-collection-occasion"><span class="std std-ref">Deleting an Outcome Collection Occasions</span></a></p>
+</div>
 </div>
 </div>
 <div class="section" id="service-contacts">
@@ -542,9 +625,36 @@ See Validation Rules - <a class="reference internal" href="../data-specification
 </div>
 <div class="section" id="deleting-an-service-contact">
 <span id="delete-service-contact"></span><h3>Deleting an Service Contact<a class="headerlink" href="#deleting-an-service-contact" title="Permalink to this headline">¶</a></h3>
-<p>You can not currently delete a client&#8217;s service contact for an episode. The
-service contact delete feature will be released in <a class="reference internal" href="../faqs/system/development.html#dev-data-entry-faq"><span class="std std-ref">future data entry interface development</span></a>.</p>
-<p>In the interim, if this causes you any significant issues please email <a class="reference external" href="mailto:support&#37;&#52;&#48;pmhc-mds&#46;com">support<span>&#64;</span>pmhc-mds<span>&#46;</span>com</a>.</p>
+<p>You can delete a client&#8217;s service contacts through &#8216;<a class="reference internal" href="#view-service-contact"><span class="std std-ref">Viewing a Client&#8217;s Service Contacts for an Episode</span></a>&#8216;
+available on the Data Entry tab, by following these steps:</p>
+<ol class="arabic simple">
+<li><a class="reference internal" href="#find-client"><span class="std std-ref">Search</span></a> for the client.</li>
+<li>From the <a class="reference internal" href="#search-client"><span class="std std-ref">Client Search Results</span></a> table, click the Client Key.</li>
+<li>Click Episodes tab, to <a class="reference internal" href="#view-episodes"><span class="std std-ref">view Client&#8217;s Episodes</span></a>.</li>
+<li>From the <a class="reference internal" href="#view-episodes"><span class="std std-ref">View Episodes</span></a> table, click the Episode Key.</li>
+<li>Click Service Contacts tab, to <a class="reference internal" href="#view-service-contact"><span class="std std-ref">View Client&#8217;s Service Contacts</span></a>.</li>
+<li>From the <a class="reference internal" href="#view-service-contact"><span class="std std-ref">View service contact</span></a> table, click the Service Contact Key.</li>
+<li>Click the red &#8216;Delete&#8217; button.</li>
+<li>You will be displayed a &#8216;Confirm Deletion&#8217; screen</li>
+</ol>
+<blockquote>
+<div><strong>Please note: Once the service contact is deleted, you will not be able to recover this service contact data.</strong></div></blockquote>
+<ol class="arabic simple" start="9">
+<li>Click the blue &#8216;Confirm&#8217; button to delete this service contact. (or click the orange &#8216;Cancel&#8217; button if you decide not to delete this service contact data.)</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="Client Service Contact Data Confirm Delete" src="../_images/client-service-contact-delete-confirm.png" />
+</div>
+</div></blockquote>
+<p>After you click &#8216;Confirm&#8217;, you will receive confirmation that the service contact has
+been deleted, and you will be redirected to the <a class="reference internal" href="#view-service-contact"><span class="std std-ref">View Service Contacts</span></a> where the
+service contact will no longer be displayed.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="Client Service Contact Data Delete Successful" src="../_images/client-service-contact-delete-successful.png" />
+</div>
+</div></blockquote>
 </div>
 </div>
 <div class="section" id="outcome-collection-occasions">
@@ -605,7 +715,7 @@ See Validation Rules for:
 </div>
 <div class="section" id="adding-a-client-s-outcome-collection-occasions-data">
 <span id="add-collection-occasion"></span><h3>Adding a Client&#8217;s Outcome Collection Occasions data<a class="headerlink" href="#adding-a-client-s-outcome-collection-occasions-data" title="Permalink to this headline">¶</a></h3>
-<p>You can add a client&#8217;s Outcome Collection Occasions through <a class="reference internal" href="#view-collection-occasion"><span class="std std-ref">Viewing a Client&#8217;s Outcome Collection Occasions for an Episode</span></a>
+<p>You can add a Client&#8217;s Outcome Collection Occasions through <a class="reference internal" href="#view-collection-occasion"><span class="std std-ref">Viewing a Client&#8217;s Outcome Collection Occasions for an Episode</span></a>
 available on the Data Entry tab, by following these steps:</p>
 <ol class="arabic simple">
 <li>Once <a class="reference internal" href="#view-collection-occasion"><span class="std std-ref">Viewing a Client&#8217;s Outcome Collection Occasions for an Episode</span></a></li>
@@ -647,9 +757,36 @@ See Validation Rules for:
 </div>
 <div class="section" id="deleting-an-outcome-collection-occasions">
 <span id="delete-collection-occasion"></span><h3>Deleting an Outcome Collection Occasions<a class="headerlink" href="#deleting-an-outcome-collection-occasions" title="Permalink to this headline">¶</a></h3>
-<p>You can not currently delete a client&#8217;s service contact for an episode. The
-service contact delete feature will be released in <a class="reference internal" href="../faqs/system/development.html#dev-data-entry-faq"><span class="std std-ref">future data entry interface development</span></a>.</p>
-<p>In the interim, if this causes you any significant issues please email <a class="reference external" href="mailto:support&#37;&#52;&#48;pmhc-mds&#46;com">support<span>&#64;</span>pmhc-mds<span>&#46;</span>com</a>.</p>
+<p>You can delete a Client&#8217;s Outcome Collection Occasion through &#8216;<a class="reference internal" href="#view-collection-occasion"><span class="std std-ref">Viewing a Client&#8217;s Outcome Collection Occasions for an Episode</span></a>&#8216;
+available on the Data Entry tab, by following these steps:</p>
+<ol class="arabic simple">
+<li><a class="reference internal" href="#find-client"><span class="std std-ref">Search</span></a> for the client.</li>
+<li>From the <a class="reference internal" href="#search-client"><span class="std std-ref">Client Search Results</span></a> table, click the Client Key.</li>
+<li>Click Episodes tab, to <a class="reference internal" href="#view-episodes"><span class="std std-ref">view Client&#8217;s Episodes</span></a>.</li>
+<li>From the <a class="reference internal" href="#view-episodes"><span class="std std-ref">View Episodes</span></a> table, click the Episode Key.</li>
+<li>Click Collection Occasions tab, to <a class="reference internal" href="#view-collection-occasion"><span class="std std-ref">View Collection Occasions</span></a>.</li>
+<li>From the <a class="reference internal" href="#view-collection-occasion"><span class="std std-ref">View Collection Occasions</span></a> table, click the Collection Occasions Key.</li>
+<li>Click the red &#8216;Delete&#8217; button.</li>
+<li>You will be displayed a &#8216;Confirm Deletion&#8217; screen</li>
+</ol>
+<blockquote>
+<div><strong>Please note: Once the collection occasion is deleted, you will not be able to recover this collection occasion data.</strong></div></blockquote>
+<ol class="arabic simple" start="9">
+<li>Click the blue &#8216;Confirm&#8217; button to delete this collection occasion. (or click the orange &#8216;Cancel&#8217; button if you decide not to delete this collection occasion data.)</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="Client Collection Occasion Data Confirm Delete" src="../_images/client-collection-occasion-delete-confirm.png" />
+</div>
+</div></blockquote>
+<p>After you click &#8216;Confirm&#8217;, you will receive confirmation that the collection occasion has
+been deleted, and you will be redirected to the <a class="reference internal" href="#view-collection-occasion"><span class="std std-ref">View Collection Occasions</span></a> where the
+collection occasion will no longer be displayed.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="Client Collection Occasion Data Delete Successful" src="../_images/client-collection-occasion-delete-successful.png" />
+</div>
+</div></blockquote>
 </div>
 </div>
 <div class="section" id="practitioners">
