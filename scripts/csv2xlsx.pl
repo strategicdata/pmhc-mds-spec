@@ -15,10 +15,12 @@ Automatically generate Excel XLSX file from CSV files stored in <csv_directory>.
 
 EOT
     ;
-our ($csv_dir, $help);
+our ($csv_dir, $help, $delete);
 
-GetOptions('help|?|h'  => \$help)
-    or do { print usage; exit 1; };
+GetOptions(
+  'help|?|h'  => \$help,
+  'delete'    => \$delete
+) or do { print usage; exit 1; };
 
 if ($help) { print usage; exit 0; }
 
@@ -33,18 +35,34 @@ unless (defined($csv_dir)) {
 
 my %csvfiles;
 my $t = tie( %csvfiles, 'Tie::IxHash' );
-%csvfiles = (
-    'Clients'          => "$csv_dir/clients.csv",
-    'Episodes'         => "$csv_dir/episodes.csv",
-    'Service Contacts' => "$csv_dir/service-contacts.csv",
-    'K10+'             => "$csv_dir/k10p.csv",
-    'K5'               => "$csv_dir/k5.csv",
-    'SDQ'              => "$csv_dir/sdq.csv",
-    'Practitioners'    => "$csv_dir/practitioners.csv",
-);
+my $workbook;
+if ($delete) {
+  %csvfiles = (
+      'Clients'          => "$csv_dir/clients-delete.csv",
+      'Episodes'         => "$csv_dir/episodes-delete.csv",
+      'Service Contacts' => "$csv_dir/service-contacts-delete.csv",
+      'K10+'             => "$csv_dir/k10p-delete.csv",
+      'K5'               => "$csv_dir/k5-delete.csv",
+      'SDQ'              => "$csv_dir/sdq-delete.csv",
+      'Practitioners'    => "$csv_dir/practitioners-delete.csv",
+  );
 
-# Create a new Excel workbook
-my $workbook  = Excel::Writer::XLSX->new( "$csv_dir/pmhc-upload.xlsx" );
+  # Create a new Excel workbook
+  $workbook  = Excel::Writer::XLSX->new( "$csv_dir/pmhc-upload-delete.xlsx" );
+} else {
+  %csvfiles = (
+      'Clients'          => "$csv_dir/clients.csv",
+      'Episodes'         => "$csv_dir/episodes.csv",
+      'Service Contacts' => "$csv_dir/service-contacts.csv",
+      'K10+'             => "$csv_dir/k10p.csv",
+      'K5'               => "$csv_dir/k5.csv",
+      'SDQ'              => "$csv_dir/sdq.csv",
+      'Practitioners'    => "$csv_dir/practitioners.csv",
+  );
+
+  # Create a new Excel workbook
+  $workbook  = Excel::Writer::XLSX->new( "$csv_dir/pmhc-upload.xlsx" );
+}
 
 # Create a new CSV parsing object
 my $csv = Text::CSV_XS->new;
@@ -54,6 +72,7 @@ foreach my $file ( keys( %csvfiles ) ) {
   my $worksheet = $workbook->add_worksheet( $file );
 
   # Open the Comma Separated Variable file
+  print STDERR "CSV file: " . $csvfiles{$file} . "\n";
   open( CSVFILE, $csvfiles{$file} ) or die "$ARGV[0]: $!";
 
   # Row and column are zero indexed

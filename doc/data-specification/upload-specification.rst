@@ -212,20 +212,48 @@ Example organisation data:
 Deleting records
 ^^^^^^^^^^^^^^^^
 
-**Deletion of records has not yet been implemented. This is a feature that will
-be implemented in the future. We are documenting the file format that will be
-used so that developers of client systems that export data into the PMHC MDS
-can allow for deletion in their exported files.**
+* Records of the following type can be deleted via upload:
 
-* An extra optional "delete" column will be added to each upload file/worksheet.
+  * Client
+  * Episode
+  * Service Contact
+  * K10+
+  * K5
+  * SDQ
+  * Practitioner
+
+  Organisation records *cannot* be deleted via upload. Please email
+  support@pmhc-mds.com if you need to delete an organisation.
+
+* An extra optional "delete" column can be added to each of the supported
+  upload files/worksheets.
+
+* This column should be the third column in each file, after the organisation
+  path and the record's entity key.
 
 * To delete a record, include its organisation path and its entity key, leave
-  all other fields blank and put "DELETE" in the "delete" column.
+  all other fields blank and put "delete" in the "delete" column. Please note
+  that case is important. "DELETE" will not be accepted.
 
 * Marking a record as deleted will require all child records of that record also
   to be marked for deletion. For example, marking a client as deleted will
   require all episodes, service contacts and collection occasions of that
   client to be marked for deletion.
+
+* While deletions can be included in the same upload as insertions/updates,
+  we recommend that you include all deletions in a separate upload that is
+  uploaded before the insertions/updates.
+
+Example files showing how to delete via upload:
+
+- `XLSX file containing all the worksheets <../_static/pmhc-upload-delete.xlsx>`_.
+- `CSV delete client file <../_static/client-delete.csv>`_.
+- `CSV delete episode file <../_static/episode-delete.csv>`_.
+- `CSV delete service contact file <../_static/service-contact-delete.csv>`_.
+- `CSV delete K10+ file <../_static/k10p-delete.csv>`_.
+- `CSV detete K5 file <../_static/k5-delete.csv>`_.
+- `CSV delete SDQ file <../_static/sdq-delete.csv>`_.
+- `CSV delete practitioner file <../_static/practitioner-delete.csv>`_.
 
 Frequently Asked Questions
 --------------------------
