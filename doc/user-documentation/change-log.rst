@@ -16,8 +16,6 @@ User Guide Change log
 
 * Edited :ref:`delete-collection-occasion`
 
-* Added :ref:`delete-upload` documentation
-
 23/10/2017
 ----------
 

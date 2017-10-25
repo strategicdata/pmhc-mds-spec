@@ -247,13 +247,13 @@ Deleting records
 Example files showing how to delete via upload:
 
 - `XLSX file containing all the worksheets <../_static/pmhc-upload-delete.xlsx>`_.
-- `CSV delete client file <../_static/client-delete.csv>`_.
-- `CSV delete episode file <../_static/episode-delete.csv>`_.
-- `CSV delete service contact file <../_static/service-contact-delete.csv>`_.
+- `CSV delete client file <../_static/clients-delete.csv>`_.
+- `CSV delete episode file <../_static/episodes-delete.csv>`_.
+- `CSV delete service contact file <../_static/service-contacts-delete.csv>`_.
 - `CSV delete K10+ file <../_static/k10p-delete.csv>`_.
 - `CSV detete K5 file <../_static/k5-delete.csv>`_.
 - `CSV delete SDQ file <../_static/sdq-delete.csv>`_.
-- `CSV delete practitioner file <../_static/practitioner-delete.csv>`_.
+- `CSV delete practitioner file <../_static/practitioners-delete.csv>`_.
 
 Frequently Asked Questions
 --------------------------

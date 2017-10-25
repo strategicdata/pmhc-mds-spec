@@ -3,6 +3,13 @@
 Data Specification Change log
 =============================
 
+25/10/2017
+----------
+
+* :ref:`upload_specification`
+
+  * Updated :ref:`deleting-records`
+
 16/10/2017
 ----------
 
@@ -14,7 +21,7 @@ Data Specification Change log
     '1: No further services are planned for the client in the current episode'
 
   * Updated :ref:`client-current-validations` to make the final point clearer.
-  
+
 11/10/2017
 ----------
 
