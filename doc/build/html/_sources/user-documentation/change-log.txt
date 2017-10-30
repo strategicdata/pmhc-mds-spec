@@ -16,6 +16,8 @@ User Guide Change log
 
 * Edited :ref:`delete-collection-occasion`
 
+* Added :ref:`inactive-practitioner`
+
 23/10/2017
 ----------
 
