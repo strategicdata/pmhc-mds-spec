@@ -173,8 +173,8 @@ The domain of individual items is defined in <a class="reference internal" href=
 <span id="practitioner-current-validations"></span><h3>Practitioner<a class="headerlink" href="#practitioner" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><ul>
-<li><p class="first"><a class="reference internal" href="data-model-and-specifications.html#dfn-atsi-cultural-training"><span class="std std-ref">Practitioner - ATSI Cultural Training</span></a> is only allowed to be set to
-&#8216;3 - Not required&#8217; if <a class="reference internal" href="data-model-and-specifications.html#dfn-practitioner-atsi-status"><span class="std std-ref">Practitioner - Aboriginal and Torres Strait Islander Status</span></a> is one of</p>
+<li><p class="first"><a class="reference internal" href="data-model-and-specifications.html#dfn-atsi-cultural-training"><span class="std std-ref">Practitioner - ATSI Cultural Training</span></a> must only be set to
+&#8216;3 - Not required&#8217; where <a class="reference internal" href="data-model-and-specifications.html#dfn-practitioner-atsi-status"><span class="std std-ref">Practitioner - Aboriginal and Torres Strait Islander Status</span></a> is one of</p>
 <ul class="simple">
 <li>1 - Aboriginal but not Torres Strait Islander origin</li>
 <li>2 - Torres Strait Islander but not Aboriginal origin</li>
@@ -191,18 +191,17 @@ The domain of individual items is defined in <a class="reference internal" href=
 <span id="client-current-validations"></span><h3>Client<a class="headerlink" href="#client" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><ul class="simple">
-<li><a class="reference internal" href="data-model-and-specifications.html#dfn-prof-english"><span class="std std-ref">Client - Proficiency in Spoken English</span></a> response &#8216;0: Not applicable (persons under 5
-years of age or who speak only English)&#8217; is only allowed where<ul>
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-prof-english"><span class="std std-ref">Client - Proficiency in Spoken English</span></a> must only be set to response &#8216;0: Not applicable (persons under 5
+years of age or who speak only English)&#8217; where<ul>
 <li><a class="reference internal" href="data-model-and-specifications.html#dfn-main-lang-at-home"><span class="std std-ref">Client - Main Language Spoken at Home</span></a> is &#8216;1201: English&#8217;, or</li>
 <li><a class="reference internal" href="data-model-and-specifications.html#dfn-est-date-of-birth"><span class="std std-ref">Client - Estimated Date of Birth Flag</span></a> is  &#8216;1: Date of birth is accurate&#8217; and the
 person is under 5, or</li>
 <li><a class="reference internal" href="data-model-and-specifications.html#dfn-est-date-of-birth"><span class="std std-ref">Client - Estimated Date of Birth Flag</span></a> is &#8216;2: Date of birth is an estimate&#8217; and the
-person is under 6.</li>
+person is under 6, or</li>
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-est-date-of-birth"><span class="std std-ref">Client - Estimated Date of Birth Flag</span></a> is &#8216;8: Date of birth is a dummy&#8217;, or</li>
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-est-date-of-birth"><span class="std std-ref">Client - Estimated Date of Birth Flag</span></a> is &#8216;9: Accuracy of stated date of birth is not known&#8217;.</li>
 </ul>
 </li>
-<li><a class="reference internal" href="data-model-and-specifications.html#dfn-prof-english"><span class="std std-ref">Client - Proficiency in Spoken English</span></a> is not checked where <a class="reference internal" href="data-model-and-specifications.html#dfn-est-date-of-birth"><span class="std std-ref">Client - Estimated Date of Birth Flag</span></a>
-is &#8216;8: Date of birth is a dummy&#8217; or
-&#8216;9: Accuracy of stated date of birth is not known&#8217;.</li>
 </ul>
 </div></blockquote>
 </div>
@@ -216,7 +215,7 @@ is &#8216;8: Date of birth is a dummy&#8217; or
 &#8216;98: N/A - Self referral&#8217; if and only if <a class="reference internal" href="data-model-and-specifications.html#dfn-referrer-profession"><span class="std std-ref">Episode - Referrer Profession</span></a> is also
 &#8216;98: N/A - Self referral&#8217;</p>
 </li>
-<li><p class="first">Only one episode is allowed to be open per client</p>
+<li><p class="first">A maximum of one episode shall be open per client</p>
 </li>
 <li><p class="first">On <a class="reference internal" href="data-model-and-specifications.html#dfn-principal-diagnosis"><span class="std std-ref">Episode - Principal Diagnosis</span></a> and <a class="reference internal" href="data-model-and-specifications.html#dfn-additional-diagnosis"><span class="std std-ref">Episode - Additional Diagnosis</span></a>
 the values:</p>
@@ -226,14 +225,14 @@ the values:</p>
 <li>300: Substance use disorders (ATAPS)</li>
 <li>400: Psychotic disorders (ATAPS)</li>
 </ul>
-<p>will only be allowed where data has been migrated from ATAPS. The above
-responses will only be allowed under the following conditions:</p>
+<p>must only used where data has been migrated from ATAPS. The above
+responses must only be used under the following conditions:</p>
 <ul class="simple">
 <li>The <a class="reference internal" href="data-model-and-specifications.html#dfn-referral-date"><span class="std std-ref">Episode - Referral Date</span></a> was before 1 July 2017</li>
 <li>The <a class="reference internal" href="data-model-and-specifications.html#dfn-episode-tags"><span class="std std-ref">Episode - Tags</span></a> field must contain the <code class="docutils literal"><span class="pre">!ATAPS</span></code> flag</li>
 </ul>
 </li>
-<li><p class="first">The <code class="docutils literal"><span class="pre">!ATAPS</span></code> tag can only be included in the <a class="reference internal" href="data-model-and-specifications.html#dfn-episode-tags"><span class="std std-ref">Episode - Tags</span></a> field
+<li><p class="first">The <code class="docutils literal"><span class="pre">!ATAPS</span></code> tag must only be included in the <a class="reference internal" href="data-model-and-specifications.html#dfn-episode-tags"><span class="std std-ref">Episode - Tags</span></a> field
 where the <a class="reference internal" href="data-model-and-specifications.html#dfn-referral-date"><span class="std std-ref">Episode - Referral Date</span></a> was before 1 July 2017</p>
 </li>
 </ul>
@@ -251,28 +250,28 @@ are planned for the client in the current episode&#8217;, the
 are planned for the client in the current episode&#8217;, the date of the
 <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-final"><span class="std std-ref">Service Contact - Final</span></a> must be recorded as the Episode End Date</li>
 <li>Where an <a class="reference internal" href="data-model-and-specifications.html#dfn-episode-end-date"><span class="std std-ref">Episode - End Date</span></a> has been recorded, a later
-<a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-date"><span class="std std-ref">Service Contact - Date</span></a> cannot be added</li>
-<li>If <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-modality"><span class="std std-ref">Service Contact - Modality</span></a> is &#8216;0: No contact took place&#8217;
+<a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-date"><span class="std std-ref">Service Contact - Date</span></a> must not be added</li>
+<li>If <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-modality"><span class="std std-ref">Service Contact - Modality</span></a> is &#8216;0: No contact took place&#8217;,
 <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-no-show"><span class="std std-ref">Service Contact - No Show</span></a> must be &#8216;1: Yes&#8217;</li>
-<li>If <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-modality"><span class="std std-ref">Service Contact - Modality</span></a> is &#8216;0: No contact took place&#8217;
+<li>If <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-modality"><span class="std std-ref">Service Contact - Modality</span></a> is &#8216;0: No contact took place&#8217;,
 <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-postcode"><span class="std std-ref">Service Contact - Postcode</span></a> must be 9999</li>
-<li>If <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-modality"><span class="std std-ref">Service Contact - Modality</span></a> is &#8216;1: Face to Face&#8217;
+<li>If <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-modality"><span class="std std-ref">Service Contact - Modality</span></a> is &#8216;1: Face to Face&#8217;,
 <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-postcode"><span class="std std-ref">Service Contact - Postcode</span></a> must not be 9999</li>
-<li>If <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-modality"><span class="std std-ref">Service Contact - Modality</span></a> is &#8216;1: Face to Face&#8217;
+<li>If <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-modality"><span class="std std-ref">Service Contact - Modality</span></a> is &#8216;1: Face to Face&#8217;,
 <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-venue"><span class="std std-ref">Service Contact - Venue</span></a> must not be
 &#8216;98: Not applicable (Service Contact Modality is not face to face)&#8217;</li>
-<li>If <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-modality"><span class="std std-ref">Service Contact - Modality</span></a> is not &#8216;1: Face to Face&#8217;
+<li>If <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-modality"><span class="std std-ref">Service Contact - Modality</span></a> is not &#8216;1: Face to Face&#8217;,
 <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-postcode"><span class="std std-ref">Service Contact - Postcode</span></a> must be 9999</li>
-<li>On <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-type"><span class="std std-ref">Service Contact - Type</span></a> the value &#8216;98: ATAPS&#8217; will only be
-allowed where data has been migrated from ATAPS. The above
-response will only be allowed under the following conditions:<ul>
+<li>On <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-type"><span class="std std-ref">Service Contact - Type</span></a> the value &#8216;98: ATAPS&#8217; must only be
+used where data has been migrated from ATAPS. The above
+response must only be used under the following conditions:<ul>
 <li>The <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-date"><span class="std std-ref">Service Contact - Date</span></a> was before 30 June 2018</li>
 <li>The <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-tags"><span class="std std-ref">Service Contact - Tags</span></a> field must contain the <code class="docutils literal"><span class="pre">!ATAPS</span></code> flag</li>
 </ul>
 </li>
 <li>If <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-participants"><span class="std std-ref">Service Contact - Participants</span></a> is &#8216;1: Individual client&#8217;
 <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-participation-indicator"><span class="std std-ref">Service Contact - Client Participation Indicator</span></a> must be &#8216;1: Yes&#8217;</li>
-<li>The <code class="docutils literal"><span class="pre">!ATAPS</span></code> tag can only be included in the <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-tags"><span class="std std-ref">Service Contact - Tags</span></a>
+<li>The <code class="docutils literal"><span class="pre">!ATAPS</span></code> tag must only be included in the <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-tags"><span class="std std-ref">Service Contact - Tags</span></a>
 field where the <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-date"><span class="std std-ref">Service Contact - Date</span></a> was before 30 June 2018</li>
 </ul>
 </div></blockquote>

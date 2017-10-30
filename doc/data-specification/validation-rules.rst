@@ -16,8 +16,8 @@ Current Validations
 Practitioner
 ~~~~~~~~~~~~
 
-  * :ref:`dfn-atsi_cultural_training` is only allowed to be set to
-    '3 - Not required' if :ref:`dfn-practitioner_atsi_status` is one of
+  * :ref:`dfn-atsi_cultural_training` must only be set to
+    '3 - Not required' where :ref:`dfn-practitioner_atsi_status` is one of
 
     * 1 - Aboriginal but not Torres Strait Islander origin
     * 2 - Torres Strait Islander but not Aboriginal origin
@@ -33,17 +33,16 @@ Practitioner
 Client
 ~~~~~~
 
-  * :ref:`dfn-prof_english` response '0: Not applicable (persons under 5
-    years of age or who speak only English)' is only allowed where
+  * :ref:`dfn-prof_english` must only be set to response '0: Not applicable (persons under 5
+    years of age or who speak only English)' where
 
     * :ref:`dfn-main_lang_at_home` is '1201: English', or
     * :ref:`dfn-est_date_of_birth` is  '1: Date of birth is accurate' and the
       person is under 5, or
     * :ref:`dfn-est_date_of_birth` is '2: Date of birth is an estimate' and the
-      person is under 6.
-  * :ref:`dfn-prof_english` is not checked where :ref:`dfn-est_date_of_birth`
-    is '8: Date of birth is a dummy' or
-    '9: Accuracy of stated date of birth is not known'.
+      person is under 6, or
+    * :ref:`dfn-est_date_of_birth` is '8: Date of birth is a dummy', or
+    * :ref:`dfn-est_date_of_birth` is '9: Accuracy of stated date of birth is not known'.
 
 .. _episode-current-validations:
 
@@ -54,7 +53,7 @@ Episode
   * :ref:`dfn-referrer_organisation_type` must be set to
     '98: N/A - Self referral' if and only if :ref:`dfn-referrer_profession` is also
     '98: N/A - Self referral'
-  * Only one episode is allowed to be open per client
+  * A maximum of one episode shall be open per client
   * On :ref:`dfn-principal_diagnosis` and :ref:`dfn-additional_diagnosis`
     the values:
 
@@ -63,12 +62,12 @@ Episode
     * 300: Substance use disorders (ATAPS)
     * 400: Psychotic disorders (ATAPS)
 
-    will only be allowed where data has been migrated from ATAPS. The above
-    responses will only be allowed under the following conditions:
+    must only used where data has been migrated from ATAPS. The above
+    responses must only be used under the following conditions:
 
     * The :ref:`dfn-referral_date` was before 1 July 2017
     * The :ref:`dfn-episode_tags` field must contain the ``!ATAPS`` flag
-  * The ``!ATAPS`` tag can only be included in the :ref:`dfn-episode_tags` field
+  * The ``!ATAPS`` tag must only be included in the :ref:`dfn-episode_tags` field
     where the :ref:`dfn-referral_date` was before 1 July 2017
 
 .. _service-contact-current-validations:
@@ -84,27 +83,27 @@ Service Contact
     are planned for the client in the current episode', the date of the
     :ref:`dfn-service_contact_final` must be recorded as the Episode End Date
   * Where an :ref:`dfn-episode_end_date` has been recorded, a later
-    :ref:`dfn-service_contact_date` cannot be added
-  * If :ref:`dfn-service_contact_modality` is '0: No contact took place'
+    :ref:`dfn-service_contact_date` must not be added
+  * If :ref:`dfn-service_contact_modality` is '0: No contact took place',
     :ref:`dfn-service_contact_no_show` must be '1: Yes'
-  * If :ref:`dfn-service_contact_modality` is '0: No contact took place'
+  * If :ref:`dfn-service_contact_modality` is '0: No contact took place',
     :ref:`dfn-service_contact_postcode` must be 9999
-  * If :ref:`dfn-service_contact_modality` is '1: Face to Face'
+  * If :ref:`dfn-service_contact_modality` is '1: Face to Face',
     :ref:`dfn-service_contact_postcode` must not be 9999
-  * If :ref:`dfn-service_contact_modality` is '1: Face to Face'
+  * If :ref:`dfn-service_contact_modality` is '1: Face to Face',
     :ref:`dfn-service_contact_venue` must not be
     '98: Not applicable (Service Contact Modality is not face to face)'
-  * If :ref:`dfn-service_contact_modality` is not '1: Face to Face'
+  * If :ref:`dfn-service_contact_modality` is not '1: Face to Face',
     :ref:`dfn-service_contact_postcode` must be 9999
-  * On :ref:`dfn-service_contact_type` the value '98: ATAPS' will only be
-    allowed where data has been migrated from ATAPS. The above
-    response will only be allowed under the following conditions:
+  * On :ref:`dfn-service_contact_type` the value '98: ATAPS' must only be
+    used where data has been migrated from ATAPS. The above
+    response must only be used under the following conditions:
 
     * The :ref:`dfn-service_contact_date` was before 30 June 2018
     * The :ref:`dfn-service_contact_tags` field must contain the ``!ATAPS`` flag
   * If :ref:`dfn-service_contact_participants` is '1: Individual client'
     :ref:`dfn-service_contact_participation_indicator` must be '1: Yes'
-  * The ``!ATAPS`` tag can only be included in the :ref:`dfn-service_contact_tags`
+  * The ``!ATAPS`` tag must only be included in the :ref:`dfn-service_contact_tags`
     field where the :ref:`dfn-service_contact_date` was before 30 June 2018
 
 .. _k10p-current-validations:
