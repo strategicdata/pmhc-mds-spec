@@ -367,11 +367,11 @@ episode will no longer be displayed.
 Cannot Delete
 ~~~~~~~~~~~~~
 
-If the client you are trying to delete has any dependant records, you will not
-be able to proceed with deleting this client until all the related records have
+If the episode you are trying to delete has any dependant records, you will not
+be able to proceed with deleting this episode until all the related records have
 been deleted.
 
-1. You can click on the link provided to View the Client's Episodes, or click the orange 'Dismiss' button
+1. You can click on the link provided to View the Client's Service Contacts and collection Occasions, or click the orange 'Dismiss' button
 
   .. figure:: screen-shots/client-episode-delete-cannot.png
      :alt: Client Episode Data Cannot Delete
@@ -648,7 +648,7 @@ Data Entry tab, by following these steps:
 
 1. Click on the Practitioners tab.
 
-.. figure:: screen-shots/practitioners-view.png
+.. figure:: screen-shots/practitioner-view.png
    :alt: PMHC MDS Practitioners Table View
 
 .. _view-practitioner:
@@ -659,7 +659,7 @@ Viewing a Practitioner
 You can view a practitioner's details through :ref:`find-practitioner`
 on the Data Entry tab, by following these steps:
 
-1. Once :ref:`find-practitioner`
+1. Click on the :ref:`Practitioners <find-practitioner>` tab.
 2. Click on the practitioner's key in blue displayed within the table list.
 
 .. figure:: screen-shots/practitioner-details.png
@@ -677,7 +677,7 @@ Viewing a Practitioner Providing Client Services
 You can view a practitioner's details through :ref:`view-service-contact`
 on the Data Entry tab, by following these steps:
 
-1. Once :ref:`view-service-contact`
+1. Click on the :ref:`Practitioners <find-practitioner>` tab.
 2. From the Outcome Collection Occasions Details tab, click the Practitioner Key.
 
 .. figure:: screen-shots/client-service-contacts-practitioner-key.png
@@ -694,17 +694,18 @@ A page will display the Practitioner's details as recorded via the :ref:`Practit
 Editing a Practitioner
 ----------------------
 
-You can edit a practitioner's details through the organisation tab, by following
-these steps:
+You can view a practitioner's details through :ref:`find-practitioner`
+on the Data Entry tab, by following these steps:
 
-1. Once :ref:`view-practitioner`
-2. From the View Practitioner Details tab, click the Edit Details tab.
-3. Update the practitioner's details. Mandatory fields are marked with an *
+1. Click on the :ref:`Practitioners <find-practitioner>` tab.
+2. Click on the practitioner's key in blue displayed within the table list.
+3. From the View Practitioner Details tab, click the Edit Details tab.
+4. Update the practitioner's details. Mandatory fields are marked with an *
 
-.. figure:: screen-shots/practitioners-edit-view.png
+.. figure:: screen-shots/practitioner-edit-view.png
    :alt: PMHC MDS Practitioner Details View
 
-4. Click the blue 'Save' button. (If you decide not to save changes, you can simply navigate away from this screen)
+5. Click the blue 'Save' button. (If you decide not to save changes, you can simply navigate away from this screen)
 
 You will receive confirmation that the practitioner's details have been added,
 and it will now be displaying these new details in the View Practitioner Details tab.
@@ -721,14 +722,14 @@ See Validation Rules - :ref:`practitioner-current-validations`
 Adding a Practitioner
 ----------------------
 
-You can add a practitioner's details through the organisation tab, by following
-these steps:
+You can view a practitioner's details through :ref:`find-practitioner`
+on the Data Entry tab, by following these steps:
 
-1. Once :ref:`find-practitioner`
-2. From the Practitioners tab, click the Add New Practitioner tab.
+1. Click on the :ref:`Practitioners <find-practitioner>` tab.
+2. Click the Add New Practitioner tab.
 3. Enter the practitioner's details. Mandatory fields are marked with an *
 
-.. figure:: screen-shots/practitioners-add-view.png
+.. figure:: screen-shots/practitioner-add-view.png
    :alt: PMHC MDS Practitioner Details View
 
 4. Click the blue 'Save' button.  (If you decide not to save changes, you can simply navigate away from this screen)
@@ -751,9 +752,59 @@ alternately, practitioner records can be uploaded in bulk. See :ref:`upload`
 Deleting a Practitioner
 -----------------------
 
-Currently a practitioner can not be deleted from the PMHC MDS. However, you can
-change the practitioner from active to inactive by editing their details.
+You can delete a practitioner's details through :ref:`edit-practitioner`
+on the Data Entry tab, by following these steps:
+
+1. Click on the :ref:`Practitioners <find-practitioner>` tab.
+2. Click on the practitioner's key in blue displayed within the table list.
+3. Click the red 'Delete' button.
+4. You will either be displayed a ':ref:`confirm-delete-practitioner`' screen or a ':ref:`cannot-delete-practitioner`' screen.
+
+.. _confirm-delete-practitioner:
+
+Confirm Delete
+~~~~~~~~~~~~~~
+
+**Please note: Once the practitioner is deleted, you will not be able to recover this practitioner data.**
+
+1. Click the blue 'Confirm' button to delete this practitioner. (or click the orange 'Cancel' button if you decide not to delete this practitioner data.)
+
+  .. figure:: screen-shots/practitioner-delete-confirm.png
+     :alt: Practitioner Data Confirm Delete
+
+After you click 'Confirm', you will receive confirmation that the practitioner has
+been deleted, and you will be redirected to the :ref:`View Practitioners<view-practitioner>` where the
+practitioner will no longer be displayed.
+
+    .. figure:: screen-shots/practitioner-delete-successful.png
+       :alt: Practitioner Data Delete Successful
+
+.. _cannot-delete-practitioner:
+
+Cannot Delete
+~~~~~~~~~~~~~
+
+If the practitioner you are trying to delete has any dependant records, you will not
+be able to proceed with deleting this practitioner until all the related records have
+been edited or deleted.
+
+1. You can click the orange 'Dismiss' button.
+
+  .. figure:: screen-shots/practitioner-delete-cannot.png
+     :alt: Client Episode Data Cannot Delete
+
+See :ref:`edit-service-contact` or :ref:`delete-service-contact`.
+
+
+.. _inactive-practitioner:
+
+Inactive Practitioners
+----------------------
+
+Currently a practitioner can not be deleted from the PMHC MDS if they have any dependant records,.
+
+You can change the practitioner from 'active' to 'inactive' by editing their details.
 By doing this, the inactive practitioner keys will no longer be displayed in the
 Practitioner Key drop down list displayed on the Service Contact forms.
 
-See :ref:`edit-practitioner`
+See :ref:`edit-practitioner`.
