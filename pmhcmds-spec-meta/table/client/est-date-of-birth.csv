@@ -1,0 +1,5 @@
+"id","description"
+"1","Date of birth is accurate"
+"2","Date of birth is an estimate"
+"8","Date of birth is a 'dummy' date (ie, 09099999)"
+"9","Accuracy of stated date of birth is not known"

@@ -1,0 +1,8 @@
+id,description
+0,"Less than a month"
+1,"1-5 months"
+2,"6-12 months"
+3,"Over a year"
+7,"Unable to rate (insufficient information)"
+8,"Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)"
+9,"Not stated / Missing"
