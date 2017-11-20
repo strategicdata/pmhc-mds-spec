@@ -122,6 +122,7 @@ available on the Data Entry tab, by following these steps:
 3. Click Details tab, to view Client's details.
 4. Click Edit Details tab.
 5. Update the Client's details. Mandatory fields are marked with an * . (Specification :ref:`Client Data Elements <client-data-elements>`)
+
     *Please note: You can edit the Client Key from this screen. See* :ref:`edit-client-key`.
 
     .. figure:: screen-shots/client-view-edit.png
@@ -183,6 +184,7 @@ available on the Data Entry tab, by following these steps:
 3. Click the blue 'Add New Client' button.
 4. Choose the Provider Organisation from the drop down list.
 5. Enter the Client's details. Mandatory fields are marked with an * . (Specification :ref:`Client Data Elements <client-data-elements>`)
+
     *Please note: With the 'Statistical Linkage Key' field you can choose to 'Enter' or 'Generate' a Client's SLK.*
     *The SLK is generated on your device, the names used are not stored or transmitted over the network.*
 
@@ -310,6 +312,7 @@ available on the Data Entry tab, by following these steps:
 2. From the Client's Episode table, click the Episode Key.
 3. Click Edit Details tab.
 4. Update the Client's Episode details. Mandatory fields are marked with an * . (Specification :ref:`Episode Data Elements <episode-data-elements>`)
+
     *Please note: You can edit the Episode Key from this screen. See* :ref:`edit-episode-key`.
 
 .. figure:: screen-shots/client-episodes-edit.png
@@ -471,6 +474,7 @@ available on the Data Entry tab, by following these steps:
 2. From the Service Contacts table, click the Service Contact Key.
 3. Click Edit Service Contact tab.
 4. Update the Client's Service Contact details for that service-contact. Mandatory fields are marked with an * . (Specification :ref:`Service Contact Data Elements <service-contact-data-elements>`)
+
     *Please note: You can edit the Service Contact Key from this screen. See* :ref:`edit-service-contact-key`.
 
 .. figure:: screen-shots/client-service-contacts-edit.png
@@ -615,6 +619,7 @@ available on the Data Entry tab, by following these steps:
 2. Click the Collection Occasions Key.
 3. Click Edit Details tab.
 4. Update the Client's Collection Occasions details. Mandatory fields are marked with an * .(Specification :ref:`Collection Occasions Data Elements <outcome-collection-occasion-data-elements>`)
+
     *Please note: You can edit the Collection Occasion Key from this screen. See* :ref:`edit-collection-occasion-key`.
 
 .. figure:: screen-shots/client-collection-occasions-edit1.png
@@ -679,6 +684,7 @@ available on the Data Entry tab, by following these steps:
    :alt: Client Data Add Collection Occasions
 
 5. Select to enter the item scores or the total score. (Individual item scores will eventually be required and should be entered when available)
+
     *Please note: The SDQ items scored will be added in the near future. See Development Release Schedule* :ref:`dev-data-entry-faq`.
 
 .. figure:: screen-shots/client-collection-occasions-score.png
@@ -804,6 +810,7 @@ on the Data Entry tab, by following these steps:
 2. Click on the practitioner's key in blue displayed within the table list.
 3. From the View Practitioner Details tab, click the Edit Details tab.
 4. Update the practitioner's details. Mandatory fields are marked with an * .
+
     *Please note: You can edit the Practitioner Key from this screen. See* :ref:`edit-practitioner-key`.
 
 .. figure:: screen-shots/practitioner-view-edit.png
