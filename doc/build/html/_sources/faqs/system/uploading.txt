@@ -52,6 +52,8 @@ Details for complete uploads. See :ref:`viewing-complete-uploads`.
 How can I delete a record I have previously uploaded?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+You can delete records via upload.
+
 Please refer to :ref:`deleting-records`.
 
 .. _upload-error-faq:
