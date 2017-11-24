@@ -18,7 +18,7 @@ System - Data Entry FAQs
 System - Upload FAQs
 ~~~~~~~~~~~~~~~~~~~~
 
-* Edited the question :ref:`upload-delete-data-faq`
+* Updated the question :ref:`upload-delete-data-faq`
 
 System - Development FAQs
 ~~~~~~~~~~~~~~~~~~~~~~~~~
