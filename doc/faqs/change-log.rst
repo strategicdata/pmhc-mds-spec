@@ -3,6 +3,29 @@
 Frequently Asked Questions Change log
 =====================================
 
+20/11/2017
+----------
+
+System - Data Entry FAQs
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Updated the question :ref:`enter-delete-data-faq`
+
+* Updated the question :ref:`enter-edit-key-faq`
+
+* Updated the question :ref:`enter-sdq-faq`
+
+System - Upload FAQs
+~~~~~~~~~~~~~~~~~~~~
+
+* Updated the question :ref:`upload-delete-data-faq`
+
+System - Development FAQs
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Updated the question to :ref:`dev-data-entry-faq`
+
+
 03/10/2017
 ----------
 

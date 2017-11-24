@@ -712,8 +712,8 @@ See Validation Rules for:
 
 .. _delete-collection-occasion:
 
-Deleting an Outcome Collection Occasions
-----------------------------------------
+Deleting an Outcome Collection Occasion
+---------------------------------------
 
 You can delete a Client's Outcome Collection Occasion through ':ref:`view-collection-occasion`'
 available on the Data Entry tab, by following these steps:

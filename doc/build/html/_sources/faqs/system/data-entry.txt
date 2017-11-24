@@ -68,6 +68,187 @@ How often should I enter data into the MDS?
 
 Refer to :ref:`reporting_timeliness`.
 
+.. _test-fictitious-data-faq:
+
+Can I enter fictitious data as a part of testing?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The MDS is live and data uploads will be recorded. Real PMHC data can be trialled
+by uploading in test mode, whereas fictitious data should be trialled with a
+'Test Organisation' on developers.pmhc-mds.net.
+
+See `PMHC Developers Announcement <https://www.pmhc-mds.com/2017/02/17/Separate-PMHC-MDS-now-available-for-software-developers-to-test-upload-files/>`__.
+
+.. _enter-slk-faq:
+
+How do I find or create a Client's Statistical Linkage Key (SLK)?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you don't have an internal system that can provide you with the client's SLK,
+an SLK generator is available within the client data entry forms. Refer to the
+online User Guide :ref:`add-client`.
+
+There is also a manual Statistical Linkage Key Generator available on the PMHC MDS
+website, under the SLK tab - https://pmhc-mds.net/#/slk. See :ref:`slk-generator`.
+
+.. _enter-unique-key-faq:
+
+How do I find what the Episode Key, Service Contact Key and Outcome Collection Occasion Key is?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The :ref:`Episode Key <episode-data-elements>`, :ref:`Service Contact Key<service-contact-data-elements>`
+and :ref:`Outcome Collection Occasion Key <outcome-collection-occasion-data-elements>`
+are the system :ref:`unique identification keys <unique_keys>` that will need to
+be manually created and managed by your Provider Organisation.
+
+Each record needs to be assigned a stable unique key within the Provider Organisation,
+in order to facilitate adding/updating/deleting each item when entering data.
+
+See data specifications for :ref:`identifier_management`.
+
+.. _enter-practitioner-key-faq:
+
+How do I find what my Practitioner Key is?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The Practitioner Key is one of the system :ref:`unique identification keys <unique_keys>` that will
+need to be manually created and managed by your Provider Organisation.
+
+Data Entry users can add a Practitioner once they know their key. Refer to the
+online User Guide :ref:`add-practitioner`.
+
+.. _enter-edit-key-faq:
+
+How can I edit a record's identifying key?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Each record needs to be assigned a stable unique key within the Provider Organisation,
+in order to facilitate adding/updating/deleting each item when entering data.
+
+You can edit a record's identifying key you have entered within the data entry interface. There
+is an edit key button available when editing a records details.
+
+See:
+
+* :ref:`edit-practitioner-key`
+
+* :ref:`edit-client-key`
+
+* :ref:`edit-episode-key`
+
+* :ref:`edit-service-contact-key`
+
+* :ref:`edit-collection-occasion-key`
+
+.. _enter-referral-faq:
+
+How do I enter a referral?
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+A referral is entered as an :ref:`key-concepts-episode`.
+
+Refer to the online User Guide :ref:`episode-data`.
+
+.. _enter-k10-k5-sdq-faq:
+
+How do I enter a K10+, or K5?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+These measures tools, K10+ and K5, are entered as an :ref:`outcome-collection-occasion-data-elements`.
+
+Refer to the online User Guide :ref:`outcome-collection-occasion-data`.
+
+.. _enter-sdq-faq:
+
+How do I enter a SDQ measure?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The SDQ development for the Data Entry Interface is on hold, as the Department is currently in licensing negotiation with the SDQ developers to
+be able to add the complete SDQ online form to the PMHC MDS. Refer to :ref:`Data Entry Interface Development<dev-data-entry-faq>`.
+
+The SDQ paper version is still able to be used and once the development is released can be entered through the Data Entry Interface.
+
+In the interim, however you can currently add the SDQ subscales through the Data Entry Interface - See :ref:`add-collection-occasion`.
+
+.. _enter-delete-data-faq:
+
+How can I delete a record I incorrectly entered?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can delete a record you have entered within the data entry interface. There
+is a delete button available when viewing a records details.
+
+However, if the record you are trying to delete has any dependant records, you
+will not be able to proceed with deleting the parent record until all the related
+dependant records have been edited or deleted.
+
+See:
+
+* :ref:`delete-practitioner`
+
+* :ref:`delete-client`
+
+* :ref:`delete-episode`
+
+* :ref:`delete-service-contact`
+
+* :ref:`delete-collection-occasion`
+
+.. _updated-info-faq:
+
+Can I go back and enter information if I don’t have it at the time?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Yes, the MDS allows you to go back and enter information at a later date.
+
+When data in the upload has the same identification key as recorded in the MDS,
+(eg Client, Practitioner, Episode, Service Contact, and Outcome Collection Keys)
+the data will automatically be updated for these files. The number of files present,
+created, and updated, are summarised on the successful upload notification email.
+
+Refer to upload specification :ref:`file-format`.
+
+.. _enter-no-show-faq:
+
+Do I enter a Service Contact when a client doesn't show up for the session?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Yes. A Service Contact record has a 'No Show' field and selecting the value 'Yes'
+indicates that the intended participant(s) failed to attend the appointment.
+
+Some of the other Service Contact fields have a 'no show' option available
+to be selected. For any other Service Contact fields, please enter the response
+that would have been entered if the participant had attended the session.
+
+You can decide to enter as much information as possible within a no show form,
+as long as it meet the 'No Show' :ref:`validation guidelines for a service contact <service-contact-current-validations>`.
+
+Refer to :ref:`service-contact-data-elements`.
+
+.. _client-referred-elsewhere-faq:
+
+If the client is referred elsewhere (e.g. not suitable for this service) should this be recorded?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This decision depends upon your local guidelines.
+
+Under the new PMHC MDS, an episode does not formally commence until the client
+receives their first Service Contact. For referrals that do not lead to a
+Service Contact, and where the person is referred elsewhere, there is no need to
+open an Episode.
+
+However the Department understands that many PHNs are likely to want to do this
+as a means to track referrals that do not lead to Service Contacts, or to begin
+entering data prior to the first Service Contact. Therefore, there is scope in
+the system to set up an Episode even it does not lead to a Service Contact.
+Standard reports to be developed will build in capacity to monitor these and
+ensure that they are not counted in service delivery indicators.
+
+Where a referral is followed by an initial Service Contact, and the person is
+referred elsewhere due to being assessed as not suitable, or requires an alternative
+service, a new code for Episode- Completion Status has been added
+(‘Episode closed administratively - client referred elsewhere’).
+
 .. _data-entry-episode-uncommenced:
 
 Why is an episode showing as uncommenced?
@@ -106,20 +287,6 @@ field definition which outlines the associated notes.
 
 Refer to :ref:`record-formats`.
 
-.. _updated-info-faq:
-
-Can I go back and enter information if I don’t have it at the time?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Yes, the MDS allows you to go back and enter information at a later date.
-
-When data in the upload has the same identification key as recorded in the MDS,
-(eg Client, Practitioner, Episode, Service Contact, and Outcome Collection Keys)
-the data will automatically be updated for these files. The number of files present,
-created, and updated, are summarised on the successful upload notification email.
-
-Refer to upload specification :ref:`file-format`.
-
 .. _capture-additional-data-faq:
 
 The PHMC MDS specifications seems limited. Can we capture and record additional data?
@@ -128,127 +295,6 @@ The PHMC MDS specifications seems limited. Can we capture and record additional 
 PHNs can choose to capture and record additional data outside the PMHC MDS.
 
 See :ref:`record-additional-data-faq`.
-
-.. _test-fictitious-data-faq:
-
-Can I enter fictitious data as a part of testing?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-The MDS is live and data uploads will be recorded. Real PMHC data can be trialled
-by uploading in test mode, whereas fictitious data should be trialled with a
-'Test Organisation' on developers.pmhc-mds.net.
-
-See `PMHC Developers Announcement <https://www.pmhc-mds.com/2017/02/17/Separate-PMHC-MDS-now-available-for-software-developers-to-test-upload-files/>`__.
-
-.. _enter-slk-faq:
-
-How do I find or create a Client's Statistical Linkage Key (SLK)?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-If you don't have an internal system that can provide you with the client's SLK,
-an SLK generator is available within the client data entry forms. Refer to the
-online User Guide :ref:`add-client`.
-
-There is also a manual Statistical Linkage Key Generator available on the PMHC MDS
-website, under the SLK tab - https://pmhc-mds.net/#/slk. See :ref:`slk-generator`.
-
-.. _enter-practitioner-key-faq:
-
-How do I find what my Practitioner Key is?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-The Practitioner Key is one of the system :ref:`unique identification keys <unique_keys>` that will
-need to be manually created and managed by your Provider Organisation.
-
-Data Entry users can add a Practitioner once they know their key. Refer to the
-online User Guide :ref:`add-practitioner`.
-
-.. _enter-unique-key-faq:
-
-How do I find what the Episode Key, Service Contact Key and Outcome Collection Occasion Key is?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-The :ref:`Episode Key <episode-data-elements>`, :ref:`Service Contact Key<service-contact-data-elements>`
-and :ref:`Outcome Collection Occasion Key <outcome-collection-occasion-data-elements>`
-are the system :ref:`unique identification keys <unique_keys>` that will need to
-be manually created and managed by your Provider Organisation.
-
-Each record needs to be assigned a stable unique key within the Provider Organisation,
-in order to facilitate adding/updating/deleting each item when entering data.
-
-See data specifications for :ref:`identifier_management`.
-
-.. _enter-referral-faq:
-
-How do I enter a referral?
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-A referral is entered as an :ref:`key-concepts-episode`.
-
-Refer to the online User Guide :ref:`episode-data`.
-
-.. _enter-k10-k5-sdq-faq:
-
-How do I enter a K10+, or K5?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-These measures tools, K10+ and K5, are entered as an :ref:`outcome-collection-occasion-data-elements`.
-
-Refer to the online User Guide :ref:`outcome-collection-occasion-data`.
-
-.. _enter-sdq-faq:
-
-How do I enter a SDQ measure?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-The SDQ development for the Data Entry Interface is on hold.
-
-The Department is currently in licensing negotiation with the SDQ developers to
-be able to add an SDQ online form to the PMHC MDS.
-
-In the interim, the SDQ paper version is still able to be used and can be entered through the Data Entry Interface once the development is released.
-
-Refer to :ref:`Data Entry Interface Development<dev-data-entry-faq>`.
-
-.. _enter-no-show-faq:
-
-Do I enter a Service Contact when a client doesn't show up for the session?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Yes.
-
-To enter a 'No Show', add new Service Contact. For any Service Contact fields
-that do not have a 'no show' option available to be selected, please enter the
-response that would have been entered if the participant had attended the session.
-
-You can decide to enter as much information as possible within a no show form,
-as long as it meet the 'No Show' validation guidelines.
-
-Refer to :ref:`service-contact-data-elements`.
-
-.. _client-referred-elsewhere-faq:
-
-If the client is referred elsewhere (e.g. not suitable for this service) should this be recorded?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-This decision depends upon your local guidelines.
-
-Under the new PMHC MDS, an episode does not formally commence until the client
-receives their first Service Contact. For referrals that do not lead to a
-Service Contact, and where the person is referred elsewhere, there is no need to
-open an Episode.
-
-However the Department understands that many PHNs are likely to want to do this
-as a means to track referrals that do not lead to Service Contacts, or to begin
-entering data prior to the first Service Contact. Therefore, there is scope in
-the system to set up an Episode even it does not lead to a Service Contact.
-Standard reports to be developed will build in capacity to monitor these and
-ensure that they are not counted in service delivery indicators.
-
-Where a referral is followed by an initial Service Contact, and the person is
-referred elsewhere due to being assessed as not suitable, or requires an alternative
-service, a new code for Episode- Completion Status has been added
-(‘Episode closed administratively - client referred elsewhere’).
 
 .. _enter-MHNIP-data-faq:
 
@@ -275,30 +321,3 @@ a description of where the error occurred, a screenshot if possible, and the
 error log number. The error log number is displayed at the end of the error message,
 eg [BVDS105Q], and is very important for the Helpdesk to quickly identifying the
 error and to provide you with a clear response on how to rectify the data issue.
-
-.. _enter-delete-data-faq:
-
-How can I delete a record I incorrectly entered?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-You can not currently delete a record you have entered. The delete feature will
-be released in :ref:`future data entry interface development <dev-data-entry-faq>`.
-
-In the interim, if this causes you any significant issues please email support@pmhc-mds.com
-requesting the record to be deleted. Please provide the record's identifying key
-and the organisation path.
-
-.. _enter-edit-key-faq:
-
-Why can't I edit a record's identifying key?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Each record needs to be assigned a stable unique key within the Provider Organisation,
-in order to facilitate adding/updating/deleting each item when entering data.
-
-You can not currently edit a record's identifying key you have entered. The edit key feature
-will be released in :ref:`future data entry interface development <dev-data-entry-faq>`.
-
-In the interim, if this causes you any significant issues please email support@pmhc-mds.com
-requesting the record's identifying key to be edited. Please provide the organisation path,
-the record's identifying key that has been added and the key it needs to be changed to.
