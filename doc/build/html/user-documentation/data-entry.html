@@ -119,7 +119,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#viewing-a-client-s-outcome-collection-occasions-for-an-episode">Viewing a Client&#8217;s Outcome Collection Occasions for an Episode</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#editing-a-client-s-outcome-collection-occasions-for-an-episode">Editing a Client&#8217;s Outcome Collection Occasions for an Episode</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#adding-a-client-s-outcome-collection-occasions-data">Adding a Client&#8217;s Outcome Collection Occasions data</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#deleting-an-outcome-collection-occasions">Deleting an Outcome Collection Occasions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#deleting-an-outcome-collection-occasion">Deleting an Outcome Collection Occasion</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#practitioners">Practitioners</a><ul>
@@ -129,6 +129,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#editing-a-practitioner">Editing a Practitioner</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#adding-a-practitioner">Adding a Practitioner</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#deleting-a-practitioner">Deleting a Practitioner</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#inactive-practitioners">Inactive Practitioners</a></li>
 </ul>
 </li>
 </ul>
@@ -258,7 +259,7 @@ you can click on the arrow beside a column header for more sort options, as foll
 <p>You can view a clients&#8217;s details through the <a class="reference internal" href="#search-client"><span class="std std-ref">Client Search Results</span></a>
 available on the Data Entry tab, by following these steps:</p>
 <ol class="arabic simple">
-<li>Create <a class="reference internal" href="#search-client"><span class="std std-ref">Client Search Results</span></a></li>
+<li>Create <a class="reference internal" href="#search-client"><span class="std std-ref">Client Search Results</span></a>.</li>
 <li>Click on the Client Key in blue displayed within the table list.</li>
 <li>This is the Client&#8217;s summary view, with summary details along with a
 snapshot of the five most recent episodes.</li>
@@ -279,7 +280,7 @@ snapshot of the five most recent episodes.</li>
 <p>You can edit a clients&#8217;s details through the <a class="reference internal" href="#search-client"><span class="std std-ref">Client Search Results</span></a>
 available on the Data Entry tab, by following these steps:</p>
 <ol class="arabic">
-<li><p class="first">Create <a class="reference internal" href="#search-client"><span class="std std-ref">Client Search Results</span></a></p>
+<li><p class="first">Create <a class="reference internal" href="#search-client"><span class="std std-ref">Client Search Results</span></a>.</p>
 </li>
 <li><p class="first">From the Client Search table, click the Client Key.</p>
 </li>
@@ -287,23 +288,24 @@ available on the Data Entry tab, by following these steps:</p>
 </li>
 <li><p class="first">Click Edit Details tab.</p>
 </li>
-<li><dl class="first docutils">
-<dt>Update the Client&#8217;s details. Mandatory fields are marked with an * (Specification <a class="reference internal" href="../data-specification/data-model-and-specifications.html#client-data-elements"><span class="std std-ref">Client Data Elements</span></a>)</dt>
-<dd><p class="first"><em>Please note: If you edit the &#8216;Date of Birth&#8217; or &#8216;Gender&#8217; you will be required to update the &#8216;Statistical Linkage Key&#8217; field.</em>
-<em>You can choose to &#8216;Enter&#8217; or &#8216;Generate&#8217; a Client&#8217;s SLK.</em>
-<em>The SLK is generated on your device, the names used are not stored or transmitted over the network.</em></p>
-<div class="last figure">
-<img alt="Client Data Generated Client SLK Edit" src="../_images/client-view-generate-slk-edit.png" />
-</div>
-</dd>
-</dl>
-</li>
-</ol>
+<li><p class="first">Update the Client&#8217;s details. Mandatory fields are marked with an * . (Specification <a class="reference internal" href="../data-specification/data-model-and-specifications.html#client-data-elements"><span class="std std-ref">Client Data Elements</span></a>)</p>
+<blockquote>
+<div><p><em>Please note: You can edit the Client Key from this screen. See</em> <a class="reference internal" href="#edit-client-key"><span class="std std-ref">Editing a Client Key</span></a>.</p>
 <div class="figure">
 <img alt="Client Data Edit Details" src="../_images/client-view-edit.png" />
 </div>
-<ol class="arabic simple" start="6">
-<li>Click the blue &#8216;Save&#8217; button. (If you decide not to save changes, you can simply navigate away from this screen)</li>
+</div></blockquote>
+<p><em>Please note: If you edit the &#8216;Date of Birth&#8217; or &#8216;Gender&#8217; you will be required to update the &#8216;Statistical Linkage Key&#8217; field.</em>
+<em>You can choose to &#8216;Enter&#8217; or &#8216;Generate&#8217; a Client&#8217;s SLK.</em>
+<em>The SLK is generated on your device, the names used are not stored or transmitted over the network.</em></p>
+<blockquote>
+<div><div class="figure">
+<img alt="Client Data Generated Client SLK Edit" src="../_images/client-view-generate-slk-edit.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">Click the blue &#8216;Save&#8217; button. (If you decide not to save changes, you can simply navigate away from this screen)</p>
+</li>
 </ol>
 <p>You will receive confirmation that the Client&#8217;s details have been saved, and it
 will now be displaying these new details in the Clients View Details tab.</p>
@@ -315,6 +317,33 @@ will now be displaying these new details in the Clients View Details tab.</p>
 <p>If you receive an error message, the data will need to be corrected before the
 record is saved and added to the PMHC MDS.
 See Validation Rules - <a class="reference internal" href="../data-specification/validation-rules.html#client-current-validations"><span class="std std-ref">2. Client</span></a></p>
+<div class="section" id="editing-a-client-key">
+<span id="edit-client-key"></span><h4>Editing a Client Key<a class="headerlink" href="#editing-a-client-key" title="Permalink to this headline">¶</a></h4>
+<p>You can edit a clients&#8217;s identification key through <a class="reference internal" href="#edit-client"><span class="std std-ref">Editing a Client</span></a>
+available on the Data Entry tab, by following these steps:</p>
+<ol class="arabic">
+<li><p class="first">In step five when <a class="reference internal" href="#edit-client"><span class="std std-ref">Editing a Client</span></a>.</p>
+</li>
+<li><p class="first">From the Client Edit Details tab, click the &#8216;Edit Key&#8217; button.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="Client Data Edit Client Key" src="../_images/client-view-edit-key.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">Type in the new client key and click &#8216;Next&#8217;.</p>
+</li>
+<li><p class="first">Double check the new key is correct and click save. (If it is incorrect, click back to re-enter the key or click the &#8216;cross&#8217; in the top right to cancel this key change request)</p>
+</li>
+</ol>
+<p>You will receive confirmation that the Client&#8217;s key has been saved, and the screen
+will now be displaying the updated client key details in the Clients View Details tab.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="Client Key Saved Successfully" src="../_images/client-view-key-saved.png" />
+</div>
+</div></blockquote>
+</div>
 </div>
 <div class="section" id="adding-a-new-client">
 <span id="add-client"></span><h3>Adding a New Client<a class="headerlink" href="#adding-a-new-client" title="Permalink to this headline">¶</a></h3>
@@ -329,15 +358,14 @@ available on the Data Entry tab, by following these steps:</p>
 </li>
 <li><p class="first">Choose the Provider Organisation from the drop down list.</p>
 </li>
-<li><dl class="first docutils">
-<dt>Enter the Client&#8217;s details. Mandatory fields are marked with an * (Specification <a class="reference internal" href="../data-specification/data-model-and-specifications.html#client-data-elements"><span class="std std-ref">Client Data Elements</span></a>)</dt>
-<dd><p class="first"><em>Please note: With the &#8216;Statistical Linkage Key&#8217; field you can choose to &#8216;Enter&#8217; or &#8216;Generate&#8217; a Client&#8217;s SLK.</em>
+<li><p class="first">Enter the Client&#8217;s details. Mandatory fields are marked with an * . (Specification <a class="reference internal" href="../data-specification/data-model-and-specifications.html#client-data-elements"><span class="std std-ref">Client Data Elements</span></a>)</p>
+<blockquote>
+<div><p><em>Please note: With the &#8216;Statistical Linkage Key&#8217; field you can choose to &#8216;Enter&#8217; or &#8216;Generate&#8217; a Client&#8217;s SLK.</em>
 <em>The SLK is generated on your device, the names used are not stored or transmitted over the network.</em></p>
-<div class="last figure">
+<div class="figure">
 <img alt="Client Data Generate Client SLK" src="../_images/client-view-generate-slk.png" />
 </div>
-</dd>
-</dl>
+</div></blockquote>
 </li>
 <li><p class="first">Click the blue &#8216;Save&#8217; button. (If you decide not to add this client, you can simply navigate away from this screen)</p>
 </li>
@@ -371,7 +399,7 @@ available on the Data Entry tab, by following these steps:</p>
 <span id="confirm-delete-client"></span><h4>Confirm Delete<a class="headerlink" href="#confirm-delete" title="Permalink to this headline">¶</a></h4>
 <p><strong>Please note: Once the client is deleted, you will not be able to recover this client data.</strong></p>
 <ol class="arabic simple">
-<li>Click the blue &#8216;Confirm&#8217; button to delete this client. (or click the orange &#8216;Cancel&#8217; button if you decide not to delete this client data.)</li>
+<li>Click the blue &#8216;Confirm&#8217; button to delete this client. (or click the orange &#8216;Cancel&#8217; button if you decide not to delete this client data)</li>
 </ol>
 <blockquote>
 <div><div class="figure">
@@ -425,7 +453,7 @@ in the PMHC MDS for this client at Provider Organisations for which you have acc
 </ol>
 <p>A table will display all the Client&#8217;s Episodes at Provider Organisations for which you have access.</p>
 <div class="figure">
-<img alt="Client Data Summary View" src="../_images/client-episode-summary.png" />
+<img alt="Client Data Summary View" src="../_images/client-episodes-summary.png" />
 </div>
 <p>A Drop down list is available to view:</p>
 <ul class="simple">
@@ -434,7 +462,7 @@ in the PMHC MDS for this client at Provider Organisations for which you have acc
 <li>Closed Episodes</li>
 </ul>
 <div class="figure">
-<img alt="Client Episodes Sort View" src="../_images/client-episodes-sort.png" />
+<img alt="Client Episodes Sort View" src="../_images/client-episodes-summary-sort.png" />
 </div>
 <ol class="arabic simple" start="4">
 <li>To view the Client&#8217;s Episode details, click the Blue Episode Key.</li>
@@ -448,16 +476,25 @@ in the PMHC MDS for this client at Provider Organisations for which you have acc
 <span id="edit-episode"></span><h3>Editing a Client&#8217;s Episode data<a class="headerlink" href="#editing-a-client-s-episode-data" title="Permalink to this headline">¶</a></h3>
 <p>You can edit a Client&#8217;s Episode details through the <a class="reference internal" href="#view-client-details"><span class="std std-ref">Viewing a Client&#8217;s details</span></a>
 available on the Data Entry tab, by following these steps:</p>
-<ol class="arabic simple">
-<li>Once <a class="reference internal" href="#view-episodes"><span class="std std-ref">Viewing a Client&#8217;s Episodes</span></a></li>
-<li>From the Client&#8217;s Episode table, click the Episode Key.</li>
-<li>Click Edit Details tab.</li>
-<li>Update the Client&#8217;s Episode details. Mandatory fields are marked with an * (Specification <a class="reference internal" href="../data-specification/data-model-and-specifications.html#episode-data-elements"><span class="std std-ref">Episode Data Elements</span></a>)</li>
-<li>Click the blue &#8216;Save&#8217; button. (If you decide not to save changes, you can simply navigate away from this screen)</li>
+<ol class="arabic">
+<li><p class="first">Once <a class="reference internal" href="#view-episodes"><span class="std std-ref">Viewing a Client&#8217;s Episodes</span></a>.</p>
+</li>
+<li><p class="first">From the Client&#8217;s Episode table, click the Episode Key.</p>
+</li>
+<li><p class="first">Click Edit Details tab.</p>
+</li>
+<li><p class="first">Update the Client&#8217;s Episode details. Mandatory fields are marked with an * . (Specification <a class="reference internal" href="../data-specification/data-model-and-specifications.html#episode-data-elements"><span class="std std-ref">Episode Data Elements</span></a>)</p>
+<blockquote>
+<div><p><em>Please note: You can edit the Episode Key from this screen. See</em> <a class="reference internal" href="#edit-episode-key"><span class="std std-ref">Editing a Episode Key</span></a>.</p>
+</div></blockquote>
+</li>
 </ol>
 <div class="figure">
 <img alt="Client Episodes Edit Details" src="../_images/client-episodes-edit.png" />
 </div>
+<ol class="arabic simple" start="5">
+<li>Click the blue &#8216;Save&#8217; button. (If you decide not to save changes, you can simply navigate away from this screen)</li>
+</ol>
 <p>You will receive confirmation that the Client&#8217;s Episode details have been saved,
 and it will now be displaying these new details in the Episode View Details tab.</p>
 <blockquote>
@@ -468,16 +505,43 @@ and it will now be displaying these new details in the Episode View Details tab.
 <p>If you receive an error message, the data will need to be corrected before the
 record is saved and added to the PMHC MDS.
 See Validation Rules - Episode <a class="reference internal" href="../data-specification/validation-rules.html#episode-current-validations"><span class="std std-ref">3. Episode</span></a></p>
+<div class="section" id="editing-a-episode-key">
+<span id="edit-episode-key"></span><h4>Editing a Episode Key<a class="headerlink" href="#editing-a-episode-key" title="Permalink to this headline">¶</a></h4>
+<p>You can edit an episode&#8217;s identification key through <a class="reference internal" href="#view-episodes"><span class="std std-ref">Viewing a Client&#8217;s Episodes</span></a>
+available on the Data Entry tab, by following these steps:</p>
+<ol class="arabic">
+<li><p class="first">In step five when <a class="reference internal" href="#edit-episode"><span class="std std-ref">Editing a Client&#8217;s Episode data</span></a>.</p>
+</li>
+<li><p class="first">From the Episode Edit Details tab, click the &#8216;Edit Key&#8217; button.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="Episode Data Edit Episode Key" src="../_images/client-episodes-edit-key.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">Type in the new episode key and click &#8216;Next&#8217;.</p>
+</li>
+<li><p class="first">Double check the new key is correct and click save. (If it is incorrect, click back to re-enter the key or click the &#8216;cross&#8217; in the top right to cancel this key change request)</p>
+</li>
+</ol>
+<p>You will receive confirmation that the Episode&#8217;s key has been saved, and the screen
+will now be displaying the updated episode key details in the Episodes View Details tab.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="Episode Key Saved Successfully" src="../_images/client-episodes-edit-key-saved.png" />
+</div>
+</div></blockquote>
+</div>
 </div>
 <div class="section" id="adding-a-client-s-episode-data">
 <span id="add-episode"></span><h3>Adding a Client&#8217;s Episode data<a class="headerlink" href="#adding-a-client-s-episode-data" title="Permalink to this headline">¶</a></h3>
 <p>You can add a clients through the <a class="reference internal" href="#view-client-details"><span class="std std-ref">Viewing a Client&#8217;s details</span></a>
 available on the Data Entry tab, by following these steps:</p>
 <ol class="arabic simple">
-<li>Once <a class="reference internal" href="#view-episodes"><span class="std std-ref">Viewing a Client&#8217;s Episodes</span></a></li>
+<li>Once <a class="reference internal" href="#view-episodes"><span class="std std-ref">Viewing a Client&#8217;s Episodes</span></a>.</li>
 <li>Firstly double check the client does not have any open episode already showing. (A client can only have one open episode at a provider organsiation. <a class="reference internal" href="../data-specification/data-model-and-specifications.html#key-concepts-episode"><span class="std std-ref">Episode</span></a>)</li>
 <li>Click the Add Episode tab.</li>
-<li>Enter the Client&#8217;s Episode details. Mandatory fields are marked with an * (Specification <a class="reference internal" href="../data-specification/data-model-and-specifications.html#episode-data-elements"><span class="std std-ref">Episode Data Elements</span></a>)</li>
+<li>Enter the Client&#8217;s Episode details. Mandatory fields are marked with an * . (Specification <a class="reference internal" href="../data-specification/data-model-and-specifications.html#episode-data-elements"><span class="std std-ref">Episode Data Elements</span></a>)</li>
 </ol>
 <div class="figure">
 <img alt="Client Data Add Episode" src="../_images/client-episodes-add.png" />
@@ -512,11 +576,11 @@ available on the Data Entry tab, by following these steps:</p>
 <span id="id4"></span><h4>Confirm Delete<a class="headerlink" href="#confirm-delete-episode" title="Permalink to this headline">¶</a></h4>
 <p><strong>Please note: Once the episode is deleted, you will not be able to recover this episode data.</strong></p>
 <ol class="arabic simple">
-<li>Click the blue &#8216;Confirm&#8217; button to delete this episode. (or click the orange &#8216;Cancel&#8217; button if you decide not to delete this episode data.)</li>
+<li>Click the blue &#8216;Confirm&#8217; button to delete this episode. (or click the orange &#8216;Cancel&#8217; button if you decide not to delete this episode data)</li>
 </ol>
 <blockquote>
 <div><div class="figure">
-<img alt="Client Episode Data Confirm Delete" src="../_images/client-episode-delete-confirm.png" />
+<img alt="Client Episode Data Confirm Delete" src="../_images/client-episodes-delete-confirm.png" />
 </div>
 </div></blockquote>
 <p>After you click &#8216;Confirm&#8217;, you will receive confirmation that the episode has
@@ -524,24 +588,24 @@ been deleted, and you will be redirected to the <a class="reference internal" hr
 episode will no longer be displayed.</p>
 <blockquote>
 <div><div class="figure">
-<img alt="Client Episode Data Delete Successful" src="../_images/client-episode-delete-successful.png" />
+<img alt="Client Episode Data Delete Successful" src="../_images/client-episodes-delete-successful.png" />
 </div>
 </div></blockquote>
 </div>
 <div class="section" id="cannot-delete-episode">
 <span id="id5"></span><h4>Cannot Delete<a class="headerlink" href="#cannot-delete-episode" title="Permalink to this headline">¶</a></h4>
-<p>If the client you are trying to delete has any dependant records, you will not
-be able to proceed with deleting this client until all the related records have
+<p>If the episode you are trying to delete has any dependant records, you will not
+be able to proceed with deleting this episode until all the related records have
 been deleted.</p>
 <ol class="arabic simple">
-<li>You can click on the link provided to View the Client&#8217;s Episodes, or click the orange &#8216;Dismiss&#8217; button</li>
+<li>You can click on the link provided to View the Client&#8217;s Service Contacts and collection Occasions, or click the orange &#8216;Dismiss&#8217; button</li>
 </ol>
 <blockquote>
 <div><div class="figure">
-<img alt="Client Episode Data Cannot Delete" src="../_images/client-episode-delete-cannot.png" />
+<img alt="Client Episode Data Cannot Delete" src="../_images/client-episodes-delete-cannot.png" />
 </div>
 </div></blockquote>
-<p>See <a class="reference internal" href="#delete-service-contact"><span class="std std-ref">Deleting an Service Contact</span></a> and <a class="reference internal" href="#delete-collection-occasion"><span class="std std-ref">Deleting an Outcome Collection Occasions</span></a></p>
+<p>See <a class="reference internal" href="#delete-service-contact"><span class="std std-ref">Deleting an Service Contact</span></a> and <a class="reference internal" href="#delete-collection-occasion"><span class="std std-ref">Deleting an Outcome Collection Occasion</span></a></p>
 </div>
 </div>
 </div>
@@ -573,11 +637,18 @@ in the PMHC MDS for this episode.</li>
 <span id="edit-service-contact"></span><h3>Editing a Client&#8217;s Service Contacts for an Episode<a class="headerlink" href="#editing-a-client-s-service-contacts-for-an-episode" title="Permalink to this headline">¶</a></h3>
 <p>You can edit a client&#8217;s service contacts through the <a class="reference internal" href="#view-episodes"><span class="std std-ref">Viewing a Client&#8217;s Episodes</span></a>
 available on the Data Entry tab, by following these steps:</p>
-<ol class="arabic simple">
-<li>Once <a class="reference internal" href="#view-service-contact"><span class="std std-ref">Viewing a Client&#8217;s Service Contacts for an Episode</span></a></li>
-<li>From the Service Contacts table, click the Service Contact Key.</li>
-<li>Click Edit Service Contact tab.</li>
-<li>Update the Client&#8217;s Service Contact details for that episode. Mandatory fields are marked with an * (Specification <a class="reference internal" href="../data-specification/data-model-and-specifications.html#service-contact-data-elements"><span class="std std-ref">Service Contact Data Elements</span></a>)</li>
+<ol class="arabic">
+<li><p class="first">Once <a class="reference internal" href="#view-service-contact"><span class="std std-ref">Viewing a Client&#8217;s Service Contacts for an Episode</span></a>.</p>
+</li>
+<li><p class="first">From the Service Contacts table, click the Service Contact Key.</p>
+</li>
+<li><p class="first">Click Edit Service Contact tab.</p>
+</li>
+<li><p class="first">Update the Client&#8217;s Service Contact details for that service-contact. Mandatory fields are marked with an * . (Specification <a class="reference internal" href="../data-specification/data-model-and-specifications.html#service-contact-data-elements"><span class="std std-ref">Service Contact Data Elements</span></a>)</p>
+<blockquote>
+<div><p><em>Please note: You can edit the Service Contact Key from this screen. See</em> <a class="reference internal" href="#edit-service-contact-key"><span class="std std-ref">Editing a Service Contact Key</span></a>.</p>
+</div></blockquote>
+</li>
 </ol>
 <div class="figure">
 <img alt="Client Service Contact Edit Details" src="../_images/client-service-contacts-edit.png" />
@@ -595,16 +666,43 @@ and it will now be displaying these new details in the View service Contact Deta
 <p>If you receive an error message, the data will need to be corrected before the
 record is saved and added to the PMHC MDS.
 See Validation Rules - <a class="reference internal" href="../data-specification/validation-rules.html#service-contact-current-validations"><span class="std std-ref">4. Service Contact</span></a></p>
+<div class="section" id="editing-a-service-contact-key">
+<span id="edit-service-contact-key"></span><h4>Editing a Service Contact Key<a class="headerlink" href="#editing-a-service-contact-key" title="Permalink to this headline">¶</a></h4>
+<p>You can edit an service contact&#8217;s identification key through <a class="reference internal" href="#view-episodes"><span class="std std-ref">Viewing a Client&#8217;s Episodes</span></a>
+available on the Data Entry tab, by following these steps:</p>
+<ol class="arabic">
+<li><p class="first">In step five when <a class="reference internal" href="#edit-service-contact"><span class="std std-ref">Editing a Client&#8217;s Service Contacts for an Episode</span></a>.</p>
+</li>
+<li><p class="first">From the Service Contact Edit Details tab, click the &#8216;Edit Key&#8217; button.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="Client Data Edit Service Contact Key" src="../_images/client-service-contacts-edit-key.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">Type in the new service contact key and click &#8216;Next&#8217;.</p>
+</li>
+<li><p class="first">Double check the new key is correct and click save. (If it is incorrect, click back to re-enter the key or click the &#8216;cross&#8217; in the top right to cancel this key change request)</p>
+</li>
+</ol>
+<p>You will receive confirmation that the Service Contact&#8217;s key has been saved, and the screen
+will now be displaying the updated service contact key details in the Service Contacts View Details tab.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="Service Contact Key Saved Successfully" src="../_images/client-service-contacts-edit-key-saved.png" />
+</div>
+</div></blockquote>
+</div>
 </div>
 <div class="section" id="adding-a-client-s-service-contact-data">
 <span id="add-service-contact"></span><h3>Adding a Client&#8217;s Service Contact data<a class="headerlink" href="#adding-a-client-s-service-contact-data" title="Permalink to this headline">¶</a></h3>
 <p>You can add a client&#8217;s service contacts through the <a class="reference internal" href="#view-episodes"><span class="std std-ref">Viewing a Client&#8217;s Episodes</span></a>
 available on the Data Entry tab, by following these steps:</p>
 <ol class="arabic simple">
-<li>Once <a class="reference internal" href="#view-service-contact"><span class="std std-ref">Viewing a Client&#8217;s Service Contacts for an Episode</span></a></li>
+<li>Once <a class="reference internal" href="#view-service-contact"><span class="std std-ref">Viewing a Client&#8217;s Service Contacts for an Episode</span></a>.</li>
 <li>Firstly double check the service contact is not already showing.</li>
 <li>Click the Add Service Contact tab.</li>
-<li>Enter the Client&#8217;s Service Contact details for that episode. Mandatory fields are marked with an * (Specification <a class="reference internal" href="../data-specification/data-model-and-specifications.html#service-contact-data-elements"><span class="std std-ref">Service Contact Data Elements</span></a>)</li>
+<li>Enter the Client&#8217;s Service Contact details for that episode. Mandatory fields are marked with an * . (Specification <a class="reference internal" href="../data-specification/data-model-and-specifications.html#service-contact-data-elements"><span class="std std-ref">Service Contact Data Elements</span></a>)</li>
 </ol>
 <div class="figure">
 <img alt="Client Data Add Service Contact" src="../_images/client-service-contacts-add.png" />
@@ -635,16 +733,16 @@ available on the Data Entry tab, by following these steps:</p>
 <li>Click Service Contacts tab, to <a class="reference internal" href="#view-service-contact"><span class="std std-ref">View Client&#8217;s Service Contacts</span></a>.</li>
 <li>From the <a class="reference internal" href="#view-service-contact"><span class="std std-ref">View service contact</span></a> table, click the Service Contact Key.</li>
 <li>Click the red &#8216;Delete&#8217; button.</li>
-<li>You will be displayed a &#8216;Confirm Deletion&#8217; screen</li>
+<li>You will be displayed a &#8216;Confirm Deletion&#8217; screen.</li>
 </ol>
 <blockquote>
 <div><strong>Please note: Once the service contact is deleted, you will not be able to recover this service contact data.</strong></div></blockquote>
 <ol class="arabic simple" start="9">
-<li>Click the blue &#8216;Confirm&#8217; button to delete this service contact. (or click the orange &#8216;Cancel&#8217; button if you decide not to delete this service contact data.)</li>
+<li>Click the blue &#8216;Confirm&#8217; button to delete this service contact. (or click the orange &#8216;Cancel&#8217; button if you decide not to delete this service contact data)</li>
 </ol>
 <blockquote>
 <div><div class="figure">
-<img alt="Client Service Contact Data Confirm Delete" src="../_images/client-service-contact-delete-confirm.png" />
+<img alt="Client Service Contact Data Confirm Delete" src="../_images/client-service-contacts-delete-confirm.png" />
 </div>
 </div></blockquote>
 <p>After you click &#8216;Confirm&#8217;, you will receive confirmation that the service contact has
@@ -652,7 +750,7 @@ been deleted, and you will be redirected to the <a class="reference internal" hr
 service contact will no longer be displayed.</p>
 <blockquote>
 <div><div class="figure">
-<img alt="Client Service Contact Data Delete Successful" src="../_images/client-service-contact-delete-successful.png" />
+<img alt="Client Service Contact Data Delete Successful" src="../_images/client-service-contacts-delete-successful.png" />
 </div>
 </div></blockquote>
 </div>
@@ -664,7 +762,7 @@ service contact will no longer be displayed.</p>
 <p>You can view a clients&#8217;s outcome collection occasions through <a class="reference internal" href="#view-episodes"><span class="std std-ref">Viewing a Client&#8217;s Episodes</span></a>
 available on the Data Entry tab, by following these steps:</p>
 <ol class="arabic simple">
-<li>Once <a class="reference internal" href="#view-episodes"><span class="std std-ref">Viewing the Client&#8217;s Episode</span></a></li>
+<li>Once <a class="reference internal" href="#view-episodes"><span class="std std-ref">Viewing the Client&#8217;s Episode</span></a>.</li>
 <li>Click the Episode Collection Occasions Tab.
 This tab displays in brackets the total number of collection occasions recorded
 in the PMHC MDS for this episode.</li>
@@ -673,7 +771,7 @@ in the PMHC MDS for this episode.</li>
 <div class="figure">
 <img alt="Client Episode Collection Occasions Table View" src="../_images/client-collection-occasions-view.png" />
 </div>
-<ol class="arabic simple" start="4">
+<ol class="arabic simple" start="3">
 <li>To view the Collection Occasions details, click the Blue Collection Occasions Key.</li>
 </ol>
 <div class="figure">
@@ -686,11 +784,18 @@ in the PMHC MDS for this episode.</li>
 <span id="edit-collection-occasion"></span><h3>Editing a Client&#8217;s Outcome Collection Occasions for an Episode<a class="headerlink" href="#editing-a-client-s-outcome-collection-occasions-for-an-episode" title="Permalink to this headline">¶</a></h3>
 <p>You can edit a client&#8217;s Outcome Collection Occasions through <a class="reference internal" href="#view-collection-occasion"><span class="std std-ref">Viewing a Client&#8217;s Outcome Collection Occasions for an Episode</span></a>
 available on the Data Entry tab, by following these steps:</p>
-<ol class="arabic simple">
-<li>Once <a class="reference internal" href="#view-collection-occasion"><span class="std std-ref">Viewing a Client&#8217;s Outcome Collection Occasions for an Episode</span></a></li>
-<li>Click the Collection Occasions Key.</li>
-<li>Click Edit Details tab.</li>
-<li>Update the Client&#8217;s Collection Occasions details. Mandatory fields are marked with an * (Specification <a class="reference internal" href="../data-specification/data-model-and-specifications.html#outcome-collection-occasion-data-elements"><span class="std std-ref">Collection Occasions Data Elements</span></a>)</li>
+<ol class="arabic">
+<li><p class="first">Once <a class="reference internal" href="#view-collection-occasion"><span class="std std-ref">Viewing a Client&#8217;s Outcome Collection Occasions for an Episode</span></a>.</p>
+</li>
+<li><p class="first">Click the Collection Occasions Key.</p>
+</li>
+<li><p class="first">Click Edit Details tab.</p>
+</li>
+<li><p class="first">Update the Client&#8217;s Collection Occasions details. Mandatory fields are marked with an * .(Specification <a class="reference internal" href="../data-specification/data-model-and-specifications.html#outcome-collection-occasion-data-elements"><span class="std std-ref">Collection Occasions Data Elements</span></a>)</p>
+<blockquote>
+<div><p><em>Please note: You can edit the Collection Occasion Key from this screen. See</em> <a class="reference internal" href="#edit-collection-occasion-key"><span class="std std-ref">Editing a Collection Occasion Key</span></a>.</p>
+</div></blockquote>
+</li>
 </ol>
 <div class="figure">
 <img alt="Client Collection Occasions Edit Details" src="../_images/client-collection-occasions-edit1.png" />
@@ -698,8 +803,10 @@ available on the Data Entry tab, by following these steps:</p>
 <div class="figure">
 <img alt="Client Collection Occasions Edit Details" src="../_images/client-collection-occasions-edit2.png" />
 </div>
-<p>5. Click the blue &#8216;Save&#8217; button. (If you decide not to save changes, you can simply navigate away from this screen)
-You will receive confirmation that the Client&#8217;s Collection Occasions details have been saved,
+<ol class="arabic simple" start="5">
+<li>Click the blue &#8216;Save&#8217; button. (If you decide not to save changes, you can simply navigate away from this screen)</li>
+</ol>
+<p>You will receive confirmation that the Client&#8217;s Collection Occasions details have been saved,
 and it will now be displaying these new details in the View Collection Occasions Details tab.</p>
 <blockquote>
 <div><div class="figure">
@@ -712,28 +819,59 @@ See Validation Rules for:
 * <a class="reference internal" href="../data-specification/validation-rules.html#k10p-current-validations"><span class="std std-ref">5. K10+</span></a>
 * <a class="reference internal" href="../data-specification/validation-rules.html#k5-current-validations"><span class="std std-ref">6. K5</span></a>
 * <a class="reference internal" href="../data-specification/validation-rules.html#sdq-current-validations"><span class="std std-ref">7. SDQ</span></a></p>
+<div class="section" id="editing-a-collection-occasion-key">
+<span id="edit-collection-occasion-key"></span><h4>Editing a Collection Occasion Key<a class="headerlink" href="#editing-a-collection-occasion-key" title="Permalink to this headline">¶</a></h4>
+<p>You can edit an collection occasion&#8217;s identification key through <a class="reference internal" href="#view-episodes"><span class="std std-ref">Viewing a Client&#8217;s Episodes</span></a>
+available on the Data Entry tab, by following these steps:</p>
+<ol class="arabic">
+<li><p class="first">In step five when <a class="reference internal" href="#edit-collection-occasion"><span class="std std-ref">Editing a Client&#8217;s Outcome Collection Occasions for an Episode</span></a>.</p>
+</li>
+<li><p class="first">From the Collection Occasion Edit Details tab, click the &#8216;Edit Key&#8217; button.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="Client Data Edit Collection Occasion Key" src="../_images/client-collection-occasions-edit-key.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">Type in the new collection occasion key and click &#8216;Next&#8217;.</p>
+</li>
+<li><p class="first">Double check the new key is correct and click save. (If it is incorrect, click back to re-enter the key or click the &#8216;cross&#8217; in the top right to cancel this key change request)</p>
+</li>
+</ol>
+<p>You will receive confirmation that the Collection Occasion&#8217;s key has been saved, and the screen
+will now be displaying the updated collection occasion key details in the Collection Occasions View Details tab.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="Collection Occasion Key Saved Successfully" src="../_images/client-collection-occasions-edit-key-saved.png" />
+</div>
+</div></blockquote>
+</div>
 </div>
 <div class="section" id="adding-a-client-s-outcome-collection-occasions-data">
 <span id="add-collection-occasion"></span><h3>Adding a Client&#8217;s Outcome Collection Occasions data<a class="headerlink" href="#adding-a-client-s-outcome-collection-occasions-data" title="Permalink to this headline">¶</a></h3>
 <p>You can add a Client&#8217;s Outcome Collection Occasions through <a class="reference internal" href="#view-collection-occasion"><span class="std std-ref">Viewing a Client&#8217;s Outcome Collection Occasions for an Episode</span></a>
 available on the Data Entry tab, by following these steps:</p>
 <ol class="arabic simple">
-<li>Once <a class="reference internal" href="#view-collection-occasion"><span class="std std-ref">Viewing a Client&#8217;s Outcome Collection Occasions for an Episode</span></a></li>
+<li>Once <a class="reference internal" href="#view-collection-occasion"><span class="std std-ref">Viewing a Client&#8217;s Outcome Collection Occasions for an Episode</span></a>.</li>
 <li>Firstly double check the Collection Occasions is not already showing.</li>
 <li>Click the Add New Collection Occasion tab.</li>
-<li>Select the Collection Occassion Measure, either K10+ or K5. (The SDQ will be added in the near future. (Development Release Schedule <a class="reference internal" href="../faqs/system/development.html#dev-data-entry-faq"><span class="std std-ref">Data Entry Interface</span></a>)</li>
+<li>Select the Collection Occassion Measure, either K10+, K5 or SDQ. (The SDQ items scored will be added in the near future. See Development Release Schedule <a class="reference internal" href="../faqs/system/development.html#dev-data-entry-faq"><span class="std std-ref">Data Entry Interface</span></a>)</li>
 </ol>
 <div class="figure">
 <img alt="Client Data Add Collection Occasions" src="../_images/client-collection-occasions-measure.png" />
 </div>
-<ol class="arabic simple" start="5">
-<li>Select to enter the item scores or the total score. (Individual item scores will eventually be required and should be entered when available)</li>
+<ol class="arabic" start="5">
+<li><p class="first">Select to enter the item scores or the total score. (Individual item scores will eventually be required and should be entered when available)</p>
+<blockquote>
+<div><p><em>Please note: The SDQ items scored will be added in the near future. See Development Release Schedule</em> <a class="reference internal" href="../faqs/system/development.html#dev-data-entry-faq"><span class="std std-ref">Data Entry Interface</span></a>.</p>
+</div></blockquote>
+</li>
 </ol>
 <div class="figure">
 <img alt="Client Data Add Collection Occasions" src="../_images/client-collection-occasions-score.png" />
 </div>
 <ol class="arabic simple" start="6">
-<li>Enter the Client&#8217;s Collection Occasions details for that episode. Mandatory fields are marked with an * (Specification <a class="reference internal" href="../data-specification/data-model-and-specifications.html#outcome-collection-occasion-data-elements"><span class="std std-ref">Collection Occasions Data Elements</span></a>)</li>
+<li>Enter the Client&#8217;s Collection Occasions details for that episode. Mandatory fields are marked with an * . (Specification <a class="reference internal" href="../data-specification/data-model-and-specifications.html#outcome-collection-occasion-data-elements"><span class="std std-ref">Collection Occasions Data Elements</span></a>)</li>
 </ol>
 <div class="figure">
 <img alt="Client Data Add Collection Occasions" src="../_images/client-collection-occasions-add.png" />
@@ -755,8 +893,8 @@ See Validation Rules for:
 * <a class="reference internal" href="../data-specification/validation-rules.html#k5-current-validations"><span class="std std-ref">6. K5</span></a>
 * <a class="reference internal" href="../data-specification/validation-rules.html#sdq-current-validations"><span class="std std-ref">7. SDQ</span></a></p>
 </div>
-<div class="section" id="deleting-an-outcome-collection-occasions">
-<span id="delete-collection-occasion"></span><h3>Deleting an Outcome Collection Occasions<a class="headerlink" href="#deleting-an-outcome-collection-occasions" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="deleting-an-outcome-collection-occasion">
+<span id="delete-collection-occasion"></span><h3>Deleting an Outcome Collection Occasion<a class="headerlink" href="#deleting-an-outcome-collection-occasion" title="Permalink to this headline">¶</a></h3>
 <p>You can delete a Client&#8217;s Outcome Collection Occasion through &#8216;<a class="reference internal" href="#view-collection-occasion"><span class="std std-ref">Viewing a Client&#8217;s Outcome Collection Occasions for an Episode</span></a>&#8216;
 available on the Data Entry tab, by following these steps:</p>
 <ol class="arabic simple">
@@ -767,16 +905,16 @@ available on the Data Entry tab, by following these steps:</p>
 <li>Click Collection Occasions tab, to <a class="reference internal" href="#view-collection-occasion"><span class="std std-ref">View Collection Occasions</span></a>.</li>
 <li>From the <a class="reference internal" href="#view-collection-occasion"><span class="std std-ref">View Collection Occasions</span></a> table, click the Collection Occasions Key.</li>
 <li>Click the red &#8216;Delete&#8217; button.</li>
-<li>You will be displayed a &#8216;Confirm Deletion&#8217; screen</li>
+<li>You will be displayed a &#8216;Confirm Deletion&#8217; screen.</li>
 </ol>
 <blockquote>
 <div><strong>Please note: Once the collection occasion is deleted, you will not be able to recover this collection occasion data.</strong></div></blockquote>
 <ol class="arabic simple" start="9">
-<li>Click the blue &#8216;Confirm&#8217; button to delete this collection occasion. (or click the orange &#8216;Cancel&#8217; button if you decide not to delete this collection occasion data.)</li>
+<li>Click the blue &#8216;Confirm&#8217; button to delete this collection occasion. (or click the orange &#8216;Cancel&#8217; button if you decide not to delete this collection occasion data)</li>
 </ol>
 <blockquote>
 <div><div class="figure">
-<img alt="Client Collection Occasion Data Confirm Delete" src="../_images/client-collection-occasion-delete-confirm.png" />
+<img alt="Client Collection Occasion Data Confirm Delete" src="../_images/client-collection-occasions-delete-confirm.png" />
 </div>
 </div></blockquote>
 <p>After you click &#8216;Confirm&#8217;, you will receive confirmation that the collection occasion has
@@ -784,7 +922,7 @@ been deleted, and you will be redirected to the <a class="reference internal" hr
 collection occasion will no longer be displayed.</p>
 <blockquote>
 <div><div class="figure">
-<img alt="Client Collection Occasion Data Delete Successful" src="../_images/client-collection-occasion-delete-successful.png" />
+<img alt="Client Collection Occasion Data Delete Successful" src="../_images/client-collection-occasions-delete-successful.png" />
 </div>
 </div></blockquote>
 </div>
@@ -799,7 +937,7 @@ Data Entry tab, by following these steps:</p>
 <li>Click on the Practitioners tab.</li>
 </ol>
 <div class="figure">
-<img alt="PMHC MDS Practitioners Table View" src="../_images/practitioners-view.png" />
+<img alt="PMHC MDS Practitioners Table View" src="../_images/practitioner-view.png" />
 </div>
 </div>
 <div class="section" id="viewing-a-practitioner">
@@ -807,7 +945,7 @@ Data Entry tab, by following these steps:</p>
 <p>You can view a practitioner&#8217;s details through <a class="reference internal" href="#find-practitioner"><span class="std std-ref">Finding a Practitioner</span></a>
 on the Data Entry tab, by following these steps:</p>
 <ol class="arabic simple">
-<li>Once <a class="reference internal" href="#find-practitioner"><span class="std std-ref">Finding a Practitioner</span></a></li>
+<li>Click on the <a class="reference internal" href="#find-practitioner"><span class="std std-ref">Practitioners</span></a> tab.</li>
 <li>Click on the practitioner&#8217;s key in blue displayed within the table list.</li>
 </ol>
 <div class="figure">
@@ -821,7 +959,7 @@ See <a class="reference internal" href="#view-practitioner-details"><span class=
 <p>You can view a practitioner&#8217;s details through <a class="reference internal" href="#view-service-contact"><span class="std std-ref">Viewing a Client&#8217;s Service Contacts for an Episode</span></a>
 on the Data Entry tab, by following these steps:</p>
 <ol class="arabic simple">
-<li>Once <a class="reference internal" href="#view-service-contact"><span class="std std-ref">Viewing a Client&#8217;s Service Contacts for an Episode</span></a></li>
+<li>Click on the <a class="reference internal" href="#find-practitioner"><span class="std std-ref">Practitioners</span></a> tab.</li>
 <li>From the Outcome Collection Occasions Details tab, click the Practitioner Key.</li>
 </ol>
 <div class="figure">
@@ -834,17 +972,25 @@ on the Data Entry tab, by following these steps:</p>
 </div>
 <div class="section" id="editing-a-practitioner">
 <span id="edit-practitioner"></span><h3>Editing a Practitioner<a class="headerlink" href="#editing-a-practitioner" title="Permalink to this headline">¶</a></h3>
-<p>You can edit a practitioner&#8217;s details through the organisation tab, by following
-these steps:</p>
-<ol class="arabic simple">
-<li>Once <a class="reference internal" href="#view-practitioner"><span class="std std-ref">Viewing a Practitioner</span></a></li>
-<li>From the View Practitioner Details tab, click the Edit Details tab.</li>
-<li>Update the practitioner&#8217;s details. Mandatory fields are marked with an *</li>
+<p>You can view a practitioner&#8217;s details through <a class="reference internal" href="#find-practitioner"><span class="std std-ref">Finding a Practitioner</span></a>
+on the Data Entry tab, by following these steps:</p>
+<ol class="arabic">
+<li><p class="first">Click on the <a class="reference internal" href="#find-practitioner"><span class="std std-ref">Practitioners</span></a> tab.</p>
+</li>
+<li><p class="first">Click on the practitioner&#8217;s key in blue displayed within the table list.</p>
+</li>
+<li><p class="first">From the View Practitioner Details tab, click the Edit Details tab.</p>
+</li>
+<li><p class="first">Update the practitioner&#8217;s details. Mandatory fields are marked with an * .</p>
+<blockquote>
+<div><p><em>Please note: You can edit the Practitioner Key from this screen. See</em> <a class="reference internal" href="#edit-practitioner-key"><span class="std std-ref">Editing a Practitioner Key</span></a>.</p>
+</div></blockquote>
+</li>
 </ol>
 <div class="figure">
-<img alt="PMHC MDS Practitioner Details View" src="../_images/practitioners-edit-view.png" />
+<img alt="PMHC MDS Practitioner Details View" src="../_images/practitioner-view-edit.png" />
 </div>
-<ol class="arabic simple" start="4">
+<ol class="arabic simple" start="5">
 <li>Click the blue &#8216;Save&#8217; button. (If you decide not to save changes, you can simply navigate away from this screen)</li>
 </ol>
 <p>You will receive confirmation that the practitioner&#8217;s details have been added,
@@ -857,18 +1003,45 @@ and it will now be displaying these new details in the View Practitioner Details
 <p>If you receive an error message, the data will need to be corrected before the
 record is saved and added to the PMHC MDS.
 See Validation Rules - <a class="reference internal" href="../data-specification/validation-rules.html#practitioner-current-validations"><span class="std std-ref">1. Practitioner</span></a></p>
+<div class="section" id="editing-a-practitioner-key">
+<span id="edit-practitioner-key"></span><h4>Editing a Practitioner Key<a class="headerlink" href="#editing-a-practitioner-key" title="Permalink to this headline">¶</a></h4>
+<p>You can edit a practitioners&#8217;s identification key through <a class="reference internal" href="#edit-practitioner"><span class="std std-ref">Editing a Practitioner</span></a>
+available on the Data Entry tab, by following these steps:</p>
+<ol class="arabic">
+<li><p class="first">In step five when <a class="reference internal" href="#edit-practitioner"><span class="std std-ref">Editing a Practitioner</span></a>.</p>
+</li>
+<li><p class="first">From the Practitioner Edit Details tab, click the &#8216;Edit Key&#8217; button.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="Practitioner Data Edit Practitioner Key" src="../_images/practitioner-view-edit-key.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">Type in the new practitioner key and click &#8216;Next&#8217;.</p>
+</li>
+<li><p class="first">Double check the new key is correct and click save. If it is incorrect, click back to re-enter the key or click the &#8216;cross&#8217; in the top right to cancel this key change request.</p>
+</li>
+</ol>
+<p>You will receive confirmation that the Practitioner&#8217;s key has been saved, and the screen
+will now be displaying the updated practitioner key details in the Practitioners View Details tab.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="Practitioner Key Saved Successfully" src="../_images/practitioner-view-key-saved.png" />
+</div>
+</div></blockquote>
+</div>
 </div>
 <div class="section" id="adding-a-practitioner">
 <span id="add-practitioner"></span><h3>Adding a Practitioner<a class="headerlink" href="#adding-a-practitioner" title="Permalink to this headline">¶</a></h3>
-<p>You can add a practitioner&#8217;s details through the organisation tab, by following
-these steps:</p>
+<p>You can view a practitioner&#8217;s details through <a class="reference internal" href="#find-practitioner"><span class="std std-ref">Finding a Practitioner</span></a>
+on the Data Entry tab, by following these steps:</p>
 <ol class="arabic simple">
-<li>Once <a class="reference internal" href="#find-practitioner"><span class="std std-ref">Finding a Practitioner</span></a></li>
-<li>From the Practitioners tab, click the Add New Practitioner tab.</li>
-<li>Enter the practitioner&#8217;s details. Mandatory fields are marked with an *</li>
+<li>Click on the <a class="reference internal" href="#find-practitioner"><span class="std std-ref">Practitioners</span></a> tab.</li>
+<li>Click the Add New Practitioner tab.</li>
+<li>Enter the practitioner&#8217;s details. Mandatory fields are marked with an * .</li>
 </ol>
 <div class="figure">
-<img alt="PMHC MDS Practitioner Details View" src="../_images/practitioners-add-view.png" />
+<img alt="PMHC MDS Practitioner Details View" src="../_images/practitioner-add-view.png" />
 </div>
 <ol class="arabic simple" start="4">
 <li>Click the blue &#8216;Save&#8217; button.  (If you decide not to save changes, you can simply navigate away from this screen)</li>
@@ -888,11 +1061,57 @@ alternately, practitioner records can be uploaded in bulk. See <a class="referen
 </div>
 <div class="section" id="deleting-a-practitioner">
 <span id="delete-practitioner"></span><h3>Deleting a Practitioner<a class="headerlink" href="#deleting-a-practitioner" title="Permalink to this headline">¶</a></h3>
-<p>Currently a practitioner can not be deleted from the PMHC MDS. However, you can
-change the practitioner from active to inactive by editing their details.
+<p>You can delete a practitioner&#8217;s details through <a class="reference internal" href="#edit-practitioner"><span class="std std-ref">Editing a Practitioner</span></a>
+on the Data Entry tab, by following these steps:</p>
+<ol class="arabic simple">
+<li>Click on the <a class="reference internal" href="#find-practitioner"><span class="std std-ref">Practitioners</span></a> tab.</li>
+<li>Click on the practitioner&#8217;s key in blue displayed within the table list.</li>
+<li>Click the red &#8216;Delete&#8217; button.</li>
+<li>You will either be displayed a &#8216;<a class="reference internal" href="#confirm-delete-practitioner"><span class="std std-ref">Confirm Delete</span></a>&#8216; screen or a &#8216;<a class="reference internal" href="#cannot-delete-practitioner"><span class="std std-ref">Cannot Delete</span></a>&#8216; screen.</li>
+</ol>
+<div class="section" id="confirm-delete-practitioner">
+<span id="id6"></span><h4>Confirm Delete<a class="headerlink" href="#confirm-delete-practitioner" title="Permalink to this headline">¶</a></h4>
+<p><strong>Please note: Once the practitioner is deleted, you will not be able to recover this practitioner data.</strong></p>
+<ol class="arabic simple">
+<li>Click the blue &#8216;Confirm&#8217; button to delete this practitioner. (or click the orange &#8216;Cancel&#8217; button if you decide not to delete this practitioner data)</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="Practitioner Data Confirm Delete" src="../_images/practitioner-delete-confirm.png" />
+</div>
+</div></blockquote>
+<p>After you click &#8216;Confirm&#8217;, you will receive confirmation that the practitioner has
+been deleted, and you will be redirected to the <a class="reference internal" href="#view-practitioner"><span class="std std-ref">View Practitioners</span></a> where the
+practitioner will no longer be displayed.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="Practitioner Data Delete Successful" src="../_images/practitioner-delete-successful.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="cannot-delete-practitioner">
+<span id="id7"></span><h4>Cannot Delete<a class="headerlink" href="#cannot-delete-practitioner" title="Permalink to this headline">¶</a></h4>
+<p>If the practitioner you are trying to delete has any dependant records, you will not
+be able to proceed with deleting this practitioner until all the related records have
+been edited or deleted.</p>
+<ol class="arabic simple">
+<li>You can click the orange &#8216;Dismiss&#8217; button.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="Client Episode Data Cannot Delete" src="../_images/practitioner-delete-cannot.png" />
+</div>
+</div></blockquote>
+<p>See <a class="reference internal" href="#edit-service-contact"><span class="std std-ref">Editing a Client&#8217;s Service Contacts for an Episode</span></a> or <a class="reference internal" href="#delete-service-contact"><span class="std std-ref">Deleting an Service Contact</span></a>.</p>
+</div>
+</div>
+<div class="section" id="inactive-practitioners">
+<span id="inactive-practitioner"></span><h3>Inactive Practitioners<a class="headerlink" href="#inactive-practitioners" title="Permalink to this headline">¶</a></h3>
+<p>Currently a practitioner can not be deleted from the PMHC MDS if they have any dependant records,.</p>
+<p>You can change the practitioner from &#8216;active&#8217; to &#8216;inactive&#8217; by editing their details.
 By doing this, the inactive practitioner keys will no longer be displayed in the
 Practitioner Key drop down list displayed on the Service Contact forms.</p>
-<p>See <a class="reference internal" href="#edit-practitioner"><span class="std std-ref">Editing a Practitioner</span></a></p>
+<p>See <a class="reference internal" href="#edit-practitioner"><span class="std std-ref">Editing a Practitioner</span></a>.</p>
 </div>
 </div>
 </div>

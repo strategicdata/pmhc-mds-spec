@@ -31,14 +31,14 @@ In order to get Data Entry functionality to PHNs as soon as possible, the develo
 * **Practitioners Data Entry Interface**, was released in `v0.11.1 <https://www.pmhc-mds.com/communications/#/2017/06/14/Update-to-the-PMHC-MDS-v0-11-1-and-Data-Specifications-v1-0-7/>`_.
 * **Client, Episode and Service Contact Data Entry Interface**, was released in `v0.12.0 <https://www.pmhc-mds.com/communications/#/2017/06/30/Update-to-the-PMHC-MDS-v0-12-0-and-Data-Specifications-v1-0-9/>`_.
 * **K10+ and K5 Outcome Collection Occasion Data Entry Interface**, was released in `v0.13.2 <https://www.pmhc-mds.com/communications/#/2017/07/20/Update-to-the-PMHC-MDS-v-0-13-2/>`_.
-* Enhanced features to the Data Entry Interface was released in `v0.15.0 <https://www.pmhc-mds.com/communications/#/2017/08/25/Update-to-the-PMHC-MDS-v-0-15-0/>`_.
+* Enhanced features to the Data Entry Interface, was released in `v0.15.0 <https://www.pmhc-mds.com/communications/#/2017/08/25/Update-to-the-PMHC-MDS-v-0-15-0/>`_. and `v0.16.1 <https://www.pmhc-mds.com/communications/#/2017/09/26/Update-to-the-PMHC-MDS-v-0-16-1-and-Data-Specifications-v1-0-11/>`_.
+* Ability to **delete records**, was released in `v0.17.2 <https://www.pmhc-mds.com/communications/#/2017/10/25/Update-to-the-PMHC-MDS-v-0-17-2/>`_.
+* Ability to **edit identification keys**, was released in `v0.18.0 <https://www.pmhc-mds.com/communications/>`_.
 
 The remaining features will be rolled out iteratively over the following weeks, and will be:
 
 * SDQ Data Entry Interface (Currently development is on hold until the Department finalises licensing requirements)
-* Ability to delete records
 * Develop pre-filled fields for interrelated field specifications
-* Ability to edit identification keys
 * Ability to merge duplicate client records
 * An Online K5, K10+, and SDQ Outcome Measures Self-Service Interface
 

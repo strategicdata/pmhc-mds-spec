@@ -3,6 +3,31 @@
 User Guide Change log
 =====================
 
+20/11/2017
+----------
+
+* Edited :ref:`edit-practitioner`
+
+* Added :ref:`edit-practitioner-key`
+
+* Edited :ref:`edit-client`
+
+* Added :ref:`edit-client-key`
+
+* Edited :ref:`edit-episode`
+
+* Added :ref:`edit-episode-key`
+
+* Edited  :ref:`edit-service-contact`
+
+* Added  :ref:`edit-service-contact-key`
+
+* Edited :ref:`edit-collection-occasion`
+
+* Added :ref:`edit-collection-occasion-key`
+
+* Edited :ref:`add-collection-occasion`
+
 25/10/2017
 ----------
 
@@ -15,6 +40,8 @@ User Guide Change log
 * Edited  :ref:`delete-service-contact`
 
 * Edited :ref:`delete-collection-occasion`
+
+* Added :ref:`inactive-practitioner`
 
 23/10/2017
 ----------
