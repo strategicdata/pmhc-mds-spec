@@ -3,6 +3,26 @@
 Data Specification Change log
 =============================
 
+29/11/2017
+----------
+
+* :ref:`validation-rules`
+
+  * Fixed spelling error in :ref:`practitioner-current-validations` point 1.
+
+28/11/2017
+----------
+
+* :ref:`validation-rules`
+
+  * Rewrote the validation rules to follow the guidelines in RFC 2119.
+
+  * Changed bullet lists to enumerated lists to make rules easier to identify.
+
+  * Updated :ref:`episode-current-validations` to clarify how
+    :ref:`dfn-episode_completion_status` and :ref:`dfn-episode_end_date`
+    interact (Point 4.)
+
 25/10/2017
 ----------
 

@@ -25,7 +25,7 @@ The domain of individual items is defined in :ref:`record-formats`.
 
      or
 
-     The organistion to which the practitioner belongs has
+     The organisation to which the practitioner belongs has
      :ref:`dfn-organisation_type` set to '8: Aboriginal Health/Medical Service'
 
 .. _client-current-validations:
