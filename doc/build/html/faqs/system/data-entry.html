@@ -110,6 +110,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#do-i-enter-a-service-contact-when-a-client-doesn-t-show-up-for-the-session">Do I enter a Service Contact when a client doesn&#8217;t show up for the session?</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#if-the-client-is-referred-elsewhere-e-g-not-suitable-for-this-service-should-this-be-recorded">If the client is referred elsewhere (e.g. not suitable for this service) should this be recorded?</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#why-is-an-episode-showing-as-uncommenced">Why is an episode showing as uncommenced?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#how-can-i-close-an-episode">How can I close an episode?</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#what-do-i-do-if-the-gp-mental-health-provider-has-not-given-an-answer-to-one-or-more-questions-in-the-minimum-dataset">What do I do if the GP / mental health provider has not given an answer to one or more questions in the minimum dataset?</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#what-are-the-options-where-the-information-collected-does-not-fit-into-the-available-fields">What are the options where the information collected does not fit into the available fields?</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#the-phmc-mds-specifications-seems-limited-can-we-capture-and-record-additional-data">The PHMC MDS specifications seems limited. Can we capture and record additional data?</a></li>
@@ -271,7 +272,8 @@ is an edit key button available when editing a records details.</p>
 </div>
 <div class="section" id="how-do-i-enter-a-referral">
 <span id="enter-referral-faq"></span><h2>How do I enter a referral?<a class="headerlink" href="#how-do-i-enter-a-referral" title="Permalink to this headline">¶</a></h2>
-<p>A referral is entered as an <a class="reference internal" href="../../data-specification/data-model-and-specifications.html#key-concepts-episode"><span class="std std-ref">Episode</span></a>.</p>
+<p>A referral can be entered as an <a class="reference internal" href="../../data-specification/data-model-and-specifications.html#key-concepts-episode"><span class="std std-ref">Episode</span></a>.</p>
+<p>An Episode does not need to be concluded if the client requires as a new referral. If the treatment continues with a client, the service contacts can continue to be recorded to the original Episode until treatment is formally concluded either clinically or administratively.</p>
 <p>Refer to the online User Guide <a class="reference internal" href="../../user-documentation/data-entry.html#episode-data"><span class="std std-ref">Episodes</span></a>.</p>
 </div>
 <div class="section" id="how-do-i-enter-a-k10-or-k5">
@@ -347,6 +349,12 @@ The episode start date will be derived from the first service contact date.&#821
 <p>When an episode does not have any service contacts added yet, it does not have
 a start date and the system will reported it as &#8216;Uncommenced&#8217;.</p>
 <p>Refer to <a class="reference internal" href="../../data-specification/data-model-and-specifications.html#key-concepts-episode"><span class="std std-ref">Episode</span></a>.</p>
+</div>
+<div class="section" id="how-can-i-close-an-episode">
+<span id="data-entry-episode-closed"></span><h2>How can I close an episode?<a class="headerlink" href="#how-can-i-close-an-episode" title="Permalink to this headline">¶</a></h2>
+<p>To close an episode, you can edit a Client’s Episode details and enter an
+&#8216;Episode - End Date&#8217; and update the &#8216;Episode - Completion Status&#8217; value.</p>
+<p>Refer to <a class="reference internal" href="../../user-documentation/data-entry.html#edit-episode"><span class="std std-ref">Editing a Client&#8217;s Episode data</span></a>.</p>
 </div>
 <div class="section" id="what-do-i-do-if-the-gp-mental-health-provider-has-not-given-an-answer-to-one-or-more-questions-in-the-minimum-dataset">
 <span id="do-not-have-answer-faq"></span><h2>What do I do if the GP / mental health provider has not given an answer to one or more questions in the minimum dataset?<a class="headerlink" href="#what-do-i-do-if-the-gp-mental-health-provider-has-not-given-an-answer-to-one-or-more-questions-in-the-minimum-dataset" title="Permalink to this headline">¶</a></h2>
