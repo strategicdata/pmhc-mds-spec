@@ -3,6 +3,12 @@
 User Guide Change log
 =====================
 
+08/12/2017
+----------
+
+* Added :ref:`data-extract-dates`
+
+
 20/11/2017
 ----------
 

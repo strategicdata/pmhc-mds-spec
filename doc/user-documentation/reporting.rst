@@ -187,3 +187,26 @@ the Download Data fields in the Data Extraction tab, by following these steps:
 
 10. Click the blue 'Download' button.
 11. Your data extract will be downloaded to your computer.
+
+.. _data-extract-dates:
+
+Data Extract dates explained
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The Data Extract dates are based on the Client's Service Contact dates.
+
+**Please note:** As the query is date based the following data will not by
+default be included in the extract:
+
+   * The start date of an episode is derived from the date of the first service contact.
+     Therefore, if an episode doesn't have any associated service contacts, there will be
+     no start date for the episode and they will not by default be included in the data extract.
+   * Clients that don't have any associated episodes, or who are associated
+     with an episode with no service contacts also will not by default be included in the data extract.
+   * Practitioners who are not associated with a service contact will not by default be included
+     in the data extract.
+
+If you would like to include these episodes, clients and practitioners check the
+the 'Include data without associated dates' checkbox.
+
+See :ref:`view-data-extract`.
