@@ -145,7 +145,9 @@ See:
 How do I enter a referral?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-A referral is entered as an :ref:`key-concepts-episode`.
+A referral can be entered as an :ref:`key-concepts-episode`.
+
+An Episode does not need to be concluded if the client requires as a new referral. If the treatment continues with a client, the service contacts can continue to be recorded to the original Episode until treatment is formally concluded either clinically or administratively.
 
 Refer to the online User Guide :ref:`episode-data`.
 
@@ -261,6 +263,16 @@ When an episode does not have any service contacts added yet, it does not have
 a start date and the system will reported it as 'Uncommenced'.
 
 Refer to :ref:`key-concepts-episode`.
+
+.. _data-entry-episode-closed:
+
+How can I close an episode?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To close an episode, you can edit a Client’s Episode details and enter an
+'Episode - End Date' and update the 'Episode - Completion Status' value.
+
+Refer to :ref:`edit-episode`.
 
 .. _do-not-have-answer-faq:
 

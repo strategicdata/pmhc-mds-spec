@@ -3,6 +3,16 @@
 Frequently Asked Questions Change log
 =====================================
 
+08/12/2017
+----------
+
+System - Data Entry FAQs
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Added :ref:`data-entry-episode-closed`
+
+* Updated the question :ref:`enter-referral-faq`
+
 20/11/2017
 ----------
 
