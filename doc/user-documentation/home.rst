@@ -131,12 +131,12 @@ If you have forgotten your password or it has expired:
    .. figure:: screen-shots/password-reset-request.png
       :alt: PMHC MDS Resetting Password
 
-7. Follow the link in the email.
+7. Open the Email sent from support@strategicdata.com.au and open the link in the email.
 
    .. figure:: screen-shots/account-verify-user.png
       :alt: PMHC MDS User Verification
 
-8. Enter the verification code you were SMS'ed.
+8. Enter the verification code you were sent via SMS.
 9. Click 'Submit'.
 10. You will be shown a 'Password reset' page.
 

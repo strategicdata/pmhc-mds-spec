@@ -190,8 +190,8 @@ the Download Data fields in the Data Extraction tab, by following these steps:
 
 .. _data-extract-dates:
 
-Data Extract dates explained
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Dates explained for Data Extract
+--------------------------------
 
 The Data Extract dates are based on the Client's Service Contact dates.
 
