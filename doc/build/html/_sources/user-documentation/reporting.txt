@@ -102,10 +102,22 @@ Key specifications:
 
 .. _category-a2:
 
-A2 - Volume trends
-~~~~~~~~~~~~~~~~~~
+A2 - Monthly volume trends
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This report will soon be implemented.
+This report is designed to show volume trends in clients, episodes and service
+contacts.
+
+Key specifications:
+
+* To be counted, a client must have had one or more Service Contacts in the
+  reporting period, defined for this report purposes as ‘Active Clients’.
+  Clients are counted uniquely regardless of number of episodes.
+* Episodes to be counted if one or more Service Contacts was recorded in the
+  period – defined for this report purpose as ‘Active Episodes’.
+* All Service Contacts in the period are reported except those that are flagged
+  as ‘No Show’.
+* All dates refer to date of service not date of upload or data entry.
 
 .. _category-a3:
 
