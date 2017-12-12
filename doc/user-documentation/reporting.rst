@@ -106,7 +106,7 @@ A2 - Monthly volume trends
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This report is designed to show volume trends in clients, episodes and service
-contacts.
+contacts. Each data point in the table and the chart shows monthly data.
 
 Key specifications:
 
