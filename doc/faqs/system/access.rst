@@ -119,7 +119,7 @@ Can I invite different users by using the same mobile?
 
 It is not advised for multiple PMHC users to share using the same mobile number.
 
-Refer to :ref:`I do not have a work mobile <do-not-have-a-work-mobile-faq>`, `letter of authority <letter-of-authority-faq>` and :ref:`password-recovery-faq`
+Refer to :ref:`I do not have a work mobile <do-not-have-a-work-mobile-faq>`, :ref:`letter of authority <letter-of-authority-faq>` and :ref:`password-recovery-faq`
 
 .. _sharing-user-login-faq:
 
