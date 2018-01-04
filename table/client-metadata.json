@@ -57,10 +57,11 @@
     "schema:meteorItem": "287007",
     "schema:dateCreated": "2016-06-22",
     "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
+    "schema:dateModified": "2018-01-02",
     "datatype": {
       "base": "date",
-      "format": "dMMyyyy"
+      "format": "dMMyyyy",
+      "minimum": "1900-01-01"
     },
     "required": true,
     "schema:formOrder": "3"

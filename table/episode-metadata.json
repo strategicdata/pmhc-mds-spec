@@ -51,10 +51,11 @@
     "schema:meteorItem": "614094",
     "schema:dateCreated": "2016-06-22",
     "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
+    "schema:dateModified": "2018-01-02",
     "datatype": {
       "base": "date",
-      "format": "dMMyyyy"
+      "format": "dMMyyyy",
+      "minimum": "2016-01-01"
     }
   },{
     "name": "client_consent",
@@ -89,10 +90,11 @@
     "schema:disambiguatingDescription": "table/episode/referral-date.rst",
     "schema:dateCreated": "2016-06-22",
     "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
+    "schema:dateModified": "2018-01-02",
     "datatype": {
       "base": "date",
-      "format": "dMMyyyy"
+      "format": "dMMyyyy",
+      "minimum": "2014-01-01"
     }
   },{
     "name": "principal_focus",
