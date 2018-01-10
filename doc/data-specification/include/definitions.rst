@@ -338,7 +338,10 @@ The date on which an individual was born.
 
 :Required: true
 :Notes:
+  - The date of birth must not be before January 1st 1900.
+  
   - The date of birth must not be in the future.
+  
   - If the date of birth is unknown, the following approaches should be used:
   
     - If the age of the person is known, the age should be used to derive the
@@ -1020,6 +1023,8 @@ The date the measure was given.
   
   If the date the measure was given is unknown, 09099999 should be used.
   
+  - The measure date must not be before 1st January 2016.
+  
   - The measure date must not be in the future.
   
 
@@ -1376,6 +1381,8 @@ The date on which an *Episode of Care* is formally or administratively ended
 
 :Required: false
 :Notes:
+  - The episode end date must not be before 1st January 2016.
+  
   - The episode end date must not be in the future.
   
   An *Episode of Care* may be ended in one of two ways:
@@ -2097,6 +2104,8 @@ The date the referrer made the referral.
   of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
   necessary to pad out a value. For instance, 13th March 2008 would appear as
   13032008.
+  
+  - The referral date must not be before 1st January 2014.
   
   - The referral date must not be in the future.
   
@@ -4950,6 +4959,8 @@ The date of each mental health service contact between a health service provider
   of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
   necessary to pad out a value. For instance, 13th March 2008 would appear as
   13032008.
+  
+  - The service contact date must not be before 1st January 2014.
   
   - The service contact date must not be in the future.
   
