@@ -82,7 +82,7 @@ for those scores to be used even though it will predate the Episode Start date.
 K5 for Aboriginal and Torres Strait Islander population
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The definitions document details the K10+, K5 and SDQ as the possible measures but the PMHC MDB overview document only mentions the K10+ for adults and the SDQ for children and young people.  Is the K5 recommended for an Aboriginal and Torres Strait Islander population?
+The definitions document details the K10+, K5 and SDQ as the possible measures but the PMHC MDS overview document only mentions the K10+ for adults and the SDQ for children and young people.  Is the K5 recommended for an Aboriginal and Torres Strait Islander population?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The K5 is included as an alternative to the K10 for use with Aboriginal and
