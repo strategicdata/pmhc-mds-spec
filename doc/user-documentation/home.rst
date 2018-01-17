@@ -9,6 +9,10 @@ most recent announcements made via the :ref:`mailing-list-FAQs`.
 .. figure:: screen-shots/home-page.png
    :alt: PMHC MDS Home Page
 
+An announcements archive link is now available on the Home tab under the three
+most recent announcements - Click `View Archive <https://www.pmhc-mds.com/communications/>`_
+to view all the PMHC MDS announcements.
+
 .. _accepting-invitation:
 
 Accepting an invitation to become a PMHC MDS User
