@@ -35,7 +35,7 @@ the roles that currently exist within the PMHC MDS:
 +----------------------------+------------------------------------------------------------------------------------------------------------------------------------+
 | Upload                     | A user with the Upload role can upload data to the associated organisation                                                         |
 +----------------------------+------------------------------------------------------------------------------------------------------------------------------------+
-| Reporting                  | A user with the Reporting role can download data from the associated organisation                                                  |
+| Reporting                  | A user with the Reporting role can run reports and download data from the associated organisation                                  |
 +----------------------------+------------------------------------------------------------------------------------------------------------------------------------+
 | Data Entry                 | A user with the Data Entry role can enter client data and practitioners from the associated organisation                           |
 +----------------------------+------------------------------------------------------------------------------------------------------------------------------------+
@@ -59,7 +59,7 @@ assigned. The table below lists the tabs that will be shown for each role:
 +-------------------------+------------------------------+
 | Upload                  | Upload                       |
 +-------------------------+------------------------------+
-| Reporting               | Reports                      |
+| Reporting               | Reports, Data Extract        |
 +-------------------------+------------------------------+
 | Data Entry              | Data Entry                   |
 +-------------------------+------------------------------+

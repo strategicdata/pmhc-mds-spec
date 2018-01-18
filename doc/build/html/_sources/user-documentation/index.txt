@@ -14,5 +14,6 @@ User Guide
    upload
    data-entry
    reporting
+   data-extract
    slk
    change-log

@@ -49,7 +49,10 @@ Regularly check the announcements on the `PMHC MDS home page <https://pmhc-mds.n
 Reporting
 ~~~~~~~~~
 
-* Category E reports: Reports for data managers to monitor data supply, was released in `v0.14.0 <https://www.pmhc-mds.com/communications/#/2017/07/28/Update-to-the-PMHC-MDS-v-0-14-0/>`_.
+The :ref:`system-report-types` that are currently available are:
+
+* :ref:`category-e`, was released in `v0.14.0 <https://www.pmhc-mds.com/communications/#/2017/07/28/Update-to-the-PMHC-MDS-v-0-14-0/>`_.
+* The start of the :ref:`category-a` reports, was was released in `v0.20.0 <https://www.pmhc-mds.com/communications/#/2017/12/12/Update-to-the-PMHC-MDS-v-0-20-0/>`_.
 
 The following reports will be rolled out iteratively over the following weeks:
 
