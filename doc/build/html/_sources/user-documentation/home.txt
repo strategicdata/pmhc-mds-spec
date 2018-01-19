@@ -1,3 +1,5 @@
+.. _home:
+
 Home
 ====
 
@@ -8,6 +10,10 @@ most recent announcements made via the :ref:`mailing-list-FAQs`.
 
 .. figure:: screen-shots/home-page.png
    :alt: PMHC MDS Home Page
+
+An announcements archive link is now available on the Home tab under the three
+most recent announcements - Click `View Archive <https://www.pmhc-mds.com/communications/>`_
+to view all the PMHC MDS announcements.
 
 .. _accepting-invitation:
 
@@ -131,7 +137,7 @@ If you have forgotten your password or it has expired:
    .. figure:: screen-shots/password-reset-request.png
       :alt: PMHC MDS Resetting Password
 
-7. Open the Email sent from support@strategicdata.com.au and open the link in the email.
+7. Open the email sent from support@strategicdata.com.au and open the link in the email.
 
    .. figure:: screen-shots/account-verify-user.png
       :alt: PMHC MDS User Verification

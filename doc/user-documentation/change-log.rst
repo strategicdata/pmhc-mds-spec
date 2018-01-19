@@ -3,6 +3,29 @@
 User Guide Change log
 =====================
 
+19/1/2018
+---------
+
+* Updated screenshots for :ref:`home`
+
+* Updated screenshots for :ref:`data-entry`
+
+* Updated screenshots for :ref:`data-extraction`
+
+* Updated screenshots for :ref:`organisations`
+
+* Updated screenshots for :ref:`reports`
+
+* Updated screenshots for :ref:`upload`
+
+* Updated screenshots for :ref:`users`
+
+* Updated the question to :ref:`dev-reports-faq`
+
+* Edited the Reporting :ref:`roles`
+
+* Edited :ref:`passwords` to state the password email will be received from noreply@strategicdata.com.au
+
 22/12/2017
 ----------
 

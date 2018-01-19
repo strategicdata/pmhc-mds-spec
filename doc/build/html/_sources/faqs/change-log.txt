@@ -3,6 +3,14 @@
 Frequently Asked Questions Change log
 =====================================
 
+19/1/2018
+---------
+
+Concepts Processes - Outcome Measures FAQs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Fixed a spelling error in :ref:`K5-for-atsi-faq`
+
 22/12/2017
 ----------
 

@@ -3,6 +3,59 @@
 Data Specification Change log
 =============================
 
+19/1/2018 - Version 1.0.12
+--------------------------
+
+* :ref:`data-model-and-specifications`
+
+  * :ref:`record-formats`
+
+    * :ref:`client-data-elements`
+
+      * Updated :ref:`dfn-date_of_birth` to specify that
+        the date of birth must not be before 1 January 1900.
+
+    * :ref:`episode-data-elements`
+
+      * Updated :ref:`dfn-episode_end_date` to specify that
+        the episode end date must not be before 1 January 2016.
+
+      * Updated :ref:`dfn-referral_date` to specify that
+        the episode referral date must not be before 1 January 2014.
+
+    * :ref:`service-contact-data-elements`
+
+      * Updated :ref:`dfn-service_contact_date` to specify that
+        the service contact date must not be before 1 January 2014.
+
+    * :ref:`outcome-collection-occasion-data-elements`
+
+      * Updated :ref:`dfn-measure_date` to specify that
+        the measure date must not be before 1 January 2016.
+
+* :ref:`validation-rules`
+
+  * Updated :ref:`client-current-validations` to add specify that the date of
+    birth must not be before 1 January 1900.
+
+  * Updated :ref:`episode-current-validations` to add specify that the episode
+    end date must not be before 1 January 2016.
+
+  * Updated :ref:`episode-current-validations` to add specify that the episode
+    referral date must not be before 1 January 2014.
+
+  * Updated :ref:`service-contact-current-validations` to add specify that the
+    service contact date must not be before 1 January 2014.
+
+  * Updated :ref:`k10p-current-validations` to add specify that the
+    measure date must not be before 1 January 2016.
+
+  * Updated :ref:`k5-current-validations` to add specify that the
+    measure date must not be before 1 January 2016.
+
+  * Updated :ref:`sdq-current-validations` to add specify that the
+    measure date must not be before 1 January 2016.
+       
 29/11/2017
 ----------
 

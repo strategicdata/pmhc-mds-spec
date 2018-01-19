@@ -78,6 +78,7 @@ closely as possible to the Episode Start date.  If the measure has been
 collected and reported by the Referrer shortly before this date, it is acceptable
 for those scores to be used even though it will predate the Episode Start date.
 
+.. _K5-for-atsi-faq:
 
 K5 for Aboriginal and Torres Strait Islander population
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

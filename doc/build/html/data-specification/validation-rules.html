@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Validation Rules &mdash; PMHC MDS Version 1.0.11 documentation</title>
+  <title>Validation Rules &mdash; PMHC MDS Version 1.0.12 documentation</title>
   
 
   
@@ -32,7 +32,7 @@
   
 
   
-    <link rel="top" title="PMHC MDS Version 1.0.11 documentation" href="../index.html"/>
+    <link rel="top" title="PMHC MDS Version 1.0.12 documentation" href="../index.html"/>
         <link rel="up" title="Data Specification" href="index.html"/>
         <link rel="next" title="ATAPS MDS to PMHC MDS data mapping" href="ataps/ataps-pmhc-mapping.html"/>
         <link rel="prev" title="Using the data specification to create client forms" href="form-creation.html"/> 
@@ -63,7 +63,7 @@
             
             
               <div class="version">
-                Version 1.0.11
+                Version 1.0.12
               </div>
             
           
@@ -198,9 +198,10 @@ person is under 5, or</li>
 <li><a class="reference internal" href="data-model-and-specifications.html#dfn-est-date-of-birth"><span class="std std-ref">Client - Estimated Date of Birth Flag</span></a> is &#8216;2: Date of birth is an estimate&#8217; and the
 person is under 6, or</li>
 <li><a class="reference internal" href="data-model-and-specifications.html#dfn-est-date-of-birth"><span class="std std-ref">Client - Estimated Date of Birth Flag</span></a> is &#8216;8: Date of birth is a dummy&#8217;, or</li>
-<li><a class="reference internal" href="data-model-and-specifications.html#dfn-est-date-of-birth"><span class="std std-ref">Client - Estimated Date of Birth Flag</span></a> is &#8216;9: Accuracy of stated date of birth is not known&#8217;.</li>
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-est-date-of-birth"><span class="std std-ref">Client - Estimated Date of Birth Flag</span></a> is &#8216;9: Accuracy of stated date of birth is not known&#8217;</li>
 </ul>
 </li>
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-date-of-birth"><span class="std std-ref">Client - Date of Birth</span></a> must not be before 1 January 1900</li>
 </ol>
 </div></blockquote>
 </div>
@@ -244,6 +245,10 @@ only be used by selected PHN Lead Sites</p>
 <li><p class="first">The <code class="docutils literal"><span class="pre">!ATAPS</span></code> tag must only be included in the <a class="reference internal" href="data-model-and-specifications.html#dfn-episode-tags"><span class="std std-ref">Episode - Tags</span></a> field
 where the <a class="reference internal" href="data-model-and-specifications.html#dfn-referral-date"><span class="std std-ref">Episode - Referral Date</span></a> was before 1 July 2017</p>
 </li>
+<li><p class="first"><a class="reference internal" href="data-model-and-specifications.html#dfn-episode-end-date"><span class="std std-ref">Episode - End Date</span></a> must not be before 1 January 2016</p>
+</li>
+<li><p class="first"><a class="reference internal" href="data-model-and-specifications.html#dfn-referral-date"><span class="std std-ref">Episode - Referral Date</span></a> must not be before 1 January 2014</p>
+</li>
 </ol>
 </div></blockquote>
 </div>
@@ -282,6 +287,7 @@ response must only be used under the following conditions:<ul>
 <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-participation-indicator"><span class="std std-ref">Service Contact - Client Participation Indicator</span></a> must be &#8216;1: Yes&#8217;</li>
 <li>The <code class="docutils literal"><span class="pre">!ATAPS</span></code> tag must only be included in the <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-tags"><span class="std std-ref">Service Contact - Tags</span></a>
 field where the <a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-date"><span class="std std-ref">Service Contact - Date</span></a> was before 30 June 2018</li>
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-service-contact-date"><span class="std std-ref">Service Contact - Date</span></a> must not be before 1 January 2014</li>
 </ol>
 </div></blockquote>
 </div>
@@ -293,6 +299,7 @@ field where the <a class="reference internal" href="data-model-and-specification
 <li><a class="reference internal" href="data-model-and-specifications.html#dfn-measure-date"><span class="std std-ref">Collection Occasion - Measure Date</span></a> must not be after <a class="reference internal" href="data-model-and-specifications.html#dfn-episode-end-date"><span class="std std-ref">Episode - End Date</span></a></li>
 <li>If both item scores and a total score are specified, the item scores must
 add up to the total score</li>
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-measure-date"><span class="std std-ref">Collection Occasion - Measure Date</span></a> must not be before 1 January 2016</li>
 </ol>
 </div></blockquote>
 </div>
@@ -304,6 +311,7 @@ add up to the total score</li>
 <li><a class="reference internal" href="data-model-and-specifications.html#dfn-measure-date"><span class="std std-ref">Collection Occasion - Measure Date</span></a> must not be after <a class="reference internal" href="data-model-and-specifications.html#dfn-episode-end-date"><span class="std std-ref">Episode - End Date</span></a></li>
 <li>If both item scores and a total score are specified, the item scores must
 add up to the total score</li>
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-measure-date"><span class="std std-ref">Collection Occasion - Measure Date</span></a> must not be before 1 January 2016</li>
 </ol>
 </div></blockquote>
 </div>
@@ -313,6 +321,7 @@ add up to the total score</li>
 <div><ol class="arabic simple">
 <li><a class="reference internal" href="data-model-and-specifications.html#dfn-measure-date"><span class="std std-ref">Collection Occasion - Measure Date</span></a> must not be before <a class="reference internal" href="data-model-and-specifications.html#dfn-referral-date"><span class="std std-ref">Episode - Referral Date</span></a></li>
 <li><a class="reference internal" href="data-model-and-specifications.html#dfn-measure-date"><span class="std std-ref">Collection Occasion - Measure Date</span></a> must not be after <a class="reference internal" href="data-model-and-specifications.html#dfn-episode-end-date"><span class="std std-ref">Episode - End Date</span></a></li>
+<li><a class="reference internal" href="data-model-and-specifications.html#dfn-measure-date"><span class="std std-ref">Collection Occasion - Measure Date</span></a> must not be before 1 January 2016</li>
 </ol>
 </div></blockquote>
 </div>
@@ -352,7 +361,7 @@ scores must agree with the subscales/total score.</li>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017, Australian Government - Department of Health.
+        &copy; Copyright 2018, Australian Government - Department of Health.
 
     </p>
   </div>
@@ -374,7 +383,7 @@ scores must agree with the subscales/total score.</li>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'Version 1.0.11',
+            VERSION:'Version 1.0.12',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true
