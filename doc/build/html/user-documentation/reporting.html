@@ -214,6 +214,15 @@ key business rules.</p>
 <li>Volumes (&#8216;active clients&#8217;/&#8217;active episodes&#8217;/contacts)</li>
 <li>Data quality in terms of compliance with key business rules</li>
 </ul>
+<p>Available A category reports are:</p>
+<ul class="simple">
+<li><a class="reference internal" href="#category-a1"><span class="std std-ref">A1 - High level summary of overall volumes by entity</span></a></li>
+<li><a class="reference internal" href="#category-a2"><span class="std std-ref">A2 - Monthly volume trends</span></a></li>
+<li><a class="reference internal" href="#category-a3"><span class="std std-ref">A3 - Data quality report - Missing and invalid client data</span></a></li>
+<li><a class="reference internal" href="#category-a4"><span class="std std-ref">A4- Data quality report - Missing and invalid episode data</span></a></li>
+<li><a class="reference internal" href="#category-a5"><span class="std std-ref">A5 - Data quality report - Missing and invalid service contact data</span></a></li>
+<li><a class="reference internal" href="#category-a6"><span class="std std-ref">A6 - Data quality report - Missing and invalid practitioner data</span></a></li>
+</ul>
 <p><strong>Note:</strong> A subset of these reports is included in <a class="reference internal" href="#category-e"><span class="std std-ref">Category E: Reports for data managers to monitor data supply</span></a> without
 any filtering for active clients or episodes to enable organisational data
 managers to monitor &#8216;raw&#8217; upload and data supply to the MDS.</p>
@@ -252,19 +261,192 @@ as ‘No Show’.</li>
 </div>
 <div class="section" id="a3-data-quality-report-missing-and-invalid-client-data">
 <span id="category-a3"></span><h4>A3 - Data quality report - Missing and invalid client data<a class="headerlink" href="#a3-data-quality-report-missing-and-invalid-client-data" title="Permalink to this headline">¶</a></h4>
-<p>This report will soon be implemented.</p>
+<p>The A3 reports are designed to identify Client data elements with significant
+amounts of missing or invalid data.</p>
+<p>Two formats of this report are offered to users:</p>
+<ul class="simple">
+<li><a class="reference internal" href="#category-a3-1"><span class="std std-ref">A3-1 - Data quality report - Missing and invalid client data - Summary</span></a></li>
+<li><a class="reference internal" href="#category-a3-2"><span class="std std-ref">A3-2 - Data quality report - Missing and invalid client data - Detail</span></a></li>
+</ul>
+<p>Key specifications:</p>
+<ul class="simple">
+<li>Clients to be counted uniquely regardless of number of episodes. To be
+counted, a client must have had one or more Service Contacts in the
+reporting period i.e. ‘Active Clients’.</li>
+<li>Missing/invalid data defined as: Data elements with null or invalid values, or
+where ‘system generated’ codes have been reported to denote ‘not stated’,
+‘inadequately defined’ or ‘missing’.</li>
+</ul>
+<div class="section" id="a3-1-data-quality-report-missing-and-invalid-client-data-summary">
+<span id="category-a3-1"></span><h5>A3-1 - Data quality report - Missing and invalid client data - Summary<a class="headerlink" href="#a3-1-data-quality-report-missing-and-invalid-client-data-summary" title="Permalink to this headline">¶</a></h5>
+<p>Summary format provides a simple listing of missing/invalid data rates for
+relevant Client data elements, aggregated across the organisation, region or
+nationally.</p>
+</div>
+<div class="section" id="a3-2-data-quality-report-missing-and-invalid-client-data-detail">
+<span id="category-a3-2"></span><h5>A3-2 - Data quality report - Missing and invalid client data - Detail<a class="headerlink" href="#a3-2-data-quality-report-missing-and-invalid-client-data-detail" title="Permalink to this headline">¶</a></h5>
+<p>Detailed format presents missing/invalid data rates at the entity level (PHN
+and Provider Organisation). For this version, the user selects the specific
+Client data element to be targeted for the report from a list of possible options.</p>
+<p>Missing/invalid client data elements that can be selected for the A3-2
+report are:</p>
+<ul class="simple">
+<li>Date of Birth</li>
+<li>Date of Birth Flag</li>
+<li>Gender</li>
+<li>ATSI status</li>
+<li>Country of Birth</li>
+<li>Main Language Spoken at Home</li>
+<li>Proficiency in Spoken English</li>
+</ul>
+</div>
 </div>
 <div class="section" id="a4-data-quality-report-missing-and-invalid-episode-data">
-<span id="category-a4"></span><h4>A4 - Data quality report - Missing and invalid episode data<a class="headerlink" href="#a4-data-quality-report-missing-and-invalid-episode-data" title="Permalink to this headline">¶</a></h4>
-<p>This report will soon be implemented.</p>
+<span id="category-a4"></span><h4>A4- Data quality report - Missing and invalid episode data<a class="headerlink" href="#a4-data-quality-report-missing-and-invalid-episode-data" title="Permalink to this headline">¶</a></h4>
+<p>The A4 reports are designed to identify data Episode elements with significant
+amounts of missing or invalid data.</p>
+<p>Two formats of this report are offered to users:</p>
+<ul class="simple">
+<li><a class="reference internal" href="#category-a4-1"><span class="std std-ref">A4-1 - Data quality report - Missing and invalid episode data - Summary</span></a></li>
+<li><a class="reference internal" href="#category-a4-2"><span class="std std-ref">A4-2 - Data quality report - Missing and invalid episode data - Detail</span></a></li>
+</ul>
+<p>Some Episode data elements are not included in the options list as they are
+allowed to have a blank value (eg. Episode End Date) or there
+is no missing value provided in the specification and the system doesn&#8217;t allow
+blank values to be submitted (eg. Principal Focus of Treatment Plan):</p>
+<ul class="simple">
+<li>Client Consent to Anonymised Data</li>
+<li>Episode End Date</li>
+<li>Episode Completion Status</li>
+<li>Episode Start Date</li>
+<li>Medication - Antipsychotics (N05A)</li>
+<li>Medication - Anxiolytics (N05B)</li>
+<li>Medication - Hypnotics and sedatives (N05C)</li>
+<li>Medication - Antidepressants (N06A)</li>
+<li>Medication - Psychostimulants and nootropics (N06B)</li>
+<li>Principal Focus of Treatment Plan</li>
+</ul>
+<p>Key specifications:</p>
+<ul class="simple">
+<li>Report counts only ‘active episodes’. An Episode is defined as ‘active’ if it
+has one or more Service Contacts recorded in the period.</li>
+<li>Missing/invalid data defined as: Episode data elements with null or invalid
+values, or where ‘system generated’ codes have been reported to denote
+‘not stated’, ‘inadequately defined’ or ‘missing’.</li>
+</ul>
+<div class="section" id="a4-1-data-quality-report-missing-and-invalid-episode-data-summary">
+<span id="category-a4-1"></span><h5>A4-1 - Data quality report - Missing and invalid episode data - Summary<a class="headerlink" href="#a4-1-data-quality-report-missing-and-invalid-episode-data-summary" title="Permalink to this headline">¶</a></h5>
+<p>Summary format provides a simple listing of missing/invalid data rates
+for relevant Episode data elements, aggregated across the organisation,
+region or nationally.</p>
+</div>
+<div class="section" id="a4-2-data-quality-report-missing-and-invalid-episode-data-detail">
+<span id="category-a4-2"></span><h5>A4-2 - Data quality report - Missing and invalid episode data - Detail<a class="headerlink" href="#a4-2-data-quality-report-missing-and-invalid-episode-data-detail" title="Permalink to this headline">¶</a></h5>
+<p>Detailed format presents missing/invalid Episode data rates at the
+entity level (PHN and Provider Organisation). For this version, the user selects
+the specific Episode data element to be targeted for the missing/invalid data
+report from a list of possible options.</p>
+<p>Missing/invalid episode data elements that can be selected for the A4-2 report
+are:</p>
+<ul class="simple">
+<li>Episode Referral Date</li>
+<li>Referrer Profession</li>
+<li>Referrer Organisation Type</li>
+<li>Suicide Referral Flag</li>
+<li>GP Mental Health Treatment Plan Flag</li>
+<li>Homelessness flag</li>
+<li>Area of Usual Residence, Postcode</li>
+<li>Labour Force Status</li>
+<li>Employment Participation</li>
+<li>Source of Cash Income</li>
+<li>Health Care Card</li>
+<li>NDIS Participant</li>
+<li>Marital Status</li>
+<li>Principal Diagnosis</li>
+<li>Additional Diagnosis</li>
+</ul>
+</div>
 </div>
 <div class="section" id="a5-data-quality-report-missing-and-invalid-service-contact-data">
 <span id="category-a5"></span><h4>A5 - Data quality report - Missing and invalid service contact data<a class="headerlink" href="#a5-data-quality-report-missing-and-invalid-service-contact-data" title="Permalink to this headline">¶</a></h4>
-<p>This report will soon be implemented.</p>
+<p>The A5 reports are designed to identify Service Contact data elements with
+significant amounts of missing or invalid data.</p>
+<p>Two formats of this report are offered to users:</p>
+<ul class="simple">
+<li><a class="reference internal" href="#category-a5-1"><span class="std std-ref">A5-1 - Data quality report - Missing and invalid service contact data - Summary</span></a></li>
+<li><a class="reference internal" href="#category-a5-2"><span class="std std-ref">A5-2 - Data quality report - Missing and invalid service contact data - Detail</span></a></li>
+</ul>
+<p>Some service contact data elements are not included in the options list as there
+is no missing value provided in the specification and the system doesn&#8217;t allow
+blank values to be submitted:</p>
+<ul class="simple">
+<li>Service Contact Date</li>
+<li>Service Contact Final</li>
+<li>Service Contact Type</li>
+<li>Service Contact Modality</li>
+<li>Service Contact Duration</li>
+<li>Service Contact Copayment</li>
+<li>Service Contact Client Participation Indicator</li>
+<li>Service Contact No Show</li>
+</ul>
+<div class="section" id="a5-1-data-quality-report-missing-and-invalid-service-contact-data-summary">
+<span id="category-a5-1"></span><h5>A5-1 - Data quality report - Missing and invalid service contact data - Summary<a class="headerlink" href="#a5-1-data-quality-report-missing-and-invalid-service-contact-data-summary" title="Permalink to this headline">¶</a></h5>
+<p>Summary format provides a simple listing of missing/invalid data rates
+for relevant Service Contact data elements, aggregated across the
+organisation, region or nationally.</p>
+</div>
+<div class="section" id="a5-2-data-quality-report-missing-and-invalid-service-contact-data-detail">
+<span id="category-a5-2"></span><h5>A5-2 - Data quality report - Missing and invalid service contact data - Detail<a class="headerlink" href="#a5-2-data-quality-report-missing-and-invalid-service-contact-data-detail" title="Permalink to this headline">¶</a></h5>
+<p>Detailed format presents missing/invalid Service Contact data rates at
+the entity level (PHN and Provider Organisation). For this version, the user
+selects the Service Contact data to be targeted for the missing/invalid data
+report from a list of possible options.</p>
+<p>Missing/invalid episode data elements that can be selected for the A5-2 report
+are:</p>
+<ul class="simple">
+<li>Service Contact Interpreter Used</li>
+<li>Service Contact Postcode</li>
+<li>Service Contact Participants</li>
+<li>Service Contact Venue</li>
+</ul>
+</div>
 </div>
 <div class="section" id="a6-data-quality-report-missing-and-invalid-practitioner-data">
 <span id="category-a6"></span><h4>A6 - Data quality report - Missing and invalid practitioner data<a class="headerlink" href="#a6-data-quality-report-missing-and-invalid-practitioner-data" title="Permalink to this headline">¶</a></h4>
-<p>This report will soon be implemented.</p>
+<p>The A6 reports are designed to identify Practitioner data elements with
+significant amounts of missing data.</p>
+<p>Two formats of this report are offered to users:</p>
+<ul class="simple">
+<li><a class="reference internal" href="#category-a6-1"><span class="std std-ref">A6-1 - Data quality report - Missing and invalid practitioner data - Summary</span></a></li>
+<li><a class="reference internal" href="#category-a6-2"><span class="std std-ref">A6-2 - Data quality report - Missing and invalid practitioner data - Detail</span></a></li>
+</ul>
+<p>Key specifications:</p>
+<ul class="simple">
+<li>Report is confined only to ‘active practitioners’. A Practitioner is defined as
+‘active’ if it they have recorded one or more Service Contacts in the period.</li>
+</ul>
+<div class="section" id="a6-1-data-quality-report-missing-and-invalid-practitioner-data-summary">
+<span id="category-a6-1"></span><h5>A6-1 - Data quality report - Missing and invalid practitioner data - Summary<a class="headerlink" href="#a6-1-data-quality-report-missing-and-invalid-practitioner-data-summary" title="Permalink to this headline">¶</a></h5>
+<p>Summary format provides a simple listing of missing/invalid data rates
+for relevant data elements, aggregated across the organisation, region or
+nationally.</p>
+</div>
+<div class="section" id="a6-2-data-quality-report-missing-and-invalid-practitioner-data-detail">
+<span id="category-a6-2"></span><h5>A6-2 - Data quality report - Missing and invalid practitioner data - Detail<a class="headerlink" href="#a6-2-data-quality-report-missing-and-invalid-practitioner-data-detail" title="Permalink to this headline">¶</a></h5>
+<p>Detailed format presents missing/invalid data rates at the entity level
+(PHN and Provider Organisation). For this version, the user selects the
+Practitioner data to be targeted for the missing/invalid data report from a list
+of options.</p>
+<p>Missing/invalid episode data elements that can be selected for the A6-2
+report are:</p>
+<ul class="simple">
+<li>Practitioner Category</li>
+<li>ATSI Cultural Training Flag</li>
+<li>Practitioner Year of Birth</li>
+<li>Gender</li>
+<li>Aboriginal and Torres Strait Islander Status</li>
+</ul>
+</div>
 </div>
 <div class="section" id="a7-open-episodes-with-no-service-contact-activity-for-90-days">
 <span id="category-a7"></span><h4>A7 - Open episodes with no service contact activity for 90- days<a class="headerlink" href="#a7-open-episodes-with-no-service-contact-activity-for-90-days" title="Permalink to this headline">¶</a></h4>
