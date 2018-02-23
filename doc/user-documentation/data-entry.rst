@@ -382,6 +382,34 @@ If you receive an error message, the data will need to be corrected before the
 record is saved and added to the PMHC MDS.
 See Validation Rules - :ref:`episode-current-validations`
 
+.. _closing-episode:
+
+Closing a Client's Episode
+--------------------------
+
+You can close a Client's Episode details through the :ref:`view-client-details`
+available on the Data Entry tab, by following these steps:
+
+1. Once :ref:`view-episodes`.
+2. From the Client's Episode table, click the Episode Key of the open episode.
+3. Click Edit Details tab.
+4. Update the Client's Episode details, by entering an 'End Date' and 'Completion Status'. (Specification :ref:`Episode Data Elements <episode-data-elements>`)
+
+.. figure:: screen-shots/client-episodes-edit.png
+   :alt: Client Episodes Edit Details
+
+5. Click the blue 'Save' button. (If you decide not to save changes, you can simply navigate away from this screen)
+
+You will receive confirmation that the Client's Episode details have been saved,
+and it will now be displaying these new details in the Episode View Details tab.
+
+        .. figure:: screen-shots/client-data-saved.png
+           :alt: Client Episode Data Saved Successfully
+
+If you receive an error message, the data will need to be corrected before the
+record is saved and added to the PMHC MDS.
+See Validation Rules - Episode :ref:`episode-current-validations`
+
 .. _delete-episode:
 
 Deleting an Episode
