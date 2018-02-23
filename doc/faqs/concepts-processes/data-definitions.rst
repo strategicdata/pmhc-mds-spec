@@ -152,6 +152,71 @@ The Department considers it essential for the data collection to have a reliable
 approach to identifying consumers who are economically challenged.
 
 
+.. _episode-one-at-a-time:
+
+One episode of care at a time: We have clients who are receiving treatment at multiple programs and require multiple episodes with different 'Principal Focus of Treatment Plan'. The PMHC MDS only allows one episode at a time for each client, defined at the level of the provider organisation. What do we do?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The 'one episode at a time per organisation' rule is fundamental to the concepts
+underpinning the MDS. This rule has important implications, and is based on the
+long standing principle that, in bringing together all the various services used
+by an individual during their healthcare for a particular illness, the episode
+of care should be bundled to the highest level possible. This allows for a more
+accurate approach to understanding costs and outcomes at the patient level. A
+single episode of care may entail multiple service types, and service events
+which in some systems are bundled together under the concept of ‘service
+episodes’. This situation is common in mental health care; for example where a
+consumer is simultaneously under the care of a community mental health team and
+a separate day program. Typically, the patient is registered at both centres and
+contacts are separately recorded by each service or team. But it’s important to
+not confuse such ‘service episodes’, which are based on service characteristics,
+with the episode of care concept, which is patient based.
+
+So the short response to the query is that no, the 'one episode of care at a
+time per organisation rule' should not be breached. The fact that the person is
+receiving multiple service types during the course of their episode is not a
+reason to break their care down into multiple episodes. Doing so would have
+consequences of subjecting the person to two sets of data collection and outcome
+measures (noting outcomes are needed for each episode).
+
+It is essential the following aspects of the way episode types (as denoted by
+the Principal Focus of Treatment Plan) are conceptualised:
+
+1. A single episode may include heterogenous services, as outlined above.
+2. The mix of services provided during a single episode is captured by the
+   Service Type data item - collected at each Service Contact.
+3. Classifying the episode type by Principal Focus of Treatment Plan requires
+   a judgement to be made about the main focus of the services to be delivered
+   to the client for the current episode of care following initial assessment.
+   It is important to note that can be modified at a later stage if the initial
+   judgement made proved to be incorrect.
+4. Episodes are not defined by the source of funding.
+
+Further detail on the concepts underpinning the PMHC MDS are outlined in the
+Overview paper at https://www.pmhc-mds.com/doc/pmhc-mds-overview.pdf
+
+Several PHN organisations have also queried whether a new and separate episode
+can be opened when a client is shifted to a significantly different type of care
+from that originally envisaged. The PMHC does not require this, but also the
+PMHC does not prevent it. It’s a clinical decision that can be made - i.e. a
+new episode can be opened (after the previous one is closed) when there is a
+significant shift in the type of care provided e.g., the client begins with a
+Low Intensity episode, because it was envisaged that the episode would be
+relatively brief/inexpensive, but in the course of treatment it became clear
+that the client had complex mental health issues that would warrant higher
+intensity services and over a more prolonged period. In such instances, the
+original episode can be closed, and a new one opened. However, the department
+does not believe this to be the best alternative as it artificially segments a
+continuous course of treatment into multiple episodes.
+
+One innovation suggested by some PHNs is to establish a mechanism in the MDS
+collection to identify where an episode is closed to allow the person to be
+stepped up, or down, to a lower level or care. Specifically, the suggestion
+has been made that a new coding option should be added to the Episode
+Completion Status field to identify episodes that end due to a change in the
+type of care. The department will consider this as part of any changes made
+to the MDS in the future.
+
 ...
 
 Service Contact
