@@ -251,7 +251,7 @@ referred elsewhere due to being assessed as not suitable, or requires an alterna
 service, a new code for Episode- Completion Status has been added
 (‘Episode closed administratively - client referred elsewhere’).
 
-.. _data-entry-episode-uncommenced:
+.. _data-entry-episode-uncommenced-faq:
 
 Why is an episode showing as uncommenced?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -264,7 +264,7 @@ a start date and the system will reported it as 'Uncommenced'.
 
 Refer to :ref:`key-concepts-episode`.
 
-.. _data-entry-episode-closed:
+.. _data-entry-episode-closed-faq:
 
 How can I close an episode?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~

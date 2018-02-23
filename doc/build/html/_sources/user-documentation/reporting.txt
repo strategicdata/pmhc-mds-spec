@@ -74,6 +74,15 @@ The reports provide summary data on:
 * Volumes ('active clients'/'active episodes'/contacts)
 * Data quality in terms of compliance with key business rules
 
+Available A category reports are:
+
+* :ref:`category-a1`
+* :ref:`category-a2`
+* :ref:`category-a3`
+* :ref:`category-a4`
+* :ref:`category-a5`
+* :ref:`category-a6`
+
 **Note:** A subset of these reports is included in :ref:`category-e` without
 any filtering for active clients or episodes to enable organisational data
 managers to monitor 'raw' upload and data supply to the MDS.
@@ -122,28 +131,225 @@ Key specifications:
 A3 - Data quality report - Missing and invalid client data
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-This report will soon be implemented.
+The A3 reports are designed to identify Client data elements with significant
+amounts of missing or invalid data.
+
+Two formats of this report are offered to users:
+
+* :ref:`category-a3-1`
+* :ref:`category-a3-2`
+
+Key specifications:
+
+* Clients to be counted uniquely regardless of number of episodes. To be
+  counted, a client must have had one or more Service Contacts in the
+  reporting period i.e. ‘Active Clients’.
+* Missing/invalid data defined as: Data elements with null or invalid values, or
+  where ‘system generated’ codes have been reported to denote ‘not stated’,
+  ‘inadequately defined’ or ‘missing’.
+
+.. _category-a3-1:
+
+A3-1 - Data quality report - Missing and invalid client data - Summary
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Summary format provides a simple listing of missing/invalid data rates for
+relevant Client data elements, aggregated across the organisation, region or
+nationally.
+
+.. _category-a3-2:
+
+A3-2 - Data quality report - Missing and invalid client data - Detail
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Detailed format presents missing/invalid data rates at the entity level (PHN
+and Provider Organisation). For this version, the user selects the specific
+Client data element to be targeted for the report from a list of possible options.
+
+Missing/invalid client data elements that can be selected for the A3-2
+report are:
+
+* Date of Birth
+* Date of Birth Flag
+* Gender
+* ATSI status
+* Country of Birth
+* Main Language Spoken at Home
+* Proficiency in Spoken English
 
 .. _category-a4:
 
-A4 - Data quality report - Missing and invalid episode data
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+A4- Data quality report - Missing and invalid episode data
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-This report will soon be implemented.
+The A4 reports are designed to identify data Episode elements with significant
+amounts of missing or invalid data.
+
+Two formats of this report are offered to users:
+
+* :ref:`category-a4-1`
+* :ref:`category-a4-2`
+
+Some Episode data elements are not included in the options list as they are
+allowed to have a blank value (eg. Episode End Date) or there
+is no missing value provided in the specification and the system doesn't allow
+blank values to be submitted (eg. Principal Focus of Treatment Plan):
+
+* Client Consent to Anonymised Data
+* Episode End Date
+* Episode Completion Status
+* Episode Start Date
+* Medication - Antipsychotics (N05A)
+* Medication - Anxiolytics (N05B)
+* Medication - Hypnotics and sedatives (N05C)
+* Medication - Antidepressants (N06A)
+* Medication - Psychostimulants and nootropics (N06B)
+* Principal Focus of Treatment Plan
+
+Key specifications:
+
+* Report counts only ‘active episodes’. An Episode is defined as ‘active’ if it
+  has one or more Service Contacts recorded in the period.
+* Missing/invalid data defined as: Episode data elements with null or invalid
+  values, or where ‘system generated’ codes have been reported to denote
+  ‘not stated’, ‘inadequately defined’ or ‘missing’.
+
+.. _category-a4-1:
+
+A4-1 - Data quality report - Missing and invalid episode data - Summary
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Summary format provides a simple listing of missing/invalid data rates
+for relevant Episode data elements, aggregated across the organisation,
+region or nationally.
+
+.. _category-a4-2:
+
+A4-2 - Data quality report - Missing and invalid episode data - Detail
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Detailed format presents missing/invalid Episode data rates at the
+entity level (PHN and Provider Organisation). For this version, the user selects
+the specific Episode data element to be targeted for the missing/invalid data
+report from a list of possible options.
+
+Missing/invalid episode data elements that can be selected for the A4-2 report
+are:
+
+* Episode Referral Date
+* Referrer Profession
+* Referrer Organisation Type
+* Suicide Referral Flag
+* GP Mental Health Treatment Plan Flag
+* Homelessness flag
+* Area of Usual Residence, Postcode
+* Labour Force Status
+* Employment Participation
+* Source of Cash Income
+* Health Care Card
+* NDIS Participant
+* Marital Status
+* Principal Diagnosis
+* Additional Diagnosis
 
 .. _category-a5:
 
 A5 - Data quality report - Missing and invalid service contact data
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-This report will soon be implemented.
+The A5 reports are designed to identify Service Contact data elements with
+significant amounts of missing or invalid data.
+
+Two formats of this report are offered to users:
+
+* :ref:`category-a5-1`
+* :ref:`category-a5-2`
+
+Some service contact data elements are not included in the options list as there
+is no missing value provided in the specification and the system doesn't allow
+blank values to be submitted:
+
+* Service Contact Date
+* Service Contact Final
+* Service Contact Type
+* Service Contact Modality
+* Service Contact Duration
+* Service Contact Copayment
+* Service Contact Client Participation Indicator
+* Service Contact No Show
+
+.. _category-a5-1:
+
+A5-1 - Data quality report - Missing and invalid service contact data - Summary
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Summary format provides a simple listing of missing/invalid data rates
+for relevant Service Contact data elements, aggregated across the
+organisation, region or nationally.
+
+.. _category-a5-2:
+
+A5-2 - Data quality report - Missing and invalid service contact data - Detail
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Detailed format presents missing/invalid Service Contact data rates at
+the entity level (PHN and Provider Organisation). For this version, the user
+selects the Service Contact data to be targeted for the missing/invalid data
+report from a list of possible options.
+
+Missing/invalid episode data elements that can be selected for the A5-2 report
+are:
+
+* Service Contact Interpreter Used
+* Service Contact Postcode
+* Service Contact Participants
+* Service Contact Venue
 
 .. _category-a6:
 
 A6 - Data quality report - Missing and invalid practitioner data
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-This report will soon be implemented.
+The A6 reports are designed to identify Practitioner data elements with
+significant amounts of missing data.
+
+Two formats of this report are offered to users:
+
+* :ref:`category-a6-1`
+* :ref:`category-a6-2`
+
+Key specifications:
+
+* Report is confined only to ‘active practitioners’. A Practitioner is defined as
+  ‘active’ if it they have recorded one or more Service Contacts in the period.
+
+.. _category-a6-1:
+
+A6-1 - Data quality report - Missing and invalid practitioner data - Summary
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Summary format provides a simple listing of missing/invalid data rates
+for relevant data elements, aggregated across the organisation, region or
+nationally.
+
+.. _category-a6-2:
+
+A6-2 - Data quality report - Missing and invalid practitioner data - Detail
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Detailed format presents missing/invalid data rates at the entity level
+(PHN and Provider Organisation). For this version, the user selects the
+Practitioner data to be targeted for the missing/invalid data report from a list
+of options.
+
+Missing/invalid episode data elements that can be selected for the A6-2
+report are:
+
+* Practitioner Category
+* ATSI Cultural Training Flag
+* Practitioner Year of Birth
+* Gender
+* Aboriginal and Torres Strait Islander Status
 
 .. _category-a7:
 
