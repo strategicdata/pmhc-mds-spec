@@ -86,8 +86,7 @@ that for every row in the episode file/worksheet, there should be a
 corresponding client in the client file/worksheet.
 
 It also means that for every episode included in an upload file, you must include
-ALL service contacts and measures for that episode. Any service contacts and measures
-that are not included will be removed from the PMHC MDS.
+ALL service contacts and measures for that episode.
 
 
 
