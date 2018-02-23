@@ -3,6 +3,11 @@
 User Guide Change log
 =====================
 
+23/2/2018
+---------
+
+* Added :ref:`closing-episode`
+
 19/1/2018
 ---------
 
