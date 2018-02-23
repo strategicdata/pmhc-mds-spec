@@ -1,3 +1,5 @@
+.. _cheching-data-FAQs:
+
 Checking data
 ^^^^^^^^^^^^^
 

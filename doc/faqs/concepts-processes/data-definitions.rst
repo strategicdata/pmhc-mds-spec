@@ -49,8 +49,8 @@ credentialing or recognition as a qualified mental health professional and inclu
 * Psychiatrists
 * Registered Psychologists
 * Clinical Psychologists
-* Mental Health Nurses;
-* Occupational Therapists;
+* Mental Health Nurses
+* Occupational Therapists
 * Social Workers
 * Aboriginal and Torres Strait Islander health workers.
 
