@@ -7,6 +7,7 @@ User Guide Change log
 ---------
 
 * Added reports A3-A6 to :ref:`category-a`
+* Added :ref:`closing-episode`
 
 19/1/2018
 ---------
