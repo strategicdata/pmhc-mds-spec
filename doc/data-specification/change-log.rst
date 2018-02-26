@@ -3,6 +3,13 @@
 Data Specification Change log
 =============================
 
+23/02/2018
+----------
+
+* :ref:`upload_specification`
+
+  * Updated :ref:`file-format`
+
 19/1/2018 - Version 1.0.12
 --------------------------
 
@@ -55,7 +62,7 @@ Data Specification Change log
 
   * Updated :ref:`sdq-current-validations` to add specify that the
     measure date must not be before 1 January 2016.
-       
+
 29/11/2017
 ----------
 
