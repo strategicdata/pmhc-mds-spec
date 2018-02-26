@@ -3,6 +3,15 @@
 Data Specification Change log
 =============================
 
+??/2/2018
+---------
+
+* :ref:`validation-rules`
+
+  * Updated :ref:`client-current-validations` to remove  the age based
+    validations for :ref:`dfn-prof_english`. These validations will be replaced
+    with data quality reports.
+
 19/1/2018 - Version 1.0.12
 --------------------------
 
@@ -55,7 +64,7 @@ Data Specification Change log
 
   * Updated :ref:`sdq-current-validations` to add specify that the
     measure date must not be before 1 January 2016.
-       
+
 29/11/2017
 ----------
 
