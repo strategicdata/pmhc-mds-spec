@@ -71,6 +71,7 @@
       "format": "dMMyyyy",
       "minimum": "2014-01-01"
     },
+    "schema:dateMissingUnknown": "9999-09-09",
     "required": true
   },{
     "name": "service_contact_type",

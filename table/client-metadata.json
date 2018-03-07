@@ -64,6 +64,7 @@
       "minimum": "1900-01-01"
     },
     "required": true,
+    "schema:dateMissingUnknown": "9999-09-09",
     "schema:formOrder": "3"
   },{
     "name": "est_date_of_birth",
