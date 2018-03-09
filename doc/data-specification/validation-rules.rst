@@ -33,18 +33,7 @@ The domain of individual items is defined in :ref:`record-formats`.
 2. Client
 ~~~~~~~~~
 
-  1. :ref:`dfn-prof_english` must only be set to response '0: Not applicable (persons under 5
-     years of age or who speak only English)' where
-
-     * :ref:`dfn-main_lang_at_home` is '1201: English', or
-     * :ref:`dfn-est_date_of_birth` is  '1: Date of birth is accurate' and the
-       person is under 5, or
-     * :ref:`dfn-est_date_of_birth` is '2: Date of birth is an estimate' and the
-       person is under 6, or
-     * :ref:`dfn-est_date_of_birth` is '8: Date of birth is a dummy', or
-     * :ref:`dfn-est_date_of_birth` is '9: Accuracy of stated date of birth is not known'
-
-  2. :ref:`dfn-date_of_birth` must not be before 1 January 1900
+  1. :ref:`dfn-date_of_birth` must not be before 1 January 1900
 
 .. _episode-current-validations:
 
