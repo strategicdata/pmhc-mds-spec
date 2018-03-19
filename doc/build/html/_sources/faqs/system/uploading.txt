@@ -128,7 +128,7 @@ Will valid data be accepted if there are errors in the file?
 For example, if we upload 200 lines of service contacts, and there are
 validation errors in 10 lines - will 190 lines be accepted?
 
-All files and records in an upload have to validate before any data is
+No. All files and records in an upload have to validate before any data is
 accepted.
 
 .. _changing_validation_rules:
