@@ -113,7 +113,8 @@ event that you no longer have access to your primary email address.
 Forgotten or Expired Password
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Passwords have to be changed every 3 months. If you do not change your
+As required by the Australian Government's Protective Security Policy Framework
+passwords have to be changed every 3 months. If you do not change your
 password it will expire and you will not be able to login to the system
 without resetting your password.
 
@@ -129,8 +130,9 @@ If you have forgotten your password or it has expired:
    for the PMHC MDS.
 4. Click the 'I'm not a robot' checkbox.
 5. Click 'Submit'.
-6. An email with further instructions will be sent to the email address the
-   PMHC MDS has on file. Additionally, if you have set a backup email, then
+6. An email with further instructions will be sent sent from
+   noreply@strategicdata.com.au to the email address the PMHC MDS has on file
+   for the user. Additionally, if you have set a backup email, then
    an email will also have been sent there. An SMS with a verification code
    will have been sent to the mobile phone number we have on record.
 
