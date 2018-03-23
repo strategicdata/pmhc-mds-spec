@@ -8,7 +8,7 @@ Data Specification Change log
 
 * :ref:`upload_specification`
 
-  * Updated :ref:`file-format` removing ''
+  * Updated :ref:`file-format` removing 'Any service contacts and measures that are not included will be removed from the PMHC MDS'
 
 * :ref:`validation-rules`
 
