@@ -3,14 +3,22 @@
 Data Specification Change log
 =============================
 
-??/2/2018
+13/3/2018
 ---------
+
+* :ref:`upload_specification`
+
+  * Updated :ref:`file-format` to specify that '... you should include ALL
+    service contacts and measures for that episode' and removing the text
+    'Any service contacts and measures that are not included will be removed
+    from the PMHC MDS'
 
 * :ref:`validation-rules`
 
-  * Updated :ref:`client-current-validations` to remove  the age based
+  * Updated :ref:`client-current-validations` to remove the age based
     validations for :ref:`dfn-prof_english`. These validations will be replaced
     with data quality reports.
+
 
 19/1/2018 - Version 1.0.12
 --------------------------
