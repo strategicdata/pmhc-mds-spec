@@ -3,6 +3,11 @@
 Passwords
 =========
 
+As required by the Australian Government's Protective Security Policy Framework
+passwords have to be changed every 3 months. If you do not change your password
+it will expire and you will not be able to login to the system without resetting
+your password.
+
 Passwords are to be:
 
 * 13 or more characters with no complexity requirements, or
@@ -16,8 +21,6 @@ Passwords are to be:
 * changed at least every 90 days
 * changed by users no more than once a day
 * not reused from any of the preceding eight changes
-
-As required by the Australian Government's Protective Security Policy Framework passwords
 
 Please note: Users will be reminded via an email sent from noreply@strategicdata.com.au
 14 days prior to when their password is due to expire, and on PMHC MDS login 7 days prior
