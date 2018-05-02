@@ -1,4 +1,5 @@
 id,description
+0,"No contact took place"
 1,"Assessment"
 2,"Structured psychological intervention"
 3,"Other psychological intervention"
@@ -7,3 +8,4 @@ id,description
 6,"Child or youth specific assistance NEC"
 7,"Suicide prevention specific assistance NEC"
 8,"Cultural specific assistance NEC"
+98,"ATAPS"

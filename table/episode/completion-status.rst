@@ -1,9 +1,9 @@
 In order to use code 1 (Episode closed - treatment concluded) the client must have at least one service contact. All other codes may be applicable even when the client has no service contacts.
 
-Blank - Episode open
+0 or Blank - Episode open
   The client still requires treatment and further service contacts are
   required.
-  
+
 1 - Episode closed - treatment concluded
   No further service contacts are planned as the client no longer requires
   treatment.

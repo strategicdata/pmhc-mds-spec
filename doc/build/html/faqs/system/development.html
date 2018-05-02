@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Development of the PMHC Minimum Data Set &mdash; PMHC MDS Version 1.0.6 documentation</title>
+  <title>Development of the PMHC Minimum Data Set &mdash; PMHC MDS Version 1.0.12 documentation</title>
   
 
   
@@ -32,7 +32,7 @@
   
 
   
-    <link rel="top" title="PMHC MDS Version 1.0.6 documentation" href="../../index.html"/>
+    <link rel="top" title="PMHC MDS Version 1.0.12 documentation" href="../../index.html"/>
         <link rel="up" title="System Frequently Asked Questions" href="index.html"/>
         <link rel="next" title="PMHC mailing list" href="mailing-list.html"/>
         <link rel="prev" title="Storing data relating to the minimum dataset system" href="storing.html"/> 
@@ -63,7 +63,7 @@
             
             
               <div class="version">
-                Version 1.0.6
+                Version 1.0.12
               </div>
             
           
@@ -156,34 +156,60 @@
            <div itemprop="articleBody">
             
   <div class="section" id="development-of-the-pmhc-minimum-data-set">
-<h1>Development of the PMHC Minimum Data Set<a class="headerlink" href="#development-of-the-pmhc-minimum-data-set" title="Permalink to this headline">¶</a></h1>
+<span id="pmhc-mds-development"></span><h1>Development of the PMHC Minimum Data Set<a class="headerlink" href="#development-of-the-pmhc-minimum-data-set" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="stage-two">
 <span id="id1"></span><h2>Stage Two<a class="headerlink" href="#stage-two" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="when-is-stage-two-of-development-going-to-be-implemented">
 <span id="stage-two-date-faq"></span><h3>When is Stage Two of development going to be implemented?<a class="headerlink" href="#when-is-stage-two-of-development-going-to-be-implemented" title="Permalink to this headline">¶</a></h3>
-<p>As the Department has previously announced in the Timelines section 3.6 on page 9 of the <a class="reference external" href="https://www.pmhc-mds.com/doc/pmhc-mds-overview-20160916.pdf">overview paper</a>
-which outlines the development for the approach taken in the design of the PMHC MDS
-was scheduled for mid 2017.</p>
-<p>Stage Two development is in the very early stages of discussions and decisions on
-the specifications of each feature will determine the exact development timeline. An updated approximate schedule has been highlighted below:</p>
+<p>Stage Two development has been split into several components as outlined below:</p>
 <ul class="simple">
-<li>Data Entry Interface (Mid 2017)</li>
-<li>Basic Summary Reports (Mid 2017)</li>
-<li>Comprehensive Reports (Late 2017)</li>
-<li>Master Client Index (End 2017)</li>
+<li><a class="reference internal" href="#dev-data-entry-faq"><span class="std std-ref">Data Entry Interface</span></a></li>
+<li><a class="reference internal" href="#dev-reports-faq"><span class="std std-ref">Reporting</span></a></li>
 </ul>
-<p>Once more information is available, the Department will circulate more specific timelines.</p>
+<p>Regularly check the announcements on the <a class="reference external" href="https://pmhc-mds.net/#/">PMHC MDS home page</a> to keep informed of developement releases.</p>
+</div>
+<div class="section" id="data-entry-interface">
+<span id="dev-data-entry-faq"></span><h3>Data Entry Interface<a class="headerlink" href="#data-entry-interface" title="Permalink to this headline">¶</a></h3>
+<p>In order to get Data Entry functionality to PHNs as soon as possible, the development of this feature was split into several components.</p>
+<ul class="simple">
+<li><strong>Viewing Client Data</strong>, was released in <a class="reference external" href="https://www.pmhc-mds.com/communications/#/2017/05/18/Update-to-the-PMHC-MDS-v0-9-2-and-Data-Specifications-v1-0-6/&quot;">v0.9.2</a> and Client Search was further refined in <a class="reference external" href="https://www.pmhc-mds.com/communications/#/2017/05/26/Update-to-the-PMHC-MDS-v0-10-0/">v0.10.0</a>.</li>
+<li><strong>Practitioners Data Entry Interface</strong>, was released in <a class="reference external" href="https://www.pmhc-mds.com/communications/#/2017/06/14/Update-to-the-PMHC-MDS-v0-11-1-and-Data-Specifications-v1-0-7/">v0.11.1</a>.</li>
+<li><strong>Client, Episode and Service Contact Data Entry Interface</strong>, was released in <a class="reference external" href="https://www.pmhc-mds.com/communications/#/2017/06/30/Update-to-the-PMHC-MDS-v0-12-0-and-Data-Specifications-v1-0-9/">v0.12.0</a>.</li>
+<li><strong>K10+ and K5 Outcome Collection Occasion Data Entry Interface</strong>, was released in <a class="reference external" href="https://www.pmhc-mds.com/communications/#/2017/07/20/Update-to-the-PMHC-MDS-v-0-13-2/">v0.13.2</a>.</li>
+<li>Enhanced features to the Data Entry Interface, was released in <a class="reference external" href="https://www.pmhc-mds.com/communications/#/2017/08/25/Update-to-the-PMHC-MDS-v-0-15-0/">v0.15.0</a>. and <a class="reference external" href="https://www.pmhc-mds.com/communications/#/2017/09/26/Update-to-the-PMHC-MDS-v-0-16-1-and-Data-Specifications-v1-0-11/">v0.16.1</a>.</li>
+<li>Ability to <strong>delete records</strong>, was released in <a class="reference external" href="https://www.pmhc-mds.com/communications/#/2017/10/25/Update-to-the-PMHC-MDS-v-0-17-2/">v0.17.2</a>.</li>
+<li>Ability to <strong>edit identification keys</strong>, was released in <a class="reference external" href="https://www.pmhc-mds.com/communications/">v0.18.0</a>.</li>
+</ul>
+<p>The remaining features will be rolled out iteratively over the following weeks, and will be:</p>
+<ul class="simple">
+<li>SDQ Data Entry Interface (Currently development is on hold until the Department finalises licensing requirements)</li>
+<li>Develop pre-filled fields for interrelated field specifications</li>
+<li>Ability to merge duplicate client records</li>
+<li>An Online K5, K10+, and SDQ Outcome Measures Self-Service Interface</li>
+</ul>
 <p>Regularly check the announcements on the <a class="reference external" href="https://pmhc-mds.net/#/">PMHC MDS home page</a> to keep informed.</p>
 </div>
-<div class="section" id="what-features-will-be-included-in-stage-two-development">
-<span id="stage-two-features-faq"></span><h3>What features will be included in Stage Two development?<a class="headerlink" href="#what-features-will-be-included-in-stage-two-development" title="Permalink to this headline">¶</a></h3>
-<p>Stage Two will feature:</p>
+<div class="section" id="reporting">
+<span id="dev-reports-faq"></span><h3>Reporting<a class="headerlink" href="#reporting" title="Permalink to this headline">¶</a></h3>
+<p>The <a class="reference internal" href="../../user-documentation/reporting.html#system-report-types"><span class="std std-ref">Types of System Reports</span></a> that are currently available are:</p>
 <ul class="simple">
-<li><strong>Data Entry Interface</strong> - see Questions about <a class="reference internal" href="data-entry.html#data-entry-faqs"><span class="std std-ref">Entering data in the PMHC Minimum Data Set</span></a></li>
-<li><strong>Comprehensive Reports</strong> - see <a class="reference internal" href="../concepts-processes/reports.html#reports-faqs"><span class="std std-ref">Questions about Standard Reports</span></a></li>
-<li><strong>Master Client Index</strong> - see <a class="reference internal" href="../concepts-processes/identifiers.html#identifier-and-key-faqs"><span class="std std-ref">Questions about Unique Identifiers and &#8216;Keys&#8217;</span></a></li>
+<li><a class="reference internal" href="../../user-documentation/reporting.html#category-e"><span class="std std-ref">Category E: Reports for data managers to monitor data supply</span></a>, was released in <a class="reference external" href="https://www.pmhc-mds.com/communications/#/2017/07/28/Update-to-the-PMHC-MDS-v-0-14-0/">v0.14.0</a>.</li>
+<li>The start of the <a class="reference internal" href="../../user-documentation/reporting.html#category-a"><span class="std std-ref">Category A: Monitoring progress of MDS implementation</span></a> reports, was was released in <a class="reference external" href="https://www.pmhc-mds.com/communications/#/2017/12/12/Update-to-the-PMHC-MDS-v-0-20-0/">v0.20.0</a>.</li>
 </ul>
+<p>The following reports will be rolled out iteratively over the following weeks:</p>
+<ul class="simple">
+<li>Category A reports: Monitoring progress of MDS implementation</li>
+<li>Category B reports: Monitoring overall service delivery</li>
+<li>Category C reports: Monitoring implementation of stepped care</li>
+<li>Category D reports: Key Performance Indicators</li>
+</ul>
+<p>Category A reports will be implemented next.</p>
 <p>Regularly check the announcements on the <a class="reference external" href="https://pmhc-mds.net/#/">PMHC MDS home page</a> to keep informed.</p>
+</div>
+<div class="section" id="master-client-index">
+<span id="dev-mci-faq"></span><h3>Master Client Index<a class="headerlink" href="#master-client-index" title="Permalink to this headline">¶</a></h3>
+<p>Current development for the Master Client Index is on hold.</p>
+<p>Refer to the recent Department announcement on the <a class="reference external" href="https://www.pmhc-mds.com/communications/#/2017/06/21/FOR-INFORMATION-and-ACTION-PHN-CEO-Primary-Mental-Health-Care-Minimum-Data-Set-Update/">INFORMATION and ACTION: PHN CEO - Primary Mental Health Care Minimum Data Set Update | June 21, 2017</a>.</p>
 </div>
 </div>
 </div>
@@ -207,7 +233,7 @@ the specifications of each feature will determine the exact development timeline
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017, Australian Government - Department of Health.
+        &copy; Copyright 2018, Australian Government - Department of Health.
 
     </p>
   </div>
@@ -229,7 +255,7 @@ the specifications of each feature will determine the exact development timeline
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'Version 1.0.6',
+            VERSION:'Version 1.0.12',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Upload specification &mdash; PMHC MDS Version 1.0.6 documentation</title>
+  <title>Upload specification &mdash; PMHC MDS Version 1.0.12 documentation</title>
   
 
   
@@ -32,7 +32,7 @@
   
 
   
-    <link rel="top" title="PMHC MDS Version 1.0.6 documentation" href="../index.html"/>
+    <link rel="top" title="PMHC MDS Version 1.0.12 documentation" href="../index.html"/>
         <link rel="up" title="Data Specification" href="index.html"/>
         <link rel="next" title="Data item summary" href="data-item-summary.html"/>
         <link rel="prev" title="Data model and specifications" href="data-model-and-specifications.html"/> 
@@ -63,7 +63,7 @@
             
             
               <div class="version">
-                Version 1.0.6
+                Version 1.0.12
               </div>
             
           
@@ -105,12 +105,18 @@
 <li class="toctree-l4"><a class="reference internal" href="#k5-collection-occasion-file-format">K5 Collection Occasion file format</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#sdq-collection-occasion-file-format">SDQ Collection Occasion file format</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#practitioner-file-format">Practitioner file format</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#organisation-file-format">Organisation file format</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#deleting-records">Deleting records</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="#frequently-asked-questions">Frequently Asked Questions</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="data-item-summary.html">Data item summary</a></li>
 <li class="toctree-l2"><a class="reference internal" href="form-creation.html">Using the data specification to create client forms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="validation-rules.html">Validation Rules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ataps/ataps-pmhc-mapping.html">ATAPS MDS to PMHC MDS data mapping</a></li>
+<li class="toctree-l2"><a class="reference internal" href="test-data-sets.html">Test Data Sets</a></li>
 <li class="toctree-l2"><a class="reference internal" href="change-log.html">Data Specification Change log</a></li>
 </ul>
 </li>
@@ -201,8 +207,8 @@ extension .xlsx</p>
 <div class="section" id="files-or-worksheets-to-upload">
 <span id="files-to-upload"></span><h2>Files or worksheets to upload<a class="headerlink" href="#files-or-worksheets-to-upload" title="Permalink to this headline">¶</a></h2>
 <p>The following files/worksheets can be uploaded to the PMHC MDS:</p>
-<table border="1" class="docutils" id="id4">
-<caption><span class="caption-number">Table 9 </span><span class="caption-text">Summary of files to upload</span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
+<table border="1" class="docutils" id="id5">
+<caption><span class="caption-number">Table 9 </span><span class="caption-text">Summary of files to upload</span><a class="headerlink" href="#id5" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="25%" />
 <col width="25%" />
@@ -250,6 +256,11 @@ extension .xlsx</p>
 <tr class="row-even"><td><a class="reference internal" href="#practitioner-format"><span class="std std-ref">Practitioners</span></a></td>
 <td>practitioners.csv</td>
 <td>Practitioners</td>
+<td>Required for first upload and when practitioner information changes. Optional otherwise</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#organisation-format"><span class="std std-ref">Organisation</span></a></td>
+<td>organisations.csv</td>
+<td>Organisations</td>
 <td>Optional</td>
 </tr>
 </tbody>
@@ -305,9 +316,8 @@ the column headings. The columns must be kept in the same order.</p>
 <p>All files must be internally consistent. An example of what this means is
 that for every row in the episode file/worksheet, there should be a
 corresponding client in the client file/worksheet.</p>
-<p>It also mean that for every episode included in an upload file, you must include
-ALL service contacts and measures for that episode. Any service contacts and measures
-that are not included will be removed from the PMHC MDS.</p>
+<p>It also means that for every episode included in an upload file, you should include
+ALL service contacts and measures for that episode.</p>
 <div class="section" id="client-format">
 <span id="id3"></span><h3>Client format<a class="headerlink" href="#client-format" title="Permalink to this headline">¶</a></h3>
 <p>The client file/worksheet is required to be uploaded each time.</p>
@@ -376,8 +386,9 @@ at <a class="reference internal" href="data-model-and-specifications.html#sdq-da
 </div>
 <div class="section" id="practitioner-file-format">
 <span id="practitioner-format"></span><h3>Practitioner file format<a class="headerlink" href="#practitioner-file-format" title="Permalink to this headline">¶</a></h3>
-<p>The practitioner file/worksheet is optional. It only needs to be uploaded if
-there is a change in practitioners. There is no harm in including it in every upload.</p>
+<p>The practitioner file/worksheet is required for the first upload and if there
+is a change in practitioners. It is optional otherwise.  There is no harm in
+including it in every upload.</p>
 <p>Data elements for the practitioner upload file/worksheet are defined at
 <a class="reference internal" href="data-model-and-specifications.html#practitioner-data-elements"><span class="std std-ref">Practitioner</span></a>.</p>
 <p>Example practitioner data:</p>
@@ -386,6 +397,72 @@ there is a change in practitioners. There is no harm in including it in every up
 <li><a class="reference external" href="../_static/pmhc-upload.xlsx">XLSX practitioner worksheet</a>.</li>
 </ul>
 </div>
+<div class="section" id="organisation-file-format">
+<span id="organisation-format"></span><h3>Organisation file format<a class="headerlink" href="#organisation-file-format" title="Permalink to this headline">¶</a></h3>
+<p>This file is for PHN use only. The organisation file/worksheet is optional. Can
+be included to upload Provider Organisations in bulk or if there is a change in
+Provider Organisation details. There is no harm in including it in every upload.</p>
+<p>Data elements for the Provider Organisation upload file/worksheet are defined at
+<a class="reference internal" href="data-model-and-specifications.html#provider-organisation-data-elements"><span class="std std-ref">Provider Organisation</span></a>.</p>
+<p>Example organisation data:</p>
+<ul class="simple">
+<li><a class="reference external" href="../_static/organisations.csv">CSV organisation file</a>.</li>
+<li><a class="reference external" href="../_static/pmhc-upload.xlsx">XLSX organisation worksheet</a>.</li>
+</ul>
+</div>
+<div class="section" id="deleting-records">
+<span id="id4"></span><h3>Deleting records<a class="headerlink" href="#deleting-records" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">Records of the following type can be deleted via upload:</p>
+<ul class="simple">
+<li>Client</li>
+<li>Episode</li>
+<li>Service Contact</li>
+<li>K10+</li>
+<li>K5</li>
+<li>SDQ</li>
+<li>Practitioner</li>
+</ul>
+<p>Organisation records <em>cannot</em> be deleted via upload. Please email
+<a class="reference external" href="mailto:support&#37;&#52;&#48;pmhc-mds&#46;com">support<span>&#64;</span>pmhc-mds<span>&#46;</span>com</a> if you need to delete an organisation.</p>
+</li>
+<li><p class="first">An extra optional &#8220;delete&#8221; column can be added to each of the supported
+upload files/worksheets.</p>
+</li>
+<li><p class="first">This column should be the third column in each file, after the organisation
+path and the record&#8217;s entity key.</p>
+</li>
+<li><p class="first">To delete a record, include its organisation path and its entity key, leave
+all other fields blank and put &#8220;delete&#8221; in the &#8220;delete&#8221; column. Please note
+that case is important. &#8220;DELETE&#8221; will not be accepted.</p>
+</li>
+<li><p class="first">Marking a record as deleted will require all child records of that record also
+to be marked for deletion. For example, marking a client as deleted will
+require all episodes, service contacts and collection occasions of that
+client to be marked for deletion.</p>
+</li>
+<li><p class="first">While deletions can be included in the same upload as insertions/updates,
+we recommend that you include all deletions in a separate upload that is
+uploaded before the insertions/updates.</p>
+</li>
+</ul>
+<p>Example files showing how to delete via upload:</p>
+<ul class="simple">
+<li><a class="reference external" href="../_static/pmhc-upload-delete.xlsx">XLSX file containing all the worksheets</a>.</li>
+<li><a class="reference external" href="../_static/clients-delete.csv">CSV delete client file</a>.</li>
+<li><a class="reference external" href="../_static/episodes-delete.csv">CSV delete episode file</a>.</li>
+<li><a class="reference external" href="../_static/service-contacts-delete.csv">CSV delete service contact file</a>.</li>
+<li><a class="reference external" href="../_static/k10p-delete.csv">CSV delete K10+ file</a>.</li>
+<li><a class="reference external" href="../_static/k5-delete.csv">CSV detete K5 file</a>.</li>
+<li><a class="reference external" href="../_static/sdq-delete.csv">CSV delete SDQ file</a>.</li>
+<li><a class="reference external" href="../_static/practitioners-delete.csv">CSV delete practitioner file</a>.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="frequently-asked-questions">
+<h2>Frequently Asked Questions<a class="headerlink" href="#frequently-asked-questions" title="Permalink to this headline">¶</a></h2>
+<p>Please also refer to <a class="reference internal" href="../faqs/system/uploading.html#uploading-data-faqs"><span class="std std-ref">Uploading data</span></a> for answers to frequently
+asked questions about uploading data.</p>
 </div>
 </div>
 
@@ -408,7 +485,7 @@ there is a change in practitioners. There is no harm in including it in every up
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017, Australian Government - Department of Health.
+        &copy; Copyright 2018, Australian Government - Department of Health.
 
     </p>
   </div>
@@ -430,7 +507,7 @@ there is a change in practitioners. There is no harm in including it in every up
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'Version 1.0.6',
+            VERSION:'Version 1.0.12',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

@@ -44,11 +44,13 @@
     "schema:disambiguatingDescription": "table/collection-occasion/date.rst",
     "schema:dateCreated": "2016-06-22",
     "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
+    "schema:dateModified": "2018-01-02",
     "datatype": {
       "base": "date",
-      "format": "dMMyyyy"
+      "format": "dMMyyyy",
+      "minimum": "2016-01-01"
     },
+    "schema:dateMissingUnknown": "9999-09-09",
     "required": true
   },{
     "name": "reason_for_collection",
@@ -67,6 +69,7 @@
     "titles": [ "k5_item1", "Question 1" ],
     "dc:title": "K5 - Question 1",
     "schema:description": "In the last 4 weeks, about how often did you feel nervous?",
+    "schema:disambiguatingDescription": "table/collection-occasion/k5/Q1.rst",
     "schema:dateCreated": "2016-06-22",
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
@@ -79,6 +82,7 @@
     "titles": [ "k5_item2", "Question 2" ],
     "dc:title": "K5 - Question 2",
     "schema:description": "In the last 4 weeks, about how often did you feel without hope?",
+    "schema:disambiguatingDescription": "table/collection-occasion/k5/Q2.rst",
     "schema:dateCreated": "2016-06-22",
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
@@ -91,6 +95,7 @@
     "titles": [ "k5_item3", "Question 3" ],
     "dc:title": "K5 - Question 3",
     "schema:description": "In the last 4 weeks, about how often did you feel restless or jumpy?",
+    "schema:disambiguatingDescription": "table/collection-occasion/k5/Q3.rst",
     "schema:dateCreated": "2016-06-22",
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
@@ -103,6 +108,7 @@
     "titles": [ "k5_item4", "Question 4" ],
     "dc:title": "K5 - Question 4",
     "schema:description": "In the last 4 weeks, about how often did you feel everything was an effort?",
+    "schema:disambiguatingDescription": "table/collection-occasion/k5/Q4.rst",
     "schema:dateCreated": "2016-06-22",
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
@@ -115,6 +121,7 @@
     "titles": [ "k5_item5", "Question 5" ],
     "dc:title": "K5 - Question 5",
     "schema:description": "In the last 4 weeks, about how often did you feel so sad that nothing could cheer you up?",
+    "schema:disambiguatingDescription": "table/collection-occasion/k5/Q5.rst",
     "schema:dateCreated": "2016-06-22",
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",

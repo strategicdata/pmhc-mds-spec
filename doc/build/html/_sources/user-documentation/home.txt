@@ -1,13 +1,19 @@
+.. _home:
+
 Home
 ====
 
-To use the PMHC MDS navigate to https://pmhc-mds.net/
+To use the PMHC MDS navigate to https://pmhc-mds.net.
 
 The first page you will see is the Home page. The home page shows you the
 most recent announcements made via the :ref:`mailing-list-FAQs`.
 
 .. figure:: screen-shots/home-page.png
    :alt: PMHC MDS Home Page
+
+An announcements archive link is now available on the Home tab under the three
+most recent announcements - Click `View Archive <https://www.pmhc-mds.com/communications/>`_
+to view all the PMHC MDS announcements.
 
 .. _accepting-invitation:
 
@@ -18,20 +24,20 @@ To become a PMHC MDS user you will be sent an invitation by email and a
 verification code via SMS. In order to gain access to the PMHC MDS you
 will need to accept this invitation within 7 days, by following these steps:
 
-.. figure:: screen-shots/invitation-email.png
+.. figure:: screen-shots/account-invitation-email.png
    :alt: PMHC MDS Invitation Email
 
 1. Click on the link contained in the email. You will be shown a page where
    you will need to input the SMS you have been sent.
 
-   .. figure:: screen-shots/verify-user.png
+   .. figure:: screen-shots/account-verify-user.png
       :alt: PMHC MDS Verify User
 
 2. Input your verification code.
 3. Click 'Submit'.
 4. You will be shown a page where you need to choose a password.
 
-   .. figure:: screen-shots/activate-account.png
+   .. figure:: screen-shots/account-activate-password.png
       :alt: PMHC MDS Activate Account
 
 5. Enter your password.
@@ -52,7 +58,7 @@ Logging In
 
 After navigating to https://pmhc-mds.net/ click the 'Sign in' button to login.
 
-.. figure:: screen-shots/sign-in.png
+.. figure:: screen-shots/account-sign-in.png
    :alt: PMHC MDS Sign In
 
 You will be presented with a login form. Enter your email address or username
@@ -74,7 +80,7 @@ event that you no longer have access to your primary email address.
 1. Click 'Set a backup email now.'
 2. You will be shown the manage details page.
 
-   .. figure:: screen-shots/set-backup-email.png
+   .. figure:: screen-shots/backup-set-email.png
       :alt: PMHC MDS Setting Backup Email
 
 3. Under 'Manage Security Credentials' there will be an 'Email address' field.
@@ -89,13 +95,13 @@ event that you no longer have access to your primary email address.
    record. Please follow the link in the email and enter the code that
    has been sent to your mobile.
 
-   .. figure:: screen-shots/verify-user.png
+   .. figure:: screen-shots/account-verify-user.png
       :alt: PMHC MDS User Verification
 
 7. Click 'Submit'
 8. Your backup email is now confirmed.
 
-   .. figure:: screen-shots/confirm-update-email.png
+   .. figure:: screen-shots/backup-email-confirm-update.png
       :alt: PMHC MDS Confirm Update Email
 
 9. Navigate back to https://pmhc-mds.net/ and sign in.
@@ -107,7 +113,8 @@ event that you no longer have access to your primary email address.
 Forgotten or Expired Password
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Passwords have to be changed every 3 months. If you do not change your
+As required by the Australian Government's Protective Security Policy Framework
+passwords have to be changed every 3 months. If you do not change your
 password it will expire and you will not be able to login to the system
 without resetting your password.
 
@@ -116,27 +123,28 @@ If you have forgotten your password or it has expired:
 1. Navigate to https://pmhc-mds.net/ and click the 'Sign in' button.
 2. Click 'Forgot Password'.
 
-   .. figure:: screen-shots/resetting-password.png
+   .. figure:: screen-shots/password-resetting.png
       :alt: PMHC MDS Resetting Password
 
 3. You will be prompted to enter your email address or user name recorded
    for the PMHC MDS.
 4. Click the 'I'm not a robot' checkbox.
 5. Click 'Submit'.
-6. An email with further instructions will be sent to the email address the
-   PMHC MDS has on file. Additionally, if you have set a backup email, then
+6. An email with further instructions will be sent sent from
+   noreply@strategicdata.com.au to the email address the PMHC MDS has on file
+   for the user. Additionally, if you have set a backup email, then
    an email will also have been sent there. An SMS with a verification code
    will have been sent to the mobile phone number we have on record.
 
-   .. figure:: screen-shots/reset-password-success.png
+   .. figure:: screen-shots/password-reset-request.png
       :alt: PMHC MDS Resetting Password
 
-7. Follow the link in the email.
+7. Open the email sent from support@strategicdata.com.au and open the link in the email.
 
-   .. figure:: screen-shots/verify-user.png
+   .. figure:: screen-shots/account-verify-user.png
       :alt: PMHC MDS User Verification
 
-8. Enter the verification code you were SMS'ed.
+8. Enter the verification code you were sent via SMS.
 9. Click 'Submit'.
 10. You will be shown a 'Password reset' page.
 
@@ -168,7 +176,7 @@ We highly encourage users to logout once they have completed their tasks.
 minutes of inactivity.  You will see a pop up box that will provide a count
 down feature prior to automatically logging out the idle user.*
 
-.. figure:: screen-shots/logout-count-down.png
+.. figure:: screen-shots/account-logout-count-down.png
    :alt: PMHC MDS Auto Log Out
 
 .. _updating-your-details:
@@ -185,7 +193,7 @@ Once signed in, to edit your details:
 5. Login using your PMHC MDS email/username and password.
 6. You will see the 'Manage Details' page.
 
-   .. figure:: screen-shots/manage-details.png
+   .. figure:: screen-shots/account-manage-details.png
       :alt: PMHC MDS Manage Details
 
 7. To update your name, click the 'Change personal details' link.

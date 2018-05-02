@@ -4,7 +4,7 @@ Upload specification
 ====================
 
 File types
-------------
+----------
 Files will be accepted in the following types:
 
 - Comma Separated Values (CSV)
@@ -85,14 +85,15 @@ All files must be internally consistent. An example of what this means is
 that for every row in the episode file/worksheet, there should be a
 corresponding client in the client file/worksheet.
 
-It also mean that for every episode included in an upload file, you must include
-ALL service contacts and measures for that episode. Any service contacts and measures
-that are not included will be removed from the PMHC MDS.
+It also means that for every episode included in an upload file, you should include
+ALL service contacts and measures for that episode.
+
+
 
 .. _client-format:
 
 Client format
-^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^
 The client file/worksheet is required to be uploaded each time.
 
 Data elements for the client upload file/worksheet are defined at
@@ -177,8 +178,9 @@ Example SDQ data:
 
 Practitioner file format
 ^^^^^^^^^^^^^^^^^^^^^^^^
-The practitioner file/worksheet is optional. It only needs to be uploaded if
-there is a change in practitioners. There is no harm in including it in every upload.
+The practitioner file/worksheet is required for the first upload and if there
+is a change in practitioners. It is optional otherwise.  There is no harm in
+including it in every upload.
 
 Data elements for the practitioner upload file/worksheet are defined at
 :ref:`practitioner-data-elements`.
@@ -187,3 +189,73 @@ Example practitioner data:
 
 - `CSV practitioner file <../_static/practitioners.csv>`_.
 - `XLSX practitioner worksheet <../_static/pmhc-upload.xlsx>`_.
+
+.. _organisation-format:
+
+Organisation file format
+^^^^^^^^^^^^^^^^^^^^^^^^
+This file is for PHN use only. The organisation file/worksheet is optional. Can
+be included to upload Provider Organisations in bulk or if there is a change in
+Provider Organisation details. There is no harm in including it in every upload.
+
+Data elements for the Provider Organisation upload file/worksheet are defined at
+:ref:`provider-organisation-data-elements`.
+
+Example organisation data:
+
+- `CSV organisation file <../_static/organisations.csv>`_.
+- `XLSX organisation worksheet <../_static/pmhc-upload.xlsx>`_.
+
+.. _deleting-records:
+
+Deleting records
+^^^^^^^^^^^^^^^^
+
+* Records of the following type can be deleted via upload:
+
+  * Client
+  * Episode
+  * Service Contact
+  * K10+
+  * K5
+  * SDQ
+  * Practitioner
+
+  Organisation records *cannot* be deleted via upload. Please email
+  support@pmhc-mds.com if you need to delete an organisation.
+
+* An extra optional "delete" column can be added to each of the supported
+  upload files/worksheets.
+
+* This column should be the third column in each file, after the organisation
+  path and the record's entity key.
+
+* To delete a record, include its organisation path and its entity key, leave
+  all other fields blank and put "delete" in the "delete" column. Please note
+  that case is important. "DELETE" will not be accepted.
+
+* Marking a record as deleted will require all child records of that record also
+  to be marked for deletion. For example, marking a client as deleted will
+  require all episodes, service contacts and collection occasions of that
+  client to be marked for deletion.
+
+* While deletions can be included in the same upload as insertions/updates,
+  we recommend that you include all deletions in a separate upload that is
+  uploaded before the insertions/updates.
+
+Example files showing how to delete via upload:
+
+- `XLSX file containing all the worksheets <../_static/pmhc-upload-delete.xlsx>`_.
+- `CSV delete client file <../_static/clients-delete.csv>`_.
+- `CSV delete episode file <../_static/episodes-delete.csv>`_.
+- `CSV delete service contact file <../_static/service-contacts-delete.csv>`_.
+- `CSV delete K10+ file <../_static/k10p-delete.csv>`_.
+- `CSV detete K5 file <../_static/k5-delete.csv>`_.
+- `CSV delete SDQ file <../_static/sdq-delete.csv>`_.
+- `CSV delete practitioner file <../_static/practitioners-delete.csv>`_.
+
+Frequently Asked Questions
+--------------------------
+
+Please also refer to :ref:`uploading-data-FAQs` for answers to frequently
+asked questions about uploading data.

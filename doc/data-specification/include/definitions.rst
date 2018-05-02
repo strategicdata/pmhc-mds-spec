@@ -338,7 +338,11 @@ The date on which an individual was born.
 
 :Required: true
 :Notes:
-  If the date of birth is unknown, the following approaches should be used:
+  - The date of birth must not be before January 1st 1900.
+  
+  - The date of birth must not be in the future.
+  
+  - If the date of birth is unknown, the following approaches should be used:
   
     - If the age of the person is known, the age should be used to derive the
       year of birth
@@ -1019,6 +1023,10 @@ The date the measure was given.
   
   If the date the measure was given is unknown, 09099999 should be used.
   
+  - The measure date must not be before 1st January 2016.
+  
+  - The measure date must not be in the future.
+  
 
 ----------
 
@@ -1088,7 +1096,51 @@ The main additional condition or complaint co-existing with the Principal Diagno
 :Required: true
 
 :Domain:
-  See *Episode - Principal Diagnosis*
+  :000: No additional diagnosis
+  :100: Anxiety disorders (ATAPS)
+  :101: Panic disorder
+  :102: Agoraphobia
+  :103: Social phobia
+  :104: Generalised anxiety disorder
+  :105: Obsessive-compulsive disorder
+  :106: Post-traumatic stress disorder
+  :107: Acute stress disorder
+  :108: Other anxiety disorder
+  :200: Affective (Mood) disorders (ATAPS)
+  :201: Major depressive disorder
+  :202: Dysthymia
+  :203: Depressive disorder NOS
+  :204: Bipolar disorder
+  :205: Cyclothymic disorder
+  :206: Other affective disorder
+  :300: Substance use disorders (ATAPS)
+  :301: Alcohol harmful use
+  :302: Alcohol dependence
+  :303: Other drug harmful use
+  :304: Other drug dependence
+  :305: Other substance use disorder
+  :400: Psychotic disorders (ATAPS)
+  :401: Schizophrenia
+  :402: Schizoaffective disorder
+  :403: Brief psychotic disorder
+  :404: Other psychotic disorder
+  :501: Separation anxiety disorder
+  :502: Attention deficit hyperactivity disorder (ADHD)
+  :503: Conduct disorder
+  :504: Oppositional defiant disorder
+  :505: Pervasive developmental disorder
+  :506: Other disorder of childhood and adolescence
+  :601: Adjustment disorder
+  :602: Eating disorder
+  :603: Somatoform disorder
+  :604: Personality disorder
+  :605: Other mental disorder
+  :901: Anxiety symptoms
+  :902: Depressive symptoms
+  :903: Mixed anxiety and depressive symptoms
+  :904: Stress related
+  :905: Other
+  :999: Missing
 :Notes:
   Additional Diagnosis gives information on conditions that are significant in
   terms of treatment required and resources used during the episode of care.
@@ -1101,8 +1153,27 @@ The main additional condition or complaint co-existing with the Principal Diagno
   
   Where the client one or more comorbid mental health conditions in addition to
   the condition coded as the Principal Diagnosis, record the main condition as
-  the Additional Diagnosis. For further notes on the recording of diagnosis codes
-  see Principal Diagnosis
+  the Additional Diagnosis. 
+  
+  The following responses have been added to allow mapping of ATAPS data to PMHC
+  format.
+  
+  - 100: Anxiety disorders (ATAPS)
+  - 200: Affective (Mood) disorders (ATAPS)
+  - 300: Substance use disorders (ATAPS)
+  - 400: Psychotic disorders (ATAPS)
+  
+  *Note: These four codes should only be used for Episodes that are migrated
+  from ATAPS MDS sources that cannot be described by any other Diagnosis.
+  It is expected that the majority of Episodes delivered to clients
+  from 1st July, 2017 can be assigned to other diagnoses.*
+  
+  These responses will only be allowed on episodes where the original
+  ATAPS referral date was before 1 July 2017
+  
+  These responses will only be allowed on episodes with the !ATAPS flag.
+  
+  For further notes on the recording of diagnosis codes see Principal Diagnosis.
   
 
 ----------
@@ -1132,6 +1203,8 @@ The Australian postcode of the client.
   intends to live for 6 months or more, or the place that the person regards as
   their main residence, or where the person has no other residence, the place
   they currently reside.'
+  
+  Postcodes are deemed valid if they are in the range 0200-0299, 0800-9999.
   
 
 :METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__
@@ -1188,7 +1261,7 @@ An indication of the completion status of an *Episode of Care*.
 :Required: false
 
 :Domain:
-  :blank: Episode open
+  :0: Episode open
   :1: Episode closed - treatment concluded
   :2: Episode closed administratively - client could not be contacted
   :3: Episode closed administratively - client declined further contact
@@ -1198,10 +1271,10 @@ An indication of the completion status of an *Episode of Care*.
 :Notes:
   In order to use code 1 (Episode closed - treatment concluded) the client must have at least one service contact. All other codes may be applicable even when the client has no service contacts.
   
-  Blank - Episode open
+  0 or Blank - Episode open
     The client still requires treatment and further service contacts are
     required.
-    
+  
   1 - Episode closed - treatment concluded
     No further service contacts are planned as the client no longer requires
     treatment.
@@ -1308,6 +1381,10 @@ The date on which an *Episode of Care* is formally or administratively ended
 
 :Required: false
 :Notes:
+  - The episode end date must not be before 1st January 2016.
+  
+  - The episode end date must not be in the future.
+  
   An *Episode of Care* may be ended in one of two ways:
   
   - clinically, consequent upon conclusion of treatment for the client and
@@ -1335,7 +1412,6 @@ The date on which an *Episode of Care* is formally or administratively ended
     *Episode Completion Status* for additional guidance). Where an episode is
     closed administratively, the *Episode End Date* should be recorded as the
     date on which the organisation made the decision to close episode.
-  
   
 
 :METeOR: `614094 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614094>`__
@@ -1769,6 +1845,7 @@ The Principal Diagnosis is the diagnosis established after study to be chiefly r
 :Required: true
 
 :Domain:
+  :100: Anxiety disorders (ATAPS)
   :101: Panic disorder
   :102: Agoraphobia
   :103: Social phobia
@@ -1777,17 +1854,20 @@ The Principal Diagnosis is the diagnosis established after study to be chiefly r
   :106: Post-traumatic stress disorder
   :107: Acute stress disorder
   :108: Other anxiety disorder
+  :200: Affective (Mood) disorders (ATAPS)
   :201: Major depressive disorder
   :202: Dysthymia
   :203: Depressive disorder NOS
   :204: Bipolar disorder
   :205: Cyclothymic disorder
   :206: Other affective disorder
+  :300: Substance use disorders (ATAPS)
   :301: Alcohol harmful use
   :302: Alcohol dependence
   :303: Other drug harmful use
   :304: Other drug dependence
   :305: Other substance use disorder
+  :400: Psychotic disorders (ATAPS)
   :401: Schizophrenia
   :402: Schizoaffective disorder
   :403: Brief psychotic disorder
@@ -1852,6 +1932,24 @@ The Principal Diagnosis is the diagnosis established after study to be chiefly r
   
   Reference: Diagnostic and Statistical Manual of Mental Disorders, Fourth
   Edition, Text Revision. Copyright 2000 American Psychiatric Association.
+  
+  The following responses have been added to allow mapping of ATAPS data to PMHC 
+  format.
+  
+  - 100: Anxiety disorders (ATAPS)
+  - 200: Affective (Mood) disorders (ATAPS)
+  - 300: Substance use disorders (ATAPS)
+  - 400: Psychotic disorders (ATAPS)
+  
+  *Note: These four codes should only be used for Episodes that are migrated 
+  from ATAPS MDS sources that cannot be described by any other Diagnosis. 
+  It is expected that the majority of Episodes delivered to clients 
+  from 1st July, 2017 can be assigned to other diagnoses.*
+  
+  These responses will only be allowed on episodes where the original 
+  ATAPS referral date was before 1 July 2017
+  
+  These responses will only be allowed on episodes with the !ATAPS flag.
   
 
 ----------
@@ -2006,6 +2104,10 @@ The date the referrer made the referral.
   of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
   necessary to pad out a value. For instance, 13th March 2008 would appear as
   13032008.
+  
+  - The referral date must not be before 1st January 2014.
+  
+  - The referral date must not be in the future.
   
 
 ----------
@@ -2213,6 +2315,9 @@ In the last 4 weeks, about how often did you feel nervous?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
 
 ----------
 
@@ -2236,6 +2341,9 @@ In the last 4 weeks, about how often did you feel without hope?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
 
 ----------
 
@@ -2259,6 +2367,9 @@ In the last 4 weeks, about how often did you feel restless or jumpy?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
 
 ----------
 
@@ -2282,6 +2393,9 @@ In the last 4 weeks, about how often did you feel everything was an effort?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
 
 ----------
 
@@ -2305,6 +2419,9 @@ In the last 4 weeks, about how often did you feel so sad that nothing could chee
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
 
 ----------
 
@@ -2332,6 +2449,8 @@ The overall K5 score.
   Total Score is set as missing.
   
   For the Total score, the missing value used should be 99.
+  
+  When reporting individual item scores use ‘99 - Not stated / Missing’
   
 
 ----------
@@ -2384,6 +2503,9 @@ In the past 4 weeks, about how often did you feel tired out for no good reason?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
 
 ----------
 
@@ -2407,6 +2529,9 @@ In the past 4 weeks, about how often did you feel nervous?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
 
 ----------
 
@@ -2430,6 +2555,9 @@ In the past 4 weeks, about how often did you feel so nervous that nothing could 
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
 
 ----------
 
@@ -2453,6 +2581,9 @@ In the past 4 weeks, how often did you feel hopeless?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
 
 ----------
 
@@ -2476,6 +2607,9 @@ In the past 4 weeks, how often did you feel restless or fidgety?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
 
 ----------
 
@@ -2499,6 +2633,9 @@ In the past 4 weeks, how often did you feel so restless you could not sit still?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
 
 ----------
 
@@ -2522,6 +2659,9 @@ In the past 4 weeks, how often did you feel depressed?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
 
 ----------
 
@@ -2545,6 +2685,9 @@ In the past 4 weeks, how often did you feel that everything was an effort?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
 
 ----------
 
@@ -2568,6 +2711,9 @@ In the past 4 weeks, how often did you feel so sad that nothing could cheer you 
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
 
 ----------
 
@@ -2591,6 +2737,9 @@ In the past 4 weeks, how often did you feel worthless?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
 
 ----------
 
@@ -2612,7 +2761,7 @@ In the past four weeks, how many days were you totally unable to work, study or 
 :Notes:
   When the client's responses to Q1-10 are all recorded as 1 'None of the time', 
   they are not required to answer questions 11-14. Where this question has not been
-  answered a response of 'Not stated / missing' should be selected.
+  answered a response of '99 - Not stated / Missing' should be selected.
   
 
 ----------
@@ -2635,7 +2784,7 @@ Aside from those days, in the past four weeks, how many days were you able to wo
 :Notes:
   When the client's responses to Q1-10 are all recorded as 1 'None of the time',
   they are not required to answer questions 11-14. Where this question has not been
-  answered a response of 'Not stated / missing' should be selected.
+  answered a response of '99 - Not stated / Missing' should be selected.
   
 
 ----------
@@ -2658,7 +2807,7 @@ In the past four weeks, how many times have you seen a doctor or any other healt
 :Notes:
   When the client's responses to Q1-10 are all recorded as 1 'None of the time',
   they are not required to answer questions 11-14. Where this question has not been
-  answered a response of 'Not stated / missing' should be selected.
+  answered a response of '99 - Not stated / Missing' should be selected.
   
 
 ----------
@@ -2686,7 +2835,7 @@ In the past four weeks, how often have physical health problems been the main ca
 :Notes:
   When the client's responses to Q1-10 are all recorded as 1 'None of the time',
   they are not required to answer questions 11-14. Where this question has not been
-  answered a response of 'Not stated / missing' should be selected.
+  answered a response of '99 - Not stated / Missing' should be selected.
   
 
 ----------
@@ -2719,6 +2868,8 @@ The overall K10 score.
   
   If more than one item of items 1 to 10 are missing, the Total Score is set as
   missing. Where this is the case, the missing value used should be 99.
+  
+  When reporting individual item scores use ‘99 - Not stated / Missing’.
   
 
 ----------
@@ -2957,7 +3108,7 @@ The term 'gender' refers to the way in which a person identifies their masculine
 Practitioner Key
 ^^^^^^^^^^^^^^^^
 
-A unique identifier for a practitioner within the responsible organisation. Assigned by the organisation.
+A unique identifier for a practitioner within the responsible provider organisation. Assigned by either the PHN or provider organisation depending on local procedures.
 
 :Field name: practitioner_key
 
@@ -3011,13 +3162,15 @@ The year the practitioner was born.
 :Domain:
   gYear
 :Notes:
-  If the year of birth is unknown, the following approaches should be used:
+  - The year of birth must not be in the future.
+  - The year of birth must be after 1900.
+  - If the year of birth is unknown, the following approaches should be used:
   
-  - If the age of the practitioner is known, the age should be used to derive the
-    year of birth
-  - If the age of the practitioner is unknown, an estimated age of the practitioner should
-    be used to estimate a year of birth
-  - If the date of birth is totally unknown, use 9999.
+    - If the age of the practitioner is known, the age should be used to derive the
+      year of birth
+    - If the age of the practitioner is unknown, an estimated age of the practitioner should
+      be used to estimate a year of birth
+    - If the date of birth is totally unknown, use 9999.
   
 
 ----------
@@ -3099,6 +3252,25 @@ The state that the provider organisation operates in.
   
 
 :METeOR: `613718 <http://meteor.aihw.gov.au/content/index.phtml/itemId/613718>`__
+
+----------
+
+.. _dfn-organisation_status:
+
+Provider Organisation - Status
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A flag to represent whether a provider organisation is actively delivering services.
+
+:Field name: organisation_status
+
+:Data type: string
+
+:Required: true
+
+:Domain:
+  :0: Inactive
+  :1: Active
 
 ----------
 
@@ -3278,6 +3450,8 @@ SDQ - Conduct Problem Scale
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Conduct Problem Scale.
   
+  When reporting individual item scores use ‘99 - Not stated / Missing’.
+  
 
 ----------
 
@@ -3297,6 +3471,8 @@ SDQ - Emotional Symptoms Scale
   0 - 10, 99 = Not stated / Missing
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Emotional Symptoms Scale.
+  
+  When reporting individual item scores use ‘99 - Not stated / Missing’.
   
 
 ----------
@@ -3318,6 +3494,8 @@ SDQ - Hyperactivity Scale
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Hyperactivity Scale.
   
+  When reporting individual item scores use ‘99 - Not stated / Missing’.
+  
 
 ----------
 
@@ -3337,6 +3515,8 @@ SDQ - Impact Score
   0 - 10, 99 = Not stated / Missing
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Impact Score.
+  
+  When reporting individual item scores use ‘99 - Not stated / Missing’.
   
 
 ----------
@@ -3358,6 +3538,8 @@ SDQ - Peer Problem Scale
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Peer Problem Scale.
   
+  When reporting individual item scores use ‘99 - Not stated / Missing’.
+  
 
 ----------
 
@@ -3377,6 +3559,8 @@ SDQ - Prosocial Scale
   0 - 10, 99 = Not stated / Missing
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Prosocial Scale.
+  
+  When reporting individual item scores use ‘99 - Not stated / Missing’.
   
 
 ----------
@@ -3405,6 +3589,8 @@ Youth Self Report: I try to be nice to other people. I care about their feelings
 :Notes:
   Required Versions: All
   
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
+  
 
 ----------
 
@@ -3431,6 +3617,8 @@ Youth Self Report: I am restless, I cannot stay still for long.
   :9: Not stated / Missing
 :Notes:
   Required Versions: All
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -3459,6 +3647,8 @@ Youth Self Report: I get a lot of headaches, stomach-aches or sickness.
 :Notes:
   Required Versions: All
   
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
+  
 
 ----------
 
@@ -3485,6 +3675,8 @@ Youth Self Report: I usually share with others, for examples CDs, games, food.
   :9: Not stated / Missing
 :Notes:
   Required Versions: All
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -3513,6 +3705,8 @@ Youth Self Report: I get very angry and often lose my temper.
 :Notes:
   Required Versions: All
   
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
+  
 
 ----------
 
@@ -3539,6 +3733,8 @@ Youth Self Report: I would rather be alone than with people of my age.
   :9: Not stated / Missing
 :Notes:
   Required Versions: All
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -3567,6 +3763,8 @@ Youth Self Report: I usually do as I am told.
 :Notes:
   Required Versions: All
   
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
+  
 
 ----------
 
@@ -3593,6 +3791,8 @@ Youth Self Report: I worry a lot.
   :9: Not stated / Missing
 :Notes:
   Required Versions: All
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -3621,6 +3821,8 @@ Youth Self Report: I am helpful if someone is hurt, upset or feeling ill.
 :Notes:
   Required Versions: All
   
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
+  
 
 ----------
 
@@ -3647,6 +3849,8 @@ Youth Self Report: I am constantly fidgeting or squirming.
   :9: Not stated / Missing
 :Notes:
   Required Versions: All
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -3675,6 +3879,8 @@ Youth Self Report: I have one good friend or more.
 :Notes:
   Required Versions: All
   
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
+  
 
 ----------
 
@@ -3701,6 +3907,8 @@ Youth Self Report: I fight a lot. I can make other people do what I want.
   :9: Not stated / Missing
 :Notes:
   Required Versions: All
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -3729,6 +3937,8 @@ Youth Self Report: I am often unhappy, depressed or tearful.
 :Notes:
   Required Versions: All
   
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
+  
 
 ----------
 
@@ -3755,6 +3965,8 @@ Youth Self Report: Other people my age generally like me.
   :9: Not stated / Missing
 :Notes:
   Required Versions: All
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -3783,6 +3995,8 @@ Youth Self Report: I am easily distracted, I find it difficult to concentrate.
 :Notes:
   Required Versions: All
   
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
+  
 
 ----------
 
@@ -3809,6 +4023,8 @@ Youth Self Report: I am nervous in new situations. I easily lose confidence.
   :9: Not stated / Missing
 :Notes:
   Required Versions: All
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -3837,6 +4053,8 @@ Youth Self Report: I am kind to younger people.
 :Notes:
   Required Versions: All
   
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
+  
 
 ----------
 
@@ -3863,6 +4081,8 @@ Youth Self Report: I am often accused of lying or cheating.
   :9: Not stated / Missing
 :Notes:
   Required Versions: All
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -3891,6 +4111,8 @@ Youth Self Report: Other children or young people pick on me or bully me.
 :Notes:
   Required Versions: All
   
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
+  
 
 ----------
 
@@ -3917,6 +4139,8 @@ Youth Self Report: I often volunteer to help others (parents, teachers, children
   :9: Not stated / Missing
 :Notes:
   Required Versions: All
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -3945,6 +4169,8 @@ Youth Self Report: I think before I do things.
 :Notes:
   Required Versions: All
   
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
+  
 
 ----------
 
@@ -3971,6 +4197,8 @@ Youth Self Report: I take things that are not mine from home, school or elsewher
   :9: Not stated / Missing
 :Notes:
   Required Versions: All
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -3999,6 +4227,8 @@ Youth Self Report: I get along better with adults than with people my own age.
 :Notes:
   Required Versions: All
   
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
+  
 
 ----------
 
@@ -4025,6 +4255,8 @@ Youth Self Report: I have many fears, I am easily scared.
   :9: Not stated / Missing
 :Notes:
   Required Versions: All
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -4053,6 +4285,8 @@ Youth Self Report: I finish the work I'm doing. My attention is good.
 :Notes:
   Required Versions: All
   
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
+  
 
 ----------
 
@@ -4080,6 +4314,8 @@ Youth Self Report: Overall, do you think that you have difficulties in any of th
   :9: Not stated / Missing
 :Notes:
   Required Versions: All
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -4113,6 +4349,8 @@ Youth Self Report: How long have these difficulties been present?
   - PY101
   - YR101
   
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
+  
 
 ----------
 
@@ -4141,6 +4379,8 @@ Youth Self Report: Do the difficulties upset or distress you?
   :9: Not stated / Missing
 :Notes:
   Required Versions: All
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -4171,6 +4411,8 @@ Youth Self Report: Do the difficulties interfere with your everyday life in the 
 :Notes:
   Required Versions: All
   
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
+  
 
 ----------
 
@@ -4199,6 +4441,8 @@ Youth Self Report: Do the difficulties interfere with your everyday life in the 
   :9: Not stated / Missing
 :Notes:
   Required Versions: All
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -4229,6 +4473,8 @@ Youth Self Report: Do the difficulties interfere with your everyday life in the 
 :Notes:
   Required Versions: All
   
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
+  
 
 ----------
 
@@ -4257,6 +4503,8 @@ Youth Self Report: Do the difficulties interfere with your everyday life in the 
   :9: Not stated / Missing
 :Notes:
   Required Versions: All
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -4287,6 +4535,8 @@ Youth Self Report: Do the difficulties make it harder for those around you (fami
 :Notes:
   Required Versions: All
   
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
+  
 
 ----------
 
@@ -4316,9 +4566,12 @@ Youth Self Report: 'Since coming to the service, are your problems:
   :9: Not stated / Missing
 :Notes:
   Required Versions:
+  
   - PC201
   - PY201
   - YR201
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -4346,9 +4599,12 @@ Has coming to the service been helpful in other ways eg. providing information o
   :9: Not stated / Missing
 :Notes:
   Required Versions:
+  
   - PC201
   - PY201
   - YR201
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -4375,8 +4631,11 @@ Over the last 6 months have your child's teachers complained of fidgetiness, res
   :9: Not stated / Missing
 :Notes:
   Required Versions:
+  
   - PC101
   - PY101
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -4403,8 +4662,11 @@ Over the last 6 months have your child's teachers complained of poor concentrati
   :9: Not stated / Missing
 :Notes:
   Required Versions:
+  
   - PC101
   - PY101
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -4431,8 +4693,11 @@ Over the last 6 months have your child's teachers complained of acting without t
   :9: Not stated / Missing
 :Notes:
   Required Versions:
+  
   - PC101
   - PY101
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -4459,7 +4724,10 @@ Does your family complain about you having problems with overactivity or poor co
   :9: Not stated / Missing
 :Notes:
   Required Versions:
+  
   - YR101
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -4486,7 +4754,10 @@ Do your teachers complain about you having problems with overactivity or poor co
   :9: Not stated / Missing
 :Notes:
   Required Versions:
+  
   - YR101
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -4513,7 +4784,10 @@ Does your family complain about you being awkward or troublesome?
   :9: Not stated / Missing
 :Notes:
   Required Versions:
+  
   - YR101
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -4540,7 +4814,10 @@ Do your teachers complain about you being awkward or troublesome?
   :9: Not stated / Missing
 :Notes:
   Required Versions:
+  
   - YR101
+  
+  When reporting subscale and total scores use ‘9 - Not stated / Missing’.
   
 
 ----------
@@ -4590,6 +4867,8 @@ SDQ - Total Difficulties Score
 :Notes:
   See :ref:`scoring-the-sdq` for instructions on scoring the Total Difficulties Score.
   
+  When reporting individual item scores use ‘99 - Not stated / Missing’.
+  
 
 ----------
 
@@ -4598,7 +4877,7 @@ SDQ - Total Difficulties Score
 Service Contact - Client Participation Indicator
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-An indicator of whether the client participated in the service contact, as represented by a code.
+An indicator of whether the client participated, or intended to participate, in the service contact, as represented by a code.
 
 :Field name: service_contact_participation_indicator
 
@@ -4625,6 +4904,10 @@ An indicator of whether the client participated in the service contact, as repre
     record the service contact would normally warrant a dated entry, is not
     participating.
   
+  *Note:* Where a client intended to participate in a service contact but failed
+  to attend, :ref:`dfn-service_contact_participation_indicator` should be recorded
+  as '1: Yes' and :ref:`dfn-service_contact_no_show` should be recorded as '1: Yes'.
+  
 
 :METeOR: `494341 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494341>`__
 
@@ -4644,7 +4927,7 @@ The co-payment is the amount paid by the client per session.
 :Required: true
 
 :Domain:
-  0 - 999999
+  0 - 999999.99
 :Notes:
   Up to 6 digits before the decimal point; up to 2 digits after the decimal
   point.
@@ -4677,6 +4960,10 @@ The date of each mental health service contact between a health service provider
   necessary to pad out a value. For instance, 13th March 2008 would appear as
   13032008.
   
+  - The service contact date must not be before 1st January 2014.
+  
+  - The service contact date must not be in the future.
+  
 
 :METeOR: `494356 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494356>`__
 
@@ -4696,7 +4983,8 @@ The time from the start to finish of a service contact.
 :Required: true
 
 :Domain:
-  :1: 0-15 mins
+  :0: No contact took place
+  :1: 1-15 mins
   :2: 16-30 mins
   :3: 31-45 mins
   :4: 46-60 mins
@@ -4714,6 +5002,10 @@ The time from the start to finish of a service contact.
   Travel to or from the location at which the service is provided, for example to
   or from outreach facilities or private homes, is not to be reported as part of
   the duration of the service contact.
+  
+  0 - No contact took place
+    Only use this code where the service contact is recorded as a no show.
+  
 
 ----------
 
@@ -4803,15 +5095,28 @@ How the service contact was delivered, as represented by a code.
 :Required: true
 
 :Domain:
+  :0: No contact took place
   :1: Face to Face
   :2: Telephone
   :3: Video
   :4: Internet-based
 :Notes:
-  - If 'Face to Face' is selected, a value other than 'Not applicable' must
-    be selected for Service Contact Venue
-  - If 'Face to Face' is selected a valid Australian
-    postcode must be entered for Service Contact Postcode.
+  0 - No contact took place
+    Only use this code where the service contact is recorded as a no show.
+  
+  1 - Face to Face
+    - If 'Face to Face' is selected, a value other than 'Not applicable' must
+      be selected for Service Contact Venue
+    - If 'Face to Face' is selected a valid Australian
+      postcode must be entered for Service Contact Postcode. The unknown postcode is not valid.
+  
+  4 - Internet-based
+      Includes email communication, that would normally warrant a dated entry in 
+      the clinical record of the client, involving a third party, such as a carer
+      or family member, and/or other professional or mental health worker, or
+      other service provider.
+  
+  Note: If Service Contact Modality is not 'Face to Face' the postcode must be entered as unknown 9999.
   
 
 ----------
@@ -4864,7 +5169,7 @@ An indication of who participated in the Service Contact.
 :Notes:
   1 - Individual
     Code applies for Service Contacts delivered individually to a single client
-    without third party participants.
+    without third party participants. Please refer to the Note below.
   
   2 - Client group
     Code applies for Service Contacts delivered on a group basis to two or more
@@ -4883,9 +5188,11 @@ An indication of who participated in the Service Contact.
     Code applies to Service Contacts delivered to other third parties
     (e.g., teachers, employer), with or without the participation of the client.
   
-  Note that this item interacts with Service Contact - Client Participation
-  Indicator which is used to denote whether the individual client was a
-  participant in the Service Contact.
+  *Note:* This item interacts with :ref:`dfn-service_contact_participation_indicator`.
+  Where :ref:`dfn-service_contact_participants` has a value of
+  '1: Individual', :ref:`dfn-service_contact_participation_indicator` must
+  have a value of '1: Yes'. :ref:`dfn-service_contact_no_show` is used to record if the
+  patient failed to attend the appointment.
   
 
 ----------
@@ -4910,6 +5217,9 @@ The Australian postcode where the service contact took place.
   - If Service Contact Modality is not 'Face to Face' enter 9999
   - If Service Contact Modality is 'Face to Face' a valid Australian postcode must be
     entered
+  
+  - As of 1 November 2016, PMHC MDS currently validates that postcodes are in the
+    range 0200-0299 or 0800-9999.
   
 
 :METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__
@@ -4958,6 +5268,7 @@ The main type of service provided in the service contact, as represented by the 
 :Required: true
 
 :Domain:
+  :0: No contact took place
   :1: Assessment
   :2: Structured psychological intervention
   :3: Other psychological intervention
@@ -4966,11 +5277,19 @@ The main type of service provided in the service contact, as represented by the 
   :6: Child or youth specific assistance NEC
   :7: Suicide prevention specific assistance NEC
   :8: Cultural specific assistance NEC
+  :98: ATAPS
 :Notes:
+  
+  
   Describes the main type of service delivered in the contact, selected from a
   defined list of categories.  Where more than service type was provided select
   that which accounted for most provider time. Service providers are required
   to report on Service Type for all Service Contacts.
+  
+  *Note: NEC is used for 'Not Elsewhere Classified'. For these records, only use these service types if they cannot be classified by any of the other service options.*
+  
+  0 - No contact took place
+    Only use this code where the service contact is recorded as a no show.
   
   1 - Assessment
     Determination of a person's mental health status and need for mental
@@ -5041,7 +5360,7 @@ The main type of service provided in the service contact, as represented by the 
     *Note: This code should only be used for
     Service Contacts that cannot be described by any other Service Type. It is
     expected that the majority of Service Contacts delivered to children and
-    young people can be assigned to other categories*
+    young people can be assigned to other categories.*
   
   7 - Suicide prevention specific assistance NEC
     Services delivered to, or on behalf, of a client who presents with risk of
@@ -5067,6 +5386,20 @@ The main type of service provided in the service contact, as represented by the 
     described by any other Service Type. It is expected that the majority of
     Service Contacts (see domains below) delivered to Aboriginal or Torres Strait
     Islander clients can be assigned to other categories.*
+  
+  98 - ATAPS
+    Services delivered as part of ATAPS funded referrals that are recorded and/or
+    migrated into the PMHC MDS.
+  
+    *Note: This code should only be used for Service Contacts that are migrated
+    from ATAPS MDS sources that cannot be described by any other Service Type.
+    It is expected that the majority of Service Contacts delivered to clients
+    from 1st July, 2017 can be assigned to other categories.*
+  
+    This response will not be allowed on service contacts delivered after
+    30 June 2018. (All ATAPS referrals should have concluded by that date).
+  
+    This response will only be allowed on service contacts with the !ATAPS flag.
   
 
 ----------

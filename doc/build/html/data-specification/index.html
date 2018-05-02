@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Data Specification &mdash; PMHC MDS Version 1.0.6 documentation</title>
+  <title>Data Specification &mdash; PMHC MDS Version 1.0.12 documentation</title>
   
 
   
@@ -32,7 +32,7 @@
   
 
   
-    <link rel="top" title="PMHC MDS Version 1.0.6 documentation" href="../index.html"/>
+    <link rel="top" title="PMHC MDS Version 1.0.12 documentation" href="../index.html"/>
         <link rel="next" title="Reporting arrangements" href="reporting-arrangements.html"/>
         <link rel="prev" title="User Guide Change log" href="../user-documentation/change-log.html"/> 
 
@@ -62,7 +62,7 @@
             
             
               <div class="version">
-                Version 1.0.6
+                Version 1.0.12
               </div>
             
           
@@ -92,6 +92,9 @@
 <li class="toctree-l2"><a class="reference internal" href="upload-specification.html">Upload specification</a></li>
 <li class="toctree-l2"><a class="reference internal" href="data-item-summary.html">Data item summary</a></li>
 <li class="toctree-l2"><a class="reference internal" href="form-creation.html">Using the data specification to create client forms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="validation-rules.html">Validation Rules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ataps/ataps-pmhc-mapping.html">ATAPS MDS to PMHC MDS data mapping</a></li>
+<li class="toctree-l2"><a class="reference internal" href="test-data-sets.html">Test Data Sets</a></li>
 <li class="toctree-l2"><a class="reference internal" href="change-log.html">Data Specification Change log</a></li>
 </ul>
 </li>
@@ -147,7 +150,10 @@
 <li class="toctree-l1"><a class="reference internal" href="reporting-arrangements.html">Reporting arrangements</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="reporting-arrangements.html#uploading-data">Uploading data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reporting-arrangements.html#reporting-timeliness">Reporting timeliness</a></li>
-<li class="toctree-l2"><a class="reference internal" href="reporting-arrangements.html#transition-arrangements">Transition arrangements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reporting-arrangements.html#transition-arrangements">Transition arrangements</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="reporting-arrangements.html#transition-to-full-compliance">Transition to Full Compliance</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="reporting-arrangements.html#support-arrangements">Support arrangements</a></li>
 </ul>
 </li>
@@ -180,7 +186,7 @@
 <li class="toctree-l4"><a class="reference internal" href="data-model-and-specifications.html#k5">K5</a></li>
 <li class="toctree-l4"><a class="reference internal" href="data-model-and-specifications.html#sdq">SDQ</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="data-model-and-specifications.html#sdq-items-and-scale-summary-scores">SDQ items and Scale Summary scores</a></li>
-<li class="toctree-l5"><a class="reference internal" href="data-model-and-specifications.html#id11">Scoring the SDQ</a></li>
+<li class="toctree-l5"><a class="reference internal" href="data-model-and-specifications.html#id12">Scoring the SDQ</a></li>
 </ul>
 </li>
 </ul>
@@ -264,6 +270,7 @@
 <li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#provider-organisation-legal-name">Provider Organisation - Legal Name</a></li>
 <li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#provider-organisation-name">Provider Organisation - Name</a></li>
 <li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#provider-organisation-state">Provider Organisation - State</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#provider-organisation-status">Provider Organisation - Status</a></li>
 <li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#provider-organisation-tags">Provider Organisation - Tags</a></li>
 <li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#provider-organisation-type">Provider Organisation - Type</a></li>
 <li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-collection-occasion-version">SDQ Collection Occasion - Version</a></li>
@@ -350,8 +357,11 @@
 <li class="toctree-l3"><a class="reference internal" href="upload-specification.html#k5-collection-occasion-file-format">K5 Collection Occasion file format</a></li>
 <li class="toctree-l3"><a class="reference internal" href="upload-specification.html#sdq-collection-occasion-file-format">SDQ Collection Occasion file format</a></li>
 <li class="toctree-l3"><a class="reference internal" href="upload-specification.html#practitioner-file-format">Practitioner file format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="upload-specification.html#organisation-file-format">Organisation file format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="upload-specification.html#deleting-records">Deleting records</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="upload-specification.html#frequently-asked-questions">Frequently Asked Questions</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="data-item-summary.html">Data item summary</a></li>
@@ -369,7 +379,63 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="validation-rules.html">Validation Rules</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="validation-rules.html#current-validations">1. Current Validations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="validation-rules.html#practitioner">1. Practitioner</a></li>
+<li class="toctree-l3"><a class="reference internal" href="validation-rules.html#client">2. Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="validation-rules.html#episode">3. Episode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="validation-rules.html#service-contact">4. Service Contact</a></li>
+<li class="toctree-l3"><a class="reference internal" href="validation-rules.html#k10">5. K10+</a></li>
+<li class="toctree-l3"><a class="reference internal" href="validation-rules.html#k5">6. K5</a></li>
+<li class="toctree-l3"><a class="reference internal" href="validation-rules.html#sdq">7. SDQ</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="validation-rules.html#future-validations">2. Future Validations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="validation-rules.html#id4">1. SDQ</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ataps/ataps-pmhc-mapping.html">ATAPS MDS to PMHC MDS data mapping</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ataps/ataps-pmhc-mapping.html#practitioner">Practitioner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ataps/ataps-pmhc-mapping.html#client">Client</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ataps/ataps-pmhc-mapping.html#episode">Episode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ataps/ataps-pmhc-mapping.html#service-contact">Service Contact</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ataps/ataps-pmhc-mapping.html#outcome-collection-occasion">Outcome Collection Occasion</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ataps/ataps-pmhc-mapping.html#k10">K10+</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ataps/ataps-pmhc-mapping.html#k5">K5</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ataps/ataps-pmhc-mapping.html#sdq">SDQ</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="test-data-sets.html">Test Data Sets</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="test-data-sets.html#slk-test-data-set">SLK Test Data Set</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="test-data-sets.html#slk-generation-test-data">SLK Generation Test Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="test-data-sets.html#slk-validation-test-data">SLK Validation Test Data</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="change-log.html">Data Specification Change log</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#id1">13/3/2018</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#version-1-0-12">19/1/2018 - Version 1.0.12</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#id2">29/11/2017</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#id3">28/11/2017</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#id4">25/10/2017</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#id5">16/10/2017</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#id6">11/10/2017</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#id7">03/10/2017</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#version-1-0-11">25/9/2017 - Version 1.0.11</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#id8">29/8/2017</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#id9">25/8/2017</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#id10">23/8/2017</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#id11">28/7/2017</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#id12">24/7/2017</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#version-1-0-10">6/7/2017 - Version 1.0.10</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#version-1-0-9">30/6/2017 - Version 1.0.9</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#version-1-0-8">26/6/2017 - Version 1.0.8</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#version-1-0-7">14/6/2017 - Version 1.0.7</a></li>
 <li class="toctree-l2"><a class="reference internal" href="change-log.html#version-1-0-6">18/5/2017 - Version 1.0.6</a></li>
 <li class="toctree-l2"><a class="reference internal" href="change-log.html#version-1-0-5">1/5/2017 - Version 1.0.5</a></li>
 <li class="toctree-l2"><a class="reference internal" href="change-log.html#version-1-0-4">8/2/2017 - Version 1.0.4</a></li>
@@ -403,7 +469,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017, Australian Government - Department of Health.
+        &copy; Copyright 2018, Australian Government - Department of Health.
 
     </p>
   </div>
@@ -425,7 +491,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'Version 1.0.6',
+            VERSION:'Version 1.0.12',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

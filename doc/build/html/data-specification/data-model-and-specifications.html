@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Data model and specifications &mdash; PMHC MDS Version 1.0.6 documentation</title>
+  <title>Data model and specifications &mdash; PMHC MDS Version 1.0.12 documentation</title>
   
 
   
@@ -32,7 +32,7 @@
   
 
   
-    <link rel="top" title="PMHC MDS Version 1.0.6 documentation" href="../index.html"/>
+    <link rel="top" title="PMHC MDS Version 1.0.12 documentation" href="../index.html"/>
         <link rel="up" title="Data Specification" href="index.html"/>
         <link rel="next" title="Upload specification" href="upload-specification.html"/>
         <link rel="prev" title="Identifier management" href="identifier-management.html"/> 
@@ -63,7 +63,7 @@
             
             
               <div class="version">
-                Version 1.0.6
+                Version 1.0.12
               </div>
             
           
@@ -187,6 +187,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#provider-organisation-legal-name">Provider Organisation - Legal Name</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#provider-organisation-name">Provider Organisation - Name</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#provider-organisation-state">Provider Organisation - State</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#provider-organisation-status">Provider Organisation - Status</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#provider-organisation-tags">Provider Organisation - Tags</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#provider-organisation-type">Provider Organisation - Type</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#sdq-collection-occasion-version">SDQ Collection Occasion - Version</a></li>
@@ -261,6 +262,9 @@
 <li class="toctree-l2"><a class="reference internal" href="upload-specification.html">Upload specification</a></li>
 <li class="toctree-l2"><a class="reference internal" href="data-item-summary.html">Data item summary</a></li>
 <li class="toctree-l2"><a class="reference internal" href="form-creation.html">Using the data specification to create client forms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="validation-rules.html">Validation Rules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ataps/ataps-pmhc-mapping.html">ATAPS MDS to PMHC MDS data mapping</a></li>
+<li class="toctree-l2"><a class="reference internal" href="test-data-sets.html">Test Data Sets</a></li>
 <li class="toctree-l2"><a class="reference internal" href="change-log.html">Data Specification Change log</a></li>
 </ul>
 </li>
@@ -312,22 +316,22 @@
            <div itemprop="articleBody">
             
   <div class="section" id="data-model-and-specifications">
-<h1>Data model and specifications<a class="headerlink" href="#data-model-and-specifications" title="Permalink to this headline">¶</a></h1>
+<span id="id1"></span><h1>Data model and specifications<a class="headerlink" href="#data-model-and-specifications" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="data-model">
-<span id="id1"></span><h2>Data model<a class="headerlink" href="#data-model" title="Permalink to this headline">¶</a></h2>
-<div class="figure" id="id13">
+<span id="id2"></span><h2>Data model<a class="headerlink" href="#data-model" title="Permalink to this headline">¶</a></h2>
+<div class="figure" id="id14">
 <span id="data-model-diagram"></span><img alt="PMHC data model" src="../_images/data-model.svg" /><p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">PMHC data model</span></p>
 </div>
 <p><strong>Note:</strong> <a class="reference internal" href="#collection-occasion-diagram"><span class="std std-ref">PMHC Collection Occasion data model</span></a> for more details about
 Collection Occasion records.</p>
-<div class="figure" id="id14">
+<div class="figure" id="id15">
 <span id="collection-occasion-diagram"></span><img alt="PMHC Collection Occasion data model" src="../_images/collection-occasion-data-model.svg" /><p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">PMHC Collection Occasion data model</span></p>
 </div>
 <p><strong>Note:</strong> See <a class="reference internal" href="#data-model-diagram"><span class="std std-ref">PMHC data model</span></a> for more details about how
 Collection Occasion records fit into the overall structure.</p>
 </div>
 <div class="section" id="key-concepts">
-<span id="id2"></span><h2>Key concepts<a class="headerlink" href="#key-concepts" title="Permalink to this headline">¶</a></h2>
+<span id="id3"></span><h2>Key concepts<a class="headerlink" href="#key-concepts" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="primary-health-network">
 <span id="key-concepts-primary-health-network"></span><h3>Primary Health Network<a class="headerlink" href="#primary-health-network" title="Permalink to this headline">¶</a></h3>
 <p>Primary Health Networks (PHNs) have been established by the Australian Government
@@ -340,14 +344,17 @@ right care in the right place at the right time.</p>
 <span id="key-concepts-provider-organisation"></span><h3>Provider Organisation<a class="headerlink" href="#provider-organisation" title="Permalink to this headline">¶</a></h3>
 <p>The Provider Organisation is the business entity that the PHN has commissioned
 to provide the service.</p>
+<p>See <a class="reference internal" href="#provider-organisation-data-elements"><span class="std std-ref">Provider Organisation</span></a> for the data elements for a provider organisation.</p>
 </div>
 <div class="section" id="practitioner">
 <span id="key-concepts-practitioner"></span><h3>Practitioner<a class="headerlink" href="#practitioner" title="Permalink to this headline">¶</a></h3>
 <p>The Practitioner is the person who is delivering the service.</p>
+<p>See <a class="reference internal" href="#practitioner-data-elements"><span class="std std-ref">Practitioner</span></a> for the data elements for a practitioner.</p>
 </div>
 <div class="section" id="client">
 <span id="key-concepts-client"></span><h3>Client<a class="headerlink" href="#client" title="Permalink to this headline">¶</a></h3>
 <p>The Client is the person who is receiving the service.</p>
+<p>See <a class="reference internal" href="#client-data-elements"><span class="std std-ref">Client</span></a> for the data elements for a client.</p>
 </div>
 <div class="section" id="episode">
 <span id="key-concepts-episode"></span><h3>Episode<a class="headerlink" href="#episode" title="Permalink to this headline">¶</a></h3>
@@ -381,6 +388,7 @@ has been lost with the client. A new episode is deemed to commence if the
 person re-presents to the organisation.</p>
 </li>
 </ul>
+<p>See <a class="reference internal" href="#episode-data-elements"><span class="std std-ref">Episode</span></a> for the data elements for a episode.</p>
 </div>
 <div class="section" id="service-contact">
 <span id="key-concepts-service-contact"></span><h3>Service Contact<a class="headerlink" href="#service-contact" title="Permalink to this headline">¶</a></h3>
@@ -409,6 +417,7 @@ appointment).</p>
 modification.</p>
 </li>
 </ul>
+<p>See <a class="reference internal" href="#service-contact-data-elements"><span class="std std-ref">Service Contact</span></a> for the data elements for a service contact.</p>
 </div>
 <div class="section" id="outcome-collection-occasion">
 <span id="key-concepts-outcome-collection-occasion"></span><h3>Outcome Collection Occasion<a class="headerlink" href="#outcome-collection-occasion" title="Permalink to this headline">¶</a></h3>
@@ -419,19 +428,21 @@ frequent if clinically indicated and agreed by the client.</p>
 <p>Measures will be the Kessler Psychological Distress Scale K10+ (in the case of
 Aboriginal and Torres Strait Islander clients, the K5) as well as the Strengths
 &amp; Difficulties Questionnaires.</p>
+<p>See <a class="reference internal" href="#outcome-collection-occasion-data-elements"><span class="std std-ref">Outcome Collection Occasion</span></a> for the data elements for an outcome
+collection occasion.</p>
 </div>
 </div>
 <div class="section" id="record-formats">
-<span id="id4"></span><h2>Record formats<a class="headerlink" href="#record-formats" title="Permalink to this headline">¶</a></h2>
+<span id="id5"></span><h2>Record formats<a class="headerlink" href="#record-formats" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="provider-organisation-data-elements">
-<span id="id5"></span><h3>Provider Organisation<a class="headerlink" href="#provider-organisation-data-elements" title="Permalink to this headline">¶</a></h3>
+<span id="id6"></span><h3>Provider Organisation<a class="headerlink" href="#provider-organisation-data-elements" title="Permalink to this headline">¶</a></h3>
 <p>See <a class="reference internal" href="#key-concepts-provider-organisation"><span class="std std-ref">Provider Organisation</span></a> for the definition of a provider
 organisation.</p>
 <p>Provider Organisation data is for administrative use within the PMHC MDS
 system. It is managed by the PHN&#8217;s via the PMHC MDS administrative interface,
 it cannot be uploaded.</p>
-<table border="1" class="docutils" id="id15">
-<caption><span class="caption-number">Table 1 </span><span class="caption-text">Provider Organisation record layout</span><a class="headerlink" href="#id15" title="Permalink to this table">¶</a></caption>
+<table border="1" class="docutils" id="id16">
+<caption><span class="caption-number">Table 1 </span><span class="caption-text">Provider Organisation record layout</span><a class="headerlink" href="#id16" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="33%" />
 <col width="33%" />
@@ -534,7 +545,21 @@ it cannot be uploaded.</p>
 </table>
 </td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#provider-organisation-tags">Provider Organisation - Tags</a> (organisation_tags)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#provider-organisation-status">Provider Organisation - Status</a> (organisation_status)</td>
+<td>string</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">0:</th><td class="field-body">Inactive</td>
+</tr>
+<tr class="field-even field"><th class="field-name">1:</th><td class="field-body">Active</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#provider-organisation-tags">Provider Organisation - Tags</a> (organisation_tags)</td>
 <td>string</td>
 <td>List of tags for the provider organisation.</td>
 </tr>
@@ -543,14 +568,14 @@ it cannot be uploaded.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="practitioner-data-elements">
-<span id="id6"></span><h3>Practitioner<a class="headerlink" href="#practitioner-data-elements" title="Permalink to this headline">¶</a></h3>
+<span id="id7"></span><h3>Practitioner<a class="headerlink" href="#practitioner-data-elements" title="Permalink to this headline">¶</a></h3>
 <p>See <a class="reference internal" href="#key-concepts-practitioner"><span class="std std-ref">Practitioner</span></a> for the definition of a practitioner.</p>
 <p>Practitioner data is intended to provide workforce planning data for use
 regionally by the PHN and nationally by the Department. It is managed by the
 provider organisations via either the PMHC MDS administrative interface or
 upload.</p>
-<table border="1" class="docutils" id="id16">
-<caption><span class="caption-number">Table 2 </span><span class="caption-text">Practitioner record layout</span><a class="headerlink" href="#id16" title="Permalink to this table">¶</a></caption>
+<table border="1" class="docutils" id="id17">
+<caption><span class="caption-number">Table 2 </span><span class="caption-text">Practitioner record layout</span><a class="headerlink" href="#id17" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="33%" />
 <col width="33%" />
@@ -569,7 +594,7 @@ upload.</p>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#practitioner-key">Practitioner Key</a> (practitioner_key)</td>
 <td>string (2,50)</td>
-<td>A unique identifier for a practitioner within the responsible organisation. Assigned by the organisation.</td>
+<td>A unique identifier for a practitioner within the responsible provider organisation. Assigned by either the PHN or provider organisation depending on local procedures.</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#practitioner-category">Practitioner - Category</a> (practitioner_category)</td>
 <td>string</td>
@@ -692,11 +717,11 @@ upload.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="client-data-elements">
-<span id="id7"></span><h3>Client<a class="headerlink" href="#client-data-elements" title="Permalink to this headline">¶</a></h3>
+<span id="id8"></span><h3>Client<a class="headerlink" href="#client-data-elements" title="Permalink to this headline">¶</a></h3>
 <p>See <a class="reference internal" href="#key-concepts-client"><span class="std std-ref">Client</span></a> for definition of a client.</p>
 <p>Clients are managed by the provider organisations via upload.</p>
-<table border="1" class="docutils" id="id17">
-<caption><span class="caption-number">Table 3 </span><span class="caption-text">Client record layout</span><a class="headerlink" href="#id17" title="Permalink to this table">¶</a></caption>
+<table border="1" class="docutils" id="id18">
+<caption><span class="caption-number">Table 3 </span><span class="caption-text">Client record layout</span><a class="headerlink" href="#id18" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="33%" />
 <col width="33%" />
@@ -2232,11 +2257,11 @@ upload.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="episode-data-elements">
-<span id="id8"></span><h3>Episode<a class="headerlink" href="#episode-data-elements" title="Permalink to this headline">¶</a></h3>
+<span id="id9"></span><h3>Episode<a class="headerlink" href="#episode-data-elements" title="Permalink to this headline">¶</a></h3>
 <p>See <a class="reference internal" href="#key-concepts-episode"><span class="std std-ref">Episode</span></a> for definition of an episode.</p>
 <p>Episodes are managed by the provider organisations via upload.</p>
-<table border="1" class="docutils" id="id18">
-<caption><span class="caption-number">Table 4 </span><span class="caption-text">Episode record layout</span><a class="headerlink" href="#id18" title="Permalink to this table">¶</a></caption>
+<table border="1" class="docutils" id="id19">
+<caption><span class="caption-number">Table 4 </span><span class="caption-text">Episode record layout</span><a class="headerlink" href="#id19" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="33%" />
 <col width="33%" />
@@ -2287,7 +2312,7 @@ upload.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">blank:</th><td class="field-body">Episode open</td>
+<tr class="field-odd field"><th class="field-name">0:</th><td class="field-body">Episode open</td>
 </tr>
 <tr class="field-even field"><th class="field-name">1:</th><td class="field-body">Episode closed - treatment concluded</td>
 </tr>
@@ -2527,21 +2552,25 @@ upload.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">101:</th><td class="field-body">Panic disorder</td>
+<tr class="field-odd field"><th class="field-name">100:</th><td class="field-body">Anxiety disorders (ATAPS)</td>
 </tr>
-<tr class="field-even field"><th class="field-name">102:</th><td class="field-body">Agoraphobia</td>
+<tr class="field-even field"><th class="field-name">101:</th><td class="field-body">Panic disorder</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">103:</th><td class="field-body">Social phobia</td>
+<tr class="field-odd field"><th class="field-name">102:</th><td class="field-body">Agoraphobia</td>
 </tr>
-<tr class="field-even field"><th class="field-name">104:</th><td class="field-body">Generalised anxiety disorder</td>
+<tr class="field-even field"><th class="field-name">103:</th><td class="field-body">Social phobia</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">105:</th><td class="field-body">Obsessive-compulsive disorder</td>
+<tr class="field-odd field"><th class="field-name">104:</th><td class="field-body">Generalised anxiety disorder</td>
 </tr>
-<tr class="field-even field"><th class="field-name">106:</th><td class="field-body">Post-traumatic stress disorder</td>
+<tr class="field-even field"><th class="field-name">105:</th><td class="field-body">Obsessive-compulsive disorder</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">107:</th><td class="field-body">Acute stress disorder</td>
+<tr class="field-odd field"><th class="field-name">106:</th><td class="field-body">Post-traumatic stress disorder</td>
 </tr>
-<tr class="field-even field"><th class="field-name">108:</th><td class="field-body">Other anxiety disorder</td>
+<tr class="field-even field"><th class="field-name">107:</th><td class="field-body">Acute stress disorder</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">108:</th><td class="field-body">Other anxiety disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">200:</th><td class="field-body">Affective (Mood) disorders (ATAPS)</td>
 </tr>
 <tr class="field-odd field"><th class="field-name">201:</th><td class="field-body">Major depressive disorder</td>
 </tr>
@@ -2555,15 +2584,19 @@ upload.</p>
 </tr>
 <tr class="field-even field"><th class="field-name">206:</th><td class="field-body">Other affective disorder</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">301:</th><td class="field-body">Alcohol harmful use</td>
+<tr class="field-odd field"><th class="field-name">300:</th><td class="field-body">Substance use disorders (ATAPS)</td>
 </tr>
-<tr class="field-even field"><th class="field-name">302:</th><td class="field-body">Alcohol dependence</td>
+<tr class="field-even field"><th class="field-name">301:</th><td class="field-body">Alcohol harmful use</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">303:</th><td class="field-body">Other drug harmful use</td>
+<tr class="field-odd field"><th class="field-name">302:</th><td class="field-body">Alcohol dependence</td>
 </tr>
-<tr class="field-even field"><th class="field-name">304:</th><td class="field-body">Other drug dependence</td>
+<tr class="field-even field"><th class="field-name">303:</th><td class="field-body">Other drug harmful use</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">305:</th><td class="field-body">Other substance use disorder</td>
+<tr class="field-odd field"><th class="field-name">304:</th><td class="field-body">Other drug dependence</td>
+</tr>
+<tr class="field-even field"><th class="field-name">305:</th><td class="field-body">Other substance use disorder</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">400:</th><td class="field-body">Psychotic disorders (ATAPS)</td>
 </tr>
 <tr class="field-even field"><th class="field-name">401:</th><td class="field-body">Schizophrenia</td>
 </tr>
@@ -2613,7 +2646,103 @@ upload.</p>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#episode-additional-diagnosis">Episode - Additional Diagnosis</a> (additional_diagnosis)</td>
 <td>string</td>
-<td>See <em>Episode - Principal Diagnosis</em></td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">000:</th><td class="field-body">No additional diagnosis</td>
+</tr>
+<tr class="field-even field"><th class="field-name">100:</th><td class="field-body">Anxiety disorders (ATAPS)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">101:</th><td class="field-body">Panic disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">102:</th><td class="field-body">Agoraphobia</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">103:</th><td class="field-body">Social phobia</td>
+</tr>
+<tr class="field-even field"><th class="field-name">104:</th><td class="field-body">Generalised anxiety disorder</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">105:</th><td class="field-body">Obsessive-compulsive disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">106:</th><td class="field-body">Post-traumatic stress disorder</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">107:</th><td class="field-body">Acute stress disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">108:</th><td class="field-body">Other anxiety disorder</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">200:</th><td class="field-body">Affective (Mood) disorders (ATAPS)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">201:</th><td class="field-body">Major depressive disorder</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">202:</th><td class="field-body">Dysthymia</td>
+</tr>
+<tr class="field-even field"><th class="field-name">203:</th><td class="field-body">Depressive disorder NOS</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">204:</th><td class="field-body">Bipolar disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">205:</th><td class="field-body">Cyclothymic disorder</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">206:</th><td class="field-body">Other affective disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">300:</th><td class="field-body">Substance use disorders (ATAPS)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">301:</th><td class="field-body">Alcohol harmful use</td>
+</tr>
+<tr class="field-even field"><th class="field-name">302:</th><td class="field-body">Alcohol dependence</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">303:</th><td class="field-body">Other drug harmful use</td>
+</tr>
+<tr class="field-even field"><th class="field-name">304:</th><td class="field-body">Other drug dependence</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">305:</th><td class="field-body">Other substance use disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">400:</th><td class="field-body">Psychotic disorders (ATAPS)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">401:</th><td class="field-body">Schizophrenia</td>
+</tr>
+<tr class="field-even field"><th class="field-name">402:</th><td class="field-body">Schizoaffective disorder</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">403:</th><td class="field-body">Brief psychotic disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">404:</th><td class="field-body">Other psychotic disorder</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">501:</th><td class="field-body">Separation anxiety disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">502:</th><td class="field-body">Attention deficit hyperactivity disorder (ADHD)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">503:</th><td class="field-body">Conduct disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">504:</th><td class="field-body">Oppositional defiant disorder</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">505:</th><td class="field-body">Pervasive developmental disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">506:</th><td class="field-body">Other disorder of childhood and adolescence</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">601:</th><td class="field-body">Adjustment disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">602:</th><td class="field-body">Eating disorder</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">603:</th><td class="field-body">Somatoform disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">604:</th><td class="field-body">Personality disorder</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">605:</th><td class="field-body">Other mental disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">901:</th><td class="field-body">Anxiety symptoms</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">902:</th><td class="field-body">Depressive symptoms</td>
+</tr>
+<tr class="field-even field"><th class="field-name">903:</th><td class="field-body">Mixed anxiety and depressive symptoms</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">904:</th><td class="field-body">Stress related</td>
+</tr>
+<tr class="field-even field"><th class="field-name">905:</th><td class="field-body">Other</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">999:</th><td class="field-body">Missing</td>
+</tr>
+</tbody>
+</table>
+</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#episode-medication-antipsychotics-n05a">Episode - Medication - Antipsychotics (N05A)</a> (medication_antipsychotics)</td>
 <td>string</td>
@@ -2804,11 +2933,11 @@ upload.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="service-contact-data-elements">
-<span id="id9"></span><h3>Service Contact<a class="headerlink" href="#service-contact-data-elements" title="Permalink to this headline">¶</a></h3>
+<span id="id10"></span><h3>Service Contact<a class="headerlink" href="#service-contact-data-elements" title="Permalink to this headline">¶</a></h3>
 <p>See <a class="reference internal" href="#key-concepts-service-contact"><span class="std std-ref">Service Contact</span></a> for definition of a service contact.</p>
 <p>Service contacts are managed by the provider organisations via upload.</p>
-<table border="1" class="docutils" id="id19">
-<caption><span class="caption-number">Table 5 </span><span class="caption-text">Service contact record layout</span><a class="headerlink" href="#id19" title="Permalink to this table">¶</a></caption>
+<table border="1" class="docutils" id="id20">
+<caption><span class="caption-number">Table 5 </span><span class="caption-text">Service contact record layout</span><a class="headerlink" href="#id20" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="33%" />
 <col width="33%" />
@@ -2849,21 +2978,25 @@ upload.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Assessment</td>
+<tr class="field-odd field"><th class="field-name">0:</th><td class="field-body">No contact took place</td>
 </tr>
-<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">Structured psychological intervention</td>
+<tr class="field-even field"><th class="field-name">1:</th><td class="field-body">Assessment</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">Other psychological intervention</td>
+<tr class="field-odd field"><th class="field-name">2:</th><td class="field-body">Structured psychological intervention</td>
 </tr>
-<tr class="field-even field"><th class="field-name">4:</th><td class="field-body">Clinical care coordination/liaison</td>
+<tr class="field-even field"><th class="field-name">3:</th><td class="field-body">Other psychological intervention</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">5:</th><td class="field-body">Clinical nursing services</td>
+<tr class="field-odd field"><th class="field-name">4:</th><td class="field-body">Clinical care coordination/liaison</td>
 </tr>
-<tr class="field-even field"><th class="field-name">6:</th><td class="field-body">Child or youth specific assistance NEC</td>
+<tr class="field-even field"><th class="field-name">5:</th><td class="field-body">Clinical nursing services</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">7:</th><td class="field-body">Suicide prevention specific assistance NEC</td>
+<tr class="field-odd field"><th class="field-name">6:</th><td class="field-body">Child or youth specific assistance NEC</td>
 </tr>
-<tr class="field-even field"><th class="field-name">8:</th><td class="field-body">Cultural specific assistance NEC</td>
+<tr class="field-even field"><th class="field-name">7:</th><td class="field-body">Suicide prevention specific assistance NEC</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">8:</th><td class="field-body">Cultural specific assistance NEC</td>
+</tr>
+<tr class="field-even field"><th class="field-name">98:</th><td class="field-body">ATAPS</td>
 </tr>
 </tbody>
 </table>
@@ -2881,13 +3014,15 @@ upload.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Face to Face</td>
+<tr class="field-odd field"><th class="field-name">0:</th><td class="field-body">No contact took place</td>
 </tr>
-<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">Telephone</td>
+<tr class="field-even field"><th class="field-name">1:</th><td class="field-body">Face to Face</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">Video</td>
+<tr class="field-odd field"><th class="field-name">2:</th><td class="field-body">Telephone</td>
 </tr>
-<tr class="field-even field"><th class="field-name">4:</th><td class="field-body">Internet-based</td>
+<tr class="field-even field"><th class="field-name">3:</th><td class="field-body">Video</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">4:</th><td class="field-body">Internet-based</td>
 </tr>
 </tbody>
 </table>
@@ -2957,23 +3092,25 @@ upload.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">0-15 mins</td>
+<tr class="field-odd field"><th class="field-name">0:</th><td class="field-body">No contact took place</td>
 </tr>
-<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">16-30 mins</td>
+<tr class="field-even field"><th class="field-name">1:</th><td class="field-body">1-15 mins</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">31-45 mins</td>
+<tr class="field-odd field"><th class="field-name">2:</th><td class="field-body">16-30 mins</td>
 </tr>
-<tr class="field-even field"><th class="field-name">4:</th><td class="field-body">46-60 mins</td>
+<tr class="field-even field"><th class="field-name">3:</th><td class="field-body">31-45 mins</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">5:</th><td class="field-body">61-75 mins</td>
+<tr class="field-odd field"><th class="field-name">4:</th><td class="field-body">46-60 mins</td>
 </tr>
-<tr class="field-even field"><th class="field-name">6:</th><td class="field-body">76-90 mins</td>
+<tr class="field-even field"><th class="field-name">5:</th><td class="field-body">61-75 mins</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">7:</th><td class="field-body">91-105 mins</td>
+<tr class="field-odd field"><th class="field-name">6:</th><td class="field-body">76-90 mins</td>
 </tr>
-<tr class="field-even field"><th class="field-name">8:</th><td class="field-body">106-120 mins</td>
+<tr class="field-even field"><th class="field-name">7:</th><td class="field-body">91-105 mins</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">over 120 mins</td>
+<tr class="field-odd field"><th class="field-name">8:</th><td class="field-body">106-120 mins</td>
+</tr>
+<tr class="field-even field"><th class="field-name">9:</th><td class="field-body">over 120 mins</td>
 </tr>
 </tbody>
 </table>
@@ -2981,7 +3118,7 @@ upload.</p>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#service-contact-copayment">Service Contact - Copayment</a> (service_contact_copayment)</td>
 <td>number</td>
-<td>0 - 999999</td>
+<td>0 - 999999.99</td>
 </tr>
 <tr class="row-even"><td><p class="first"><a class="reference internal" href="#service-contact-client-participation-indicator">Service Contact - Client Participation Indicator</a> (service_contact_participation_indicator)</p>
 <p class="last">METeOR: <a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/494341">494341</a></p>
@@ -3054,7 +3191,7 @@ upload.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="outcome-collection-occasion-data-elements">
-<span id="id10"></span><h3>Outcome Collection Occasion<a class="headerlink" href="#outcome-collection-occasion-data-elements" title="Permalink to this headline">¶</a></h3>
+<span id="id11"></span><h3>Outcome Collection Occasion<a class="headerlink" href="#outcome-collection-occasion-data-elements" title="Permalink to this headline">¶</a></h3>
 <p>See <a class="reference internal" href="#key-concepts-outcome-collection-occasion"><span class="std std-ref">Outcome Collection Occasion</span></a> for definition of an outcome
 collection occasion.</p>
 <p>Individual item scores will eventually be required, however, it is noted that
@@ -3070,8 +3207,7 @@ Aboriginal and Torres Strait Islander people if that is considered more appropri
 <li><strong>For children and young people (up to and including 17 years)</strong> - the
 Strengths &amp; Difficulties Questionnaires (<a class="reference internal" href="#sdq-data-elements"><span class="std std-ref">SDQ</span></a>) is the
 prescribed tool.  The specified versions include the parent-report for 4-10
-years and 11-17 years; and the self-report for 11-17 years.
-<em>We acknowledge that there is also a parent-report for 2-4 years; and teacher versions for all the years (2-4; 4-10 and 11-17) but that these are not to be reported the PMHC-MDS.</em></li>
+years and 11-17 years; and the self-report for 11-17 years.</li>
 </ul>
 <p><em>Please note: For adolescents, clinician-discretion is allowed, and that the K10+ or K5 may be used, even though the person is under 18 years</em></p>
 <div class="section" id="k10">
@@ -3079,8 +3215,8 @@ years and 11-17 years; and the self-report for 11-17 years.
 <p>As noted above, reporting individual item scores will eventually be required.
 In the short term, respondents can either report all 14 item scores or report
 the K10 total score as well as item scores for the 4 extra items in the K10+.</p>
-<table border="1" class="docutils" id="id20">
-<caption><span class="caption-number">Table 6 </span><span class="caption-text">K10+ record layout</span><a class="headerlink" href="#id20" title="Permalink to this table">¶</a></caption>
+<table border="1" class="docutils" id="id21">
+<caption><span class="caption-number">Table 6 </span><span class="caption-text">K10+ record layout</span><a class="headerlink" href="#id21" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="33%" />
 <col width="33%" />
@@ -3398,8 +3534,8 @@ answered please select a response of &#8216;Not stated / missing&#8217;.</p>
 <p>As noted above, reporting individual item scores will eventually be required.
 In the short term, respondents can either report all 5 item scores or report
 the K5 total score.</p>
-<table border="1" class="docutils" id="id21">
-<caption><span class="caption-number">Table 7 </span><span class="caption-text">K5 record layout</span><a class="headerlink" href="#id21" title="Permalink to this table">¶</a></caption>
+<table border="1" class="docutils" id="id22">
+<caption><span class="caption-number">Table 7 </span><span class="caption-text">K5 record layout</span><a class="headerlink" href="#id22" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="33%" />
 <col width="33%" />
@@ -3584,6 +3720,7 @@ and discharge and are rated on the basis of the previous 1 month period.</p>
 <li>YR1 - Youth self report measure (11-17), Baseline version; and</li>
 <li>YR2 - Youth self report measure (11-17), Follow up version.</li>
 </ul>
+<p><em>We acknowledge that there is also a parent-report for 2-4 years; and teacher versions for all the years (2-4; 4-10 and 11-17) but that these are not to be reported the PMHC-MDS.</em></p>
 <p>Please note that the item numbering in the SDQ versions is deliberately non
 sequential because it covers all items in all versions, both to indicate item
 equivalence across versions and to assist data entry, especially of
@@ -3958,8 +4095,8 @@ the SDQ subscale scores.</p>
 <li><em>NB. Bold items indicate reverse scoring</em></li>
 </ul>
 </div>
-<div class="section" id="id11">
-<h5>Scoring the SDQ<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h5>
+<div class="section" id="id12">
+<h5>Scoring the SDQ<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h5>
 <p>The standard values for coding individual Item responses are 0 (Not True),
 1 (Somewhat True), 2 (Certainly True) and 9 (Missing data).</p>
 <p>For completed items (response coded 0,1,2) the Item scores are usually the same
@@ -3989,8 +4126,8 @@ since it assess the burden on others rather than on the child/youth.</p>
 <p>The coded Item Responses for the remaining Items 28 through 32 have to be
 mapped to their Item Scores before adding up. This mapping is the same for all,
 namely: 0-&gt;0, 1-&gt;0, 2-&gt;1, 3-&gt;2.</p>
-<table border="1" class="docutils" id="id22">
-<caption><span class="caption-number">Table 8 </span><span class="caption-text">SDQ record layout</span><a class="headerlink" href="#id22" title="Permalink to this table">¶</a></caption>
+<table border="1" class="docutils" id="id23">
+<caption><span class="caption-number">Table 8 </span><span class="caption-text">SDQ record layout</span><a class="headerlink" href="#id23" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="33%" />
 <col width="33%" />
@@ -5620,9 +5757,10 @@ refer to <a class="reference internal" href="form-creation.html#form-country-of-
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">If the date of birth is unknown, the following approaches should be used:</p>
-<blockquote>
-<div><ul class="simple">
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><ul class="first simple">
+<li>The date of birth must not be before January 1st 1900.</li>
+<li>The date of birth must not be in the future.</li>
+<li>If the date of birth is unknown, the following approaches should be used:<ul>
 <li>If the age of the person is known, the age should be used to derive the
 year of birth</li>
 <li>If the age of the person is unknown, an estimated age of the person should
@@ -5634,7 +5772,8 @@ following convention: 0101Estimated year of birth.</li>
 <li>If you have estimated the year of birth make sure you record this in the
 &#8216;Estimated date of birth flag&#8217;</li>
 </ul>
-</div></blockquote>
+</li>
+</ul>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">METeOR:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/287007">287007</a></p>
@@ -6820,7 +6959,11 @@ used across the National Health Data Dictionary; specifically, dates must be
 of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
 necessary to pad out a value. For instance, 13th March 2008 would appear as
 13032008.</p>
-<p class="last">If the date the measure was given is unknown, 09099999 should be used.</p>
+<p>If the date the measure was given is unknown, 09099999 should be used.</p>
+<ul class="last simple">
+<li>The measure date must not be before 1st January 2016.</li>
+<li>The measure date must not be in the future.</li>
+</ul>
 </td>
 </tr>
 </tbody>
@@ -6915,10 +7058,105 @@ health status;</li>
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><p class="first">See <em>Episode - Principal Diagnosis</em></p>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">000:</th><td class="field-body">No additional diagnosis</td>
+</tr>
+<tr class="field-even field"><th class="field-name">100:</th><td class="field-body">Anxiety disorders (ATAPS)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">101:</th><td class="field-body">Panic disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">102:</th><td class="field-body">Agoraphobia</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">103:</th><td class="field-body">Social phobia</td>
+</tr>
+<tr class="field-even field"><th class="field-name">104:</th><td class="field-body">Generalised anxiety disorder</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">105:</th><td class="field-body">Obsessive-compulsive disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">106:</th><td class="field-body">Post-traumatic stress disorder</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">107:</th><td class="field-body">Acute stress disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">108:</th><td class="field-body">Other anxiety disorder</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">200:</th><td class="field-body">Affective (Mood) disorders (ATAPS)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">201:</th><td class="field-body">Major depressive disorder</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">202:</th><td class="field-body">Dysthymia</td>
+</tr>
+<tr class="field-even field"><th class="field-name">203:</th><td class="field-body">Depressive disorder NOS</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">204:</th><td class="field-body">Bipolar disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">205:</th><td class="field-body">Cyclothymic disorder</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">206:</th><td class="field-body">Other affective disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">300:</th><td class="field-body">Substance use disorders (ATAPS)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">301:</th><td class="field-body">Alcohol harmful use</td>
+</tr>
+<tr class="field-even field"><th class="field-name">302:</th><td class="field-body">Alcohol dependence</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">303:</th><td class="field-body">Other drug harmful use</td>
+</tr>
+<tr class="field-even field"><th class="field-name">304:</th><td class="field-body">Other drug dependence</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">305:</th><td class="field-body">Other substance use disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">400:</th><td class="field-body">Psychotic disorders (ATAPS)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">401:</th><td class="field-body">Schizophrenia</td>
+</tr>
+<tr class="field-even field"><th class="field-name">402:</th><td class="field-body">Schizoaffective disorder</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">403:</th><td class="field-body">Brief psychotic disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">404:</th><td class="field-body">Other psychotic disorder</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">501:</th><td class="field-body">Separation anxiety disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">502:</th><td class="field-body">Attention deficit hyperactivity disorder (ADHD)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">503:</th><td class="field-body">Conduct disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">504:</th><td class="field-body">Oppositional defiant disorder</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">505:</th><td class="field-body">Pervasive developmental disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">506:</th><td class="field-body">Other disorder of childhood and adolescence</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">601:</th><td class="field-body">Adjustment disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">602:</th><td class="field-body">Eating disorder</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">603:</th><td class="field-body">Somatoform disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">604:</th><td class="field-body">Personality disorder</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">605:</th><td class="field-body">Other mental disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">901:</th><td class="field-body">Anxiety symptoms</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">902:</th><td class="field-body">Depressive symptoms</td>
+</tr>
+<tr class="field-even field"><th class="field-name">903:</th><td class="field-body">Mixed anxiety and depressive symptoms</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">904:</th><td class="field-body">Stress related</td>
+</tr>
+<tr class="field-even field"><th class="field-name">905:</th><td class="field-body">Other</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">999:</th><td class="field-body">Missing</td>
+</tr>
+</tbody>
+</table>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Additional Diagnosis gives information on conditions that are significant in
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Additional Diagnosis gives information on conditions that are significant in
 terms of treatment required and resources used during the episode of care.
 Additional diagnoses should be interpreted as conditions that affect client
 management in terms of requiring any of the following:</p>
@@ -6927,10 +7165,25 @@ management in terms of requiring any of the following:</p>
 <li>Diagnostic procedures</li>
 <li>Increased clinical care and/or monitoring</li>
 </ul>
-<p class="last">Where the client one or more comorbid mental health conditions in addition to
+<p>Where the client one or more comorbid mental health conditions in addition to
 the condition coded as the Principal Diagnosis, record the main condition as
-the Additional Diagnosis. For further notes on the recording of diagnosis codes
-see Principal Diagnosis</p>
+the Additional Diagnosis.</p>
+<p>The following responses have been added to allow mapping of ATAPS data to PMHC
+format.</p>
+<ul class="simple">
+<li>100: Anxiety disorders (ATAPS)</li>
+<li>200: Affective (Mood) disorders (ATAPS)</li>
+<li>300: Substance use disorders (ATAPS)</li>
+<li>400: Psychotic disorders (ATAPS)</li>
+</ul>
+<p><em>Note: These four codes should only be used for Episodes that are migrated
+from ATAPS MDS sources that cannot be described by any other Diagnosis.
+It is expected that the majority of Episodes delivered to clients
+from 1st July, 2017 can be assigned to other diagnoses.</em></p>
+<p>These responses will only be allowed on episodes where the original
+ATAPS referral date was before 1 July 2017</p>
+<p>These responses will only be allowed on episodes with the !ATAPS flag.</p>
+<p class="last">For further notes on the recording of diagnosis codes see Principal Diagnosis.</p>
 </td>
 </tr>
 </tbody>
@@ -6962,6 +7215,7 @@ recommends that &#8216;usual&#8217; be defined as: &#8216;the place where the pe
 intends to live for 6 months or more, or the place that the person regards as
 their main residence, or where the person has no other residence, the place
 they currently reside.&#8217;</p>
+<p>Postcodes are deemed valid if they are in the range 0200-0299, 0800-9999.</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">METeOR:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/429894">429894</a></p>
@@ -7041,7 +7295,7 @@ extracts accessible by the Department of Health.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">blank:</th><td class="field-body">Episode open</td>
+<tr class="field-odd field"><th class="field-name">0:</th><td class="field-body">Episode open</td>
 </tr>
 <tr class="field-even field"><th class="field-name">1:</th><td class="field-body">Episode closed - treatment concluded</td>
 </tr>
@@ -7061,7 +7315,7 @@ extracts accessible by the Department of Health.</p>
 </tr>
 <tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">In order to use code 1 (Episode closed - treatment concluded) the client must have at least one service contact. All other codes may be applicable even when the client has no service contacts.</p>
 <dl class="docutils">
-<dt>Blank - Episode open</dt>
+<dt>0 or Blank - Episode open</dt>
 <dd><p class="first last">The client still requires treatment and further service contacts are
 required.</p>
 </dd>
@@ -7197,7 +7451,11 @@ item has not been collected.</p>
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">false</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">An <em>Episode of Care</em> may be ended in one of two ways:</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><ul class="first simple">
+<li>The episode end date must not be before 1st January 2016.</li>
+<li>The episode end date must not be in the future.</li>
+</ul>
+<p>An <em>Episode of Care</em> may be ended in one of two ways:</p>
 <ul class="simple">
 <li>clinically, consequent upon conclusion of treatment for the client and
 discharge from care; or</li>
@@ -7845,21 +8103,25 @@ disorder (ADHD) and to improve impaired cognitive abilities.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">101:</th><td class="field-body">Panic disorder</td>
+<tr class="field-odd field"><th class="field-name">100:</th><td class="field-body">Anxiety disorders (ATAPS)</td>
 </tr>
-<tr class="field-even field"><th class="field-name">102:</th><td class="field-body">Agoraphobia</td>
+<tr class="field-even field"><th class="field-name">101:</th><td class="field-body">Panic disorder</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">103:</th><td class="field-body">Social phobia</td>
+<tr class="field-odd field"><th class="field-name">102:</th><td class="field-body">Agoraphobia</td>
 </tr>
-<tr class="field-even field"><th class="field-name">104:</th><td class="field-body">Generalised anxiety disorder</td>
+<tr class="field-even field"><th class="field-name">103:</th><td class="field-body">Social phobia</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">105:</th><td class="field-body">Obsessive-compulsive disorder</td>
+<tr class="field-odd field"><th class="field-name">104:</th><td class="field-body">Generalised anxiety disorder</td>
 </tr>
-<tr class="field-even field"><th class="field-name">106:</th><td class="field-body">Post-traumatic stress disorder</td>
+<tr class="field-even field"><th class="field-name">105:</th><td class="field-body">Obsessive-compulsive disorder</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">107:</th><td class="field-body">Acute stress disorder</td>
+<tr class="field-odd field"><th class="field-name">106:</th><td class="field-body">Post-traumatic stress disorder</td>
 </tr>
-<tr class="field-even field"><th class="field-name">108:</th><td class="field-body">Other anxiety disorder</td>
+<tr class="field-even field"><th class="field-name">107:</th><td class="field-body">Acute stress disorder</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">108:</th><td class="field-body">Other anxiety disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">200:</th><td class="field-body">Affective (Mood) disorders (ATAPS)</td>
 </tr>
 <tr class="field-odd field"><th class="field-name">201:</th><td class="field-body">Major depressive disorder</td>
 </tr>
@@ -7873,15 +8135,19 @@ disorder (ADHD) and to improve impaired cognitive abilities.</p>
 </tr>
 <tr class="field-even field"><th class="field-name">206:</th><td class="field-body">Other affective disorder</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">301:</th><td class="field-body">Alcohol harmful use</td>
+<tr class="field-odd field"><th class="field-name">300:</th><td class="field-body">Substance use disorders (ATAPS)</td>
 </tr>
-<tr class="field-even field"><th class="field-name">302:</th><td class="field-body">Alcohol dependence</td>
+<tr class="field-even field"><th class="field-name">301:</th><td class="field-body">Alcohol harmful use</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">303:</th><td class="field-body">Other drug harmful use</td>
+<tr class="field-odd field"><th class="field-name">302:</th><td class="field-body">Alcohol dependence</td>
 </tr>
-<tr class="field-even field"><th class="field-name">304:</th><td class="field-body">Other drug dependence</td>
+<tr class="field-even field"><th class="field-name">303:</th><td class="field-body">Other drug harmful use</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">305:</th><td class="field-body">Other substance use disorder</td>
+<tr class="field-odd field"><th class="field-name">304:</th><td class="field-body">Other drug dependence</td>
+</tr>
+<tr class="field-even field"><th class="field-name">305:</th><td class="field-body">Other substance use disorder</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">400:</th><td class="field-body">Psychotic disorders (ATAPS)</td>
 </tr>
 <tr class="field-even field"><th class="field-name">401:</th><td class="field-body">Schizophrenia</td>
 </tr>
@@ -7966,8 +8232,23 @@ codes should be used for clients who present with problems that do not meet
 threshold criteria for a formal diagnosis - for example, people experiencing
 subsyndromal symptoms who may be at risk of progressing to a more severe
 symptom level.</p>
-<p class="last">Reference: Diagnostic and Statistical Manual of Mental Disorders, Fourth
+<p>Reference: Diagnostic and Statistical Manual of Mental Disorders, Fourth
 Edition, Text Revision. Copyright 2000 American Psychiatric Association.</p>
+<p>The following responses have been added to allow mapping of ATAPS data to PMHC
+format.</p>
+<ul class="simple">
+<li>100: Anxiety disorders (ATAPS)</li>
+<li>200: Affective (Mood) disorders (ATAPS)</li>
+<li>300: Substance use disorders (ATAPS)</li>
+<li>400: Psychotic disorders (ATAPS)</li>
+</ul>
+<p><em>Note: These four codes should only be used for Episodes that are migrated
+from ATAPS MDS sources that cannot be described by any other Diagnosis.
+It is expected that the majority of Episodes delivered to clients
+from 1st July, 2017 can be assigned to other diagnoses.</em></p>
+<p>These responses will only be allowed on episodes where the original
+ATAPS referral date was before 1 July 2017</p>
+<p class="last">These responses will only be allowed on episodes with the !ATAPS flag.</p>
 </td>
 </tr>
 </tbody>
@@ -8131,17 +8412,25 @@ that cannot be described by other categories.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body">referral_date</td>
+<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">referral_date</p>
+</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">date</td>
+<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">date</p>
+</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">false</td>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">false</p>
+</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body">For Date fields, data must be recorded in compliance with the standard format
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">For Date fields, data must be recorded in compliance with the standard format
 used across the National Health Data Dictionary; specifically, dates must be
 of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
 necessary to pad out a value. For instance, 13th March 2008 would appear as
-13032008.</td>
+13032008.</p>
+<ul class="last simple">
+<li>The referral date must not be before 1st January 2014.</li>
+<li>The referral date must not be in the future.</li>
+</ul>
+</td>
 </tr>
 </tbody>
 </table>
@@ -8440,7 +8729,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -8458,6 +8747,9 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 </tbody>
 </table>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">When reporting total score use ‘9 - Not stated / Missing’</p>
 </td>
 </tr>
 </tbody>
@@ -8480,7 +8772,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -8498,6 +8790,9 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 </tbody>
 </table>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">When reporting total score use ‘9 - Not stated / Missing’</p>
 </td>
 </tr>
 </tbody>
@@ -8520,7 +8815,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -8538,6 +8833,9 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 </tbody>
 </table>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">When reporting total score use ‘9 - Not stated / Missing’</p>
 </td>
 </tr>
 </tbody>
@@ -8560,7 +8858,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -8578,6 +8876,9 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 </tbody>
 </table>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">When reporting total score use ‘9 - Not stated / Missing’</p>
 </td>
 </tr>
 </tbody>
@@ -8600,7 +8901,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -8618,6 +8919,9 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 </tbody>
 </table>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">When reporting total score use ‘9 - Not stated / Missing’</p>
 </td>
 </tr>
 </tbody>
@@ -8648,7 +8952,8 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 been completed (that is, has not been coded 1, 2, 3, 4, 5), it is excluded from
 the calculation and not counted as a valid item. If any item is missing, the
 Total Score is set as missing.</p>
-<p class="last">For the Total score, the missing value used should be 99.</p>
+<p>For the Total score, the missing value used should be 99.</p>
+<p class="last">When reporting individual item scores use ‘99 - Not stated / Missing’</p>
 </td>
 </tr>
 </tbody>
@@ -8701,7 +9006,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -8719,6 +9024,9 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 </tbody>
 </table>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">When reporting total score use ‘9 - Not stated / Missing’</p>
 </td>
 </tr>
 </tbody>
@@ -8741,7 +9049,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -8759,6 +9067,9 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 </tbody>
 </table>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">When reporting total score use ‘9 - Not stated / Missing’</p>
 </td>
 </tr>
 </tbody>
@@ -8781,7 +9092,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -8799,6 +9110,9 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 </tbody>
 </table>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">When reporting total score use ‘9 - Not stated / Missing’</p>
 </td>
 </tr>
 </tbody>
@@ -8821,7 +9135,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -8839,6 +9153,9 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 </tbody>
 </table>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">When reporting total score use ‘9 - Not stated / Missing’</p>
 </td>
 </tr>
 </tbody>
@@ -8861,7 +9178,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -8879,6 +9196,9 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 </tbody>
 </table>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">When reporting total score use ‘9 - Not stated / Missing’</p>
 </td>
 </tr>
 </tbody>
@@ -8901,7 +9221,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -8919,6 +9239,9 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 </tbody>
 </table>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">When reporting total score use ‘9 - Not stated / Missing’</p>
 </td>
 </tr>
 </tbody>
@@ -8941,7 +9264,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -8959,6 +9282,9 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 </tbody>
 </table>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">When reporting total score use ‘9 - Not stated / Missing’</p>
 </td>
 </tr>
 </tbody>
@@ -8981,7 +9307,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -8999,6 +9325,9 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 </tbody>
 </table>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">When reporting total score use ‘9 - Not stated / Missing’</p>
 </td>
 </tr>
 </tbody>
@@ -9021,7 +9350,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -9039,6 +9368,9 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 </tbody>
 </table>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">When reporting total score use ‘9 - Not stated / Missing’</p>
 </td>
 </tr>
 </tbody>
@@ -9061,7 +9393,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -9079,6 +9411,9 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 </tbody>
 </table>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">When reporting total score use ‘9 - Not stated / Missing’</p>
 </td>
 </tr>
 </tbody>
@@ -9102,7 +9437,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 <tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">When the client&#8217;s responses to Q1-10 are all recorded as 1 &#8216;None of the time&#8217;,
 they are not required to answer questions 11-14. Where this question has not been
-answered a response of &#8216;Not stated / missing&#8217; should be selected.</td>
+answered a response of &#8216;99 - Not stated / Missing&#8217; should be selected.</td>
 </tr>
 </tbody>
 </table>
@@ -9125,7 +9460,7 @@ answered a response of &#8216;Not stated / missing&#8217; should be selected.</t
 </tr>
 <tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">When the client&#8217;s responses to Q1-10 are all recorded as 1 &#8216;None of the time&#8217;,
 they are not required to answer questions 11-14. Where this question has not been
-answered a response of &#8216;Not stated / missing&#8217; should be selected.</td>
+answered a response of &#8216;99 - Not stated / Missing&#8217; should be selected.</td>
 </tr>
 </tbody>
 </table>
@@ -9148,7 +9483,7 @@ answered a response of &#8216;Not stated / missing&#8217; should be selected.</t
 </tr>
 <tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">When the client&#8217;s responses to Q1-10 are all recorded as 1 &#8216;None of the time&#8217;,
 they are not required to answer questions 11-14. Where this question has not been
-answered a response of &#8216;Not stated / missing&#8217; should be selected.</td>
+answered a response of &#8216;99 - Not stated / Missing&#8217; should be selected.</td>
 </tr>
 </tbody>
 </table>
@@ -9192,7 +9527,7 @@ answered a response of &#8216;Not stated / missing&#8217; should be selected.</t
 </tr>
 <tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">When the client&#8217;s responses to Q1-10 are all recorded as 1 &#8216;None of the time&#8217;,
 they are not required to answer questions 11-14. Where this question has not been
-answered a response of &#8216;Not stated / missing&#8217; should be selected.</p>
+answered a response of &#8216;99 - Not stated / Missing&#8217; should be selected.</p>
 </td>
 </tr>
 </tbody>
@@ -9226,8 +9561,9 @@ ten items.</p>
 item has not been completed (that is, has not been coded 1, 2, 3, 4, 5), it is
 excluded from the total with the proviso that a competed K10 with more than one
 missing item is regarded as invalid.</p>
-<p class="last">If more than one item of items 1 to 10 are missing, the Total Score is set as
+<p>If more than one item of items 1 to 10 are missing, the Total Score is set as
 missing. Where this is the case, the missing value used should be 99.</p>
+<p class="last">When reporting individual item scores use ‘99 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -9588,7 +9924,7 @@ practitioners.</p>
 </div>
 <div class="section" id="practitioner-key">
 <span id="dfn-practitioner-key"></span><h3>Practitioner Key<a class="headerlink" href="#practitioner-key" title="Permalink to this headline">¶</a></h3>
-<p>A unique identifier for a practitioner within the responsible organisation. Assigned by the organisation.</p>
+<p>A unique identifier for a practitioner within the responsible provider organisation. Assigned by either the PHN or provider organisation depending on local procedures.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -9652,13 +9988,17 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><p class="first">gYear</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">If the year of birth is unknown, the following approaches should be used:</p>
-<ul class="last simple">
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><ul class="first last simple">
+<li>The year of birth must not be in the future.</li>
+<li>The year of birth must be after 1900.</li>
+<li>If the year of birth is unknown, the following approaches should be used:<ul>
 <li>If the age of the practitioner is known, the age should be used to derive the
 year of birth</li>
 <li>If the age of the practitioner is unknown, an estimated age of the practitioner should
 be used to estimate a year of birth</li>
 <li>If the date of birth is totally unknown, use 9999.</li>
+</ul>
+</li>
 </ul>
 </td>
 </tr>
@@ -9767,6 +10107,38 @@ be used to estimate a year of birth</li>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">METeOR:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/613718">613718</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+</div>
+<div class="section" id="provider-organisation-status">
+<span id="dfn-organisation-status"></span><h3>Provider Organisation - Status<a class="headerlink" href="#provider-organisation-status" title="Permalink to this headline">¶</a></h3>
+<p>A flag to represent whether a provider organisation is actively delivering services.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">organisation_status</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">0:</th><td class="field-body">Inactive</td>
+</tr>
+<tr class="field-even field"><th class="field-name">1:</th><td class="field-body">Active</td>
+</tr>
+</tbody>
+</table>
 </td>
 </tr>
 </tbody>
@@ -9984,15 +10356,21 @@ option to commission external providers.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body">sdq_conduct_problem</td>
+<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">sdq_conduct_problem</p>
+</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">integer</td>
+<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">integer</p>
+</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 10, 99 = Not stated / Missing</td>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><p class="first">0 - 10, 99 = Not stated / Missing</p>
+</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">SDQ items and Scale Summary scores</span></a> for instructions on scoring the Conduct Problem Scale.</td>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">SDQ items and Scale Summary scores</span></a> for instructions on scoring the Conduct Problem Scale.</p>
+<p class="last">When reporting individual item scores use ‘99 - Not stated / Missing’.</p>
+</td>
 </tr>
 </tbody>
 </table>
@@ -10004,15 +10382,21 @@ option to commission external providers.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body">sdq_emotional_symptoms</td>
+<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">sdq_emotional_symptoms</p>
+</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">integer</td>
+<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">integer</p>
+</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 10, 99 = Not stated / Missing</td>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><p class="first">0 - 10, 99 = Not stated / Missing</p>
+</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">SDQ items and Scale Summary scores</span></a> for instructions on scoring the Emotional Symptoms Scale.</td>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">SDQ items and Scale Summary scores</span></a> for instructions on scoring the Emotional Symptoms Scale.</p>
+<p class="last">When reporting individual item scores use ‘99 - Not stated / Missing’.</p>
+</td>
 </tr>
 </tbody>
 </table>
@@ -10024,15 +10408,21 @@ option to commission external providers.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body">sdq_hyperactivity</td>
+<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">sdq_hyperactivity</p>
+</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">integer</td>
+<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">integer</p>
+</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 10, 99 = Not stated / Missing</td>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><p class="first">0 - 10, 99 = Not stated / Missing</p>
+</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">SDQ items and Scale Summary scores</span></a> for instructions on scoring the Hyperactivity Scale.</td>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">SDQ items and Scale Summary scores</span></a> for instructions on scoring the Hyperactivity Scale.</p>
+<p class="last">When reporting individual item scores use ‘99 - Not stated / Missing’.</p>
+</td>
 </tr>
 </tbody>
 </table>
@@ -10044,15 +10434,21 @@ option to commission external providers.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body">sdq_impact</td>
+<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">sdq_impact</p>
+</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">integer</td>
+<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">integer</p>
+</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 10, 99 = Not stated / Missing</td>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><p class="first">0 - 10, 99 = Not stated / Missing</p>
+</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">SDQ items and Scale Summary scores</span></a> for instructions on scoring the Impact Score.</td>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">SDQ items and Scale Summary scores</span></a> for instructions on scoring the Impact Score.</p>
+<p class="last">When reporting individual item scores use ‘99 - Not stated / Missing’.</p>
+</td>
 </tr>
 </tbody>
 </table>
@@ -10064,15 +10460,21 @@ option to commission external providers.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body">sdq_peer_problem</td>
+<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">sdq_peer_problem</p>
+</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">integer</td>
+<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">integer</p>
+</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 10, 99 = Not stated / Missing</td>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><p class="first">0 - 10, 99 = Not stated / Missing</p>
+</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">SDQ items and Scale Summary scores</span></a> for instructions on scoring the Peer Problem Scale.</td>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">SDQ items and Scale Summary scores</span></a> for instructions on scoring the Peer Problem Scale.</p>
+<p class="last">When reporting individual item scores use ‘99 - Not stated / Missing’.</p>
+</td>
 </tr>
 </tbody>
 </table>
@@ -10084,15 +10486,21 @@ option to commission external providers.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body">sdq_prosocial</td>
+<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">sdq_prosocial</p>
+</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">integer</td>
+<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">integer</p>
+</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 10, 99 = Not stated / Missing</td>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><p class="first">0 - 10, 99 = Not stated / Missing</p>
+</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">SDQ items and Scale Summary scores</span></a> for instructions on scoring the Prosocial Scale.</td>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">SDQ items and Scale Summary scores</span></a> for instructions on scoring the Prosocial Scale.</p>
+<p class="last">When reporting individual item scores use ‘99 - Not stated / Missing’.</p>
+</td>
 </tr>
 </tbody>
 </table>
@@ -10133,7 +10541,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -10175,7 +10584,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -10217,7 +10627,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -10259,7 +10670,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -10301,7 +10713,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -10343,7 +10756,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -10385,7 +10799,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -10427,7 +10842,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -10469,7 +10885,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -10511,7 +10928,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -10553,7 +10971,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -10595,7 +11014,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -10637,7 +11057,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -10679,7 +11100,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -10721,7 +11143,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -10763,7 +11186,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -10805,7 +11229,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -10847,7 +11272,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -10889,7 +11315,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -10931,7 +11358,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -10973,7 +11401,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -11015,7 +11444,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -11057,7 +11487,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -11099,7 +11530,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -11141,7 +11573,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -11185,7 +11618,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -11231,10 +11665,11 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions:
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions:
 - PC101
 - PY101
 - YR101</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -11280,7 +11715,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -11326,7 +11762,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -11372,7 +11809,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -11418,7 +11856,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -11464,7 +11903,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -11510,7 +11950,8 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions: All</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions: All</p>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -11558,10 +11999,13 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions:
-- PC201
-- PY201
-- YR201</p>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions:</p>
+<ul class="simple">
+<li>PC201</li>
+<li>PY201</li>
+<li>YR201</li>
+</ul>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -11606,10 +12050,13 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions:
-- PC201
-- PY201
-- YR201</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions:</p>
+<ul class="simple">
+<li>PC201</li>
+<li>PY201</li>
+<li>YR201</li>
+</ul>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -11652,9 +12099,12 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions:
-- PC101
-- PY101</p>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions:</p>
+<ul class="simple">
+<li>PC101</li>
+<li>PY101</li>
+</ul>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -11697,9 +12147,12 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions:
-- PC101
-- PY101</p>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions:</p>
+<ul class="simple">
+<li>PC101</li>
+<li>PY101</li>
+</ul>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -11742,9 +12195,12 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions:
-- PC101
-- PY101</p>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions:</p>
+<ul class="simple">
+<li>PC101</li>
+<li>PY101</li>
+</ul>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -11787,8 +12243,11 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions:
-- YR101</p>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions:</p>
+<ul class="simple">
+<li>YR101</li>
+</ul>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -11831,8 +12290,11 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions:
-- YR101</p>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions:</p>
+<ul class="simple">
+<li>YR101</li>
+</ul>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -11875,8 +12337,11 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions:
-- YR101</p>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions:</p>
+<ul class="simple">
+<li>YR101</li>
+</ul>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -11919,8 +12384,11 @@ option to commission external providers.</p>
 </table>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">Required Versions:
-- YR101</p>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Required Versions:</p>
+<ul class="simple">
+<li>YR101</li>
+</ul>
+<p class="last">When reporting subscale and total scores use ‘9 - Not stated / Missing’.</p>
 </td>
 </tr>
 </tbody>
@@ -11963,15 +12431,21 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body">sdq_total</td>
+<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">sdq_total</p>
+</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">integer</td>
+<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">integer</p>
+</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body">0 - 40, 99 = Not stated / Missing</td>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><p class="first">0 - 40, 99 = Not stated / Missing</p>
+</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">SDQ items and Scale Summary scores</span></a> for instructions on scoring the Total Difficulties Score.</td>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">See <a class="reference internal" href="#scoring-the-sdq"><span class="std std-ref">SDQ items and Scale Summary scores</span></a> for instructions on scoring the Total Difficulties Score.</p>
+<p class="last">When reporting individual item scores use ‘99 - Not stated / Missing’.</p>
+</td>
 </tr>
 </tbody>
 </table>
@@ -11979,7 +12453,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </div>
 <div class="section" id="service-contact-client-participation-indicator">
 <span id="dfn-service-contact-participation-indicator"></span><h3>Service Contact - Client Participation Indicator<a class="headerlink" href="#service-contact-client-participation-indicator" title="Permalink to this headline">¶</a></h3>
-<p>An indicator of whether the client participated in the service contact, as represented by a code.</p>
+<p>An indicator of whether the client participated, or intended to participate, in the service contact, as represented by a code.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -12021,6 +12495,9 @@ record the service contact would normally warrant a dated entry, is not
 participating.</p>
 </dd>
 </dl>
+<p><em>Note:</em> Where a client intended to participate in a service contact but failed
+to attend, <a class="reference internal" href="#dfn-service-contact-participation-indicator"><span class="std std-ref">Service Contact - Client Participation Indicator</span></a> should be recorded
+as &#8216;1: Yes&#8217; and <a class="reference internal" href="#dfn-service-contact-no-show"><span class="std std-ref">Service Contact - No Show</span></a> should be recorded as &#8216;1: Yes&#8217;.</p>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">METeOR:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/494341">494341</a></p>
@@ -12046,7 +12523,7 @@ participating.</p>
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><p class="first">0 - 999999</p>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><p class="first">0 - 999999.99</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Up to 6 digits before the decimal point; up to 2 digits after the decimal
@@ -12069,19 +12546,28 @@ is charged it should be minimal and based on an individual&#8217;s capacity to p
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body">service_contact_date</td>
+<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">service_contact_date</p>
+</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">date</td>
+<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">date</p>
+</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">true</p>
+</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body">For Date fields, data must be recorded in compliance with the standard format
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">For Date fields, data must be recorded in compliance with the standard format
 used across the National Health Data Dictionary; specifically, dates must be
 of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
 necessary to pad out a value. For instance, 13th March 2008 would appear as
-13032008.</td>
+13032008.</p>
+<ul class="simple">
+<li>The service contact date must not be before 1st January 2014.</li>
+<li>The service contact date must not be in the future.</li>
+</ul>
+</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">METeOR:</th><td class="field-body"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/494356">494356</a></td>
+<tr class="field-odd field"><th class="field-name">METeOR:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/494356">494356</a></p>
+</td>
 </tr>
 </tbody>
 </table>
@@ -12107,29 +12593,31 @@ necessary to pad out a value. For instance, 13th March 2008 would appear as
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">0-15 mins</td>
+<tr class="field-odd field"><th class="field-name">0:</th><td class="field-body">No contact took place</td>
 </tr>
-<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">16-30 mins</td>
+<tr class="field-even field"><th class="field-name">1:</th><td class="field-body">1-15 mins</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">31-45 mins</td>
+<tr class="field-odd field"><th class="field-name">2:</th><td class="field-body">16-30 mins</td>
 </tr>
-<tr class="field-even field"><th class="field-name">4:</th><td class="field-body">46-60 mins</td>
+<tr class="field-even field"><th class="field-name">3:</th><td class="field-body">31-45 mins</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">5:</th><td class="field-body">61-75 mins</td>
+<tr class="field-odd field"><th class="field-name">4:</th><td class="field-body">46-60 mins</td>
 </tr>
-<tr class="field-even field"><th class="field-name">6:</th><td class="field-body">76-90 mins</td>
+<tr class="field-even field"><th class="field-name">5:</th><td class="field-body">61-75 mins</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">7:</th><td class="field-body">91-105 mins</td>
+<tr class="field-odd field"><th class="field-name">6:</th><td class="field-body">76-90 mins</td>
 </tr>
-<tr class="field-even field"><th class="field-name">8:</th><td class="field-body">106-120 mins</td>
+<tr class="field-even field"><th class="field-name">7:</th><td class="field-body">91-105 mins</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">over 120 mins</td>
+<tr class="field-odd field"><th class="field-name">8:</th><td class="field-body">106-120 mins</td>
+</tr>
+<tr class="field-even field"><th class="field-name">9:</th><td class="field-body">over 120 mins</td>
 </tr>
 </tbody>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">For group sessions the time for client spent in the session is recorded for
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">For group sessions the time for client spent in the session is recorded for
 each client, regardless of the number of clients or third parties participating
 or the number of service providers providing the service. Writing up details of
 service contacts is not to be reported as part of the duration, except if
@@ -12137,6 +12625,11 @@ during or contiguous with the period of client or third party participation.
 Travel to or from the location at which the service is provided, for example to
 or from outreach facilities or private homes, is not to be reported as part of
 the duration of the service contact.</p>
+<dl class="last docutils">
+<dt>0 - No contact took place</dt>
+<dd><p class="first last">Only use this code where the service contact is recorded as a no show.</p>
+</dd>
+</dl>
 </td>
 </tr>
 </tbody>
@@ -12265,24 +12758,40 @@ option for clinicians, it is for administrative use only.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Face to Face</td>
+<tr class="field-odd field"><th class="field-name">0:</th><td class="field-body">No contact took place</td>
 </tr>
-<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">Telephone</td>
+<tr class="field-even field"><th class="field-name">1:</th><td class="field-body">Face to Face</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">Video</td>
+<tr class="field-odd field"><th class="field-name">2:</th><td class="field-body">Telephone</td>
 </tr>
-<tr class="field-even field"><th class="field-name">4:</th><td class="field-body">Internet-based</td>
+<tr class="field-even field"><th class="field-name">3:</th><td class="field-body">Video</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">4:</th><td class="field-body">Internet-based</td>
 </tr>
 </tbody>
 </table>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><ul class="first last simple">
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><dl class="first docutils">
+<dt>0 - No contact took place</dt>
+<dd><p class="first last">Only use this code where the service contact is recorded as a no show.</p>
+</dd>
+<dt>1 - Face to Face</dt>
+<dd><ul class="first last simple">
 <li>If &#8216;Face to Face&#8217; is selected, a value other than &#8216;Not applicable&#8217; must
 be selected for Service Contact Venue</li>
 <li>If &#8216;Face to Face&#8217; is selected a valid Australian
-postcode must be entered for Service Contact Postcode.</li>
+postcode must be entered for Service Contact Postcode. The unknown postcode is not valid.</li>
 </ul>
+</dd>
+<dt>4 - Internet-based</dt>
+<dd><p class="first last">Includes email communication, that would normally warrant a dated entry in
+the clinical record of the client, involving a third party, such as a carer
+or family member, and/or other professional or mental health worker, or
+other service provider.</p>
+</dd>
+</dl>
+<p class="last">Note: If Service Contact Modality is not &#8216;Face to Face&#8217; the postcode must be entered as unknown 9999.</p>
 </td>
 </tr>
 </tbody>
@@ -12370,7 +12879,7 @@ postcode must be entered for Service Contact Postcode.</li>
 <tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><dl class="first docutils">
 <dt>1 - Individual</dt>
 <dd><p class="first last">Code applies for Service Contacts delivered individually to a single client
-without third party participants.</p>
+without third party participants. Please refer to the Note below.</p>
 </dd>
 <dt>2 - Client group</dt>
 <dd><p class="first last">Code applies for Service Contacts delivered on a group basis to two or more
@@ -12390,9 +12899,11 @@ participation of the client.</p>
 (e.g., teachers, employer), with or without the participation of the client.</p>
 </dd>
 </dl>
-<p class="last">Note that this item interacts with Service Contact - Client Participation
-Indicator which is used to denote whether the individual client was a
-participant in the Service Contact.</p>
+<p class="last"><em>Note:</em> This item interacts with <a class="reference internal" href="#dfn-service-contact-participation-indicator"><span class="std std-ref">Service Contact - Client Participation Indicator</span></a>.
+Where <a class="reference internal" href="#dfn-service-contact-participants"><span class="std std-ref">Service Contact - Participants</span></a> has a value of
+&#8216;1: Individual&#8217;, <a class="reference internal" href="#dfn-service-contact-participation-indicator"><span class="std std-ref">Service Contact - Client Participation Indicator</span></a> must
+have a value of &#8216;1: Yes&#8217;. <a class="reference internal" href="#dfn-service-contact-no-show"><span class="std std-ref">Service Contact - No Show</span></a> is used to record if the
+patient failed to attend the appointment.</p>
 </td>
 </tr>
 </tbody>
@@ -12421,6 +12932,8 @@ of Australian Postcodes can be found at <a class="reference external" href="http
 <li>If Service Contact Modality is not &#8216;Face to Face&#8217; enter 9999</li>
 <li>If Service Contact Modality is &#8216;Face to Face&#8217; a valid Australian postcode must be
 entered</li>
+<li>As of 1 November 2016, PMHC MDS currently validates that postcodes are in the
+range 0200-0299 or 0800-9999.</li>
 </ul>
 </td>
 </tr>
@@ -12481,21 +12994,25 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Assessment</td>
+<tr class="field-odd field"><th class="field-name">0:</th><td class="field-body">No contact took place</td>
 </tr>
-<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">Structured psychological intervention</td>
+<tr class="field-even field"><th class="field-name">1:</th><td class="field-body">Assessment</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">Other psychological intervention</td>
+<tr class="field-odd field"><th class="field-name">2:</th><td class="field-body">Structured psychological intervention</td>
 </tr>
-<tr class="field-even field"><th class="field-name">4:</th><td class="field-body">Clinical care coordination/liaison</td>
+<tr class="field-even field"><th class="field-name">3:</th><td class="field-body">Other psychological intervention</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">5:</th><td class="field-body">Clinical nursing services</td>
+<tr class="field-odd field"><th class="field-name">4:</th><td class="field-body">Clinical care coordination/liaison</td>
 </tr>
-<tr class="field-even field"><th class="field-name">6:</th><td class="field-body">Child or youth specific assistance NEC</td>
+<tr class="field-even field"><th class="field-name">5:</th><td class="field-body">Clinical nursing services</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">7:</th><td class="field-body">Suicide prevention specific assistance NEC</td>
+<tr class="field-odd field"><th class="field-name">6:</th><td class="field-body">Child or youth specific assistance NEC</td>
 </tr>
-<tr class="field-even field"><th class="field-name">8:</th><td class="field-body">Cultural specific assistance NEC</td>
+<tr class="field-even field"><th class="field-name">7:</th><td class="field-body">Suicide prevention specific assistance NEC</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">8:</th><td class="field-body">Cultural specific assistance NEC</td>
+</tr>
+<tr class="field-even field"><th class="field-name">98:</th><td class="field-body">ATAPS</td>
 </tr>
 </tbody>
 </table>
@@ -12505,7 +13022,11 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 defined list of categories.  Where more than service type was provided select
 that which accounted for most provider time. Service providers are required
 to report on Service Type for all Service Contacts.</p>
+<p><em>Note: NEC is used for &#8216;Not Elsewhere Classified&#8217;. For these records, only use these service types if they cannot be classified by any of the other service options.</em></p>
 <dl class="last docutils">
+<dt>0 - No contact took place</dt>
+<dd><p class="first last">Only use this code where the service contact is recorded as a no show.</p>
+</dd>
 <dt>1 - Assessment</dt>
 <dd><p class="first last">Determination of a person&#8217;s mental health status and need for mental
 health services, made by a suitably trained mental health professional,
@@ -12576,7 +13097,7 @@ person to their work environment.</p>
 <p class="last"><em>Note: This code should only be used for
 Service Contacts that cannot be described by any other Service Type. It is
 expected that the majority of Service Contacts delivered to children and
-young people can be assigned to other categories</em></p>
+young people can be assigned to other categories.</em></p>
 </dd>
 <dt>7 - Suicide prevention specific assistance NEC</dt>
 <dd><p class="first">Services delivered to, or on behalf, of a client who presents with risk of
@@ -12600,6 +13121,17 @@ interpreters and social and emotional wellbeing counsellors.</p>
 described by any other Service Type. It is expected that the majority of
 Service Contacts (see domains below) delivered to Aboriginal or Torres Strait
 Islander clients can be assigned to other categories.</em></p>
+</dd>
+<dt>98 - ATAPS</dt>
+<dd><p class="first">Services delivered as part of ATAPS funded referrals that are recorded and/or
+migrated into the PMHC MDS.</p>
+<p><em>Note: This code should only be used for Service Contacts that are migrated
+from ATAPS MDS sources that cannot be described by any other Service Type.
+It is expected that the majority of Service Contacts delivered to clients
+from 1st July, 2017 can be assigned to other categories.</em></p>
+<p>This response will not be allowed on service contacts delivered after
+30 June 2018. (All ATAPS referrals should have concluded by that date).</p>
+<p class="last">This response will only be allowed on service contacts with the !ATAPS flag.</p>
 </dd>
 </dl>
 </td>
@@ -12707,7 +13239,7 @@ such as community health centres.</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017, Australian Government - Department of Health.
+        &copy; Copyright 2018, Australian Government - Department of Health.
 
     </p>
   </div>
@@ -12729,7 +13261,7 @@ such as community health centres.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'Version 1.0.6',
+            VERSION:'Version 1.0.12',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

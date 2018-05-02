@@ -1,3 +1,7 @@
+- The episode end date must not be before 1st January 2016.
+
+- The episode end date must not be in the future.
+
 An *Episode of Care* may be ended in one of two ways:
 
 - clinically, consequent upon conclusion of treatment for the client and
@@ -25,4 +29,3 @@ Contact - Final*, and *Episode Completion Status*.
   *Episode Completion Status* for additional guidance). Where an episode is
   closed administratively, the *Episode End Date* should be recorded as the
   date on which the organisation made the decision to close episode.
-

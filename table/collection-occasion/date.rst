@@ -5,3 +5,7 @@ necessary to pad out a value. For instance, 13th March 2008 would appear as
 13032008.
 
 If the date the measure was given is unknown, 09099999 should be used.
+
+- The measure date must not be before 1st January 2016.
+
+- The measure date must not be in the future.

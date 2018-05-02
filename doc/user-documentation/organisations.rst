@@ -1,8 +1,10 @@
+.. _organisations:
+
 Organisations
 =============
 
 You will be able to see the Organisations tab if you have been assigned
-the 'Organisation Management', the 'User Management' or the 'Data Entry' role.
+the 'Organisation Management', or the 'User Management' role, , when logged into the PMHC MDS on https://pmhc-mds.net.
 
 If you believe you should have access to an organisation and it doesn't appear
 in your list please contact someone in that provider organisation or the
@@ -33,7 +35,7 @@ The PHN organisations details will be displayed, along with a provider organisat
 If you have the 'User Management' role will also include a 'Users' tab listing
 the users that belong to this PHN.
 
-.. figure:: screen-shots/view-organisation.png
+.. figure:: screen-shots/organisation-phn-view.png
    :alt: PMHC MDS View Organisation
 
 .. _search-provider-organisation:
@@ -61,7 +63,7 @@ To filter the listed provider organisations:
 1. Click the grey 'Filters' button.
 2. Start typing in an edit box now displayed under the column headers.
 
-.. figure:: screen-shots/organisations-filter.png
+.. figure:: screen-shots/organisations-provider-filter.png
    :alt: PMHC MDS Organisations Filter
 
 3. To remove the filter, click the grey cross within the edit box beside any
@@ -78,11 +80,10 @@ following these steps:
 1. Navigate to the Organisations tab.
 2. Click on the PHN name in blue text displayed within the table list.
 3. Click on the 'Provider Organisations' tab.
+4. Click on the provider organisation's name from the 'View Provider Organisations' table
 
-The PHN's provider organisations details will be displayed in a table.
-
-.. figure:: screen-shots/view-provider-organisation.png
-   :alt: PMHC MDS View Organisation
+.. figure:: screen-shots/organisation-provider-view.png
+   :alt: PMHC MDS View Provider Organisation
 
 .. _add-provider-organisation:
 
@@ -97,7 +98,7 @@ through the organisation tab by following these steps:
 3. Click on the 'Provider Organisations' tab.
 4. Click the 'Add Provider Organisation' tab.
 
-   .. figure:: screen-shots/add-provider-organisation.png
+   .. figure:: screen-shots/organisation-provider-add.png
       :alt: PMHC MDS Add Provider Organisation
 
 5. Complete all the mandatory fields marked with an * in the add Provider Organisation
@@ -118,21 +119,21 @@ details through the organisation tab, by following these steps:
 1. Navigate to the Organisations tab.
 2. Click on the PHN name in blue text displayed within the table list.
 
-   .. figure:: screen-shots/view-organisation.png
+   .. figure:: screen-shots/organisation-phn-view.png
       :alt: PMHC MDS View PHN
 
 3. Click on the 'Provider Organisation' tab.
 4. Click on the Provider Organisation name in blue text displayed within the
    Provider Organisations table.
 
-   .. figure:: screen-shots/view-provider-organisation.png
+   .. figure:: screen-shots/organisation-provider-view.png
       :alt: PMHC MDS View Provider Organisation
 
 3. If you have permission to edit the Provider Organisation an 'Edit Details' tab will
    be displayed.
 4. Click the blue 'Edit' button.
 
-   .. figure:: screen-shots/edit-provider-organisation.png
+   .. figure:: screen-shots/organisation-provider-edit.png
       :alt: PMHC MDS Edit Organisation
 
 4. Update the organisations details. Mandatory fields are marked with an *
@@ -155,87 +156,3 @@ Deleting a Provider Organisation
 
 You cannot delete a provider organisation. If you believe an organisation should be
 deleted please email support@pmhc-mds.com.
-
-.. _search-practitioner:
-
-Searching for a Practitioner at a Provider Organisaiton
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-You can search for practitioners assigned to an organisation through the organisation tab
-if you have been assigned the 'Data Entry' role, by following these steps:
-
-
-1. Navigate to a provider organisations details. (See :ref:`view-provider-organisation`)
-2. Click on the 'Practitioners' tab.
-
-.. figure:: screen-shots/practitioners-view.png
-   :alt: PMHC MDS Practitioners Table View
-
-3. Sort the listed practitioners by simply clicking on a column header
-   of the provider organisations table. Alternately you can click on the arrow beside a
-   column header for more sort options, as follows:
-
-   - Sort Ascending
-   - Sort Descending
-   - Remove Sort
-   - Hide Column
-
-   To filter the listed practitioners:
-
-   1. Click the grey 'Filters' button.
-   2. Start typing in an edit box now displayed under the column headers.
-   3. To remove the filter, click the grey cross within the edit box beside any
-      entered text.
-
-.. .. figure:: screen-shots/practitioners-filter.png
-   :alt: PMHC MDS Practitioners Filter
-
-.. _view-practitioner:
-
-Viewing a Practitioner
-^^^^^^^^^^^^^^^^^^^^^^
-
-You can view a practitioner's details through the organisation tab
-if you have been assigned the 'Data Entry' role, by following these steps:
-
-1. Navigate to the list of Practitioners at the organisation. (See :ref:`search-practitioner`)
-2. Click on the practitioner's key in blue displayed within the table list.
-
-.. figure:: screen-shots/practitioners-detail-view.png
-   :alt: PMHC MDS Practitioner Details View
-
-Please note: You can also view a practitioner's details through the 'Client Data' tab. See :ref:`view-practitioner-details`
-
-.. _viewing-organisational-users:
-
-Viewing Organisational Users
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-You can view users assigned to an organisation through the organisation tab
-if you have been assigned the 'User Management' role, by following these steps:
-
-1. Navigate to the tab showing either the PHNs details or the provider organisations details.
-2. Click on the PHNs or provider organisations name in blue displayed within the table list.
-   If you are unsure how to view the details see :ref:`view-PHN` or :ref:`view-provider-organisation`
-3. Under the 'Users' tab, you can view a table list of the
-   organisation's users.
-4. You can filter the users within this table list,
-   click the grey 'Filters' button and start typing in an edit box now
-   displayed under the column headers. To remove the filter, click the grey
-   cross within the edit box beside any entered text.
-
-.. figure:: screen-shots/view-organisation-users.png
-   :alt: PMHC MDS User Roles at Organisation
-
-.. _adding-roles:
-
-Assigning Extra Roles to an Organisational User
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-You can assign extra roles to an existing organisational user if you have been
-assigned the 'User Management' role, by following these steps:
-
-1. Navigate to the Organisation or Provider Organisation at which you wish to add the role.
-2. Click on the Users tab
-3. Click the users name
-4. Follow on from Step 3 at :ref:`edit-role`.

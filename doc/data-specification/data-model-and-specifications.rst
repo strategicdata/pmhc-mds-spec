@@ -1,3 +1,5 @@
+.. _data-model-and-specifications:
+
 Data model and specifications
 =============================
 
@@ -50,6 +52,8 @@ Provider Organisation
 The Provider Organisation is the business entity that the PHN has commissioned
 to provide the service.
 
+See :ref:`provider-organisation-data-elements` for the data elements for a provider organisation.
+
 .. _key-concepts-practitioner:
 
 Practitioner
@@ -57,12 +61,16 @@ Practitioner
 
 The Practitioner is the person who is delivering the service.
 
+See :ref:`practitioner-data-elements` for the data elements for a practitioner.
+
 .. _key-concepts-client:
 
 Client
 ^^^^^^
 
 The Client is the person who is receiving the service.
+
+See :ref:`client-data-elements` for the data elements for a client.
 
 .. _key-concepts-episode:
 
@@ -101,6 +109,8 @@ across PHN-commissioned services:
   has been lost with the client. A new episode is deemed to commence if the
   person re-presents to the organisation.
 
+See :ref:`episode-data-elements` for the data elements for a episode.
+
 .. _key-concepts-service-contact:
 
 Service Contact
@@ -127,6 +137,8 @@ Service Contact
   <http://meteor.aihw.gov.au/content/index.phtml/itemId/493304>`_ with
   modification.
 
+See :ref:`service-contact-data-elements` for the data elements for a service contact.
+
 .. _key-concepts-outcome-collection-occasion:
 
 Outcome Collection Occasion
@@ -140,6 +152,9 @@ frequent if clinically indicated and agreed by the client.
 Measures will be the Kessler Psychological Distress Scale K10+ (in the case of
 Aboriginal and Torres Strait Islander clients, the K5) as well as the Strengths
 & Difficulties Questionnaires.
+
+See :ref:`outcome-collection-occasion-data-elements` for the data elements for an outcome
+collection occasion.
 
 .. _record-formats:
 
@@ -252,7 +267,6 @@ PMHC MDS requires the use of one of the following three required outcome collect
   Strengths & Difficulties Questionnaires (:ref:`sdq-data-elements`) is the
   prescribed tool.  The specified versions include the parent-report for 4-10
   years and 11-17 years; and the self-report for 11-17 years.
-  *We acknowledge that there is also a parent-report for 2-4 years; and teacher versions for all the years (2-4; 4-10 and 11-17) but that these are not to be reported the PMHC-MDS.*
 
 *Please note: For adolescents, clinician-discretion is allowed, and that the K10+ or K5 may be used, even though the person is under 18 years*
 
@@ -309,6 +323,8 @@ The versions specified for PMHC MDS reporting are:
 - PY2 - Parent Report Measure for Youth aged 11-17, Follow up version;
 - YR1 - Youth self report measure (11-17), Baseline version; and
 - YR2 - Youth self report measure (11-17), Follow up version.
+
+*We acknowledge that there is also a parent-report for 2-4 years; and teacher versions for all the years (2-4; 4-10 and 11-17) but that these are not to be reported the PMHC-MDS.*
 
 Please note that the item numbering in the SDQ versions is deliberately non
 sequential because it covers all items in all versions, both to indicate item

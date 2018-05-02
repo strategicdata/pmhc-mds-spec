@@ -65,11 +65,13 @@
     "schema:meteorItem": "494356",
     "schema:dateCreated": "2016-06-22",
     "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
+    "schema:dateModified": "2018-01-02",
     "datatype": {
       "base": "date",
-      "format": "dMMyyyy"
+      "format": "dMMyyyy",
+      "minimum": "2014-01-01"
     },
+    "schema:dateMissingUnknown": "9999-09-09",
     "required": true
   },{
     "name": "service_contact_type",
@@ -163,14 +165,14 @@
       "base": "number",
       "format": "#####0.##",
       "minimum": 0,
-      "maximum": 999999
+      "maximum": 999999.99
     },
     "required": true
   },{
     "name": "service_contact_participation_indicator",
     "titles": [ "service_contact_participation_indicator", "Participation Indicator" ],
     "dc:title": "Service Contact - Client Participation Indicator",
-    "schema:description": "An indicator of whether the client participated in the service contact, as represented by a code.",
+    "schema:description": "An indicator of whether the client participated, or intended to participate, in the service contact, as represented by a code.",
     "schema:disambiguatingDescription": "table/service-contact/participation-indicator.rst",
     "schema:meteorItem": "494341",
     "schema:dateCreated": "2016-06-22",

@@ -12,8 +12,8 @@ User Guide
    organisations
    users
    upload
-   client-data
-   data-extraction
+   data-entry
    reporting
+   data-extract
    slk
    change-log

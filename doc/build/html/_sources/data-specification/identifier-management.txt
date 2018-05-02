@@ -20,29 +20,36 @@ Managing Client Keys
 --------------------
 
 Client records will be created and managed by Provider Organisations via the
-upload interface. Each Client record needs to be assigned a unique key in order
-to facilitate adding/updating/deleting each item when uploading data. Once
-assigned, this key cannot change.
+upload and data entry interface. Each Client record needs to be assigned a
+unique key in order to facilitate adding/updating/deleting each item when
+uploading data. Once assigned, this key cannot change.
 
-These keys will be managed by the Provider Organisation, however, they need to
-be unique across the PHN in order to ensure that there is a single key
-for a client within the PHN. During Stage 2 of the PMHC MDS implementation a
-master client index will be created to allow Provider Organisations to manage
-the client keys across PHNs. Until the master client index
-is implemented PHNs will need to play a role in coordinating assignment and
-management of these keys.
+The :ref:`Client Key <client-data-elements>` will be managed by the Provider
+Organisation, however, the PHN may decide to play a role in
+coordinating assignment and management of these client keys.
+
+Initially the Department wanted these keys to be unique across the PHN in order
+to ensure that there is a single key for a client within the PHN, and will
+continue to be investigate options for the PMHC MDS implementation of a
+Master Client Index during :ref:`Stage-Two` of development.
 
 .. _unique_keys:
 
 Managing Practitioner, Episode, Service Contact and Outcome Collection Occasion Keys
 ------------------------------------------------------------------------------------
 
-Practitioner, Episode, Service Contact, and Outcome Collection Keys will be
-created and managed by Provider Organisations via the upload interface. Each
-record needs to be assigned a unique key in order to facilitate
-adding/updating/deleting each item when uploading data. These keys will be
-managed by the Provider Organisation. Where data is being exported from client
-systems, these keys can be auto generated, providing that a key does not change
-once it is assigned.
+The :ref:`Practitioner Key <practitioner-data-elements>`, :ref:`Episode Key <episode-data-elements>`,
+:ref:`Service Contact Key <service-contact-data-elements>` and
+:ref:`Outcome Collection Occasion Key <outcome-collection-occasion-data-elements>`
+will be created and managed by Provider Organisations.
 
-*If you still have questions after reading this information, please visit the Department's responses to :ref:`identifier_and_key_FAQs`*
+The PMHC MDS specification requires each of these keys to be unique and stable at the Provider Organisation level.
+
+Each record needs to be assigned a unique key in order to facilitate
+adding/updating/deleting each item when uploading/entering data. These keys will
+be created and managed by the Provider Organisation.
+
+Where data is being exported from client systems, these keys can be auto generated,
+providing that a key does not change once it is assigned.
+
+*If you still have questions after reading this information, please visit the Department's responses to* :ref:`identifier-and-key-FAQs`

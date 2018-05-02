@@ -68,6 +68,9 @@
     "url": "type/boolean.csv",
     "tableSchema": "type/boolean.json"
   }, {
+    "url": "type/active.csv",
+    "tableSchema": "type/active.json"
+  }, {
     "url": "table/organisation/type.csv",
     "tableSchema": "table/organisation/type.json"
   }, {
@@ -79,9 +82,6 @@
   }, {
     "url": "table/practitioner/atsi-cultural-training.csv",
     "tableSchema": "table/practitioner/atsi-cultural-training.json"
-  }, {
-    "url": "table/practitioner/active.csv",
-    "tableSchema": "table/practitioner/active.json"
   }, {
     "url": "table/client/country-of-birth.csv",
     "tableSchema": "table/client/country-of-birth.json"
@@ -125,8 +125,11 @@
     "url": "table/episode/ndis-participant.csv",
     "tableSchema": "table/episode/ndis-participant.json"
   }, {
-    "url": "table/episode/diagnosis.csv",
-    "tableSchema": "table/episode/diagnosis.json"
+    "url": "table/episode/principal-diagnosis.csv",
+    "tableSchema": "table/episode/principal-diagnosis.json"
+  }, {
+    "url": "table/episode/additional-diagnosis.csv",
+    "tableSchema": "table/episode/additional-diagnosis.json"
   }, {
     "url": "table/episode/marital-status.csv",
     "tableSchema": "table/episode/marital-status.json"

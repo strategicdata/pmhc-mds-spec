@@ -51,10 +51,11 @@
     "schema:meteorItem": "614094",
     "schema:dateCreated": "2016-06-22",
     "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
+    "schema:dateModified": "2018-01-02",
     "datatype": {
       "base": "date",
-      "format": "dMMyyyy"
+      "format": "dMMyyyy",
+      "minimum": "2016-01-01"
     }
   },{
     "name": "client_consent",
@@ -79,7 +80,8 @@
     "schema:dateModified": "2016-07-08",
     "datatype": {
       "base": "string"
-    }
+    },
+    "default": "0"
   },{
     "name": "referral_date",
     "titles": [ "referral_date", "Referral Date" ],
@@ -88,10 +90,11 @@
     "schema:disambiguatingDescription": "table/episode/referral-date.rst",
     "schema:dateCreated": "2016-06-22",
     "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
+    "schema:dateModified": "2018-01-02",
     "datatype": {
       "base": "date",
-      "format": "dMMyyyy"
+      "format": "dMMyyyy",
+      "minimum": "2014-01-01"
     }
   },{
     "name": "principal_focus",
@@ -256,7 +259,6 @@
     "dc:title": "Episode - Additional Diagnosis",
     "schema:description": "The main additional condition or complaint co-existing with the Principal Diagnosis or arising during the episode of care.",
     "schema:disambiguatingDescription": "table/episode/additional-diagnosis.rst",
-    "schema:domain": "See *Episode - Principal Diagnosis*",
     "schema:dateCreated": "2016-06-22",
     "schema:dateModified": "2016-06-08",
     "datatype": {
@@ -450,13 +452,13 @@
   }, {
     "columnReference": "principal_diagnosis",
     "reference": {
-      "resource": "table/episode/diagnosis.csv",
+      "resource": "table/episode/principal-diagnosis.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "additional_diagnosis",
     "reference": {
-      "resource": "table/episode/diagnosis.csv",
+      "resource": "table/episode/additional-diagnosis.csv",
       "columnReference": "id"
     }
   }, {
