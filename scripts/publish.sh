@@ -1,19 +1,21 @@
 #!/bin/bash
 
-echo "remote add will fail if it exists already, this is ok!"
+# ensure we are on master
+git checkout master
+git checkout -q $(git rev-parse HEAD)
 
-git remote add publish git@github.com:strategicdata/pmhc-mds-spec.git
+# Edit .gitignore to publish
+perl -n -i -e "print unless /^build\/$/" ./doc/.gitignore
 
-git checkout master && \
-  git add doc && \
-  git commit -m "Update processed documentation" && \
-  git push
+git add .
+git commit -m "Commit build artefacts for publishing"
+git remote add pages git@github.com:strategicdata/pmhc-mds-spec.git
+git push pages `git subtree split --prefix doc/build/html 2> /dev/null`:gh-pages --force
+git remote remove pages
 
-
-git checkout v1/preview && \
-  git merge master && \
-  git push -f publish v1/preview && \
-  git checkout master
+git reset HEAD~
+git checkout ./doc/.gitignore
+git checkout master
 
 curl -s -X POST --data-urlencode \
   'payload={"channel": "#pmhc", "username": "CHiMP", "text": "Published updated documentation to docs.pmhc-mds.com", "icon_emoji": ":monkey_face:"}' \
