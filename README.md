@@ -9,6 +9,7 @@ This will:
 
 * create restructured text from the metadata files
 * move generated content into the correct locations
+* create zip of spec metadata (csv + json files) inside data-specification
 * run sphinx to generate the html output in doc/build/html
 
 ### Produce a single html page version of the documentation
