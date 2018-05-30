@@ -3,6 +3,13 @@
 Data Specification Change log
 =============================
 
+30/5/2018
+---------
+
+* :ref:`data-specifications-download`
+
+  * Added a zip download of PMHC MDS Specification files for developers to access.
+
 13/3/2018
 ---------
 

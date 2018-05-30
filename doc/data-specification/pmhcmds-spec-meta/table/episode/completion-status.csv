@@ -1,0 +1,8 @@
+id,description
+0,"Episode open"
+1,"Episode closed - treatment concluded"
+2,"Episode closed administratively - client could not be contacted"
+3,"Episode closed administratively - client declined further contact"
+4,"Episode closed administratively - client moved out of area"
+5,"Episode closed administratively - client referred elsewhere"
+6,"Episode closed administratively - other reason"

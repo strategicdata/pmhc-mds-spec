@@ -1,0 +1,166 @@
+{
+  "@id": "practitioner-metadata.json",
+  "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
+  "columns": [{
+    "name": "organisation_path",
+    "titles": [ "organisation_path", "Organisation Path" ],
+    "dc:title": "Organisation Path",
+    "schema:description": "A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.",
+    "schema:disambiguatingDescription": "type/organisation_path.rst",
+    "schema:dateCreated": "2016-06-22",
+    "schema:dateDeleted": "2016-06-22",
+    "schema:dateModified": "2016-06-22",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true,
+    "schema:formOrder": "1"
+  },{
+    "name": "practitioner_key",
+    "titles": [ "practitioner_key", "Practitioner Key" ],
+    "dc:title": "Practitioner Key",
+    "schema:description": "A unique identifier for a practitioner within the responsible provider organisation. Assigned by either the PHN or provider organisation depending on local procedures.",
+    "schema:dateCreated": "2016-06-22",
+    "schema:dateDeleted": "2016-06-22",
+    "schema:dateModified": "2016-06-22",
+    "datatype": {
+      "base": "string",
+      "minLength": 2,
+      "maxLength": 50
+      },
+    "required": true,
+    "schema:formOrder": "2"
+  },{
+     "name": "practitioner_category",
+    "titles": [ "practitioner_category", "Category" ],
+    "dc:title": "Practitioner - Category",
+    "schema:description": "The type or category of the practitioner, as represented by a code.",
+    "schema:dateCreated": "2016-06-22",
+    "schema:dateDeleted": "2016-06-22",
+    "schema:dateModified": "2016-06-22",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true,
+    "schema:formOrder": "3"
+  },{
+    "name": "atsi_cultural_training",
+    "titles": [ "atsi_cultural_training", "Cultural Training Flag" ],
+    "dc:title": "Practitioner - ATSI Cultural Training",
+    "schema:description": "Indicates whether a practitioner has completed a recognised training programme in the delivery of culturally safe services to Aboriginal and Torres Strait Islander peoples.",
+    "schema:disambiguatingDescription": "table/practitioner/atsi-cultural-training.rst",
+    "schema:dateCreated": "2016-06-22",
+    "schema:dateModified": "2016-06-08",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true,
+    "schema:formOrder": "8"
+  },{
+    "name": "practitioner_year_of_birth",
+    "titles": [ "practitioner_year_of_birth", "Year of Birth" ],
+    "dc:title": "Practitioner - Year of Birth",
+    "schema:description": "The year the practitioner was born.",
+    "schema:disambiguatingDescription": "table/practitioner/year-of-birth.rst",
+    "schema:dateCreated": "2016-06-22",
+    "schema:dateDeleted": "2016-06-22",
+    "schema:dateModified": "2016-06-22",
+    "datatype": "gYear",
+    "required": true,
+    "schema:formOrder": "5"
+  },{
+    "name": "practitioner_gender",
+    "titles": [ "practitioner_gender", "Gender" ],
+    "dc:title": "Practitioner - Gender",
+    "schema:description": "The term 'gender' refers to the way in which a person identifies their masculine or feminine characteristics. A persons gender relates to their deeply held internal and individual sense of gender and is not always exclusively male or female. It may or may not correspond to their sex assigned at birth.",
+    "schema:absItem": "http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/1200.0.55.012Main%20Features12016?opendocument&tabname=Summary&prodno=1200.0.55.012&issue=2016&num=&view=",
+    "schema:dateCreated": "2016-06-22",
+    "schema:dateDeleted": "2016-06-22",
+    "schema:dateModified": "2016-06-22",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true,
+    "schema:formOrder": "6"
+  },{
+    "name": "practitioner_atsi_status",
+    "titles": [ "practitioner_atsi_status", "ATSI Status" ],
+    "dc:title": "Practitioner - Aboriginal and Torres Strait Islander Status",
+    "schema:description": "Whether a person identifies as being of Aboriginal and/or Torres Strait Islander origin, as represented by a code.",
+    "schema:disambiguatingDescription": "type/atsi-status.rst",
+    "schema:meteorItem": "291036",
+    "schema:dateCreated": "2016-06-22",
+    "schema:dateDeleted": "2016-06-22",
+    "schema:dateModified": "2016-06-22",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true,
+    "schema:formOrder": "7"
+  },{
+    "name": "practitioner_active",
+    "titles": [ "practitioner_active", "Active" ],
+    "dc:title": "Practitioner - Active",
+    "schema:description": "A flag to represent whether a practitioner is actively delivering services. This is a system field that is aimed at helping organisations manage practitioner codes.",
+    "schema:dateCreated": "2016-06-22",
+    "schema:dateDeleted": "2016-06-22",
+    "schema:dateModified": "2016-06-22",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true,
+    "schema:formOrder": "4"
+  },{
+    "name": "practitioner_tags",
+    "titles": [ "practitioner_tags", "Tags" ],
+    "dc:title" : "Practitioner - Tags",
+    "schema:description": "List of tags for the practitioner.",
+    "schema:disambiguatingDescription": "type/tags.rst",
+    "schema:dateCreated": "2016-06-22",
+    "schema:dateDeleted": "2016-06-22",
+    "schema:dateModified": "2016-06-22",
+    "datatype": {
+      "base": "string"
+      },
+    "required": false,
+    "schema:formOrder": "9"
+  }],
+  "primaryKey": [ "organisation_path", "practitioner_key" ],
+  "foreignKeys": [{
+    "columnReference": "organisation_path",
+    "reference": {
+      "resource": "data/organisations.csv",
+      "columnReference": "organisation_path"
+    }
+  }, {
+    "columnReference": "practitioner_category",
+    "reference": {
+      "resource": "table/practitioner/category.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "atsi_cultural_training",
+    "reference": {
+      "resource": "table/practitioner/atsi-cultural-training.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "practitioner_gender",
+    "reference": {
+      "resource": "type/gender.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "practitioner_atsi_status",
+    "reference": {
+      "resource": "type/atsi-status.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "practitioner_active",
+    "reference": {
+      "resource": "type/active.csv",
+      "columnReference": "id"
+    }
+  }]
+}

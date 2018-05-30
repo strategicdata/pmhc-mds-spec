@@ -9,7 +9,7 @@ Frequently Asked Questions Change log
 Concepts Processes - Specific Data Items and Definitions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* Added :ref:`episode-one-at-a-time`
+* Added the question :ref:`episode-one-at-a-time`
 
 
 19/1/2018
@@ -35,7 +35,7 @@ System - Development FAQs
 System - Data Entry FAQs
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-* Added :ref:`data-entry-episode-closed-faq`
+* Added the question :ref:`data-entry-episode-closed-faq`
 
 * Updated the question :ref:`enter-referral-faq`
 

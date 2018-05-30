@@ -1,0 +1,8 @@
+id,description
+0,"Not at all"
+1,"A little"
+2,"A medium amount"
+3,"A great deal"
+7,"Unable to rate (insufficient information)"
+8,"Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)"
+9,"Not stated / Missing"

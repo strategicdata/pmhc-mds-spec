@@ -500,3 +500,14 @@ namely: 0->0, 1->0, 2->1, 3->2.
 -----
 
 .. include:: include/definitions.rst
+
+
+.. _data-specifications-download:
+
+Download Specification Files
+----------------------------
+
+Available for software developers designing extracts for the PMHC MDS, please
+click the link below to download the PMHC MDS Specification files:
+
+* `Download Specification zip <pmhcmds-spec-meta.zip>`_

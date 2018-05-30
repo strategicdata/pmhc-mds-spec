@@ -33,7 +33,11 @@ In order to get Data Entry functionality to PHNs as soon as possible, the develo
 * **K10+ and K5 Outcome Collection Occasion Data Entry Interface**, was released in `v0.13.2 <https://www.pmhc-mds.com/communications/#/2017/07/20/Update-to-the-PMHC-MDS-v-0-13-2/>`_.
 * Enhanced features to the Data Entry Interface, was released in `v0.15.0 <https://www.pmhc-mds.com/communications/#/2017/08/25/Update-to-the-PMHC-MDS-v-0-15-0/>`_. and `v0.16.1 <https://www.pmhc-mds.com/communications/#/2017/09/26/Update-to-the-PMHC-MDS-v-0-16-1-and-Data-Specifications-v1-0-11/>`_.
 * Ability to **delete records**, was released in `v0.17.2 <https://www.pmhc-mds.com/communications/#/2017/10/25/Update-to-the-PMHC-MDS-v-0-17-2/>`_.
-* Ability to **edit identification keys**, was released in `v0.18.0 <https://www.pmhc-mds.com/communications/>`_.
+* Ability to **edit identification keys**, was released in `v0.18.0 <https://www.pmhc-mds.com/communications/#/2017/11/22/Update-to-the-PMHC-MDS-v-0-18-0/>`_.
+* Ability to **add SDQ subscales**, was released in `v0.18.0 <https://www.pmhc-mds.com/communications/#/2017/11/22/Update-to-the-PMHC-MDS-v-0-18-0/>`_ whilst SDQ licensing negotiations are in processes.
+* Enhanced form errors for duplicate keys to be shown when entering data, was released in `v0.19.0 <https://www.pmhc-mds.com/communications/#/2017/12/08/Update-to-the-PMHC-MDS-v-0-19-0/>`_.
+* Minimise data errors by implemented, minimum dates have been applied to specific fields, was released in `v0.21.0 <https://www.pmhc-mds.com/communications/#/2018/01/19/Update-to-the-PMHC-MDS-v-0-21-0-and-Data-Specifications-v1-0-12/>`_.
+
 
 The remaining features will be rolled out iteratively over the following weeks, and will be:
 
@@ -52,7 +56,8 @@ Reporting
 The :ref:`system-report-types` that are currently available are:
 
 * :ref:`category-e`, was released in `v0.14.0 <https://www.pmhc-mds.com/communications/#/2017/07/28/Update-to-the-PMHC-MDS-v-0-14-0/>`_.
-* The start of the :ref:`category-a` reports, was was released in `v0.20.0 <https://www.pmhc-mds.com/communications/#/2017/12/12/Update-to-the-PMHC-MDS-v-0-20-0/>`_.
+* The start of the :ref:`category-a` reports, was released in `v0.20.0 <https://www.pmhc-mds.com/communications/#/2017/12/12/Update-to-the-PMHC-MDS-v-0-20-0/>`_.
+* Additional :ref:`category-a` Data Quality reports, was released in `v0.22.1 <https://www.pmhc-mds.com/communications/#/2018/03/13/Update-to-the-PMHC-MDS-v-0-22-1/>`_.
 
 The following reports will be rolled out iteratively over the following weeks:
 
