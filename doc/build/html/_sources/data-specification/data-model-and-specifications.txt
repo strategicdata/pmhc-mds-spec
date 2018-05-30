@@ -510,4 +510,4 @@ Download Specification Files
 Available for software developers designing extracts for the PMHC MDS, please
 click the link below to download the PMHC MDS Specification files:
 
-* `Download Specification zip <pmhcmds-spec-meta.zip>`_
+*  :download:`Specification zip <pmhcmds-spec-meta.zip>`
