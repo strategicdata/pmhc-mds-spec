@@ -1,22 +1,30 @@
 PMHC-MDS Documentation
 ======================
 
-The main documentation for the site is organized into several sections:
+.. only:: builder_html
 
-* :ref:`user-docs`
-* :ref:`data-docs`
-* :ref:`faqs`
+   The main documentation for the site is organized into several sections:
 
-Getting Help
-------------
+   * :ref:`user-docs`
+   * :ref:`data-docs`
+   * :ref:`faqs`
 
-A dedicated **Help Desk** is available to support Primary Health Networks and
-Provider Organisations implementing PMHC in relation to the minimum dataset
-system. All enquiries should be directed to: support@pmhc-mds.com.
+   Getting Help
+   ------------
+
+   A dedicated **Help Desk** is available to support Primary Health Networks and
+   Provider Organisations implementing PMHC in relation to the minimum dataset
+   system. All enquiries should be directed to: support@pmhc-mds.com.
 
 .. toctree::
+   :numbered:
+   :caption: Table of Contents
    :maxdepth: 3
 
    user-documentation/index
    data-specification/index
    faqs/index
+
+.. only:: builder_html
+
+   Download this specification as a :download:`PDF </_static/PMHC.pdf>`.
