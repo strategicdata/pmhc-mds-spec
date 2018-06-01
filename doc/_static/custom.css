@@ -13,29 +13,6 @@ a.headerlink {
     display:none
 }
 
-
-html body .wy-table-responsive table td p {
-    font-size: 14px;
-}
-
-html body .wy-table-responsive table td p.first,
-html body .wy-table-responsive table td p {
-    margin-bottom: 7px;
-}
-
-@media screen and (min-width: 767px) {
-    html body .wy-table-responsive table td,
-    html body .wy-table-responsive table th {
-        white-space: normal;
-    }
-
-    html body .wy-table-responsive {
-        margin-bottom: 24px;
-        max-width: 100%;
-        overflow: visible;
-    }
-}
-
 @media print {
     div.wy-table-responsive {
         overflow: visible !important;
