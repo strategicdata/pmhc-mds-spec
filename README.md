@@ -11,10 +11,13 @@ This will:
 * move generated content into the correct locations
 * run sphinx to generate the html output in doc/build/html
 
-### Produce a single html page version of the documentation
+### Produce an html page version of the documentation
+
+If you produce the `singlehtml` version, you won't get the
+introduction or the link to the PDF. (See the comments in README.md)
 
 ```
-./scripts/make.sh singlehtml
+./scripts/make.sh html
 ```
 
 
