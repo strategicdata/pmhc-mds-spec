@@ -6,20 +6,12 @@ set -e
 docker pull docker.sdlocal.net/csvw/metadata2rst
 docker run -it --rm -v `pwd`:/mnt/cwd docker.sdlocal.net/csvw/metadata2rst
 
-#pushd .
+pushd .
 
-pushd doc
-    rm -rf data-specification/_data build
-    cp -rf ../data data-specification/_data
-popd
+cd doc
 
-if [ ! -z $2 ]; then
-    pushd $2
-else
-    pushd doc
-fi
-
-
+rm -rf data-specification/_data build
+cp -rf ../data data-specification/_data
 
 if [ -z $1 ]; then
   ARG1=html
