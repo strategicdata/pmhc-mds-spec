@@ -98,13 +98,6 @@ say "Writing to $output_file";
 write_file( $output_file, $output_pdf );
 
 
-# Compress the resulting file
-say "Compressing with pdftk";
-my $pwd = dirname( $RealDir );
-`docker run -ti -v $pwd:/work mnuessler/pdftk doc/_static/$spec_type.pdf output doc/_static/$spec_type-smaller.pdf compress`;
-`mv doc/_static/$spec_type-smaller.pdf doc/_static/$spec_type.pdf`;
-
-
 #=======================================================================
 # Content utility methods
 #=======================================================================
