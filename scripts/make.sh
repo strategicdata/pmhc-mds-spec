@@ -4,7 +4,7 @@
 set -e
 
 docker pull docker.sdlocal.net/csvw/metadata2rst
-docker run -it --rm -v `pwd`:/mnt/cwd docker.sdlocal.net/csvw/metadata2rst
+docker run --rm -v `pwd`:/mnt/cwd docker.sdlocal.net/csvw/metadata2rst
 
 pushd .
 
@@ -27,6 +27,6 @@ echo "PWD=$current_dir"
 
 pwd
 
-docker run -ti -e GIT_VERSION -v `pwd`:/mnt/workdir stratdat/sphinx:production make $ARG1
+docker run -e GIT_VERSION -v `pwd`:/mnt/workdir stratdat/sphinx:production make $ARG1
 
 popd
