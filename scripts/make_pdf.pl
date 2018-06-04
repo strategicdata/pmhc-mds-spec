@@ -12,7 +12,7 @@ use File::Slurp::Tiny qw/read_file write_file read_dir/;
 use Getopt::Long;
 use DateTime;
 
-use SD::PrinceXML::Client 21;
+use SD::PrinceXML::Client 22;
 
 
 my $src = dirname( $RealDir ) . '/doc/build/singlehtml';
