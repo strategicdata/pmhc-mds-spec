@@ -1,31 +1,94 @@
 /* override table width restrictions */
 .wy-table-responsive table td, .wy-table-responsive table th {
-  /* !important prevents the common CSS stylesheets from
-  overriding this as on RTD they are loaded after this stylesheet */
-  white-space: normal !important;
+    /* !important prevents the common CSS stylesheets from
+    overriding this as on RTD they are loaded after this stylesheet */
+    white-space: normal !important;
 }
 
-/*.wy-table-responsive {
-  overflow: visible !important;
-}*/
-
 .wy-nav-content {
-  max-width: 1200px !important;
+    max-width: 1200px !important;
 }
 
 a.headerlink {
-  display:none
+    display:none
 }
 
 @media print {
+    div.wy-table-responsive {
+        overflow: visible !important;
+    }
 
-/*  #sdq > div.wy-table-responsive {
-    page-break-before: always;
-    page-break-after: always;*/
-  }
+    body, .wy-nav-content-wrap, .wy-grid-for-nav, .wy-nav-content {
+        height: auto !important;
+        min-height: auto !important;
+        position: initial !important;
+    }
 
-  #data-item-summary > div.wy-table-responsive {
-  overflow: visible !important;
-  }
+    div[role=navigation] {
+        display: none;
+    }
 
+    h2 {
+        page-break-before: always;
+    }
+
+    /* This adds the ".....12" to the TOC links */
+    #prince-toc a::after { content: leader(".") target-counter(attr(href), page); }
+
+    #prince-toc, #prince-toc li {
+        list-style: none;
+    }
+
+    #prince-toc a {
+        color: inherit;
+    }
+
+    a.headerlink {
+        display: none;
+    }
+
+    html, p {
+        font-size: 10pt;
+    }
+
+    img.logo {
+        width: 8cm;
+        margin-bottom: 8cm !important;
+    }
+
+    p.commit_hash {
+        position: absolute;
+        left: 3.236em; /* from the theme */
+        top: 280mm;
+        font-size: 5pt;
+    }
+}
+
+/* Page Numbers */
+@page {
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+        font-size: 0.7em;
+        margin-bottom: 2em;
+    }
+    size: a4;
+}
+/* No page number on the first page */
+@page:first {
+    @bottom-center {
+        content: "";
+    }
+}
+
+/* Arial is used by the SVGs */
+@font-face{
+    font-family:"Arial";
+    font-style:normal;
+    src:local("Arial"),url(arial.ttf) format("truetype");
+}
+@font-face{
+    font-family:"Helvetica";
+    font-style:normal;
+    src:local("Arial"),url(arial.ttf) format("truetype");
 }
