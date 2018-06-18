@@ -12,6 +12,19 @@ This will:
 * create zip of spec metadata (csv + json files) inside data-specification
 * run sphinx to generate the html output in doc/build/html
 
+### Update the specification version
+
+If the specification version has been changed:
+
+```
+git tag -a v1.0.xx
+```
+
+This will:
+
+* tag the git repository with the new specification version. This is used to
+  generate the version.txt file in the specification download zip.
+
 ### Produce an html page version of the documentation
 
 If you produce the `singlehtml` version, you won't get the
