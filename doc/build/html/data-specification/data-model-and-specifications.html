@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Data model and specifications &mdash; PMHC MDS Version 1.0.12 documentation</title>
+  <title>2.3. Data model and specifications &mdash; PMHC MDS Version 1.0.12 documentation</title>
   
 
   
@@ -33,9 +33,9 @@
 
   
     <link rel="top" title="PMHC MDS Version 1.0.12 documentation" href="../index.html"/>
-        <link rel="up" title="Data Specification" href="index.html"/>
-        <link rel="next" title="Upload specification" href="upload-specification.html"/>
-        <link rel="prev" title="Identifier management" href="identifier-management.html"/> 
+        <link rel="up" title="2. Data Specification" href="index.html"/>
+        <link rel="next" title="2.4. Upload specification" href="upload-specification.html"/>
+        <link rel="prev" title="2.2. Identifier management" href="identifier-management.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -84,192 +84,193 @@
           
             
             
-                <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../user-documentation/index.html">User Guide</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">Data Specification</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="reporting-arrangements.html">Reporting arrangements</a></li>
-<li class="toctree-l2"><a class="reference internal" href="identifier-management.html">Identifier management</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Data model and specifications</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#data-model">Data model</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#key-concepts">Key concepts</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#primary-health-network">Primary Health Network</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#provider-organisation">Provider Organisation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#practitioner">Practitioner</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#client">Client</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#episode">Episode</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#service-contact">Service Contact</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#outcome-collection-occasion">Outcome Collection Occasion</a></li>
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../user-documentation/index.html">1. User Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">2. Data Specification</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="reporting-arrangements.html">2.1. Reporting arrangements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="identifier-management.html">2.2. Identifier management</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">2.3. Data model and specifications</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#data-model">2.3.1. Data model</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#key-concepts">2.3.2. Key concepts</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#primary-health-network">2.3.2.1. Primary Health Network</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#provider-organisation">2.3.2.2. Provider Organisation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#practitioner">2.3.2.3. Practitioner</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#client">2.3.2.4. Client</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#episode">2.3.2.5. Episode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#service-contact">2.3.2.6. Service Contact</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#outcome-collection-occasion">2.3.2.7. Outcome Collection Occasion</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#record-formats">Record formats</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#provider-organisation-data-elements">Provider Organisation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#practitioner-data-elements">Practitioner</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#client-data-elements">Client</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#episode-data-elements">Episode</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#service-contact-data-elements">Service Contact</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#outcome-collection-occasion-data-elements">Outcome Collection Occasion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#record-formats">2.3.3. Record formats</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#provider-organisation-data-elements">2.3.3.1. Provider Organisation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#practitioner-data-elements">2.3.3.2. Practitioner</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#client-data-elements">2.3.3.3. Client</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#episode-data-elements">2.3.3.4. Episode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#service-contact-data-elements">2.3.3.5. Service Contact</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#outcome-collection-occasion-data-elements">2.3.3.6. Outcome Collection Occasion</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#definitions">Definitions</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#client-aboriginal-and-torres-strait-islander-status">Client - Aboriginal and Torres Strait Islander Status</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#client-country-of-birth">Client - Country of Birth</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#client-date-of-birth">Client - Date of Birth</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#client-estimated-date-of-birth-flag">Client - Estimated Date of Birth Flag</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#client-gender">Client - Gender</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#client-key">Client Key</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#client-main-language-spoken-at-home">Client - Main Language Spoken at Home</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#client-proficiency-in-spoken-english">Client - Proficiency in Spoken English</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#client-statistical-linkage-key">Client - Statistical Linkage Key</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#client-tags">Client - Tags</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#collection-occasion-measure-date">Collection Occasion - Measure Date</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#collection-occasion-reason">Collection Occasion - Reason</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#collection-occasion-key">Collection Occasion Key</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#episode-additional-diagnosis">Episode - Additional Diagnosis</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#episode-area-of-usual-residence-postcode">Episode - Area of usual residence, postcode</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#episode-client-consent-to-anonymised-data">Episode - Client Consent to Anonymised Data</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#episode-completion-status">Episode - Completion Status</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#episode-employment-participation">Episode - Employment Participation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#episode-end-date">Episode - End Date</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#episode-gp-mental-health-treatment-plan-flag">Episode - GP Mental Health Treatment Plan Flag</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#episode-health-care-card">Episode - Health Care Card</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#episode-homelessness-flag">Episode - Homelessness Flag</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#episode-key">Episode Key</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#episode-labour-force-status">Episode - Labour Force Status</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#episode-marital-status">Episode - Marital Status</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#episode-medication-antidepressants-n06a">Episode - Medication - Antidepressants (N06A)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#episode-medication-antipsychotics-n05a">Episode - Medication - Antipsychotics (N05A)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#episode-medication-anxiolytics-n05b">Episode - Medication - Anxiolytics (N05B)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#episode-medication-hypnotics-and-sedatives-n05c">Episode - Medication - Hypnotics and sedatives (N05C)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#episode-medication-psychostimulants-and-nootropics-n06b">Episode - Medication - Psychostimulants and nootropics (N06B)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#episode-ndis-participant">Episode - NDIS Participant</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#episode-principal-diagnosis">Episode - Principal Diagnosis</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#episode-principal-focus-of-treatment-plan">Episode - Principal Focus of Treatment Plan</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#episode-referral-date">Episode - Referral Date</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#episode-referrer-organisation-type">Episode - Referrer Organisation Type</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#episode-referrer-profession">Episode - Referrer Profession</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#episode-source-of-cash-income">Episode - Source of Cash Income</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#episode-suicide-referral-flag">Episode - Suicide Referral Flag</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#episode-tags">Episode - Tags</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#k5-question-1">K5 - Question 1</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#k5-question-2">K5 - Question 2</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#k5-question-3">K5 - Question 3</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#k5-question-4">K5 - Question 4</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#k5-question-5">K5 - Question 5</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#k5-score">K5 - Score</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#k5-tags">K5 - Tags</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#k10-question-1">K10+ - Question 1</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#k10-question-2">K10+ - Question 2</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#k10-question-3">K10+ - Question 3</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#k10-question-4">K10+ - Question 4</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#k10-question-5">K10+ - Question 5</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#k10-question-6">K10+ - Question 6</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#k10-question-7">K10+ - Question 7</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#k10-question-8">K10+ - Question 8</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#k10-question-9">K10+ - Question 9</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#k10-question-10">K10+ - Question 10</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#k10-question-11">K10+ - Question 11</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#k10-question-12">K10+ - Question 12</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#k10-question-13">K10+ - Question 13</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#k10-question-14">K10+ - Question 14</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#k10-score">K10+ - Score</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#k10-tags">K10+ - Tags</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#organisation-key">Organisation Key</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#organisation-path">Organisation Path</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#practitioner-aboriginal-and-torres-strait-islander-status">Practitioner - Aboriginal and Torres Strait Islander Status</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#practitioner-active">Practitioner - Active</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#practitioner-atsi-cultural-training">Practitioner - ATSI Cultural Training</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#practitioner-category">Practitioner - Category</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#practitioner-gender">Practitioner - Gender</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#practitioner-key">Practitioner Key</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#practitioner-tags">Practitioner - Tags</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#practitioner-year-of-birth">Practitioner - Year of Birth</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#provider-organisation-abn">Provider Organisation - ABN</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#provider-organisation-legal-name">Provider Organisation - Legal Name</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#provider-organisation-name">Provider Organisation - Name</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#provider-organisation-state">Provider Organisation - State</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#provider-organisation-status">Provider Organisation - Status</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#provider-organisation-tags">Provider Organisation - Tags</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#provider-organisation-type">Provider Organisation - Type</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-collection-occasion-version">SDQ Collection Occasion - Version</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-conduct-problem-scale">SDQ - Conduct Problem Scale</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-emotional-symptoms-scale">SDQ - Emotional Symptoms Scale</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-hyperactivity-scale">SDQ - Hyperactivity Scale</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-impact-score">SDQ - Impact Score</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-peer-problem-scale">SDQ - Peer Problem Scale</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-prosocial-scale">SDQ - Prosocial Scale</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-question-1">SDQ - Question 1</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-question-2">SDQ - Question 2</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-question-3">SDQ - Question 3</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-question-4">SDQ - Question 4</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-question-5">SDQ - Question 5</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-question-6">SDQ - Question 6</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-question-7">SDQ - Question 7</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-question-8">SDQ - Question 8</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-question-9">SDQ - Question 9</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-question-10">SDQ - Question 10</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-question-11">SDQ - Question 11</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-question-12">SDQ - Question 12</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-question-13">SDQ - Question 13</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-question-14">SDQ - Question 14</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-question-15">SDQ - Question 15</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-question-16">SDQ - Question 16</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-question-17">SDQ - Question 17</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-question-18">SDQ - Question 18</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-question-19">SDQ - Question 19</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-question-20">SDQ - Question 20</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-question-21">SDQ - Question 21</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-question-22">SDQ - Question 22</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-question-23">SDQ - Question 23</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-question-24">SDQ - Question 24</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-question-25">SDQ - Question 25</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-question-26">SDQ - Question 26</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-question-27">SDQ - Question 27</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-question-28">SDQ - Question 28</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-question-29">SDQ - Question 29</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-question-30">SDQ - Question 30</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-question-31">SDQ - Question 31</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-question-32">SDQ - Question 32</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-question-33">SDQ - Question 33</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-question-34">SDQ - Question 34</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-question-35">SDQ - Question 35</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-question-36">SDQ - Question 36</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-question-37">SDQ - Question 37</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-question-38">SDQ - Question 38</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-question-39">SDQ - Question 39</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-question-40">SDQ - Question 40</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-question-41">SDQ - Question 41</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-question-42">SDQ - Question 42</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-tags">SDQ - Tags</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-total-difficulties-score">SDQ - Total Difficulties Score</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#service-contact-client-participation-indicator">Service Contact - Client Participation Indicator</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#service-contact-copayment">Service Contact - Copayment</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#service-contact-date">Service Contact - Date</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#service-contact-duration">Service Contact - Duration</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#service-contact-final">Service Contact - Final</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#service-contact-interpreter-used">Service Contact - Interpreter Used</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#service-contact-modality">Service Contact - Modality</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#service-contact-no-show">Service Contact - No Show</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#service-contact-participants">Service Contact - Participants</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#service-contact-postcode">Service Contact - Postcode</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#service-contact-tags">Service Contact - Tags</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#service-contact-type">Service Contact - Type</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#service-contact-venue">Service Contact - Venue</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#service-contact-key">Service Contact Key</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#definitions">2.3.4. Definitions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#client-aboriginal-and-torres-strait-islander-status">2.3.4.1. Client - Aboriginal and Torres Strait Islander Status</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#client-country-of-birth">2.3.4.2. Client - Country of Birth</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#client-date-of-birth">2.3.4.3. Client - Date of Birth</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#client-estimated-date-of-birth-flag">2.3.4.4. Client - Estimated Date of Birth Flag</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#client-gender">2.3.4.5. Client - Gender</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#client-key">2.3.4.6. Client Key</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#client-main-language-spoken-at-home">2.3.4.7. Client - Main Language Spoken at Home</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#client-proficiency-in-spoken-english">2.3.4.8. Client - Proficiency in Spoken English</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#client-statistical-linkage-key">2.3.4.9. Client - Statistical Linkage Key</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#client-tags">2.3.4.10. Client - Tags</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#collection-occasion-measure-date">2.3.4.11. Collection Occasion - Measure Date</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#collection-occasion-reason">2.3.4.12. Collection Occasion - Reason</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#collection-occasion-key">2.3.4.13. Collection Occasion Key</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#episode-additional-diagnosis">2.3.4.14. Episode - Additional Diagnosis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#episode-area-of-usual-residence-postcode">2.3.4.15. Episode - Area of usual residence, postcode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#episode-client-consent-to-anonymised-data">2.3.4.16. Episode - Client Consent to Anonymised Data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#episode-completion-status">2.3.4.17. Episode - Completion Status</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#episode-employment-participation">2.3.4.18. Episode - Employment Participation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#episode-end-date">2.3.4.19. Episode - End Date</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#episode-gp-mental-health-treatment-plan-flag">2.3.4.20. Episode - GP Mental Health Treatment Plan Flag</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#episode-health-care-card">2.3.4.21. Episode - Health Care Card</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#episode-homelessness-flag">2.3.4.22. Episode - Homelessness Flag</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#episode-key">2.3.4.23. Episode Key</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#episode-labour-force-status">2.3.4.24. Episode - Labour Force Status</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#episode-marital-status">2.3.4.25. Episode - Marital Status</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#episode-medication-antidepressants-n06a">2.3.4.26. Episode - Medication - Antidepressants (N06A)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#episode-medication-antipsychotics-n05a">2.3.4.27. Episode - Medication - Antipsychotics (N05A)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#episode-medication-anxiolytics-n05b">2.3.4.28. Episode - Medication - Anxiolytics (N05B)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#episode-medication-hypnotics-and-sedatives-n05c">2.3.4.29. Episode - Medication - Hypnotics and sedatives (N05C)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#episode-medication-psychostimulants-and-nootropics-n06b">2.3.4.30. Episode - Medication - Psychostimulants and nootropics (N06B)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#episode-ndis-participant">2.3.4.31. Episode - NDIS Participant</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#episode-principal-diagnosis">2.3.4.32. Episode - Principal Diagnosis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#episode-principal-focus-of-treatment-plan">2.3.4.33. Episode - Principal Focus of Treatment Plan</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#episode-referral-date">2.3.4.34. Episode - Referral Date</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#episode-referrer-organisation-type">2.3.4.35. Episode - Referrer Organisation Type</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#episode-referrer-profession">2.3.4.36. Episode - Referrer Profession</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#episode-source-of-cash-income">2.3.4.37. Episode - Source of Cash Income</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#episode-suicide-referral-flag">2.3.4.38. Episode - Suicide Referral Flag</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#episode-tags">2.3.4.39. Episode - Tags</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#k5-question-1">2.3.4.40. K5 - Question 1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#k5-question-2">2.3.4.41. K5 - Question 2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#k5-question-3">2.3.4.42. K5 - Question 3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#k5-question-4">2.3.4.43. K5 - Question 4</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#k5-question-5">2.3.4.44. K5 - Question 5</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#k5-score">2.3.4.45. K5 - Score</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#k5-tags">2.3.4.46. K5 - Tags</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#k10-question-1">2.3.4.47. K10+ - Question 1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#k10-question-2">2.3.4.48. K10+ - Question 2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#k10-question-3">2.3.4.49. K10+ - Question 3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#k10-question-4">2.3.4.50. K10+ - Question 4</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#k10-question-5">2.3.4.51. K10+ - Question 5</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#k10-question-6">2.3.4.52. K10+ - Question 6</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#k10-question-7">2.3.4.53. K10+ - Question 7</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#k10-question-8">2.3.4.54. K10+ - Question 8</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#k10-question-9">2.3.4.55. K10+ - Question 9</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#k10-question-10">2.3.4.56. K10+ - Question 10</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#k10-question-11">2.3.4.57. K10+ - Question 11</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#k10-question-12">2.3.4.58. K10+ - Question 12</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#k10-question-13">2.3.4.59. K10+ - Question 13</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#k10-question-14">2.3.4.60. K10+ - Question 14</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#k10-score">2.3.4.61. K10+ - Score</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#k10-tags">2.3.4.62. K10+ - Tags</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#organisation-key">2.3.4.63. Organisation Key</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#organisation-path">2.3.4.64. Organisation Path</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#practitioner-aboriginal-and-torres-strait-islander-status">2.3.4.65. Practitioner - Aboriginal and Torres Strait Islander Status</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#practitioner-active">2.3.4.66. Practitioner - Active</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#practitioner-atsi-cultural-training">2.3.4.67. Practitioner - ATSI Cultural Training</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#practitioner-category">2.3.4.68. Practitioner - Category</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#practitioner-gender">2.3.4.69. Practitioner - Gender</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#practitioner-key">2.3.4.70. Practitioner Key</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#practitioner-tags">2.3.4.71. Practitioner - Tags</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#practitioner-year-of-birth">2.3.4.72. Practitioner - Year of Birth</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#provider-organisation-abn">2.3.4.73. Provider Organisation - ABN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#provider-organisation-legal-name">2.3.4.74. Provider Organisation - Legal Name</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#provider-organisation-name">2.3.4.75. Provider Organisation - Name</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#provider-organisation-state">2.3.4.76. Provider Organisation - State</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#provider-organisation-status">2.3.4.77. Provider Organisation - Status</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#provider-organisation-tags">2.3.4.78. Provider Organisation - Tags</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#provider-organisation-type">2.3.4.79. Provider Organisation - Type</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-collection-occasion-version">2.3.4.80. SDQ Collection Occasion - Version</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-conduct-problem-scale">2.3.4.81. SDQ - Conduct Problem Scale</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-emotional-symptoms-scale">2.3.4.82. SDQ - Emotional Symptoms Scale</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-hyperactivity-scale">2.3.4.83. SDQ - Hyperactivity Scale</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-impact-score">2.3.4.84. SDQ - Impact Score</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-peer-problem-scale">2.3.4.85. SDQ - Peer Problem Scale</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-prosocial-scale">2.3.4.86. SDQ - Prosocial Scale</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-question-1">2.3.4.87. SDQ - Question 1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-question-2">2.3.4.88. SDQ - Question 2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-question-3">2.3.4.89. SDQ - Question 3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-question-4">2.3.4.90. SDQ - Question 4</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-question-5">2.3.4.91. SDQ - Question 5</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-question-6">2.3.4.92. SDQ - Question 6</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-question-7">2.3.4.93. SDQ - Question 7</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-question-8">2.3.4.94. SDQ - Question 8</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-question-9">2.3.4.95. SDQ - Question 9</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-question-10">2.3.4.96. SDQ - Question 10</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-question-11">2.3.4.97. SDQ - Question 11</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-question-12">2.3.4.98. SDQ - Question 12</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-question-13">2.3.4.99. SDQ - Question 13</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-question-14">2.3.4.100. SDQ - Question 14</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-question-15">2.3.4.101. SDQ - Question 15</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-question-16">2.3.4.102. SDQ - Question 16</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-question-17">2.3.4.103. SDQ - Question 17</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-question-18">2.3.4.104. SDQ - Question 18</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-question-19">2.3.4.105. SDQ - Question 19</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-question-20">2.3.4.106. SDQ - Question 20</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-question-21">2.3.4.107. SDQ - Question 21</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-question-22">2.3.4.108. SDQ - Question 22</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-question-23">2.3.4.109. SDQ - Question 23</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-question-24">2.3.4.110. SDQ - Question 24</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-question-25">2.3.4.111. SDQ - Question 25</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-question-26">2.3.4.112. SDQ - Question 26</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-question-27">2.3.4.113. SDQ - Question 27</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-question-28">2.3.4.114. SDQ - Question 28</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-question-29">2.3.4.115. SDQ - Question 29</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-question-30">2.3.4.116. SDQ - Question 30</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-question-31">2.3.4.117. SDQ - Question 31</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-question-32">2.3.4.118. SDQ - Question 32</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-question-33">2.3.4.119. SDQ - Question 33</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-question-34">2.3.4.120. SDQ - Question 34</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-question-35">2.3.4.121. SDQ - Question 35</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-question-36">2.3.4.122. SDQ - Question 36</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-question-37">2.3.4.123. SDQ - Question 37</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-question-38">2.3.4.124. SDQ - Question 38</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-question-39">2.3.4.125. SDQ - Question 39</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-question-40">2.3.4.126. SDQ - Question 40</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-question-41">2.3.4.127. SDQ - Question 41</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-question-42">2.3.4.128. SDQ - Question 42</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-tags">2.3.4.129. SDQ - Tags</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-total-difficulties-score">2.3.4.130. SDQ - Total Difficulties Score</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#service-contact-client-participation-indicator">2.3.4.131. Service Contact - Client Participation Indicator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#service-contact-copayment">2.3.4.132. Service Contact - Copayment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#service-contact-date">2.3.4.133. Service Contact - Date</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#service-contact-duration">2.3.4.134. Service Contact - Duration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#service-contact-final">2.3.4.135. Service Contact - Final</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#service-contact-interpreter-used">2.3.4.136. Service Contact - Interpreter Used</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#service-contact-modality">2.3.4.137. Service Contact - Modality</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#service-contact-no-show">2.3.4.138. Service Contact - No Show</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#service-contact-participants">2.3.4.139. Service Contact - Participants</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#service-contact-postcode">2.3.4.140. Service Contact - Postcode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#service-contact-tags">2.3.4.141. Service Contact - Tags</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#service-contact-type">2.3.4.142. Service Contact - Type</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#service-contact-venue">2.3.4.143. Service Contact - Venue</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#service-contact-key">2.3.4.144. Service Contact Key</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#download-specification-files">Download Specification Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#download-specification-files">2.3.5. Download Specification Files</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="upload-specification.html">Upload specification</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data-item-summary.html">Data item summary</a></li>
-<li class="toctree-l2"><a class="reference internal" href="form-creation.html">Using the data specification to create client forms</a></li>
-<li class="toctree-l2"><a class="reference internal" href="validation-rules.html">Validation Rules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ataps/ataps-pmhc-mapping.html">ATAPS MDS to PMHC MDS data mapping</a></li>
-<li class="toctree-l2"><a class="reference internal" href="test-data-sets.html">Test Data Sets</a></li>
-<li class="toctree-l2"><a class="reference internal" href="change-log.html">Data Specification Change log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="upload-specification.html">2.4. Upload specification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data-item-summary.html">2.5. Data item summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="form-creation.html">2.6. Using the data specification to create client forms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="validation-rules.html">2.7. Validation Rules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ataps/ataps-pmhc-mapping.html">2.8. ATAPS MDS to PMHC MDS data mapping</a></li>
+<li class="toctree-l2"><a class="reference internal" href="test-data-sets.html">2.9. Test Data Sets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html">2.10. Data Specification Change log</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../faqs/index.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faqs/index.html">3. Frequently Asked Questions</a></li>
 </ul>
 
             
@@ -300,9 +301,9 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../index.html">Docs</a> &raquo;</li>
       
-          <li><a href="index.html">Data Specification</a> &raquo;</li>
+          <li><a href="index.html">2. Data Specification</a> &raquo;</li>
       
-    <li>Data model and specifications</li>
+    <li>2.3. Data model and specifications</li>
       <li class="wy-breadcrumbs-aside">
         
           
@@ -317,24 +318,24 @@
            <div itemprop="articleBody">
             
   <div class="section" id="data-model-and-specifications">
-<span id="id1"></span><h1>Data model and specifications<a class="headerlink" href="#data-model-and-specifications" title="Permalink to this headline">¶</a></h1>
+<span id="id1"></span><h1>2.3. Data model and specifications<a class="headerlink" href="#data-model-and-specifications" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="data-model">
-<span id="id2"></span><h2>Data model<a class="headerlink" href="#data-model" title="Permalink to this headline">¶</a></h2>
+<span id="id2"></span><h2>2.3.1. Data model<a class="headerlink" href="#data-model" title="Permalink to this headline">¶</a></h2>
 <div class="figure" id="id14">
-<span id="data-model-diagram"></span><img alt="PMHC data model" src="../_images/data-model.svg" /><p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">PMHC data model</span></p>
+<span id="data-model-diagram"></span><img alt="PMHC data model" src="../_images/data-model.svg" /><p class="caption"><span class="caption-number">Fig. 2.2 </span><span class="caption-text">PMHC data model</span></p>
 </div>
 <p><strong>Note:</strong> <a class="reference internal" href="#collection-occasion-diagram"><span class="std std-ref">PMHC Collection Occasion data model</span></a> for more details about
 Collection Occasion records.</p>
 <div class="figure" id="id15">
-<span id="collection-occasion-diagram"></span><img alt="PMHC Collection Occasion data model" src="../_images/collection-occasion-data-model.svg" /><p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">PMHC Collection Occasion data model</span></p>
+<span id="collection-occasion-diagram"></span><img alt="PMHC Collection Occasion data model" src="../_images/collection-occasion-data-model.svg" /><p class="caption"><span class="caption-number">Fig. 2.3 </span><span class="caption-text">PMHC Collection Occasion data model</span></p>
 </div>
 <p><strong>Note:</strong> See <a class="reference internal" href="#data-model-diagram"><span class="std std-ref">PMHC data model</span></a> for more details about how
 Collection Occasion records fit into the overall structure.</p>
 </div>
 <div class="section" id="key-concepts">
-<span id="id3"></span><h2>Key concepts<a class="headerlink" href="#key-concepts" title="Permalink to this headline">¶</a></h2>
+<span id="id3"></span><h2>2.3.2. Key concepts<a class="headerlink" href="#key-concepts" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="primary-health-network">
-<span id="key-concepts-primary-health-network"></span><h3>Primary Health Network<a class="headerlink" href="#primary-health-network" title="Permalink to this headline">¶</a></h3>
+<span id="key-concepts-primary-health-network"></span><h3>2.3.2.1. Primary Health Network<a class="headerlink" href="#primary-health-network" title="Permalink to this headline">¶</a></h3>
 <p>Primary Health Networks (PHNs) have been established by the Australian Government
 with the key objectives of increasing the efficiency and effectiveness of
 medical services for patients, particularly those at risk of poor health
@@ -342,23 +343,23 @@ outcomes, and improving coordination of care to ensure patients receive the
 right care in the right place at the right time.</p>
 </div>
 <div class="section" id="provider-organisation">
-<span id="key-concepts-provider-organisation"></span><h3>Provider Organisation<a class="headerlink" href="#provider-organisation" title="Permalink to this headline">¶</a></h3>
+<span id="key-concepts-provider-organisation"></span><h3>2.3.2.2. Provider Organisation<a class="headerlink" href="#provider-organisation" title="Permalink to this headline">¶</a></h3>
 <p>The Provider Organisation is the business entity that the PHN has commissioned
 to provide the service.</p>
 <p>See <a class="reference internal" href="#provider-organisation-data-elements"><span class="std std-ref">Provider Organisation</span></a> for the data elements for a provider organisation.</p>
 </div>
 <div class="section" id="practitioner">
-<span id="key-concepts-practitioner"></span><h3>Practitioner<a class="headerlink" href="#practitioner" title="Permalink to this headline">¶</a></h3>
+<span id="key-concepts-practitioner"></span><h3>2.3.2.3. Practitioner<a class="headerlink" href="#practitioner" title="Permalink to this headline">¶</a></h3>
 <p>The Practitioner is the person who is delivering the service.</p>
 <p>See <a class="reference internal" href="#practitioner-data-elements"><span class="std std-ref">Practitioner</span></a> for the data elements for a practitioner.</p>
 </div>
 <div class="section" id="client">
-<span id="key-concepts-client"></span><h3>Client<a class="headerlink" href="#client" title="Permalink to this headline">¶</a></h3>
+<span id="key-concepts-client"></span><h3>2.3.2.4. Client<a class="headerlink" href="#client" title="Permalink to this headline">¶</a></h3>
 <p>The Client is the person who is receiving the service.</p>
 <p>See <a class="reference internal" href="#client-data-elements"><span class="std std-ref">Client</span></a> for the data elements for a client.</p>
 </div>
 <div class="section" id="episode">
-<span id="key-concepts-episode"></span><h3>Episode<a class="headerlink" href="#episode" title="Permalink to this headline">¶</a></h3>
+<span id="key-concepts-episode"></span><h3>2.3.2.5. Episode<a class="headerlink" href="#episode" title="Permalink to this headline">¶</a></h3>
 <p>For the purposes of the PMHC MDS, an <em>Episode of Care</em> is defined as a more or
 less continuous period of contact between a client and a PHN-commissioned
 provider organisation/clinician that starts at the point of first contact, and
@@ -392,7 +393,7 @@ person re-presents to the organisation.</p>
 <p>See <a class="reference internal" href="#episode-data-elements"><span class="std std-ref">Episode</span></a> for the data elements for a episode.</p>
 </div>
 <div class="section" id="service-contact">
-<span id="key-concepts-service-contact"></span><h3>Service Contact<a class="headerlink" href="#service-contact" title="Permalink to this headline">¶</a></h3>
+<span id="key-concepts-service-contact"></span><h3>2.3.2.6. Service Contact<a class="headerlink" href="#service-contact" title="Permalink to this headline">¶</a></h3>
 <ul>
 <li><p class="first">Service contacts are defined as the provision of a service by a PHN
 commissioned mental health service provider for a client where the nature of
@@ -421,7 +422,7 @@ modification.</p>
 <p>See <a class="reference internal" href="#service-contact-data-elements"><span class="std std-ref">Service Contact</span></a> for the data elements for a service contact.</p>
 </div>
 <div class="section" id="outcome-collection-occasion">
-<span id="key-concepts-outcome-collection-occasion"></span><h3>Outcome Collection Occasion<a class="headerlink" href="#outcome-collection-occasion" title="Permalink to this headline">¶</a></h3>
+<span id="key-concepts-outcome-collection-occasion"></span><h3>2.3.2.7. Outcome Collection Occasion<a class="headerlink" href="#outcome-collection-occasion" title="Permalink to this headline">¶</a></h3>
 <p>A Collection Occasion is defined as an occasion during an Episode of Care when
 the required outcome measure is to be collected. At a minimum, collection of
 outcome data is required at both Episode Start and Episode End, but may be more
@@ -434,16 +435,16 @@ collection occasion.</p>
 </div>
 </div>
 <div class="section" id="record-formats">
-<span id="id5"></span><h2>Record formats<a class="headerlink" href="#record-formats" title="Permalink to this headline">¶</a></h2>
+<span id="id5"></span><h2>2.3.3. Record formats<a class="headerlink" href="#record-formats" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="provider-organisation-data-elements">
-<span id="id6"></span><h3>Provider Organisation<a class="headerlink" href="#provider-organisation-data-elements" title="Permalink to this headline">¶</a></h3>
+<span id="id6"></span><h3>2.3.3.1. Provider Organisation<a class="headerlink" href="#provider-organisation-data-elements" title="Permalink to this headline">¶</a></h3>
 <p>See <a class="reference internal" href="#key-concepts-provider-organisation"><span class="std std-ref">Provider Organisation</span></a> for the definition of a provider
 organisation.</p>
 <p>Provider Organisation data is for administrative use within the PMHC MDS
 system. It is managed by the PHN&#8217;s via the PMHC MDS administrative interface,
 it cannot be uploaded.</p>
 <table border="1" class="docutils" id="id16">
-<caption><span class="caption-number">Table 1 </span><span class="caption-text">Provider Organisation record layout</span><a class="headerlink" href="#id16" title="Permalink to this table">¶</a></caption>
+<caption><span class="caption-number">Table 2.1 </span><span class="caption-text">Provider Organisation record layout</span><a class="headerlink" href="#id16" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="33%" />
 <col width="33%" />
@@ -569,14 +570,14 @@ it cannot be uploaded.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="practitioner-data-elements">
-<span id="id7"></span><h3>Practitioner<a class="headerlink" href="#practitioner-data-elements" title="Permalink to this headline">¶</a></h3>
+<span id="id7"></span><h3>2.3.3.2. Practitioner<a class="headerlink" href="#practitioner-data-elements" title="Permalink to this headline">¶</a></h3>
 <p>See <a class="reference internal" href="#key-concepts-practitioner"><span class="std std-ref">Practitioner</span></a> for the definition of a practitioner.</p>
 <p>Practitioner data is intended to provide workforce planning data for use
 regionally by the PHN and nationally by the Department. It is managed by the
 provider organisations via either the PMHC MDS administrative interface or
 upload.</p>
 <table border="1" class="docutils" id="id17">
-<caption><span class="caption-number">Table 2 </span><span class="caption-text">Practitioner record layout</span><a class="headerlink" href="#id17" title="Permalink to this table">¶</a></caption>
+<caption><span class="caption-number">Table 2.2 </span><span class="caption-text">Practitioner record layout</span><a class="headerlink" href="#id17" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="33%" />
 <col width="33%" />
@@ -718,11 +719,11 @@ upload.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="client-data-elements">
-<span id="id8"></span><h3>Client<a class="headerlink" href="#client-data-elements" title="Permalink to this headline">¶</a></h3>
+<span id="id8"></span><h3>2.3.3.3. Client<a class="headerlink" href="#client-data-elements" title="Permalink to this headline">¶</a></h3>
 <p>See <a class="reference internal" href="#key-concepts-client"><span class="std std-ref">Client</span></a> for definition of a client.</p>
 <p>Clients are managed by the provider organisations via upload.</p>
 <table border="1" class="docutils" id="id18">
-<caption><span class="caption-number">Table 3 </span><span class="caption-text">Client record layout</span><a class="headerlink" href="#id18" title="Permalink to this table">¶</a></caption>
+<caption><span class="caption-number">Table 2.3 </span><span class="caption-text">Client record layout</span><a class="headerlink" href="#id18" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="33%" />
 <col width="33%" />
@@ -2258,11 +2259,11 @@ upload.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="episode-data-elements">
-<span id="id9"></span><h3>Episode<a class="headerlink" href="#episode-data-elements" title="Permalink to this headline">¶</a></h3>
+<span id="id9"></span><h3>2.3.3.4. Episode<a class="headerlink" href="#episode-data-elements" title="Permalink to this headline">¶</a></h3>
 <p>See <a class="reference internal" href="#key-concepts-episode"><span class="std std-ref">Episode</span></a> for definition of an episode.</p>
 <p>Episodes are managed by the provider organisations via upload.</p>
 <table border="1" class="docutils" id="id19">
-<caption><span class="caption-number">Table 4 </span><span class="caption-text">Episode record layout</span><a class="headerlink" href="#id19" title="Permalink to this table">¶</a></caption>
+<caption><span class="caption-number">Table 2.4 </span><span class="caption-text">Episode record layout</span><a class="headerlink" href="#id19" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="33%" />
 <col width="33%" />
@@ -2934,11 +2935,11 @@ upload.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="service-contact-data-elements">
-<span id="id10"></span><h3>Service Contact<a class="headerlink" href="#service-contact-data-elements" title="Permalink to this headline">¶</a></h3>
+<span id="id10"></span><h3>2.3.3.5. Service Contact<a class="headerlink" href="#service-contact-data-elements" title="Permalink to this headline">¶</a></h3>
 <p>See <a class="reference internal" href="#key-concepts-service-contact"><span class="std std-ref">Service Contact</span></a> for definition of a service contact.</p>
 <p>Service contacts are managed by the provider organisations via upload.</p>
 <table border="1" class="docutils" id="id20">
-<caption><span class="caption-number">Table 5 </span><span class="caption-text">Service contact record layout</span><a class="headerlink" href="#id20" title="Permalink to this table">¶</a></caption>
+<caption><span class="caption-number">Table 2.5 </span><span class="caption-text">Service contact record layout</span><a class="headerlink" href="#id20" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="33%" />
 <col width="33%" />
@@ -3192,7 +3193,7 @@ upload.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="outcome-collection-occasion-data-elements">
-<span id="id11"></span><h3>Outcome Collection Occasion<a class="headerlink" href="#outcome-collection-occasion-data-elements" title="Permalink to this headline">¶</a></h3>
+<span id="id11"></span><h3>2.3.3.6. Outcome Collection Occasion<a class="headerlink" href="#outcome-collection-occasion-data-elements" title="Permalink to this headline">¶</a></h3>
 <p>See <a class="reference internal" href="#key-concepts-outcome-collection-occasion"><span class="std std-ref">Outcome Collection Occasion</span></a> for definition of an outcome
 collection occasion.</p>
 <p>Individual item scores will eventually be required, however, it is noted that
@@ -3212,12 +3213,12 @@ years and 11-17 years; and the self-report for 11-17 years.</li>
 </ul>
 <p><em>Please note: For adolescents, clinician-discretion is allowed, and that the K10+ or K5 may be used, even though the person is under 18 years</em></p>
 <div class="section" id="k10">
-<span id="k10p-data-elements"></span><h4>K10+<a class="headerlink" href="#k10" title="Permalink to this headline">¶</a></h4>
+<span id="k10p-data-elements"></span><h4>2.3.3.6.1. K10+<a class="headerlink" href="#k10" title="Permalink to this headline">¶</a></h4>
 <p>As noted above, reporting individual item scores will eventually be required.
 In the short term, respondents can either report all 14 item scores or report
 the K10 total score as well as item scores for the 4 extra items in the K10+.</p>
 <table border="1" class="docutils" id="id21">
-<caption><span class="caption-number">Table 6 </span><span class="caption-text">K10+ record layout</span><a class="headerlink" href="#id21" title="Permalink to this table">¶</a></caption>
+<caption><span class="caption-number">Table 2.6 </span><span class="caption-text">K10+ record layout</span><a class="headerlink" href="#id21" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="33%" />
 <col width="33%" />
@@ -3531,12 +3532,12 @@ they are not required to answer questions 11-14. Where a question has not been
 answered please select a response of &#8216;Not stated / missing&#8217;.</p>
 </div>
 <div class="section" id="k5">
-<span id="k5-data-elements"></span><h4>K5<a class="headerlink" href="#k5" title="Permalink to this headline">¶</a></h4>
+<span id="k5-data-elements"></span><h4>2.3.3.6.2. K5<a class="headerlink" href="#k5" title="Permalink to this headline">¶</a></h4>
 <p>As noted above, reporting individual item scores will eventually be required.
 In the short term, respondents can either report all 5 item scores or report
 the K5 total score.</p>
 <table border="1" class="docutils" id="id22">
-<caption><span class="caption-number">Table 7 </span><span class="caption-text">K5 record layout</span><a class="headerlink" href="#id22" title="Permalink to this table">¶</a></caption>
+<caption><span class="caption-number">Table 2.7 </span><span class="caption-text">K5 record layout</span><a class="headerlink" href="#id22" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="33%" />
 <col width="33%" />
@@ -3703,7 +3704,7 @@ the K5 total score.</p>
 </table>
 </div>
 <div class="section" id="sdq">
-<span id="sdq-data-elements"></span><h4>SDQ<a class="headerlink" href="#sdq" title="Permalink to this headline">¶</a></h4>
+<span id="sdq-data-elements"></span><h4>2.3.3.6.3. SDQ<a class="headerlink" href="#sdq" title="Permalink to this headline">¶</a></h4>
 <p>Extensive support materials are available on the SDQ developers&#8217; website,
 including copies of the various versions of the instrument, background
 information and scoring instructions. See <a class="reference external" href="http://www.sdqinfo.com">http://www.sdqinfo.com</a>. There are
@@ -3848,7 +3849,7 @@ item.</p>
 In the short term, respondents can either report all 42 item scores or report
 the SDQ subscale scores.</p>
 <div class="section" id="sdq-items-and-scale-summary-scores">
-<span id="scoring-the-sdq"></span><h5>SDQ items and Scale Summary scores<a class="headerlink" href="#sdq-items-and-scale-summary-scores" title="Permalink to this headline">¶</a></h5>
+<span id="scoring-the-sdq"></span><h5>2.3.3.6.3.1. SDQ items and Scale Summary scores<a class="headerlink" href="#sdq-items-and-scale-summary-scores" title="Permalink to this headline">¶</a></h5>
 <p>The first 25 items in the SDQ comprise 5 scales of 5 items each. It is usually easiest to score all 5 scales before working out the Total Difficulties score.  For data entry, the responses to items should always be entered the same way (see below), but they are not all scored the same way.  Somewhat True is always scored as 1, but the scoring of Not True and Certainly True varies with each item (see Table 5). For each of the 5 scales the score can range from 0-10 if all 5 items were completed. Scale scores can be prorated if at least 3 items were completed.</p>
 <table border="1" class="docutils">
 <colgroup>
@@ -4097,7 +4098,7 @@ the SDQ subscale scores.</p>
 </ul>
 </div>
 <div class="section" id="id12">
-<h5>Scoring the SDQ<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h5>
+<h5>2.3.3.6.3.2. Scoring the SDQ<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h5>
 <p>The standard values for coding individual Item responses are 0 (Not True),
 1 (Somewhat True), 2 (Certainly True) and 9 (Missing data).</p>
 <p>For completed items (response coded 0,1,2) the Item scores are usually the same
@@ -4128,7 +4129,7 @@ since it assess the burden on others rather than on the child/youth.</p>
 mapped to their Item Scores before adding up. This mapping is the same for all,
 namely: 0-&gt;0, 1-&gt;0, 2-&gt;1, 3-&gt;2.</p>
 <table border="1" class="docutils" id="id23">
-<caption><span class="caption-number">Table 8 </span><span class="caption-text">SDQ record layout</span><a class="headerlink" href="#id23" title="Permalink to this table">¶</a></caption>
+<caption><span class="caption-number">Table 2.8 </span><span class="caption-text">SDQ record layout</span><a class="headerlink" href="#id23" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="33%" />
 <col width="33%" />
@@ -5129,9 +5130,9 @@ namely: 0-&gt;0, 1-&gt;0, 2-&gt;1, 3-&gt;2.</p>
 </div>
 <hr class="docutils" />
 <div class="section" id="definitions">
-<h2>Definitions<a class="headerlink" href="#definitions" title="Permalink to this headline">¶</a></h2>
+<h2>2.3.4. Definitions<a class="headerlink" href="#definitions" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="client-aboriginal-and-torres-strait-islander-status">
-<span id="dfn-client-atsi-status"></span><h3>Client - Aboriginal and Torres Strait Islander Status<a class="headerlink" href="#client-aboriginal-and-torres-strait-islander-status" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-client-atsi-status"></span><h3>2.3.4.1. Client - Aboriginal and Torres Strait Islander Status<a class="headerlink" href="#client-aboriginal-and-torres-strait-islander-status" title="Permalink to this headline">¶</a></h3>
 <p>Whether a person identifies as being of Aboriginal and/or Torres Strait Islander origin, as represented by a code.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -5187,7 +5188,7 @@ knows the client was not available.</li>
 <hr class="docutils" />
 </div>
 <div class="section" id="client-country-of-birth">
-<span id="dfn-country-of-birth"></span><h3>Client - Country of Birth<a class="headerlink" href="#client-country-of-birth" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-country-of-birth"></span><h3>2.3.4.2. Client - Country of Birth<a class="headerlink" href="#client-country-of-birth" title="Permalink to this headline">¶</a></h3>
 <p>The country in which the client was born, as represented by a code.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -5743,7 +5744,7 @@ refer to <a class="reference internal" href="form-creation.html#form-country-of-
 <hr class="docutils" />
 </div>
 <div class="section" id="client-date-of-birth">
-<span id="dfn-date-of-birth"></span><h3>Client - Date of Birth<a class="headerlink" href="#client-date-of-birth" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-date-of-birth"></span><h3>2.3.4.3. Client - Date of Birth<a class="headerlink" href="#client-date-of-birth" title="Permalink to this headline">¶</a></h3>
 <p>The date on which an individual was born.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -5785,7 +5786,7 @@ following convention: 0101Estimated year of birth.</li>
 <hr class="docutils" />
 </div>
 <div class="section" id="client-estimated-date-of-birth-flag">
-<span id="dfn-est-date-of-birth"></span><h3>Client - Estimated Date of Birth Flag<a class="headerlink" href="#client-estimated-date-of-birth-flag" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-est-date-of-birth"></span><h3>2.3.4.4. Client - Estimated Date of Birth Flag<a class="headerlink" href="#client-estimated-date-of-birth-flag" title="Permalink to this headline">¶</a></h3>
 <p>The date of birth estimate flag records whether or not the client&#8217;s date of birth has been estimated.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -5821,7 +5822,7 @@ following convention: 0101Estimated year of birth.</li>
 <hr class="docutils" />
 </div>
 <div class="section" id="client-gender">
-<span id="dfn-client-gender"></span><h3>Client - Gender<a class="headerlink" href="#client-gender" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-client-gender"></span><h3>2.3.4.5. Client - Gender<a class="headerlink" href="#client-gender" title="Permalink to this headline">¶</a></h3>
 <p>The term &#8216;gender&#8217; refers to the way in which a person identifies their masculine or feminine characteristics. A persons gender relates to their deeply held internal and individual sense of gender and is not always exclusively male or female. It may or may not correspond to their sex assigned at birth.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -5876,7 +5877,7 @@ descriptors other than man/boy or woman/girl.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="client-key">
-<span id="dfn-client-key"></span><h3>Client Key<a class="headerlink" href="#client-key" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-client-key"></span><h3>2.3.4.6. Client Key<a class="headerlink" href="#client-key" title="Permalink to this headline">¶</a></h3>
 <p>This is a number or code assigned to each individual referred to the commissioned organisation. The client identifier is unique and stable for each individual within the PHN.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -5898,7 +5899,7 @@ multiple keys within the same PHN.</td>
 <hr class="docutils" />
 </div>
 <div class="section" id="client-main-language-spoken-at-home">
-<span id="dfn-main-lang-at-home"></span><h3>Client - Main Language Spoken at Home<a class="headerlink" href="#client-main-language-spoken-at-home" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-main-lang-at-home"></span><h3>2.3.4.7. Client - Main Language Spoken at Home<a class="headerlink" href="#client-main-language-spoken-at-home" title="Permalink to this headline">¶</a></h3>
 <p>The language reported by a client as the main language other than English spoken by that client in his/her home (or most recent private residential setting occupied by the client) to communicate with other residents of the home or setting and regular visitors, as represented by a code.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -6815,7 +6816,7 @@ refer to <a class="reference internal" href="form-creation.html#form-main-lang-a
 <hr class="docutils" />
 </div>
 <div class="section" id="client-proficiency-in-spoken-english">
-<span id="dfn-prof-english"></span><h3>Client - Proficiency in Spoken English<a class="headerlink" href="#client-proficiency-in-spoken-english" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-prof-english"></span><h3>2.3.4.8. Client - Proficiency in Spoken English<a class="headerlink" href="#client-proficiency-in-spoken-english" title="Permalink to this headline">¶</a></h3>
 <p>The self-assessed level of ability to speak English, asked of people whose first language is a language other than English or who speak a language other than English at home.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -6871,7 +6872,7 @@ transferring data from data sets where the item has not been collected.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="client-statistical-linkage-key">
-<span id="dfn-slk"></span><h3>Client - Statistical Linkage Key<a class="headerlink" href="#client-statistical-linkage-key" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-slk"></span><h3>2.3.4.9. Client - Statistical Linkage Key<a class="headerlink" href="#client-statistical-linkage-key" title="Permalink to this headline">¶</a></h3>
 <p>A key that enables two or more records belonging to the same individual to be brought together.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -6910,7 +6911,7 @@ in length.</li>
 <hr class="docutils" />
 </div>
 <div class="section" id="client-tags">
-<span id="dfn-client-tags"></span><h3>Client - Tags<a class="headerlink" href="#client-tags" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-client-tags"></span><h3>2.3.4.10. Client - Tags<a class="headerlink" href="#client-tags" title="Permalink to this headline">¶</a></h3>
 <p>List of tags for the client.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -6940,7 +6941,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <hr class="docutils" />
 </div>
 <div class="section" id="collection-occasion-measure-date">
-<span id="dfn-measure-date"></span><h3>Collection Occasion - Measure Date<a class="headerlink" href="#collection-occasion-measure-date" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-measure-date"></span><h3>2.3.4.11. Collection Occasion - Measure Date<a class="headerlink" href="#collection-occasion-measure-date" title="Permalink to this headline">¶</a></h3>
 <p>The date the measure was given.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -6972,7 +6973,7 @@ necessary to pad out a value. For instance, 13th March 2008 would appear as
 <hr class="docutils" />
 </div>
 <div class="section" id="collection-occasion-reason">
-<span id="dfn-reason-for-collection"></span><h3>Collection Occasion - Reason<a class="headerlink" href="#collection-occasion-reason" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-reason-for-collection"></span><h3>2.3.4.12. Collection Occasion - Reason<a class="headerlink" href="#collection-occasion-reason" title="Permalink to this headline">¶</a></h3>
 <p>The reason for the collection of the outcome measures on the identified Outcome Collection Occasion.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -7027,7 +7028,7 @@ health status;</li>
 <hr class="docutils" />
 </div>
 <div class="section" id="collection-occasion-key">
-<span id="dfn-collection-occasion-key"></span><h3>Collection Occasion Key<a class="headerlink" href="#collection-occasion-key" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-collection-occasion-key"></span><h3>2.3.4.13. Collection Occasion Key<a class="headerlink" href="#collection-occasion-key" title="Permalink to this headline">¶</a></h3>
 <p>This is a number or code assigned to each collection occasion of outcome measures. The Collection Occasion Key is unique and stable for each collection occasion at the level of the organisation.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -7044,7 +7045,7 @@ health status;</li>
 <hr class="docutils" />
 </div>
 <div class="section" id="episode-additional-diagnosis">
-<span id="dfn-additional-diagnosis"></span><h3>Episode - Additional Diagnosis<a class="headerlink" href="#episode-additional-diagnosis" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-additional-diagnosis"></span><h3>2.3.4.14. Episode - Additional Diagnosis<a class="headerlink" href="#episode-additional-diagnosis" title="Permalink to this headline">¶</a></h3>
 <p>The main additional condition or complaint co-existing with the Principal Diagnosis or arising during the episode of care.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -7192,7 +7193,7 @@ ATAPS referral date was before 1 July 2017</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="episode-area-of-usual-residence-postcode">
-<span id="dfn-client-postcode"></span><h3>Episode - Area of usual residence, postcode<a class="headerlink" href="#episode-area-of-usual-residence-postcode" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-client-postcode"></span><h3>2.3.4.15. Episode - Area of usual residence, postcode<a class="headerlink" href="#episode-area-of-usual-residence-postcode" title="Permalink to this headline">¶</a></h3>
 <p>The Australian postcode of the client.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -7227,7 +7228,7 @@ they currently reside.&#8217;</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="episode-client-consent-to-anonymised-data">
-<span id="dfn-client-consent"></span><h3>Episode - Client Consent to Anonymised Data<a class="headerlink" href="#episode-client-consent-to-anonymised-data" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-client-consent"></span><h3>2.3.4.16. Episode - Client Consent to Anonymised Data<a class="headerlink" href="#episode-client-consent-to-anonymised-data" title="Permalink to this headline">¶</a></h3>
 <p>An indication that the client has consented to their anonymised data being provided to the Department of Health for statistical purposes in planning and improving mental health services.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -7277,7 +7278,7 @@ extracts accessible by the Department of Health.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="episode-completion-status">
-<span id="dfn-episode-completion-status"></span><h3>Episode - Completion Status<a class="headerlink" href="#episode-completion-status" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-episode-completion-status"></span><h3>2.3.4.17. Episode - Completion Status<a class="headerlink" href="#episode-completion-status" title="Permalink to this headline">¶</a></h3>
 <p>An indication of the completion status of an <em>Episode of Care</em>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -7373,7 +7374,7 @@ recorded as the date of the final Service Contact.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="episode-employment-participation">
-<span id="dfn-employment-participation"></span><h3>Episode - Employment Participation<a class="headerlink" href="#episode-employment-participation" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-employment-participation"></span><h3>2.3.4.18. Episode - Employment Participation<a class="headerlink" href="#episode-employment-participation" title="Permalink to this headline">¶</a></h3>
 <p>Whether a person in paid employment is employed full-time or part-time, as represented by a code.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -7437,7 +7438,7 @@ item has not been collected.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="episode-end-date">
-<span id="dfn-episode-end-date"></span><h3>Episode - End Date<a class="headerlink" href="#episode-end-date" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-episode-end-date"></span><h3>2.3.4.19. Episode - End Date<a class="headerlink" href="#episode-end-date" title="Permalink to this headline">¶</a></h3>
 <p>The date on which an <em>Episode of Care</em> is formally or administratively ended</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -7494,7 +7495,7 @@ date on which the organisation made the decision to close episode.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="episode-gp-mental-health-treatment-plan-flag">
-<span id="dfn-mental-health-treatment-plan"></span><h3>Episode - GP Mental Health Treatment Plan Flag<a class="headerlink" href="#episode-gp-mental-health-treatment-plan-flag" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-mental-health-treatment-plan"></span><h3>2.3.4.20. Episode - GP Mental Health Treatment Plan Flag<a class="headerlink" href="#episode-gp-mental-health-treatment-plan-flag" title="Permalink to this headline">¶</a></h3>
 <p>An indication of whether a client has a GP mental health treatment plan. A GP should be involved in a referral where appropriate however a mental health treatment plan is not mandatory.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -7530,7 +7531,7 @@ date on which the organisation made the decision to close episode.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="episode-health-care-card">
-<span id="dfn-health-care-card"></span><h3>Episode - Health Care Card<a class="headerlink" href="#episode-health-care-card" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-health-care-card"></span><h3>2.3.4.21. Episode - Health Care Card<a class="headerlink" href="#episode-health-care-card" title="Permalink to this headline">¶</a></h3>
 <p>An indication of whether the person is a current holder of a Health Care Card that entitles them to arrange of concessions for Government funded health services.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -7573,7 +7574,7 @@ date on which the organisation made the decision to close episode.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="episode-homelessness-flag">
-<span id="dfn-homelessness"></span><h3>Episode - Homelessness Flag<a class="headerlink" href="#episode-homelessness-flag" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-homelessness"></span><h3>2.3.4.22. Episode - Homelessness Flag<a class="headerlink" href="#episode-homelessness-flag" title="Permalink to this headline">¶</a></h3>
 <p>An indication of whether the client has been homeless in the 4 weeks prior to the current service episode.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -7640,7 +7641,7 @@ following coding hierarchy should be followed:</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="episode-key">
-<span id="dfn-episode-key"></span><h3>Episode Key<a class="headerlink" href="#episode-key" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-episode-key"></span><h3>2.3.4.23. Episode Key<a class="headerlink" href="#episode-key" title="Permalink to this headline">¶</a></h3>
 <p>This is a number or code assigned to each episode. The Episode Key is unique and stable for each episode at the level of the organisation.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -7669,7 +7670,7 @@ UUIDs</a>.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="episode-labour-force-status">
-<span id="dfn-labour-force-status"></span><h3>Episode - Labour Force Status<a class="headerlink" href="#episode-labour-force-status" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-labour-force-status"></span><h3>2.3.4.24. Episode - Labour Force Status<a class="headerlink" href="#episode-labour-force-status" title="Permalink to this headline">¶</a></h3>
 <p>The self-reported status the person currently has in being either in the labour force (employed/unemployed) or not in the labour force, as represented by a code.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -7770,7 +7771,7 @@ permanently unable to work.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="episode-marital-status">
-<span id="dfn-marital-status"></span><h3>Episode - Marital Status<a class="headerlink" href="#episode-marital-status" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-marital-status"></span><h3>2.3.4.25. Episode - Marital Status<a class="headerlink" href="#episode-marital-status" title="Permalink to this headline">¶</a></h3>
 <p>A person&#8217;s current relationship status in terms of a couple relationship or, for those not in a couple relationship, the existence of a current or previous registered marriage, as represented by a code.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -7836,7 +7837,7 @@ where the item has not been collected.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="episode-medication-antidepressants-n06a">
-<span id="dfn-medication-antidepressants"></span><h3>Episode - Medication - Antidepressants (N06A)<a class="headerlink" href="#episode-medication-antidepressants-n06a" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-medication-antidepressants"></span><h3>2.3.4.26. Episode - Medication - Antidepressants (N06A)<a class="headerlink" href="#episode-medication-antidepressants-n06a" title="Permalink to this headline">¶</a></h3>
 <p>Whether the client is taking prescribed antidepressants for a mental health condition as assessed at intake assessment, as represented by a code.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -7878,7 +7879,7 @@ medical products. It covers drugs designed for the depressive disorders.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="episode-medication-antipsychotics-n05a">
-<span id="dfn-medication-antipsychotics"></span><h3>Episode - Medication - Antipsychotics (N05A)<a class="headerlink" href="#episode-medication-antipsychotics-n05a" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-medication-antipsychotics"></span><h3>2.3.4.27. Episode - Medication - Antipsychotics (N05A)<a class="headerlink" href="#episode-medication-antipsychotics-n05a" title="Permalink to this headline">¶</a></h3>
 <p>Whether the client is taking prescribed antipsychotics for a mental health condition as assessed at intake assessment, as represented by a code.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -7921,7 +7922,7 @@ disorders.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="episode-medication-anxiolytics-n05b">
-<span id="dfn-medication-anxiolytics"></span><h3>Episode - Medication - Anxiolytics (N05B)<a class="headerlink" href="#episode-medication-anxiolytics-n05b" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-medication-anxiolytics"></span><h3>2.3.4.28. Episode - Medication - Anxiolytics (N05B)<a class="headerlink" href="#episode-medication-anxiolytics-n05b" title="Permalink to this headline">¶</a></h3>
 <p>Whether the client is taking prescribed anxiolytics for a mental health condition as assessed at intake assessment, as represented by a code.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -7964,7 +7965,7 @@ associated with anxiety and tension.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="episode-medication-hypnotics-and-sedatives-n05c">
-<span id="dfn-medication-hypnotics"></span><h3>Episode - Medication - Hypnotics and sedatives (N05C)<a class="headerlink" href="#episode-medication-hypnotics-and-sedatives-n05c" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-medication-hypnotics"></span><h3>2.3.4.29. Episode - Medication - Hypnotics and sedatives (N05C)<a class="headerlink" href="#episode-medication-hypnotics-and-sedatives-n05c" title="Permalink to this headline">¶</a></h3>
 <p>Whether the client is taking prescribed hypnotics and sedatives for a mental health condition as assessed at intake assessment, as represented by a code.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -8008,7 +8009,7 @@ Sedative drugs are prescribed to reduce excitability or anxiety.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="episode-medication-psychostimulants-and-nootropics-n06b">
-<span id="dfn-medication-psychostimulants"></span><h3>Episode - Medication - Psychostimulants and nootropics (N06B)<a class="headerlink" href="#episode-medication-psychostimulants-and-nootropics-n06b" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-medication-psychostimulants"></span><h3>2.3.4.30. Episode - Medication - Psychostimulants and nootropics (N06B)<a class="headerlink" href="#episode-medication-psychostimulants-and-nootropics-n06b" title="Permalink to this headline">¶</a></h3>
 <p>Whether the client is taking prescribed psychostimulants and nootropics for a mental health condition as assessed at intake assessment, as represented by a code.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -8051,7 +8052,7 @@ disorder (ADHD) and to improve impaired cognitive abilities.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="episode-ndis-participant">
-<span id="dfn-ndis-participant"></span><h3>Episode - NDIS Participant<a class="headerlink" href="#episode-ndis-participant" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-ndis-participant"></span><h3>2.3.4.31. Episode - NDIS Participant<a class="headerlink" href="#episode-ndis-participant" title="Permalink to this headline">¶</a></h3>
 <p>Is the client a participant in the National Disability Insurance Scheme?, as represented by a code.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -8085,7 +8086,7 @@ disorder (ADHD) and to improve impaired cognitive abilities.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="episode-principal-diagnosis">
-<span id="dfn-principal-diagnosis"></span><h3>Episode - Principal Diagnosis<a class="headerlink" href="#episode-principal-diagnosis" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-principal-diagnosis"></span><h3>2.3.4.32. Episode - Principal Diagnosis<a class="headerlink" href="#episode-principal-diagnosis" title="Permalink to this headline">¶</a></h3>
 <p>The Principal Diagnosis is the diagnosis established after study to be chiefly responsible for occasioning the client&#8217;s care during the current Episode of Care.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -8257,7 +8258,7 @@ ATAPS referral date was before 1 July 2017</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="episode-principal-focus-of-treatment-plan">
-<span id="dfn-principal-focus"></span><h3>Episode - Principal Focus of Treatment Plan<a class="headerlink" href="#episode-principal-focus-of-treatment-plan" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-principal-focus"></span><h3>2.3.4.33. Episode - Principal Focus of Treatment Plan<a class="headerlink" href="#episode-principal-focus-of-treatment-plan" title="Permalink to this headline">¶</a></h3>
 <p>The range of activities that best describes the overall services intended to be delivered to the client throughout the course of the episode. For most clients, this will equate to the activities that account for most time spent by the service provider.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -8407,7 +8408,7 @@ that cannot be described by other categories.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="episode-referral-date">
-<span id="dfn-referral-date"></span><h3>Episode - Referral Date<a class="headerlink" href="#episode-referral-date" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-referral-date"></span><h3>2.3.4.34. Episode - Referral Date<a class="headerlink" href="#episode-referral-date" title="Permalink to this headline">¶</a></h3>
 <p>The date the referrer made the referral.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -8438,7 +8439,7 @@ necessary to pad out a value. For instance, 13th March 2008 would appear as
 <hr class="docutils" />
 </div>
 <div class="section" id="episode-referrer-organisation-type">
-<span id="dfn-referrer-organisation-type"></span><h3>Episode - Referrer Organisation Type<a class="headerlink" href="#episode-referrer-organisation-type" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-referrer-organisation-type"></span><h3>2.3.4.35. Episode - Referrer Organisation Type<a class="headerlink" href="#episode-referrer-organisation-type" title="Permalink to this headline">¶</a></h3>
 <p>Type of organisation in which the referring professional is based.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -8521,7 +8522,7 @@ services, and s specialised residential mental health care services).</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="episode-referrer-profession">
-<span id="dfn-referrer-profession"></span><h3>Episode - Referrer Profession<a class="headerlink" href="#episode-referrer-profession" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-referrer-profession"></span><h3>2.3.4.36. Episode - Referrer Profession<a class="headerlink" href="#episode-referrer-profession" title="Permalink to this headline">¶</a></h3>
 <p>Profession of the provider who referred the client.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -8588,7 +8589,7 @@ is a response option included within &#8216;Referrer profession&#8217;.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="episode-source-of-cash-income">
-<span id="dfn-income-source"></span><h3>Episode - Source of Cash Income<a class="headerlink" href="#episode-source-of-cash-income" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-income-source"></span><h3>2.3.4.37. Episode - Source of Cash Income<a class="headerlink" href="#episode-source-of-cash-income" title="Permalink to this headline">¶</a></h3>
 <p>The source from which a person derives the greatest proportion of his/her income, as represented by a code.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -8651,7 +8652,7 @@ the service user or their carer/family/advocate to provide the information
 <hr class="docutils" />
 </div>
 <div class="section" id="episode-suicide-referral-flag">
-<span id="dfn-suicide-referral-flag"></span><h3>Episode - Suicide Referral Flag<a class="headerlink" href="#episode-suicide-referral-flag" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-suicide-referral-flag"></span><h3>2.3.4.38. Episode - Suicide Referral Flag<a class="headerlink" href="#episode-suicide-referral-flag" title="Permalink to this headline">¶</a></h3>
 <p>Identifies those individuals where a recent history of suicide attempt, or suicide risk, was a factor noted in the referral that underpinned the person&#8217;s needs for assistance at entry to the episode, as represented by a code.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -8685,7 +8686,7 @@ the service user or their carer/family/advocate to provide the information
 <hr class="docutils" />
 </div>
 <div class="section" id="episode-tags">
-<span id="dfn-episode-tags"></span><h3>Episode - Tags<a class="headerlink" href="#episode-tags" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-episode-tags"></span><h3>2.3.4.39. Episode - Tags<a class="headerlink" href="#episode-tags" title="Permalink to this headline">¶</a></h3>
 <p>List of tags for the episode.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -8715,7 +8716,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <hr class="docutils" />
 </div>
 <div class="section" id="k5-question-1">
-<span id="dfn-k5-item1"></span><h3>K5 - Question 1<a class="headerlink" href="#k5-question-1" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-k5-item1"></span><h3>2.3.4.40. K5 - Question 1<a class="headerlink" href="#k5-question-1" title="Permalink to this headline">¶</a></h3>
 <p>In the last 4 weeks, about how often did you feel nervous?</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -8758,7 +8759,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <hr class="docutils" />
 </div>
 <div class="section" id="k5-question-2">
-<span id="dfn-k5-item2"></span><h3>K5 - Question 2<a class="headerlink" href="#k5-question-2" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-k5-item2"></span><h3>2.3.4.41. K5 - Question 2<a class="headerlink" href="#k5-question-2" title="Permalink to this headline">¶</a></h3>
 <p>In the last 4 weeks, about how often did you feel without hope?</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -8801,7 +8802,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <hr class="docutils" />
 </div>
 <div class="section" id="k5-question-3">
-<span id="dfn-k5-item3"></span><h3>K5 - Question 3<a class="headerlink" href="#k5-question-3" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-k5-item3"></span><h3>2.3.4.42. K5 - Question 3<a class="headerlink" href="#k5-question-3" title="Permalink to this headline">¶</a></h3>
 <p>In the last 4 weeks, about how often did you feel restless or jumpy?</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -8844,7 +8845,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <hr class="docutils" />
 </div>
 <div class="section" id="k5-question-4">
-<span id="dfn-k5-item4"></span><h3>K5 - Question 4<a class="headerlink" href="#k5-question-4" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-k5-item4"></span><h3>2.3.4.43. K5 - Question 4<a class="headerlink" href="#k5-question-4" title="Permalink to this headline">¶</a></h3>
 <p>In the last 4 weeks, about how often did you feel everything was an effort?</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -8887,7 +8888,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <hr class="docutils" />
 </div>
 <div class="section" id="k5-question-5">
-<span id="dfn-k5-item5"></span><h3>K5 - Question 5<a class="headerlink" href="#k5-question-5" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-k5-item5"></span><h3>2.3.4.44. K5 - Question 5<a class="headerlink" href="#k5-question-5" title="Permalink to this headline">¶</a></h3>
 <p>In the last 4 weeks, about how often did you feel so sad that nothing could cheer you up?</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -8930,7 +8931,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <hr class="docutils" />
 </div>
 <div class="section" id="k5-score">
-<span id="dfn-k5-score"></span><h3>K5 - Score<a class="headerlink" href="#k5-score" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-k5-score"></span><h3>2.3.4.45. K5 - Score<a class="headerlink" href="#k5-score" title="Permalink to this headline">¶</a></h3>
 <p>The overall K5 score.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -8962,7 +8963,7 @@ Total Score is set as missing.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="k5-tags">
-<span id="dfn-k5-tags"></span><h3>K5 - Tags<a class="headerlink" href="#k5-tags" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-k5-tags"></span><h3>2.3.4.46. K5 - Tags<a class="headerlink" href="#k5-tags" title="Permalink to this headline">¶</a></h3>
 <p>List of tags for the collection occasion.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -8992,7 +8993,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <hr class="docutils" />
 </div>
 <div class="section" id="k10-question-1">
-<span id="dfn-k10p-item1"></span><h3>K10+ - Question 1<a class="headerlink" href="#k10-question-1" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-k10p-item1"></span><h3>2.3.4.47. K10+ - Question 1<a class="headerlink" href="#k10-question-1" title="Permalink to this headline">¶</a></h3>
 <p>In the past 4 weeks, about how often did you feel tired out for no good reason?</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -9035,7 +9036,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <hr class="docutils" />
 </div>
 <div class="section" id="k10-question-2">
-<span id="dfn-k10p-item2"></span><h3>K10+ - Question 2<a class="headerlink" href="#k10-question-2" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-k10p-item2"></span><h3>2.3.4.48. K10+ - Question 2<a class="headerlink" href="#k10-question-2" title="Permalink to this headline">¶</a></h3>
 <p>In the past 4 weeks, about how often did you feel nervous?</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -9078,7 +9079,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <hr class="docutils" />
 </div>
 <div class="section" id="k10-question-3">
-<span id="dfn-k10p-item3"></span><h3>K10+ - Question 3<a class="headerlink" href="#k10-question-3" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-k10p-item3"></span><h3>2.3.4.49. K10+ - Question 3<a class="headerlink" href="#k10-question-3" title="Permalink to this headline">¶</a></h3>
 <p>In the past 4 weeks, about how often did you feel so nervous that nothing could calm you down?</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -9121,7 +9122,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <hr class="docutils" />
 </div>
 <div class="section" id="k10-question-4">
-<span id="dfn-k10p-item4"></span><h3>K10+ - Question 4<a class="headerlink" href="#k10-question-4" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-k10p-item4"></span><h3>2.3.4.50. K10+ - Question 4<a class="headerlink" href="#k10-question-4" title="Permalink to this headline">¶</a></h3>
 <p>In the past 4 weeks, how often did you feel hopeless?</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -9164,7 +9165,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <hr class="docutils" />
 </div>
 <div class="section" id="k10-question-5">
-<span id="dfn-k10p-item5"></span><h3>K10+ - Question 5<a class="headerlink" href="#k10-question-5" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-k10p-item5"></span><h3>2.3.4.51. K10+ - Question 5<a class="headerlink" href="#k10-question-5" title="Permalink to this headline">¶</a></h3>
 <p>In the past 4 weeks, how often did you feel restless or fidgety?</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -9207,7 +9208,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <hr class="docutils" />
 </div>
 <div class="section" id="k10-question-6">
-<span id="dfn-k10p-item6"></span><h3>K10+ - Question 6<a class="headerlink" href="#k10-question-6" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-k10p-item6"></span><h3>2.3.4.52. K10+ - Question 6<a class="headerlink" href="#k10-question-6" title="Permalink to this headline">¶</a></h3>
 <p>In the past 4 weeks, how often did you feel so restless you could not sit still?</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -9250,7 +9251,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <hr class="docutils" />
 </div>
 <div class="section" id="k10-question-7">
-<span id="dfn-k10p-item7"></span><h3>K10+ - Question 7<a class="headerlink" href="#k10-question-7" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-k10p-item7"></span><h3>2.3.4.53. K10+ - Question 7<a class="headerlink" href="#k10-question-7" title="Permalink to this headline">¶</a></h3>
 <p>In the past 4 weeks, how often did you feel depressed?</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -9293,7 +9294,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <hr class="docutils" />
 </div>
 <div class="section" id="k10-question-8">
-<span id="dfn-k10p-item8"></span><h3>K10+ - Question 8<a class="headerlink" href="#k10-question-8" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-k10p-item8"></span><h3>2.3.4.54. K10+ - Question 8<a class="headerlink" href="#k10-question-8" title="Permalink to this headline">¶</a></h3>
 <p>In the past 4 weeks, how often did you feel that everything was an effort?</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -9336,7 +9337,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <hr class="docutils" />
 </div>
 <div class="section" id="k10-question-9">
-<span id="dfn-k10p-item9"></span><h3>K10+ - Question 9<a class="headerlink" href="#k10-question-9" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-k10p-item9"></span><h3>2.3.4.55. K10+ - Question 9<a class="headerlink" href="#k10-question-9" title="Permalink to this headline">¶</a></h3>
 <p>In the past 4 weeks, how often did you feel so sad that nothing could cheer you up?</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -9379,7 +9380,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <hr class="docutils" />
 </div>
 <div class="section" id="k10-question-10">
-<span id="dfn-k10p-item10"></span><h3>K10+ - Question 10<a class="headerlink" href="#k10-question-10" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-k10p-item10"></span><h3>2.3.4.56. K10+ - Question 10<a class="headerlink" href="#k10-question-10" title="Permalink to this headline">¶</a></h3>
 <p>In the past 4 weeks, how often did you feel worthless?</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -9422,7 +9423,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <hr class="docutils" />
 </div>
 <div class="section" id="k10-question-11">
-<span id="dfn-k10p-item11"></span><h3>K10+ - Question 11<a class="headerlink" href="#k10-question-11" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-k10p-item11"></span><h3>2.3.4.57. K10+ - Question 11<a class="headerlink" href="#k10-question-11" title="Permalink to this headline">¶</a></h3>
 <p>In the past four weeks, how many days were you totally unable to work, study or manage your day to day activities because of these feelings?</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -9445,7 +9446,7 @@ answered a response of &#8216;99 - Not stated / Missing&#8217; should be selecte
 <hr class="docutils" />
 </div>
 <div class="section" id="k10-question-12">
-<span id="dfn-k10p-item12"></span><h3>K10+ - Question 12<a class="headerlink" href="#k10-question-12" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-k10p-item12"></span><h3>2.3.4.58. K10+ - Question 12<a class="headerlink" href="#k10-question-12" title="Permalink to this headline">¶</a></h3>
 <p>Aside from those days, in the past four weeks, how many days were you able to work or study or manage your day to day activities, but had to cut down on what you did because of these feelings?</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -9468,7 +9469,7 @@ answered a response of &#8216;99 - Not stated / Missing&#8217; should be selecte
 <hr class="docutils" />
 </div>
 <div class="section" id="k10-question-13">
-<span id="dfn-k10p-item13"></span><h3>K10+ - Question 13<a class="headerlink" href="#k10-question-13" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-k10p-item13"></span><h3>2.3.4.59. K10+ - Question 13<a class="headerlink" href="#k10-question-13" title="Permalink to this headline">¶</a></h3>
 <p>In the past four weeks, how many times have you seen a doctor or any other health professional about these feelings?</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -9491,7 +9492,7 @@ answered a response of &#8216;99 - Not stated / Missing&#8217; should be selecte
 <hr class="docutils" />
 </div>
 <div class="section" id="k10-question-14">
-<span id="dfn-k10p-item14"></span><h3>K10+ - Question 14<a class="headerlink" href="#k10-question-14" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-k10p-item14"></span><h3>2.3.4.60. K10+ - Question 14<a class="headerlink" href="#k10-question-14" title="Permalink to this headline">¶</a></h3>
 <p>In the past four weeks, how often have physical health problems been the main cause of these feelings?</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -9536,7 +9537,7 @@ answered a response of &#8216;99 - Not stated / Missing&#8217; should be selecte
 <hr class="docutils" />
 </div>
 <div class="section" id="k10-score">
-<span id="dfn-k10p-score"></span><h3>K10+ - Score<a class="headerlink" href="#k10-score" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-k10p-score"></span><h3>2.3.4.61. K10+ - Score<a class="headerlink" href="#k10-score" title="Permalink to this headline">¶</a></h3>
 <p>The overall K10 score.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -9572,7 +9573,7 @@ missing. Where this is the case, the missing value used should be 99.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="k10-tags">
-<span id="dfn-k10p-tags"></span><h3>K10+ - Tags<a class="headerlink" href="#k10-tags" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-k10p-tags"></span><h3>2.3.4.62. K10+ - Tags<a class="headerlink" href="#k10-tags" title="Permalink to this headline">¶</a></h3>
 <p>List of tags for the collection occasion.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -9602,7 +9603,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <hr class="docutils" />
 </div>
 <div class="section" id="organisation-key">
-<span id="dfn-organisation-key"></span><h3>Organisation Key<a class="headerlink" href="#organisation-key" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-organisation-key"></span><h3>2.3.4.63. Organisation Key<a class="headerlink" href="#organisation-key" title="Permalink to this headline">¶</a></h3>
 <p>A sequence of characters which uniquely identifies the provider organisation to the Primary Health Network. Assigned by the Primary Health Network.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -9619,7 +9620,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <hr class="docutils" />
 </div>
 <div class="section" id="organisation-path">
-<span id="dfn-organisation-path"></span><h3>Organisation Path<a class="headerlink" href="#organisation-path" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-organisation-path"></span><h3>2.3.4.64. Organisation Path<a class="headerlink" href="#organisation-path" title="Permalink to this headline">¶</a></h3>
 <p>A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -9675,7 +9676,7 @@ Provider Organisation&#8217;s Organisation Key separated by a colon.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="practitioner-aboriginal-and-torres-strait-islander-status">
-<span id="dfn-practitioner-atsi-status"></span><h3>Practitioner - Aboriginal and Torres Strait Islander Status<a class="headerlink" href="#practitioner-aboriginal-and-torres-strait-islander-status" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-practitioner-atsi-status"></span><h3>2.3.4.65. Practitioner - Aboriginal and Torres Strait Islander Status<a class="headerlink" href="#practitioner-aboriginal-and-torres-strait-islander-status" title="Permalink to this headline">¶</a></h3>
 <p>Whether a person identifies as being of Aboriginal and/or Torres Strait Islander origin, as represented by a code.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -9731,7 +9732,7 @@ knows the client was not available.</li>
 <hr class="docutils" />
 </div>
 <div class="section" id="practitioner-active">
-<span id="dfn-practitioner-active"></span><h3>Practitioner - Active<a class="headerlink" href="#practitioner-active" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-practitioner-active"></span><h3>2.3.4.66. Practitioner - Active<a class="headerlink" href="#practitioner-active" title="Permalink to this headline">¶</a></h3>
 <p>A flag to represent whether a practitioner is actively delivering services. This is a system field that is aimed at helping organisations manage practitioner codes.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -9763,7 +9764,7 @@ knows the client was not available.</li>
 <hr class="docutils" />
 </div>
 <div class="section" id="practitioner-atsi-cultural-training">
-<span id="dfn-atsi-cultural-training"></span><h3>Practitioner - ATSI Cultural Training<a class="headerlink" href="#practitioner-atsi-cultural-training" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-atsi-cultural-training"></span><h3>2.3.4.67. Practitioner - ATSI Cultural Training<a class="headerlink" href="#practitioner-atsi-cultural-training" title="Permalink to this headline">¶</a></h3>
 <p>Indicates whether a practitioner has completed a recognised training programme in the delivery of culturally safe services to Aboriginal and Torres Strait Islander peoples.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -9833,7 +9834,7 @@ practitioners.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="practitioner-category">
-<span id="dfn-practitioner-category"></span><h3>Practitioner - Category<a class="headerlink" href="#practitioner-category" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-practitioner-category"></span><h3>2.3.4.68. Practitioner - Category<a class="headerlink" href="#practitioner-category" title="Permalink to this headline">¶</a></h3>
 <p>The type or category of the practitioner, as represented by a code.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -9885,7 +9886,7 @@ practitioners.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="practitioner-gender">
-<span id="dfn-practitioner-gender"></span><h3>Practitioner - Gender<a class="headerlink" href="#practitioner-gender" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-practitioner-gender"></span><h3>2.3.4.69. Practitioner - Gender<a class="headerlink" href="#practitioner-gender" title="Permalink to this headline">¶</a></h3>
 <p>The term &#8216;gender&#8217; refers to the way in which a person identifies their masculine or feminine characteristics. A persons gender relates to their deeply held internal and individual sense of gender and is not always exclusively male or female. It may or may not correspond to their sex assigned at birth.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -9924,7 +9925,7 @@ practitioners.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="practitioner-key">
-<span id="dfn-practitioner-key"></span><h3>Practitioner Key<a class="headerlink" href="#practitioner-key" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-practitioner-key"></span><h3>2.3.4.70. Practitioner Key<a class="headerlink" href="#practitioner-key" title="Permalink to this headline">¶</a></h3>
 <p>A unique identifier for a practitioner within the responsible provider organisation. Assigned by either the PHN or provider organisation depending on local procedures.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -9941,7 +9942,7 @@ practitioners.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="practitioner-tags">
-<span id="dfn-practitioner-tags"></span><h3>Practitioner - Tags<a class="headerlink" href="#practitioner-tags" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-practitioner-tags"></span><h3>2.3.4.71. Practitioner - Tags<a class="headerlink" href="#practitioner-tags" title="Permalink to this headline">¶</a></h3>
 <p>List of tags for the practitioner.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -9971,7 +9972,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <hr class="docutils" />
 </div>
 <div class="section" id="practitioner-year-of-birth">
-<span id="dfn-practitioner-year-of-birth"></span><h3>Practitioner - Year of Birth<a class="headerlink" href="#practitioner-year-of-birth" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-practitioner-year-of-birth"></span><h3>2.3.4.72. Practitioner - Year of Birth<a class="headerlink" href="#practitioner-year-of-birth" title="Permalink to this headline">¶</a></h3>
 <p>The year the practitioner was born.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -10008,7 +10009,7 @@ be used to estimate a year of birth</li>
 <hr class="docutils" />
 </div>
 <div class="section" id="provider-organisation-abn">
-<span id="dfn-organisation-abn"></span><h3>Provider Organisation - ABN<a class="headerlink" href="#provider-organisation-abn" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-organisation-abn"></span><h3>2.3.4.73. Provider Organisation - ABN<a class="headerlink" href="#provider-organisation-abn" title="Permalink to this headline">¶</a></h3>
 <p>The Australian Business Number of the provider organisation.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -10025,7 +10026,7 @@ be used to estimate a year of birth</li>
 <hr class="docutils" />
 </div>
 <div class="section" id="provider-organisation-legal-name">
-<span id="dfn-organisation-legal-name"></span><h3>Provider Organisation - Legal Name<a class="headerlink" href="#provider-organisation-legal-name" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-organisation-legal-name"></span><h3>2.3.4.74. Provider Organisation - Legal Name<a class="headerlink" href="#provider-organisation-legal-name" title="Permalink to this headline">¶</a></h3>
 <p>The legal name of the provider organisation.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -10042,7 +10043,7 @@ be used to estimate a year of birth</li>
 <hr class="docutils" />
 </div>
 <div class="section" id="provider-organisation-name">
-<span id="dfn-organisation-name"></span><h3>Provider Organisation - Name<a class="headerlink" href="#provider-organisation-name" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-organisation-name"></span><h3>2.3.4.75. Provider Organisation - Name<a class="headerlink" href="#provider-organisation-name" title="Permalink to this headline">¶</a></h3>
 <p>The name of the provider organisation.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -10059,7 +10060,7 @@ be used to estimate a year of birth</li>
 <hr class="docutils" />
 </div>
 <div class="section" id="provider-organisation-state">
-<span id="dfn-organisation-state"></span><h3>Provider Organisation - State<a class="headerlink" href="#provider-organisation-state" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-organisation-state"></span><h3>2.3.4.76. Provider Organisation - State<a class="headerlink" href="#provider-organisation-state" title="Permalink to this headline">¶</a></h3>
 <p>The state that the provider organisation operates in.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -10115,7 +10116,7 @@ be used to estimate a year of birth</li>
 <hr class="docutils" />
 </div>
 <div class="section" id="provider-organisation-status">
-<span id="dfn-organisation-status"></span><h3>Provider Organisation - Status<a class="headerlink" href="#provider-organisation-status" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-organisation-status"></span><h3>2.3.4.77. Provider Organisation - Status<a class="headerlink" href="#provider-organisation-status" title="Permalink to this headline">¶</a></h3>
 <p>A flag to represent whether a provider organisation is actively delivering services.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -10147,7 +10148,7 @@ be used to estimate a year of birth</li>
 <hr class="docutils" />
 </div>
 <div class="section" id="provider-organisation-tags">
-<span id="dfn-organisation-tags"></span><h3>Provider Organisation - Tags<a class="headerlink" href="#provider-organisation-tags" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-organisation-tags"></span><h3>2.3.4.78. Provider Organisation - Tags<a class="headerlink" href="#provider-organisation-tags" title="Permalink to this headline">¶</a></h3>
 <p>List of tags for the provider organisation.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -10177,7 +10178,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <hr class="docutils" />
 </div>
 <div class="section" id="provider-organisation-type">
-<span id="dfn-organisation-type"></span><h3>Provider Organisation - Type<a class="headerlink" href="#provider-organisation-type" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-organisation-type"></span><h3>2.3.4.79. Provider Organisation - Type<a class="headerlink" href="#provider-organisation-type" title="Permalink to this headline">¶</a></h3>
 <p>The category that best describes the provider organisation.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -10308,7 +10309,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-collection-occasion-version">
-<span id="dfn-sdq-version"></span><h3>SDQ Collection Occasion - Version<a class="headerlink" href="#sdq-collection-occasion-version" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-version"></span><h3>2.3.4.80. SDQ Collection Occasion - Version<a class="headerlink" href="#sdq-collection-occasion-version" title="Permalink to this headline">¶</a></h3>
 <p>The version of the SDQ collected.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -10352,7 +10353,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-conduct-problem-scale">
-<span id="dfn-sdq-conduct-problem"></span><h3>SDQ - Conduct Problem Scale<a class="headerlink" href="#sdq-conduct-problem-scale" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-conduct-problem"></span><h3>2.3.4.81. SDQ - Conduct Problem Scale<a class="headerlink" href="#sdq-conduct-problem-scale" title="Permalink to this headline">¶</a></h3>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -10378,7 +10379,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-emotional-symptoms-scale">
-<span id="dfn-sdq-emotional-symptoms"></span><h3>SDQ - Emotional Symptoms Scale<a class="headerlink" href="#sdq-emotional-symptoms-scale" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-emotional-symptoms"></span><h3>2.3.4.82. SDQ - Emotional Symptoms Scale<a class="headerlink" href="#sdq-emotional-symptoms-scale" title="Permalink to this headline">¶</a></h3>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -10404,7 +10405,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-hyperactivity-scale">
-<span id="dfn-sdq-hyperactivity"></span><h3>SDQ - Hyperactivity Scale<a class="headerlink" href="#sdq-hyperactivity-scale" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-hyperactivity"></span><h3>2.3.4.83. SDQ - Hyperactivity Scale<a class="headerlink" href="#sdq-hyperactivity-scale" title="Permalink to this headline">¶</a></h3>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -10430,7 +10431,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-impact-score">
-<span id="dfn-sdq-impact"></span><h3>SDQ - Impact Score<a class="headerlink" href="#sdq-impact-score" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-impact"></span><h3>2.3.4.84. SDQ - Impact Score<a class="headerlink" href="#sdq-impact-score" title="Permalink to this headline">¶</a></h3>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -10456,7 +10457,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-peer-problem-scale">
-<span id="dfn-sdq-peer-problem"></span><h3>SDQ - Peer Problem Scale<a class="headerlink" href="#sdq-peer-problem-scale" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-peer-problem"></span><h3>2.3.4.85. SDQ - Peer Problem Scale<a class="headerlink" href="#sdq-peer-problem-scale" title="Permalink to this headline">¶</a></h3>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -10482,7 +10483,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-prosocial-scale">
-<span id="dfn-sdq-prosocial"></span><h3>SDQ - Prosocial Scale<a class="headerlink" href="#sdq-prosocial-scale" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-prosocial"></span><h3>2.3.4.86. SDQ - Prosocial Scale<a class="headerlink" href="#sdq-prosocial-scale" title="Permalink to this headline">¶</a></h3>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -10508,7 +10509,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-question-1">
-<span id="dfn-sdq-item1"></span><h3>SDQ - Question 1<a class="headerlink" href="#sdq-question-1" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-item1"></span><h3>2.3.4.87. SDQ - Question 1<a class="headerlink" href="#sdq-question-1" title="Permalink to this headline">¶</a></h3>
 <p>Parent Report: Considerate of other people&#8217;s feelings.</p>
 <p>Youth Self Report: I try to be nice to other people. I care about their feelings.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -10551,7 +10552,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-question-2">
-<span id="dfn-sdq-item2"></span><h3>SDQ - Question 2<a class="headerlink" href="#sdq-question-2" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-item2"></span><h3>2.3.4.88. SDQ - Question 2<a class="headerlink" href="#sdq-question-2" title="Permalink to this headline">¶</a></h3>
 <p>Parent Report: Restless, overactive, cannot stay still for long.</p>
 <p>Youth Self Report: I am restless, I cannot stay still for long.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -10594,7 +10595,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-question-3">
-<span id="dfn-sdq-item3"></span><h3>SDQ - Question 3<a class="headerlink" href="#sdq-question-3" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-item3"></span><h3>2.3.4.89. SDQ - Question 3<a class="headerlink" href="#sdq-question-3" title="Permalink to this headline">¶</a></h3>
 <p>Parent Report: Often complains of headaches, stomach-aches or sickness.</p>
 <p>Youth Self Report: I get a lot of headaches, stomach-aches or sickness.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -10637,7 +10638,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-question-4">
-<span id="dfn-sdq-item4"></span><h3>SDQ - Question 4<a class="headerlink" href="#sdq-question-4" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-item4"></span><h3>2.3.4.90. SDQ - Question 4<a class="headerlink" href="#sdq-question-4" title="Permalink to this headline">¶</a></h3>
 <p>Parent Report: Shares readily with other children {for example toys, treats, pencils} / young people {for example CDs, games, food}.</p>
 <p>Youth Self Report: I usually share with others, for examples CDs, games, food.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -10680,7 +10681,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-question-5">
-<span id="dfn-sdq-item5"></span><h3>SDQ - Question 5<a class="headerlink" href="#sdq-question-5" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-item5"></span><h3>2.3.4.91. SDQ - Question 5<a class="headerlink" href="#sdq-question-5" title="Permalink to this headline">¶</a></h3>
 <p>Parent Report: Often loses temper.</p>
 <p>Youth Self Report: I get very angry and often lose my temper.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -10723,7 +10724,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-question-6">
-<span id="dfn-sdq-item6"></span><h3>SDQ - Question 6<a class="headerlink" href="#sdq-question-6" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-item6"></span><h3>2.3.4.92. SDQ - Question 6<a class="headerlink" href="#sdq-question-6" title="Permalink to this headline">¶</a></h3>
 <p>Parent Report: {Rather solitary, prefers to play alone} / {would rather be alone than with other young people}.</p>
 <p>Youth Self Report: I would rather be alone than with people of my age.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -10766,7 +10767,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-question-7">
-<span id="dfn-sdq-item7"></span><h3>SDQ - Question 7<a class="headerlink" href="#sdq-question-7" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-item7"></span><h3>2.3.4.93. SDQ - Question 7<a class="headerlink" href="#sdq-question-7" title="Permalink to this headline">¶</a></h3>
 <p>Parent Report: {Generally well behaved} / {Usually does what adults requests}.</p>
 <p>Youth Self Report: I usually do as I am told.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -10809,7 +10810,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-question-8">
-<span id="dfn-sdq-item8"></span><h3>SDQ - Question 8<a class="headerlink" href="#sdq-question-8" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-item8"></span><h3>2.3.4.94. SDQ - Question 8<a class="headerlink" href="#sdq-question-8" title="Permalink to this headline">¶</a></h3>
 <p>Parent Report: Many worries or often seems worried.</p>
 <p>Youth Self Report: I worry a lot.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -10852,7 +10853,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-question-9">
-<span id="dfn-sdq-item9"></span><h3>SDQ - Question 9<a class="headerlink" href="#sdq-question-9" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-item9"></span><h3>2.3.4.95. SDQ - Question 9<a class="headerlink" href="#sdq-question-9" title="Permalink to this headline">¶</a></h3>
 <p>Parent Report: Helpful if someone is hurt, upset or feeling ill.</p>
 <p>Youth Self Report: I am helpful if someone is hurt, upset or feeling ill.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -10895,7 +10896,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-question-10">
-<span id="dfn-sdq-item10"></span><h3>SDQ - Question 10<a class="headerlink" href="#sdq-question-10" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-item10"></span><h3>2.3.4.96. SDQ - Question 10<a class="headerlink" href="#sdq-question-10" title="Permalink to this headline">¶</a></h3>
 <p>Parent Report: Constantly fidgeting or squirming.</p>
 <p>Youth Self Report: I am constantly fidgeting or squirming.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -10938,7 +10939,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-question-11">
-<span id="dfn-sdq-item11"></span><h3>SDQ - Question 11<a class="headerlink" href="#sdq-question-11" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-item11"></span><h3>2.3.4.97. SDQ - Question 11<a class="headerlink" href="#sdq-question-11" title="Permalink to this headline">¶</a></h3>
 <p>Parent Report: Has at least one good friend.</p>
 <p>Youth Self Report: I have one good friend or more.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -10981,7 +10982,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-question-12">
-<span id="dfn-sdq-item12"></span><h3>SDQ - Question 12<a class="headerlink" href="#sdq-question-12" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-item12"></span><h3>2.3.4.98. SDQ - Question 12<a class="headerlink" href="#sdq-question-12" title="Permalink to this headline">¶</a></h3>
 <p>Parent Report: Often fights with other {children} or bullies them / {young people}.</p>
 <p>Youth Self Report: I fight a lot. I can make other people do what I want.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -11024,7 +11025,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-question-13">
-<span id="dfn-sdq-item13"></span><h3>SDQ - Question 13<a class="headerlink" href="#sdq-question-13" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-item13"></span><h3>2.3.4.99. SDQ - Question 13<a class="headerlink" href="#sdq-question-13" title="Permalink to this headline">¶</a></h3>
 <p>Parent Report: Often unhappy, depressed or tearful.</p>
 <p>Youth Self Report: I am often unhappy, depressed or tearful.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -11067,7 +11068,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-question-14">
-<span id="dfn-sdq-item14"></span><h3>SDQ - Question 14<a class="headerlink" href="#sdq-question-14" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-item14"></span><h3>2.3.4.100. SDQ - Question 14<a class="headerlink" href="#sdq-question-14" title="Permalink to this headline">¶</a></h3>
 <p>Parent Report: Generally liked by other {children} / {young people}</p>
 <p>Youth Self Report: Other people my age generally like me.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -11110,7 +11111,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-question-15">
-<span id="dfn-sdq-item15"></span><h3>SDQ - Question 15<a class="headerlink" href="#sdq-question-15" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-item15"></span><h3>2.3.4.101. SDQ - Question 15<a class="headerlink" href="#sdq-question-15" title="Permalink to this headline">¶</a></h3>
 <p>Parent Report: Easily distracted, concentration wanders.</p>
 <p>Youth Self Report: I am easily distracted, I find it difficult to concentrate.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -11153,7 +11154,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-question-16">
-<span id="dfn-sdq-item16"></span><h3>SDQ - Question 16<a class="headerlink" href="#sdq-question-16" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-item16"></span><h3>2.3.4.102. SDQ - Question 16<a class="headerlink" href="#sdq-question-16" title="Permalink to this headline">¶</a></h3>
 <p>Parent Report: Nervous or {clingy} in new situations, easily loses confidence {omit clingy in PY}.</p>
 <p>Youth Self Report: I am nervous in new situations. I easily lose confidence.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -11196,7 +11197,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-question-17">
-<span id="dfn-sdq-item17"></span><h3>SDQ - Question 17<a class="headerlink" href="#sdq-question-17" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-item17"></span><h3>2.3.4.103. SDQ - Question 17<a class="headerlink" href="#sdq-question-17" title="Permalink to this headline">¶</a></h3>
 <p>Parent Report: Kind to younger children.</p>
 <p>Youth Self Report: I am kind to younger people.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -11239,7 +11240,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-question-18">
-<span id="dfn-sdq-item18"></span><h3>SDQ - Question 18<a class="headerlink" href="#sdq-question-18" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-item18"></span><h3>2.3.4.104. SDQ - Question 18<a class="headerlink" href="#sdq-question-18" title="Permalink to this headline">¶</a></h3>
 <p>Parent Report: Often lies or cheats.</p>
 <p>Youth Self Report: I am often accused of lying or cheating.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -11282,7 +11283,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-question-19">
-<span id="dfn-sdq-item19"></span><h3>SDQ - Question 19<a class="headerlink" href="#sdq-question-19" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-item19"></span><h3>2.3.4.105. SDQ - Question 19<a class="headerlink" href="#sdq-question-19" title="Permalink to this headline">¶</a></h3>
 <p>Parent Report: Picked on or bullied by {children} / {youth}.</p>
 <p>Youth Self Report: Other children or young people pick on me or bully me.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -11325,7 +11326,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-question-20">
-<span id="dfn-sdq-item20"></span><h3>SDQ - Question 20<a class="headerlink" href="#sdq-question-20" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-item20"></span><h3>2.3.4.106. SDQ - Question 20<a class="headerlink" href="#sdq-question-20" title="Permalink to this headline">¶</a></h3>
 <p>Parent Report: Often volunteers to help others (parents, teachers, {other} children) / Omit &#8216;other&#8217; in PY.</p>
 <p>Youth Self Report: I often volunteer to help others (parents, teachers, children).</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -11368,7 +11369,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-question-21">
-<span id="dfn-sdq-item21"></span><h3>SDQ - Question 21<a class="headerlink" href="#sdq-question-21" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-item21"></span><h3>2.3.4.107. SDQ - Question 21<a class="headerlink" href="#sdq-question-21" title="Permalink to this headline">¶</a></h3>
 <p>Parent Report: Thinks things out before acting.</p>
 <p>Youth Self Report: I think before I do things.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -11411,7 +11412,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-question-22">
-<span id="dfn-sdq-item22"></span><h3>SDQ - Question 22<a class="headerlink" href="#sdq-question-22" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-item22"></span><h3>2.3.4.108. SDQ - Question 22<a class="headerlink" href="#sdq-question-22" title="Permalink to this headline">¶</a></h3>
 <p>Parent Report: Steals from home, school or elsewhere.</p>
 <p>Youth Self Report: I take things that are not mine from home, school or elsewhere.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -11454,7 +11455,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-question-23">
-<span id="dfn-sdq-item23"></span><h3>SDQ - Question 23<a class="headerlink" href="#sdq-question-23" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-item23"></span><h3>2.3.4.109. SDQ - Question 23<a class="headerlink" href="#sdq-question-23" title="Permalink to this headline">¶</a></h3>
 <p>Parent Report: Gets along better with adults than with other {children} / {youth}.</p>
 <p>Youth Self Report: I get along better with adults than with people my own age.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -11497,7 +11498,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-question-24">
-<span id="dfn-sdq-item24"></span><h3>SDQ - Question 24<a class="headerlink" href="#sdq-question-24" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-item24"></span><h3>2.3.4.110. SDQ - Question 24<a class="headerlink" href="#sdq-question-24" title="Permalink to this headline">¶</a></h3>
 <p>Parent Report: Many fears, easily scared.</p>
 <p>Youth Self Report: I have many fears, I am easily scared.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -11540,7 +11541,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-question-25">
-<span id="dfn-sdq-item25"></span><h3>SDQ - Question 25<a class="headerlink" href="#sdq-question-25" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-item25"></span><h3>2.3.4.111. SDQ - Question 25<a class="headerlink" href="#sdq-question-25" title="Permalink to this headline">¶</a></h3>
 <p>Parent Report: Good attention span sees chores or homework through to the end.</p>
 <p>Youth Self Report: I finish the work I&#8217;m doing. My attention is good.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -11583,7 +11584,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-question-26">
-<span id="dfn-sdq-item26"></span><h3>SDQ - Question 26<a class="headerlink" href="#sdq-question-26" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-item26"></span><h3>2.3.4.112. SDQ - Question 26<a class="headerlink" href="#sdq-question-26" title="Permalink to this headline">¶</a></h3>
 <p>Parent Report: Overall, do you think that your child has difficulties in any of the following areas: emotions, concentration, behaviour or being able to get along with other people?</p>
 <p>Youth Self Report: Overall, do you think that you have difficulties in any of the following areas: emotions, concentration, behaviour or being able to get along with other people?</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -11628,7 +11629,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-question-27">
-<span id="dfn-sdq-item27"></span><h3>SDQ - Question 27<a class="headerlink" href="#sdq-question-27" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-item27"></span><h3>2.3.4.113. SDQ - Question 27<a class="headerlink" href="#sdq-question-27" title="Permalink to this headline">¶</a></h3>
 <p>Parent Report: How long have these difficulties been present?</p>
 <p>Youth Self Report: How long have these difficulties been present?</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -11678,7 +11679,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-question-28">
-<span id="dfn-sdq-item28"></span><h3>SDQ - Question 28<a class="headerlink" href="#sdq-question-28" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-item28"></span><h3>2.3.4.114. SDQ - Question 28<a class="headerlink" href="#sdq-question-28" title="Permalink to this headline">¶</a></h3>
 <p>Parent Report: Do the difficulties upset or distress your child?</p>
 <p>Youth Self Report: Do the difficulties upset or distress you?</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -11725,7 +11726,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-question-29">
-<span id="dfn-sdq-item29"></span><h3>SDQ - Question 29<a class="headerlink" href="#sdq-question-29" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-item29"></span><h3>2.3.4.115. SDQ - Question 29<a class="headerlink" href="#sdq-question-29" title="Permalink to this headline">¶</a></h3>
 <p>Parent Report: Do the difficulties interfere with your child&#8217;s everyday life in the following areas? HOME LIFE.</p>
 <p>Youth Self Report: Do the difficulties interfere with your everyday life in the following areas? HOME LIFE.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -11772,7 +11773,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-question-30">
-<span id="dfn-sdq-item30"></span><h3>SDQ - Question 30<a class="headerlink" href="#sdq-question-30" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-item30"></span><h3>2.3.4.116. SDQ - Question 30<a class="headerlink" href="#sdq-question-30" title="Permalink to this headline">¶</a></h3>
 <p>Parent Report: Do the difficulties interfere with your child&#8217;s everyday life in the following areas? FRIENDSHIPS.</p>
 <p>Youth Self Report: Do the difficulties interfere with your everyday life in the following areas? FRIENDSHIPS.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -11819,7 +11820,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-question-31">
-<span id="dfn-sdq-item31"></span><h3>SDQ - Question 31<a class="headerlink" href="#sdq-question-31" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-item31"></span><h3>2.3.4.117. SDQ - Question 31<a class="headerlink" href="#sdq-question-31" title="Permalink to this headline">¶</a></h3>
 <p>Parent Report: Do the difficulties interfere with your child&#8217;s everyday life in the following areas? CLASSROOM LEARNING.</p>
 <p>Youth Self Report: Do the difficulties interfere with your everyday life in the following areas? CLASSROOM LEARNING</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -11866,7 +11867,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-question-32">
-<span id="dfn-sdq-item32"></span><h3>SDQ - Question 32<a class="headerlink" href="#sdq-question-32" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-item32"></span><h3>2.3.4.118. SDQ - Question 32<a class="headerlink" href="#sdq-question-32" title="Permalink to this headline">¶</a></h3>
 <p>Parent Report: Do the difficulties interfere with your child&#8217;s everyday life in the following areas? LEISURE ACTIVITIES.</p>
 <p>Youth Self Report: Do the difficulties interfere with your everyday life in the following areas? LEISURE ACTIVITIES.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -11913,7 +11914,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-question-33">
-<span id="dfn-sdq-item33"></span><h3>SDQ - Question 33<a class="headerlink" href="#sdq-question-33" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-item33"></span><h3>2.3.4.119. SDQ - Question 33<a class="headerlink" href="#sdq-question-33" title="Permalink to this headline">¶</a></h3>
 <p>Parent Report: Do the difficulties put a burden on you or the family as a whole?</p>
 <p>Youth Self Report: Do the difficulties make it harder for those around you (family, friends, teachers, etc)?</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -11960,7 +11961,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-question-34">
-<span id="dfn-sdq-item34"></span><h3>SDQ - Question 34<a class="headerlink" href="#sdq-question-34" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-item34"></span><h3>2.3.4.120. SDQ - Question 34<a class="headerlink" href="#sdq-question-34" title="Permalink to this headline">¶</a></h3>
 <p>Parent Report: Since coming to the services, are your child&#8217;s problems:</p>
 <p>Youth Self Report: &#8216;Since coming to the service, are your problems:</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -12014,7 +12015,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-question-35">
-<span id="dfn-sdq-item35"></span><h3>SDQ - Question 35<a class="headerlink" href="#sdq-question-35" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-item35"></span><h3>2.3.4.121. SDQ - Question 35<a class="headerlink" href="#sdq-question-35" title="Permalink to this headline">¶</a></h3>
 <p>Has coming to the service been helpful in other ways eg. providing information or making the problems bearable?</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -12065,7 +12066,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-question-36">
-<span id="dfn-sdq-item36"></span><h3>SDQ - Question 36<a class="headerlink" href="#sdq-question-36" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-item36"></span><h3>2.3.4.122. SDQ - Question 36<a class="headerlink" href="#sdq-question-36" title="Permalink to this headline">¶</a></h3>
 <p>Over the last 6 months have your child&#8217;s teachers complained of fidgetiness, restlessness or overactivity?</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -12113,7 +12114,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-question-37">
-<span id="dfn-sdq-item37"></span><h3>SDQ - Question 37<a class="headerlink" href="#sdq-question-37" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-item37"></span><h3>2.3.4.123. SDQ - Question 37<a class="headerlink" href="#sdq-question-37" title="Permalink to this headline">¶</a></h3>
 <p>Over the last 6 months have your child&#8217;s teachers complained of poor concentration or being easily distracted?</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -12161,7 +12162,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-question-38">
-<span id="dfn-sdq-item38"></span><h3>SDQ - Question 38<a class="headerlink" href="#sdq-question-38" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-item38"></span><h3>2.3.4.124. SDQ - Question 38<a class="headerlink" href="#sdq-question-38" title="Permalink to this headline">¶</a></h3>
 <p>Over the last 6 months have your child&#8217;s teachers complained of acting without thinking, frequently butting in, or not waiting for his or her turn?</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -12209,7 +12210,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-question-39">
-<span id="dfn-sdq-item39"></span><h3>SDQ - Question 39<a class="headerlink" href="#sdq-question-39" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-item39"></span><h3>2.3.4.125. SDQ - Question 39<a class="headerlink" href="#sdq-question-39" title="Permalink to this headline">¶</a></h3>
 <p>Does your family complain about you having problems with overactivity or poor concentration?</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -12256,7 +12257,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-question-40">
-<span id="dfn-sdq-item40"></span><h3>SDQ - Question 40<a class="headerlink" href="#sdq-question-40" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-item40"></span><h3>2.3.4.126. SDQ - Question 40<a class="headerlink" href="#sdq-question-40" title="Permalink to this headline">¶</a></h3>
 <p>Do your teachers complain about you having problems with overactivity or poor concentration?</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -12303,7 +12304,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-question-41">
-<span id="dfn-sdq-item41"></span><h3>SDQ - Question 41<a class="headerlink" href="#sdq-question-41" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-item41"></span><h3>2.3.4.127. SDQ - Question 41<a class="headerlink" href="#sdq-question-41" title="Permalink to this headline">¶</a></h3>
 <p>Does your family complain about you being awkward or troublesome?</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -12350,7 +12351,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-question-42">
-<span id="dfn-sdq-item42"></span><h3>SDQ - Question 42<a class="headerlink" href="#sdq-question-42" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-item42"></span><h3>2.3.4.128. SDQ - Question 42<a class="headerlink" href="#sdq-question-42" title="Permalink to this headline">¶</a></h3>
 <p>Do your teachers complain about you being awkward or troublesome?</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -12397,7 +12398,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-tags">
-<span id="dfn-sdq-tags"></span><h3>SDQ - Tags<a class="headerlink" href="#sdq-tags" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-tags"></span><h3>2.3.4.129. SDQ - Tags<a class="headerlink" href="#sdq-tags" title="Permalink to this headline">¶</a></h3>
 <p>List of tags for the collection occasion.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -12427,7 +12428,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <hr class="docutils" />
 </div>
 <div class="section" id="sdq-total-difficulties-score">
-<span id="dfn-sdq-total"></span><h3>SDQ - Total Difficulties Score<a class="headerlink" href="#sdq-total-difficulties-score" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-sdq-total"></span><h3>2.3.4.130. SDQ - Total Difficulties Score<a class="headerlink" href="#sdq-total-difficulties-score" title="Permalink to this headline">¶</a></h3>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -12453,7 +12454,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <hr class="docutils" />
 </div>
 <div class="section" id="service-contact-client-participation-indicator">
-<span id="dfn-service-contact-participation-indicator"></span><h3>Service Contact - Client Participation Indicator<a class="headerlink" href="#service-contact-client-participation-indicator" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-service-contact-participation-indicator"></span><h3>2.3.4.131. Service Contact - Client Participation Indicator<a class="headerlink" href="#service-contact-client-participation-indicator" title="Permalink to this headline">¶</a></h3>
 <p>An indicator of whether the client participated, or intended to participate, in the service contact, as represented by a code.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -12509,7 +12510,7 @@ as &#8216;1: Yes&#8217; and <a class="reference internal" href="#dfn-service-con
 <hr class="docutils" />
 </div>
 <div class="section" id="service-contact-copayment">
-<span id="dfn-service-contact-copayment"></span><h3>Service Contact - Copayment<a class="headerlink" href="#service-contact-copayment" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-service-contact-copayment"></span><h3>2.3.4.132. Service Contact - Copayment<a class="headerlink" href="#service-contact-copayment" title="Permalink to this headline">¶</a></h3>
 <p>The co-payment is the amount paid by the client per session.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -12541,7 +12542,7 @@ is charged it should be minimal and based on an individual&#8217;s capacity to p
 <hr class="docutils" />
 </div>
 <div class="section" id="service-contact-date">
-<span id="dfn-service-contact-date"></span><h3>Service Contact - Date<a class="headerlink" href="#service-contact-date" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-service-contact-date"></span><h3>2.3.4.133. Service Contact - Date<a class="headerlink" href="#service-contact-date" title="Permalink to this headline">¶</a></h3>
 <p>The date of each mental health service contact between a health service provider and patient/client.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -12575,7 +12576,7 @@ necessary to pad out a value. For instance, 13th March 2008 would appear as
 <hr class="docutils" />
 </div>
 <div class="section" id="service-contact-duration">
-<span id="dfn-service-contact-duration"></span><h3>Service Contact - Duration<a class="headerlink" href="#service-contact-duration" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-service-contact-duration"></span><h3>2.3.4.134. Service Contact - Duration<a class="headerlink" href="#service-contact-duration" title="Permalink to this headline">¶</a></h3>
 <p>The time from the start to finish of a service contact.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -12638,7 +12639,7 @@ the duration of the service contact.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="service-contact-final">
-<span id="dfn-service-contact-final"></span><h3>Service Contact - Final<a class="headerlink" href="#service-contact-final" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-service-contact-final"></span><h3>2.3.4.135. Service Contact - Final<a class="headerlink" href="#service-contact-final" title="Permalink to this headline">¶</a></h3>
 <p>An indication of whether the Service Contact is the final for the current Episode of Care</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -12687,7 +12688,7 @@ additional activity to be recorded.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="service-contact-interpreter-used">
-<span id="dfn-service-contact-interpreter"></span><h3>Service Contact - Interpreter Used<a class="headerlink" href="#service-contact-interpreter-used" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-service-contact-interpreter"></span><h3>2.3.4.136. Service Contact - Interpreter Used<a class="headerlink" href="#service-contact-interpreter-used" title="Permalink to this headline">¶</a></h3>
 <p>Whether an interpreter service was used during the Service Contact</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -12740,7 +12741,7 @@ option for clinicians, it is for administrative use only.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="service-contact-modality">
-<span id="dfn-service-contact-modality"></span><h3>Service Contact - Modality<a class="headerlink" href="#service-contact-modality" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-service-contact-modality"></span><h3>2.3.4.137. Service Contact - Modality<a class="headerlink" href="#service-contact-modality" title="Permalink to this headline">¶</a></h3>
 <p>How the service contact was delivered, as represented by a code.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -12800,7 +12801,7 @@ other service provider.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="service-contact-no-show">
-<span id="dfn-service-contact-no-show"></span><h3>Service Contact - No Show<a class="headerlink" href="#service-contact-no-show" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-service-contact-no-show"></span><h3>2.3.4.138. Service Contact - No Show<a class="headerlink" href="#service-contact-no-show" title="Permalink to this headline">¶</a></h3>
 <p>Where an appointment was made for an intended participant(s), but the intended participant(s) failed to attend the appointment, as represented by a code.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -12842,7 +12843,7 @@ other service provider.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="service-contact-participants">
-<span id="dfn-service-contact-participants"></span><h3>Service Contact - Participants<a class="headerlink" href="#service-contact-participants" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-service-contact-participants"></span><h3>2.3.4.139. Service Contact - Participants<a class="headerlink" href="#service-contact-participants" title="Permalink to this headline">¶</a></h3>
 <p>An indication of who participated in the Service Contact.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -12912,7 +12913,7 @@ patient failed to attend the appointment.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="service-contact-postcode">
-<span id="dfn-service-contact-postcode"></span><h3>Service Contact - Postcode<a class="headerlink" href="#service-contact-postcode" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-service-contact-postcode"></span><h3>2.3.4.140. Service Contact - Postcode<a class="headerlink" href="#service-contact-postcode" title="Permalink to this headline">¶</a></h3>
 <p>The Australian postcode where the service contact took place.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -12946,7 +12947,7 @@ range 0200-0299 or 0800-9999.</li>
 <hr class="docutils" />
 </div>
 <div class="section" id="service-contact-tags">
-<span id="dfn-service-contact-tags"></span><h3>Service Contact - Tags<a class="headerlink" href="#service-contact-tags" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-service-contact-tags"></span><h3>2.3.4.141. Service Contact - Tags<a class="headerlink" href="#service-contact-tags" title="Permalink to this headline">¶</a></h3>
 <p>List of tags for the service contact.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -12976,7 +12977,7 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <hr class="docutils" />
 </div>
 <div class="section" id="service-contact-type">
-<span id="dfn-service-contact-type"></span><h3>Service Contact - Type<a class="headerlink" href="#service-contact-type" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-service-contact-type"></span><h3>2.3.4.142. Service Contact - Type<a class="headerlink" href="#service-contact-type" title="Permalink to this headline">¶</a></h3>
 <p>The main type of service provided in the service contact, as represented by the service type that accounted for most provider time.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -13142,7 +13143,7 @@ from 1st July, 2017 can be assigned to other categories.</em></p>
 <hr class="docutils" />
 </div>
 <div class="section" id="service-contact-venue">
-<span id="dfn-service-contact-venue"></span><h3>Service Contact - Venue<a class="headerlink" href="#service-contact-venue" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-service-contact-venue"></span><h3>2.3.4.143. Service Contact - Venue<a class="headerlink" href="#service-contact-venue" title="Permalink to this headline">¶</a></h3>
 <p>Where the service contact was delivered, as represented by a code.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -13202,7 +13203,7 @@ such as community health centres.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="service-contact-key">
-<span id="dfn-service-contact-key"></span><h3>Service Contact Key<a class="headerlink" href="#service-contact-key" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-service-contact-key"></span><h3>2.3.4.144. Service Contact Key<a class="headerlink" href="#service-contact-key" title="Permalink to this headline">¶</a></h3>
 <p>This is a number or code assigned to each service contact. The Service Contact Key is unique and stable for each service contact at the level of the organisation.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -13220,11 +13221,11 @@ such as community health centres.</p>
 </div>
 </div>
 <div class="section" id="download-specification-files">
-<span id="data-specifications-download"></span><h2>Download Specification Files<a class="headerlink" href="#download-specification-files" title="Permalink to this headline">¶</a></h2>
+<span id="data-specifications-download"></span><h2>2.3.5. Download Specification Files<a class="headerlink" href="#download-specification-files" title="Permalink to this headline">¶</a></h2>
 <p>Available for software developers designing extracts for the PMHC MDS, please
 click the link below to download the PMHC MDS Specification files:</p>
 <ul class="simple">
-<li><code class="xref download docutils literal"><span class="pre">Specification</span> <span class="pre">zip</span></code></li>
+<li><a class="reference download internal" href="../_downloads/pmhcmds-spec-meta.zip" download=""><code class="xref download docutils literal"><span class="pre">Specification</span> <span class="pre">zip</span></code></a></li>
 </ul>
 </div>
 </div>
@@ -13236,10 +13237,10 @@ click the link below to download the PMHC MDS Specification files:</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="upload-specification.html" class="btn btn-neutral float-right" title="Upload specification" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="upload-specification.html" class="btn btn-neutral float-right" title="2.4. Upload specification" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="identifier-management.html" class="btn btn-neutral" title="Identifier management" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="identifier-management.html" class="btn btn-neutral" title="2.2. Identifier management" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
