@@ -1,0 +1,535 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Data Specification &mdash; PMHC MDS Version 1.0.12 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+
+  
+    <link rel="top" title="PMHC MDS Version 1.0.12 documentation" href="../index.html"/>
+        <link rel="next" title="Reporting arrangements" href="reporting-arrangements.html"/>
+        <link rel="prev" title="User Guide Change log" href="../user-documentation/change-log.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> PMHC MDS
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                Version 1.0.12
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../user-documentation/index.html">User Guide</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Data Specification</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="reporting-arrangements.html">Reporting arrangements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="identifier-management.html">Identifier management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data-model-and-specifications.html">Data model and specifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="upload-specification.html">Upload specification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data-item-summary.html">Data item summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="form-creation.html">Using the data specification to create client forms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="validation-rules.html">Validation Rules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ataps/ataps-pmhc-mapping.html">ATAPS MDS to PMHC MDS data mapping</a></li>
+<li class="toctree-l2"><a class="reference internal" href="test-data-sets.html">Test Data Sets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html">Data Specification Change log</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../faqs/index.html">Frequently Asked Questions</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">PMHC MDS</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+    <li>Data Specification</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/data-specification/index.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="data-specification">
+<span id="data-docs"></span><h1>Data Specification<a class="headerlink" href="#data-specification" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="reporting-arrangements.html">Reporting arrangements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="reporting-arrangements.html#uploading-data">Uploading data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reporting-arrangements.html#reporting-timeliness">Reporting timeliness</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reporting-arrangements.html#transition-arrangements">Transition arrangements</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="reporting-arrangements.html#transition-to-full-compliance">Transition to Full Compliance</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="reporting-arrangements.html#support-arrangements">Support arrangements</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="identifier-management.html">Identifier management</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="identifier-management.html#managing-provider-organisation-keys">Managing Provider Organisation Keys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="identifier-management.html#managing-client-keys">Managing Client Keys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="identifier-management.html#managing-practitioner-episode-service-contact-and-outcome-collection-occasion-keys">Managing Practitioner, Episode, Service Contact and Outcome Collection Occasion Keys</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="data-model-and-specifications.html">Data model and specifications</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="data-model-and-specifications.html#data-model">Data model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data-model-and-specifications.html#key-concepts">Key concepts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#primary-health-network">Primary Health Network</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#provider-organisation">Provider Organisation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#practitioner">Practitioner</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#episode">Episode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#service-contact">Service Contact</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#outcome-collection-occasion">Outcome Collection Occasion</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="data-model-and-specifications.html#record-formats">Record formats</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#provider-organisation-data-elements">Provider Organisation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#practitioner-data-elements">Practitioner</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#client-data-elements">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#episode-data-elements">Episode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#service-contact-data-elements">Service Contact</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#outcome-collection-occasion-data-elements">Outcome Collection Occasion</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="data-model-and-specifications.html#k10">K10+</a></li>
+<li class="toctree-l4"><a class="reference internal" href="data-model-and-specifications.html#k5">K5</a></li>
+<li class="toctree-l4"><a class="reference internal" href="data-model-and-specifications.html#sdq">SDQ</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="data-model-and-specifications.html#sdq-items-and-scale-summary-scores">SDQ items and Scale Summary scores</a></li>
+<li class="toctree-l5"><a class="reference internal" href="data-model-and-specifications.html#id12">Scoring the SDQ</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="data-model-and-specifications.html#definitions">Definitions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#client-aboriginal-and-torres-strait-islander-status">Client - Aboriginal and Torres Strait Islander Status</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#client-country-of-birth">Client - Country of Birth</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#client-date-of-birth">Client - Date of Birth</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#client-estimated-date-of-birth-flag">Client - Estimated Date of Birth Flag</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#client-gender">Client - Gender</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#client-key">Client Key</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#client-main-language-spoken-at-home">Client - Main Language Spoken at Home</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#client-proficiency-in-spoken-english">Client - Proficiency in Spoken English</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#client-statistical-linkage-key">Client - Statistical Linkage Key</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#client-tags">Client - Tags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#collection-occasion-measure-date">Collection Occasion - Measure Date</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#collection-occasion-reason">Collection Occasion - Reason</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#collection-occasion-key">Collection Occasion Key</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#episode-additional-diagnosis">Episode - Additional Diagnosis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#episode-area-of-usual-residence-postcode">Episode - Area of usual residence, postcode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#episode-client-consent-to-anonymised-data">Episode - Client Consent to Anonymised Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#episode-completion-status">Episode - Completion Status</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#episode-employment-participation">Episode - Employment Participation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#episode-end-date">Episode - End Date</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#episode-gp-mental-health-treatment-plan-flag">Episode - GP Mental Health Treatment Plan Flag</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#episode-health-care-card">Episode - Health Care Card</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#episode-homelessness-flag">Episode - Homelessness Flag</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#episode-key">Episode Key</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#episode-labour-force-status">Episode - Labour Force Status</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#episode-marital-status">Episode - Marital Status</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#episode-medication-antidepressants-n06a">Episode - Medication - Antidepressants (N06A)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#episode-medication-antipsychotics-n05a">Episode - Medication - Antipsychotics (N05A)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#episode-medication-anxiolytics-n05b">Episode - Medication - Anxiolytics (N05B)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#episode-medication-hypnotics-and-sedatives-n05c">Episode - Medication - Hypnotics and sedatives (N05C)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#episode-medication-psychostimulants-and-nootropics-n06b">Episode - Medication - Psychostimulants and nootropics (N06B)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#episode-ndis-participant">Episode - NDIS Participant</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#episode-principal-diagnosis">Episode - Principal Diagnosis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#episode-principal-focus-of-treatment-plan">Episode - Principal Focus of Treatment Plan</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#episode-referral-date">Episode - Referral Date</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#episode-referrer-organisation-type">Episode - Referrer Organisation Type</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#episode-referrer-profession">Episode - Referrer Profession</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#episode-source-of-cash-income">Episode - Source of Cash Income</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#episode-suicide-referral-flag">Episode - Suicide Referral Flag</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#episode-tags">Episode - Tags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#k5-question-1">K5 - Question 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#k5-question-2">K5 - Question 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#k5-question-3">K5 - Question 3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#k5-question-4">K5 - Question 4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#k5-question-5">K5 - Question 5</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#k5-score">K5 - Score</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#k5-tags">K5 - Tags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#k10-question-1">K10+ - Question 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#k10-question-2">K10+ - Question 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#k10-question-3">K10+ - Question 3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#k10-question-4">K10+ - Question 4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#k10-question-5">K10+ - Question 5</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#k10-question-6">K10+ - Question 6</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#k10-question-7">K10+ - Question 7</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#k10-question-8">K10+ - Question 8</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#k10-question-9">K10+ - Question 9</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#k10-question-10">K10+ - Question 10</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#k10-question-11">K10+ - Question 11</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#k10-question-12">K10+ - Question 12</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#k10-question-13">K10+ - Question 13</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#k10-question-14">K10+ - Question 14</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#k10-score">K10+ - Score</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#k10-tags">K10+ - Tags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#organisation-key">Organisation Key</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#organisation-path">Organisation Path</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#practitioner-aboriginal-and-torres-strait-islander-status">Practitioner - Aboriginal and Torres Strait Islander Status</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#practitioner-active">Practitioner - Active</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#practitioner-atsi-cultural-training">Practitioner - ATSI Cultural Training</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#practitioner-category">Practitioner - Category</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#practitioner-gender">Practitioner - Gender</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#practitioner-key">Practitioner Key</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#practitioner-tags">Practitioner - Tags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#practitioner-year-of-birth">Practitioner - Year of Birth</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#provider-organisation-abn">Provider Organisation - ABN</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#provider-organisation-legal-name">Provider Organisation - Legal Name</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#provider-organisation-name">Provider Organisation - Name</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#provider-organisation-state">Provider Organisation - State</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#provider-organisation-status">Provider Organisation - Status</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#provider-organisation-tags">Provider Organisation - Tags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#provider-organisation-type">Provider Organisation - Type</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-collection-occasion-version">SDQ Collection Occasion - Version</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-conduct-problem-scale">SDQ - Conduct Problem Scale</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-emotional-symptoms-scale">SDQ - Emotional Symptoms Scale</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-hyperactivity-scale">SDQ - Hyperactivity Scale</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-impact-score">SDQ - Impact Score</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-peer-problem-scale">SDQ - Peer Problem Scale</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-prosocial-scale">SDQ - Prosocial Scale</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-question-1">SDQ - Question 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-question-2">SDQ - Question 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-question-3">SDQ - Question 3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-question-4">SDQ - Question 4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-question-5">SDQ - Question 5</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-question-6">SDQ - Question 6</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-question-7">SDQ - Question 7</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-question-8">SDQ - Question 8</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-question-9">SDQ - Question 9</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-question-10">SDQ - Question 10</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-question-11">SDQ - Question 11</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-question-12">SDQ - Question 12</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-question-13">SDQ - Question 13</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-question-14">SDQ - Question 14</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-question-15">SDQ - Question 15</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-question-16">SDQ - Question 16</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-question-17">SDQ - Question 17</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-question-18">SDQ - Question 18</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-question-19">SDQ - Question 19</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-question-20">SDQ - Question 20</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-question-21">SDQ - Question 21</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-question-22">SDQ - Question 22</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-question-23">SDQ - Question 23</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-question-24">SDQ - Question 24</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-question-25">SDQ - Question 25</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-question-26">SDQ - Question 26</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-question-27">SDQ - Question 27</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-question-28">SDQ - Question 28</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-question-29">SDQ - Question 29</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-question-30">SDQ - Question 30</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-question-31">SDQ - Question 31</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-question-32">SDQ - Question 32</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-question-33">SDQ - Question 33</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-question-34">SDQ - Question 34</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-question-35">SDQ - Question 35</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-question-36">SDQ - Question 36</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-question-37">SDQ - Question 37</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-question-38">SDQ - Question 38</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-question-39">SDQ - Question 39</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-question-40">SDQ - Question 40</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-question-41">SDQ - Question 41</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-question-42">SDQ - Question 42</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-tags">SDQ - Tags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sdq-total-difficulties-score">SDQ - Total Difficulties Score</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#service-contact-client-participation-indicator">Service Contact - Client Participation Indicator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#service-contact-copayment">Service Contact - Copayment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#service-contact-date">Service Contact - Date</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#service-contact-duration">Service Contact - Duration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#service-contact-final">Service Contact - Final</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#service-contact-interpreter-used">Service Contact - Interpreter Used</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#service-contact-modality">Service Contact - Modality</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#service-contact-no-show">Service Contact - No Show</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#service-contact-participants">Service Contact - Participants</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#service-contact-postcode">Service Contact - Postcode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#service-contact-tags">Service Contact - Tags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#service-contact-type">Service Contact - Type</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#service-contact-venue">Service Contact - Venue</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#service-contact-key">Service Contact Key</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="data-model-and-specifications.html#download-specification-files">Download Specification Files</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="upload-specification.html">Upload specification</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="upload-specification.html#file-types">File types</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="upload-specification.html#comma-separated-values-csv">Comma Separated Values (CSV)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="upload-specification.html#excel-xlsx">Excel (XLSX)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="upload-specification.html#files-or-worksheets-to-upload">Files or worksheets to upload</a></li>
+<li class="toctree-l2"><a class="reference internal" href="upload-specification.html#file-format">File format</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="upload-specification.html#client-format">Client format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="upload-specification.html#episode-file-format">Episode file format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="upload-specification.html#service-contact-file-format">Service Contact file format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="upload-specification.html#k10-collection-occasion-file-format">K10+ Collection Occasion file format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="upload-specification.html#k5-collection-occasion-file-format">K5 Collection Occasion file format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="upload-specification.html#sdq-collection-occasion-file-format">SDQ Collection Occasion file format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="upload-specification.html#practitioner-file-format">Practitioner file format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="upload-specification.html#organisation-file-format">Organisation file format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="upload-specification.html#deleting-records">Deleting records</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="upload-specification.html#frequently-asked-questions">Frequently Asked Questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="data-item-summary.html">Data item summary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form-creation.html">Using the data specification to create client forms</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="form-creation.html#not-stated-missing-codes">Not stated/missing codes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="form-creation.html#country-of-birth">Country of Birth</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="form-creation.html#detailed-question-module">Detailed question module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="form-creation.html#short-question-module">Short question module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="form-creation.html#main-language-spoken-at-home">Main Language Spoken at Home</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="form-creation.html#mlsh-detailed-module">Detailed question module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="form-creation.html#mlsh-short-module">Short question module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="validation-rules.html">Validation Rules</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="validation-rules.html#current-validations">1. Current Validations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="validation-rules.html#practitioner">1. Practitioner</a></li>
+<li class="toctree-l3"><a class="reference internal" href="validation-rules.html#client">2. Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="validation-rules.html#episode">3. Episode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="validation-rules.html#service-contact">4. Service Contact</a></li>
+<li class="toctree-l3"><a class="reference internal" href="validation-rules.html#k10">5. K10+</a></li>
+<li class="toctree-l3"><a class="reference internal" href="validation-rules.html#k5">6. K5</a></li>
+<li class="toctree-l3"><a class="reference internal" href="validation-rules.html#sdq">7. SDQ</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="validation-rules.html#future-validations">2. Future Validations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="validation-rules.html#id4">1. SDQ</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ataps/ataps-pmhc-mapping.html">ATAPS MDS to PMHC MDS data mapping</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ataps/ataps-pmhc-mapping.html#practitioner">Practitioner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ataps/ataps-pmhc-mapping.html#client">Client</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ataps/ataps-pmhc-mapping.html#episode">Episode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ataps/ataps-pmhc-mapping.html#service-contact">Service Contact</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ataps/ataps-pmhc-mapping.html#outcome-collection-occasion">Outcome Collection Occasion</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ataps/ataps-pmhc-mapping.html#k10">K10+</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ataps/ataps-pmhc-mapping.html#k5">K5</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ataps/ataps-pmhc-mapping.html#sdq">SDQ</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="test-data-sets.html">Test Data Sets</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="test-data-sets.html#slk-test-data-set">SLK Test Data Set</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="test-data-sets.html#slk-generation-test-data">SLK Generation Test Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="test-data-sets.html#slk-validation-test-data">SLK Validation Test Data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="change-log.html">Data Specification Change log</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#id1">30/5/2018</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#id2">13/3/2018</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#version-1-0-12">19/1/2018 - Version 1.0.12</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#id3">29/11/2017</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#id4">28/11/2017</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#id5">25/10/2017</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#id6">16/10/2017</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#id7">11/10/2017</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#id8">03/10/2017</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#version-1-0-11">25/9/2017 - Version 1.0.11</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#id9">29/8/2017</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#id10">25/8/2017</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#id11">23/8/2017</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#id12">28/7/2017</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#id13">24/7/2017</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#version-1-0-10">6/7/2017 - Version 1.0.10</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#version-1-0-9">30/6/2017 - Version 1.0.9</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#version-1-0-8">26/6/2017 - Version 1.0.8</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#version-1-0-7">14/6/2017 - Version 1.0.7</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#version-1-0-6">18/5/2017 - Version 1.0.6</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#version-1-0-5">1/5/2017 - Version 1.0.5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#version-1-0-4">8/2/2017 - Version 1.0.4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#version-1-0-3">21/10/2016 - Version 1.0.3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#version-1-0-2">14/10/2016 - Version 1.0.2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#version-1-0-1">6/10/2016 - Version 1.0.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#updates-between-final-draft-version-and-version-1">18/9/2016 - Updates between final draft version and Version 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#updates-since-last-release">9/8/2016 - Updates since last release</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="reporting-arrangements.html" class="btn btn-neutral float-right" title="Reporting arrangements" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../user-documentation/change-log.html" class="btn btn-neutral" title="User Guide Change log" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Australian Government - Department of Health.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'Version 1.0.12',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+ 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-84023505-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+</body>
+</html>
