@@ -12,13 +12,13 @@ Files will be accepted in the following types:
 
 Comma Separated Values (CSV)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-The CSV files should conform to `RFC 4180 <https://www.ietf.org/rfc/rfc4180.txt>`__.
+The CSV files must conform to `RFC 4180 <https://www.ietf.org/rfc/rfc4180.txt>`__.
 
 In addition, CSV files must be created using UTF-8 character encoding.
 
-CSV files should have the file extension .csv
+CSV files must have the file extension .csv
 
-Multiple CSV files should be uploaded - one CSV file for each format described
+Multiple CSV files must be uploaded - one CSV file for each format described
 :ref:`below <files-to-upload>`.
 
 The CSV files must be compressed into a single file by zipping before upload. The
@@ -27,15 +27,15 @@ extension .zip
 
 Excel (XLSX)
 ^^^^^^^^^^^^
-Excel files should be in XLSX format. The following versions of Excel support t
-his format:
+Excel files must be in XLSX format. The following versions of Excel support this
+format:
 
 - Excel 2007 (v12.0)
 - Excel 2010 (v14.0)
 - Excel 2013 (v15.0)
 - Excel 2016 (v16.0)
 
-One XLSX file should be uploaded containing multiple worksheets - one worksheet
+One XLSX file must be uploaded containing multiple worksheets - one worksheet
 for each format described :ref:`below <files-to-upload>`.
 
 When saving your file, please choose the filetype 'Excel Workbook (.xlsx)'.
@@ -67,28 +67,26 @@ Each of the example files assumes the following organisation structure:
 
 File format
 -----------
-The first row in each file/worksheet should include the following columns:
+The first row in each file/worksheet must include the following columns:
 
 +------------+---------------+
 | Version    | 1.0           |
 +------------+---------------+
 
-The second row should contain the column headings as defined for each file type.
-The third and subsequent rows should contain the data.
+The second row must contain the column headings as defined for each file type.
+The third and subsequent rows must contain the data.
 
 Data elements for each file/worksheet are defined at :ref:`record-formats`.
 
-Each item is a column in the file/worksheet. The 'Field Name' should be used for
+Each item is a column in the file/worksheet. The 'Field Name' must be used for
 the column headings. The columns must be kept in the same order.
 
 All files must be internally consistent. An example of what this means is
-that for every row in the episode file/worksheet, there should be a
+that for every row in the episode file/worksheet, there must be a
 corresponding client in the client file/worksheet.
 
-It also means that for every episode included in an upload file, you should include
+It also means that for every episode included in an upload file, you must include
 ALL service contacts and measures for that episode.
-
-
 
 .. _client-format:
 
@@ -194,7 +192,7 @@ Example practitioner data:
 
 Organisation file format
 ^^^^^^^^^^^^^^^^^^^^^^^^
-This file is for PHN use only. The organisation file/worksheet is optional. Can
+This file is for PHN use only. The organisation file/worksheet is optional. It can
 be included to upload Provider Organisations in bulk or if there is a change in
 Provider Organisation details. There is no harm in including it in every upload.
 
@@ -227,7 +225,7 @@ Deleting records
 * An extra optional "delete" column can be added to each of the supported
   upload files/worksheets.
 
-* This column should be the third column in each file, after the organisation
+* If included, this column must be the third column in each file, after the organisation
   path and the record's entity key.
 
 * To delete a record, include its organisation path and its entity key, leave
