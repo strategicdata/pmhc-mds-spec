@@ -1,3 +1,0 @@
-When the client's responses to Q1-10 are all recorded as 1 'None of the time',
-they are not required to answer questions 11-14. Where this question has not been
-answered a response of '99 - Not stated / Missing' should be selected.
