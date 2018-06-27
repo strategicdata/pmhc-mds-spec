@@ -31,7 +31,11 @@ This will:
 
 ## Publish to https://docs.pmhc-mds.com
 
-TODO - this works somehow?
+Run the following script to publish the locally built content (see above).
+
+```
+./scripts/publish.sh
+```
 
 ## Docker
 
