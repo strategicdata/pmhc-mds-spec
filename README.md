@@ -2,6 +2,12 @@
 
 [![Build Status](https://jenkins.fz.sdlocal.net/buildStatus/icon?job=PMHC Docs)](https://jenkins.fz.sdlocal.net/job/PMHC%20Docs/)
 
+[Build Status](https://jenkins.fz.sdlocal.net/buildStatus/icon?job=PMHC Docs)
+
+[![Build Status](https://jenkins.fz.sdlocal.net/buildStatus/icon?job=PMHC Docs)](https://jenkins.fz.sdlocal.net/job/PMHC%20Docs/)
+
+https://jenkins.fz.sdlocal.net/buildStatus/icon?job=PMHC Docs
+
 # Usage
 
 ## Build the documentation
