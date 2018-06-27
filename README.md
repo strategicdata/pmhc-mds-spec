@@ -29,7 +29,7 @@ This will:
 * tag the git repository with the new specification version. This is used to
   generate the version.txt file in the specification download zip.
 
-## Publish to http://docs.pmhc-mds.com
+## Publish to https://docs.pmhc-mds.com
 
 TODO - this works somehow?
 
