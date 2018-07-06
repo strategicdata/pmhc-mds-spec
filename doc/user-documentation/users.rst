@@ -47,7 +47,7 @@ Each role is granted for a user against an organisation. An organisation can
 either be a Primary Health Network or a provider organisation. If a user is granted
 a role for a Primary Health Network (PHN) they will also have this role for any
 provider organisation's of that PHN. A user can be invited to have a role at more
-than one organisations.
+than one organisations. There is no limit to the number of users per organisation.
 
 What users see once they are logged in will depend upon what roles they have been
 assigned. The table below lists the tabs that will be shown for each role:
@@ -126,11 +126,18 @@ See :ref:`updating-your-details`
 Adding a new user
 ^^^^^^^^^^^^^^^^^
 
-Note: PHNs can devolve user management authority to one or more users in a
+Note: PHNs can devolve 'user management' authority to one or more users in a
 provider organisation so that the provider organisation can manage their own
 logins, or a PHN can choose to keep user management authority at the level of
 the PHN requiring each provider organisation to contact the PHN when they need
 a new user added.
+
+Each individual staff member should be set up with their own unique login access.
+Generic login accounts are not encouraged to be set up and used within the PMHC MDS,
+and usernames/passwords should not be shared with other individuals. This process
+ensures that when a staff member leaves, their access can be easily disabled and
+it doesn't effect other users or the security of the organisations data. A user's
+account, should not be passed from one staff member to the next.
 
 Before inviting a user, it is always best to inform them that they will receive a
 PMHC MDS invitation by email from noreply@strategicdata.com and a verification code via SMS.
