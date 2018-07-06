@@ -136,7 +136,7 @@ Each individual staff member should be set up with their own unique login access
 Generic login accounts are not encouraged to be set up and used within the PMHC MDS,
 and usernames/passwords should not be shared with other individuals. This process
 ensures that when a staff member leaves, their access can be easily disabled and
-it doesn't affect other users or the security of the organisation's data. A users
+it doesn't affect other users or the security of the organisation's data. A user's
 account, should not be passed from one staff member to the next.
 
 Before inviting a user, it is always best to inform them that they will receive a
