@@ -3,6 +3,12 @@
 User Guide Change log
 =====================
 
+23/7/2018
+---------
+
+* Added reports A7-A9 to :ref:`category-a`
+* Added reports B1-B5 to :ref:`category-b`
+
 13/3/2018
 ---------
 
