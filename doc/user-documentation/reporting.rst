@@ -386,8 +386,8 @@ have both Episode Start and Episode End measures.
 
 Key specifications:
 
-* Completed Episodes are defined as those Episodes where Episode Completion
-  Status is not undefined or 0 (Episode Open).
+* Completed Episodes are defined as those Episodes with an Episode End Date
+  less than or equal to the report end date.
 * Only Episodes with one or more Service Contacts in the reporting period are
   included in the analysis (referred to as 'active episodes').
 
@@ -403,8 +403,8 @@ at Episode Start and Episode End.
 
 Key specifications:
 
-* Completed Episodes are defined as those where Episode Completion Status is
-  not undefined or 0 (Episode Open).
+* Completed Episodes are defined as those Episodes with an Episode End Date
+  less than or equal to the report end date.
 * Only Episodes with one or more Service Contacts in the reporting period are
   included in the analysis (referred to as 'active episodes').
 
