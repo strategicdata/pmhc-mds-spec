@@ -101,7 +101,8 @@ across PHN-commissioned services:
   one set of reporting requirements.
 
 - **Episodes commence at the point of first contact.** The episode start date
-  will be derived from the first service contact date.
+  will be derived from the first service contact date. Therefore, if there is
+  no attended service contact the episode is uncommenced.
 
 - **Discharge from care concludes the episode**
 
