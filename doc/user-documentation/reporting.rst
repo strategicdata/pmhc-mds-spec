@@ -180,6 +180,11 @@ report are:
 * Main Language Spoken at Home
 * Proficiency in Spoken English
 
+Note: For a user with the Reporting role at a single Provider Organisation,
+this report is redundant as it would only ever have a single row, which is
+already present in the output of the A3-1 report. Therefore this report is
+not made available to these users.
+
 .. _category-a4:
 
 A4- Data quality report - Missing and invalid episode data
@@ -255,6 +260,11 @@ are:
 * Principal Diagnosis
 * Additional Diagnosis
 
+Note: For a user with the Reporting role at a single Provider Organisation,
+this report is redundant as it would only ever have a single row, which is
+already present in the output of the A4-1 report. Therefore this report is
+not made available to these users.
+
 .. _category-a5:
 
 A5 - Data quality report - Missing and invalid service contact data
@@ -308,6 +318,11 @@ are:
 * Service Contact Participants
 * Service Contact Venue
 
+Note: For a user with the Reporting role at a single Provider Organisation,
+this report is redundant as it would only ever have a single row, which is
+already present in the output of the A5-1 report. Therefore this report is
+not made available to these users.
+
 .. _category-a6:
 
 A6 - Data quality report - Missing and invalid practitioner data
@@ -353,6 +368,11 @@ report are:
 * Practitioner Year of Birth
 * Gender
 * Aboriginal and Torres Strait Islander Status
+
+Note: For a user with the Reporting role at a single Provider Organisation,
+this report is redundant as it would only ever have a single row, which is
+already present in the output of the A6-1 report. Therefore this report is
+not made available to these users.
 
 .. _category-a7:
 
