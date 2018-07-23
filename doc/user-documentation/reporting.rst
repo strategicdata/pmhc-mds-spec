@@ -54,12 +54,12 @@ The reports are grouped into five categories, each designed to serve different
 purposes:
 
 * :ref:`category-a`
-* Category B: Monitoring overall service delivery
+* :ref:`category-b`
 * Category C: Monitoring implementation of stepped care
 * Category D: Key Performance Indicators
 * :ref:`category-e`
 
-**Note:** Category A-D reports are still to be implemented.
+**Note:** Category C-D reports are still to be implemented.
 
 .. _category-a:
 
@@ -82,6 +82,9 @@ Available A category reports are:
 * :ref:`category-a4`
 * :ref:`category-a5`
 * :ref:`category-a6`
+* :ref:`category-a7`
+* :ref:`category-a8`
+* :ref:`category-a9`
 
 **Note:** A subset of these reports is included in :ref:`category-e` without
 any filtering for active clients or episodes to enable organisational data
@@ -373,24 +376,153 @@ not made available to these users.
 
 .. _category-a7:
 
-A7 - Open episodes with no service contact activity for 90- days
+A7 - Open episodes with no service contact activity for 90+ days
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-This report will soon be implemented.
+The A7 report is designed to allow monitoring of adherence to the requirement
+to close episodes where there are no further services scheduled for the client.
+
+Setting of the 90 day threshold does not imply a strict business rule to close
+episodes where no contact has occurred for this period, but rather to identify
+episodes that may warrant review.
+
+Key specifications:
+
+* Open Episodes defined as those without an End Date
 
 .. _category-a8:
 
 A8 - Data quality report - Recording of outcome measures for open episodes
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-This report will soon be implemented.
+The A8 report is designed to show the percentage of open (not yet completed)
+episodes that have an outcome measure recorded at the Episode Start collection
+occasion. Its purpose is to allow monitoring of adherence to the minimum
+requirements for outcome recording - i.e. measures to be recorded at Episode
+Start and Episode End.
+
+Report A9 examines a related aspect - the extent to which Completed Episodes
+have both Episode Start and Episode End measures.
+
+Key specifications:
+
+* Completed Episodes are defined as those Episodes with an Episode End Date
+  less than or equal to the report end date.
+* Only Episodes with one or more Service Contacts in the reporting period are
+  included in the analysis (referred to as 'active episodes').
 
 .. _category-a9:
 
 A9 - Data quality report - Recording of outcome measures for completed episodes
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-This report will soon be implemented.
+The A9 report is designed to show the percentage of completed episodes that have
+outcome measures recorded. Its purpose is to allow monitoring of adherence to
+the minimum requirements for outcome recording - i.e. measures to be recorded
+at Episode Start and Episode End.
+
+Key specifications:
+
+* Completed Episodes are defined as those Episodes with an Episode End Date
+  less than or equal to the report end date.
+* Only Episodes with one or more Service Contacts in the reporting period are
+  included in the analysis (referred to as 'active episodes').
+
+.. _category-b:
+
+Category B: Monitoring overall service delivery
+-----------------------------------------------
+
+These reports are designed to present a range of data in the form of summary
+tables. Their purpose is to allow the user to monitor overall service delivery
+based on counts of clients, episodes, and service contacts, stratified in
+various ways that depend on the data being sourced.
+
+There are five reports in this series, each covering a specific data category
+(Clients, Episode, Service Contacts, Provider Organisations, and Practitioners).
+
+Available B category reports are:
+
+* :ref:`category-b1`
+* :ref:`category-b2`
+* :ref:`category-b3`
+* :ref:`category-b4`
+* :ref:`category-b5`
+
+.. _category-b1:
+
+B1 - Activity report - Client characteristics
++++++++++++++++++++++++++++++++++++++++++++++
+
+The B1 report is designed to allow selection of a Client
+stratification variable of interest, with a menu of options covering all
+core Client data fields.
+
+Key specifications:
+
+* Client to be counted uniquely regardless of number of episodes. To be
+  counted, a client must have had one or more Service Contacts in the
+  reporting period.
+* Counts of Episodes to be based only on 'active' Episodes, defined as those
+  that had one or more Service Contacts recorded in the period.
+
+.. _category-b2:
+
+B2 - Activity report - Episode characteristics
+++++++++++++++++++++++++++++++++++++++++++++++
+
+The B2 report is designed to allow selection of an Episode stratification
+variable of interest, with a menu of options covering all core Episode data
+fields.
+
+Key specifications:
+
+* An Episode is defined as 'active' and in-scope for inclusion in this report
+  if it had one or more Service Contacts recorded in the period. No distinction
+  is made between Open and Completed Episodes.
+
+.. _category-b3:
+
+B3 - Activity report - Service Contact characteristics
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+The B3 report is designed to allow selection of a Service Contact
+stratification variable of interest, with a menu of options covering all
+core Service Contact fields.
+
+Key specifications:
+
+* 'No show' contacts should be excluded from all counts except where that
+  data element is specifically selected by the user.
+
+.. _category-b4:
+
+B4 - Activity report - Provider Organisation characteristics
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+The B4 report is designed to allow selection of a Provider Organisation
+stratification variable of interest, with a menu of options covering all
+core Provider Organisation data fields.
+
+Key specifications:
+
+* A Provider Organisation is defined as 'active' if it has recorded and in-scope
+  for this report if there is one or more Service Contacts recorded for the
+  Provider Organisation in the period.
+
+.. _category-b5:
+
+B5 - Activity report - Practitioner characteristics
++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+The B5 report is designed to allow selection of a Practitioner stratification
+variable of interest, with a menu of options covering all core Practitioner
+data fields.
+
+Key specifications:
+
+* A Practitioner is defined as 'active' and in-scope for this report if they
+  have recorded one or more Service Contacts in the period.
 
 .. _category-e:
 
