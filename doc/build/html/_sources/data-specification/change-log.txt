@@ -3,7 +3,7 @@
 Data Specification Change log
 =============================
 
-25/7/2-18
+25/7/2018
 ---------
 
 * :ref:`dfn-principal_diagnosis` to make plurality of the 7 major categories consistent.
