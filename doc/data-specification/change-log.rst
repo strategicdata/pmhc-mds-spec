@@ -3,13 +3,18 @@
 Data Specification Change log
 =============================
 
+25/7/2-18
+---------
+
+* :ref:`dfn-principal_diagnosis` to make plurality of the 7 major categories consistent.
+
 25/6/2018
 ---------
 
 * :ref:`upload_specification`
 
   * Updated to use 'must' and 'should' as defined in `RFC 2119 <https://www.ietf.org/rfc/rfc2119.txt>`__.
-  
+
 30/5/2018
 ---------
 

@@ -1895,10 +1895,10 @@ The Principal Diagnosis is the diagnosis established after study to be chiefly r
   - 1xx - Anxiety disorders
   - 2xx - Affective (Mood) disorders
   - 3xx - Substance use disorders
-  - 4xx - Psychotic disorder
+  - 4xx - Psychotic disorders
   - 5xx - Disorders with onset usually occurring in childhood and adolescence not listed elsewhere
-  - 6xx - Other mental disorder
-  - 9xx - No formal mental disorder but subsyndromal problem
+  - 6xx - Other mental disorders
+  - 9xx - No formal mental disorder but subsyndromal problems
   
   The Principal Diagnosis should be determined by the treating or supervising
   clinical practitioner who is responsible for providing, or overseeing, services
@@ -1933,7 +1933,7 @@ The Principal Diagnosis is the diagnosis established after study to be chiefly r
   Reference: Diagnostic and Statistical Manual of Mental Disorders, Fourth
   Edition, Text Revision. Copyright 2000 American Psychiatric Association.
   
-  The following responses have been added to allow mapping of ATAPS data to PMHC 
+  The following responses have been added to allow mapping of ATAPS data to PMHC
   format.
   
   - 100: Anxiety disorders (ATAPS)
@@ -1941,12 +1941,12 @@ The Principal Diagnosis is the diagnosis established after study to be chiefly r
   - 300: Substance use disorders (ATAPS)
   - 400: Psychotic disorders (ATAPS)
   
-  *Note: These four codes should only be used for Episodes that are migrated 
-  from ATAPS MDS sources that cannot be described by any other Diagnosis. 
-  It is expected that the majority of Episodes delivered to clients 
+  *Note: These four codes should only be used for Episodes that are migrated
+  from ATAPS MDS sources that cannot be described by any other Diagnosis.
+  It is expected that the majority of Episodes delivered to clients
   from 1st July, 2017 can be assigned to other diagnoses.*
   
-  These responses will only be allowed on episodes where the original 
+  These responses will only be allowed on episodes where the original
   ATAPS referral date was before 1 July 2017
   
   These responses will only be allowed on episodes with the !ATAPS flag.
