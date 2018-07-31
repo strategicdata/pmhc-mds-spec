@@ -11,8 +11,8 @@ rm -rf doc/_static/pmhcmds-spec-meta.zip
 # copy new zip to data-specification folder
 mv pmhcmds-spec-meta.zip doc/_static/
 
-docker pull docker.sdlocal.net/csvw/metadata2rst
-docker run --rm -v `pwd`:/mnt/cwd docker.sdlocal.net/csvw/metadata2rst
+docker run --rm -v `pwd`:/mnt/cwd docker.sdlocal.net/csvw/metadata2rst \
+  --meta=pmhc-metadata.json
 
 pushd .
 

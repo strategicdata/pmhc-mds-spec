@@ -40,8 +40,6 @@ Run the following script to publish the locally built content (see above).
 ## Docker
 
 If you need to build and push a new image containing the tools to convert
-metadata to restructured text run the following script.
+metadata to restructured text see the csvw-metadata2rst repo.
 
-```
-./scripts/docker-build-metadata2rst.sh
-```
+https://gh.sdintra.net/PMHC/csvw-metadata2rst
