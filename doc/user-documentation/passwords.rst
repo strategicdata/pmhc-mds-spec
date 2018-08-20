@@ -22,7 +22,7 @@ Passwords are to be:
 * changed by users no more than once a day
 * not reused from any of the preceding eight changes
 
-Please note: Users will be reminded via an email sent from noreply@strategicdata.com.au
+Please note: Users will be reminded via an email sent from support@strategicdata.com.au
 14 days prior to when their password is due to expire, and on PMHC MDS login 7 days prior
 to the password expiry.
 
