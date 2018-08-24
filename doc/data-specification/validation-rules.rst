@@ -33,7 +33,7 @@ The domain of individual items is defined in :ref:`record-formats`.
 2. Client
 ~~~~~~~~~
 
-  1. :ref:`dfn-date_of_birth` must not be before 1 January 1900
+  1. :ref:`dfn-date_of_birth` must not be before 1 January 1900 and must not be in the future
 
 .. _episode-current-validations:
 
@@ -68,8 +68,8 @@ The domain of individual items is defined in :ref:`record-formats`.
      only be used by selected PHN Lead Sites
   7. The ``!ATAPS`` tag must only be included in the :ref:`dfn-episode_tags` field
      where the :ref:`dfn-referral_date` was before 1 July 2017
-  8. :ref:`dfn-episode_end_date` must not be before 1 January 2016
-  9. :ref:`dfn-referral_date` must not be before 1 January 2014
+  8. :ref:`dfn-episode_end_date` must not be before 1 January 2016 and must not be in the future
+  9. :ref:`dfn-referral_date` must not be before 1 January 2014 and must not be in the future
 
 .. _service-contact-current-validations:
 
@@ -106,7 +106,7 @@ The domain of individual items is defined in :ref:`record-formats`.
       :ref:`dfn-service_contact_participation_indicator` must be '1: Yes'
   11. The ``!ATAPS`` tag must only be included in the :ref:`dfn-service_contact_tags`
       field where the :ref:`dfn-service_contact_date` was before 30 June 2018
-  12. :ref:`dfn-service_contact_date` must not be before 1 January 2014
+  12. :ref:`dfn-service_contact_date` must not be before 1 January 2014 and must not be in the future
 
 .. _k10p-current-validations:
 
@@ -117,7 +117,7 @@ The domain of individual items is defined in :ref:`record-formats`.
   2. :ref:`dfn-measure_date` must not be after :ref:`dfn-episode_end_date`
   3. If both item scores and a total score are specified, the item scores must
      add up to the total score
-  4. :ref:`dfn-measure_date` must not be before 1 January 2016
+  4. :ref:`dfn-measure_date` must not be before 1 January 2016 and must not be in the future
 
 .. _k5-current-validations:
 
@@ -128,7 +128,7 @@ The domain of individual items is defined in :ref:`record-formats`.
   2. :ref:`dfn-measure_date` must not be after :ref:`dfn-episode_end_date`
   3. If both item scores and a total score are specified, the item scores must
      add up to the total score
-  4. :ref:`dfn-measure_date` must not be before 1 January 2016
+  4. :ref:`dfn-measure_date` must not be before 1 January 2016 and must not be in the future
 
 .. _sdq-current-validations:
 
@@ -137,7 +137,7 @@ The domain of individual items is defined in :ref:`record-formats`.
 
   1. :ref:`dfn-measure_date` must not be before :ref:`dfn-referral_date`
   2. :ref:`dfn-measure_date` must not be after :ref:`dfn-episode_end_date`
-  3. :ref:`dfn-measure_date` must not be before 1 January 2016
+  3. :ref:`dfn-measure_date` must not be before 1 January 2016 and must not be in the future
 
 .. _future-validations:
 
@@ -148,6 +148,6 @@ The domain of individual items is defined in :ref:`record-formats`.
 ~~~~~~
 
   1. Use the table at :ref:`sdq-data-elements` to validate the items that
-     are used in each version of the SDQ.
+     are used in each version of the SDQ
   2. If both item scores, subscales and total score are specified, the item
-     scores must agree with the subscales/total score.
+     scores must agree with the subscales/total score
