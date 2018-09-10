@@ -18,6 +18,13 @@ You can access the PMHC MDS using the following browsers:
 How do I get started using the MDS?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Each individual staff member should be set up with their own unique login access.
+Generic login accounts are not encouraged to be set up and used within the PMHC MDS,
+and usernames/passwords should not be shared with other individuals. This process
+ensures that when a staff member leaves, their access can be easily disabled and
+it doesn’t affect other users or the security of the organisation’s data. A user’s
+account, should not be passed from one staff member to the next.
+
 Refer to :ref:`how-do-i-obtain-access-to-the-mds` for information on
 getting an account on the MDS.
 
