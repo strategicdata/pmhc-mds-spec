@@ -3,6 +3,14 @@
 Frequently Asked Questions Change log
 =====================================
 
+10/9/2018
+---------
+
+System - Access FAQs
+~~~~~~~~~~~~~~~~~~~~
+
+* Updated the answer to :ref:`getting-started-faq`
+
 13/3/2018
 ---------
 

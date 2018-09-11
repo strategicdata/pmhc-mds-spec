@@ -3,6 +3,45 @@
 Data Specification Change log
 =============================
 
+10/9/2018
+---------
+
+* :ref:`data-model-and-specifications`
+
+  * :ref:`record-formats`
+
+    * :ref:`outcome-collection-occasion-data-elements`
+
+      * Updated :ref:`dfn-measure_date` to specify that
+        the measure date must not be before :ref:`dfn-referral_date`
+        and must not be after :ref:`dfn-episode_end_date`
+
+24/8/2018
+---------
+
+* :ref:`validation-rules`
+
+  * Updated :ref:`client-current-validations` to specify that the date of
+    birth must not be in the future.
+
+  * Updated :ref:`episode-current-validations` to specify that the episode
+    end date must not be in the future.
+
+  * Updated :ref:`episode-current-validations` to specify that the episode
+    referral date must not be in the future.
+
+  * Updated :ref:`service-contact-current-validations` to specify that the
+    service contact date must not be in the future.
+
+  * Updated :ref:`k10p-current-validations` to specify that the
+    measure date must not be in the future.
+
+  * Updated :ref:`k5-current-validations` to specify that the
+    measure date must not be in the future.
+
+  * Updated :ref:`sdq-current-validations` to specify that the
+    measure date must not be in the future.
+
 25/7/2018
 ---------
 
@@ -71,25 +110,25 @@ Data Specification Change log
 
 * :ref:`validation-rules`
 
-  * Updated :ref:`client-current-validations` to add specify that the date of
+  * Updated :ref:`client-current-validations` to specify that the date of
     birth must not be before 1 January 1900.
 
-  * Updated :ref:`episode-current-validations` to add specify that the episode
+  * Updated :ref:`episode-current-validations` to specify that the episode
     end date must not be before 1 January 2016.
 
-  * Updated :ref:`episode-current-validations` to add specify that the episode
+  * Updated :ref:`episode-current-validations` to specify that the episode
     referral date must not be before 1 January 2014.
 
-  * Updated :ref:`service-contact-current-validations` to add specify that the
+  * Updated :ref:`service-contact-current-validations` to specify that the
     service contact date must not be before 1 January 2014.
 
-  * Updated :ref:`k10p-current-validations` to add specify that the
+  * Updated :ref:`k10p-current-validations` to specify that the
     measure date must not be before 1 January 2016.
 
-  * Updated :ref:`k5-current-validations` to add specify that the
+  * Updated :ref:`k5-current-validations` to specify that the
     measure date must not be before 1 January 2016.
 
-  * Updated :ref:`sdq-current-validations` to add specify that the
+  * Updated :ref:`sdq-current-validations` to specify that the
     measure date must not be before 1 January 2016.
 
 29/11/2017
