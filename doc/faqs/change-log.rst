@@ -3,6 +3,27 @@
 Frequently Asked Questions Change log
 =====================================
 
+11/9/2018
+---------
+
+System - Access FAQs
+~~~~~~~~~~~~~~~~~~~~
+
+* Updated the answer to :ref:`getting-started-faq`
+
+System - Development FAQs
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Updated the question to :ref:`dev-reports-faq`
+
+23/7/2018
+---------
+
+System - Development FAQs
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Updated the question to :ref:`dev-reports-faq`
+
 13/3/2018
 ---------
 
@@ -11,6 +32,10 @@ Concepts Processes - Specific Data Items and Definitions
 
 * Added the question :ref:`episode-one-at-a-time`
 
+System - Development FAQs
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Updated the question to :ref:`dev-reports-faq`
 
 19/1/2018
 ---------
