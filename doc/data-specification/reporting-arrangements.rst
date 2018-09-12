@@ -29,7 +29,7 @@ Reporting timeliness
 --------------------
 
 Records must be reported to the MDS within 31 days of the activity which
-generated them. For example if a user was added to the system on the 12th of
+generated them. For example if a client was added to the system on the 12th of
 November 2016 their client record must be added to the MDS on or before the
 13th of December 2016. Similarly, if a service contact occurred on that date,
 the data associated with that contact must be submitted to the MDS by 13th of

@@ -101,8 +101,17 @@ across PHN-commissioned services:
   one set of reporting requirements.
 
 - **Episodes commence at the point of first contact.** The episode start date
-  will be derived from the first service contact date. Therefore, if there is
-  no attended service contact the episode is uncommenced.
+  will be derived from the first service contact irregardless of no show state
+  as long as there is a service contact that isn't a no show. Therefore, if 
+  there is no attended service contact the episode is uncommenced.
+
+  Some examples:
+
+  * If a service contact occurs on the 1/1/2018 that is recorded as a no show
+    then the episode is uncommenced.
+  * If a service contact occurs on the 1/1/2018 that is recorded as a no show
+    and another service contact occurs on the 2/1/2018 that is attended then
+    the episode start date is derived as 1/1/2018.
 
 - **Discharge from care concludes the episode**
 
