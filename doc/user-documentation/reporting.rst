@@ -571,7 +571,7 @@ Client data elements that can be selected for the C1 report are:
   * Each client assigned to only age group based on age at a fixed date (e.g., beginning of year)
 
 * Indigenous status
-* Rurality
+* Area of Usual Residence
 
   * Grouped by Remoteness Classification (Major Cities, Outer Regional,
     Inner Regional, Remote, Very Remote)
@@ -605,7 +605,7 @@ Key specifications:
   recorded in the period. No distinction is made between Open and Completed
   Episodes.
 * Counts shown in the report refer to Episodes, and are displayed as numbers
-  or percent column based on user selection.
+  or percent rows based on user selection.
 
 .. _category-e:
 
