@@ -55,11 +55,11 @@ purposes:
 
 * :ref:`category-a`
 * :ref:`category-b`
-* Category C: Monitoring implementation of stepped care
+* :ref:`category-c`
 * Category D: Key Performance Indicators
 * :ref:`category-e`
 
-**Note:** Category C-D reports are still to be implemented.
+**Note:** Category D reports are still to be implemented.
 
 .. _category-a:
 
@@ -523,6 +523,89 @@ Key specifications:
 
 * A Practitioner is defined as 'active' and in-scope for this report if they
   have recorded one or more Service Contacts in the period.
+
+.. _category-c:
+
+Category C: Monitoring implementation of stepped care
+-----------------------------------------------------
+
+This group of reports is based on composite data, built from cross-tabulation of
+data drawn from multiple levels of the PMHC data model – Clients, Episodes, Service
+Contacts, Practitioners.
+
+Their purpose is to allow the user to monitor selected aspects of the implementation
+of the stepped care model.
+
+The stepped care reports represent work in progress and will be subject to ongoing
+improvement with PHN feedback on their utility.
+
+Available C category reports are:
+
+* :ref:`category-c1`
+* :ref:`category-c2`
+
+.. _category-c1:
+
+C1 - Stepped care report - Episode type by Client characteristics
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Purpose: To provide summary information on the characteristics of clients who
+receive different types of services, grouped by ‘episode type’.
+
+Client data fields to be selected by user from a list of options.
+
+Key specifications:
+
+* Only ‘active episodes’ are reported. An Episode is defined as ‘active’ and
+  in scope for inclusion in this report if it had one or more Service Contacts
+  recorded in the period. No distinction is made between Open and Completed
+  Episodes.
+* Counts shown in the report refer to Episodes, and are displayed as numbers
+  or percent column based on user selection.
+
+Client data elements that can be selected for the C1 report are:
+
+* Client age group based on Date of Birth, grouped to the following categories:
+
+  * 0-11, 12-17, 18-24, 25-64, 65+
+  * Each client assigned to only age group based on age at a fixed date (e.g., beginning of year)
+
+* Indigenous status
+* Rurality
+
+  * Grouped by Remoteness Classification (Major Cities, Outer Regional,
+    Inner Regional, Remote, Very Remote)
+
+* Principal diagnosis - High level grouping
+
+  * Anxiety disorders
+  * Affective (Mood) disorders
+  * Substance use disorders
+  * Psychotic disorder
+  * Disorders with onset usually occurring in childhood and adolescence
+    not listed elsewhere
+  * Other mental disorder
+  * No formal mental disorder but subsyndromal problem
+
+* Gender
+* Country of Birth – grouped to high level categories
+
+.. _category-c2:
+
+C2 - Stepped care report – Episode Type by Service Contacts Type
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Purpose: To provide summary information on the types of service contacts delivered
+within each of the episode types.
+
+Key specifications:
+
+* Only ‘active episodes’ are reported. An Episode is defined as ‘active’ and
+  in scope for inclusion in this report if it had one or more Service Contacts
+  recorded in the period. No distinction is made between Open and Completed
+  Episodes.
+* Counts shown in the report refer to Episodes, and are displayed as numbers
+  or percent column based on user selection.
 
 .. _category-e:
 

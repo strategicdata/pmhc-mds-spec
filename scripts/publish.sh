@@ -6,7 +6,7 @@ git checkout master
 git checkout -q $(git rev-parse HEAD)
 
 # Edit .gitignore to publish
-perl -n -i -e "print unless /^doc\/build\/$/" ./gitignore
+perl -n -i -e "print unless /^doc\/build\/$/" ./.gitignore
 
 git add .
 git commit -m "Commit build artefacts for publishing"
