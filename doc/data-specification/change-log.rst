@@ -3,6 +3,11 @@
 Data Specification Change log
 =============================
 
+24/9/2018
+---------
+
+* :ref:`dfn-principal_diagnosis` to update the major diagnosis groupings.
+
 10/9/2018
 ---------
 

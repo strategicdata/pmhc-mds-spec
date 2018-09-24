@@ -1,12 +1,14 @@
-Diagnoses are grouped into 7 major categories:
+Diagnoses are grouped into 8 major categories (9 for Additional Diagnosis):
 
+- 000 - No additional diagnosis (Additional Diagnosis only)
 - 1xx - Anxiety disorders
 - 2xx - Affective (Mood) disorders
 - 3xx - Substance use disorders
 - 4xx - Psychotic disorders
 - 5xx - Disorders with onset usually occurring in childhood and adolescence not listed elsewhere
-- 6xx - Other mental disorders
-- 9xx - No formal mental disorder but subsyndromal problems
+- 6xx and 905 - Other mental disorders
+- 9xx except (905, 999) - No formal mental disorder but subsyndromal problems
+- 999 - Missing or unknown
 
 The Principal Diagnosis should be determined by the treating or supervising
 clinical practitioner who is responsible for providing, or overseeing, services
