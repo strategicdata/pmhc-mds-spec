@@ -6,9 +6,9 @@ Diagnoses are grouped into 8 major categories (9 for Additional Diagnosis):
 - 3xx - Substance use disorders
 - 4xx - Psychotic disorders
 - 5xx - Disorders with onset usually occurring in childhood and adolescence not listed elsewhere
-- 6xx and 905 - Other mental disorders
-- 9xx except (905, 999) - No formal mental disorder but subsyndromal problems
-- 999 - Missing or unknown
+- 6xx - Other mental disorders
+- 9xx except 999 - No formal mental disorder but subsyndromal problems
+- 999 - Missing or Unknown
 
 The Principal Diagnosis should be determined by the treating or supervising
 clinical practitioner who is responsible for providing, or overseeing, services
@@ -34,11 +34,20 @@ have been assigned specifically for the PMHC MDS to create a logical ordering
 but are capable of being mapped to both DSM-IV and ICD-10 codes.
 
 Options for recording Principal Diagnosis include the broad category ‘No formal
-mental disorder but subsyndromal problem’ (codes commencing with 9). These
+mental disorder but subsyndromal problems’ (codes commencing with 9). These
 codes should be used for clients who present with problems that do not meet
 threshold criteria for a formal diagnosis - for example, people experiencing
 subsyndromal symptoms who may be at risk of progressing to a more severe
 symptom level.
+
+Each category has a final entry for capturing other conditions that don’t meet
+the more specific entries in the category. This includes the ‘No formal mental
+disorder but subsyndromal problems’ category. Code 905 (‘Other symptoms’)
+can be used to capture situations where a formal mental disorder has not be
+diagnosed, but the symptoms do not fall under the more specific 9XX series
+entries. The 905 code should not be used where there is a formal but unlisted
+mental disorder. In such a situation code 605 (‘Other mental disorder’)
+should be used.
 
 Reference: Diagnostic and Statistical Manual of Mental Disorders, Fourth
 Edition, Text Revision. Copyright 2000 American Psychiatric Association.
