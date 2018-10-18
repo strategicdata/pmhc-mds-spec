@@ -429,6 +429,7 @@ Key specifications:
   the report start date.
 * Only Episodes with one or more Service Contacts in the reporting period are
   included in the analysis (referred to as 'active episodes').
+* Measures that have a total score of ‘99’ are invalid and counted as 'no measure'.
 
 .. _category-b:
 
