@@ -37,6 +37,8 @@ will need to accept this invitation within 7 days, by following these steps:
 3. Click 'Submit'.
 4. You will be shown a page where you need to choose a password.
 
+*Please note: This is a single use token - please don't navigate away from this page until you have successfully set your password.*
+
    .. figure:: screen-shots/account-activate-password.png
       :alt: PMHC MDS Activate Account
 
@@ -108,58 +110,7 @@ event that you no longer have access to your primary email address.
 10. What you see once you login will depend upon what :ref:`roles` you have been
     assigned.
 
-.. _forgotten-password:
-
-Forgotten or Expired Password
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-As required by the Australian Government's Protective Security Policy Framework
-passwords have to be changed every 3 months. If you do not change your
-password it will expire and you will not be able to login to the system
-without resetting your password.
-
-If you have forgotten your password or it has expired:
-
-1. Navigate to https://pmhc-mds.net/ and click the 'Sign in' button.
-2. Click 'Forgot Password'.
-
-   .. figure:: screen-shots/password-resetting.png
-      :alt: PMHC MDS Resetting Password
-
-3. You will be prompted to enter your email address or user name recorded
-   for the PMHC MDS.
-4. Click the 'I'm not a robot' checkbox.
-5. Click 'Submit'.
-6. An email with further instructions will be sent sent from
-   noreply@strategicdata.com.au to the email address the PMHC MDS has on file
-   for the user. Additionally, if you have set a backup email, then
-   an email will also have been sent there. An SMS with a verification code
-   will have been sent to the mobile phone number we have on record.
-
-   .. figure:: screen-shots/password-reset-request.png
-      :alt: PMHC MDS Resetting Password
-
-7. Open the email sent from noreply@strategicdata.com.au and open the link in the email.
-
-   .. figure:: screen-shots/account-verify-user.png
-      :alt: PMHC MDS User Verification
-
-8. Enter the verification code you were sent via SMS.
-9. Click 'Submit'.
-10. You will be shown a 'Password reset' page.
-
-   .. figure:: screen-shots/password-reset.png
-      :alt: PMHC MDS Password Reset
-
-11. Enter your new password.
-12. Confirm you new password.
-13. Click 'Submit'.
-14. Your password will be reset.
-
-   .. figure:: screen-shots/password-reset-success.png
-      :alt: PMHC MDS Password Reset Success
-
-15. Navigate back to https://pmhc-mds.com/ and sign in.
+.. _logging-out:
 
 Logging Out
 ^^^^^^^^^^^
@@ -191,6 +142,10 @@ Once signed in, to edit your details:
 3. Click 'Profile'.
 4. You will be taken to the Profile Management system.
 5. Login using your PMHC MDS email/username and password.
+
+.. figure:: screen-shots/account-manage-profile-login.png
+   :alt: PMHC MDS Manage Details
+
 6. You will see the 'Manage Details' page.
 
    .. figure:: screen-shots/account-manage-details.png

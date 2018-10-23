@@ -3,6 +3,23 @@
 User Guide Change log
 =====================
 
+* Added :ref:`soon-to-expire-password`
+
+* Moved :ref:`forgotten-password` from under :ref:`home` to under :ref:`passwords`
+
+* Edited :ref:`inactivate-provider-organisation`
+
+* Added :ref:`deleting-a-user-invition`
+
+* Updated screenshots for :ref:`upload`
+
+* Edited :ref:`category-a9`
+
+11/9/2018
+---------
+
+* Added reports C1-C2 to :ref:`category-c`
+
 23/7/2018
 ---------
 

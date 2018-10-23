@@ -9,12 +9,12 @@ Frequently Asked Questions Change log
 System - Access FAQs
 ~~~~~~~~~~~~~~~~~~~~
 
-* Updated the answer to :ref:`getting-started-faq`
+* Updated the question to :ref:`getting-started-faq`
 
 System - Development FAQs
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* Updated the question to :ref:`dev-reports-faq`
+* Updated the section :ref:`pmhc-mds-development`
 
 23/7/2018
 ---------
@@ -22,7 +22,7 @@ System - Development FAQs
 System - Development FAQs
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* Updated the question to :ref:`dev-reports-faq`
+* Updated the question to :ref:`dev-reports-faq` - :ref:`pmhc-mds-development`
 
 13/3/2018
 ---------
