@@ -173,6 +173,14 @@ by following these steps:
 Please note: An invitation for a new user is valid for 7 days. You can not re-invite
 this user within this time, unless the verification code has expired, or they have :ref:` accepted the invitation <accepting-invitation>`.
 
+.. _deleting-a-user-invition:
+
+Deleting a user invitation
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You cannot delete a new users invitation after it is sent. If you believe an
+invitation should be deleted please email support@pmhc-mds.com.
+
 .. _adding-an-exsisting-user:
 
 Adding an existing user

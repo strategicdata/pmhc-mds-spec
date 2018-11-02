@@ -30,9 +30,9 @@ data files to organisations for which you have the 'Upload' role.
 You can upload data files through the upload tab, by following these steps:
 
 1. Navigate to the 'Upload' tab.
-2. If you are allowed to upload to more than one organisation you will be
-   asked to select an organisation name.
-3. Select the name of the PHN whose data you are uploading from the drop down list.
+2. The Primary Health Network (PHN) will be pre-filled in the 'Organisation' field,
+   unless you are allowed to upload to more than one PHN which will allow you to
+   select the PHN whose data you are uploading.
 
    .. figure:: screen-shots/upload-org-selected.png
       :alt: PMHC MDS Organisation Selected
@@ -50,11 +50,14 @@ You can upload data files through the upload tab, by following these steps:
 7. Click the green 'Upload' button.
 
 You will receive confirmation that your file has been accepted. The file will
-now be validated and you will shortly receive an email informing you if
-your file was successfully uploaded to the PMHC MDS, or informing you of
-any errors that occurred. Further discussion about the error messages can be
-found at :ref:`upload-error-messages`. Please email support@pmhc-mds.com if you don't
-receive an email within one hour.
+now be validated and you will shortly receive a confirmation notification and an
+email. You you can click on the link confirmation notification or open the email
+to view the upload status informing you if your file was successfully uploaded to
+the PMHC MDS, or informing you of any errors that occurred. See :ref:`viewing-previous-uploads`
+
+Please email support@pmhc-mds.com if you don't receive an email within one hour.
+
+Further discussion about the error messages can be found at :ref:`upload-error-messages`.
 
 .. _uploading-a-file-in-test-mode:
 
@@ -110,14 +113,13 @@ If you need to see a test upload please check the 'Show test uploads' checkbox.
 When an upload has been completed, irregardless of whether it validated successfully
 or not, the upload will be added to the table.
 
-The 'Status of Previous Uploads' table refreshes every 60 seconds. Types of status results are:
+The 'Status of Previous Uploads' table refreshes once files finish the validation process. Types of status results are:
 
   * **accept** - the file is currently going through the validation process
   * **complete** - the file has successfully passed the validation process
   * **error** - the file has returned errors through the validation process. Please review the error messages and correct the data to upload again
 
-Further discussion about the error messages can be found at :ref:`upload-error-messages`. Please email support@pmhc-mds.com if you don't
-receive an email within one hour.
+Further discussion about the error messages can be found at :ref:`upload-error-messages`.
 
 .. _viewing-uploads-details:
 

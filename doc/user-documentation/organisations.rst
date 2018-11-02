@@ -144,10 +144,13 @@ details through the organisation tab, by following these steps:
 Inactivate a Provider Organisation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You can make a provider organisation inactive by editing the 'Status' of the
-provider organisation from active to inactive. See :ref:`edit-provider-organisation`
+You cannot make a provider organisation inactive by editing the 'Status'
+of the provider organisation from active to inactive.
 
-*Please note: Inactive organisations will still be displayed in your organisations list.*
+If you require the status of an organisation to be inactive please email support@pmhc-mds.com.
+
+*Please note: Inactive organisations will not be displayed in your organisations list.*
+*Please note: Inactive organisation data will not be displayed in your reports.*
 
 .. _delete-provider-organisation:
 
