@@ -48,3 +48,6 @@ Actively looked for work includes:
   reference week. They include people who undertook unpaid household duties
   or other voluntary work only, were retired, voluntarily inactive and those
   permanently unable to work.
+
+9 - Not stated/inadequately described
+  Includes children under 15 (0-14 years)
