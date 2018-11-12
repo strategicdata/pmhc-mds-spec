@@ -4,5 +4,7 @@ this way allows clients to be merged (where duplicate Client Keys have been
 identified) without having to re-allocate episode identifiers since they can
 never clash.
 
+Episode Keys are case sensitive and must be a valid unicode character.
+
 A recommended approach for the creation of Episode Keys is to compute `random
 UUIDs <https://en.wikipedia.org/wiki/Universally_unique_identifier>`_.

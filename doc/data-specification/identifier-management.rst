@@ -3,6 +3,10 @@
 Identifier management
 =====================
 
+PMHC MDS keys are case sensitive and must have between 2- 50 valid unicode characters.
+Where data is being exported from client systems, these keys can be auto generated,
+providing that a key does not change once it is assigned.
+
 .. _PO_key:
 
 Managing Provider Organisation Keys
@@ -48,8 +52,5 @@ The PMHC MDS specification requires each of these keys to be unique and stable a
 Each record needs to be assigned a unique key in order to facilitate
 adding/updating/deleting each item when uploading/entering data. These keys will
 be created and managed by the Provider Organisation.
-
-Where data is being exported from client systems, these keys can be auto generated,
-providing that a key does not change once it is assigned.
 
 *If you still have questions after reading this information, please visit the Department's responses to* :ref:`identifier-and-key-FAQs`
