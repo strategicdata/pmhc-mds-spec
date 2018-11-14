@@ -19,6 +19,7 @@
     "titles": [ "organisation_key", "Organisation Key" ],
     "dc:title": "Organisation Key",
     "schema:description": "A sequence of characters which uniquely identifies the provider organisation to the Primary Health Network. Assigned by the Primary Health Network.",
+    "schema:disambiguatingDescription": "table/organisation/key.rst",
     "schema:dateCreated": "2016-06-22",
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",

@@ -19,6 +19,7 @@
     "titles": [ "collection_occasion_key", "Collection Occasion Key" ],
     "dc:title": "Collection Occasion Key",
     "schema:description": "This is a number or code assigned to each collection occasion of outcome measures. The Collection Occasion Key is unique and stable for each collection occasion at the level of the organisation.",
+    "schema:disambiguatingDescription": "table/collection-occasion/key.rst",
     "schema:dateCreated": "2016-06-22",
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",

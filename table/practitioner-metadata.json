@@ -20,6 +20,7 @@
     "titles": [ "practitioner_key", "Practitioner Key" ],
     "dc:title": "Practitioner Key",
     "schema:description": "A unique identifier for a practitioner within the responsible provider organisation. Assigned by either the PHN or provider organisation depending on local procedures.",
+    "schema:disambiguatingDescription": "table/practitioner/key.rst",
     "schema:dateCreated": "2016-06-22",
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
