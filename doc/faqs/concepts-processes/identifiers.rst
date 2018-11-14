@@ -11,7 +11,7 @@ managed by provider organisations and will be unique at the level of the provide
 organisation.
 
 An important requirement to note is that Keys (or identifiers) are strings that can have a
-minimum length of 1 characters and a maximum length of 50 characters. Once assigned
+minimum length of 2 characters and a maximum length of 50 characters. Once assigned
 keys cannot be changed.
 The purpose of keys on each of the records is to provide a unique and persistent identifier in
 order to allow addition, update and deletion of each individual record.
