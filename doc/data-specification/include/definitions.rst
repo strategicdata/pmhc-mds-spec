@@ -435,6 +435,8 @@ This is a number or code assigned to each individual referred to the commissione
   co-ordinate to maintain this identifier. Clients should not be assigned
   multiple keys within the same PHN.
   
+  Client keys are case sensitive and must be valid unicode characters.
+  
 
 ----------
 
@@ -1083,6 +1085,9 @@ This is a number or code assigned to each collection occasion of outcome measure
 :Data type: string (2,50)
 
 :Required: yes
+:Notes:
+  Collection occasion keys are case sensitive and must be valid unicode characters.
+  
 
 ----------
 
@@ -1538,6 +1543,8 @@ This is a number or code assigned to each episode. The Episode Key is unique and
   identified) without having to re-allocate episode identifiers since they can
   never clash.
   
+  Episode Keys are case sensitive and must be valid unicode characters.
+  
   A recommended approach for the creation of Episode Keys is to compute `random
   UUIDs <https://en.wikipedia.org/wiki/Universally_unique_identifier>`_.
   
@@ -1613,6 +1620,9 @@ The self-reported status the person currently has in being either in the labour 
     reference week. They include people who undertook unpaid household duties
     or other voluntary work only, were retired, voluntarily inactive and those
     permanently unable to work.
+  
+  9 - Not stated/inadequately described
+    Includes children under 15 (0-14 years)
   
 
 :METeOR: `621450 <http://meteor.aihw.gov.au/content/index.phtml/itemId/621450>`__
@@ -2929,6 +2939,9 @@ A sequence of characters which uniquely identifies the provider organisation to 
 :Data type: string (2,50)
 
 :Required: yes
+:Notes:
+  Organisation keys are case sensitive and must be valid unicode characters.
+  
 
 ----------
 
@@ -3130,6 +3143,9 @@ A unique identifier for a practitioner within the responsible provider organisat
 :Data type: string (2,50)
 
 :Required: yes
+:Notes:
+  Practitioner keys are case sensitive and must be valid unicode characters.
+  
 
 ----------
 
@@ -5468,6 +5484,9 @@ This is a number or code assigned to each service contact. The Service Contact K
 :Data type: string (2,50)
 
 :Required: yes
+:Notes:
+  Service contact keys are case sensitive and must be valid unicode characters.
+  
 
 ----------
 
