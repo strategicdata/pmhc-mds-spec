@@ -388,7 +388,12 @@ episodes that may warrant review.
 
 Key specifications:
 
-* Open Episodes defined as those without an End Date
+* Open Episodes defined as those without an End Date or an End Date after the
+  end date of the report.
+
+Note that if the period between start and end date specified in this report is
+less than 90 days the number of episodes with no service contact activity for
+90+ days will always be zero.
 
 .. _category-a8:
 
@@ -406,9 +411,10 @@ have both Episode Start and Episode End measures.
 
 Key specifications:
 
-* Completed Episodes are defined as those Episodes with an Episode End Date
+* Open Episodes are defined as those without an End Date or an End Date after the
+  end date of the report.
   less than or equal to the report end date.
-* Completed Episodes must also have an Episode Start Date equal to or greater than
+* For this report, Episodes must also have an Episode Start Date equal to or greater than
   the report start date.
 * Only Episodes with one or more Service Contacts in the reporting period are
   included in the analysis (referred to as 'active episodes').
@@ -428,7 +434,7 @@ Key specifications:
 
 * Completed Episodes are defined as those Episodes with an Episode End Date
   less than or equal to the report end date.
-* Completed Episodes must also have an Episode Start Date equal to or greater than
+* For this report, Episodes must also have an Episode Start Date equal to or greater than
   the report start date.
 * Only Episodes with one or more Service Contacts in the reporting period are
   included in the analysis (referred to as 'active episodes').
