@@ -3,6 +3,9 @@
 User Guide Change log
 =====================
 
+19/11/2018
+----------
+
 * Added :ref:`soon-to-expire-password`
 
 * Moved :ref:`forgotten-password` from under :ref:`home` to under :ref:`passwords`
@@ -11,9 +14,13 @@ User Guide Change log
 
 * Added :ref:`deleting-a-user-invition`
 
+* Edited :ref:`edit-role`
+
 * Updated screenshots for :ref:`upload`
 
 * Edited :ref:`category-a9`
+
+* Edited :ref:`category-a8`
 
 11/9/2018
 ---------
