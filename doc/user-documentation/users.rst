@@ -175,8 +175,8 @@ this user within this time, unless the verification code has expired, or they ha
 
 .. _deleting-a-user-invition:
 
-Deleting a user invitation
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+Deleting an invitation
+^^^^^^^^^^^^^^^^^^^^^^
 
 You cannot delete a new users invitation after it is sent. If you believe an
 invitation should be deleted please email support@pmhc-mds.com.
@@ -254,6 +254,8 @@ You can edit and assign extra roles to an existing user by following these steps
 
 7. All changes are automatically saved.
 8. You will need to notify the user of these role changes. The system will not automatically do this.
+
+Please note: you will still see users in your list that have had all their roles removed.
 
 .. _delete_user:
 
