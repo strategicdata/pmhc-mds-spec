@@ -147,6 +147,7 @@ Key specifications:
 * Clients to be counted uniquely regardless of number of episodes. To be
   counted, a client must have had one or more Service Contacts in the
   reporting period i.e. ‘Active Clients’.
+* Service Contacts flagged as ‘No Show’ are not included for this purpose.
 * Missing/invalid data defined as: Data elements with null or invalid values, or
   where ‘system generated’ codes have been reported to denote ‘not stated’,
   ‘inadequately defined’ or ‘missing’.
@@ -218,6 +219,7 @@ Key specifications:
 
 * Report counts only ‘active episodes’. An Episode is defined as ‘active’ if it
   has one or more Service Contacts recorded in the period.
+* Service Contacts flagged as ‘No Show’ are not included for this purpose.
 * Missing/invalid data defined as: Episode data elements with null or invalid
   values, or where ‘system generated’ codes have been reported to denote
   ‘not stated’, ‘inadequately defined’ or ‘missing’.
@@ -277,6 +279,8 @@ Two formats of this report are offered to users:
 
 * :ref:`category-a5-1`
 * :ref:`category-a5-2`
+
+Service Contacts flagged as ‘No Show’ are not included in this report.
 
 Some service contact data elements are not included in the options list as there
 is no missing value provided in the specification and the system doesn't allow
@@ -340,6 +344,7 @@ Key specifications:
 
 * Report is confined only to ‘active practitioners’. A Practitioner is defined as
   ‘active’ if it they have recorded one or more Service Contacts in the period.
+* Service Contacts flagged as ‘No Show’ are not included for this purpose.
 
 .. _category-a6-1:
 
@@ -390,6 +395,7 @@ Key specifications:
 
 * Open Episodes defined as those without an End Date or an End Date after the
   end date of the report.
+* Service Contacts flagged as ‘No Show’ are not included for this purpose.
 
 Note that if the period between start and end date specified in this report is
 less than 90 days the number of episodes with no service contact activity for
@@ -418,6 +424,7 @@ Key specifications:
   the report start date.
 * Only Episodes with one or more Service Contacts in the reporting period are
   included in the analysis (referred to as 'active episodes').
+* Service Contacts flagged as ‘No Show’ are not included for this purpose.
 * Measures that have a total score of ‘99’ are invalid and counted as 'no measure'.
 
 .. _category-a9:
@@ -438,6 +445,7 @@ Key specifications:
   the report start date.
 * Only Episodes with one or more Service Contacts in the reporting period are
   included in the analysis (referred to as 'active episodes').
+* Service Contacts flagged as ‘No Show’ are not included for this purpose.
 * Measures that have a total score of ‘99’ are invalid and counted as 'no measure'.
 
 .. _category-b:
@@ -477,6 +485,7 @@ Key specifications:
   reporting period.
 * Counts of Episodes to be based only on 'active' Episodes, defined as those
   that had one or more Service Contacts recorded in the period.
+* Service Contacts flagged as ‘No Show’ are not included for this purpose.
 
 .. _category-b2:
 
@@ -492,6 +501,7 @@ Key specifications:
 * An Episode is defined as 'active' and in-scope for inclusion in this report
   if it had one or more Service Contacts recorded in the period. No distinction
   is made between Open and Completed Episodes.
+* Service Contacts flagged as ‘No Show’ are not included for this purpose.
 
 .. _category-b3:
 
@@ -504,8 +514,9 @@ core Service Contact fields.
 
 Key specifications:
 
-* 'No show' contacts should be excluded from all counts except where that
-  data element is specifically selected by the user.
+* Reporting by ‘Service Contact No Show’ element counts all service contacts
+  by whether they are flagged as ‘No Show’.
+* Otherwise, Service Contacts flagged as ‘No Show’ are not included in this report.
 
 .. _category-b4:
 
@@ -521,6 +532,7 @@ Key specifications:
 * A Provider Organisation is defined as 'active' if it has recorded and in-scope
   for this report if there is one or more Service Contacts recorded for the
   Provider Organisation in the period.
+* Service Contacts flagged as ‘No Show’ are not included for this purpose.
 
 .. _category-b5:
 
@@ -535,6 +547,7 @@ Key specifications:
 
 * A Practitioner is defined as 'active' and in-scope for this report if they
   have recorded one or more Service Contacts in the period.
+* Service Contacts flagged as ‘No Show’ are not included for this purpose.
 
 .. _category-c:
 
@@ -572,6 +585,7 @@ Key specifications:
   in scope for inclusion in this report if it had one or more Service Contacts
   recorded in the period. No distinction is made between Open and Completed
   Episodes.
+* Service Contacts flagged as ‘No Show’ are not included for this purpose.
 * Counts shown in the report refer to Episodes, and are displayed as numbers
   or percent column based on user selection.
 
@@ -616,6 +630,7 @@ Key specifications:
   in scope for inclusion in this report if it had one or more Service Contacts
   recorded in the period. No distinction is made between Open and Completed
   Episodes.
+* Service Contacts flagged as ‘No Show’ are not included for this purpose.
 * Counts shown in the report refer to Episodes, and are displayed as numbers
   or percent rows based on user selection.
 
