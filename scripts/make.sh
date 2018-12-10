@@ -2,14 +2,6 @@
 
 # Exit if anything errors
 set -e
-# make zip file
-scripts/metadata2zip.sh
-
-# remove old zip file
-#rm -rf doc/_static/pmhcmds-spec-meta.zip
-
-# copy new zip to data-specification folder
-mv pmhcmds-spec-meta.zip doc/build/html/_static/
 
 docker pull docker.sdlocal.net/csvw/metadata2rst
 docker run --rm -v `pwd`:/mnt/cwd docker.sdlocal.net/csvw/metadata2rst \
@@ -50,3 +42,8 @@ docker run --rm -e GIT_VERSION -v `pwd`:/mnt/workdir \
   /mnt/workdir/scripts/make-pdf.pl \
   --spec-name "PMHC" \
   --doc-dir   "/mnt/workdir/doc"
+
+# make zip file
+scripts/metadata2zip.sh
+# mv new zip to data-specification folder
+mv pmhcmds-spec-meta.zip doc/build/html/_static/
