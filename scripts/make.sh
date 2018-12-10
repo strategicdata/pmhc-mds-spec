@@ -31,12 +31,14 @@ echo "PWD=$current_dir"
 pwd
 
 docker pull stratdat/sphinx:production
-docker run --rm -e GIT_VERSION -v `pwd`:/mnt/workdir stratdat/sphinx:production make html singlehtml
+docker run --rm -e GIT_VERSION -v `pwd`:/mnt/workdir \
+  stratdat/sphinx:production make html singlehtml
 
 popd
 
 docker pull stratdat/sphinx-html2pdf:production
-docker run -e GIT_VERSION -v `pwd`:/mnt/workdir stratdat/sphinx-html2pdf:production \
+docker run --rm -e GIT_VERSION -v `pwd`:/mnt/workdir \
+  stratdat/sphinx-html2pdf:production \
   /mnt/workdir/scripts/make-pdf.pl \
   --spec-name "PMHC" \
   --doc-dir   "/mnt/workdir/doc"
