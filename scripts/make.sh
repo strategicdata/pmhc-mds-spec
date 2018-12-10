@@ -6,10 +6,10 @@ set -e
 scripts/metadata2zip.sh
 
 # remove old zip file
-rm -rf doc/_static/pmhcmds-spec-meta.zip
+#rm -rf doc/_static/pmhcmds-spec-meta.zip
 
 # copy new zip to data-specification folder
-mv pmhcmds-spec-meta.zip doc/_static/
+mv pmhcmds-spec-meta.zip doc/build/html/_static/
 
 docker pull docker.sdlocal.net/csvw/metadata2rst
 docker run --rm -v `pwd`:/mnt/cwd docker.sdlocal.net/csvw/metadata2rst \
