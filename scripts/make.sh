@@ -3,6 +3,8 @@
 # Exit if anything errors
 set -e
 
+source config.sh
+
 docker pull docker.sdlocal.net/csvw/metadata2rst
 docker run --rm -v `pwd`:/mnt/cwd docker.sdlocal.net/csvw/metadata2rst \
   --meta=pmhc-metadata.json
@@ -15,12 +17,6 @@ rm -rf data-specification/_data build
 cp -rf ../data data-specification/_data
 
 GIT_VERSION=$(git describe --tags --always)
-
-current_dir=`pwd`
-
-echo "PWD=$current_dir"
-
-pwd
 
 docker pull stratdat/sphinx:production
 docker run --rm -e GIT_VERSION -v `pwd`:/mnt/workdir \
@@ -40,7 +36,7 @@ echo "Building PDF"
 docker run --rm -e GIT_VERSION -v `pwd`:/mnt/workdir \
   stratdat/sphinx-html2pdf:production \
   /mnt/workdir/scripts/make-pdf.pl \
-  --spec-name "PMHC" \
+  --spec-name "$SPEC_NAME" \
   --doc-dir   "/mnt/workdir/doc"
 
 # make zip file
