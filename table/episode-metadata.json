@@ -357,6 +357,19 @@
     },
     "required": true
   },{
+    "name": "continuity_of_support",
+    "titles": [ "continuity_of_support", "Continuity of Support" ],
+    "dc:title": "Episode - Continuity of Support",
+    "schema:description": "Is the client a Continuity of Support Client?",
+    "schema:disambiguatingDescription": "table/episode/continuity-of-support.rst",
+    "schema:dateCreated": "2019-07-01",
+    "schema:dateDeleted": "2019-07-01",
+    "schema:dateModified": "2019-07-01",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
     "name": "episode_tags",
     "titles": [ "episode_tags", "Tags" ],
     "dc:title" : "Episode - Tags",
@@ -501,6 +514,12 @@
     "columnReference": "referrer_organisation_type",
     "reference": {
       "resource": "table/episode/referrer-organisation-type.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "continuity_of_support",
+    "reference": {
+      "resource": "table/episode/continuity-of-support.csv",
       "columnReference": "id"
     }
   }]

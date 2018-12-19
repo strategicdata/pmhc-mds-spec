@@ -1,0 +1,22 @@
+{
+  "@id": "table/episode/continuity-of-Support.json",
+  "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
+  "columns": [{
+    "name": "id",
+    "titles": [ "id", "ID" ],
+    "schema:dateCreated": "2019-07-01",
+    "schema:dateDeleted": "2019-07-01",
+    "schema:dateModified": "2019-07-01",
+    "datatype": "string"
+  },{
+    "name": "description",
+    "titles": [ "description", "Description" ],
+    "schema:dateCreated": "2019-07-01",
+    "schema:dateDeleted": "2019-07-01",
+    "schema:dateModified": "2019-07-01",
+    "datatype": {
+      "base": "string"
+    }
+  }],
+  "primaryKey": "id"
+}
