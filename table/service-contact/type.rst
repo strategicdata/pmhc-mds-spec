@@ -106,6 +106,37 @@ to report on Service Type for all Service Contacts.
   Service Contacts (see domains below) delivered to Aboriginal or Torres Strait
   Islander clients can be assigned to other categories.*
 
+9 - Psychosocial support
+  Service providers are required to report on Service Contact Type for every
+  contact with a client. This requires a judgement about the main service
+  delivered at each contact, selected from a small list of options, and based
+  on the activity that accounted for most provider time. Service Contact Type
+  complements Principal Focus of Treatment Plan by capturing information to
+  understand the mix of services provided within an individual episode of care.
+
+  Service Contact Type should be coded as Psychosocial Support (code 9) where
+  the main services delivered during the contact involved the delivery of
+  psychosocial support services. Psychosocial support services are defined for
+  PMHC MDS purposes as services that focus on building capacity and stability
+  in one or more of the following areas:
+
+  * social skills and friendships, family connections;
+  * managing daily living needs;
+  * financial management and budgeting;
+  * finding and maintaining a home;
+  * vocational skills and goals, including volunteering;
+  * educational and training goals;
+  * maintaining physical wellbeing, including exercise;
+  * building broader life skills including confidence and resilience.
+
+  These services are usually delivered by a range of non-clinical providers
+  including peer support workers with lived experience of mental illness.
+
+  Service Contacts recorded as psychosocial support may be delivered in all
+  episodes of care, regardless of episode type.  However, it is expected that
+  they will be mainly associated with episodes where the Principal Focus of
+  Treatment Plan is classified as Psychosocial Support.
+
 98 - ATAPS
   Services delivered as part of ATAPS funded referrals that are recorded and/or
   migrated into the PMHC MDS.
@@ -119,3 +150,8 @@ to report on Service Type for all Service Contacts.
   30 June 2018. (All ATAPS referrals should have concluded by that date).
 
   This response will only be allowed on service contacts with the !ATAPS flag.
+
+**Changes in effect from 1 January 2019**
+
+- A new Psychosocial Support code has been added to the existing Service Contact
+  Type data item.  New code 9.

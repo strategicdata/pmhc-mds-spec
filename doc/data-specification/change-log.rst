@@ -3,6 +3,37 @@
 Data Specification Change log
 =============================
 
+1/1/2019 - Version 1.0.13
+-------------------------
+
+* :ref:`data-model-and-specifications`
+
+  * :ref:`record-formats`
+
+    * :ref:`practitioner-data-elements`
+
+      * Updated :ref:`dfn-practitioner_category` to add response
+        12 - Psychosocial Support Worker.
+
+      * Updated :ref:`dfn-practitioner_category` to add response
+        13 - Peer Support Worker.
+
+    * :ref:`episode-data-elements`
+
+      * Updated :ref:`dfn-principal_focus` to add response
+        8 - Psychosocial Support.
+
+    * :ref:`service-contact-data-elements`
+
+      * Updated :ref:`dfn-service_contact_type` to add response
+        9 - Psychosocial support.
+
+      * Updated :ref:`dfn-service_contact_venue` to change response 8 from
+        'Aged care centre' to 'Residential aged care facility'.
+
+      * Updated :ref:`dfn-service_contact_venue` to add response
+        12 - Aged care centre - non-residential.
+
 24/9/2018
 ---------
 

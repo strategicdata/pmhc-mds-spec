@@ -2000,6 +2000,7 @@ The range of activities that best describes the overall services intended to be 
   :5: Child and youth-specific mental health services
   :6: Indigenous-specific mental health services
   :7: Other
+  :8: Psychosocial Support
 :Notes:
   Describes the main focus of the services to be delivered to the client for the
   current Episode of Care, selected from a defined list of categories.
@@ -3104,6 +3105,8 @@ The type or category of the practitioner, as represented by a code.
   :9: Psychiatrist
   :10: Other Medical
   :11: Other
+  :12: Psychosocial Support Worker
+  :13: Peer Support Worker
   :99: Not stated
 
 ----------
@@ -5308,6 +5311,7 @@ The main type of service provided in the service contact, as represented by the 
   :6: Child or youth specific assistance NEC
   :7: Suicide prevention specific assistance NEC
   :8: Cultural specific assistance NEC
+  :9: Psychosocial support
   :98: ATAPS
 :Notes:
   
@@ -5456,10 +5460,11 @@ Where the service contact was delivered, as represented by a code.
   :5: Headspace Centre
   :6: Other primary care setting
   :7: Public or private hospital
-  :8: Aged care centre
+  :8: Residential aged care facility
   :9: School or other educational centre
   :10: Client's Workplace
   :11: Other
+  :12: Aged care centre - non-residential
   :98: Not applicable (Service Contact Modality is not face to face)
   :99: Not stated
 :Notes:
