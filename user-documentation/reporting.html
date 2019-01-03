@@ -1,0 +1,860 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>1.7. Reports &mdash; PMHC MDS Version 1.0.13 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="PMHC MDS Version 1.0.13 documentation" href="../index.html"/>
+        <link rel="up" title="1. User Guide" href="index.html"/>
+        <link rel="next" title="1.8. Data Extract" href="data-extract.html"/>
+        <link rel="prev" title="1.6. Data Entry" href="data-entry.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> PMHC MDS
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                Version 1.0.13
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">1. User Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="passwords.html">1.1. Passwords</a></li>
+<li class="toctree-l2"><a class="reference internal" href="home.html">1.2. Home</a></li>
+<li class="toctree-l2"><a class="reference internal" href="organisations.html">1.3. Organisations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="users.html">1.4. Users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="upload.html">1.5. Upload</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data-entry.html">1.6. Data Entry</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">1.7. Reports</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#how-to-produce-a-report">1.7.1. How to produce a report</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#types-of-system-reports">1.7.2. Types of System Reports</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#category-a-monitoring-progress-of-mds-implementation">1.7.2.1. Category A: Monitoring progress of MDS implementation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#category-b-monitoring-overall-service-delivery">1.7.2.2. Category B: Monitoring overall service delivery</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#category-c-monitoring-implementation-of-stepped-care">1.7.2.3. Category C: Monitoring implementation of stepped care</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#category-e-reports-for-data-managers-to-monitor-data-supply">1.7.2.4. Category E: Reports for data managers to monitor data supply</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="data-extract.html">1.8. Data Extract</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slk.html">1.9. SLK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html">1.10. User Guide Change log</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../data-specification/index.html">2. Data Specification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faqs/index.html">3. Frequently Asked Questions</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">PMHC MDS</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">1. User Guide</a> &raquo;</li>
+        
+      <li>1.7. Reports</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/user-documentation/reporting.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="reports">
+<span id="id1"></span><h1>1.7. Reports<a class="headerlink" href="#reports" title="Permalink to this headline">¶</a></h1>
+<p>You will only be able to see the Reports tab if you have been assigned
+the ‘Reporting’ <a class="reference internal" href="users.html#roles"><span class="std std-ref">Users Roles</span></a>, when logged into the PMHC MDS on <a class="reference external" href="https://pmhc-mds.net">https://pmhc-mds.net</a>.</p>
+<p>If you don’t have access to the Reports tab and you believe you should, please
+contact someone in your provider organisation or provider organisation’s PHN
+who has the ‘User Management’ role. If you are unsure who has the ‘User Management’
+role please email the PMHC Helpdesk at <a class="reference external" href="mailto:support&#37;&#52;&#48;pmhc-mds&#46;com">support<span>&#64;</span>pmhc-mds<span>&#46;</span>com</a></p>
+<p>After navigating to the Reports tab, you will be able to view and export various
+<a class="reference internal" href="#system-report-types"><span class="std std-ref">Types of System Reports</span></a>.</p>
+<div class="figure">
+<img alt="Reports tab View" src="../_images/reports.png" />
+</div>
+<div class="section" id="how-to-produce-a-report">
+<span id="produce-system-report"></span><h2>1.7.1. How to produce a report<a class="headerlink" href="#how-to-produce-a-report" title="Permalink to this headline">¶</a></h2>
+<p>You can produce a system report by completing the fields in the Reports tab by
+following these steps:</p>
+<ol class="arabic simple">
+<li>Navigate to the ‘Reports’ tab.</li>
+</ol>
+<div class="figure">
+<img alt="Reports tab View" src="../_images/reports-system.png" />
+</div>
+<ol class="arabic simple" start="2">
+<li>Select the type of report you would like to produce.</li>
+<li>If you are allowed to produce reports for more than one organisation you
+will be asked to select an organisation name.</li>
+<li>Select the name of the organisation from the drop down list.</li>
+<li>Click the first calendar icon to select the start date and then the second
+calendar icon to select the end date.</li>
+<li>If you click the ‘Include only records with Client Consent’ tickbox, the data for client’s that have not consented to their anonymised data being provided to the Department of Health will be excluded from your report. (See <a class="reference internal" href="../data-specification/data-model-and-specifications.html#dfn-client-consent"><span class="std std-ref">Episode - Client Consent to Anonymised Data</span></a> )</li>
+<li>Click the blue ‘Request’ button.</li>
+<li>Your report will be displayed on screen and can be downloaded as a CSV.</li>
+</ol>
+<p>Note: If you are not sure what data is displayed in a report, please click on the ‘Counting Rules Explained’ link.</p>
+<div class="figure">
+<img alt="Reports tab View" src="../_images/reports-sample-system.png" />
+</div>
+</div>
+<div class="section" id="types-of-system-reports">
+<span id="system-report-types"></span><h2>1.7.2. Types of System Reports<a class="headerlink" href="#types-of-system-reports" title="Permalink to this headline">¶</a></h2>
+<p>The reports are grouped into five categories, each designed to serve different
+purposes:</p>
+<ul class="simple">
+<li><a class="reference internal" href="#category-a"><span class="std std-ref">Category A: Monitoring progress of MDS implementation</span></a></li>
+<li><a class="reference internal" href="#category-b"><span class="std std-ref">Category B: Monitoring overall service delivery</span></a></li>
+<li><a class="reference internal" href="#category-c"><span class="std std-ref">Category C: Monitoring implementation of stepped care</span></a></li>
+<li>Category D: Key Performance Indicators</li>
+<li><a class="reference internal" href="#category-e"><span class="std std-ref">Category E: Reports for data managers to monitor data supply</span></a></li>
+</ul>
+<p><strong>Note:</strong> Category D reports are still to be implemented.</p>
+<div class="section" id="category-a-monitoring-progress-of-mds-implementation">
+<span id="category-a"></span><h3>1.7.2.1. Category A: Monitoring progress of MDS implementation<a class="headerlink" href="#category-a-monitoring-progress-of-mds-implementation" title="Permalink to this headline">¶</a></h3>
+<p>These reports are designed to assist monitoring MDS uptake and compliance with
+key business rules.</p>
+<p>The reports provide summary data on:</p>
+<ul class="simple">
+<li>Volumes (‘active clients’/’active episodes’/contacts)</li>
+<li>Data quality in terms of compliance with key business rules</li>
+</ul>
+<p>Available A category reports are:</p>
+<ul class="simple">
+<li><a class="reference internal" href="#category-a1"><span class="std std-ref">A1 - High level summary of overall volumes by entity</span></a></li>
+<li><a class="reference internal" href="#category-a2"><span class="std std-ref">A2 - Monthly volume trends</span></a></li>
+<li><a class="reference internal" href="#category-a3"><span class="std std-ref">A3 - Data quality report - Missing and invalid client data</span></a></li>
+<li><a class="reference internal" href="#category-a4"><span class="std std-ref">A4- Data quality report - Missing and invalid episode data</span></a></li>
+<li><a class="reference internal" href="#category-a5"><span class="std std-ref">A5 - Data quality report - Missing and invalid service contact data</span></a></li>
+<li><a class="reference internal" href="#category-a6"><span class="std std-ref">A6 - Data quality report - Missing and invalid practitioner data</span></a></li>
+<li><a class="reference internal" href="#category-a7"><span class="std std-ref">A7 - Open episodes with no service contact activity for 90+ days</span></a></li>
+<li><a class="reference internal" href="#category-a8"><span class="std std-ref">A8 - Data quality report - Recording of outcome measures for open episodes</span></a></li>
+<li><a class="reference internal" href="#category-a9"><span class="std std-ref">A9 - Data quality report - Recording of outcome measures for completed episodes</span></a></li>
+</ul>
+<p><strong>Note:</strong> A subset of these reports is included in <a class="reference internal" href="#category-e"><span class="std std-ref">Category E: Reports for data managers to monitor data supply</span></a> without
+any filtering for active clients or episodes to enable organisational data
+managers to monitor ‘raw’ upload and data supply to the MDS.</p>
+<div class="section" id="a1-high-level-summary-of-overall-volumes-by-entity">
+<span id="category-a1"></span><h4>1.7.2.1.1. A1 - High level summary of overall volumes by entity<a class="headerlink" href="#a1-high-level-summary-of-overall-volumes-by-entity" title="Permalink to this headline">¶</a></h4>
+<p>This report is designed to provide a ‘one page’ view, with data aggregated for
+the specified reporting period, covering counts of clients, episodes and
+service contacts.</p>
+<p>Key specifications:</p>
+<ul class="simple">
+<li>To be counted, a client must have had one or more Service Contacts in the
+reporting period, defined for this report’s purposes as ‘Active Clients’.
+Clients are counted uniquely regardless of number of episodes.</li>
+<li>Episodes to be counted if one or more Service Contacts were recorded in the
+period - defined for this report purpose as ‘Active Episodes’.</li>
+<li>All Service Contacts in the period are reported except those that are flagged
+as ‘No Show’.</li>
+<li>All dates refer to date of service not date of data upload or data entry.</li>
+</ul>
+</div>
+<div class="section" id="a2-monthly-volume-trends">
+<span id="category-a2"></span><h4>1.7.2.1.2. A2 - Monthly volume trends<a class="headerlink" href="#a2-monthly-volume-trends" title="Permalink to this headline">¶</a></h4>
+<p>This report is designed to show volume trends in clients, episodes and service
+contacts. Each data point in the table and the chart shows monthly data.</p>
+<p>Key specifications:</p>
+<ul class="simple">
+<li>To be counted, a client must have had one or more Service Contacts in the
+reporting period, defined for this report purposes as ‘Active Clients’.
+Clients are counted uniquely regardless of number of episodes.</li>
+<li>Episodes to be counted if one or more Service Contacts was recorded in the
+period – defined for this report purpose as ‘Active Episodes’.</li>
+<li>All Service Contacts in the period are reported except those that are flagged
+as ‘No Show’.</li>
+<li>All dates refer to date of service not date of upload or data entry.</li>
+</ul>
+</div>
+<div class="section" id="a3-data-quality-report-missing-and-invalid-client-data">
+<span id="category-a3"></span><h4>1.7.2.1.3. A3 - Data quality report - Missing and invalid client data<a class="headerlink" href="#a3-data-quality-report-missing-and-invalid-client-data" title="Permalink to this headline">¶</a></h4>
+<p>The A3 reports are designed to identify Client data elements with significant
+amounts of missing or invalid data.</p>
+<p>Two formats of this report are offered to users:</p>
+<ul class="simple">
+<li><a class="reference internal" href="#category-a3-1"><span class="std std-ref">A3-1 - Data quality report - Missing and invalid client data - Summary</span></a></li>
+<li><a class="reference internal" href="#category-a3-2"><span class="std std-ref">A3-2 - Data quality report - Missing and invalid client data - Detail</span></a></li>
+</ul>
+<p>Key specifications:</p>
+<ul class="simple">
+<li>Clients to be counted uniquely regardless of number of episodes. To be
+counted, a client must have had one or more Service Contacts in the
+reporting period i.e. ‘Active Clients’.</li>
+<li>Service Contacts flagged as ‘No Show’ are not included for this purpose.</li>
+<li>Missing/invalid data defined as: Data elements with null or invalid values, or
+where ‘system generated’ codes have been reported to denote ‘not stated’,
+‘inadequately defined’ or ‘missing’.</li>
+</ul>
+<div class="section" id="a3-1-data-quality-report-missing-and-invalid-client-data-summary">
+<span id="category-a3-1"></span><h5>1.7.2.1.3.1. A3-1 - Data quality report - Missing and invalid client data - Summary<a class="headerlink" href="#a3-1-data-quality-report-missing-and-invalid-client-data-summary" title="Permalink to this headline">¶</a></h5>
+<p>Summary format provides a simple listing of missing/invalid data rates for
+relevant Client data elements, aggregated across the organisation, region or
+nationally.</p>
+</div>
+<div class="section" id="a3-2-data-quality-report-missing-and-invalid-client-data-detail">
+<span id="category-a3-2"></span><h5>1.7.2.1.3.2. A3-2 - Data quality report - Missing and invalid client data - Detail<a class="headerlink" href="#a3-2-data-quality-report-missing-and-invalid-client-data-detail" title="Permalink to this headline">¶</a></h5>
+<p>Detailed format presents missing/invalid data rates at the entity level (PHN
+and Provider Organisation). For this version, the user selects the specific
+Client data element to be targeted for the report from a list of possible options.</p>
+<p>Missing/invalid client data elements that can be selected for the A3-2
+report are:</p>
+<ul class="simple">
+<li>Date of Birth</li>
+<li>Date of Birth Flag</li>
+<li>Gender</li>
+<li>ATSI status</li>
+<li>Country of Birth</li>
+<li>Main Language Spoken at Home</li>
+<li>Proficiency in Spoken English</li>
+</ul>
+<p>Note: For a user with the Reporting role at a single Provider Organisation,
+this report is redundant as it would only ever have a single row, which is
+already present in the output of the A3-1 report. Therefore this report is
+not made available to these users.</p>
+</div>
+</div>
+<div class="section" id="a4-data-quality-report-missing-and-invalid-episode-data">
+<span id="category-a4"></span><h4>1.7.2.1.4. A4- Data quality report - Missing and invalid episode data<a class="headerlink" href="#a4-data-quality-report-missing-and-invalid-episode-data" title="Permalink to this headline">¶</a></h4>
+<p>The A4 reports are designed to identify data Episode elements with significant
+amounts of missing or invalid data.</p>
+<p>Two formats of this report are offered to users:</p>
+<ul class="simple">
+<li><a class="reference internal" href="#category-a4-1"><span class="std std-ref">A4-1 - Data quality report - Missing and invalid episode data - Summary</span></a></li>
+<li><a class="reference internal" href="#category-a4-2"><span class="std std-ref">A4-2 - Data quality report - Missing and invalid episode data - Detail</span></a></li>
+</ul>
+<p>Some Episode data elements are not included in the options list as they are
+allowed to have a blank value (eg. Episode End Date) or there
+is no missing value provided in the specification and the system doesn’t allow
+blank values to be submitted (eg. Principal Focus of Treatment Plan):</p>
+<ul class="simple">
+<li>Client Consent to Anonymised Data</li>
+<li>Episode End Date</li>
+<li>Episode Completion Status</li>
+<li>Episode Start Date</li>
+<li>Medication - Antipsychotics (N05A)</li>
+<li>Medication - Anxiolytics (N05B)</li>
+<li>Medication - Hypnotics and sedatives (N05C)</li>
+<li>Medication - Antidepressants (N06A)</li>
+<li>Medication - Psychostimulants and nootropics (N06B)</li>
+<li>Principal Focus of Treatment Plan</li>
+</ul>
+<p>Key specifications:</p>
+<ul class="simple">
+<li>Report counts only ‘active episodes’. An Episode is defined as ‘active’ if it
+has one or more Service Contacts recorded in the period.</li>
+<li>Service Contacts flagged as ‘No Show’ are not included for this purpose.</li>
+<li>Missing/invalid data defined as: Episode data elements with null or invalid
+values, or where ‘system generated’ codes have been reported to denote
+‘not stated’, ‘inadequately defined’ or ‘missing’.</li>
+</ul>
+<div class="section" id="a4-1-data-quality-report-missing-and-invalid-episode-data-summary">
+<span id="category-a4-1"></span><h5>1.7.2.1.4.1. A4-1 - Data quality report - Missing and invalid episode data - Summary<a class="headerlink" href="#a4-1-data-quality-report-missing-and-invalid-episode-data-summary" title="Permalink to this headline">¶</a></h5>
+<p>Summary format provides a simple listing of missing/invalid data rates
+for relevant Episode data elements, aggregated across the organisation,
+region or nationally.</p>
+</div>
+<div class="section" id="a4-2-data-quality-report-missing-and-invalid-episode-data-detail">
+<span id="category-a4-2"></span><h5>1.7.2.1.4.2. A4-2 - Data quality report - Missing and invalid episode data - Detail<a class="headerlink" href="#a4-2-data-quality-report-missing-and-invalid-episode-data-detail" title="Permalink to this headline">¶</a></h5>
+<p>Detailed format presents missing/invalid Episode data rates at the
+entity level (PHN and Provider Organisation). For this version, the user selects
+the specific Episode data element to be targeted for the missing/invalid data
+report from a list of possible options.</p>
+<p>Missing/invalid episode data elements that can be selected for the A4-2 report
+are:</p>
+<ul class="simple">
+<li>Episode Referral Date</li>
+<li>Referrer Profession</li>
+<li>Referrer Organisation Type</li>
+<li>Suicide Referral Flag</li>
+<li>GP Mental Health Treatment Plan Flag</li>
+<li>Homelessness flag</li>
+<li>Area of Usual Residence, Postcode</li>
+<li>Labour Force Status</li>
+<li>Employment Participation</li>
+<li>Source of Cash Income</li>
+<li>Health Care Card</li>
+<li>NDIS Participant</li>
+<li>Marital Status</li>
+<li>Principal Diagnosis</li>
+<li>Additional Diagnosis</li>
+</ul>
+<p>Note: For a user with the Reporting role at a single Provider Organisation,
+this report is redundant as it would only ever have a single row, which is
+already present in the output of the A4-1 report. Therefore this report is
+not made available to these users.</p>
+</div>
+</div>
+<div class="section" id="a5-data-quality-report-missing-and-invalid-service-contact-data">
+<span id="category-a5"></span><h4>1.7.2.1.5. A5 - Data quality report - Missing and invalid service contact data<a class="headerlink" href="#a5-data-quality-report-missing-and-invalid-service-contact-data" title="Permalink to this headline">¶</a></h4>
+<p>The A5 reports are designed to identify Service Contact data elements with
+significant amounts of missing or invalid data.</p>
+<p>Two formats of this report are offered to users:</p>
+<ul class="simple">
+<li><a class="reference internal" href="#category-a5-1"><span class="std std-ref">A5-1 - Data quality report - Missing and invalid service contact data - Summary</span></a></li>
+<li><a class="reference internal" href="#category-a5-2"><span class="std std-ref">A5-2 - Data quality report - Missing and invalid service contact data - Detail</span></a></li>
+</ul>
+<p>Service Contacts flagged as ‘No Show’ are not included in this report.</p>
+<p>Some service contact data elements are not included in the options list as there
+is no missing value provided in the specification and the system doesn’t allow
+blank values to be submitted:</p>
+<ul class="simple">
+<li>Service Contact Date</li>
+<li>Service Contact Final</li>
+<li>Service Contact Type</li>
+<li>Service Contact Modality</li>
+<li>Service Contact Duration</li>
+<li>Service Contact Copayment</li>
+<li>Service Contact Client Participation Indicator</li>
+<li>Service Contact No Show</li>
+</ul>
+<div class="section" id="a5-1-data-quality-report-missing-and-invalid-service-contact-data-summary">
+<span id="category-a5-1"></span><h5>1.7.2.1.5.1. A5-1 - Data quality report - Missing and invalid service contact data - Summary<a class="headerlink" href="#a5-1-data-quality-report-missing-and-invalid-service-contact-data-summary" title="Permalink to this headline">¶</a></h5>
+<p>Summary format provides a simple listing of missing/invalid data rates
+for relevant Service Contact data elements, aggregated across the
+organisation, region or nationally.</p>
+</div>
+<div class="section" id="a5-2-data-quality-report-missing-and-invalid-service-contact-data-detail">
+<span id="category-a5-2"></span><h5>1.7.2.1.5.2. A5-2 - Data quality report - Missing and invalid service contact data - Detail<a class="headerlink" href="#a5-2-data-quality-report-missing-and-invalid-service-contact-data-detail" title="Permalink to this headline">¶</a></h5>
+<p>Detailed format presents missing/invalid Service Contact data rates at
+the entity level (PHN and Provider Organisation). For this version, the user
+selects the Service Contact data to be targeted for the missing/invalid data
+report from a list of possible options.</p>
+<p>Missing/invalid episode data elements that can be selected for the A5-2 report
+are:</p>
+<ul class="simple">
+<li>Service Contact Interpreter Used</li>
+<li>Service Contact Postcode</li>
+<li>Service Contact Participants</li>
+<li>Service Contact Venue</li>
+</ul>
+<p>Note: For a user with the Reporting role at a single Provider Organisation,
+this report is redundant as it would only ever have a single row, which is
+already present in the output of the A5-1 report. Therefore this report is
+not made available to these users.</p>
+</div>
+</div>
+<div class="section" id="a6-data-quality-report-missing-and-invalid-practitioner-data">
+<span id="category-a6"></span><h4>1.7.2.1.6. A6 - Data quality report - Missing and invalid practitioner data<a class="headerlink" href="#a6-data-quality-report-missing-and-invalid-practitioner-data" title="Permalink to this headline">¶</a></h4>
+<p>The A6 reports are designed to identify Practitioner data elements with
+significant amounts of missing data.</p>
+<p>Two formats of this report are offered to users:</p>
+<ul class="simple">
+<li><a class="reference internal" href="#category-a6-1"><span class="std std-ref">A6-1 - Data quality report - Missing and invalid practitioner data - Summary</span></a></li>
+<li><a class="reference internal" href="#category-a6-2"><span class="std std-ref">A6-2 - Data quality report - Missing and invalid practitioner data - Detail</span></a></li>
+</ul>
+<p>Key specifications:</p>
+<ul class="simple">
+<li>Report is confined only to ‘active practitioners’. A Practitioner is defined as
+‘active’ if it they have recorded one or more Service Contacts in the period.</li>
+<li>Service Contacts flagged as ‘No Show’ are not included for this purpose.</li>
+</ul>
+<div class="section" id="a6-1-data-quality-report-missing-and-invalid-practitioner-data-summary">
+<span id="category-a6-1"></span><h5>1.7.2.1.6.1. A6-1 - Data quality report - Missing and invalid practitioner data - Summary<a class="headerlink" href="#a6-1-data-quality-report-missing-and-invalid-practitioner-data-summary" title="Permalink to this headline">¶</a></h5>
+<p>Summary format provides a simple listing of missing/invalid data rates
+for relevant data elements, aggregated across the organisation, region or
+nationally.</p>
+</div>
+<div class="section" id="a6-2-data-quality-report-missing-and-invalid-practitioner-data-detail">
+<span id="category-a6-2"></span><h5>1.7.2.1.6.2. A6-2 - Data quality report - Missing and invalid practitioner data - Detail<a class="headerlink" href="#a6-2-data-quality-report-missing-and-invalid-practitioner-data-detail" title="Permalink to this headline">¶</a></h5>
+<p>Detailed format presents missing/invalid data rates at the entity level
+(PHN and Provider Organisation). For this version, the user selects the
+Practitioner data to be targeted for the missing/invalid data report from a list
+of options.</p>
+<p>Missing/invalid episode data elements that can be selected for the A6-2
+report are:</p>
+<ul class="simple">
+<li>Practitioner Category</li>
+<li>ATSI Cultural Training Flag</li>
+<li>Practitioner Year of Birth</li>
+<li>Gender</li>
+<li>Aboriginal and Torres Strait Islander Status</li>
+</ul>
+<p>Note: For a user with the Reporting role at a single Provider Organisation,
+this report is redundant as it would only ever have a single row, which is
+already present in the output of the A6-1 report. Therefore this report is
+not made available to these users.</p>
+</div>
+</div>
+<div class="section" id="a7-open-episodes-with-no-service-contact-activity-for-90-days">
+<span id="category-a7"></span><h4>1.7.2.1.7. A7 - Open episodes with no service contact activity for 90+ days<a class="headerlink" href="#a7-open-episodes-with-no-service-contact-activity-for-90-days" title="Permalink to this headline">¶</a></h4>
+<p>The A7 report is designed to allow monitoring of adherence to the requirement
+to close episodes where there are no further services scheduled for the client.</p>
+<p>Setting of the 90 day threshold does not imply a strict business rule to close
+episodes where no contact has occurred for this period, but rather to identify
+episodes that may warrant review.</p>
+<p>Key specifications:</p>
+<ul class="simple">
+<li>Open Episodes defined as those without an End Date or an End Date after the
+end date of the report.</li>
+<li>Service Contacts flagged as ‘No Show’ are not included for this purpose.</li>
+</ul>
+<p>Note that if the period between start and end date specified in this report is
+less than 90 days the number of episodes with no service contact activity for
+90+ days will always be zero.</p>
+</div>
+<div class="section" id="a8-data-quality-report-recording-of-outcome-measures-for-open-episodes">
+<span id="category-a8"></span><h4>1.7.2.1.8. A8 - Data quality report - Recording of outcome measures for open episodes<a class="headerlink" href="#a8-data-quality-report-recording-of-outcome-measures-for-open-episodes" title="Permalink to this headline">¶</a></h4>
+<p>The A8 report is designed to show the percentage of open (not yet completed)
+episodes that have an outcome measure recorded at the Episode Start collection
+occasion. Its purpose is to allow monitoring of adherence to the minimum
+requirements for outcome recording - i.e. measures to be recorded at Episode
+Start and Episode End.</p>
+<p>Report A9 examines a related aspect - the extent to which Completed Episodes
+have both Episode Start and Episode End measures.</p>
+<p>Key specifications:</p>
+<ul class="simple">
+<li>Open Episodes are defined as those without an End Date or an End Date after the
+end date of the report.
+less than or equal to the report end date.</li>
+<li>For this report, Episodes must also have an Episode Start Date equal to or greater than
+the report start date.</li>
+<li>Only Episodes with one or more Service Contacts in the reporting period are
+included in the analysis (referred to as ‘active episodes’).</li>
+<li>Service Contacts flagged as ‘No Show’ are not included for this purpose.</li>
+<li>Measures that have a total score of ‘99’ are invalid and counted as ‘no measure’.</li>
+</ul>
+</div>
+<div class="section" id="a9-data-quality-report-recording-of-outcome-measures-for-completed-episodes">
+<span id="category-a9"></span><h4>1.7.2.1.9. A9 - Data quality report - Recording of outcome measures for completed episodes<a class="headerlink" href="#a9-data-quality-report-recording-of-outcome-measures-for-completed-episodes" title="Permalink to this headline">¶</a></h4>
+<p>The A9 report is designed to show the percentage of completed episodes that have
+outcome measures recorded. Its purpose is to allow monitoring of adherence to
+the minimum requirements for outcome recording - i.e. measures to be recorded
+at Episode Start and Episode End.</p>
+<p>Key specifications:</p>
+<ul class="simple">
+<li>Completed Episodes are defined as those Episodes with an Episode End Date
+less than or equal to the report end date.</li>
+<li>For this report, Episodes must also have an Episode Start Date equal to or greater than
+the report start date.</li>
+<li>Only Episodes with one or more Service Contacts in the reporting period are
+included in the analysis (referred to as ‘active episodes’).</li>
+<li>Service Contacts flagged as ‘No Show’ are not included for this purpose.</li>
+<li>Measures that have a total score of ‘99’ are invalid and counted as ‘no measure’.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="category-b-monitoring-overall-service-delivery">
+<span id="category-b"></span><h3>1.7.2.2. Category B: Monitoring overall service delivery<a class="headerlink" href="#category-b-monitoring-overall-service-delivery" title="Permalink to this headline">¶</a></h3>
+<p>These reports are designed to present a range of data in the form of summary
+tables. Their purpose is to allow the user to monitor overall service delivery
+based on counts of clients, episodes, and service contacts, stratified in
+various ways that depend on the data being sourced.</p>
+<p>There are five reports in this series, each covering a specific data category
+(Clients, Episode, Service Contacts, Provider Organisations, and Practitioners).</p>
+<p>Available B category reports are:</p>
+<ul class="simple">
+<li><a class="reference internal" href="#category-b1"><span class="std std-ref">B1 - Activity report - Client characteristics</span></a></li>
+<li><a class="reference internal" href="#category-b2"><span class="std std-ref">B2 - Activity report - Episode characteristics</span></a></li>
+<li><a class="reference internal" href="#category-b3"><span class="std std-ref">B3 - Activity report - Service Contact characteristics</span></a></li>
+<li><a class="reference internal" href="#category-b4"><span class="std std-ref">B4 - Activity report - Provider Organisation characteristics</span></a></li>
+<li><a class="reference internal" href="#category-b5"><span class="std std-ref">B5 - Activity report - Practitioner characteristics</span></a></li>
+</ul>
+<div class="section" id="b1-activity-report-client-characteristics">
+<span id="category-b1"></span><h4>1.7.2.2.1. B1 - Activity report - Client characteristics<a class="headerlink" href="#b1-activity-report-client-characteristics" title="Permalink to this headline">¶</a></h4>
+<p>The B1 report is designed to allow selection of a Client
+stratification variable of interest, with a menu of options covering all
+core Client data fields.</p>
+<p>Key specifications:</p>
+<ul class="simple">
+<li>Client to be counted uniquely regardless of number of episodes. To be
+counted, a client must have had one or more Service Contacts in the
+reporting period.</li>
+<li>Counts of Episodes to be based only on ‘active’ Episodes, defined as those
+that had one or more Service Contacts recorded in the period.</li>
+<li>Service Contacts flagged as ‘No Show’ are not included for this purpose.</li>
+</ul>
+</div>
+<div class="section" id="b2-activity-report-episode-characteristics">
+<span id="category-b2"></span><h4>1.7.2.2.2. B2 - Activity report - Episode characteristics<a class="headerlink" href="#b2-activity-report-episode-characteristics" title="Permalink to this headline">¶</a></h4>
+<p>The B2 report is designed to allow selection of an Episode stratification
+variable of interest, with a menu of options covering all core Episode data
+fields.</p>
+<p>Key specifications:</p>
+<ul class="simple">
+<li>An Episode is defined as ‘active’ and in-scope for inclusion in this report
+if it had one or more Service Contacts recorded in the period. No distinction
+is made between Open and Completed Episodes.</li>
+<li>Service Contacts flagged as ‘No Show’ are not included for this purpose.</li>
+</ul>
+</div>
+<div class="section" id="b3-activity-report-service-contact-characteristics">
+<span id="category-b3"></span><h4>1.7.2.2.3. B3 - Activity report - Service Contact characteristics<a class="headerlink" href="#b3-activity-report-service-contact-characteristics" title="Permalink to this headline">¶</a></h4>
+<p>The B3 report is designed to allow selection of a Service Contact
+stratification variable of interest, with a menu of options covering all
+core Service Contact fields.</p>
+<p>Key specifications:</p>
+<ul class="simple">
+<li>Reporting by ‘Service Contact No Show’ element counts all service contacts
+by whether they are flagged as ‘No Show’.</li>
+<li>Otherwise, Service Contacts flagged as ‘No Show’ are not included in this report.</li>
+</ul>
+</div>
+<div class="section" id="b4-activity-report-provider-organisation-characteristics">
+<span id="category-b4"></span><h4>1.7.2.2.4. B4 - Activity report - Provider Organisation characteristics<a class="headerlink" href="#b4-activity-report-provider-organisation-characteristics" title="Permalink to this headline">¶</a></h4>
+<p>The B4 report is designed to allow selection of a Provider Organisation
+stratification variable of interest, with a menu of options covering all
+core Provider Organisation data fields.</p>
+<p>Key specifications:</p>
+<ul class="simple">
+<li>A Provider Organisation is defined as ‘active’ if it has recorded and in-scope
+for this report if there is one or more Service Contacts recorded for the
+Provider Organisation in the period.</li>
+<li>Service Contacts flagged as ‘No Show’ are not included for this purpose.</li>
+</ul>
+</div>
+<div class="section" id="b5-activity-report-practitioner-characteristics">
+<span id="category-b5"></span><h4>1.7.2.2.5. B5 - Activity report - Practitioner characteristics<a class="headerlink" href="#b5-activity-report-practitioner-characteristics" title="Permalink to this headline">¶</a></h4>
+<p>The B5 report is designed to allow selection of a Practitioner stratification
+variable of interest, with a menu of options covering all core Practitioner
+data fields.</p>
+<p>Key specifications:</p>
+<ul class="simple">
+<li>A Practitioner is defined as ‘active’ and in-scope for this report if they
+have recorded one or more Service Contacts in the period.</li>
+<li>Service Contacts flagged as ‘No Show’ are not included for this purpose.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="category-c-monitoring-implementation-of-stepped-care">
+<span id="category-c"></span><h3>1.7.2.3. Category C: Monitoring implementation of stepped care<a class="headerlink" href="#category-c-monitoring-implementation-of-stepped-care" title="Permalink to this headline">¶</a></h3>
+<p>This group of reports is based on composite data, built from cross-tabulation of
+data drawn from multiple levels of the PMHC data model – Clients, Episodes, Service
+Contacts, Practitioners.</p>
+<p>Their purpose is to allow the user to monitor selected aspects of the implementation
+of the stepped care model.</p>
+<p>The stepped care reports represent work in progress and will be subject to ongoing
+improvement with PHN feedback on their utility.</p>
+<p>Available C category reports are:</p>
+<ul class="simple">
+<li><a class="reference internal" href="#category-c1"><span class="std std-ref">C1 - Stepped care report - Episode type by Client characteristics</span></a></li>
+<li><a class="reference internal" href="#category-c2"><span class="std std-ref">C2 - Stepped care report – Episode Type by Service Contacts Type</span></a></li>
+</ul>
+<div class="section" id="c1-stepped-care-report-episode-type-by-client-characteristics">
+<span id="category-c1"></span><h4>1.7.2.3.1. C1 - Stepped care report - Episode type by Client characteristics<a class="headerlink" href="#c1-stepped-care-report-episode-type-by-client-characteristics" title="Permalink to this headline">¶</a></h4>
+<p>Purpose: To provide summary information on the characteristics of clients who
+receive different types of services, grouped by ‘episode type’.</p>
+<p>Client data fields to be selected by user from a list of options.</p>
+<p>Key specifications:</p>
+<ul class="simple">
+<li>Only ‘active episodes’ are reported. An Episode is defined as ‘active’ and
+in scope for inclusion in this report if it had one or more Service Contacts
+recorded in the period. No distinction is made between Open and Completed
+Episodes.</li>
+<li>Service Contacts flagged as ‘No Show’ are not included for this purpose.</li>
+<li>Counts shown in the report refer to Episodes, and are displayed as numbers
+or percent column based on user selection.</li>
+</ul>
+<p>Client data elements that can be selected for the C1 report are:</p>
+<ul class="simple">
+<li>Client age group based on Date of Birth, grouped to the following categories:<ul>
+<li>0-11, 12-17, 18-24, 25-64, 65+</li>
+<li>Each client assigned to only age group based on age at a fixed date (e.g., beginning of year)</li>
+</ul>
+</li>
+<li>Indigenous status</li>
+<li>Area of Usual Residence<ul>
+<li>Grouped by Remoteness Classification (Major Cities, Outer Regional,
+Inner Regional, Remote, Very Remote)</li>
+</ul>
+</li>
+<li>Principal diagnosis - High level grouping<ul>
+<li>Anxiety disorders</li>
+<li>Affective (Mood) disorders</li>
+<li>Substance use disorders</li>
+<li>Psychotic disorder</li>
+<li>Disorders with onset usually occurring in childhood and adolescence
+not listed elsewhere</li>
+<li>Other mental disorder</li>
+<li>No formal mental disorder but subsyndromal problem</li>
+</ul>
+</li>
+<li>Gender</li>
+<li>Country of Birth – grouped to high level categories</li>
+</ul>
+</div>
+<div class="section" id="c2-stepped-care-report-episode-type-by-service-contacts-type">
+<span id="category-c2"></span><h4>1.7.2.3.2. C2 - Stepped care report – Episode Type by Service Contacts Type<a class="headerlink" href="#c2-stepped-care-report-episode-type-by-service-contacts-type" title="Permalink to this headline">¶</a></h4>
+<p>Purpose: To provide summary information on the types of service contacts delivered
+within each of the episode types.</p>
+<p>Key specifications:</p>
+<ul class="simple">
+<li>Only ‘active episodes’ are reported. An Episode is defined as ‘active’ and
+in scope for inclusion in this report if it had one or more Service Contacts
+recorded in the period. No distinction is made between Open and Completed
+Episodes.</li>
+<li>Service Contacts flagged as ‘No Show’ are not included for this purpose.</li>
+<li>Counts shown in the report refer to Episodes, and are displayed as numbers
+or percent rows based on user selection.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="category-e-reports-for-data-managers-to-monitor-data-supply">
+<span id="category-e"></span><h3>1.7.2.4. Category E: Reports for data managers to monitor data supply<a class="headerlink" href="#category-e-reports-for-data-managers-to-monitor-data-supply" title="Permalink to this headline">¶</a></h3>
+<p>These reports are designed to assist in monitoring the amount and type of data
+that has been input into the MDS.</p>
+<p>They are based on a subset of Category A reports but differ in two important ways:</p>
+<ul class="simple">
+<li>The reports are based on ‘raw data’, not filtered or trimmed by any data
+quality censoring. Comparable Category A reports restrict the reported data
+by specific edit criteria (e.g., Category A reports are only based on
+‘active clients’, ‘active episodes’ and ‘active providers’).</li>
+<li>All dates refer to date of upload. Comparable Category A reports are based on
+date of service.</li>
+</ul>
+<p>Category E reports are specifically designed to enable PHN and Provider
+Organisation data managers to monitor upload and data supply to the MDS.</p>
+<p>The reports provide summary data on:</p>
+<ul class="simple">
+<li>Raw volumes (clients/episodes/service contacts/collection occasions/practitioners) over time periods</li>
+<li>Raw volumes per day (clients/episodes/service contacts/collection occasions/practitioners)</li>
+</ul>
+<div class="section" id="e1-high-level-summary-of-overall-volumes-by-entity">
+<span id="category-e1"></span><h4>1.7.2.4.1. E1 - High level summary of overall volumes by entity<a class="headerlink" href="#e1-high-level-summary-of-overall-volumes-by-entity" title="Permalink to this headline">¶</a></h4>
+<p>This report is designed to provide a ‘one page’ view, with data aggregated for the
+specified reporting period, covering counts of clients, episodes, service contacts,
+collection occasions and practitioners, without any filtering for business rules.</p>
+<p>Key specifications:</p>
+<ul class="simple">
+<li>All records to be counted with no filtering.</li>
+<li>All dates refer to date of modification, not date of service.</li>
+</ul>
+</div>
+<div class="section" id="e2-volume-trends">
+<span id="category-e2"></span><h4>1.7.2.4.2. E2 - Volume trends<a class="headerlink" href="#e2-volume-trends" title="Permalink to this headline">¶</a></h4>
+<p>This report is designed to show volume trends in clients, episodes, service
+contacts, collection occasions and practitioners.</p>
+<p>Key specifications:</p>
+<ul class="simple">
+<li>All records to be counted with no filtering.</li>
+<li>All dates refer to date of insertion, not date of service.</li>
+<li>Results are cumulative.</li>
+</ul>
+</div>
+<div class="section" id="e3-activity-per-day">
+<span id="category-e3"></span><h4>1.7.2.4.3. E3 - Activity per day<a class="headerlink" href="#e3-activity-per-day" title="Permalink to this headline">¶</a></h4>
+<p>This report will show a summary of the number of clients, episodes, service
+contacts, collections occasions and practitioners added or modified each day.
+Its purpose is to give entities information about when and how much data was
+added or modified.</p>
+<p>Key specifications:</p>
+<ul class="simple">
+<li>All records to be counted with no filtering.</li>
+<li>All dates refer to date of modification, not date of service.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="data-extract.html" class="btn btn-neutral float-right" title="1.8. Data Extract" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="data-entry.html" class="btn btn-neutral" title="1.6. Data Entry" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Australian Government - Department of Health.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'Version 1.0.13',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+ 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-84023505-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+</body>
+</html>

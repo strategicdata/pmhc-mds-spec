@@ -1,0 +1,582 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>2.4. Upload specification &mdash; PMHC MDS Version 1.0.13 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="PMHC MDS Version 1.0.13 documentation" href="../index.html"/>
+        <link rel="up" title="2. Data Specification" href="index.html"/>
+        <link rel="next" title="2.5. Data item summary" href="data-item-summary.html"/>
+        <link rel="prev" title="2.3. Data model and specifications" href="data-model-and-specifications.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> PMHC MDS
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                Version 1.0.13
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../user-documentation/index.html">1. User Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">2. Data Specification</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="reporting-arrangements.html">2.1. Reporting arrangements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="identifier-management.html">2.2. Identifier management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data-model-and-specifications.html">2.3. Data model and specifications</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">2.4. Upload specification</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#file-types">2.4.1. File types</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#comma-separated-values-csv">2.4.1.1. Comma Separated Values (CSV)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#excel-xlsx">2.4.1.2. Excel (XLSX)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#files-or-worksheets-to-upload">2.4.2. Files or worksheets to upload</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#file-format">2.4.3. File format</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#client-format">2.4.3.1. Client format</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#episode-file-format">2.4.3.2. Episode file format</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#service-contact-file-format">2.4.3.3. Service Contact file format</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#k10-collection-occasion-file-format">2.4.3.4. K10+ Collection Occasion file format</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#k5-collection-occasion-file-format">2.4.3.5. K5 Collection Occasion file format</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-collection-occasion-file-format">2.4.3.6. SDQ Collection Occasion file format</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#practitioner-file-format">2.4.3.7. Practitioner file format</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#organisation-file-format">2.4.3.8. Organisation file format</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#deleting-records">2.4.3.9. Deleting records</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#frequently-asked-questions">2.4.4. Frequently Asked Questions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="data-item-summary.html">2.5. Data item summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="form-creation.html">2.6. Using the data specification to create client forms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="validation-rules.html">2.7. Validation Rules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ataps/ataps-pmhc-mapping.html">2.8. ATAPS MDS to PMHC MDS data mapping</a></li>
+<li class="toctree-l2"><a class="reference internal" href="test-data-sets.html">2.9. Test Data Sets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html">2.10. Data Specification Change log</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../faqs/index.html">3. Frequently Asked Questions</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">PMHC MDS</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">2. Data Specification</a> &raquo;</li>
+        
+      <li>2.4. Upload specification</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/data-specification/upload-specification.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="upload-specification">
+<span id="id1"></span><h1>2.4. Upload specification<a class="headerlink" href="#upload-specification" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="file-types">
+<h2>2.4.1. File types<a class="headerlink" href="#file-types" title="Permalink to this headline">¶</a></h2>
+<p>Files will be accepted in the following types:</p>
+<ul class="simple">
+<li>Comma Separated Values (CSV)</li>
+<li>Excel (XLSX)</li>
+</ul>
+<div class="section" id="comma-separated-values-csv">
+<h3>2.4.1.1. Comma Separated Values (CSV)<a class="headerlink" href="#comma-separated-values-csv" title="Permalink to this headline">¶</a></h3>
+<p>The CSV files must conform to <a class="reference external" href="https://www.ietf.org/rfc/rfc4180.txt">RFC 4180</a>.</p>
+<p>In addition, CSV files must be created using UTF-8 character encoding.</p>
+<p>CSV files must have the file extension .csv</p>
+<p>Multiple CSV files must be uploaded - one CSV file for each format described
+<a class="reference internal" href="#files-to-upload"><span class="std std-ref">below</span></a>.</p>
+<p>The CSV files must be compressed into a single file by zipping before upload. The
+filename of the zip file doesn’t matter as long as it has the file
+extension .zip</p>
+</div>
+<div class="section" id="excel-xlsx">
+<h3>2.4.1.2. Excel (XLSX)<a class="headerlink" href="#excel-xlsx" title="Permalink to this headline">¶</a></h3>
+<p>Excel files must be in XLSX format. The following versions of Excel support this
+format:</p>
+<ul class="simple">
+<li>Excel 2007 (v12.0)</li>
+<li>Excel 2010 (v14.0)</li>
+<li>Excel 2013 (v15.0)</li>
+<li>Excel 2016 (v16.0)</li>
+</ul>
+<p>One XLSX file must be uploaded containing multiple worksheets - one worksheet
+for each format described <a class="reference internal" href="#files-to-upload"><span class="std std-ref">below</span></a>.</p>
+<p>When saving your file, please choose the filetype ‘Excel Workbook (.xlsx)’.</p>
+<p>The filename of the Excel file doesn’t matter as long as it has the file
+extension .xlsx</p>
+</div>
+</div>
+<div class="section" id="files-or-worksheets-to-upload">
+<span id="files-to-upload"></span><h2>2.4.2. Files or worksheets to upload<a class="headerlink" href="#files-or-worksheets-to-upload" title="Permalink to this headline">¶</a></h2>
+<p>The following files/worksheets can be uploaded to the PMHC MDS:</p>
+<table border="1" class="docutils" id="id5">
+<caption><span class="caption-number">Table 2.9 </span><span class="caption-text">Summary of files to upload</span><a class="headerlink" href="#id5" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">File Type</th>
+<th class="head">CSV filename</th>
+<th class="head">Excel worksheet name</th>
+<th class="head">Required</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#client-format"><span class="std std-ref">Client</span></a></td>
+<td>clients.csv</td>
+<td>Clients</td>
+<td>Required</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#episode-format"><span class="std std-ref">Episodes</span></a></td>
+<td>episodes.csv</td>
+<td>Episodes</td>
+<td>Required</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#service-contact-format"><span class="std std-ref">Service Contacts</span></a></td>
+<td>service-contacts.csv</td>
+<td>Service Contacts</td>
+<td>Required</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#k10p-format"><span class="std std-ref">K10+ Collection Occasions</span></a></td>
+<td>k10p.csv</td>
+<td>K10+</td>
+<td>Required</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#k5-format"><span class="std std-ref">K5 Collection Occasions</span></a></td>
+<td>k5.csv</td>
+<td>K5</td>
+<td>Required</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sdq-format"><span class="std std-ref">SDQ Collection Occasions</span></a></td>
+<td>sdq.csv</td>
+<td>SDQ</td>
+<td>Required</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#practitioner-format"><span class="std std-ref">Practitioners</span></a></td>
+<td>practitioners.csv</td>
+<td>Practitioners</td>
+<td>Required for first upload and when practitioner information changes. Optional otherwise</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#organisation-format"><span class="std std-ref">Organisation</span></a></td>
+<td>organisations.csv</td>
+<td>Organisations</td>
+<td>Optional</td>
+</tr>
+</tbody>
+</table>
+<p>Each of the example files assumes the following organisation structure:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="25%" />
+<col width="40%" />
+<col width="19%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Organisation Key</th>
+<th class="head">Organisation Name</th>
+<th class="head">Organisation Type</th>
+<th class="head">Parent Organisation</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>PHN999</td>
+<td>Test PHN</td>
+<td>Primary Health Network</td>
+<td>None</td>
+</tr>
+<tr class="row-odd"><td>NFP01</td>
+<td>Test Provider Organisation</td>
+<td>Private Allied Health Professional Practice</td>
+<td>PHN999</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="file-format">
+<span id="id2"></span><h2>2.4.3. File format<a class="headerlink" href="#file-format" title="Permalink to this headline">¶</a></h2>
+<p>The first row in each file/worksheet must include the following columns:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="44%" />
+<col width="56%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>Version</td>
+<td>1.0</td>
+</tr>
+</tbody>
+</table>
+<p>The second row must contain the column headings as defined for each file type.
+The third and subsequent rows must contain the data.</p>
+<p>Data elements for each file/worksheet are defined at <a class="reference internal" href="data-model-and-specifications.html#record-formats"><span class="std std-ref">Record formats</span></a>.</p>
+<p>Each item is a column in the file/worksheet. The ‘Field Name’ must be used for
+the column headings. The columns must be kept in the same order.</p>
+<p>All files must be internally consistent. An example of what this means is
+that for every row in the episode file/worksheet, there must be a
+corresponding client in the client file/worksheet.</p>
+<p>It also means that for every episode included in an upload file, you must include
+ALL service contacts and measures for that episode.</p>
+<div class="section" id="client-format">
+<span id="id3"></span><h3>2.4.3.1. Client format<a class="headerlink" href="#client-format" title="Permalink to this headline">¶</a></h3>
+<p>The client file/worksheet is required to be uploaded each time.</p>
+<p>Data elements for the client upload file/worksheet are defined at
+<a class="reference internal" href="data-model-and-specifications.html#client-data-elements"><span class="std std-ref">Client</span></a>.</p>
+<p>Example client data:</p>
+<ul class="simple">
+<li><a class="reference external" href="../_static/clients.csv">CSV client file</a>.</li>
+<li><a class="reference external" href="../_static/pmhc-upload.xlsx">XLSX client worksheet</a>.</li>
+</ul>
+</div>
+<div class="section" id="episode-file-format">
+<span id="episode-format"></span><h3>2.4.3.2. Episode file format<a class="headerlink" href="#episode-file-format" title="Permalink to this headline">¶</a></h3>
+<p>The episode file/worksheet is required to be uploaded each time.</p>
+<p>Data elements for the episode upload file/worksheet are defined at
+<a class="reference internal" href="data-model-and-specifications.html#episode-data-elements"><span class="std std-ref">Episode</span></a>.</p>
+<p>Example episode data:</p>
+<ul class="simple">
+<li><a class="reference external" href="../_static/episodes.csv">CSV episode file</a>.</li>
+<li><a class="reference external" href="../_static/pmhc-upload.xlsx">XLSX episode worksheet</a>.</li>
+</ul>
+</div>
+<div class="section" id="service-contact-file-format">
+<span id="service-contact-format"></span><h3>2.4.3.3. Service Contact file format<a class="headerlink" href="#service-contact-file-format" title="Permalink to this headline">¶</a></h3>
+<p>The service contact file/worksheet is required to be uploaded each time.</p>
+<p>Data elements for the service contact upload file/worksheet are defined at
+<a class="reference internal" href="data-model-and-specifications.html#service-contact-data-elements"><span class="std std-ref">Service Contact</span></a>.</p>
+<p>Example service contact data:</p>
+<ul class="simple">
+<li><a class="reference external" href="../_static/service-contacts.csv">CSV service contact file</a>.</li>
+<li><a class="reference external" href="../_static/pmhc-upload.xlsx">XLSX service contact worksheet</a>.</li>
+</ul>
+</div>
+<div class="section" id="k10-collection-occasion-file-format">
+<span id="k10p-format"></span><h3>2.4.3.4. K10+ Collection Occasion file format<a class="headerlink" href="#k10-collection-occasion-file-format" title="Permalink to this headline">¶</a></h3>
+<p>The K10+ file/worksheet is required to be uploaded each time.</p>
+<p>Data elements for the K10+ collection occasion upload file/worksheet are defined
+at <a class="reference internal" href="data-model-and-specifications.html#k10p-data-elements"><span class="std std-ref">K10+</span></a>.</p>
+<p>Example K10+ data:</p>
+<ul class="simple">
+<li><a class="reference external" href="../_static/k10p.csv">CSV K10+ file</a>.</li>
+<li><a class="reference external" href="../_static/pmhc-upload.xlsx">XLSX K10+ worksheet</a>.</li>
+</ul>
+</div>
+<div class="section" id="k5-collection-occasion-file-format">
+<span id="k5-format"></span><h3>2.4.3.5. K5 Collection Occasion file format<a class="headerlink" href="#k5-collection-occasion-file-format" title="Permalink to this headline">¶</a></h3>
+<p>The K5 file/worksheet is required to be uploaded each time.</p>
+<p>Data elements for the K5 collection occasion upload file/worksheet are defined
+at <a class="reference internal" href="data-model-and-specifications.html#k5-data-elements"><span class="std std-ref">K5</span></a>.</p>
+<p>Example K5 data:</p>
+<ul class="simple">
+<li><a class="reference external" href="../_static/k5.csv">CSV K5 file</a>.</li>
+<li><a class="reference external" href="../_static/pmhc-upload.xlsx">XLSX K5 worksheet</a>.</li>
+</ul>
+</div>
+<div class="section" id="sdq-collection-occasion-file-format">
+<span id="sdq-format"></span><h3>2.4.3.6. SDQ Collection Occasion file format<a class="headerlink" href="#sdq-collection-occasion-file-format" title="Permalink to this headline">¶</a></h3>
+<p>The SDQ file/worksheet is required to be uploaded each time.</p>
+<p>Data elements for the SDQ collection occasion upload file/worksheet are defined
+at <a class="reference internal" href="data-model-and-specifications.html#sdq-data-elements"><span class="std std-ref">SDQ</span></a>.</p>
+<p>Example SDQ data:</p>
+<ul class="simple">
+<li><a class="reference external" href="../_static/sdq.csv">CSV SDQ file</a>.</li>
+<li><a class="reference external" href="../_static/pmhc-upload.xlsx">XLSX SDQ worksheet</a>.</li>
+</ul>
+</div>
+<div class="section" id="practitioner-file-format">
+<span id="practitioner-format"></span><h3>2.4.3.7. Practitioner file format<a class="headerlink" href="#practitioner-file-format" title="Permalink to this headline">¶</a></h3>
+<p>The practitioner file/worksheet is required for the first upload and if there
+is a change in practitioners. It is optional otherwise.  There is no harm in
+including it in every upload.</p>
+<p>Data elements for the practitioner upload file/worksheet are defined at
+<a class="reference internal" href="data-model-and-specifications.html#practitioner-data-elements"><span class="std std-ref">Practitioner</span></a>.</p>
+<p>Example practitioner data:</p>
+<ul class="simple">
+<li><a class="reference external" href="../_static/practitioners.csv">CSV practitioner file</a>.</li>
+<li><a class="reference external" href="../_static/pmhc-upload.xlsx">XLSX practitioner worksheet</a>.</li>
+</ul>
+</div>
+<div class="section" id="organisation-file-format">
+<span id="organisation-format"></span><h3>2.4.3.8. Organisation file format<a class="headerlink" href="#organisation-file-format" title="Permalink to this headline">¶</a></h3>
+<p>This file is for PHN use only. The organisation file/worksheet is optional. It can
+be included to upload Provider Organisations in bulk or if there is a change in
+Provider Organisation details. There is no harm in including it in every upload.</p>
+<p>Data elements for the Provider Organisation upload file/worksheet are defined at
+<a class="reference internal" href="data-model-and-specifications.html#provider-organisation-data-elements"><span class="std std-ref">Provider Organisation</span></a>.</p>
+<p>Example organisation data:</p>
+<ul class="simple">
+<li><a class="reference external" href="../_static/organisations.csv">CSV organisation file</a>.</li>
+<li><a class="reference external" href="../_static/pmhc-upload.xlsx">XLSX organisation worksheet</a>.</li>
+</ul>
+</div>
+<div class="section" id="deleting-records">
+<span id="id4"></span><h3>2.4.3.9. Deleting records<a class="headerlink" href="#deleting-records" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">Records of the following type can be deleted via upload:</p>
+<ul class="simple">
+<li>Client</li>
+<li>Episode</li>
+<li>Service Contact</li>
+<li>K10+</li>
+<li>K5</li>
+<li>SDQ</li>
+<li>Practitioner</li>
+</ul>
+<p>Organisation records <em>cannot</em> be deleted via upload. Please email
+<a class="reference external" href="mailto:support&#37;&#52;&#48;pmhc-mds&#46;com">support<span>&#64;</span>pmhc-mds<span>&#46;</span>com</a> if you need to delete an organisation.</p>
+</li>
+<li><p class="first">An extra optional “delete” column can be added to each of the supported
+upload files/worksheets.</p>
+</li>
+<li><p class="first">If included, this column must be the third column in each file, after the organisation
+path and the record’s entity key.</p>
+</li>
+<li><p class="first">To delete a record, include its organisation path and its entity key, leave
+all other fields blank and put “delete” in the “delete” column. Please note
+that case is important. “DELETE” will not be accepted.</p>
+</li>
+<li><p class="first">Marking a record as deleted will require all child records of that record also
+to be marked for deletion. For example, marking a client as deleted will
+require all episodes, service contacts and collection occasions of that
+client to be marked for deletion.</p>
+</li>
+<li><p class="first">While deletions can be included in the same upload as insertions/updates,
+we recommend that you include all deletions in a separate upload that is
+uploaded before the insertions/updates.</p>
+</li>
+</ul>
+<p>Example files showing how to delete via upload:</p>
+<ul class="simple">
+<li><a class="reference external" href="../_static/pmhc-upload-delete.xlsx">XLSX file containing all the worksheets</a>.</li>
+<li><a class="reference external" href="../_static/clients-delete.csv">CSV delete client file</a>.</li>
+<li><a class="reference external" href="../_static/episodes-delete.csv">CSV delete episode file</a>.</li>
+<li><a class="reference external" href="../_static/service-contacts-delete.csv">CSV delete service contact file</a>.</li>
+<li><a class="reference external" href="../_static/k10p-delete.csv">CSV delete K10+ file</a>.</li>
+<li><a class="reference external" href="../_static/k5-delete.csv">CSV detete K5 file</a>.</li>
+<li><a class="reference external" href="../_static/sdq-delete.csv">CSV delete SDQ file</a>.</li>
+<li><a class="reference external" href="../_static/practitioners-delete.csv">CSV delete practitioner file</a>.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="frequently-asked-questions">
+<h2>2.4.4. Frequently Asked Questions<a class="headerlink" href="#frequently-asked-questions" title="Permalink to this headline">¶</a></h2>
+<p>Please also refer to <a class="reference internal" href="../faqs/system/uploading.html#uploading-data-faqs"><span class="std std-ref">Uploading data</span></a> for answers to frequently
+asked questions about uploading data.</p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="data-item-summary.html" class="btn btn-neutral float-right" title="2.5. Data item summary" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="data-model-and-specifications.html" class="btn btn-neutral" title="2.3. Data model and specifications" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Australian Government - Department of Health.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'Version 1.0.13',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+ 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-84023505-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+</body>
+</html>

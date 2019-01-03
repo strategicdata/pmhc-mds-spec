@@ -1,1 +1,0 @@
-SPEC_NAME=PMHC

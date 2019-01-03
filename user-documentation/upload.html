@@ -1,0 +1,483 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>1.5. Upload &mdash; PMHC MDS Version 1.0.13 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="PMHC MDS Version 1.0.13 documentation" href="../index.html"/>
+        <link rel="up" title="1. User Guide" href="index.html"/>
+        <link rel="next" title="1.6. Data Entry" href="data-entry.html"/>
+        <link rel="prev" title="1.4. Users" href="users.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> PMHC MDS
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                Version 1.0.13
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">1. User Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="passwords.html">1.1. Passwords</a></li>
+<li class="toctree-l2"><a class="reference internal" href="home.html">1.2. Home</a></li>
+<li class="toctree-l2"><a class="reference internal" href="organisations.html">1.3. Organisations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="users.html">1.4. Users</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">1.5. Upload</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#uploading-a-file">1.5.1. Uploading a file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#uploading-a-file-in-test-mode">1.5.2. Uploading a file in Test Mode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#viewing-previous-uploads">1.5.3. Viewing Previous Uploads</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#viewing-upload-details">1.5.4. Viewing Upload Details</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#complete-uploads">1.5.5. Complete uploads</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#error-messages">1.5.6. Error messages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#could-not-find-worksheet-name">1.5.6.1. Could not find worksheet [Name]</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#invalid-version-line-in-worksheet-name">1.5.6.2. Invalid version line in worksheet [Name]</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#column-name-is-not-valid">1.5.6.3. Column [Name] is not valid</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#organisation-path-is-not-valid-on-row">1.5.6.4. Organisation_path is not valid on row …</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#invalid-version-number-on-row-1">1.5.6.5. Invalid version number on row 1.</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#column-name-is-required-on-row">1.5.6.6. Column [Name] is required on row …</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#invalid-file">1.5.6.7. Invalid file …</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#could-not-parse-worksheet-name-bad-request-at">1.5.6.8. Could not parse worksheet [Name]: Bad request at …</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="data-entry.html">1.6. Data Entry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reporting.html">1.7. Reports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data-extract.html">1.8. Data Extract</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slk.html">1.9. SLK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html">1.10. User Guide Change log</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../data-specification/index.html">2. Data Specification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faqs/index.html">3. Frequently Asked Questions</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">PMHC MDS</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">1. User Guide</a> &raquo;</li>
+        
+      <li>1.5. Upload</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/user-documentation/upload.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="upload">
+<span id="id1"></span><h1>1.5. Upload<a class="headerlink" href="#upload" title="Permalink to this headline">¶</a></h1>
+<p>You will only be able to see the Upload tab if you have been assigned
+the ‘Upload’ role, when logged into the PMHC MDS on <a class="reference external" href="https://pmhc-mds.net">https://pmhc-mds.net</a>.</p>
+<p>If you don’t have access to the Upload tab and you believe you should, please
+contact someone in your provider organisation or provider organisation’s PHN
+who has the ‘User Management’ role.</p>
+<p>If you are unsure who has the ‘User Management’ role please email the
+PMHC helpdesk at <a class="reference external" href="mailto:support&#37;&#52;&#48;pmhc-mds&#46;com">support<span>&#64;</span>pmhc-mds<span>&#46;</span>com</a></p>
+<p>After navigating to the Upload tab, you will be presented with a drop down list
+of the organisations to which you can upload.</p>
+<div class="figure">
+<img alt="PMHC MDS Upload" src="../_images/upload.png" />
+</div>
+<div class="section" id="uploading-a-file">
+<span id="id2"></span><h2>1.5.1. Uploading a file<a class="headerlink" href="#uploading-a-file" title="Permalink to this headline">¶</a></h2>
+<p>After navigating to the Upload tab, you will be able to upload
+data files to organisations for which you have the ‘Upload’ role.</p>
+<p>You can upload data files through the upload tab, by following these steps:</p>
+<ol class="arabic">
+<li><p class="first">Navigate to the ‘Upload’ tab.</p>
+</li>
+<li><p class="first">The Primary Health Network (PHN) will be pre-filled in the ‘Organisation’ field,
+unless you are allowed to upload to more than one PHN which will allow you to
+select the PHN whose data you are uploading.</p>
+<div class="figure">
+<img alt="PMHC MDS Organisation Selected" src="../_images/upload-org-selected.png" />
+</div>
+</li>
+</ol>
+<ol class="arabic" start="4">
+<li><p class="first">Click the blue ‘Select File’ button.</p>
+</li>
+<li><p class="first">Navigate to where the upload file is saved on your system. Select the file
+and click the grey ‘Open’ button.</p>
+<div class="figure">
+<img alt="PMHC MDS Upload File Selected" src="../_images/upload-file-selected.png" />
+</div>
+</li>
+<li><p class="first">Check to ensure you have selected the correct file by reviewing the file
+name now displayed below the ‘Select File’ button.</p>
+</li>
+<li><p class="first">Click the green ‘Upload’ button.</p>
+</li>
+</ol>
+<p>You will receive confirmation that your file has been accepted. The file will
+now be validated and you will shortly receive a confirmation notification and an
+email. You you can click on the link confirmation notification or open the email
+to view the upload status informing you if your file was successfully uploaded to
+the PMHC MDS, or informing you of any errors that occurred. See <a class="reference internal" href="#viewing-previous-uploads"><span class="std std-ref">Viewing Previous Uploads</span></a></p>
+<p>Please email <a class="reference external" href="mailto:support&#37;&#52;&#48;pmhc-mds&#46;com">support<span>&#64;</span>pmhc-mds<span>&#46;</span>com</a> if you don’t receive an email within one hour.</p>
+<p>Further discussion about the error messages can be found at <a class="reference internal" href="#upload-error-messages"><span class="std std-ref">Error messages</span></a>.</p>
+</div>
+<div class="section" id="uploading-a-file-in-test-mode">
+<span id="id3"></span><h2>1.5.2. Uploading a file in Test Mode<a class="headerlink" href="#uploading-a-file-in-test-mode" title="Permalink to this headline">¶</a></h2>
+<p>A file can be uploaded in Test Mode. When uploading in test mode, the file is
+validated, however the data is not updated in the PMHC MDS database.</p>
+<p>After navigating to the Upload tab, you will be able to upload in Test Mode
+data files to organisations for which you have the ‘Upload’ role.</p>
+<p>You can upload data files in Test Mode through the upload tab, by following these steps:</p>
+<ol class="arabic">
+<li><p class="first">Navigate to the ‘Upload’ tab.</p>
+</li>
+<li><p class="first">If you are allowed to upload to more than one organisation you will be
+asked to select an organisation name.</p>
+</li>
+<li><p class="first">Select the name of the organisation whose data you are uploading from the drop down list.</p>
+</li>
+<li><p class="first">Click the blue ‘Select File’ button.</p>
+</li>
+<li><p class="first">Navigate to where the upload file is saved on your system. Select the file
+and click the grey ‘Open’ button.</p>
+</li>
+<li><p class="first">Check to ensure you have selected the correct file by reviewing the file
+name now displayed below the ‘Select File’ button.</p>
+</li>
+<li><p class="first">Click the ‘Upload as test data’ checkbox on the right hand side.</p>
+<div class="figure">
+<img alt="PMHC MDS Test Mode selected" src="../_images/upload-test-mode.png" />
+</div>
+</li>
+<li><p class="first">Click the green ‘Upload’ button.</p>
+</li>
+</ol>
+<p>You will receive confirmation that your file has been accepted. The file will
+now be validated and you will shortly receive an email informing you if
+your file was valid, or informing you of any errors that occurred.</p>
+<p><em>Even if your file was valid, the data will not be updated in the PMHC MDS database.</em></p>
+<div class="figure">
+<img alt="PMHC MDS Upload Test Complete Details page" src="../_images/upload-test-comp.png" />
+</div>
+</div>
+<div class="section" id="viewing-previous-uploads">
+<span id="id4"></span><h2>1.5.3. Viewing Previous Uploads<a class="headerlink" href="#viewing-previous-uploads" title="Permalink to this headline">¶</a></h2>
+<p>The PMHC MDS allows you to review previous uploads. At the bottom of the Upload
+tab there is a ‘Status of Previous Uploads’ table.</p>
+<p>If you need to see a test upload please check the ‘Show test uploads’ checkbox.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="PMHC MDS Status of Previous Uploads" src="../_images/upload-previous.png" />
+</div>
+</div></blockquote>
+<p>When an upload has been completed, irregardless of whether it validated successfully
+or not, the upload will be added to the table.</p>
+<p>The ‘Status of Previous Uploads’ table refreshes once files finish the validation process. Types of status results are:</p>
+<blockquote>
+<div><ul class="simple">
+<li><strong>accept</strong> - the file is currently going through the validation process</li>
+<li><strong>complete</strong> - the file has successfully passed the validation process</li>
+<li><strong>error</strong> - the file has returned errors through the validation process. Please review the error messages and correct the data to upload again</li>
+</ul>
+</div></blockquote>
+<p>Further discussion about the error messages can be found at <a class="reference internal" href="#upload-error-messages"><span class="std std-ref">Error messages</span></a>.</p>
+</div>
+<div class="section" id="viewing-upload-details">
+<span id="viewing-uploads-details"></span><h2>1.5.4. Viewing Upload Details<a class="headerlink" href="#viewing-upload-details" title="Permalink to this headline">¶</a></h2>
+<p>You can view the results of an upload by following these steps:</p>
+<ol class="arabic simple">
+<li>Navigate to the ‘Upload’ tab.</li>
+<li>Click the ‘Upload Status’ tab.</li>
+<li>Locate the date and time of the upload you are interested in.</li>
+<li>Click on the filename of the relevant upload.</li>
+<li>You will be shown the ‘Upload Detail’ page.</li>
+</ol>
+</div>
+<div class="section" id="complete-uploads">
+<span id="viewing-complete-uploads"></span><h2>1.5.5. Complete uploads<a class="headerlink" href="#complete-uploads" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="#viewing-uploads-details"><span class="std std-ref">Viewing Upload Details</span></a> for complete uploads will display data verification
+information by listing the number of data records present and if those records
+are added, updated, or deleted, within the MDS records.</p>
+<div class="figure">
+<img alt="PMHC MDS Upload Details page" src="../_images/upload-details.png" />
+</div>
+</div>
+<div class="section" id="error-messages">
+<span id="upload-error-messages"></span><h2>1.5.6. Error messages<a class="headerlink" href="#error-messages" title="Permalink to this headline">¶</a></h2>
+<p>If the status of your file shows error, you can view the returned errors through <a class="reference internal" href="#viewing-previous-uploads"><span class="std std-ref">Viewing Previous Uploads</span></a>.</p>
+<div class="figure">
+<img alt="PMHC MDS Upload Details error page" src="../_images/upload-details-error.png" />
+</div>
+<p>The definition of each data item has associated notes that will provide guidance on why an error is returned. By visiting the data specifications documentation and clicking on the <a class="reference internal" href="../data-specification/data-model-and-specifications.html#record-formats"><span class="std std-ref">Record formats</span></a> field name this will take you to the field definition which outlines the associated notes.</p>
+<p>Please email <a class="reference external" href="mailto:support&#37;&#52;&#48;pmhc-mds&#46;com">support<span>&#64;</span>pmhc-mds<span>&#46;</span>com</a> if you require assistance in understanding an error message.</p>
+<p>Below are some example error messages, and how to fix them:</p>
+<div class="section" id="could-not-find-worksheet-name">
+<h3>1.5.6.1. Could not find worksheet [Name]<a class="headerlink" href="#could-not-find-worksheet-name" title="Permalink to this headline">¶</a></h3>
+<p>This error occurs when you are uploading and Excel spreadsheet. The worksheet
+names need to exactly match the name in the ‘Excel worksheet name’ column
+of the ‘Summary of files to upload’ table at <a class="reference internal" href="../data-specification/upload-specification.html#files-to-upload"><span class="std std-ref">Files or worksheets to upload</span></a>. If all the
+required worksheets are not present you will receive the error above.</p>
+</div>
+<div class="section" id="invalid-version-line-in-worksheet-name">
+<h3>1.5.6.2. Invalid version line in worksheet [Name]<a class="headerlink" href="#invalid-version-line-in-worksheet-name" title="Permalink to this headline">¶</a></h3>
+<p>The top line of the worksheet must include the following columns:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="44%" />
+<col width="56%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>Version</td>
+<td>1.0</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="column-name-is-not-valid">
+<h3>1.5.6.3. Column [Name] is not valid<a class="headerlink" href="#column-name-is-not-valid" title="Permalink to this headline">¶</a></h3>
+<p>Each item is a column in the file/worksheet. The ‘Field Name’ should be used for
+the column headings. These values can be found at <a class="reference internal" href="../data-specification/upload-specification.html#file-format"><span class="std std-ref">File format</span></a>, or
+listed on the provided example file at <a class="reference internal" href="../data-specification/upload-specification.html#files-to-upload"><span class="std std-ref">Files or worksheets to upload</span></a>. If the Column [Name]
+doesn’t match identically you will receive the error above.</p>
+</div>
+<div class="section" id="organisation-path-is-not-valid-on-row">
+<h3>1.5.6.4. Organisation_path is not valid on row …<a class="headerlink" href="#organisation-path-is-not-valid-on-row" title="Permalink to this headline">¶</a></h3>
+<p>The organisation path provided does not map to a valid organisation. The format
+should be a combination of your PHN key and the provider organisation key,
+separated with a colon. Example PHN_key:POrg_key. If the organisation path
+doesn’t match identically you will receive the error above.</p>
+</div>
+<div class="section" id="invalid-version-number-on-row-1">
+<h3>1.5.6.5. Invalid version number on row 1.<a class="headerlink" href="#invalid-version-number-on-row-1" title="Permalink to this headline">¶</a></h3>
+<p>You need to record a valid version number on row 1, in column 2. Column one will
+include the word Version, Column two should inclue a number.We are currently
+only accepting Version 1, or Version 1.X eg 1.0 or 1.1 . If the version number
+doesn’t match identically you will receive the error above.</p>
+</div>
+<div class="section" id="column-name-is-required-on-row">
+<h3>1.5.6.6. Column [Name] is required on row …<a class="headerlink" href="#column-name-is-required-on-row" title="Permalink to this headline">¶</a></h3>
+<p>There is a required field that has not been entered. If not supplied, insert the
+default ‘Missing’ or ‘Not recorded’ value. These values can be found at <a class="reference internal" href="../data-specification/data-model-and-specifications.html#record-formats"><span class="std std-ref">Record formats</span></a>.
+If the Column [Name] is blank in a mandatory field you will receive the error above.</p>
+</div>
+<div class="section" id="invalid-file">
+<h3>1.5.6.7. Invalid file …<a class="headerlink" href="#invalid-file" title="Permalink to this headline">¶</a></h3>
+<p>The system is having trouble identifying your upload file. Please provide a copy of your upload file to <a class="reference external" href="mailto:support&#37;&#52;&#48;pmhc-mds&#46;com">support<span>&#64;</span>pmhc-mds<span>&#46;</span>com</a>.</p>
+</div>
+<div class="section" id="could-not-parse-worksheet-name-bad-request-at">
+<h3>1.5.6.8. Could not parse worksheet [Name]: Bad request at …<a class="headerlink" href="#could-not-parse-worksheet-name-bad-request-at" title="Permalink to this headline">¶</a></h3>
+<p>Something has gone wrong with the upload. Please contact <a class="reference external" href="mailto:support&#37;&#52;&#48;pmhc-mds&#46;com">support<span>&#64;</span>pmhc-mds<span>&#46;</span>com</a>.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="data-entry.html" class="btn btn-neutral float-right" title="1.6. Data Entry" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="users.html" class="btn btn-neutral" title="1.4. Users" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Australian Government - Department of Health.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'Version 1.0.13',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+ 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-84023505-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+</body>
+</html>
