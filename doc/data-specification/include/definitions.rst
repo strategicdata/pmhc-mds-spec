@@ -2106,8 +2106,55 @@ The range of activities that best describes the overall services intended to be 
     appropriate services for Aboriginal and Torres Strait Islander peoples.
   
   7 - Other
-     The treatment plan for the client is primarily based around services
-     that cannot be described by other categories.
+    The treatment plan for the client is primarily based around services
+    that cannot be described by other categories.
+  
+  8 - Psychosocial support
+    Episodes of care should be classified as Psychosocial Support (code 8) where
+    the treatment plan for the client is primarily based around the delivery of
+    psychosocial support services. Psychosocial support services are defined for
+    PMHC MDS purposes as services that focus on building capacity and stability
+    in one or more of the following areas:
+  
+    * social skills and friendships, family connections;
+    * managing daily living needs;
+    * financial management and budgeting;
+    * finding and maintaining a home;
+    * vocational skills and goals, including volunteering;
+    * educational and training goals;
+    * maintaining physical wellbeing, including exercise;
+    * building broader life skills including confidence and resilience.
+  
+    These services are usually delivered by a range of non-clinical providers
+    including peer support workers with lived experience of mental illness
+  
+    Services delivered to clients receiving episodes of care classified as
+    Psychosocial Support may receive the full range of services as described in
+    the Service Contact Type data item, for example, assessment,
+    care coordination and so forth.  However, in general, where the Principal
+    Focus of Treatment Plan is coded as Psychosocial Support there should be an
+    expectation that the majority of services provided will be of a psychosocial
+    support nature. Further details on the relationship between the episode of
+    care concept and service contacts is available at
+    https://docs.pmhc-mds.com/faqs/concepts-processes/data-definitions.html#episode-one-at-a-time
+  
+    PHNs may wish to advise specific commissioned organisations solely funded
+    from their Psychosocial Support Schedule that all episodes of care should be
+    coded as Psychosocial Support, or leave it to the discretion of service providers.
+  
+    Clients who are recorded as NDIS recipients would not usually be recorded as
+    receiving a Psychosocial Support episode of care.  The National Psychosocial
+    Support guidance material states explicitly that these services are designed
+    for individuals who have significant psychosocial disability but do not meet
+    NDIS eligibility criteria.
+  
+    Episodes of care delivered to individuals who are recorded as Continuity of
+    Support clients (see below) may be reported as Psychosocial Support.
+  
+  **Changes in effect from 1 January 2019**
+  
+  - A new Psychosocial Support ‘episode of care type’ has been added to the
+    existing Principal Focus of Treatment Plan data item: New code 8.
   
 
 ----------
@@ -3108,6 +3155,39 @@ The type or category of the practitioner, as represented by a code.
   :12: Psychosocial Support Worker
   :13: Peer Support Worker
   :99: Not stated
+:Notes:
+  Practitioner category refers to the labour classification of the service
+  provider delivering the Service Contact.  Practitioners should be assigned to
+  the code that best describes their role for which they are engaged to deliver
+  services to clients. Practitioners are registered in the PMHC MDS by Provider
+  Organisations, with each practitioner assigned a code that is unique within the
+  organisation.
+  
+  In most cases, Practitioner Category will be determined by the training
+  and qualifications of the practitioner. However, in some instances, a
+  practitioner may be employed in a capacity that does not necessarily reflect
+  their formal qualifications. For example, a person with a social work
+  qualification may be employed primarily as a peer support worker on the basis
+  of their lived experience of a mental illness.  In such instances, the
+  practitioner should be classified as a peer support worker.
+  
+  12 - Psychosocial Support Worker
+    Refers to practitioners who are principally employed to provide psychosocial
+    support services to clients where the practitioner has specific training in
+    the area (e.g., Cert 4 qualification) and cannot be better described by
+    another category.
+  
+  13 - Peer Support Worker
+    Refers to practitioners who are principally employed to provide support to
+    clients on the basis of the practitioner’s lived experience of mental illness.
+  
+  
+  **Changes in effect from 1 January 2019**
+  
+  - Two new codes have been added to the existing Practitioner Category data item,
+    to allow for Psychosocial Support Workers (new code 12) and Peer Support
+    Workers (new code 13) who are typically employed in psychosocial support programs.
+  
 
 ----------
 
@@ -5422,6 +5502,37 @@ The main type of service provided in the service contact, as represented by the 
     Service Contacts (see domains below) delivered to Aboriginal or Torres Strait
     Islander clients can be assigned to other categories.*
   
+  9 - Psychosocial support
+    Service providers are required to report on Service Contact Type for every
+    contact with a client. This requires a judgement about the main service
+    delivered at each contact, selected from a small list of options, and based
+    on the activity that accounted for most provider time. Service Contact Type
+    complements Principal Focus of Treatment Plan by capturing information to
+    understand the mix of services provided within an individual episode of care.
+  
+    Service Contact Type should be coded as Psychosocial Support (code 9) where
+    the main services delivered during the contact involved the delivery of
+    psychosocial support services. Psychosocial support services are defined for
+    PMHC MDS purposes as services that focus on building capacity and stability
+    in one or more of the following areas:
+  
+    * social skills and friendships, family connections;
+    * managing daily living needs;
+    * financial management and budgeting;
+    * finding and maintaining a home;
+    * vocational skills and goals, including volunteering;
+    * educational and training goals;
+    * maintaining physical wellbeing, including exercise;
+    * building broader life skills including confidence and resilience.
+  
+    These services are usually delivered by a range of non-clinical providers
+    including peer support workers with lived experience of mental illness.
+  
+    Service Contacts recorded as psychosocial support may be delivered in all
+    episodes of care, regardless of episode type.  However, it is expected that
+    they will be mainly associated with episodes where the Principal Focus of
+    Treatment Plan is classified as Psychosocial Support.
+  
   98 - ATAPS
     Services delivered as part of ATAPS funded referrals that are recorded and/or
     migrated into the PMHC MDS.
@@ -5435,6 +5546,11 @@ The main type of service provided in the service contact, as represented by the 
     30 June 2018. (All ATAPS referrals should have concluded by that date).
   
     This response will only be allowed on service contacts with the !ATAPS flag.
+  
+  **Changes in effect from 1 January 2019**
+  
+  - A new Psychosocial Support code has been added to the existing Service Contact
+    Type data item.  New code 9.
   
 
 ----------
@@ -5468,11 +5584,51 @@ Where the service contact was delivered, as represented by a code.
   :98: Not applicable (Service Contact Modality is not face to face)
   :99: Not stated
 :Notes:
-  Values other than ‘Not applicable’ only to be specified when Service Contact
+  Note that this data item concerns only where the service contact took place.
+  It is not about where the client lives. Thus, if a resident of an aged care
+  residential facility is seen at another venue (e.g., at a GP Clinic), then
+  the Service Contact Venue should be recorded as ‘GP Practice’ (code 3) to
+  accurately reflect where the contact took place.
+  
+  Values other than ‘98 - Not applicable’ only to be specified when Service Contact
   Modality is ‘Face to Face’.
   
-  Note that 'Other primary care setting' is suitable for primary care settings
-  such as community health centres.
+  6 - Other primary care setting
+    This code is suitable for primary care settings such as community health centres.
+  
+  8 - Residential aged care facility
+    Use this code when the client is seen at an aged care residential facility.
+  
+  12 - Aged care centre - non-residential
+    Use this code when the client is seen at a non-residential aged care centre
+    (e.g., community day program centre for older people).
+  
+  98 - Not applicable (Service Contact Modality is not face to face)
+    This code must only to be used where the Service Contact Modality is not
+    face to face
+  
+  All other data items would be recorded as per the guidelines that apply to
+  those items – there are no special requirements specific to delivery of
+  services to residents of aged care facilities.  For example, any of the
+  episode of care types recorded under the Principal Focus of Treatment Plan
+  may apply; similarly, service contacts delivered to aged care residents may
+  be any of the options available in Service Contact Type field.
+  
+  **Changes in effect from 1 January 2019**
+  
+  Amendment has been made to the existing Service Contact Venue data item, to
+  enable better identification of residential aged care facilities. Specifically:
+  - the existing Code 8 (‘Aged Care Centre’) has been re-defined and titled ‘Residential Aged Care Facility’
+  - a new Service Contact code has been added (Code 12) for service contacts delivered in ‘Aged Care Centre – Non residential’
+  
+  The data model and elements of the PMHC MDS provide a good fit for this measure,
+  with minimal adjustment required to enable reporting by service providers.
+  The only element requiring modification is the Service Contact Venue field,
+  to enable better identification of residential aged care facilities.
+  
+  Reassignment of Code 8 is justified by its relatively low use (0.2% of service
+  contacts in 2017 18, approx. 1,300 contacts of 540,000 total) and the need to
+  create a new code for non-residential aged care centres.
   
 
 ----------

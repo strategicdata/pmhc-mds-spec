@@ -14,14 +14,15 @@ of their lived experience of a mental illness.  In such instances, the
 practitioner should be classified as a peer support worker.
 
 12 - Psychosocial Support Worker
-  Refers to practitioners who are principally employed to provide support to
-  clients on the basis of the practitioner’s lived experience of mental illness.
-
-13 - Peer Support Worker
   Refers to practitioners who are principally employed to provide psychosocial
   support services to clients where the practitioner has specific training in
   the area (e.g., Cert 4 qualification) and cannot be better described by
   another category.
+
+13 - Peer Support Worker
+  Refers to practitioners who are principally employed to provide support to
+  clients on the basis of the practitioner’s lived experience of mental illness.
+
 
 **Changes in effect from 1 January 2019**
 
