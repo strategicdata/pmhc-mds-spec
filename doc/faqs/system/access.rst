@@ -249,6 +249,20 @@ This letter must be faxed or scanned then emailed to:
 
 Base your letter on the details listed in :ref:`letter-of-authority-faq`
 
+.. _testing-training-developer-access-faq:
+
+Can I have an account to test adding data and for training new staff?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Yes, there is a Developers PMHC MDS website available for testing and training
+purposes for PHNs, Provider Organisations and third-party developers.
+
+To set up an account on https://developers.pmhc-mds.net/ please provide us with
+a 'Letter of Authority' on your organisation's letterhead, similar to the one
+outlined for third-party software developers.
+
+See: :ref:`third-party-developer-access-faq`.
+
 .. _forgotten-password-faq:
 
 I forgot my password. What do I do?
