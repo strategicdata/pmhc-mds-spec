@@ -7,7 +7,7 @@
 ","string (2,50)",yes,"This is a number or code assigned to each collection occasion of outcome measures. The Collection Occasion Key is unique and stable for each collection occasion at the level of the organisation."
 "`Episode Key`_ (episode_key)
 
-",,yes,
+","string (2,50)",yes
 "`Collection Occasion - Measure Date`_ (measure_date)
 
 ",date,yes,"The date the measure was given."

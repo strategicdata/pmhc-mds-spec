@@ -36,6 +36,11 @@
     "schema:dateCreated": "2016-06-22",
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
+    "datatype": {
+      "base": "string",
+      "minLength": 2,
+      "maxLength": 50
+    },
     "required": true
   },{
     "name": "measure_date",
