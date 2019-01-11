@@ -34,7 +34,7 @@ The K10 has been selected as the outcome tool across all populations. Is there s
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The issues entailed in the specification of mandatory outcome measures are
-covered in section 4.7 of the Overview paper.  Key selection criteria include
+covered in section 4.7 of the `Overview paper <https://www.pmhc-mds.com/doc/pmhc-mds-overview-20160916.pdf>`_.  Key selection criteria include
 that the core measures should be meaningful and applicable across all client groups,
 be capable of being used by all service providers, and reflect the client’s
 perspective – that is, be based on self-report.  The K10 is regarded as meeting

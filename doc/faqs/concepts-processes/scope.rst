@@ -106,7 +106,7 @@ practitioners independent of the PHN.
 
 It should be noted however that the PMHC MDS differs from the previous ATAPS collection
 in allowing a range of services delivered ‘on behalf’ of the client to be recorded.
-Section 4.4 of the Overview paper (‘Determining what activities are in scope for
+Section 4.4 of the `Overview paper <https://www.pmhc-mds.com/doc/pmhc-mds-overview-20160916.pdf>`_ (‘Determining what activities are in scope for
 reporting as service contacts”) provides the relevant details.
 
 
