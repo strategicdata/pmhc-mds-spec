@@ -227,7 +227,7 @@ Service contact - Definition: Does the definition extend to the writing of repor
 
 No. See response to :ref:`Exclusion-of-non-clinical-time`.
 
-As stated in the Overview paper, Service contacts are defined as “the provision
+As stated in the `Overview paper <https://www.pmhc-mds.com/doc/pmhc-mds-overview-20160916.pdf>`_, Service contacts are defined as “the provision
 of a service by a PHN commissioned mental health service provider for a client
 where the nature of the service would normally warrant a dated entry in the
 clinical record of the client and:
@@ -269,7 +269,7 @@ for regional or national purposes.
 Service Contact – Type: Is it possible to obtain further examples of "structured psychological interventions" and "other psychological interventions”?  e.g., where would narrative therapy fit?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The rationale for this item is explained in the Overview paper, along with definitions
+The rationale for this item is explained in the `Overview paper <https://www.pmhc-mds.com/doc/pmhc-mds-overview-20160916.pdf>`_, along with definitions
 of the following major categories:
 
 * Assessment
