@@ -3,7 +3,7 @@
   "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
   "columns": [{
     "name": "organisation_path",
-    "titles": [ "organisation_path", "Organisation Path" ],
+    "titles": [ "organisation_path" ],
     "dc:title": "Organisation Path",
     "schema:description": "A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.",
     "schema:disambiguatingDescription": "type/organisation_path.rst",
@@ -16,7 +16,7 @@
     "required": true
   },{
     "name": "collection_occasion_key",
-    "titles": [ "collection_occasion_key", "Collection Occasion Key" ],
+    "titles": [ "collection_occasion_key" ],
     "dc:title": "Collection Occasion Key",
     "schema:description": "This is a number or code assigned to each collection occasion of outcome measures. The Collection Occasion Key is unique and stable for each collection occasion at the level of the organisation.",
     "schema:disambiguatingDescription": "table/collection-occasion/key.rst",
@@ -31,7 +31,7 @@
     "required": true
   },{
      "name": "episode_key",
-    "titles": [ "episode_key", "Episode Key" ],
+    "titles": [ "episode_key" ],
     "dc:title": "Episode Key",
     "schema:dateCreated": "2016-06-22",
     "schema:dateDeleted": "2016-06-22",
@@ -44,7 +44,7 @@
     "required": true
   },{
     "name": "measure_date",
-    "titles": [ "measure_date", "Measure Date" ],
+    "titles": [ "measure_date" ],
     "dc:title": "Collection Occasion - Measure Date",
     "schema:description": "The date the measure was given.",
     "schema:disambiguatingDescription": "table/collection-occasion/date.rst",
@@ -60,7 +60,7 @@
     "required": true
   },{
     "name": "reason_for_collection",
-    "titles": [ "reason_for_collection", "Reason for Collection" ],
+    "titles": [ "reason_for_collection" ],
     "dc:title": "Collection Occasion - Reason",
     "schema:description": "The reason for the collection of the outcome measures on the identified Outcome Collection Occasion.",
     "schema:disambiguatingDescription": "table/collection-occasion/reason.rst",
@@ -72,7 +72,7 @@
     "required": true
   },{
     "name": "sdq_version",
-    "titles": [ "sdq_version", "SDQ Version" ],
+    "titles": [ "sdq_version" ],
     "dc:title": "SDQ Collection Occasion - Version",
     "schema:description": "The version of the SDQ collected.",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/sdq-version.rst",
@@ -84,7 +84,7 @@
     "required": true
   },{
     "name": "sdq_item1",
-    "titles": [ "sdq_item1", "Question 1" ],
+    "titles": [ "sdq_item1" ],
     "dc:title": "SDQ - Question 1",
     "schema:description": "Parent Report: Considerate of other people's feelings.\n\nYouth Self Report: I try to be nice to other people. I care about their feelings.",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/item1.rst",
@@ -97,7 +97,7 @@
     "required": true
   },{
     "name": "sdq_item2",
-    "titles": [ "sdq_item2", "Question 2" ],
+    "titles": [ "sdq_item2" ],
     "dc:title": "SDQ - Question 2",
     "schema:description": "Parent Report: Restless, overactive, cannot stay still for long.\n\nYouth Self Report: I am restless, I cannot stay still for long.",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/item2.rst",
@@ -110,7 +110,7 @@
     "required": true
   },{
     "name": "sdq_item3",
-    "titles": [ "sdq_item3", "Question 3" ],
+    "titles": [ "sdq_item3" ],
     "dc:title": "SDQ - Question 3",
     "schema:description": "Parent Report: Often complains of headaches, stomach-aches or sickness.\n\nYouth Self Report: I get a lot of headaches, stomach-aches or sickness.",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/item3.rst",
@@ -123,7 +123,7 @@
     "required": true
   },{
     "name": "sdq_item4",
-    "titles": [ "sdq_item4", "Question 4" ],
+    "titles": [ "sdq_item4" ],
     "dc:title": "SDQ - Question 4",
     "schema:description": "Parent Report: Shares readily with other children {for example toys, treats, pencils} / young people {for example CDs, games, food}.\n\nYouth Self Report: I usually share with others, for examples CDs, games, food.",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/item4.rst",
@@ -136,7 +136,7 @@
     "required": true
   },{
     "name": "sdq_item5",
-    "titles": [ "sdq_item5", "Question 5" ],
+    "titles": [ "sdq_item5" ],
     "dc:title": "SDQ - Question 5",
     "schema:description": "Parent Report: Often loses temper.\n\nYouth Self Report: I get very angry and often lose my temper.",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/item5.rst",
@@ -149,7 +149,7 @@
     "required": true
   },{
     "name": "sdq_item6",
-    "titles": [ "sdq_item6", "Question 6" ],
+    "titles": [ "sdq_item6" ],
     "dc:title": "SDQ - Question 6",
     "schema:description": "Parent Report: {Rather solitary, prefers to play alone} / {would rather be alone than with other young people}.\n\nYouth Self Report: I would rather be alone than with people of my age.",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/item6.rst",
@@ -162,7 +162,7 @@
     "required": true
   },{
     "name": "sdq_item7",
-    "titles": [ "sdq_item7", "Question 7" ],
+    "titles": [ "sdq_item7" ],
     "dc:title": "SDQ - Question 7",
     "schema:description": "Parent Report: {Generally well behaved} / {Usually does what adults requests}.\n\nYouth Self Report: I usually do as I am told.",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/item7.rst",
@@ -175,7 +175,7 @@
     "required": true
   },{
     "name": "sdq_item8",
-    "titles": [ "sdq_item8", "Question 8" ],
+    "titles": [ "sdq_item8" ],
     "dc:title": "SDQ - Question 8",
     "schema:description": "Parent Report: Many worries or often seems worried.\n\nYouth Self Report: I worry a lot.",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/item8.rst",
@@ -188,7 +188,7 @@
     "required": true
   },{
     "name": "sdq_item9",
-    "titles": [ "sdq_item9", "Question 9" ],
+    "titles": [ "sdq_item9" ],
     "dc:title": "SDQ - Question 9",
     "schema:description": "Parent Report: Helpful if someone is hurt, upset or feeling ill.\n\nYouth Self Report: I am helpful if someone is hurt, upset or feeling ill.",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/item9.rst",
@@ -201,7 +201,7 @@
     "required": true
   },{
     "name": "sdq_item10",
-    "titles": [ "sdq_item10", "Question 10" ],
+    "titles": [ "sdq_item10" ],
     "dc:title": "SDQ - Question 10",
     "schema:description": "Parent Report: Constantly fidgeting or squirming.\n\nYouth Self Report: I am constantly fidgeting or squirming.",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/item10.rst",
@@ -214,7 +214,7 @@
     "required": true
   },{
     "name": "sdq_item11",
-    "titles": [ "sdq_item11", "Question 11" ],
+    "titles": [ "sdq_item11" ],
     "dc:title": "SDQ - Question 11",
     "schema:description": "Parent Report: Has at least one good friend.\n\nYouth Self Report: I have one good friend or more.",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/item11.rst",
@@ -227,7 +227,7 @@
     "required": true
   },{
     "name": "sdq_item12",
-    "titles": [ "sdq_item12", "Question 12" ],
+    "titles": [ "sdq_item12" ],
     "dc:title": "SDQ - Question 12",
     "schema:description": "Parent Report: Often fights with other {children} or bullies them / {young people}.\n\nYouth Self Report: I fight a lot. I can make other people do what I want.",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/item12.rst",
@@ -240,7 +240,7 @@
     "required": true
   },{
     "name": "sdq_item13",
-    "titles": [ "sdq_item13", "Question 13" ],
+    "titles": [ "sdq_item13" ],
     "dc:title": "SDQ - Question 13",
     "schema:description": "Parent Report: Often unhappy, depressed or tearful.\n\nYouth Self Report: I am often unhappy, depressed or tearful.",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/item13.rst",
@@ -253,7 +253,7 @@
     "required": true
   },{
     "name": "sdq_item14",
-    "titles": [ "sdq_item14", "Question 14" ],
+    "titles": [ "sdq_item14" ],
     "dc:title": "SDQ - Question 14",
     "schema:description": "Parent Report: Generally liked by other {children} / {young people}\n\nYouth Self Report: Other people my age generally like me.",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/item14.rst",
@@ -266,7 +266,7 @@
     "required": true
   },{
     "name": "sdq_item15",
-    "titles": [ "sdq_item15", "Question 15" ],
+    "titles": [ "sdq_item15" ],
     "dc:title": "SDQ - Question 15",
     "schema:description": "Parent Report: Easily distracted, concentration wanders.\n\nYouth Self Report: I am easily distracted, I find it difficult to concentrate.",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/item15.rst",
@@ -279,7 +279,7 @@
     "required": true
   },{
     "name": "sdq_item16",
-    "titles": [ "sdq_item16", "Question 16" ],
+    "titles": [ "sdq_item16" ],
     "dc:title": "SDQ - Question 16",
     "schema:description": "Parent Report: Nervous or {clingy} in new situations, easily loses confidence {omit clingy in PY}.\n\nYouth Self Report: I am nervous in new situations. I easily lose confidence.",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/item16.rst",
@@ -292,7 +292,7 @@
     "required": true
   },{
     "name": "sdq_item17",
-    "titles": [ "sdq_item17", "Question 17" ],
+    "titles": [ "sdq_item17" ],
     "dc:title": "SDQ - Question 17",
     "schema:description": "Parent Report: Kind to younger children.\n\nYouth Self Report: I am kind to younger people.",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/item17.rst",
@@ -305,7 +305,7 @@
     "required": true
   },{
     "name": "sdq_item18",
-    "titles": [ "sdq_item18", "Question 18" ],
+    "titles": [ "sdq_item18" ],
     "dc:title": "SDQ - Question 18",
     "schema:description": "Parent Report: Often lies or cheats.\n\nYouth Self Report: I am often accused of lying or cheating.",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/item18.rst",
@@ -318,7 +318,7 @@
     "required": true
   },{
     "name": "sdq_item19",
-    "titles": [ "sdq_item19", "Question 19" ],
+    "titles": [ "sdq_item19" ],
     "dc:title": "SDQ - Question 19",
     "schema:description": "Parent Report: Picked on or bullied by {children} / {youth}.\n\nYouth Self Report: Other children or young people pick on me or bully me.",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/item19.rst",
@@ -331,7 +331,7 @@
     "required": true
   },{
     "name": "sdq_item20",
-    "titles": [ "sdq_item20", "Question 20" ],
+    "titles": [ "sdq_item20" ],
     "dc:title": "SDQ - Question 20",
     "schema:description": "Parent Report: Often volunteers to help others (parents, teachers, {other} children) / Omit 'other' in PY.\n\nYouth Self Report: I often volunteer to help others (parents, teachers, children).",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/item20.rst",
@@ -344,7 +344,7 @@
     "required": true
   },{
     "name": "sdq_item21",
-    "titles": [ "sdq_item21", "Question 21" ],
+    "titles": [ "sdq_item21" ],
     "dc:title": "SDQ - Question 21",
     "schema:description": "Parent Report: Thinks things out before acting.\n\nYouth Self Report: I think before I do things.",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/item21.rst",
@@ -357,7 +357,7 @@
     "required": true
   },{
     "name": "sdq_item22",
-    "titles": [ "sdq_item22", "Question 22" ],
+    "titles": [ "sdq_item22" ],
     "dc:title": "SDQ - Question 22",
     "schema:description": "Parent Report: Steals from home, school or elsewhere.\n\nYouth Self Report: I take things that are not mine from home, school or elsewhere.",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/item22.rst",
@@ -370,7 +370,7 @@
     "required": true
   },{
     "name": "sdq_item23",
-    "titles": [ "sdq_item23", "Question 23" ],
+    "titles": [ "sdq_item23" ],
     "dc:title": "SDQ - Question 23",
     "schema:description": "Parent Report: Gets along better with adults than with other {children} / {youth}.\n\nYouth Self Report: I get along better with adults than with people my own age.",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/item23.rst",
@@ -383,7 +383,7 @@
     "required": true
   },{
     "name": "sdq_item24",
-    "titles": [ "sdq_item24", "Question 24" ],
+    "titles": [ "sdq_item24" ],
     "dc:title": "SDQ - Question 24",
     "schema:description": "Parent Report: Many fears, easily scared.\n\nYouth Self Report: I have many fears, I am easily scared.",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/item24.rst",
@@ -396,7 +396,7 @@
     "required": true
   },{
     "name": "sdq_item25",
-    "titles": [ "sdq_item25", "Question 25" ],
+    "titles": [ "sdq_item25" ],
     "dc:title": "SDQ - Question 25",
     "schema:description": "Parent Report: Good attention span sees chores or homework through to the end.\n\nYouth Self Report: I finish the work I'm doing. My attention is good.",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/item25.rst",
@@ -409,7 +409,7 @@
     "required": true
   },{
     "name": "sdq_item26",
-    "titles": [ "sdq_item26", "Question 26" ],
+    "titles": [ "sdq_item26" ],
     "dc:title": "SDQ - Question 26",
     "schema:description": "Parent Report: Overall, do you think that your child has difficulties in any of the following areas: emotions, concentration, behaviour or being able to get along with other people?\n\nYouth Self Report: Overall, do you think that you have difficulties in any of the following areas: emotions, concentration, behaviour or being able to get along with other people?",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/item26.rst",
@@ -422,7 +422,7 @@
     "required": true
   },{
     "name": "sdq_item27",
-    "titles": [ "sdq_item27", "Question 27" ],
+    "titles": [ "sdq_item27" ],
     "dc:title": "SDQ - Question 27",
     "schema:description": "Parent Report: How long have these difficulties been present?\n\nYouth Self Report: How long have these difficulties been present?",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/item27.rst",
@@ -435,7 +435,7 @@
     "required": true
   },{
     "name": "sdq_item28",
-    "titles": [ "sdq_item28", "Question 28" ],
+    "titles": [ "sdq_item28" ],
     "dc:title": "SDQ - Question 28",
     "schema:description": "Parent Report: Do the difficulties upset or distress your child?\n\nYouth Self Report: Do the difficulties upset or distress you?",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/item28.rst",
@@ -448,7 +448,7 @@
     "required": true
   },{
     "name": "sdq_item29",
-    "titles": [ "sdq_item29", "Question 29" ],
+    "titles": [ "sdq_item29" ],
     "dc:title": "SDQ - Question 29",
     "schema:description": "Parent Report: Do the difficulties interfere with your child's everyday life in the following areas? HOME LIFE.\n\nYouth Self Report: Do the difficulties interfere with your everyday life in the following areas? HOME LIFE.",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/item29.rst",
@@ -461,7 +461,7 @@
     "required": true
   },{
     "name": "sdq_item30",
-    "titles": [ "sdq_item30", "Question 30" ],
+    "titles": [ "sdq_item30" ],
     "dc:title": "SDQ - Question 30",
     "schema:description": "Parent Report: Do the difficulties interfere with your child's everyday life in the following areas? FRIENDSHIPS.\n\nYouth Self Report: Do the difficulties interfere with your everyday life in the following areas? FRIENDSHIPS.",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/item30.rst",
@@ -474,7 +474,7 @@
     "required": true
   },{
     "name": "sdq_item31",
-    "titles": [ "sdq_item31", "Question 31" ],
+    "titles": [ "sdq_item31" ],
     "dc:title": "SDQ - Question 31",
     "schema:description": "Parent Report: Do the difficulties interfere with your child's everyday life in the following areas? CLASSROOM LEARNING.\n\nYouth Self Report: Do the difficulties interfere with your everyday life in the following areas? CLASSROOM LEARNING",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/item31.rst",
@@ -487,7 +487,7 @@
     "required": true
   },{
     "name": "sdq_item32",
-    "titles": [ "sdq_item32", "Question 32" ],
+    "titles": [ "sdq_item32" ],
     "dc:title": "SDQ - Question 32",
     "schema:description": "Parent Report: Do the difficulties interfere with your child's everyday life in the following areas? LEISURE ACTIVITIES.\n\nYouth Self Report: Do the difficulties interfere with your everyday life in the following areas? LEISURE ACTIVITIES.",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/item32.rst",
@@ -500,7 +500,7 @@
     "required": true
   },{
     "name": "sdq_item33",
-    "titles": [ "sdq_item33", "Question 33" ],
+    "titles": [ "sdq_item33" ],
     "dc:title": "SDQ - Question 33",
     "schema:description": "Parent Report: Do the difficulties put a burden on you or the family as a whole?\n\nYouth Self Report: Do the difficulties make it harder for those around you (family, friends, teachers, etc)?",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/item33.rst",
@@ -513,7 +513,7 @@
     "required": true
   },{
     "name": "sdq_item34",
-    "titles": [ "sdq_item34", "Question 34" ],
+    "titles": [ "sdq_item34" ],
     "dc:title": "SDQ - Question 34",
     "schema:description": "Parent Report: Since coming to the services, are your child's problems:\n\nYouth Self Report: 'Since coming to the service, are your problems:",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/item34.rst",
@@ -526,7 +526,7 @@
     "required": true
   },{
     "name": "sdq_item35",
-    "titles": [ "sdq_item35", "Question 35" ],
+    "titles": [ "sdq_item35" ],
     "dc:title": "SDQ - Question 35",
     "schema:description": "Has coming to the service been helpful in other ways eg. providing information or making the problems bearable?",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/item35.rst",
@@ -539,7 +539,7 @@
     "required": true
   },{
     "name": "sdq_item36",
-    "titles": [ "sdq_item36", "Question 36" ],
+    "titles": [ "sdq_item36" ],
     "dc:title": "SDQ - Question 36",
     "schema:description": "Over the last 6 months have your child's teachers complained of fidgetiness, restlessness or overactivity?",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/item36.rst",
@@ -552,7 +552,7 @@
     "required": true
   },{
     "name": "sdq_item37",
-    "titles": [ "sdq_item37", "Question 37" ],
+    "titles": [ "sdq_item37" ],
     "dc:title": "SDQ - Question 37",
     "schema:description": "Over the last 6 months have your child's teachers complained of poor concentration or being easily distracted?",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/item37.rst",
@@ -565,7 +565,7 @@
     "required": true
   },{
     "name": "sdq_item38",
-    "titles": [ "sdq_item38", "Question 38" ],
+    "titles": [ "sdq_item38" ],
     "dc:title": "SDQ - Question 38",
     "schema:description": "Over the last 6 months have your child's teachers complained of acting without thinking, frequently butting in, or not waiting for his or her turn?",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/item38.rst",
@@ -578,7 +578,7 @@
     "required": true
   },{
     "name": "sdq_item39",
-    "titles": [ "sdq_item39", "Question 39" ],
+    "titles": [ "sdq_item39" ],
     "dc:title": "SDQ - Question 39",
     "schema:description": "Does your family complain about you having problems with overactivity or poor concentration?",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/item39.rst",
@@ -591,7 +591,7 @@
     "required": true
   },{
     "name": "sdq_item40",
-    "titles": [ "sdq_item40", "Question 40" ],
+    "titles": [ "sdq_item40" ],
     "dc:title": "SDQ - Question 40",
     "schema:description": "Do your teachers complain about you having problems with overactivity or poor concentration?",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/item40.rst",
@@ -604,7 +604,7 @@
     "required": true
   },{
     "name": "sdq_item41",
-    "titles": [ "sdq_item41", "Question 41" ],
+    "titles": [ "sdq_item41" ],
     "dc:title": "SDQ - Question 41",
     "schema:description": "Does your family complain about you being awkward or troublesome?",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/item41.rst",
@@ -617,7 +617,7 @@
     "required": true
   },{
     "name": "sdq_item42",
-    "titles": [ "sdq_item42", "Question 42" ],
+    "titles": [ "sdq_item42" ],
     "dc:title": "SDQ - Question 42",
     "schema:description": "Do your teachers complain about you being awkward or troublesome?",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/item42.rst",
@@ -630,7 +630,7 @@
     "required": true
   },{
     "name": "sdq_emotional_symptoms",
-    "titles": [ "sdq_emotional_symptoms", "Emotional Symptoms" ],
+    "titles": [ "sdq_emotional_symptoms" ],
     "dc:title" : "SDQ - Emotional Symptoms Scale",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/sdq-emotional-symptoms.rst",
     "schema:dateCreated": "2016-06-22",
@@ -644,7 +644,7 @@
       }
   },{
     "name": "sdq_conduct_problem",
-    "titles": [ "sdq_conduct_problem", "Conduct Problem" ],
+    "titles": [ "sdq_conduct_problem" ],
     "dc:title" : "SDQ - Conduct Problem Scale",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/sdq-conduct-problem.rst",
     "schema:dateCreated": "2016-06-22",
@@ -658,7 +658,7 @@
       }
   },{
     "name": "sdq_hyperactivity",
-    "titles": [ "sdq_hyperactivity", "Hyperactivity" ],
+    "titles": [ "sdq_hyperactivity" ],
     "dc:title" : "SDQ - Hyperactivity Scale",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/sdq-hyperactivity.rst",
     "schema:dateCreated": "2016-06-22",
@@ -672,7 +672,7 @@
       }
   },{
     "name": "sdq_peer_problem",
-    "titles": [ "sdq_peer_problem", "Peer Problem" ],
+    "titles": [ "sdq_peer_problem" ],
     "dc:title" : "SDQ - Peer Problem Scale",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/sdq-peer-problem.rst",
     "schema:dateCreated": "2016-06-22",
@@ -686,7 +686,7 @@
       }
   },{
     "name": "sdq_prosocial",
-    "titles": [ "sdq_prosocial", "Prosocial" ],
+    "titles": [ "sdq_prosocial" ],
     "dc:title" : "SDQ - Prosocial Scale",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/sdq-prosocial.rst",
     "schema:dateCreated": "2016-06-22",
@@ -700,7 +700,7 @@
       }
   },{
     "name": "sdq_total",
-    "titles": [ "sdq_total", "Total" ],
+    "titles": [ "sdq_total" ],
     "dc:title" : "SDQ - Total Difficulties Score",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/sdq-total.rst",
     "schema:dateCreated": "2016-06-22",
@@ -714,7 +714,7 @@
       }
   },{
     "name": "sdq_impact",
-    "titles": [ "sdq_impact", "Total" ],
+    "titles": [ "sdq_impact" ],
     "dc:title" : "SDQ - Impact Score",
     "schema:disambiguatingDescription": "table/collection-occasion/sdq/sdq-impact.rst",
     "schema:dateCreated": "2016-06-22",
@@ -728,7 +728,7 @@
       }
   },{
     "name": "sdq_tags",
-    "titles": [ "sdq_tags", "Tags" ],
+    "titles": [ "sdq_tags" ],
     "dc:title" : "SDQ - Tags",
     "schema:description": "List of tags for the collection occasion.",
     "schema:disambiguatingDescription": "type/tags.rst",
