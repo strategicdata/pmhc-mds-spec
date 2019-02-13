@@ -43,19 +43,17 @@ Reporting
 
 The following reports will be rolled out iteratively over the following weeks:
 
-* Category C reports: Monitoring implementation of stepped care
 * Category D reports: Key Performance Indicators
 
+The Department will consider local reporting requirements in the next phase of reviewing current reporting functionality.
+
 The :ref:`system-report-types` that are currently available are:
+* Category A: Monitoring progress of MDS implementation
+* Category B: Monitoring overall service delivery
+* Category C: Monitoring implementation of stepped care
+* Category E: Reports for data managers to monitor data supply
 
-* :ref:`category-e`, was released in `v0.14.0 <https://www.pmhc-mds.com/communications/#/2017/07/28/Update-to-the-PMHC-MDS-v-0-14-0/>`_.
-* The start of the :ref:`category-a` reports, was released in `v0.20.0 <https://www.pmhc-mds.com/communications/#/2017/12/12/Update-to-the-PMHC-MDS-v-0-20-0/>`_.
-* Additional :ref:`category-a` Data Quality reports, was released in `v0.22.1 <https://www.pmhc-mds.com/communications/#/2018/03/13/Update-to-the-PMHC-MDS-v-0-22-1/>`_.
-* Remaining :ref:`category-a` Data Quality reports, was released in `v0.23.9 <https://pmhc-mds.com/communications/#/2018/07/23/Update-to-the-PMHC-MDS-v-0-23-9/>`_.
-* Added :ref:`category-b` Activity reports, was released in `v0.23.9 <https://pmhc-mds.com/communications/#/2018/07/23/Update-to-the-PMHC-MDS-v-0-23-9/>`_.
-* The start of the :ref:`category-c` Episode reports, was released in `v0.23.12 <https://pmhc-mds.com/communications/#/2018/09/11/Update-to-the-PMHC-MDS-v-0-23-12/>`_.
-
-Regularly check the announcements on the `PMHC MDS home page <https://pmhc-mds.net/#/>`_ to keep informed.
+Regularly check the announcements on the `PMHC MDS home page <https://pmhc-mds.net/#/>`_ to keep informed on development updates.
 
 .. _dev-MCI-faq:
 
