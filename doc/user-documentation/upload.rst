@@ -102,10 +102,7 @@ your file was valid, or informing you of any errors that occurred.
 Viewing Previous Uploads
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-The PMHC MDS allows you to review previous uploads. At the bottom of the Upload
-tab there is a 'Status of Previous Uploads' table.
-
-If you need to see a test upload please check the 'Show test uploads' checkbox.
+The PMHC MDS allows you to review previous uploads.
 
    .. figure:: screen-shots/upload-previous.png
       :alt: PMHC MDS Status of Previous Uploads
