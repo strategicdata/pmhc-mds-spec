@@ -669,6 +669,149 @@ Key specifications:
 * Total Clients is a unique count of clients, not the sum of the individual rows.
   Clients may be counted in more than one row.
 
+.. _category-d:
+
+Category D: Key Performance Indicators
+--------------------------------------
+
+.. _category-acc-1:
+
+Acc-1 - Access to Low Intensity Services
+++++++++++++++++++++++++++++++++++++++++
+
+Purpose: Measure the proportion of regional population receiving PHN-commissioned
+low intensity psychological interventions
+
+Key specifications:
+
+* Only ‘active clients’ are reported. An Client is defined as ‘active’ and
+  in scope for inclusion in this report if they had one or more Service Contacts
+  recorded in the period.
+* Service Contacts flagged as ‘No Show’ are not included for this purpose.
+* Population is calculated from Estimated Regional Population figures.
+* KPI is measured in clients per 10,000 population.
+
+.. _category-acc-2:
+
+Acc-2 - Access to Psychological Services
+++++++++++++++++++++++++++++++++++++++++
+
+Purpose: Measure the proportion of regional population receiving PHN-commissioned
+psychological therapies delivered by mental health professionals.
+
+Key specifications:
+
+* Only ‘active clients’ are reported. An Client is defined as ‘active’ and
+  in scope for inclusion in this report if they had one or more Service Contacts
+  recorded in the period.
+* Service Contacts flagged as ‘No Show’ are not included for this purpose.
+* Population is calculated from Estimated Regional Population figures.
+* KPI is measured in clients per 10,000 population.
+
+.. _category-acc-3:
+
+Acc-3 - Access to Clinical Care Coordination
+++++++++++++++++++++++++++++++++++++++++++++
+
+Purpose: Measure the proportion of regional population receiving PHN-commissioned
+clinical care coordination for people with severe and complex mental illness.
+
+Key specifications:
+
+* Only ‘active clients’ are reported. An Client is defined as ‘active’ and
+  in scope for inclusion in this report if they had one or more Service Contacts
+  recorded in the period.
+* Service Contacts flagged as ‘No Show’ are not included for this purpose.
+* Population is calculated from Estimated Regional Population figures.
+* KPI is measured in clients per 10,000 population.
+
+.. _category-app-1:
+
+App-1 - Youth receiving youth-specific services
++++++++++++++++++++++++++++++++++++++++++++++++
+
+Purpose: Measure the proportion of regional youth population receiving
+youth-specific mental health services.
+
+Key specifications:
+
+* Only ‘active clients’ are reported. An Client is defined as ‘active’ and
+  in scope for inclusion in this report if they had one or more Service Contacts
+  recorded in the period.
+* Service Contacts flagged as ‘No Show’ are not included for this purpose.
+* Population is calculated from Estimated Regional Population figures
+  for people aged 12-24.
+* KPI is measured in clients per 10,000 population.
+
+.. _category-app-2:
+
+App-2 - Indigenous Population receiving culturally appropriate services
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Purpose: Measure the proportion of PHN-commissioned mental health
+services delivered to the regional Indigenous population where the 
+services were culturally appropriate.
+
+Key specifications:
+
+* Service contacts are in scope for inclusion in this report if they 
+  occurred within the reporting period and are not flagged as ‘No Show’.
+* KPI is measured as the percentage of service contacts which are 
+  culturally appropriate
+
+.. _category-app-3:
+
+App-3 - Suicide Risk Followup
++++++++++++++++++++++++++++++
+
+Purpose: Measure the proportion of people referred to PHN-commissioned
+services due to a recent suicide attempt or beacuase the are at risk of 
+suicide followed up within 7 days of referral.
+
+Key specifications:
+
+* Only episodes with a referral date within the reporting period are included.
+* Episodes where the first service contact occurred within 7 days are 
+  tabulated as ‘7 days or less’
+* Episodes where no service contact occurred are tabulated as ‘No Service 
+  Contact Occurred’.
+* Service Contacts flagged as ‘No Show’ are not included for this purpose.
+* ‘Suicide Risk Flag %’ counts the proportion of all episodes which are flagged
+  as a suicide risk.
+* KPI is measured as percentage of episodes flagged as a suicide risk which
+  have a service contact within 7 days.
+
+.. _category-out-3:
+
+Out-3 - Completion rates for clinical outcome measures
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Purpose: Measure completion rates for clinical outcome measures.
+
+Key specifications:
+
+* Completed Episodes are defined as those Episodes with an Episode End Date
+  less than or equal to the report end date.
+* For this report, Episodes must also have an Episode Start Date equal to or greater than
+  the report start date.
+* Only Episodes with one or more Service Contacts in the reporting period are
+  included in the analysis (referred to as 'active episodes').
+* Service Contacts flagged as ‘No Show’ are not included for this purpose.
+* To be counted at 'Matched', both an initial and final measure of matching type
+  must be recorded, each with a valid total score (not ‘99’).
+
+Matching measure types:
+
+========= =========
+Initial   Final    
+========= =========
+K5        K5
+K10+      K10+
+SDQ PC101 SDQ PC201
+SDQ PY101 SDQ PY201
+SDQ YR101 SDQ YR201
+========= =========
+
 .. _category-e:
 
 Category E: Reports for data managers to monitor data supply
