@@ -3,6 +3,19 @@
 User Guide Change log
 =====================
 
+7/3/2019
+--------
+
+* Edited :ref:`inactivate-provider-organisation`
+
+* Added :ref:`view-inactive-provider-organisation`
+
+* Updated screenshots for :ref:`organisations`
+
+* Updated screenshots for :ref:`service-contact-data`
+
+* Added reports C3 to :ref:`category-c`
+
 19/11/2018
 ----------
 
@@ -31,12 +44,14 @@ User Guide Change log
 ---------
 
 * Added reports A7-A9 to :ref:`category-a`
+
 * Added reports B1-B5 to :ref:`category-b`
 
 13/3/2018
 ---------
 
 * Added reports A3-A6 to :ref:`category-a`
+
 * Added :ref:`closing-episode`
 
 19/1/2018

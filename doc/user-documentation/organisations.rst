@@ -4,11 +4,11 @@ Organisations
 =============
 
 You will be able to see the Organisations tab if you have been assigned
-the 'Organisation Management', or the 'User Management' role, , when logged into the PMHC MDS on https://pmhc-mds.net.
+the 'Organisation Management', or the 'User Management' role, when logged into the PMHC MDS on https://pmhc-mds.net.
 
 If you believe you should have access to an organisation and it doesn't appear
-in your list please contact someone in that provider organisation or the
-provider organisation's PHN who has the 'User Management' role.
+in your list please contact someone who has the 'User Management' role in that
+provider organisation or the provider organisation's commissioning PHN.
 
 If you are unsure who has the 'User Management' role please email the PMHC
 helpdesk at support@pmhc-mds.com
@@ -35,8 +35,8 @@ The PHN organisations details will be displayed, along with a provider organisat
 If you have the 'User Management' role will also include a 'Users' tab listing
 the users that belong to this PHN.
 
-.. figure:: screen-shots/organisation-phn-view.png
-   :alt: PMHC MDS View Organisation
+   .. figure:: screen-shots/organisation-phn-view.png
+      :alt: PMHC MDS View Organisation
 
 .. _search-provider-organisation:
 
@@ -63,8 +63,8 @@ To filter the listed provider organisations:
 1. Click the grey 'Filters' button.
 2. Start typing in an edit box now displayed under the column headers.
 
-.. figure:: screen-shots/organisations-provider-filter.png
-   :alt: PMHC MDS Organisations Filter
+   .. figure:: screen-shots/organisations-provider-filter.png
+      :alt: PMHC MDS Organisations Filter
 
 3. To remove the filter, click the grey cross within the edit box beside any
    entered text.
@@ -82,8 +82,8 @@ following these steps:
 3. Click on the 'Provider Organisations' tab.
 4. Click on the provider organisation's name from the 'View Provider Organisations' table
 
-.. figure:: screen-shots/organisation-provider-view.png
-   :alt: PMHC MDS View Provider Organisation
+   .. figure:: screen-shots/organisation-provider-view.png
+      :alt: PMHC MDS View Provider Organisation
 
 .. _add-provider-organisation:
 
@@ -107,6 +107,9 @@ through the organisation tab by following these steps:
 
 You will receive confirmation that the organisation has been saved, and it will
 now be displaying in the PHN's Provider Organisations list.
+
+        .. figure:: screen-shots/client-data-saved.png
+           :alt: Provider Organisation Saved Successfully
 
 .. _edit-provider-organisation:
 
@@ -139,18 +142,48 @@ details through the organisation tab, by following these steps:
 4. Update the organisations details. Mandatory fields are marked with an *
 5. Click the blue 'Save' button.
 
+You will receive confirmation that the updated organisation details have been saved..
+
+        .. figure:: screen-shots/client-data-saved.png
+           :alt: Updated Provider Organisation Saved Successfully
+
 .. _inactivate-provider-organisation:
 
 Inactivate a Provider Organisation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You cannot make a provider organisation inactive by editing the 'Status'
-of the provider organisation from active to inactive.
+You can make a provider organisation inactive by entering an 'End Date' in the
+provider organisation details. The 'End Date' can be in the future.
 
-If you require the status of an organisation to be inactive please email support@pmhc-mds.com.
+Once an end date is saved, there will be a 90 day grace period in which the users
+of this inactive provider organisation can finalise adding their data. Users of
+an inactive provider organisation will not be able to add data after the grace
+period has passed.
 
-*Please note: Inactive organisations will not be displayed in your organisations list.*
-*Please note: Inactive organisation data will not be displayed in your reports.*
+*Please note: Service Contact data and Outcome Collection Occasion data will not
+be able to be recorded after an organisation's end date.*
+
+*Please note: Only organisations that are active within a reporting period will
+be displayed in the reports organisation field.*
+
+.. _view-inactive-provider-organisation:
+
+Viewing an inactive Provider Organisation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You can view an inactive provider organisation's details through the Organisations tab, by
+following these steps:
+
+1. Navigate to the Organisations tab.
+2. Click on the PHN name in blue text displayed within the table list.
+3. Click on the 'Provider Organisations' tab.
+4. Select the 'Include inactive organisations' box.
+5. Click on the provider organisation's name from the 'View Provider Organisations' table
+
+Inactive organisations will be displayed with an ZZZ icon and will be greyed out.
+
+   .. figure:: screen-shots/organisation-provider-view-inactive.png
+      :alt: PMHC MDS View inactive Provider Organisations
 
 .. _delete-provider-organisation:
 
