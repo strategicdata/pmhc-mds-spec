@@ -634,6 +634,26 @@ Key specifications:
 * Counts shown in the report refer to Episodes, and are displayed as numbers
   or percent rows based on user selection.
 
+.. _category-c3:
+
+C3 - Stepped care report – Episode Type by Service Contact Intensity
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Purpose: To provide summary information on the volumes of service delivered 
+within each of the episode types.
+
+Key specifications:
+
+* Only ‘active episodes’ are reported. An Episode is defined as ‘active’ and
+  in scope for inclusion in this report if it had one or more Service Contacts
+  recorded in the period. No distinction is made between Open and Completed
+  Episodes.
+* Service Contacts flagged as ‘No Show’ are not included for this purpose.
+* Counts shown in the report refer to Episodes, and are displayed as numbers
+  or percent rows based on user selection.
+* Total Clients is a unique count of clients, not the sum of the individual rows.
+  Clients may be counted in more than one row.
+
 .. _category-e:
 
 Category E: Reports for data managers to monitor data supply
