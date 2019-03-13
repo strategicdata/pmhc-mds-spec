@@ -3,6 +3,23 @@
 Frequently Asked Questions Change log
 =====================================
 
+7/3/2019
+--------
+
+System - Checking Data FAQs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Added the question :ref:`run-report-faq`
+
+* Added the question :ref:`report-rules-faq`
+
+* Added the question :ref:`report-types-faq`
+
+System - Development FAQs
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Updated the section :ref:`pmhc-mds-development`
+
 11/9/2018
 ---------
 
