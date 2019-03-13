@@ -67,26 +67,47 @@ Each of the example files assumes the following organisation structure:
 
 File format
 -----------
-The first row in each file/worksheet must include the following columns:
+Requirements for file formats:
 
-+------------+---------------+
-| Version    | 1.0           |
-+------------+---------------+
+- The first row must contain the column headings as defined for each file type.
+- Each item is a column in the file/worksheet. The 'Field Name' must be used for
+  the column headings. The columns must be kept in the same order.
+- The second and subsequent rows must contain the data.
+- Data elements for each file/worksheet are defined at :ref:`record-formats`.
+- All files must be internally consistent. An example of what this means is
+  that for every row in the episode file/worksheet, there must be a
+  corresponding client in the client file/worksheet.
+- All version 2.0 data uploads must include a Metadata file/worksheet. See :ref:`metadata-format`.
 
-The second row must contain the column headings as defined for each file type.
-The third and subsequent rows must contain the data.
+.. _metadata-format:
 
-Data elements for each file/worksheet are defined at :ref:`record-formats`.
+Metadata file
+^^^^^^^^^^^^^
 
-Each item is a column in the file/worksheet. The 'Field Name' must be used for
-the column headings. The columns must be kept in the same order.
+All version 2.0 data uploads must include a Metadata file/worksheet.
+- In the first row, the first cell must contain 'key' and the second cell must contain 'value'
+- In the second row, the first cell must contain 'type' and the second cell must contain 'PMHC'
+- In the third row, the first cell must contain 'version' and the second cell must contain '2'
 
-All files must be internally consistent. An example of what this means is
-that for every row in the episode file/worksheet, there must be a
-corresponding client in the client file/worksheet.
+i.e.:
 
-It also means that for every episode included in an upload file, you must include
-ALL service contacts and measures for that episode.
++--------------+------------+
+| key          | value      |
++--------------+------------+
+| type         | PMHC       |
++--------------+------------+
+| version      | 2          |
++--------------+------------+
+
+Data elements for the metadata upload file/worksheet are defined at
+:ref:`metadata-data-elements`.
+
+Example metadata data:
+
+.. This is a comment. metadata validation rules required!
+
+- `CSV metadata file <../_static/metadata.csv>`_.
+- `XLSX metadata worksheet <../_static/pmhc-upload.xlsx>`_.
 
 .. _client-format:
 

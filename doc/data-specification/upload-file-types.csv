@@ -7,3 +7,4 @@ File Type,CSV filename,Excel worksheet name,Required
 :ref:`SDQ Collection Occasions <sdq-format>`,sdq.csv,SDQ,Required
 :ref:`Practitioners <practitioner-format>`,practitioners.csv,Practitioners,Required for first upload and when practitioner information changes. Optional otherwise
 :ref:`Organisation <organisation-format>`,organisations.csv,Organisations,Optional
+:ref:`Metadata <metadata-format>`,metadata.csv,Metadata,Required

@@ -102,7 +102,7 @@ across PHN-commissioned services:
 
 - **Episodes commence at the point of first contact.** The episode start date
   will be derived from the first service contact irregardless of no show state
-  as long as there is a service contact that isn't a no show. Therefore, if 
+  as long as there is a service contact that isn't a no show. Therefore, if
   there is no attended service contact the episode is uncommenced.
 
   Some examples:
@@ -170,6 +170,31 @@ collection occasion.
 
 Record formats
 --------------
+
+.. _metadata-data-elements:
+
+Metadata
+^^^^^^^^
+
+The Metadata table must be included in file uploads in order to identify
+the type and version of the uploaded data.
+
+.. csv-table:: Metadata record layout
+   :file: record/metadata.csv
+   :header-rows: 1
+
+For this version of the specification the required content is shown in the
+following table:
+
++--------------+------------+
+| key          | value      |
++--------------+------------+
+| type         | PMHC       |
++--------------+------------+
+| version      | 2          |
++--------------+------------+
+
+----------
 
 .. _provider-organisation-data-elements:
 

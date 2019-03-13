@@ -274,6 +274,11 @@ METeOR: `291045 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291045>`__
 :21: Other
 :98: N/A - Self referral
 :99: Not stated"
+"`Episode - Continuity of Support`_ (continuity_of_support)
+
+",string,yes,":1: Yes
+:2: No
+:9: Not stated/inadequately described"
 "`Episode - Tags`_ (episode_tags)
 
 ",string,"—","List of tags for the episode."

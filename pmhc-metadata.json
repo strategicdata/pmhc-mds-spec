@@ -8,6 +8,12 @@
   },
   "dc:modified": { "@value": "2016-06-22", "@type": "xsd:date"},
   "tables": [{
+    "dc:title": "Metadata",
+    "url": "data/metadata.csv",
+    "schema:name": "metadata",
+    "schema:description": "table/metadata.rst",
+    "tableSchema": "table/metadata-metadata.json"
+  }, {
     "dc:title": "Provider Organisation",
     "url": "data/organisations.csv",
     "schema:name": "organisation",

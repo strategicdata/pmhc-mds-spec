@@ -95,17 +95,45 @@
     },
     "required": true
   },{
-    "name": "organisation_status",
-    "titles": [ "organisation_status", "Status" ],
-    "dc:title" : "Provider Organisation - Status",
-    "schema:description": "A flag to represent whether a provider organisation is actively delivering services.",
-    "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2017-06-29",
+    "name": "organisation_start_date",
+    "titles": [ "organisation_start_date", "Start Date" ],
+    "dc:title" : "Provider Organisation - Start Date",
+    "schema:description": "The date on which a provider organisation started delivering services.",
+    "schema:dateCreated": "2019-03-13",
+    "schema:dateDeleted": "2019-03-13",
+    "schema:dateModified": "2019-03-13",
+    "datatype": {
+      "base": "date",
+      "format": "dMMyyyy",
+      "minimum": "2016-07-01"
+    },
+    "required": true
+  },{
+    "name": "organisation_end_date",
+    "titles": [ "organisation_end_date", "End Date" ],
+    "dc:title" : "Provider Organisation - End Date",
+    "schema:description": "The date on which a provider organisation stopped delivering services.",
+    "schema:dateCreated": "2019-03-13",
+    "schema:dateDeleted": "2019-03-13",
+    "schema:dateModified": "2019-03-13",
     "datatype": {
       "base": "string"
     },
-    "required": true
+    "required": false
+  },{
+    "name": "organisation_omsss_email",
+    "titles": [ "organisation_omsss_email", "OMSSS Provider Organisation Email" ],
+    "dc:title" : "Provider Organisation - OMSSS Provider Organisation Email",
+    "schema:description": "An email address at a Provider Organisation where OMSSS results can be sent.",
+    "schema:dateCreated": "2019-03-13",
+    "schema:dateDeleted": "2019-03-13",
+    "schema:dateModified": "2019-03-13",
+    "datatype": {
+      "base": "date",
+      "format": "dMMyyyy",
+      "minimum": "2016-01-01"
+    },
+    "required": false
   },{
     "name": "organisation_tags",
     "titles": [ "organisation_tags", "Tags" ],
