@@ -36,7 +36,7 @@ following these steps:
 4. Select the name of the organisation from the drop down list.
 5. Click the first calendar icon to select the start date and then the second
    calendar icon to select the end date.
-6. If you click the 'Include only records with Client Consent' tickbox, the data for client's that have not consented to their anonymised data being provided to the Department of Health will be excluded from your report. (See :ref:`dfn-client_consent` )
+6. If you click the 'Include only records with Client Consent' tickbox, the data for clients that have not consented to their anonymised data being provided to the Department of Health will be excluded from your report. (See :ref:`dfn-client_consent` )
 7. Click the blue ‘Request’ button.
 8. Your report will be displayed on screen and can be downloaded as a CSV.
 
@@ -687,17 +687,11 @@ Performance and Quality Framework (September 2018) and need to be positioned wit
 framework. One additional indicator was added to the mental health KPIs as a result of the new
 framework, bringing the total to 14.
 
-D category (KPI) reports available via the PMHC MDS are:
+9 of the 14 KPI reports will ultimately be available via the PMHC MDS. 7 are currently available:
 
 * :ref:`category-acc-1`
 * :ref:`category-acc-2`
 * :ref:`category-acc-3`
-* Eff-1 - Average cost of PHN-commissioned low intensity psychological
-  intervention services
-* Eff-2 - Average cost of PHN-commissioned psychological therapies delivered by
-  mental health professionals
-* Eff-3 - Average cost of PHN-commissioned clinical care coordination for people
-  with severe and complex mental illness
 * :ref:`category-app-1`
 * :ref:`category-app-2`
 * :ref:`category-app-3`
@@ -706,11 +700,17 @@ D category (KPI) reports available via the PMHC MDS are:
   health professionals
 * :ref:`category-out-3`
 
-**Note:** Eff-1, Eff-2, Eff-3, Out-1 and Out-2 reports are still to be implemented.
+**Note:** Out-1 and Out-2 reports are still to be implemented.
 
 The following reports are not available via the PMHC MDS as they require
 information that is not derived from the PMHC MDS:
 
+* Eff-1 - Average cost of PHN-commissioned low intensity psychological
+  intervention services
+* Eff-2 - Average cost of PHN-commissioned psychological therapies delivered by
+  mental health professionals
+* Eff-3 - Average cost of PHN-commissioned clinical care coordination for people
+  with severe and complex mental illness
 * Prog-1 - Proportion of PHN annual flexible funding allocated to low intensity
   services, psychological therapies and services for people with severe and
   complex mental illness
@@ -729,7 +729,7 @@ low intensity psychological interventions
 
 Key specifications:
 
-* Only ‘active clients’ are reported. An Client is defined as ‘active’ and
+* Only ‘active clients’ are reported. A Client is defined as ‘active’ and
   in scope for inclusion in this report if they had one or more Service Contacts
   recorded in the period.
 * Service Contacts flagged as ‘No Show’ are not included for this purpose.
@@ -746,7 +746,7 @@ psychological therapies delivered by mental health professionals.
 
 Key specifications:
 
-* Only ‘active clients’ are reported. An Client is defined as ‘active’ and
+* Only ‘active clients’ are reported. A Client is defined as ‘active’ and
   in scope for inclusion in this report if they had one or more Service Contacts
   recorded in the period.
 * Service Contacts flagged as ‘No Show’ are not included for this purpose.
@@ -763,7 +763,7 @@ clinical care coordination for people with severe and complex mental illness.
 
 Key specifications:
 
-* Only ‘active clients’ are reported. An Client is defined as ‘active’ and
+* Only ‘active clients’ are reported. A Client is defined as ‘active’ and
   in scope for inclusion in this report if they had one or more Service Contacts
   recorded in the period.
 * Service Contacts flagged as ‘No Show’ are not included for this purpose.
@@ -780,7 +780,7 @@ youth-specific mental health services.
 
 Key specifications:
 
-* Only ‘active clients’ are reported. An Client is defined as ‘active’ and
+* Only ‘active clients’ are reported. A Client is defined as ‘active’ and
   in scope for inclusion in this report if they had one or more Service Contacts
   recorded in the period.
 * Service Contacts flagged as ‘No Show’ are not included for this purpose.
@@ -797,12 +797,18 @@ Purpose: Measure the proportion of PHN-commissioned mental health
 services delivered to the regional Indigenous population where the
 services were culturally appropriate.
 
+
 Key specifications:
 
 * Service contacts are in scope for inclusion in this report if they
   occurred within the reporting period and are not flagged as ‘No Show’.
 * KPI is measured as the percentage of service contacts which are
   culturally appropriate
+* A culturally appropriate service is defined as one that is delivered by  
+  a service provider that is recorded as of ATSI origin, or employed by an
+  Aboriginal Community Controlled Health Service or has indicated that
+  they have completed a recognised training programme in the delivery of 
+  culturally safe services to ATSI peoples.
 
 .. _category-app-3:
 
@@ -810,19 +816,21 @@ App-3 - Suicide Risk Followup
 +++++++++++++++++++++++++++++
 
 Purpose: Measure the proportion of people referred to PHN-commissioned
-services due to a recent suicide attempt or beacuase the are at risk of
-suicide followed up within 7 days of referral.
+services due to a recent suicide attempt or because they are at risk of
+suicide, who are followed up within 7 days of referral.
 
 Key specifications:
 
 * Only episodes with a referral date within the reporting period are included.
+* '% Episodes with Suicide Risk Flag %’ counts the proportion of all episodes 
+  which are flagged as a suicide risk.
+* Other than in the '% Episodes with Suicide Risk Flag' column, only episodes 
+  flagged as suicide risk are counted.
 * Episodes where the first service contact occurred within 7 days are
-  tabulated as ‘7 days or less’
+  tabulated as ‘7 days or less’; contacts flagged as ‘No Show’ are not
+  included for this purpose.
 * Episodes where no service contact occurred are tabulated as ‘No Service
   Contact Occurred’.
-* Service Contacts flagged as ‘No Show’ are not included for this purpose.
-* ‘Suicide Risk Flag %’ counts the proportion of all episodes which are flagged
-  as a suicide risk.
 * KPI is measured as percentage of episodes flagged as a suicide risk which
   have a service contact within 7 days.
 
@@ -843,7 +851,8 @@ Key specifications:
   included in the analysis (referred to as 'active episodes').
 * Service Contacts flagged as ‘No Show’ are not included for this purpose.
 * To be counted at 'Matched', both an initial and final measure of matching type
-  must be recorded, each with a valid total score (not ‘99’).
+  must be recorded, each with a valid total score (not ‘99’). This rule is a little
+  tighter than that used in the A9 report, so figures in the two reports may vary
 
 Matching measure types:
 
