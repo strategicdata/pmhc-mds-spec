@@ -56,10 +56,8 @@ purposes:
 * :ref:`category-a`
 * :ref:`category-b`
 * :ref:`category-c`
-* Category D: Key Performance Indicators
+* :ref:`category-d`
 * :ref:`category-e`
-
-**Note:** Category D reports are still to be implemented.
 
 .. _category-a:
 
@@ -459,7 +457,7 @@ and will therefore not appear in reports based on referral date.
 Key specifications:
 
 * All Episodes with no referral date are counted
-* The subset of those episodes which additionally have the suicide risk flag set 
+* The subset of those episodes which additionally have the suicide risk flag set
 * The number of those episodes with no Service Contacts are also show.
 * Service Contacts flagged as ‘No Show’ are not included for this purpose.
 
@@ -654,7 +652,7 @@ Key specifications:
 C3 - Stepped care report – Episode Type by Service Contact Intensity
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Purpose: To provide summary information on the volumes of service delivered 
+Purpose: To provide summary information on the volumes of service delivered
 within each of the episode types.
 
 Key specifications:
@@ -673,6 +671,53 @@ Key specifications:
 
 Category D: Key Performance Indicators
 --------------------------------------
+
+A set of 13 key performance indicators was introduced in July 2016, designed to monitor the
+progress of mental health reforms being led by Primary Health Networks (PHNs). The indicators
+covered activities related to the delivery of services in six priority areas set by government, along
+with two overarching program management indicators covering integrated service planning and
+delivery, and implementation of stepped care models of care.
+
+All 13 indicators were subsequently incorporated in schedules for mental health program funding,
+requiring PHNs to report on performance annually. Data sources for the majority of indicators (11)
+are derived in full or part from the Primary Mental Health Care Minimum Data Set (PMHC MDS).
+
+The mental health KPIs were introduced prior to the implementation of the current PHN
+Performance and Quality Framework (September 2018) and need to be positioned within that policy
+framework. One additional indicator was added to the mental health KPIs as a result of the new
+framework, bringing the total to 14.
+
+D category (KPI) reports available via the PMHC MDS are:
+
+* :ref:`category-acc-1`
+* :ref:`category-acc-2`
+* :ref:`category-acc-3`
+* Eff-1 - Average cost of PHN-commissioned low intensity psychological
+  intervention services
+* Eff-2 - Average cost of PHN-commissioned psychological therapies delivered by
+  mental health professionals
+* Eff-3 - Average cost of PHN-commissioned clinical care coordination for people
+  with severe and complex mental illness
+* :ref:`category-app-1`
+* :ref:`category-app-2`
+* :ref:`category-app-3`
+* Out-1 - Clinical outcomes - Low intensity psychological interventions
+* Out-2 - Clinical outcome - Psychological therapies delivered by mental
+  health professionals
+* :ref:`category-out-3`
+
+**Note:** Eff-1, Eff-2, Eff-3, Out-1 and Out-2 reports are still to be implemented.
+
+The following reports are not available via the PMHC MDS as they require
+information that is not derived from the PMHC MDS:
+
+* Prog-1 - Proportion of PHN annual flexible funding allocated to low intensity
+  services, psychological therapies and services for people with severe and
+  complex mental illness
+* Prog-2 - Formalised partnerships with other regional service providers to
+  support integrated regional planning and service delivery
+
+
 
 .. _category-acc-1:
 
@@ -749,14 +794,14 @@ App-2 - Indigenous Population receiving culturally appropriate services
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Purpose: Measure the proportion of PHN-commissioned mental health
-services delivered to the regional Indigenous population where the 
+services delivered to the regional Indigenous population where the
 services were culturally appropriate.
 
 Key specifications:
 
-* Service contacts are in scope for inclusion in this report if they 
+* Service contacts are in scope for inclusion in this report if they
   occurred within the reporting period and are not flagged as ‘No Show’.
-* KPI is measured as the percentage of service contacts which are 
+* KPI is measured as the percentage of service contacts which are
   culturally appropriate
 
 .. _category-app-3:
@@ -765,15 +810,15 @@ App-3 - Suicide Risk Followup
 +++++++++++++++++++++++++++++
 
 Purpose: Measure the proportion of people referred to PHN-commissioned
-services due to a recent suicide attempt or beacuase the are at risk of 
+services due to a recent suicide attempt or beacuase the are at risk of
 suicide followed up within 7 days of referral.
 
 Key specifications:
 
 * Only episodes with a referral date within the reporting period are included.
-* Episodes where the first service contact occurred within 7 days are 
+* Episodes where the first service contact occurred within 7 days are
   tabulated as ‘7 days or less’
-* Episodes where no service contact occurred are tabulated as ‘No Service 
+* Episodes where no service contact occurred are tabulated as ‘No Service
   Contact Occurred’.
 * Service Contacts flagged as ‘No Show’ are not included for this purpose.
 * ‘Suicide Risk Flag %’ counts the proportion of all episodes which are flagged
@@ -803,7 +848,7 @@ Key specifications:
 Matching measure types:
 
 ========= =========
-Initial   Final    
+Initial   Final
 ========= =========
 K5        K5
 K10+      K10+
