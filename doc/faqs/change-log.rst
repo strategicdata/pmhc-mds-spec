@@ -6,6 +6,15 @@ Frequently Asked Questions Change log
 7/3/2019
 --------
 
+System - Uploading data
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Added the question :ref:`upload_organisation_role_error`
+
+* Updated the question :ref:`upload-files-error-faq`
+
+* Moved error messages from the Upload User Guide to :ref:`Uploading Data FAQs <uploading-data-FAQs>`
+
 System - Checking Data FAQs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

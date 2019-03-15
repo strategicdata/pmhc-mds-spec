@@ -95,7 +95,7 @@ See :ref:`upload_specification`.
 How do I fix upload file errors?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Refer to :ref:`upload-error-messages`.
+Refer to :ref:`upload-fixing-errors`.
 
 .. _upload-data-error-faq:
 
@@ -173,3 +173,90 @@ support@pmhc-mds.com and provide a copy of the error email, and/or a screenshot
 if possible. The error email is very important for the Helpdesk to quickly
 identifying the error and to provide you with a clear response on how to rectify
 the data issue.
+
+.. _upload_organisation_role_error:
+
+Why am I receiving an error saying I don't have permission to upload organisation data?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you receive an error message stating 'Upload file contains organisations data,
+but user doesn't have Organisation Management role' you do not have permission
+to upload organisation data. (The Organisation Management role is only available for PHN users - see :ref:`roles`)
+
+The 'Organisations' data is optional and does not need to be included in an
+upload file. Please delete the 'Organisations' worksheet/file from your upload.
+
+.. _upload_missing_worksheet_error:
+
+Why am I receiving an error saying 'Could not find worksheet [Name]'?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This error occurs when you are uploading and Excel spreadsheet. The worksheet
+names need to exactly match the name in the 'Excel worksheet name' column
+of the 'Summary of files to upload' table at :ref:`files-to-upload`. If all the
+required worksheets are not present you will receive the error above.
+
+.. _upload_invalid_version_line_error:
+
+Why am I receiving an error saying 'Invalid version line in worksheet [Name]'?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The top line of the worksheet must include the following columns:
+
++------------+---------------+
+| Version    | 1.0           |
++------------+---------------+
+
+.. _upload_invalid_column_error:
+
+Why am I receiving an error saying 'Column [Name] is not valid'?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Each item is a column in the file/worksheet. The 'Field Name' should be used for
+the column headings. These values can be found at :ref:`file-format`, or
+listed on the provided example file at :ref:`files-to-upload`. If the Column [Name]
+doesn't match identically you will receive the error above.
+
+.. _upload_invalid_org_path_error:
+
+Why am I receiving an error saying 'Organisation_path is not valid on row ....'?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The organisation path provided does not map to a valid organisation. The format
+should be a combination of your PHN key and the provider organisation key,
+separated with a colon. Example PHN_key:POrg_key. If the organisation path
+doesn't match identically you will receive the error above.
+
+.. _upload_invalid_version_number_error:
+
+Why am I receiving an error saying 'Invalid version number on row 1'?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You need to record a valid version number on row 1, in column 2. Column one will
+include the word Version, Column two should inclue a number.We are currently
+only accepting Version 1, or Version 1.X eg 1.0 or 1.1 . If the version number
+doesn't match identically you will receive the error above.
+
+.. _upload_invalid_column_name_error:
+
+Why am I receiving an error saying 'Column [Name] is required on row ...'?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+There is a required field that has not been entered. If not supplied, insert the
+default 'Missing' or 'Not recorded' value. These values can be found at :ref:`record-formats`.
+If the Column [Name] is blank in a mandatory field you will receive the error above.
+
+.. _upload_invalid_file_error:
+
+Why am I receiving an error saying 'Invalid file ...'?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The system is having trouble identifying your upload file. Please provide a copy
+of your upload file to support@pmhc-mds.com.
+
+.. _upload_bad_request_error:
+
+Why am I receiving an error saying 'Could not parse worksheet [Name]: Bad request at ...'?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Something has gone wrong with the upload. Please contact support@pmhc-mds.com.
