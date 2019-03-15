@@ -148,71 +148,28 @@ are added, updated, or deleted, within the MDS records.
 Error messages
 ^^^^^^^^^^^^^^
 
-If the status of your file shows error, you can view the returned errors through :ref:`viewing-previous-uploads`.
+If the status of your file shows error, you can view the returned errors through
+:ref:`viewing-previous-uploads`.
 
 .. figure:: screen-shots/upload-details-error.png
    :alt: PMHC MDS Upload Details error page
 
-The definition of each data item has associated notes that will provide guidance on why an error is returned. By visiting the data specifications documentation and clicking on the :ref:`record-formats` field name this will take you to the field definition which outlines the associated notes.
+.. _upload-fixing-errors:
 
-Please email support@pmhc-mds.com if you require assistance in understanding an error message.
+Correcting upload errors
+^^^^^^^^^^^^^^^^^^^^^^^^
 
-Below are some example error messages, and how to fix them:
+Any data errors will need to be corrected in your internal system and a new upload
+file created. Or if you manually record data on the upload file, you can edit the
+data records directly on the file.
 
-Could not find worksheet [Name]
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The definition of each data item has associated notes that will provide guidance
+on why an error is returned. By visiting the data specifications documentation
+and clicking on the :ref:`record-formats` field name this will take you to the
+field definition which outlines the associated notes.
 
-This error occurs when you are uploading and Excel spreadsheet. The worksheet
-names need to exactly match the name in the 'Excel worksheet name' column
-of the 'Summary of files to upload' table at :ref:`files-to-upload`. If all the
-required worksheets are not present you will receive the error above.
+In the Frequently Asked Questions guide there are questions about some of the
+common and unusual upload error messages. These answers contain information on
+what you can do to fix the error. See - :ref:`Uploading Data FAQs <uploading-data-FAQs>`.
 
-Invalid version line in worksheet [Name]
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-The top line of the worksheet must include the following columns:
-
-+------------+---------------+
-| Version    | 1.0           |
-+------------+---------------+
-
-Column [Name] is not valid
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Each item is a column in the file/worksheet. The 'Field Name' should be used for
-the column headings. These values can be found at :ref:`file-format`, or
-listed on the provided example file at :ref:`files-to-upload`. If the Column [Name]
-doesn't match identically you will receive the error above.
-
-Organisation_path is not valid on row ...
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-The organisation path provided does not map to a valid organisation. The format
-should be a combination of your PHN key and the provider organisation key,
-separated with a colon. Example PHN_key:POrg_key. If the organisation path
-doesn't match identically you will receive the error above.
-
-Invalid version number on row 1.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-You need to record a valid version number on row 1, in column 2. Column one will
-include the word Version, Column two should inclue a number.We are currently
-only accepting Version 1, or Version 1.X eg 1.0 or 1.1 . If the version number
-doesn't match identically you will receive the error above.
-
-Column [Name] is required on row ...
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-There is a required field that has not been entered. If not supplied, insert the
-default 'Missing' or 'Not recorded' value. These values can be found at :ref:`record-formats`.
-If the Column [Name] is blank in a mandatory field you will receive the error above.
-
-Invalid file ...
-~~~~~~~~~~~~~~~~
-
-The system is having trouble identifying your upload file. Please provide a copy of your upload file to support@pmhc-mds.com.
-
-Could not parse worksheet [Name]: Bad request at ...
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Something has gone wrong with the upload. Please contact support@pmhc-mds.com.
+If you require assistance in understanding an error message, please email support@pmhc-mds.com.

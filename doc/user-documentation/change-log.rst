@@ -16,6 +16,10 @@ User Guide Change log
 
 * Added reports C3 to :ref:`category-c`
 
+* Added :ref:`upload-fixing-errors`
+
+* Moved example upload error messages to :ref:`Uploading Data FAQs <uploading-data-FAQs>`
+
 19/11/2018
 ----------
 
