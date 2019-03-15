@@ -6,4 +6,4 @@ File Type,CSV filename,Excel worksheet name,Required
 :ref:`K5 Collection Occasions <k5-format>`,k5.csv,K5,Required
 :ref:`SDQ Collection Occasions <sdq-format>`,sdq.csv,SDQ,Required
 :ref:`Practitioners <practitioner-format>`,practitioners.csv,Practitioners,Required for first upload and when practitioner information changes. Optional otherwise
-:ref:`Organisations <organisation-format>`,organisations.csv,Organisations,Optional only if the user has Organisation Management role
+:ref:`Organisations <organisation-format>`,organisations.csv,Organisations,Optional and only available if the user has the Organisation Management role
