@@ -6,7 +6,7 @@ Data Specification Change log
 7/3/2019
 ---------
 
-* Updated :ref:`files-to-upload` to specify that the Organisations worksheet/file is optional only if the user has Organisation Management role.
+* Updated :ref:`files-to-upload` to specify that the Organisations worksheet/file is optional and is only available if the user has Organisation Management role.
 
 1/1/2019 - Version 1.0.13
 -------------------------
