@@ -36,7 +36,7 @@ PMHC-MDS Documentation
 .. The LINK TO THE PDF will only appear in the online HTML version
    (make.sh html) and not in PDF itself (or any other renderings)
 
-.. only:: builder_html
+.. only:: builder_html or builder_readthedocs
 
    Download this specification as a :download:`PDF </_static/PMHC.pdf>`.
 
