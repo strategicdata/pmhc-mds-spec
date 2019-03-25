@@ -20,7 +20,7 @@ GetOptions (
 ) or die("Error in command line arguments\n");
 
 my $src = "$doc_dir/build/singlehtml";
-my $dst = "$doc_dir/build/html/_static";
+my $dst = "$doc_dir/_static";
 my $output_file = "$dst/$spec_name.pdf";
 
 $spec_name   || die 'You must specify a spec name';
