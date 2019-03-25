@@ -117,7 +117,9 @@
     "schema:dateDeleted": "2019-03-13",
     "schema:dateModified": "2019-03-13",
     "datatype": {
-      "base": "string"
+      "base": "date",
+      "format": "dMMyyyy",
+      "minimum": "2014-07-01"
     },
     "required": false
   },{

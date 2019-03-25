@@ -49,7 +49,7 @@ METeOR: `613718 <http://meteor.aihw.gov.au/content/index.phtml/itemId/613718>`__
 ",date,yes,"The date on which a provider organisation started delivering services."
 "`Provider Organisation - End Date`_ (organisation_end_date)
 
-",string,"—","The date on which a provider organisation stopped delivering services."
+",date,"—","The date on which a provider organisation stopped delivering services."
 "`Provider Organisation - OMSSS Provider Organisation Email`_ (organisation_omsss_email)
 
 ",date,"—","An email address at a Provider Organisation where OMSSS results can be sent."

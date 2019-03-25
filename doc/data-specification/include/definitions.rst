@@ -3314,7 +3314,7 @@ The date on which a provider organisation stopped delivering services.
 
 :Field name: organisation_end_date
 
-:Data type: string
+:Data type: date
 
 :Required: no
 
