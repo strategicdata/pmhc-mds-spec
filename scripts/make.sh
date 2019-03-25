@@ -6,11 +6,13 @@ set -e
 source config.sh
 
 docker pull docker.sdlocal.net/csvw/metadata2rst
+docker pull stratdat/sphinx:production
+docker pull stratdat/sphinx-html2pdf:production
+
 docker run --rm -v `pwd`:/mnt/cwd docker.sdlocal.net/csvw/metadata2rst \
   --meta=pmhc-metadata.json
 
 pushd .
-
 cd doc
 
 rm -rf data-specification/_data build
@@ -18,13 +20,11 @@ cp -rf ../data data-specification/_data
 
 GIT_VERSION=$(git describe --tags --always)
 
-docker pull stratdat/sphinx:production
+echo "Building PDF"
 docker run --rm -e GIT_VERSION -v `pwd`:/mnt/workdir \
-  stratdat/sphinx:production make html singlehtml
+  stratdat/sphinx:production make singlehtml
 
 popd
-
-docker pull stratdat/sphinx-html2pdf:production
 
 echo "Optimising images"
 docker run --rm -e GIT_VERSION -v `pwd`:/mnt/workdir \
@@ -32,12 +32,19 @@ docker run --rm -e GIT_VERSION -v `pwd`:/mnt/workdir \
   stratdat/sphinx-html2pdf:production \
   find . -name *.png -exec pngquant --force --output {} 8 {} \;
 
-echo "Building PDF"
 docker run --rm -e GIT_VERSION -v `pwd`:/mnt/workdir \
   stratdat/sphinx-html2pdf:production \
   /mnt/workdir/scripts/make-pdf.pl \
   --spec-name "$SPEC_NAME" \
   --doc-dir   "/mnt/workdir/doc"
+
+pushd .
+cd doc
+
+docker run --rm -e GIT_VERSION -v `pwd`:/mnt/workdir \
+  stratdat/sphinx:production make html
+
+popd
 
 # make zip file
 scripts/metadata2zip.sh
