@@ -1,6 +1,8 @@
 PMHC-MDS Documentation
 ======================
 
+Version |version|
+
 .. This INTRODUCTION will only appear in the online HTML version
    (make.sh html) and not in PDFs or any other renderings
 
