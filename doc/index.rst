@@ -40,6 +40,6 @@ Version |version|
 
 .. only:: builder_html or builder_readthedocs
 
-   Download this specification as a :download:`PDF </_static/PMHC.pdf>`.
+   Download this specification as a |download-pdf|.
 
 .. End of LINK TO THE PDF
