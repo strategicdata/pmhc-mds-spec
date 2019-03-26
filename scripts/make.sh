@@ -3,7 +3,7 @@
 # Exit if anything errors
 set -e
 
-source config.sh
+source doc/version.conf
 
 docker pull docker.sdlocal.net/csvw/metadata2rst
 docker pull stratdat/sphinx:production
