@@ -35,7 +35,7 @@ docker run --rm -e GIT_VERSION -v `pwd`:/mnt/workdir \
 docker run --rm -e GIT_VERSION -v `pwd`:/mnt/workdir \
   stratdat/sphinx-html2pdf:production \
   /mnt/workdir/scripts/make-pdf.pl \
-  --spec-name "$SPEC_NAME" \
+  --spec-name "${SPEC_NAME}-${SPEC_VERSION}" \
   --doc-dir   "/mnt/workdir/doc"
 
 pushd .
