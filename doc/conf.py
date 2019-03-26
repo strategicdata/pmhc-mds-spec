@@ -24,7 +24,7 @@ import imp
 
 # -- Read important params from environment
 
-f = open('version.conf')
+f = open('doc/version.conf')
 global ddict_conf
 ddict_conf = imp.load_source('ddict_conf', '', f)
 f.close()
