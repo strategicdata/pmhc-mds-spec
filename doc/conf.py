@@ -15,11 +15,22 @@
 import sys
 import os
 import shlex
+import imp
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #sys.path.insert(0, os.path.abspath('.'))
+
+# -- Read important params from environment
+
+f = open('./version.conf')
+global ddict_conf
+ddict_conf = imp.load_source('ddict_conf', '', f)
+f.close()
+
+spec_name = ddict_conf.SPEC_NAME
+version   = ddict_conf.SPEC_VERSION
 
 # -- General configuration ------------------------------------------------
 
@@ -291,6 +302,17 @@ if not on_rtd:  # only import and set the theme if we're building docs locally
     import sphinx_rtd_theme
     html_theme = 'sphinx_rtd_theme'
     html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+
+# For substitutions in docs
+# see https://github.com/hoccleve-archive/hocl.tk/blob/70b71b5a265d0b1d64c5cb6e43b686d03ead4078/docs/conf.py#L48
+
+copyright = str(2019) + ", " + author
+download_pdf = ":download:`PDF </_static/" + spec_name + "-" + version + ".pdf>`"
+
+rst_epilog = """
+.. |download-pdf| replace:: %(download_pdf)s
+..
+""" % dict(download_pdf=download_pdf)
 
 numfig = True
 
