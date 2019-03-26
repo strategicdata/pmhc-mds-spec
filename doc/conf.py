@@ -68,7 +68,7 @@ author = u'PMHC MDS Working Group'
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 
-version = "1.0.13"
+# version   = ddict_conf.SPEC_VERSION
 
 # The full version, including alpha/beta/rc tags.
 release = version
