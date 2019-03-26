@@ -822,13 +822,14 @@ suicide, who are followed up within 7 days of referral.
 Key specifications:
 
 * Only episodes with a referral date within the reporting period are included.
+* Service contacts which are flagged as ‘No Show’ are not included.
+* Service contacts where the Client Participation Indicator flag is ‘No’ are not included.
 * '% Episodes with Suicide Risk Flag %’ counts the proportion of all episodes 
   which are flagged as a suicide risk.
 * Other than in the '% Episodes with Suicide Risk Flag' column, only episodes 
   flagged as suicide risk are counted.
 * Episodes where the first service contact occurred within 7 days are
-  tabulated as ‘7 days or less’; contacts flagged as ‘No Show’ are not
-  included for this purpose.
+  tabulated as ‘7 days or less’
 * Episodes where no service contact occurred are tabulated as ‘No Service
   Contact Occurred’.
 * KPI is measured as percentage of episodes flagged as a suicide risk which
