@@ -446,21 +446,6 @@ Key specifications:
 * Service Contacts flagged as ‘No Show’ are not included for this purpose.
 * Measures that have a total score of ‘99’ are invalid and counted as 'no measure'.
 
-.. _category-a10:
-
-A10 - Data quality report - Missing Referral Dates
-++++++++++++++++++++++++++++++++++++++++++++++++++
-
-The A10 report shows the counts of episodes which are missing a referral date
-and will therefore not appear in reports based on referral date.
-
-Key specifications:
-
-* All Episodes with no referral date are counted
-* The subset of those episodes which additionally have the suicide risk flag set
-* The number of those episodes with no Service Contacts are also show.
-* Service Contacts flagged as ‘No Show’ are not included for this purpose.
-
 .. _category-b:
 
 Category B: Monitoring overall service delivery
