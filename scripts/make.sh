@@ -33,8 +33,6 @@ docker run --rm -e GIT_VERSION -v `pwd`:/mnt/workdir \
   stratdat/sphinx-html2pdf:production \
   find . -name *.png -exec pngquant --force --output {} 8 {} \;
 
-timestamp=$(date +%s)
-
 echo Timestamp: ${timestamp}
 
 docker run --rm -e GIT_VERSION -v `pwd`:/mnt/workdir \
