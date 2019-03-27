@@ -734,7 +734,7 @@ Key specifications:
   recorded in the period.
 * Service Contacts flagged as ‘No Show’ are not included for this purpose.
 * Population is calculated from Estimated Regional Population figures.
-* KPI is measured in clients per 10,000 population.
+* KPI is measured in clients per 100,000 population.
 
 .. _category-acc-2:
 
@@ -751,7 +751,7 @@ Key specifications:
   recorded in the period.
 * Service Contacts flagged as ‘No Show’ are not included for this purpose.
 * Population is calculated from Estimated Regional Population figures.
-* KPI is measured in clients per 10,000 population.
+* KPI is measured in clients per 100,000 population.
 
 .. _category-acc-3:
 
@@ -768,7 +768,7 @@ Key specifications:
   recorded in the period.
 * Service Contacts flagged as ‘No Show’ are not included for this purpose.
 * Population is calculated from Estimated Regional Population figures.
-* KPI is measured in clients per 10,000 population.
+* KPI is measured in clients per 100,000 population.
 
 .. _category-app-1:
 
@@ -786,7 +786,7 @@ Key specifications:
 * Service Contacts flagged as ‘No Show’ are not included for this purpose.
 * Population is calculated from Estimated Regional Population figures
   for people aged 12-24.
-* KPI is measured in clients per 10,000 population.
+* KPI is measured in clients per 100,000 population.
 
 .. _category-app-2:
 
