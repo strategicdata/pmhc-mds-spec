@@ -17,6 +17,7 @@ GetOptions (
     "spec-name=s"   => \my $spec_name,
     "doc-dir=s"     => \my $doc_dir,
     "f|forcesphinx" => \my $sphinx,
+    "t|timestamp=s" => \my $timestamp,
 ) or die("Error in command line arguments\n");
 
 my $src = "$doc_dir/build/singlehtml";
@@ -25,6 +26,7 @@ my $output_file = "$dst/$spec_name.pdf";
 
 $spec_name   || die 'You must specify a spec name';
 $doc_dir     || die 'You must specify a doc directory';
+$timestamp   || die 'You must specify a timestamp';
 $webservice  ||= 'https://prince.sdintra.net';
 
 #=======================================================================
@@ -41,7 +43,7 @@ open( my $input_fh, '<:encoding(UTF-8)', $src . '/index.html' )
     || die( "Cannot open HTML file for reading: $!" );
 $tree->parse_file( $input_fh );
 
-addCover( $tree );
+addCover( $tree, $timestamp );
 createTOC( $tree );
 fixLinks( $tree );
 #fixExternalLinks( $tree ); Turned off as sometimes we need the URL contextually
@@ -99,13 +101,15 @@ write_file( $output_file, $output_pdf );
 # looking cover page.
 sub addCover {
     #@type HTML::Element
-    my $tree = shift;
+    my $tree      = shift;
+    my $timestamp = shift;
+
+    say "Timestamp: $timestamp";
 
     ( my $logo_position ) = $tree->find_by_tag_name( 'h1' );
     $logo_position->preinsert( [ 'img', { src => '_static/logo.png', class => 'logo' } ] );
 
-    chomp(my $commit_timestamp = `git log --perl-regexp --author='^((?!Jenkins).*)\$' -1 --format=%ct 2>/dev/null`);
-    my $print_date = DateTime->from_epoch( epoch => $commit_timestamp * 1 )->set_time_zone('Australia/Canberra');
+    my $print_date = DateTime->from_epoch( epoch => $timestamp * 1 )->set_time_zone('Australia/Canberra');
 
     chomp( my $commit_hash = `git log --perl-regexp --author='^((?!Jenkins).*)\$' -1 --format=%H 2>/dev/null`);
 

@@ -9,8 +9,9 @@ docker pull docker.sdlocal.net/csvw/metadata2rst
 docker pull stratdat/sphinx:production
 docker pull stratdat/sphinx-html2pdf:production
 
-docker run --rm -v `pwd`:/mnt/cwd docker.sdlocal.net/csvw/metadata2rst \
-  --meta=pmhc-metadata.json
+docker run --rm -v `pwd`:/mnt/cwd \
+  docker.sdlocal.net/csvw/metadata2rst \
+    --meta=pmhc-metadata.json
 
 pushd .
 cd doc
@@ -32,11 +33,16 @@ docker run --rm -e GIT_VERSION -v `pwd`:/mnt/workdir \
   stratdat/sphinx-html2pdf:production \
   find . -name *.png -exec pngquant --force --output {} 8 {} \;
 
+timestamp=$(date +%s)
+
+echo Timestamp: ${timestamp}
+
 docker run --rm -e GIT_VERSION -v `pwd`:/mnt/workdir \
   stratdat/sphinx-html2pdf:production \
   /mnt/workdir/scripts/make-pdf.pl \
   --spec-name "${SPEC_NAME}-${SPEC_VERSION}" \
-  --doc-dir   "/mnt/workdir/doc"
+  --doc-dir   "/mnt/workdir/doc" \
+  --timestamp ${timestamp}
 
 pushd .
 cd doc
