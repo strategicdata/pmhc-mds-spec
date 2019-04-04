@@ -60,7 +60,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'PMHC MDS'
+project = u'PMHC MDS Data Specification'
 copyright = u'2019, Australian Government - Department of Health'
 author = u'PMHC MDS Working Group'
 
@@ -88,7 +88,7 @@ language = None
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
-exclude_patterns = ['record/*', 'data-specification/include/*', 'boilerplate/*', 'figures/*', 'data/*']
+exclude_patterns = ['record/*', 'include/*', 'boilerplate/*', 'figures/*', 'data/*']
 
 # The reST default role (used for this markup: `text`) to use for all
 # documents.
@@ -151,7 +151,7 @@ html_theme_options = {}
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static', 'data-specification/_data/_orig']
+html_static_path = ['_static', '_data/_orig']
 
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied
@@ -214,7 +214,7 @@ html_extra_path = ['CNAME', '.nojekyll']
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'PMHC'
+htmlhelp_basename = 'PMHC MDS Data Specification'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -236,7 +236,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  (master_doc, 'PMHC.tex', u'Primary Mental Health Care Minimum Dataset specification',
+  (master_doc, 'PMHC-MDS-data-spec.tex', u'Primary Mental Health Care Minimum Dataset specification',
    author, 'manual'),
 ]
 
@@ -266,7 +266,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'PMHC MDS Specification', u'Primary Mental Health Care Minimum Dataset specification',
+    (master_doc, 'PMHC MDS Data Specification', u'Primary Mental Health Care Minimum Dataset specification',
      [author], 1)
 ]
 
@@ -280,8 +280,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  (master_doc, 'PMHC', u'Primary Mental Health Care Minimum Dataset specification',
-   author, 'PMHC', 'Primary Mental Health Care Minimum Dataset specification',
+  (master_doc, 'PMHC-MDS-data-spec', u'Primary Mental Health Care Minimum Dataset specification',
+   author, 'PMHC-MDS-data-spec', 'Primary Mental Health Care Minimum Dataset specification',
    'Miscellaneous'),
 ]
 

@@ -21,7 +21,7 @@ Version |version|
 
 .. toctree::
    :numbered:
-   :caption: Table of Contents
+   :caption: Table of contents
    :maxdepth: 3
 
    reporting-arrangements

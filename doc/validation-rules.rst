@@ -1,6 +1,6 @@
 .. _validation-rules:
 
-Validation Rules
+Validation rules
 ================
 
 This document defines validation rules between items and record types.
@@ -8,7 +8,7 @@ The domain of individual items is defined in :ref:`record-formats`.
 
 .. _current-validations:
 
-1. Current Validations
+1. Current validations
 ----------------------
 
 .. _practitioner-current-validations:
@@ -141,7 +141,7 @@ The domain of individual items is defined in :ref:`record-formats`.
 
 .. _future-validations:
 
-2. Future Validations
+2. Future validations
 ---------------------
 
 1. SDQ

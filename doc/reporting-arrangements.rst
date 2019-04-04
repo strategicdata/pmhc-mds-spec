@@ -59,11 +59,11 @@ Data submitted via the existing ATAPS/MHSRRA MDS will be converted and merged wi
 via the PMHC MDS in order to produce departmental reports.
 
 .. figure:: figures/transitional-reporting.svg
-   :alt: Transitional Reporting Process
+   :alt: Transitional reporting process
 
-   Transitional Reporting Process
+   Transitional reporting process
 
-Transition to Full Compliance
+Transition to full compliance
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Refer to the recent Department announcement on the `INFORMATION and ACTION: PHN CEO - Primary Mental Health Care Minimum Data Set Update | June 21, 2017 <https://www.pmhc-mds.com/communications/#/2017/06/21/FOR-INFORMATION-and-ACTION-PHN-CEO-Primary-Mental-Health-Care-Minimum-Data-Set-Update/>`_.
