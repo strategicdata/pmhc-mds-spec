@@ -5,18 +5,18 @@ set -e
 
 source doc/version.conf
 
-docker pull docker.sdlocal.net/csvw/metadata2rst
+docker pull docker.sdlocal.net/csvw/metadata2rst:v2
 docker pull stratdat/sphinx:production
 docker pull stratdat/sphinx-html2pdf:production
 
-docker run --rm -v `pwd`:/mnt/cwd docker.sdlocal.net/csvw/metadata2rst \
+docker run --rm -v `pwd`:/mnt/cwd docker.sdlocal.net/csvw/metadata2rst:v2 \
   --meta=pmhc-metadata.json
 
 pushd .
 cd doc
 
-rm -rf data-specification/_data build
-cp -rf ../data data-specification/_data
+rm -rf _data build
+cp -rf ../data _data
 
 GIT_VERSION=$(git describe --tags --always)
 
