@@ -214,7 +214,7 @@ html_extra_path = ['CNAME', '.nojekyll']
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'PMHC MDS Data Specification'
+htmlhelp_basename = 'PMHC-MDS-Data-Specification'
 
 # -- Options for LaTeX output ---------------------------------------------
 
