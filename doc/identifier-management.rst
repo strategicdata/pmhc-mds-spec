@@ -35,7 +35,7 @@ coordinating assignment and management of these client keys.
 Initially the Department wanted these keys to be unique across the PHN in order
 to ensure that there is a single key for a client within the PHN, and will
 continue to be investigate options for the PMHC MDS implementation of a
-Master Client Index during :ref:`Stage-Two` of development.
+Master Client Index during `Stage Two <http://docs.pmhc-mds.com/en/v1/faqs/system/development.html#stage-two>`_ of development.
 
 .. _unique_keys:
 
@@ -53,4 +53,4 @@ Each record needs to be assigned a unique key in order to facilitate
 adding/updating/deleting each item when uploading/entering data. These keys will
 be created and managed by the Provider Organisation.
 
-*If you still have questions after reading this information, please visit the Department's responses to* :ref:`identifier-and-key-FAQs`
+*If you still have questions after reading this information, please visit the Department's responses to* `Questions about Unique Identifiers and ‘Keys’ <http://docs.pmhc-mds.com/en/v1/faqs/concepts-processes/identifiers.html#identifier-and-key-faqs>`_

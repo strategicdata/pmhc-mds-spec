@@ -3,7 +3,7 @@
   "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
   "columns": [{
     "name": "key",
-    "titles": [ "key", "Key" ],
+    "titles": [ "key" ],
     "dc:title": "Key",
     "schema:description": "A metadata key name.",
     "schema:dateCreated": "2018-08-24",
@@ -15,7 +15,7 @@
     "required": true
   },{
     "name": "value",
-    "titles": [ "value", "Value" ],
+    "titles": [ "value" ],
     "dc:title": "Value",
     "schema:description": "The metadata value.",
     "schema:dateCreated": "2018-08-24",

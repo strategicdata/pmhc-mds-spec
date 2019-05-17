@@ -3,14 +3,14 @@
   "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
   "columns": [{
     "name": "id",
-    "titles": [ "id", "ID" ],
+    "titles": [ "id" ],
     "schema:dateCreated": "2016-06-22",
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",
     "datatype": "string"
   },{
     "name": "description",
-    "titles": [ "description", "Description" ],
+    "titles": [ "description" ],
     "schema:dateCreated": "2016-06-22",
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",

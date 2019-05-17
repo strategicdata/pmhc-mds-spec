@@ -3,7 +3,7 @@
   "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
   "columns": [{
     "name": "organisation_path",
-    "titles": [ "organisation_path", "Organisation Path" ],
+    "titles": [ "organisation_path" ],
     "dc:title": "Organisation Path",
     "schema:description": "A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.",
     "schema:disambiguatingDescription": "type/organisation_path.rst",
@@ -16,7 +16,7 @@
     "required": true
   },{
     "name": "organisation_key",
-    "titles": [ "organisation_key", "Organisation Key" ],
+    "titles": [ "organisation_key" ],
     "dc:title": "Organisation Key",
     "schema:description": "A sequence of characters which uniquely identifies the provider organisation to the Primary Health Network. Assigned by the Primary Health Network.",
     "schema:disambiguatingDescription": "table/organisation/key.rst",
@@ -31,7 +31,7 @@
     "required": true
   },{
     "name": "organisation_name",
-    "titles": [ "organisation_name", "Name" ],
+    "titles": [ "organisation_name" ],
     "dc:title" : "Provider Organisation - Name",
     "schema:description": "The name of the provider organisation.",
     "schema:dateCreated": "2016-06-22",
@@ -45,7 +45,7 @@
     "required": true
     },{
       "name": "organisation_legal_name",
-      "titles": [ "organisation_legal_name", "Legal Name" ],
+      "titles": [ "organisation_legal_name" ],
       "dc:title" : "Provider Organisation - Legal Name",
       "schema:description": "The legal name of the provider organisation.",
       "schema:dateCreated": "2017-04-26",
@@ -57,7 +57,7 @@
       "required": false
   },{
     "name": "organisation_abn",
-    "titles": [ "organisation_abn", "ABN" ],
+    "titles": [ "organisation_abn" ],
     "dc:title" : "Provider Organisation - ABN",
     "schema:description": "The Australian Business Number of the provider organisation.",
     "schema:dateCreated": "2016-07-08",
@@ -69,7 +69,7 @@
     "required": true
   },{
      "name": "organisation_type",
-    "titles": [ "organisation_type", "Type" ],
+    "titles": [ "organisation_type" ],
     "dc:title" : "Provider Organisation - Type",
     "schema:description": "The category that best describes the provider organisation.",
     "schema:disambiguatingDescription": "table/organisation/type.rst",
@@ -82,7 +82,7 @@
     "required": true
   },{
     "name": "organisation_state",
-    "titles": [ "organisation_state", "State" ],
+    "titles": [ "organisation_state" ],
     "dc:title" : "Provider Organisation - State",
     "schema:description": "The state that the provider organisation operates in.",
     "schema:disambiguatingDescription": "table/organisation/state.rst",
@@ -96,7 +96,7 @@
     "required": true
   },{
     "name": "organisation_start_date",
-    "titles": [ "organisation_start_date", "Start Date" ],
+    "titles": [ "organisation_start_date" ],
     "dc:title" : "Provider Organisation - Start Date",
     "schema:description": "The date on which a provider organisation started delivering services.",
     "schema:dateCreated": "2019-03-13",
@@ -110,7 +110,7 @@
     "required": true
   },{
     "name": "organisation_end_date",
-    "titles": [ "organisation_end_date", "End Date" ],
+    "titles": [ "organisation_end_date" ],
     "dc:title" : "Provider Organisation - End Date",
     "schema:description": "The date on which a provider organisation stopped delivering services.",
     "schema:dateCreated": "2019-03-13",
@@ -124,7 +124,7 @@
     "required": false
   },{
     "name": "organisation_omsss_email",
-    "titles": [ "organisation_omsss_email", "OMSSS Provider Organisation Email" ],
+    "titles": [ "organisation_omsss_email" ],
     "dc:title" : "Provider Organisation - OMSSS Provider Organisation Email",
     "schema:description": "An email address at a Provider Organisation where OMSSS results can be sent.",
     "schema:dateCreated": "2019-03-13",
@@ -138,7 +138,7 @@
     "required": false
   },{
     "name": "organisation_tags",
-    "titles": [ "organisation_tags", "Tags" ],
+    "titles": [ "organisation_tags" ],
     "dc:title" : "Provider Organisation - Tags",
     "schema:description": "List of tags for the provider organisation.",
     "schema:disambiguatingDescription": "type/tags.rst",

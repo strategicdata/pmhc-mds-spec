@@ -3,7 +3,7 @@
   "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
   "columns": [{
     "name": "organisation_path",
-    "titles": [ "organisation_path", "Organisation Path" ],
+    "titles": [ "organisation_path" ],
     "dc:title": "Organisation Path",
     "schema:description": "A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.",
     "schema:disambiguatingDescription": "type/organisation_path.rst",
@@ -17,7 +17,7 @@
     "schema:formOrder": "1"
   },{
     "name": "practitioner_key",
-    "titles": [ "practitioner_key", "Practitioner Key" ],
+    "titles": [ "practitioner_key" ],
     "dc:title": "Practitioner Key",
     "schema:description": "A unique identifier for a practitioner within the responsible provider organisation. Assigned by either the PHN or provider organisation depending on local procedures.",
     "schema:disambiguatingDescription": "table/practitioner/key.rst",
@@ -33,7 +33,7 @@
     "schema:formOrder": "2"
   },{
      "name": "practitioner_category",
-    "titles": [ "practitioner_category", "Category" ],
+    "titles": [ "practitioner_category" ],
     "dc:title": "Practitioner - Category",
     "schema:description": "The type or category of the practitioner, as represented by a code.",
     "schema:dateCreated": "2016-06-22",
@@ -46,7 +46,7 @@
     "schema:formOrder": "3"
   },{
     "name": "atsi_cultural_training",
-    "titles": [ "atsi_cultural_training", "Cultural Training Flag" ],
+    "titles": [ "atsi_cultural_training" ],
     "dc:title": "Practitioner - ATSI Cultural Training",
     "schema:description": "Indicates whether a practitioner has completed a recognised training programme in the delivery of culturally safe services to Aboriginal and Torres Strait Islander peoples.",
     "schema:disambiguatingDescription": "table/practitioner/atsi-cultural-training.rst",
@@ -59,7 +59,7 @@
     "schema:formOrder": "8"
   },{
     "name": "practitioner_year_of_birth",
-    "titles": [ "practitioner_year_of_birth", "Year of Birth" ],
+    "titles": [ "practitioner_year_of_birth" ],
     "dc:title": "Practitioner - Year of Birth",
     "schema:description": "The year the practitioner was born.",
     "schema:disambiguatingDescription": "table/practitioner/year-of-birth.rst",
@@ -71,7 +71,7 @@
     "schema:formOrder": "5"
   },{
     "name": "practitioner_gender",
-    "titles": [ "practitioner_gender", "Gender" ],
+    "titles": [ "practitioner_gender" ],
     "dc:title": "Practitioner - Gender",
     "schema:description": "The term 'gender' refers to the way in which a person identifies their masculine or feminine characteristics. A persons gender relates to their deeply held internal and individual sense of gender and is not always exclusively male or female. It may or may not correspond to their sex assigned at birth.",
     "schema:absItem": "http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/1200.0.55.012Main%20Features12016?opendocument&tabname=Summary&prodno=1200.0.55.012&issue=2016&num=&view=",
@@ -85,7 +85,7 @@
     "schema:formOrder": "6"
   },{
     "name": "practitioner_atsi_status",
-    "titles": [ "practitioner_atsi_status", "ATSI Status" ],
+    "titles": [ "practitioner_atsi_status" ],
     "dc:title": "Practitioner - Aboriginal and Torres Strait Islander Status",
     "schema:description": "Whether a person identifies as being of Aboriginal and/or Torres Strait Islander origin, as represented by a code.",
     "schema:disambiguatingDescription": "type/atsi-status.rst",
@@ -100,7 +100,7 @@
     "schema:formOrder": "7"
   },{
     "name": "practitioner_active",
-    "titles": [ "practitioner_active", "Active" ],
+    "titles": [ "practitioner_active" ],
     "dc:title": "Practitioner - Active",
     "schema:description": "A flag to represent whether a practitioner is actively delivering services. This is a system field that is aimed at helping organisations manage practitioner codes.",
     "schema:dateCreated": "2016-06-22",
@@ -113,7 +113,7 @@
     "schema:formOrder": "4"
   },{
     "name": "practitioner_tags",
-    "titles": [ "practitioner_tags", "Tags" ],
+    "titles": [ "practitioner_tags" ],
     "dc:title" : "Practitioner - Tags",
     "schema:description": "List of tags for the practitioner.",
     "schema:disambiguatingDescription": "type/tags.rst",

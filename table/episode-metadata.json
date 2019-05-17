@@ -3,7 +3,7 @@
   "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
   "columns": [{
     "name": "organisation_path",
-    "titles": [ "organisation_path", "Organisation Path" ],
+    "titles": [ "organisation_path" ],
     "dc:title": "Organisation Path",
     "schema:description": "A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.",
     "schema:disambiguatingDescription": "type/organisation_path.rst",
@@ -16,7 +16,7 @@
     "required": true
   },{
     "name": "episode_key",
-    "titles": [ "episode_key", "Episode Key" ],
+    "titles": [ "episode_key" ],
     "dc:title": "Episode Key",
     "schema:description": "This is a number or code assigned to each episode. The Episode Key is unique and stable for each episode at the level of the organisation.",
     "schema:disambiguatingDescription": "table/episode/key.rst",
@@ -30,7 +30,7 @@
     "required": true
   },{
      "name": "client_key",
-    "titles": [ "client_key", "Client Key" ],
+    "titles": [ "client_key" ],
     "dc:title": "Client Key",
     "schema:description": "This is a number or code assigned to each individual referred to the commissioned organisation. The client identifier is unique and stable for each individual at the level of the PMHC top level organisation.",
     "schema:dateCreated": "2016-06-22",
@@ -44,7 +44,7 @@
     "required": true
   },{
     "name": "episode_end_date",
-    "titles": [ "episode_end_date", "End Date" ],
+    "titles": [ "episode_end_date" ],
     "dc:title": "Episode - End Date",
     "schema:description": "The date on which an *Episode of Care* is formally or administratively ended",
     "schema:disambiguatingDescription": "table/episode/end-date.rst",
@@ -59,7 +59,7 @@
     }
   },{
     "name": "client_consent",
-    "titles": [ "client_consent", "Client Consent" ],
+    "titles": [ "client_consent" ],
     "dc:title": "Episode - Client Consent to Anonymised Data",
     "schema:description": "An indication that the client has consented to their anonymised data being provided to the Department of Health for statistical purposes in planning and improving mental health services.",
     "schema:disambiguatingDescription": "table/episode/client-consent.rst",
@@ -72,7 +72,7 @@
     "required": true
   },{
     "name": "episode_completion_status",
-    "titles": [ "episode_completion_status", "Completion Status" ],
+    "titles": [ "episode_completion_status" ],
     "dc:title": "Episode - Completion Status",
     "schema:description": "An indication of the completion status of an *Episode of Care*.",
     "schema:disambiguatingDescription": "table/episode/completion-status.rst",
@@ -84,7 +84,7 @@
     "default": "0"
   },{
     "name": "referral_date",
-    "titles": [ "referral_date", "Referral Date" ],
+    "titles": [ "referral_date" ],
     "dc:title": "Episode - Referral Date",
     "schema:description": "The date the referrer made the referral.",
     "schema:disambiguatingDescription": "table/episode/referral-date.rst",
@@ -98,7 +98,7 @@
     }
   },{
     "name": "principal_focus",
-    "titles": [ "principal_focus", "Principal Focus of Treatment Plan" ],
+    "titles": [ "principal_focus" ],
     "dc:title": "Episode - Principal Focus of Treatment Plan",
     "schema:description": "The range of activities that best describes the overall services intended to be delivered to the client throughout the course of the episode. For most clients, this will equate to the activities that account for most time spent by the service provider.",
     "schema:disambiguatingDescription": "table/episode/principal-focus.rst",
@@ -111,7 +111,7 @@
     "required": true
   },{
     "name": "mental_health_treatment_plan",
-    "titles": [ "mental_health_treatment_plan", "Mental Health Treatment Plan" ],
+    "titles": [ "mental_health_treatment_plan" ],
     "dc:title": "Episode - GP Mental Health Treatment Plan Flag",
     "schema:description": "An indication of whether a client has a GP mental health treatment plan. A GP should be involved in a referral where appropriate however a mental health treatment plan is not mandatory.",
     "schema:dateCreated": "2016-06-22",
@@ -123,7 +123,7 @@
     "required": true
   },{
     "name": "homelessness",
-    "titles": [ "homelessness", "Homelessness Flag" ],
+    "titles": [ "homelessness" ],
     "dc:title": "Episode - Homelessness Flag",
     "schema:description": "An indication of whether the client has been homeless in the 4 weeks prior to the current service episode.",
     "schema:disambiguatingDescription": "table/episode/homelessness.rst",
@@ -136,7 +136,7 @@
     "required": true
   },{
     "name": "client_postcode",
-    "titles": [ "client_postcode", "Client Postcode" ],
+    "titles": [ "client_postcode" ],
     "dc:title": "Episode - Area of usual residence, postcode",
     "schema:description": "The Australian postcode of the client.",
     "schema:disambiguatingDescription": "table/episode/client-postcode.rst",
@@ -151,7 +151,7 @@
     "required": true
   },{
     "name": "labour_force_status",
-    "titles": [ "labour_force_status", "Labour Force Status" ],
+    "titles": [ "labour_force_status" ],
     "dc:title": "Episode - Labour Force Status",
     "schema:description": "The self-reported status the person currently has in being either in the labour force (employed/unemployed) or not in the labour force, as represented by a code.",
     "schema:disambiguatingDescription": "table/episode/labour-force-status.rst",
@@ -165,7 +165,7 @@
     "required": true
   },{
     "name": "employment_participation",
-    "titles": [ "employment_participation", "Employment Participation" ],
+    "titles": [ "employment_participation" ],
     "dc:title": "Episode - Employment Participation",
     "schema:description": "Whether a person in paid employment is employed full-time or part-time, as represented by a code.",
     "schema:disambiguatingDescription": "table/episode/employment-participation.rst",
@@ -179,7 +179,7 @@
     "required": true
   },{
     "name": "income_source",
-    "titles": [ "income_source", "Source of Cash Income" ],
+    "titles": [ "income_source" ],
     "dc:title": "Episode - Source of Cash Income",
     "schema:description": "The source from which a person derives the greatest proportion of his/her income, as represented by a code.",
     "schema:disambiguatingDescription": "table/episode/income-source.rst",
@@ -192,7 +192,7 @@
     "required": true
   },{
     "name": "health_care_card",
-    "titles": [ "health_care_card", "Health Care Card" ],
+    "titles": [ "health_care_card" ],
     "dc:title": "Episode - Health Care Card",
     "schema:description": "An indication of whether the person is a current holder of a Health Care Card that entitles them to arrange of concessions for Government funded health services.",
     "schema:disambiguatingDescription": "table/episode/health-care-card.rst",
@@ -217,7 +217,7 @@
     "required": true
   },{
     "name": "marital_status",
-    "titles": [ "marital_status", "Marital Status" ],
+    "titles": [ "marital_status" ],
     "dc:title": "Episode - Marital Status",
     "schema:description": "A person's current relationship status in terms of a couple relationship or, for those not in a couple relationship, the existence of a current or previous registered marriage, as represented by a code.",
     "schema:disambiguatingDescription": "table/episode/marital-status.rst",
@@ -231,7 +231,7 @@
     "required": true
   },{
     "name": "suicide_referral_flag",
-    "titles": [ "suicide_referral_flag", "Suicide Referral Flag" ],
+    "titles": [ "suicide_referral_flag" ],
     "dc:title": "Episode - Suicide Referral Flag",
     "schema:description": "Identifies those individuals where a recent history of suicide attempt, or suicide risk, was a factor noted in the referral that underpinned the person's needs for assistance at entry to the episode, as represented by a code.",
     "schema:dateCreated": "2016-06-22",
@@ -243,7 +243,7 @@
     "required": true
   },{
     "name": "principal_diagnosis",
-    "titles": [ "principal_diagnosis", "Principal Diagnosis" ],
+    "titles": [ "principal_diagnosis" ],
     "dc:title": "Episode - Principal Diagnosis",
     "schema:description": "The Principal Diagnosis is the diagnosis established after study to be chiefly responsible for occasioning the client's care during the current Episode of Care.",
     "schema:disambiguatingDescription": "table/episode/principal-diagnosis.rst",
@@ -255,7 +255,7 @@
     "required": true
   },{
     "name": "additional_diagnosis",
-    "titles": [ "additional_diagnosis", "Additional Diagnosis" ],
+    "titles": [ "additional_diagnosis" ],
     "dc:title": "Episode - Additional Diagnosis",
     "schema:description": "The main additional condition or complaint co-existing with the Principal Diagnosis or arising during the episode of care.",
     "schema:disambiguatingDescription": "table/episode/additional-diagnosis.rst",
@@ -267,7 +267,7 @@
     "required": true
   },{
     "name": "medication_antipsychotics",
-    "titles": [ "medication_antipsychotics", "Medication Antipsychotics" ],
+    "titles": [ "medication_antipsychotics" ],
     "dc:title": "Episode - Medication - Antipsychotics (N05A)",
     "schema:description": "Whether the client is taking prescribed antipsychotics for a mental health condition as assessed at intake assessment, as represented by a code.",
     "schema:disambiguatingDescription": "table/episode/medication-antipsychotics.rst",
@@ -280,7 +280,7 @@
     "required": true
   },{
     "name": "medication_anxiolytics",
-    "titles": [ "medication_anxiolytics", "Medication Anxiolytics" ],
+    "titles": [ "medication_anxiolytics" ],
     "dc:title": "Episode - Medication - Anxiolytics (N05B)",
     "schema:description": "Whether the client is taking prescribed anxiolytics for a mental health condition as assessed at intake assessment, as represented by a code.",
     "schema:disambiguatingDescription": "table/episode/medication-anxiolytics.rst",
@@ -293,7 +293,7 @@
     "required": true
   },{
     "name": "medication_hypnotics",
-    "titles": [ "medication_hypnotics", "Medication Hypnotics" ],
+    "titles": [ "medication_hypnotics" ],
     "dc:title": "Episode - Medication - Hypnotics and sedatives (N05C)",
     "schema:description": "Whether the client is taking prescribed hypnotics and sedatives for a mental health condition as assessed at intake assessment, as represented by a code.",
     "schema:disambiguatingDescription": "table/episode/medication-hypnotics.rst",
@@ -306,7 +306,7 @@
     "required": true
   },{
     "name": "medication_antidepressants",
-    "titles": [ "medication_antidepressants", "Medication Antidepressants" ],
+    "titles": [ "medication_antidepressants" ],
     "dc:title": "Episode - Medication - Antidepressants (N06A)",
     "schema:description": "Whether the client is taking prescribed antidepressants for a mental health condition as assessed at intake assessment, as represented by a code.",
     "schema:disambiguatingDescription": "table/episode/medication-antidepressants.rst",
@@ -319,7 +319,7 @@
     "required": true
   },{
     "name": "medication_psychostimulants",
-    "titles": [ "medication_psychostimulants", "Medication Psychostimulants" ],
+    "titles": [ "medication_psychostimulants" ],
     "dc:title": "Episode - Medication - Psychostimulants and nootropics (N06B)",
     "schema:description": "Whether the client is taking prescribed psychostimulants and nootropics for a mental health condition as assessed at intake assessment, as represented by a code.",
     "schema:disambiguatingDescription": "table/episode/medication-psychostimulants.rst",
@@ -332,7 +332,7 @@
     "required": true
   },{
     "name": "referrer_profession",
-    "titles": [ "referrer_profession", "Referrer Profession" ],
+    "titles": [ "referrer_profession" ],
     "dc:title": "Episode - Referrer Profession",
     "schema:description": "Profession of the provider who referred the client.",
     "schema:disambiguatingDescription": "table/episode/referrer-profession.rst",
@@ -345,7 +345,7 @@
     "required": true
   },{
     "name": "referrer_organisation_type",
-    "titles": [ "referrer_organisation_type", "Referrer Organisation Type" ],
+    "titles": [ "referrer_organisation_type" ],
     "dc:title": "Episode - Referrer Organisation Type",
     "schema:description": "Type of organisation in which the referring professional is based.",
     "schema:disambiguatingDescription": "table/episode/referrer-organisation-type.rst",
@@ -371,7 +371,7 @@
     "required": true
   },{
     "name": "episode_tags",
-    "titles": [ "episode_tags", "Tags" ],
+    "titles": [ "episode_tags" ],
     "dc:title" : "Episode - Tags",
     "schema:description": "List of tags for the episode.",
     "schema:disambiguatingDescription": "type/tags.rst",

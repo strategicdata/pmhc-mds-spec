@@ -3,7 +3,7 @@
   "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
   "columns": [{
     "name": "organisation_path",
-    "titles": [ "organisation_path", "Organisation Path" ],
+    "titles": [ "organisation_path" ],
     "dc:title": "Organisation Path",
     "schema:description": "A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.",
     "schema:disambiguatingDescription": "type/organisation_path.rst",
@@ -16,7 +16,7 @@
     "required": true
   },{
     "name": "collection_occasion_key",
-    "titles": [ "collection_occasion_key", "Collection Occasion Key" ],
+    "titles": [ "collection_occasion_key" ],
     "dc:title": "Collection Occasion Key",
     "schema:description": "This is a number or code assigned to each collection occasion of outcome measures. The Collection Occasion Key is unique and stable for each collection occasion at the level of the organisation.",
     "schema:disambiguatingDescription": "table/collection-occasion/key.rst",
@@ -31,7 +31,7 @@
     "required": true
   },{
      "name": "episode_key",
-    "titles": [ "episode_key", "Episode Key" ],
+    "titles": [ "episode_key" ],
     "dc:title": "Episode Key",
     "schema:dateCreated": "2016-06-22",
     "schema:dateDeleted": "2016-06-22",
@@ -44,7 +44,7 @@
     "required": true
   },{
     "name": "measure_date",
-    "titles": [ "measure_date", "Measure Date" ],
+    "titles": [ "measure_date" ],
     "dc:title": "Collection Occasion - Measure Date",
     "schema:description": "The date the measure was given.",
     "schema:disambiguatingDescription": "table/collection-occasion/date.rst",
@@ -60,7 +60,7 @@
     "required": true
   },{
     "name": "reason_for_collection",
-    "titles": [ "reason_for_collection", "Reason for Collection" ],
+    "titles": [ "reason_for_collection" ],
     "dc:title": "Collection Occasion - Reason",
     "schema:description": "The reason for the collection of the outcome measures on the identified Outcome Collection Occasion.",
     "schema:disambiguatingDescription": "table/collection-occasion/reason.rst",
@@ -72,7 +72,7 @@
     "required": true
   },{
     "name": "k10p_item1",
-    "titles": [ "k10p_item1", "Question 1" ],
+    "titles": [ "k10p_item1" ],
     "dc:title": "K10+ - Question 1",
     "schema:description": "In the past 4 weeks, about how often did you feel tired out for no good reason?",
     "schema:disambiguatingDescription": "table/collection-occasion/k10p/Q1.rst",
@@ -85,7 +85,7 @@
     "required": true
   },{
     "name": "k10p_item2",
-    "titles": [ "k10p_item2", "Question 2" ],
+    "titles": [ "k10p_item2" ],
     "dc:title": "K10+ - Question 2",
     "schema:description": "In the past 4 weeks, about how often did you feel nervous?",
     "schema:disambiguatingDescription": "table/collection-occasion/k10p/Q2.rst",
@@ -98,7 +98,7 @@
     "required": true
   },{
     "name": "k10p_item3",
-    "titles": [ "k10p_item3", "Question 3" ],
+    "titles": [ "k10p_item3" ],
     "dc:title": "K10+ - Question 3",
     "schema:description": "In the past 4 weeks, about how often did you feel so nervous that nothing could calm you down?",
     "schema:disambiguatingDescription": "table/collection-occasion/k10p/Q3.rst",
@@ -111,7 +111,7 @@
     "required": true
   },{
     "name": "k10p_item4",
-    "titles": [ "k10p_item4", "Question 4" ],
+    "titles": [ "k10p_item4" ],
     "dc:title": "K10+ - Question 4",
     "schema:description": "In the past 4 weeks, how often did you feel hopeless?",
     "schema:disambiguatingDescription": "table/collection-occasion/k10p/Q4.rst",
@@ -124,7 +124,7 @@
     "required": true
   },{
     "name": "k10p_item5",
-    "titles": [ "k10p_item5", "Question 5" ],
+    "titles": [ "k10p_item5" ],
     "dc:title": "K10+ - Question 5",
     "schema:description": "In the past 4 weeks, how often did you feel restless or fidgety?",
     "schema:disambiguatingDescription": "table/collection-occasion/k10p/Q5.rst",
@@ -137,7 +137,7 @@
     "required": true
   },{
     "name": "k10p_item6",
-    "titles": [ "k10p_item6", "Question 6" ],
+    "titles": [ "k10p_item6" ],
     "dc:title": "K10+ - Question 6",
     "schema:description": "In the past 4 weeks, how often did you feel so restless you could not sit still?",
     "schema:disambiguatingDescription": "table/collection-occasion/k10p/Q6.rst",
@@ -150,7 +150,7 @@
     "required": true
   },{
     "name": "k10p_item7",
-    "titles": [ "k10p_item7", "Question 7" ],
+    "titles": [ "k10p_item7" ],
     "dc:title": "K10+ - Question 7",
     "schema:description": "In the past 4 weeks, how often did you feel depressed?",
     "schema:disambiguatingDescription": "table/collection-occasion/k10p/Q7.rst",
@@ -163,7 +163,7 @@
     "required": true
   },{
     "name": "k10p_item8",
-    "titles": [ "k10p_item8", "Question 8" ],
+    "titles": [ "k10p_item8" ],
     "dc:title": "K10+ - Question 8",
     "schema:description": "In the past 4 weeks, how often did you feel that everything was an effort?",
     "schema:disambiguatingDescription": "table/collection-occasion/k10p/Q8.rst",
@@ -176,7 +176,7 @@
     "required": true
   },{
     "name": "k10p_item9",
-    "titles": [ "k10p_item9", "Question 9" ],
+    "titles": [ "k10p_item9" ],
     "dc:title": "K10+ - Question 9",
     "schema:description": "In the past 4 weeks, how often did you feel so sad that nothing could cheer you up?",
     "schema:disambiguatingDescription": "table/collection-occasion/k10p/Q9.rst",
@@ -189,7 +189,7 @@
     "required": true
   },{
     "name": "k10p_item10",
-    "titles": [ "k10p_item10", "Question 10" ],
+    "titles": [ "k10p_item10" ],
     "dc:title": "K10+ - Question 10",
     "schema:description": "In the past 4 weeks, how often did you feel worthless?",
     "schema:disambiguatingDescription": "table/collection-occasion/k10p/Q10.rst",
@@ -202,7 +202,7 @@
     "required": true
   },{
     "name": "k10p_item11",
-    "titles": [ "k10p_item11", "Question 11" ],
+    "titles": [ "k10p_item11" ],
     "dc:title": "K10+ - Question 11",
     "schema:description": "In the past four weeks, how many days were you totally unable to work, study or manage your day to day activities because of these feelings?",
     "schema:disambiguatingDescription": "table/collection-occasion/k10p/Q11.rst",
@@ -217,7 +217,7 @@
     }
   },{
     "name": "k10p_item12",
-    "titles": [ "k10p_item12", "Question 12" ],
+    "titles": [ "k10p_item12" ],
     "dc:title": "K10+ - Question 12",
     "schema:description": "Aside from those days, in the past four weeks, how many days were you able to work or study or manage your day to day activities, but had to cut down on what you did because of these feelings?",
     "schema:disambiguatingDescription": "table/collection-occasion/k10p/Q12.rst",
@@ -232,7 +232,7 @@
     }
   },{
     "name": "k10p_item13",
-    "titles": [ "k10p_item13", "Question 13" ],
+    "titles": [ "k10p_item13" ],
     "dc:title": "K10+ - Question 13",
     "schema:description": "In the past four weeks, how many times have you seen a doctor or any other health professional about these feelings?",
     "schema:disambiguatingDescription": "table/collection-occasion/k10p/Q13.rst",
@@ -247,7 +247,7 @@
     }
   },{
     "name": "k10p_item14",
-    "titles": [ "k10p_item14", "Question 14" ],
+    "titles": [ "k10p_item14" ],
     "dc:title": "K10+ - Question 14",
     "schema:description": "In the past four weeks, how often have physical health problems been the main cause of these feelings?",
     "schema:disambiguatingDescription": "table/collection-occasion/k10p/Q14.rst",
@@ -260,7 +260,7 @@
     "required": true
   },{
     "name": "k10p_score",
-    "titles": [ "k10p_score", "Score" ],
+    "titles": [ "k10p_score" ],
     "dc:title" : "K10+ - Score",
     "schema:description": "The overall K10 score.",
     "schema:disambiguatingDescription": "table/collection-occasion/k10p/score.rst",
@@ -275,7 +275,7 @@
     }
   },{
     "name": "k10p_tags",
-    "titles": [ "k10p_tags", "Tags" ],
+    "titles": [ "k10p_tags" ],
     "dc:title" : "K10+ - Tags",
     "schema:description": "List of tags for the collection occasion.",
     "schema:disambiguatingDescription": "type/tags.rst",
