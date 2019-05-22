@@ -150,8 +150,3 @@ to report on Service Type for all Service Contacts.
   30 June 2018. (All ATAPS referrals should have concluded by that date).
 
   This response will only be allowed on service contacts with the !ATAPS flag.
-
-**Changes in effect from 1 January 2019**
-
-- A new Psychosocial Support code has been added to the existing Service Contact
-  Type data item.  New code 9.

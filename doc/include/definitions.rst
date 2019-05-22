@@ -5604,11 +5604,6 @@ The main type of service provided in the service contact, as represented by the 
   
     This response will only be allowed on service contacts with the !ATAPS flag.
   
-  **Changes in effect from 1 January 2019**
-  
-  - A new Psychosocial Support code has been added to the existing Service Contact
-    Type data item.  New code 9.
-  
 
 ----------
 
