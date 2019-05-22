@@ -146,8 +146,3 @@ each Service Contact.
 
   Episodes of care delivered to individuals who are recorded as Continuity of
   Support clients (see below) may be reported as Psychosocial Support.
-
-**Changes in effect from 1 January 2019**
-
-- A new Psychosocial Support ‘episode of care type’ has been added to the
-  existing Principal Focus of Treatment Plan data item: New code 8.

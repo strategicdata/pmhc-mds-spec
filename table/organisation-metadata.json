@@ -123,20 +123,6 @@
     },
     "required": false
   },{
-    "name": "organisation_omsss_email",
-    "titles": [ "organisation_omsss_email" ],
-    "dc:title" : "Provider Organisation - OMSSS Provider Organisation Email",
-    "schema:description": "An email address at a Provider Organisation where OMSSS results can be sent.",
-    "schema:dateCreated": "2019-03-13",
-    "schema:dateDeleted": "2019-03-13",
-    "schema:dateModified": "2019-03-13",
-    "datatype": {
-      "base": "date",
-      "format": "dMMyyyy",
-      "minimum": "2016-01-01"
-    },
-    "required": false
-  },{
     "name": "organisation_tags",
     "titles": [ "organisation_tags" ],
     "dc:title" : "Provider Organisation - Tags",
