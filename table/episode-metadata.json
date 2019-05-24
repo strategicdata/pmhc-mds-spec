@@ -205,7 +205,7 @@
     "required": true
   },{
     "name": "ndis_participant",
-    "titles": [ "ndis_participant", "NDIS Participant" ],
+    "titles": [ "ndis_participant" ],
     "dc:title": "Episode - NDIS Participant",
     "schema:description": "Is the client a participant in the National Disability Insurance Scheme?, as represented by a code.",
     "schema:dateCreated": "2016-06-22",
@@ -358,7 +358,7 @@
     "required": true
   },{
     "name": "continuity_of_support",
-    "titles": [ "continuity_of_support", "Continuity of Support" ],
+    "titles": [ "continuity_of_support" ],
     "dc:title": "Episode - Continuity of Support",
     "schema:description": "Is the client a Continuity of Support Client?",
     "schema:disambiguatingDescription": "table/episode/continuity-of-support.rst",
