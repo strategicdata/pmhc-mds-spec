@@ -146,6 +146,9 @@
     "url": "table/episode/referrer-organisation-type.csv",
     "tableSchema": "table/episode/referrer-organisation-type.json"
   }, {
+    "url": "table/episode/continuity-of-support.csv",
+    "tableSchema": "table/episode/continuity-of-support.json"
+  }, {
     "url": "table/service-contact/type.csv",
     "tableSchema": "table/service-contact/type.json"
   }, {
