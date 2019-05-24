@@ -1,5 +1,5 @@
 {
-  "@id": "table/episode/continuity-of-Support.json",
+  "@id": "table/episode/continuity-of-support.json",
   "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
   "columns": [{
     "name": "id",
