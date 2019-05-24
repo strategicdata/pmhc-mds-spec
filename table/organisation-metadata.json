@@ -149,11 +149,5 @@
       "resource": "table/organisation/type.csv",
       "columnReference": "id"
     }
-  }, {
-    "columnReference": "organisation_status",
-    "reference": {
-      "resource": "type/active.csv",
-      "columnReference": "id"
-    }
   }]
 }
