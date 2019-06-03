@@ -68,8 +68,19 @@ The domain of individual items is defined in :ref:`record-formats`.
      only be used by selected PHN Lead Sites
   7. The ``!ATAPS`` tag must only be included in the :ref:`dfn-episode_tags` field
      where the :ref:`dfn-referral_date` was before 1 July 2017
-  8. :ref:`dfn-episode_end_date` must not be before 1 January 2016 and must not be in the future
-  9. :ref:`dfn-referral_date` must not be before 1 January 2014 and must not be in the future
+  8. The :ref:`dfn-episode_end_date`
+
+     * must not be before 1 January 2016
+     * and must not be before organisation start date
+     * and must not be after organisation end date
+     * and must not be in the future
+
+  9. The :ref:`dfn-referral_date`
+
+     * must not be before 1 January 2014
+     * and must not be before organisation start date
+     * and must not be after organisation end date
+     * and must not be in the future
 
 .. _service-contact-current-validations:
 
@@ -106,38 +117,81 @@ The domain of individual items is defined in :ref:`record-formats`.
       :ref:`dfn-service_contact_participation_indicator` must be '1: Yes'
   11. The ``!ATAPS`` tag must only be included in the :ref:`dfn-service_contact_tags`
       field where the :ref:`dfn-service_contact_date` was before 30 June 2018
-  12. :ref:`dfn-service_contact_date` must not be before 1 January 2014 and must not be in the future
+  12. The:ref:`dfn-service_contact_date`
+
+      * must not be before 1 January 2016
+      * and must not be before organisation start date
+      * and must not be after organisation end date
+      * and must not be in the future
 
 .. _k10p-current-validations:
 
 5. K10+
 ~~~~~~~
 
-  1. :ref:`dfn-measure_date` must not be before :ref:`dfn-referral_date`
-  2. :ref:`dfn-measure_date` must not be after :ref:`dfn-episode_end_date`
-  3. If both item scores and a total score are specified, the item scores must
+  1. If both item scores and a total score are specified, the item scores must
      add up to the total score
-  4. :ref:`dfn-measure_date` must not be before 1 January 2016 and must not be in the future
+  2. The :ref:`dfn-measure_date`
+
+     * must not be before 1 January 2016
+     * and must not be before :ref:`dfn-referral_date`
+     * and must not be before organisation start date
+     * and must not be after :ref:`dfn-episode_end_date`
+     * and must not be after organisation end date
+     * and must not be in the future
 
 .. _k5-current-validations:
 
 6. K5
 ~~~~~
 
-  1. :ref:`dfn-measure_date` must not be before :ref:`dfn-referral_date`
-  2. :ref:`dfn-measure_date` must not be after :ref:`dfn-episode_end_date`
-  3. If both item scores and a total score are specified, the item scores must
+  1. If both item scores and a total score are specified, the item scores must
      add up to the total score
-  4. :ref:`dfn-measure_date` must not be before 1 January 2016 and must not be in the future
+  2. The :ref:`dfn-measure_date`
+
+     * must not be before 1 January 2016
+     * and must not be before :ref:`dfn-referral_date`
+     * and must not be before organisation start date
+     * and must not be after :ref:`dfn-episode_end_date`
+     * and must not be after organisation end date
+     * and must not be in the future
 
 .. _sdq-current-validations:
 
 7. SDQ
 ~~~~~~
 
-  1. :ref:`dfn-measure_date` must not be before :ref:`dfn-referral_date`
-  2. :ref:`dfn-measure_date` must not be after :ref:`dfn-episode_end_date`
-  3. :ref:`dfn-measure_date` must not be before 1 January 2016 and must not be in the future
+  1. If both subscales and total score are specified, the sum of the subscales
+     must agree with the total score
+  2. The :ref:`dfn-measure_date`
+
+     * must not be before 1 January 2016
+     * and must not be before :ref:`dfn-referral_date`
+     * and must not be before organisation start date
+     * and must not be after :ref:`dfn-episode_end_date`
+     * and must not be after organisation end date
+     * and must not be in the future
+
+8.  Organisation
+~~~~~~~~~~~~~~~~
+
+  1. The organisation start date.
+
+     * must not be before 1 June 2016 (or 1 June 2014 where data was migrated from ATAPS)
+       or before a commissioning organisation's start  date
+     * and must not be after the earliest :ref:`dfn-referral_date`
+     * and must not be after the earliest :ref:`dfn-service_contact_date`
+     * and must not be after the earliest :ref:`dfn-measure_date`
+     * and must not be in the future
+
+  2. The organisation end date.
+
+     * must not be before 1 June 2016 or after a commissioning organisation's end date
+     * and must not be before the lastest :ref:`dfn-referral_date`
+     * and must not be before the lastest :ref:`dfn-episode_end_date`
+     * and must not be before the lastest :ref:`dfn-service_contact_date`
+     * and must not be before the lastest :ref:`dfn-measure_date`
+     * can be in the future
 
 .. _future-validations:
 

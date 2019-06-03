@@ -8,8 +8,8 @@ Reporting data
 PHNs and their service providers are able to either export data from their client
 systems and upload to the PMHC MDS or enter data manually via the data entry interface.
 
-The system is able to accept data for any period, either in its entirety or
-partially. Please note the section below regarding timeliness.
+The system is able to accept data for any period in which the provider organisation
+is active, either in its entirety or partially. Please note the section below regarding timeliness.
 
 Accepting data for any period allows organisations to upload corrections when
 erroneous data has been identified. Allowing partial uploads allows for
