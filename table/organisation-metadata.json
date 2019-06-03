@@ -121,7 +121,7 @@
       "format": "dMMyyyy",
       "minimum": "2014-07-01"
     },
-    "required": false
+    "required": true
   },{
     "name": "organisation_tags",
     "titles": [ "organisation_tags" ],

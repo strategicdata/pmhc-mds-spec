@@ -4,7 +4,7 @@ Reporting arrangements
 .. _reporting_data:
 
 Reporting data
--------------
+--------------
 PHNs and their service providers are able to either export data from their client
 systems and upload to the PMHC MDS or enter data manually via the data entry interface.
 

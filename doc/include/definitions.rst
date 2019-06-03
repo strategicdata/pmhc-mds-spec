@@ -3361,7 +3361,7 @@ The date on which a provider organisation stopped delivering services.
 
 :Data type: date
 
-:Required: no
+:Required: yes
 
 ----------
 
