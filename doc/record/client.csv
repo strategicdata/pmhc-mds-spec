@@ -1,23 +1,23 @@
-"Data Element (Field Name)","Type (min,max)","Format / Values"
+"Data Element (Field Name)","Type (min,max)",Required,"Format / Values"
 "`Organisation Path`_ (organisation_path)
 
-",string,"A sequence of colon separated Organisation Codes that fully specifies the upload organisation."
+",string,yes,"A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client."
 "`Client Key`_ (client_key)
 
-","string (2,50)","This is a number or code assigned to each individual referred to the commissioned organisation. The client identifier is unique and stable for each individual within the PHN."
+","string (2,50)",yes,"This is a number or code assigned to each individual referred to the commissioned organisation. The client identifier is unique and stable for each individual within the PHN."
 "`Client - Statistical Linkage Key`_ (slk)
 
 
 
-METeOR: `349510 <http://meteor.aihw.gov.au/content/index.phtml/itemId/349510>`__","string (14,40)","A key that enables two or more records belonging to the same individual to be brought together."
+METeOR: `349510 <http://meteor.aihw.gov.au/content/index.phtml/itemId/349510>`__","string (14,40)",yes,"A key that enables two or more records belonging to the same individual to be brought together."
 "`Client - Date of Birth`_ (date_of_birth)
 
 
 
-METeOR: `287007 <http://meteor.aihw.gov.au/content/index.phtml/itemId/287007>`__",date,"The date on which an individual was born."
+METeOR: `287007 <http://meteor.aihw.gov.au/content/index.phtml/itemId/287007>`__",date,yes,"The date on which an individual was born."
 "`Client - Estimated Date of Birth Flag`_ (est_date_of_birth)
 
-",string,":1: Date of birth is accurate
+",string,yes,":1: Date of birth is accurate
 :2: Date of birth is an estimate
 :8: Date of birth is a 'dummy' date (ie, 09099999)
 :9: Accuracy of stated date of birth is not known"
@@ -25,7 +25,7 @@ METeOR: `287007 <http://meteor.aihw.gov.au/content/index.phtml/itemId/287007>`__
 
 
 
-`ABS <http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/1200.0.55.012Main%20Features12016?opendocument&tabname=Summary&prodno=1200.0.55.012&issue=2016&num=&view=>`__",string,":0: Not stated/Inadequately described
+`ABS <http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/1200.0.55.012Main%20Features12016?opendocument&tabname=Summary&prodno=1200.0.55.012&issue=2016&num=&view=>`__",string,yes,":0: Not stated/Inadequately described
 :1: Male
 :2: Female
 :3: Other"
@@ -33,7 +33,7 @@ METeOR: `287007 <http://meteor.aihw.gov.au/content/index.phtml/itemId/287007>`__
 
 
 
-METeOR: `291036 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291036>`__",string,":1: Aboriginal but not Torres Strait Islander origin
+METeOR: `291036 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291036>`__",string,yes,":1: Aboriginal but not Torres Strait Islander origin
 :2: Torres Strait Islander but not Aboriginal origin
 :3: Both Aboriginal and Torres Strait Islander origin
 :4: Neither Aboriginal or Torres Strait Islander origin
@@ -44,7 +44,7 @@ METeOR: `291036 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291036>`__
 
 METeOR: `459973 <http://meteor.aihw.gov.au/content/index.phtml/itemId/459973>`__
 
-`ABS <http://www.abs.gov.au/ausstats/abs@.nsf/mf/1269.0>`__","string (4)",":1101: Australia
+`ABS <http://www.abs.gov.au/ausstats/abs@.nsf/mf/1269.0>`__","string (4)",yes,":1101: Australia
 :1102: Norfolk Island
 :1199: Australian External Territories, nec
 :1201: New Zealand
@@ -306,7 +306,7 @@ METeOR: `459973 <http://meteor.aihw.gov.au/content/index.phtml/itemId/459973>`__
 
 METeOR: `460125 <http://meteor.aihw.gov.au/content/index.phtml/itemId/460125>`__
 
-`ABS <http://www.abs.gov.au/ausstats/abs@.nsf/mf/1267.0>`__","string (4)",":1101: Gaelic (Scotland)
+`ABS <http://www.abs.gov.au/ausstats/abs@.nsf/mf/1267.0>`__","string (4)",yes,":1101: Gaelic (Scotland)
 :1102: Irish
 :1103: Welsh
 :1199: Celtic, nec
@@ -746,7 +746,7 @@ METeOR: `460125 <http://meteor.aihw.gov.au/content/index.phtml/itemId/460125>`__
 
 
 
-METeOR: `270203 <http://meteor.aihw.gov.au/content/index.phtml/itemId/270203>`__",string,":0: Not applicable (persons under 5 years of age or who speak only English)
+METeOR: `270203 <http://meteor.aihw.gov.au/content/index.phtml/itemId/270203>`__",string,yes,":0: Not applicable (persons under 5 years of age or who speak only English)
 :1: Very well
 :2: Well
 :3: Not well
@@ -754,4 +754,4 @@ METeOR: `270203 <http://meteor.aihw.gov.au/content/index.phtml/itemId/270203>`__
 :9: Not stated/inadequately described"
 "`Client - Tags`_ (client_tags)
 
-",string,"List of tags for the client."
+",string,"—","List of tags for the client."

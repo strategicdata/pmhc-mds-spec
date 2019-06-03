@@ -92,7 +92,7 @@ language = None
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
-exclude_patterns = ['record/*', 'data-specification/include/*', 'boilerplate/*', 'figures/*', 'data/*']
+exclude_patterns = ['record/*', 'include/*', 'boilerplate/*', 'figures/*', 'data/*']
 
 # The reST default role (used for this markup: `text`) to use for all
 # documents.
@@ -155,7 +155,7 @@ html_theme_options = {}
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static', 'data-specification/_data/_orig']
+html_static_path = ['_static', '_data/_orig']
 
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied
