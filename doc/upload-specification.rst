@@ -255,5 +255,5 @@ Example files showing how to delete via upload:
 Frequently Asked Questions
 --------------------------
 
-Please also refer to :ref:`uploading-data-FAQs` for answers to frequently
+Please also refer to `Uploading data <https://docs.pmhc-mds.com/user-documentation/en/latest/faqs/system/uploading.html>`_ for answers to frequently
 asked questions about uploading data.
