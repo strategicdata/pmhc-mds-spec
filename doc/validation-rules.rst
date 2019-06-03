@@ -117,7 +117,7 @@ Service Contact
       :ref:`dfn-service_contact_participation_indicator` must be '1: Yes'
   11. The ``!ATAPS`` tag must only be included in the :ref:`dfn-service_contact_tags`
       field where the :ref:`dfn-service_contact_date` was before 30 June 2018
-  12. The:ref:`dfn-service_contact_date`
+  12. The :ref:`dfn-service_contact_date`
 
       * must not be before 1 January 2016
       * and must not be before organisation start date
