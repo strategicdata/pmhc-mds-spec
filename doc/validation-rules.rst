@@ -8,13 +8,13 @@ The domain of individual items is defined in :ref:`record-formats`.
 
 .. _current-validations:
 
-1. Current Validations
-----------------------
+Current Validations
+-------------------
 
 .. _practitioner-current-validations:
 
-1. Practitioner
-~~~~~~~~~~~~~~~
+Practitioner
+~~~~~~~~~~~~
 
   1. :ref:`dfn-atsi_cultural_training` must only be set to
      '3 - Not required' where :ref:`dfn-practitioner_atsi_status` is one of
@@ -30,15 +30,15 @@ The domain of individual items is defined in :ref:`record-formats`.
 
 .. _client-current-validations:
 
-2. Client
-~~~~~~~~~
+Client
+~~~~~~
 
   1. :ref:`dfn-date_of_birth` must not be before 1 January 1900 and must not be in the future
 
 .. _episode-current-validations:
 
-3. Episode
-~~~~~~~~~~
+Episode
+~~~~~~~
 
   1. The :ref:`dfn-episode_end_date` must not be before the :ref:`dfn-referral_date`
   2. :ref:`dfn-referrer_organisation_type` must be set to
@@ -84,8 +84,8 @@ The domain of individual items is defined in :ref:`record-formats`.
 
 .. _service-contact-current-validations:
 
-4. Service Contact
-~~~~~~~~~~~~~~~~~~
+Service Contact
+~~~~~~~~~~~~~~~
 
   1.  Where :ref:`dfn-service_contact_final` is recorded as '1: No further services
       are planned for the client in the current episode', the
@@ -126,8 +126,8 @@ The domain of individual items is defined in :ref:`record-formats`.
 
 .. _k10p-current-validations:
 
-5. K10+
-~~~~~~~
+K10+
+~~~~
 
   1. If both item scores and a total score are specified, the item scores must
      add up to the total score
@@ -142,8 +142,8 @@ The domain of individual items is defined in :ref:`record-formats`.
 
 .. _k5-current-validations:
 
-6. K5
-~~~~~
+K5
+~~
 
   1. If both item scores and a total score are specified, the item scores must
      add up to the total score
@@ -158,8 +158,8 @@ The domain of individual items is defined in :ref:`record-formats`.
 
 .. _sdq-current-validations:
 
-7. SDQ
-~~~~~~
+SDQ
+~~~
 
   1. If both subscales and total score are specified, the sum of the subscales
      must agree with the total score
@@ -172,8 +172,8 @@ The domain of individual items is defined in :ref:`record-formats`.
      * and must not be after organisation end date
      * and must not be in the future
 
-8.  Organisation
-~~~~~~~~~~~~~~~~
+Organisation
+~~~~~~~~~~~~
 
   1. The organisation start date.
 
@@ -195,11 +195,11 @@ The domain of individual items is defined in :ref:`record-formats`.
 
 .. _future-validations:
 
-2. Future Validations
----------------------
+Future Validations
+------------------
 
-1. SDQ
-~~~~~~
+SDQ
+~~~
 
   1. Use the table at :ref:`sdq-data-elements` to validate the items that
      are used in each version of the SDQ
