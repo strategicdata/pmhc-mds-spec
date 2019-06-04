@@ -1,4 +1,4 @@
-PMHC-MDS Data Specification
+PMHC MDS Data Specification
 ===========================
 
 Version |version|
@@ -7,6 +7,9 @@ Version |version|
    (make.sh html) and not in PDFs or any other renderings
 
 .. only:: builder_html or builder_readthedocs
+
+As of the 1 July 2019, the PMHC MDS will accept uploads in both the current 1.0
+format and a new 2.0 format. (`read more... <https://pmhc-mds.com/communications/>`__)
 
    Getting Help
    ------------
