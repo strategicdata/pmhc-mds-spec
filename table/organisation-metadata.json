@@ -101,11 +101,11 @@
     "schema:description": "The date on which a provider organisation started delivering services.",
     "schema:dateCreated": "2019-03-13",
     "schema:dateDeleted": "2019-03-13",
-    "schema:dateModified": "2019-03-13",
+    "schema:dateModified": "2019-06-17",
     "datatype": {
       "base": "date",
       "format": "dMMyyyy",
-      "minimum": "2014-07-01"
+      "minimum": "2014-01-01"
     },
     "required": true
   },{
@@ -115,7 +115,7 @@
     "schema:description": "The date on which a provider organisation stopped delivering services.",
     "schema:dateCreated": "2019-03-13",
     "schema:dateDeleted": "2019-03-13",
-    "schema:dateModified": "2019-03-13",
+    "schema:dateModified": "2019-06-17",
     "datatype": {
       "base": "date",
       "format": "dMMyyyy",
