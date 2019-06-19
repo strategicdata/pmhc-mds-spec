@@ -172,6 +172,8 @@ SDQ
      * and must not be after organisation end date
      * and must not be in the future
 
+.. _organisation-current-validations:
+
 Organisation
 ~~~~~~~~~~~~
 
