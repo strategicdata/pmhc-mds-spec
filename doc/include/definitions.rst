@@ -5438,7 +5438,7 @@ The main type of service provided in the service contact, as represented by the 
     - Interpersonal therapy
   
   3 - Other psychological intervention
-     Psychological interventions that do meet criteria for structured
+     Psychological interventions that do not meet criteria for structured
      psychological intervention.
   
   4 - Clinical care coordination/liaison
