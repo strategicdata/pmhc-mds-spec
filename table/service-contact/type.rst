@@ -42,7 +42,7 @@ to report on Service Type for all Service Contacts.
   - Interpersonal therapy
 
 3 - Other psychological intervention
-   Psychological interventions that do meet criteria for structured
+   Psychological interventions that do not meet criteria for structured
    psychological intervention.
 
 4 - Clinical care coordination/liaison

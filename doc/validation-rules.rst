@@ -189,10 +189,10 @@ Organisation
   2. The organisation end date.
 
      * must not be before 1 January 2014 or after a commissioning organisation's end date
-     * and must not be before the lastest :ref:`dfn-referral_date`
-     * and must not be before the lastest :ref:`dfn-episode_end_date`
-     * and must not be before the lastest :ref:`dfn-service_contact_date`
-     * and must not be before the lastest :ref:`dfn-measure_date`
+     * and must not be before the latest :ref:`dfn-referral_date`
+     * and must not be before the latest :ref:`dfn-episode_end_date`
+     * and must not be before the latest :ref:`dfn-service_contact_date`
+     * and must not be before the latest :ref:`dfn-measure_date`
      * can be in the future
 
 .. _future-validations:
