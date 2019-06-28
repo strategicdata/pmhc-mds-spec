@@ -71,15 +71,15 @@ Episode
   8. The :ref:`dfn-episode_end_date`
 
      * must not be before 1 January 2016
-     * and must not be before organisation start date
-     * and must not be after organisation end date
+     * and must not be before `Provider Organisation - Start Date <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#provider-organisation-start-date>`__
+     * and must not be after `Provider Organisation - End Date <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#provider-organisation-end-date>`__
      * and must not be in the future
 
   9. The :ref:`dfn-referral_date`
 
      * must not be before 1 January 2014
-     * and must not be before organisation start date
-     * and must not be after organisation end date
+     * and must not be before `Provider Organisation - Start Date <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#provider-organisation-start-date>`__
+     * and must not be after `Provider Organisation - End Date <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#provider-organisation-end-date>`__
      * and must not be in the future
 
 
@@ -121,8 +121,8 @@ Service Contact
   12. The:ref:`dfn-service_contact_date`
 
       * must not be before 1 January 2016
-      * and must not be before organisation start date
-      * and must not be after organisation end date
+      * and must not be before `Provider Organisation - Start Date <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#provider-organisation-start-date>`__
+      * and must not be after `Provider Organisation - End Date <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#provider-organisation-end-date>`__
       * and must not be in the future
 
 .. _k10p-current-validations:
@@ -136,9 +136,9 @@ K10+
 
      * must not be before 1 January 2016
      * and must not be before :ref:`dfn-referral_date`
-     * and must not be before organisation start date
+     * and must not be before `Provider Organisation - Start Date <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#provider-organisation-start-date>`__
      * and must not be after :ref:`dfn-episode_end_date`
-     * and must not be after organisation end date
+     * and must not be after `Provider Organisation - End Date <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#provider-organisation-end-date>`__
      * and must not be in the future
 
 .. _k5-current-validations:
@@ -152,9 +152,9 @@ K5
 
      * must not be before 1 January 2016
      * and must not be before :ref:`dfn-referral_date`
-     * and must not be before organisation start date
+     * and must not be before `Provider Organisation - Start Date <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#provider-organisation-start-date>`__
      * and must not be after :ref:`dfn-episode_end_date`
-     * and must not be after organisation end date
+     * and must not be after `Provider Organisation - End Date <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#provider-organisation-end-date>`__
      * and must not be in the future
 
 
@@ -169,9 +169,9 @@ SDQ
 
      * must not be before 1 January 2016
      * and must not be before :ref:`dfn-referral_date`
-     * and must not be before organisation start date
+     * and must not be before `Provider Organisation - Start Date <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#provider-organisation-start-date>`__
      * and must not be after :ref:`dfn-episode_end_date`
-     * and must not be after organisation end date
+     * and must not be after `Provider Organisation - End Date <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#provider-organisation-end-date>`__
      * and must not be in the future
 
 Organisation
