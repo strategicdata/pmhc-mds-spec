@@ -177,7 +177,7 @@ SDQ
 Organisation
 ~~~~~~~~~~~~
 
-  1. The organisation start date.
+  1. The `Provider Organisation - Start Date <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#provider-organisation-start-date>`__
 
      * must not be before 1 January 2014
        or before a commissioning organisation's start  date
@@ -186,7 +186,7 @@ Organisation
      * and must not be after the earliest :ref:`dfn-measure_date`
      * and must not be in the future
 
-  2. The organisation end date.
+  2. The `Provider Organisation - End Date <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#provider-organisation-end-date>`__
 
      * must not be before 1 June 2014 or after a commissioning organisation's end date
      * and must not be before the latest :ref:`dfn-referral_date`
