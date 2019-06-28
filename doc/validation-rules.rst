@@ -71,15 +71,15 @@ Episode
   8. The :ref:`dfn-episode_end_date`
 
      * must not be before 1 January 2016
-     * and must not be before organisation start date
-     * and must not be after organisation end date
+     * and must not be before :ref:`dfn-organisation_start_date`
+     * and must not be after :ref:`dfn-organisation_end_date`
      * and must not be in the future
 
   9. The :ref:`dfn-referral_date`
 
      * must not be before 1 January 2014
-     * and must not be before organisation start date
-     * and must not be after organisation end date
+     * and must not be before :ref:`dfn-organisation_start_date`
+     * and must not be after :ref:`dfn-organisation_end_date`
      * and must not be in the future
 
 .. _service-contact-current-validations:
@@ -120,8 +120,8 @@ Service Contact
   12. The :ref:`dfn-service_contact_date`
 
       * must not be before 1 January 2016
-      * and must not be before organisation start date
-      * and must not be after organisation end date
+      * and must not be before :ref:`dfn-organisation_start_date`
+      * and must not be after :ref:`dfn-organisation_end_date`
       * and must not be in the future
 
 .. _k10p-current-validations:
@@ -135,9 +135,9 @@ K10+
 
      * must not be before 1 January 2016
      * and must not be before :ref:`dfn-referral_date`
-     * and must not be before organisation start date
+     * and must not be before :ref:`dfn-organisation_start_date`
      * and must not be after :ref:`dfn-episode_end_date`
-     * and must not be after organisation end date
+     * and must not be after :ref:`dfn-organisation_end_date`
      * and must not be in the future
 
 .. _k5-current-validations:
@@ -151,9 +151,9 @@ K5
 
      * must not be before 1 January 2016
      * and must not be before :ref:`dfn-referral_date`
-     * and must not be before organisation start date
+     * and must not be before :ref:`dfn-organisation_start_date`
      * and must not be after :ref:`dfn-episode_end_date`
-     * and must not be after organisation end date
+     * and must not be after :ref:`dfn-organisation_end_date`
      * and must not be in the future
 
 .. _sdq-current-validations:
@@ -167,9 +167,9 @@ SDQ
 
      * must not be before 1 January 2016
      * and must not be before :ref:`dfn-referral_date`
-     * and must not be before organisation start date
+     * and must not be before :ref:`dfn-organisation_start_date`
      * and must not be after :ref:`dfn-episode_end_date`
-     * and must not be after organisation end date
+     * and must not be after :ref:`dfn-organisation_end_date`
      * and must not be in the future
 
 .. _organisation-current-validations:
@@ -188,7 +188,8 @@ Organisation
 
   2. The :ref:`dfn-organisation_end_date`
 
-     * must not be before 1 January 2014 or after a commissioning organisation's end date
+     * must not be before 1 January 2014
+       or after a commissioning organisation's end date
      * and must not be before the latest :ref:`dfn-referral_date`
      * and must not be before the latest :ref:`dfn-episode_end_date`
      * and must not be before the latest :ref:`dfn-service_contact_date`
