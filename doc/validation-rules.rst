@@ -162,8 +162,8 @@ SDQ
 ~~~
 
 1. Use the table at :ref:`SDQ Data Elements <sdq-data-elements>` to validate the items that
-   must agree with the total score	     are used in each version of the SDQ
-2. The :ref:`dfn-measure_date`	  2. If both item scores and subscales are specified, the sum of the items
+   are used in each version of the SDQ
+2. If both item scores and subscales are specified, the sum of the items
    must agree with the subscales score (as per :ref:`Scoring the SDQ <scoring-the-sdq>`)
 3. If both subscales and total score are specified, the sum of the subscales
    must agree with the total score (as per :ref:`Scoring the SDQ <scoring-the-sdq>`)
