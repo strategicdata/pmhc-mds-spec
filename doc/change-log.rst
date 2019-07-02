@@ -3,10 +3,24 @@
 Data Specification Change log
 =============================
 
+21/6/2019
+---------
+
+* :ref:`validation-rules`
+
+  * Moved SDQ Future Validations to the :ref:`SDQ Current Validations <sdq-current-validations>`.
+
+    * Subscale and total difficulties scores are now calculated/validated against
+      item scores provided, as per :ref:`Scoring the SDQ <scoring-the-sdq>`.
+
+
 14/3/2019
 ---------
 
-* Updated :ref:`files-to-upload` to specify that the Organisations worksheet/file is optional and is only available if the user has Organisation Management role.
+* :ref:`upload_specification`
+
+  * Updated :ref:`files-to-upload` to specify that the Organisations worksheet/file
+    is optional and is only available if the user has Organisation Management role.
 
 1/1/2019 - Version 1.0.13
 -------------------------
