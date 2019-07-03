@@ -130,7 +130,7 @@ K10+
 ~~~~
 
   1. If both item scores and a total score are specified, the item scores must
-     add up to the total score
+     add up to the total score (as per :ref:`Scoring the K10+ <dfn-k10p_score>`)
   2. The :ref:`dfn-measure_date`
 
      * must not be before 1 January 2016
@@ -146,7 +146,7 @@ K5
 ~~
 
   1. If both item scores and a total score are specified, the item scores must
-     add up to the total score
+     add up to the total score (as per :ref:`Scoring the K5 <dfn-k5_score>`)
   2. The :ref:`dfn-measure_date`
 
      * must not be before 1 January 2016
@@ -161,9 +161,13 @@ K5
 SDQ
 ~~~
 
-  1. If both subscales and total score are specified, the sum of the subscales
-     must agree with the total score
-  2. The :ref:`dfn-measure_date`
+1. Use the table at :ref:`SDQ Data Elements <sdq-data-elements>` to validate the items that
+   are used in each version of the SDQ
+2. If both item scores and subscales are specified, the sum of the items
+   must agree with the subscales score (as per :ref:`Scoring the SDQ <scoring-the-sdq>`)
+3. If both subscales and total score are specified, the sum of the subscales
+   must agree with the total score (as per :ref:`Scoring the SDQ <scoring-the-sdq>`)
+4. The :ref:`dfn-measure_date`
 
      * must not be before 1 January 2016
      * and must not be before :ref:`dfn-referral_date`
@@ -196,15 +200,7 @@ Organisation
      * and must not be before the latest :ref:`dfn-measure_date`
      * can be in the future
 
-.. _future-validations:
+ .. _future-validations:
 
-Future Validations
-------------------
-
-SDQ
-~~~
-
-  1. Use the table at :ref:`sdq-data-elements` to validate the items that
-     are used in each version of the SDQ
-  2. If both item scores, subscales and total score are specified, the item
-     scores must agree with the subscales/total score
+ .. Future Validations
+ .. ------------------

@@ -3,6 +3,18 @@
 Data Specification Change log
 =============================
 
+
+21/6/2019
+---------
+
+* :ref:`validation-rules`
+
+  * Moved SDQ Future Validations to the :ref:`SDQ Current Validations <sdq-current-validations>`.
+
+    * Subscale and total difficulties scores are now calculated/validated against
+      item scores provided, as per :ref:`Scoring the SDQ <scoring-the-sdq>`.
+
+
 22/3/2019 - Version 2.0
 -----------------------
 
