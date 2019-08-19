@@ -97,28 +97,30 @@ Service Contact
       :ref:`dfn-service_contact_final` must be recorded as the Episode End Date
   3.  Where an :ref:`dfn-episode_end_date` has been recorded, a later
       :ref:`dfn-service_contact_date` must not be added
-  4.  If :ref:`dfn-service_contact_modality` is '0: No contact took place',
+  4.  If :ref:`dfn-service_contact_type` is '0: No contact took place',
       :ref:`dfn-service_contact_no_show` must be '1: Yes'
-  5.  If :ref:`dfn-service_contact_modality` is '0: No contact took place',
+  5.  If :ref:`dfn-service_contact_duration` is '0: No contact took place',
+      :ref:`dfn-service_contact_no_show` must be '1: Yes'
+  6.  If :ref:`dfn-service_contact_modality` is '0: No contact took place',
+      :ref:`dfn-service_contact_no_show` must be '1: Yes'
+  7.  If :ref:`dfn-service_contact_modality` is not '1: Face to Face',
       :ref:`dfn-service_contact_postcode` must be 9999
-  6.  If :ref:`dfn-service_contact_modality` is '1: Face to Face',
+  8.  If :ref:`dfn-service_contact_modality` is '1: Face to Face',
       :ref:`dfn-service_contact_postcode` must not be 9999
-  7.  If :ref:`dfn-service_contact_modality` is '1: Face to Face',
+  9.  If :ref:`dfn-service_contact_modality` is '1: Face to Face',
       :ref:`dfn-service_contact_venue` must not be
       '98: Not applicable (Service Contact Modality is not face to face)'
-  8.  If :ref:`dfn-service_contact_modality` is not '1: Face to Face',
-      :ref:`dfn-service_contact_postcode` must be 9999
-  9.  On :ref:`dfn-service_contact_type` the value '98: ATAPS' must only be
+  10. On :ref:`dfn-service_contact_type` the value '98: ATAPS' must only be
       used where data has been migrated from ATAPS. The above
       response must only be used under the following conditions:
 
       * The :ref:`dfn-service_contact_date` was before 30 June 2018
       * The :ref:`dfn-service_contact_tags` field must contain the ``!ATAPS`` flag
-  10. If :ref:`dfn-service_contact_participants` is '1: Individual client'
+  11. If :ref:`dfn-service_contact_participants` is '1: Individual client'
       :ref:`dfn-service_contact_participation_indicator` must be '1: Yes'
-  11. The ``!ATAPS`` tag must only be included in the :ref:`dfn-service_contact_tags`
+  12. The ``!ATAPS`` tag must only be included in the :ref:`dfn-service_contact_tags`
       field where the :ref:`dfn-service_contact_date` was before 30 June 2018
-  12. The:ref:`dfn-service_contact_date`
+  13. The:ref:`dfn-service_contact_date`
 
       * must not be before 1 January 2016
       * and must not be before `Provider Organisation - Start Date <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#provider-organisation-start-date>`__
