@@ -3,6 +3,15 @@
 Data Specification Change log
 =============================
 
+14/8/2019
+---------
+
+* :ref:`validation-rules`
+
+  * :ref:`Service Contact Current Validations <service-contact-current-validations>`
+
+    * Added individual notes where '0: No contact took place' is selected in any field,
+      that :ref:`dfn-service_contact_no_show` must be '1: Yes'
 
 21/6/2019
 ---------
