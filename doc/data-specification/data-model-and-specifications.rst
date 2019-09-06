@@ -146,6 +146,14 @@ Service Contact
   Definition based on METeOR: `493304
   <http://meteor.aihw.gov.au/content/index.phtml/itemId/493304>`_ with
   modification.
+  
+ 
+  .. _attended-contact:
+  
+  Attended Service Contact
+  """"""""""""""""""""""""
+  
+  An attended service contact is one that is not marked as 'No show'.
 
 See :ref:`service-contact-data-elements` for the data elements for a service contact.
 
