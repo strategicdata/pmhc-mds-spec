@@ -3,6 +3,15 @@
 Data Specification Change log
 =============================
 
+9/9/2019
+--------
+
+* :ref:`key-concepts`
+
+  * :ref:`key-concepts-service-contact`
+
+    * Added :ref:`attended-contact`
+
 14/8/2019
 ---------
 
