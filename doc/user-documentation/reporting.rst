@@ -394,13 +394,12 @@ episodes that may warrant review.
 
 Key specifications:
 
-* Open Episodes defined as those without an End Date or an End Date after the
+* Service Contacts activity flagged as ‘No Show’ is not included for this report
+* Open Episodes are defined as those without an End Date or an End Date after the
   end date of the report
-* Service Contacts flagged as ‘No Show’ are not included for this purpose
+* The episode must have had at least one attended contact, but not necessarily during the reporting period
 
-Note that if the period between start and end date specified in this report is
-less than 90 days the number of episodes with no service contact activity for
-90+ days will always be zero.
+Unlike the A8 report, this report has no requirement to start during the reporting period.
 
 .. _category-a8:
 
@@ -420,12 +419,8 @@ Key specifications:
 
 * Open Episodes are defined as those without an End Date or an End Date after the
   end date of the report
-  less than or equal to the report end date
 * For this report, Episodes must also have an Episode Start Date equal to or greater than
   the report start date
-* Only Episodes with one or more Service Contacts in the reporting period are
-  included in the analysis (referred to as 'active episodes')
-* Service Contacts flagged as ‘No Show’ are not included for this purpose
 * Measures that have a total score of ‘99’ are invalid and counted as 'no measure'
 
 .. _category-a9:
@@ -433,21 +428,16 @@ Key specifications:
 A9 - Data quality report - Recording of outcome measures for completed episodes
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-The A9 report is designed to show the percentage of completed episodes that have
-outcome measures recorded. Its purpose is to allow monitoring of adherence to
-the minimum requirements for outcome recording - i.e. measures to be recorded
-at Episode Start and Episode End.
+.. note::
+   The criteria used for episode inclusion in this report have changed significantly in September 2019 to bring them into line with the :ref:`category-out`.
+
+The A9 report is designed to show the percentage of completed episodes that have outcome measures recorded. Its purpose is to allow monitoring of adherence to the minimum requirements for outcome recording - i.e. measures to be recorded at Episode Start and Episode End.
 
 Key specifications:
 
-* Completed Episodes are defined as those Episodes with an Episode End Date
-  less than or equal to the report end date
-* For this report, Episodes must also have an Episode Start Date equal to or greater than
-  the report start date
-* Only Episodes with one or more Service Contacts in the reporting period are
-  included in the analysis (referred to as 'active episodes')
-* Service Contacts flagged as ‘No Show’ are not included for this purpose
-* Measures that have a total score of ‘99’ are invalid and counted as 'no measure'
+* Episodes must have an Episode End Date within the reporting period.
+* Episodes must have had one or more Service Contacts not flagged as ‘No Show’ but not necessarily during the reporting period
+* Measures that have a total score of ‘99’ are invalid and counted as ‘no measure’
 
 .. _category-b:
 
