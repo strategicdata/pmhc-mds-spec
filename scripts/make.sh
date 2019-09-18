@@ -4,6 +4,7 @@
 set -e
 
 source doc/version.conf
+export SPEC_VERSION
 
 docker pull docker.sdlocal.net/csvw/metadata2rst:v2
 docker pull stratdat/sphinx:production
