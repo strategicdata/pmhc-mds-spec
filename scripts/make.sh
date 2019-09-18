@@ -12,6 +12,11 @@ docker pull stratdat/sphinx-html2pdf:production
 docker run --rm -v `pwd`:/mnt/cwd docker.sdlocal.net/csvw/metadata2rst:v2 \
   --meta=pmhc-metadata.json
 
+# make zip file
+scripts/metadata2zip.sh
+# mv new zip to data-specification folder
+mv pmhcmds-spec-meta.zip doc/_static/
+
 pushd .
 cd doc
 
@@ -45,8 +50,3 @@ docker run --rm -e GIT_VERSION -v `pwd`:/mnt/workdir \
   stratdat/sphinx:production make html
 
 popd
-
-# make zip file
-scripts/metadata2zip.sh
-# mv new zip to data-specification folder
-mv pmhcmds-spec-meta.zip doc/build/html/_static/
