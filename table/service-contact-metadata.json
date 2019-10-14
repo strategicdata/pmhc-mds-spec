@@ -18,7 +18,7 @@
     "name": "service_contact_key",
     "titles": [ "service_contact_key" ],
     "dc:title": "Service Contact Key",
-    "schema:description": "This is a number or code assigned to each service contact. The Service Contact Key is unique and stable for each service contact at the level of the organisation.",
+    "schema:description": "This is a number or code assigned to each service contact. The Service Contact Key is unique and stable for each service contact at the level of the Provider Organisation.",
     "schema:disambiguatingDescription": "table/service-contact/key.rst",
     "schema:dateCreated": "2016-06-22",
     "schema:dateDeleted": "2016-06-22",

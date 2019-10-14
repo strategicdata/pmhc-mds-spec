@@ -4,7 +4,7 @@
 ",string,yes,"A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client."
 "`Practitioner Key`_ (practitioner_key)
 
-","string (2,50)",yes,"A unique identifier for a practitioner within the responsible provider organisation. Assigned by either the PHN or provider organisation depending on local procedures."
+","string (2,50)",yes,"A unique identifier for a practitioner within the responsible provider organisation. Assigned by either the PHN or Provider Organisation depending on local procedures."
 "`Practitioner - Category`_ (practitioner_category)
 
 ",string,yes,":1: Clinical Psychologist

@@ -19,7 +19,7 @@
      "name": "client_key",
     "titles": [ "client_key" ],
     "dc:title": "Client Key",
-    "schema:description": "This is a number or code assigned to each individual referred to the commissioned organisation. The client identifier is unique and stable for each individual within the PHN.",
+    "schema:description": "This is a number or code assigned to each individual client referred to the commissioned organisation. The client identifier must be unique and stable for each individual within the Provider Organisation. Assigned by either the PHN or Provider Organisation depending on local procedures.",
     "schema:disambiguatingDescription": "table/client/key.rst",
     "schema:dateCreated": "2016-06-22",
     "schema:dateDeleted": "2016-06-22",
