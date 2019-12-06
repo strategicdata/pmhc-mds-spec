@@ -85,10 +85,10 @@ a.headerlink {
 @font-face{
     font-family:"Arial";
     font-style:normal;
-    src:local("Arial"),url(../fonts/arial.ttf) format("truetype");
+    src:local("Arial"),url("../fonts/arial.ttf") format("truetype");
 }
 @font-face{
     font-family:"Helvetica";
     font-style:normal;
-    src:local("Arial"),url(../fonts/arial.ttf) format("truetype");
+    src:local("Arial"),url("../fonts/arial.ttf") format("truetype");
 }
