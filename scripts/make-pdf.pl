@@ -62,12 +62,15 @@ foreach my $css_file ( read_dir( $src . '/_static/css/', prefix => 1 ) ) {
     say "  $css_file";
 
     my $css_src = read_file( $css_file );
+
     # Heads up! The double e operator is doing an eval
     #  on $replacement
     my $replacement_count =
         $css_src =~ s|url\((fonts/.*?)\)|$replacement|gee;
+
     die "No paths to fonts in the CSS files were altered for prince. Perhaps the templates have changed."
         unless $replacement_count;
+
     write_file( $css_file, $css_src );
 }
 
