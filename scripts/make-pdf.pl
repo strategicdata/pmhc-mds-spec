@@ -57,13 +57,15 @@ my $replacement = 'my $a = $1; $a =~ s|\.\./||g; $a =~ s|/|-|g; "url(" . $a . ")
 
 foreach my $css_file ( read_dir( $src . '/_static/css/', prefix => 1 ) ) {
 
+    next if -d $css_file; # skip fonts dir
+
     say "  $css_file";
 
     my $css_src = read_file( $css_file );
     # Heads up! The double e operator is doing an eval
     #  on $replacement
     my $replacement_count =
-        $css_src =~ s|url\(("../fonts/.*?")\)|$replacement|gee;
+        $css_src =~ s|url\((fonts/.*?)\)|$replacement|gee;
     die "No paths to fonts in the CSS files were altered for prince. Perhaps the templates have changed."
         unless $replacement_count;
     write_file( $css_file, $css_src );
@@ -82,7 +84,7 @@ my $client = SD::PrinceXML::Client->new(
 );
 
 # Send the fonts
-addFontDir($client, $src . '/_static', 'fonts' );
+addFontDir($client, $src . '/_static/css', 'fonts' );
 
 # Retrieve the PDF
 my $output_pdf = $client->pdf;
