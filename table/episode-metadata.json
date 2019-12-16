@@ -94,7 +94,7 @@
     "datatype": {
       "base": "date",
       "format": "dMMyyyy",
-      "minimum": "2014-01-01"
+      "minimum": "2013-01-01"
     }
   },{
     "name": "principal_focus",
