@@ -101,7 +101,7 @@ across PHN-commissioned services:
   one set of reporting requirements.
 
 - **Episodes commence at the point of first contact.** The episode start date
-  will be derived from the first service contact irregardless of no show state
+  will be derived from the first service contact regardless of no show state
   as long as there is a service contact that isn't a no show. Therefore, if
   there is no attended service contact the episode is uncommenced.
 
