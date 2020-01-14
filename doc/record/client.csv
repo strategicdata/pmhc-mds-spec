@@ -4,7 +4,7 @@
 ",string,yes,"A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client."
 "`Client Key`_ (client_key)
 
-","string (2,50)",yes,"This is a number or code assigned to each individual referred to the commissioned organisation. The client identifier is unique and stable for each individual within the PHN."
+","string (2,50)",yes,"This is a number or code assigned to each individual client referred to the commissioned organisation. The client identifier must be unique and stable for each individual within the Provider Organisation. Assigned by either the PHN or Provider Organisation depending on local procedures."
 "`Client - Statistical Linkage Key`_ (slk)
 
 

@@ -4,7 +4,7 @@
 ",string,yes,"A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client."
 "`Service Contact Key`_ (service_contact_key)
 
-","string (2,50)",yes,"This is a number or code assigned to each service contact. The Service Contact Key is unique and stable for each service contact at the level of the organisation."
+","string (2,50)",yes,"This is a number or code assigned to each service contact. The Service Contact Key is unique and stable for each service contact at the level of the Provider Organisation."
 "`Episode Key`_ (episode_key)
 
 ","string (2,50)",yes,"This is a number or code assigned to each episode. The Episode Key is unique and stable for each episode at the level of the organisation."
