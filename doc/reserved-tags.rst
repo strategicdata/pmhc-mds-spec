@@ -14,79 +14,6 @@ The domain of individual Tags fields is defined in :ref:`record-formats`.
 !br20 - Australian Government Mental Health Response to Bushfire
 ----------------------------------------------------------------
 
-Data collection changes for the *Australian Government Mental Health Response to Bushfire Trauma* - January 2020
-
-.. _br20-purpose:
-
-Purpose
-~~~~~~~
-
-This circular outlines Primary Mental Health Care Minimum Data Set (PMHC MDS)
-reporting requirements for Primary Health Networks (PHNs) who received funding
-to deliver services for the *Australian Government Mental Health Response to Bushfire Trauma*.
-
-PHNs who did not receive funding through the *Australian Government Mental Health Response to Bushfire Trauma*
-have the option to use these PMHC MDS changes to modify their reporting processes.
-
-The Department recognises the important and challenging work of PHNs and service
-providers supporting individuals, families and communities following the bushfires.
-The Department aim to minimise data collection burden, and changes to reporting,
-for PHNs and service providers. The Department consulted with the Primary Mental Health Care Data Reference Group
-on options and ways to support implementation of reporting changes.
-
-.. _br20-scope:
-
-Scope of new reporting requirements
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-PHNs in fire affected communities are funded through the *Australian Government Mental Health Response to Bushfire Trauma*
-to deliver services including:
-
-  * Front line emergency distress and trauma counselling, with up to 10 free mental health support sessions for individuals, families and emergency services personnel
-  * ‘Surge capacity’ mental health services to individuals and families who are affected, and
-  * Increased demand for headspace sites in fire affected areas.
-
-The PMHC MDS reporting changes are designed to capture this funded service activity.
-
-The Department recognises the PHNs who did not receive funding for these activities
-are likely to be delivering services to clients who were exposed to bushfire.
-These PHNs have the option to also use the PMHC MDS reporting changes to capture
-the service response to bushfire trauma.
-
-Both new and existing clients are in scope of the reporting changes.
-
-.. _br20-reports:
-
-New ‘bushfire response tag’
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-The Department will introduce a ‘bushfire response tag’ to the PMHC MDS - ``!br20``.
-
-Instructions for applying the tag, including the definition for episodes that PHNs
-should tag, are below.
-
-The Department anticipate we will provide weekly or fortnightly reports on
-bushfire response service volumes to the Minister for Health. Standard reports
-will be available in the PMHC MDS to allow PHNs and the Department to monitor delivery.
-
-All episodes, including those with the bushfire response tag, are in scope for
-Primary Mental Health Care Key Performance Indicator (KPI) definitions.
-There will be no changes to 6 and 12 month reporting requirements.
-
-All other data items will be used as normal as outlined in the PMHC MDS Data Specification
-document :ref:`record-formats`.
-
-.. _br20-more-info:
-
-Further information
-~~~~~~~~~~~~~~~~~~~
-
-If you have any questions about the reporting requirements, please contact Sarah Hinde,
-Director, Mental Health Data on 02 6289 6817 or at mentalhealthdata@health.gov.au
-
-Further details about the Mental Health Response to Bushfire Trauma is in PHN
-SharePoint https://healthgov.sharepoint.com or contact psychologicalservices@health.gov.au.
-
 .. _br20-funded-PHNS:
 
 PHNs who received funding through the Australian Government Mental Health Response to Bushfire Trauma
@@ -132,16 +59,19 @@ For these PHNs, the service provider should apply the bushfire response tag to:
 How to apply the tag in the PMHC MDS Data Entry interface
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The bushfire response tag is denoted ``!br20``.
+The bushfire response tag is available for use on an Episode record.
 
 There are two ways to apply the tag through the PMHC MDS data entry interface:
 
-  1.	Manual data entry by typing the tag ``!br20`` to the tag field
-  2.	Tick the box labelled ‘Australian Government Mental Health Response to Bushfire’.
+  1.	Tick the box labelled ‘Australian Government Mental Health Response to Bushfire’.
 
-This functionality will be available by 24 January 2020.
+      * This tick box automatically adds/removes the tag when ticked/unticked. This functionality will be available by 24 January 2020.
 
-Please see ref:`HOW TO APPLY THE TAG IN THE PMHC MDS DATA ENTRY INTERFACE <>`__
+  2.	Manual data entry by typing the tag ``!br20`` to the Episode tag field.
+
+      * When entering data directly, episodes will need to be tagged with the string ``!br20``. The data entry system already allows for the tagging of records and therefore it is possible to implement this immediately by communicating the instructions to users.
+      * Please note the free text nature of the tag system increases the opportunity for errors because it is easy to mistype a tag. This should be emphasised in communications with users.
+
 
 .. _br20-Upload:
 
