@@ -14,6 +14,17 @@ The domain of individual Tags fields is defined in :ref:`record-formats`.
 !br20 - Australian Government Mental Health Response to Bushfire
 ----------------------------------------------------------------
 
+PHNs in fire affected communities are funded through the *Australian Government Mental Health Response to Bushfire Trauma*
+to deliver services including:
+
+  * Front line emergency distress and trauma counselling, with up to 10 free mental health support sessions for individuals, families and emergency services personnel
+  * ‘Surge capacity’ mental health services to individuals and families who are affected, and
+  * Increased demand for headspace sites in fire affected areas.
+
+The reserved Episode tag ``!br20`` is designed to capture this funded service activity in the PMHC MDS.
+
+Both new and existing clients are in scope of the reporting changes.
+
 .. _br20-funded-PHNS:
 
 PHNs who received funding through the Australian Government Mental Health Response to Bushfire Trauma
