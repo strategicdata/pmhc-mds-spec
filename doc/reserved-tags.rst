@@ -7,7 +7,7 @@ This document defines the Department reserved tags used to identify specific rec
 types in the Primary Mental Health Care Minimum Data Set (PMHC MDS). Tags beginning
 with an exclamation mark (``!``) are reserved for future use by the Department.
 
-The domain of individual Tags fields is defined in :ref:`record-formats`.
+Tags field definitions for each record type are available in :ref:`record-formats`.
 
 .. _br20:
 
@@ -27,8 +27,8 @@ More information is available in the :download:`Primary Mental Health Care Minim
 
 .. _br20-funded-PHNS:
 
-PHNs who received funding through the *Australian Government Mental Health Response to Bushfire Trauma*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+PHNs who received funding
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 PHNs funded through the *Australian Government Mental Health Response to Bushfire
 Trauma* **must** apply the bushfire response tag to all episodes where one or more service
@@ -36,21 +36,25 @@ contacts is funded by the response.
 
 For these PHNs, the service provider should apply the bushfire response tag to:
 
-* **New clients**
+New clients
+"""""""""""
 
   * Who are accessing services funded through the *Australian Government Mental Health Response to Bushfire Trauma*
   * Whose access to a mental health service was prompted by exposure to bushfire (e.g. their stated reason for approaching a service is their recent exposure to bushfire), and/or
   * Whose mental health service need was significantly increased by their exposure to bushfire (e.g. based on the judgement of the service provider).
 
-* **Existing clients**  (i.e. clients with an open episode)
+Existing clients
+""""""""""""""""
+
+i.e. clients with an open episode
 
   * Who are accessing services funded through the *Australian Government Mental Health Response to Bushfire Trauma*, and/or
   * Whose mental health service need was significantly increased by their exposure to bushfire (e.g. additional or higher intensity services are required).
 
 .. _br20-non-funded-PHNS:
 
-PHNs who did **not** receive funding through the *Australian Government Mental Health Response to Bushfire Trauma*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+PHNs who did **not** receive funding
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 PHNs who did not receive funding for *Australian Government Mental Health Response to
 Bushfire Trauma* activities may use the PMHC MDS reporting changes to capture the service
@@ -58,19 +62,23 @@ response to bushfire trauma.
 
 For these PHNs, the service provider should apply the bushfire response tag to:
 
-* **New clients**
+New clients
+"""""""""""
 
   * Whose access to a mental health service was prompted by exposure to bushfire (e.g. their stated reason for approaching a service is their recent exposure to bushfire), and/or
   * Whose mental health service need was significantly increased by their exposure to bushfire (e.g. based on the judgement of the service provider).
 
-* **Existing clients**  (clients with an open episode)
+Existing clients
+""""""""""""""""
+
+i.e. clients with an open episode.
 
   * Whose mental health service need was significantly increased by their exposure to bushfire (e.g. additional or higher intensity services are required).
 
 .. _br20-Data-Entry:
 
 How to apply the tag in the PMHC MDS Data Entry interface
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The bushfire response tag is available for use on an episode record and is denoted !br20.
 
@@ -83,11 +91,11 @@ There are two ways to apply the tag through the PMHC MDS data entry interface:
 
   2.	Tick the box labelled ‘Australian Government Mental Health Response to Bushfire’.
 
-      * This tick box automatically adds/removes the tag when ticked/unticked. This functionality will be available by 24 January 2020. .
+      * This tick box automatically adds/removes the tag when ticked/unticked. This functionality will be available by 24 January 2020.
 
 The checkbox is on the Episode add and edit screen:
 
-  * Ticking it will add the ``!br20`` tag to the tag field
+  * Ticking the checkbox will add the ``!br20`` tag to the tag field
   * Typing the ``!br20`` tag into the tag box will also tick the checkbox
   * Unticking the ``!br20`` checkbox will remove the ``!br20`` tag
   * Deleting the ``!br20`` tag from the tag field will also untick the checkbox
