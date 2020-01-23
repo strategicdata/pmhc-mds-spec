@@ -21,9 +21,9 @@ to deliver services including:
   * ‘Surge capacity’ mental health services to individuals and families who are affected, and
   * Increased demand for headspace sites in fire affected areas.
 
-The reserved Episode tag ``!br20`` is designed to capture this funded service activity in the PMHC MDS.
-
 Both new and existing clients are in scope of the reporting changes.
+
+The reserved Episode tag ``!br20`` is designed to capture this funded service activity in the PMHC MDS.
 
 .. _br20-funded-PHNS:
 
