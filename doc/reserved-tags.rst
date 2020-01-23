@@ -86,7 +86,7 @@ There are two ways to apply the tag through the PMHC MDS data entry interface:
 
 .. _br20-Upload:
 
-Considerations for applying the tag in data Uploads
+Considerations for applying the tag in data uploads
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Users of local third-party or in-house developed systems will need to address
