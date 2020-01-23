@@ -32,7 +32,9 @@ PHNs who received funding through the *Australian Government Mental Health Respo
 
 PHNs funded through the *Australian Government Mental Health Response to Bushfire
 Trauma* **must** apply the bushfire response tag to all episodes where one or more service
-contacts is funded by the response. For these PHNs, the service provider should apply the bushfire response tag to:
+contacts is funded by the response.
+
+For these PHNs, the service provider should apply the bushfire response tag to:
 
 * **New clients**
 
@@ -53,6 +55,7 @@ PHNs who did **not** receive funding through the *Australian Government Mental H
 PHNs who did not receive funding for *Australian Government Mental Health Response to
 Bushfire Trauma* activities may use the PMHC MDS reporting changes to capture the service
 response to bushfire trauma.
+
 For these PHNs, the service provider should apply the bushfire response tag to:
 
 * **New clients**
@@ -69,7 +72,7 @@ For these PHNs, the service provider should apply the bushfire response tag to:
 How to apply the tag in the PMHC MDS Data Entry interface
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The bushfire response tag is denoted !br20.
+The bushfire response tag is available for use on an episode record and is denoted !br20.
 
 There are two ways to apply the tag through the PMHC MDS data entry interface:
 
@@ -82,7 +85,7 @@ There are two ways to apply the tag through the PMHC MDS data entry interface:
 
       * This tick box automatically adds/removes the tag when ticked/unticked. This functionality will be available by 24 January 2020. .
 
-The checkbox is on the Episode edit screen:
+The checkbox is on the Episode add and edit screen:
 
   * Ticking it will add the ``!br20`` tag to the tag field
   * Typing the ``!br20`` tag into the tag box will also tick the checkbox
