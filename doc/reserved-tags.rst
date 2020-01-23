@@ -23,7 +23,7 @@ Health Response to Bushfire Trauma* to deliver services including:
 
 The PMHC MDS reporting changes are designed to capture this funded service activity through the reserved Episode tag ``!br20``.
 
-More information is available in the "Primary Mental Health Care Minimum Data Set Circular 2020/01 – January 2020".
+More information is available in the :download:`Primary Mental Health Care Minimum Data Set Circular 2020/01 – January 2020 </_static/PMHCMDS Circular 2020-01.pdf>`.
 
 .. _br20-funded-PHNS:
 
