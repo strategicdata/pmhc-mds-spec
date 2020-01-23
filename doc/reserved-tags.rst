@@ -163,4 +163,4 @@ This would require significant manual processes and double handling but it is a
 use case supported by the PMHC MDS.
 
 If you have queries about managing data upload processes please contact the
-PMHC MDS helpdesk at support@pmhc-mds.com or 03 9340 9020.
+PMHC MDS helpdesk at support@pmhc-mds.com.
