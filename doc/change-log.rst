@@ -3,6 +3,13 @@
 Data Specification Change log
 =============================
 
+23/1/2020
+---------
+
+* :ref:`reserved-tags`
+
+    * Added :ref:`br20`
+
 9/9/2019
 --------
 
