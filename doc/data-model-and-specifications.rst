@@ -10,7 +10,7 @@ Data model
 
 .. _data-model-diagram:
 
-.. figure:: figures/data-model-v2.svg
+.. figure:: figures/data-model-v3.svg
    :alt: PMHC data model
 
    PMHC data model
