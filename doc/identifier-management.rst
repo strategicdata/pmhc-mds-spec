@@ -39,12 +39,11 @@ Master Client Index during `Stage Two <http://docs.pmhc-mds.com/en/v1/faqs/syste
 
 .. _unique_keys:
 
-Managing Practitioner, Episode, Service Contact and Outcome Collection Occasion Keys
-------------------------------------------------------------------------------------
+Managing Practitioner, Episode and Service Contact Keys
+-------------------------------------------------------
 
 The :ref:`Practitioner Key <practitioner-data-elements>`, :ref:`Episode Key <episode-data-elements>`,
-:ref:`Service Contact Key <service-contact-data-elements>` and
-:ref:`Outcome Collection Occasion Key <outcome-collection-occasion-data-elements>`
+:ref:`Service Contact Key <service-contact-data-elements>`
 will be created and managed by Provider Organisations.
 
 The PMHC MDS specification requires each of these keys to be unique and stable at the Provider Organisation level.
@@ -53,4 +52,27 @@ Each record needs to be assigned a unique key in order to facilitate
 adding/updating/deleting each item when uploading/entering data. These keys will
 be created and managed by the Provider Organisation.
 
-*If you still have questions after reading this information, please visit the Department's responses to* `Questions about Unique Identifiers and ‘Keys’ <http://docs.pmhc-mds.com/en/v1/faqs/concepts-processes/identifiers.html#identifier-and-key-faqs>`_
+.. _collection_occasion_keys:
+
+Managing Outcome Collection Occasion Keys
+-----------------------------------------
+The :ref:`Outcome Collection Occasion Key <outcome-collection-occasion-data-elements>`
+will be created and managed by Provider Organisations.
+
+The PMHC MDS specification requires each of these keys to be unique and stable
+at the Provider Organisation level. Collection Occasion keys are allowed to be
+duplicated if different measures are collected on the same day for the same reason
+and episode. You cannot have the same collection occasion key for different 
+collection occasions with the same measure.
+
+This requirement has been implemented to allow a future version of the specification
+to separate outcome collection occasions and measures so that multiple measures
+can be associated with the one collection occasion.
+
+Each record needs to be assigned a unique key in order to facilitate
+adding/updating/deleting each item when uploading/entering data. These keys will
+be created and managed by the Provider Organisation.
+
+*If you still have questions after reading this information, please visit
+the Department's responses
+to* `Questions about Unique Identifiers and ‘Keys’ <http://docs.pmhc-mds.com/en/v1/faqs/concepts-processes/identifiers.html#identifier-and-key-faqs>`_

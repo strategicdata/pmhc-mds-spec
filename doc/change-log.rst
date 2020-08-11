@@ -3,6 +3,26 @@
 Data Specification Change log
 =============================
 
+11/8/2020
+---------
+
+* :ref:`identifier_management`
+
+  * Added section :ref:`collection_occasion_keys`
+
+* :ref:`data-model-and-specifications`
+
+  * :ref:`data-model`
+
+    * Updated the data model diagram to more accurately reflect the model between
+      collection occasions and measures
+
+  * :ref:`record-formats`
+
+    * :ref:`dfn-collection_occasion_key`
+
+
+
 23/1/2020
 ---------
 

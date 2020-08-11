@@ -10,7 +10,7 @@ Data model
 
 .. _data-model-diagram:
 
-.. figure:: figures/data-model-v2.svg
+.. figure:: figures/data-model-v3.svg
    :alt: PMHC data model
 
    PMHC data model
@@ -20,7 +20,7 @@ Collection Occasion records.
 
 .. _collection-occasion-diagram:
 
-.. figure:: figures/collection-occasion-data-model.svg
+.. figure:: figures/collection-occasion-data-model-v3.svg
    :alt: PMHC Collection Occasion data model
 
    PMHC Collection Occasion data model
