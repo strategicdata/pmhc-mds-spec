@@ -20,7 +20,7 @@ Collection Occasion records.
 
 .. _collection-occasion-diagram:
 
-.. figure:: figures/collection-occasion-data-model.svg
+.. figure:: figures/collection-occasion-data-model-v3.svg
    :alt: PMHC Collection Occasion data model
 
    PMHC Collection Occasion data model
