@@ -312,6 +312,26 @@ PMHC MDS requires the use of one of the following three required outcome collect
 
 *Please note: For adolescents, clinician-discretion is allowed, and that the K10+ or K5 may be used, even though the person is under 18 years*
 
+.. _collection-occasion-tags:
+
+Collection Occasion - Tags
+""""""""""""""""""""""""""
+
+The PMHC data entry interface has been updated to support multiple measures
+collected at each collection occasion. For this reason a Collection Occasion - Tags
+field exists in the data entry interface but not in the data specification.
+
+Please refer to the Tags field for the measure type that you are collecting:
+
+* :ref:`dfn-k10p_tags`
+
+* :ref:`dfn-k5_tags`
+
+* :ref:`dfn-sdq_tags`
+
+For Wayback measures please refer to the Wayback data specification at
+`Collection Occasion - Tags <https://docs.pmhc-mds.com/projects/data-specification-wayback/en/v3/data-specification/data-model-and-specifications.html#collection-occasion-tags>`_
+
 .. _k10p-data-elements:
 
 K10+
