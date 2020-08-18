@@ -3,6 +3,15 @@
 Data Specification Change log
 =============================
 
+18/8/2020
+---------
+
+* :ref:`data-model-and-specifications`
+
+  * :ref:`record-formats`
+
+    * Added :ref:`collection-occasion-tags`
+
 11/8/2020
 ---------
 
