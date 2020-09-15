@@ -3,6 +3,13 @@
 Data Specification Change log
 =============================
 
+15/9/2020
+---------
+
+* :ref:`reserved-tags`
+
+  * Added :ref:`covid19`
+
 18/8/2020
 ---------
 
