@@ -3,6 +3,14 @@
 Data Specification Change log
 =============================
 
+23/9/2020
+---------
+
+* :ref:`data-model-and-specifications`
+
+    * :ref:`dfn-organisation_path` - Updated reference to `Parent Organisation`
+      to `Commissioning Organisation`
+
 15/9/2020
 ---------
 
