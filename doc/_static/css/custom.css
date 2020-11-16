@@ -92,3 +92,8 @@ a.headerlink {
     font-style:normal;
     src:local("Arial"),url(fonts/arial.ttf) format("truetype");
 }
+
+/* Fixes definition list styling */
+dt {
+    float:left;
+}
