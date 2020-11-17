@@ -3,6 +3,13 @@
 Data Specification Change log
 =============================
 
+18/11/2020
+----------
+
+* :ref:`reporting_arrangements`
+
+  * Added :ref:`reporting_inputs`
+
 23/9/2020
 ---------
 
