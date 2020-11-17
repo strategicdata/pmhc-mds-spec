@@ -37,6 +37,28 @@ The Department accesses information within the MDS for internal planning and
 governance purposes therefore data in the MDS needs to be current to ensure the
 accuracy of the data produced for the Department.
 
+.. _reporting_inputs:
+
+Inputs to help replicate system generated reports
+-------------------------------------------------
+
+Organisations frequently replicate the system reports at a local level for their
+own auditing purposes.
+
+Some reports, such as the Out series reports, use extra inputs that cannot be
+generated locally.
+
+These inputs are being supplied here to assist organisations who wish to
+replicate the system reports.
+
+Outcome Measure Standard Deviations
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Outcome Measure Standard Deviations will be updated in the second
+half of August each year.
+
+`Download PMHC Outcome Measure Standard Deviations 2020 as XLSX <_static/2020-pmhc-outcome-measure-standard-deviations.xlsx>`_.
+
 Support arrangements
 --------------------
 Support is available to PHNs and
