@@ -3,6 +3,17 @@
 Data Specification Change log
 =============================
 
+12/2/2021
+---------
+
+* :ref:`key-concepts`
+
+  * :ref:`key-concepts-service-contact`
+
+    * Added :ref:`active-client`
+
+    * Added :ref:`active-episode`
+
 18/11/2020
 ----------
 

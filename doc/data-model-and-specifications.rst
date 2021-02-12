@@ -72,6 +72,14 @@ The Client is the person who is receiving the service.
 
 See :ref:`client-data-elements` for the data elements for a client.
 
+.. _active-client:
+
+Active Client
+"""""""""""""
+
+An **active client** is a client who has had  one or more Service Contacts
+in a reference reporting period.
+
 .. _key-concepts-episode:
 
 Episode
@@ -120,6 +128,14 @@ across PHN-commissioned services:
   person re-presents to the organisation.
 
 See :ref:`episode-data-elements` for the data elements for a episode.
+
+.. _active-episode:
+
+Active Episode
+""""""""""""""
+
+An **active episode** is an episode with one or more :ref:`Attended Service Contacts <attended-contact>` recorded
+in a reference reporting period.
 
 .. _key-concepts-service-contact:
 
