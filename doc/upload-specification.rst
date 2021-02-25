@@ -3,30 +3,21 @@
 Upload specification
 ====================
 
-File types
-----------
-Files will be accepted in the following types:
+.. _file-requirements:
 
-- Comma Separated Values (CSV)
-- Excel (XLSX)
+File requirements
+-----------------
+Uploads will be rejected by our incoming data scanning system if they do not
+meet the following requirements:
 
-Comma Separated Values (CSV)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-The CSV files must conform to `RFC 4180 <https://www.ietf.org/rfc/rfc4180.txt>`__.
+* Must be either an :ref:`Excel Workbook (.xlsx) <excel-workbook>`,
+* OR a :ref:`zip (.zip) file containing CSV files <csv-zip>`,
+* AND must be :ref:`less than 512MB <file-size>`
 
-In addition, CSV files must be created using UTF-8 character encoding.
+.. _excel-workbook:
 
-CSV files must have the file extension .csv
-
-Multiple CSV files must be uploaded - one CSV file for each format described
-:ref:`below <files-to-upload>`.
-
-The CSV files must be compressed into a single file by zipping before upload. The
-filename of the zip file doesn't matter as long as it has the file
-extension .zip
-
-Excel (XLSX)
-^^^^^^^^^^^^
+Excel Workbook (XLSX)
+^^^^^^^^^^^^^^^^^^^^^
 Excel files must be in XLSX format. The following versions of Excel support this
 format:
 
@@ -42,6 +33,31 @@ When saving your file, please choose the filetype 'Excel Workbook (.xlsx)'.
 
 The filename of the Excel file doesn't matter as long as it has the file
 extension .xlsx
+
+.. _csv-zip:
+
+Zip file containting Comma Separated Values (CSV)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The CSV files must conform to `RFC 4180 <https://www.ietf.org/rfc/rfc4180.txt>`__.
+
+In addition, CSV files must be created using UTF-8 character encoding.
+
+CSV files must have the file extension .csv
+
+Multiple CSV files must be uploaded - one CSV file for each format described
+:ref:`below <files-to-upload>`.
+
+The CSV files must be compressed into a single file by zipping before upload. The
+filename of the zip file doesn't matter as long as it has the file
+extension .zip
+
+.. _file-size:
+
+File size
+^^^^^^^^^
+Files must be less than 512MB. The file size restriction prevents our systems
+from becoming unstable if extremely large files are uploaded. We will monitor
+if this limit causes issues for anyone and adjust it if necessary.
 
 .. _files-to-upload:
 

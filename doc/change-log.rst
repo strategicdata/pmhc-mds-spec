@@ -3,6 +3,15 @@
 Data Specification Change log
 =============================
 
+25/2/2021
+---------
+
+* :ref:`upload_specification`
+
+  * Renamed File Types to :ref:`file-requirements`
+
+  * Added :ref:`file-size`
+
 12/2/2021
 ---------
 
