@@ -3,6 +3,14 @@
 Data Specification Change log
 =============================
 
+12/5/2021
+---------
+
+* :ref:`data-model-and-specifications`
+
+  * :ref:`dfn-service_contact_modality` - Updated and expanded the notes for
+    each of the responses
+
 25/2/2021
 ---------
 
